@@ -1,20 +1,20 @@
 import { useState, useEffect } from 'react'
 
-const API = 'http://127.0.0.1:8000'
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
-  { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
-  { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
+  { label:'1週閁E,value:'5d'},{label:'1ヶ朁E,value:'1mo'},
+  { label:'3ヶ朁E,value:'3mo'},{label:'6ヶ朁E,value:'6mo'},{label:'1年',value:'1y'},
 ]
 
 function formatLarge(n) {
   if (!n) return '0'
-  if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
-  if (n >= 1e8)  return (n/1e8).toFixed(1)+'億'
-  if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
+  if (n >= 1e12) return (n/1e12).toFixed(1)+'允E
+  if (n >= 1e8)  return (n/1e8).toFixed(1)+'儁E
+  if (n >= 1e4)  return (n/1e4).toFixed(1)+'丁E
   return n.toLocaleString()
 }
 
-function Loading({ msg='データ取得中...' }) {
+function Loading({ msg='チE�Eタ取得中...' }) {
   return (
     <div style={{ textAlign:'center',padding:'40px',color:'var(--text3)' }}>
       {[0,0.2,0.4].map((d,i)=>(
@@ -26,8 +26,7 @@ function Loading({ msg='データ取得中...' }) {
   )
 }
 
-// TOP5縦棒グラフ（SVG）
-function Top5Bar({ items, title, colorFn }) {
+// TOP5縦棒グラフ！EVG�E�Efunction Top5Bar({ items, title, colorFn }) {
   if (!items || !items.length) return null
   const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)),1)
   const W=280, H=160, PL=8, PR=8, PT=20, PB=36
@@ -56,7 +55,7 @@ function Top5Bar({ items, title, colorFn }) {
   )
 }
 
-// 構成銘柄一覧テーブル
+// 構�E銘柄一覧チE�Eブル
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
   return (
@@ -64,8 +63,8 @@ function StockTable({ stocks }) {
       <table style={{ width:'100%',borderCollapse:'collapse',fontSize:'12px',fontFamily:'var(--font)' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            {['順位','コード','銘柄名','株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位'].map(h=>(
-              <th key={h} style={{ padding:'6px 8px',textAlign:h==='銘柄名'?'left':'right',
+            {['頁E��E,'コーチE,'銘柄吁E,'株価','騰落玁E,'寁E��度','寁E��頁E��E,'出来高増渁E,'出来髁E,'出来高頁E��E,'売買代釁E,'売買代金頁E��E].map(h=>(
+              <th key={h} style={{ padding:'6px 8px',textAlign:h==='銘柄吁E?'left':'right',
                 fontSize:'10px',fontWeight:600,letterSpacing:'0.06em',color:'var(--text3)',
                 textTransform:'uppercase',whiteSpace:'nowrap' }}>{h}</th>
             ))}
@@ -87,12 +86,12 @@ function StockTable({ stocks }) {
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR,color:pColor,fontWeight:700,fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR,color:cColor,fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
-                <td style={tdC}>{i+1}位</td>
+                <td style={tdC}>{i+1}佁E/td>
                 <td style={{ ...tdR,color:s.volume_chg>=0?'var(--red)':'var(--green)',fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR,fontFamily:'var(--mono)' }}>{formatLarge(s.volume)}</td>
-                <td style={tdC}>{s.vol_rank}位</td>
+                <td style={tdC}>{s.vol_rank}佁E/td>
                 <td style={{ ...tdR,fontFamily:'var(--mono)' }}>{formatLarge(s.trade_value)}</td>
-                <td style={tdC}>{s.tv_rank}位</td>
+                <td style={tdC}>{s.tv_rank}佁E/td>
               </tr>
             )
           })}
@@ -110,7 +109,7 @@ export default function MarketRank() {
   const [period,   setPeriod]   = useState('1mo')
   const [summary,  setSummary]  = useState(null)
   const [groups,   setGroups]   = useState({})
-  const [activeGroup, setActiveGroup] = useState('日経225')
+  const [activeGroup, setActiveGroup] = useState('日絁E25')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,   setDetail]   = useState(null)
   const [loadingS, setLoadingS] = useState(true)
@@ -121,7 +120,7 @@ export default function MarketRank() {
     fetch(`${API}/api/market-rank?period=${period}`)
       .then(r=>r.json()).then(d=>{
         setSummary(d.data); setGroups(d.groups||{})
-        if (!activeSeg && d.groups['日経225']?.length) setActiveSeg(d.groups['日経225'][0])
+        if (!activeSeg && d.groups['日絁E25']?.length) setActiveSeg(d.groups['日絁E25'][0])
       }).catch(()=>{}).finally(()=>setLoadingS(false))
   },[period])
 
@@ -141,13 +140,13 @@ export default function MarketRank() {
   return (
     <div style={{ padding:'28px 32px 48px' }}>
       <h1 style={{ fontSize:'24px',fontWeight:700,letterSpacing:'-0.02em',color:'#e8f0ff',marginBottom:'4px' }}>市場別ランキング</h1>
-      <p style={{ fontSize:'12px',color:'var(--text3)',marginBottom:'20px' }}>日経225・TOPIX・市場区分ごとの騰落率ランキング</p>
+      <p style={{ fontSize:'12px',color:'var(--text3)',marginBottom:'20px' }}>日絁E25・TOPIX・市場区刁E��との騰落玁E��ンキング</p>
 
       <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
         {PERIODS.map(p=><option key={p.value} value={p.value} style={{ background:'var(--bg3)' }}>{p.label}</option>)}
       </select>
 
-      {/* グループタブ */}
+      {/* グループタチE*/}
       <div style={{ display:'flex',gap:'4px',borderBottom:'1px solid var(--border)',marginTop:'16px',paddingBottom:'0' }}>
         {Object.keys(groups).map(g=>(
           <button key={g} onClick={()=>{ setActiveGroup(g); setActiveSeg(groups[g][0]) }} style={{
@@ -161,7 +160,7 @@ export default function MarketRank() {
 
       {loadingS ? <Loading /> : (
         <>
-          {/* セグメント選択 */}
+          {/* セグメント選抁E*/}
           <div style={{ display:'flex',gap:'4px',flexWrap:'wrap',padding:'12px 0',borderBottom:'1px solid var(--border)' }}>
             {(groups[activeGroup]||[]).map(seg=>{
               const avg = summary?.[seg]?.avg
@@ -173,7 +172,7 @@ export default function MarketRank() {
                   color:activeSeg===seg?'var(--accent)':'var(--text2)',
                   fontFamily:'var(--font)',transition:'all 0.15s',whiteSpace:'nowrap',
                 }}>
-                  {seg.split('｜')[1]||seg.split('（')[1]?.replace(')','').replace('）','')||seg}
+                  {seg.split('�E�E)[1]||seg.split('�E�E)[1]?.replace(')','').replace('�E�E,'')||seg}
                   {avg!=null&&<span style={{ marginLeft:'6px',fontSize:'11px',fontFamily:'var(--mono)',
                     color:avg>=0?'var(--red)':'var(--green)',fontWeight:600 }}>
                     {avg>=0?'+':''}{avg.toFixed(1)}%
@@ -184,25 +183,25 @@ export default function MarketRank() {
           </div>
 
           {/* 詳細エリア */}
-          {loadingD ? <Loading msg="個別株データ取得中..." /> : detail && (
+          {loadingD ? <Loading msg="個別株チE�Eタ取得中..." /> : detail && (
             <>
               <div style={{ display:'flex',alignItems:'center',gap:'16px',margin:'20px 0 16px' }}>
                 <span style={{ fontSize:'16px',fontWeight:700,color:'#e8f0ff' }}>{activeSeg}</span>
                 <span style={{ fontSize:'15px',fontFamily:'var(--mono)',fontWeight:700,
                   color:detail.avg>=0?'var(--red)':'var(--green)' }}>
-                  平均 {detail.avg>=0?'+':''}{detail.avg.toFixed(1)}%
+                  平坁E{detail.avg>=0?'+':''}{detail.avg.toFixed(1)}%
                 </span>
                 <span style={{ fontSize:'12px',color:'var(--text3)' }}>{stocks.length}銘柄</span>
               </div>
 
-              {/* TOP5グラフ */}
+              {/* TOP5グラチE*/}
               <div style={{ display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px',marginBottom:'20px' }} className="top5g">
-                <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor}/>
+                <Top5Bar items={top5} title="▲ 上�ETOP5" colorFn={pctColor}/>
                 <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor}/>
               </div>
 
-              {/* 構成銘柄テーブル */}
-              <div style={{ fontSize:'11px',fontWeight:600,letterSpacing:'0.1em',color:'var(--text3)',textTransform:'uppercase',marginBottom:'8px' }}>構成銘柄一覧</div>
+              {/* 構�E銘柄チE�Eブル */}
+              <div style={{ fontSize:'11px',fontWeight:600,letterSpacing:'0.1em',color:'var(--text3)',textTransform:'uppercase',marginBottom:'8px' }}>構�E銘柄一覧</div>
               <div style={{ background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'var(--radius)',padding:'8px' }}>
                 <StockTable stocks={stocks}/>
               </div>
