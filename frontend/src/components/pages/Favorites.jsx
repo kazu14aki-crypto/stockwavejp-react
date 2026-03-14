@@ -13,7 +13,7 @@ function Loading() {
           animation: `pulse 1.2s ease-in-out ${d}s infinite`,
         }} />
       ))}
-      <div style={{ marginTop: '12px', fontSize: '12px' }}>チE�Eタ取得中...</div>
+      <div style={{ marginTop: '12px', fontSize: '12px' }}>データ取得中...</div>
     </div>
   )
 }
@@ -28,9 +28,9 @@ export default function Favorites() {
   const [loading,     setLoading]     = useState(false)
 
   const PERIODS = [
-    { label: '1週閁E, value: '5d' },
-    { label: '1ヶ朁E, value: '1mo' },
-    { label: '3ヶ朁E, value: '3mo' },
+    { label: '1週間', value: '5d' },
+    { label: '1ヶ月', value: '1mo' },
+    { label: '3ヶ月', value: '3mo' },
     { label: '1年',   value: '1y'  },
   ]
 
@@ -61,14 +61,15 @@ export default function Favorites() {
   return (
     <div style={{ padding: '28px 32px 48px' }}>
       <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: '#e8f0ff', marginBottom: '4px' }}>
-        お気に入めE      </h1>
+        お気に入り
+      </h1>
       <p style={{ fontSize: '12px', color: 'var(--text3)', marginBottom: '20px' }}>
-        注目チE�Eマを登録して素早くチェチE��
+        注目テーマを登録して素早くチェック
       </p>
 
-      {/* チE�Eマ選抁E*/}
+      {/* テーマ選択 */}
       <div style={sHead}>
-        <span style={sTitle}>チE�Eマを選抁E/span>
+        <span style={sTitle}>テーマを選択</span>
         <div style={sLine} />
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '24px' }}>
@@ -80,7 +81,7 @@ export default function Favorites() {
             color: favorites.includes(t) ? 'var(--red)' : 'var(--text3)',
             fontFamily: 'var(--font)', transition: 'all 0.15s',
           }}>
-            {favorites.includes(t) ? '⭁E' : ''}{t}
+            {favorites.includes(t) ? '⭐ ' : ''}{t}
           </button>
         ))}
       </div>
@@ -92,13 +93,13 @@ export default function Favorites() {
           borderRadius: 'var(--radius)', padding: '40px', textAlign: 'center',
           color: 'var(--text3)', fontSize: '13px',
         }}>
-          <div style={{ fontSize: '32px', marginBottom: '12px' }}>⭁E/div>
-          上�Eボタンからお気に入りテーマを追加してください
+          <div style={{ fontSize: '32px', marginBottom: '12px' }}>⭐</div>
+          上のボタンからお気に入りテーマを追加してください
         </div>
       ) : (
         <>
           <div style={sHead}>
-            <span style={sTitle}>お気に入りテーチE({favorites.length}件)</span>
+            <span style={sTitle}>お気に入りテーマ ({favorites.length}件)</span>
             <div style={sLine} />
             <select value={period} onChange={e => setPeriod(e.target.value)} style={selStyle}>
               {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
@@ -116,7 +117,7 @@ export default function Favorites() {
                 <button onClick={() => toggleFav(t.theme)} style={{
                   background: 'none', border: 'none', cursor: 'pointer',
                   fontSize: '16px', lineHeight: 1,
-                }}>⭁E/button>
+                }}>⭐</button>
                 <span style={{ flex: 1, fontSize: '14px', color: '#c0d0e8', fontWeight: 500 }}>
                   {t.theme}
                 </span>

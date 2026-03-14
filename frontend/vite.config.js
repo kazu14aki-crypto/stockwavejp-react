@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/stockwavejp-react/',
   server: {
-    host: true,   // ← これでスマホからもアクセス可能
+    host: true,
     port: 5173,
   },
 })
