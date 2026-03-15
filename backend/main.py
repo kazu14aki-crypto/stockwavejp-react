@@ -17,14 +17,18 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 @app.get("/")
 def root(): return {"status": "ok", "app": "StockWaveJP API"}
 
+@app.head("/api/status")
+def head_status():
+    return Response()
+
 @app.get("/api/status")
 def get_status():
     jst = pytz.timezone("Asia/Tokyo")
     now = datetime.now(jst)
     h, m = now.hour, now.minute
     is_open = now.weekday() < 5 and ((h==9 and m>=0) or (10<=h<=14) or (h==15 and m==0))
-    return {"time": now.strftime("%H:%M JST"), "date": now.strftime("%Y年%m月%d日"),
-            "is_open": is_open, "label": "市場オープン中" if is_open else "市場クローズ中"}
+    return {"time": now.strftime("%H:%M JST"), "date": now.strftime("%Y/%m/%d"),
+            "is_open": is_open, "label": "open" if is_open else "closed"}
 
 @app.get("/api/themes")
 def get_themes(period: str = Query(default="1mo")):
