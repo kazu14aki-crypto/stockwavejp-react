@@ -15,7 +15,12 @@ app = FastAPI(title="StockWaveJP API", version="2.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 @app.get("/")
-def root(): return {"status": "ok", "app": "StockWaveJP API"}
+def root():
+    return {"status": "ok", "app": "StockWaveJP API"}
+
+@app.head("/api/status")
+def head_status():
+    return Response()
 
 @app.head("/api/status")
 def head_status():
@@ -27,8 +32,17 @@ def get_status():
     now = datetime.now(jst)
     h, m = now.hour, now.minute
     is_open = now.weekday() < 5 and ((h==9 and m>=0) or (10<=h<=14) or (h==15 and m==0))
+<<<<<<< HEAD
     return {"time": now.strftime("%H:%M JST"), "date": now.strftime("%Y/%m/%d"),
             "is_open": is_open, "label": "open" if is_open else "closed"}
+=======
+    return {
+        "time": now.strftime("%H:%M JST"),
+        "date": now.strftime("%Y年%m月%d日"),
+        "is_open": is_open,
+        "label": "市場オープン中" if is_open else "市場クローズ中"
+    }
+>>>>>>> d5c31d1 (Fix HEAD method for UptimeRobot)
 
 @app.get("/api/themes")
 def get_themes(period: str = Query(default="1mo")):
@@ -36,12 +50,19 @@ def get_themes(period: str = Query(default="1mo")):
     rise = sum(1 for r in results if r["up"])
     fall = len(results) - rise
     avg  = round(sum(r["pct"] for r in results)/len(results),2) if results else 0
-    return {"period": period, "themes": results,
-            "summary": {"total": len(results), "rise": rise, "fall": fall, "avg": avg,
-                        "top": results[0] if results else None, "bot": results[-1] if results else None}}
+    return {
+        "period": period,
+        "themes": results,
+        "summary": {
+            "total": len(results), "rise": rise, "fall": fall, "avg": avg,
+            "top": results[0] if results else None,
+            "bot": results[-1] if results else None
+        }
+    }
 
 @app.get("/api/theme-names")
-def get_theme_names(): return {"themes": list(DEFAULT_THEMES.keys())}
+def get_theme_names():
+    return {"themes": list(DEFAULT_THEMES.keys())}
 
 @app.get("/api/momentum")
 def get_momentum(period: str = Query(default="1mo")):
@@ -62,7 +83,8 @@ def get_trends(themes: str = Query(default=""), period: str = Query(default="1y"
     return {"period": period, "trends": {t: fetch_theme_trend(DEFAULT_THEMES, t, period) for t in theme_list}}
 
 @app.get("/api/heatmap")
-def get_heatmap(): return {"data": fetch_heatmap_data(DEFAULT_THEMES)}
+def get_heatmap():
+    return {"data": fetch_heatmap_data(DEFAULT_THEMES)}
 
 @app.get("/api/heatmap/monthly")
 def get_monthly_heatmap():
@@ -88,16 +110,14 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo")):
 
 @app.get("/api/stock-info/{ticker}")
 def get_stock_info(ticker: str):
-    """銘柄情報を取得（カスタムテーマ用）"""
     try:
         import yfinance as yf
         t = yf.Ticker(ticker)
         info = t.info
         hist = t.history(period="2d", interval="1d", auto_adjust=True)
         price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-        name  = (info.get("longName") or info.get("shortName") or
-                 info.get("displayName") or ticker)
-        # 日本株の場合は日本語名を優先
+        name = (info.get("longName") or info.get("shortName") or
+                info.get("displayName") or ticker)
         if ".T" in ticker:
             name = info.get("longName") or info.get("shortName") or ticker
         return {"ticker": ticker, "name": name, "price": price}
