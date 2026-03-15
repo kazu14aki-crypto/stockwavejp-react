@@ -1,23 +1,22 @@
 """
-data.py — 完全版（市場別分類拡充・個別株詳細対応）
+data.py — 高速化版（yfinance一括取得・バックグラウンドキャッシュ）
 """
 import yfinance as yf
 import numpy as np
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import threading
 
 _cache: dict = {}
-_CACHE_TTL = 3600
+_CACHE_TTL = 3600  # 1時間
 
 MACRO_TICKERS = {
     "日経平均": "^N225", "TOPIX": "^TOPX", "S&P500": "^GSPC",
     "ドル円": "JPY=X", "ナスダック": "^IXIC", "VIX": "^VIX",
 }
 
-# ── 市場別セグメント（分類拡充版） ──
 MARKET_SEGMENTS = {
-    # ── 日経225 ──
     "日経225｜技術・電気機器": {
         "日立製作所":"6501.T","三菱電機":"6503.T","富士電機":"6504.T","安川電機":"6506.T",
         "NEC":"6701.T","富士通":"6702.T","ソニーグループ":"6758.T","パナソニックHD":"6752.T",
@@ -70,7 +69,6 @@ MARKET_SEGMENTS = {
         "三菱商事":"8058.T","三井物産":"8031.T","伊藤忠商事":"8001.T",
         "住友商事":"8053.T","丸紅":"8002.T",
     },
-    # ── TOPIX ──
     "TOPIX｜Core30（時価総額最上位）": {
         "トヨタ自動車":"7203.T","ソニーグループ":"6758.T","三菱UFJ FG":"8306.T",
         "キーエンス":"6861.T","東京エレクトロン":"8035.T","信越化学工業":"4063.T",
@@ -99,7 +97,6 @@ MARKET_SEGMENTS = {
         "イオン":"8267.T","ニトリHD":"9843.T","大和証券G":"8601.T","りそなHD":"8308.T",
         "バンダイナムコHD":"7832.T","キヤノン":"7751.T","JAL":"9201.T","ANA HD":"9202.T",
     },
-    # ── 市場区分 ──
     "プライム市場（主要銘柄）": {
         "トヨタ自動車":"7203.T","ソニーグループ":"6758.T","三菱UFJ FG":"8306.T",
         "キーエンス":"6861.T","東京エレクトロン":"8035.T","ファーストリテイリング":"9983.T",
@@ -127,7 +124,6 @@ MARKET_SEGMENTS = {
     },
 }
 
-# セグメントのグループ分け
 SEGMENT_GROUPS = {
     "日経225": [k for k in MARKET_SEGMENTS if k.startswith("日経225")],
     "TOPIX":   [k for k in MARKET_SEGMENTS if k.startswith("TOPIX")],
@@ -149,23 +145,53 @@ def _robust_avg(pcts):
     return round(float(f.mean() if len(f) > 0 else np.median(arr)), 2)
 
 
-def _fetch_single_full(ticker, period):
+def _bulk_download(tickers: list, period: str) -> dict:
+    """yfinanceの一括ダウンロードで高速化"""
     try:
-        df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True)
+        if not tickers: return {}
+        data = yf.download(
+            tickers, period=period, interval="1d",
+            auto_adjust=True, progress=False, threads=True,
+            group_by="ticker"
+        )
+        result = {}
+        if len(tickers) == 1:
+            t = tickers[0]
+            try:
+                df = data.copy()
+                if df is None or len(df) < 2: return {}
+                df.index = df.index.tz_localize(None)
+                result[t] = df
+            except: pass
+        else:
+            for t in tickers:
+                try:
+                    df = data[t].copy() if t in data.columns.get_level_values(1) else None
+                    if df is None or len(df) < 2: continue
+                    df.index = df.index.tz_localize(None)
+                    result[t] = df
+                except: pass
+        return result
+    except Exception as e:
+        return {}
+
+
+def _calc_stock_metrics(df, ticker) -> dict | None:
+    """DataFrameから各種指標を計算"""
+    try:
         if df is None or len(df) < 2: return None
-        df.index = df.index.tz_localize(None)
-        cl = df["Close"]
-        if (cl <= 0).any() or cl.isna().any(): return None
+        cl = df["Close"].dropna()
+        if len(cl) < 2 or (cl <= 0).any(): return None
         if (cl.pct_change().abs().dropna() > 49).any(): return None
         pct = (cl.iloc[-1] / cl.iloc[0] - 1) * 100
         if abs(pct) > 500: return None
         half = max(len(df) // 2, 1)
-        rv = float(df["Volume"].tail(half).mean())
-        pv = float(df["Volume"].head(half).mean())
+        vol = df["Volume"].dropna()
+        rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+        pv = float(vol.head(half).mean()) if len(vol) > 0 else 0
         last_price = float(cl.iloc[-1])
         trade_value = rv * last_price
         vol_chg = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
-        # 前日比
         day_chg = round((cl.iloc[-1] - cl.iloc[-2]) / cl.iloc[-2] * 100, 2) if len(cl) >= 2 else None
         return {
             "pct": round(float(pct), 2),
@@ -174,6 +200,15 @@ def _fetch_single_full(ticker, period):
             "price": round(last_price, 0),
             "day_chg": day_chg,
         }
+    except: return None
+
+
+def _fetch_single_full(ticker, period):
+    try:
+        df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True)
+        if df is None or len(df) < 2: return None
+        df.index = df.index.tz_localize(None)
+        return _calc_stock_metrics(df, ticker)
     except: return None
 
 
@@ -199,16 +234,29 @@ def _fetch_daily_series(ticker, period):
 def fetch_theme_results(themes, period):
     cache_key = f"themes_{period}"
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+
+    # 全銘柄を一括取得
+    all_tickers = list({t for stocks in themes.values() for t in stocks.values()})
+    bulk_data = {}
+    # バッチサイズ100で分割
+    batch_size = 100
+    for i in range(0, len(all_tickers), batch_size):
+        batch = all_tickers[i:i+batch_size]
+        bulk_data.update(_bulk_download(batch, period))
+
     results = []
     for theme_name, stocks in themes.items():
         pcts, vols, tvs, vol_chgs = [], [], [], []
-        with ThreadPoolExecutor(max_workers=8) as ex:
-            futs = {ex.submit(_fetch_single_full, t, period): t for t in stocks.values()}
-            for fut in as_completed(futs):
-                d = fut.result()
-                if d:
-                    pcts.append(d["pct"]); vols.append(d["volume"])
-                    tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
+        for name, ticker in stocks.items():
+            df = bulk_data.get(ticker)
+            if df is not None:
+                d = _calc_stock_metrics(df, ticker)
+            else:
+                d = _fetch_single_full(ticker, period)
+            if d:
+                pcts.append(d["pct"]); vols.append(d["volume"])
+                tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
+
         avg_pct = _robust_avg(pcts)
         results.append({
             "theme": theme_name, "pct": avg_pct, "up": avg_pct >= 0,
@@ -216,64 +264,56 @@ def fetch_theme_results(themes, period):
             "volume_chg": round(float(np.mean(vol_chgs)) if vol_chgs else 0, 1),
             "trade_value": int(sum(tvs)),
         })
+
     results.sort(key=lambda x: x["pct"], reverse=True)
     _cache[cache_key] = {"ts": time.time(), "data": results}
     return results
 
 
 def fetch_segment_detail(seg_name, period):
-    """市場セグメントの個別株詳細を取得"""
     cache_key = f"seg_detail_{seg_name}_{period}"
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
 
     stocks = MARKET_SEGMENTS.get(seg_name, {})
+    tickers = list(stocks.values())
+    bulk = _bulk_download(tickers, period)
+
     stock_results = []
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
-                for name, ticker in stocks.items()}
-        for fut in as_completed(futs):
-            name, ticker = futs[fut]
-            d = fut.result()
-            if d:
-                stock_results.append({"name": name, "ticker": ticker, **d})
+    for name, ticker in stocks.items():
+        df = bulk.get(ticker)
+        d = _calc_stock_metrics(df, ticker) if df is not None else _fetch_single_full(ticker, period)
+        if d:
+            stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
-
-    # 寄与度計算
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
     for s in stock_results:
         s["contribution"] = round(s["pct"] / total_abs * 100, 1)
 
-    # 出来高・売買代金ランキング
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
-    vol_rank = {i: r+1 for r, (i, _) in enumerate(vol_sorted)}
-    tv_rank  = {i: r+1 for r, (i, _) in enumerate(tv_sorted)}
-    for i, s in enumerate(stock_results):
-        s["vol_rank"] = vol_rank.get(i, "-")
-        s["tv_rank"]  = tv_rank.get(i, "-")
+    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
+    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r+1
 
-    avg_pct = _robust_avg([s["pct"] for s in stock_results])
-    result = {"avg": avg_pct, "stocks": stock_results}
+    result = {"avg": _robust_avg([s["pct"] for s in stock_results]), "stocks": stock_results}
     _cache[cache_key] = {"ts": time.time(), "data": result}
     return result
 
 
 def fetch_theme_detail(themes, theme_name, period):
-    """テーマの個別株詳細を取得"""
     cache_key = f"theme_detail_{theme_name}_{period}"
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
 
     stocks = themes.get(theme_name, {})
+    tickers = list(stocks.values())
+    bulk = _bulk_download(tickers, period)
+
     stock_results = []
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
-                for name, ticker in stocks.items()}
-        for fut in as_completed(futs):
-            name, ticker = futs[fut]
-            d = fut.result()
-            if d:
-                stock_results.append({"name": name, "ticker": ticker, **d})
+    for name, ticker in stocks.items():
+        df = bulk.get(ticker)
+        d = _calc_stock_metrics(df, ticker) if df is not None else _fetch_single_full(ticker, period)
+        if d:
+            stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
@@ -282,14 +322,10 @@ def fetch_theme_detail(themes, theme_name, period):
 
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
-    vol_rank = {i: r+1 for r, (i, _) in enumerate(vol_sorted)}
-    tv_rank  = {i: r+1 for r, (i, _) in enumerate(tv_sorted)}
-    for i, s in enumerate(stock_results):
-        s["vol_rank"] = vol_rank.get(i, "-")
-        s["tv_rank"]  = tv_rank.get(i, "-")
+    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
+    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r+1
 
-    avg_pct = _robust_avg([s["pct"] for s in stock_results])
-    result = {"theme": theme_name, "avg": avg_pct, "stocks": stock_results}
+    result = {"theme": theme_name, "avg": _robust_avg([s["pct"] for s in stock_results]), "stocks": stock_results}
     _cache[cache_key] = {"ts": time.time(), "data": result}
     return result
 
@@ -300,11 +336,9 @@ def fetch_market_segments(period):
     result = {}
     for seg_name, stocks in MARKET_SEGMENTS.items():
         pcts = []
-        with ThreadPoolExecutor(max_workers=8) as ex:
-            futs = {ex.submit(_fetch_single, ticker, period): ticker for ticker in stocks.values()}
-            for fut in as_completed(futs):
-                v = fut.result()
-                if v is not None: pcts.append(v)
+        for ticker in stocks.values():
+            v = _fetch_single(ticker, period)
+            if v is not None: pcts.append(v)
         result[seg_name] = {"avg": _robust_avg(pcts), "count": len(stocks)}
     _cache[cache_key] = {"ts": time.time(), "data": result}
     return result
@@ -410,3 +444,17 @@ def fetch_macro_data(period):
             result[name] = [{"date": str(d.date()), "pct": float(v)} for d, v in series.items()]
     _cache[cache_key] = {"ts": time.time(), "data": result}
     return result
+
+
+def warmup_cache(themes):
+    """起動時にバックグラウンドでキャッシュを事前生成"""
+    def _warmup():
+        print("Warming up cache...")
+        try:
+            fetch_theme_results(themes, "1mo")
+            fetch_theme_results(themes, "5d")
+            print("Cache warmup complete.")
+        except Exception as e:
+            print(f"Warmup error: {e}")
+    thread = threading.Thread(target=_warmup, daemon=True)
+    thread.start()
