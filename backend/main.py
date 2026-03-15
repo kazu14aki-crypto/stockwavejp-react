@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 import pytz
@@ -18,6 +19,7 @@ def root(): return {"status": "ok", "app": "StockWaveJP API"}
 
 @app.get("/api/status")
 def get_status():
+    return Response()
     jst = pytz.timezone("Asia/Tokyo")
     now = datetime.now(jst)
     h, m = now.hour, now.minute
