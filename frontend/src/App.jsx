@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
+import TopPage     from './components/pages/TopPage'
 import ThemeList   from './components/pages/ThemeList'
 import Momentum    from './components/pages/Momentum'
 import FundFlow    from './components/pages/FundFlow'
@@ -16,6 +17,7 @@ import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
 
 const PAGES = [
+  { icon:'🏠', label:'トップ',           component:TopPage     },
   { icon:'📊', label:'テーマ一覧',        component:ThemeList   },
   { icon:'📡', label:'騰落モメンタム',     component:Momentum    },
   { icon:'💹', label:'資金フロー',         component:FundFlow    },
@@ -33,26 +35,23 @@ const PAGES_OTHER = [
   { icon:'⚖️', label:'免責事項',       component:Disclaimer  },
 ]
 const ALL_PAGES = [...PAGES, ...PAGES_OTHER]
-
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 export default function App() {
-  const [currentPage, setCurrentPage]  = useState('テーマ一覧')
-  const [sidebarOpen, setSidebarOpen]  = useState(false)
-  const [viewMode,    setViewMode]     = useState('auto')
-  const [isMobile,    setIsMobile]     = useState(false)
-  const [status,      setStatus]       = useState({ time:'--:--', is_open:false, label:'...' })
-  const [colorTheme,  setColorTheme]   = useState(
+  const [currentPage, setCurrentPage] = useState('トップ')
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [viewMode,    setViewMode]    = useState('auto')
+  const [isMobile,    setIsMobile]    = useState(false)
+  const [status,      setStatus]      = useState({ time:'--:--', is_open:false, label:'...' })
+  const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
 
-  // カラーテーマをdocument属性に反映
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
     localStorage.setItem(COLOR_THEME_KEY, colorTheme)
   }, [colorTheme])
 
-  // 画面幅判定
   useEffect(() => {
     const check = () => {
       if (viewMode === 'mobile') { setIsMobile(true); return }
@@ -64,20 +63,22 @@ export default function App() {
     return () => window.removeEventListener('resize', check)
   }, [viewMode])
 
-  // ステータス取得
   useEffect(() => {
     const fetchStatus = async () => {
       try {
         const apiBase = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
         const res  = await fetch(apiBase + '/api/status')
         const data = await res.json()
-        setStatus(data)
+        setStatus({
+          ...data,
+          label: data.is_open ? '市場オープン中' : '市場クローズ中',
+        })
       } catch {
         const now = new Date()
         const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000)
         setStatus({
-          time:`${String(jst.getHours()).padStart(2,'0')}:${String(jst.getMinutes()).padStart(2,'0')} JST`,
-          is_open:false, label:'接続エラー',
+          time: `${String(jst.getHours()).padStart(2,'0')}:${String(jst.getMinutes()).padStart(2,'0')} JST`,
+          is_open: false, label: '接続エラー',
         })
       }
     }
@@ -90,26 +91,28 @@ export default function App() {
   const PageComponent  = currentPageObj?.component
 
   const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
+  const handleLogoClick  = () => { setCurrentPage('トップ'); setSidebarOpen(false) }
 
-  // 各ページに渡すprops
   const pageProps = (() => {
     if (currentPage === '設定') return { viewMode, onViewModeChange: setViewMode, colorTheme, onColorThemeChange: setColorTheme }
+    if (currentPage === 'トップ') return { onNavigate: handlePageChange }
     return {}
   })()
 
   return (
-    <div style={{ minHeight:'100vh' }}>
+    <div style={{ minHeight:'100vh', background:'var(--bg)' }}>
       <Header
         status={status}
         onMenuClick={() => setSidebarOpen(o => !o)}
         sidebarOpen={sidebarOpen}
         viewMode={viewMode}
         onViewModeChange={setViewMode}
+        onLogoClick={handleLogoClick}
       />
 
       {sidebarOpen && isMobile && (
         <div onClick={() => setSidebarOpen(false)} style={{
-          position:'fixed',inset:0,background:'rgba(0,0,0,0.6)',zIndex:800,
+          position:'fixed', inset:0, background:'rgba(0,0,0,0.5)', zIndex:800,
         }} />
       )}
 
@@ -129,19 +132,19 @@ export default function App() {
         {PageComponent ? (
           <PageComponent {...pageProps} />
         ) : (
-          <div style={{ display:'flex',alignItems:'center',justifyContent:'center',
-            height:'calc(100vh - var(--header))',flexDirection:'column',gap:'16px',color:'var(--text3)' }}>
+          <div style={{ display:'flex', alignItems:'center', justifyContent:'center',
+            height:'calc(100vh - var(--header))', flexDirection:'column', gap:'16px', color:'var(--text3)' }}>
             <div style={{ fontSize:'48px' }}>{currentPageObj?.icon}</div>
-            <div style={{ fontSize:'18px',fontWeight:600,color:'var(--text2)' }}>{currentPage}</div>
+            <div style={{ fontSize:'18px', fontWeight:600, color:'var(--text2)' }}>{currentPage}</div>
             <div style={{ fontSize:'13px' }}>このページは準備中です</div>
           </div>
         )}
 
-        <footer style={{ borderTop:'1px solid var(--border)', padding:'24px 32px',
+        <footer style={{ borderTop:'1px solid var(--border)', padding:'20px 32px',
           textAlign:'center', color:'var(--text3)', fontSize:'11px' }}>
-          <span style={{ color:'#e63030',fontWeight:700 }}>Stock</span>
-          <span style={{ fontWeight:700,color:'var(--text)' }}>Wave</span>
-          <span style={{ color:'#e63030',fontWeight:700,fontSize:'10px' }}>JP</span>
+          <span style={{ color:'#e63030', fontWeight:700 }}>Stock</span>
+          <span style={{ fontWeight:700, color:'var(--text2)' }}>Wave</span>
+          <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
           {'  —  stockwavejp.com  —  投資助言ではありません  —  © 2026'}
         </footer>
       </main>

@@ -1,5 +1,5 @@
 """
-data.py — 高速化版（yfinance一括取得・バックグラウンドキャッシュ）
+data.py — 高速化版（上場廃止除外・株式分割対応・一括取得）
 """
 import yfinance as yf
 import numpy as np
@@ -9,7 +9,8 @@ import time
 import threading
 
 _cache: dict = {}
-_CACHE_TTL = 3600  # 1時間
+_CACHE_TTL = 3600
+_invalid_tickers: set = set()  # 無効銘柄キャッシュ
 
 MACRO_TICKERS = {
     "日経平均": "^N225", "TOPIX": "^TOPX", "S&P500": "^GSPC",
@@ -33,7 +34,7 @@ MARKET_SEGMENTS = {
         "中外製薬":"4519.T","エーザイ":"4523.T","大塚HD":"4578.T","塩野義製薬":"4507.T",
         "ENEOS HD":"5020.T","出光興産":"5019.T","ブリヂストン":"5108.T",
         "AGC":"5201.T","日本製鉄":"5401.T","JFE HD":"5411.T","神戸製鋼所":"5406.T",
-        "住友金属鉱山":"5713.T","DOWAホールディングス":"5714.T",
+        "住友金属鉱山":"5713.T",
     },
     "日経225｜資本財・機械": {
         "クボタ":"6326.T","コマツ":"6301.T","SMC":"6273.T","ダイキン工業":"6367.T",
@@ -48,7 +49,7 @@ MARKET_SEGMENTS = {
         "マツダ":"7261.T","スズキ":"7269.T","デンソー":"6902.T",
         "任天堂":"7974.T","バンダイナムコHD":"7832.T","コナミグループ":"9766.T",
         "ファーストリテイリング":"9983.T","セブン&アイHD":"3382.T","イオン":"8267.T",
-        "ニトリHD":"9843.T","ZOZO":"3092.T","リクルートHD":"6098.T",
+        "ニトリHD":"9843.T","リクルートHD":"6098.T",
         "オリエンタルランド":"4661.T","味の素":"2802.T","キリンHD":"2503.T",
         "日清食品HD":"2897.T","アサヒグループHD":"2502.T",
     },
@@ -56,12 +57,12 @@ MARKET_SEGMENTS = {
         "三菱UFJ FG":"8306.T","三井住友FG":"8316.T","みずほFG":"8411.T","りそなHD":"8308.T",
         "野村HD":"8604.T","大和証券G":"8601.T","日本取引所G":"8697.T",
         "東京海上HD":"8766.T","MS&AD保険G":"8725.T","SOMPO HD":"8630.T",
-        "第一生命HD":"8750.T","T&D HD":"8795.T","オリックス":"8591.T",
+        "第一生命HD":"8750.T","オリックス":"8591.T",
         "三井不動産":"8801.T","三菱地所":"8802.T",
     },
     "日経225｜運輸・通信": {
         "JR東日本":"9020.T","JR東海":"9022.T","JR西日本":"9021.T",
-        "東急":"9005.T","近鉄グループHD":"9041.T","小田急電鉄":"9007.T",
+        "東急":"9005.T","小田急電鉄":"9007.T",
         "ヤマトHD":"9064.T","SGホールディングス":"9143.T",
         "日本郵船":"9101.T","商船三井":"9104.T","川崎汽船":"9107.T",
         "JAL":"9201.T","ANA HD":"9202.T",
@@ -107,18 +108,13 @@ MARKET_SEGMENTS = {
         "ファナック":"6954.T","三井物産":"8031.T",
     },
     "スタンダード市場（注目銘柄）": {
-        "静岡銀行":"8355.T","広島銀行":"8379.T","七十七銀行":"8341.T",
-        "東邦銀行":"8346.T","滋賀銀行":"8366.T","琉球銀行":"8399.T",
-        "名村造船所":"7014.T","内海造船":"7018.T","三井E&S":"7003.T",
-        "太平洋金属":"5441.T","東京製鐵":"5423.T","大和工業":"5444.T",
-        "トーセイ":"8923.T","タカラレーベン":"8897.T",
-        "ビックカメラ":"3048.T","DCMホールディングス":"3050.T",
+        "東京製鐵":"5423.T","大和工業":"5444.T","三井E&S":"7003.T",
+        "トーセイ":"8923.T","ビックカメラ":"3048.T","DCMホールディングス":"3050.T",
+        "大塚家具":"8186.T","テレビ東京HD":"9413.T","松竹":"9601.T",
     },
     "グロース市場（注目銘柄）": {
         "さくらインターネット":"3778.T","メルカリ":"4385.T",
-        "サイバーセキュリティクラウド":"4493.T","FFRIセキュリティ":"3692.T",
-        "メドレー":"4480.T","ケアネット":"2150.T","レノバ":"9519.T",
-        "ACSL":"6232.T","Appier Group":"4180.T","弁護士ドットコム":"6027.T",
+        "Appier Group":"4180.T","弁護士ドットコム":"6027.T",
         "freee":"4478.T","マネーフォワード":"3994.T","BASE":"4477.T",
         "Sansan":"4443.T","ラクス":"3923.T","プレイド":"4165.T",
     },
@@ -145,46 +141,48 @@ def _robust_avg(pcts):
     return round(float(f.mean() if len(f) > 0 else np.median(arr)), 2)
 
 
-def _bulk_download(tickers: list, period: str) -> dict:
-    """yfinanceの一括ダウンロードで高速化"""
+def _is_valid_ticker(ticker: str) -> bool:
+    """銘柄が有効かチェック（キャッシュ付き）"""
+    if ticker in _invalid_tickers:
+        return False
+    return True
+
+
+def _fetch_history_safe(ticker: str, period: str):
+    """安全なデータ取得（auto_adjust=Trueで株式分割・併合を自動調整）"""
+    if not _is_valid_ticker(ticker):
+        return None
     try:
-        if not tickers: return {}
-        data = yf.download(
-            tickers, period=period, interval="1d",
-            auto_adjust=True, progress=False, threads=True,
-            group_by="ticker"
+        df = yf.Ticker(ticker).history(
+            period=period, interval="1d",
+            auto_adjust=True,   # 株式分割・配当を自動調整
+            repair=True,        # データ異常を自動修復
         )
-        result = {}
-        if len(tickers) == 1:
-            t = tickers[0]
-            try:
-                df = data.copy()
-                if df is None or len(df) < 2: return {}
-                df.index = df.index.tz_localize(None)
-                result[t] = df
-            except: pass
-        else:
-            for t in tickers:
-                try:
-                    df = data[t].copy() if t in data.columns.get_level_values(1) else None
-                    if df is None or len(df) < 2: continue
-                    df.index = df.index.tz_localize(None)
-                    result[t] = df
-                except: pass
-        return result
-    except Exception as e:
-        return {}
+        if df is None or len(df) < 2:
+            _invalid_tickers.add(ticker)
+            return None
+        df.index = df.index.tz_localize(None)
+        cl = df["Close"].dropna()
+        if len(cl) < 2 or (cl <= 0).any():
+            _invalid_tickers.add(ticker)
+            return None
+        return df
+    except Exception:
+        _invalid_tickers.add(ticker)
+        return None
 
 
 def _calc_stock_metrics(df, ticker) -> dict | None:
-    """DataFrameから各種指標を計算"""
     try:
         if df is None or len(df) < 2: return None
         cl = df["Close"].dropna()
-        if len(cl) < 2 or (cl <= 0).any(): return None
-        if (cl.pct_change().abs().dropna() > 49).any(): return None
+        if len(cl) < 2: return None
+        # 株式分割後の異常値チェック（auto_adjust=Trueなら不要だが念のため）
+        daily_chg = cl.pct_change().abs().dropna()
+        if (daily_chg > 0.99).any():  # 99%超は異常とみなす
+            return None
         pct = (cl.iloc[-1] / cl.iloc[0] - 1) * 100
-        if abs(pct) > 500: return None
+        if abs(pct) > 1000: return None  # 1000%超は異常
         half = max(len(df) // 2, 1)
         vol = df["Volume"].dropna()
         rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
@@ -204,12 +202,8 @@ def _calc_stock_metrics(df, ticker) -> dict | None:
 
 
 def _fetch_single_full(ticker, period):
-    try:
-        df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True)
-        if df is None or len(df) < 2: return None
-        df.index = df.index.tz_localize(None)
-        return _calc_stock_metrics(df, ticker)
-    except: return None
+    df = _fetch_history_safe(ticker, period)
+    return _calc_stock_metrics(df, ticker) if df is not None else None
 
 
 def _fetch_single(ticker, period):
@@ -218,15 +212,12 @@ def _fetch_single(ticker, period):
 
 
 def _fetch_daily_series(ticker, period):
+    df = _fetch_history_safe(ticker, period)
+    if df is None: return None
     try:
-        df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True)
-        if df is None or len(df) < 2: return None
-        df.index = df.index.tz_localize(None)
-        cl = df["Close"]
-        if (cl <= 0).any() or cl.isna().any(): return None
-        if (cl.pct_change().abs().dropna() > 49).any(): return None
+        cl = df["Close"].dropna()
         cum = (cl / cl.iloc[0] - 1) * 100
-        if cum.abs().max() > 500: return None
+        if cum.abs().max() > 1000: return None
         return cum
     except: return None
 
@@ -235,27 +226,18 @@ def fetch_theme_results(themes, period):
     cache_key = f"themes_{period}"
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
 
-    # 全銘柄を一括取得
-    all_tickers = list({t for stocks in themes.values() for t in stocks.values()})
-    bulk_data = {}
-    # バッチサイズ100で分割
-    batch_size = 100
-    for i in range(0, len(all_tickers), batch_size):
-        batch = all_tickers[i:i+batch_size]
-        bulk_data.update(_bulk_download(batch, period))
-
     results = []
     for theme_name, stocks in themes.items():
         pcts, vols, tvs, vol_chgs = [], [], [], []
-        for name, ticker in stocks.items():
-            df = bulk_data.get(ticker)
-            if df is not None:
-                d = _calc_stock_metrics(df, ticker)
-            else:
-                d = _fetch_single_full(ticker, period)
-            if d:
-                pcts.append(d["pct"]); vols.append(d["volume"])
-                tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
+        valid_stocks = {n: t for n, t in stocks.items() if _is_valid_ticker(t)}
+        with ThreadPoolExecutor(max_workers=12) as ex:
+            futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
+                    for name, ticker in valid_stocks.items()}
+            for fut in as_completed(futs):
+                d = fut.result()
+                if d:
+                    pcts.append(d["pct"]); vols.append(d["volume"])
+                    tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
 
         avg_pct = _robust_avg(pcts)
         results.append({
@@ -275,21 +257,20 @@ def fetch_segment_detail(seg_name, period):
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
 
     stocks = MARKET_SEGMENTS.get(seg_name, {})
-    tickers = list(stocks.values())
-    bulk = _bulk_download(tickers, period)
-
     stock_results = []
-    for name, ticker in stocks.items():
-        df = bulk.get(ticker)
-        d = _calc_stock_metrics(df, ticker) if df is not None else _fetch_single_full(ticker, period)
-        if d:
-            stock_results.append({"name": name, "ticker": ticker, **d})
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
+                for name, ticker in stocks.items() if _is_valid_ticker(ticker)}
+        for fut in as_completed(futs):
+            name, ticker = futs[fut]
+            d = fut.result()
+            if d:
+                stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
     for s in stock_results:
         s["contribution"] = round(s["pct"] / total_abs * 100, 1)
-
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
     for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
@@ -305,21 +286,20 @@ def fetch_theme_detail(themes, theme_name, period):
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
 
     stocks = themes.get(theme_name, {})
-    tickers = list(stocks.values())
-    bulk = _bulk_download(tickers, period)
-
     stock_results = []
-    for name, ticker in stocks.items():
-        df = bulk.get(ticker)
-        d = _calc_stock_metrics(df, ticker) if df is not None else _fetch_single_full(ticker, period)
-        if d:
-            stock_results.append({"name": name, "ticker": ticker, **d})
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
+                for name, ticker in stocks.items() if _is_valid_ticker(ticker)}
+        for fut in as_completed(futs):
+            name, ticker = futs[fut]
+            d = fut.result()
+            if d:
+                stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
     for s in stock_results:
         s["contribution"] = round(s["pct"] / total_abs * 100, 1)
-
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
     for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
@@ -336,9 +316,12 @@ def fetch_market_segments(period):
     result = {}
     for seg_name, stocks in MARKET_SEGMENTS.items():
         pcts = []
-        for ticker in stocks.values():
-            v = _fetch_single(ticker, period)
-            if v is not None: pcts.append(v)
+        with ThreadPoolExecutor(max_workers=12) as ex:
+            futs = {ex.submit(_fetch_single, ticker, period): ticker
+                    for ticker in stocks.values() if _is_valid_ticker(ticker)}
+            for fut in as_completed(futs):
+                v = fut.result()
+                if v is not None: pcts.append(v)
         result[seg_name] = {"avg": _robust_avg(pcts), "count": len(stocks)}
     _cache[cache_key] = {"ts": time.time(), "data": result}
     return result
@@ -349,8 +332,9 @@ def fetch_theme_trend(themes, theme_name, period):
     if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
     stocks = themes.get(theme_name, {})
     series_list = []
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futs = {ex.submit(_fetch_daily_series, t, period): t for t in stocks.values()}
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        futs = {ex.submit(_fetch_daily_series, t, period): t
+                for t in stocks.values() if _is_valid_ticker(t)}
         for fut in as_completed(futs):
             s = fut.result()
             if s is not None: series_list.append(s)
@@ -399,6 +383,7 @@ def fetch_heatmap_data(themes):
     for theme_name, stocks in themes.items():
         tr = {pl: [] for pl in periods}
         for ticker in stocks.values():
+            if not _is_valid_ticker(ticker): continue
             for pl, pc in periods.items():
                 v = _fetch_single(ticker, pc)
                 if v is not None: tr[pl].append(v)
@@ -418,10 +403,10 @@ def fetch_monthly_heatmap(themes):
     for theme_name, stocks in themes.items():
         accum = {m: [] for m in months}
         for ticker in stocks.values():
+            if not _is_valid_ticker(ticker): continue
+            df = _fetch_history_safe(ticker, "2y")
+            if df is None: continue
             try:
-                df = yf.Ticker(ticker).history(period="2y", interval="1d", auto_adjust=True)
-                if df is None or len(df) < 2: continue
-                df.index = df.index.tz_localize(None)
                 for m_label in months:
                     yr, mo = int(m_label[:4]), int(m_label[5:])
                     mdf = df[(df.index.year==yr)&(df.index.month==mo)]
