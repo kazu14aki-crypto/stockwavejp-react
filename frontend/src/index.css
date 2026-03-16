@@ -21,18 +21,18 @@
   --header:  52px;
 }
 
-/* ── ネイビー ── */
+/* ── ネイビー（高級感・暗い紺色・やや暗い黄色文字）── */
 [data-theme="navy"] {
-  --bg:      #0d1b2e;
-  --bg2:     #142236;
-  --bg3:     #1a2d45;
-  --border:  rgba(100,160,255,0.12);
-  --text:    #dce8f8;
-  --text2:   #7aa0c8;
-  --text3:   #3d6090;
-  --red:     #ff6b7a;
-  --green:   #3ecf82;
-  --accent:  #60b0ff;
+  --bg:      #050c18;
+  --bg2:     #081428;
+  --bg3:     #0d1c36;
+  --border:  rgba(180,160,80,0.15);
+  --text:    #c8b86a;
+  --text2:   #a09050;
+  --text3:   #605830;
+  --red:     #e06060;
+  --green:   #40b878;
+  --accent:  #c8b050;
   --logo-red:#e63030;
   --font:    'DM Sans', 'Noto Sans JP', sans-serif;
   --mono:    'DM Mono', monospace;
@@ -41,15 +41,15 @@
   --header:  52px;
 }
 
-/* ── ホワイト（ライト）── */
+/* ── ホワイト（ライト・文字をやや暗いグレー）── */
 [data-theme="light"] {
-  --bg:      #f0f2f8;
+  --bg:      #f4f6fa;
   --bg2:     #ffffff;
-  --bg3:     #e8ebf4;
-  --border:  rgba(30,60,120,0.12);
-  --text:    #1a2040;
-  --text2:   #3a4870;
-  --text3:   #6878a8;
+  --bg3:     #eaecf4;
+  --border:  rgba(30,50,100,0.1);
+  --text:    #1e2030;
+  --text2:   #3a4060;
+  --text3:   #6878a0;
   --red:     #c0392b;
   --green:   #1a7a50;
   --accent:  #1a5fc8;
@@ -62,7 +62,6 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -76,13 +75,11 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-/* スクロールバー */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text3); }
 
-/* アニメーション */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -95,10 +92,6 @@ body {
   0%, 100% { opacity: 0.3; transform: scale(0.8); }
   50%       { opacity: 1;   transform: scale(1.2); }
 }
-
-/* ユーティリティ */
-.fade-up { animation: fadeUp 0.4s cubic-bezier(0.22,1,0.36,1) both; }
-.fade-in { animation: fadeIn 0.3s ease both; }
 
 /* テーブルの銘柄名固定（スマホ対応） */
 .sticky-table {
