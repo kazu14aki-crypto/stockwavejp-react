@@ -17,7 +17,7 @@ import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
 
 const PAGES = [
-  { icon:'🏠', label:'トップ',           component:TopPage     },
+  { icon:'🏠', label:'ホーム',           component:TopPage     },
   { icon:'📊', label:'テーマ一覧',        component:ThemeList   },
   { icon:'📡', label:'騰落モメンタム',     component:Momentum    },
   { icon:'💹', label:'資金フロー',         component:FundFlow    },
@@ -38,7 +38,7 @@ const ALL_PAGES = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('トップ')
+  const [currentPage, setCurrentPage] = useState('ホーム')
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(false)
@@ -91,11 +91,11 @@ export default function App() {
   const PageComponent  = currentPageObj?.component
 
   const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
-  const handleLogoClick  = () => { setCurrentPage('トップ'); setSidebarOpen(false) }
+  const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
     if (currentPage === '設定') return { viewMode, onViewModeChange: setViewMode, colorTheme, onColorThemeChange: setColorTheme }
-    if (currentPage === 'トップ') return { onNavigate: handlePageChange }
+    if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
     return {}
   })()
 

@@ -9,7 +9,7 @@ import time
 import threading
 
 _cache: dict = {}
-_CACHE_TTL = 3600
+_CACHE_TTL = 7200  # 2時間に延長
 _invalid_tickers: set = set()  # 無効銘柄キャッシュ
 
 MACRO_TICKERS = {
@@ -443,3 +443,17 @@ def warmup_cache(themes):
             print(f"Warmup error: {e}")
     thread = threading.Thread(target=_warmup, daemon=True)
     thread.start()
+
+
+def warmup_cache_extended(themes):
+    """起動時に複数期間のキャッシュを先読み（高速化）"""
+    def _warmup():
+        print("Extended cache warmup started...")
+        for period in ["1mo", "5d", "3mo"]:
+            try:
+                fetch_theme_results(themes, period)
+                print(f"Warmup done: {period}")
+            except Exception as e:
+                print(f"Warmup error ({period}): {e}")
+        print("Extended cache warmup complete.")
+    threading.Thread(target=_warmup, daemon=True).start()

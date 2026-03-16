@@ -8,7 +8,7 @@ from data import (
     fetch_theme_results, fetch_theme_trend, fetch_momentum_data,
     fetch_heatmap_data, fetch_monthly_heatmap, fetch_macro_data,
     fetch_market_segments, fetch_segment_detail, fetch_theme_detail,
-    MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache,
+    MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache, warmup_cache_extended,
 )
 
 app = FastAPI(title="StockWaveJP API", version="2.0.0")
@@ -16,7 +16,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 
 @app.on_event("startup")
 async def startup_event():
-    warmup_cache(DEFAULT_THEMES)
+    warmup_cache_extended(DEFAULT_THEMES)
 
 @app.get("/")
 def root():
