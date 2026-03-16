@@ -215,7 +215,7 @@ export default function MarketRank() {
 
                 {/* 構成銘柄テーブル（銘柄名左固定） */}
                 <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
-                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400' }}>← 横にスワイプで詳細確認</span>
+                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                 </div>
                 <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
                   <StockTable stocks={stocks}/>
