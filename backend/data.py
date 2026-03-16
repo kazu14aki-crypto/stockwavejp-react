@@ -1,5 +1,9 @@
 """
-data.py — 高速化版（上場廃止除外・株式分割対応・一括取得）
+data.py — 完全最適化版
+- 全銘柄を一度だけ取得（重複排除）
+- 2年分データを一括取得して各期間を切り出し
+- ファイルキャッシュ（再起動後も即時返答）
+- 並列処理最適化
 """
 import yfinance as yf
 import numpy as np
@@ -7,16 +11,25 @@ import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import threading
+import os
+import json
+import hashlib
 
-_cache: dict = {}
-_CACHE_TTL = 7200  # 2時間に延長
+# ── キャッシュ設定 ──
+_mem_cache: dict = {}          # メモリキャッシュ
+_CACHE_TTL   = 7200            # 2時間
+_FILE_CACHE_DIR = "/tmp/swjp_cache"  # ファイルキャッシュ場所
+os.makedirs(_FILE_CACHE_DIR, exist_ok=True)
+
 _invalid_tickers: set = set()  # 無効銘柄キャッシュ
 
+# ── マクロ指標 ──
 MACRO_TICKERS = {
     "日経平均": "^N225", "TOPIX": "^TOPX", "S&P500": "^GSPC",
     "ドル円": "JPY=X", "ナスダック": "^IXIC", "VIX": "^VIX",
 }
 
+# ── 市場セグメント ──
 MARKET_SEGMENTS = {
     "日経225｜技術・電気機器": {
         "日立製作所":"6501.T","三菱電機":"6503.T","富士電機":"6504.T","安川電機":"6506.T",
@@ -110,7 +123,7 @@ MARKET_SEGMENTS = {
     "スタンダード市場（注目銘柄）": {
         "東京製鐵":"5423.T","大和工業":"5444.T","三井E&S":"7003.T",
         "トーセイ":"8923.T","ビックカメラ":"3048.T","DCMホールディングス":"3050.T",
-        "大塚家具":"8186.T","テレビ東京HD":"9413.T","松竹":"9601.T",
+        "テレビ東京HD":"9413.T","松竹":"9601.T",
     },
     "グロース市場（注目銘柄）": {
         "さくらインターネット":"3778.T","メルカリ":"4385.T",
@@ -127,11 +140,67 @@ SEGMENT_GROUPS = {
 }
 
 
-def _is_cache_valid(key):
-    return key in _cache and time.time() - _cache[key]["ts"] < _CACHE_TTL
+# ── キャッシュユーティリティ ──
+
+def _cache_key_hash(key: str) -> str:
+    return hashlib.md5(key.encode()).hexdigest()
+
+def _file_cache_path(key: str) -> str:
+    return os.path.join(_FILE_CACHE_DIR, _cache_key_hash(key) + ".json")
+
+def _load_file_cache(key: str):
+    """ファイルキャッシュから読み込み"""
+    path = _file_cache_path(key)
+    try:
+        if not os.path.exists(path):
+            return None
+        mtime = os.path.getmtime(path)
+        if time.time() - mtime > _CACHE_TTL:
+            return None
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+def _save_file_cache(key: str, data):
+    """ファイルキャッシュに保存"""
+    path = _file_cache_path(key)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False)
+    except Exception:
+        pass
+
+def _is_cache_valid(key: str) -> bool:
+    if key in _mem_cache:
+        if time.time() - _mem_cache[key]["ts"] < _CACHE_TTL:
+            return True
+    return False
+
+def _get_cache(key: str):
+    """メモリ→ファイルの順で取得"""
+    if _is_cache_valid(key):
+        return _mem_cache[key]["data"]
+    file_data = _load_file_cache(key)
+    if file_data is not None:
+        _mem_cache[key] = {"ts": time.time(), "data": file_data}
+        return file_data
+    return None
+
+def _set_cache(key: str, data):
+    """メモリとファイルの両方に保存"""
+    _mem_cache[key] = {"ts": time.time(), "data": data}
+    _save_file_cache(key, data)
 
 
-def _robust_avg(pcts):
+# ── 共有データストア（全銘柄を一度だけ取得）──
+
+_all_ticker_data: dict = {}      # ticker -> DataFrame（2年分）
+_all_ticker_lock  = threading.Lock()
+_ticker_fetch_done: set = set()
+
+
+def _robust_avg(pcts: list) -> float:
     if not pcts: return 0.0
     if len(pcts) <= 3: return round(float(np.mean(pcts)), 2)
     arr = np.array(pcts)
@@ -141,29 +210,22 @@ def _robust_avg(pcts):
     return round(float(f.mean() if len(f) > 0 else np.median(arr)), 2)
 
 
-def _is_valid_ticker(ticker: str) -> bool:
-    """銘柄が有効かチェック（キャッシュ付き）"""
+def _fetch_ticker_2y(ticker: str) -> pd.DataFrame | None:
+    """2年分データを一括取得（auto_adjust=Trueで分割調整済み）"""
     if ticker in _invalid_tickers:
-        return False
-    return True
-
-
-def _fetch_history_safe(ticker: str, period: str):
-    """安全なデータ取得（auto_adjust=Trueで株式分割・併合を自動調整）"""
-    if not _is_valid_ticker(ticker):
         return None
     try:
         df = yf.Ticker(ticker).history(
-            period=period, interval="1d",
-            auto_adjust=True,   # 株式分割・配当を自動調整
-            repair=True,        # データ異常を自動修復
+            period="2y", interval="1d",
+            auto_adjust=True, repair=True,
+            timeout=12,
         )
-        if df is None or len(df) < 2:
+        if df is None or len(df) < 5:
             _invalid_tickers.add(ticker)
             return None
         df.index = df.index.tz_localize(None)
         cl = df["Close"].dropna()
-        if len(cl) < 2 or (cl <= 0).any():
+        if (cl <= 0).any():
             _invalid_tickers.add(ticker)
             return None
         return df
@@ -172,25 +234,46 @@ def _fetch_history_safe(ticker: str, period: str):
         return None
 
 
-def _calc_stock_metrics(df, ticker) -> dict | None:
+def _get_period_df(df: pd.DataFrame, period: str) -> pd.DataFrame | None:
+    """2年分DataFrameから指定期間を切り出す"""
+    if df is None or len(df) < 2:
+        return None
+    now = pd.Timestamp.now()
+    period_map = {
+        "5d":  now - pd.Timedelta(days=7),
+        "1mo": now - pd.DateOffset(months=1),
+        "3mo": now - pd.DateOffset(months=3),
+        "6mo": now - pd.DateOffset(months=6),
+        "1y":  now - pd.DateOffset(years=1),
+        "2y":  now - pd.DateOffset(years=2),
+    }
+    cutoff = period_map.get(period, now - pd.DateOffset(months=1))
+    result = df[df.index >= cutoff]
+    return result if len(result) >= 2 else None
+
+
+def _calc_metrics_from_df(df: pd.DataFrame) -> dict | None:
+    """DataFrameから各種指標を計算"""
     try:
-        if df is None or len(df) < 2: return None
+        if df is None or len(df) < 2:
+            return None
         cl = df["Close"].dropna()
-        if len(cl) < 2: return None
-        # 株式分割後の異常値チェック（auto_adjust=Trueなら不要だが念のため）
+        if len(cl) < 2:
+            return None
         daily_chg = cl.pct_change().abs().dropna()
-        if (daily_chg > 0.99).any():  # 99%超は異常とみなす
+        if (daily_chg > 0.99).any():
             return None
         pct = (cl.iloc[-1] / cl.iloc[0] - 1) * 100
-        if abs(pct) > 1000: return None  # 1000%超は異常
+        if abs(pct) > 1000:
+            return None
         half = max(len(df) // 2, 1)
-        vol = df["Volume"].dropna()
-        rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
-        pv = float(vol.head(half).mean()) if len(vol) > 0 else 0
-        last_price = float(cl.iloc[-1])
+        vol  = df["Volume"].dropna()
+        rv   = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+        pv   = float(vol.head(half).mean()) if len(vol) > 0 else 0
+        last_price  = float(cl.iloc[-1])
         trade_value = rv * last_price
-        vol_chg = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
-        day_chg = round((cl.iloc[-1] - cl.iloc[-2]) / cl.iloc[-2] * 100, 2) if len(cl) >= 2 else None
+        vol_chg     = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
+        day_chg     = round((cl.iloc[-1] - cl.iloc[-2]) / cl.iloc[-2] * 100, 2) if len(cl) >= 2 else None
         return {
             "pct": round(float(pct), 2),
             "volume": int(rv), "volume_chg": vol_chg,
@@ -198,46 +281,96 @@ def _calc_stock_metrics(df, ticker) -> dict | None:
             "price": round(last_price, 0),
             "day_chg": day_chg,
         }
-    except: return None
+    except Exception:
+        return None
 
 
-def _fetch_single_full(ticker, period):
-    df = _fetch_history_safe(ticker, period)
-    return _calc_stock_metrics(df, ticker) if df is not None else None
+def _ensure_ticker_loaded(ticker: str):
+    """指定銘柄のデータがなければ取得"""
+    with _all_ticker_lock:
+        if ticker in _ticker_fetch_done:
+            return
+    df = _fetch_ticker_2y(ticker)
+    with _all_ticker_lock:
+        if df is not None:
+            _all_ticker_data[ticker] = df
+        _ticker_fetch_done.add(ticker)
 
 
-def _fetch_single(ticker, period):
-    d = _fetch_single_full(ticker, period)
-    return d["pct"] if d else None
+def _preload_all_tickers(all_tickers: list):
+    """全ユニーク銘柄を並列一括取得（重複排除済み）"""
+    unique = [t for t in set(all_tickers) if t not in _ticker_fetch_done]
+    if not unique:
+        return
+    print(f"Preloading {len(unique)} unique tickers...")
+    with ThreadPoolExecutor(max_workers=16) as ex:
+        futs = {ex.submit(_fetch_ticker_2y, t): t for t in unique}
+        for fut in as_completed(futs):
+            ticker = futs[fut]
+            df = fut.result()
+            with _all_ticker_lock:
+                if df is not None:
+                    _all_ticker_data[ticker] = df
+                _ticker_fetch_done.add(ticker)
+    print(f"Preload complete. Valid: {len(_all_ticker_data)}, Invalid: {len(_invalid_tickers)}")
 
 
-def _fetch_daily_series(ticker, period):
-    df = _fetch_history_safe(ticker, period)
-    if df is None: return None
+def _get_ticker_metrics(ticker: str, period: str) -> dict | None:
+    """キャッシュ済みDataFrameから指標を計算"""
+    with _all_ticker_lock:
+        df = _all_ticker_data.get(ticker)
+    if df is None:
+        # まだ取得されていなければ即時取得
+        _ensure_ticker_loaded(ticker)
+        with _all_ticker_lock:
+            df = _all_ticker_data.get(ticker)
+    if df is None:
+        return None
+    period_df = _get_period_df(df, period)
+    return _calc_metrics_from_df(period_df)
+
+
+def _get_ticker_series(ticker: str, period: str) -> pd.Series | None:
+    """累積騰落率の時系列を返す"""
+    with _all_ticker_lock:
+        df = _all_ticker_data.get(ticker)
+    if df is None:
+        _ensure_ticker_loaded(ticker)
+        with _all_ticker_lock:
+            df = _all_ticker_data.get(ticker)
+    if df is None:
+        return None
     try:
-        cl = df["Close"].dropna()
+        period_df = _get_period_df(df, period)
+        if period_df is None:
+            return None
+        cl  = period_df["Close"].dropna()
         cum = (cl / cl.iloc[0] - 1) * 100
-        if cum.abs().max() > 1000: return None
+        if cum.abs().max() > 1000:
+            return None
         return cum
-    except: return None
+    except Exception:
+        return None
 
 
-def fetch_theme_results(themes, period):
+# ── メイン API 関数 ──
+
+def fetch_theme_results(themes: dict, period: str) -> list[dict]:
     cache_key = f"themes_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
 
     results = []
     for theme_name, stocks in themes.items():
         pcts, vols, tvs, vol_chgs = [], [], [], []
-        valid_stocks = {n: t for n, t in stocks.items() if _is_valid_ticker(t)}
-        with ThreadPoolExecutor(max_workers=12) as ex:
-            futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
-                    for name, ticker in valid_stocks.items()}
-            for fut in as_completed(futs):
-                d = fut.result()
-                if d:
-                    pcts.append(d["pct"]); vols.append(d["volume"])
-                    tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
+        for name, ticker in stocks.items():
+            if ticker in _invalid_tickers:
+                continue
+            d = _get_ticker_metrics(ticker, period)
+            if d:
+                pcts.append(d["pct"]); vols.append(d["volume"])
+                tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
 
         avg_pct = _robust_avg(pcts)
         results.append({
@@ -248,118 +381,136 @@ def fetch_theme_results(themes, period):
         })
 
     results.sort(key=lambda x: x["pct"], reverse=True)
-    _cache[cache_key] = {"ts": time.time(), "data": results}
+    _set_cache(cache_key, results)
     return results
 
 
-def fetch_segment_detail(seg_name, period):
+def fetch_segment_detail(seg_name: str, period: str) -> dict:
     cache_key = f"seg_detail_{seg_name}_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
 
     stocks = MARKET_SEGMENTS.get(seg_name, {})
     stock_results = []
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
-                for name, ticker in stocks.items() if _is_valid_ticker(ticker)}
-        for fut in as_completed(futs):
-            name, ticker = futs[fut]
-            d = fut.result()
-            if d:
-                stock_results.append({"name": name, "ticker": ticker, **d})
+    for name, ticker in stocks.items():
+        if ticker in _invalid_tickers:
+            continue
+        d = _get_ticker_metrics(ticker, period)
+        if d:
+            stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
     for s in stock_results:
         s["contribution"] = round(s["pct"] / total_abs * 100, 1)
+
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
-    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
-    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r+1
+    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r + 1
+    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r + 1
 
     result = {"avg": _robust_avg([s["pct"] for s in stock_results]), "stocks": stock_results}
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_theme_detail(themes, theme_name, period):
+def fetch_theme_detail(themes: dict, theme_name: str, period: str) -> dict:
     cache_key = f"theme_detail_{theme_name}_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
 
     stocks = themes.get(theme_name, {})
     stock_results = []
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        futs = {ex.submit(_fetch_single_full, ticker, period): (name, ticker)
-                for name, ticker in stocks.items() if _is_valid_ticker(ticker)}
-        for fut in as_completed(futs):
-            name, ticker = futs[fut]
-            d = fut.result()
-            if d:
-                stock_results.append({"name": name, "ticker": ticker, **d})
+    for name, ticker in stocks.items():
+        if ticker in _invalid_tickers:
+            continue
+        d = _get_ticker_metrics(ticker, period)
+        if d:
+            stock_results.append({"name": name, "ticker": ticker, **d})
 
     stock_results.sort(key=lambda x: x["pct"], reverse=True)
     total_abs = sum(abs(s["pct"]) for s in stock_results) or 1
     for s in stock_results:
         s["contribution"] = round(s["pct"] / total_abs * 100, 1)
+
     vol_sorted = sorted(enumerate(stock_results), key=lambda x: x[1]["volume"], reverse=True)
     tv_sorted  = sorted(enumerate(stock_results), key=lambda x: x[1]["trade_value"], reverse=True)
-    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r+1
-    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r+1
+    for r, (i, _) in enumerate(vol_sorted): stock_results[i]["vol_rank"] = r + 1
+    for r, (i, _) in enumerate(tv_sorted):  stock_results[i]["tv_rank"]  = r + 1
 
     result = {"theme": theme_name, "avg": _robust_avg([s["pct"] for s in stock_results]), "stocks": stock_results}
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_market_segments(period):
+def fetch_market_segments(period: str) -> dict:
     cache_key = f"market_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
+
     result = {}
     for seg_name, stocks in MARKET_SEGMENTS.items():
         pcts = []
-        with ThreadPoolExecutor(max_workers=12) as ex:
-            futs = {ex.submit(_fetch_single, ticker, period): ticker
-                    for ticker in stocks.values() if _is_valid_ticker(ticker)}
-            for fut in as_completed(futs):
-                v = fut.result()
-                if v is not None: pcts.append(v)
+        for ticker in stocks.values():
+            if ticker in _invalid_tickers:
+                continue
+            d = _get_ticker_metrics(ticker, period)
+            if d:
+                pcts.append(d["pct"])
         result[seg_name] = {"avg": _robust_avg(pcts), "count": len(stocks)}
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_theme_trend(themes, theme_name, period):
+def fetch_theme_trend(themes: dict, theme_name: str, period: str) -> list[dict]:
     cache_key = f"trend_{theme_name}_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
+
     stocks = themes.get(theme_name, {})
     series_list = []
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        futs = {ex.submit(_fetch_daily_series, t, period): t
-                for t in stocks.values() if _is_valid_ticker(t)}
-        for fut in as_completed(futs):
-            s = fut.result()
-            if s is not None: series_list.append(s)
-    if not series_list: return []
+    for ticker in stocks.values():
+        if ticker in _invalid_tickers:
+            continue
+        s = _get_ticker_series(ticker, period)
+        if s is not None:
+            series_list.append(s)
+
+    if not series_list:
+        return []
+
     combined = pd.concat(series_list, axis=1).sort_index().ffill()
+
     def _robust_row(row):
         v = row.dropna()
         if len(v) == 0: return np.nan
         if len(v) <= 3: return v.mean()
         q1, q3 = v.quantile(0.25), v.quantile(0.75)
         iqr = q3 - q1
-        f = v[(v >= q1-3*iqr) & (v <= q3+3*iqr)]
+        f = v[(v >= q1 - 3*iqr) & (v <= q3 + 3*iqr)]
         return f.mean() if len(f) > 0 else v.median()
+
     avg_series = combined.apply(_robust_row, axis=1).round(2)
     result = [{"date": str(d.date()), "pct": float(v)} for d, v in avg_series.items()]
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_momentum_data(themes, period):
+def fetch_momentum_data(themes: dict, period: str) -> list[dict]:
     cache_key = f"momentum_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
+
     now_map = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, period)}
     w1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "5d")}
     m1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "1mo")}
+
     result = []
     for theme_name, cur in now_map.items():
         dw = round(cur - w1_map.get(theme_name, cur), 2)
@@ -370,90 +521,133 @@ def fetch_momentum_data(themes, period):
         elif dw < -2:              state = "↘転換↓"
         else:                      state = "→横ばい"
         result.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm, "state": state})
+
     result.sort(key=lambda x: x["pct"], reverse=True)
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_heatmap_data(themes):
+def fetch_heatmap_data(themes: dict) -> dict:
     cache_key = "heatmap"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
+
     periods = {"1W": "5d", "1M": "1mo", "3M": "3mo", "6M": "6mo", "1Y": "1y"}
     result = {}
     for theme_name, stocks in themes.items():
         tr = {pl: [] for pl in periods}
         for ticker in stocks.values():
-            if not _is_valid_ticker(ticker): continue
+            if ticker in _invalid_tickers:
+                continue
             for pl, pc in periods.items():
-                v = _fetch_single(ticker, pc)
-                if v is not None: tr[pl].append(v)
-        result[theme_name] = {pl: round(sum(v)/len(v),2) if v else None for pl, v in tr.items()}
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+                d = _get_ticker_metrics(ticker, pc)
+                if d:
+                    tr[pl].append(d["pct"])
+        result[theme_name] = {
+            pl: round(sum(v) / len(v), 2) if v else None
+            for pl, v in tr.items()
+        }
+
+    _set_cache(cache_key, result)
     return result
 
 
-def fetch_monthly_heatmap(themes):
+def fetch_monthly_heatmap(themes: dict):
     cache_key = "monthly_heatmap"
-    if _is_cache_valid(cache_key):
-        d = _cache[cache_key]["data"]
-        return d["heatmap"], d["months"]
-    today = pd.Timestamp.now()
-    months = [(today - pd.DateOffset(months=i)).strftime("%Y/%m") for i in range(11,-1,-1)]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached["heatmap"], cached["months"]
+
+    today  = pd.Timestamp.now()
+    months = [(today - pd.DateOffset(months=i)).strftime("%Y/%m") for i in range(11, -1, -1)]
     monthly_data = {}
+
     for theme_name, stocks in themes.items():
         accum = {m: [] for m in months}
         for ticker in stocks.values():
-            if not _is_valid_ticker(ticker): continue
-            df = _fetch_history_safe(ticker, "2y")
-            if df is None: continue
+            if ticker in _invalid_tickers:
+                continue
+            with _all_ticker_lock:
+                df = _all_ticker_data.get(ticker)
+            if df is None:
+                continue
             try:
                 for m_label in months:
                     yr, mo = int(m_label[:4]), int(m_label[5:])
-                    mdf = df[(df.index.year==yr)&(df.index.month==mo)]
-                    if len(mdf) < 2: continue
+                    mdf = df[(df.index.year == yr) & (df.index.month == mo)]
+                    if len(mdf) < 2:
+                        continue
                     s, e = mdf["Close"].iloc[0], mdf["Close"].iloc[-1]
-                    if s > 0: accum[m_label].append(round((e-s)/s*100,2))
-            except: pass
-        monthly_data[theme_name] = {m: round(sum(v)/len(v),2) if v else None for m, v in accum.items()}
-    _cache[cache_key] = {"ts": time.time(), "data": {"heatmap": monthly_data, "months": months}}
+                    if s > 0:
+                        accum[m_label].append(round((e - s) / s * 100, 2))
+            except Exception:
+                pass
+        monthly_data[theme_name] = {
+            m: round(sum(v) / len(v), 2) if v else None
+            for m, v in accum.items()
+        }
+
+    data = {"heatmap": monthly_data, "months": months}
+    _set_cache(cache_key, data)
     return monthly_data, months
 
 
-def fetch_macro_data(period):
+def fetch_macro_data(period: str) -> dict:
     cache_key = f"macro_{period}"
-    if _is_cache_valid(cache_key): return _cache[cache_key]["data"]
+    cached = _get_cache(cache_key)
+    if cached:
+        return cached
+
     result = {}
     for name, ticker in MACRO_TICKERS.items():
-        series = _fetch_daily_series(ticker, period)
-        if series is not None:
-            result[name] = [{"date": str(d.date()), "pct": float(v)} for d, v in series.items()]
-    _cache[cache_key] = {"ts": time.time(), "data": result}
+        s = _get_ticker_series(ticker, period)
+        if s is not None:
+            result[name] = [{"date": str(d.date()), "pct": float(v)} for d, v in s.items()]
+
+    _set_cache(cache_key, result)
     return result
 
 
-def warmup_cache(themes):
-    """起動時にバックグラウンドでキャッシュを事前生成"""
-    def _warmup():
-        print("Warming up cache...")
-        try:
-            fetch_theme_results(themes, "1mo")
-            fetch_theme_results(themes, "5d")
-            print("Cache warmup complete.")
-        except Exception as e:
-            print(f"Warmup error: {e}")
-    thread = threading.Thread(target=_warmup, daemon=True)
-    thread.start()
+def _collect_all_tickers(themes: dict) -> list:
+    """全テーマ＋セグメント＋マクロのユニークティッカー一覧"""
+    tickers = set()
+    for stocks in themes.values():
+        tickers.update(stocks.values())
+    for stocks in MARKET_SEGMENTS.values():
+        tickers.update(stocks.values())
+    tickers.update(MACRO_TICKERS.values())
+    return list(tickers)
 
 
-def warmup_cache_extended(themes):
-    """起動時に複数期間のキャッシュを先読み（高速化）"""
+def warmup_cache_extended(themes: dict):
+    """起動時に全ユニーク銘柄を一括先読みし、主要キャッシュを生成"""
     def _warmup():
-        print("Extended cache warmup started...")
+        print("=== Cache warmup started ===")
+        all_tickers = _collect_all_tickers(themes)
+        print(f"Total unique tickers: {len(all_tickers)}")
+
+        # 全銘柄を並列一括取得
+        _preload_all_tickers(all_tickers)
+
+        # 主要キャッシュを生成
         for period in ["1mo", "5d", "3mo"]:
             try:
                 fetch_theme_results(themes, period)
-                print(f"Warmup done: {period}")
+                print(f"Theme results cached: {period}")
             except Exception as e:
                 print(f"Warmup error ({period}): {e}")
-        print("Extended cache warmup complete.")
+
+        try:
+            fetch_macro_data("1mo")
+            print("Macro data cached")
+        except Exception as e:
+            print(f"Macro warmup error: {e}")
+
+        print("=== Cache warmup complete ===")
+
     threading.Thread(target=_warmup, daemon=True).start()
+
+
+# warmup_cache は後方互換のためエイリアスを残す
+warmup_cache = warmup_cache_extended
