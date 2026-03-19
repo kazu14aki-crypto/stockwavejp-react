@@ -72,119 +72,66 @@ function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
   )
 }
 
-// ── Chart.jsを使った縦棒グラフ ──
+// ── Rechartsを使った縦棒グラフ（安定・軽量）──
+
 function BarChart({ items, valueKey = 'pct', formatFn, colorFn, height = 320, title }) {
-  const canvasRef = useRef(null)
-  const chartRef  = useRef(null)
+  if (!items || !items.length) return null
 
-  useEffect(() => {
-    if (!items || !items.length || !canvasRef.current) return
+  const data = items.map(t => ({
+    name:  t.theme || t.name || '',
+    value: t[valueKey] || 0,
+    color: colorFn(t[valueKey] || 0),
+  }))
 
-    // Chart.jsを動的import
-    import('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js')
-      .then(() => {
-        const Chart = window.Chart
-        if (!Chart) return
+  const vals   = data.map(d => d.value)
+  const maxAbs = Math.max(...vals.map(Math.abs), 0.01)
 
-        // 既存チャートを破棄
-        if (chartRef.current) {
-          chartRef.current.destroy()
-          chartRef.current = null
-        }
-
-        const vals   = items.map(t => t[valueKey] || 0)
-        const colors = vals.map(v => colorFn(v))
-        const borderColors = colors.map(c => c + 'ff')
-
-        const ctx = canvasRef.current.getContext('2d')
-
-        chartRef.current = new Chart(ctx, {
-          type: 'bar',
-          data: {
-            labels: items.map(t => t.theme || t.name || ''),
-            datasets: [{
-              data: vals,
-              backgroundColor: colors.map(c => c + 'cc'),
-              borderColor: borderColors,
-              borderWidth: 1,
-              borderRadius: 4,
-              borderSkipped: false,
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            animation: { duration: 400 },
-            plugins: {
-              legend: { display: false },
-              tooltip: {
-                backgroundColor: 'rgba(20,24,32,0.95)',
-                borderColor: 'rgba(255,255,255,0.1)',
-                borderWidth: 1,
-                titleColor: '#e8eaf0',
-                bodyColor: '#9aa0b4',
-                padding: 10,
-                callbacks: {
-                  label: (ctx) => {
-                    const v = ctx.parsed.y
-                    return formatFn
-                      ? ` ${formatLarge(v)}`
-                      : ` ${v >= 0 ? '+' : ''}${v.toFixed(2)}%`
-                  }
-                }
-              },
-              datalabels: { display: false },
-            },
-            scales: {
-              x: {
-                grid: { color: 'rgba(255,255,255,0.04)' },
-                ticks: {
-                  color: 'rgba(180,190,210,0.8)',
-                  font: { size: 10, family: "'Noto Sans JP', sans-serif" },
-                  maxRotation: 45,
-                  minRotation: 30,
-                },
-                border: { color: 'rgba(255,255,255,0.1)' },
-              },
-              y: {
-                grid: { color: 'rgba(255,255,255,0.06)', drawBorder: false },
-                ticks: {
-                  color: 'rgba(150,160,180,0.8)',
-                  font: { size: 10, family: "'DM Mono', monospace" },
-                  callback: (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`,
-                },
-                border: { color: 'transparent' },
-              },
-            },
-          }
-        })
-      })
-      .catch(() => {
-        // CDN読み込み失敗時はフォールバック表示
-      })
-
-    return () => {
-      if (chartRef.current) {
-        chartRef.current.destroy()
-        chartRef.current = null
-      }
-    }
-  }, [items, valueKey])
+  const tickFmt = (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`
+  const tipFmt  = (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(2)}%`
 
   return (
     <div style={{
       background: 'var(--bg2)', border: '1px solid var(--border)',
       borderRadius: 'var(--radius)', padding: '16px',
-      position: 'relative',
     }}>
       {title && (
         <div style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text3)', marginBottom: '12px', letterSpacing: '0.06em' }}>
           {title}
         </div>
       )}
-      <div style={{ height: `${height}px`, position: 'relative' }}>
-        <canvas ref={canvasRef} />
-      </div>
+      <ResponsiveContainer width="100%" height={height}>
+        <RechartBar data={data} margin={{ top: 20, right: 10, left: 10, bottom: 80 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" vertical={false} />
+          <XAxis
+            dataKey="name"
+            tick={{ fill: 'rgba(160,170,190,0.85)', fontSize: 10, fontFamily: 'Noto Sans JP' }}
+            angle={-40} textAnchor="end" interval={0}
+            tickLine={false} axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+          />
+          <YAxis
+            tickFormatter={tickFmt}
+            tick={{ fill: 'rgba(140,150,170,0.8)', fontSize: 10, fontFamily: 'DM Mono' }}
+            tickLine={false} axisLine={false}
+            domain={formatFn ? ['auto', 'auto'] : [-maxAbs * 1.15, maxAbs * 1.15]}
+          />
+          <Tooltip
+            cursor={{ fill: 'rgba(255,255,255,0.04)' }}
+            contentStyle={{
+              background: 'rgba(18,22,30,0.97)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              borderRadius: '8px', fontSize: '12px',
+              color: '#e8eaf0',
+            }}
+            formatter={(v) => [tipFmt(v), '']}
+          />
+          <ReferenceLine y={0} stroke="rgba(255,255,255,0.2)" strokeWidth={1} />
+          <Bar dataKey="value" radius={[3, 3, 0, 0]} maxBarSize={40}>
+            {data.map((entry, i) => (
+              <Cell key={i} fill={entry.color} fillOpacity={0.88} />
+            ))}
+          </Bar>
+        </RechartBar>
+      </ResponsiveContainer>
     </div>
   )
 }
