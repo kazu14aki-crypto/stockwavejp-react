@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useStaleData } from '../../hooks/useStaleData'
+import RefreshIndicator from '../RefreshIndicator'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -115,18 +117,19 @@ export default function MarketRank() {
   const [activeGroup, setActiveGroup] = useState('日経225')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
-  const [loadingS,    setLoadingS]    = useState(true)
   const [loadingD,    setLoadingD]    = useState(false)
 
+  const { data: marketData, loading: loadingS, refreshing: refreshingS, lastUpdate, refresh } = useStaleData(
+    `${API}/api/market-rank?period=${period}`,
+    `market_${period}`,
+    null
+  )
   useEffect(()=>{
-    setLoadingS(true)
-    fetch(`${API}/api/market-rank?period=${period}`)
-      .then(r=>r.json()).then(d=>{
-        setSummary(d.data); setGroups(d.groups||{})
-        const firstSeg = d.groups?.['日経225']?.[0]
-        if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
-      }).catch(()=>{}).finally(()=>setLoadingS(false))
-  },[period])
+    if (!marketData) return
+    setSummary(marketData.data); setGroups(marketData.groups||{})
+    const firstSeg = marketData.groups?.['日経225']?.[0]
+    if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
+  },[marketData])
 
   useEffect(()=>{
     if (!activeSeg) return

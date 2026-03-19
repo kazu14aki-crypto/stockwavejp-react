@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useStaleData } from '../../hooks/useStaleData'
+import RefreshIndicator from '../RefreshIndicator'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -54,26 +56,12 @@ function Loading() {
 }
 
 export default function FundFlow() {
-  const [period,  setPeriod]  = useState('1mo')
-  const [data,    setData]    = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error,   setError]   = useState(null)
-
-  useEffect(() => {
-    const fetch_ = async () => {
-      setLoading(true); setError(null)
-      try {
-        const res  = await fetch(`${API}/api/fund-flow?period=${period}`)
-        const json = await res.json()
-        setData(json)
-      } catch {
-        setError('データ取得に失敗しました')
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetch_()
-  }, [period])
+  const [period, setPeriod] = useState('1mo')
+  const { data, loading, refreshing, error, refresh, lastUpdate } = useStaleData(
+    `${API}/api/fund-flow?period=${period}`,
+    `fundflow_${period}`,
+    null
+  )
 
   const allItems = data?.all ?? []
   const maxAbs   = allItems.length ? Math.max(...allItems.map(t => Math.abs(t.pct))) : 1

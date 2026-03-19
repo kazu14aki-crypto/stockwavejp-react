@@ -1,0 +1,305 @@
+"""
+fetch_data.py — GitHub Actionsで実行するデータ取得スクリプト
+yfinanceから全テーマデータを取得してJSONに保存する
+"""
+import yfinance as yf
+import numpy as np
+import pandas as pd
+import json
+import os
+import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
+import pytz
+
+THEMES = {
+    "半導体": {
+        "東京エレクトロン":"8035.T","アドバンテスト":"6857.T","ルネサス":"6723.T",
+        "ディスコ":"6146.T","SUMCO":"3436.T","レーザーテック":"6920.T",
+        "ソシオネクスト":"6526.T","フェローテック":"6890.T","東京精密":"7729.T",
+    },
+    "AI・クラウド": {
+        "富士通":"6702.T","NEC":"6701.T","さくらインターネット":"3778.T",
+        "日立製作所":"6501.T","オービック":"4684.T","野村総合研究所":"4307.T",
+        "SCSK":"9719.T","TIS":"3626.T",
+    },
+    "EV・電気自動車": {
+        "トヨタ":"7203.T","パナソニック":"6752.T","デンソー":"6902.T",
+        "日産自動車":"7201.T","本田技研工業":"7267.T","村田製作所":"6981.T",
+        "TDK":"6762.T","マツダ":"7261.T",
+    },
+    "ゲーム・エンタメ": {
+        "任天堂":"7974.T","ソニー":"6758.T","カプコン":"9697.T",
+        "バンダイナムコ":"7832.T","コナミ":"9766.T","セガサミー":"6460.T",
+        "コーエーテクモ":"3635.T",
+    },
+    "銀行・金融": {
+        "三菱UFJ":"8306.T","三井住友":"8316.T","みずほ":"8411.T",
+        "りそな":"8308.T","野村HD":"8604.T","大和証券グループ":"8601.T",
+    },
+    "地方銀行": {
+        "コンコルディア":"7186.T","ふくおかFG":"8354.T",
+        "山口FG":"8418.T","東邦銀行":"8346.T",
+    },
+    "保険": {
+        "東京海上HD":"8766.T","MS&AD":"8725.T","第一生命":"8750.T",
+        "SOMPOホールディングス":"8630.T","T&Dホールディングス":"8795.T",
+    },
+    "不動産": {
+        "三井不動産":"8801.T","住友不動産":"8830.T",
+        "三菱地所":"8802.T","野村不動産HD":"3231.T","大東建託":"1878.T",
+    },
+    "医薬品・バイオ": {
+        "武田薬品":"4502.T","アステラス製薬":"4503.T","第一三共":"4568.T",
+        "中外製薬":"4519.T","エーザイ":"4523.T","塩野義製薬":"4507.T",
+    },
+    "ヘルスケア・介護": {
+        "シスメックス":"6869.T","テルモ":"4543.T","HOYA":"7741.T",
+        "オリンパス":"7733.T","エムスリー":"2413.T",
+    },
+    "食品・飲料": {
+        "味の素":"2802.T","キリンHD":"2503.T","アサヒグループHD":"2502.T",
+        "日清食品HD":"2897.T","サントリー食品":"2587.T","明治HD":"2269.T",
+    },
+    "小売・EC": {
+        "ファーストリテイリング":"9983.T","イオン":"8267.T",
+        "セブン&アイHD":"3382.T","ニトリHD":"9843.T","ZOZO":"3092.T",
+    },
+    "通信": {
+        "NTT":"9432.T","KDDI":"9433.T","ソフトバンク":"9434.T",
+        "楽天グループ":"4755.T",
+    },
+    "鉄鋼・素材": {
+        "日本製鉄":"5401.T","JFEホールディングス":"5411.T",
+        "神戸製鋼所":"5406.T","住友金属鉱山":"5713.T",
+    },
+    "化学": {
+        "信越化学工業":"4063.T","住友化学":"4005.T","旭化成":"3407.T",
+        "三菱ケミカルG":"4188.T","花王":"4452.T","富士フイルムHD":"4901.T",
+    },
+    "建設・インフラ": {
+        "大林組":"1802.T","清水建設":"1803.T","鹿島建設":"1812.T",
+        "大成建設":"1801.T","大和ハウス工業":"1925.T",
+    },
+    "輸送・物流": {
+        "日本郵船":"9101.T","商船三井":"9104.T","川崎汽船":"9107.T",
+        "ヤマトHD":"9064.T","SGホールディングス":"9143.T",
+    },
+    "防衛・航空宇宙": {
+        "三菱重工業":"7011.T","川崎重工業":"7012.T","IHI":"7013.T",
+        "三菱電機":"6503.T","NEC":"6701.T",
+    },
+    "フィンテック": {
+        "SBIホールディングス":"8473.T","マネーフォワード":"3994.T",
+        "freee":"4478.T","Sansan":"4443.T",
+    },
+    "再生可能エネルギー": {
+        "レノバ":"9519.T","Jパワー":"9513.T",
+        "三菱商事":"8058.T","伊藤忠商事":"8001.T",
+    },
+    "ロボット・自動化": {
+        "ファナック":"6954.T","安川電機":"6506.T","キーエンス":"6861.T",
+        "オムロン":"6645.T","THK":"6481.T","ダイフク":"6383.T",
+    },
+    "レアアース・資源": {
+        "住友金属鉱山":"5713.T","三菱マテリアル":"5711.T","東邦亜鉛":"5707.T",
+    },
+    "サイバーセキュリティ": {
+        "FFRIセキュリティ":"3692.T","NTTデータ":"9613.T",
+        "サイバーセキュリティクラウド":"4493.T",
+    },
+    "ドローン": {
+        "ACSL":"6232.T","テラドローン":"5245.T",
+    },
+    "造船": {
+        "三井E&S":"7003.T","名村造船所":"7014.T",
+    },
+    "観光・ホテル・レジャー": {
+        "オリエンタルランド":"4661.T","JAL":"9201.T","ANA":"9202.T","東急":"9005.T",
+    },
+    "農業・フードテック": {
+        "クボタ":"6326.T","住友化学":"4005.T","カゴメ":"2811.T",
+    },
+    "教育・HR・人材": {
+        "リクルートHD":"6098.T","エン・ジャパン":"4849.T","ベネッセHD":"9783.T",
+    },
+    "脱炭素・ESG": {
+        "トヨタ自動車":"7203.T","ENEOS HD":"5020.T",
+        "東京電力HD":"9501.T","関西電力":"9503.T",
+    },
+    "宇宙・衛星": {
+        "三菱電機":"6503.T","NEC":"6701.T","IHI":"7013.T",
+    },
+}
+
+MACRO_TICKERS = {
+    "日経平均":"^N225","TOPIX":"^TOPX","S&P500":"^GSPC",
+    "ドル円":"JPY=X","ナスダック":"^IXIC","VIX":"^VIX",
+}
+
+PERIODS = ["5d", "1mo", "3mo", "6mo", "1y"]
+
+
+def robust_avg(pcts):
+    if not pcts: return 0.0
+    if len(pcts) <= 3: return round(float(np.mean(pcts)), 2)
+    arr = np.array(pcts)
+    q1, q3 = np.percentile(arr, 25), np.percentile(arr, 75)
+    iqr = q3 - q1
+    f = arr[(arr >= q1 - 3*iqr) & (arr <= q3 + 3*iqr)]
+    return round(float(f.mean() if len(f) > 0 else np.median(arr)), 2)
+
+
+def fetch_ticker(ticker):
+    try:
+        df = yf.Ticker(ticker).history(
+            period="2y", interval="1d",
+            auto_adjust=True, repair=True, timeout=15
+        )
+        if df is None or len(df) < 5: return None
+        df.index = df.index.tz_localize(None)
+        return df
+    except Exception as e:
+        print(f"  WARN: {ticker} → {e}", file=sys.stderr)
+        return None
+
+
+def get_period_df(df, period):
+    if df is None: return None
+    now = pd.Timestamp.now()
+    delta = {
+        "5d": pd.Timedelta(days=7), "1mo": pd.DateOffset(months=1),
+        "3mo": pd.DateOffset(months=3), "6mo": pd.DateOffset(months=6),
+        "1y": pd.DateOffset(years=1),
+    }
+    cutoff = now - delta.get(period, pd.DateOffset(months=1))
+    result = df[df.index >= cutoff]
+    return result if len(result) >= 2 else None
+
+
+def calc_metrics(df):
+    try:
+        if df is None or len(df) < 2: return None
+        cl = df["Close"].dropna()
+        if len(cl) < 2 or (cl <= 0).any(): return None
+        pct = (cl.iloc[-1] / cl.iloc[0] - 1) * 100
+        if abs(pct) > 1000: return None
+        half = max(len(df) // 2, 1)
+        vol  = df["Volume"].dropna()
+        rv   = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+        pv   = float(vol.head(half).mean()) if len(vol) > 0 else 0
+        last_price = float(cl.iloc[-1])
+        vol_chg    = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
+        day_chg    = round((cl.iloc[-1] - cl.iloc[-2]) / cl.iloc[-2] * 100, 2) if len(cl) >= 2 else None
+        return {
+            "pct": round(float(pct), 2), "volume": int(rv),
+            "volume_chg": vol_chg, "trade_value": int(rv * last_price),
+            "price": round(last_price, 0), "day_chg": day_chg,
+        }
+    except: return None
+
+
+def main():
+    jst     = pytz.timezone("Asia/Tokyo")
+    now_jst = datetime.now(jst)
+    print(f"=== 開始: {now_jst.strftime('%Y/%m/%d %H:%M JST')} ===")
+
+    # 全ユニークティッカーを並列取得
+    all_tickers = set()
+    for stocks in THEMES.values():
+        all_tickers.update(stocks.values())
+    all_tickers.update(MACRO_TICKERS.values())
+    all_tickers = list(all_tickers)
+    print(f"取得対象: {len(all_tickers)} ティッカー")
+
+    ticker_data = {}
+    with ThreadPoolExecutor(max_workers=20) as ex:
+        futs = {ex.submit(fetch_ticker, t): t for t in all_tickers}
+        done = 0
+        for fut in as_completed(futs):
+            t  = futs[fut]
+            df = fut.result()
+            if df is not None:
+                ticker_data[t] = df
+            done += 1
+            if done % 20 == 0:
+                print(f"  進捗: {done}/{len(all_tickers)}")
+
+    print(f"取得成功: {len(ticker_data)}/{len(all_tickers)}")
+
+    output = {}
+
+    # テーマ集計（全期間）
+    for period in PERIODS:
+        print(f"集計: {period}")
+        results = []
+        for theme_name, stocks in THEMES.items():
+            pcts, vols, tvs, vol_chgs = [], [], [], []
+            for name, ticker in stocks.items():
+                df  = ticker_data.get(ticker)
+                pdf = get_period_df(df, period)
+                d   = calc_metrics(pdf)
+                if d:
+                    pcts.append(d["pct"]); vols.append(d["volume"])
+                    tvs.append(d["trade_value"]); vol_chgs.append(d["volume_chg"])
+            avg_pct = robust_avg(pcts)
+            results.append({
+                "theme": theme_name, "pct": avg_pct, "up": avg_pct >= 0,
+                "stock_count": len(stocks), "volume": int(sum(vols)),
+                "volume_chg": round(float(np.mean(vol_chgs)) if vol_chgs else 0, 1),
+                "trade_value": int(sum(tvs)),
+            })
+        results.sort(key=lambda x: x["pct"], reverse=True)
+        rise = sum(1 for r in results if r["up"])
+        fall = len(results) - rise
+        avg  = round(sum(r["pct"] for r in results) / len(results), 2) if results else 0
+        output[f"themes_{period}"] = {
+            "period": period, "themes": results,
+            "summary": {
+                "total": len(results), "rise": rise, "fall": fall, "avg": avg,
+                "top": results[0] if results else None,
+                "bot": results[-1] if results else None,
+            },
+            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+        }
+
+    # マクロデータ
+    for period in ["1mo", "1y"]:
+        macro_result = {}
+        for name, ticker in MACRO_TICKERS.items():
+            df  = ticker_data.get(ticker)
+            pdf = get_period_df(df, period)
+            if pdf is None or len(pdf) < 2: continue
+            cl  = pdf["Close"].dropna()
+            cum = (cl / cl.iloc[0] - 1) * 100
+            macro_result[name] = [
+                {"date": str(d.date()), "pct": round(float(v), 2)}
+                for d, v in cum.items()
+            ]
+        output[f"macro_{period}"] = {
+            "period": period, "data": macro_result,
+            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+        }
+
+    # 市場ステータス
+    h, m    = now_jst.hour, now_jst.minute
+    is_open = now_jst.weekday() < 5 and (
+        (h == 9 and m >= 0) or (10 <= h <= 14) or (h == 15 and m == 0)
+    )
+    output["status"] = {
+        "time": now_jst.strftime("%H:%M JST"), "date": now_jst.strftime("%Y/%m/%d"),
+        "is_open": is_open, "label": "open" if is_open else "closed",
+        "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+    }
+
+    # 保存
+    os.makedirs("frontend/public/data", exist_ok=True)
+    out_path = "frontend/public/data/market.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, separators=(",", ":"))
+    size = os.path.getsize(out_path) / 1024
+    print(f"=== 完了: {out_path} ({size:.1f} KB) ===")
+
+
+if __name__ == "__main__":
+    main()

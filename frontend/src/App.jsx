@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useStatus } from './hooks/useMarketData'
 import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
@@ -42,7 +43,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(false)
-  const [status,      setStatus]      = useState({ time:'--:--', is_open:false, label:'...' })
+  const status = useStatus()
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
@@ -63,29 +64,6 @@ export default function App() {
     return () => window.removeEventListener('resize', check)
   }, [viewMode])
 
-  useEffect(() => {
-    const fetchStatus = async () => {
-      try {
-        const apiBase = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
-        const res  = await fetch(apiBase + '/api/status')
-        const data = await res.json()
-        setStatus({
-          ...data,
-          label: data.is_open ? '市場オープン中' : '市場クローズ中',
-        })
-      } catch {
-        const now = new Date()
-        const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000)
-        setStatus({
-          time: `${String(jst.getHours()).padStart(2,'0')}:${String(jst.getMinutes()).padStart(2,'0')} JST`,
-          is_open: false, label: '接続エラー',
-        })
-      }
-    }
-    fetchStatus()
-    const id = setInterval(fetchStatus, 30000)
-    return () => clearInterval(id)
-  }, [])
 
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component

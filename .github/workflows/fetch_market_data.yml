@@ -1,0 +1,58 @@
+name: Fetch Market Data
+
+on:
+  schedule:
+    # JST 9:35（前場寄り付き後）= UTC 0:35
+    - cron: '35 0 * * 1-5'
+    # JST 12:05（前場引け後）= UTC 3:05
+    - cron: '5 3 * * 1-5'
+    # JST 15:35（後場引け後）= UTC 6:35
+    - cron: '35 6 * * 1-5'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # リポジトリへのpushに必要
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch market data
+        run: python scripts/fetch_data.py
+
+      - name: Check if data changed
+        id: check
+        run: |
+          if git diff --quiet frontend/public/data/market.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push data
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/market.json
+          git commit -m "chore: update market data $(date +'%Y/%m/%d %H:%M JST' -d '+9 hours')"
+          git push

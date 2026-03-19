@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { useThemes, useMacro } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -77,24 +78,10 @@ function SHead({ title }) {
 }
 
 export default function TopPage() {
-  const [themes,  setThemes]  = useState(null)
-  const [macro,   setMacro]   = useState({})
-  const [loading, setLoading] = useState(true)
-
-  useEffect(()=>{
-    ;(async()=>{
-      setLoading(true)
-      try {
-        const [tRes,mRes] = await Promise.all([
-          fetch(`${API}/api/themes?period=1mo`),
-          fetch(`${API}/api/macro?period=1mo`),
-        ])
-        setThemes(await tRes.json())
-        setMacro((await mRes.json()).data || {})
-      } catch {}
-      setLoading(false)
-    })()
-  },[])
+  const { data: themes,  loading: loadingT } = useThemes('1mo')
+  const { data: macroRaw, loading: loadingM } = useMacro('1mo')
+  const macro   = macroRaw?.data || {}
+  const loading = loadingT || loadingM
 
   const s = themes?.summary
 
