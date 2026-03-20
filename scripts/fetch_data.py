@@ -156,11 +156,14 @@ def fetch_ticker(ticker):
             period="2y", interval="1d",
             auto_adjust=True, repair=True, timeout=15
         )
-        if df is None or len(df) < 5: return None
+        if df is None or len(df) < 5:
+            print(f"  EMPTY: {ticker} → rows={len(df) if df is not None else 0}")
+            return None
         df.index = df.index.tz_localize(None)
+        print(f"  OK: {ticker} → {len(df)} rows, last={df.index[-1].date()}")
         return df
     except Exception as e:
-        print(f"  WARN: {ticker} → {e}", file=sys.stderr)
+        print(f"  ERROR: {ticker} → {type(e).__name__}: {e}")
         return None
 
 
@@ -203,6 +206,15 @@ def main():
     jst     = pytz.timezone("Asia/Tokyo")
     now_jst = datetime.now(jst)
     print(f"=== 開始: {now_jst.strftime('%Y/%m/%d %H:%M JST')} ===")
+    print(f"yfinance version: {yf.__version__}")
+
+    # テスト取得（トヨタ1銘柄で接続確認）
+    print("接続テスト中（トヨタ 7203.T）...")
+    test_df = yf.Ticker("7203.T").history(period="5d", interval="1d", auto_adjust=True)
+    if test_df is not None and len(test_df) > 0:
+        print(f"接続テスト成功: {len(test_df)}行取得")
+    else:
+        print("接続テスト失敗: データなし")
 
     # 全ユニークティッカーを並列取得
     all_tickers = set()
