@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useHeatmap, useMonthlyHeatmap } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = ['1W', '1M', '3M', '6M', '1Y']

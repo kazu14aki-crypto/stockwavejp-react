@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useMarketData } from '../../hooks/useMarketData'
 import { useStaleData } from '../../hooks/useStaleData'
 import RefreshIndicator from '../RefreshIndicator'
 

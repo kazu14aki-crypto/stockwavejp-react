@@ -199,3 +199,171 @@ export function useStatus() {
 
   return status
 }
+
+
+/**
+ * useTrends — 騰落推移データ（Renderフォールバック付き）
+ */
+export function useTrends(themes, period) {
+  const cacheKey = `trends_${themes}_${period}`
+  const [data,       setData]       = useState(() => readCache(cacheKey))
+  const [loading,    setLoading]    = useState(!readCache(cacheKey))
+  const [refreshing, setRefreshing] = useState(false)
+
+  useEffect(() => {
+    if (!themes) return
+    const cached = readCache(cacheKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    setRefreshing(true)
+    fetch(`${API}/api/trends?themes=${encodeURIComponent(themes)}&period=${period}`)
+      .then(r => r.json())
+      .then(json => { setData(json); writeCache(cacheKey, json) })
+      .catch(() => {})
+      .finally(() => { setLoading(false); setRefreshing(false) })
+  }, [themes, period])
+
+  return { data, loading, refreshing }
+}
+
+
+/**
+ * useThemeNames — テーマ名一覧（market.json優先）
+ */
+export function useThemeNames() {
+  const cacheKey = 'theme_names'
+  const [names, setNames] = useState(() => {
+    const cached = readCache(cacheKey)
+    // market.jsonのtheme_namesかthemes_1moから取得
+    if (cached?.themes) return cached.themes
+    return []
+  })
+
+  useEffect(() => {
+    fetchMarketJson()
+      .then(json => {
+        // market.jsonにtheme_namesがあればそれを使う
+        const fromNames  = json['theme_names']?.themes || []
+        const fromThemes = json['themes_1mo']?.themes?.map(t => t.theme) || []
+        const themes = fromNames.length > 0 ? fromNames : fromThemes
+        if (themes.length > 0) {
+          setNames(themes)
+          writeCache(cacheKey, { themes })
+        }
+      })
+      .catch(() => {
+        fetch(`${API}/api/theme-names`)
+          .then(r => r.json())
+          .then(d => { setNames(d.themes || []); writeCache(cacheKey, d) })
+          .catch(() => {})
+      })
+  }, [])
+
+  return names
+}
+
+
+/**
+ * useHeatmap — ヒートマップデータ（market.json優先）
+ */
+export function useHeatmap() {
+  const cacheKey = 'heatmap'
+  const [data,    setData]    = useState(() => readCache(cacheKey))
+  const [loading, setLoading] = useState(!readCache(cacheKey))
+
+  useEffect(() => {
+    const cached = readCache(cacheKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    fetchMarketJson()
+      .then(json => {
+        if (json.heatmap) {
+          setData(json.heatmap)
+          writeCache(cacheKey, json.heatmap)
+          setLoading(false)
+          return
+        }
+        throw new Error('no heatmap in market.json')
+      })
+      .catch(() => {
+        fetch(`${API}/api/heatmap`)
+          .then(r => r.json())
+          .then(json => { setData(json); writeCache(cacheKey, json) })
+          .catch(() => {})
+          .finally(() => setLoading(false))
+      })
+  }, [])
+
+  return { data, loading }
+}
+
+
+/**
+ * useMonthlyHeatmap — 月別ヒートマップ（キャッシュ付き）
+ */
+export function useMonthlyHeatmap() {
+  const cacheKey = 'monthly_heatmap'
+  const [data,    setData]    = useState(() => readCache(cacheKey))
+  const [loading, setLoading] = useState(!readCache(cacheKey))
+
+  useEffect(() => {
+    const cached = readCache(cacheKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    fetch(`${API}/api/heatmap/monthly`)
+      .then(r => r.json())
+      .then(json => { setData(json); writeCache(cacheKey, json) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [])
+
+  return { data, loading }
+}
+
+
+/**
+ * useSegmentDetail — 市場別詳細（キャッシュ付き）
+ */
+export function useSegmentDetail(segName, period) {
+  const cacheKey = `seg_${segName}_${period}`
+  const [data,    setData]    = useState(() => readCache(cacheKey))
+  const [loading, setLoading] = useState(!readCache(cacheKey))
+
+  useEffect(() => {
+    if (!segName) return
+    const cached = readCache(cacheKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
+      .then(r => r.json())
+      .then(json => { setData(json); writeCache(cacheKey, json) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [segName, period])
+
+  return { data, loading }
+}
+
+
+/**
+ * useThemeDetail — テーマ別詳細（キャッシュ付き）
+ */
+export function useThemeDetail(themeName, period) {
+  const cacheKey = `theme_detail_${themeName}_${period}`
+  const [data,    setData]    = useState(() => readCache(cacheKey))
+  const [loading, setLoading] = useState(!readCache(cacheKey))
+
+  useEffect(() => {
+    if (!themeName) return
+    const cached = readCache(cacheKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    fetch(`${API}/api/theme-detail/${encodeURIComponent(themeName)}?period=${period}`)
+      .then(r => r.json())
+      .then(json => { setData(json); writeCache(cacheKey, json) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [themeName, period])
+
+  return { data, loading }
+}

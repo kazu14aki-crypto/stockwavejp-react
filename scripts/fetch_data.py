@@ -293,6 +293,28 @@ def main():
             "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
         }
 
+    # ヒートマップデータ
+    print("集計: heatmap")
+    heatmap_result = {}
+    periods_map = {"1W": "5d", "1M": "1mo", "3M": "3mo", "6M": "6mo", "1Y": "1y"}
+    for theme_name, stocks in THEMES.items():
+        tr = {pl: [] for pl in periods_map}
+        for ticker in stocks.values():
+            df = ticker_data.get(ticker)
+            if df is None: continue
+            for pl, pc in periods_map.items():
+                pdf = get_period_df(df, pc)
+                d   = calc_metrics(pdf)
+                if d: tr[pl].append(d["pct"])
+        heatmap_result[theme_name] = {
+            pl: round(sum(v)/len(v), 2) if v else None
+            for pl, v in tr.items()
+        }
+    output["heatmap"] = {"data": heatmap_result, "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST")}
+
+    # テーマ名一覧
+    output["theme_names"] = {"themes": list(THEMES.keys()), "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST")}
+
     # 市場ステータス
     h, m    = now_jst.hour, now_jst.minute
     is_open = now_jst.weekday() < 5 and (
