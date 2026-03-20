@@ -1,4 +1,8 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
+import {
+  BarChart as RechartBar, Bar, XAxis, YAxis,
+  CartesianGrid, Tooltip, ResponsiveContainer, Cell, ReferenceLine
+} from 'recharts'
 import { useThemes } from '../../hooks/useMarketData'
 import RefreshIndicator from '../RefreshIndicator'
 
