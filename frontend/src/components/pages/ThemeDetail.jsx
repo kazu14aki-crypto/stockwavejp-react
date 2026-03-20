@@ -113,7 +113,15 @@ export default function ThemeDetail() {
   const [loading,     setLoading]     = useState(false)
 
   useEffect(()=>{
-    fetch(`${API}/api/theme-names`).then(r=>r.json()).then(d=>{
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(json => {
+        const names = json['theme_names']?.themes || json['themes_1mo']?.themes?.map(t => t.theme) || []
+        if (names.length > 0) return { themes: names }
+        throw new Error('no names')
+      })
+      .catch(() => fetch(`${API}/api/theme-names`).then(r=>r.json()))
+      .then(d=>{
       setThemeNames(d.themes)
       if (d.themes.length) setSelTheme(d.themes[0])
     }).catch(()=>{})

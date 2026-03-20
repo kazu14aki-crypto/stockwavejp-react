@@ -170,7 +170,15 @@ export default function Trend() {
 
   // テーマ名一覧取得
   useEffect(() => {
-    fetch(`${API}/api/theme-names`)
+    // market.jsonからテーマ名を取得（GitHub Actions）
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(json => {
+        const names = json['theme_names']?.themes || json['themes_1mo']?.themes?.map(t => t.theme) || []
+        if (names.length > 0) { setThemeNames(names); return }
+        throw new Error('no names')
+      })
+      .catch(() => fetch(`${API}/api/theme-names`)
       .then(r => r.json())
       .then(d => setThemeNames(d.themes))
       .catch(() => {})
