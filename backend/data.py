@@ -111,7 +111,7 @@ MARKET_SEGMENTS = {
         "イオン":"8267.T","ニトリHD":"9843.T","大和証券G":"8601.T","りそなHD":"8308.T",
         "バンダイナムコHD":"7832.T","キヤノン":"7751.T","JAL":"9201.T","ANA HD":"9202.T",
     },
-    "プライム市場（主要銘柄）": {
+    "プライム市場": {
         "トヨタ自動車":"7203.T","ソニーグループ":"6758.T","三菱UFJ FG":"8306.T",
         "キーエンス":"6861.T","東京エレクトロン":"8035.T","ファーストリテイリング":"9983.T",
         "信越化学工業":"4063.T","リクルートHD":"6098.T","三菱商事":"8058.T",
@@ -120,12 +120,12 @@ MARKET_SEGMENTS = {
         "中外製薬":"4519.T","東京海上HD":"8766.T","村田製作所":"6981.T",
         "ファナック":"6954.T","三井物産":"8031.T",
     },
-    "スタンダード市場（注目銘柄）": {
+    "スタンダード市場（一部）": {
         "東京製鐵":"5423.T","大和工業":"5444.T","三井E&S":"7003.T",
         "トーセイ":"8923.T","ビックカメラ":"3048.T","DCMホールディングス":"3050.T",
         "テレビ東京HD":"9413.T","松竹":"9601.T",
     },
-    "グロース市場（注目銘柄）": {
+    "グロース市場（一部）": {
         "さくらインターネット":"3778.T","メルカリ":"4385.T",
         "Appier Group":"4180.T","弁護士ドットコム":"6027.T",
         "freee":"4478.T","マネーフォワード":"3994.T","BASE":"4477.T",
@@ -303,7 +303,7 @@ def _preload_all_tickers(all_tickers: list):
     if not unique:
         return
     print(f"Preloading {len(unique)} unique tickers...")
-    with ThreadPoolExecutor(max_workers=16) as ex:
+    with ThreadPoolExecutor(max_workers=4) as ex:
         futs = {ex.submit(_fetch_ticker_2y, t): t for t in unique}
         for fut in as_completed(futs):
             ticker = futs[fut]
@@ -621,29 +621,15 @@ def _collect_all_tickers(themes: dict) -> list:
 
 
 def warmup_cache_extended(themes: dict):
-    """起動時に全ユニーク銘柄を一括先読みし、主要キャッシュを生成"""
+    """起動時に軽量ウォームアップ（メモリ節約版）"""
     def _warmup():
-        print("=== Cache warmup started ===")
-        all_tickers = _collect_all_tickers(themes)
-        print(f"Total unique tickers: {len(all_tickers)}")
-
-        # 全銘柄を並列一括取得
-        _preload_all_tickers(all_tickers)
-
-        # 主要キャッシュを生成
-        for period in ["1mo", "5d", "3mo"]:
-            try:
-                fetch_theme_results(themes, period)
-                print(f"Theme results cached: {period}")
-            except Exception as e:
-                print(f"Warmup error ({period}): {e}")
-
+        print("=== Cache warmup started (lightweight) ===")
+        # 全銘柄先読みはやめて、1moのみオンデマンド取得
         try:
-            fetch_macro_data("1mo")
-            print("Macro data cached")
+            fetch_theme_results(themes, "1mo")
+            print("Theme results cached: 1mo")
         except Exception as e:
-            print(f"Macro warmup error: {e}")
-
+            print(f"Warmup error: {e}")
         print("=== Cache warmup complete ===")
 
     threading.Thread(target=_warmup, daemon=True).start()

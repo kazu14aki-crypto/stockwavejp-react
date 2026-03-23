@@ -39,42 +39,36 @@ export default function CustomTheme() {
     if (!q) return
     setSearching(true); setSearchError(''); setResults([])
 
-    // 数字4桁 → 日本株ティッカー（.T付与）
-    // アルファベット → 米国株そのまま
-    // それ以外 → 銘柄名検索
-    let tickersToTry = []
-    if (/^\d{4}$/.test(q)) {
-      tickersToTry = [q + '.T']
-    } else if (/^[A-Za-z\^=]+$/.test(q)) {
-      tickersToTry = [q.toUpperCase()]
-    } else {
-      // 銘柄名検索：バックエンドのsearch APIを呼ぶ
-      try {
+    // 数字4桁 → 日本株ティッカー（.T付与）して直接検索
+    // それ以外 → 銘柄名検索API（yfinance Search）
+    try {
+      if (/^\d{4}$/.test(q)) {
+        // 4桁証券コード → 直接取得
+        const ticker = q + '.T'
+        const res  = await fetch(`${API}/api/stock-info/${encodeURIComponent(ticker)}`)
+        const data = await res.json()
+        if (data.name && data.name !== ticker) {
+          setResults([{ ticker: data.ticker, name: data.name, price: data.price }])
+        } else {
+          setSearchError(`証券コード「${q}」の銘柄が見つかりませんでした`)
+        }
+      } else {
+        // 銘柄名検索
         const res  = await fetch(`${API}/api/stock-search?q=${encodeURIComponent(q)}`)
         const data = await res.json()
-        if (data.results && data.results.length > 0) {
+        // 日本株（.T）のみフィルタリング
+        const jpResults = (data.results || []).filter(r => r.ticker && r.ticker.endsWith('.T'))
+        if (jpResults.length > 0) {
+          setResults(jpResults)
+        } else if ((data.results || []).length > 0) {
+          // .Tがなくても結果がある場合は表示
           setResults(data.results)
         } else {
           setSearchError(`「${q}」に一致する銘柄が見つかりませんでした`)
         }
-      } catch {
-        setSearchError('検索に失敗しました')
-      }
-      setSearching(false)
-      return
-    }
-
-    // ティッカーで直接検索
-    try {
-      const res  = await fetch(`${API}/api/stock-info/${encodeURIComponent(tickersToTry[0])}`)
-      const data = await res.json()
-      if (data.name) {
-        setResults([{ ticker: data.ticker, name: data.name, price: data.price }])
-      } else {
-        setSearchError(`「${tickersToTry[0]}」の情報が取得できませんでした`)
       }
     } catch {
-      setSearchError('検索に失敗しました')
+      setSearchError('検索に失敗しました。しばらく待ってから再試行してください')
     }
     setSearching(false)
   }
@@ -186,7 +180,7 @@ export default function CustomTheme() {
           </button>
         </div>
         <div style={{ fontSize:'11px', color:'var(--text3)' }}>
-          日本株：4桁の証券コード（7203）または銘柄名（トヨタ）で検索 / 米国株：ティッカー（AAPL）
+          日本株：4桁の証券コード（7203）または銘柄名（トヨタ）で検索できます
         </div>
 
         {/* エラー */}

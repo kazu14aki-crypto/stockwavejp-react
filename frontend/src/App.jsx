@@ -4,11 +4,8 @@ import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
 import ThemeList   from './components/pages/ThemeList'
-import Momentum    from './components/pages/Momentum'
-import FundFlow    from './components/pages/FundFlow'
-import Trend       from './components/pages/Trend'
+import FlowMomentum from './components/pages/FlowMomentum'
 import Heatmap     from './components/pages/Heatmap'
-import Compare     from './components/pages/Compare'
 import MarketRank  from './components/pages/MarketRank'
 import ThemeDetail from './components/pages/ThemeDetail'
 import CustomTheme from './components/pages/CustomTheme'
@@ -18,18 +15,15 @@ import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
 
 const PAGES = [
-  { icon:'🏠', label:'ホーム',           component:TopPage     },
-  { icon:'📊', label:'テーマ一覧',        component:ThemeList   },
-  { icon:'📡', label:'騰落モメンタム',     component:Momentum    },
-  { icon:'💹', label:'資金フロー',         component:FundFlow    },
-  { icon:'📈', label:'騰落推移',           component:Trend       },
-  { icon:'🔥', label:'ヒートマップ',       component:Heatmap     },
-  { icon:'📊', label:'テーマ・マクロ比較', component:Compare     },
-  { icon:'📋', label:'市場別ランキング',   component:MarketRank  },
-  { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail },
+  { icon:'🏠', label:'ホーム',                   component:TopPage       },
+  { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
+  { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
+  { icon:'📋', label:'市場別ランキング',           component:MarketRank    },
+  { icon:'🔥', label:'ヒートマップ',               component:Heatmap       },
+  { icon:'💹', label:'資金フロー・騰落モメンタム', component:FlowMomentum  },
+  { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
-  { icon:'🎨', label:'カスタムテーマ', component:CustomTheme },
   { icon:'📣', label:'お知らせ',       component:News        },
   { icon:'📖', label:'使い方',         component:HowTo       },
   { icon:'⚙️', label:'設定',           component:Settings    },

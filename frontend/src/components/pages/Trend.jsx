@@ -66,11 +66,17 @@ function LineChart({ trends, selected }) {
   const step = Math.max(1, Math.floor(dates.length / 6))
   for (let i = 0; i < dates.length; i += step) xLabels.push({ i, date: dates[i] })
 
-  // Y軸ラベル（5点）
+  // Y軸ラベル（niceTicks）
+  const rawMax = Math.max(Math.abs(yMin), Math.abs(yMax))
+  const rawStep = (rawMax * 2) / 5
+  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
+  const candidates = [1, 2, 2.5, 5, 10]
+  const niceStep = mag * (candidates.find(c => c * mag >= rawStep) || 1)
+  const niceMax = Math.ceil(rawMax / niceStep) * niceStep
   const yLabels = []
-  for (let i = 0; i <= 4; i++) {
-    const v = yMin + (yMax - yMin) * (i / 4)
-    yLabels.push({ v, y: yScale(v) })
+  for (let v = -niceMax; v <= niceMax + niceStep * 0.01; v += niceStep) {
+    const rv = Math.round(v * 1000) / 1000
+    yLabels.push({ v: rv, y: yScale(rv) })
   }
 
   return (
@@ -84,7 +90,7 @@ function LineChart({ trends, selected }) {
           <g key={v}>
             <line x1={PL} y1={y} x2={W - PR} y2={y} stroke="rgba(74,120,200,0.08)" strokeWidth="1"/>
             <text x={PL - 6} y={y + 4} textAnchor="end" fill="var(--text3)" fontSize="10" fontFamily="DM Mono, monospace">
-              {v.toFixed(1)}%
+              {Number.isInteger(v) ? v + '%' : v.toFixed(1) + '%'}
             </text>
           </g>
         ))}
@@ -178,10 +184,12 @@ export default function Trend() {
         if (names.length > 0) { setThemeNames(names); return }
         throw new Error('no names')
       })
-      .catch(() => fetch(`${API}/api/theme-names`)
-      .then(r => r.json())
-      .then(d => setThemeNames(d.themes))
-      .catch(() => {})
+      .catch(() => {
+        fetch(`${API}/api/theme-names`)
+          .then(r => r.json())
+          .then(d => setThemeNames(d.themes || []))
+          .catch(() => {})
+      })
   }, [])
 
   // 全テーマの推移取得

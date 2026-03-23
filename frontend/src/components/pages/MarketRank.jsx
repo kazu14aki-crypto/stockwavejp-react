@@ -31,28 +31,33 @@ function Loading({ msg='データ取得中...' }) {
 
 function Top5Bar({ items, title, colorFn }) {
   if (!items||!items.length) return null
-  const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)),1)
-  const W=280, H=160, PL=8, PR=8, PT=24, PB=36
-  const bW = (W-PL-PR)/items.length-4
+  const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)), 0.01)
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'12px' }}>
-      <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block' }}>
-        {items.map((s,i)=>{
-          const h = Math.max(2, Math.round(Math.abs(s.pct)/maxAbs*(H-PT-PB)))
-          const x = PL+i*((W-PL-PR)/items.length)+2
-          const y = H-PB-h
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'10px 12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+        {items.map((s, i) => {
           const c = colorFn(s.pct)
+          const w = Math.abs(s.pct) / maxAbs * 100
           return (
-            <g key={s.ticker}>
-              <rect x={x} y={y} width={bW} height={h} rx="2" fill={c} opacity="0.85"/>
-              <text x={x+bW/2} y={y-4} textAnchor="middle" fill={c} fontSize="9" fontFamily="DM Mono">{s.pct>=0?'+':''}{s.pct.toFixed(1)}%</text>
-              <text x={x+bW/2} y={H-PB+14} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{s.name.length>4?s.name.slice(0,4)+'…':s.name}</text>
-            </g>
+            <div key={s.ticker} style={{
+              display:'grid', gridTemplateColumns:'90px 1fr 60px',
+              alignItems:'center', gap:'6px',
+            }}>
+              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden',
+                textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>
+                {s.name}
+              </span>
+              <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+                <div style={{ height:'100%', width:`${w}%`, background:c, borderRadius:'3px', opacity:0.85 }} />
+              </div>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, textAlign:'right', color:c, whiteSpace:'nowrap' }}>
+                {s.pct>=0?'+':''}{s.pct.toFixed(1)}%
+              </span>
+            </div>
           )
         })}
-        <line x1={PL} y1={H-PB} x2={W-PR} y2={H-PB} stroke="var(--border)" strokeWidth="1"/>
-      </svg>
+      </div>
     </div>
   )
 }

@@ -1,8 +1,4 @@
 import { useState } from 'react'
-import {
-  BarChart as RechartBar, Bar, XAxis, YAxis,
-  CartesianGrid, Tooltip, ResponsiveContainer, Cell, ReferenceLine
-} from 'recharts'
 import { useThemes } from '../../hooks/useMarketData'
 import RefreshIndicator from '../RefreshIndicator'
 
@@ -15,20 +11,11 @@ const PERIODS = [
   { label: '1年',   value: '1y'  },
 ]
 
-// ── フォーマット ──
 function formatLarge(n) {
   if (!n) return '0'
   if (n >= 1e12) return (n / 1e12).toFixed(1) + '兆'
-  if (n >= 1e8) {
-    const v = n / 1e8
-    return (v >= 100 ? Math.round(v) : v.toFixed(1)) + '億'
-  }
-  if (n >= 1e4) {
-    const v = n / 1e4
-    if (v >= 1000) return Math.round(v) + '万'
-    if (v >= 100)  return v.toFixed(0) + '万'
-    return v.toFixed(1) + '万'
-  }
+  if (n >= 1e8)  return (n / 1e8).toFixed(1) + '億'
+  if (n >= 1e4)  return (n / 1e4).toFixed(1) + '万'
   return n.toLocaleString()
 }
 
@@ -62,11 +49,7 @@ function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
       background: 'var(--bg2)', border: '1px solid var(--border)',
       borderRadius: 'var(--radius)', padding: '16px 18px',
       animation: `fadeUp 0.4s ease ${delay}s both`,
-      transition: 'border-color 0.2s, transform 0.15s',
-    }}
-      onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(91,156,246,0.3)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
-      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = 'translateY(0)' }}
-    >
+    }}>
       <div style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--text3)', textTransform: 'uppercase', marginBottom: '10px' }}>{label}</div>
       <div style={{ fontFamily: 'var(--mono)', fontSize: '22px', fontWeight: 700, lineHeight: 1, marginBottom: '6px', color: valueColor || 'var(--text)' }}>
         {value}
@@ -76,76 +59,81 @@ function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
   )
 }
 
-// ── Rechartsを使った縦棒グラフ（安定・軽量）──
-
-function BarChart({ items, valueKey = 'pct', formatFn, colorFn, height = 320, title }) {
+// ── 横棒グラフ（C案：テーマ名をY軸に水平表示）──
+function HBarChart({ items, valueKey = 'pct', formatFn, colorFn, title }) {
   if (!items || !items.length) return null
 
-  const data = items.map(t => ({
-    name:  t.theme || t.name || '',
-    value: t[valueKey] || 0,
-    color: colorFn(t[valueKey] || 0),
-  }))
-
-  const vals   = data.map(d => d.value)
+  const vals   = items.map(t => t[valueKey] || 0)
   const maxAbs = Math.max(...vals.map(Math.abs), 0.01)
-
-  const tickFmt = (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`
-  const tipFmt  = (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(2)}%`
+  const fmt    = (v) => formatFn ? formatLarge(v) : `${v >= 0 ? '+' : ''}${v.toFixed(1)}%`
 
   return (
     <div style={{
       background: 'var(--bg2)', border: '1px solid var(--border)',
-      borderRadius: 'var(--radius)', padding: '16px',
+      borderRadius: 'var(--radius)', padding: '12px 14px',
     }}>
       {title && (
-        <div style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text3)', marginBottom: '12px', letterSpacing: '0.06em' }}>
+        <div style={{ fontSize: '11px', fontWeight: 600, color: 'var(--text3)', marginBottom: '10px', letterSpacing: '0.06em' }}>
           {title}
         </div>
       )}
-      <ResponsiveContainer width="100%" height={height}>
-        <RechartBar data={data} margin={{ top: 20, right: 10, left: 10, bottom: 80 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" vertical={false} />
-          <XAxis
-            dataKey="name"
-            tick={{ fill: 'rgba(160,170,190,0.85)', fontSize: 10, fontFamily: 'Noto Sans JP' }}
-            angle={-40} textAnchor="end" interval={0}
-            tickLine={false} axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
-          />
-          <YAxis
-            tickFormatter={tickFmt}
-            tick={{ fill: 'rgba(140,150,170,0.8)', fontSize: 10, fontFamily: 'DM Mono' }}
-            tickLine={false} axisLine={false}
-            domain={formatFn ? ['auto', 'auto'] : [-maxAbs * 1.15, maxAbs * 1.15]}
-          />
-          <Tooltip
-            cursor={{ fill: 'rgba(255,255,255,0.04)' }}
-            contentStyle={{
-              background: 'rgba(18,22,30,0.97)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              borderRadius: '8px', fontSize: '12px',
-              color: '#e8eaf0',
-            }}
-            formatter={(v) => [tipFmt(v), '']}
-          />
-          <ReferenceLine y={0} stroke="rgba(255,255,255,0.2)" strokeWidth={1} />
-          <Bar dataKey="value" radius={[3, 3, 0, 0]} maxBarSize={40}>
-            {data.map((entry, i) => (
-              <Cell key={i} fill={entry.color} fillOpacity={0.88} />
-            ))}
-          </Bar>
-        </RechartBar>
-      </ResponsiveContainer>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+        {items.map((item, i) => {
+          const v     = item[valueKey] || 0
+          const color = colorFn(v)
+          // 幅は最大値基準で0〜100%
+          const w = Math.abs(v) / maxAbs * 100
+
+          return (
+            <div key={item.theme || item.name || i} style={{
+              display: 'grid',
+              gridTemplateColumns: '110px 1fr 68px',
+              alignItems: 'center',
+              gap: '8px',
+              animation: `fadeUp 0.25s ease ${i * 0.02}s both`,
+            }}>
+              {/* テーマ名 */}
+              <span style={{
+                fontSize: '11px', color: 'var(--text2)', fontWeight: 500,
+                overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                textAlign: 'right',
+              }}>
+                {item.theme || item.name}
+              </span>
+              {/* バー */}
+              <div style={{ height: '14px', background: 'rgba(255,255,255,0.04)', borderRadius: '3px', overflow: 'hidden', position: 'relative' }}>
+                <div style={{
+                  position: 'absolute',
+                  height: '100%',
+                  width: `${w}%`,
+                  // 正値は左から、負値も左から（絶対値で幅）
+                  left: 0,
+                  background: color,
+                  borderRadius: '3px',
+                  opacity: 0.85,
+                }} />
+              </div>
+              {/* 値 */}
+              <span style={{
+                fontFamily: 'var(--mono)', fontSize: '12px', fontWeight: 700,
+                textAlign: 'right', color, whiteSpace: 'nowrap',
+              }}>
+                {fmt(v)}
+              </span>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
 
-// ── TOP5比較グラフ（上昇・下落を並べて表示）──
+// ── TOP5横棒（上昇・下落を2列）──
 function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valueKey, formatFn }) {
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }} className="top5-grid">
-      <BarChart items={top5} valueKey={valueKey} formatFn={formatFn} colorFn={topColorFn} height={240} title={topTitle} />
-      <BarChart items={bot5} valueKey={valueKey} formatFn={formatFn} colorFn={botColorFn} height={240} title={botTitle} />
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }} className="top5-grid">
+      <HBarChart items={top5} valueKey={valueKey} formatFn={formatFn} colorFn={topColorFn} title={topTitle} />
+      <HBarChart items={bot5} valueKey={valueKey} formatFn={formatFn} colorFn={botColorFn} title={botTitle} />
     </div>
   )
 }
@@ -192,7 +180,7 @@ export default function ThemeList() {
           </div>
         ) : (
           <>
-            {/* ── KPIカード ── */}
+            {/* KPIカード */}
             <div className="responsive-grid-4" style={{ marginBottom: '8px' }}>
               <KpiCard delay={0.05}
                 label="上昇テーマ"
@@ -214,7 +202,7 @@ export default function ThemeList() {
                 sub={<span style={{ color: 'var(--green)', fontWeight: 600 }}>{summary.bot?.pct?.toFixed(1)}%</span>} />
             </div>
 
-            {/* ── 騰落ランキング TOP5 ── */}
+            {/* 騰落ランキング TOP5 */}
             <SectionHead title="📈 騰落ランキング TOP5" />
             <Top5Pair
               top5={themes.slice(0, 5)} bot5={byPctAsc.slice(0, 5)}
@@ -222,7 +210,7 @@ export default function ThemeList() {
               topColorFn={pctColor} botColorFn={pctColor}
               valueKey="pct" />
 
-            {/* ── 出来高・売買代金 TOP5 ── */}
+            {/* 出来高・売買代金 TOP5 */}
             <SectionHead title="💹 出来高・売買代金 TOP5" />
             <Top5Pair
               top5={byVol.slice(0, 5)} bot5={byTV.slice(0, 5)}
@@ -230,24 +218,24 @@ export default function ThemeList() {
               topColorFn={blueColor} botColorFn={orangeColor}
               valueKey="volume" formatFn={true} />
 
-            {/* ── 全テーマ 騰落率 ── */}
+            {/* 全テーマ 騰落率 */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <BarChart items={themes} valueKey="pct" colorFn={pctColor} height={320} />
+            <HBarChart items={themes} valueKey="pct" colorFn={pctColor} />
 
-            {/* ── 全テーマ 出来高 ── */}
+            {/* 全テーマ 出来高 */}
             <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <BarChart items={byVol} valueKey="volume" colorFn={blueColor} formatFn={true} height={300} />
+            <HBarChart items={byVol} valueKey="volume" colorFn={blueColor} formatFn={true} />
 
-            {/* ── 全テーマ 売買代金 ── */}
+            {/* 全テーマ 売買代金 */}
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <BarChart items={byTV} valueKey="trade_value" colorFn={orangeColor} formatFn={true} height={300} />
+            <HBarChart items={byTV} valueKey="trade_value" colorFn={orangeColor} formatFn={true} />
           </>
         )}
       </div>
 
       <style>{`
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
-        @media (max-width: 700px) {
+        @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>

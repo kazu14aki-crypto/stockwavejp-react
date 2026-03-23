@@ -1,11 +1,23 @@
 import { useState, useEffect } from 'react'
-import { useThemeNames } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
   { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
   { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
 ]
+
+const COLORS = [
+  '#ff4560','#ff8c42','#ffd166','#06d6a0','#4a9eff',
+  '#aa77ff','#ff77aa','#44dddd',
+]
+
+const STATE_COLORS = {
+  '🔥加速':  '#ff4560',
+  '↗転換↑': '#ff8c42',
+  '→横ばい': '#4a6080',
+  '↘転換↓': '#4a9eff',
+  '❄️失速':  '#00c48c',
+}
 
 function formatLarge(n) {
   if (!n) return '0'
@@ -22,42 +34,154 @@ function Loading() {
         <span key={i} style={{ display:'inline-block', width:'6px', height:'6px', borderRadius:'50%',
           background:'var(--accent)', margin:'0 3px', animation:`pulse 1.2s ease-in-out ${d}s infinite`}}/>
       ))}
-      <div style={{ marginTop:'12px', fontSize:'12px' }}>個別株データ取得中...</div>
+      <div style={{ marginTop:'12px', fontSize:'12px' }}>データ取得中...</div>
     </div>
   )
 }
 
+// ── niceScale：キリの良いY軸目盛り ──
+function niceScale(yMin, yMax, count = 5) {
+  const range = yMax - yMin || 1
+  const rawStep = range / count
+  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
+  const candidates = [1, 2, 2.5, 5, 10]
+  const step = mag * (candidates.find(c => c * mag >= rawStep) || 1)
+  const nMin = Math.floor(yMin / step) * step
+  const nMax = Math.ceil(yMax / step) * step
+  const ticks = []
+  for (let v = nMin; v <= nMax + step * 0.01; v += step) {
+    ticks.push(Math.round(v * 1000) / 1000)
+  }
+  return { ticks, nMin: nMin - step * 0.2, nMax: nMax + step * 0.2 }
+}
+
+// ── TOP5横棒グラフ（小型・見やすい）──
 function Top5Bar({ items, title, colorFn }) {
-  if (!items||!items.length) return null
-  const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)),1)
-  const W=280, H=160, PL=8, PR=8, PT=24, PB=36
-  const bW = (W-PL-PR)/items.length-4
+  if (!items || !items.length) return null
+  const maxAbs = Math.max(...items.map(s => Math.abs(s.pct)), 0.01)
+
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'12px' }}>
-      <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block' }}>
-        {items.map((s,i)=>{
-          const h = Math.max(2, Math.round(Math.abs(s.pct)/maxAbs*(H-PT-PB)))
-          const x = PL+i*((W-PL-PR)/items.length)+2
-          const y = H-PB-h
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'10px 12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+        {items.map((s, i) => {
           const c = colorFn(s.pct)
+          const w = Math.abs(s.pct) / maxAbs * 100
           return (
-            <g key={s.ticker}>
-              <rect x={x} y={y} width={bW} height={h} rx="2" fill={c} opacity="0.85"/>
-              <text x={x+bW/2} y={y-4} textAnchor="middle" fill={c} fontSize="9" fontFamily="DM Mono">{s.pct>=0?'+':''}{s.pct.toFixed(1)}%</text>
-              <text x={x+bW/2} y={H-PB+14} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{s.name.length>4?s.name.slice(0,4)+'…':s.name}</text>
-            </g>
+            <div key={s.ticker} style={{
+              display:'grid', gridTemplateColumns:'90px 1fr 60px',
+              alignItems:'center', gap:'6px',
+            }}>
+              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden',
+                textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>
+                {s.name}
+              </span>
+              <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+                <div style={{ height:'100%', width:`${w}%`, background:c, borderRadius:'3px', opacity:0.85 }} />
+              </div>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, textAlign:'right', color:c, whiteSpace:'nowrap' }}>
+                {s.pct>=0?'+':''}{s.pct.toFixed(1)}%
+              </span>
+            </div>
           )
         })}
-        <line x1={PL} y1={H-PB} x2={W-PR} y2={H-PB} stroke="var(--border)" strokeWidth="1"/>
-      </svg>
+      </div>
     </div>
   )
 }
 
-// スマホ対応テーブル（銘柄名左固定）
+// ── 複数折れ線グラフ（Compare移植）──
+function MultiLineChart({ trends, selected, title }) {
+  if (!selected.length) return (
+    <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
+      テーマを1つ以上選択してください
+    </div>
+  )
+
+  const allDates = new Set()
+  selected.forEach(theme => (trends[theme] ?? []).forEach(d => allDates.add(d.date)))
+  const dates = [...allDates].sort()
+  if (!dates.length) return (
+    <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
+      データを取得中...
+    </div>
+  )
+
+  const W = 800, H = 220, PL = 46, PR = 16, PT = 16, PB = 32
+
+  let yMin = Infinity, yMax = -Infinity
+  selected.forEach(theme => {
+    ;(trends[theme] ?? []).forEach(d => {
+      if (d.pct < yMin) yMin = d.pct
+      if (d.pct > yMax) yMax = d.pct
+    })
+  })
+  if (yMin === Infinity) { yMin = -1; yMax = 1 }
+
+  const { ticks, nMin, nMax } = niceScale(yMin, yMax)
+  const xS = (i) => PL + (i / Math.max(dates.length - 1, 1)) * (W - PL - PR)
+  const yS = (v) => PT + (1 - (v - nMin) / (nMax - nMin)) * (H - PT - PB)
+
+  const xLabels = []
+  const step = Math.max(1, Math.floor(dates.length / 5))
+  for (let i = 0; i < dates.length; i += step) xLabels.push({ i, date: dates[i] })
+
+  return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'14px', overflowX:'auto' }}>
+      {title && <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text3)', letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'8px' }}>{title}</div>}
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px' }}>
+        {ticks.map(v => (
+          <g key={v}>
+            <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(74,120,200,0.08)" strokeWidth="1"/>
+            <text x={PL-4} y={yS(v)+3} textAnchor="end" fill="var(--text3)" fontSize="9" fontFamily="DM Mono">
+              {Number.isInteger(v) ? v+'%' : v.toFixed(1)+'%'}
+            </text>
+          </g>
+        ))}
+        {yMin < 0 && yMax > 0 && (
+          <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
+        )}
+        {xLabels.map(({ i, date }) => (
+          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{date.slice(2,7)}</text>
+        ))}
+        {selected.map((theme, ti) => {
+          const data = trends[theme] ?? []
+          if (!data.length) return null
+          const pts = data.map(d => {
+            const xi = dates.indexOf(d.date)
+            return xi >= 0 ? `${xS(xi)},${yS(d.pct)}` : null
+          }).filter(Boolean)
+          return pts.length ? (
+            <polyline key={theme} points={pts.join(' ')} fill="none"
+              stroke={COLORS[ti % COLORS.length]} strokeWidth="2"
+              strokeLinejoin="round" strokeLinecap="round"/>
+          ) : null
+        })}
+      </svg>
+      {/* 凡例 */}
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
+        {selected.map((theme, ti) => {
+          const data = trends[theme] ?? []
+          const last = data[data.length - 1]
+          const color = COLORS[ti % COLORS.length]
+          return (
+            <div key={theme} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
+              <div style={{ width:'16px', height:'2px', background:color }} />
+              <span style={{ fontSize:'11px', color:'var(--text2)' }}>{theme}</span>
+              {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:600 }}>
+                {last.pct >= 0 ? '+' : ''}{last.pct.toFixed(1)}%
+              </span>}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// ── 銘柄テーブル ──
 function StockTable({ stocks }) {
-  if (!stocks||!stocks.length) return null
+  if (!stocks || !stocks.length) return null
   const headers = ['コード','株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <div className="sticky-table">
@@ -69,9 +193,9 @@ function StockTable({ stocks }) {
           </tr>
         </thead>
         <tbody>
-          {stocks.map((s,i)=>{
-            const pColor = s.pct>=0?'var(--red)':'var(--green)'
-            const cColor = s.contribution>=0?'var(--red)':'var(--green)'
+          {stocks.map((s, i) => {
+            const pColor = s.pct >= 0 ? 'var(--red)' : 'var(--green)'
+            const cColor = s.contribution >= 0 ? 'var(--red)' : 'var(--green)'
             return (
               <tr key={s.ticker} style={{
                 borderBottom:'1px solid rgba(255,255,255,0.04)',
@@ -111,8 +235,19 @@ export default function ThemeDetail() {
   const [selTheme,    setSelTheme]    = useState('')
   const [detail,      setDetail]      = useState(null)
   const [loading,     setLoading]     = useState(false)
+  const [momentum,    setMomentum]    = useState(null)
 
-  useEffect(()=>{
+  // テーマ別詳細比較（Compare移植）
+  const [selThemes,    setSelThemes]    = useState([])
+  const [themeTrends,  setThemeTrends]  = useState({})
+  const [macroData,    setMacroData]    = useState({})
+  const [selMacro,     setSelMacro]     = useState(['日経平均', 'S&P500', 'ドル円'])
+  const [loadingT,     setLoadingT]     = useState(false)
+  const [loadingM,     setLoadingM]     = useState(false)
+  const [comparePeriod, setComparePeriod] = useState('1y')
+
+  // テーマ名一覧取得
+  useEffect(() => {
     fetch('/data/market.json?t=' + Date.now())
       .then(r => r.json())
       .then(json => {
@@ -120,75 +255,191 @@ export default function ThemeDetail() {
         if (names.length > 0) return { themes: names }
         throw new Error('no names')
       })
-      .catch(() => fetch(`${API}/api/theme-names`).then(r=>r.json()))
-      .then(d=>{
-      setThemeNames(d.themes)
-      if (d.themes.length) setSelTheme(d.themes[0])
-    }).catch(()=>{})
-  },[])
+      .catch(() => fetch(`${API}/api/theme-names`).then(r => r.json()))
+      .then(d => {
+        setThemeNames(d.themes || [])
+        if (d.themes?.length) {
+          setSelTheme(d.themes[0])
+          setSelThemes(d.themes.slice(0, 3))
+        }
+      })
+      .catch(() => {})
+  }, [])
 
-  useEffect(()=>{
+  // テーマ別詳細取得
+  useEffect(() => {
     if (!selTheme) return
-    setLoading(true); setDetail(null)
-    fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`)
-      .then(r=>r.json()).then(d=>setDetail(d.data))
-      .catch(()=>{}).finally(()=>setLoading(false))
-  },[selTheme, period])
+    setLoading(true); setDetail(null); setMomentum(null)
+    Promise.all([
+      fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
+      fetch(`${API}/api/momentum?period=${period}`).then(r => r.json()),
+    ])
+      .then(([detailRes, momentumRes]) => {
+        setDetail(detailRes.data)
+        const m = (momentumRes.data || []).find(d => d.theme === selTheme)
+        setMomentum(m || null)
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [selTheme, period])
 
-  const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
+  // テーマ比較データ取得
+  useEffect(() => {
+    if (!selThemes.length) return
+    setLoadingT(true)
+    fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`)
+      .then(r => r.json())
+      .then(d => setThemeTrends(d.trends || {}))
+      .catch(() => {})
+      .finally(() => setLoadingT(false))
+  }, [selThemes, comparePeriod])
+
+  // マクロデータ取得
+  useEffect(() => {
+    setLoadingM(true)
+    // market.jsonのマクロを優先
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(json => {
+        const key = `macro_${comparePeriod}`
+        if (json[key]?.data) { setMacroData(json[key].data); return }
+        throw new Error('no macro')
+      })
+      .catch(() =>
+        fetch(`${API}/api/macro?period=${comparePeriod}`)
+          .then(r => r.json())
+          .then(d => setMacroData(d.data || {}))
+          .catch(() => {})
+      )
+      .finally(() => setLoadingM(false))
+  }, [comparePeriod])
+
+  const toggleTheme = (t) =>
+    setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+  const toggleMacro = (t) =>
+    setSelMacro(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+
+  const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []
-  const top5   = stocks.slice(0,5)
-  const bot5   = [...stocks].sort((a,b)=>a.pct-b.pct).slice(0,5)
+  const top5   = stocks.slice(0, 5)
+  const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).slice(0, 5)
+  const macroNames = Object.keys(macroData)
 
   return (
     <div>
       {/* 固定ヘッダー */}
       <div className="page-header-sticky">
         <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>テーマ別詳細</h1>
-        <select value={selTheme} onChange={e=>setSelTheme(e.target.value)} style={selStyle}>
-          {themeNames.map(t=><option key={t} value={t}>{t}</option>)}
+        <select value={selTheme} onChange={e => setSelTheme(e.target.value)} style={selStyle}>
+          {themeNames.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
-          {PERIODS.map(p=><option key={p.value} value={p.value}>{p.label}</option>)}
+        <select value={period} onChange={e => setPeriod(e.target.value)} style={selStyle}>
+          {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
         </select>
       </div>
 
       <div style={{ padding:'20px 32px 48px' }}>
         {loading ? <Loading /> : detail ? (
           <>
-            {/* サマリー */}
-            <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
+            {/* ── サマリーヘッダー（先月比・状態含む）── */}
+            <div style={{ display:'flex', alignItems:'center', gap:'12px', marginBottom:'20px', flexWrap:'wrap',
+              background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px' }}>
               <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
               <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
-                color:detail.avg>=0?'var(--red)':'var(--green)' }}>
-                平均 {detail.avg>=0?'+':''}{detail.avg.toFixed(1)}%
+                color: detail.avg >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                平均 {detail.avg >= 0 ? '+' : ''}{detail.avg?.toFixed(1)}%
               </span>
-              <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄構成</span>
-              <span style={{ fontSize:'11px', padding:'2px 8px', borderRadius:'20px',
-                background:'rgba(91,156,246,0.1)', color:'var(--accent)', border:'1px solid rgba(91,156,246,0.2)' }}>
-                {PERIODS.find(p=>p.value===period)?.label}
+              {momentum && (
+                <>
+                  <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
+                  <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
+                  <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
+                    color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                    {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
+                  </span>
+                  <span style={{ fontSize:'12px', fontWeight:600, padding:'2px 10px', borderRadius:'20px',
+                    color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
+                    background: `${STATE_COLORS[momentum.state] ?? '#4a6080'}18`,
+                    border: `1px solid ${STATE_COLORS[momentum.state] ?? 'var(--border)'}40`,
+                  }}>
+                    {momentum.state}
+                  </span>
+                </>
+              )}
+              <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
+                {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
               </span>
             </div>
 
-            {/* TOP5グラフ */}
-            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
+            {/* ── TOP5グラフ（小型）── */}
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'20px' }} className="top5g">
               <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor}/>
               <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor}/>
             </div>
 
-            {/* 構成銘柄テーブル */}
-            <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
+            {/* ── 構成銘柄テーブル ── */}
+            <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)',
+              textTransform:'uppercase', marginBottom:'8px' }}>
               構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
             </div>
-            <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
+            <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden', marginBottom:'32px' }}>
               <StockTable stocks={stocks}/>
+            </div>
+
+            {/* ── テーマ・マクロ比較（旧Compare移植）── */}
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'28px' }}>
+              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:'12px', marginBottom:'16px' }}>
+                <div style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}>
+                  <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>テーマ・マクロ比較</div>
+                  <select value={comparePeriod} onChange={e => setComparePeriod(e.target.value)} style={selStyle}>
+                    {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
+                  </select>
+                </div>
+                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ騰落率の比較 ＋ マクロ指標との対比</div>
+              </div>
+
+              {/* テーマ比較 */}
+              <div style={sHead}><span style={sTitle}>テーマ比較</span><div style={sLine}/></div>
+              <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'12px' }}>
+                {themeNames.map(t => (
+                  <button key={t} onClick={() => toggleTheme(t)} style={{
+                    padding:'3px 9px', borderRadius:'20px', fontSize:'11px', cursor:'pointer',
+                    border:`1px solid ${selThemes.includes(t) ? 'var(--accent)' : 'var(--border)'}`,
+                    background: selThemes.includes(t) ? 'rgba(74,158,255,0.12)' : 'transparent',
+                    color: selThemes.includes(t) ? 'var(--accent)' : 'var(--text3)',
+                    fontFamily:'var(--font)', transition:'all 0.15s',
+                  }}>
+                    {t}
+                  </button>
+                ))}
+              </div>
+              {loadingT ? <Loading /> : <MultiLineChart trends={themeTrends} selected={selThemes} />}
+
+              {/* マクロ比較 */}
+              <div style={{ ...sHead, marginTop:'24px' }}><span style={sTitle}>マクロ比較</span><div style={sLine}/></div>
+              <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'12px' }}>
+                {macroNames.map(t => (
+                  <button key={t} onClick={() => toggleMacro(t)} style={{
+                    padding:'3px 9px', borderRadius:'20px', fontSize:'11px', cursor:'pointer',
+                    border:`1px solid ${selMacro.includes(t) ? 'var(--accent)' : 'var(--border)'}`,
+                    background: selMacro.includes(t) ? 'rgba(74,158,255,0.12)' : 'transparent',
+                    color: selMacro.includes(t) ? 'var(--accent)' : 'var(--text3)',
+                    fontFamily:'var(--font)', transition:'all 0.15s',
+                  }}>
+                    {t}
+                  </button>
+                ))}
+              </div>
+              {loadingM ? <Loading /> : <MultiLineChart trends={macroData} selected={selMacro} />}
             </div>
           </>
         ) : (
           <div style={{ color:'var(--text3)', fontSize:'13px' }}>テーマを選択してください</div>
         )}
       </div>
-      <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
+      <style>{`
+        @media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}
+      `}</style>
     </div>
   )
 }
@@ -199,3 +450,6 @@ const selStyle = {
   fontFamily:'var(--font)', fontSize:'13px',
   padding:'6px 12px', cursor:'pointer', outline:'none',
 }
+const sHead  = { display:'flex', alignItems:'center', gap:'12px', margin:'16px 0 10px' }
+const sTitle = { fontSize:'11px', fontWeight:600, color:'var(--text2)', letterSpacing:'0.1em', textTransform:'uppercase', whiteSpace:'nowrap' }
+const sLine  = { flex:1, height:'1px', background:'var(--border)' }

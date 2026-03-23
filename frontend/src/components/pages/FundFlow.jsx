@@ -16,6 +16,8 @@ function HBarChart({ items, color, maxAbs }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {items.map((item, i) => {
         const w = Math.round(Math.abs(item.pct) / maxAbs * 100)
+        // colorが未指定の場合はpctの正負で色分け（日本株：上昇=赤・下落=緑）
+        const barColor = color || (item.pct >= 0 ? 'var(--red)' : 'var(--green)')
         return (
           <div key={item.theme} style={{
             display: 'grid', gridTemplateColumns: '130px 1fr 70px',
@@ -28,9 +30,9 @@ function HBarChart({ items, color, maxAbs }) {
               {item.theme}
             </span>
             <div style={{ height: '6px', background: 'rgba(255,255,255,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-              <div style={{ height: '100%', width: `${w}%`, background: color, borderRadius: '3px' }} />
+              <div style={{ height: '100%', width: `${w}%`, background: barColor, borderRadius: '3px' }} />
             </div>
-            <span style={{ fontFamily: 'var(--mono)', fontSize: '13px', fontWeight: 700, textAlign: 'right', color }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: '13px', fontWeight: 700, textAlign: 'right', color: barColor }}>
               {item.pct >= 0 ? '+' : ''}{item.pct.toFixed(1)}%
             </span>
           </div>
