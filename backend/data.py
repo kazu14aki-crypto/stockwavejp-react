@@ -296,6 +296,7 @@ def _set_cache(key: str, value):
     except: pass
 
 _mem_cache = {}
+_df_cache = {}  # DataFrameは専用キャッシュ（pickle不可のため）
 _mem_cache_lock = threading.Lock()
 _invalid_tickers = set()
 
@@ -314,18 +315,19 @@ def _set_mem_cache(key: str, value):
 def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
     if ticker in _invalid_tickers: return None
     cache_key = f"df_{ticker}_{period}"
-    cached = _get_mem_cache(cache_key)
-    if cached is None:
-        cached = _get_cache(cache_key)
-    if cached is not None: return cached
+    # DataFrame専用キャッシュ（bool評価しない）
+    with _mem_cache_lock:
+        entry = _df_cache.get(cache_key)
+        if entry is not None and time.time() - entry["ts"] < CACHE_TTL:
+            return entry["value"]
     try:
         df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True, repair=True, timeout=20)
         if df is None or len(df) < 3:
             _invalid_tickers.add(ticker)
             return None
         df.index = df.index.tz_localize(None)
-        _set_mem_cache(cache_key, df)
-        _set_cache(cache_key, df)
+        with _mem_cache_lock:
+            _df_cache[cache_key] = {"value": df, "ts": time.time()}
         return df
     except Exception as e:
         if "404" in str(e) or "delisted" in str(e).lower():
@@ -365,7 +367,7 @@ def _robust_avg(vals: list) -> float:
 def fetch_theme_results(themes: dict, period: str) -> list:
     cache_key = f"theme_results_{id(themes)}_{period}"
     cached = _get_mem_cache(cache_key)
-    if cached: return cached
+    if cached is not None: return cached
 
     result = []
     for theme_name, stocks in themes.items():
@@ -540,7 +542,7 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
 def fetch_momentum_data(themes: dict, period: str) -> list:
     cache_key = f"momentum_{period}"
     cached = _get_mem_cache(cache_key)
-    if cached: return cached
+    if cached is not None: return cached
 
     cur_map = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, period)}
     w1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "5d")}
