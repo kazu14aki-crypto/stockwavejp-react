@@ -71,7 +71,7 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // スマホ対応テーブル（銘柄名を左固定）
 function StockTable({ stocks }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['コード','株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
@@ -94,12 +94,16 @@ function StockTable({ stocks }) {
                 borderBottom:'1px solid rgba(255,255,255,0.04)',
                 background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
               }}>
-                {/* 固定列：銘柄名 */}
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  <div style={{ fontSize:'13px' }}>{s.name}</div>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{String(i+1).padStart(2,'0')}</div>
+                {/* 固定列：順位 */}
+                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  {String(i+1).padStart(2,'0')}
                 </td>
-                <td style={tdC}><code style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{s.ticker.replace('.T','')}</code></td>
+                {/* 固定列：銘柄名（上に証券コード表示）*/}
+                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
+                  <div style={{ fontSize:'13px' }}>{s.name}</div>
+                </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
