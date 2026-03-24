@@ -56,8 +56,15 @@ function niceScale(yMin, yMax, count = 5) {
 }
 
 // ── TOP5横棒グラフ（小型・見やすい）──
-function Top5Bar({ items, title, colorFn }) {
-  if (!items || !items.length) return null
+function Top5Bar({ items, title, colorFn, emptyMsg }) {
+  if (!items || !items.length) return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+      borderRadius:'8px', padding:'20px', textAlign:'center',
+      color:'var(--text3)', fontSize:'12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      {emptyMsg || 'データなし'}
+    </div>
+  )
   const maxAbs = Math.max(...items.map(s => Math.abs(s.pct)), 0.01)
 
   return (
@@ -182,12 +189,13 @@ function MultiLineChart({ trends, selected, title }) {
 // ── 銘柄テーブル ──
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
-  const headers = ['コード','株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
+            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
             <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
             {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
           </tr>
@@ -201,11 +209,14 @@ function StockTable({ stocks }) {
                 borderBottom:'1px solid rgba(255,255,255,0.04)',
                 background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
               }}>
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  <div style={{ fontSize:'13px' }}>{s.name}</div>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{String(i+1).padStart(2,'0')}</div>
+                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  {String(i+1).padStart(2,'0')}
                 </td>
-                <td style={tdC}><code style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{s.ticker.replace('.T','')}</code></td>
+                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
+                  <div style={{ fontSize:'13px' }}>{s.name}</div>
+                </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
@@ -272,7 +283,7 @@ export default function ThemeDetail() {
     setLoading(true); setDetail(null); setMomentum(null)
     Promise.all([
       fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
-      fetch(`${API}/api/momentum?period=${period}`).then(r => r.json()),
+      fetch(`${API}/api/momentum?period=1mo`).then(r => r.json()),  // 前月比は1mo固定
     ])
       .then(([detailRes, momentumRes]) => {
         setDetail(detailRes.data)
@@ -321,8 +332,9 @@ export default function ThemeDetail() {
 
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []
-  const top5   = stocks.slice(0, 5)
-  const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).slice(0, 5)
+  // 上昇のみ・下落のみでフィルタリング
+  const top5   = stocks.filter(s => s.pct > 0).slice(0, 5)
+  const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
   const macroNames = Object.keys(macroData)
 
   return (
@@ -373,8 +385,8 @@ export default function ThemeDetail() {
 
             {/* ── TOP5グラフ（小型）── */}
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'20px' }} className="top5g">
-              <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor}/>
-              <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor}/>
+              <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+              <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor} emptyMsg="下落銘柄なし"/>
             </div>
 
             {/* ── 構成銘柄テーブル ── */}

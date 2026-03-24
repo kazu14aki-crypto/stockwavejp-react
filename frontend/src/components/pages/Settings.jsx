@@ -64,25 +64,6 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
         </p>
       </Card>
 
-      {/* 接続情報 */}
-      <Card>
-        <SLabel>接続情報</SLabel>
-        <div style={{ display:'flex',alignItems:'center',gap:'10px',marginBottom:'8px' }}>
-          <span style={{ fontSize:'12px',color:'var(--text2)' }}>バックエンドAPI:</span>
-          <code style={{ fontSize:'12px',color:'var(--accent)',background:'rgba(74,158,255,0.08)',
-            padding:'3px 8px',borderRadius:'4px',fontFamily:'var(--mono)' }}>
-            http://127.0.0.1:8000
-          </code>
-        </div>
-        <div style={{ display:'flex',alignItems:'center',gap:'10px' }}>
-          <span style={{ fontSize:'12px',color:'var(--text2)' }}>スマホからアクセス:</span>
-          <code style={{ fontSize:'12px',color:'#7ed957',background:'rgba(126,217,87,0.08)',
-            padding:'3px 8px',borderRadius:'4px',fontFamily:'var(--mono)' }}>
-            http://192.168.x.x:5173
-          </code>
-        </div>
-      </Card>
-
       {/* バージョン */}
       <Card>
         <SLabel>バージョン情報</SLabel>

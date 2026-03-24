@@ -507,14 +507,23 @@ def fetch_momentum_data(themes: dict, period: str) -> list[dict]:
     if cached:
         return cached
 
-    now_map = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, period)}
+    # 常に3mo基準で計算
+    # 先週比 = 3mo騰落率 - 5d騰落率
+    # 先月比 = 3mo騰落率 - 1mo騰落率（先月末時点との差分）
+    cur_map = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, period)}
     w1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "5d")}
     m1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "1mo")}
 
+    now_map = cur_map
     result = []
     for theme_name, cur in now_map.items():
         dw = round(cur - w1_map.get(theme_name, cur), 2)
-        dm = round(cur - m1_map.get(theme_name, cur), 2)
+        # 先月比：当該期間騰落率 - 1ヶ月前の騰落率
+        # periodが1moの場合は1mo-5dの差分、それ以外はperiod-1moの差分
+        if period == "1mo":
+            dm = round(m1_map.get(theme_name, 0) - w1_map.get(theme_name, 0), 2)
+        else:
+            dm = round(cur - m1_map.get(theme_name, cur), 2)
         if   dw > 3  and dm > 5:  state = "🔥加速"
         elif dw < -3 and dm < -5: state = "❄️失速"
         elif dw > 2:               state = "↗転換↑"

@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useStaleData } from '../../hooks/useStaleData'
-import RefreshIndicator from '../RefreshIndicator'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -16,8 +14,6 @@ function HBarChart({ items, color, maxAbs }) {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {items.map((item, i) => {
         const w = Math.round(Math.abs(item.pct) / maxAbs * 100)
-        // colorが未指定の場合はpctの正負で色分け（日本株：上昇=赤・下落=緑）
-        const barColor = color || (item.pct >= 0 ? 'var(--red)' : 'var(--green)')
         return (
           <div key={item.theme} style={{
             display: 'grid', gridTemplateColumns: '130px 1fr 70px',
@@ -30,9 +26,9 @@ function HBarChart({ items, color, maxAbs }) {
               {item.theme}
             </span>
             <div style={{ height: '6px', background: 'rgba(255,255,255,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-              <div style={{ height: '100%', width: `${w}%`, background: barColor, borderRadius: '3px' }} />
+              <div style={{ height: '100%', width: `${w}%`, background: color, borderRadius: '3px' }} />
             </div>
-            <span style={{ fontFamily: 'var(--mono)', fontSize: '13px', fontWeight: 700, textAlign: 'right', color: barColor }}>
+            <span style={{ fontFamily: 'var(--mono)', fontSize: '13px', fontWeight: 700, textAlign: 'right', color }}>
               {item.pct >= 0 ? '+' : ''}{item.pct.toFixed(1)}%
             </span>
           </div>
@@ -58,12 +54,26 @@ function Loading() {
 }
 
 export default function FundFlow() {
-  const [period, setPeriod] = useState('1mo')
-  const { data, loading, refreshing, error, refresh, lastUpdate } = useStaleData(
-    `${API}/api/fund-flow?period=${period}`,
-    `fundflow_${period}`,
-    null
-  )
+  const [period,  setPeriod]  = useState('1mo')
+  const [data,    setData]    = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error,   setError]   = useState(null)
+
+  useEffect(() => {
+    const fetch_ = async () => {
+      setLoading(true); setError(null)
+      try {
+        const res  = await fetch(`${API}/api/fund-flow?period=${period}`)
+        const json = await res.json()
+        setData(json)
+      } catch {
+        setError('データ取得に失敗しました')
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetch_()
+  }, [period])
 
   const allItems = data?.all ?? []
   const maxAbs   = allItems.length ? Math.max(...allItems.map(t => Math.abs(t.pct))) : 1

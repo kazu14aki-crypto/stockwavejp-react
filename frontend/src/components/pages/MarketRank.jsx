@@ -29,8 +29,14 @@ function Loading({ msg='データ取得中...' }) {
   )
 }
 
-function Top5Bar({ items, title, colorFn }) {
-  if (!items||!items.length) return null
+function Top5Bar({ items, title, colorFn, emptyMsg }) {
+  if (!items||!items.length) return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
+      padding:'12px', textAlign:'center', color:'var(--text3)', fontSize:'12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      {emptyMsg || 'データなし'}
+    </div>
+  )
   const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)), 0.01)
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'10px 12px' }}>
@@ -71,7 +77,8 @@ function StockTable({ stocks }) {
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            {/* 固定列：銘柄名 */}
+            {/* 固定列：順位・銘柄名 */}
+            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
             <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
             {headers.map(h => (
               <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
@@ -147,8 +154,9 @@ export default function MarketRank() {
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
   const stocks   = detail?.stocks ?? []
-  const top5     = stocks.slice(0,5)
-  const bot5     = [...stocks].sort((a,b)=>a.pct-b.pct).slice(0,5)
+  // 上昇のみ・下落のみでフィルタリング
+  const top5     = stocks.filter(s => s.pct > 0).slice(0, 5)
+  const bot5     = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
 
   return (
     <div>
@@ -218,8 +226,8 @@ export default function MarketRank() {
 
                 {/* TOP5グラフ */}
                 <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
-                  <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor}/>
-                  <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor}/>
+                  <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+                  <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
                 {/* 構成銘柄テーブル（銘柄名左固定） */}

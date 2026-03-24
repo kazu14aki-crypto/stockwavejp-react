@@ -43,7 +43,7 @@ function SectionHead({ title }) {
   )
 }
 
-function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
+function KpiCard({ label, value, valueColor, sub, delay = 0, arrow = null }) {
   return (
     <div style={{
       background: 'var(--bg2)', border: '1px solid var(--border)',
@@ -51,8 +51,9 @@ function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
       animation: `fadeUp 0.4s ease ${delay}s both`,
     }}>
       <div style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--text3)', textTransform: 'uppercase', marginBottom: '10px' }}>{label}</div>
-      <div style={{ fontFamily: 'var(--mono)', fontSize: '22px', fontWeight: 700, lineHeight: 1, marginBottom: '6px', color: valueColor || 'var(--text)' }}>
+      <div style={{ fontFamily: 'var(--mono)', fontSize: '22px', fontWeight: 700, lineHeight: 1, marginBottom: '6px', color: valueColor || 'var(--text)', display: 'flex', alignItems: 'center' }}>
         {value}
+        {arrow && <span style={{ fontSize: '18px', marginLeft: '4px', color: arrow === 'up' ? 'var(--red)' : 'var(--green)' }}>{arrow === 'up' ? '↗' : '↘'}</span>}
       </div>
       <div style={{ fontSize: '11px', color: 'var(--text3)' }}>{sub}</div>
     </div>
@@ -60,8 +61,14 @@ function KpiCard({ label, value, valueColor, sub, delay = 0 }) {
 }
 
 // ── 横棒グラフ（C案：テーマ名をY軸に水平表示）──
-function HBarChart({ items, valueKey = 'pct', formatFn, colorFn, title }) {
-  if (!items || !items.length) return null
+function HBarChart({ items, valueKey = 'pct', formatFn, colorFn, title, emptyMsg }) {
+  if (!items || !items.length) return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+      borderRadius:'var(--radius)', padding:'20px', textAlign:'center',
+      color:'var(--text3)', fontSize:'12px' }}>
+      {emptyMsg || 'データなし'}
+    </div>
+  )
 
   const vals   = items.map(t => t[valueKey] || 0)
   const maxAbs = Math.max(...vals.map(Math.abs), 0.01)
@@ -129,11 +136,11 @@ function HBarChart({ items, valueKey = 'pct', formatFn, colorFn, title }) {
 }
 
 // ── TOP5横棒（上昇・下落を2列）──
-function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valueKey, formatFn }) {
+function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valueKey, bot5ValueKey, formatFn }) {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }} className="top5-grid">
-      <HBarChart items={top5} valueKey={valueKey} formatFn={formatFn} colorFn={topColorFn} title={topTitle} />
-      <HBarChart items={bot5} valueKey={valueKey} formatFn={formatFn} colorFn={botColorFn} title={botTitle} />
+      <HBarChart items={top5} valueKey={valueKey} formatFn={formatFn} colorFn={topColorFn} title={topTitle} emptyMsg="上昇テーマなし" />
+      <HBarChart items={bot5} valueKey={bot5ValueKey || valueKey} formatFn={formatFn} colorFn={botColorFn} title={botTitle} emptyMsg="下落テーマなし" />
     </div>
   )
 }
@@ -149,6 +156,9 @@ export default function ThemeList() {
   const byPctAsc = [...themes].sort((a, b) => a.pct - b.pct)
   const byVol    = [...themes].sort((a, b) => (b.volume || 0) - (a.volume || 0))
   const byTV     = [...themes].sort((a, b) => (b.trade_value || 0) - (a.trade_value || 0))
+  // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
+  const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
+  const fallingTop5 = byPctAsc.filter(t => t.pct < 0).slice(0, 5)
   const periodLabel = PERIODS.find(p => p.value === period)?.label ?? period
 
   const pctColor    = v => v >= 0 ? '#ff5370' : '#4caf82'
@@ -186,26 +196,30 @@ export default function ThemeList() {
                 label="上昇テーマ"
                 value={<span>{summary.rise}<span style={{ fontSize: '16px', color: 'var(--text2)', fontWeight: 400 }}> / {summary.total}</span></span>}
                 valueColor="var(--red)"
+                arrow={summary.rise > summary.fall ? 'up' : summary.rise < summary.fall ? 'down' : null}
                 sub={`下落: ${summary.fall}テーマ`} />
               <KpiCard delay={0.1}
                 label="全テーマ平均騰落率"
                 value={`${summary.avg >= 0 ? '+' : ''}${summary.avg?.toFixed(2)}%`}
                 valueColor={summary.avg >= 0 ? 'var(--red)' : 'var(--green)'}
+                arrow={summary.avg >= 0 ? 'up' : 'down'}
                 sub={`期間: ${periodLabel}`} />
               <KpiCard delay={0.15}
                 label="資金流入 TOP"
                 value={<span style={{ fontSize: '17px', color: 'var(--red)', fontWeight: 700 }}>{summary.top?.theme}</span>}
+                arrow="up"
                 sub={<span style={{ color: 'var(--red)', fontWeight: 600 }}>+{summary.top?.pct?.toFixed(1)}%</span>} />
               <KpiCard delay={0.2}
                 label="資金流出 TOP"
                 value={<span style={{ fontSize: '17px', color: 'var(--green)', fontWeight: 700 }}>{summary.bot?.theme}</span>}
+                arrow="down"
                 sub={<span style={{ color: 'var(--green)', fontWeight: 600 }}>{summary.bot?.pct?.toFixed(1)}%</span>} />
             </div>
 
             {/* 騰落ランキング TOP5 */}
             <SectionHead title="📈 騰落ランキング TOP5" />
             <Top5Pair
-              top5={themes.slice(0, 5)} bot5={byPctAsc.slice(0, 5)}
+              top5={risingTop5} bot5={fallingTop5}
               topTitle="▲ 上昇テーマ TOP5" botTitle="▼ 下落テーマ TOP5"
               topColorFn={pctColor} botColorFn={pctColor}
               valueKey="pct" />
@@ -216,7 +230,7 @@ export default function ThemeList() {
               top5={byVol.slice(0, 5)} bot5={byTV.slice(0, 5)}
               topTitle="🔢 出来高 TOP5" botTitle="💴 売買代金 TOP5"
               topColorFn={blueColor} botColorFn={orangeColor}
-              valueKey="volume" formatFn={true} />
+              valueKey="volume" bot5ValueKey="trade_value" formatFn={true} />
 
             {/* 全テーマ 騰落率 */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
