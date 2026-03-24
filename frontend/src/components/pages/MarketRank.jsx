@@ -71,7 +71,7 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // スマホ対応テーブル（銘柄名を左固定）
 function StockTable({ stocks }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','大分類','小分類','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
@@ -106,6 +106,8 @@ function StockTable({ stocks }) {
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                <td style={{ ...tdC, fontSize:'11px', color:'var(--accent)' }}>{s.major || '-'}</td>
+                <td style={{ ...tdC, fontSize:'11px', color:'var(--text2)' }}>{s.minor || '-'}</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
                 <td style={tdC}>{i+1}位</td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
@@ -122,7 +124,7 @@ function StockTable({ stocks }) {
   )
 }
 
-const thStyle = { padding:'8px 10px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
+const thStyle = { padding:'6px 8px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
 const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color:'var(--text2)' }
 const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }

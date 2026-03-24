@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { useThemes, useMacro } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -24,7 +25,19 @@ function Dots() {
   )
 }
 
-function KpiCard({ label, value, valueColor, sub, delay=0, loading=false }) {
+function KpiCard({ label, value, valueColor, sub, delay=0, loading=false, arrow=null }) {
+  const ArrowIcon = () => {
+    if (!arrow) return null
+    return (
+      <span style={{
+        fontSize:'18px', marginLeft:'4px', lineHeight:1,
+        color: arrow === 'up' ? 'var(--red)' : 'var(--green)',
+        display:'inline-block',
+      }}>
+        {arrow === 'up' ? '↗' : '↘'}
+      </span>
+    )
+  }
   return (
     <div style={{
       background:'var(--bg2)', border:'1px solid var(--border)',
@@ -67,6 +80,100 @@ function MacroCard({ name, data }) {
   )
 }
 
+const MACRO_COLORS = ['#ff4560','#ff8c42','#ffd166','#06d6a0','#4a9eff','#aa77ff']
+
+function MacroLineChart({ macro }) {
+  const names = Object.keys(macro)
+  if (!names.length) return null
+
+  const allDates = new Set()
+  names.forEach(n => (macro[n] || []).forEach(d => allDates.add(d.date)))
+  const dates = [...allDates].sort()
+  if (!dates.length) return null
+
+  const W = 800, H = 180, PL = 44, PR = 16, PT = 12, PB = 28
+
+  let yMin = Infinity, yMax = -Infinity
+  names.forEach(n => {
+    ;(macro[n] || []).forEach(d => {
+      if (d.pct < yMin) yMin = d.pct
+      if (d.pct > yMax) yMax = d.pct
+    })
+  })
+  if (yMin === Infinity) { yMin = -1; yMax = 1 }
+  const pad = Math.max(Math.abs(yMax - yMin) * 0.08, 0.5)
+  yMin -= pad; yMax += pad
+
+  // niceScale
+  const rawMax = Math.max(Math.abs(yMin), Math.abs(yMax))
+  const rawStep = (rawMax * 2) / 4
+  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
+  const step = mag * ([1,2,2.5,5,10].find(c => c * mag >= rawStep) || 1)
+  const nMax = Math.ceil(rawMax / step) * step
+  const ticks = []
+  for (let v = -nMax; v <= nMax + step * 0.01; v += step) ticks.push(Math.round(v * 1000) / 1000)
+
+  const xS = i => PL + (i / Math.max(dates.length - 1, 1)) * (W - PL - PR)
+  const yS = v  => PT + (1 - (v - yMin) / (yMax - yMin)) * (H - PT - PB)
+
+  const xLabels = []
+  const xStep = Math.max(1, Math.floor(dates.length / 5))
+  for (let i = 0; i < dates.length; i += xStep) xLabels.push({ i, date: dates[i] })
+
+  return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'14px', overflowX:'auto' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px' }}>
+        {ticks.map(v => (
+          <g key={v}>
+            <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(74,120,200,0.08)" strokeWidth="1"/>
+            <text x={PL-4} y={yS(v)+3} textAnchor="end" fill="var(--text3)" fontSize="9" fontFamily="DM Mono">
+              {Number.isInteger(v) ? v+'%' : v.toFixed(1)+'%'}
+            </text>
+          </g>
+        ))}
+        {yMin < 0 && yMax > 0 && (
+          <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
+        )}
+        {xLabels.map(({ i, date }) => (
+          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">
+            {date.slice(2,7)}
+          </text>
+        ))}
+        {names.map((name, ti) => {
+          const data = macro[name] || []
+          if (!data.length) return null
+          const pts = data.map(d => {
+            const xi = dates.indexOf(d.date)
+            return xi >= 0 ? `${xS(xi)},${yS(d.pct)}` : null
+          }).filter(Boolean)
+          return pts.length ? (
+            <polyline key={name} points={pts.join(' ')} fill="none"
+              stroke={MACRO_COLORS[ti % MACRO_COLORS.length]} strokeWidth="1.5"
+              strokeLinejoin="round" strokeLinecap="round"/>
+          ) : null
+        })}
+      </svg>
+      {/* 凡例 */}
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
+        {names.map((name, ti) => {
+          const data = macro[name] || []
+          const last = data[data.length - 1]
+          const color = MACRO_COLORS[ti % MACRO_COLORS.length]
+          return (
+            <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
+              <div style={{ width:'14px', height:'2px', background:color }} />
+              <span style={{ fontSize:'11px', color:'var(--text2)' }}>{name}</span>
+              {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:600 }}>
+                {last.pct >= 0 ? '+' : ''}{last.pct.toFixed(1)}%
+              </span>}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 function SHead({ title }) {
   return (
     <div style={{ display:'flex', alignItems:'center', gap:'10px', margin:'20px 0 12px' }}>
@@ -77,24 +184,10 @@ function SHead({ title }) {
 }
 
 export default function TopPage() {
-  const [themes,  setThemes]  = useState(null)
-  const [macro,   setMacro]   = useState({})
-  const [loading, setLoading] = useState(true)
-
-  useEffect(()=>{
-    ;(async()=>{
-      setLoading(true)
-      try {
-        const [tRes,mRes] = await Promise.all([
-          fetch(`${API}/api/themes?period=1mo`),
-          fetch(`${API}/api/macro?period=1mo`),
-        ])
-        setThemes(await tRes.json())
-        setMacro((await mRes.json()).data || {})
-      } catch {}
-      setLoading(false)
-    })()
-  },[])
+  const { data: themes,  loading: loadingT } = useThemes('1mo')
+  const { data: macroRaw, loading: loadingM } = useMacro('1mo')
+  const macro   = macroRaw?.data || {}
+  const loading = loadingT || loadingM
 
   const s = themes?.summary
 
@@ -143,17 +236,22 @@ export default function TopPage() {
       <SHead title="📊 マーケットサマリー（1ヶ月）" />
       <div className="responsive-grid-4" style={{ marginBottom:'4px' }}>
         <KpiCard delay={0.05} loading={loading} label="上昇テーマ"
-          value={s?`${s.rise} / ${s.total}`:'-'} valueColor="var(--red)" sub="全テーマ中"/>
+          value={<span>{s?s.rise:'-'}<span style={{ fontSize:'14px', color:'var(--text3)', fontWeight:400 }}>{s?` / ${s.total}`:''}</span></span>}
+          valueColor="var(--red)"
+          arrow={s ? (s.rise > s.fall ? 'up' : s.rise < s.fall ? 'down' : null) : null}
+          sub="全テーマ中"/>
         <KpiCard delay={0.1} loading={loading} label="平均騰落率"
           value={s?`${s.avg>=0?'+':''}${s.avg?.toFixed(2)}%`:'-'}
-          valueColor={s?.avg>=0?'var(--red)':'var(--green)'} sub="期間:1ヶ月"/>
-        {/* 資金流入TOP：赤フォント */}
+          valueColor={s?.avg>=0?'var(--red)':'var(--green)'}
+          arrow={s ? (s.avg >= 0 ? 'up' : 'down') : null}
+          sub="期間:1ヶ月"/>
         <KpiCard delay={0.15} loading={loading} label="資金流入TOP"
           value={<span style={{ fontSize:'14px', color:'var(--red)', fontWeight:700 }}>{s?.top?.theme||'-'}</span>}
+          arrow="up"
           sub={s?.top?<span style={{ color:'var(--red)', fontWeight:600 }}>+{s.top.pct.toFixed(1)}%</span>:'-'}/>
-        {/* 資金流出TOP：黄緑フォント */}
         <KpiCard delay={0.2} loading={loading} label="資金流出TOP"
           value={<span style={{ fontSize:'14px', color:'var(--green)', fontWeight:700 }}>{s?.bot?.theme||'-'}</span>}
+          arrow="down"
           sub={s?.bot?<span style={{ color:'var(--green)', fontWeight:600 }}>{s.bot.pct.toFixed(1)}%</span>:'-'}/>
       </div>
 
@@ -167,6 +265,14 @@ export default function TopPage() {
             <MacroCard key={name} name={name} data={data}/>
           ))}
         </div>
+      )}
+
+      {/* マクロ比較グラフ（全指標・選択不可）*/}
+      <SHead title="📈 マクロ比較（1ヶ月・全指標）" />
+      {loading ? (
+        <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
+      ) : (
+        <MacroLineChart macro={macro} />
       )}
 
       <style>{`

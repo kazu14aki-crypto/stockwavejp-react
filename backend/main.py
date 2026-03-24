@@ -10,9 +10,10 @@ import pytz
 from themes import DEFAULT_THEMES
 from data import (
     fetch_theme_results, fetch_theme_trend, fetch_momentum_data,
-    fetch_heatmap_data, fetch_monthly_heatmap, fetch_macro_data,
+    fetch_heatmap_data, fetch_heatmap_monthly, fetch_macro_data,
     fetch_market_segments, fetch_segment_detail, fetch_theme_detail,
     MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache_extended,
+    get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
 )
 
 app = FastAPI(title="StockWaveJP API", version="2.1.0")
@@ -56,6 +57,17 @@ def get_status():
 @app.get("/api/themes")
 def get_themes(period: str = Query(default="1mo")):
     results = fetch_theme_results(DEFAULT_THEMES, period)
+    for r in results:
+        if "up" not in r:
+            r["up"] = r["pct"] >= 0
+        if "stock_count" not in r:
+            r["stock_count"] = len(DEFAULT_THEMES.get(r.get("theme",""), {}))
+        if "volume" not in r:
+            r["volume"] = 0
+        if "volume_chg" not in r:
+            r["volume_chg"] = 0
+        if "trade_value" not in r:
+            r["trade_value"] = 0
     rise = sum(1 for r in results if r["up"])
     fall = len(results) - rise
     avg  = round(sum(r["pct"] for r in results) / len(results), 2) if results else 0
@@ -116,8 +128,8 @@ def get_heatmap():
 
 @app.get("/api/heatmap/monthly")
 def get_monthly_heatmap():
-    data, months = fetch_monthly_heatmap(DEFAULT_THEMES)
-    return {"data": data, "months": months}
+    result = fetch_heatmap_monthly(DEFAULT_THEMES)
+    return result
 
 
 @app.get("/api/macro")
@@ -138,6 +150,12 @@ def get_segment_detail(seg_name: str, period: str = Query(default="1mo")):
         "segment":  seg_name,
         "data":     fetch_segment_detail(seg_name, period),
     }
+
+
+@app.get("/api/nikkei-classification/{seg_name}")
+def get_nikkei_classification(seg_name: str):
+    """日経225セグメントの大分類・小分類情報を返す"""
+    return get_nikkei_classification_info(seg_name)
 
 
 @app.get("/api/theme-detail/{theme_name}")

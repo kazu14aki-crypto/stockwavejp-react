@@ -64,15 +64,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
         </p>
       </Card>
 
-      {/* バージョン */}
-      <Card>
-        <SLabel>バージョン情報</SLabel>
-        <div style={{ fontSize:'13px',color:'var(--text2)',lineHeight:2 }}>
-          <div>StockWaveJP React版 <span style={{ color:'var(--accent)',fontFamily:'var(--mono)' }}>v1.0.0</span></div>
-          <div>フロントエンド: <span style={{ color:'var(--text3)' }}>React + Vite</span></div>
-          <div>バックエンド: <span style={{ color:'var(--text3)' }}>FastAPI + yfinance</span></div>
-        </div>
-      </Card>
+
     </div>
   )
 }
