@@ -57,18 +57,7 @@ def get_status():
 @app.get("/api/themes")
 def get_themes(period: str = Query(default="1mo")):
     results = fetch_theme_results(DEFAULT_THEMES, period)
-    for r in results:
-        if "up" not in r:
-            r["up"] = r["pct"] >= 0
-        if "stock_count" not in r:
-            r["stock_count"] = len(DEFAULT_THEMES.get(r.get("theme",""), {}))
-        if "volume" not in r:
-            r["volume"] = 0
-        if "volume_chg" not in r:
-            r["volume_chg"] = 0
-        if "trade_value" not in r:
-            r["trade_value"] = 0
-    rise = sum(1 for r in results if r["up"])
+    rise = sum(1 for r in results if r.get("up", r["pct"] >= 0))
     fall = len(results) - rise
     avg  = round(sum(r["pct"] for r in results) / len(results), 2) if results else 0
     return {
@@ -108,7 +97,7 @@ def get_trend(theme_name: str, period: str = Query(default="1y")):
     return {
         "theme":  theme_name,
         "period": period,
-        "data":   fetch_theme_trend(DEFAULT_THEMES, theme_name, period),
+        "data":   fetch_theme_trend(DEFAULT_THEMES.get(theme_name, {}), period),
     }
 
 
@@ -117,7 +106,7 @@ def get_trends(themes: str = Query(default=""), period: str = Query(default="1y"
     theme_list = [t.strip() for t in themes.split(",") if t.strip()] if themes else list(DEFAULT_THEMES.keys())
     return {
         "period": period,
-        "trends": {t: fetch_theme_trend(DEFAULT_THEMES, t, period) for t in theme_list},
+        "trends": {t: fetch_theme_trend(DEFAULT_THEMES.get(t, {}), period) for t in theme_list},
     }
 
 
@@ -162,7 +151,7 @@ def get_nikkei_classification(seg_name: str):
 def get_theme_detail(theme_name: str, period: str = Query(default="1mo")):
     return {
         "period": period,
-        "data":   fetch_theme_detail(DEFAULT_THEMES, theme_name, period),
+        "data":   fetch_theme_detail(theme_name, DEFAULT_THEMES.get(theme_name, {}), period),
     }
 
 

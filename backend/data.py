@@ -367,15 +367,35 @@ def fetch_theme_results(themes: dict, period: str) -> list:
 
     result = []
     for theme_name, stocks in themes.items():
-        pcts = []
+        pcts, vols, tvs, vol_chgs = [], [], [], []
         for ticker in stocks.values():
             df = _fetch_df(ticker)
             pdf = _period_df(df, period)
             pct = _calc_pct(pdf)
-            if pct is not None: pcts.append(pct)
+            if pct is not None:
+                pcts.append(pct)
+                if pdf is not None and len(pdf) >= 2:
+                    vol = pdf["Volume"].dropna()
+                    half = max(len(pdf) // 2, 1)
+                    rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+                    pv = float(vol.head(half).mean()) if len(vol) > 0 else 0
+                    cl = pdf["Close"].dropna()
+                    price = float(cl.iloc[-1]) if len(cl) > 0 else 0
+                    vols.append(int(rv))
+                    tvs.append(int(rv * price))
+                    vol_chgs.append(round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0)
         avg = _robust_avg(pcts)
-        result.append({"theme": theme_name, "pct": avg})
+        result.append({
+            "theme": theme_name,
+            "pct": avg,
+            "up": avg >= 0,
+            "stock_count": len(stocks),
+            "volume": int(sum(vols)),
+            "volume_chg": round(float(np.mean(vol_chgs)) if vol_chgs else 0, 1),
+            "trade_value": int(sum(tvs)),
+        })
 
+    result.sort(key=lambda x: x["pct"], reverse=True)
     _set_mem_cache(cache_key, result)
     return result
 
