@@ -314,7 +314,9 @@ def _set_mem_cache(key: str, value):
 def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
     if ticker in _invalid_tickers: return None
     cache_key = f"df_{ticker}_{period}"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
     if cached is not None: return cached
     try:
         df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True, repair=True, timeout=20)
@@ -428,8 +430,10 @@ def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
 
 def fetch_segment_detail(seg_name: str, period: str) -> list:
     cache_key = f"seg_detail_{seg_name}_{period}"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     stocks_def = MARKET_SEGMENTS.get(seg_name, {})
     result = []
@@ -470,8 +474,10 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
 
 def fetch_market_segments(period: str) -> dict:
     cache_key = f"market_segments_{period}"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     result = {}
     for seg_name, stocks in MARKET_SEGMENTS.items():
@@ -492,8 +498,10 @@ def fetch_market_segments(period: str) -> dict:
 
 def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict:
     cache_key = f"theme_detail_{theme_name}_{period}"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     stocks = []
     for name, ticker in theme_stocks.items():
@@ -558,8 +566,10 @@ def fetch_momentum_data(themes: dict, period: str) -> list:
 
 def fetch_heatmap_data(themes: dict) -> dict:
     cache_key = "heatmap_data"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     periods = {"1W": "5d", "1M": "1mo", "3M": "3mo", "6M": "6mo", "1Y": "1y"}
     result = {}
@@ -580,8 +590,10 @@ def fetch_heatmap_data(themes: dict) -> dict:
 
 def fetch_heatmap_monthly(themes: dict) -> dict:
     cache_key = "heatmap_monthly"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     jst = pytz.timezone("Asia/Tokyo")
     now = datetime.now(jst)
@@ -621,8 +633,10 @@ def fetch_heatmap_monthly(themes: dict) -> dict:
 
 def fetch_macro_data(period: str) -> dict:
     cache_key = f"macro_{period}"
-    cached = _get_mem_cache(cache_key) or _get_cache(cache_key)
-    if cached: return cached
+    cached = _get_mem_cache(cache_key)
+    if cached is None:
+        cached = _get_cache(cache_key)
+    if cached is not None: return cached
 
     result = {}
     for name, ticker in MACRO_TICKERS.items():
