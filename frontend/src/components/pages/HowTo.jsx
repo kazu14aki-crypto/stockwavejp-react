@@ -62,7 +62,7 @@ export default function HowTo() {
         </div>
         <div style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.8 }}>
           日本株のテーマ別騰落率・出来高・売買代金をリアルタイムで追跡するダッシュボードです。
-          データはGitHub Actionsにより平日の前場寄り付き後・前場引け後・後場引け後に自動更新されます。
+          データはyfinance経由で取得・GitHub Actionsにより平日の前場寄り付き後・前場引け後・後場引け後に自動更新されます。マーケット指標はETFの価格データをもとに算出した独自指標です。
           投資判断の参考情報を提供するものであり、投資助言ではありません。
         </div>
       </div>

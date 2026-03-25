@@ -254,7 +254,7 @@ export default function ThemeDetail() {
   const [selThemes,    setSelThemes]    = useState([])
   const [themeTrends,  setThemeTrends]  = useState({})
   const [macroData,    setMacroData]    = useState({})
-  const [selMacro,     setSelMacro]     = useState(['日経平均', 'S&P500', 'ドル円'])
+  const [selMacro,     setSelMacro]     = useState(['国内株(ETF)', '米国株(ETF)', 'ドル円'])
   const [loadingT,     setLoadingT]     = useState(false)
   const [loadingM,     setLoadingM]     = useState(false)
   const [comparePeriod, setComparePeriod] = useState('1y')
@@ -409,7 +409,7 @@ export default function ThemeDetail() {
                     {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
                   </select>
                 </div>
-                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ騰落率の比較 ＋ マクロ指標との対比</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ騰落率の比較 ＋ マーケット指標との対比（ETFベース）</div>
               </div>
 
               {/* テーマ比較 */}

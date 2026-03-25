@@ -256,7 +256,7 @@ export default function TopPage() {
       </div>
 
       {/* マクロ指標 */}
-      <SHead title="📈 マクロ指標（1ヶ月）" />
+      <SHead title="📈 マーケット指標（ETFベース・1ヶ月）" />
       {loading ? (
         <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
       ) : (
@@ -268,7 +268,7 @@ export default function TopPage() {
       )}
 
       {/* マクロ比較グラフ（全指標・選択不可）*/}
-      <SHead title="📈 マクロ比較（1ヶ月・全指標）" />
+      <SHead title="📈 マーケット指標比較（ETFベース・1ヶ月）" />
       {loading ? (
         <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
       ) : (

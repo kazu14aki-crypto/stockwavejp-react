@@ -14,9 +14,16 @@ import pickle
 import hashlib
 
 # ── マクロティッカー ──
+# マクロ指標：指数の代わりにETFを使用（商標権・ライセンス問題を回避）
+# 1321.T = 日経225連動ETF(野村AM), 1306.T = TOPIX連動ETF(野村AM)
+# SPY = S&P500 ETF, QQQ = ナスダック100 ETF, VIXY = VIX Short-Term Futures ETF
 MACRO_TICKERS = {
-    "日経平均": "^N225", "TOPIX": "^TOPX", "S&P500": "^GSPC",
-    "ドル円": "JPY=X", "ナスダック": "^IXIC", "VIX": "^VIX",
+    "国内株(ETF)":    "1321.T",
+    "国内全般(ETF)":  "1306.T",
+    "米国株(ETF)":    "SPY",
+    "ドル円":         "JPY=X",
+    "米国ハイテク(ETF)": "QQQ",
+    "VIX(ETF)":      "VIXY",
 }
 
 # ── 日経225 大分類・小分類・銘柄 ──
@@ -405,36 +412,67 @@ def fetch_theme_results(themes: dict, period: str) -> list:
 
 def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
     from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    # キャッシュキーはstocksのhashから生成
+    import hashlib as _hl
+    ck_src = ",".join(sorted(theme_stocks.values())) + "_" + period
+    cache_key = "theme_trend_" + _hl.md5(ck_src.encode()).hexdigest()
+    cached = _get_mem_cache(cache_key)
+    if cached is not None:
+        return cached
+
     all_dates = set()
     stock_data = {}
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        futs = {ex.submit(_fetch_df, t): (n, t) for n, t in theme_stocks.items()}
-        for fut in as_completed(futs):
-            name, ticker = futs[fut]
-            df = fut.result()
-            if df is not None:
-                pdf = _period_df(df, period)
-                if pdf is not None and len(pdf) >= 2:
-                    cl = pdf["Close"].dropna()
-                    if len(cl) >= 2 and (cl > 0).all():
-                        cum = (cl / cl.iloc[0] - 1) * 100
-                        stock_data[name] = cum
-                        all_dates.update(cum.index)
 
-    if not all_dates: return []
+    def _safe_fetch(args):
+        name, ticker = args
+        try:
+            df = _fetch_df(ticker)
+            if df is None:
+                return name, None
+            pdf = _period_df(df, period)
+            if pdf is None or len(pdf) < 2:
+                return name, None
+            cl = pdf["Close"].dropna()
+            if len(cl) < 2 or not (cl > 0).all():
+                return name, None
+            cum = (cl / cl.iloc[0] - 1) * 100
+            return name, cum
+        except Exception:
+            return name, None
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs = list(ex.map(_safe_fetch, theme_stocks.items()))
+
+    for name, cum in futs:
+        if cum is not None:
+            stock_data[name] = cum
+            all_dates.update(cum.index)
+
+    if not all_dates:
+        return []
+
     dates = sorted(all_dates)
     result = []
     for d in dates:
         vals = []
         for s in stock_data.values():
             try:
-                v = float(s[d]) if d in s.index else np.nan
-                if not np.isnan(v):
-                    vals.append(v)
+                if d in s.index:
+                    v = s.loc[d]
+                    # Seriesの場合は最初の値を取得
+                    if hasattr(v, "__len__"):
+                        v = float(v.iloc[0])
+                    else:
+                        v = float(v)
+                    if not np.isnan(v):
+                        vals.append(v)
             except Exception:
                 pass
         if vals:
             result.append({"date": str(d.date()), "pct": round(float(np.mean(vals)), 2)})
+
+    _set_mem_cache(cache_key, result)
     return result
 
 def fetch_segment_detail(seg_name: str, period: str) -> list:
