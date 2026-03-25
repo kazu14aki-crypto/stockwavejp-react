@@ -425,7 +425,14 @@ def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
     dates = sorted(all_dates)
     result = []
     for d in dates:
-        vals = [float(s.get(d, np.nan)) for s in stock_data.values() if not np.isnan(s.get(d, np.nan))]
+        vals = []
+        for s in stock_data.values():
+            try:
+                v = float(s[d]) if d in s.index else np.nan
+                if not np.isnan(v):
+                    vals.append(v)
+            except Exception:
+                pass
         if vals:
             result.append({"date": str(d.date()), "pct": round(float(np.mean(vals)), 2)})
     return result
@@ -470,9 +477,12 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
     result_by_tv = sorted(result, key=lambda x: x["trade_value"], reverse=True)
     for i, r in enumerate(result_by_tv): r["tv_rank"] = i + 1
 
-    _set_mem_cache(cache_key, result)
-    _set_cache(cache_key, result)
-    return result
+    pcts = [r["pct"] for r in result]
+    avg = round(sum(pcts)/len(pcts), 2) if pcts else 0.0
+    final = {"stocks": result, "avg": avg}
+    _set_mem_cache(cache_key, final)
+    _set_cache(cache_key, final)
+    return final
 
 def fetch_market_segments(period: str) -> dict:
     cache_key = f"market_segments_{period}"
