@@ -82,6 +82,21 @@ function MacroCard({ name, data }) {
 
 const MACRO_COLORS = ['#ff4560','#ff8c42','#ffd166','#06d6a0','#4a9eff','#aa77ff']
 
+// niceScale
+function niceScaleTop(yMin, yMax, count=5) {
+  if (yMin === yMax) { yMin -= 1; yMax += 1 }
+  const range = yMax - yMin
+  const rawStep = range / count
+  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
+  const step = mag * ([1,2,2.5,5,10].find(c => c*mag >= rawStep) || 1)
+  const nMin = Math.floor(yMin / step) * step
+  const nMax = Math.ceil(yMax / step) * step
+  const ticks = []
+  for (let v = nMin; v <= nMax + step*0.01; v += step)
+    ticks.push(Math.round(v*1000)/1000)
+  return { ticks, nMin, nMax }
+}
+
 function MacroLineChart({ macro }) {
   const names = Object.keys(macro)
   if (!names.length) return null
@@ -91,7 +106,7 @@ function MacroLineChart({ macro }) {
   const dates = [...allDates].sort()
   if (!dates.length) return null
 
-  const W = 800, H = 180, PL = 44, PR = 16, PT = 12, PB = 28
+  const W = 800, H = 220, PL = 46, PR = 16, PT = 16, PB = 32
 
   let yMin = Infinity, yMax = -Infinity
   names.forEach(n => {
@@ -101,27 +116,20 @@ function MacroLineChart({ macro }) {
     })
   })
   if (yMin === Infinity) { yMin = -1; yMax = 1 }
-  const pad = Math.max(Math.abs(yMax - yMin) * 0.08, 0.5)
-  yMin -= pad; yMax += pad
 
-  // niceScale
-  const rawMax = Math.max(Math.abs(yMin), Math.abs(yMax))
-  const rawStep = (rawMax * 2) / 4
-  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
-  const step = mag * ([1,2,2.5,5,10].find(c => c * mag >= rawStep) || 1)
-  const nMax = Math.ceil(rawMax / step) * step
-  const ticks = []
-  for (let v = -nMax; v <= nMax + step * 0.01; v += step) ticks.push(Math.round(v * 1000) / 1000)
+  const { ticks, nMin, nMax } = niceScaleTop(yMin, yMax)
+  const xS = i => PL + (i / Math.max(dates.length-1, 1)) * (W-PL-PR)
+  const yS = v => PT + (1 - (v-nMin)/(nMax-nMin)) * (H-PT-PB)
 
-  const xS = i => PL + (i / Math.max(dates.length - 1, 1)) * (W - PL - PR)
-  const yS = v  => PT + (1 - (v - yMin) / (yMax - yMin)) * (H - PT - PB)
-
-  const xLabels = []
   const xStep = Math.max(1, Math.floor(dates.length / 5))
+  const xLabels = []
   for (let i = 0; i < dates.length; i += xStep) xLabels.push({ i, date: dates[i] })
 
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'14px', overflowX:'auto' }}>
+      <p style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px' }}>
+        ETFベースの独自指標 — 商標権の関係から指数そのものではなく連動ETFを使用しています
+      </p>
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px' }}>
         {ticks.map(v => (
           <g key={v}>
@@ -131,10 +139,10 @@ function MacroLineChart({ macro }) {
             </text>
           </g>
         ))}
-        {yMin < 0 && yMax > 0 && (
+        {nMin < 0 && nMax > 0 && (
           <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
         )}
-        {xLabels.map(({ i, date }) => (
+        {xLabels.map(({i, date}) => (
           <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">
             {date.slice(2,7)}
           </text>
@@ -148,24 +156,26 @@ function MacroLineChart({ macro }) {
           }).filter(Boolean)
           return pts.length ? (
             <polyline key={name} points={pts.join(' ')} fill="none"
-              stroke={MACRO_COLORS[ti % MACRO_COLORS.length]} strokeWidth="1.5"
+              stroke={MACRO_COLORS[ti % MACRO_COLORS.length]} strokeWidth="2"
               strokeLinejoin="round" strokeLinecap="round"/>
           ) : null
         })}
       </svg>
-      {/* 凡例 */}
-      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
+      {/* 凡例：名称＋最新騰落率 */}
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'12px', marginTop:'10px' }}>
         {names.map((name, ti) => {
           const data = macro[name] || []
-          const last = data[data.length - 1]
+          const last = data[data.length-1]
           const color = MACRO_COLORS[ti % MACRO_COLORS.length]
           return (
             <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
-              <div style={{ width:'14px', height:'2px', background:color }} />
+              <div style={{ width:'16px', height:'2px', background:color, borderRadius:'1px' }} />
               <span style={{ fontSize:'11px', color:'var(--text2)' }}>{name}</span>
-              {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:600 }}>
-                {last.pct >= 0 ? '+' : ''}{last.pct.toFixed(1)}%
-              </span>}
+              {last && (
+                <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:700 }}>
+                  {last.pct >= 0 ? '+' : ''}{last.pct.toFixed(1)}%
+                </span>
+              )}
             </div>
           )
         })}
@@ -256,7 +266,7 @@ export default function TopPage() {
       </div>
 
       {/* マクロ指標 */}
-      <SHead title="📈 マーケット指標（ETFベース・1ヶ月）" />
+      <SHead title="📈 マーケット指標（1ヶ月）" />
       {loading ? (
         <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
       ) : (
@@ -268,7 +278,7 @@ export default function TopPage() {
       )}
 
       {/* マクロ比較グラフ（全指標・選択不可）*/}
-      <SHead title="📈 マーケット指標比較（ETFベース・1ヶ月）" />
+      <SHead title="📈 マーケット指標比較（1ヶ月・全指標）" />
       {loading ? (
         <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
       ) : (

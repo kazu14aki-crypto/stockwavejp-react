@@ -14,16 +14,20 @@ import pickle
 import hashlib
 
 # ── マクロティッカー ──
-# マクロ指標：指数の代わりにETFを使用（商標権・ライセンス問題を回避）
-# 1321.T = 日経225連動ETF(野村AM), 1306.T = TOPIX連動ETF(野村AM)
-# SPY = S&P500 ETF, QQQ = ナスダック100 ETF, VIXY = VIX Short-Term Futures ETF
+# マクロ指標：ETFを使用（商標権・ライセンス問題を回避）
+# 国内主要株(225銘柄平均) = 1321.T (日経225連動ETF 野村AM)
+# TOPIX連動型上場投信(1306) = 1306.T (TOPIX連動ETF 野村AM)
+# S&P500 ETF(SPY) = SPY
+# ドル円 = JPY=X
+# 米国ハイテク株100 = QQQ (ナスダック100 ETF)
+# 市場ボラティリティ指標(VIXY) = VIXY
 MACRO_TICKERS = {
-    "国内株(ETF)":    "1321.T",
-    "国内全般(ETF)":  "1306.T",
-    "米国株(ETF)":    "SPY",
-    "ドル円":         "JPY=X",
-    "米国ハイテク(ETF)": "QQQ",
-    "VIX(ETF)":      "VIXY",
+    "国内主要株(225銘柄平均)":     "1321.T",
+    "TOPIX連動型上場投信(1306)":   "1306.T",
+    "S&P500 ETF(SPY)":            "SPY",
+    "ドル円":                      "JPY=X",
+    "米国ハイテク株100(QQQ)":      "QQQ",
+    "市場ボラティリティ指標(VIXY)": "VIXY",
 }
 
 # ── 日経225 大分類・小分類・銘柄 ──

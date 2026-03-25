@@ -254,7 +254,8 @@ export default function ThemeDetail() {
   const [selThemes,    setSelThemes]    = useState([])
   const [themeTrends,  setThemeTrends]  = useState({})
   const [macroData,    setMacroData]    = useState({})
-  const [selMacro,     setSelMacro]     = useState(['国内株(ETF)', '米国株(ETF)', 'ドル円'])
+  // マクロは全指標をデフォルト表示（選択不可）
+  const selMacro = Object.keys(macroData)
   const [loadingT,     setLoadingT]     = useState(false)
   const [loadingM,     setLoadingM]     = useState(false)
   const [comparePeriod, setComparePeriod] = useState('1y')
@@ -330,7 +331,7 @@ export default function ThemeDetail() {
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   const toggleMacro = (t) =>
-    setSelMacro(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+    // マクロは全指標表示のため選択不可
 
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []
@@ -429,21 +430,11 @@ export default function ThemeDetail() {
               </div>
               {loadingT ? <Loading /> : <MultiLineChart trends={themeTrends} selected={selThemes} />}
 
-              {/* マクロ比較 */}
-              <div style={{ ...sHead, marginTop:'24px' }}><span style={sTitle}>マクロ比較</span><div style={sLine}/></div>
-              <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'12px' }}>
-                {macroNames.map(t => (
-                  <button key={t} onClick={() => toggleMacro(t)} style={{
-                    padding:'3px 9px', borderRadius:'20px', fontSize:'11px', cursor:'pointer',
-                    border:`1px solid ${selMacro.includes(t) ? 'var(--accent)' : 'var(--border)'}`,
-                    background: selMacro.includes(t) ? 'rgba(74,158,255,0.12)' : 'transparent',
-                    color: selMacro.includes(t) ? 'var(--accent)' : 'var(--text3)',
-                    fontFamily:'var(--font)', transition:'all 0.15s',
-                  }}>
-                    {t}
-                  </button>
-                ))}
-              </div>
+              {/* マクロ比較（全指標・選択不可） */}
+              <div style={{ ...sHead, marginTop:'24px' }}><span style={sTitle}>マーケット指標比較（全指標）</span><div style={sLine}/></div>
+              <p style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px' }}>
+                ETFベースの独自指標 — 商標権の関係から指数そのものではなく連動ETFを使用しています
+              </p>
               {loadingM ? <Loading /> : <MultiLineChart trends={macroData} selected={selMacro} />}
             </div>
           </>
