@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useMarketData } from '../../hooks/useMarketData'
 import { useStaleData } from '../../hooks/useStaleData'
 import RefreshIndicator from '../RefreshIndicator'
 
@@ -140,7 +139,7 @@ export default function MarketRank() {
 
   const { data: marketData, loading: loadingS, refreshing: refreshingS, lastUpdate, refresh } = useStaleData(
     `${API}/api/market-rank?period=${period}`,
-    `market_${period}`,
+    `market_v2_${period}`,
     null
   )
   useEffect(()=>{
@@ -154,12 +153,20 @@ export default function MarketRank() {
     if (!activeSeg) return
     setLoadingD(true); setDetail(null)
     fetch(`${API}/api/market-rank/${encodeURIComponent(activeSeg)}?period=${period}`)
-      .then(r=>r.json()).then(d=>setDetail(d.data))
+      .then(r=>r.json()).then(d=>{
+        if (Array.isArray(d.data)) {
+          // 古い形式（リスト）の場合も対応
+          setDetail({stocks: d.data, avg: d.data.length ? d.data.reduce((s,x)=>s+x.pct,0)/d.data.length : 0})
+        } else {
+          setDetail(d.data)
+        }
+      })
       .catch(()=>{}).finally(()=>setLoadingD(false))
   },[activeSeg, period])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
-  const stocks   = detail?.stocks ?? []
+  const stocks    = detail?.stocks ?? []
+  const detailAvg = detail?.avg ?? 0
   // 上昇のみ・下落のみでフィルタリング
   const top5     = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5     = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -198,7 +205,7 @@ export default function MarketRank() {
             {/* セグメント選択 */}
             <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', padding:'12px 0', borderBottom:'1px solid var(--border)', marginBottom:'20px' }}>
               {(groups[activeGroup]||[]).map(seg=>{
-                const avg = summary?.[seg]?.avg
+                const avg = summary?.[seg]?.pct
                 const shortName = seg.split('｜')[1] || seg.split('（')[0]
                 return (
                   <button key={seg} onClick={()=>setActiveSeg(seg)} style={{
@@ -224,8 +231,8 @@ export default function MarketRank() {
                 <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
                   <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg}</span>
                   <span style={{ fontSize:'15px', fontFamily:'var(--mono)', fontWeight:700,
-                    color:detail.avg>=0?'var(--red)':'var(--green)' }}>
-                    平均 {detail.avg>=0?'+':''}{detail.avg.toFixed(1)}%
+                    color:detailAvg>=0?'var(--red)':'var(--green)' }}>
+                    平均 {detailAvg>=0?'+':''}{detailAvg.toFixed(1)}%
                   </span>
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄</span>
                 </div>
