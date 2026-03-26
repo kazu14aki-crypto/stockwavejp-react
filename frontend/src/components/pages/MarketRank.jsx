@@ -132,7 +132,7 @@ export default function MarketRank() {
   const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
-  const [activeGroup, setActiveGroup] = useState('日経225')
+  const [activeGroup, setActiveGroup] = useState('国内主要株')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
   const [loadingD,    setLoadingD]    = useState(false)
@@ -145,7 +145,7 @@ export default function MarketRank() {
   useEffect(()=>{
     if (!marketData) return
     setSummary(marketData.data); setGroups(marketData.groups||{})
-    const firstSeg = marketData.groups?.['日経225']?.[0]
+    const firstSeg = (marketData.groups?.['国内主要株'] || marketData.groups?.['日経225'] || Object.values(marketData.groups||{})[0] || [])[0]
     if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
   },[marketData])
 
@@ -183,7 +183,7 @@ export default function MarketRank() {
 
       <div style={{ padding:'20px 32px 48px' }}>
         <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-          日経225・TOPIX・市場区分ごとの騰落率ランキングと構成銘柄詳細
+          国内主要株・国内全般・市場区分ごとの騰落率ランキングと構成銘柄詳細
         </p>
 
         {/* グループタブ */}
@@ -239,8 +239,8 @@ export default function MarketRank() {
 
                 {/* TOP5グラフ */}
                 <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
-                  <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
-                  <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor} emptyMsg="下落銘柄なし"/>
+                  <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+                  <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
                 {/* 構成銘柄テーブル（銘柄名左固定） */}

@@ -31,7 +31,7 @@ MACRO_TICKERS = {
 }
 
 # ── 日経225 大分類・小分類・銘柄 ──
-# 出典：日経平均プロフィル公式（https://indexes.nikkei.co.jp/nkave/index/component?idx=nk225）
+# 出典：公開情報をもとに構成（構成銘柄は定期的に見直し）
 # 大分類：技術、金融、消費、素材、資本財・その他、運輸・公共
 # 各銘柄に大分類・小分類を付与
 
@@ -278,9 +278,9 @@ MARKET_SEGMENTS["グロース市場（一部）"] = {
 }
 
 SEGMENT_GROUPS = {
-    "日経225": [k for k in MARKET_SEGMENTS if k.startswith("日経225")],
-    "TOPIX":   [k for k in MARKET_SEGMENTS if k.startswith("TOPIX")],
-    "市場区分": [k for k in MARKET_SEGMENTS if any(k.startswith(x) for x in ["プライム","スタンダード","グロース"])],
+    "国内主要株": [k for k in MARKET_SEGMENTS if k.startswith("日経225")],
+    "国内全般":   [k for k in MARKET_SEGMENTS if k.startswith("TOPIX")],
+    "市場区分":   [k for k in MARKET_SEGMENTS if any(k.startswith(x) for x in ["プライム","スタンダード","グロース"])],
 }
 
 # ── キャッシュユーティリティ ──
@@ -438,9 +438,19 @@ def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
             if pdf is None or len(pdf) < 2:
                 return name, None
             cl = pdf["Close"].dropna()
-            if len(cl) < 2 or not (cl > 0).all():
+            if len(cl) < 2:
+                return name, None
+            # 価格の異常値チェック：負・ゼロ・極端な値を排除
+            if not (cl > 0).all():
+                return name, None
+            if cl.iloc[0] < 1:  # 基準値が1円未満は異常
                 return name, None
             cum = (cl / cl.iloc[0] - 1) * 100
+            # 累積騰落率が±1000%を超える場合は異常値として除外
+            if cum.abs().max() > 1000:
+                return name, None
+            # 重複インデックスを解消（株式分割等でまれに発生）
+            cum = cum[~cum.index.duplicated(keep='last')]
             return name, cum
         except Exception:
             return name, None
@@ -462,15 +472,17 @@ def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
         vals = []
         for s in stock_data.values():
             try:
-                if d in s.index:
-                    v = s.loc[d]
-                    # Seriesの場合は最初の値を取得
-                    if hasattr(v, "__len__"):
-                        v = float(v.iloc[0])
-                    else:
-                        v = float(v)
-                    if not np.isnan(v):
-                        vals.append(v)
+                if d not in s.index:
+                    continue
+                raw = s.loc[d]
+                # Seriesが返る場合（重複インデックス）はスカラーに変換
+                if isinstance(raw, pd.Series):
+                    v = float(raw.iloc[-1])
+                else:
+                    v = float(raw)
+                # ±1000%以内の正常値のみ使用
+                if not np.isnan(v) and abs(v) <= 1000:
+                    vals.append(v)
             except Exception:
                 pass
         if vals:
@@ -721,7 +733,7 @@ def warmup_cache_extended(themes: dict):
 # 日経225 セグメント分類情報をAPIで返すための関数
 def get_nikkei_classification_info(seg_name: str) -> dict:
     """日経225セグメントの大分類・小分類情報を返す"""
-    if not seg_name.startswith("日経225｜"): return {}
+    if not seg_name.startswith("日経225｜") and not seg_name.startswith("国内主要株｜"): return {}
     major = seg_name.replace("日経225｜", "")
     subs = NIKKEI225_CLASSIFICATION.get(major, {})
     sub_names = list(subs.keys())

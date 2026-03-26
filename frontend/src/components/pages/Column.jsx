@@ -371,7 +371,7 @@ StockWaveJPの「資金フロー」ページでは全テーマの騰落率と出
   },
 ]
 
-const CATEGORIES = ['すべて', '入門', '半導体', 'AI・クラウド', '防衛・宇宙', 'インバウンド', 'EV・脱炭素', '分析手法']
+const CATEGORIES = ['すべて', 'テーマ', '入門', '分析手法']
 
 const CAT_COLORS = {
   '入門':       { bg:'rgba(74,158,255,0.1)',  color:'#4a9eff',  border:'rgba(74,158,255,0.25)' },
@@ -479,8 +479,11 @@ export default function Column() {
   const [activeCat,  setActiveCat]  = useState('すべて')
   const [activeCol,  setActiveCol]  = useState(null)
 
+  const THEME_CATS = ['半導体', 'AI・クラウド', '防衛・宇宙', 'インバウンド', 'EV・脱炭素']
   const filtered = activeCat === 'すべて'
     ? COLUMNS
+    : activeCat === 'テーマ'
+    ? COLUMNS.filter(c => THEME_CATS.includes(c.category))
     : COLUMNS.filter(c => c.category === activeCat)
 
   if (activeCol) {

@@ -47,11 +47,11 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
           }}>
             <LogoSvg />
             <div style={{ textAlign: 'left' }} className="logo-text">
-              <div style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: 1.1, color: 'var(--text)' }}>
+              <div className="logo-main" style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: 1.1, color: 'var(--text)' }}>
                 <span style={{ color: '#e63030' }}>Stock</span>Wave
                 <span style={{ color: '#e63030', fontSize: '10px', marginLeft: '2px' }}>JP</span>
               </div>
-              <div style={{ fontSize: '7px', letterSpacing: '0.3em', color: 'var(--text3)', fontWeight: 600, marginTop: '1px' }}>
+              <div className="logo-sub" style={{ fontSize: '7px', letterSpacing: '0.3em', color: 'var(--text3)', fontWeight: 600, marginTop: '1px' }}>
                 株　式　波　動
               </div>
             </div>
@@ -103,7 +103,9 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
           .hamburger-btn { display: block !important; }
           .status-label  { display: none !important; }
           .status-time   { display: none !important; }
-          .logo-text     { display: none !important; }
+          .logo-text     { display: block !important; }
+          .logo-text .logo-main { font-size: 13px !important; }
+          .logo-text .logo-sub  { display: none !important; }
         }
         @media (max-width: 400px) {
           .status-area   { display: none !important; }

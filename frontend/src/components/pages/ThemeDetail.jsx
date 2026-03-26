@@ -388,8 +388,8 @@ export default function ThemeDetail() {
 
             {/* ── TOP5グラフ（小型）── */}
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'20px' }} className="top5g">
-              <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
-              <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor} emptyMsg="下落銘柄なし"/>
+              <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+              <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
             </div>
 
             {/* ── 構成銘柄テーブル ── */}

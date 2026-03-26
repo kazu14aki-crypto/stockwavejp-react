@@ -57,25 +57,30 @@ function KpiCard({ label, value, valueColor, sub, delay=0, loading=false, arrow=
   )
 }
 
-function MacroCard({ name, data }) {
+function MacroCard({ name, data, color }) {
   if (!data||!data.length) return null
   const last  = data[data.length-1]
-  const color = last.pct>=0 ? 'var(--red)' : 'var(--green)'
+  const pctColor = last.pct>=0 ? 'var(--red)' : 'var(--green)'
+  const lineColor = color || pctColor
   const vals  = data.map(d=>d.pct)
   const min   = Math.min(...vals), max = Math.max(...vals)
-  const W=100, H=32
-  const pts = vals.map((v,i)=>`${(i/(vals.length-1))*W},${H-((v-min)/(max-min||1))*H}`).join(' ')
+  const W=120, H=44
+  // 各指標独立スケールでスパークライン描画
+  const pts = vals.map((v,i)=>`${(i/Math.max(vals.length-1,1))*W},${H-((v-min)/(max-min||0.01))*H}`).join(' ')
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'12px 14px',
-      display:'flex', alignItems:'center', justifyContent:'space-between', gap:'10px',
-      minWidth:0, /* 見切れ防止 */ }}>
-      <div style={{ minWidth:0 }}>
-        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'3px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</div>
-        <div style={{ fontFamily:'var(--mono)', fontSize:'15px', fontWeight:700, color }}>{last.pct>=0?'+':''}{last.pct.toFixed(1)}%</div>
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
+      padding:'10px 12px', display:'flex', flexDirection:'column', gap:'6px', minWidth:0 }}>
+      <div style={{ fontSize:'10px', color:'var(--text3)', fontWeight:600, letterSpacing:'0.05em',
+        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</div>
+      <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', gap:'8px' }}>
+        <div style={{ fontFamily:'var(--mono)', fontSize:'16px', fontWeight:700, color:pctColor, lineHeight:1 }}>
+          {last.pct>=0?'+':''}{last.pct.toFixed(1)}%
+        </div>
+        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ flexShrink:0, display:'block' }}>
+          <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
+            strokeLinejoin="round" strokeLinecap="round"/>
+        </svg>
       </div>
-      <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ flexShrink:0 }}>
-        <polyline points={pts} fill="none" stroke={color} strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round"/>
-      </svg>
     </div>
   )
 }
@@ -108,18 +113,31 @@ function MacroLineChart({ macro }) {
 
   const W = 800, H = 220, PL = 46, PR = 16, PT = 16, PB = 32
 
-  let yMin = Infinity, yMax = -Infinity
+  // 各指標を独立スケールで正規化（0基準→期間内の相対変化を均等表示）
+  // Y軸は「相対騰落率（各指標の期間内変化幅を揃える）」
+  const scaledData = {}
   names.forEach(n => {
-    ;(macro[n] || []).forEach(d => {
-      if (d.pct < yMin) yMin = d.pct
-      if (d.pct > yMax) yMax = d.pct
-    })
+    const data = macro[n] || []
+    if (!data.length) return
+    const vals = data.map(d => d.pct)
+    const dataMin = Math.min(...vals)
+    const dataMax = Math.max(...vals)
+    const range = dataMax - dataMin || 0.01
+    // 各指標を-50〜+50の共通レンジに正規化して表示
+    scaledData[n] = data.map(d => ({
+      date: d.date,
+      pct: d.pct,  // 実際の%（凡例表示用）
+      scaled: ((d.pct - dataMin) / range) * 80 - 40  // -40〜+40に正規化
+    }))
   })
-  if (yMin === Infinity) { yMin = -1; yMax = 1 }
 
-  const { ticks, nMin, nMax } = niceScaleTop(yMin, yMax)
+  // 正規化後のスケール（固定 -50〜+50）
+  const nMin = -45, nMax = 45
   const xS = i => PL + (i / Math.max(dates.length-1, 1)) * (W-PL-PR)
   const yS = v => PT + (1 - (v-nMin)/(nMax-nMin)) * (H-PT-PB)
+
+  // Y軸ラベル（相対変化を示す）
+  const ticks = [-40, -20, 0, 20, 40]
 
   const xStep = Math.max(1, Math.floor(dates.length / 5))
   const xLabels = []
@@ -127,49 +145,58 @@ function MacroLineChart({ macro }) {
 
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'14px', overflowX:'auto' }}>
-      <p style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px' }}>
-        ETFベースの独自指標 — 商標権の関係から指数そのものではなく連動ETFを使用しています
-      </p>
+      {/* ミニチャートカード（各指標の実際の騰落率）*/}
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'8px', marginBottom:'14px' }} className="macro-mini-grid">
+        {names.map((name, ti) => (
+          <MacroCard key={name} name={name} data={macro[name] || []} color={MACRO_COLORS[ti % MACRO_COLORS.length]} />
+        ))}
+      </div>
+
+      {/* 折れ線グラフ（各指標の相対変化を均等スケールで表示）*/}
+      <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'6px' }}>
+        ▼ 期間内の相対変化トレンド（各指標の変動幅を均等に正規化）
+      </div>
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px' }}>
         {ticks.map(v => (
           <g key={v}>
-            <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(74,120,200,0.08)" strokeWidth="1"/>
-            <text x={PL-4} y={yS(v)+3} textAnchor="end" fill="var(--text3)" fontSize="9" fontFamily="DM Mono">
-              {Number.isInteger(v) ? v+'%' : v.toFixed(1)+'%'}
+            <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(74,120,200,0.07)" strokeWidth="1"/>
+            {v === 0 && (
+              <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.25)" strokeWidth="1" strokeDasharray="4,4"/>
+            )}
+            <text x={PL-4} y={yS(v)+3} textAnchor="end" fill="var(--text3)" fontSize="8" fontFamily="DM Mono">
+              {v > 0 ? `+${v}` : v}
             </text>
           </g>
         ))}
-        {nMin < 0 && nMax > 0 && (
-          <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
-        )}
         {xLabels.map(({i, date}) => (
-          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">
+          <text key={date} x={xS(i)} y={H-4} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">
             {date.slice(2,7)}
           </text>
         ))}
         {names.map((name, ti) => {
-          const data = macro[name] || []
+          const data = scaledData[name] || []
           if (!data.length) return null
+          const color = MACRO_COLORS[ti % MACRO_COLORS.length]
           const pts = data.map(d => {
             const xi = dates.indexOf(d.date)
-            return xi >= 0 ? `${xS(xi)},${yS(d.pct)}` : null
+            return xi >= 0 ? `${xS(xi)},${yS(d.scaled)}` : null
           }).filter(Boolean)
           return pts.length ? (
             <polyline key={name} points={pts.join(' ')} fill="none"
-              stroke={MACRO_COLORS[ti % MACRO_COLORS.length]} strokeWidth="2"
-              strokeLinejoin="round" strokeLinecap="round"/>
+              stroke={color} strokeWidth="2"
+              strokeLinejoin="round" strokeLinecap="round" opacity="0.85"/>
           ) : null
         })}
       </svg>
-      {/* 凡例：名称＋最新騰落率 */}
-      <div style={{ display:'flex', flexWrap:'wrap', gap:'12px', marginTop:'10px' }}>
+      {/* 凡例 */}
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
         {names.map((name, ti) => {
           const data = macro[name] || []
           const last = data[data.length-1]
           const color = MACRO_COLORS[ti % MACRO_COLORS.length]
           return (
             <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
-              <div style={{ width:'16px', height:'2px', background:color, borderRadius:'1px' }} />
+              <div style={{ width:'14px', height:'2px', background:color, borderRadius:'1px' }} />
               <span style={{ fontSize:'11px', color:'var(--text2)' }}>{name}</span>
               {last && (
                 <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:700 }}>
@@ -179,6 +206,9 @@ function MacroLineChart({ macro }) {
             </div>
           )
         })}
+      </div>
+      <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
+        ※ETFベースの独自指標。Y軸は各指標の変動幅を正規化した相対値（実際の騰落率はカード参照）
       </div>
     </div>
   )
@@ -265,20 +295,8 @@ export default function TopPage() {
           sub={s?.bot?<span style={{ color:'var(--green)', fontWeight:600 }}>{s.bot.pct.toFixed(1)}%</span>:'-'}/>
       </div>
 
-      {/* マクロ指標 */}
-      <SHead title="📈 マーケット指標（1ヶ月）" />
-      {loading ? (
-        <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
-      ) : (
-        <div className="responsive-grid-3">
-          {Object.entries(macro).map(([name,data])=>(
-            <MacroCard key={name} name={name} data={data}/>
-          ))}
-        </div>
-      )}
-
-      {/* マクロ比較グラフ（全指標・選択不可）*/}
-      <SHead title="📈 マーケット指標比較（1ヶ月・全指標）" />
+      {/* マーケット指標（ミニカード＋比較グラフ統合）*/}
+      <SHead title="📈 マーケット指標・比較（1ヶ月）" />
       {loading ? (
         <div style={{ color:'var(--text3)', fontSize:'13px', padding:'12px 0' }}><Dots /></div>
       ) : (
@@ -287,7 +305,11 @@ export default function TopPage() {
 
       <style>{`
         .col-quick-grid { grid-template-columns: 1fr 1fr 1fr; }
-        @media (max-width:640px) { .col-quick-grid { grid-template-columns: 1fr !important; } }
+        .macro-mini-grid { grid-template-columns: repeat(3, 1fr) !important; }
+        @media (max-width:640px) {
+          .col-quick-grid { grid-template-columns: 1fr !important; }
+          .macro-mini-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
         .hero-desc { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         @media (max-width:900px) {
           .hero-desc { white-space:normal !important; overflow:visible !important; text-overflow:unset !important; }

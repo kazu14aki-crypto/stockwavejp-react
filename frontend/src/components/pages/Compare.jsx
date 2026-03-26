@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useThemeNames, useTrends, useMacro } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -121,7 +122,7 @@ export default function Compare() {
   const [selThemes,  setSelThemes]  = useState([])
   const [themeTrends, setThemeTrends] = useState({})
   const [macroData,  setMacroData]  = useState({})
-  const [selMacro,   setSelMacro]   = useState(['日経平均', 'S&P500', 'ドル円'])
+  const [selMacro,   setSelMacro]   = useState(['国内株(ETF)', '米国株(ETF)', 'ドル円'])
   const [loadingT,   setLoadingT]   = useState(false)
   const [loadingM,   setLoadingM]   = useState(false)
 

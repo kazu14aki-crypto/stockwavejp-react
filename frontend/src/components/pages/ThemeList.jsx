@@ -220,7 +220,8 @@ export default function ThemeList() {
             <SectionHead title="📈 騰落ランキング TOP5" />
             <Top5Pair
               top5={risingTop5} bot5={fallingTop5}
-              topTitle="▲ 上昇テーマ TOP5" botTitle="▼ 下落テーマ TOP5"
+              topTitle={`▲ 上昇テーマ TOP5（${themes.filter(t=>t.pct>0).length}テーマ上昇）`}
+              botTitle={`▼ 下落テーマ TOP5（${themes.filter(t=>t.pct<0).length}テーマ下落）`}
               topColorFn={pctColor} botColorFn={pctColor}
               valueKey="pct" />
 
