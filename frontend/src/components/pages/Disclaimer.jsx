@@ -1,24 +1,23 @@
 const SECTIONS = [
   {
-    title: '免責事項',
-    body: '本ツール（StockWaveJP）は株式投資の参考情報を提供することを目的としており、投資助言・推奨を行うものではありません。投資に関する最終的な判断はご自身の責任においてお願いします。',
+    title: '情報の目的と責任',
+    body: '本ツール（StockWaveJP）は、株式市場の動向分析のための参考情報の提供を目的としており、投資勧誘や特定の銘柄の推奨、投資助言を行うものではありません。投資に関する最終決定は、お客様ご自身の判断と責任において行われるようお願いいたします。',
   },
   {
-    title: 'データの正確性について',
-    body: '本ツールが提供するデータはyfinance経由で取得しており、リアルタイムデータではありません（15〜20分程度の遅延があります）。データの正確性・完全性・最新性を保証するものではありません。実際の投資判断には証券会社等の公式データをご確認ください。',
+    title: 'データの独自集計について',
+    body: '当サイトで表示される各数値（「国内主要225銘柄」「大型株70社」等の平均騰落率および集計データ）は、対象となる個別銘柄の終値を元に、当サイトが独自に集計・算出したものです。日本経済新聞社が公表する「日経平均株価」や、株式会社JPX総研が公表する「TOPIX」等の公式な指数値ではありません。',
+  },
+  {
+    title: 'データの正確性とソース',
+    body: '当サイトの情報は信頼できると考えられるデータプロバイダーより取得しておりますが、データの正確性、完全性、最新性を保証するものではありません。提供データには市場に応じた遅延（15分〜20分程度、または日次更新）が含まれます。実際の投資に際しては、必ず証券会社等の公式データをご確認ください。',
+  },
+  {
+    title: '損害への責任',
+    body: '本ツールの利用により生じたいかなる損害（直接・間接を問わず）についても、運営者は一切の責任を負いません。本サービスは「現状のまま」提供されており、保守、中断、不具合等による損害についても同様とします。',
   },
   {
     title: '著作権について',
     body: '本ツールのコード・デザイン・データ構成は著作権により保護されています。無断転載・複製・商用利用を禁止します。',
-  },
-  {
-    title: '利用規約',
-    body: '本ツールを利用した結果生じたいかなる損害についても、運営者は責任を負いません。本ツールは「現状のまま」提供されており、いかなる保証も行いません。',
-  },
-  {
-    title: 'お問い合わせ',
-    body: null,
-    isContact: true,
   },
 ]
 
@@ -29,7 +28,7 @@ export default function Disclaimer() {
         免責事項
       </h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'28px' }}>
-        StockWaveJP 利用規約・免責事項・お問い合わせ
+        StockWaveJP 免責事項
       </p>
 
       {SECTIONS.map((s,i) => (
@@ -38,40 +37,11 @@ export default function Disclaimer() {
           borderRadius:'var(--radius)', padding:'20px 24px', marginBottom:'12px',
           animation:`fadeUp 0.3s ease ${i*0.06}s both`,
         }}>
-          <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+          <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'10px',
+            borderLeft:'3px solid var(--accent)', paddingLeft:'10px' }}>
             {s.title}
           </div>
-          {s.isContact ? (
-            <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.8 }}>
-              <p style={{ marginBottom:'12px' }}>
-                ご意見・ご要望・不具合報告などのお問い合わせは、X（旧Twitter）のDMよりお願いします。
-              </p>
-              <a
-                href="https://twitter.com/StockWaveJP"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display:'inline-flex', alignItems:'center', gap:'10px',
-                  background:'rgba(91,156,246,0.1)', border:'1px solid rgba(91,156,246,0.25)',
-                  borderRadius:'8px', padding:'12px 20px',
-                  color:'var(--accent)', textDecoration:'none', fontWeight:600, fontSize:'14px',
-                  transition:'all 0.15s',
-                }}
-                onMouseEnter={e=>{e.currentTarget.style.background='rgba(91,156,246,0.2)'}}
-                onMouseLeave={e=>{e.currentTarget.style.background='rgba(91,156,246,0.1)'}}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-                <span>StockWaveJP　@StockWaveJP</span>
-              </a>
-              <p style={{ marginTop:'12px', fontSize:'12px', color:'var(--text3)' }}>
-                ※ お返事までお時間をいただく場合がございます。あらかじめご了承ください。
-              </p>
-            </div>
-          ) : (
-            <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.8 }}>{s.body}</div>
-          )}
+          <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9 }}>{s.body}</div>
         </div>
       ))}
 

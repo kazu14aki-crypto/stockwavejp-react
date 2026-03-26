@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
         },
         {
           title: '4. 広告について',
-          body: `当サイトはGoogle AdSenseを利用した広告を掲載しています。Googleはユーザーの興味関心に基づいた広告を表示するためにCookieを使用することがあります。詳細はGoogleのプライバシーポリシー（https://policies.google.com/privacy）をご確認ください。\n\n「Googleアドセンスに関するよくある質問」もご参照ください。`,
+          body: `当サイトは、第三者配信事業者であるGoogleが提供する広告サービス「Google AdSense」を利用しています。Googleを含む第三者配信事業者は、Cookieを使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて広告を配信します。\n\nユーザーは、Googleの広告設定でパーソナライズ広告を無効にできます。また、www.aboutads.info にアクセスすることで、第三者配信事業者のCookieを無効にすることも可能です。`,
         },
         {
           title: '5. アクセス解析ツール',
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
         },
         {
           title: '8. お問い合わせ',
-          body: `プライバシーポリシーに関するお問い合わせは、サイト内のお問い合わせフォームまたはサイドバーのメニューよりご連絡ください。`,
+          body: `プライバシーポリシーに関するお問い合わせは、X（旧Twitter）のDM（@StockWaveJP）またはサイト内のお問い合わせフォームよりご連絡ください。`,
         },
       ].map((s, i) => (
         <div key={i} style={{ marginBottom:'28px' }}>
