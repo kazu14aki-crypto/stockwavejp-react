@@ -286,6 +286,8 @@ export default function TopPage() {
       )}
 
       <style>{`
+        .col-quick-grid { grid-template-columns: 1fr 1fr 1fr; }
+        @media (max-width:640px) { .col-quick-grid { grid-template-columns: 1fr !important; } }
         .hero-desc { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         @media (max-width:900px) {
           .hero-desc { white-space:normal !important; overflow:visible !important; text-overflow:unset !important; }

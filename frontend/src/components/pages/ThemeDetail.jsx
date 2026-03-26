@@ -331,7 +331,7 @@ export default function ThemeDetail() {
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   const toggleMacro = (t) =>
-    // マクロは全指標表示のため選択不可
+    setSelMacro(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
 
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []

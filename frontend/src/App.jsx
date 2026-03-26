@@ -12,7 +12,10 @@ import CustomTheme from './components/pages/CustomTheme'
 import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
-import Disclaimer  from './components/pages/Disclaimer'
+import Disclaimer    from './components/pages/Disclaimer'
+import Column       from './components/pages/Column'
+import PrivacyPolicy from './components/pages/PrivacyPolicy'
+import About        from './components/pages/About'
 
 const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
@@ -24,10 +27,13 @@ const PAGES = [
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
-  { icon:'📣', label:'お知らせ',       component:News        },
-  { icon:'📖', label:'使い方',         component:HowTo       },
-  { icon:'⚙️', label:'設定',           component:Settings    },
-  { icon:'⚖️', label:'免責事項',       component:Disclaimer  },
+  { icon:'📝', label:'コラム・解説',   component:Column       },
+  { icon:'📣', label:'お知らせ',       component:News         },
+  { icon:'📖', label:'使い方',         component:HowTo        },
+  { icon:'⚙️', label:'設定',           component:Settings     },
+  { icon:'⚖️', label:'免責事項',       component:Disclaimer   },
+  { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
+  { icon:'ℹ️', label:'運営者情報',     component:About        },
 ]
 const ALL_PAGES = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
