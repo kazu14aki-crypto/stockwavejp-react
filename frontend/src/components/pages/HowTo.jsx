@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import React from 'react'
 
 const SECTIONS = [
   {
@@ -278,6 +279,36 @@ const USAGE_SCENARIOS = [
   },
 ]
 
+
+function QAItem({ q, a, delay = 0 }) {
+  const [open, setOpen] = React.useState(false)
+  return (
+    <div style={{
+      background: 'var(--bg2)', border: '1px solid var(--border)',
+      borderRadius: '8px', marginBottom: '6px', overflow: 'hidden',
+      animation: `fadeUp 0.3s ease ${delay}s both`,
+    }}>
+      <button onClick={() => setOpen(o => !o)} style={{
+        width: '100%', background: 'transparent', border: 'none', cursor: 'pointer',
+        display: 'flex', alignItems: 'center', gap: '10px',
+        padding: '12px 16px', fontFamily: 'var(--font)', textAlign: 'left',
+      }}>
+        <span style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 700, flexShrink: 0 }}>Q</span>
+        <span style={{ flex: 1, fontSize: '13px', fontWeight: 600, color: 'var(--text)' }}>{q}</span>
+        <span style={{ fontSize: '11px', color: 'var(--text3)', flexShrink: 0 }}>{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <div style={{ padding: '0 16px 14px 16px', borderTop: '1px solid var(--border)' }}>
+          <div style={{ display: 'flex', gap: '10px', paddingTop: '12px' }}>
+            <span style={{ fontSize: '13px', color: 'var(--green)', fontWeight: 700, flexShrink: 0 }}>A</span>
+            <span style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9 }}>{a}</span>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function HowTo() {
   const [activeSection, setActiveSection] = useState(null)
 
@@ -419,6 +450,50 @@ export default function HowTo() {
           )
         })}
       </div>
+
+
+      {/* Q&A */}
+      <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text)', margin: '28px 0 12px',
+        display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>❓ よくある質問（Q&A）</span>
+        <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
+      </div>
+      {[
+        {
+          q: 'データはどのくらいの頻度で更新されますか？',
+          a: '平日の前場寄り付き後（9時35分頃）・前場引け後（12時5分頃）・後場引け後（15時35分頃）の1日3回、GitHub Actionsにより自動更新されます。土日・祝日は更新されません。',
+        },
+        {
+          q: '表示されているデータはリアルタイムですか？',
+          a: 'いいえ。データはyfinance経由で取得しており、15〜20分程度の遅延があります。また、日次更新のため、取引時間中のリアルタイム価格ではなく当日または前日の終値を基準に集計されます。実際の売買には証券会社の公式データをご使用ください。',
+        },
+        {
+          q: '騰落率はどのように計算されていますか？',
+          a: '各テーマの騰落率は、テーマに含まれる構成銘柄それぞれの騰落率（期間開始日の終値を基準とした変化率）を平均したものです。公式の指数（日経平均株価・TOPIXなど）とは異なる独自の集計値です。',
+        },
+        {
+          q: '「寄与度」とは何ですか？',
+          a: '寄与度は、その銘柄がテーマ全体の平均騰落率に対してどれだけ貢献しているかを示す指標です。テーマ平均騰落率をテーマ内の銘柄数で均等割りした値として計算しています。',
+        },
+        {
+          q: 'カスタムテーマのデータはどこに保存されますか？',
+          a: 'ブラウザのローカルストレージに保存されます。そのため、同じデバイス・ブラウザでのみ閲覧可能です。ブラウザのキャッシュ・データをクリアすると削除されますのでご注意ください。',
+        },
+        {
+          q: '米国株や外国株は追跡できますか？',
+          a: '現在は日本株（東証上場銘柄）のみ対応しています。米国株・外国株のテーマ追跡には対応しておりません。',
+        },
+        {
+          q: '「状態（加速・失速・転換）」はどう判定されますか？',
+          a: '騰落モメンタムの状態は、騰落率と先週比の組み合わせで判定しています。🔥加速：騰落率の先週比が+3pt超かつ先月比が+5pt超、❄️失速：その逆、↗転換↑：先週比+2pt超、↘転換↓：先週比-2pt未満、→横ばい：それ以外',
+        },
+        {
+          q: 'データに誤りがあると思われる場合はどうすればよいですか？',
+          a: 'X（旧Twitter）@StockWaveJP のDMまでご連絡ください。データソース（yfinance）に起因する誤りの場合は修正が困難な場合もありますが、内容を確認の上対応いたします。',
+        },
+      ].map((item, i) => (
+        <QAItem key={i} q={item.q} a={item.a} delay={i * 0.04} />
+      ))}
 
       {/* データについて */}
       <div style={{

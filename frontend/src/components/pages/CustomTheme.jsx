@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const STORAGE_KEY = 'swjp_custom_themes_v2'
+const PERIODS = [
+  { label:'1週間', value:'5d' },
+  { label:'1ヶ月', value:'1mo' },
+  { label:'3ヶ月', value:'3mo' },
+]
 
 function loadThemes() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]') } catch { return [] }
@@ -10,16 +15,71 @@ function saveThemes(themes) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(themes))
 }
 
+function formatLarge(n) {
+  if (!n) return '0'
+  if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
+  if (n >= 1e8)  return (n/1e8).toFixed(1)+'億'
+  if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
+  return n.toLocaleString()
+}
+
+// 銘柄詳細パネル（騰落率グラフ＋データテーブル）
+function StockDetailPanel({ ticker, period }) {
+  const [detail, setDetail] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    if (!ticker) return
+    setLoading(true)
+    // テーマ詳細APIを1銘柄で呼ぶ（stock-infoで価格＋履歴）
+    Promise.all([
+      fetch(`${API}/api/stock-info/${encodeURIComponent(ticker)}`).then(r => r.json()),
+      fetch(`${API}/api/trends?themes=${encodeURIComponent('_single_')}&period=${period}`).then(() => null).catch(() => null),
+    ]).then(([info]) => {
+      setDetail(info)
+    }).catch(() => {}).finally(() => setLoading(false))
+  }, [ticker, period])
+
+  if (loading) return (
+    <div style={{ padding:'12px', color:'var(--text3)', fontSize:'12px' }}>読み込み中...</div>
+  )
+  if (!detail) return null
+
+  const pColor = (detail.pct ?? 0) >= 0 ? 'var(--red)' : 'var(--green)'
+  return (
+    <div style={{ marginTop:'8px', background:'var(--bg3)', border:'1px solid var(--border)',
+      borderRadius:'8px', padding:'12px 14px' }}>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:'8px', marginBottom:'8px' }}>
+        {[
+          { label:'株価', value: detail.price ? `¥${detail.price.toLocaleString()}` : '-' },
+          { label:'騰落率', value: detail.pct != null ? `${detail.pct >= 0 ? '+' : ''}${detail.pct?.toFixed(1)}%` : '-', color: pColor },
+          { label:'出来高', value: formatLarge(detail.volume) },
+          { label:'売買代金', value: formatLarge(detail.trade_value) },
+        ].map(({ label, value, color }, i) => (
+          <div key={i} style={{ background:'var(--bg2)', borderRadius:'6px', padding:'8px 10px',
+            border:'1px solid var(--border)' }}>
+            <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'2px' }}>{label}</div>
+            <div style={{ fontSize:'13px', fontWeight:700, color: color || 'var(--text)',
+              fontFamily:'var(--mono)' }}>{value}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function CustomTheme() {
   const [themes,     setThemes]     = useState(loadThemes)
   const [mode,       setMode]       = useState('list')
   const [editTarget, setEditTarget] = useState(null)
   const [themeName,  setThemeName]  = useState('')
-  const [query,      setQuery]      = useState('')   // 銘柄名 or 証券コード
+  const [query,      setQuery]      = useState('')
   const [searching,  setSearching]  = useState(false)
-  const [results,    setResults]    = useState([])   // 検索結果リスト
+  const [results,    setResults]    = useState([])
   const [searchError,setSearchError]= useState('')
   const [stocks,     setStocks]     = useState([])
+  const [expandedResult, setExpandedResult] = useState(null)
+  const [detailPeriod, setDetailPeriod] = useState('1mo')
 
   const persist = (updated) => { setThemes(updated); saveThemes(updated) }
 
@@ -27,54 +87,40 @@ export default function CustomTheme() {
     const t = themes[i]
     setEditTarget(i); setThemeName(t.name); setStocks(t.stocks || [])
     setMode('edit'); setResults([]); setQuery(''); setSearchError('')
+    setExpandedResult(null)
   }
   const startCreate = () => {
     setEditTarget(null); setThemeName(''); setStocks([])
     setMode('create'); setResults([]); setQuery(''); setSearchError('')
+    setExpandedResult(null)
   }
 
-  // 検索：銘柄名 or 4桁証券コード
   const handleSearch = async () => {
     const q = query.trim()
     if (!q) return
-    setSearching(true); setSearchError(''); setResults([])
-
-    // 数字4桁 → 日本株ティッカー（.T付与）
-    // アルファベット → 米国株そのまま
-    // それ以外 → 銘柄名検索
-    let tickersToTry = []
-    if (/^\d{4}$/.test(q)) {
-      tickersToTry = [q + '.T']
-    } else if (/^[A-Za-z\^=]+$/.test(q)) {
-      tickersToTry = [q.toUpperCase()]
-    } else {
-      // 銘柄名検索：バックエンドのsearch APIを呼ぶ
-      try {
+    setSearching(true); setSearchError(''); setResults([]); setExpandedResult(null)
+    try {
+      if (/^\d{4}$/.test(q)) {
+        const ticker = q + '.T'
+        const res  = await fetch(`${API}/api/stock-info/${encodeURIComponent(ticker)}`)
+        const data = await res.json()
+        if (data.ticker) {
+          setResults([{ ticker: data.ticker, name: data.name || data.ticker, price: data.price }])
+        } else {
+          setSearchError(`証券コード「${q}」の銘柄が見つかりませんでした`)
+        }
+      } else {
         const res  = await fetch(`${API}/api/stock-search?q=${encodeURIComponent(q)}`)
         const data = await res.json()
-        if (data.results && data.results.length > 0) {
-          setResults(data.results)
+        const jpResults = (data.results || []).filter(r => r.ticker && r.ticker.endsWith('.T'))
+        if (jpResults.length > 0) {
+          setResults(jpResults)
         } else {
-          setSearchError(`「${q}」に一致する銘柄が見つかりませんでした`)
+          setSearchError(`「${q}」に一致する銘柄が見つかりませんでした。証券コード（4桁）での検索もお試しください。`)
         }
-      } catch {
-        setSearchError('検索に失敗しました')
-      }
-      setSearching(false)
-      return
-    }
-
-    // ティッカーで直接検索
-    try {
-      const res  = await fetch(`${API}/api/stock-info/${encodeURIComponent(tickersToTry[0])}`)
-      const data = await res.json()
-      if (data.name) {
-        setResults([{ ticker: data.ticker, name: data.name, price: data.price }])
-      } else {
-        setSearchError(`「${tickersToTry[0]}」の情報が取得できませんでした`)
       }
     } catch {
-      setSearchError('検索に失敗しました')
+      setSearchError('検索に失敗しました。しばらく待ってから再試行してください')
     }
     setSearching(false)
   }
@@ -84,7 +130,7 @@ export default function CustomTheme() {
       setSearchError('この銘柄はすでに追加されています'); return
     }
     setStocks(prev => [...prev, stock])
-    setResults([]); setQuery(''); setSearchError('')
+    setResults([]); setQuery(''); setSearchError(''); setExpandedResult(null)
   }
 
   const removeStock = (ticker) => setStocks(prev => prev.filter(s => s.ticker !== ticker))
@@ -115,7 +161,7 @@ export default function CustomTheme() {
           <button onClick={startCreate} style={btnP}>＋ 新規作成</button>
         </div>
         <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px' }}>
-          独自のテーマを作成して追跡。銘柄名または4桁の証券コードで検索できます。
+          独自のテーマを作成して追跡。銘柄名または4桁の証券コードで検索できます（日本株のみ）。
         </p>
         {themes.length === 0 ? (
           <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)',
@@ -178,7 +224,7 @@ export default function CustomTheme() {
         <div style={{ display:'flex', gap:'8px', marginBottom:'6px', flexWrap:'wrap' }}>
           <input value={query} onChange={e=>setQuery(e.target.value)}
             onKeyDown={e=>e.key==='Enter'&&handleSearch()}
-            placeholder="銘柄名（例：トヨタ）または証券コード（例：7203）"
+            placeholder="銘柄名（例：トヨタ、ソニー）または証券コード（例：7203）"
             style={{ ...inp, flex:1, minWidth:'200px' }} />
           <button onClick={handleSearch} disabled={searching||!query.trim()} style={{
             ...btnP, opacity:(!query.trim()||searching)?0.5:1 }}>
@@ -186,7 +232,7 @@ export default function CustomTheme() {
           </button>
         </div>
         <div style={{ fontSize:'11px', color:'var(--text3)' }}>
-          日本株：4桁の証券コード（7203）または銘柄名（トヨタ）で検索 / 米国株：ティッカー（AAPL）
+          ※ 日本株のみ対応。銘柄名または4桁の証券コードで検索できます。
         </div>
 
         {/* エラー */}
@@ -197,23 +243,51 @@ export default function CustomTheme() {
           </div>
         )}
 
-        {/* 検索結果リスト */}
+        {/* 検索結果リスト（銘柄データ展開付き）*/}
         {results.length > 0 && (
-          <div style={{ marginTop:'10px', border:'1px solid var(--border)', borderRadius:'8px', overflow:'hidden' }}>
-            {results.map((r,i) => (
-              <div key={r.ticker} style={{ display:'flex', alignItems:'center', gap:'12px',
-                padding:'10px 14px', background: i%2===0?'var(--bg2)':'var(--bg3)',
-                borderBottom: i<results.length-1?'1px solid var(--border)':'none' }}>
-                <div style={{ flex:1 }}>
-                  <div style={{ fontSize:'13px', fontWeight:600, color:'var(--text)' }}>{r.name}</div>
-                  <div style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
-                    {r.ticker}
-                    {r.price && <span style={{ marginLeft:'10px', color:'var(--text2)' }}>¥{r.price.toLocaleString()}</span>}
+          <div style={{ marginTop:'10px' }}>
+            {/* 期間切替 */}
+            <div style={{ display:'flex', gap:'4px', marginBottom:'8px' }}>
+              {PERIODS.map(p => (
+                <button key={p.value} onClick={() => setDetailPeriod(p.value)} style={{
+                  padding:'3px 10px', borderRadius:'4px', fontSize:'11px', cursor:'pointer',
+                  fontFamily:'var(--font)', border:'none',
+                  background: detailPeriod === p.value ? 'var(--accent)' : 'var(--bg3)',
+                  color: detailPeriod === p.value ? '#fff' : 'var(--text3)',
+                }}>{p.label}</button>
+              ))}
+            </div>
+            <div style={{ border:'1px solid var(--border)', borderRadius:'8px', overflow:'hidden' }}>
+              {results.map((r,i) => (
+                <div key={r.ticker}>
+                  {/* 銘柄行 */}
+                  <div style={{ display:'flex', alignItems:'center', gap:'12px',
+                    padding:'10px 14px', background: i%2===0?'var(--bg2)':'var(--bg3)',
+                    borderBottom: i<results.length-1||expandedResult===r.ticker?'1px solid var(--border)':'none',
+                    cursor:'pointer' }}
+                    onClick={() => setExpandedResult(expandedResult === r.ticker ? null : r.ticker)}>
+                    <div style={{ flex:1 }}>
+                      <div style={{ fontSize:'13px', fontWeight:600, color:'var(--text)' }}>{r.name}</div>
+                      <div style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
+                        {r.ticker.replace('.T','')}
+                        {r.price && <span style={{ marginLeft:'10px', color:'var(--text2)' }}>¥{r.price.toLocaleString()}</span>}
+                      </div>
+                    </div>
+                    <span style={{ fontSize:'10px', color:'var(--text3)' }}>
+                      {expandedResult === r.ticker ? '▲ 閉じる' : '▼ データを見る'}
+                    </span>
+                    <button onClick={e => { e.stopPropagation(); addStock(r) }} style={btnP}>追加</button>
                   </div>
+                  {/* 銘柄詳細パネル */}
+                  {expandedResult === r.ticker && (
+                    <div style={{ padding:'10px 14px', background:'var(--bg2)',
+                      borderBottom: i<results.length-1?'1px solid var(--border)':'none' }}>
+                      <StockDetailPanel ticker={r.ticker} period={detailPeriod} />
+                    </div>
+                  )}
                 </div>
-                <button onClick={()=>addStock(r)} style={btnP}>追加</button>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </div>
@@ -228,7 +302,7 @@ export default function CustomTheme() {
                 background:'var(--bg2)', border:'1px solid var(--border)',
                 borderRadius:'6px', padding:'8px 12px',
                 animation:`fadeUp 0.2s ease ${i*0.03}s both` }}>
-                <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'70px', flexShrink:0 }}>
+                <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'60px', flexShrink:0 }}>
                   {s.ticker.replace('.T','')}
                 </span>
                 <span style={{ flex:1, fontSize:'13px', color:'var(--text)', fontWeight:500 }}>{s.name}</span>

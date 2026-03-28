@@ -11,8 +11,7 @@ export default function About() {
             ['URL', 'https://stockwavejp.com'],
             ['運営開始', '2026年3月'],
             ['目的', '日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで可視化し、投資判断の参考情報を提供すること'],
-            ['データソース', 'yfinance（非公式・遅延データ）をもとに独自集計'],
-            ['対象ユーザー', '日本株に興味を持つ個人投資家・投資初心者'],
+              ['対象ユーザー', '日本株に興味を持つ個人投資家・投資初心者'],
           ].map(([label, value], i) => (
             <div key={i} style={{ display:'contents' }}>
               <span style={{ color:'var(--text3)', fontWeight:600, letterSpacing:'0.05em', fontSize:'11px', textTransform:'uppercase', paddingTop:'2px' }}>{label}</span>
@@ -35,16 +34,6 @@ export default function About() {
         </p>
       </div>
 
-      <div style={{ background:'rgba(255,140,66,0.07)', border:'1px solid rgba(255,140,66,0.2)', borderRadius:'10px', padding:'18px 22px' }}>
-        <h2 style={{ fontSize:'14px', fontWeight:700, color:'#ff8c42', marginBottom:'10px' }}>⚠️ 免責事項</h2>
-        <p style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9, margin:0 }}>
-          当サイトに掲載されている情報は投資助言ではありません。掲載データはyfinance経由で取得しており、
-          リアルタイムデータではなく15〜20分程度の遅延があります。データの正確性・完全性を保証するものではなく、
-          当サイトの情報を参考にして生じた損害について運営者は一切責任を負いません。
-          株式投資にはリスクが伴います。投資判断は必ず証券会社等の公式情報をご確認の上、
-          ご自身の判断と責任において行ってください。
-        </p>
-      </div>
     </div>
   )
 }
