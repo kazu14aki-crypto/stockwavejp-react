@@ -12,6 +12,8 @@ import CustomTheme from './components/pages/CustomTheme'
 import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
+import { AuthProvider } from './hooks/useAuth'
+import AuthButton      from './components/AuthButton'
 import Disclaimer    from './components/pages/Disclaimer'
 import Column       from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
@@ -127,5 +129,6 @@ export default function App() {
         </footer>
       </main>
     </div>
+    </AuthProvider>
   )
 }

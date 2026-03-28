@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
-import { useStaleData } from '../../hooks/useStaleData'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
-import RefreshIndicator from '../RefreshIndicator'
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
   { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
   { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
@@ -69,16 +66,14 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
   )
 }
 
-// スマホ対応テーブル（銘柄名を左固定）
-function StockTable({ stocks }) {
+function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            {/* 固定列：順位・銘柄名 */}
             <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
             <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
             {headers.map(h => (
@@ -95,12 +90,10 @@ function StockTable({ stocks }) {
                 borderBottom:'1px solid rgba(255,255,255,0.04)',
                 background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
               }}>
-                {/* 固定列：順位 */}
                 <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
                   background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
                   {String(i+1).padStart(2,'0')}
                 </td>
-                {/* 固定列：銘柄名（上に証券コード表示）*/}
                 <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                   <div style={{ fontSize:'13px' }}>{s.name}</div>
@@ -115,11 +108,14 @@ function StockTable({ stocks }) {
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
                 <td style={tdC}>{s.tv_rank}位</td>
                 <td style={tdC}>
-                  <button onClick={() => setModalStock({ ticker: s.ticker, name: s.name, price: s.price })}
+                  <button
+                    onClick={() => onAddToTheme && onAddToTheme({ ticker: s.ticker, name: s.name, price: s.price })}
                     title="カスタムテーマに追加"
                     style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
                       borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
-                      padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>＋</button>
+                      padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>
+                    ＋
+                  </button>
                 </td>
               </tr>
             )
@@ -144,11 +140,7 @@ export default function MarketRank() {
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
 
-  // 市場一覧 ★market.json優先（キャッシュ拡大後は即時表示）
   const { data: marketData, loading: loadingS } = useMarketRankList(period)
-  const refreshingS = false
-  const lastUpdate  = marketData?.updated_at || null
-  const refresh     = () => {}
 
   useEffect(()=>{
     if (!marketData) return
@@ -157,7 +149,6 @@ export default function MarketRank() {
     if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
   },[marketData])
 
-  // 銘柄詳細 ★market.json優先（最大の高速化ポイント）
   const { data: segDetailRaw, loading: loadingD } = useSegmentDetail(activeSeg, period)
   useEffect(()=>{
     if (!segDetailRaw) return
@@ -171,13 +162,15 @@ export default function MarketRank() {
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
   const stocks    = detail?.stocks ?? []
   const detailAvg = detail?.avg ?? 0
-  // 上昇のみ・下落のみでフィルタリング
-  const top5     = stocks.filter(s => s.pct > 0).slice(0, 5)
-  const bot5     = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
+  const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
+  const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
 
   return (
     <div>
-      {/* 固定ヘッダー */}
+      {modalStock && (
+        <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />
+      )}
+
       <div className="page-header-sticky">
         <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別ランキング</h1>
         <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
@@ -190,7 +183,6 @@ export default function MarketRank() {
           国内主要株・国内全般・市場区分ごとの騰落率ランキングと構成銘柄詳細
         </p>
 
-        {/* グループタブ */}
         <div style={{ display:'flex', gap:'4px', borderBottom:'1px solid var(--border)', marginBottom:'0' }}>
           {Object.keys(groups).map(g=>(
             <button key={g} onClick={()=>{ setActiveGroup(g); setActiveSeg(groups[g][0]) }} style={{
@@ -205,8 +197,7 @@ export default function MarketRank() {
         </div>
 
         {loadingS ? <Loading /> : (
-          <>
-            {/* セグメント選択 */}
+          <div>
             <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', padding:'12px 0', borderBottom:'1px solid var(--border)', marginBottom:'20px' }}>
               {(groups[activeGroup]||[]).map(seg=>{
                 const avg = summary?.[seg]?.pct
@@ -220,18 +211,21 @@ export default function MarketRank() {
                     fontFamily:'var(--font)', transition:'all 0.15s', whiteSpace:'nowrap',
                   }}>
                     {shortName}
-                    {avg!=null && <span style={{ marginLeft:'6px', fontSize:'11px', fontFamily:'var(--mono)',
-                      color:avg>=0?'var(--red)':'var(--green)', fontWeight:700 }}>
-                      {avg>=0?'+':''}{avg.toFixed(1)}%
-                    </span>}
+                    {avg!=null && (
+                      <span style={{ marginLeft:'6px', fontSize:'11px', fontFamily:'var(--mono)',
+                        color:avg>=0?'var(--red)':'var(--green)', fontWeight:700 }}>
+                        {avg>=0?'+':''}{avg.toFixed(1)}%
+                      </span>
+                    )}
                   </button>
                 )
               })}
             </div>
 
-            {/* 詳細エリア */}
-            {loadingD ? <Loading msg="個別株データ取得中..." /> : detail && (
-              <>
+            {loadingD ? (
+              <Loading msg="個別株データ取得中..." />
+            ) : detail ? (
+              <div>
                 <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
                   <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg}</span>
                   <span style={{ fontSize:'15px', fontFamily:'var(--mono)', fontWeight:700,
@@ -241,27 +235,25 @@ export default function MarketRank() {
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄</span>
                 </div>
 
-                {/* TOP5グラフ */}
                 <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
                   <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
                   <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
-                {/* 構成銘柄テーブル（銘柄名左固定） */}
                 <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
                   構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                 </div>
                 <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
-                  <StockTable stocks={stocks}/>
+                  <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                 </div>
-              </>
-            )}
-          </>
+              </div>
+            ) : null}
+          </div>
         )}
       </div>
+
       <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
     </div>
-  </>
   )
 }
 

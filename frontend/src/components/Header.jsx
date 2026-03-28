@@ -14,6 +14,8 @@ const LogoSvg = () => (
   </svg>
 )
 
+import AuthButton from './AuthButton'
+
 export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onViewModeChange, onLogoClick }) {
   return (
     <>
@@ -95,6 +97,7 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
               </button>
             ))}
           </div>
+          <AuthButton />
         </div>
       </header>
 
@@ -106,6 +109,7 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
           .logo-text     { display: block !important; }
           .logo-text .logo-main { font-size: 13px !important; }
           .logo-text .logo-sub  { display: none !important; }
+          .auth-btn-label { display: none !important; }
         }
         @media (max-width: 400px) {
           .status-area   { display: none !important; }

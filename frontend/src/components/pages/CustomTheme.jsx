@@ -2,7 +2,8 @@
  * CustomTheme.jsx — カスタムテーマ管理＋詳細表示＋URLエクスポート
  */
 import { useState, useEffect } from 'react'
-import { useCustomThemes, themeToUrl, themeFromUrl, STORAGE_KEY } from '../../hooks/useCustomThemes'
+import { useCustomThemes, themeToUrl, themeFromUrl } from '../../hooks/useCustomThemes'
+import { useAuth } from '../../hooks/useAuth'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -228,7 +229,8 @@ function CustomStockTable({ stocks, period, onRemove }) {
 
 // ── メインコンポーネント ────────────────────────
 export default function CustomTheme() {
-  const { themes, saveTheme, deleteTheme } = useCustomThemes()
+  const { themes, saveTheme, deleteTheme, syncing } = useCustomThemes()
+  const { isLoggedIn, signIn } = useAuth()
   const [mode,        setMode]        = useState('list')  // 'list'|'detail'|'edit'|'create'
   const [activeIndex, setActiveIndex] = useState(null)
   const [editTarget,  setEditTarget]  = useState(null)
@@ -322,9 +324,29 @@ export default function CustomTheme() {
         <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)' }}>カスタムテーマ</h1>
         <button onClick={startCreate} style={btnP}>＋ 新規作成</button>
       </div>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px' }}>
+      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
         独自のテーマを作成・追跡。銘柄名または4桁証券コードで検索（日本株のみ）。
       </p>
+      {/* ログイン誘導バナー */}
+      {!isLoggedIn && (
+        <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',
+          background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
+          borderRadius:'8px', padding:'10px 14px', marginBottom:'16px', gap:'12px', flexWrap:'wrap' }}>
+          <div>
+            <span style={{ fontSize:'12px', color:'var(--text2)' }}>💡 </span>
+            <span style={{ fontSize:'12px', color:'var(--text2)' }}>Googleログインするとどのデバイスでもテーマが同期されます</span>
+          </div>
+          <button onClick={signIn} style={{ background:'rgba(74,158,255,0.15)',
+            border:'1px solid rgba(74,158,255,0.35)', borderRadius:'6px',
+            color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)',
+            fontSize:'12px', fontWeight:600, padding:'5px 14px', whiteSpace:'nowrap' }}>
+            Googleでログイン
+          </button>
+        </div>
+      )}
+      {syncing && (
+        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px' }}>同期中...</div>
+      )}
       {themes.length === 0 ? (
         <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)',
           padding:'48px', textAlign:'center' }}>
