@@ -1,3 +1,4 @@
+import numpy as np
 """
 main.py — FastAPI メインサーバー v2.1
 """
@@ -192,6 +193,28 @@ def get_stock_info(ticker: str):
     except Exception as e:
         return {"ticker": ticker, "name": None, "price": None,
                 "pct": None, "volume": None, "trade_value": None, "error": str(e)}
+
+
+@app.get("/api/stock-history/{ticker}")
+def get_stock_history(ticker: str, period: str = "1mo"):
+    """銘柄の騰落率履歴（カスタムテーマグラフ用）"""
+    try:
+        from data import _fetch_df, _period_df
+        df  = _fetch_df(ticker)
+        pdf = _period_df(df, period)
+        if pdf is None or len(pdf) < 2:
+            return {"ticker": ticker, "data": []}
+        cl  = pdf["Close"].dropna()
+        if len(cl) < 2 or not (cl > 0).all():
+            return {"ticker": ticker, "data": []}
+        cum = (cl / cl.iloc[0] - 1) * 100
+        # 重複インデックス除去
+        cum = cum[~cum.index.duplicated(keep='last')]
+        data = [{"date": str(d.date()), "pct": round(float(v), 2)}
+                for d, v in cum.items() if not np.isnan(v)]
+        return {"ticker": ticker, "data": data}
+    except Exception as e:
+        return {"ticker": ticker, "data": [], "error": str(e)}
 
 
 # 日本株名称マスター（銘柄名検索の日本語化に使用）

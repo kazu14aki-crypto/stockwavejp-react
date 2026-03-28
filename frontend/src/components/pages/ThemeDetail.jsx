@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import AddToThemeModal from '../AddToThemeModal'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -189,49 +190,62 @@ function MultiLineChart({ trends, selected, title }) {
 // ── 銘柄テーブル ──
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
+  const [modalStock, setModalStock] = useState(null)
   const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
-    <div className="sticky-table">
-      <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
-        <thead>
-          <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
-            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
-            {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
-          </tr>
-        </thead>
-        <tbody>
-          {stocks.map((s, i) => {
-            const pColor = s.pct >= 0 ? 'var(--red)' : 'var(--green)'
-            const cColor = s.contribution >= 0 ? 'var(--red)' : 'var(--green)'
-            return (
-              <tr key={s.ticker} style={{
-                borderBottom:'1px solid rgba(255,255,255,0.04)',
-                background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
-              }}>
-                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
-                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  {String(i+1).padStart(2,'0')}
-                </td>
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                  <div style={{ fontSize:'13px' }}>{s.name}</div>
-                </td>
-                <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
-                <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
-                <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
-                <td style={tdC}>{i+1}位</td>
-                <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
-                <td style={tdC}>{s.vol_rank}位</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
-                <td style={tdC}>{s.tv_rank}位</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    </div>
+    <>
+      {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
+      <div className="sticky-table">
+        <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
+          <thead>
+            <tr style={{ borderBottom:'1px solid var(--border)' }}>
+              <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
+              <th style={{ ...thStyle, textAlign:'left', minWidth:'140px', background:'var(--bg3)' }}>銘柄名</th>
+              {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
+              <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
+            </tr>
+          </thead>
+          <tbody>
+            {stocks.map((s, i) => {
+              const pColor = s.pct >= 0 ? 'var(--red)' : 'var(--green)'
+              const cColor = s.contribution >= 0 ? 'var(--red)' : 'var(--green)'
+              return (
+                <tr key={s.ticker} style={{
+                  borderBottom:'1px solid rgba(255,255,255,0.04)',
+                  background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
+                }}>
+                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                    background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                    {String(i+1).padStart(2,'0')}
+                  </td>
+                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                    <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
+                    <div style={{ fontSize:'13px' }}>{s.name}</div>
+                  </td>
+                  <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
+                  <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
+                  <td style={tdC}>{i+1}位</td>
+                  <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
+                  <td style={tdC}>{s.vol_rank}位</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
+                  <td style={tdC}>{s.tv_rank}位</td>
+                  <td style={tdC}>
+                    <button onClick={() => setModalStock({ ticker: s.ticker, name: s.name, price: s.price })}
+                      title="カスタムテーマに追加"
+                      style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
+                        borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
+                        padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1,
+                        transition:'all 0.12s' }}>＋</button>
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
   )
 }
 

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import AddToThemeModal from '../AddToThemeModal'
 import { useStaleData } from '../../hooks/useStaleData'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 import RefreshIndicator from '../RefreshIndicator'
@@ -113,6 +114,13 @@ function StockTable({ stocks }) {
                 <td style={tdC}>{s.vol_rank}位</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
                 <td style={tdC}>{s.tv_rank}位</td>
+                <td style={tdC}>
+                  <button onClick={() => setModalStock({ ticker: s.ticker, name: s.name, price: s.price })}
+                    title="カスタムテーマに追加"
+                    style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
+                      borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
+                      padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>＋</button>
+                </td>
               </tr>
             )
           })}
@@ -128,13 +136,13 @@ const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
 export default function MarketRank() {
+  const [modalStock,  setModalStock]  = useState(null)
   const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
   const [activeGroup, setActiveGroup] = useState('国内主要株')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
-  const [loadingD,    setLoadingD]    = useState(false)
 
   // 市場一覧 ★market.json優先（キャッシュ拡大後は即時表示）
   const { data: marketData, loading: loadingS } = useMarketRankList(period)
@@ -253,6 +261,7 @@ export default function MarketRank() {
       </div>
       <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
     </div>
+  </>
   )
 }
 
