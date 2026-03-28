@@ -160,15 +160,38 @@ def get_stock_info(ticker: str):
     """銘柄情報取得（カスタムテーマ用）"""
     try:
         import yfinance as yf
-        t    = yf.Ticker(ticker)
-        info = t.info
-        hist = t.history(period="2d", interval="1d", auto_adjust=True)
-        price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-        name  = (info.get("longName") or info.get("shortName") or
-                 info.get("displayName") or ticker)
-        return {"ticker": ticker, "name": name, "price": price}
+        from data import _fetch_df, _period_df
+        # 日本語名を優先（main.py内のJP_STOCK_NAMESを参照）
+        jp_name = JP_STOCK_NAMES.get(ticker)
+        # 1ヶ月のデータを取得して騰落率・出来高・売買代金を計算
+        df = _fetch_df(ticker)
+        df_1mo = _period_df(df, "1mo")
+        price, pct, volume, trade_value = None, None, None, None
+        if df_1mo is not None and len(df_1mo) >= 2:
+            cl = df_1mo["Close"].dropna()
+            vol = df_1mo["Volume"].dropna()
+            if len(cl) >= 2 and (cl > 0).all():
+                price = round(float(cl.iloc[-1]), 0)
+                pct = round((float(cl.iloc[-1]) / float(cl.iloc[0]) - 1) * 100, 2)
+                half = max(len(df_1mo) // 2, 1)
+                rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+                volume = int(rv)
+                trade_value = int(rv * price) if price else 0
+        # 名前取得（APIがスロー返答の場合でも価格データから）
+        if not jp_name:
+            try:
+                t = yf.Ticker(ticker)
+                info = t.info
+                jp_name = info.get("longName") or info.get("shortName") or ticker
+            except Exception:
+                jp_name = ticker
+        return {
+            "ticker": ticker, "name": jp_name, "price": price,
+            "pct": pct, "volume": volume, "trade_value": trade_value,
+        }
     except Exception as e:
-        return {"ticker": ticker, "name": None, "price": None, "error": str(e)}
+        return {"ticker": ticker, "name": None, "price": None,
+                "pct": None, "volume": None, "trade_value": None, "error": str(e)}
 
 
 # 日本株名称マスター（銘柄名検索の日本語化に使用）

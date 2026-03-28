@@ -664,9 +664,17 @@ def fetch_heatmap_monthly(themes: dict) -> dict:
     jst = pytz.timezone("Asia/Tokyo")
     now = datetime.now(jst)
     months = []
+    # 直近12ヶ月を正しく計算（今月を含む過去12ヶ月）
     for i in range(11, -1, -1):
-        m = (now.month - i - 1) % 12 + 1
-        y = now.year - ((now.month - i - 1) // 12 + (1 if (now.month - i - 1) < 0 else 0))
+        # i=11が12ヶ月前、i=0が今月
+        total_months = now.month - 1 - i  # 0始まりの月番号から引く
+        year_offset = total_months // 12 if total_months >= 0 else (total_months - 11) // 12
+        month_in_year = total_months % 12 + 1
+        if total_months < 0:
+            year_offset = -((-total_months + 11) // 12)
+            month_in_year = 12 - ((-total_months - 1) % 12)
+        y = now.year + year_offset
+        m = month_in_year
         months.append(f"{y}/{m:02d}")
 
     data = {}

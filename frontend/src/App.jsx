@@ -15,7 +15,6 @@ import Settings    from './components/pages/Settings'
 import Disclaimer    from './components/pages/Disclaimer'
 import Column       from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
-import About        from './components/pages/About'
 import SiteInfo     from './components/pages/SiteInfo'
 
 const PAGES = [
@@ -35,7 +34,6 @@ const PAGES_OTHER = [
   { icon:'⚙️', label:'設定',           component:Settings     },
   { icon:'⚖️', label:'免責事項',       component:Disclaimer   },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
-  { icon:'ℹ️', label:'運営者情報',     component:About        },
 ]
 const ALL_PAGES = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
