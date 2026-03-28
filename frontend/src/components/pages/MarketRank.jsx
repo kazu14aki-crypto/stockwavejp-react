@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useStaleData } from '../../hooks/useStaleData'
+import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 import RefreshIndicator from '../RefreshIndicator'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
@@ -135,32 +136,29 @@ export default function MarketRank() {
   const [detail,      setDetail]      = useState(null)
   const [loadingD,    setLoadingD]    = useState(false)
 
-  const { data: marketData, loading: loadingS, refreshing: refreshingS, lastUpdate, refresh } = useStaleData(
-    `${API}/api/market-rank?period=${period}`,
-    `market_v2_${period}`,
-    null
-  )
+  // 市場一覧 ★market.json優先（キャッシュ拡大後は即時表示）
+  const { data: marketData, loading: loadingS } = useMarketRankList(period)
+  const refreshingS = false
+  const lastUpdate  = marketData?.updated_at || null
+  const refresh     = () => {}
+
   useEffect(()=>{
     if (!marketData) return
     setSummary(marketData.data); setGroups(marketData.groups||{})
-    const firstSeg = (marketData.groups?.['国内主要株'] || marketData.groups?.['日経225'] || Object.values(marketData.groups||{})[0] || [])[0]
+    const firstSeg = (marketData.groups?.['国内主要株'] || Object.values(marketData.groups||{})[0] || [])[0]
     if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
   },[marketData])
 
+  // 銘柄詳細 ★market.json優先（最大の高速化ポイント）
+  const { data: segDetailRaw, loading: loadingD } = useSegmentDetail(activeSeg, period)
   useEffect(()=>{
-    if (!activeSeg) return
-    setLoadingD(true); setDetail(null)
-    fetch(`${API}/api/market-rank/${encodeURIComponent(activeSeg)}?period=${period}`)
-      .then(r=>r.json()).then(d=>{
-        if (Array.isArray(d.data)) {
-          // 古い形式（リスト）の場合も対応
-          setDetail({stocks: d.data, avg: d.data.length ? d.data.reduce((s,x)=>s+x.pct,0)/d.data.length : 0})
-        } else {
-          setDetail(d.data)
-        }
-      })
-      .catch(()=>{}).finally(()=>setLoadingD(false))
-  },[activeSeg, period])
+    if (!segDetailRaw) return
+    if (Array.isArray(segDetailRaw)) {
+      setDetail({ stocks: segDetailRaw, avg: segDetailRaw.length ? segDetailRaw.reduce((s,x)=>s+x.pct,0)/segDetailRaw.length : 0 })
+    } else {
+      setDetail(segDetailRaw)
+    }
+  },[segDetailRaw])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
   const stocks    = detail?.stocks ?? []

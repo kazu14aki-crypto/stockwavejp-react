@@ -3,6 +3,7 @@
  */
 import { useState, useEffect } from 'react'
 import { useStaleData } from '../../hooks/useStaleData'
+import { useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -68,17 +69,9 @@ export default function FlowMomentum() {
     null
   )
 
-  // 騰落モメンタム
-  const [momentumData, setMomentumData] = useState([])
-  const [loadingM,     setLoadingM]     = useState(true)
-  useEffect(() => {
-    setLoadingM(true)
-    fetch(`${API}/api/momentum?period=${period}`)
-      .then(r => r.json())
-      .then(json => setMomentumData(json.data || []))
-      .catch(() => {})
-      .finally(() => setLoadingM(false))
-  }, [period])
+  // 騰落モメンタム ★market.json優先（キャッシュ拡大後は即時表示）
+  const { data: momentumRaw, loading: loadingM } = useMomentum(period)
+  const momentumData = momentumRaw?.data || []
 
   const allItems = flowData?.all ?? []
   const maxAbs   = allItems.length ? Math.max(...allItems.map(t => Math.abs(t.pct))) : 1

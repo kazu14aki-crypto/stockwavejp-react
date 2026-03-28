@@ -1,71 +1,104 @@
 /**
- * useMarketData — GitHub Pagesに保存されたJSONを読み込む
+ * useMarketData — market.json優先取得フック（キャッシュ拡大版）
  *
- * 優先順位：
- * 1. public/data/market.json（GitHub Actionsが生成・即時）
- * 2. LocalStorageキャッシュ（前回データ）
- * 3. Renderバックエンド（フォールバック）
+ * 優先順位:
+ *   1. public/data/market.json（GitHub Actionsが定時生成・即時）
+ *   2. LocalStorageキャッシュ（有効期限3時間）
+ *   3. Renderバックエンド（フォールバック）
+ *
+ * market.jsonに含まれるキー一覧（キャッシュ拡大後）:
+ *   themes_{5d/1mo/3mo/6mo/1y}         テーマ一覧
+ *   macro_{1mo/1y}                     マクロ指標
+ *   heatmap                            期間別ヒートマップ
+ *   heatmap_monthly                    月次ヒートマップ
+ *   momentum_{1mo/3mo}                 騰落モメンタム
+ *   theme_detail_{テーマ名}_{period}   テーマ別詳細★
+ *   seg_{セグメント名}_{period}        市場別銘柄詳細★
+ *   market_rank_{period}               市場別ランキング一覧★
+ *   status / theme_names
  */
 import { useState, useEffect, useCallback } from 'react'
 
 const API          = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const DATA_URL     = '/data/market.json'
 const CACHE_PREFIX = 'swjp_v2_'
+const CACHE_TTL    = 3 * 60 * 60 * 1000   // 3時間
 
+// ── LocalStorage ─────────────────────────────
 function readCache(key) {
   try {
     const raw = localStorage.getItem(CACHE_PREFIX + key)
     if (!raw) return null
     const { data, ts } = JSON.parse(raw)
-    // 3時間以内のキャッシュを有効とする
-    if (Date.now() - ts > 3 * 60 * 60 * 1000) return null
+    if (Date.now() - ts > CACHE_TTL) return null
     return data
   } catch { return null }
 }
-
 function writeCache(key, data) {
   try {
     localStorage.setItem(CACHE_PREFIX + key, JSON.stringify({ data, ts: Date.now() }))
   } catch {}
 }
 
-// market.json全体をシングルトンとして保持
+// ── market.json シングルトン ──────────────────
 let _marketJson      = null
 let _marketJsonTs    = 0
 let _fetchingPromise = null
-const MARKET_JSON_TTL = 5 * 60 * 1000  // 5分間は再取得しない
+const MARKET_JSON_TTL = 5 * 60 * 1000  // 5分
 
 async function fetchMarketJson() {
-  // すでに取得済みかつ新鮮なら即返す
-  if (_marketJson && Date.now() - _marketJsonTs < MARKET_JSON_TTL) {
-    return _marketJson
-  }
-  // 取得中なら同じPromiseを返す（重複リクエスト防止）
+  if (_marketJson && Date.now() - _marketJsonTs < MARKET_JSON_TTL) return _marketJson
   if (_fetchingPromise) return _fetchingPromise
-
   _fetchingPromise = fetch(`${DATA_URL}?t=${Date.now()}`)
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`)
-      return r.json()
-    })
-    .then(json => {
-      _marketJson   = json
-      _marketJsonTs = Date.now()
-      _fetchingPromise = null
-      return json
-    })
-    .catch(e => {
-      _fetchingPromise = null
-      throw e
-    })
-
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
+    .then(json => { _marketJson = json; _marketJsonTs = Date.now(); _fetchingPromise = null; return json })
+    .catch(e  => { _fetchingPromise = null; throw e })
   return _fetchingPromise
 }
 
+// ── 汎用フック：market.json → LocalStorage → Render の順で取得 ──
+function useMarketJsonKey(jsonKey, apiFallback, deps = []) {
+  const [data,    setData]    = useState(() => readCache(jsonKey))
+  const [loading, setLoading] = useState(!readCache(jsonKey))
+
+  useEffect(() => {
+    let cancelled = false
+    const cached = readCache(jsonKey)
+    if (cached) { setData(cached); setLoading(false) }
+
+    ;(async () => {
+      try {
+        const json   = await fetchMarketJson()
+        const result = json[jsonKey]
+        if (result && !cancelled) {
+          setData(result); writeCache(jsonKey, result); setLoading(false)
+          return
+        }
+      } catch {}
+      // フォールバック
+      if (apiFallback) {
+        try {
+          const r    = await fetch(`${API}${apiFallback}`)
+          const json = await r.json()
+          if (!cancelled) { setData(json); writeCache(jsonKey, json) }
+        } catch {}
+      }
+      if (!cancelled) setLoading(false)
+    })()
+
+    return () => { cancelled = true }
+  }, deps)
+
+  return { data, loading }
+}
+
+
+// ════════════════════════════════════════════════════════
+//  公開フック
+// ════════════════════════════════════════════════════════
 
 /**
- * テーマデータを取得するフック
- * @param {string} period - '5d' | '1mo' | '3mo' | '6mo' | '1y'
+ * useThemes — テーマ一覧
  */
 export function useThemes(period = '1mo') {
   const cacheKey = `themes_${period}`
@@ -75,49 +108,30 @@ export function useThemes(period = '1mo') {
   const [updatedAt,  setUpdatedAt]  = useState(null)
 
   const load = useCallback(async (isBackground = false) => {
-    if (isBackground) setRefreshing(true)
-    else              setLoading(true)
-
+    if (isBackground) setRefreshing(true); else setLoading(true)
     try {
-      // ① market.jsonから取得（高速）
       const json   = await fetchMarketJson()
       const result = json[cacheKey]
       if (result) {
-        setData(result)
-        writeCache(cacheKey, result)
-        setUpdatedAt(result.updated_at || null)
-        return
+        setData(result); writeCache(cacheKey, result)
+        setUpdatedAt(result.updated_at || null); return
       }
-    } catch {
-      // market.jsonが存在しない場合はフォールバック
-    }
-
+    } catch {}
     try {
-      // ② フォールバック：Renderバックエンドから取得
-      const period_param = period
-      const res  = await fetch(`${API}/api/themes?period=${period_param}`)
+      const res  = await fetch(`${API}/api/themes?period=${period}`)
       const json = await res.json()
-      setData(json)
-      writeCache(cacheKey, json)
+      setData(json); writeCache(cacheKey, json)
     } catch {
-      if (!isBackground) {
-        setData(readCache(cacheKey)) // キャッシュがあれば表示
-      }
+      if (!isBackground) setData(readCache(cacheKey))
     } finally {
-      setLoading(false)
-      setRefreshing(false)
+      setLoading(false); setRefreshing(false)
     }
   }, [period, cacheKey])
 
   useEffect(() => {
     const cached = readCache(cacheKey)
-    if (cached) {
-      setData(cached)
-      setLoading(false)
-      load(true)   // バックグラウンド更新
-    } else {
-      load(false)
-    }
+    if (cached) { setData(cached); setLoading(false); load(true) }
+    else        { load(false) }
   }, [period])
 
   return { data, loading, refreshing, updatedAt, refresh: () => load(false) }
@@ -125,64 +139,36 @@ export function useThemes(period = '1mo') {
 
 
 /**
- * マクロデータを取得するフック
+ * useMacro — マクロ指標
  */
 export function useMacro(period = '1mo') {
-  const cacheKey = `macro_${period}`
-  const [data,    setData]    = useState(() => readCache(cacheKey))
-  const [loading, setLoading] = useState(!readCache(cacheKey))
-
-  useEffect(() => {
-    const cached = readCache(cacheKey)
-    if (cached) { setData(cached); setLoading(false) }
-
-    fetchMarketJson()
-      .then(json => {
-        const result = json[`macro_${period}`]
-        if (result) { setData(result); writeCache(cacheKey, result) }
-      })
-      .catch(() => {
-        fetch(`${API}/api/macro?period=${period}`)
-          .then(r => r.json())
-          .then(json => { setData(json); writeCache(cacheKey, json) })
-          .catch(() => {})
-      })
-      .finally(() => setLoading(false))
-  }, [period])
-
-  return { data, loading }
+  return useMarketJsonKey(
+    `macro_${period}`,
+    `/api/macro?period=${period}`,
+    [period]
+  )
 }
 
 
 /**
- * ステータスを取得するフック
+ * useStatus — 市場ステータス
  */
 export function useStatus() {
-  const [status, setStatus] = useState({
-    time: '--:--', is_open: false, label: '...'
-  })
+  const [status, setStatus] = useState({ time: '--:--', is_open: false, label: '...' })
 
   useEffect(() => {
     const fetch_ = async () => {
       try {
-        // market.jsonのstatusを優先
         const json = await fetchMarketJson()
         if (json.status) {
-          setStatus({
-            ...json.status,
-            label: json.status.is_open ? '市場オープン中' : '市場クローズ中',
-          })
+          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中' })
           return
         }
       } catch {}
-      // フォールバック：バックエンドAPI
       try {
         const res  = await fetch(`${API}/api/status`)
         const data = await res.json()
-        setStatus({
-          ...data,
-          label: data.is_open ? '市場オープン中' : '市場クローズ中',
-        })
+        setStatus({ ...data, label: data.is_open ? '市場オープン中' : '市場クローズ中' })
       } catch {
         const now = new Date()
         const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000)
@@ -202,7 +188,7 @@ export function useStatus() {
 
 
 /**
- * useTrends — 騰落推移データ（Renderフォールバック付き）
+ * useTrends — テーマ比較グラフ（常にRender）
  */
 export function useTrends(themes, period) {
   const cacheKey = `trends_${themes}_${period}`
@@ -214,7 +200,6 @@ export function useTrends(themes, period) {
     if (!themes) return
     const cached = readCache(cacheKey)
     if (cached) { setData(cached); setLoading(false) }
-
     setRefreshing(true)
     fetch(`${API}/api/trends?themes=${encodeURIComponent(themes)}&period=${period}`)
       .then(r => r.json())
@@ -228,28 +213,22 @@ export function useTrends(themes, period) {
 
 
 /**
- * useThemeNames — テーマ名一覧（market.json優先）
+ * useThemeNames — テーマ名一覧
  */
 export function useThemeNames() {
   const cacheKey = 'theme_names'
   const [names, setNames] = useState(() => {
-    const cached = readCache(cacheKey)
-    // market.jsonのtheme_namesかthemes_1moから取得
-    if (cached?.themes) return cached.themes
-    return []
+    const c = readCache(cacheKey)
+    return c?.themes || []
   })
 
   useEffect(() => {
     fetchMarketJson()
       .then(json => {
-        // market.jsonにtheme_namesがあればそれを使う
         const fromNames  = json['theme_names']?.themes || []
         const fromThemes = json['themes_1mo']?.themes?.map(t => t.theme) || []
         const themes = fromNames.length > 0 ? fromNames : fromThemes
-        if (themes.length > 0) {
-          setNames(themes)
-          writeCache(cacheKey, { themes })
-        }
+        if (themes.length > 0) { setNames(themes); writeCache(cacheKey, { themes }) }
       })
       .catch(() => {
         fetch(`${API}/api/theme-names`)
@@ -264,81 +243,65 @@ export function useThemeNames() {
 
 
 /**
- * useHeatmap — ヒートマップデータ（market.json優先）
+ * useHeatmap — 期間別ヒートマップ
  */
 export function useHeatmap() {
-  const cacheKey = 'heatmap'
-  const [data,    setData]    = useState(() => readCache(cacheKey))
-  const [loading, setLoading] = useState(!readCache(cacheKey))
-
-  useEffect(() => {
-    const cached = readCache(cacheKey)
-    if (cached) { setData(cached); setLoading(false) }
-
-    fetchMarketJson()
-      .then(json => {
-        if (json.heatmap) {
-          setData(json.heatmap)
-          writeCache(cacheKey, json.heatmap)
-          setLoading(false)
-          return
-        }
-        throw new Error('no heatmap in market.json')
-      })
-      .catch(() => {
-        fetch(`${API}/api/heatmap`)
-          .then(r => r.json())
-          .then(json => { setData(json); writeCache(cacheKey, json) })
-          .catch(() => {})
-          .finally(() => setLoading(false))
-      })
-  }, [])
-
-  return { data, loading }
+  return useMarketJsonKey('heatmap', '/api/heatmap')
 }
 
 
 /**
- * useMonthlyHeatmap — 月別ヒートマップ（キャッシュ付き）
+ * useMonthlyHeatmap — 月次ヒートマップ ★market.json優先に変更
  */
 export function useMonthlyHeatmap() {
-  const cacheKey = 'monthly_heatmap'
-  const [data,    setData]    = useState(() => readCache(cacheKey))
-  const [loading, setLoading] = useState(!readCache(cacheKey))
-
-  useEffect(() => {
-    const cached = readCache(cacheKey)
-    if (cached) { setData(cached); setLoading(false) }
-
-    fetch(`${API}/api/heatmap/monthly`)
-      .then(r => r.json())
-      .then(json => { setData(json); writeCache(cacheKey, json) })
-      .catch(() => {})
-      .finally(() => setLoading(false))
-  }, [])
-
-  return { data, loading }
+  return useMarketJsonKey('heatmap_monthly', '/api/heatmap/monthly')
 }
 
 
 /**
- * useSegmentDetail — 市場別詳細（キャッシュ付き）
+ * useMomentum — 騰落モメンタム ★market.json優先に変更
+ */
+export function useMomentum(period = '1mo') {
+  return useMarketJsonKey(
+    `momentum_${period}`,
+    `/api/momentum?period=${period}`,
+    [period]
+  )
+}
+
+
+/**
+ * useSegmentDetail — 市場別銘柄詳細 ★market.json優先に変更（最重要）
  */
 export function useSegmentDetail(segName, period) {
-  const cacheKey = `seg_${segName}_${period}`
-  const [data,    setData]    = useState(() => readCache(cacheKey))
-  const [loading, setLoading] = useState(!readCache(cacheKey))
+  const jsonKey = `seg_${segName}_${period}`
+  const [data,    setData]    = useState(() => readCache(jsonKey))
+  const [loading, setLoading] = useState(!readCache(jsonKey))
 
   useEffect(() => {
     if (!segName) return
-    const cached = readCache(cacheKey)
+    let cancelled = false
+    const cached = readCache(jsonKey)
     if (cached) { setData(cached); setLoading(false) }
 
-    fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
-      .then(r => r.json())
-      .then(json => { setData(json); writeCache(cacheKey, json) })
-      .catch(() => {})
-      .finally(() => setLoading(false))
+    ;(async () => {
+      try {
+        const json   = await fetchMarketJson()
+        const result = json[jsonKey]
+        if (result && !cancelled) {
+          setData(result); writeCache(jsonKey, result); setLoading(false); return
+        }
+      } catch {}
+      // フォールバック: Render API
+      try {
+        const r    = await fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
+        const json = await r.json()
+        if (!cancelled) { setData(json); writeCache(jsonKey, json) }
+      } catch {}
+      if (!cancelled) setLoading(false)
+    })()
+
+    return () => { cancelled = true }
   }, [segName, period])
 
   return { data, loading }
@@ -346,24 +309,50 @@ export function useSegmentDetail(segName, period) {
 
 
 /**
- * useThemeDetail — テーマ別詳細（キャッシュ付き）
+ * useThemeDetail — テーマ別詳細 ★market.json優先に変更（最重要）
  */
 export function useThemeDetail(themeName, period) {
-  const cacheKey = `theme_detail_${themeName}_${period}`
-  const [data,    setData]    = useState(() => readCache(cacheKey))
-  const [loading, setLoading] = useState(!readCache(cacheKey))
+  const jsonKey = `theme_detail_${themeName}_${period}`
+  const [data,    setData]    = useState(() => readCache(jsonKey))
+  const [loading, setLoading] = useState(!readCache(jsonKey))
 
   useEffect(() => {
     if (!themeName) return
-    const cached = readCache(cacheKey)
+    let cancelled = false
+    const cached = readCache(jsonKey)
     if (cached) { setData(cached); setLoading(false) }
 
-    fetch(`${API}/api/theme-detail/${encodeURIComponent(themeName)}?period=${period}`)
-      .then(r => r.json())
-      .then(json => { setData(json); writeCache(cacheKey, json) })
-      .catch(() => {})
-      .finally(() => setLoading(false))
+    ;(async () => {
+      try {
+        const json   = await fetchMarketJson()
+        const result = json[jsonKey]
+        if (result && !cancelled) {
+          setData(result); writeCache(jsonKey, result); setLoading(false); return
+        }
+      } catch {}
+      // フォールバック: Render API
+      try {
+        const r    = await fetch(`${API}/api/theme-detail/${encodeURIComponent(themeName)}?period=${period}`)
+        const json = await r.json()
+        if (!cancelled) { setData(json); writeCache(jsonKey, json) }
+      } catch {}
+      if (!cancelled) setLoading(false)
+    })()
+
+    return () => { cancelled = true }
   }, [themeName, period])
 
   return { data, loading }
+}
+
+
+/**
+ * useMarketRankList — 市場別ランキング一覧 ★market.json優先に変更
+ */
+export function useMarketRankList(period = '1mo') {
+  return useMarketJsonKey(
+    `market_rank_${period}`,
+    `/api/market-rank-list?period=${period}`,
+    [period]
+  )
 }
