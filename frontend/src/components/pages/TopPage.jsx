@@ -85,6 +85,8 @@ function MacroCard({ name, data, color }) {
   )
 }
 
+// APIから来るキー名をそのまま表示（バックエンドのMACRO_TICKERSと一致させる）
+// キー名はdata.pyのMACRO_TICKERSで管理
 const MACRO_COLORS = ['#ff4560','#ff8c42','#ffd166','#06d6a0','#4a9eff','#aa77ff']
 
 // niceScale

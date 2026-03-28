@@ -16,6 +16,7 @@ import Disclaimer    from './components/pages/Disclaimer'
 import Column       from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import About        from './components/pages/About'
+import SiteInfo     from './components/pages/SiteInfo'
 
 const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
@@ -28,6 +29,7 @@ const PAGES = [
 ]
 const PAGES_OTHER = [
   { icon:'📝', label:'コラム・解説',   component:Column       },
+  { icon:'🏢', label:'当サイトについて', component:SiteInfo     },
   { icon:'📣', label:'お知らせ',       component:News         },
   { icon:'📖', label:'使い方',         component:HowTo        },
   { icon:'⚙️', label:'設定',           component:Settings     },
