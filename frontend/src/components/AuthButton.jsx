@@ -2,7 +2,7 @@
  * AuthButton — ヘッダー右側のログイン/ユーザーボタン
  */
 import { useState } from 'react'
-import { useAuth } from '../hooks/useAuth'
+import { useAuth } from '../hooks/useAuth.jsx'
 
 export default function AuthButton() {
   const { isLoggedIn, loading, displayName, avatarUrl, signIn, signOut } = useAuth()

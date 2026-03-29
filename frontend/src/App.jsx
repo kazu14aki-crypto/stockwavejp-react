@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { useStatus } from './hooks/useMarketData'
+import { useStatus }   from './hooks/useMarketData'
+import { AuthProvider } from './hooks/useAuth.jsx'
 import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
@@ -12,43 +13,41 @@ import CustomTheme from './components/pages/CustomTheme'
 import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
-import { AuthProvider } from './hooks/useAuth'
-import AuthButton      from './components/AuthButton'
-import Disclaimer    from './components/pages/Disclaimer'
-import Column       from './components/pages/Column'
+import Disclaimer  from './components/pages/Disclaimer'
+import Column      from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
-import SiteInfo     from './components/pages/SiteInfo'
+import SiteInfo    from './components/pages/SiteInfo'
 
 const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
   { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別ランキング',           component:MarketRank    },
-  { icon:'🔥', label:'ヒートマップ',               component:Heatmap       },
+  { icon:'🔥', label:'ヒートマップ',              component:Heatmap       },
   { icon:'💹', label:'資金フロー・騰落モメンタム', component:FlowMomentum  },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
-  { icon:'📝', label:'コラム・解説',   component:Column       },
-  { icon:'🏢', label:'当サイトについて', component:SiteInfo     },
-  { icon:'📣', label:'お知らせ',       component:News         },
-  { icon:'📖', label:'使い方',         component:HowTo        },
-  { icon:'⚙️', label:'設定',           component:Settings     },
-  { icon:'⚖️', label:'免責事項',       component:Disclaimer   },
+  { icon:'📝', label:'コラム・解説',       component:Column        },
+  { icon:'🏢', label:'当サイトについて',   component:SiteInfo      },
+  { icon:'📣', label:'お知らせ',           component:News          },
+  { icon:'📖', label:'使い方',             component:HowTo         },
+  { icon:'⚙️', label:'設定',              component:Settings      },
+  { icon:'⚖️', label:'免責事項',          component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
 ]
-const ALL_PAGES = [...PAGES, ...PAGES_OTHER]
+const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
-export default function App() {
+function AppInner() {
   const [currentPage, setCurrentPage] = useState('ホーム')
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(false)
-  const status = useStatus()
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
+  const status = useStatus()
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
@@ -66,15 +65,13 @@ export default function App() {
     return () => window.removeEventListener('resize', check)
   }, [viewMode])
 
-
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component
-
   const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange: setViewMode, colorTheme, onColorThemeChange: setColorTheme }
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
     return {}
   })()
@@ -129,6 +126,13 @@ export default function App() {
         </footer>
       </main>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppInner />
     </AuthProvider>
   )
 }

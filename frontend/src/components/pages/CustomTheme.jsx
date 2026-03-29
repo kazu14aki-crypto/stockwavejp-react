@@ -3,7 +3,7 @@
  */
 import { useState, useEffect } from 'react'
 import { useCustomThemes, themeToUrl, themeFromUrl } from '../../hooks/useCustomThemes'
-import { useAuth } from '../../hooks/useAuth'
+import { useAuth } from '../../hooks/useAuth.jsx'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [

@@ -8,7 +8,7 @@
  */
 import { useState, useEffect, useCallback } from 'react'
 import { supabase } from '../lib/supabase'
-import { useAuth } from './useAuth'
+import { useAuth } from './useAuth.jsx'
 
 // ── localStorage（未ログイン時） ─────────────────
 const LS_KEY = 'swjp_custom_themes_v2'
