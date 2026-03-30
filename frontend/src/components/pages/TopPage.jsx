@@ -14,6 +14,63 @@ const TAG_COLORS = {
   'INFO':   { bg:'rgba(76,175,130,0.12)', color:'var(--green)',  border:'rgba(76,175,130,0.25)' },
 }
 
+// ── 市場コメント自動生成 ──
+function generateMarketComment(themeData, macro) {
+  if (!themeData || !themeData.themes) return null
+  const s = themeData.summary
+  if (!s) return null
+  const t = themeData.themes
+
+  // 上昇・下落数
+  const riseCount = s.rise
+  const fallCount = s.fall
+  const total     = s.total
+  const avg       = s.avg ?? 0
+
+  // 市場全体の状態
+  let marketState = ''
+  if (riseCount >= total * 0.7) marketState = '広範な上昇相場'
+  else if (riseCount >= total * 0.5) marketState = '上昇優勢の相場'
+  else if (fallCount >= total * 0.7) marketState = '広範な下落相場'
+  else if (fallCount >= total * 0.5) marketState = '下落優勢の相場'
+  else marketState = '方向感が定まらない相場'
+
+  // 上位・下位テーマ
+  const top3 = [...t].sort((a, b) => b.pct - a.pct).slice(0, 3)
+  const bot3 = [...t].sort((a, b) => a.pct - b.pct).slice(0, 3)
+
+  // 出来高増加テーマ
+  const volUp = [...t].filter(x => (x.volume_chg || 0) > 20)
+    .sort((a, b) => (b.volume_chg || 0) - (a.volume_chg || 0)).slice(0, 2)
+
+  // コメント生成
+  const lines = []
+
+  // 全体概況
+  lines.push(`現在の日本株テーマ相場は${marketState}となっています。全${total}テーマ中${riseCount}テーマが上昇、${fallCount}テーマが下落しており、テーマ平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%です。`)
+
+  // 上昇テーマ
+  if (top3.length && top3[0].pct > 0) {
+    const names = top3.filter(x => x.pct > 0).map(x => `${x.theme}（${x.pct >= 0 ? '+' : ''}${x.pct.toFixed(1)}%）`).join('、')
+    lines.push(`上昇が目立つテーマは${names}です。`)
+  }
+
+  // 下落テーマ
+  if (bot3.length && bot3[0].pct < 0) {
+    const names = bot3.filter(x => x.pct < 0).map(x => `${x.theme}（${x.pct.toFixed(1)}%）`).join('、')
+    lines.push(`一方、${names}は軟調な動きとなっています。`)
+  }
+
+  // 出来高増加テーマ
+  if (volUp.length > 0) {
+    const names = volUp.map(x => x.theme).join('・')
+    lines.push(`${names}は出来高が増加しており、特に市場参加者の関心が高まっています。`)
+  }
+
+  return lines.join(' ')
+}
+
+
 function Dots() {
   return (
     <span style={{ display:'inline-flex', gap:'3px', alignItems:'center' }}>
@@ -296,6 +353,26 @@ export default function TopPage() {
           arrow="down"
           sub={s?.bot?<span style={{ color:'var(--green)', fontWeight:600 }}>{s.bot.pct.toFixed(1)}%</span>:'-'}/>
       </div>
+
+      {/* 市場コメント自動生成 */}
+      {!loading && themes && (
+        <div style={{
+          background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.18)',
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'4px',
+          animation:'fadeUp 0.4s ease 0.25s both',
+        }}>
+          <div style={{ fontSize:'10px', fontWeight:700, color:'var(--accent)',
+            letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'6px' }}>
+            📝 本日のマーケットコメント（自動生成・1ヶ月集計）
+          </div>
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9 }}>
+            {generateMarketComment(themes, macro)}
+          </div>
+          <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
+            ※ 本コメントはデータに基づき自動生成されたものです。投資助言ではありません。
+          </div>
+        </div>
+      )}
 
       {/* マーケット指標（ミニカード＋比較グラフ統合）*/}
       <SHead title="📈 マーケット指標・比較（1ヶ月）" />

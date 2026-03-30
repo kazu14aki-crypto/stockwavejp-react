@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useHeatmap, useMonthlyHeatmap } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = ['1W', '1M', '3M', '6M', '1Y']
@@ -101,18 +102,43 @@ export default function Heatmap() {
   const [error,         setError]         = useState(null)
 
   useEffect(() => {
+    const CACHE_KEY = `heatmap_${tab}`
     const fetch_ = async () => {
+      // キャッシュから即時表示
+      try {
+        const cached = JSON.parse(localStorage.getItem('swjp_v2_' + CACHE_KEY) || 'null')
+        if (cached?.data) {
+          const d = cached.data
+          if (tab === 'period') setHeatmapData(d.heatmap || d)
+          else { setMonthlyData(d.heatmap || d); setMonths(d.months || []) }
+          setLoading(false)
+        }
+      } catch {}
+
+      // market.jsonから取得（GitHub Actions生成）
+      try {
+        const res  = await fetch('/data/market.json?t=' + Date.now())
+        const json = await res.json()
+        if (tab === 'period' && json.heatmap) {
+          setHeatmapData(json.heatmap.data)
+          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.heatmap.data }, ts: Date.now() }))
+          setLoading(false); return
+        }
+      } catch {}
+
+      // フォールバック：Render API
       setLoading(true); setError(null)
       try {
         if (tab === 'period') {
           const res  = await fetch(`${API}/api/heatmap`)
           const json = await res.json()
           setHeatmapData(json.data)
+          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.data }, ts: Date.now() }))
         } else {
           const res  = await fetch(`${API}/api/heatmap/monthly`)
           const json = await res.json()
-          setMonthlyData(json.data)
-          setMonths(json.months)
+          setMonthlyData(json.data); setMonths(json.months)
+          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.data, months: json.months }, ts: Date.now() }))
         }
       } catch {
         setError('データ取得に失敗しました')

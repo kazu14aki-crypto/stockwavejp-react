@@ -179,9 +179,19 @@ export default function MarketRank() {
       </div>
 
       <div style={{ padding:'20px 32px 48px' }}>
-        <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-          国内主要株・国内全般・市場区分ごとの騰落率ランキングと構成銘柄詳細
-        </p>
+        <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
+          color:'var(--text2)', lineHeight:1.8 }}>
+          <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
+          日経225採用銘柄・TOPIX構成銘柄・市場区分（プライム・スタンダード・グロース）ごとに、
+          構成銘柄の騰落率ランキングと詳細データを確認できます。
+          上部のタブで「国内主要株」「国内全般」「市場区分」を切り替え、各グループ内のセグメントを選択してください。
+          <br/>
+          <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+            💡 活用ポイント：「テクノロジー」セグメントが強い時はテーマ一覧の「半導体」「AI・クラウド」も
+            チェックしましょう。セグメントとテーマの同時確認で資金の流れをより精度高く把握できます。
+          </span>
+        </div>
 
         <div style={{ display:'flex', gap:'4px', borderBottom:'1px solid var(--border)', marginBottom:'0' }}>
           {Object.keys(groups).map(g=>(

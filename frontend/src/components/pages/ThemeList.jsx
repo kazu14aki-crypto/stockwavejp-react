@@ -179,6 +179,19 @@ export default function ThemeList() {
       </div>
 
       <div style={{ padding: '20px 24px 48px', maxWidth: '100%', overflowX: 'hidden' }}>
+
+        {/* 説明文 */}
+        <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text2)', lineHeight:1.9 }}>
+          <span style={{ fontWeight:700, color:'var(--accent)' }}>📊 このページについて：</span>
+          日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
+          期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
+          <br />
+          <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+            💡 活用ポイント：「上昇TOP5」に連続して登場するテーマは強いトレンドの可能性があります。
+            出来高・売買代金も同時に確認し、資金の本気度を判断しましょう。
+          </span>
+        </div>
         <p style={{ fontSize: '12px', color: 'var(--text3)', marginBottom: '20px' }}>
           日本株テーマ別の騰落率・資金動向 — {periodLabel}
         </p>
