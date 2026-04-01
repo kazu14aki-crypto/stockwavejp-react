@@ -231,9 +231,10 @@ function CustomStockTable({ stocks, period, onRemove }) {
 // 横軸日付フォーマット：日付の重複を避けるためユニーク表示
 function fmtDate(dateStr) {
   if (!dateStr) return ''
-  // dateStr は 'YYYY/MM/DD' 形式
-  const parts = dateStr.split('/')
-  if (parts.length < 3) return dateStr.slice(2,7)
+  // 'YYYY-MM-DD' または 'YYYY/MM/DD' 形式に対応
+  const sep = dateStr.includes('-') ? '-' : '/'
+  const parts = dateStr.split(sep)
+  if (parts.length < 3) return dateStr
   const y = parts[0].slice(2) // '26'
   const m = parts[1]          // '03'
   const d = parts[2]          // '28'

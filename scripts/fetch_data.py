@@ -566,6 +566,51 @@ def main():
             "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
         }
 
+    # ── 銘柄アクション検出（分割・廃止・名称変更等） ──
+    print("検出: 銘柄アクション")
+    actions = []
+    seen_tickers = set()
+    for theme_stocks in THEMES.values():
+        for name, ticker in theme_stocks.items():
+            if ticker in seen_tickers:
+                continue
+            seen_tickers.add(ticker)
+            try:
+                tk = yf.Ticker(ticker)
+                info = tk.info or {}
+                # 名称変更チェック
+                api_name = info.get('longName') or info.get('shortName') or ''
+                if api_name and name and api_name != name and len(api_name) > 2:
+                    # 大きく異なる場合のみ（部分一致でなければ）
+                    if name not in api_name and api_name not in name:
+                        actions.append({
+                            "type": "rename",
+                            "ticker": ticker,
+                            "name": name,
+                            "detail": f"登録名「{name}」→ API名「{api_name}」に変更の可能性",
+                            "detected_at": now_jst.strftime("%Y/%m/%d"),
+                            "effective_date": None,
+                        })
+                # 株式分割チェック（splits）
+                splits = tk.splits
+                if splits is not None and len(splits) > 0:
+                    recent = splits[splits.index >= (pd.Timestamp.now() - pd.Timedelta(days=90))]
+                    for dt, ratio in recent.items():
+                        if ratio != 1.0:
+                            actions.append({
+                                "type": "split",
+                                "ticker": ticker,
+                                "name": name,
+                                "detail": f"株式分割 {ratio:.1f}:1（{str(dt.date())}）",
+                                "detected_at": now_jst.strftime("%Y/%m/%d"),
+                                "effective_date": str(dt.date()),
+                            })
+            except Exception:
+                pass
+    output["corporate_actions"] = actions
+    if actions:
+        print(f"  銘柄アクション検出: {len(actions)}件")
+
     # 保存
     os.makedirs("frontend/public/data", exist_ok=True)
     out_path = "frontend/public/data/market.json"

@@ -260,6 +260,38 @@ export default function ThemeList() {
             {/* 全テーマ 売買代金 */}
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
             <HBarChart items={byTV} valueKey="trade_value" colorFn={orangeColor} formatFn={true} />
+
+            {/* マイカスタムテーマ */}
+            {customThemes.length > 0 && (
+              <>
+                <SectionHead title="🎨 マイカスタムテーマ" />
+                <div style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
+                  {customThemes.map((ct, ci) => (
+                    <div key={ci} style={{
+                      background:'rgba(170,119,255,0.08)',
+                      border:'1px solid rgba(170,119,255,0.3)',
+                      borderRadius:'8px', padding:'10px 16px',
+                      display:'flex', alignItems:'center', gap:'12px',
+                    }}>
+                      <span style={{ fontSize:'13px', color:'#c8a8ff', fontWeight:700, flex:1 }}>
+                        🎨 {ct.name}
+                      </span>
+                      <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
+                        {ct.stocks?.length ?? 0}銘柄
+                      </span>
+                      <span style={{ fontSize:'10px', color:'#aa77ff', fontWeight:600,
+                        padding:'2px 8px', background:'rgba(170,119,255,0.12)',
+                        border:'1px solid rgba(170,119,255,0.2)', borderRadius:'20px' }}>
+                        オリジナル
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'6px' }}>
+                  💡 詳細データはサイドメニュー「カスタムテーマ」から確認できます
+                </div>
+              </>
+            )}
           </>
         )}
       </div>

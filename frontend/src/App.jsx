@@ -28,12 +28,12 @@ const PAGES = [
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
-  { icon:'📝', label:'コラム・解説',       component:Column        },
-  { icon:'🏢', label:'当サイトについて',   component:SiteInfo      },
-  { icon:'📣', label:'お知らせ',           component:News          },
-  { icon:'📖', label:'使い方',             component:HowTo         },
-  { icon:'⚙️', label:'設定',              component:Settings      },
-  { icon:'⚖️', label:'免責事項',          component:Disclaimer    },
+  { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
+  { icon:'📣', label:'お知らせ',            component:News          },
+  { icon:'📖', label:'使い方',              component:HowTo         },
+  { icon:'📝', label:'コラム・解説',        component:Column        },
+  { icon:'⚙️', label:'設定',               component:Settings      },
+  { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
 ]
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]

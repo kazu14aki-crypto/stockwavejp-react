@@ -1,31 +1,44 @@
 export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile }) {
+  // ⑥ スマホは右側表示
   const sidebarStyle = {
     position: 'fixed',
     top: 'var(--header)',
-    left: 0,
     bottom: 0,
     width: 'var(--sidebar)',
     background: 'var(--bg2)',
-    borderRight: '1px solid var(--border)',
     padding: '16px 8px',
     overflowY: 'auto',
     zIndex: 900,
     transition: 'transform 0.25s cubic-bezier(0.22,1,0.36,1)',
-    transform: isMobile && !isOpen ? 'translateX(-100%)' : 'translateX(0)',
+    // PCは左固定、スマホは右側
+    ...(isMobile ? {
+      right: 0,
+      left: 'auto',
+      borderLeft: '1px solid var(--border)',
+      borderRight: 'none',
+      transform: isOpen ? 'translateX(0)' : 'translateX(100%)',
+      boxShadow: isOpen ? '-4px 0 20px rgba(0,0,0,0.3)' : 'none',
+    } : {
+      left: 0,
+      right: 'auto',
+      borderRight: '1px solid var(--border)',
+      borderLeft: 'none',
+      transform: 'translateX(0)',
+    }),
   }
 
   const NavBtn = ({ icon, label }) => {
     const isActive = currentPage === label
     return (
       <button onClick={() => onPageChange(label)} style={{
-        padding: isActive ? '9px 12px 9px 10px' : '9px 12px',
+        padding: '9px 12px',
         fontSize: '13px',
         color: isActive ? 'var(--text)' : 'var(--text2)',
         borderRadius: '6px', marginBottom: '1px', cursor: 'pointer',
         display: 'flex', alignItems: 'center', gap: '8px',
         letterSpacing: '-0.01em', fontWeight: isActive ? 600 : 400,
-        border: isActive ? '2px solid transparent' : '2px solid transparent',
-        borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
+        borderLeft: isActive && !isMobile ? '2px solid var(--accent)' : '2px solid transparent',
+        borderRight: isActive && isMobile  ? '2px solid var(--accent)' : '2px solid transparent',
         background: isActive ? 'rgba(74,158,255,0.1)' : 'transparent',
         width: '100%', textAlign: 'left', fontFamily: 'var(--font)',
         transition: 'all 0.15s',
