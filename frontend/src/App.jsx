@@ -22,7 +22,7 @@ const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
   { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
-  { icon:'📋', label:'市場別ランキング',           component:MarketRank    },
+  { icon:'📋', label:'市場別詳細',           component:MarketRank    },
   { icon:'🔥', label:'ヒートマップ',              component:Heatmap       },
   { icon:'💹', label:'資金フロー・騰落モメンタム', component:FlowMomentum  },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },

@@ -255,7 +255,7 @@ const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left', minWidth:'120px' }
 
 export default function ThemeDetail() {
-  const [period,      setPeriod]      = useState('1mo')
+  const [period,      setPeriod]      = useState('1d')
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState('')
   const [detail,      setDetail]      = useState(null)

@@ -348,7 +348,7 @@ def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
 def _period_df(df: pd.DataFrame, period: str) -> pd.DataFrame | None:
     if df is None: return None
     delta_map = {
-        "5d": timedelta(days=8), "1mo": timedelta(days=32),
+        "1d": timedelta(days=2), "5d": timedelta(days=8), "1mo": timedelta(days=32),
         "2mo": timedelta(days=63), "3mo": timedelta(days=93),
         "6mo": timedelta(days=185), "1y": timedelta(days=366),
     }

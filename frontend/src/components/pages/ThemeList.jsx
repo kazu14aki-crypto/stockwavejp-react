@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useThemes } from '../../hooks/useMarketData'
+import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
+  { label: '1日',  value: '1d'  },
   { label: '1週間', value: '5d'  },
   { label: '1ヶ月', value: '1mo' },
   { label: '3ヶ月', value: '3mo' },
@@ -146,7 +148,8 @@ function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valu
 }
 
 export default function ThemeList() {
-  const [period, setPeriod] = useState('1mo')
+  const [period, setPeriod] = useState('1d')
+  const { themes: customThemes } = useCustomThemes()
   const { data, loading, refreshing, updatedAt, refresh } = useThemes(period)
   const lastUpdate = updatedAt ? new Date(updatedAt.replace(/\//g, '-').replace(' JST','')) : null
   const error = null

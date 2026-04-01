@@ -7,6 +7,7 @@ import { useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
+  { label: '1日',  value: '1d'  },
   { label: '1週間', value: '5d'  },
   { label: '1ヶ月', value: '1mo' },
   { label: '3ヶ月', value: '3mo' },
@@ -58,7 +59,7 @@ function HBar({ item, maxAbs }) {
 }
 
 export default function FlowMomentum() {
-  const [period,  setPeriod]  = useState('1mo')
+  const [period,  setPeriod]  = useState('1d')
   const [sortKey, setSortKey] = useState('騰落率（降順）')
   const [tab,     setTab]     = useState('flow')  // 'flow' | 'momentum'
 
@@ -124,20 +125,45 @@ export default function FlowMomentum() {
       {tab === 'flow' && (
         loadingF ? <Loading /> : (
           <>
-            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'24px' }} className="flow-grid">
-              <div>
-                <SectionHead title="🔥 資金流入 TOP10" />
-                <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
-                  {(flowData?.gainers ?? []).map(item => <HBar key={item.theme} item={item} maxAbs={maxAbs} />)}
-                </div>
-              </div>
-              <div>
-                <SectionHead title="❄️ 資金流出 TOP10" />
-                <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
-                  {(flowData?.losers ?? []).map(item => <HBar key={item.theme} item={item} maxAbs={maxAbs} />)}
-                </div>
-              </div>
-            </div>
+            {(() => {
+              const allItems2 = flowData?.all ?? []
+              const risers  = allItems2.filter(t => t.pct > 0).sort((a,b) => b.pct - a.pct).slice(0,5)
+              const fallers = allItems2.filter(t => t.pct < 0).sort((a,b) => a.pct - b.pct).slice(0,5)
+              const riseCount = allItems2.filter(t => t.pct > 0).length
+              const fallCount = allItems2.filter(t => t.pct < 0).length
+              return (
+                <>
+                  <div style={{ display:'flex', gap:'16px', marginBottom:'12px', flexWrap:'wrap' }}>
+                    <span style={{ fontSize:'12px', color:'var(--red)', fontWeight:600 }}>
+                      ▲ {riseCount}テーマ上昇
+                    </span>
+                    <span style={{ fontSize:'12px', color:'var(--green)', fontWeight:600 }}>
+                      ▼ {fallCount}テーマ下落
+                    </span>
+                  </div>
+                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'24px' }} className="flow-grid">
+                    <div>
+                      <SectionHead title={`🔥 資金流入 TOP5（${riseCount}テーマ上昇）`} />
+                      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+                        {risers.length > 0
+                          ? risers.map(item => <HBar key={item.theme} item={item} maxAbs={maxAbs} />)
+                          : <div style={{ fontSize:'12px', color:'var(--text3)', padding:'12px' }}>上昇テーマなし</div>
+                        }
+                      </div>
+                    </div>
+                    <div>
+                      <SectionHead title={`❄️ 資金流出 TOP5（${fallCount}テーマ下落）`} />
+                      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+                        {fallers.length > 0
+                          ? fallers.map(item => <HBar key={item.theme} item={item} maxAbs={maxAbs} />)
+                          : <div style={{ fontSize:'12px', color:'var(--text3)', padding:'12px' }}>下落テーマなし</div>
+                        }
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+            })()}
             <SectionHead title="全テーマ 騰落率一覧" />
             <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
               {allItems.map(item => <HBar key={item.theme} item={item} maxAbs={maxAbs} />)}

@@ -133,7 +133,7 @@ const tdL = { padding:'8px 12px', textAlign:'left' }
 
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
-  const [period,      setPeriod]      = useState('1mo')
+  const [period,      setPeriod]      = useState('1d')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
   const [activeGroup, setActiveGroup] = useState('国内主要株')
@@ -172,7 +172,7 @@ export default function MarketRank() {
       )}
 
       <div className="page-header-sticky">
-        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別ランキング</h1>
+        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別詳細</h1>
         <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
           {PERIODS.map(p=><option key={p.value} value={p.value}>{p.label}</option>)}
         </select>

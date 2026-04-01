@@ -175,7 +175,8 @@ def get_period_df(df, period):
     if df is None: return None
     now = pd.Timestamp.now()
     delta = {
-        "5d": pd.Timedelta(days=7), "1mo": pd.DateOffset(months=1),
+        "1d": pd.Timedelta(days=2), "5d": pd.Timedelta(days=7),
+        "1mo": pd.DateOffset(months=1),
         "3mo": pd.DateOffset(months=3), "6mo": pd.DateOffset(months=6),
         "1y": pd.DateOffset(years=1),
     }
