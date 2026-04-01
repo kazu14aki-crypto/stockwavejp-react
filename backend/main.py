@@ -2,7 +2,7 @@ import numpy as np
 """
 main.py — FastAPI メインサーバー v2.1
 """
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Request
 from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
@@ -219,10 +219,11 @@ def get_stock_history(ticker: str, period: str = "1mo"):
 
 
 @app.post("/api/custom-theme-stats")
-async def get_custom_theme_stats(payload: dict):
+async def get_custom_theme_stats(request: Request):
     """カスタムテーマの騰落率・出来高を集計（テーマ一覧・比較グラフ用）"""
     try:
         from data import _fetch_df, _period_df
+        payload = await request.json()
         tickers = payload.get("tickers", [])
         period  = payload.get("period", "1mo")
         if not tickers:
