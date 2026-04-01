@@ -217,6 +217,52 @@ def get_stock_history(ticker: str, period: str = "1mo"):
         return {"ticker": ticker, "data": [], "error": str(e)}
 
 
+
+@app.post("/api/custom-theme-stats")
+async def get_custom_theme_stats(payload: dict):
+    """カスタムテーマの騰落率・出来高を集計（テーマ一覧・比較グラフ用）"""
+    try:
+        from data import _fetch_df, _period_df
+        tickers = payload.get("tickers", [])
+        period  = payload.get("period", "1mo")
+        if not tickers:
+            return {"pct": 0, "volume": 0, "trade_value": 0, "stocks": []}
+
+        pcts, vols, tvs = [], [], []
+        stocks_result = []
+        for ticker in tickers[:20]:  # 最大20銘柄
+            try:
+                df  = _fetch_df(ticker)
+                pdf = _period_df(df, period)
+                if pdf is None or len(pdf) < 2:
+                    continue
+                cl  = pdf["Close"].dropna()
+                vol = pdf["Volume"].dropna()
+                if len(cl) < 2 or not (cl > 0).all():
+                    continue
+                price = round(float(cl.iloc[-1]), 0)
+                pct   = round((float(cl.iloc[-1]) / float(cl.iloc[0]) - 1) * 100, 2)
+                half  = max(len(pdf) // 2, 1)
+                rv    = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+                tv    = int(rv * price)
+                pcts.append(pct); vols.append(int(rv)); tvs.append(tv)
+                stocks_result.append({
+                    "ticker": ticker, "price": price, "pct": pct,
+                    "volume": int(rv), "trade_value": tv,
+                })
+            except Exception:
+                continue
+
+        avg_pct = round(sum(pcts) / len(pcts), 2) if pcts else 0
+        return {
+            "pct": avg_pct,
+            "volume": sum(vols),
+            "trade_value": sum(tvs),
+            "stocks": stocks_result,
+        }
+    except Exception as e:
+        return {"pct": 0, "volume": 0, "trade_value": 0, "stocks": [], "error": str(e)}
+
 # 日本株名称マスター（銘柄名検索の日本語化に使用）
 JP_STOCK_NAMES = {
     "7203.T":"トヨタ自動車","6758.T":"ソニーグループ","8306.T":"三菱UFJ FG",

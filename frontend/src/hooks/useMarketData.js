@@ -356,3 +356,38 @@ export function useMarketRankList(period = '1mo') {
     [period]
   )
 }
+
+
+/**
+ * useCustomThemeStats — カスタムテーマの騰落率・出来高をAPIで集計
+ * ThemeList・ThemeDetailでカスタムテーマをノーマルテーマと同列に扱うため
+ */
+export function useCustomThemeStats(tickers, period) {
+  const key = `custom_stats_${(tickers||[]).join(',')}_${period}`
+  const [data,    setData]    = useState(() => readCache(key))
+  const [loading, setLoading] = useState(!readCache(key))
+
+  useEffect(() => {
+    if (!tickers || tickers.length === 0) { setLoading(false); return }
+    let cancelled = false
+    const cached = readCache(key)
+    if (cached) { setData(cached); setLoading(false) }
+
+    ;(async () => {
+      try {
+        const r = await fetch(`${API}/api/custom-theme-stats`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ tickers, period }),
+        })
+        const json = await r.json()
+        if (!cancelled) { setData(json); writeCache(key, json) }
+      } catch {}
+      if (!cancelled) setLoading(false)
+    })()
+
+    return () => { cancelled = true }
+  }, [tickers?.join(','), period])
+
+  return { data, loading }
+}

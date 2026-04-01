@@ -97,6 +97,8 @@ function AppInner() {
         pages={PAGES} pagesOther={PAGES_OTHER}
         currentPage={currentPage} onPageChange={handlePageChange}
         isOpen={sidebarOpen} isMobile={isMobile}
+        onOpen={() => setSidebarOpen(true)}
+        onClose={() => setSidebarOpen(false)}
       />
 
       <main style={{

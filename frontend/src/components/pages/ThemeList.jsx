@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useThemes } from '../../hooks/useMarketData'
+import { useThemes, useCustomThemeStats } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
 
@@ -147,6 +147,57 @@ function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valu
   )
 }
 
+// カスタムテーマ1行ずつ騰落率を取得して表示
+function CustomThemeRow({ ct, period, pctColor }) {
+  const tickers = (ct.stocks || []).map(s => s.ticker)
+  const { data, loading } = useCustomThemeStats(tickers, period)
+  const pct = data?.pct ?? null
+  const maxAbs = 10  // バー最大幅の基準（固定）
+
+  return (
+    <div style={{
+      background:'rgba(170,119,255,0.06)',
+      border:'1px solid rgba(170,119,255,0.25)',
+      borderRadius:'8px', padding:'8px 14px',
+      display:'grid', gridTemplateColumns:'140px 1fr 64px',
+      alignItems:'center', gap:'8px',
+    }}>
+      <span style={{ fontSize:'12px', color:'#c8a8ff', fontWeight:700,
+        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>
+        🎨 {ct.name}
+      </span>
+      <div style={{ height:'14px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+        {pct !== null && (
+          <div style={{
+            height:'100%',
+            width:`${Math.min(Math.abs(pct) / maxAbs * 100, 100)}%`,
+            background: pct >= 0 ? 'var(--red)' : 'var(--green)',
+            borderRadius:'3px', opacity:0.8,
+          }} />
+        )}
+      </div>
+      <span style={{ fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700,
+        textAlign:'right', color: pct === null ? 'var(--text3)' : pctColor(pct ?? 0), whiteSpace:'nowrap' }}>
+        {loading ? '…' : pct === null ? '-' : `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`}
+      </span>
+    </div>
+  )
+}
+
+function CustomThemeRows({ themes, period, pctColor }) {
+  return (
+    <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
+      {themes.map((ct, i) => (
+        <CustomThemeRow key={i} ct={ct} period={period} pctColor={pctColor} />
+      ))}
+      <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>
+        💡 詳細データはサイドメニュー「カスタムテーマ」から確認できます
+      </div>
+    </div>
+  )
+}
+
+
 export default function ThemeList() {
   const [period, setPeriod] = useState('1d')
   const { themes: customThemes } = useCustomThemes()
@@ -261,35 +312,11 @@ export default function ThemeList() {
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
             <HBarChart items={byTV} valueKey="trade_value" colorFn={orangeColor} formatFn={true} />
 
-            {/* マイカスタムテーマ */}
+            {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
               <>
                 <SectionHead title="🎨 マイカスタムテーマ" />
-                <div style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
-                  {customThemes.map((ct, ci) => (
-                    <div key={ci} style={{
-                      background:'rgba(170,119,255,0.08)',
-                      border:'1px solid rgba(170,119,255,0.3)',
-                      borderRadius:'8px', padding:'10px 16px',
-                      display:'flex', alignItems:'center', gap:'12px',
-                    }}>
-                      <span style={{ fontSize:'13px', color:'#c8a8ff', fontWeight:700, flex:1 }}>
-                        🎨 {ct.name}
-                      </span>
-                      <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
-                        {ct.stocks?.length ?? 0}銘柄
-                      </span>
-                      <span style={{ fontSize:'10px', color:'#aa77ff', fontWeight:600,
-                        padding:'2px 8px', background:'rgba(170,119,255,0.12)',
-                        border:'1px solid rgba(170,119,255,0.2)', borderRadius:'20px' }}>
-                        オリジナル
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'6px' }}>
-                  💡 詳細データはサイドメニュー「カスタムテーマ」から確認できます
-                </div>
+                <CustomThemeRows themes={customThemes} period={period} pctColor={pctColor} />
               </>
             )}
           </>
