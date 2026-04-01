@@ -2,19 +2,30 @@ name: Fetch Market Data
 
 on:
   schedule:
-    # JST 9:35（前場寄り付き後）= UTC 0:35
-    - cron: '35 0 * * 1-5'
-    # JST 12:05（前場引け後）= UTC 3:05
+    # ── 平日の市場時間中：1時間おき（JST 9時〜16時） ──
+    # JST 9:05  = UTC 0:05
+    - cron: '5 0 * * 1-5'
+    # JST 10:05 = UTC 1:05
+    - cron: '5 1 * * 1-5'
+    # JST 11:05 = UTC 2:05
+    - cron: '5 2 * * 1-5'
+    # JST 12:05 = UTC 3:05
     - cron: '5 3 * * 1-5'
-    # JST 15:35（後場引け後）= UTC 6:35
-    - cron: '35 6 * * 1-5'
+    # JST 13:05 = UTC 4:05
+    - cron: '5 4 * * 1-5'
+    # JST 14:05 = UTC 5:05
+    - cron: '5 5 * * 1-5'
+    # JST 15:05 = UTC 6:05
+    - cron: '5 6 * * 1-5'
+    # JST 15:40 = UTC 6:40（後場引け後・最終データ）
+    - cron: '40 6 * * 1-5'
   workflow_dispatch:  # 手動実行も可能
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # リポジトリへのpushに必要
+      contents: write
 
     steps:
       - name: Checkout repository

@@ -150,7 +150,7 @@ function MultiLineChart({ trends, selected, title }) {
           <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
         )}
         {xLabels.map(({ i, date }) => (
-          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{date.slice(2,7)}</text>
+          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{fmtDate(date)}</text>
         ))}
         {selected.map((theme, ti) => {
           const data = trends[theme] ?? []
@@ -253,6 +253,18 @@ const thStyle = { padding:'6px 8px', textAlign:'right', fontSize:'10px', fontWei
 const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color:'var(--text2)' }
 const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left', minWidth:'120px' }
+
+// 横軸日付フォーマット：日付の重複を避けるためユニーク表示
+function fmtDate(dateStr) {
+  if (!dateStr) return ''
+  // dateStr は 'YYYY/MM/DD' 形式
+  const parts = dateStr.split('/')
+  if (parts.length < 3) return dateStr.slice(2,7)
+  const y = parts[0].slice(2) // '26'
+  const m = parts[1]          // '03'
+  const d = parts[2]          // '28'
+  return `${y}.${m}/${d}`
+}
 
 export default function ThemeDetail() {
   const [period,      setPeriod]      = useState('1d')

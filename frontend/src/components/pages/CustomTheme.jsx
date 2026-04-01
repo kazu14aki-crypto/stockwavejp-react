@@ -90,7 +90,7 @@ function ThemeTrendChart({ stocks, period }) {
         ))}
         {xLabels.map(({i, date}) => (
           <text key={date} x={xS(i)} y={H-4} textAnchor="middle" fill="var(--text3)" fontSize="8">
-            {date.slice(2,7)}
+            {fmtDate(date)}
           </text>
         ))}
         {names.map((name, ti) => {
@@ -228,6 +228,18 @@ function CustomStockTable({ stocks, period, onRemove }) {
 }
 
 // ── メインコンポーネント ────────────────────────
+// 横軸日付フォーマット：日付の重複を避けるためユニーク表示
+function fmtDate(dateStr) {
+  if (!dateStr) return ''
+  // dateStr は 'YYYY/MM/DD' 形式
+  const parts = dateStr.split('/')
+  if (parts.length < 3) return dateStr.slice(2,7)
+  const y = parts[0].slice(2) // '26'
+  const m = parts[1]          // '03'
+  const d = parts[2]          // '28'
+  return `${y}.${m}/${d}`
+}
+
 export default function CustomTheme() {
   const { themes, saveTheme, deleteTheme, syncing } = useCustomThemes()
   const { isLoggedIn, signIn } = useAuth()

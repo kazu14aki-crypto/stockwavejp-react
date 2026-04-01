@@ -161,7 +161,7 @@ export function useStatus() {
       try {
         const json = await fetchMarketJson()
         if (json.status) {
-          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中' })
+          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中', updatedAt: json.status.updated_at || null })
           return
         }
       } catch {}

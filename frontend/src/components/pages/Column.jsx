@@ -1306,11 +1306,12 @@ export default function Column() {
   const [activeCol,  setActiveCol]  = useState(null)
 
   const THEME_CATS = ['半導体', 'AI・クラウド', '防衛・宇宙', 'インバウンド', 'EV・脱炭素', '造船', '親子上場', 'バフェット銘柄', 'フィジカルAI', 'エッジAI', 'パワー半導体', 'NISA', '光通信', '国土強靭化', 'イラク']
-  const filtered = activeCat === 'すべて'
+  const _base = activeCat === 'すべて'
     ? COLUMNS
     : activeCat === 'テーマ'
     ? COLUMNS.filter(c => THEME_CATS.includes(c.category))
     : COLUMNS.filter(c => c.category === activeCat)
+  const filtered = [..._base].sort((a, b) => b.date.localeCompare(a.date))
 
   if (activeCol) {
     const col = COLUMNS.find(c => c.id === activeCol)

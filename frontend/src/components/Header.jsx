@@ -72,6 +72,11 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
             <span className="status-label" style={{ fontSize: '11px', color: 'var(--text2)', whiteSpace: 'nowrap' }}>
               {status.label}
             </span>
+            {status.updatedAt && (
+              <span className="status-updated" style={{ fontSize: '10px', color: 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
+                最終取得: {status.updatedAt.replace(/\d{4}\//,'').replace(' JST','')}
+              </span>
+            )}
           </div>
 
           {/* 時刻 */}
@@ -105,7 +110,8 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
         @media (max-width: 768px) {
           .hamburger-btn { display: block !important; }
           .status-label  { display: none !important; }
-          .status-time   { display: none !important; }
+          .status-time    { display: none !important; }
+          .status-updated { display: none !important; }
           .logo-text     { display: block !important; }
           .logo-text .logo-main { font-size: 13px !important; }
           .logo-text .logo-sub  { display: none !important; }
