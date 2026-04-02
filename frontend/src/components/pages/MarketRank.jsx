@@ -3,7 +3,7 @@ import AddToThemeModal from '../AddToThemeModal'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 
 const PERIODS = [
-  { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
+  {label:'1日',value:'1d'},{ label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
   { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
 ]
 
