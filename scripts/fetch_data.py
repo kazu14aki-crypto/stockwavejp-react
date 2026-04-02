@@ -141,7 +141,7 @@ MACRO_TICKERS = {
     "市場ボラティリティ指標(VIXY)":"VIXY",
 }
 
-PERIODS = ["5d", "1mo", "3mo", "6mo", "1y"]
+PERIODS = ["1d", "5d", "1mo", "3mo", "6mo", "1y"]
 
 
 def robust_avg(pcts):
@@ -385,6 +385,15 @@ def main():
                 {"date": str(d.date()), "pct": round(float(v), 2)}
                 for d, v in cum.items()
             ]
+        # 異常値フィルタ（ETFの分配金落ち等で急落するケース除去）
+        for name_key in list(macro_result.keys()):
+            arr = macro_result[name_key]
+            if arr:
+                last_pct = arr[-1]["pct"]
+                if abs(last_pct) > 60:  # ±60%超は異常値とみなす
+                    # 直前の正常値で補完
+                    normal = [d for d in arr if abs(d["pct"]) <= 60]
+                    macro_result[name_key] = normal if normal else []
         output[f"macro_{period}"] = {
             "period": period, "data": macro_result,
             "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
@@ -452,7 +461,37 @@ def main():
                            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST")}
 
     # ── 市場別詳細キャッシュ（市場別ランキングページの高速化）──
-    print("集計: seg_detail（全セグメント × 2期間）")
+    # ── テーマ別トレンド（比較グラフ用）をmarket.jsonに追加 ──
+    print("集計: trends（全テーマ × 全期間）")
+    for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
+        all_trends = {}
+        for theme_name, stocks in THEMES.items():
+            tickers = list(stocks.values())
+            if not tickers:
+                continue
+            theme_series = {}
+            for name, ticker in stocks.items():
+                df = ticker_data.get(ticker)
+                pdf = get_period_df(df, period)
+                if pdf is None or len(pdf) < 2:
+                    continue
+                cl = pdf["Close"].dropna()
+                if len(cl) < 2 or not (cl > 0).all():
+                    continue
+                cum = (cl / cl.iloc[0] - 1) * 100
+                cum = cum[~cum.index.duplicated(keep="last")]
+                theme_series[theme_name] = [
+                    {"date": str(d.date()), "pct": round(float(v), 2)}
+                    for d, v in cum.items() if not __import__("math").isnan(v)
+                ]
+                break  # テーマを代表する1銘柄のみ（軽量化）
+            all_trends.update(theme_series)
+        output[f"trends_{period}"] = {
+            "data": all_trends,
+            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+        }
+
+        print("集計: seg_detail（全セグメント × 2期間）")
     MARKET_SEGMENTS = build_market_segments()
     for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         for seg_name, seg_stocks in MARKET_SEGMENTS.items():
@@ -583,14 +622,7 @@ def main():
                 if api_name and name and api_name != name and len(api_name) > 2:
                     # 大きく異なる場合のみ（部分一致でなければ）
                     if name not in api_name and api_name not in name:
-                        actions.append({
-                            "type": "rename",
-                            "ticker": ticker,
-                            "name": name,
-                            "detail": f"登録名「{name}」→ API名「{api_name}」に変更の可能性",
-                            "detected_at": now_jst.strftime("%Y/%m/%d"),
-                            "effective_date": None,
-                        })
+                        pass  # rename は表示しない（日英表記差のため誤検知多数）
                 # 株式分割チェック（splits）
                 splits = tk.splits
                 if splits is not None and len(splits) > 0:
@@ -634,11 +666,30 @@ def main():
 
     # 保存
     os.makedirs("frontend/public/data", exist_ok=True)
+    # trendsデータを別ファイルに分割（market.jsonの肥大化防止）
+    trends_output = {}
+    main_output   = {}
+    for k, v in output.items():
+        if k.startswith("trends_"):
+            trends_output[k] = v
+        else:
+            main_output[k] = v
+
+    os.makedirs("frontend/public/data", exist_ok=True)
+
+    # market.json（メインデータ）
     out_path = "frontend/public/data/market.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(main_output, f, ensure_ascii=False, separators=(",", ":"))
     size = os.path.getsize(out_path) / 1024
     print(f"=== 完了: {out_path} ({size:.1f} KB) ===")
+
+    # trends.json（テーマ比較グラフ用）
+    trends_path = "frontend/public/data/trends.json"
+    with open(trends_path, "w", encoding="utf-8") as f:
+        json.dump(trends_output, f, ensure_ascii=False, separators=(",", ":"))
+    t_size = os.path.getsize(trends_path) / 1024
+    print(f"=== 完了: {trends_path} ({t_size:.1f} KB) ===")
 
 
 if __name__ == "__main__":
