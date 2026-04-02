@@ -2,7 +2,7 @@
  * FlowMomentum.jsx — 資金フロー＋騰落モメンタム統合ページ
  */
 import { useState, useEffect } from 'react'
-import { useMomentum } from '../../hooks/useMarketData'
+import { useFundFlow, useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [

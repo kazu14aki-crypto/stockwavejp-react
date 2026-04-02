@@ -35,7 +35,7 @@ const SORTED_NEWS = [...MANUAL_NEWS].sort((a,b) => b.date.localeCompare(a.date))
   const latestDate = allDates.length > 0 ? allDates.reduce((a,b) => a > b ? a : b) : null
 
   return (
-    <div style={{ padding:'28px 32px 48px' }}>
+    <div style={{ padding:'28px 32px 48px', maxWidth:'860px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         お知らせ
       </h1>

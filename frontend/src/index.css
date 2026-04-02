@@ -105,6 +105,12 @@ body {
 ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
 ::-webkit-scrollbar-thumb:hover { background:var(--text3); }
 
+/* PC向け：コンテンツ最大幅 */
+@media (min-width: 1400px) {
+  .page-content-wide   { max-width: 1300px; margin-left: auto; margin-right: auto; }
+  .page-content-narrow { max-width: 960px;  margin-left: auto; margin-right: auto; }
+}
+
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(12px); }
   to   { opacity:1; transform:translateY(0); }

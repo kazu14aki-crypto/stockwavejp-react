@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useThemes, useCustomThemeStats } from '../../hooks/useMarketData'
+import { useThemes, useCustomThemeStats, useMacro } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
 
@@ -201,6 +201,23 @@ function CustomThemeRows({ themes, period, pctColor }) {
 export default function ThemeList() {
   const [period, setPeriod] = useState('1d')
   const { themes: customThemes } = useCustomThemes()
+  const { data: macroRaw } = useMacro(period)
+  const macro = macroRaw?.data || {}
+  // 1321・1306の直近騰落率を取得
+  const get1321pct = () => {
+    const arr = macro['国内主要株(1321)'] || []
+    if (arr.length < 2) return null
+    const last = arr[arr.length - 1]
+    return last?.pct ?? null
+  }
+  const get1306pct = () => {
+    const arr = macro['TOPIX連動型上場投信(1306)'] || []
+    if (arr.length < 2) return null
+    const last = arr[arr.length - 1]
+    return last?.pct ?? null
+  }
+  const pct1321 = get1321pct()
+  const pct1306 = get1306pct()
   const { data, loading, refreshing, updatedAt, refresh } = useThemes(period)
   const lastUpdate = updatedAt ? new Date(updatedAt.replace(/\//g, '-').replace(' JST','')) : null
   const error = null
@@ -258,7 +275,7 @@ export default function ThemeList() {
         ) : (
           <>
             {/* KPIカード */}
-            <div className="responsive-grid-4" style={{ marginBottom: '8px' }}>
+            <div className="responsive-grid-6" style={{ marginBottom: '8px' }}>
               <KpiCard delay={0.05}
                 label="上昇テーマ"
                 value={<span>{summary.rise}<span style={{ fontSize: '16px', color: 'var(--text2)', fontWeight: 400 }}> / {summary.total}</span></span>}
@@ -281,6 +298,18 @@ export default function ThemeList() {
                 value={<span style={{ fontSize: '17px', color: 'var(--green)', fontWeight: 700 }}>{summary.bot?.theme}</span>}
                 arrow="down"
                 sub={<span style={{ color: 'var(--green)', fontWeight: 600 }}>{summary.bot?.pct?.toFixed(1)}%</span>} />
+              <KpiCard delay={0.25}
+                label="日経225 (1321)"
+                value={pct1321 !== null ? `${pct1321 >= 0 ? '+' : ''}${pct1321.toFixed(2)}%` : '-'}
+                valueColor={pct1321 === null ? 'var(--text3)' : pct1321 >= 0 ? 'var(--red)' : 'var(--green)'}
+                arrow={pct1321 === null ? null : pct1321 >= 0 ? 'up' : 'down'}
+                sub={`期間: ${periodLabel}`} />
+              <KpiCard delay={0.3}
+                label="TOPIX (1306)"
+                value={pct1306 !== null ? `${pct1306 >= 0 ? '+' : ''}${pct1306.toFixed(2)}%` : '-'}
+                valueColor={pct1306 === null ? 'var(--text3)' : pct1306 >= 0 ? 'var(--red)' : 'var(--green)'}
+                arrow={pct1306 === null ? null : pct1306 >= 0 ? 'up' : 'down'}
+                sub={`期間: ${periodLabel}`} />
             </div>
 
             {/* 騰落ランキング TOP5 */}
@@ -324,6 +353,9 @@ export default function ThemeList() {
       </div>
 
       <style>{`
+        .responsive-grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
+        @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }
+        @media (max-width:640px)  { .responsive-grid-6 { grid-template-columns:repeat(2,1fr); } }
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }
