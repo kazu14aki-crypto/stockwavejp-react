@@ -305,32 +305,70 @@ export default function ThemeDetail() {
       .catch(() => {})
   }, [])
 
-  // テーマ別詳細取得
+  // テーマ別詳細取得（market.json優先）
   useEffect(() => {
     if (!selTheme) return
     setLoading(true); setDetail(null); setMomentum(null)
-    Promise.all([
-      fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
-      fetch(`${API}/api/momentum?period=1mo`).then(r => r.json()),  // 前月比は1mo固定
-    ])
-      .then(([detailRes, momentumRes]) => {
+
+    ;(async () => {
+      try {
+        // market.jsonから取得を試みる
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
+        const detailKey = `theme_detail_${selTheme}_${period}`
+        const momentumKey = `momentum_1mo`
+        const detailData  = mj[detailKey]
+        const momentumData = mj[momentumKey]?.data || []
+
+        if (detailData) {
+          setDetail(detailData.stocks || detailData.data || [])
+          const m = momentumData.find(d => d.theme === selTheme)
+          setMomentum(m || null)
+          setLoading(false)
+          return
+        }
+      } catch {}
+
+      // フォールバック: Render API
+      try {
+        const [detailRes, momentumRes] = await Promise.all([
+          fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
+          fetch(`${API}/api/momentum?period=1mo`).then(r => r.json()),
+        ])
         setDetail(detailRes.data)
         const m = (momentumRes.data || []).find(d => d.theme === selTheme)
         setMomentum(m || null)
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false))
+      } catch {}
+      setLoading(false)
+    })()
   }, [selTheme, period])
 
-  // テーマ比較データ取得
+  // テーマ比較データ取得（trends.json優先）
   useEffect(() => {
     if (!selThemes.length) return
     setLoadingT(true)
-    fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`)
-      .then(r => r.json())
-      .then(d => setThemeTrends(d.trends || {}))
-      .catch(() => {})
-      .finally(() => setLoadingT(false))
+
+    ;(async () => {
+      try {
+        const tj = await fetch('/data/trends.json?t=' + Date.now()).then(r => r.json())
+        const key = `trends_${comparePeriod}`
+        const trendsObj = tj[key]?.data || {}
+        const found = selThemes.some(t => trendsObj[t])
+        if (found) {
+          const result = {}
+          selThemes.forEach(t => { if (trendsObj[t]) result[t] = trendsObj[t] })
+          setThemeTrends(result)
+          setLoadingT(false)
+          return
+        }
+      } catch {}
+
+      // フォールバック
+      try {
+        const d = await fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`).then(r => r.json())
+        setThemeTrends(d.trends || {})
+      } catch {}
+      setLoadingT(false)
+    })()
   }, [selThemes, comparePeriod])
 
   // マクロデータ取得
