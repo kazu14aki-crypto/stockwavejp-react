@@ -19,21 +19,21 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
       const dy = Math.abs(e.changedTouches[0].clientY - touchStartY.current)
 
       // 水平方向の動きが垂直より大きい場合のみ判定
-      if (Math.abs(dx) < 40 || dy > Math.abs(dx)) {
+      if (Math.abs(dx) < 70 || dy > Math.abs(dx) * 0.6) {
         touchStartX.current = null
         return
       }
 
       // 左端（60px以内）から右スワイプ → メニューを開く
-      if (dx > 40 && touchStartX.current < 60 && !isOpen) {
+      if (dx > 70 && touchStartX.current < 40 && !isOpen) {
         onOpen?.()
       }
       // 右スワイプ量が大きい → メニューを開く（どこからでも）
-      else if (dx > 80 && !isOpen) {
+      else if (dx > 130 && !isOpen) {
         onOpen?.()
       }
       // 左スワイプ → メニューを閉じる
-      else if (dx < -40 && isOpen) {
+      else if (dx < -70 && isOpen) {
         onClose?.()
       }
 

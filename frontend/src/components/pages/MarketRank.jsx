@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
+import AddToThemeModal from '../AddToThemeModal'
+import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
   { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
   { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
@@ -26,44 +27,54 @@ function Loading({ msg='データ取得中...' }) {
   )
 }
 
-function Top5Bar({ items, title, colorFn }) {
-  if (!items||!items.length) return null
-  const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)),1)
-  const W=280, H=160, PL=8, PR=8, PT=24, PB=36
-  const bW = (W-PL-PR)/items.length-4
+function Top5Bar({ items, title, colorFn, emptyMsg }) {
+  if (!items||!items.length) return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
+      padding:'12px', textAlign:'center', color:'var(--text3)', fontSize:'12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      {emptyMsg || 'データなし'}
+    </div>
+  )
+  const maxAbs = Math.max(...items.map(s=>Math.abs(s.pct)), 0.01)
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'12px' }}>
-      <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block' }}>
-        {items.map((s,i)=>{
-          const h = Math.max(2, Math.round(Math.abs(s.pct)/maxAbs*(H-PT-PB)))
-          const x = PL+i*((W-PL-PR)/items.length)+2
-          const y = H-PB-h
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', padding:'10px 12px' }}>
+      <div style={{ fontSize:'11px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+        {items.map((s, i) => {
           const c = colorFn(s.pct)
+          const w = Math.abs(s.pct) / maxAbs * 100
           return (
-            <g key={s.ticker}>
-              <rect x={x} y={y} width={bW} height={h} rx="2" fill={c} opacity="0.85"/>
-              <text x={x+bW/2} y={y-4} textAnchor="middle" fill={c} fontSize="9" fontFamily="DM Mono">{s.pct>=0?'+':''}{s.pct.toFixed(1)}%</text>
-              <text x={x+bW/2} y={H-PB+14} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{s.name.length>4?s.name.slice(0,4)+'…':s.name}</text>
-            </g>
+            <div key={s.ticker} style={{
+              display:'grid', gridTemplateColumns:'90px 1fr 60px',
+              alignItems:'center', gap:'6px',
+            }}>
+              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden',
+                textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>
+                {s.name}
+              </span>
+              <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+                <div style={{ height:'100%', width:`${w}%`, background:c, borderRadius:'3px', opacity:0.85 }} />
+              </div>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, textAlign:'right', color:c, whiteSpace:'nowrap' }}>
+                {s.pct>=0?'+':''}{s.pct.toFixed(1)}%
+              </span>
+            </div>
           )
         })}
-        <line x1={PL} y1={H-PB} x2={W-PR} y2={H-PB} stroke="var(--border)" strokeWidth="1"/>
-      </svg>
+      </div>
     </div>
   )
 }
 
-// スマホ対応テーブル（銘柄名を左固定）
-function StockTable({ stocks }) {
+function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['コード','株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            {/* 固定列：銘柄名 */}
+            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
             <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
             {headers.map(h => (
               <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
@@ -79,12 +90,14 @@ function StockTable({ stocks }) {
                 borderBottom:'1px solid rgba(255,255,255,0.04)',
                 background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
               }}>
-                {/* 固定列：銘柄名 */}
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  <div style={{ fontSize:'13px' }}>{s.name}</div>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{String(i+1).padStart(2,'0')}</div>
+                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  {String(i+1).padStart(2,'0')}
                 </td>
-                <td style={tdC}><code style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{s.ticker.replace('.T','')}</code></td>
+                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
+                  <div style={{ fontSize:'13px' }}>{s.name}</div>
+                </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
@@ -94,6 +107,16 @@ function StockTable({ stocks }) {
                 <td style={tdC}>{s.vol_rank}位</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
                 <td style={tdC}>{s.tv_rank}位</td>
+                <td style={tdC}>
+                  <button
+                    onClick={() => onAddToTheme && onAddToTheme({ ticker: s.ticker, name: s.name, price: s.price })}
+                    title="カスタムテーマに追加"
+                    style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
+                      borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
+                      padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>
+                    ＋
+                  </button>
+                </td>
               </tr>
             )
           })}
@@ -103,60 +126,73 @@ function StockTable({ stocks }) {
   )
 }
 
-const thStyle = { padding:'8px 10px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
+const thStyle = { padding:'6px 8px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
 const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color:'var(--text2)' }
 const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
 export default function MarketRank() {
-  const [period,      setPeriod]      = useState('1mo')
+  const [modalStock,  setModalStock]  = useState(null)
+  const [period,      setPeriod]      = useState('1d')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
-  const [activeGroup, setActiveGroup] = useState('日経225')
+  const [activeGroup, setActiveGroup] = useState('国内主要株')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
-  const [loadingS,    setLoadingS]    = useState(true)
-  const [loadingD,    setLoadingD]    = useState(false)
+
+  const { data: marketData, loading: loadingS } = useMarketRankList(period)
 
   useEffect(()=>{
-    setLoadingS(true)
-    fetch(`${API}/api/market-rank?period=${period}`)
-      .then(r=>r.json()).then(d=>{
-        setSummary(d.data); setGroups(d.groups||{})
-        const firstSeg = d.groups?.['日経225']?.[0]
-        if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
-      }).catch(()=>{}).finally(()=>setLoadingS(false))
-  },[period])
+    if (!marketData) return
+    setSummary(marketData.data); setGroups(marketData.groups||{})
+    const firstSeg = (marketData.groups?.['国内主要株'] || Object.values(marketData.groups||{})[0] || [])[0]
+    if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
+  },[marketData])
 
+  const { data: segDetailRaw, loading: loadingD } = useSegmentDetail(activeSeg, period)
   useEffect(()=>{
-    if (!activeSeg) return
-    setLoadingD(true); setDetail(null)
-    fetch(`${API}/api/market-rank/${encodeURIComponent(activeSeg)}?period=${period}`)
-      .then(r=>r.json()).then(d=>setDetail(d.data))
-      .catch(()=>{}).finally(()=>setLoadingD(false))
-  },[activeSeg, period])
+    if (!segDetailRaw) return
+    if (Array.isArray(segDetailRaw)) {
+      setDetail({ stocks: segDetailRaw, avg: segDetailRaw.length ? segDetailRaw.reduce((s,x)=>s+x.pct,0)/segDetailRaw.length : 0 })
+    } else {
+      setDetail(segDetailRaw)
+    }
+  },[segDetailRaw])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
-  const stocks   = detail?.stocks ?? []
-  const top5     = stocks.slice(0,5)
-  const bot5     = [...stocks].sort((a,b)=>a.pct-b.pct).slice(0,5)
+  const stocks    = detail?.stocks ?? []
+  const detailAvg = detail?.avg ?? 0
+  const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
+  const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
 
   return (
     <div>
-      {/* 固定ヘッダー */}
+      {modalStock && (
+        <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />
+      )}
+
       <div className="page-header-sticky">
-        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別ランキング</h1>
+        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別詳細</h1>
         <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
           {PERIODS.map(p=><option key={p.value} value={p.value}>{p.label}</option>)}
         </select>
       </div>
 
       <div style={{ padding:'20px 32px 48px' }}>
-        <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-          日経225・TOPIX・市場区分ごとの騰落率ランキングと構成銘柄詳細
-        </p>
+        <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
+          color:'#e8f0ff', lineHeight:1.8 }}>
+          <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
+          日経225採用銘柄・TOPIX構成銘柄・市場区分（プライム・スタンダード・グロース）ごとに、
+          構成銘柄の騰落率ランキングと詳細データを確認できます。
+          上部のタブで「国内主要株」「国内全般」「市場区分」を切り替え、各グループ内のセグメントを選択してください。
+          <br/>
+          <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+            💡 活用ポイント：「テクノロジー」セグメントが強い時はテーマ一覧の「半導体」「AI・クラウド」も
+            チェックしましょう。セグメントとテーマの同時確認で資金の流れをより精度高く把握できます。
+          </span>
+        </div>
 
-        {/* グループタブ */}
         <div style={{ display:'flex', gap:'4px', borderBottom:'1px solid var(--border)', marginBottom:'0' }}>
           {Object.keys(groups).map(g=>(
             <button key={g} onClick={()=>{ setActiveGroup(g); setActiveSeg(groups[g][0]) }} style={{
@@ -171,11 +207,10 @@ export default function MarketRank() {
         </div>
 
         {loadingS ? <Loading /> : (
-          <>
-            {/* セグメント選択 */}
+          <div>
             <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', padding:'12px 0', borderBottom:'1px solid var(--border)', marginBottom:'20px' }}>
               {(groups[activeGroup]||[]).map(seg=>{
-                const avg = summary?.[seg]?.avg
+                const avg = summary?.[seg]?.pct
                 const shortName = seg.split('｜')[1] || seg.split('（')[0]
                 return (
                   <button key={seg} onClick={()=>setActiveSeg(seg)} style={{
@@ -186,45 +221,47 @@ export default function MarketRank() {
                     fontFamily:'var(--font)', transition:'all 0.15s', whiteSpace:'nowrap',
                   }}>
                     {shortName}
-                    {avg!=null && <span style={{ marginLeft:'6px', fontSize:'11px', fontFamily:'var(--mono)',
-                      color:avg>=0?'var(--red)':'var(--green)', fontWeight:700 }}>
-                      {avg>=0?'+':''}{avg.toFixed(1)}%
-                    </span>}
+                    {avg!=null && (
+                      <span style={{ marginLeft:'6px', fontSize:'11px', fontFamily:'var(--mono)',
+                        color:avg>=0?'var(--red)':'var(--green)', fontWeight:700 }}>
+                        {avg>=0?'+':''}{avg.toFixed(1)}%
+                      </span>
+                    )}
                   </button>
                 )
               })}
             </div>
 
-            {/* 詳細エリア */}
-            {loadingD ? <Loading msg="個別株データ取得中..." /> : detail && (
-              <>
+            {loadingD ? (
+              <Loading msg="個別株データ取得中..." />
+            ) : detail ? (
+              <div>
                 <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
                   <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg}</span>
                   <span style={{ fontSize:'15px', fontFamily:'var(--mono)', fontWeight:700,
-                    color:detail.avg>=0?'var(--red)':'var(--green)' }}>
-                    平均 {detail.avg>=0?'+':''}{detail.avg.toFixed(1)}%
+                    color:detailAvg>=0?'var(--red)':'var(--green)' }}>
+                    平均 {detailAvg>=0?'+':''}{detailAvg.toFixed(1)}%
                   </span>
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄</span>
                 </div>
 
-                {/* TOP5グラフ */}
                 <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
-                  <Top5Bar items={top5} title="▲ 上昇TOP5" colorFn={pctColor}/>
-                  <Top5Bar items={bot5} title="▼ 下落TOP5" colorFn={pctColor}/>
+                  <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+                  <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
-                {/* 構成銘柄テーブル（銘柄名左固定） */}
                 <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
-                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400' }}>← 横にスワイプで詳細確認</span>
+                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                 </div>
                 <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
-                  <StockTable stocks={stocks}/>
+                  <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                 </div>
-              </>
-            )}
-          </>
+              </div>
+            ) : null}
+          </div>
         )}
       </div>
+
       <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
     </div>
   )

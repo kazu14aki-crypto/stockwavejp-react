@@ -1239,7 +1239,7 @@ function RenderBody({ text }) {
       elements.push(
         <ul key={`ul-${i}`} style={{ margin:'6px 0 12px', paddingLeft:'20px' }}>
           {items.map((item, j) => (
-            <li key={j} style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.8, marginBottom:'2px' }}>
+            <li key={j} style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.8, marginBottom:'2px' }}>
               {item.includes('（') ? (
                 <>
                   <span style={{ color:'var(--text)', fontWeight:600 }}>{item.split('：')[0]}</span>
@@ -1277,7 +1277,7 @@ function RenderBody({ text }) {
                 {rows.slice(1).map((row, ri) => (
                   <tr key={ri} style={{ borderBottom:'1px solid rgba(255,255,255,0.04)' }}>
                     {row.map((cell, ci) => (
-                      <td key={ci} style={{ padding:'8px 12px', color:'var(--text2)', lineHeight:1.6 }}>
+                      <td key={ci} style={{ padding:'8px 12px', color:'#e8f0ff', lineHeight:1.6 }}>
                         {cell}
                       </td>
                     ))}
@@ -1291,7 +1291,7 @@ function RenderBody({ text }) {
       continue
     } else {
       elements.push(
-        <p key={i} style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, margin:'0 0 12px' }}>
+        <p key={i} style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.9, margin:'0 0 12px' }}>
           {line}
         </p>
       )
@@ -1342,7 +1342,7 @@ export default function Column() {
           <RenderBody text={col.body} />
         </div>
         <div style={{ background:'rgba(255,140,66,0.07)', border:'1px solid rgba(255,140,66,0.2)',
-          borderRadius:'8px', padding:'14px 18px', fontSize:'12px', color:'var(--text2)', lineHeight:1.8 }}>
+          borderRadius:'8px', padding:'14px 18px', fontSize:'12px', color:'#e8f0ff', lineHeight:1.8 }}>
           ⚠️ 本コラムは情報提供を目的としており、特定の銘柄・投資方法を推奨するものではありません。
           実際の投資判断はご自身の責任において行ってください。
         </div>

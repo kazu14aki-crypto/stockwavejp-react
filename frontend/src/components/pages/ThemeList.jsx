@@ -236,7 +236,7 @@ export default function ThemeList() {
 
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
-          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text2)', lineHeight:1.9 }}>
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'#e8f0ff', lineHeight:1.9 }}>
           <span style={{ fontWeight:700, color:'var(--accent)' }}>📊 このページについて：</span>
           日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。

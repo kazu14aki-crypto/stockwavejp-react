@@ -27,7 +27,10 @@ export default function News() {
       .catch(() => {})
   }, [])
 
-  // 最新日付を特定（NEWバッジ用）
+  // 降順ソート
+const SORTED_NEWS = [...MANUAL_NEWS].sort((a,b) => b.date.localeCompare(a.date))
+
+// 最新日付を特定（NEWバッジ用）
   const allDates = MANUAL_NEWS.map(n => n.date)
   const latestDate = allDates.length > 0 ? allDates.reduce((a,b) => a > b ? a : b) : null
 
@@ -67,7 +70,7 @@ export default function News() {
                 <div style={{ fontSize:'13px', fontWeight:600, color:'var(--text)', marginBottom:'3px' }}>
                   {a.name}（{a.ticker?.replace('.T','')}）
                 </div>
-                <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.7 }}>
+                <div style={{ fontSize:'12px', color:'#e8f0ff', lineHeight:1.7 }}>
                   {a.detail}
                 </div>
                 <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'4px', fontFamily:'var(--mono)' }}>
@@ -87,7 +90,7 @@ export default function News() {
         <span>📋 更新履歴</span>
         <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
       </div>
-      {MANUAL_NEWS.map((n, i) => (
+      {SORTED_NEWS.map((n, i) => (
         <div key={i} style={{
           background:'var(--bg2)', border:'1px solid var(--border)',
           borderRadius:'var(--radius)', padding:'20px 24px', marginBottom:'12px',
@@ -108,7 +111,7 @@ export default function News() {
           <div style={{ fontSize:'15px', fontWeight:600, color:'#e8f0ff', marginBottom:'8px' }}>
             {n.title}
           </div>
-          <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.7 }}>
+          <div style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.7 }}>
             {n.body}
           </div>
         </div>

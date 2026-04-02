@@ -607,6 +607,27 @@ def main():
                             })
             except Exception:
                 pass
+    # ── 資金フロー（fund_flow）をmarket.jsonに追加 ──
+    print("生成: 資金フロー")
+    for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
+        key = f"fund_flow_{period}"
+        themes_key = f"themes_{period}"
+        if themes_key not in output:
+            continue
+        all_themes = output[themes_key].get("themes", [])
+        if not all_themes:
+            continue
+        gainers = sorted([t for t in all_themes if t.get("pct",0) > 0],
+                         key=lambda x: x["pct"], reverse=True)[:5]
+        losers  = sorted([t for t in all_themes if t.get("pct",0) < 0],
+                         key=lambda x: x["pct"])[:5]
+        output[key] = {
+            "gainers": gainers,
+            "losers":  losers,
+            "all":     sorted(all_themes, key=lambda x: x.get("pct",0), reverse=True),
+            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+        }
+
     output["corporate_actions"] = actions
     if actions:
         print(f"  銘柄アクション検出: {len(actions)}件")

@@ -14,6 +14,8 @@ const LogoSvg = () => (
   </svg>
 )
 
+import AuthButton from './AuthButton'
+
 export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onViewModeChange, onLogoClick }) {
   return (
     <>
@@ -23,33 +25,37 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
         background: 'var(--bg2)',
         borderBottom: '1px solid var(--border)',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '0 16px', zIndex: 1000,
+        padding: '0 12px', zIndex: 1000,
+        minWidth: 0,  /* 見切れ防止 */
       }}>
         {/* 左側 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          {/* スマホ用メニューボタン（左上） */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+          {/* スマホ用ハンバーガー（左上） */}
           <button onClick={onMenuClick} className="hamburger-btn" style={{
-            display: 'none', background: 'var(--bg3)',
-            border: '1px solid var(--border)', borderRadius: '6px',
-            color: 'var(--text)', fontSize: '16px', padding: '5px 10px',
-            cursor: 'pointer', fontFamily: 'var(--font)',
+            display: 'none',
+            background: 'var(--bg3)', border: '1px solid var(--border)',
+            borderRadius: '6px', color: 'var(--text)', fontSize: '16px',
+            width: '34px', height: '34px',
+            padding: '0', cursor: 'pointer', fontFamily: 'var(--font)',
+            flexShrink: 0, alignItems: 'center', justifyContent: 'center',
+            lineHeight: 1,
           }}>
             {sidebarOpen ? '✕' : '☰'}
           </button>
 
-          {/* ロゴ（クリックでトップへ） */}
+          {/* ロゴ */}
           <button onClick={onLogoClick} style={{
-            display: 'flex', alignItems: 'center', gap: '10px',
+            display: 'flex', alignItems: 'center', gap: '8px',
             background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+            flexShrink: 0,
           }}>
             <LogoSvg />
-            <div style={{ textAlign: 'left' }}>
-              <div style={{ fontSize: '17px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: 1.1 }}>
-                <span style={{ color: '#e63030' }}>Stock</span>
-                <span style={{ color: 'var(--text)' }}>Wave</span>
-                <span style={{ color: '#e63030', fontSize: '11px', marginLeft: '2px' }}>JP</span>
+            <div style={{ textAlign: 'left' }} className="logo-text">
+              <div className="logo-main" style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: 1.1, color: 'var(--text)' }}>
+                <span style={{ color: '#e63030' }}>Stock</span>Wave
+                <span style={{ color: '#e63030', fontSize: '10px', marginLeft: '2px' }}>JP</span>
               </div>
-              <div style={{ fontSize: '7px', letterSpacing: '0.3em', color: 'var(--text3)', fontWeight: 600, marginTop: '1px' }}>
+              <div className="logo-sub" style={{ fontSize: '7px', letterSpacing: '0.3em', color: 'var(--text3)', fontWeight: 600, marginTop: '1px' }}>
                 株　式　波　動
               </div>
             </div>
@@ -57,40 +63,48 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
         </div>
 
         {/* 右側 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
           {/* 市場ステータス */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: 'var(--text2)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }} className="status-area">
             <span style={{
-              width: '7px', height: '7px', borderRadius: '50%', display: 'inline-block',
+              width: '7px', height: '7px', borderRadius: '50%', display: 'inline-block', flexShrink: 0,
               background: status.is_open ? 'var(--green)' : 'var(--text3)',
-              boxShadow: status.is_open ? '0 0 8px var(--green)' : 'none',
+              boxShadow: status.is_open ? '0 0 7px var(--green)' : 'none',
             }} />
-            <span className="status-label" style={{ fontSize: '12px', color: 'var(--text2)' }}>{status.label}</span>
+            <span className="status-label" style={{ fontSize: '11px', color: 'var(--text2)', whiteSpace: 'nowrap' }}>
+              {status.label}
+            </span>
+            {status.updatedAt && (
+              <span className="status-updated" style={{ fontSize: '10px', color: 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
+                最終取得: {status.updatedAt.replace(/\d{4}\//,'').replace(' JST','')}
+              </span>
+            )}
           </div>
 
           {/* 時刻 */}
-          <span style={{ fontFamily: 'var(--mono)', fontSize: '12px', color: 'var(--text3)' }}>
+          <span className="status-time" style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: 'var(--text3)', whiteSpace: 'nowrap' }}>
             {status.time}
           </span>
 
-          {/* PC/SP切替 */}
+          {/* PC/SP切替（常時表示・見切れなし） */}
           <div style={{
-            display: 'flex', gap: '2px',
+            display: 'flex', gap: '2px', flexShrink: 0,
             background: 'var(--bg3)', border: '1px solid var(--border)',
             borderRadius: '6px', padding: '2px',
           }}>
             {[{ key: 'pc', label: '🖥' }, { key: 'mobile', label: '📱' }].map(({ key, label }) => (
               <button key={key} onClick={() => onViewModeChange(key)} style={{
-                padding: '3px 10px', borderRadius: '4px', fontSize: '12px',
+                padding: '3px 9px', borderRadius: '4px', fontSize: '12px',
                 border: 'none', cursor: 'pointer', fontFamily: 'var(--font)',
                 background: viewMode === key ? 'var(--accent)' : 'transparent',
                 color: viewMode === key ? '#fff' : 'var(--text3)',
-                transition: 'all 0.15s',
+                transition: 'all 0.15s', flexShrink: 0,
               }}>
                 {label}
               </button>
             ))}
           </div>
+          <AuthButton />
         </div>
       </header>
 
@@ -98,6 +112,15 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
         @media (max-width: 768px) {
           .hamburger-btn { display: block !important; }
           .status-label  { display: none !important; }
+          .status-time    { display: none !important; }
+          .status-updated { display: none !important; }
+          .logo-text     { display: block !important; }
+          .logo-text .logo-main { font-size: 13px !important; }
+          .logo-text .logo-sub  { display: none !important; }
+          .auth-btn-label { display: none !important; }
+        }
+        @media (max-width: 400px) {
+          .status-area   { display: none !important; }
         }
       `}</style>
     </>

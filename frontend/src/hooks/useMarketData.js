@@ -12,6 +12,7 @@
  *   heatmap                            期間別ヒートマップ
  *   heatmap_monthly                    月次ヒートマップ
  *   momentum_{1mo/3mo}                 騰落モメンタム
+ *   fund_flow_{period}                 資金フロー（gainers/losers/all）
  *   theme_detail_{テーマ名}_{period}   テーマ別詳細★
  *   seg_{セグメント名}_{period}        市場別銘柄詳細★
  *   market_rank_{period}               市場別ランキング一覧★
@@ -390,4 +391,13 @@ export function useCustomThemeStats(tickers, period) {
   }, [tickers?.join(','), period])
 
   return { data, loading }
+}
+
+/**
+ * useFundFlow — 資金フロー ★market.json優先（旧：API直接取得）
+ */
+export function useFundFlow(period) {
+  const jsonKey     = `fund_flow_${period}`
+  const apiFallback = `${API}/api/fund-flow?period=${period}`
+  return useMarketJsonKey(jsonKey, apiFallback, [period])
 }

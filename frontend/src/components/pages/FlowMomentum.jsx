@@ -2,7 +2,6 @@
  * FlowMomentum.jsx — 資金フロー＋騰落モメンタム統合ページ
  */
 import { useState, useEffect } from 'react'
-import { useStaleData } from '../../hooks/useStaleData'
 import { useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
@@ -64,11 +63,7 @@ export default function FlowMomentum() {
   const [tab,     setTab]     = useState('flow')  // 'flow' | 'momentum'
 
   // 資金フロー
-  const { data: flowData, loading: loadingF } = useStaleData(
-    `${API}/api/fund-flow?period=${period}`,
-    `fundflow_${period}`,
-    null
-  )
+  const { data: flowData, loading: loadingF } = useFundFlow(period)
 
   // 騰落モメンタム ★market.json優先（キャッシュ拡大後は即時表示）
   const { data: momentumRaw, loading: loadingM } = useMomentum(period)
