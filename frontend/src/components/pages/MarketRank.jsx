@@ -178,7 +178,7 @@ export default function MarketRank() {
         </select>
       </div>
 
-      <div style={{ padding:'20px 32px 48px' }}>
+      <div style={{ padding:'20px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
         <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
           color:'#e8f0ff', lineHeight:1.8 }}>

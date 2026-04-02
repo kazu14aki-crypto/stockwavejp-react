@@ -79,7 +79,7 @@ export default function FlowMomentum() {
   const pctSign  = v => v >= 0 ? '+' : ''
 
   return (
-    <div style={{ padding:'28px 32px 48px' }}>
+    <div style={{ padding:'28px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         資金フロー・騰落モメンタム
       </h1>

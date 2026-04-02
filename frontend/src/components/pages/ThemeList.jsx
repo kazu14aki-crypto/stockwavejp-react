@@ -201,7 +201,7 @@ function CustomThemeRows({ themes, period, pctColor }) {
 export default function ThemeList() {
   const [period, setPeriod] = useState('1d')
   const { themes: customThemes } = useCustomThemes()
-  const { data: macroRaw } = useMacro(period)
+  const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
   const macro = macroRaw?.data || {}
   // 1321・1306の直近騰落率を取得
   const get1321pct = () => {
@@ -249,7 +249,7 @@ export default function ThemeList() {
         </div>
       </div>
 
-      <div style={{ padding: '20px 24px 48px', maxWidth: '100%', overflowX: 'hidden' }}>
+      <div style={{ padding: '20px 24px 48px', maxWidth: '1280px', margin: '0 auto', overflowX: 'hidden' }}>
 
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
@@ -299,17 +299,17 @@ export default function ThemeList() {
                 arrow="down"
                 sub={<span style={{ color: 'var(--green)', fontWeight: 600 }}>{summary.bot?.pct?.toFixed(1)}%</span>} />
               <KpiCard delay={0.25}
-                label="日経225 (1321)"
+                label="日経225連動型(1321)"
                 value={pct1321 !== null ? `${pct1321 >= 0 ? '+' : ''}${pct1321.toFixed(2)}%` : '-'}
                 valueColor={pct1321 === null ? 'var(--text3)' : pct1321 >= 0 ? 'var(--red)' : 'var(--green)'}
                 arrow={pct1321 === null ? null : pct1321 >= 0 ? 'up' : 'down'}
                 sub={`期間: ${periodLabel}`} />
               <KpiCard delay={0.3}
-                label="TOPIX (1306)"
+                label="TOPIX連動型(1306)"
                 value={pct1306 !== null ? `${pct1306 >= 0 ? '+' : ''}${pct1306.toFixed(2)}%` : '-'}
                 valueColor={pct1306 === null ? 'var(--text3)' : pct1306 >= 0 ? 'var(--red)' : 'var(--green)'}
                 arrow={pct1306 === null ? null : pct1306 >= 0 ? 'up' : 'down'}
-                sub={`期間: ${periodLabel}`} />
+                sub="参照: 1ヶ月" />
             </div>
 
             {/* 騰落ランキング TOP5 */}

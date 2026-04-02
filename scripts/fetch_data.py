@@ -373,7 +373,7 @@ def main():
         }
 
     # マクロデータ
-    for period in ["1mo", "1y"]:
+    for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         macro_result = {}
         for name, ticker in MACRO_TICKERS.items():
             df  = ticker_data.get(ticker)
@@ -425,7 +425,7 @@ def main():
 
     # ── テーマ別詳細キャッシュ（最も重要：テーマ別詳細ページの高速化）──
     print("集計: theme_detail（全テーマ × 2期間）")
-    for period in ["1mo", "1y"]:
+    for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         for theme_name, stocks in THEMES.items():
             detail_stocks = []
             for name, ticker in stocks.items():
@@ -454,7 +454,7 @@ def main():
     # ── 市場別詳細キャッシュ（市場別ランキングページの高速化）──
     print("集計: seg_detail（全セグメント × 2期間）")
     MARKET_SEGMENTS = build_market_segments()
-    for period in ["1mo", "1y"]:
+    for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         for seg_name, seg_stocks in MARKET_SEGMENTS.items():
             seg_detail = []
             for name, ticker in seg_stocks.items():
