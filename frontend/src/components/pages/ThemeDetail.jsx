@@ -349,7 +349,9 @@ export default function ThemeDetail() {
 
     ;(async () => {
       try {
-        const tj = await fetch('/data/trends.json?t=' + Date.now()).then(r => r.json())
+        const tjRes = await fetch('/data/trends.json?t=' + Date.now())
+        if (!tjRes.ok) throw new Error('trends.json not found')
+        const tj = await tjRes.json()
         const key = `trends_${comparePeriod}`
         const trendsObj = tj[key]?.data || {}
         const found = selThemes.some(t => trendsObj[t])
