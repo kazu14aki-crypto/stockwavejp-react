@@ -268,7 +268,7 @@ function fmtDate(dateStr) {
 }
 
 export default function ThemeDetail() {
-  const [period,      setPeriod]      = useState('1d')
+  const [period,      setPeriod]      = useState('1mo')
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState('')
   const [detail,      setDetail]      = useState(null)
@@ -320,7 +320,7 @@ export default function ThemeDetail() {
         const momentumData = mj[momentumKey]?.data || []
 
         if (detailData) {
-          setDetail(detailData.stocks || detailData.data || [])
+          setDetail(detailData)  // {stocks:[], avg:X, updated_at:...}
           const m = momentumData.find(d => d.theme === selTheme)
           setMomentum(m || null)
           setLoading(false)
@@ -328,7 +328,22 @@ export default function ThemeDetail() {
         }
       } catch {}
 
-      // フォールバック: Render API
+      // 1moでのフォールバック（1dがmarket.jsonにない場合）
+      try {
+        const mj2 = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
+        const fallbackKey = `theme_detail_${selTheme}_1mo`
+        const fallbackData = mj2[fallbackKey]
+        const momentumData2 = mj2['momentum_1mo']?.data || []
+        if (fallbackData) {
+          setDetail(fallbackData)
+          const m2 = momentumData2.find(d => d.theme === selTheme)
+          setMomentum(m2 || null)
+          setLoading(false)
+          return
+        }
+      } catch {}
+
+      // 最終フォールバック: Render API
       try {
         const [detailRes, momentumRes] = await Promise.all([
           fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
@@ -395,9 +410,6 @@ export default function ThemeDetail() {
 
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
-  const toggleMacro = (t) =>
-    setSelMacro(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
-
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []
   // 上昇のみ・下落のみでフィルタリング
@@ -426,8 +438,8 @@ export default function ThemeDetail() {
               background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px' }}>
               <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
               <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
-                color: detail.avg >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                平均 {detail.avg >= 0 ? '+' : ''}{detail.avg?.toFixed(1)}%
+                color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
               </span>
               {momentum && (
                 <>
