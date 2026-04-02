@@ -133,7 +133,7 @@ const tdL = { padding:'8px 12px', textAlign:'left' }
 
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
-  const [period,      setPeriod]      = useState('1d')
+  const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
   const [activeGroup, setActiveGroup] = useState('国内主要株')
