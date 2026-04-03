@@ -74,8 +74,8 @@ function StockTable({ stocks, onAddToTheme }) {
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
-            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
+            <th style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
+            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
             {headers.map(h => (
               <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
             ))}
@@ -86,15 +86,12 @@ function StockTable({ stocks, onAddToTheme }) {
             const pColor = s.pct>=0?'var(--red)':'var(--green)'
             const cColor = s.contribution>=0?'var(--red)':'var(--green)'
             return (
-              <tr key={s.ticker} style={{
-                borderBottom:'1px solid rgba(255,255,255,0.04)',
-                background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
-              }}>
-                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
-                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                  {String(i+1).padStart(2,'0')}
+              <tr key={s.ticker} style={{ borderBottom:'1px solid var(--border)' }}>
+                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
+                  background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px' }}>
+                  {i+1}
                 </td>
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                   <div style={{ fontSize:'13px' }}>{s.name}</div>
                 </td>

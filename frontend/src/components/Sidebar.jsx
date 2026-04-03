@@ -1,30 +1,49 @@
-export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile }) {
-  // ⑥ スマホは右側表示
+import { useEffect, useRef } from 'react'
+
+export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile, onOpen, onClose }) {
+  const touchStartX = useRef(null)
+  const touchStartY = useRef(null)
+
+  useEffect(() => {
+    if (!isMobile) return
+    const handleTouchStart = (e) => {
+      touchStartX.current = e.touches[0].clientX
+      touchStartY.current = e.touches[0].clientY
+    }
+    const handleTouchEnd = (e) => {
+      if (touchStartX.current === null) return
+      const dx = e.changedTouches[0].clientX - touchStartX.current
+      const dy = Math.abs(e.changedTouches[0].clientY - (touchStartY.current || 0))
+      if (Math.abs(dx) < 70 || dy > Math.abs(dx) * 0.6) { touchStartX.current = null; return }
+      if (dx > 70 && touchStartX.current < 40 && !isOpen)  { onOpen?.() }
+      else if (dx > 130 && !isOpen)                         { onOpen?.() }
+      else if (dx < -70 && isOpen)                          { onClose?.() }
+      touchStartX.current = null
+    }
+    document.addEventListener('touchstart', handleTouchStart, { passive: true })
+    document.addEventListener('touchend',   handleTouchEnd,   { passive: true })
+    return () => {
+      document.removeEventListener('touchstart', handleTouchStart)
+      document.removeEventListener('touchend',   handleTouchEnd)
+    }
+  }, [isMobile, isOpen, onOpen, onClose])
+
   const sidebarStyle = {
     position: 'fixed',
     top: 'var(--header)',
+    left: 0,          /* 常に左固定 */
+    right: 'auto',
     bottom: 0,
     width: 'var(--sidebar)',
     background: 'var(--bg2)',
+    borderRight: '1px solid var(--border)',
+    borderLeft: 'none',
     padding: '16px 8px',
     overflowY: 'auto',
     zIndex: 900,
     transition: 'transform 0.25s cubic-bezier(0.22,1,0.36,1)',
-    // PCは左固定、スマホは右側
-    ...(isMobile ? {
-      right: 0,
-      left: 'auto',
-      borderLeft: '1px solid var(--border)',
-      borderRight: 'none',
-      transform: isOpen ? 'translateX(0)' : 'translateX(100%)',
-      boxShadow: isOpen ? '-4px 0 20px rgba(0,0,0,0.3)' : 'none',
-    } : {
-      left: 0,
-      right: 'auto',
-      borderRight: '1px solid var(--border)',
-      borderLeft: 'none',
-      transform: 'translateX(0)',
-    }),
+    transform: isMobile && !isOpen ? 'translateX(-100%)' : 'translateX(0)',
+    boxShadow: isMobile && isOpen ? '4px 0 20px rgba(0,0,0,0.3)' : 'none',
   }
 
   const NavBtn = ({ icon, label }) => {
@@ -37,8 +56,9 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
         borderRadius: '6px', marginBottom: '1px', cursor: 'pointer',
         display: 'flex', alignItems: 'center', gap: '8px',
         letterSpacing: '-0.01em', fontWeight: isActive ? 600 : 400,
-        borderLeft: isActive && !isMobile ? '2px solid var(--accent)' : '2px solid transparent',
-        borderRight: isActive && isMobile  ? '2px solid var(--accent)' : '2px solid transparent',
+        borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
+        borderRight: '2px solid transparent',
+        borderTop: 'none', borderBottom: 'none',
         background: isActive ? 'rgba(74,158,255,0.1)' : 'transparent',
         width: '100%', textAlign: 'left', fontFamily: 'var(--font)',
         transition: 'all 0.15s',

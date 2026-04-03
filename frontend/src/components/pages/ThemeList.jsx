@@ -198,86 +198,88 @@ function CustomThemeRows({ themes, period, pctColor }) {
 }
 
 
-// ⑦ カードグリッド用ThemeCard
-function ThemeCard({ item, maxAbsVol, maxAbsTV, pctColor }) {
-  const pct = item.pct ?? 0
-  const barW = Math.min(Math.abs(pct) / 25 * 100, 100)
-  const volW = maxAbsVol ? Math.min((item.volume || 0) / maxAbsVol * 100, 100) : 0
-  const tvW  = maxAbsTV  ? Math.min((item.trade_value || 0) / maxAbsTV * 100, 100) : 0
-  const col  = pctColor(pct)
-  const fmt  = (n) => {
+// ⑤ カードグリッド用ThemeCard（案X: 左端順位バッジ）
+function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
+  const fmt = (n) => {
     if (!n) return '0'
     if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
     if (n >= 1e8)  return (n/1e8).toFixed(1)+'億'
     if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
     return n.toLocaleString()
   }
+  const pct  = item.pct ?? 0
+  const val  = item[valueKey] ?? 0
+  const barW = maxAbs ? Math.min(Math.abs(val) / maxAbs * 100, 100) : Math.min(Math.abs(pct) / 25 * 100, 100)
+  const col  = pctColor(pct)
+  // 順位バッジの色: 上位は濃く、下位は薄く
+  const badgeOpacity = Math.max(1 - (rank - 1) * 0.028, 0.25)
+  const isUp = pct >= 0
+  const badgeColor = valueKey === 'pct'
+    ? (isUp ? `rgba(226,75,74,${badgeOpacity})` : `rgba(29,158,117,${badgeOpacity})`)
+    : (barColor || '#378ADD')
+  const isTopBadge = rank <= 3
   return (
     <div style={{
       background:'var(--bg2)', border:'1px solid var(--border)',
-      borderRadius:'10px', padding:'10px 12px',
-      display:'flex', flexDirection:'column', gap:'6px',
-      transition:'border-color 0.15s, transform 0.1s',
-      cursor:'default',
-    }}
-      onMouseEnter={e=>{e.currentTarget.style.borderColor='rgba(91,156,246,0.3)'; e.currentTarget.style.transform='translateY(-1px)'}}
-      onMouseLeave={e=>{e.currentTarget.style.borderColor='var(--border)'; e.currentTarget.style.transform='none'}}
-    >
-      {/* テーマ名・銘柄数 */}
-      <div style={{ display:'flex', alignItems:'center', gap:'6px', minWidth:0 }}>
-        <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', flex:1,
-          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+      borderRadius:'8px', padding:'8px 10px',
+      display:'flex', gap:'8px', alignItems:'flex-start',
+    }}>
+      {/* 順位バッジ */}
+      <div style={{
+        minWidth:'22px', height:'22px', borderRadius:'5px',
+        background: isTopBadge ? badgeColor : 'rgba(120,130,150,0.15)',
+        color: isTopBadge ? '#fff' : 'var(--text3)',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        fontSize:'11px', fontWeight:700, fontFamily:'var(--mono)',
+        flexShrink:0, marginTop:'1px',
+      }}>
+        {rank}
+      </div>
+      {/* 内容 */}
+      <div style={{ flex:1, minWidth:0 }}>
+        <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text)',
+          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', marginBottom:'3px' }}>
           {item.theme}
-        </span>
-        <span style={{ fontSize:'10px', color:'var(--text3)', flexShrink:0, fontFamily:'var(--mono)' }}>
-          {item.stock_count}銘柄
-        </span>
-      </div>
-      {/* 騰落率 */}
-      <div>
-        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'3px' }}>
-          <span style={{ fontSize:'9px', color:'var(--text3)' }}>騰落率</span>
-          <span style={{ fontSize:'14px', fontWeight:700, color:col, fontFamily:'var(--mono)' }}>
-            {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
-          </span>
         </div>
-        <div style={{ height:'3px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
-          <div style={{ width:`${barW}%`, height:'100%', background:col, borderRadius:'2px' }}/>
-        </div>
-      </div>
-      {/* 出来高 */}
-      <div>
-        <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'2px' }}>
-          <span style={{ fontSize:'9px', color:'var(--text3)' }}>出来高</span>
-          <span style={{ fontSize:'10px', color:'var(--text2)', fontFamily:'var(--mono)' }}>{fmt(item.volume)}</span>
-        </div>
-        <div style={{ height:'2px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
-          <div style={{ width:`${volW}%`, height:'100%', background:'#5b9cf6', borderRadius:'2px' }}/>
-        </div>
-      </div>
-      {/* 売買代金 */}
-      <div>
-        <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'2px' }}>
-          <span style={{ fontSize:'9px', color:'var(--text3)' }}>売買代金</span>
-          <span style={{ fontSize:'10px', color:'var(--text2)', fontFamily:'var(--mono)' }}>{fmt(item.trade_value)}</span>
-        </div>
-        <div style={{ height:'2px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
-          <div style={{ width:`${tvW}%`, height:'100%', background:'#ff8c42', borderRadius:'2px' }}/>
-        </div>
+        {/* メイン数値 */}
+        {valueKey === 'pct' ? (
+          <>
+            <div style={{ fontSize:'15px', fontWeight:700, color:col, fontFamily:'var(--mono)', lineHeight:1.2 }}>
+              {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+            </div>
+            <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
+              <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
+            </div>
+            <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.5 }}>
+              出来高 {fmt(item.volume)}<br/>売買代金 {fmt(item.trade_value)}
+            </div>
+          </>
+        ) : (
+          <>
+            <div style={{ fontSize:'15px', fontWeight:700, color: barColor||'#378ADD', fontFamily:'var(--mono)', lineHeight:1.2 }}>
+              {fmt(val)}
+            </div>
+            <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
+              <div style={{ width:`${barW}%`, height:'100%', background: barColor||'#378ADD', borderRadius:'2px' }}/>
+            </div>
+            <div style={{ fontSize:'10px', color:col, fontFamily:'var(--mono)', lineHeight:1.5 }}>
+              騰落率 {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+            </div>
+          </>
+        )}
       </div>
     </div>
   )
 }
 
-// カードグリッドで全テーマ表示
-function ThemeCardGrid({ items, pctColor }) {
-  const maxVol = Math.max(...items.map(t => t.volume || 0))
-  const maxTV  = Math.max(...items.map(t => t.trade_value || 0))
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor }) {
+  const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
   return (
     <div className="theme-card-grid">
-      {items.map(item => (
-        <ThemeCard key={item.theme} item={item}
-          maxAbsVol={maxVol} maxAbsTV={maxTV} pctColor={pctColor} />
+      {items.map((item, idx) => (
+        <ThemeCard key={item.theme} item={item} rank={idx+1}
+          maxAbs={maxVal} valueKey={valueKey}
+          barColor={barColor} pctColor={pctColor} />
       ))}
     </div>
   )
@@ -428,11 +430,11 @@ export default function ThemeList() {
 
             {/* 全テーマ 出来高ランキング（カードグリッド） */}
             <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <ThemeCardGrid items={byVol} pctColor={pctColor} />
+            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" />
 
             {/* 全テーマ 売買代金ランキング（カードグリッド） */}
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <ThemeCardGrid items={byTV} pctColor={pctColor} />
+            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" />
 
           </>
         )}

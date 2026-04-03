@@ -129,7 +129,7 @@ function MacroCard({ name, data, color }) {
   const min   = Math.min(...vals), max = Math.max(...vals)
   const W=120, H=44
   // 各指標独立スケールでスパークライン描画
-  const pts = vals.map((v,i)=>`${(i/Math.max(vals.length-1,1))*W},${H-((v-min)/(max-min||0.01))*H}`).join(' ')
+  const pts = vals.map((v,i)=>`${2+(i/Math.max(vals.length-1,1))*(W-4)},${2+(1-((v-min)/(max-min||0.01)))*(H-4)}`).join(' ')
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
       padding:'10px 12px', display:'flex', flexDirection:'column', gap:'6px', minWidth:0 }}>
@@ -139,10 +139,12 @@ function MacroCard({ name, data, color }) {
         <div style={{ fontFamily:'var(--mono)', fontSize:'16px', fontWeight:700, color:pctColor, lineHeight:1 }}>
           {last.pct>=0?'+':''}{last.pct.toFixed(1)}%
         </div>
-        <svg viewBox={`-2 -2 ${W+4} ${H+4}`} width={W} height={H} style={{ flexShrink:0, display:'block', overflow:'hidden' }}>
-          <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
-            strokeLinejoin="round" strokeLinecap="round"/>
-        </svg>
+        <div style={{ width:`${W}px`, height:`${H}px`, flexShrink:0, overflow:'hidden' }}>
+          <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+            <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
+              strokeLinejoin="round" strokeLinecap="round"/>
+          </svg>
+        </div>
       </div>
     </div>
   )
