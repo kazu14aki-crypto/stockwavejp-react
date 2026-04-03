@@ -3,7 +3,7 @@ import AddToThemeModal from '../AddToThemeModal'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
-  {label:'1日',value:'1d'},{ label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
+  { label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
   { label:'3ヶ月',value:'3mo'},{label:'6ヶ月',value:'6mo'},{label:'1年',value:'1y'},
 ]
 
@@ -199,8 +199,8 @@ function StockTable({ stocks }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
-              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
+              <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
+              <th style={{ ...thStyle, textAlign:'left', minWidth:'140px', background:'var(--bg3)' }}>銘柄名</th>
               {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
@@ -214,12 +214,11 @@ function StockTable({ stocks }) {
                   borderBottom:'1px solid rgba(255,255,255,0.04)',
                   background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
                 }}>
-                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
-                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, minWidth:'32px', width:'32px', maxWidth:'32px', padding:'8px 4px' }}>
-                    {i+1}
+                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                    background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                    {String(i+1).padStart(2,'0')}
                   </td>
-                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)',
-                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
+                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                     <div style={{ fontSize:'13px' }}>{s.name}</div>
                   </td>
@@ -269,7 +268,7 @@ function fmtDate(dateStr) {
 }
 
 export default function ThemeDetail() {
-  const [period,      setPeriod]      = useState('1mo')
+  const [period,      setPeriod]      = useState('1d')
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState('')
   const [detail,      setDetail]      = useState(null)
@@ -306,87 +305,32 @@ export default function ThemeDetail() {
       .catch(() => {})
   }, [])
 
-  // テーマ別詳細取得（market.json優先）
+  // テーマ別詳細取得
   useEffect(() => {
     if (!selTheme) return
     setLoading(true); setDetail(null); setMomentum(null)
-
-    ;(async () => {
-      try {
-        // market.jsonから取得を試みる
-        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
-        const detailKey = `theme_detail_${selTheme}_${period}`
-        const momentumKey = `momentum_1mo`
-        const detailData  = mj[detailKey]
-        const momentumData = mj[momentumKey]?.data || []
-
-        if (detailData) {
-          setDetail(detailData)  // {stocks:[], avg:X, updated_at:...}
-          const m = momentumData.find(d => d.theme === selTheme)
-          setMomentum(m || null)
-          setLoading(false)
-          return
-        }
-      } catch {}
-
-      // 1moでのフォールバック（1dがmarket.jsonにない場合）
-      try {
-        const mj2 = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
-        const fallbackKey = `theme_detail_${selTheme}_1mo`
-        const fallbackData = mj2[fallbackKey]
-        const momentumData2 = mj2['momentum_1mo']?.data || []
-        if (fallbackData) {
-          setDetail(fallbackData)
-          const m2 = momentumData2.find(d => d.theme === selTheme)
-          setMomentum(m2 || null)
-          setLoading(false)
-          return
-        }
-      } catch {}
-
-      // 最終フォールバック: Render API
-      try {
-        const [detailRes, momentumRes] = await Promise.all([
-          fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
-          fetch(`${API}/api/momentum?period=1mo`).then(r => r.json()),
-        ])
+    Promise.all([
+      fetch(`${API}/api/theme-detail/${encodeURIComponent(selTheme)}?period=${period}`).then(r => r.json()),
+      fetch(`${API}/api/momentum?period=1mo`).then(r => r.json()),  // 前月比は1mo固定
+    ])
+      .then(([detailRes, momentumRes]) => {
         setDetail(detailRes.data)
         const m = (momentumRes.data || []).find(d => d.theme === selTheme)
         setMomentum(m || null)
-      } catch {}
-      setLoading(false)
-    })()
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false))
   }, [selTheme, period])
 
-  // テーマ比較データ取得（trends.json優先）
+  // テーマ比較データ取得
   useEffect(() => {
     if (!selThemes.length) return
     setLoadingT(true)
-
-    ;(async () => {
-      try {
-        const tjRes = await fetch('/data/trends.json?t=' + Date.now())
-        if (!tjRes.ok) throw new Error('trends.json not found')
-        const tj = await tjRes.json()
-        const key = `trends_${comparePeriod}`
-        const trendsObj = tj[key]?.data || {}
-        const found = selThemes.some(t => trendsObj[t])
-        if (found) {
-          const result = {}
-          selThemes.forEach(t => { if (trendsObj[t]) result[t] = trendsObj[t] })
-          setThemeTrends(result)
-          setLoadingT(false)
-          return
-        }
-      } catch {}
-
-      // フォールバック
-      try {
-        const d = await fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`).then(r => r.json())
-        setThemeTrends(d.trends || {})
-      } catch {}
-      setLoadingT(false)
-    })()
+    fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`)
+      .then(r => r.json())
+      .then(d => setThemeTrends(d.trends || {}))
+      .catch(() => {})
+      .finally(() => setLoadingT(false))
   }, [selThemes, comparePeriod])
 
   // マクロデータ取得
@@ -411,6 +355,9 @@ export default function ThemeDetail() {
 
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+  const toggleMacro = (t) =>
+    setSelMacro(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   const stocks = detail?.stocks ?? []
   // 上昇のみ・下落のみでフィルタリング
@@ -421,12 +368,12 @@ export default function ThemeDetail() {
   return (
     <div>
       {/* 固定ヘッダー */}
-      <div className="page-header-sticky" style={{ flexWrap:'wrap', gap:'6px' }}>
-        <h1 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap', flexShrink:0 }}>テーマ別詳細</h1>
-        <select value={selTheme} onChange={e => setSelTheme(e.target.value)} style={{ ...selStyle, maxWidth:'160px', flex:'1 1 120px' }}>
+      <div className="page-header-sticky">
+        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>テーマ別詳細</h1>
+        <select value={selTheme} onChange={e => setSelTheme(e.target.value)} style={selStyle}>
           {themeNames.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select value={period} onChange={e => setPeriod(e.target.value)} style={{ ...selStyle, flexShrink:0 }}>
+        <select value={period} onChange={e => setPeriod(e.target.value)} style={selStyle}>
           {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
         </select>
       </div>
@@ -439,8 +386,8 @@ export default function ThemeDetail() {
               background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px' }}>
               <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
               <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
-                color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                color: detail.avg >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                平均 {detail.avg >= 0 ? '+' : ''}{detail.avg?.toFixed(1)}%
               </span>
               {momentum && (
                 <>

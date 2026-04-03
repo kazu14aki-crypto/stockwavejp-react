@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useThemes, useCustomThemeStats, useMacro } from '../../hooks/useMarketData'
+import { useThemes, useCustomThemeStats, useMacro, useMomentum } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
 
@@ -34,6 +34,87 @@ function Loading() {
       <div style={{ marginTop: '14px', fontSize: '13px' }}>データ取得中...</div>
     </div>
   )
+}
+
+
+
+// コメントボックスコンポーネント
+function AutoComment({ lines }) {
+  if (!lines || !lines.length) return null
+  return (
+    <div style={{
+      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
+      borderRadius:'10px', padding:'14px 18px', marginBottom:'20px',
+      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
+    }}>
+      {lines.map((line, i) => (
+        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
+      ))}
+    </div>
+  )
+}
+
+// ③ 自動コメント生成（テーマ一覧）
+function genThemeComment(themes, summary, period, momentum) {
+  if (!themes || !themes.length) return null
+  const periodLabel = { '1d':'本日', '5d':'週間', '1mo':'1ヶ月', '3mo':'3ヶ月', '6mo':'6ヶ月', '1y':'1年間' }[period] || period
+  const rising  = themes.filter(t => t.pct > 0)
+  const falling = themes.filter(t => t.pct < 0)
+  const avg     = summary?.avg ?? 0
+  const top     = themes[0]
+  const bot     = themes[themes.length - 1]
+
+  // 急騰・急落テーマ
+  const hotThemes  = themes.filter(t => t.pct >= 5).map(t => t.theme)
+  const coldThemes = themes.filter(t => t.pct <= -5).map(t => t.theme)
+
+  // 出来高急増テーマ（前期比+30%以上）
+  const volSurge = themes.filter(t => (t.volume_chg || 0) >= 30).map(t => t.theme)
+
+  // モメンタム（加速・失速）
+  const accel = momentum?.filter(t => t.state?.includes('加速')).map(t => t.theme) || []
+  const decel = momentum?.filter(t => t.state?.includes('失速')).map(t => t.theme) || []
+
+  const lines = []
+
+  // 全体相場概況
+  const mktTone = avg >= 2 ? '強気' : avg >= 0.5 ? 'やや強気' : avg <= -2 ? '弱気' : avg <= -0.5 ? 'やや弱気' : '中立'
+  lines.push(`【${periodLabel}の全体概況】${periodLabel}の全30テーマを見ると、上昇${rising.length}テーマ・下落${falling.length}テーマで平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%（${mktTone}）。`)
+
+  // トップ・ボトム
+  lines.push(`最高騰テーマは「${top?.theme}」(${top?.pct >= 0 ? '+' : ''}${top?.pct?.toFixed(2)}%)、最大下落テーマは「${bot?.theme}」(${bot?.pct?.toFixed(2)}%)で、その差は${(top?.pct - bot?.pct)?.toFixed(1)}ptと${Math.abs(top?.pct - bot?.pct) > 15 ? 'テーマ間の格差が大きい' : 'テーマ間のばらつきは比較的小さい'}。`)
+
+  // 急騰テーマ
+  if (hotThemes.length > 0) {
+    lines.push(`▲ +5%超の急騰テーマ：「${hotThemes.slice(0, 3).join('」「')}」${hotThemes.length > 3 ? `など${hotThemes.length}テーマ` : ''}。強いトレンドが継続しており、資金集中が進んでいる可能性がある。`)
+  }
+
+  // 急落テーマ
+  if (coldThemes.length > 0) {
+    lines.push(`▼ -5%超の下落テーマ：「${coldThemes.slice(0, 3).join('」「')}」${coldThemes.length > 3 ? `など${coldThemes.length}テーマ` : ''}。過熱感の解消か、外部環境の悪化が影響している可能性がある。`)
+  }
+
+  // 出来高急増
+  if (volSurge.length > 0) {
+    lines.push(`📊 出来高が前期比+30%超の急増テーマ：「${volSurge.slice(0, 3).join('」「')}」。価格変動に先立つ出来高増加は、大口資金の流入を示唆することが多い。`)
+  }
+
+  // モメンタム
+  if (accel.length > 0) {
+    lines.push(`🔥 加速モメンタム（短期・中期ともに上昇が加速）：「${accel.slice(0, 4).join('」「')}」。既存トレンドが強まっており、追随資金が流入しやすい局面。`)
+  }
+  if (decel.length > 0) {
+    lines.push(`❄️ 失速モメンタム（騰勢が鈍化または反転）：「${decel.slice(0, 4).join('」「')}」。天井形成の可能性を示す場合があるが、底値からの反発を見極める必要もある。`)
+  }
+
+  // 総合判断
+  const netBias = rising.length - falling.length
+  const sentiment = netBias > 10 ? '広範な買い優勢で市場全体にリスクオンムードが漂う。' :
+                    netBias < -10 ? '広範な売り優勢でリスクオフ傾向が強い。特定セクターへの集中も見られる。' :
+                    '上昇・下落がまちまちで、個別テーマの選別が重要な局面。'
+  lines.push(`💡 総合：${sentiment}${hotThemes.length > 0 && coldThemes.length > 0 ? `一方で「${hotThemes[0]}」と「${coldThemes[0]}」の間に明確な強弱格差が生じており、テーマ選択の重要性が高まっている。` : ''}`)
+
+  return lines
 }
 
 function SectionHead({ title }) {
@@ -148,58 +229,86 @@ function Top5Pair({ top5, bot5, topTitle, botTitle, topColorFn, botColorFn, valu
 }
 
 // カスタムテーマ1行ずつ騰落率を取得して表示
-function CustomThemeRow({ ct, period, pctColor }) {
+function CustomThemeRow({ ct, period, pctColor, rank, volRankMap, tvRankMap }) {
   const tickers = (ct.stocks || []).map(s => s.ticker)
   const { data, loading } = useCustomThemeStats(tickers, period)
   const pct = data?.pct ?? null
-  const maxAbs = 10  // バー最大幅の基準（固定）
+  const fmt = (n) => {
+    if (!n && n !== 0) return '—'
+    if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
+    if (n >= 1e8)  return (n/1e8).toFixed(1)+'億'
+    if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
+    return n.toLocaleString()
+  }
+  const col = pct !== null ? pctColor(pct) : 'var(--text3)'
+  const badgeColor = pct !== null && pct >= 0 ? 'rgba(226,75,74,0.85)' : 'rgba(29,158,117,0.85)'
 
   return (
     <div style={{
       background:'rgba(170,119,255,0.06)',
       border:'1px solid rgba(170,119,255,0.25)',
-      borderRadius:'8px', padding:'8px 14px',
-      display:'grid', gridTemplateColumns:'140px 1fr 64px',
-      alignItems:'center', gap:'8px',
+      borderRadius:'8px', padding:'8px 10px',
+      display:'flex', gap:'8px', alignItems:'flex-start',
     }}>
-      <span style={{ fontSize:'12px', color:'#c8a8ff', fontWeight:700,
-        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>
-        🎨 {ct.name}
-      </span>
-      <div style={{ height:'14px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
-        {pct !== null && (
-          <div style={{
-            height:'100%',
-            width:`${Math.min(Math.abs(pct) / maxAbs * 100, 100)}%`,
-            background: pct >= 0 ? 'var(--red)' : 'var(--green)',
-            borderRadius:'3px', opacity:0.8,
-          }} />
+      <div style={{
+        minWidth:'22px', height:'22px', borderRadius:'5px',
+        background: rank <= 3 ? 'rgba(170,119,255,0.7)' : 'rgba(120,130,150,0.15)',
+        color: rank <= 3 ? '#fff' : 'var(--text3)',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        fontSize:'11px', fontWeight:700, fontFamily:'var(--mono)', flexShrink:0, marginTop:'1px',
+      }}>🎨</div>
+      <div style={{ flex:1, minWidth:0 }}>
+        <div style={{ fontSize:'11px', fontWeight:600, color:'#c8a8ff',
+          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', marginBottom:'3px' }}>
+          {ct.name}
+        </div>
+        {loading ? (
+          <div style={{ fontSize:'11px', color:'var(--text3)' }}>取得中...</div>
+        ) : pct !== null ? (
+          <>
+            <div style={{ fontSize:'15px', fontWeight:700, color:col, fontFamily:'var(--mono)', lineHeight:1.2 }}>
+              {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+            </div>
+            <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
+              <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
+            </div>
+            <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.7 }}>
+              <span style={{ display:'flex', justifyContent:'space-between' }}>
+                <span>出来高 {fmt(data?.volume)}</span>
+                {data?.vol_rank && <span style={{ color:'#378ADD' }}>#{data.vol_rank}</span>}
+              </span>
+              <span style={{ display:'flex', justifyContent:'space-between' }}>
+                <span>売買代金 {fmt(data?.trade_value)}</span>
+                {data?.tv_rank && <span style={{ color:'#ff8c42' }}>#{data.tv_rank}</span>}
+              </span>
+            </div>
+          </>
+        ) : (
+          <div style={{ fontSize:'11px', color:'var(--text3)' }}>データなし</div>
         )}
       </div>
-      <span style={{ fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700,
-        textAlign:'right', color: pct === null ? 'var(--text3)' : pctColor(pct ?? 0), whiteSpace:'nowrap' }}>
-        {loading ? '…' : pct === null ? '-' : `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`}
-      </span>
     </div>
   )
 }
 
 function CustomThemeRows({ themes, period, pctColor }) {
   return (
-    <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
-      {themes.map((ct, i) => (
-        <CustomThemeRow key={i} ct={ct} period={period} pctColor={pctColor} />
-      ))}
-      <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>
+    <>
+      <div className="theme-card-grid">
+        {themes.map((ct, i) => (
+          <CustomThemeRow key={i} ct={ct} period={period} pctColor={pctColor} rank={i+1} />
+        ))}
+      </div>
+      <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'8px' }}>
         💡 詳細データはサイドメニュー「カスタムテーマ」から確認できます
       </div>
-    </div>
+    </>
   )
 }
 
 
-// ⑤ カードグリッド用ThemeCard（案X: 左端順位バッジ）
-function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
+// ⑤ カードグリッド用ThemeCard（順位バッジ＋各ランク表示）
+function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank }) {
   const fmt = (n) => {
     if (!n) return '0'
     if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
@@ -207,24 +316,30 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
     if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
     return n.toLocaleString()
   }
+  const rankTag = (r, color) => r ? (
+    <span style={{ fontSize:'9px', color: color||'var(--text3)', fontFamily:'var(--mono)',
+      background:'rgba(128,128,128,0.1)', borderRadius:'3px', padding:'1px 4px', marginLeft:'4px' }}>
+      #{r}
+    </span>
+  ) : null
+
   const pct  = item.pct ?? 0
   const val  = item[valueKey] ?? 0
   const barW = maxAbs ? Math.min(Math.abs(val) / maxAbs * 100, 100) : Math.min(Math.abs(pct) / 25 * 100, 100)
   const col  = pctColor(pct)
-  // 順位バッジの色: 上位は濃く、下位は薄く
   const badgeOpacity = Math.max(1 - (rank - 1) * 0.028, 0.25)
   const isUp = pct >= 0
   const badgeColor = valueKey === 'pct'
     ? (isUp ? `rgba(226,75,74,${badgeOpacity})` : `rgba(29,158,117,${badgeOpacity})`)
-    : (barColor || '#378ADD')
+    : barColor || '#378ADD'
   const isTopBadge = rank <= 3
+
   return (
     <div style={{
       background:'var(--bg2)', border:'1px solid var(--border)',
       borderRadius:'8px', padding:'8px 10px',
       display:'flex', gap:'8px', alignItems:'flex-start',
     }}>
-      {/* 順位バッジ */}
       <div style={{
         minWidth:'22px', height:'22px', borderRadius:'5px',
         background: isTopBadge ? badgeColor : 'rgba(120,130,150,0.15)',
@@ -232,16 +347,14 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
         display:'flex', alignItems:'center', justifyContent:'center',
         fontSize:'11px', fontWeight:700, fontFamily:'var(--mono)',
         flexShrink:0, marginTop:'1px',
-      }}>
-        {rank}
-      </div>
-      {/* 内容 */}
+      }}>{rank}</div>
+
       <div style={{ flex:1, minWidth:0 }}>
         <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text)',
           overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', marginBottom:'3px' }}>
           {item.theme}
         </div>
-        {/* メイン数値 */}
+
         {valueKey === 'pct' ? (
           <>
             <div style={{ fontSize:'15px', fontWeight:700, color:col, fontFamily:'var(--mono)', lineHeight:1.2 }}>
@@ -250,20 +363,53 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
             <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
               <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
             </div>
-            <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.5 }}>
-              出来高 {fmt(item.volume)}<br/>売買代金 {fmt(item.trade_value)}
+            <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.7 }}>
+              <span style={{ display:'flex', justifyContent:'space-between' }}>
+                <span>出来高 {fmt(item.volume)}</span>
+                {rankTag(volRank, '#378ADD')}
+              </span>
+              <span style={{ display:'flex', justifyContent:'space-between' }}>
+                <span>売買代金 {fmt(item.trade_value)}</span>
+                {rankTag(tvRank, '#ff8c42')}
+              </span>
+            </div>
+          </>
+        ) : valueKey === 'volume' ? (
+          <>
+            <div style={{ fontSize:'15px', fontWeight:700, color:'#378ADD', fontFamily:'var(--mono)', lineHeight:1.2 }}>
+              {fmt(val)}
+            </div>
+            <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
+              <div style={{ width:`${barW}%`, height:'100%', background:'#378ADD', borderRadius:'2px' }}/>
+            </div>
+            <div style={{ fontSize:'10px', fontFamily:'var(--mono)', lineHeight:1.7 }}>
+              <span style={{ display:'flex', justifyContent:'space-between', color:col }}>
+                <span>騰落率 {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%</span>
+                {rankTag(pctRank, col)}
+              </span>
+              <span style={{ display:'flex', justifyContent:'space-between', color:'#ff8c42' }}>
+                <span>売買代金 {fmt(item.trade_value)}</span>
+                {rankTag(tvRank, '#ff8c42')}
+              </span>
             </div>
           </>
         ) : (
           <>
-            <div style={{ fontSize:'15px', fontWeight:700, color: barColor||'#378ADD', fontFamily:'var(--mono)', lineHeight:1.2 }}>
+            <div style={{ fontSize:'15px', fontWeight:700, color:'#ff8c42', fontFamily:'var(--mono)', lineHeight:1.2 }}>
               {fmt(val)}
             </div>
             <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
-              <div style={{ width:`${barW}%`, height:'100%', background: barColor||'#378ADD', borderRadius:'2px' }}/>
+              <div style={{ width:`${barW}%`, height:'100%', background:'#ff8c42', borderRadius:'2px' }}/>
             </div>
-            <div style={{ fontSize:'10px', color:col, fontFamily:'var(--mono)', lineHeight:1.5 }}>
-              騰落率 {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+            <div style={{ fontSize:'10px', fontFamily:'var(--mono)', lineHeight:1.7 }}>
+              <span style={{ display:'flex', justifyContent:'space-between', color:col }}>
+                <span>騰落率 {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%</span>
+                {rankTag(pctRank, col)}
+              </span>
+              <span style={{ display:'flex', justifyContent:'space-between', color:'#378ADD' }}>
+                <span>出来高 {fmt(item.volume)}</span>
+                {rankTag(volRank, '#378ADD')}
+              </span>
             </div>
           </>
         )}
@@ -272,14 +418,18 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor }) {
   )
 }
 
-function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor }) {
+
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap }) {
   const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
   return (
     <div className="theme-card-grid">
       {items.map((item, idx) => (
         <ThemeCard key={item.theme} item={item} rank={idx+1}
           maxAbs={maxVal} valueKey={valueKey}
-          barColor={barColor} pctColor={pctColor} />
+          barColor={barColor} pctColor={pctColor}
+          pctRank={pctRankMap?.get(item.theme)}
+          volRank={volRankMap?.get(item.theme)}
+          tvRank={tvRankMap?.get(item.theme)} />
       ))}
     </div>
   )
@@ -290,6 +440,9 @@ export default function ThemeList() {
   const [period, setPeriod] = useState('1d')
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
+  const { data: momentumData } = useMomentum(period)
+  const momentum1mo = momentumData?.data || []
+  const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   const macro = macroRaw?.data || {}
   // 1321・1306の直近騰落率を取得
   const get1321pct = () => {
@@ -315,6 +468,10 @@ export default function ThemeList() {
   const byPctAsc = [...themes].sort((a, b) => a.pct - b.pct)
   const byVol    = [...themes].sort((a, b) => (b.volume || 0) - (a.volume || 0))
   const byTV     = [...themes].sort((a, b) => (b.trade_value || 0) - (a.trade_value || 0))
+  // ランクマップ（テーマ名→順位）
+  const pctRankMap = new Map(themes.map((t, i) => [t.theme, i + 1]))
+  const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
+  const tvRankMap  = new Map(byTV.map((t, i) => [t.theme, i + 1]))
   // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
   const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
   const fallingTop5 = byPctAsc.filter(t => t.pct < 0).slice(0, 5)
@@ -416,9 +573,12 @@ export default function ThemeList() {
               topColorFn={blueColor} botColorFn={orangeColor}
               valueKey="volume" bot5ValueKey="trade_value" formatFn={true} />
 
+            {/* ③ 自動コメント */}
+            <AutoComment lines={themeComment} />
+
             {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <ThemeCardGrid items={themes} pctColor={pctColor} />
+            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
@@ -430,11 +590,11 @@ export default function ThemeList() {
 
             {/* 全テーマ 出来高ランキング（カードグリッド） */}
             <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" />
+            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
 
             {/* 全テーマ 売買代金ランキング（カードグリッド） */}
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" />
+            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
 
           </>
         )}

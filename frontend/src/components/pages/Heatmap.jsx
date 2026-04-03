@@ -93,6 +93,113 @@ const thStyle = {
   borderBottom: '1px solid var(--border)',
 }
 
+
+function AutoComment({ lines }) {
+  if (!lines?.length) return null
+  return (
+    <div style={{
+      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
+      borderRadius:'10px', padding:'14px 18px', margin:'0 0 20px',
+      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
+    }}>
+      {lines.map((line, i) => (
+        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
+      ))}
+    </div>
+  )
+}
+
+function genHeatmapComment(data, tab, months) {
+  if (!data) return null
+  const themes = Object.keys(data)
+  if (!themes.length) return null
+  const lines = []
+
+  if (tab === 'period') {
+    // 期間別ヒートマップ：各期間での強弱を分析
+    const periods = ['1W','1M','3M','6M','1Y']
+    const periodLabels = { '1W':'週間', '1M':'1ヶ月', '3M':'3ヶ月', '6M':'6ヶ月', '1Y':'1年' }
+
+    // 全期間で上昇しているテーマ
+    const bullAll = themes.filter(t =>
+      periods.every(p => (data[t]?.[p] ?? 0) > 0)
+    )
+    // 全期間で下落しているテーマ
+    const bearAll = themes.filter(t =>
+      periods.every(p => (data[t]?.[p] ?? 0) < 0)
+    )
+    // 短期強・長期弱（上がり始め）
+    const risingStart = themes.filter(t =>
+      (data[t]?.['1W'] ?? 0) > 1 && (data[t]?.['1M'] ?? 0) > 0 &&
+      (data[t]?.['3M'] ?? 0) < 0
+    )
+    // 短期弱・長期強（天井圏・調整）
+    const topZone = themes.filter(t =>
+      (data[t]?.['1W'] ?? 0) < -1 && (data[t]?.['1M'] ?? 0) < 0 &&
+      (data[t]?.['3M'] ?? 0) > 5
+    )
+    // 1年間で最強テーマ
+    const byYear = [...themes].sort((a,b) => (data[b]?.['1Y']||0) - (data[a]?.['1Y']||0))
+    const topYear = byYear.slice(0, 3)
+    const botYear = byYear.slice(-3).reverse()
+
+    lines.push(`【期間別ヒートマップ分析】全${themes.length}テーマの短期〜長期騰落率を俯瞰すると、1年間で最も強いテーマは「${topYear[0]}」(+${data[topYear[0]]?.['1Y']?.toFixed(1)}%)、次いで「${topYear[1]}」「${topYear[2]}」。逆に最弱は「${botYear[0]}」(${data[botYear[0]]?.['1Y']?.toFixed(1)}%)。`)
+
+    if (bullAll.length > 0) {
+      lines.push(`✅ 全期間（週〜1年）で一貫上昇しているテーマ：「${bullAll.slice(0,4).join('」「')}」。強いトレンドが継続しており、モメンタム戦略に適した銘柄群を含む可能性が高い。`)
+    }
+    if (bearAll.length > 0) {
+      lines.push(`⚠️ 全期間で一貫下落しているテーマ：「${bearAll.slice(0,4).join('」「')}」。長期的な構造問題を抱えているか、セクターローテーションで資金が流出している状態。底値確認には時間が必要な可能性がある。`)
+    }
+    if (risingStart.length > 0) {
+      lines.push(`↗ 上がり始めのシグナル（短期プラス転換・中長期はまだマイナス）：「${risingStart.slice(0,3).join('」「')}」。長期下落からの底値反転初動の可能性があり、出来高増加を確認できれば仕込み場として注目できる。`)
+    }
+    if (topZone.length > 0) {
+      lines.push(`↘ 天井圏・調整局面の可能性（短期急落・長期はまだ強い）：「${topZone.slice(0,3).join('」「')}」。長期上昇後の利益確定売りが出ている状態。押し目水準を見極めながら、次の上昇波を狙う戦略が有効。`)
+    }
+    lines.push(`💡 活用ポイント：全期間緑（下落）から週次・月次が赤（上昇）に転換したテーマは「底値から上がり始め」のシグナル。逆に全期間赤から直近が緑に転じたテーマは「高値から下落し始め」の注意サイン。ヒートマップの色変化パターンで次のトレンドを先読みできる。`)
+  } else {
+    // 月次ヒートマップ
+    const recentMonths = months?.slice(-3) || []
+    if (!recentMonths.length) return null
+
+    // 直近3ヶ月で一貫上昇
+    const streak3 = themes.filter(t =>
+      recentMonths.every(m => (data[t]?.[m] ?? 0) > 0)
+    )
+    // 直近3ヶ月で一貫下落
+    const fall3 = themes.filter(t =>
+      recentMonths.every(m => (data[t]?.[m] ?? 0) < 0)
+    )
+    // 直近月のみプラス転換（前月まで下落）
+    const lastMonth = recentMonths[recentMonths.length - 1]
+    const prevMonth = recentMonths[recentMonths.length - 2]
+    const freshRising = themes.filter(t =>
+      (data[t]?.[lastMonth] ?? 0) > 1 && (data[t]?.[prevMonth] ?? 0) < 0
+    )
+    const freshFalling = themes.filter(t =>
+      (data[t]?.[lastMonth] ?? 0) < -1 && (data[t]?.[prevMonth] ?? 0) > 0
+    )
+
+    const allLastMonthPct = themes.map(t => data[t]?.[lastMonth] ?? 0)
+    const avgLastMonth = allLastMonthPct.reduce((s,v)=>s+v,0) / (allLastMonthPct.length||1)
+
+    lines.push(`【月次ヒートマップ分析】直近月（${lastMonth}）の平均騰落率は${avgLastMonth >= 0 ? '+' : ''}${avgLastMonth.toFixed(1)}%。${streak3.length > 0 ? `直近3ヶ月連続上昇テーマ：「${streak3.slice(0,4).join('」「')}」が強いトレンドを示す。` : '3ヶ月連続上昇テーマは少なく、上昇は散発的。'}`)
+
+    if (freshRising.length > 0) {
+      lines.push(`↗ 今月プラス転換（前月まで下落していた）テーマ：「${freshRising.slice(0,4).join('」「')}」。下落から反転した初動の可能性があり、今後の継続性に注目。`)
+    }
+    if (freshFalling.length > 0) {
+      lines.push(`↘ 今月マイナス転換（前月まで上昇していた）テーマ：「${freshFalling.slice(0,4).join('」「')}」。上昇トレンドが一服した可能性。調整か転換かを見極める必要がある。`)
+    }
+    if (fall3.length > 0) {
+      lines.push(`⚠️ 直近3ヶ月連続下落テーマ：「${fall3.slice(0,4).join('」「')}」。中期的な下落トレンドが継続しており、反転サインが出るまでは慎重姿勢が望ましい。`)
+    }
+    lines.push(`💡 月次ヒートマップの見方：同じテーマで「緑→赤→赤」のパターンは上昇トレンドの初期段階を示すことが多い。逆に「赤→緑→緑」は調整入りのサインとして機能しやすい。`)
+  }
+  return lines
+}
+
 export default function Heatmap() {
   const [tab,           setTab]           = useState('period')
   const [heatmapData,   setHeatmapData]   = useState(null)
@@ -154,6 +261,10 @@ export default function Heatmap() {
     { key: 'monthly', label: '📅 月次推移' },
   ]
 
+  const heatComment = genHeatmapComment(
+    tab === 'period' ? heatmapData : monthlyData, tab, months
+  )
+
   return (
     <div style={{ padding: '28px 32px 48px', maxWidth: '1280px', margin: '0 auto' }}>
       <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: '#e8f0ff', marginBottom: '4px' }}>
@@ -162,6 +273,7 @@ export default function Heatmap() {
       <p style={{ fontSize: '12px', color: 'var(--text3)', marginBottom: '20px' }}>
         テーマ別騰落率を色で直感的に把握。赤=上昇、緑=下落
       </p>
+      <AutoComment lines={heatComment} />
 
       {/* タブ */}
       <div style={{ display: 'flex', gap: '4px', marginBottom: '24px',

@@ -27,53 +27,83 @@ function generateMarketComment(themeData, macro) {
   if (!s) return null
   const t = themeData.themes
 
-  // 上昇・下落数
   const riseCount = s.rise
   const fallCount = s.fall
   const total     = s.total
   const avg       = s.avg ?? 0
 
   // 市場全体の状態
-  let marketState = ''
-  if (riseCount >= total * 0.7) marketState = '広範な上昇相場'
-  else if (riseCount >= total * 0.5) marketState = '上昇優勢の相場'
-  else if (fallCount >= total * 0.7) marketState = '広範な下落相場'
-  else if (fallCount >= total * 0.5) marketState = '下落優勢の相場'
-  else marketState = '方向感が定まらない相場'
+  const mktState = riseCount >= total*0.7 ? '広範な上昇相場' :
+                   riseCount >= total*0.55 ? '上昇優勢の相場' :
+                   fallCount >= total*0.7  ? '広範な下落相場' :
+                   fallCount >= total*0.55 ? '下落優勢の相場' : '方向感の定まらない相場'
 
-  // 上位・下位テーマ
-  const top3 = [...t].sort((a, b) => b.pct - a.pct).slice(0, 3)
-  const bot3 = [...t].sort((a, b) => a.pct - b.pct).slice(0, 3)
+  const top3 = [...t].sort((a,b)=>b.pct-a.pct).slice(0,3)
+  const bot3 = [...t].sort((a,b)=>a.pct-b.pct).slice(0,3)
+  const volUp = [...t].filter(x=>(x.volume_chg||0)>20).sort((a,b)=>(b.volume_chg||0)-(a.volume_chg||0)).slice(0,3)
+  const hotThemes  = t.filter(x=>x.pct>=5)
+  const coldThemes = t.filter(x=>x.pct<=-5)
 
-  // 出来高増加テーマ
-  const volUp = [...t].filter(x => (x.volume_chg || 0) > 20)
-    .sort((a, b) => (b.volume_chg || 0) - (a.volume_chg || 0)).slice(0, 2)
+  // マクロ情報
+  const macroKeys = macro ? Object.keys(macro) : []
+  const nikkei = macro?.['国内主要株(1321)'] || macro?.['日経225連動型(1321)']
+  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX連動型(1306)']
+  const sp500  = macro?.['S&P500 ETF(SPY)']
+  const usdjpy = macro?.['ドル円']
+  const lastNK = nikkei ? nikkei[nikkei.length-1]?.pct : null
+  const lastTP = topix  ? topix[topix.length-1]?.pct  : null
+  const lastSP = sp500  ? sp500[sp500.length-1]?.pct  : null
+  const lastFX = usdjpy ? usdjpy[usdjpy.length-1]?.pct : null
 
-  // コメント生成
   const lines = []
 
   // 全体概況
-  lines.push(`現在の日本株テーマ相場は${marketState}となっています。全${total}テーマ中${riseCount}テーマが上昇、${fallCount}テーマが下落しており、テーマ平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%です。`)
+  lines.push(`【マーケット概況】現在の日本株テーマ相場は${mktState}です。全${total}テーマ中${riseCount}テーマが上昇・${fallCount}テーマが下落し、テーマ平均騰落率は${avg>=0?'+':''}${avg.toFixed(2)}%。${hotThemes.length>0?`+5%超の急騰テーマが${hotThemes.length}個、`:''  }${coldThemes.length>0?`-5%超の急落テーマが${coldThemes.length}個あります。`:''}`)
+
+  // マクロ環境
+  if (lastNK != null || lastSP != null) {
+    const macroLine = [
+      lastNK != null ? `日経225連動型${lastNK>=0?'+':''}${lastNK.toFixed(1)}%` : null,
+      lastTP != null ? `TOPIX連動型${lastTP>=0?'+':''}${lastTP.toFixed(1)}%` : null,
+      lastSP != null ? `S&P500 ${lastSP>=0?'+':''}${lastSP.toFixed(1)}%` : null,
+      lastFX != null ? `ドル円${lastFX>=0?'+':''}${lastFX.toFixed(1)}%` : null,
+    ].filter(Boolean).join(' / ')
+    const riskMode = lastSP != null ? (lastSP > 1 ? 'リスクオン（米国株高）でテーマ株にも追い風。' : lastSP < -1 ? 'リスクオフ（米国株安）で地合いは慎重。' : '米国株は横ばい。') : ''
+    lines.push(`【マクロ指標（参照期間）】${macroLine}。${riskMode}${lastFX != null ? (lastFX > 1 ? '円安傾向で輸出・グローバル銘柄に有利な環境。' : lastFX < -1 ? '円高傾向で内需・消費系に資金が向かいやすい局面。' : '') : ''}`)
+  }
 
   // 上昇テーマ
   if (top3.length && top3[0].pct > 0) {
-    const names = top3.filter(x => x.pct > 0).map(x => `${x.theme}（${x.pct >= 0 ? '+' : ''}${x.pct.toFixed(1)}%）`).join('、')
-    lines.push(`上昇が目立つテーマは${names}です。`)
+    const upNames = top3.filter(x=>x.pct>0).map(x=>`「${x.theme}」(${x.pct>=0?'+':''}${x.pct.toFixed(1)}%)`).join('、')
+    lines.push(`▲ 上昇が目立つテーマ：${upNames}。${volUp.length>0&&top3.some(top=>volUp.some(v=>v.theme===top.theme))?`特に「${top3[0].theme}」は出来高も急増しており、資金の本格流入が始まっている可能性がある。`:''}`)
   }
 
   // 下落テーマ
   if (bot3.length && bot3[0].pct < 0) {
-    const names = bot3.filter(x => x.pct < 0).map(x => `${x.theme}（${x.pct.toFixed(1)}%）`).join('、')
-    lines.push(`一方、${names}は軟調な動きとなっています。`)
+    const dnNames = bot3.filter(x=>x.pct<0).map(x=>`「${x.theme}」(${x.pct.toFixed(1)}%)`).join('、')
+    lines.push(`▼ 下落が目立つテーマ：${dnNames}。${coldThemes.length>3?'広範な売り圧力がかかっており、個別テーマの選別が重要。':'下落幅が大きく過熱感の解消や外部要因が影響している可能性がある。'}`)
   }
 
   // 出来高増加テーマ
   if (volUp.length > 0) {
-    const names = volUp.map(x => x.theme).join('・')
-    lines.push(`${names}は出来高が増加しており、特に市場参加者の関心が高まっています。`)
+    lines.push(`📊 出来高が前期比+20%超で急増しているテーマ：「${volUp.map(x=>x.theme).join('」「')}」。出来高増加は大口資金の動きを先行して示すことが多く、今後の株価動向を見極めるうえで重要なシグナル。`)
   }
 
-  return lines.join(' ')
+  // 出来高急増かつ上昇テーマ → 特に注目
+  const hotWithVol = hotThemes.filter(h => volUp.some(v => v.theme === h.theme))
+  if (hotWithVol.length > 0) {
+    lines.push(`🔥 急騰かつ出来高急増テーマ：「${hotWithVol.map(t=>t.theme).join('」「')}」。価格上昇と出来高増加が同時発生しており、強いトレンドの初期段階である可能性が高い。`)
+  }
+
+  // 下落幅が大きいが出来高も増加（底値模索か）
+  const coldWithVolUp = coldThemes.filter(h => volUp.some(v => v.theme === h.theme))
+  if (coldWithVolUp.length > 0) {
+    lines.push(`📉 下落テーマでも出来高増加：「${coldWithVolUp.map(t=>t.theme).join('」「')}」。売り圧力が強いが出来高増は底値模索の兆しの可能性もある。反転サインを確認してから判断したい。`)
+  }
+
+  lines.push(`💡 本日のポイント：${avg >= 2 ? '全体的に強い相場環境。強気テーマへの集中投資が奏功しやすい局面。' : avg <= -2 ? '全体的に弱い地合い。守備的なテーマ（通信・医薬品等）や現金比率を高める局面。' : '方向感が定まらないため、モメンタムの強いテーマに絞り込み、出来高増加を確認してから参入するのが有効。'}`)
+
+  return lines
 }
 
 
@@ -386,8 +416,19 @@ export default function TopPage() {
             letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'6px' }}>
             📝 本日のマーケットコメント（自動生成・1ヶ月集計）
           </div>
-          <div style={{ fontSize:'12px', color:'#e8f0ff', lineHeight:1.9 }}>
-            {generateMarketComment(themes, macro)}
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9 }}>
+            {(generateMarketComment(themes, macro) || '').split(' ').reduce((acc, word, i) => {
+              const line = acc[acc.length-1]
+              if (word.startsWith('【') || word.startsWith('▲') || word.startsWith('▼') || word.startsWith('📊')) {
+                acc.push(word)
+              } else {
+                acc[acc.length-1] = line + (line && !line.endsWith('【') ? ' ' : '') + word
+              }
+              return acc
+            }, [''])
+            .filter(l => l.trim())
+            .map((line, i) => <p key={i} style={{ margin: i===0?'0 0 6px':'6px 0 0' }}>{line}</p>)
+            }
           </div>
           <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
             ※ 本コメントはデータに基づき自動生成されたものです。投資助言ではありません。

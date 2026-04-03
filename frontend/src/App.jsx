@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import { useStatus }   from './hooks/useMarketData'
 import { AuthProvider } from './hooks/useAuth.jsx'
 import Header      from './components/Header'
+import Footer      from './components/Footer'
 import Sidebar     from './components/Sidebar'
+import Footer      from './components/Footer'
 import TopPage     from './components/pages/TopPage'
 import ThemeList   from './components/pages/ThemeList'
 import FlowMomentum from './components/pages/FlowMomentum'
@@ -68,6 +70,13 @@ function AppInner() {
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component
   const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
+
+  // フッターのカスタムイベントでページ遷移
+  useEffect(() => {
+    const handler = (e) => { handlePageChange(e.detail) }
+    window.addEventListener('navigate', handler)
+    return () => window.removeEventListener('navigate', handler)
+  }, [])
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
@@ -126,6 +135,7 @@ function AppInner() {
           <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
           {'  —  stockwavejp.com  —  投資助言ではありません  —  © 2026'}
         </footer>
+        <Footer />
       </main>
     </div>
   )

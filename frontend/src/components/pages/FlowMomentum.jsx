@@ -57,6 +57,77 @@ function HBar({ item, maxAbs }) {
   )
 }
 
+
+// 自動コメント生成
+function AutoComment({ lines }) {
+  if (!lines?.length) return null
+  return (
+    <div style={{
+      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
+      borderRadius:'10px', padding:'14px 18px', margin:'0 0 20px',
+      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
+    }}>
+      {lines.map((line, i) => (
+        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
+      ))}
+    </div>
+  )
+}
+
+function genFlowComment(allItems, momentumData, period) {
+  if (!allItems?.length) return null
+  const periodLabel = { '1d':'本日', '5d':'週間', '1mo':'1ヶ月', '3mo':'3ヶ月', '6mo':'6ヶ月', '1y':'1年間' }[period] || period
+  const rising  = allItems.filter(t => t.pct > 0)
+  const falling = allItems.filter(t => t.pct < 0)
+  const sorted  = [...allItems].sort((a,b) => b.pct - a.pct)
+  const top3    = sorted.slice(0, 3)
+  const bot3    = sorted.slice(-3).reverse()
+
+  // 出来高増加上位
+  const volUp = [...allItems].sort((a,b) => (b.volume_chg||0)-(a.volume_chg||0)).slice(0,3)
+
+  // モメンタム
+  const accel = momentumData?.filter(t => t.state?.includes('加速'))?.slice(0,4) || []
+  const decel = momentumData?.filter(t => t.state?.includes('失速'))?.slice(0,4) || []
+  const turn_up = momentumData?.filter(t => t.state?.includes('転換↑'))?.slice(0,3) || []
+  const turn_dn = momentumData?.filter(t => t.state?.includes('転換↓'))?.slice(0,3) || []
+
+  const lines = []
+  const avg = allItems.length ? (allItems.reduce((s,t)=>s+t.pct,0)/allItems.length) : 0
+
+  // 資金フロー概況
+  lines.push(`【${periodLabel}の資金フロー概況】${rising.length}テーマに資金が流入、${falling.length}テーマから流出。平均騰落率${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%で${avg > 1 ? 'リスクオン局面が続いている' : avg < -1 ? 'リスクオフ傾向が強まっている' : '方向感が定まっていない'}。`)
+
+  // 資金流入上位
+  lines.push(`▲ 資金流入が目立つテーマ：「${top3.map(t=>`${t.theme}(${t.pct>0?'+':''}${t.pct.toFixed(1)}%)`).join('」「')}」。${top3[0]?.volume_chg > 20 ? `特に「${top3[0].theme}」は出来高も前期比+${top3[0].volume_chg.toFixed(0)}%と急増しており、機関投資家の本格参入を示唆している可能性がある。` : ''}`)
+
+  // 資金流出下位
+  lines.push(`▼ 資金流出が目立つテーマ：「${bot3.map(t=>`${t.theme}(${t.pct.toFixed(1)}%)`).join('」「')}」。${decel.length > 0 && decel.some(d => bot3.some(b => b.theme === d.theme)) ? '失速モメンタムと重なるテーマは底入れ確認まで慎重な姿勢が求められる。' : '下落幅が限定的であれば、押し目買いの機会となりうる水準に近づいている可能性もある。'}`)
+
+  // 出来高急増（価格と乖離）
+  if (volUp[0]?.volume_chg > 15) {
+    lines.push(`📊 出来高が急増しているテーマ：「${volUp.filter(t=>t.volume_chg>15).map(t=>`${t.theme}(+${t.volume_chg?.toFixed(0)}%)`).join('」「')}」。出来高の先行増加は株価に先立つ大口の動きを示すことが多い。上昇テーマでは追随、下落テーマでは底値模索のシグナルと解釈できる。`)
+  }
+
+  // モメンタム分析
+  if (accel.length > 0) {
+    lines.push(`🔥 加速モメンタム（短中期ともに騰勢が加速中）：「${accel.map(t=>t.theme).join('」「')}」。トレンドフォロー戦略が有効な局面。高値追いにはなるが、勢いが続く可能性が高い。`)
+  }
+  if (turn_up.length > 0) {
+    lines.push(`↗ 転換シグナル（下落から上昇へ転換の兆し）：「${turn_up.map(t=>t.theme).join('」「')}」。底値圏からの反転初動である可能性があり、中長期の仕込み場として注目できる。`)
+  }
+  if (turn_dn.length > 0) {
+    lines.push(`↘ 転換シグナル（上昇から失速へ転換の兆し）：「${turn_dn.map(t=>t.theme).join('」「')}」。高値警戒が必要で、利益確定や新規参入の見送りを検討すべき局面。`)
+  }
+  if (decel.length > 0) {
+    lines.push(`❄️ 失速モメンタム（騰落率がマイナスで加速中）：「${decel.map(t=>t.theme).join('」「')}」。下落が加速しており、いったん下げ止まりのサインを待ちたい。過度な逆張りは禁物。`)
+  }
+
+  lines.push(`💡 投資判断のポイント：加速テーマと転換↑テーマの組み合わせに注目。特に出来高増加を伴うテーマは資金の本格流入が始まっている可能性が高い。一方、転換↓・失速テーマは売り圧力が続く可能性があり、リバウンドを狙う場合でも確認シグナルを待つことが重要。`)
+
+  return lines
+}
+
 export default function FlowMomentum() {
   const [period,  setPeriod]  = useState('1d')
   const [sortKey, setSortKey] = useState('騰落率（降順）')
@@ -77,15 +148,15 @@ export default function FlowMomentum() {
   if (sortKey === '騰落率（昇順）') sorted.sort((a, b) => a.pct - b.pct)
   const pctColor = v => v >= 0 ? 'var(--red)' : 'var(--green)'
   const pctSign  = v => v >= 0 ? '+' : ''
+  const flowComment = genFlowComment(allItems, momentumData, period)
+
+  const flowComment = genFlowComment(allItems, momentumData, period)
 
   return (
     <div style={{ padding:'28px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
-      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
+      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
         資金フロー・騰落モメンタム
       </h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'20px' }}>
-        テーマへの資金集中度と騰落率ランキングを確認できます。
-      </p>
 
       {/* コントロール */}
       <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginBottom:'20px', alignItems:'center' }}>
@@ -98,6 +169,12 @@ export default function FlowMomentum() {
           </select>
         )}
       </div>
+
+      {/* 自動コメント */}
+      <AutoComment lines={flowComment} />
+
+      {/* 自動コメント */}
+      <AutoComment lines={flowComment} />
 
       {/* タブ切替 */}
       <div style={{ display:'flex', gap:'4px', marginBottom:'24px',
