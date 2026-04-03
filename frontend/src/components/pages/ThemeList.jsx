@@ -198,6 +198,92 @@ function CustomThemeRows({ themes, period, pctColor }) {
 }
 
 
+// ⑦ カードグリッド用ThemeCard
+function ThemeCard({ item, maxAbsVol, maxAbsTV, pctColor }) {
+  const pct = item.pct ?? 0
+  const barW = Math.min(Math.abs(pct) / 25 * 100, 100)
+  const volW = maxAbsVol ? Math.min((item.volume || 0) / maxAbsVol * 100, 100) : 0
+  const tvW  = maxAbsTV  ? Math.min((item.trade_value || 0) / maxAbsTV * 100, 100) : 0
+  const col  = pctColor(pct)
+  const fmt  = (n) => {
+    if (!n) return '0'
+    if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
+    if (n >= 1e8)  return (n/1e8).toFixed(1)+'億'
+    if (n >= 1e4)  return (n/1e4).toFixed(1)+'万'
+    return n.toLocaleString()
+  }
+  return (
+    <div style={{
+      background:'var(--bg2)', border:'1px solid var(--border)',
+      borderRadius:'10px', padding:'10px 12px',
+      display:'flex', flexDirection:'column', gap:'6px',
+      transition:'border-color 0.15s, transform 0.1s',
+      cursor:'default',
+    }}
+      onMouseEnter={e=>{e.currentTarget.style.borderColor='rgba(91,156,246,0.3)'; e.currentTarget.style.transform='translateY(-1px)'}}
+      onMouseLeave={e=>{e.currentTarget.style.borderColor='var(--border)'; e.currentTarget.style.transform='none'}}
+    >
+      {/* テーマ名・銘柄数 */}
+      <div style={{ display:'flex', alignItems:'center', gap:'6px', minWidth:0 }}>
+        <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', flex:1,
+          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+          {item.theme}
+        </span>
+        <span style={{ fontSize:'10px', color:'var(--text3)', flexShrink:0, fontFamily:'var(--mono)' }}>
+          {item.stock_count}銘柄
+        </span>
+      </div>
+      {/* 騰落率 */}
+      <div>
+        <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'3px' }}>
+          <span style={{ fontSize:'9px', color:'var(--text3)' }}>騰落率</span>
+          <span style={{ fontSize:'14px', fontWeight:700, color:col, fontFamily:'var(--mono)' }}>
+            {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+          </span>
+        </div>
+        <div style={{ height:'3px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
+          <div style={{ width:`${barW}%`, height:'100%', background:col, borderRadius:'2px' }}/>
+        </div>
+      </div>
+      {/* 出来高 */}
+      <div>
+        <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'2px' }}>
+          <span style={{ fontSize:'9px', color:'var(--text3)' }}>出来高</span>
+          <span style={{ fontSize:'10px', color:'var(--text2)', fontFamily:'var(--mono)' }}>{fmt(item.volume)}</span>
+        </div>
+        <div style={{ height:'2px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
+          <div style={{ width:`${volW}%`, height:'100%', background:'#5b9cf6', borderRadius:'2px' }}/>
+        </div>
+      </div>
+      {/* 売買代金 */}
+      <div>
+        <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'2px' }}>
+          <span style={{ fontSize:'9px', color:'var(--text3)' }}>売買代金</span>
+          <span style={{ fontSize:'10px', color:'var(--text2)', fontFamily:'var(--mono)' }}>{fmt(item.trade_value)}</span>
+        </div>
+        <div style={{ height:'2px', background:'rgba(255,255,255,0.06)', borderRadius:'2px', overflow:'hidden' }}>
+          <div style={{ width:`${tvW}%`, height:'100%', background:'#ff8c42', borderRadius:'2px' }}/>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// カードグリッドで全テーマ表示
+function ThemeCardGrid({ items, pctColor }) {
+  const maxVol = Math.max(...items.map(t => t.volume || 0))
+  const maxTV  = Math.max(...items.map(t => t.trade_value || 0))
+  return (
+    <div className="theme-card-grid">
+      {items.map(item => (
+        <ThemeCard key={item.theme} item={item}
+          maxAbsVol={maxVol} maxAbsTV={maxTV} pctColor={pctColor} />
+      ))}
+    </div>
+  )
+}
+
+
 export default function ThemeList() {
   const [period, setPeriod] = useState('1d')
   const { themes: customThemes } = useCustomThemes()
@@ -254,11 +340,10 @@ export default function ThemeList() {
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'#e8f0ff', lineHeight:1.9 }}>
-          <span style={{ fontWeight:700, color:'var(--accent)' }}>📊 このページについて：</span>
           日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
           <br />
-          <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+          <span style={{ fontSize:'11px', color:'var(--text2)' }}>
             💡 活用ポイント：「上昇TOP5」に連続して登場するテーマは強いトレンドの可能性があります。
             出来高・売買代金も同時に確認し、資金の本気度を判断しましょう。
           </span>
@@ -329,17 +414,9 @@ export default function ThemeList() {
               topColorFn={blueColor} botColorFn={orangeColor}
               valueKey="volume" bot5ValueKey="trade_value" formatFn={true} />
 
-            {/* 全テーマ 騰落率 */}
+            {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <HBarChart items={themes} valueKey="pct" colorFn={pctColor} />
-
-            {/* 全テーマ 出来高 */}
-            <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <HBarChart items={byVol} valueKey="volume" colorFn={blueColor} formatFn={true} />
-
-            {/* 全テーマ 売買代金 */}
-            <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <HBarChart items={byTV} valueKey="trade_value" colorFn={orangeColor} formatFn={true} />
+            <ThemeCardGrid items={themes} pctColor={pctColor} />
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
@@ -348,6 +425,15 @@ export default function ThemeList() {
                 <CustomThemeRows themes={customThemes} period={period} pctColor={pctColor} />
               </>
             )}
+
+            {/* 全テーマ 出来高ランキング（カードグリッド） */}
+            <SectionHead title="🔢 全テーマ 出来高ランキング" />
+            <ThemeCardGrid items={byVol} pctColor={pctColor} />
+
+            {/* 全テーマ 売買代金ランキング（カードグリッド） */}
+            <SectionHead title="💴 全テーマ 売買代金ランキング" />
+            <ThemeCardGrid items={byTV} pctColor={pctColor} />
+
           </>
         )}
       </div>
@@ -356,6 +442,9 @@ export default function ThemeList() {
         .responsive-grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
         @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .responsive-grid-6 { grid-template-columns:repeat(2,1fr); } }
+        .theme-card-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+        @media (max-width:1024px) { .theme-card-grid { grid-template-columns:repeat(3,1fr); } }
+        @media (max-width:640px)  { .theme-card-grid { grid-template-columns:repeat(2,1fr); } }
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }

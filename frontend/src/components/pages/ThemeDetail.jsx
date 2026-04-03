@@ -199,8 +199,8 @@ function StockTable({ stocks }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
-              <th style={{ ...thStyle, textAlign:'left', minWidth:'140px', background:'var(--bg3)' }}>銘柄名</th>
+              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順位</th>
+              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'140px', background:'var(--bg3)', position:'sticky', left:'40px', zIndex:3 }}>銘柄名</th>
               {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
@@ -420,12 +420,12 @@ export default function ThemeDetail() {
   return (
     <div>
       {/* 固定ヘッダー */}
-      <div className="page-header-sticky">
-        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>テーマ別詳細</h1>
-        <select value={selTheme} onChange={e => setSelTheme(e.target.value)} style={selStyle}>
+      <div className="page-header-sticky" style={{ flexWrap:'wrap', gap:'6px' }}>
+        <h1 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap', flexShrink:0 }}>テーマ別詳細</h1>
+        <select value={selTheme} onChange={e => setSelTheme(e.target.value)} style={{ ...selStyle, maxWidth:'160px', flex:'1 1 120px' }}>
           {themeNames.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
-        <select value={period} onChange={e => setPeriod(e.target.value)} style={selStyle}>
+        <select value={period} onChange={e => setPeriod(e.target.value)} style={{ ...selStyle, flexShrink:0 }}>
           {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
         </select>
       </div>

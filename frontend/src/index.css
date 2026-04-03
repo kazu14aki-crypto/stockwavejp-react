@@ -39,6 +39,7 @@
 
 /* ── ホワイト（文字は黒寄りグレー・白文字を完全排除）── */
 [data-theme="light"] {
+  color-scheme: light;
   --bg:      #f4f6fa;
   --bg2:     #ffffff;
   --bg3:     #eaecf4;
@@ -104,6 +105,16 @@ body {
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
 ::-webkit-scrollbar-thumb:hover { background:var(--text3); }
+/* ④ ホワイトテーマ：hardcode白色テキストを上書き */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3 {
+  color: #111827 !important;
+}
+[data-theme="light"] .page-header-sticky h1 {
+  color: #111827 !important;
+}
+
 
 /* PC向け：コンテンツ最大幅 */
 @media (min-width: 1400px) {

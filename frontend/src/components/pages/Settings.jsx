@@ -10,7 +10,6 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
 
   const COLOR_THEMES = [
     { key:'dark',  label:'🌑 ブラック', desc:'ダークモード（デフォルト）' },
-    { key:'navy',  label:'🌊 ネイビー', desc:'深いブルー系ダークテーマ' },
     { key:'light', label:'☀️ ホワイト', desc:'ライトモード' },
   ]
 

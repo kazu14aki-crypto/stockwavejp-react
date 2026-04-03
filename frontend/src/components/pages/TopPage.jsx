@@ -139,7 +139,7 @@ function MacroCard({ name, data, color }) {
         <div style={{ fontFamily:'var(--mono)', fontSize:'16px', fontWeight:700, color:pctColor, lineHeight:1 }}>
           {last.pct>=0?'+':''}{last.pct.toFixed(1)}%
         </div>
-        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ flexShrink:0, display:'block' }}>
+        <svg viewBox={`-2 -2 ${W+4} ${H+4}`} width={W} height={H} style={{ flexShrink:0, display:'block', overflow:'hidden' }}>
           <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
             strokeLinejoin="round" strokeLinecap="round"/>
         </svg>
