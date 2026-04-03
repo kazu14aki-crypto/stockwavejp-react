@@ -150,8 +150,6 @@ export default function FlowMomentum() {
   const pctSign  = v => v >= 0 ? '+' : ''
   const flowComment = genFlowComment(allItems, momentumData, period)
 
-  const flowComment = genFlowComment(allItems, momentumData, period)
-
   return (
     <div style={{ padding:'28px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
