@@ -417,18 +417,9 @@ export default function TopPage() {
             📝 本日のマーケットコメント（自動生成・1ヶ月集計）
           </div>
           <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9 }}>
-            {(generateMarketComment(themes, macro) || '').split(' ').reduce((acc, word, i) => {
-              const line = acc[acc.length-1]
-              if (word.startsWith('【') || word.startsWith('▲') || word.startsWith('▼') || word.startsWith('📊')) {
-                acc.push(word)
-              } else {
-                acc[acc.length-1] = line + (line && !line.endsWith('【') ? ' ' : '') + word
-              }
-              return acc
-            }, [''])
-            .filter(l => l.trim())
-            .map((line, i) => <p key={i} style={{ margin: i===0?'0 0 6px':'6px 0 0' }}>{line}</p>)
-            }
+            {(generateMarketComment(themes, macro) || []).map((line, i) => (
+              <p key={i} style={{ margin: i===0?'0 0 8px':'8px 0 0' }}>{line}</p>
+            ))}
           </div>
           <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
             ※ 本コメントはデータに基づき自動生成されたものです。投資助言ではありません。
