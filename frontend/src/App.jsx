@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { useStatus }   from './hooks/useMarketData'
 import { AuthProvider } from './hooks/useAuth.jsx'
 import Header      from './components/Header'
-import Footer      from './components/Footer'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
 import ThemeList   from './components/pages/ThemeList'
@@ -70,12 +69,6 @@ function AppInner() {
   const PageComponent  = currentPageObj?.component
   const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
 
-  // フッターのカスタムイベントでページ遷移
-  useEffect(() => {
-    const handler = (e) => { handlePageChange(e.detail) }
-    window.addEventListener('navigate', handler)
-    return () => window.removeEventListener('navigate', handler)
-  }, [])
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
@@ -127,14 +120,27 @@ function AppInner() {
           </div>
         )}
 
-        <footer style={{ borderTop:'1px solid var(--border)', padding:'20px 32px',
+        <footer style={{ borderTop:'1px solid var(--border)', padding:'16px 24px',
           textAlign:'center', color:'var(--text3)', fontSize:'11px' }}>
-          <span style={{ color:'#e63030', fontWeight:700 }}>Stock</span>
-          <span style={{ fontWeight:700, color:'var(--text2)' }}>Wave</span>
-          <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
-          {'  —  stockwavejp.com  —  投資助言ではありません  —  © 2026'}
+          <div style={{ marginBottom:'8px', display:'flex', justifyContent:'center', gap:'20px', flexWrap:'wrap' }}>
+            <button onClick={() => handlePageChange('免責事項')} style={{
+              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
+              fontSize:'11px', fontFamily:'var(--font)', padding:0,
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>免責事項</button>
+            <button onClick={() => handlePageChange('プライバシーポリシー')} style={{
+              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
+              fontSize:'11px', fontFamily:'var(--font)', padding:0,
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>プライバシーポリシー</button>
+          </div>
+          <div>
+            <span style={{ color:'#e63030', fontWeight:700 }}>Stock</span>
+            <span style={{ fontWeight:700, color:'var(--text2)' }}>Wave</span>
+            <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
+            {'  —  stockwavejp.com  —  投資助言ではありません  —  © 2026'}
+          </div>
         </footer>
-        <Footer />
       </main>
     </div>
   )

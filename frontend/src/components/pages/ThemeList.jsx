@@ -441,8 +441,6 @@ export default function ThemeList() {
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
   const { data: momentumData } = useMomentum(period)
-  const momentum1mo = momentumData?.data || []
-  const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   const macro = macroRaw?.data || {}
   // 1321・1306の直近騰落率を取得
   const get1321pct = () => {
@@ -472,6 +470,8 @@ export default function ThemeList() {
   const pctRankMap = new Map(themes.map((t, i) => [t.theme, i + 1]))
   const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
   const tvRankMap  = new Map(byTV.map((t, i) => [t.theme, i + 1]))
+  const momentum1mo  = momentumData?.data || []
+  const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
   const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
   const fallingTop5 = byPctAsc.filter(t => t.pct < 0).slice(0, 5)
