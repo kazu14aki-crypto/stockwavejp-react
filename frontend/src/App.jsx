@@ -5,7 +5,6 @@ import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
 import ThemeList   from './components/pages/ThemeList'
-import FlowMomentum from './components/pages/FlowMomentum'
 import Heatmap     from './components/pages/Heatmap'
 import MarketRank  from './components/pages/MarketRank'
 import ThemeDetail from './components/pages/ThemeDetail'
@@ -23,8 +22,7 @@ const PAGES = [
   { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🔥', label:'ヒートマップ',              component:Heatmap       },
-  { icon:'💹', label:'資金フロー・騰落モメンタム', component:FlowMomentum  },
+  { icon:'🔥', label:'ヒートマップ・モメンタム',              component:Heatmap       },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
