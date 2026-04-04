@@ -279,6 +279,29 @@ const THEME_ARTICLE_MAP = {
   'パワー半導体':    'power-semiconductor',
   '光通信':          'optical-communication',
   '国土強靭化':      'national-resilience',
+  'ゲーム・エンタメ':      'game-entertainment-theme',
+  '銀行・金融':           'banking-finance-theme',
+  '地方銀行':             'regional-bank-theme',
+  '保険':                'insurance-theme',
+  '不動産':              'real-estate-theme',
+  '医薬品・バイオ':       'pharma-bio-theme',
+  'ヘルスケア・介護':     'healthcare-nursing-theme',
+  '食品・飲料':           'food-beverage-theme',
+  '小売・EC':            'retail-ec-theme',
+  '通信':                'telecom-theme',
+  '鉄鋼・素材':           'steel-materials-theme',
+  '化学':                'chemical-theme',
+  '建設・インフラ':       'construction-infra-theme',
+  '輸送・物流':           'transport-logistics-theme',
+  'フィンテック':         'fintech-theme',
+  'ロボット・自動化':     'robot-automation-theme',
+  'レアアース・資源':     'rare-earth-resources-theme',
+  'サイバーセキュリティ': 'cybersecurity-theme',
+  'ドローン':             'drone-theme',
+  '観光・ホテル・レジャー': 'tourism-hotel-theme',
+  '農業・フードテック':   'agritech-foodtech-theme',
+  '教育・HR・人材':       'education-hr-theme',
+  '宇宙・衛星':           'space-satellite-theme',
 }
 
 export default function ThemeDetail({ onNavigate }) {
@@ -480,6 +503,23 @@ export default function ThemeDetail({ onNavigate }) {
               <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
                 {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
               </span>
+              {/* 関連コラムボタン */}
+              {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                <button
+                  onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                  style={{
+                    padding:'6px 14px', background:'rgba(74,158,255,0.08)',
+                    border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
+                    color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                    fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
+                    transition:'all 0.15s', flexShrink:0,
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.background='rgba(74,158,255,0.18)'}
+                  onMouseLeave={e => e.currentTarget.style.background='rgba(74,158,255,0.08)'}
+                >
+                  📖 解説記事を読む
+                </button>
+              )}
             </div>
 
             {/* ── TOP5グラフ（小型）── */}
