@@ -1283,7 +1283,7 @@ StockWaveJPでは「再生可能エネルギー」テーマの騰落率・出来
 
 2030年代にかけて、再生可能エネルギーは日本の産業構造を変える可能性を持つテーマです。電力セクター・重工業・素材・電機の各分野を横断する広がりがあり、長期投資・テーマ分散投資の観点からもポートフォリオに組み入れる価値は十分にあると考えられます。
     `,
-  },,
+  },
   {
     id: 'game-entertainment-theme',
     category: 'ゲーム・エンタメ',
@@ -1796,7 +1796,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
 
       {/* コラム一覧 */}
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }} className="col-grid">
-        {filtered.map((col, i) => {
+        {filtered.filter(Boolean).map((col, i) => {
           const cat = CAT_COLORS[col.category] || CAT_COLORS['入門']
           return (
             <div key={col.id} onClick={() => setActiveCol(col.id)} style={{
