@@ -358,6 +358,9 @@ export default function ThemeDetail() {
   }, [selTheme, period])
 
   // テーマ比較データ取得（market.json優先）
+  useEffect(() => {
+    if (!selThemes.length) return
+    setLoadingT(true)
     ;(async () => {
       try {
         const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
@@ -372,7 +375,6 @@ export default function ThemeDetail() {
           return
         }
       } catch {}
-      // フォールバック: API
       try {
         const d = await fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`).then(r => r.json())
         setThemeTrends(d.trends || {})
