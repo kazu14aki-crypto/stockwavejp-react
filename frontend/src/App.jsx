@@ -38,7 +38,8 @@ const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 function AppInner() {
-  const [currentPage, setCurrentPage] = useState('ホーム')
+  const [currentPage,   setCurrentPage]   = useState('ホーム')
+  const [targetArticleId, setTargetArticleId] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 768)
@@ -65,13 +66,20 @@ function AppInner() {
 
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component
-  const handlePageChange = (label) => { setCurrentPage(label); setSidebarOpen(false) }
+  const handlePageChange = (label, articleId = null) => {
+    setCurrentPage(label)
+    setSidebarOpen(false)
+    setTargetArticleId(articleId)
+  }
 
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
     if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
+    if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange }
+    if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange }
+    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange }
     return {}
   })()
 

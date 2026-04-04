@@ -267,7 +267,21 @@ function fmtDate(dateStr) {
   return `${y}.${m}/${d}`
 }
 
-export default function ThemeDetail() {
+
+const THEME_ARTICLE_MAP = {
+  '半導体':          'semiconductor-theme',
+  'AI・クラウド':    'ai-cloud-theme',
+  '防衛・宇宙':      'defense-space-theme',
+  'インバウンド':    'inbound-theme',
+  'EV・電気自動車':  'ev-green-theme',
+  '脱炭素・ESG':     'ev-green-theme',
+  '造船':            'shipbuilding-theme',
+  'パワー半導体':    'power-semiconductor',
+  '光通信':          'optical-communication',
+  '国土強靭化':      'national-resilience',
+}
+
+export default function ThemeDetail({ onNavigate }) {
   const [period,      setPeriod]      = useState('1mo')
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState('')

@@ -148,6 +148,21 @@ function genThemeComment(themes, summary, period, momentum) {
   return lines
 }
 
+
+// テーマ名→関連コラムIDのマッピング
+const THEME_ARTICLE_MAP = {
+  '半導体':          'semiconductor-theme',
+  'AI・クラウド':    'ai-cloud-theme',
+  '防衛・宇宙':      'defense-space-theme',
+  'インバウンド':    'inbound-theme',
+  'EV・電気自動車':  'ev-green-theme',
+  '脱炭素・ESG':     'ev-green-theme',
+  '造船':            'shipbuilding-theme',
+  'パワー半導体':    'power-semiconductor',
+  '光通信':          'optical-communication',
+  '国土強靭化':      'national-resilience',
+}
+
 function SectionHead({ title }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '28px 0 14px' }}>
@@ -339,7 +354,7 @@ function CustomThemeRows({ themes, period, pctColor }) {
 
 
 // ⑤ カードグリッド用ThemeCard（順位バッジ＋各ランク表示）
-function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank }) {
+function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank, onNavigate }) {
   const fmt = (n) => {
     if (!n) return '0'
     if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
@@ -404,6 +419,18 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 {rankTag(tvRank, '#ff8c42')}
               </span>
             </div>
+            {/* 関連コラムリンク */}
+            {THEME_ARTICLE_MAP[item.theme] && onNavigate && (
+              <button
+                onClick={e => { e.stopPropagation(); onNavigate('コラム・解説', THEME_ARTICLE_MAP[item.theme]) }}
+                style={{ marginTop:'6px', width:'100%', padding:'4px 0',
+                  background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
+                  borderRadius:'4px', color:'var(--accent)', cursor:'pointer',
+                  fontSize:'10px', fontFamily:'var(--font)', fontWeight:600,
+                }}>
+                📖 関連コラムを読む
+              </button>
+            )}
           </>
         ) : valueKey === 'volume' ? (
           <>
@@ -450,7 +477,7 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 }
 
 
-function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap }) {
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate }) {
   const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
   return (
     <div className="theme-card-grid">
@@ -460,14 +487,15 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           barColor={barColor} pctColor={pctColor}
           pctRank={pctRankMap?.get(item.theme)}
           volRank={volRankMap?.get(item.theme)}
-          tvRank={tvRankMap?.get(item.theme)} />
+          tvRank={tvRankMap?.get(item.theme)}
+          onNavigate={onNavigate} />
       ))}
     </div>
   )
 }
 
 
-export default function ThemeList() {
+export default function ThemeList({ onNavigate }) {
   const [period, setPeriod] = useState('1mo')
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
@@ -609,7 +637,7 @@ export default function ThemeList() {
 
             {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
+            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
