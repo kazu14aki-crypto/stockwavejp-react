@@ -46,9 +46,9 @@
   --border:  #cccccc;
   --text:    #111111;
   --text2:   #333333;
-  --text3:   #666666;
+  --text3:   #555555;
   --red:     #cc0000;
-  --green:   #0033cc;
+  --green:   #1a7a1a;
   --accent:  #003399;
   --logo-red:#cc0000;
   --font:    'DM Sans','Noto Sans JP',sans-serif;
@@ -111,6 +111,16 @@ body {
 [data-theme="light"] h3,
 [data-theme="light"] .page-header-sticky h1 {
   color: #111111 !important;
+}
+/* 設定・ホーム上部の白文字ハードコード対策 */
+[data-theme="light"] select,
+[data-theme="light"] button:not(.hamburger-btn) {
+  color: #111111;
+}
+[data-theme="light"] p,
+[data-theme="light"] span,
+[data-theme="light"] div {
+  color: inherit;
 }
 [data-theme="light"] .sticky-table td,
 [data-theme="light"] .sticky-table th {

@@ -21,7 +21,7 @@ export default function News() {
     fetch(`${DATA_URL}?t=${Date.now()}`)
       .then(r => r.json())
       .then(json => {
-        const acts = json.corporate_actions || []
+        const acts = (json.corporate_actions || []).filter(a => a.type !== 'rename')
         setActions(acts)
       })
       .catch(() => {})

@@ -355,7 +355,7 @@ export default function TopPage() {
           <span style={{ color:'var(--logo-red)', fontSize:'13px' }}>JP</span>
         </h1>
         {/* PC:1行 / SP:折り返し */}
-        <p style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.7 }} className="hero-desc">
+        <p style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.7 }} className="hero-desc">
           日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで追跡。どのテーマに資金が集まっているかを視覚的に把握できます。
         </p>
       </div>

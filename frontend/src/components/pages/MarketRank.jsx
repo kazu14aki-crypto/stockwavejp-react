@@ -68,7 +68,7 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 
 function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
@@ -98,7 +98,6 @@ function StockTable({ stocks, onAddToTheme }) {
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
-                <td style={tdC}>{i+1}位</td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
                 <td style={tdC}>{s.vol_rank}位</td>
@@ -178,7 +177,7 @@ export default function MarketRank() {
       <div style={{ padding:'20px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
         <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
-          color:'#e8f0ff', lineHeight:1.8 }}>
+          color:'var(--text)', lineHeight:1.8 }}>
           <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
           日経225採用銘柄・TOPIX構成銘柄・市場区分（プライム・スタンダード・グロース）ごとに、
           構成銘柄の騰落率ランキングと詳細データを確認できます。

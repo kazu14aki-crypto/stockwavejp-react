@@ -4,7 +4,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
       borderRadius:'var(--radius)',padding:'20px 24px',marginBottom:'16px', ...style }}>{children}</div>
   )
   const SLabel = ({ children }) => (
-    <div style={{ fontSize:'11px',fontWeight:600,letterSpacing:'0.1em',color:'#ffffff',
+    <div style={{ fontSize:'11px',fontWeight:600,letterSpacing:'0.1em',color:'var(--text)',
       textTransform:'uppercase',marginBottom:'14px' }}>{children}</div>
   )
 
@@ -15,7 +15,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
 
   return (
     <div style={{ padding:'28px 32px 48px' }}>
-      <h1 style={{ fontSize:'24px',fontWeight:700,letterSpacing:'-0.02em',color:'#ffffff',marginBottom:'4px' }}>設定</h1>
+      <h1 style={{ fontSize:'24px',fontWeight:700,letterSpacing:'-0.02em',color:'var(--text)',marginBottom:'4px' }}>設定</h1>
       <p style={{ fontSize:'12px',color:'var(--text2)',marginBottom:'28px' }}>表示モードやデザインの設定を変更できます</p>
 
       {/* カラーテーマ */}
@@ -31,7 +31,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               display:'flex', flexDirection:'column', alignItems:'flex-start', gap:'4px',
               minWidth:'140px',
             }}>
-              <span style={{ fontSize:'14px', color:'#ffffff', fontWeight:600 }}>{label}</span>
+              <span style={{ fontSize:'14px', color:'var(--text)', fontWeight:600 }}>{label}</span>
               <span style={{ fontSize:'11px', color:'var(--text2)' }}>{desc}</span>
               {colorTheme===key && (
                 <span style={{ fontSize:'10px',color:'var(--accent)',fontWeight:600,marginTop:'4px' }}>✓ 適用中</span>

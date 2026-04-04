@@ -437,7 +437,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
 
 
 export default function ThemeList() {
-  const [period, setPeriod] = useState('1d')
+  const [period, setPeriod] = useState('1mo')
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
   const { data: momentumData } = useMomentum(period)
@@ -498,7 +498,7 @@ export default function ThemeList() {
 
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
-          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'#e8f0ff', lineHeight:1.9 }}>
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text)', lineHeight:1.9 }}>
           日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
           <br />
