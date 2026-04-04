@@ -411,7 +411,17 @@ export default function ThemeDetail() {
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
-  const stocks = detail?.stocks ?? []
+  // vol_rank・tv_rankをフロントで再計算（market.jsonの値を上書き）
+  const rawStocks = detail?.stocks ?? []
+  const volSorted = [...rawStocks].sort((a,b) => (b.volume||0)-(a.volume||0))
+  const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
+  const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
+  const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
+  const stocks = rawStocks.map(s => ({
+    ...s,
+    vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
+    tv_rank:  tvRankMap.get(s.ticker) ?? s.tv_rank,
+  }))
   // 上昇のみ・下落のみでフィルタリング
   const top5   = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)

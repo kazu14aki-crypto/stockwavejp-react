@@ -146,7 +146,7 @@ export function useThemes(period = '1mo') {
 export function useMacro(period = '1mo') {
   return useMarketJsonKey(
     `macro_${period}`,
-    `/api/macro?period=${period}`,
+    `${API}/api/macro?period=${period}`,
     [period]
   )
 }
@@ -280,7 +280,7 @@ export function useThemeNames() {
  * useHeatmap — 期間別ヒートマップ
  */
 export function useHeatmap() {
-  return useMarketJsonKey('heatmap', '/api/heatmap')
+  return useMarketJsonKey('heatmap', `${API}/api/heatmap`)
 }
 
 
@@ -288,7 +288,7 @@ export function useHeatmap() {
  * useMonthlyHeatmap — 月次ヒートマップ ★market.json優先に変更
  */
 export function useMonthlyHeatmap() {
-  return useMarketJsonKey('heatmap_monthly', '/api/heatmap/monthly')
+  return useMarketJsonKey('heatmap_monthly', `${API}/api/heatmap/monthly`)
 }
 
 
@@ -298,7 +298,7 @@ export function useMonthlyHeatmap() {
 export function useMomentum(period = '1mo') {
   return useMarketJsonKey(
     `momentum_${period}`,
-    `/api/momentum?period=${period}`,
+    `${API}/api/momentum?period=${period}`,
     [period]
   )
 }
@@ -386,7 +386,7 @@ export function useThemeDetail(themeName, period) {
 export function useMarketRankList(period = '1mo') {
   return useMarketJsonKey(
     `market_rank_${period}`,
-    `/api/market-rank-list?period=${period}`,
+    `${API}/api/market-rank-list?period=${period}`,
     [period]
   )
 }

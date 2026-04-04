@@ -231,6 +231,12 @@ export default function Heatmap() {
           localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.heatmap.data }, ts: Date.now() }))
           setLoading(false); return
         }
+        if (tab === 'monthly' && json.heatmap_monthly) {
+          setMonthlyData(json.heatmap_monthly.data)
+          setMonths(json.heatmap_monthly.months || [])
+          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.heatmap_monthly.data, months: json.heatmap_monthly.months }, ts: Date.now() }))
+          setLoading(false); return
+        }
       } catch {}
 
       // フォールバック：Render API

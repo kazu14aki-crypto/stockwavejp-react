@@ -156,7 +156,16 @@ export default function MarketRank() {
   },[segDetailRaw])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
-  const stocks    = detail?.stocks ?? []
+  const rawStocks = detail?.stocks ?? []
+  const volSorted = [...rawStocks].sort((a,b) => (b.volume||0)-(a.volume||0))
+  const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
+  const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
+  const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
+  const stocks    = rawStocks.map(s => ({
+    ...s,
+    vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
+    tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
+  }))
   const detailAvg = detail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)

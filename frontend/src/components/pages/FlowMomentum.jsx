@@ -2,7 +2,7 @@
  * FlowMomentum.jsx — 資金フロー＋騰落モメンタム統合ページ
  */
 import { useState, useEffect } from 'react'
-import { useFundFlow, useMomentum } from '../../hooks/useMarketData'
+import { useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -79,7 +79,7 @@ export default function FlowMomentum() {
   const pctSign  = v => v >= 0 ? '+' : ''
 
   return (
-    <div style={{ padding:'28px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
+    <div style={{ padding:'28px 32px 48px' }}>
       <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         資金フロー・騰落モメンタム
       </h1>

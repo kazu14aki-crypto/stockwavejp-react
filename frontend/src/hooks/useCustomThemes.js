@@ -95,7 +95,14 @@ export function useCustomThemes() {
   }, [isLoggedIn, user?.id])
 
   // テーマ保存（作成・編集）
+  const MAX_THEMES = 3  // 1人あたりの上限
+
   const saveTheme = useCallback(async (theme, editIndex = null) => {
+    // 新規追加の場合は上限チェック
+    if (editIndex === null && themes.length >= MAX_THEMES) {
+      alert(`カスタムテーマは最大${MAX_THEMES}つまで作成できます。\n既存のテーマを削除してから追加してください。`)
+      return false
+    }
     if (isLoggedIn && user) {
       // Supabase
       if (editIndex !== null && themes[editIndex]?.id) {
@@ -113,6 +120,7 @@ export function useCustomThemes() {
       setThemes(updated)
       lsSave(updated)
     }
+    return true
   }, [isLoggedIn, user, themes])
 
   // テーマ削除
