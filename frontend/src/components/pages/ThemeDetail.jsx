@@ -357,18 +357,12 @@ export default function ThemeDetail() {
     })()
   }, [selTheme, period])
 
-  // テーマ比較データ取得（trends.json優先）
-  useEffect(() => {
-    if (!selThemes.length) return
-    setLoadingT(true)
-
+  // テーマ比較データ取得（market.json優先）
     ;(async () => {
       try {
-        const tjRes = await fetch('/data/trends.json?t=' + Date.now())
-        if (!tjRes.ok) throw new Error('trends.json not found')
-        const tj = await tjRes.json()
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
         const key = `trends_${comparePeriod}`
-        const trendsObj = tj[key]?.data || {}
+        const trendsObj = mj[key]?.data || {}
         const found = selThemes.some(t => trendsObj[t])
         if (found) {
           const result = {}
@@ -378,8 +372,7 @@ export default function ThemeDetail() {
           return
         }
       } catch {}
-
-      // フォールバック
+      // フォールバック: API
       try {
         const d = await fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`).then(r => r.json())
         setThemeTrends(d.trends || {})

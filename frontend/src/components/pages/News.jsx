@@ -21,7 +21,7 @@ export default function News() {
     fetch(`${DATA_URL}?t=${Date.now()}`)
       .then(r => r.json())
       .then(json => {
-        const acts = (json.corporate_actions || []).filter(a => a.type !== 'rename')
+        const acts = json.corporate_actions || []
         setActions(acts)
       })
       .catch(() => {})
@@ -36,7 +36,7 @@ const SORTED_NEWS = [...MANUAL_NEWS].sort((a,b) => b.date.localeCompare(a.date))
 
   return (
     <div style={{ padding:'28px 32px 48px', maxWidth:'860px', margin:'0 auto' }}>
-      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
+      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         お知らせ
       </h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'28px' }}>
@@ -70,7 +70,7 @@ const SORTED_NEWS = [...MANUAL_NEWS].sort((a,b) => b.date.localeCompare(a.date))
                 <div style={{ fontSize:'13px', fontWeight:600, color:'var(--text)', marginBottom:'3px' }}>
                   {a.name}（{a.ticker?.replace('.T','')}）
                 </div>
-                <div style={{ fontSize:'12px', color:'var(--text)', lineHeight:1.7 }}>
+                <div style={{ fontSize:'12px', color:'#e8f0ff', lineHeight:1.7 }}>
                   {a.detail}
                 </div>
                 <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'4px', fontFamily:'var(--mono)' }}>
@@ -108,10 +108,10 @@ const SORTED_NEWS = [...MANUAL_NEWS].sort((a,b) => b.date.localeCompare(a.date))
               </span>
             )}
           </div>
-          <div style={{ fontSize:'15px', fontWeight:600, color:'var(--text)', marginBottom:'8px' }}>
+          <div style={{ fontSize:'15px', fontWeight:600, color:'#e8f0ff', marginBottom:'8px' }}>
             {n.title}
           </div>
-          <div style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.7 }}>
+          <div style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.7 }}>
             {n.body}
           </div>
         </div>

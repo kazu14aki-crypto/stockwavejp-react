@@ -24,7 +24,7 @@ const PAGES = [
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',           component:MarketRank    },
   { icon:'🔥', label:'ヒートマップ',              component:Heatmap       },
-  { icon:'💹', label:'資金フロー・騰落モメンタム', component:FlowMomentum  },
+  { icon:'💹', label:'騰落モメンタム', component:FlowMomentum  },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
