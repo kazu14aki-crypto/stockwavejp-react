@@ -21,6 +21,50 @@ const TAG_COLORS = {
 }
 
 // ── 市場コメント自動生成 ──
+function AutoComment({ lines }) {
+  // 防御的処理: null/undefined/空/文字列に対応
+  let safeLines = lines
+  if (!safeLines) return null
+  if (typeof safeLines === 'string') safeLines = safeLines.split('\n').filter(Boolean)
+  if (!Array.isArray(safeLines) || !safeLines.length) return null
+
+  const rendered = safeLines.map((line, i) => {
+    if (typeof line !== 'string') return null
+    if (line.startsWith('【')) {
+      const e = line.indexOf('】')
+      if (e < 0) return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+      const h = line.slice(1, e), r = line.slice(e + 1).trim()
+      return (
+        <div key={i} style={{ marginBottom:'10px', marginTop: i > 0 ? '14px' : '0' }}>
+          <div style={{ fontSize:'11px', fontWeight:700, color:'var(--accent)', letterSpacing:'0.04em', marginBottom:'4px', borderLeft:'3px solid var(--accent)', paddingLeft:'8px' }}>{h}</div>
+          {r && <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', paddingLeft:'11px' }}>{r}</div>}
+        </div>
+      )
+    }
+    const icons = ['▲','▼','📊','🔥','❄️','↗','↘','💡','✅','⚠️','📉']
+    if (icons.some(ic => line.startsWith(ic))) {
+      const si = line.indexOf(' '), icon = si > 0 ? line.slice(0, si) : line[0]
+      const text = si > 0 ? line.slice(si + 1) : ''
+      const ci = text.indexOf('：'), label = ci > 0 ? text.slice(0, ci) : null, body = ci > 0 ? text.slice(ci + 1).trim() : text
+      return (
+        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'7px', paddingLeft:'4px', alignItems:'flex-start' }}>
+          <span style={{ fontSize:'13px', flexShrink:0, marginTop:'1px', lineHeight:1.5 }}>{icon}</span>
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', flex:1 }}>
+            {label && <span style={{ fontWeight:600, color:'var(--text)' }}>{label}：</span>}{body}
+          </div>
+        </div>
+      )
+    }
+    return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+  }).filter(Boolean)
+
+  return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
+      {rendered}
+    </div>
+  )
+}
+
 function generateMarketComment(themeData, macro) {
   if (!themeData || !themeData.themes) return null
   const s = themeData.summary
@@ -333,7 +377,7 @@ function fmtDate(dateStr) {
   return `${y}.${m}/${d}`
 }
 
-export default function TopPage() {
+export default function TopPage({ onNavigate }) {
   const { data: themes,  loading: loadingT } = useThemes('1mo')
   const { data: macroRaw, loading: loadingM } = useMacro('1mo')
   const macro   = macroRaw?.data || {}
@@ -355,7 +399,7 @@ export default function TopPage() {
           <span style={{ color:'var(--logo-red)', fontSize:'13px' }}>JP</span>
         </h1>
         {/* PC:1行 / SP:折り返し */}
-        <p style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.7 }} className="hero-desc">
+        <p style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.7 }} className="hero-desc">
           日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで追跡。どのテーマに資金が集まっているかを視覚的に把握できます。
         </p>
       </div>
@@ -366,13 +410,17 @@ export default function TopPage() {
         {NEWS_LIST.map((n,i)=>{
           const tc = TAG_COLORS[n.tag]||TAG_COLORS['INFO']
           return (
-            <div key={i} style={{
+            <div key={i} onClick={() => onNavigate?.('お知らせ')}
+              style={{
               background:'var(--bg2)', border:'1px solid var(--border)',
               borderRadius:'6px', padding:'7px 12px',
               display:'flex', alignItems:'center', gap:'8px',
               animation:`fadeUp 0.25s ease ${i*0.05}s both`,
-              minWidth:0,
-            }}>
+              minWidth:0, cursor:'pointer', transition:'border-color 0.15s',
+            }}
+              onMouseEnter={e => e.currentTarget.style.borderColor='rgba(74,158,255,0.4)'}
+              onMouseLeave={e => e.currentTarget.style.borderColor='var(--border)'}
+            >
               <span style={{ fontSize:'9px', fontWeight:700, padding:'1px 7px', borderRadius:'20px', flexShrink:0,
                 background:tc.bg, color:tc.color, border:`1px solid ${tc.border}` }}>{n.tag}</span>
               <span style={{ fontSize:'12px', fontWeight:600, color:'var(--text)', flex:1, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{n.title}</span>
@@ -416,23 +464,7 @@ export default function TopPage() {
             letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'6px' }}>
             📝 本日のマーケットコメント（自動生成・1ヶ月集計）
           </div>
-          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9 }}>
-            {(generateMarketComment(themes, macro) || '').split(' ').reduce((acc, word, i) => {
-              const line = acc[acc.length-1]
-              if (word.startsWith('【') || word.startsWith('▲') || word.startsWith('▼') || word.startsWith('📊')) {
-                acc.push(word)
-              } else {
-                acc[acc.length-1] = line + (line && !line.endsWith('【') ? ' ' : '') + word
-              }
-              return acc
-            }, [''])
-            .filter(l => l.trim())
-            .map((line, i) => <p key={i} style={{ margin: i===0?'0 0 6px':'6px 0 0' }}>{line}</p>)
-            }
-          </div>
-          <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
-            ※ 本コメントはデータに基づき自動生成されたものです。投資助言ではありません。
-          </div>
+          <AutoComment lines={generateMarketComment(themes, macro)} />
         </div>
       )}
 

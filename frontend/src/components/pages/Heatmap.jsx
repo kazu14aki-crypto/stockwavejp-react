@@ -94,20 +94,51 @@ const thStyle = {
 }
 
 
+
 function AutoComment({ lines }) {
-  if (!lines?.length) return null
+  // 防御的処理: null/undefined/空/文字列に対応
+  let safeLines = lines
+  if (!safeLines) return null
+  if (typeof safeLines === 'string') safeLines = safeLines.split('\n').filter(Boolean)
+  if (!Array.isArray(safeLines) || !safeLines.length) return null
+
+  const rendered = safeLines.map((line, i) => {
+    if (typeof line !== 'string') return null
+    if (line.startsWith('【')) {
+      const e = line.indexOf('】')
+      if (e < 0) return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+      const h = line.slice(1, e), r = line.slice(e + 1).trim()
+      return (
+        <div key={i} style={{ marginBottom:'10px', marginTop: i > 0 ? '14px' : '0' }}>
+          <div style={{ fontSize:'11px', fontWeight:700, color:'var(--accent)', letterSpacing:'0.04em', marginBottom:'4px', borderLeft:'3px solid var(--accent)', paddingLeft:'8px' }}>{h}</div>
+          {r && <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', paddingLeft:'11px' }}>{r}</div>}
+        </div>
+      )
+    }
+    const icons = ['▲','▼','📊','🔥','❄️','↗','↘','💡','✅','⚠️','📉']
+    if (icons.some(ic => line.startsWith(ic))) {
+      const si = line.indexOf(' '), icon = si > 0 ? line.slice(0, si) : line[0]
+      const text = si > 0 ? line.slice(si + 1) : ''
+      const ci = text.indexOf('：'), label = ci > 0 ? text.slice(0, ci) : null, body = ci > 0 ? text.slice(ci + 1).trim() : text
+      return (
+        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'7px', paddingLeft:'4px', alignItems:'flex-start' }}>
+          <span style={{ fontSize:'13px', flexShrink:0, marginTop:'1px', lineHeight:1.5 }}>{icon}</span>
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', flex:1 }}>
+            {label && <span style={{ fontWeight:600, color:'var(--text)' }}>{label}：</span>}{body}
+          </div>
+        </div>
+      )
+    }
+    return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+  }).filter(Boolean)
+
   return (
-    <div style={{
-      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
-      borderRadius:'10px', padding:'14px 18px', margin:'0 0 20px',
-      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
-    }}>
-      {lines.map((line, i) => (
-        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
-      ))}
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
+      {rendered}
     </div>
   )
 }
+
 
 function genHeatmapComment(data, tab, months) {
   if (!data) return null
@@ -231,6 +262,12 @@ export default function Heatmap() {
           localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.heatmap.data }, ts: Date.now() }))
           setLoading(false); return
         }
+        if (tab === 'monthly' && json.heatmap_monthly) {
+          setMonthlyData(json.heatmap_monthly.data)
+          setMonths(json.heatmap_monthly.months || [])
+          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data: { heatmap: json.heatmap_monthly.data, months: json.heatmap_monthly.months }, ts: Date.now() }))
+          setLoading(false); return
+        }
       } catch {}
 
       // フォールバック：Render API
@@ -267,7 +304,7 @@ export default function Heatmap() {
 
   return (
     <div style={{ padding: '28px 32px 48px', maxWidth: '1280px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: '#e8f0ff', marginBottom: '4px' }}>
+      <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--text)', marginBottom: '4px' }}>
         ヒートマップ
       </h1>
       <p style={{ fontSize: '12px', color: 'var(--text3)', marginBottom: '20px' }}>

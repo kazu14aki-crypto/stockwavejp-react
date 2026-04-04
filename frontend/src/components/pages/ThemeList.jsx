@@ -39,20 +39,51 @@ function Loading() {
 
 
 // コメントボックスコンポーネント
+
 function AutoComment({ lines }) {
-  if (!lines || !lines.length) return null
+  // 防御的処理: null/undefined/空/文字列に対応
+  let safeLines = lines
+  if (!safeLines) return null
+  if (typeof safeLines === 'string') safeLines = safeLines.split('\n').filter(Boolean)
+  if (!Array.isArray(safeLines) || !safeLines.length) return null
+
+  const rendered = safeLines.map((line, i) => {
+    if (typeof line !== 'string') return null
+    if (line.startsWith('【')) {
+      const e = line.indexOf('】')
+      if (e < 0) return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+      const h = line.slice(1, e), r = line.slice(e + 1).trim()
+      return (
+        <div key={i} style={{ marginBottom:'10px', marginTop: i > 0 ? '14px' : '0' }}>
+          <div style={{ fontSize:'11px', fontWeight:700, color:'var(--accent)', letterSpacing:'0.04em', marginBottom:'4px', borderLeft:'3px solid var(--accent)', paddingLeft:'8px' }}>{h}</div>
+          {r && <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', paddingLeft:'11px' }}>{r}</div>}
+        </div>
+      )
+    }
+    const icons = ['▲','▼','📊','🔥','❄️','↗','↘','💡','✅','⚠️','📉']
+    if (icons.some(ic => line.startsWith(ic))) {
+      const si = line.indexOf(' '), icon = si > 0 ? line.slice(0, si) : line[0]
+      const text = si > 0 ? line.slice(si + 1) : ''
+      const ci = text.indexOf('：'), label = ci > 0 ? text.slice(0, ci) : null, body = ci > 0 ? text.slice(ci + 1).trim() : text
+      return (
+        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'7px', paddingLeft:'4px', alignItems:'flex-start' }}>
+          <span style={{ fontSize:'13px', flexShrink:0, marginTop:'1px', lineHeight:1.5 }}>{icon}</span>
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', flex:1 }}>
+            {label && <span style={{ fontWeight:600, color:'var(--text)' }}>{label}：</span>}{body}
+          </div>
+        </div>
+      )
+    }
+    return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+  }).filter(Boolean)
+
   return (
-    <div style={{
-      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
-      borderRadius:'10px', padding:'14px 18px', marginBottom:'20px',
-      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
-    }}>
-      {lines.map((line, i) => (
-        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
-      ))}
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
+      {rendered}
     </div>
   )
 }
+
 
 // ③ 自動コメント生成（テーマ一覧）
 function genThemeComment(themes, summary, period, momentum) {
@@ -437,12 +468,10 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
 
 
 export default function ThemeList() {
-  const [period, setPeriod] = useState('1d')
+  const [period, setPeriod] = useState('1mo')
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
   const { data: momentumData } = useMomentum(period)
-  const momentum1mo = momentumData?.data || []
-  const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   const macro = macroRaw?.data || {}
   // 1321・1306の直近騰落率を取得
   const get1321pct = () => {
@@ -472,6 +501,8 @@ export default function ThemeList() {
   const pctRankMap = new Map(themes.map((t, i) => [t.theme, i + 1]))
   const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
   const tvRankMap  = new Map(byTV.map((t, i) => [t.theme, i + 1]))
+  const momentum1mo  = momentumData?.data || []
+  const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
   const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
   const fallingTop5 = byPctAsc.filter(t => t.pct < 0).slice(0, 5)
@@ -498,7 +529,7 @@ export default function ThemeList() {
 
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
-          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'#e8f0ff', lineHeight:1.9 }}>
+          borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text)', lineHeight:1.9 }}>
           日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
           <br />
