@@ -94,20 +94,63 @@ const thStyle = {
 }
 
 
+
 function AutoComment({ lines }) {
   if (!lines?.length) return null
+
+  const rendered = lines.map((line, i) => {
+    if (line.startsWith('【')) {
+      const bracketEnd = line.indexOf('】')
+      const header = line.slice(1, bracketEnd)
+      const rest   = line.slice(bracketEnd + 1).trim()
+      return (
+        <div key={i} style={{ marginBottom:'10px', marginTop: i > 0 ? '14px' : '0' }}>
+          <div style={{ fontSize:'11px', fontWeight:700, color:'var(--accent)',
+            letterSpacing:'0.04em', marginBottom:'4px',
+            borderLeft:'3px solid var(--accent)', paddingLeft:'8px' }}>
+            {header}
+          </div>
+          {rest && <div style={{ fontSize:'12px', color:'var(--text2)',
+            lineHeight:'1.8', paddingLeft:'11px' }}>{rest}</div>}
+        </div>
+      )
+    }
+    const icons = ['▲','▼','📊','🔥','❄️','↗','↘','💡','✅','⚠️','📉']
+    const startsWithIcon = icons.some(ic => line.startsWith(ic))
+    if (startsWithIcon) {
+      const spaceIdx = line.indexOf(' ')
+      const icon = spaceIdx > 0 ? line.slice(0, spaceIdx) : line[0]
+      const text = spaceIdx > 0 ? line.slice(spaceIdx + 1) : line.slice(icon.length)
+      const colonIdx = text.indexOf('：')
+      const label = colonIdx > 0 ? text.slice(0, colonIdx) : null
+      const body  = colonIdx > 0 ? text.slice(colonIdx + 1).trim() : text
+      return (
+        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'7px',
+          paddingLeft:'4px', alignItems:'flex-start' }}>
+          <span style={{ fontSize:'13px', flexShrink:0, marginTop:'1px', lineHeight:1.5 }}>{icon}</span>
+          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', flex:1 }}>
+            {label && <span style={{ fontWeight:600, color:'var(--text)' }}>{label}：</span>}
+            {body}
+          </div>
+        </div>
+      )
+    }
+    return (
+      <div key={i} style={{ fontSize:'12px', color:'var(--text2)',
+        lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
+    )
+  })
+
   return (
     <div style={{
-      background:'rgba(74,158,255,0.04)', border:'1px solid rgba(74,158,255,0.12)',
-      borderRadius:'10px', padding:'14px 18px', margin:'0 0 20px',
-      fontSize:'12px', color:'var(--text2)', lineHeight:'1.9',
+      background:'var(--bg2)', border:'1px solid var(--border)',
+      borderRadius:'10px', padding:'16px 18px', marginBottom:'20px',
     }}>
-      {lines.map((line, i) => (
-        <p key={i} style={{ margin: i === 0 ? '0 0 8px' : '8px 0 0' }}>{line}</p>
-      ))}
+      {rendered}
     </div>
   )
 }
+
 
 function genHeatmapComment(data, tab, months) {
   if (!data) return null
