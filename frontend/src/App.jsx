@@ -36,7 +36,7 @@ const PAGES_OTHER = [
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
-const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
+const CONTACT_FORM_URL = 'https://forms.gle/your-google-form-id'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 

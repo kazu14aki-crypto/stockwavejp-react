@@ -377,7 +377,7 @@ function CustomThemeRows({ themes, period, pctColor }) {
 
 
 // ⑤ カードグリッド用ThemeCard（順位バッジ＋各ランク表示）
-function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank, onNavigate }) {
+function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank, onNavigate, momentumState, momentumPct }) {
   const fmt = (n) => {
     if (!n) return '0'
     if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
@@ -442,6 +442,21 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 {rankTag(tvRank, '#ff8c42')}
               </span>
             </div>
+            {/* 騰落モメンタム（valueKey==='pct'のカードのみ）*/}
+            {valueKey === 'pct' && momentumState && (() => {
+              const stateColors = { '🔥加速':'#ff4560','↗転換↑':'#ff8c42','→横ばい':'var(--text3)','↘転換↓':'#4a9eff','❄️失速':'#00c48c' }
+              const sc = stateColors[momentumState] || 'var(--text3)'
+              return (
+                <div style={{ marginTop:'4px', display:'flex', justifyContent:'space-between', alignItems:'center', gap:'4px' }}>
+                  <span style={{ fontSize:'9px', color:'var(--text3)' }}>モメンタム</span>
+                  <span style={{ fontSize:'9px', fontWeight:700, color:sc,
+                    background:`${sc}18`, borderRadius:'10px', padding:'1px 7px',
+                    border:`1px solid ${sc}40`, whiteSpace:'nowrap' }}>
+                    {momentumState}
+                  </span>
+                </div>
+              )
+            })()}
             {/* 関連コラムリンク */}
             {THEME_ARTICLE_MAP[item.theme] && onNavigate && (
               <button
@@ -500,7 +515,7 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 }
 
 
-function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate }) {
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
   const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
   return (
     <div className="theme-card-grid">
@@ -511,7 +526,9 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           pctRank={pctRankMap?.get(item.theme)}
           volRank={volRankMap?.get(item.theme)}
           tvRank={tvRankMap?.get(item.theme)}
-          onNavigate={onNavigate} />
+          onNavigate={onNavigate}
+          momentumState={momentumMap?.get(item.theme)?.state}
+          momentumPct={momentumMap?.get(item.theme)?.pct} />
       ))}
     </div>
   )
@@ -553,6 +570,7 @@ export default function ThemeList({ onNavigate }) {
   const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
   const tvRankMap  = new Map(byTV.map((t, i) => [t.theme, i + 1]))
   const momentum1mo  = momentumData?.data || []
+  const momentumMap  = new Map(momentum1mo.map(d => [d.theme, d]))
   const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
   const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
@@ -660,41 +678,8 @@ export default function ThemeList({ onNavigate }) {
 
             {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
+            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={momentumMap} />
 
-            {/* 全テーマ 騰落モメンタム */}
-            <SectionHead title="📡 騰落モメンタム" />
-            {momentum1mo.length > 0 ? (
-              <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'6px' }} className="momentum-grid">
-                {[...momentum1mo].sort((a,b)=>b.pct-a.pct).map((d,i) => {
-                  const stateColors = { '🔥加速':'#ff4560','↗転換↑':'#ff8c42','→横ばい':'var(--text3)','↘転換↓':'#4a9eff','❄️失速':'#00c48c' }
-                  const sc = stateColors[d.state] || 'var(--text3)'
-                  const pc = pctColor(d.pct)
-                  return (
-                    <div key={d.theme} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
-                      borderRadius:'7px', padding:'7px 9px',
-                      display:'flex', flexDirection:'column', gap:'3px' }}>
-                      <div style={{ fontSize:'10px', fontWeight:600, color:'var(--text)',
-                        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-                        {d.theme}
-                      </div>
-                      <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:'4px' }}>
-                        <span style={{ fontSize:'12px', fontWeight:700, color:pc, fontFamily:'var(--mono)' }}>
-                          {d.pct>=0?'+':''}{d.pct?.toFixed(1)}%
-                        </span>
-                        <span style={{ fontSize:'9px', fontWeight:600, color:sc,
-                          background:`${sc}18`, borderRadius:'10px', padding:'1px 6px',
-                          whiteSpace:'nowrap', border:`1px solid ${sc}40` }}>
-                          {d.state}
-                        </span>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            ) : (
-              <div style={{ color:'var(--text3)', fontSize:'12px', padding:'12px' }}>データ取得中...</div>
-            )}
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
