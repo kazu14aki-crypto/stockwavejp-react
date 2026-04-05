@@ -34,6 +34,9 @@ const PAGES_OTHER = [
   { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
 ]
+
+// お問い合わせGoogleフォームURL（実際のURLに変更してください）
+const CONTACT_FORM_URL = 'https://forms.gle/your-google-form-id'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
@@ -106,6 +109,7 @@ function AppInner() {
         isOpen={sidebarOpen} isMobile={isMobile}
         onOpen={() => setSidebarOpen(true)}
         onClose={() => setSidebarOpen(false)}
+        contactUrl={CONTACT_FORM_URL}
       />
 
       <main style={{
@@ -139,12 +143,18 @@ function AppInner() {
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
               textDecoration:'underline', textUnderlineOffset:'2px',
             }}>プライバシーポリシー</button>
+            <a href={CONTACT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{
+              color:'var(--text3)', fontSize:'11px', fontFamily:'var(--font)',
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>お問い合わせ</a>
           </div>
-          <div>
+          <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'2px 0', alignItems:'center' }}>
             <span style={{ color:'#e63030', fontWeight:700 }}>Stock</span>
             <span style={{ fontWeight:700, color:'var(--text2)' }}>Wave</span>
             <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
-            {'  —  stockwavejp.com  —  投資助言ではありません  —  © 2026'}
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;stockwavejp.com</span>
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;投資助言ではありません</span>
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;© 2026</span>
           </div>
         </footer>
       </main>

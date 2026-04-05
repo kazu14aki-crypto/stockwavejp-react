@@ -335,22 +335,11 @@ export default function CustomTheme() {
     <div style={{ padding:'28px 24px 48px' }}>
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'4px' }}>
         <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)' }}>カスタムテーマ</h1>
-        <button onClick={startCreate}
-          disabled={themes.length >= 3}
-          style={{ ...btnP, opacity: themes.length >= 3 ? 0.4 : 1,
-            cursor: themes.length >= 3 ? 'not-allowed' : 'pointer' }}>
-          ＋ 新規作成{themes.length >= 3 ? '（上限）' : ''}
-        </button>
+        <button onClick={startCreate} style={btnP}>＋ 新規作成</button>
       </div>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'8px' }}>
+      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
         独自のテーマを作成・追跡。銘柄名または4桁証券コードで検索（日本株のみ）。
       </p>
-      <div style={{ fontSize:'11px', color: themes.length >= 3 ? 'var(--red)' : 'var(--text3)',
-        marginBottom:'16px', display:'flex', alignItems:'center', gap:'6px' }}>
-        <span style={{ fontWeight:600 }}>📌 作成数: {themes.length} / 3</span>
-        {themes.length >= 3 && <span>（上限に達しました。既存テーマを削除してから追加してください）</span>}
-        {themes.length < 3 && <span>（最大3テーマまで作成できます）</span>}
-      </div>
       {/* ログイン誘導バナー */}
       {!isLoggedIn && (
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between',

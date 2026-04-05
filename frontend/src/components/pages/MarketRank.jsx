@@ -68,14 +68,14 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 
 function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
         <thead>
           <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            <th style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
-            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
+            <th style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)' }}>順位</th>
+            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)' }}>銘柄名</th>
             {headers.map(h => (
               <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
             ))}
@@ -86,18 +86,22 @@ function StockTable({ stocks, onAddToTheme }) {
             const pColor = s.pct>=0?'var(--red)':'var(--green)'
             const cColor = s.contribution>=0?'var(--red)':'var(--green)'
             return (
-              <tr key={s.ticker} style={{ borderBottom:'1px solid var(--border)' }}>
-                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
-                  background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px' }}>
-                  {i+1}
+              <tr key={s.ticker} style={{
+                borderBottom:'1px solid rgba(255,255,255,0.04)',
+                background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
+              }}>
+                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
+                  background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  {String(i+1).padStart(2,'0')}
                 </td>
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
+                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                   <div style={{ fontSize:'13px' }}>{s.name}</div>
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
+                <td style={tdC}>{i+1}位</td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
                 <td style={tdC}>{s.vol_rank}位</td>
@@ -156,16 +160,7 @@ export default function MarketRank() {
   },[segDetailRaw])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
-  const rawStocks = detail?.stocks ?? []
-  const volSorted = [...rawStocks].sort((a,b) => (b.volume||0)-(a.volume||0))
-  const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
-  const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
-  const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
-  const stocks    = rawStocks.map(s => ({
-    ...s,
-    vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
-    tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
-  }))
+  const stocks    = detail?.stocks ?? []
   const detailAvg = detail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -186,7 +181,7 @@ export default function MarketRank() {
       <div style={{ padding:'20px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
         <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
-          color:'var(--text)', lineHeight:1.8 }}>
+          color:'#e8f0ff', lineHeight:1.8 }}>
           <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
           日経225採用銘柄・TOPIX構成銘柄・市場区分（プライム・スタンダード・グロース）ごとに、
           構成銘柄の騰落率ランキングと詳細データを確認できます。

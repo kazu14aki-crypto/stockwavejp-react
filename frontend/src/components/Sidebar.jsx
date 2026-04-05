@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile, onOpen, onClose }) {
+export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile, onOpen, onClose, contactUrl }) {
   const touchStartX = useRef(null)
   const touchStartY = useRef(null)
 
@@ -83,6 +83,22 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
       {pages.map(({ icon, label }) => <NavBtn key={label} icon={icon} label={label} />)}
       <SLabel>OTHER</SLabel>
       {pagesOther.map(({ icon, label }) => <NavBtn key={label} icon={icon} label={label} />)}
+      {contactUrl && (
+        <a href={contactUrl} target="_blank" rel="noopener noreferrer" style={{
+          display:'flex', alignItems:'center', gap:'8px',
+          padding:'9px 12px', fontSize:'13px', color:'var(--text2)',
+          borderRadius:'6px', marginBottom:'1px',
+          borderLeft:'2px solid transparent', borderRight:'2px solid transparent',
+          borderTop:'none', borderBottom:'none',
+          background:'transparent', textDecoration:'none', fontFamily:'var(--font)',
+          transition:'all 0.15s',
+        }}
+          onMouseEnter={e => { e.currentTarget.style.background='rgba(74,158,255,0.06)'; e.currentTarget.style.color='#8aaad0' }}
+          onMouseLeave={e => { e.currentTarget.style.background='transparent'; e.currentTarget.style.color='var(--text2)' }}
+        >
+          <span style={{ fontSize:'13px', opacity:0.7 }}>✉️</span>お問い合わせ
+        </a>
+      )}
     </nav>
   )
 }

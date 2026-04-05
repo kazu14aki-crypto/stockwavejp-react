@@ -40,20 +40,20 @@
 /* ── ホワイト（文字は黒寄りグレー・白文字を完全排除）── */
 [data-theme="light"] {
   color-scheme: light;
-  --bg:      #f5f5f5;
+  --bg:      #f4f6fa;
   --bg2:     #ffffff;
-  --bg3:     #ebebeb;
-  --border:  #cccccc;
-  --text:    #111111;
-  --text2:   #333333;
-  --text3:   #666666;
-  --red:     #cc0000;
-  --green:   #0033cc;
-  --accent:  #003399;
-  --logo-red:#cc0000;
+  --bg3:     #eaecf4;
+  --border:  rgba(30,50,100,0.12);
+  --text:    #111827;
+  --text2:   #374151;
+  --text3:   #6b7280;
+  --red:     #b91c1c;
+  --green:   #047857;
+  --accent:  #1d4ed8;
+  --logo-red:#e63030;
   --font:    'DM Sans','Noto Sans JP',sans-serif;
   --mono:    'DM Mono',monospace;
-  --radius:  6px; --sidebar:220px; --header:52px;
+  --radius:  10px; --sidebar:220px; --header:52px;
 }
 
 /* ホワイトテーマ：白文字を強制的に暗くする */
@@ -105,29 +105,14 @@ body {
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
 ::-webkit-scrollbar-thumb:hover { background:var(--text3); }
-/* ② ホワイトテーマ：kabutan風カラー適用 */
+/* ④ ホワイトテーマ：hardcode白色テキストを上書き */
 [data-theme="light"] h1,
 [data-theme="light"] h2,
-[data-theme="light"] h3,
+[data-theme="light"] h3 {
+  color: #111827 !important;
+}
 [data-theme="light"] .page-header-sticky h1 {
-  color: #111111 !important;
-}
-[data-theme="light"] .sticky-table td,
-[data-theme="light"] .sticky-table th {
-  background: #ffffff !important;
-  color: #111111;
-  border-color: #cccccc;
-}
-[data-theme="light"] .sticky-table tr:nth-child(even) td {
-  background: #f8f8f8 !important;
-}
-[data-theme="light"] .sticky-table .sticky-col1,
-[data-theme="light"] .sticky-table .sticky-col2 {
-  background: #ffffff !important;
-}
-[data-theme="light"] .sticky-table tr:nth-child(even) .sticky-col1,
-[data-theme="light"] .sticky-table tr:nth-child(even) .sticky-col2 {
-  background: #f8f8f8 !important;
+  color: #111827 !important;
 }
 
 

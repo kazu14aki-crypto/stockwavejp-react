@@ -259,16 +259,17 @@ export default function Heatmap() {
       </p>
 
       {/* タブ */}
-      <div style={{ display:'flex', gap:'4px', marginBottom:'20px',
-        background:'var(--bg2)', border:'1px solid var(--border)',
-        borderRadius:'8px', padding:'4px', width:'fit-content', flexWrap:'wrap' }}>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)',
+        gap:'4px', marginBottom:'20px', width:'100%', maxWidth:'480px' }}>
         {TABS.map(t => (
           <button key={t.key} onClick={() => setTab(t.key)} style={{
-            padding:'7px 16px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
-            cursor:'pointer', border:'none', fontFamily:'var(--font)',
-            background: tab === t.key ? 'var(--accent)' : 'transparent',
-            color: tab === t.key ? '#fff' : 'var(--text3)',
-            transition:'all 0.15s', whiteSpace:'nowrap',
+            padding:'8px 6px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
+            cursor:'pointer', fontFamily:'var(--font)', whiteSpace:'nowrap',
+            textAlign:'center', lineHeight:1.3,
+            border: tab === t.key ? '2px solid var(--accent)' : '1px solid var(--border)',
+            background: tab === t.key ? 'rgba(74,158,255,0.12)' : 'var(--bg2)',
+            color: tab === t.key ? 'var(--accent)' : 'var(--text3)',
+            transition:'all 0.15s',
           }}>
             {t.label}
           </button>

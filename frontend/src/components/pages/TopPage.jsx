@@ -21,133 +21,59 @@ const TAG_COLORS = {
 }
 
 // ── 市場コメント自動生成 ──
-function AutoComment({ lines }) {
-  // 防御的処理: null/undefined/空/文字列に対応
-  let safeLines = lines
-  if (!safeLines) return null
-  if (typeof safeLines === 'string') safeLines = safeLines.split('\n').filter(Boolean)
-  if (!Array.isArray(safeLines) || !safeLines.length) return null
-
-  const rendered = safeLines.map((line, i) => {
-    if (typeof line !== 'string') return null
-    if (line.startsWith('【')) {
-      const e = line.indexOf('】')
-      if (e < 0) return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
-      const h = line.slice(1, e), r = line.slice(e + 1).trim()
-      return (
-        <div key={i} style={{ marginBottom:'10px', marginTop: i > 0 ? '14px' : '0' }}>
-          <div style={{ fontSize:'11px', fontWeight:700, color:'var(--accent)', letterSpacing:'0.04em', marginBottom:'4px', borderLeft:'3px solid var(--accent)', paddingLeft:'8px' }}>{h}</div>
-          {r && <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', paddingLeft:'11px' }}>{r}</div>}
-        </div>
-      )
-    }
-    const icons = ['▲','▼','📊','🔥','❄️','↗','↘','💡','✅','⚠️','📉']
-    if (icons.some(ic => line.startsWith(ic))) {
-      const si = line.indexOf(' '), icon = si > 0 ? line.slice(0, si) : line[0]
-      const text = si > 0 ? line.slice(si + 1) : ''
-      const ci = text.indexOf('：'), label = ci > 0 ? text.slice(0, ci) : null, body = ci > 0 ? text.slice(ci + 1).trim() : text
-      return (
-        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'7px', paddingLeft:'4px', alignItems:'flex-start' }}>
-          <span style={{ fontSize:'13px', flexShrink:0, marginTop:'1px', lineHeight:1.5 }}>{icon}</span>
-          <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', flex:1 }}>
-            {label && <span style={{ fontWeight:600, color:'var(--text)' }}>{label}：</span>}{body}
-          </div>
-        </div>
-      )
-    }
-    return <div key={i} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:'1.8', marginBottom:'4px', paddingLeft:'4px' }}>{line}</div>
-  }).filter(Boolean)
-
-  return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
-      {rendered}
-    </div>
-  )
-}
-
 function generateMarketComment(themeData, macro) {
   if (!themeData || !themeData.themes) return null
   const s = themeData.summary
   if (!s) return null
   const t = themeData.themes
 
+  // 上昇・下落数
   const riseCount = s.rise
   const fallCount = s.fall
   const total     = s.total
   const avg       = s.avg ?? 0
 
   // 市場全体の状態
-  const mktState = riseCount >= total*0.7 ? '広範な上昇相場' :
-                   riseCount >= total*0.55 ? '上昇優勢の相場' :
-                   fallCount >= total*0.7  ? '広範な下落相場' :
-                   fallCount >= total*0.55 ? '下落優勢の相場' : '方向感の定まらない相場'
+  let marketState = ''
+  if (riseCount >= total * 0.7) marketState = '広範な上昇相場'
+  else if (riseCount >= total * 0.5) marketState = '上昇優勢の相場'
+  else if (fallCount >= total * 0.7) marketState = '広範な下落相場'
+  else if (fallCount >= total * 0.5) marketState = '下落優勢の相場'
+  else marketState = '方向感が定まらない相場'
 
-  const top3 = [...t].sort((a,b)=>b.pct-a.pct).slice(0,3)
-  const bot3 = [...t].sort((a,b)=>a.pct-b.pct).slice(0,3)
-  const volUp = [...t].filter(x=>(x.volume_chg||0)>20).sort((a,b)=>(b.volume_chg||0)-(a.volume_chg||0)).slice(0,3)
-  const hotThemes  = t.filter(x=>x.pct>=5)
-  const coldThemes = t.filter(x=>x.pct<=-5)
+  // 上位・下位テーマ
+  const top3 = [...t].sort((a, b) => b.pct - a.pct).slice(0, 3)
+  const bot3 = [...t].sort((a, b) => a.pct - b.pct).slice(0, 3)
 
-  // マクロ情報
-  const macroKeys = macro ? Object.keys(macro) : []
-  const nikkei = macro?.['国内主要株(1321)'] || macro?.['日経225連動型(1321)']
-  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX連動型(1306)']
-  const sp500  = macro?.['S&P500 ETF(SPY)']
-  const usdjpy = macro?.['ドル円']
-  const lastNK = nikkei ? nikkei[nikkei.length-1]?.pct : null
-  const lastTP = topix  ? topix[topix.length-1]?.pct  : null
-  const lastSP = sp500  ? sp500[sp500.length-1]?.pct  : null
-  const lastFX = usdjpy ? usdjpy[usdjpy.length-1]?.pct : null
+  // 出来高増加テーマ
+  const volUp = [...t].filter(x => (x.volume_chg || 0) > 20)
+    .sort((a, b) => (b.volume_chg || 0) - (a.volume_chg || 0)).slice(0, 2)
 
+  // コメント生成
   const lines = []
 
   // 全体概況
-  lines.push(`【マーケット概況】現在の日本株テーマ相場は${mktState}です。全${total}テーマ中${riseCount}テーマが上昇・${fallCount}テーマが下落し、テーマ平均騰落率は${avg>=0?'+':''}${avg.toFixed(2)}%。${hotThemes.length>0?`+5%超の急騰テーマが${hotThemes.length}個、`:''  }${coldThemes.length>0?`-5%超の急落テーマが${coldThemes.length}個あります。`:''}`)
-
-  // マクロ環境
-  if (lastNK != null || lastSP != null) {
-    const macroLine = [
-      lastNK != null ? `日経225連動型${lastNK>=0?'+':''}${lastNK.toFixed(1)}%` : null,
-      lastTP != null ? `TOPIX連動型${lastTP>=0?'+':''}${lastTP.toFixed(1)}%` : null,
-      lastSP != null ? `S&P500 ${lastSP>=0?'+':''}${lastSP.toFixed(1)}%` : null,
-      lastFX != null ? `ドル円${lastFX>=0?'+':''}${lastFX.toFixed(1)}%` : null,
-    ].filter(Boolean).join(' / ')
-    const riskMode = lastSP != null ? (lastSP > 1 ? 'リスクオン（米国株高）でテーマ株にも追い風。' : lastSP < -1 ? 'リスクオフ（米国株安）で地合いは慎重。' : '米国株は横ばい。') : ''
-    lines.push(`【マクロ指標（参照期間）】${macroLine}。${riskMode}${lastFX != null ? (lastFX > 1 ? '円安傾向で輸出・グローバル銘柄に有利な環境。' : lastFX < -1 ? '円高傾向で内需・消費系に資金が向かいやすい局面。' : '') : ''}`)
-  }
+  lines.push(`現在の日本株テーマ相場は${marketState}となっています。全${total}テーマ中${riseCount}テーマが上昇、${fallCount}テーマが下落しており、テーマ平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%です。`)
 
   // 上昇テーマ
   if (top3.length && top3[0].pct > 0) {
-    const upNames = top3.filter(x=>x.pct>0).map(x=>`「${x.theme}」(${x.pct>=0?'+':''}${x.pct.toFixed(1)}%)`).join('、')
-    lines.push(`▲ 上昇が目立つテーマ：${upNames}。${volUp.length>0&&top3.some(top=>volUp.some(v=>v.theme===top.theme))?`特に「${top3[0].theme}」は出来高も急増しており、資金の本格流入が始まっている可能性がある。`:''}`)
+    const names = top3.filter(x => x.pct > 0).map(x => `${x.theme}（${x.pct >= 0 ? '+' : ''}${x.pct.toFixed(1)}%）`).join('、')
+    lines.push(`上昇が目立つテーマは${names}です。`)
   }
 
   // 下落テーマ
   if (bot3.length && bot3[0].pct < 0) {
-    const dnNames = bot3.filter(x=>x.pct<0).map(x=>`「${x.theme}」(${x.pct.toFixed(1)}%)`).join('、')
-    lines.push(`▼ 下落が目立つテーマ：${dnNames}。${coldThemes.length>3?'広範な売り圧力がかかっており、個別テーマの選別が重要。':'下落幅が大きく過熱感の解消や外部要因が影響している可能性がある。'}`)
+    const names = bot3.filter(x => x.pct < 0).map(x => `${x.theme}（${x.pct.toFixed(1)}%）`).join('、')
+    lines.push(`一方、${names}は軟調な動きとなっています。`)
   }
 
   // 出来高増加テーマ
   if (volUp.length > 0) {
-    lines.push(`📊 出来高が前期比+20%超で急増しているテーマ：「${volUp.map(x=>x.theme).join('」「')}」。出来高増加は大口資金の動きを先行して示すことが多く、今後の株価動向を見極めるうえで重要なシグナル。`)
+    const names = volUp.map(x => x.theme).join('・')
+    lines.push(`${names}は出来高が増加しており、特に市場参加者の関心が高まっています。`)
   }
 
-  // 出来高急増かつ上昇テーマ → 特に注目
-  const hotWithVol = hotThemes.filter(h => volUp.some(v => v.theme === h.theme))
-  if (hotWithVol.length > 0) {
-    lines.push(`🔥 急騰かつ出来高急増テーマ：「${hotWithVol.map(t=>t.theme).join('」「')}」。価格上昇と出来高増加が同時発生しており、強いトレンドの初期段階である可能性が高い。`)
-  }
-
-  // 下落幅が大きいが出来高も増加（底値模索か）
-  const coldWithVolUp = coldThemes.filter(h => volUp.some(v => v.theme === h.theme))
-  if (coldWithVolUp.length > 0) {
-    lines.push(`📉 下落テーマでも出来高増加：「${coldWithVolUp.map(t=>t.theme).join('」「')}」。売り圧力が強いが出来高増は底値模索の兆しの可能性もある。反転サインを確認してから判断したい。`)
-  }
-
-  lines.push(`💡 本日のポイント：${avg >= 2 ? '全体的に強い相場環境。強気テーマへの集中投資が奏功しやすい局面。' : avg <= -2 ? '全体的に弱い地合い。守備的なテーマ（通信・医薬品等）や現金比率を高める局面。' : '方向感が定まらないため、モメンタムの強いテーマに絞り込み、出来高増加を確認してから参入するのが有効。'}`)
-
-  return lines
+  return lines.join(' ')
 }
 
 
@@ -203,7 +129,7 @@ function MacroCard({ name, data, color }) {
   const min   = Math.min(...vals), max = Math.max(...vals)
   const W=120, H=44
   // 各指標独立スケールでスパークライン描画
-  const pts = vals.map((v,i)=>`${2+(i/Math.max(vals.length-1,1))*(W-4)},${2+(1-((v-min)/(max-min||0.01)))*(H-4)}`).join(' ')
+  const pts = vals.map((v,i)=>`${(i/Math.max(vals.length-1,1))*W},${H-((v-min)/(max-min||0.01))*H}`).join(' ')
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
       padding:'10px 12px', display:'flex', flexDirection:'column', gap:'6px', minWidth:0 }}>
@@ -213,12 +139,10 @@ function MacroCard({ name, data, color }) {
         <div style={{ fontFamily:'var(--mono)', fontSize:'16px', fontWeight:700, color:pctColor, lineHeight:1 }}>
           {last.pct>=0?'+':''}{last.pct.toFixed(1)}%
         </div>
-        <div style={{ width:`${W}px`, height:`${H}px`, flexShrink:0, overflow:'hidden' }}>
-          <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ display:'block', overflow:'visible' }}>
-            <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
-              strokeLinejoin="round" strokeLinecap="round"/>
-          </svg>
-        </div>
+        <svg viewBox={`-2 -2 ${W+4} ${H+4}`} width={W} height={H} style={{ flexShrink:0, display:'block', overflow:'hidden' }}>
+          <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
+            strokeLinejoin="round" strokeLinecap="round"/>
+        </svg>
       </div>
     </div>
   )
@@ -377,7 +301,7 @@ function fmtDate(dateStr) {
   return `${y}.${m}/${d}`
 }
 
-export default function TopPage({ onNavigate }) {
+export default function TopPage() {
   const { data: themes,  loading: loadingT } = useThemes('1mo')
   const { data: macroRaw, loading: loadingM } = useMacro('1mo')
   const macro   = macroRaw?.data || {}
@@ -399,7 +323,7 @@ export default function TopPage({ onNavigate }) {
           <span style={{ color:'var(--logo-red)', fontSize:'13px' }}>JP</span>
         </h1>
         {/* PC:1行 / SP:折り返し */}
-        <p style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.7 }} className="hero-desc">
+        <p style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.7 }} className="hero-desc">
           日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで追跡。どのテーマに資金が集まっているかを視覚的に把握できます。
         </p>
       </div>
@@ -410,17 +334,13 @@ export default function TopPage({ onNavigate }) {
         {NEWS_LIST.map((n,i)=>{
           const tc = TAG_COLORS[n.tag]||TAG_COLORS['INFO']
           return (
-            <div key={i} onClick={() => onNavigate?.('お知らせ')}
-              style={{
+            <div key={i} style={{
               background:'var(--bg2)', border:'1px solid var(--border)',
               borderRadius:'6px', padding:'7px 12px',
               display:'flex', alignItems:'center', gap:'8px',
               animation:`fadeUp 0.25s ease ${i*0.05}s both`,
-              minWidth:0, cursor:'pointer', transition:'border-color 0.15s',
-            }}
-              onMouseEnter={e => e.currentTarget.style.borderColor='rgba(74,158,255,0.4)'}
-              onMouseLeave={e => e.currentTarget.style.borderColor='var(--border)'}
-            >
+              minWidth:0,
+            }}>
               <span style={{ fontSize:'9px', fontWeight:700, padding:'1px 7px', borderRadius:'20px', flexShrink:0,
                 background:tc.bg, color:tc.color, border:`1px solid ${tc.border}` }}>{n.tag}</span>
               <span style={{ fontSize:'12px', fontWeight:600, color:'var(--text)', flex:1, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{n.title}</span>
@@ -464,7 +384,12 @@ export default function TopPage({ onNavigate }) {
             letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'6px' }}>
             📝 本日のマーケットコメント（自動生成・1ヶ月集計）
           </div>
-          <AutoComment lines={generateMarketComment(themes, macro)} />
+          <div style={{ fontSize:'12px', color:'#e8f0ff', lineHeight:1.9 }}>
+            {generateMarketComment(themes, macro)}
+          </div>
+          <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'6px' }}>
+            ※ 本コメントはデータに基づき自動生成されたものです。投資助言ではありません。
+          </div>
         </div>
       )}
 
