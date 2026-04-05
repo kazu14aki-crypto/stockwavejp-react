@@ -18,30 +18,29 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import SiteInfo    from './components/pages/SiteInfo'
 
 const PAGES = [
-  { icon:'🏠', label:'ホーム',                   component:TopPage       },
-  { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
-  { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
+  { icon:'🏠', label:'ホ�Eム',                   component:TopPage       },
+  { icon:'📊', label:'チE�Eマ一覧',                component:ThemeList     },
+  { icon:'🔍', label:'チE�Eマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🔥', label:'ヒートマップ・モメンタム',              component:Heatmap       },
-  { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
+  { icon:'🔥', label:'ヒ�Eト�EチE�E・モメンタム',              component:Heatmap       },
+  { icon:'🎨', label:'カスタムチE�EチE,             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
+  { icon:'🏢', label:'当サイトにつぁE��',    component:SiteInfo      },
   { icon:'📣', label:'お知らせ',            component:News          },
-  { icon:'📖', label:'使い方',              component:HowTo         },
+  { icon:'📖', label:'使ぁE��',              component:HowTo         },
   { icon:'📝', label:'コラム・解説',        component:Column        },
-  { icon:'⚙️', label:'設定',               component:Settings      },
-  { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
+  { icon:'⚙︁E, label:'設宁E,               component:Settings      },
+  { icon:'⚖︁E, label:'免責事頁E,           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
 ]
 
-// お問い合わせGoogleフォームURL（実際のURLに変更してください）
-const CONTACT_FORM_URL = 'https://forms.gle/your-google-form-id'
+// お問ぁE��わせGoogleフォームURL�E�実際のURLに変更してください�E�Econst CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 function AppInner() {
-  const [currentPage,   setCurrentPage]   = useState('ホーム')
+  const [currentPage,   setCurrentPage]   = useState('ホ�Eム')
   const [targetArticleId, setTargetArticleId] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
@@ -75,14 +74,14 @@ function AppInner() {
     setTargetArticleId(articleId)
   }
 
-  const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
+  const handleLogoClick  = () => { setCurrentPage('ホ�Eム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme }
-    if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
+    if (currentPage === '設宁E) return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme }
+    if (currentPage === 'ホ�Eム') return { onNavigate: handlePageChange }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange }
-    if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange }
-    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange }
+    if (currentPage === 'チE�Eマ一覧') return { onNavigate: handlePageChange }
+    if (currentPage === 'チE�Eマ別詳細') return { onNavigate: handlePageChange }
     return {}
   })()
 
@@ -126,18 +125,18 @@ function AppInner() {
             height:'calc(100vh - var(--header))', flexDirection:'column', gap:'16px', color:'var(--text3)' }}>
             <div style={{ fontSize:'48px' }}>{currentPageObj?.icon}</div>
             <div style={{ fontSize:'18px', fontWeight:600, color:'var(--text2)' }}>{currentPage}</div>
-            <div style={{ fontSize:'13px' }}>このページは準備中です</div>
+            <div style={{ fontSize:'13px' }}>こ�Eペ�Eジは準備中でぁE/div>
           </div>
         )}
 
         <footer style={{ borderTop:'1px solid var(--border)', padding:'16px 24px',
           textAlign:'center', color:'var(--text3)', fontSize:'11px' }}>
           <div style={{ marginBottom:'8px', display:'flex', justifyContent:'center', gap:'20px', flexWrap:'wrap' }}>
-            <button onClick={() => handlePageChange('免責事項')} style={{
+            <button onClick={() => handlePageChange('免責事頁E)} style={{
               background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
               textDecoration:'underline', textUnderlineOffset:'2px',
-            }}>免責事項</button>
+            }}>免責事頁E/button>
             <button onClick={() => handlePageChange('プライバシーポリシー')} style={{
               background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
@@ -146,15 +145,15 @@ function AppInner() {
             <a href={CONTACT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{
               color:'var(--text3)', fontSize:'11px', fontFamily:'var(--font)',
               textDecoration:'underline', textUnderlineOffset:'2px',
-            }}>お問い合わせ</a>
+            }}>お問ぁE��わせ</a>
           </div>
           <div style={{ display:'flex', flexWrap:'wrap', justifyContent:'center', gap:'2px 0', alignItems:'center' }}>
             <span style={{ color:'#e63030', fontWeight:700 }}>Stock</span>
             <span style={{ fontWeight:700, color:'var(--text2)' }}>Wave</span>
             <span style={{ color:'#e63030', fontWeight:700, fontSize:'10px' }}>JP</span>
-            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;stockwavejp.com</span>
-            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;投資助言ではありません</span>
-            <span style={{ whiteSpace:'nowrap' }}>&nbsp;—&nbsp;© 2026</span>
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp; Enbsp;stockwavejp.com</span>
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp; Enbsp;投賁E��言ではありません</span>
+            <span style={{ whiteSpace:'nowrap' }}>&nbsp; Enbsp;© 2026</span>
           </div>
         </footer>
       </main>
