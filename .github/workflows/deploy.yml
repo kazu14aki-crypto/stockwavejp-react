@@ -1,0 +1,52 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build (includes postbuild SSG)
+        working-directory: frontend
+        run: npm run build
+        # npm run build が完了すると自動的に
+        # postbuild: node scripts/generate-static-columns.mjs が実行され
+        # dist/column/<id>/index.html (51ファイル) と
+        # dist/sitemap.xml と dist/robots.txt が生成される
+
+      - name: Verify SSG output
+        working-directory: frontend
+        run: |
+          echo "=== 生成されたファイル ==="
+          ls dist/column/ | head -10
+          echo "..."
+          echo "Total column HTMLs: $(ls dist/column/ | wc -l)"
+          echo "sitemap.xml: $(test -f dist/sitemap.xml && echo 'OK' || echo 'MISSING')"
+          echo "robots.txt: $(test -f dist/robots.txt && echo 'OK' || echo 'MISSING')"
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/dist
+          branch: gh-pages
+          clean: true
