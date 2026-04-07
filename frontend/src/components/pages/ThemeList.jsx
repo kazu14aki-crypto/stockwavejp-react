@@ -161,29 +161,6 @@ const THEME_ARTICLE_MAP = {
   'パワー半導体':    'power-semiconductor',
   '光通信':          'optical-communication',
   '国土強靭化':      'national-resilience',
-  'ゲーム・エンタメ':      'game-entertainment-theme',
-  '銀行・金融':           'banking-finance-theme',
-  '地方銀行':             'regional-bank-theme',
-  '保険':                'insurance-theme',
-  '不動産':              'real-estate-theme',
-  '医薬品・バイオ':       'pharma-bio-theme',
-  'ヘルスケア・介護':     'healthcare-nursing-theme',
-  '食品・飲料':           'food-beverage-theme',
-  '小売・EC':            'retail-ec-theme',
-  '通信':                'telecom-theme',
-  '鉄鋼・素材':           'steel-materials-theme',
-  '化学':                'chemical-theme',
-  '建設・インフラ':       'construction-infra-theme',
-  '輸送・物流':           'transport-logistics-theme',
-  'フィンテック':         'fintech-theme',
-  'ロボット・自動化':     'robot-automation-theme',
-  'レアアース・資源':     'rare-earth-resources-theme',
-  'サイバーセキュリティ': 'cybersecurity-theme',
-  'ドローン':             'drone-theme',
-  '観光・ホテル・レジャー': 'tourism-hotel-theme',
-  '農業・フードテック':   'agritech-foodtech-theme',
-  '教育・HR・人材':       'education-hr-theme',
-  '宇宙・衛星':           'space-satellite-theme',
 }
 
 function SectionHead({ title }) {
@@ -377,7 +354,7 @@ function CustomThemeRows({ themes, period, pctColor }) {
 
 
 // ⑤ カードグリッド用ThemeCard（順位バッジ＋各ランク表示）
-function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank, onNavigate, momentumState, momentumPct }) {
+function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pctRank, volRank, tvRank, onNavigate }) {
   const fmt = (n) => {
     if (!n) return '0'
     if (n >= 1e12) return (n/1e12).toFixed(1)+'兆'
@@ -442,21 +419,6 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 {rankTag(tvRank, '#ff8c42')}
               </span>
             </div>
-            {/* 騰落モメンタム（valueKey==='pct'のカードのみ）*/}
-            {valueKey === 'pct' && momentumState && (() => {
-              const stateColors = { '🔥加速':'#ff4560','↗転換↑':'#ff8c42','→横ばい':'var(--text3)','↘転換↓':'#4a9eff','❄️失速':'#00c48c' }
-              const sc = stateColors[momentumState] || 'var(--text3)'
-              return (
-                <div style={{ marginTop:'4px', display:'flex', justifyContent:'space-between', alignItems:'center', gap:'4px' }}>
-                  <span style={{ fontSize:'9px', color:'var(--text3)' }}>モメンタム</span>
-                  <span style={{ fontSize:'9px', fontWeight:700, color:sc,
-                    background:`${sc}18`, borderRadius:'10px', padding:'1px 7px',
-                    border:`1px solid ${sc}40`, whiteSpace:'nowrap' }}>
-                    {momentumState}
-                  </span>
-                </div>
-              )
-            })()}
             {/* 関連コラムリンク */}
             {THEME_ARTICLE_MAP[item.theme] && onNavigate && (
               <button
@@ -515,7 +477,7 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 }
 
 
-function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate }) {
   const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
   return (
     <div className="theme-card-grid">
@@ -526,9 +488,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           pctRank={pctRankMap?.get(item.theme)}
           volRank={volRankMap?.get(item.theme)}
           tvRank={tvRankMap?.get(item.theme)}
-          onNavigate={onNavigate}
-          momentumState={momentumMap?.get(item.theme)?.state}
-          momentumPct={momentumMap?.get(item.theme)?.pct} />
+          onNavigate={onNavigate} />
       ))}
     </div>
   )
@@ -570,7 +530,6 @@ export default function ThemeList({ onNavigate }) {
   const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
   const tvRankMap  = new Map(byTV.map((t, i) => [t.theme, i + 1]))
   const momentum1mo  = momentumData?.data || []
-  const momentumMap  = new Map(momentum1mo.map(d => [d.theme, d]))
   const themeComment = genThemeComment(themes, summary, period, momentum1mo)
   // 上昇・下落それぞれでフィルタリング（マイナスを上昇TOP5に混在させない）
   const risingTop5  = themes.filter(t => t.pct > 0).slice(0, 5)
@@ -678,8 +637,7 @@ export default function ThemeList({ onNavigate }) {
 
             {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={momentumMap} />
-
+            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
@@ -691,11 +649,11 @@ export default function ThemeList({ onNavigate }) {
 
             {/* 全テーマ 出来高ランキング（カードグリッド） */}
             <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
+            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
 
             {/* 全テーマ 売買代金ランキング（カードグリッド） */}
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
+            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} />
 
           </>
         )}
@@ -706,9 +664,6 @@ export default function ThemeList({ onNavigate }) {
         @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .responsive-grid-6 { grid-template-columns:repeat(2,1fr); } }
         .theme-card-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
-        .momentum-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
-        @media (max-width:1024px) { .momentum-grid { grid-template-columns:repeat(3,1fr); } }
-        @media (max-width:640px)  { .momentum-grid { grid-template-columns:repeat(2,1fr); } }
         @media (max-width:1024px) { .theme-card-grid { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .theme-card-grid { grid-template-columns:repeat(2,1fr); } }
         .top5-grid { grid-template-columns: 1fr 1fr !important; }

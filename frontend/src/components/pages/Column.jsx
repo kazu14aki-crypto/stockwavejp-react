@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import COLUMNS from './columnData'
 
-const CATEGORIES = ['すべて', 'テーマ', '入門', '分析手法']
+const CATEGORIES = ['すべて', 'テーマ', '入門', '分析手法', '投資手法', '用語解説']
 
 const CAT_COLORS = {
   '入門':       { bg:'rgba(74,158,255,0.1)',  color:'#4a9eff',  border:'rgba(74,158,255,0.25)' },
@@ -46,6 +46,8 @@ const CAT_COLORS = {
   '農業・フードテック': { bg:'rgba(76,175,130,0.1)',  color:'#4caf82', border:'rgba(76,175,130,0.25)' },
   '教育・HR・人材':     { bg:'rgba(170,119,255,0.1)', color:'#aa77ff', border:'rgba(170,119,255,0.25)' },
   '宇宙・衛星':         { bg:'rgba(74,158,255,0.1)',  color:'#4a9eff', border:'rgba(74,158,255,0.25)' },
+  '投資手法':           { bg:'rgba(255,140,66,0.1)',  color:'#ff8c42', border:'rgba(255,140,66,0.25)' },
+  '用語解説':           { bg:'rgba(170,119,255,0.1)', color:'#aa77ff', border:'rgba(170,119,255,0.25)' },
 }
 
 // Markdown風テキストを簡易レンダリング
@@ -162,8 +164,20 @@ export default function Column({ initialArticleId = null, onNavigate }) {
   useEffect(() => {
     if (initialArticleId) {
       setActiveCol(initialArticleId)
+      window.history.replaceState(null, '', `#column/${initialArticleId}`)
     }
   }, [initialArticleId])
+
+  const openArticle = (id) => {
+    setActiveCol(id)
+    window.history.replaceState(null, '', `#column/${id}`)
+    window.scrollTo(0, 0)
+  }
+  const closeArticle = () => {
+    setActiveCol(null)
+    window.history.replaceState(null, '', window.location.pathname)
+    window.scrollTo(0, 0)
+  }
 
   const THEME_CATS = [
     '半導体','AI・クラウド','防衛・宇宙','インバウンド','EV・脱炭素','造船',
@@ -199,7 +213,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
     const cat = CAT_COLORS[col.category] || CAT_COLORS['入門']
     return (
       <div style={{ padding:'20px 32px 60px', maxWidth:'760px', margin:'0 auto' }}>
-        <button onClick={() => setActiveCol(null)} style={{
+        <button onClick={() => closeArticle()} style={{
           display:'flex', alignItems:'center', gap:'6px',
           background:'transparent', border:'none', color:'var(--accent)',
           fontSize:'13px', cursor:'pointer', fontFamily:'var(--font)',
@@ -230,7 +244,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
 
         {/* 下部の戻るボタン */}
         <div style={{ marginTop:'32px', paddingTop:'24px', borderTop:'1px solid var(--border)', textAlign:'center' }}>
-          <button onClick={() => setActiveCol(null)} style={{
+          <button onClick={() => closeArticle()} style={{
             display:'inline-flex', alignItems:'center', gap:'8px',
             background:'var(--bg2)', border:'1px solid var(--border)',
             borderRadius:'8px', color:'var(--text2)', cursor:'pointer',
@@ -300,7 +314,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         {filtered.filter(Boolean).map((col, i) => {
           const cat = CAT_COLORS[col.category] || CAT_COLORS['入門']
           return (
-            <div key={col.id} onClick={() => setActiveCol(col.id)} style={{
+            <div key={col.id} onClick={() => openArticle(col.id)} style={{
               background:'var(--bg2)', border:'1px solid var(--border)',
               borderRadius:'10px', padding:'18px 20px', cursor:'pointer',
               animation:`fadeUp 0.3s ease ${i * 0.05}s both`,

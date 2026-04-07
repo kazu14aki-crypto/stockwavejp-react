@@ -15,6 +15,7 @@ import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
 import Column      from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
+import TermsOfService from './components/pages/TermsOfService'
 import SiteInfo    from './components/pages/SiteInfo'
 
 const PAGES = [
@@ -33,16 +34,42 @@ const PAGES_OTHER = [
   { icon:'⚙️', label:'設定',               component:Settings      },
   { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
+  { icon:'📋', label:'利用規約',             component:TermsOfService},
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
-const CONTACT_FORM_URL = 'https://forms.gle/your-google-form-id'
+const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 function AppInner() {
   const [currentPage,   setCurrentPage]   = useState('ホーム')
   const [targetArticleId, setTargetArticleId] = useState(null)
+
+  // URLハッシュからページ・記事IDを初期化
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '')
+    if (hash.startsWith('column/')) {
+      const articleId = hash.replace('column/', '')
+      setCurrentPage('コラム・解説')
+      setTargetArticleId(articleId)
+    } else if (hash === 'terms') {
+      setCurrentPage('利用規約')
+    } else if (hash === 'privacy') {
+      setCurrentPage('プライバシーポリシー')
+    }
+    // ハッシュ変化を監視
+    const onHashChange = () => {
+      const h = window.location.hash.replace('#', '')
+      if (h.startsWith('column/')) {
+        const aid = h.replace('column/', '')
+        setCurrentPage('コラム・解説')
+        setTargetArticleId(aid)
+      }
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 768)
@@ -73,6 +100,16 @@ function AppInner() {
     setCurrentPage(label)
     setSidebarOpen(false)
     setTargetArticleId(articleId)
+    // URLハッシュを更新（SEO・直接リンク対応）
+    if (label === 'コラム・解説' && articleId) {
+      window.history.replaceState(null, '', `#column/${articleId}`)
+    } else if (label === '利用規約') {
+      window.history.replaceState(null, '', '#terms')
+    } else if (label === 'プライバシーポリシー') {
+      window.history.replaceState(null, '', '#privacy')
+    } else {
+      window.history.replaceState(null, '', window.location.pathname)
+    }
   }
 
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
@@ -143,6 +180,11 @@ function AppInner() {
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
               textDecoration:'underline', textUnderlineOffset:'2px',
             }}>プライバシーポリシー</button>
+            <button onClick={() => handlePageChange('利用規約')} style={{
+              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
+              fontSize:'11px', fontFamily:'var(--font)', padding:0,
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>利用規約</button>
             <a href={CONTACT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{
               color:'var(--text3)', fontSize:'11px', fontFamily:'var(--font)',
               textDecoration:'underline', textUnderlineOffset:'2px',
