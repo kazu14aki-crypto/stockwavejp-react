@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import COLUMNS from './columnData'
 
-const CATEGORIES = ['すべて', 'テーマ', '入門', '分析手法', '投資手法', '用語解説']
+const CATEGORIES = ['すべて', 'テーマ', '入門', '分析手法', '投資手法', '用語解説', '個別銘柄']
 
 const CAT_COLORS = {
   '入門':       { bg:'rgba(74,158,255,0.1)',  color:'#4a9eff',  border:'rgba(74,158,255,0.25)' },
@@ -210,7 +210,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
   if (activeCol) {
     const col = COLUMNS.find(c => c.id === activeCol)
     if (!col) { setActiveCol(null); return null }
-    const cat = CAT_COLORS[col.category] || CAT_COLORS['入門']
+    const cat = CAT_COLORS[col.category] || { bg:'rgba(74,158,255,0.1)', color:'#4a9eff', border:'rgba(74,158,255,0.25)' }
     return (
       <div style={{ padding:'20px 32px 60px', maxWidth:'760px', margin:'0 auto' }}>
         <button onClick={() => closeArticle()} style={{
@@ -365,7 +365,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       {/* コラム一覧 */}
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }} className="col-grid">
         {filtered.filter(Boolean).map((col, i) => {
-          const cat = CAT_COLORS[col.category] || CAT_COLORS['入門']
+          const cat = CAT_COLORS[col.category] || { bg:'rgba(74,158,255,0.1)', color:'#4a9eff', border:'rgba(74,158,255,0.25)' }
           return (
             <div key={col.id} onClick={() => openArticle(col.id)} style={{
               background:'var(--bg2)', border:'1px solid var(--border)',

@@ -191,7 +191,7 @@ function MultiLineChart({ trends, selected, title }) {
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
   const [modalStock, setModalStock] = useState(null)
-  const headers = ['株価','騰落率','寄与度','寄与順位','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <>
       {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
@@ -199,8 +199,8 @@ function StockTable({ stocks }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', minWidth:'40px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順位</th>
-              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'140px', background:'var(--bg3)', position:'sticky', left:'40px', zIndex:3 }}>銘柄名</th>
+              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
+              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
               {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
@@ -214,18 +214,18 @@ function StockTable({ stocks }) {
                   borderBottom:'1px solid rgba(255,255,255,0.04)',
                   background: i%2===0?'transparent':'rgba(255,255,255,0.02)',
                 }}>
-                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'12px', fontWeight:700, color:'var(--text3)',
-                    background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
-                    {String(i+1).padStart(2,'0')}
+                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
+                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, minWidth:'32px', width:'32px', maxWidth:'32px', padding:'8px 4px' }}>
+                    {i+1}
                   </td>
-                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)', background: i%2===0?'var(--bg2)':'var(--bg3)' }}>
+                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)',
+                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                     <div style={{ fontSize:'13px' }}>{s.name}</div>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                   <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
-                  <td style={tdC}>{i+1}位</td>
                   <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
                   <td style={tdC}>{s.vol_rank}位</td>
@@ -267,7 +267,48 @@ function fmtDate(dateStr) {
   return `${y}.${m}/${d}`
 }
 
-export default function ThemeDetail() {
+
+const THEME_ARTICLE_MAP = {
+  '半導体':              'semiconductor-theme',
+  'AI・クラウド':        'ai-cloud-theme',
+  '防衛・宇宙':          'defense-space-theme',
+  'インバウンド':        'inbound-theme',
+  'EV・電気自動車':      'ev-green-theme',
+  '脱炭素・ESG':         'ev-green-theme',
+  '造船':                'shipbuilding-theme',
+  'パワー半導体':        'power-semiconductor',
+  '光通信':              'optical-communication',
+  '国土強靭化':          'national-resilience',
+  'ゲーム・エンタメ':    'game-entertainment-theme',
+  '銀行・金融':          'banking-finance-theme',
+  '地方銀行':            'regional-bank-theme',
+  '保険':                'insurance-theme',
+  '不動産':              'real-estate-theme',
+  '医薬品・バイオ':      'pharma-bio-theme',
+  'ヘルスケア・介護':    'healthcare-nursing-theme',
+  '食品・飲料':          'food-beverage-theme',
+  '小売・EC':            'retail-ec-theme',
+  '通信':                'telecom-theme',
+  '鉄鋼・素材':          'steel-materials-theme',
+  '化学':                'chemical-theme',
+  '建設・インフラ':      'construction-infra-theme',
+  '輸送・物流':          'transport-logistics-theme',
+  'フィンテック':        'fintech-theme',
+  'ロボット・自動化':    'robot-automation-theme',
+  'レアアース・資源':    'rare-earth-resources-theme',
+  'サイバーセキュリティ':'cybersecurity-theme',
+  'ドローン':            'drone-theme',
+  '観光・ホテル・レジャー':'tourism-hotel-theme',
+  '農業・フードテック':  'agritech-foodtech-theme',
+  '教育・HR・人材':      'education-hr-theme',
+  '宇宙・衛星':          'space-satellite-theme',
+  '再生可能エネルギー':  'renewable-energy-theme',
+  'バフェット銘柄':      'buffett-japan-stocks',
+  'フィジカルAI':        'physical-ai-edge-ai',
+  '親子上場':            'parent-child-listing',
+}
+
+export default function ThemeDetail({ onNavigate }) {
   const [period,      setPeriod]      = useState('1mo')
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState('')
@@ -357,18 +398,15 @@ export default function ThemeDetail() {
     })()
   }, [selTheme, period])
 
-  // テーマ比較データ取得（trends.json優先）
+  // テーマ比較データ取得（market.json優先）
   useEffect(() => {
     if (!selThemes.length) return
     setLoadingT(true)
-
     ;(async () => {
       try {
-        const tjRes = await fetch('/data/trends.json?t=' + Date.now())
-        if (!tjRes.ok) throw new Error('trends.json not found')
-        const tj = await tjRes.json()
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
         const key = `trends_${comparePeriod}`
-        const trendsObj = tj[key]?.data || {}
+        const trendsObj = mj[key]?.data || {}
         const found = selThemes.some(t => trendsObj[t])
         if (found) {
           const result = {}
@@ -378,8 +416,6 @@ export default function ThemeDetail() {
           return
         }
       } catch {}
-
-      // フォールバック
       try {
         const d = await fetch(`${API}/api/trends?themes=${encodeURIComponent(selThemes.join(','))}&period=${comparePeriod}`).then(r => r.json())
         setThemeTrends(d.trends || {})
@@ -411,7 +447,17 @@ export default function ThemeDetail() {
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
-  const stocks = detail?.stocks ?? []
+  // vol_rank・tv_rankをフロントで再計算（market.jsonの値を上書き）
+  const rawStocks = detail?.stocks ?? []
+  const volSorted = [...rawStocks].sort((a,b) => (b.volume||0)-(a.volume||0))
+  const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
+  const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
+  const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
+  const stocks = rawStocks.map(s => ({
+    ...s,
+    vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
+    tv_rank:  tvRankMap.get(s.ticker) ?? s.tv_rank,
+  }))
   // 上昇のみ・下落のみでフィルタリング
   const top5   = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -461,6 +507,23 @@ export default function ThemeDetail() {
               <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
                 {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
               </span>
+              {/* 関連コラムボタン */}
+              {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                <button
+                  onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                  style={{
+                    padding:'6px 14px', background:'rgba(74,158,255,0.08)',
+                    border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
+                    color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                    fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
+                    transition:'all 0.15s', flexShrink:0,
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.background='rgba(74,158,255,0.18)'}
+                  onMouseLeave={e => e.currentTarget.style.background='rgba(74,158,255,0.08)'}
+                >
+                  📖 解説記事を読む
+                </button>
+              )}
             </div>
 
             {/* ── TOP5グラフ（小型）── */}

@@ -22,7 +22,6 @@ import { useState, useEffect, useCallback } from 'react'
 
 const API          = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const DATA_URL     = '/data/market.json'
-const TRENDS_URL   = '/data/trends.json'
 const CACHE_PREFIX = 'swjp_v2_'
 const CACHE_TTL = 12 * 60 * 60 * 1000  // 12時間
 
@@ -213,7 +212,7 @@ export function useTrends(themes, period) {
     ;(async () => {
       try {
         // 1. market.jsonから取得
-        const json      = await fetchTrendsJson()
+        const json      = await fetchMarketJson()
         const trendsObj = json[jsonKey]?.data || {}
         // 要求テーマが含まれているか確認
         const found = theList.some(t => trendsObj[t])
