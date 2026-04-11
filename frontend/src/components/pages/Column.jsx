@@ -242,6 +242,59 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           実際の投資判断はご自身の責任において行ってください。
         </div>
 
+        {/* テーマデータへのリンクボタン */}
+        {(() => {
+          const CAT_TO_THEME = {
+            '半導体':'半導体','AI・クラウド':'AI・クラウド','防衛・宇宙':'防衛・宇宙',
+            'インバウンド':'インバウンド','EV・脱炭素':'EV・電気自動車','造船':'造船',
+            'ゲーム・エンタメ':'ゲーム・エンタメ','銀行・金融':'銀行・金融',
+            '地方銀行':'地方銀行','保険':'保険','不動産':'不動産',
+            '医薬品・バイオ':'医薬品・バイオ','ヘルスケア・介護':'ヘルスケア・介護',
+            '食品・飲料':'食品・飲料','小売・EC':'小売・EC','通信':'通信',
+            '鉄鋼・素材':'鉄鋼・素材','化学':'化学','建設・インフラ':'建設・インフラ',
+            '輸送・物流':'輸送・物流','フィンテック':'フィンテック',
+            'ロボット・自動化':'ロボット・自動化','レアアース・資源':'レアアース・資源',
+            'サイバーセキュリティ':'サイバーセキュリティ','ドローン':'ドローン',
+            '観光・ホテル・レジャー':'観光・ホテル・レジャー',
+            '農業・フードテック':'農業・フードテック','教育・HR・人材':'教育・HR・人材',
+            '宇宙・衛星':'宇宙・衛星','パワー半導体':'パワー半導体',
+            '光通信':'光通信','国土強靭化':'国土強靭化',
+            '再生可能エネルギー':'再生可能エネルギー',
+          }
+          const themeName = CAT_TO_THEME[col.category]
+          if (!themeName || !onNavigate) return null
+          return (
+            <div style={{ marginTop:'20px', display:'flex', gap:'10px', flexWrap:'wrap' }}>
+              <button
+                onClick={() => onNavigate('テーマ別詳細', themeName)}
+                style={{ display:'inline-flex', alignItems:'center', gap:'8px',
+                  background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.3)',
+                  borderRadius:'8px', color:'var(--accent)', cursor:'pointer',
+                  fontFamily:'var(--font)', fontSize:'13px', fontWeight:600,
+                  padding:'10px 20px', transition:'all 0.15s',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background='rgba(74,158,255,0.2)' }}
+                onMouseLeave={e => { e.currentTarget.style.background='rgba(74,158,255,0.1)' }}
+              >
+                📊 {themeName}テーマのデータを見る
+              </button>
+              <button
+                onClick={() => onNavigate('テーマ一覧')}
+                style={{ display:'inline-flex', alignItems:'center', gap:'8px',
+                  background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                  borderRadius:'8px', color:'#aa77ff', cursor:'pointer',
+                  fontFamily:'var(--font)', fontSize:'13px', fontWeight:600,
+                  padding:'10px 20px', transition:'all 0.15s',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background='rgba(170,119,255,0.2)' }}
+                onMouseLeave={e => { e.currentTarget.style.background='rgba(170,119,255,0.1)' }}
+              >
+                📈 全テーマ一覧を見る
+              </button>
+            </div>
+          )
+        })()}
+
         {/* 下部の戻るボタン */}
         <div style={{ marginTop:'32px', paddingTop:'24px', borderTop:'1px solid var(--border)', textAlign:'center' }}>
           <button onClick={() => closeArticle()} style={{

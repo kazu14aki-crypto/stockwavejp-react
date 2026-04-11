@@ -34,6 +34,36 @@ export default function SiteInfo() {
         </div>
       </div>
 
+      {/* 独自機能バッジ */}
+      <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+        borderRadius:'12px', padding:'22px 26px', marginBottom:'16px' }}>
+        <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'16px' }}>
+          <span style={{ fontSize:'22px' }}>⚡</span>
+          <h2 style={{ fontSize:'15px', fontWeight:700, color:'#e8f0ff', margin:0,
+            borderLeft:'3px solid #ffd619', paddingLeft:'10px' }}>
+            StockWaveJPでしか見られない機能
+          </h2>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))', gap:'10px' }}>
+          {[
+            { icon:'📡', title:'騰落モメンタム', desc:'🔥加速・↗転換↑・→横ばい・↘転換↓・❄️失速の5分類は当サイト独自の指標' },
+            { icon:'🗺️', title:'テーマ×期間ヒートマップ', desc:'30テーマの騰落率を1週〜1年の複数期間で同時比較できる' },
+            { icon:'📊', title:'三指標同時表示', desc:'騰落率・出来高・売買代金を30テーマ分まとめてランキング表示' },
+            { icon:'⚙️', title:'カスタムテーマ', desc:'自分だけのテーマを作成して独自の銘柄群を追跡できる' },
+            { icon:'📈', title:'マクロ連動表示', desc:'日経平均・ドル円・VIX等のマクロ指標とテーマ動向を同時確認' },
+            { icon:'📰', title:'週次レポート', desc:'毎週の相場振り返りと来週の注目ポイントを編集部が解説' },
+          ].map(({ icon, title, desc }) => (
+            <div key={title} style={{ background:'rgba(74,158,255,0.04)',
+              border:'1px solid rgba(74,158,255,0.15)', borderRadius:'8px',
+              padding:'12px 14px' }}>
+              <div style={{ fontSize:'18px', marginBottom:'6px' }}>{icon}</div>
+              <div style={{ fontSize:'12px', fontWeight:700, color:'var(--accent)', marginBottom:'4px' }}>{title}</div>
+              <div style={{ fontSize:'11px', color:'var(--text3)', lineHeight:1.7 }}>{desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {[
         {
           icon: '🎯',
