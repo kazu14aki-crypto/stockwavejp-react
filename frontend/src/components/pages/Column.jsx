@@ -48,6 +48,7 @@ const CAT_COLORS = {
   '宇宙・衛星':         { bg:'rgba(74,158,255,0.1)',  color:'#4a9eff', border:'rgba(74,158,255,0.25)' },
   '投資手法':           { bg:'rgba(255,140,66,0.1)',  color:'#ff8c42', border:'rgba(255,140,66,0.25)' },
   '用語解説':           { bg:'rgba(170,119,255,0.1)', color:'#aa77ff', border:'rgba(170,119,255,0.25)' },
+  '個別銘柄':           { bg:'rgba(255,69,96,0.1)',   color:'#ff4560', border:'rgba(255,69,96,0.25)' },
 }
 
 // Markdown風テキストを簡易レンダリング

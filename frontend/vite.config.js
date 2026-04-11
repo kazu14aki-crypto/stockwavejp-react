@@ -14,15 +14,10 @@ export default defineConfig({
     port: 5173,
   },
   build: {
-    // チャンクサイズ警告を500kBに引き上げ（columnData.jsが大きいため）
-    chunkSizeWarningLimit: 800,
+    chunkSizeWarningLimit: 1500,
     rollupOptions: {
       output: {
-        // columnDataを独立したチャンクに分離（遅延ロード）
         manualChunks: {
-          'column-data': [
-            './src/components/pages/columnData.js'
-          ],
           'react-vendor': ['react', 'react-dom'],
         },
       },

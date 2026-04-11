@@ -4,6 +4,12 @@ data.py — StockWaveJP データ取得モジュール
 """
 import yfinance as yf
 import numpy as np
+import warnings
+import logging
+# yfinanceのデリスト警告を抑制（銘柄エラーはスキップして継続処理）
+warnings.filterwarnings("ignore", message=".*possibly delisted.*")
+warnings.filterwarnings("ignore", message=".*No data found.*")
+logging.getLogger("yfinance").setLevel(logging.CRITICAL)
 import pandas as pd
 import time
 import threading
@@ -332,17 +338,23 @@ def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
         if entry is not None and time.time() - entry["ts"] < CACHE_TTL:
             return entry["value"]
     try:
-        df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True, repair=True, timeout=20)
+        # yfinanceのwarningを一時的に抑制
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True, repair=True, timeout=20)
         if df is None or len(df) < 3:
             _invalid_tickers.add(ticker)
+            print(f"[SKIP] {ticker}: データ不足または上場廃止（テーマ計算から除外）")
             return None
         df.index = df.index.tz_localize(None)
         with _mem_cache_lock:
             _df_cache[cache_key] = {"value": df, "ts": time.time()}
         return df
     except Exception as e:
-        if "404" in str(e) or "delisted" in str(e).lower():
+        err_str = str(e).lower()
+        if any(k in err_str for k in ["404", "delisted", "no data found", "no price data"]):
             _invalid_tickers.add(ticker)
+            print(f"[SKIP] {ticker}: 上場廃止またはデータなし（テーマ計算から除外）")
         return None
 
 def _period_df(df: pd.DataFrame, period: str) -> pd.DataFrame | None:
