@@ -17,7 +17,7 @@ from data import (
     get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
 )
 
-app = FastAPI(title="StockWaveJP API", version="2.1.0")
+app = FastAPI(title="StockWaveJP API", version="2.2.0")  # 67テーマ対応
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
@@ -26,12 +26,20 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup_event():
-    warmup_cache_extended(DEFAULT_THEMES)
+    import threading
+    # バックグラウンドでウォームアップ（起動を遅らせない）
+    t = threading.Thread(target=warmup_cache_extended, args=(DEFAULT_THEMES,), daemon=True)
+    t.start()
+
+@app.get("/api/ping")
+def ping():
+    """UptimeRobot・スリープ防止用エンドポイント（軽量）"""
+    return {"ok": True}
 
 
 @app.get("/")
 def root():
-    return {"status": "ok", "app": "StockWaveJP API", "version": "2.1.0"}
+    return {"status": "ok", "app": "StockWaveJP API", "version": "2.2.0"}
 
 
 @app.head("/api/status")

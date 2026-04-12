@@ -206,6 +206,22 @@ function AppInner() {
   )
 }
 
+// 旧バージョンのLocalStorageキャッシュを自動削除
+;(function cleanOldCache() {
+  const CURRENT = 'swjp_v3_'
+  const OLD_PREFIXES = ['swjp_', 'swjp_v1_', 'swjp_v2_']
+  try {
+    const keys = Object.keys(localStorage)
+    keys.forEach(k => {
+      const isOld = OLD_PREFIXES.some(p => k.startsWith(p))
+      const isCurrent = k.startsWith(CURRENT)
+      if (isOld && !isCurrent) {
+        localStorage.removeItem(k)
+      }
+    })
+  } catch {}
+})()
+
 export default function App() {
   return (
     <AuthProvider>
