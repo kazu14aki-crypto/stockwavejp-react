@@ -140,6 +140,53 @@ def get_market_rank(period: str = Query(default="1mo")):
     data = fetch_market_segments(period)
     return {"period": period, "data": data, "groups": SEGMENT_GROUPS}
 
+@app.get("/api/market-rank-list")
+def get_market_rank_list(period: str = Query(default="1mo")):
+    """フロントエンドuseMarketRankList用 - market-rankと同じデータを返す"""
+    data = fetch_market_segments(period)
+    return {"period": period, "data": data, "groups": SEGMENT_GROUPS}
+
+
+@app.get("/api/vol-trend/{theme_name}")
+def get_vol_trend(theme_name: str):
+    """テーマ別出来高・売買代金週次推移（1年間）"""
+    import yfinance as yf
+    import pandas as pd
+    import warnings
+    warnings.filterwarnings("ignore")
+    stocks = DEFAULT_THEMES.get(theme_name, {})
+    combined_vol: dict = {}
+    combined_tv:  dict = {}
+    cutoff = pd.Timestamp.now() - pd.Timedelta(days=370)
+    for name, ticker in stocks.items():
+        try:
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                df = yf.Ticker(ticker).history(period="1y", interval="1d",
+                                               auto_adjust=True, timeout=15)
+            if df is None or len(df) < 5:
+                continue
+            df.index = pd.to_datetime(df.index).tz_localize(None)
+            df = df[df.index >= cutoff]
+            if len(df) < 5:
+                continue
+            dfw = df.resample("W-FRI").agg({"Volume": "sum", "Close": "last"}).dropna()
+            for dt, row in dfw.iterrows():
+                key = dt.strftime("%Y-%m-%d")
+                vol = float(row["Volume"]) if row["Volume"] else 0
+                tv  = vol * float(row["Close"]) if row["Close"] else 0
+                combined_vol[key] = combined_vol.get(key, 0) + vol
+                combined_tv[key]  = combined_tv.get(key, 0)  + tv
+        except Exception:
+            continue
+    if not combined_vol:
+        return {"dates": [], "volumes": [], "trade_values": []}
+    dates = sorted(combined_vol.keys())
+    return {
+        "dates":        dates,
+        "volumes":      [round(combined_vol[d]) for d in dates],
+        "trade_values": [round(combined_tv[d])  for d in dates],
+    }
 
 @app.get("/api/market-rank/{seg_name}")
 def get_segment_detail(seg_name: str, period: str = Query(default="1mo")):

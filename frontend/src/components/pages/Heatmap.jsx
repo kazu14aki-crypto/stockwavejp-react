@@ -201,7 +201,7 @@ export default function Heatmap() {
     const CACHE_KEY = `heatmap_${tab}`
     ;(async () => {
       try {
-        const cached = JSON.parse(localStorage.getItem('swjp_v2_' + CACHE_KEY) || 'null')
+        const cached = JSON.parse(localStorage.getItem('swjp_v3_' + CACHE_KEY) || 'null')
         if (cached?.data) {
           if (tab === 'period')  setHeatmapData(cached.data.heatmap || cached.data)
           else { setMonthlyData(cached.data.heatmap || cached.data); setMonths(cached.data.months || []) }
@@ -213,13 +213,13 @@ export default function Heatmap() {
         const json = await res.json()
         if (tab === 'period' && json.heatmap) {
           setHeatmapData(json.heatmap.data)
-          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap.data }, ts:Date.now() }))
+          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap.data }, ts:Date.now() }))
           setLoading(false); return
         }
         if (tab === 'monthly' && json.heatmap_monthly) {
           setMonthlyData(json.heatmap_monthly.data)
           setMonths(json.heatmap_monthly.months || [])
-          localStorage.setItem('swjp_v2_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap_monthly.data, months:json.heatmap_monthly.months }, ts:Date.now() }))
+          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap_monthly.data, months:json.heatmap_monthly.months }, ts:Date.now() }))
           setLoading(false); return
         }
       } catch {}
@@ -255,7 +255,7 @@ export default function Heatmap() {
         ヒートマップ・モメンタム
       </h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-        テーマ別騰落率をヒートマップと騰落モメンタムで多角的に分析できます。
+        67テーマの騰落率をヒートマップと騰落モメンタムで多角的に分析できます。
       </p>
 
       {/* タブ */}

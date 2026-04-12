@@ -547,6 +547,21 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
         tv = int(rv * price)
         # 大分類・小分類を取得
         cls_info = STOCK_CLASSIFICATION.get(ticker, {})
+        # スパークライン（6ヶ月の週次騰落率）
+        spark = []
+        try:
+            import pandas as _pd3
+            df_sp = _fetch_df(ticker)
+            if df_sp is not None and len(df_sp) >= 10:
+                cutoff6 = _pd3.Timestamp.now() - _pd3.Timedelta(days=185)
+                df_sp6 = df_sp[df_sp.index >= cutoff6]
+                cl_sp = df_sp6["Close"].dropna()
+                if len(cl_sp) >= 4:
+                    base = float(cl_sp.iloc[0])
+                    step = max(1, len(cl_sp) // 20)
+                    spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
+        except Exception:
+            spark = []
         result.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct, "contribution": round(pct / len(stocks_def), 2),
@@ -554,6 +569,7 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
             "vol_rank": 0, "tv_rank": 0,
             "major": cls_info.get("major", ""),
             "minor": cls_info.get("minor", ""),
+            "spark": spark,
         })
 
     result.sort(key=lambda x: x["pct"], reverse=True)
@@ -615,10 +631,25 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
         vol_chg = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
         price = round(float(cl.iloc[-1]), 0)
         tv = int(rv * price)
+        # スパークライン用：過去6ヶ月の週次騰落率
+        import pandas as _pd
+        spark = []
+        try:
+            df6 = _fetch_df(ticker)
+            if df6 is not None and len(df6) >= 10:
+                df6 = df6[df6.index >= (_pd.Timestamp.now() - _pd.Timedelta(days=185))]
+                cl6 = df6["Close"].dropna()
+                if len(cl6) >= 4:
+                    base = float(cl6.iloc[0])
+                    step = max(1, len(cl6) // 20)
+                    spark = [round((float(v) / base - 1) * 100, 2) for v in cl6.iloc[::step]]
+        except Exception:
+            spark = []
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct, "contribution": round(pct / len(theme_stocks), 2),
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
+            "spark": spark,
             "vol_rank": 0, "tv_rank": 0,
         })
 

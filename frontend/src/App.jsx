@@ -47,6 +47,7 @@ const COLOR_THEME_KEY = 'swjp_color_theme'
 function AppInner() {
   const [currentPage,   setCurrentPage]   = useState('ホーム')
   const [targetArticleId, setTargetArticleId] = useState(null)
+  const [targetTheme,     setTargetTheme]     = useState(null)
 
   // URLハッシュからページ・記事IDを初期化
   useEffect(() => {
@@ -102,6 +103,12 @@ function AppInner() {
     setCurrentPage(label)
     setSidebarOpen(false)
     setTargetArticleId(articleId)
+    // テーマ別詳細の場合はテーマ名を保存
+    if (label === 'テーマ別詳細') {
+      setTargetTheme(articleId || null)
+    } else {
+      setTargetTheme(null)
+    }
     // URLハッシュを更新（SEO・直接リンク対応）
     if (label === 'コラム・解説' && articleId) {
       window.history.replaceState(null, '', `#column/${articleId}`)
@@ -121,7 +128,7 @@ function AppInner() {
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange }
-    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange }
+    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange, initialTheme: targetTheme }
     return {}
   })()
 
@@ -205,6 +212,22 @@ function AppInner() {
     </div>
   )
 }
+
+// 旧バージョンのLocalStorageキャッシュを自動削除
+;(function cleanOldCache() {
+  const CURRENT = 'swjp_v3_'
+  const OLD_PREFIXES = ['swjp_', 'swjp_v1_', 'swjp_v2_']
+  try {
+    const keys = Object.keys(localStorage)
+    keys.forEach(k => {
+      const isOld = OLD_PREFIXES.some(p => k.startsWith(p))
+      const isCurrent = k.startsWith(CURRENT)
+      if (isOld && !isCurrent) {
+        localStorage.removeItem(k)
+      }
+    })
+  } catch {}
+})()
 
 export default function App() {
   return (

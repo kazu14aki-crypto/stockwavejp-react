@@ -66,6 +66,34 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
   )
 }
 
+// スパークライン（銘柄の6ヶ月騰落率推移）
+function Sparkline({ data }) {
+  if (!data || data.length < 3) return null
+  const W = 64, H = 24
+  const min = Math.min(...data)
+  const max = Math.max(...data)
+  const range = max - min || 1
+  const pts = data.map((v, i) => {
+    const x = (i / (data.length - 1)) * W
+    const y = H - ((v - min) / range) * H
+    return `${x.toFixed(1)},${y.toFixed(1)}`
+  }).join(' ')
+  const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
+  const zeroY = H - ((0 - min) / range) * H
+  const clampedZeroY = Math.max(0, Math.min(H, zeroY))
+  return (
+    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+      <line x1={0} y1={clampedZeroY} x2={W} y2={clampedZeroY}
+        stroke="rgba(255,255,255,0.12)" strokeWidth="0.5" strokeDasharray="2,2" />
+      <polyline
+        points={`0,${H} ${pts} ${W},${H}`}
+        fill={`${color}20`} stroke="none" />
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.2"
+        strokeLinejoin="round" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
   const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
@@ -93,7 +121,10 @@ function StockTable({ stocks, onAddToTheme }) {
                 </td>
                 <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                  <div style={{ fontSize:'13px' }}>{s.name}</div>
+<div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
+  <div style={{ fontSize:'13px' }}>{s.name}</div>
+  <Sparkline data={s.spark} />
+</div>
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>

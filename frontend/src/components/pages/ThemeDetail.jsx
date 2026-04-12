@@ -99,6 +99,166 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 }
 
 // ── 複数折れ線グラフ（Compare移植）──
+// スパークライン（銘柄の6ヶ月騰落率推移）
+function Sparkline({ data }) {
+  if (!data || data.length < 3) return null
+  const W = 64, H = 24
+  const min = Math.min(...data)
+  const max = Math.max(...data)
+  const range = max - min || 1
+  const pts = data.map((v, i) => {
+    const x = (i / (data.length - 1)) * W
+    const y = H - ((v - min) / range) * H
+    return `${x.toFixed(1)},${y.toFixed(1)}`
+  }).join(' ')
+  const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
+  // ゼロライン位置
+  const zeroY = H - ((0 - min) / range) * H
+  const clampedZeroY = Math.max(0, Math.min(H, zeroY))
+  return (
+    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+      {/* ゼロライン */}
+      <line x1={0} y1={clampedZeroY} x2={W} y2={clampedZeroY}
+        stroke="rgba(255,255,255,0.12)" strokeWidth="0.5" strokeDasharray="2,2" />
+      {/* 塗りつぶし */}
+      <polyline
+        points={`0,${H} ${pts} ${W},${H}`}
+        fill={`${color}20`} stroke="none" />
+      {/* 折れ線 */}
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.2"
+        strokeLinejoin="round" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function VolTvChart({ selTheme }) {
+  const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    if (!selTheme) return
+    setLoading(true); setData(null)
+    ;(async () => {
+      // 1. market.json から取得
+      try {
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
+        const d = mj[`vol_trend_${selTheme}`]
+        if (d && d.dates && d.dates.length > 0) { setData(d); setLoading(false); return }
+      } catch {}
+      // 2. Render API にフォールバック
+      try {
+        const d = await fetch(`${API}/api/vol-trend/${encodeURIComponent(selTheme)}`).then(r => r.json())
+        if (d && d.dates && d.dates.length > 0) { setData(d); setLoading(false); return }
+      } catch {}
+      setLoading(false)
+    })()
+  }, [selTheme])
+
+  if (loading) return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)', fontSize:'13px' }}>データ読み込み中...</div>
+  if (!data || !data.dates || data.dates.length === 0)
+    return <div style={{ textAlign:'center', padding:'32px', color:'var(--text3)', fontSize:'12px' }}>推移データがありません（GitHub Actionsの次回実行後に表示されます）</div>
+
+  const { dates, volumes, trade_values } = data
+  const W = 800, H = 220, PL = 72, PR = 72, PT = 18, PB = 36
+  const GW = W - PL - PR, GH = H - PT - PB
+  const n = dates.length
+
+  const maxVol = Math.max(...volumes, 1)
+  const maxTV  = Math.max(...trade_values, 1)
+  const minVol = Math.min(...volumes, 0)
+  const minTV  = Math.min(...trade_values, 0)
+
+  const xPos = (i) => PL + (i / Math.max(n - 1, 1)) * GW
+  const yVol = (v) => PT + GH - ((v - minVol) / (maxVol - minVol || 1)) * GH
+  const yTV  = (v) => PT + GH - ((v - minTV)  / (maxTV  - minTV  || 1)) * GH
+
+  // 折れ線（出来高）
+  const linePts = volumes.map((v, i) => `${xPos(i)},${yVol(v)}`).join(' ')
+
+  // 目盛り表示
+  const fmtLarge = (v) => {
+    if (v === 0) return '0'
+    if (Math.abs(v) >= 1e12) return (v / 1e12).toFixed(1) + '兆'
+    if (Math.abs(v) >= 1e8)  return (v / 1e8).toFixed(1)  + '億'
+    if (Math.abs(v) >= 1e4)  return (v / 1e4).toFixed(1)  + '万'
+    return v.toLocaleString()
+  }
+
+  const volTicks = [0, 0.25, 0.5, 0.75, 1].map(r => minVol + r * (maxVol - minVol))
+  const tvTicks  = [0, 0.25, 0.5, 0.75, 1].map(r => minTV  + r * (maxTV  - minTV))
+
+  // X軸ラベル（月初のみ）
+  const xLabels = []
+  let lastMonth = null
+  dates.forEach((d, i) => {
+    const m = d.slice(0, 7)
+    if (m !== lastMonth) { xLabels.push({ i, label: d.slice(5, 7) + '月' }); lastMonth = m }
+  })
+
+  // 縦棒の幅
+  const barW = Math.max(2, GW / n * 0.6)
+
+  return (
+    <div style={{ width:'100%', overflowX:'auto' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px', fontFamily:'var(--font)' }}>
+        {/* グリッド */}
+        {[0.25, 0.5, 0.75, 1].map(r => (
+          <line key={r} x1={PL} y1={PT + GH - r * GH} x2={PL + GW} y2={PT + GH - r * GH}
+            stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
+        ))}
+
+        {/* 縦棒（売買代金・右軸） */}
+        {trade_values.map((v, i) => {
+          const bh = yTV(minTV) - yTV(v)
+          if (bh <= 0) return null
+          return (
+            <rect key={i}
+              x={xPos(i) - barW / 2} y={yTV(v)}
+              width={barW} height={bh}
+              fill="rgba(255,140,66,0.45)" rx="1" />
+          )
+        })}
+
+        {/* 折れ線（出来高・左軸） */}
+        <polyline points={linePts} fill="none" stroke="#4a9eff" strokeWidth="1.8" strokeLinejoin="round" />
+        {volumes.map((v, i) => (
+          <circle key={i} cx={xPos(i)} cy={yVol(v)} r="2" fill="#4a9eff" />
+        ))}
+
+        {/* X軸ベース */}
+        <line x1={PL} y1={PT + GH} x2={PL + GW} y2={PT + GH} stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
+
+        {/* X軸ラベル */}
+        {xLabels.map(({ i, label }) => (
+          <text key={i} x={xPos(i)} y={H - 4} textAnchor="middle"
+            fontSize="9" fill="rgba(255,255,255,0.35)">{label}</text>
+        ))}
+
+        {/* 左軸ラベル（出来高） */}
+        <text x={4} y={PT - 4} fontSize="9" fill="#4a9eff">出来高</text>
+        {volTicks.map((v, i) => (
+          <text key={i} x={PL - 4} y={yVol(v) + 3} textAnchor="end"
+            fontSize="8" fill="rgba(74,158,255,0.7)">{fmtLarge(v)}</text>
+        ))}
+
+        {/* 右軸ラベル（売買代金） */}
+        <text x={W - 4} y={PT - 4} fontSize="9" fill="#ff8c42" textAnchor="end">売買代金</text>
+        {tvTicks.map((v, i) => (
+          <text key={i} x={PL + GW + 4} y={yTV(v) + 3} textAnchor="start"
+            fontSize="8" fill="rgba(255,140,66,0.7)">{fmtLarge(v)}</text>
+        ))}
+
+        {/* 凡例 */}
+        <circle cx={PL + 10} cy={PT - 5} r="4" fill="#4a9eff" />
+        <text x={PL + 18} y={PT - 1} fontSize="9" fill="#4a9eff">出来高（折れ線・左軸）</text>
+        <rect x={PL + 140} y={PT - 10} width="10" height="8" fill="rgba(255,140,66,0.6)" rx="1" />
+        <text x={PL + 154} y={PT - 1} fontSize="9" fill="#ff8c42">売買代金（棒グラフ・右軸）</text>
+      </svg>
+    </div>
+  )
+}
+
 function MultiLineChart({ trends, selected, title }) {
   if (!selected.length) return (
     <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
@@ -221,7 +381,10 @@ function StockTable({ stocks }) {
                   <td style={{ ...tdL, fontWeight:600, color:'var(--text)',
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ fontSize:'13px' }}>{s.name}</div>
+                    <div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
+                      <span style={{ fontSize:'13px' }}>{s.name}</span>
+                      <Sparkline data={s.spark} />
+                    </div>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
@@ -338,10 +501,10 @@ const THEME_ARTICLE_MAP = {
   'ゲーム・エンタメ':  'game-entertainment-theme',
 }
 
-export default function ThemeDetail({ onNavigate }) {
+export default function ThemeDetail({ onNavigate, initialTheme }) {
   const [period,      setPeriod]      = useState('1mo')
   const [themeNames,  setThemeNames]  = useState([])
-  const [selTheme,    setSelTheme]    = useState('')
+  const [selTheme,    setSelTheme]    = useState(initialTheme || '')
   const [detail,      setDetail]      = useState(null)
   const [loading,     setLoading]     = useState(false)
   const [momentum,    setMomentum]    = useState(null)
@@ -369,12 +532,20 @@ export default function ThemeDetail({ onNavigate }) {
       .then(d => {
         setThemeNames(d.themes || [])
         if (d.themes?.length) {
-          setSelTheme(d.themes[0])
+          // initialThemeが指定されていればそれを優先、なければ先頭テーマ
+          const preferred = initialTheme && d.themes.includes(initialTheme)
+            ? initialTheme : d.themes[0]
+          setSelTheme(s => s || preferred)
           setSelThemes(d.themes.slice(0, 3))
         }
       })
       .catch(() => {})
   }, [])
+
+  // initialThemeが変わった場合にselThemeを更新
+  useEffect(() => {
+    if (initialTheme) setSelTheme(initialTheme)
+  }, [initialTheme])
 
   // テーマ別詳細取得（market.json優先）
   useEffect(() => {
@@ -571,41 +742,13 @@ export default function ThemeDetail({ onNavigate }) {
               <StockTable stocks={stocks}/>
             </div>
 
-            {/* ── テーマ・マクロ比較（旧Compare移植）── */}
+            {/* ── 出来高・売買代金 1年推移 ── */}
             <div style={{ borderTop:'1px solid var(--border)', paddingTop:'28px' }}>
-              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:'12px', marginBottom:'16px' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}>
-                  <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>テーマ・マクロ比較</div>
-                  <select value={comparePeriod} onChange={e => setComparePeriod(e.target.value)} style={selStyle}>
-                    {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
-                  </select>
-                </div>
-                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ騰落率の比較 ＋ マーケット指標との対比（ETFベース）</div>
+              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'16px' }}>
+                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
               </div>
-
-              {/* テーマ比較 */}
-              <div style={sHead}><span style={sTitle}>テーマ比較</span><div style={sLine}/></div>
-              <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'12px' }}>
-                {themeNames.map(t => (
-                  <button key={t} onClick={() => toggleTheme(t)} style={{
-                    padding:'3px 9px', borderRadius:'20px', fontSize:'11px', cursor:'pointer',
-                    border:`1px solid ${selThemes.includes(t) ? 'var(--accent)' : 'var(--border)'}`,
-                    background: selThemes.includes(t) ? 'rgba(74,158,255,0.12)' : 'transparent',
-                    color: selThemes.includes(t) ? 'var(--accent)' : 'var(--text3)',
-                    fontFamily:'var(--font)', transition:'all 0.15s',
-                  }}>
-                    {t}
-                  </button>
-                ))}
-              </div>
-              {loadingT ? <Loading /> : <MultiLineChart trends={themeTrends} selected={selThemes} />}
-
-              {/* マクロ比較（全指標・選択不可） */}
-              <div style={{ ...sHead, marginTop:'24px' }}><span style={sTitle}>マーケット指標比較（全指標）</span><div style={sLine}/></div>
-              <p style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px' }}>
-                ETFベースの独自指標 — 商標権の関係から指数そのものではなく連動ETFを使用しています
-              </p>
-              {loadingM ? <Loading /> : <MultiLineChart trends={macroData} selected={selMacro} />}
+              <VolTvChart selTheme={selTheme} />
             </div>
           </>
         ) : (
