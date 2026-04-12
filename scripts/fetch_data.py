@@ -134,33 +134,58 @@ def build_market_segments():
             "商船三井":"9104.T","川崎汽船":"9107.T","JAL":"9201.T","ANA HD":"9202.T",
             "NTT":"9432.T","KDDI":"9433.T","ソフトバンク":"9434.T","ソフトバンクG":"9984.T",
         },
-        "TOPIX｜Core30": {
+        "国内全般｜時価総額上位50": {
             "トヨタ自動車":"7203.T","ソニーグループ":"6758.T","三菱UFJ FG":"8306.T",
             "キーエンス":"6861.T","東京エレクトロン":"8035.T","信越化学工業":"4063.T",
             "ファーストリテイリング":"9983.T","リクルートHD":"6098.T","三菱商事":"8058.T",
-            "三井物産":"8031.T","KDDI":"9433.T","NTT":"9432.T","ソフトバンクG":"9984.T",
-            "任天堂":"7974.T","デンソー":"6902.T","ダイキン工業":"6367.T",
-            "日立製作所":"6501.T","中外製薬":"4519.T","第一三共":"4568.T",
-            "ホンダ":"7267.T","伊藤忠商事":"8001.T","三井住友FG":"8316.T",
+            "NTT":"9432.T","KDDI":"9433.T","ソフトバンクG":"9984.T","任天堂":"7974.T",
+            "デンソー":"6902.T","日立製作所":"6501.T","三井物産":"8031.T",
+            "中外製薬":"4519.T","伊藤忠商事":"8001.T","第一三共":"4568.T",
+            "三井住友FG":"8316.T","ダイキン工業":"6367.T","ホンダ":"7267.T",
             "みずほFG":"8411.T","東京海上HD":"8766.T","武田薬品工業":"4502.T",
             "村田製作所":"6981.T","ファナック":"6954.T","富士通":"6702.T",
-            "花王":"4452.T","オリックス":"8591.T",
+            "アドバンテスト":"6857.T","レーザーテック":"6920.T","花王":"4452.T",
+            "オリックス":"8591.T","ソフトバンク":"9434.T","三菱電機":"6503.T",
+            "SMC":"6273.T","HOYA":"7741.T","富士フイルムHD":"4901.T","ルネサス":"6723.T",
+            "京セラ":"6971.T","オムロン":"6645.T","パナソニックHD":"6752.T",
+            "TDK":"6762.T","住友商事":"8053.T","三菱重工業":"7011.T","川崎重工業":"7012.T",
+            "テルモ":"4543.T","日本製鉄":"5401.T","コマツ":"6301.T",
+            "MS&AD保険G":"8725.T","住友金属鉱山":"5713.T",
         },
-        "TOPIX｜Large70": {
-            "パナソニックHD":"6752.T","住友商事":"8053.T","丸紅":"8002.T",
-            "三菱電機":"6503.T","アドバンテスト":"6857.T","レーザーテック":"6920.T",
-            "ルネサス":"6723.T","TDK":"6762.T","富士フイルムHD":"4901.T",
-            "日本製鉄":"5401.T","住友金属鉱山":"5713.T","三菱重工業":"7011.T",
-            "川崎重工業":"7012.T","IHI":"7013.T","コマツ":"6301.T","クボタ":"6326.T",
-            "ブリヂストン":"5108.T","旭化成":"3407.T","三菱ケミカルG":"4188.T",
-            "アステラス製薬":"4503.T","テルモ":"4543.T","HOYA":"7741.T",
-            "京セラ":"6971.T","オムロン":"6645.T","SMC":"6273.T",
-            "三井不動産":"8801.T","三菱地所":"8802.T","日本取引所G":"8697.T",
-            "野村HD":"8604.T","MS&AD保険G":"8725.T","第一生命HD":"8750.T",
-            "JR東日本":"9020.T","JR東海":"9022.T","日本郵船":"9101.T",
-            "商船三井":"9104.T","川崎汽船":"9107.T","セブン&アイHD":"3382.T",
-            "イオン":"8267.T","ニトリHD":"9843.T","大和証券G":"8601.T",
-            "りそなHD":"8308.T","キヤノン":"7751.T","JAL":"9201.T","ANA HD":"9202.T",
+        "国内全般｜上位51-100位": {
+            "丸紅":"8002.T","クボタ":"6326.T","IHI":"7013.T","第一生命HD":"8750.T",
+            "アステラス製薬":"4503.T","大塚HD":"4578.T","三井不動産":"8801.T",
+            "三菱地所":"8802.T","ブリヂストン":"5108.T","旭化成":"3407.T",
+            "三菱ケミカルG":"4188.T","日本取引所G":"8697.T","野村HD":"8604.T",
+            "セブン&アイHD":"3382.T","イオン":"8267.T","JR東日本":"9020.T",
+            "JR東海":"9022.T","日本郵船":"9101.T","商船三井":"9104.T","川崎汽船":"9107.T",
+            "ニトリHD":"9843.T","大和証券G":"8601.T","りそなHD":"8308.T",
+            "バンダイナムコHD":"7832.T","キヤノン":"7751.T","東芝":"6502.T",
+            "住友電気工業":"5802.T","古河電気工業":"5801.T","フジクラ":"5803.T",
+            "日東電工":"6988.T","エーザイ":"4523.T","塩野義製薬":"4507.T",
+            "小野薬品":"4528.T","シスメックス":"6869.T","オリンパス":"7733.T",
+            "ディスコ":"6146.T","SCREEN HD":"7735.T","東京精密":"7729.T",
+            "安川電機":"6506.T","THK":"6481.T","ソシオネクスト":"6526.T",
+            "キオクシアHD":"285A.T","三井金属":"5706.T","住友不動産":"8830.T",
+            "東急不動産HD":"3289.T","ヒューリック":"3003.T","メルカリ":"4385.T",
+            "楽天グループ":"4755.T","SBIホールディングス":"8473.T","ニッスイ":"1332.T",
+        },
+        "国内全般｜上位101-150位": {
+            "スズキ":"7269.T","マツダ":"7261.T","スバル":"7270.T","三菱自動車":"7211.T",
+            "日産自動車":"7201.T","豊田自動織機":"6201.T","アイシン":"7259.T",
+            "ジェイテクト":"6473.T","日本郵政":"6178.T","ゆうちょ銀行":"7182.T",
+            "かんぽ生命":"7181.T","東京電力HD":"9501.T","関西電力":"9503.T",
+            "中部電力":"9502.T","九州電力":"9508.T","東北電力":"9506.T",
+            "Jパワー":"9513.T","INPEX":"1605.T","ENEOS HD":"5020.T","出光興産":"5019.T",
+            "コスモエネルギーHD":"5021.T","東京ガス":"9531.T","大阪ガス":"9532.T",
+            "岩谷産業":"8088.T","大林組":"1802.T","鹿島建設":"1812.T",
+            "大成建設":"1801.T","清水建設":"1803.T","積水ハウス":"1928.T",
+            "大和ハウス工業":"1925.T","住友林業":"1911.T","トレンドマイクロ":"4704.T",
+            "NEC":"6701.T","富士電機":"6504.T","横河電機":"6841.T","アズビル":"6845.T",
+            "島津製作所":"7701.T","ニコン":"7731.T","AGC":"5201.T","東レ":"3402.T",
+            "帝人":"3401.T","クレハ":"4023.T","ダイセル":"4202.T","積水化学工業":"4204.T",
+            "TOTO":"5332.T","LIXIL":"5938.T","太平洋セメント":"5233.T",
+            "住友大阪セメント":"5232.T","日本板硝子":"5202.T","JAL":"9201.T",
         },
         "プライム市場": {
             "トヨタ自動車":"7203.T","ソニーグループ":"6758.T","三菱UFJ FG":"8306.T",
@@ -422,7 +447,7 @@ def main():
             },
             "groups": {
                 "国内主要株": [k for k in MARKET_SEGMENTS if k.startswith("日経225")],
-                "国内全般":   [k for k in MARKET_SEGMENTS if k.startswith("TOPIX")],
+                "国内全般":   [k for k in MARKET_SEGMENTS if k.startswith("国内全般")],
                 "市場区分":   [k for k in MARKET_SEGMENTS if any(k.startswith(x) for x in ["プライム","スタンダード","グロース"])],
             },
             "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
@@ -552,6 +577,51 @@ def main():
         print(f"  銘柄アクション検出: {len(actions)}件")
 
     # 保存
+    # ── テーマ別 出来高・売買代金 週次推移（1年間） ──
+    print("テーマ別出来高・売買代金推移を集計中...")
+    import warnings as _w
+    _w.filterwarnings("ignore")
+    for theme_name, stocks in THEMES.items():
+        weekly_dates, weekly_vols, weekly_tvs = [], [], []
+        try:
+            # 全銘柄の日次データを週次に集約
+            combined_vol = {}
+            combined_tv  = {}
+            for name, ticker in stocks.items():
+                df = ticker_data.get(ticker)
+                if df is None or len(df) < 5:
+                    continue
+                # 過去1年分
+                cutoff = pd.Timestamp.now() - pd.Timedelta(days=370)
+                dff = df[df.index >= cutoff].copy()
+                if len(dff) < 5:
+                    continue
+                # 週次リサンプル（金曜日基準）
+                dff.index = pd.to_datetime(dff.index)
+                dff_w = dff.resample('W-FRI').agg({
+                    'Volume': 'sum',
+                    'Close':  'last',
+                })
+                dff_w = dff_w.dropna()
+                for dt, row in dff_w.iterrows():
+                    key = dt.strftime('%Y-%m-%d')
+                    vol = float(row['Volume']) if row['Volume'] else 0
+                    tv  = vol * float(row['Close']) if row['Close'] else 0
+                    combined_vol[key] = combined_vol.get(key, 0) + vol
+                    combined_tv[key]  = combined_tv.get(key, 0)  + tv
+            if combined_vol:
+                dates_sorted = sorted(combined_vol.keys())
+                weekly_dates = dates_sorted
+                weekly_vols  = [round(combined_vol[d]) for d in dates_sorted]
+                weekly_tvs   = [round(combined_tv[d])  for d in dates_sorted]
+        except Exception:
+            pass
+        output[f"vol_trend_{theme_name}"] = {
+            "dates":  weekly_dates,
+            "volumes": weekly_vols,
+            "trade_values": weekly_tvs,
+        }
+
     os.makedirs("frontend/public/data", exist_ok=True)
     # trendsデータを別ファイルに分割（market.jsonの肥大化防止）
     trends_output = {}
@@ -561,6 +631,51 @@ def main():
             trends_output[k] = v
         else:
             main_output[k] = v
+
+    # ── テーマ別 出来高・売買代金 週次推移（1年間） ──
+    print("テーマ別出来高・売買代金推移を集計中...")
+    import warnings as _w
+    _w.filterwarnings("ignore")
+    for theme_name, stocks in THEMES.items():
+        weekly_dates, weekly_vols, weekly_tvs = [], [], []
+        try:
+            # 全銘柄の日次データを週次に集約
+            combined_vol = {}
+            combined_tv  = {}
+            for name, ticker in stocks.items():
+                df = ticker_data.get(ticker)
+                if df is None or len(df) < 5:
+                    continue
+                # 過去1年分
+                cutoff = pd.Timestamp.now() - pd.Timedelta(days=370)
+                dff = df[df.index >= cutoff].copy()
+                if len(dff) < 5:
+                    continue
+                # 週次リサンプル（金曜日基準）
+                dff.index = pd.to_datetime(dff.index)
+                dff_w = dff.resample('W-FRI').agg({
+                    'Volume': 'sum',
+                    'Close':  'last',
+                })
+                dff_w = dff_w.dropna()
+                for dt, row in dff_w.iterrows():
+                    key = dt.strftime('%Y-%m-%d')
+                    vol = float(row['Volume']) if row['Volume'] else 0
+                    tv  = vol * float(row['Close']) if row['Close'] else 0
+                    combined_vol[key] = combined_vol.get(key, 0) + vol
+                    combined_tv[key]  = combined_tv.get(key, 0)  + tv
+            if combined_vol:
+                dates_sorted = sorted(combined_vol.keys())
+                weekly_dates = dates_sorted
+                weekly_vols  = [round(combined_vol[d]) for d in dates_sorted]
+                weekly_tvs   = [round(combined_tv[d])  for d in dates_sorted]
+        except Exception:
+            pass
+        output[f"vol_trend_{theme_name}"] = {
+            "dates":  weekly_dates,
+            "volumes": weekly_vols,
+            "trade_values": weekly_tvs,
+        }
 
     os.makedirs("frontend/public/data", exist_ok=True)
 

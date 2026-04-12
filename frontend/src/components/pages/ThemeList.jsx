@@ -491,11 +491,22 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 </div>
               )
             })()}
-            {/* 関連コラムリンク */}
+            {/* テーマ詳細ボタン + 関連コラムリンク */}
+            {onNavigate && (
+              <button
+                onClick={e => { e.stopPropagation(); onNavigate('テーマ別詳細', item.theme) }}
+                style={{ marginTop:'6px', width:'100%', padding:'4px 0',
+                  background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
+                  borderRadius:'4px', color:'#aa77ff', cursor:'pointer',
+                  fontSize:'10px', fontFamily:'var(--font)', fontWeight:600,
+                }}>
+                📊 テーマ詳細を確認
+              </button>
+            )}
             {THEME_ARTICLE_MAP[item.theme] && onNavigate && (
               <button
                 onClick={e => { e.stopPropagation(); onNavigate('コラム・解説', THEME_ARTICLE_MAP[item.theme]) }}
-                style={{ marginTop:'6px', width:'100%', padding:'4px 0',
+                style={{ marginTop:'4px', width:'100%', padding:'4px 0',
                   background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
                   borderRadius:'4px', color:'var(--accent)', cursor:'pointer',
                   fontSize:'10px', fontFamily:'var(--font)', fontWeight:600,
