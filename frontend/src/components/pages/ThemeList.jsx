@@ -491,22 +491,11 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 </div>
               )
             })()}
-            {/* テーマ詳細ボタン + 関連コラムリンク */}
-            {onNavigate && (
-              <button
-                onClick={e => { e.stopPropagation(); onNavigate('テーマ別詳細', item.theme) }}
-                style={{ marginTop:'6px', width:'100%', padding:'4px 0',
-                  background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
-                  borderRadius:'4px', color:'#aa77ff', cursor:'pointer',
-                  fontSize:'10px', fontFamily:'var(--font)', fontWeight:600,
-                }}>
-                📊 テーマ詳細を確認
-              </button>
-            )}
+            {/* 関連コラムリンク */}
             {THEME_ARTICLE_MAP[item.theme] && onNavigate && (
               <button
                 onClick={e => { e.stopPropagation(); onNavigate('コラム・解説', THEME_ARTICLE_MAP[item.theme]) }}
-                style={{ marginTop:'4px', width:'100%', padding:'4px 0',
+                style={{ marginTop:'6px', width:'100%', padding:'4px 0',
                   background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
                   borderRadius:'4px', color:'var(--accent)', cursor:'pointer',
                   fontSize:'10px', fontFamily:'var(--font)', fontWeight:600,
@@ -644,7 +633,7 @@ export default function ThemeList({ onNavigate }) {
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text)', lineHeight:1.9 }}>
-          日本株の主要67テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
+          日本株の主要30テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
           <br />
           <span style={{ fontSize:'11px', color:'var(--text2)' }}>
