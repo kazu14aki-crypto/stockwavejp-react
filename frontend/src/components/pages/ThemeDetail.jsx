@@ -259,6 +259,137 @@ function VolTvChart({ selTheme }) {
   )
 }
 
+
+// ── 注目銘柄ピックアップ ──────────────────────────────
+function PickupStocks({ stocks, period }) {
+  if (!stocks || stocks.length === 0) return null
+
+  // 総合スコアを計算して注目銘柄を抽出
+  const scored = stocks.map(s => {
+    // 1. 騰落率スコア（0〜40点）
+    const pctScore = Math.min(40, Math.max(0, (s.pct ?? 0) * 2))
+
+    // 2. 出来高急増スコア（0〜25点）
+    const volScore = Math.min(25, Math.max(0, (s.volume_chg ?? 0) * 0.5))
+
+    // 3. スパーク（騰落速度）スコア（0〜20点）
+    // スパークの末尾5点の傾きを計算
+    let sparkScore = 0
+    if (s.spark && s.spark.length >= 5) {
+      const sp = s.spark
+      const recent = sp.slice(-5)
+      const slope = (recent[recent.length - 1] - recent[0]) / recent.length
+      sparkScore = Math.min(20, Math.max(0, slope * 4))
+    }
+
+    // 4. 売買代金スコア（0〜15点）
+    const tvScore = Math.min(15, (s.trade_value ?? 0) > 0 ?
+      Math.log10(s.trade_value) * 1.5 : 0)
+
+    const totalScore = pctScore + volScore + sparkScore + tvScore
+
+    return { ...s, _score: totalScore, _pctScore: pctScore, _volScore: volScore, _sparkScore: sparkScore }
+  })
+  .filter(s => s._score > 5)
+  .sort((a, b) => b._score - a._score)
+  .slice(0, 3)
+
+  if (scored.length === 0) return null
+
+  const fmtL = (v) => {
+    if (!v || v === 0) return '-'
+    if (v >= 1e8) return (v / 1e8).toFixed(1) + '億'
+    if (v >= 1e4) return (v / 1e4).toFixed(1) + '万'
+    return v.toLocaleString()
+  }
+
+  const reasons = (s) => {
+    const rs = []
+    if ((s.pct ?? 0) >= 5)           rs.push(`騰落率+${s.pct?.toFixed(1)}%`)
+    if ((s.volume_chg ?? 0) >= 20)   rs.push(`出来高+${s.volume_chg?.toFixed(0)}%急増`)
+    if (s._sparkScore > 8)            rs.push('直近加速中')
+    if ((s.trade_value ?? 0) > 1e9)  rs.push('売買代金大')
+    if (rs.length === 0)              rs.push('総合スコア上位')
+    return rs
+  }
+
+  return (
+    <div style={{ marginBottom:'20px' }}>
+      <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px' }}>
+        <span style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em',
+          color:'var(--text3)', textTransform:'uppercase' }}>
+          🔎 注目銘柄ピックアップ
+        </span>
+        <div style={{ flex:1, height:'1px', background:'var(--border)' }} />
+        <span style={{ fontSize:'10px', color:'var(--text3)' }}>
+          騰落率・出来高・勢い等を総合判断
+        </span>
+      </div>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'10px' }}
+        className="pickup-grid">
+        {scored.map((s, i) => {
+          const upColor = (s.pct ?? 0) >= 0 ? '#ff5370' : '#00c48c'
+          return (
+            <div key={s.ticker} style={{
+              background:'var(--bg2)', border:'1px solid var(--border)',
+              borderRadius:'8px', padding:'12px 14px',
+              borderLeft: `3px solid ${i === 0 ? '#ffd166' : i === 1 ? 'rgba(255,209,102,0.5)' : 'rgba(255,209,102,0.25)'}`,
+            }}>
+              {/* 順位バッジ */}
+              <div style={{ display:'flex', alignItems:'center', gap:'6px', marginBottom:'6px' }}>
+                <span style={{ fontSize:'10px', fontWeight:700,
+                  background: i === 0 ? '#ffd166' : 'rgba(255,209,102,0.2)',
+                  color: i === 0 ? '#333' : '#ffd166',
+                  borderRadius:'4px', padding:'1px 6px' }}>
+                  {i === 0 ? '🥇 注目' : i === 1 ? '🥈 2位' : '🥉 3位'}
+                </span>
+                <span style={{ fontSize:'10px', color:'var(--text3)',
+                  fontFamily:'var(--mono)' }}>
+                  {s.ticker.replace('.T','')}
+                </span>
+              </div>
+              {/* 銘柄名 + スパーク */}
+              <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'6px' }}>
+                <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)',
+                  flex:1, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+                  {s.name}
+                </span>
+                <Sparkline data={s.spark} />
+              </div>
+              {/* 指標 */}
+              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginBottom:'6px' }}>
+                <span style={{ fontSize:'12px', fontWeight:700,
+                  fontFamily:'var(--mono)', color: upColor }}>
+                  {(s.pct ?? 0) >= 0 ? '+' : ''}{s.pct?.toFixed(1)}%
+                </span>
+                {(s.volume_chg ?? 0) !== 0 && (
+                  <span style={{ fontSize:'10px', color:(s.volume_chg ?? 0) >= 0 ? '#ff5370' : '#00c48c',
+                    fontFamily:'var(--mono)' }}>
+                    出来高{(s.volume_chg ?? 0) >= 0 ? '+' : ''}{s.volume_chg?.toFixed(0)}%
+                  </span>
+                )}
+                <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
+                  ¥{s.price?.toLocaleString()}
+                </span>
+              </div>
+              {/* 選定理由 */}
+              <div style={{ display:'flex', gap:'4px', flexWrap:'wrap' }}>
+                {reasons(s).map((r, j) => (
+                  <span key={j} style={{ fontSize:'9px', background:'rgba(255,209,102,0.1)',
+                    border:'1px solid rgba(255,209,102,0.25)', borderRadius:'3px',
+                    padding:'1px 5px', color:'#ffd166' }}>
+                    {r}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 function MultiLineChart({ trends, selected, title }) {
   if (!selected.length) return (
     <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
@@ -351,7 +482,7 @@ function MultiLineChart({ trends, selected, title }) {
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
   const [modalStock, setModalStock] = useState(null)
-  const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['株価','騰落率','時価総額','連動度','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <>
       {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
@@ -388,6 +519,7 @@ function StockTable({ stocks }) {
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
                   <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
                   <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
@@ -733,6 +865,9 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
             </div>
 
+            {/* ── 注目銘柄ピックアップ ── */}
+            <PickupStocks stocks={stocks} period={period} />
+
             {/* ── 構成銘柄テーブル ── */}
             <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)',
               textTransform:'uppercase', marginBottom:'8px' }}>
@@ -756,7 +891,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         )}
       </div>
       <style>{`
-        @media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}
+        @media (max-width:640px){.top5g{grid-template-columns:1fr !important;} .pickup-grid{grid-template-columns:1fr !important;}}
       `}</style>
     </div>
   )

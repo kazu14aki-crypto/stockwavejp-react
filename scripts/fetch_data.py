@@ -368,10 +368,18 @@ def main():
                             spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
                 except Exception:
                     spark = []
+                # 時価総額（ticker_dataのClose最終値×株式数、近似値はfast_info利用）
+                mkt_cap = 0
+                try:
+                    fi = yf.Ticker(ticker).fast_info
+                    mkt_cap = int(getattr(fi, "market_cap", 0) or 0)
+                except Exception:
+                    mkt_cap = 0
                 detail_stocks.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
                     "contribution": round(d["pct"] / len(stocks), 2),
+                    "market_cap": mkt_cap,
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
                     "spark": spark,

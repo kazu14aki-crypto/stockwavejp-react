@@ -522,7 +522,7 @@ def fetch_theme_trend(theme_stocks: dict, period: str) -> list:
     return result
 
 def fetch_segment_detail(seg_name: str, period: str) -> list:
-    cache_key = f"seg_detail_{seg_name}_{period}"
+    cache_key = f"seg_detail_v2_{seg_name}_{period}"  # v2: spark追加
     cached = _get_mem_cache(cache_key)
     if cached is None:
         cached = _get_cache(cache_key)
@@ -550,10 +550,9 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
         # スパークライン（6ヶ月の週次騰落率）
         spark = []
         try:
-            import pandas as _pd3
             df_sp = _fetch_df(ticker)
             if df_sp is not None and len(df_sp) >= 10:
-                cutoff6 = _pd3.Timestamp.now() - _pd3.Timedelta(days=185)
+                cutoff6 = pd.Timestamp.now() - pd.Timedelta(days=185)
                 df_sp6 = df_sp[df_sp.index >= cutoff6]
                 cl_sp = df_sp6["Close"].dropna()
                 if len(cl_sp) >= 4:
@@ -562,9 +561,16 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
         except Exception:
             spark = []
+        market_cap = 0
+        try:
+            info2 = yf.Ticker(ticker).fast_info
+            market_cap = int(getattr(info2, 'market_cap', 0) or 0)
+        except Exception:
+            market_cap = 0
         result.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct, "contribution": round(pct / len(stocks_def), 2),
+            "market_cap": market_cap,
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
             "vol_rank": 0, "tv_rank": 0,
             "major": cls_info.get("major", ""),
@@ -609,7 +615,7 @@ def fetch_market_segments(period: str) -> dict:
     return result
 
 def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict:
-    cache_key = f"theme_detail_{theme_name}_{period}"
+    cache_key = f"theme_detail_v2_{theme_name}_{period}"  # v2: spark追加
     cached = _get_mem_cache(cache_key)
     if cached is None:
         cached = _get_cache(cache_key)
@@ -632,12 +638,11 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
         price = round(float(cl.iloc[-1]), 0)
         tv = int(rv * price)
         # スパークライン用：過去6ヶ月の週次騰落率
-        import pandas as _pd
         spark = []
         try:
             df6 = _fetch_df(ticker)
             if df6 is not None and len(df6) >= 10:
-                df6 = df6[df6.index >= (_pd.Timestamp.now() - _pd.Timedelta(days=185))]
+                df6 = df6[df6.index >= (pd.Timestamp.now() - pd.Timedelta(days=185))]
                 cl6 = df6["Close"].dropna()
                 if len(cl6) >= 4:
                     base = float(cl6.iloc[0])
@@ -645,9 +650,19 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl6.iloc[::step]]
         except Exception:
             spark = []
+        # 時価総額（発行済み株式数 × 株価、yfinanceのinfo取得を避け近似値で計算）
+        # trade_value（売買代金）から推定せず、株価×出来高の累積から近似
+        # より正確にはfast_infoから取得
+        market_cap = 0
+        try:
+            info = yf.Ticker(ticker).fast_info
+            market_cap = int(getattr(info, 'market_cap', 0) or 0)
+        except Exception:
+            market_cap = 0
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct, "contribution": round(pct / len(theme_stocks), 2),
+            "market_cap": market_cap,
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
             "spark": spark,
             "vol_rank": 0, "tv_rank": 0,

@@ -160,6 +160,8 @@ export default function Column({ initialArticleId = null, onNavigate }) {
   const [activeCat,  setActiveCat]  = useState('すべて')
   const [activeCol,  setActiveCol]  = useState(initialArticleId)
   const [searchQuery, setSearchQuery] = useState('')
+  const [page,        setPage]        = useState(1)
+  const ITEMS_PER_PAGE = 20
 
   // テーマ一覧・テーマ詳細から特定記事IDで来たときに追従
   useEffect(() => {
@@ -216,6 +218,9 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       )
     })
     .sort((a, b) => b.date.localeCompare(a.date))
+
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE)
+  const pagedItems = filtered.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE)
 
   if (activeCol) {
     const col = COLUMNS.find(c => c.id === activeCol)
@@ -350,7 +355,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           type="text"
           placeholder="キーワード・テーマ名で検索..."
           value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value)}
+          onChange={e => setSearchQuery(e.target.value); setPage(1)}
           style={{
             width:'100%', padding:'9px 36px 9px 14px',
             background:'var(--bg2)', border:'1px solid var(--border)',
@@ -370,7 +375,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       {/* カテゴリフィルタ */}
       <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', marginBottom:'24px' }}>
         {CATEGORIES.map(cat => (
-          <button key={cat} onClick={() => setActiveCat(cat)} style={{
+          <button key={cat} onClick={() => setActiveCat(cat); setPage(1)} style={{
             padding:'5px 14px', borderRadius:'20px', fontSize:'12px', cursor:'pointer',
             fontFamily:'var(--font)', transition:'all 0.15s',
             border: activeCat === cat ? '1px solid var(--accent)' : '1px solid var(--border)',
@@ -383,9 +388,16 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         ))}
       </div>
 
+      {/* ページ情報 */}
+      {filtered.length > 0 && (
+        <div style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'12px' }}>
+          {filtered.length}件中 {(page-1)*ITEMS_PER_PAGE+1}〜{Math.min(page*ITEMS_PER_PAGE, filtered.length)}件表示
+        </div>
+      )}
+
       {/* コラム一覧 */}
-      <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'14px' }} className="col-grid">
-        {filtered.filter(Boolean).map((col, i) => {
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(2, 1fr)', gap:'14px' }} className="col-grid">
+        {pagedItems.filter(Boolean).map((col, i) => {
           const cat = CAT_COLORS[col.category] || { bg:'rgba(74,158,255,0.1)', color:'#4a9eff', border:'rgba(74,158,255,0.25)' }
           return (
             <div key={col.id} onClick={() => openArticle(col.id)} style={{
@@ -422,8 +434,45 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         })}
       </div>
 
+      {/* ページネーション */}
+      {totalPages > 1 && (
+        <div style={{ display:'flex', justifyContent:'center', alignItems:'center',
+          gap:'8px', marginTop:'28px', flexWrap:'wrap' }}>
+          <button onClick={() => { setPage(p => Math.max(1, p-1)); window.scrollTo(0,0) }}
+            disabled={page === 1}
+            style={{ padding:'6px 14px', borderRadius:'6px', border:'1px solid var(--border)',
+              background: page === 1 ? 'transparent' : 'var(--bg2)',
+              color: page === 1 ? 'var(--text3)' : 'var(--text)',
+              cursor: page === 1 ? 'default' : 'pointer',
+              fontFamily:'var(--font)', fontSize:'12px' }}>
+            ← 前へ
+          </button>
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
+            <button key={p} onClick={() => { setPage(p); window.scrollTo(0,0) }}
+              style={{ padding:'6px 12px', borderRadius:'6px', fontSize:'12px',
+                fontFamily:'var(--font)', cursor:'pointer',
+                border: p === page ? '1px solid var(--accent)' : '1px solid var(--border)',
+                background: p === page ? 'rgba(74,158,255,0.15)' : 'var(--bg2)',
+                color: p === page ? 'var(--accent)' : 'var(--text)',
+                fontWeight: p === page ? 700 : 400 }}>
+              {p}
+            </button>
+          ))}
+          <button onClick={() => { setPage(p => Math.min(totalPages, p+1)); window.scrollTo(0,0) }}
+            disabled={page === totalPages}
+            style={{ padding:'6px 14px', borderRadius:'6px', border:'1px solid var(--border)',
+              background: page === totalPages ? 'transparent' : 'var(--bg2)',
+              color: page === totalPages ? 'var(--text3)' : 'var(--text)',
+              cursor: page === totalPages ? 'default' : 'pointer',
+              fontFamily:'var(--font)', fontSize:'12px' }}>
+            次へ →
+          </button>
+        </div>
+      )}
+
       <style>{`
-        @media (max-width:640px) { .col-grid { grid-template-columns: 1fr !important; } }
+        @media (max-width:640px) { .col-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; } }
+        @media (max-width:640px) { .col-grid > div { padding: 12px 12px !important; } }
       `}</style>
     </div>
   )

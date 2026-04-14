@@ -50,11 +50,11 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
     const isActive = currentPage === label
     return (
       <button onClick={() => onPageChange(label)} style={{
-        padding: '9px 12px',
-        fontSize: '13px',
+        padding: '7px 10px',
+        fontSize: '12px',
         color: isActive ? 'var(--text)' : 'var(--text2)',
         borderRadius: '6px', marginBottom: '1px', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', gap: '8px',
+        display: 'flex', alignItems: 'center', gap: '6px',
         letterSpacing: '-0.01em', fontWeight: isActive ? 600 : 400,
         borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
         borderRight: '2px solid transparent',
@@ -62,11 +62,13 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
         background: isActive ? 'rgba(74,158,255,0.1)' : 'transparent',
         width: '100%', textAlign: 'left', fontFamily: 'var(--font)',
         transition: 'all 0.15s',
+        overflow: 'hidden',
       }}
         onMouseEnter={e => { if (!isActive) { e.currentTarget.style.background='rgba(74,158,255,0.06)'; e.currentTarget.style.color='#8aaad0' }}}
         onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background='transparent'; e.currentTarget.style.color='var(--text2)' }}}
       >
-        <span style={{ fontSize:'13px', opacity:0.7 }}>{icon}</span>{label}
+        <span style={{ fontSize:'12px', opacity:0.7, flexShrink:0 }}>{icon}</span>
+        <span style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{label}</span>
       </button>
     )
   }

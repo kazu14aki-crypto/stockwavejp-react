@@ -96,7 +96,7 @@ function Sparkline({ data }) {
 
 function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','寄与度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['株価','騰落率','時価総額','連動度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
@@ -128,6 +128,7 @@ function StockTable({ stocks, onAddToTheme }) {
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
                 <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
