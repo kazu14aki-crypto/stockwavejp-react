@@ -3,6 +3,76 @@ import { useThemes, useMacro } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
+const THEME_ARTICLE_MAP = {
+  '半導体製造装置':    'semiconductor-theme',
+  '半導体検査装置':    'semiconductor-theme',
+  '半導体材料':        'semiconductor-theme',
+  'メモリ':            'semiconductor-theme',
+  'パワー半導体':      'power-semiconductor',
+  '次世代半導体':      'semiconductor-theme',
+  '生成AI':            'ai-cloud-theme',
+  'AIデータセンター':  'ai-cloud-theme',
+  'フィジカルAI':      'physical-ai-edge-ai',
+  'AI半導体':          'semiconductor-theme',
+  'AI人材':            'education-hr-theme',
+  'エッジAI':          'physical-ai-edge-ai',
+  'EV・電気自動車':    'ev-green-theme',
+  '全固体電池':        'ev-green-theme',
+  '自動運転':          'ev-green-theme',
+  'ドローン':          'drone-theme',
+  '輸送・物流':        'transport-logistics-theme',
+  '造船':              'shipbuilding-theme',
+  '再生可能エネルギー':'renewable-energy-theme',
+  '太陽光発電':        'renewable-energy-theme',
+  '核融合発電':        'renewable-energy-theme',
+  '原子力発電':        'renewable-energy-theme',
+  '電力会社':          'renewable-energy-theme',
+  'LNG':               'inpex-analysis',
+  '石油':              'inpex-analysis',
+  '蓄電池':            'ev-green-theme',
+  '資源（水素・ヘリウム・水）': 'rare-earth-resources-theme',
+  'IOWN':              'optical-communication',
+  '光通信':            'optical-communication',
+  '通信':              'telecom-theme',
+  '量子コンピューター':'ai-cloud-theme',
+  'SaaS':              'fintech-theme',
+  'ウェアラブル端末':  'game-entertainment-theme',
+  '仮想通貨':          'fintech-theme',
+  'ネット銀行':        'banking-finance-theme',
+  '鉄鋼・素材':        'steel-materials-theme',
+  '化学':              'chemical-theme',
+  '建築資材':          'construction-infra-theme',
+  '塗料':              'chemical-theme',
+  '医薬品・バイオ':    'pharma-bio-theme',
+  'ヘルスケア・介護':  'healthcare-nursing-theme',
+  '薬局・ドラッグストア': 'healthcare-nursing-theme',
+  '銀行・金融':        'banking-finance-theme',
+  '地方銀行':          'regional-bank-theme',
+  '保険':              'insurance-theme',
+  'フィンテック':      'fintech-theme',
+  '不動産':            'real-estate-theme',
+  '建設・インフラ':    'construction-infra-theme',
+  '国土強靭化計画':    'national-resilience',
+  '下水道':            'construction-infra-theme',
+  '食品・飲料':        'food-beverage-theme',
+  '農業・フードテック':'agritech-foodtech-theme',
+  '小売・EC':          'retail-ec-theme',
+  '観光・ホテル・レジャー': 'tourism-hotel-theme',
+  'インバウンド':      'inbound-theme',
+  'リユース・中古品':  'retail-ec-theme',
+  '防衛・航空':        'defense-theme',
+  '宇宙・衛星':        'space-satellite-theme',
+  'ロボット・自動化':  'robot-automation-theme',
+  'レアアース・資源':  'rare-earth-resources-theme',
+  'バフェット銘柄':    'sogo-shosha-analysis',
+  'サイバーセキュリティ': 'cybersecurity-theme',
+  '警備':              'cybersecurity-theme',
+  '脱炭素・ESG':       'ev-green-theme',
+  '教育・HR・人材':    'education-hr-theme',
+  '人材派遣':          'education-hr-theme',
+  'ゲーム・エンタメ':  'game-entertainment-theme',
+}
+
 const ALL_NEWS = [
   { date:'2026/04/01', tag:'NEW',    title:'データ取得頻度を1時間おきに変更' },
   { date:'2026/04/01', tag:'UPDATE', title:'コラム8本追加・説明文充実' },
@@ -465,6 +535,47 @@ export default function TopPage({ onNavigate }) {
             📝 本日のマーケットコメント（自動生成・1ヶ月集計）
           </div>
           <AutoComment lines={generateMarketComment(themes, macro)} />
+
+          {/* 注目テーマ誘導ボタン */}
+          {themes?.themes?.length > 0 && onNavigate && (() => {
+            const top3 = [...(themes.themes||[])].sort((a,b)=>b.pct-a.pct).slice(0,3)
+            return (
+              <div style={{ marginTop:'14px' }}>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px',
+                  fontWeight:600, letterSpacing:'0.08em', textTransform:'uppercase' }}>
+                  🔎 注目テーマ（上昇TOP3）
+                </div>
+                <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'10px' }}>
+                  {top3.map(t => (
+                    <div key={t.theme} style={{ display:'flex', gap:'4px' }}>
+                      <button onClick={() => onNavigate('テーマ別詳細', t.theme)}
+                        style={{ padding:'5px 10px', borderRadius:'5px', fontSize:'11px',
+                          background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                          color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600,
+                          whiteSpace:'nowrap' }}>
+                        📊 {t.theme}
+                      </button>
+                      {THEME_ARTICLE_MAP[t.theme] && (
+                        <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[t.theme])}
+                          style={{ padding:'5px 10px', borderRadius:'5px', fontSize:'11px',
+                            background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
+                            color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)',
+                            whiteSpace:'nowrap' }}>
+                          📖 コラム
+                        </button>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                <button onClick={() => onNavigate('週次レポート')}
+                  style={{ padding:'6px 14px', borderRadius:'6px', fontSize:'11px',
+                    background:'rgba(255,140,66,0.1)', border:'1px solid rgba(255,140,66,0.3)',
+                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                  📰 最新週次レポートを読む →
+                </button>
+              </div>
+            )
+          })()}
         </div>
       )}
 
