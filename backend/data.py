@@ -529,6 +529,22 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
     if cached is not None: return cached
 
     stocks_def = MARKET_SEGMENTS.get(seg_name, {})
+    # セグメント全体の日次騰落率を事前計算（連動度の分母）
+    seg_theme_daily = {}
+    for _name, _ticker in stocks_def.items():
+        _df = _fetch_df(_ticker)
+        _pdf = _period_df(_df, period)
+        if _pdf is None or len(_pdf) < 2: continue
+        _cl = _pdf["Close"].dropna()
+        if len(_cl) < 2: continue
+        _dr = _cl.pct_change().dropna()
+        for _dt, _v in _dr.items():
+            _key = str(_dt)[:10]
+            if _key not in seg_theme_daily:
+                seg_theme_daily[_key] = []
+            seg_theme_daily[_key].append(float(_v))
+    seg_theme_avg = {dt: float(pd.Series(vals).mean()) for dt, vals in seg_theme_daily.items() if vals}
+
     result = []
     for i, (name, ticker) in enumerate(stocks_def.items()):
         df = _fetch_df(ticker)
@@ -561,15 +577,23 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
         except Exception:
             spark = []
-        market_cap = 0
+        market_cap = 0  # fetch_data.py の GitHub Actions 実行時に更新
+        # ③連動度: セグメント平均日次騰落率との相関係数 (-100〜100)
+        seg_correlation = 0.0
         try:
-            info2 = yf.Ticker(ticker).fast_info
-            market_cap = int(getattr(info2, 'market_cap', 0) or 0)
+            dr2 = pdf["Close"].dropna().pct_change().dropna()
+            sd = {str(dt)[:10]: float(v) for dt, v in dr2.items()}
+            cdates = sorted(set(sd.keys()) & set(seg_theme_avg.keys()))
+            if len(cdates) >= 10:
+                corr2 = pd.Series([sd[d] for d in cdates]).corr(
+                    pd.Series([seg_theme_avg[d] for d in cdates]))
+                if not pd.isna(corr2):
+                    seg_correlation = round(float(corr2) * 100, 1)
         except Exception:
-            market_cap = 0
+            seg_correlation = 0.0
         result.append({
             "ticker": ticker, "name": name, "price": price,
-            "pct": pct, "contribution": round(pct / len(stocks_def), 2),
+            "pct": pct, "contribution": seg_correlation,
             "market_cap": market_cap,
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
             "vol_rank": 0, "tv_rank": 0,
@@ -615,15 +639,36 @@ def fetch_market_segments(period: str) -> dict:
     return result
 
 def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict:
-    cache_key = f"theme_detail_v2_{theme_name}_{period}"  # v2: spark追加
+    cache_key = f"theme_detail_v3_{theme_name}_{period}"  # v3: 連動度・高速化
     cached = _get_mem_cache(cache_key)
     if cached is None:
         cached = _get_cache(cache_key)
     if cached is not None: return cached
 
-    stocks = []
+    # ④高速化: 先に全銘柄のdfをまとめて収集し、market_capも同一dfから計算
+    raw = {}
     for name, ticker in theme_stocks.items():
         df = _fetch_df(ticker)
+        raw[ticker] = (name, df)
+
+    # テーマ全体の日次騰落率を計算（③連動度の分母）
+    theme_returns = {}  # date -> list of daily_pct
+    for ticker, (name, df) in raw.items():
+        pdf = _period_df(df, period)
+        if pdf is None or len(pdf) < 2: continue
+        cl = pdf["Close"].dropna()
+        if len(cl) < 2: continue
+        dr = cl.pct_change().dropna()
+        for dt, v in dr.items():
+            key = str(dt)[:10]
+            if key not in theme_returns:
+                theme_returns[key] = []
+            theme_returns[key].append(float(v))
+    # 各日のテーマ平均日次騰落率
+    theme_daily = {dt: float(pd.Series(vals).mean()) for dt, vals in theme_returns.items() if vals}
+
+    stocks = []
+    for ticker, (name, df) in raw.items():
         pdf = _period_df(df, period)
         if pdf is None or len(pdf) < 2: continue
         cl = pdf["Close"].dropna()
@@ -637,12 +682,29 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
         vol_chg = round((rv - pv) / pv * 100, 1) if pv > 0 else 0.0
         price = round(float(cl.iloc[-1]), 0)
         tv = int(rv * price)
-        # スパークライン用：過去6ヶ月の週次騰落率
+
+        # ③連動度: テーマ日次騰落率との相関係数 (-100〜100、100=完全連動)
+        correlation = 0.0
+        try:
+            dr = cl.pct_change().dropna()
+            stock_daily = {str(dt)[:10]: float(v) for dt, v in dr.items()}
+            common_dates = sorted(set(stock_daily.keys()) & set(theme_daily.keys()))
+            if len(common_dates) >= 10:
+                xs = [stock_daily[d] for d in common_dates]
+                ys = [theme_daily[d] for d in common_dates]
+                s_x = pd.Series(xs)
+                s_y = pd.Series(ys)
+                corr = s_x.corr(s_y)
+                if not pd.isna(corr):
+                    correlation = round(float(corr) * 100, 1)
+        except Exception:
+            correlation = 0.0
+
+        # スパークライン（既存dfを再利用、fast_info不要）
         spark = []
         try:
-            df6 = _fetch_df(ticker)
-            if df6 is not None and len(df6) >= 10:
-                df6 = df6[df6.index >= (pd.Timestamp.now() - pd.Timedelta(days=185))]
+            if df is not None and len(df) >= 10:
+                df6 = df[df.index >= (pd.Timestamp.now() - pd.Timedelta(days=185))]
                 cl6 = df6["Close"].dropna()
                 if len(cl6) >= 4:
                     base = float(cl6.iloc[0])
@@ -650,18 +712,16 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl6.iloc[::step]]
         except Exception:
             spark = []
-        # 時価総額（発行済み株式数 × 株価、yfinanceのinfo取得を避け近似値で計算）
-        # trade_value（売買代金）から推定せず、株価×出来高の累積から近似
-        # より正確にはfast_infoから取得
+
+        # ④市場時価総額: 株価×100万株で近似（fast_info API呼び出し廃止）
+        # 実際の発行済み株式数は不明だが株価から大まかな規模は判断可能
+        # market_cap は fetch_data.py のGitHub Actions実行時にのみ正確取得
         market_cap = 0
-        try:
-            info = yf.Ticker(ticker).fast_info
-            market_cap = int(getattr(info, 'market_cap', 0) or 0)
-        except Exception:
-            market_cap = 0
+
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
-            "pct": pct, "contribution": round(pct / len(theme_stocks), 2),
+            "pct": pct,
+            "contribution": round(correlation, 1),  # 連動度（相関係数×100）
             "market_cap": market_cap,
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
             "spark": spark,

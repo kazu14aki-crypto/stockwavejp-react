@@ -68,9 +68,7 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
-  if (!data || data.length < 3) {
-    return <svg viewBox="0 0 64 24" width="100%" height="100%" />
-  }
+  if (!data || data.length < 3) return null
   const W = 64, H = 24
   const min = Math.min(...data)
   const max = Math.max(...data)
@@ -83,9 +81,7 @@ function Sparkline({ data }) {
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
   const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%"
-      style={{ display:'block', overflow:'hidden' }}
-      preserveAspectRatio="none">
+    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
       <line x1={0} y1={zeroY} x2={W} y2={zeroY}
         stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
       <polyline
@@ -124,21 +120,21 @@ function StockTable({ stocks, onAddToTheme }) {
                 </td>
                 <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-<div style={{ display:'flex', alignItems:'center', gap:0, width:'100%' }}>
-  <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
-    textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-  <div style={{ width:'68px', minWidth:'68px', height:'26px',
-    marginLeft:'6px', background:'rgba(255,255,255,0.03)',
-    borderRadius:'3px', overflow:'hidden',
-    border:'1px solid rgba(255,255,255,0.05)' }}>
-    <Sparkline data={s.spark} />
-  </div>
+<div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'nowrap' }}>
+  <span style={{ fontSize:'13px' }}>{s.name}</span>
+  <Sparkline data={s.spark} />
 </div>
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
-                <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
+                <td style={{ ...tdR, fontFamily:'var(--mono)',
+  color: (s.contribution ?? 0) >= 70 ? '#ff5370' :
+         (s.contribution ?? 0) >= 40 ? '#ff8c42' :
+         (s.contribution ?? 0) >= 0  ? 'var(--text2)' : '#4a9eff' }}
+  title="連動度: テーマ平均との日次騰落率の相関係数（-100〜+100）">
+  {s.contribution?.toFixed(0)}
+</td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
                 <td style={tdC}>{s.vol_rank}位</td>

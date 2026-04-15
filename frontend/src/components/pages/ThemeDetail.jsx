@@ -101,10 +101,7 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // ── 複数折れ線グラフ（Compare移植）──
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
-  if (!data || data.length < 3) {
-    // データなしでも枠のスペースを確保（整列のため）
-    return <svg viewBox="0 0 64 24" width="100%" height="100%" />
-  }
+  if (!data || data.length < 3) return null
   const W = 64, H = 24
   const min = Math.min(...data)
   const max = Math.max(...data)
@@ -117,9 +114,7 @@ function Sparkline({ data }) {
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
   const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%"
-      style={{ display:'block', overflow:'hidden' }}
-      preserveAspectRatio="none">
+    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
       {/* ゼロライン */}
       <line x1={0} y1={zeroY} x2={W} y2={zeroY}
         stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
@@ -382,12 +377,7 @@ function PickupStocks({ stocks, period }) {
                   textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
                   {s.name}
                 </span>
-                <div style={{ width:'68px', minWidth:'68px', height:'26px',
-                  flexShrink:0, marginLeft:'8px',
-                  background:'rgba(255,255,255,0.04)', borderRadius:'3px',
-                  overflow:'hidden', border:'1px solid rgba(255,255,255,0.08)' }}>
-                  <Sparkline data={s.spark} />
-                </div>
+                <Sparkline data={s.spark} />
               </div>
 
               {/* 副指標 */}
@@ -403,32 +393,32 @@ function PickupStocks({ stocks, period }) {
                 )}
               </div>
 
-              {/* 選定理由（なぜこの銘柄か） */}
+              {/* 注目度スコア + 根拠文章 */}
               <div style={{ borderTop:'1px solid rgba(255,255,255,0.06)',
                 paddingTop:'7px', marginTop:'4px' }}>
-                <div style={{ fontSize:'9px', fontWeight:600, color:'var(--text3)',
-                  marginBottom:'5px', letterSpacing:'0.08em', textTransform:'uppercase' }}>
-                  ▷ 選定理由
+                {/* 注目度スコー数値 */}
+                <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'5px' }}>
+                  <span style={{ fontSize:'9px', fontWeight:600, color:'var(--text3)',
+                    letterSpacing:'0.08em', textTransform:'uppercase' }}>注目度</span>
+                  <span style={{ fontSize:'14px', fontWeight:800,
+                    color: s._score >= 60 ? '#ff5370' : s._score >= 35 ? '#ff8c42' : '#ffd166',
+                    fontFamily:'var(--mono)', letterSpacing:'-0.02em' }}>
+                    {Math.min(100, Math.round(s._score))}
+                  </span>
+                  <span style={{ fontSize:'9px', color:'var(--text3)' }}>/100</span>
+                  {/* ミニバー */}
+                  <div style={{ flex:1, height:'4px', background:'rgba(255,255,255,0.06)',
+                    borderRadius:'2px', overflow:'hidden' }}>
+                    <div style={{ width:`${Math.min(100, Math.round(s._score))}%`,
+                      height:'100%', borderRadius:'2px',
+                      background: s._score >= 60 ? '#ff5370' : s._score >= 35 ? '#ff8c42' : '#ffd166',
+                    }} />
+                  </div>
                 </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
-                  {s._reasons.map((r, j) => (
-                    <div key={j} style={{ display:'flex', alignItems:'center', gap:'6px' }}>
-                      {/* スコアバー（視覚的な根拠の強さを表示） */}
-                      <div style={{ width:'36px', height:'4px',
-                        background:'rgba(255,255,255,0.06)', borderRadius:'2px',
-                        flexShrink:0, overflow:'hidden' }}>
-                        <div style={{
-                          width:`${Math.round(Math.min(100, r.score / 40 * 100))}%`,
-                          height:'100%', background:r.color,
-                          borderRadius:'2px',
-                        }} />
-                      </div>
-                      <span style={{ fontSize:'10px', color:r.color, fontWeight:500, lineHeight:1.4 }}>
-                        {r.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                {/* 根拠文章 */}
+                <p style={{ fontSize:'10px', color:'var(--text2)', lineHeight:1.7, margin:0 }}>
+                  {s._reasons.map(r => r.label).join('。')}。
+                </p>
               </div>
             </div>
           )
@@ -482,21 +472,21 @@ function StockTable({ stocks }) {
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky',
                     left:'32px', zIndex:2, minWidth:'160px', maxWidth:'220px' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ display:'flex', alignItems:'center', gap:0, width:'100%' }}>
-                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
-                        textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-                      <div style={{ width:'68px', minWidth:'68px', height:'26px',
-                        marginLeft:'6px', background:'rgba(255,255,255,0.03)',
-                        borderRadius:'3px', overflow:'hidden',
-                        border:'1px solid rgba(255,255,255,0.05)' }}>
-                        <Sparkline data={s.spark} />
-                      </div>
+                    <div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'nowrap' }}>
+                      <span style={{ fontSize:'13px' }}>{s.name}</span>
+                      <Sparkline data={s.spark} />
                     </div>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
-                  <td style={{ ...tdR, color:cColor, fontFamily:'var(--mono)' }}>{s.contribution>=0?'+':''}{s.contribution?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:
+                    (s.contribution ?? 0) >= 70 ? '#ff5370' :
+                    (s.contribution ?? 0) >= 40 ? '#ff8c42' :
+                    (s.contribution ?? 0) >= 0  ? 'var(--text2)' : '#4a9eff' }}
+                    title="連動度: テーマ平均との日次騰落率の相関係数（-100〜+100）">
+                    {s.contribution?.toFixed(0)}
+                  </td>
                   <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
                   <td style={tdC}>{s.vol_rank}位</td>
