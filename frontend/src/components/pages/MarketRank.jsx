@@ -81,7 +81,7 @@ function Sparkline({ data }) {
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
   const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+    <svg width='100%' height='100%' viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' style={{ display:'block' }}>
       <line x1={0} y1={zeroY} x2={W} y2={zeroY}
         stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
       <polyline
@@ -120,9 +120,13 @@ function StockTable({ stocks, onAddToTheme }) {
                 </td>
                 <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-<div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'nowrap' }}>
-  <span style={{ fontSize:'13px' }}>{s.name}</span>
-  <Sparkline data={s.spark} />
+<div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
+  <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
+    textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
+  <span style={{ display:'inline-block', width:'64px', minWidth:'64px',
+    height:'22px', flexShrink:0, verticalAlign:'middle' }}>
+    <Sparkline data={s.spark} />
+  </span>
 </div>
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
@@ -279,7 +283,7 @@ export default function MarketRank() {
             ) : detail ? (
               <div>
                 <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
-                  <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg}</span>
+                  <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg ? (activeSeg.split('｜')[1] || activeSeg) : ''}</span>
                   <span style={{ fontSize:'15px', fontFamily:'var(--mono)', fontWeight:700,
                     color:detailAvg>=0?'var(--red)':'var(--green)' }}>
                     平均 {detailAvg>=0?'+':''}{detailAvg.toFixed(1)}%

@@ -3,6 +3,76 @@ import { useHeatmap, useMonthlyHeatmap, useMomentum } from '../../hooks/useMarke
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
+const THEME_ARTICLE_MAP = {
+  '半導体製造装置':    'semiconductor-theme',
+  '半導体検査装置':    'semiconductor-theme',
+  '半導体材料':        'semiconductor-theme',
+  'メモリ':            'semiconductor-theme',
+  'パワー半導体':      'power-semiconductor',
+  '次世代半導体':      'semiconductor-theme',
+  '生成AI':            'ai-cloud-theme',
+  'AIデータセンター':  'ai-cloud-theme',
+  'フィジカルAI':      'physical-ai-edge-ai',
+  'AI半導体':          'semiconductor-theme',
+  'AI人材':            'education-hr-theme',
+  'エッジAI':          'physical-ai-edge-ai',
+  'EV・電気自動車':    'ev-green-theme',
+  '全固体電池':        'ev-green-theme',
+  '自動運転':          'ev-green-theme',
+  'ドローン':          'drone-theme',
+  '輸送・物流':        'transport-logistics-theme',
+  '造船':              'shipbuilding-theme',
+  '再生可能エネルギー':'renewable-energy-theme',
+  '太陽光発電':        'renewable-energy-theme',
+  '核融合発電':        'renewable-energy-theme',
+  '原子力発電':        'renewable-energy-theme',
+  '電力会社':          'renewable-energy-theme',
+  'LNG':               'inpex-analysis',
+  '石油':              'inpex-analysis',
+  '蓄電池':            'ev-green-theme',
+  '資源（水素・ヘリウム・水）': 'rare-earth-resources-theme',
+  'IOWN':              'optical-communication',
+  '光通信':            'optical-communication',
+  '通信':              'telecom-theme',
+  '量子コンピューター':'ai-cloud-theme',
+  'SaaS':              'fintech-theme',
+  'ウェアラブル端末':  'game-entertainment-theme',
+  '仮想通貨':          'fintech-theme',
+  'ネット銀行':        'banking-finance-theme',
+  '鉄鋼・素材':        'steel-materials-theme',
+  '化学':              'chemical-theme',
+  '建築資材':          'construction-infra-theme',
+  '塗料':              'chemical-theme',
+  '医薬品・バイオ':    'pharma-bio-theme',
+  'ヘルスケア・介護':  'healthcare-nursing-theme',
+  '薬局・ドラッグストア': 'healthcare-nursing-theme',
+  '銀行・金融':        'banking-finance-theme',
+  '地方銀行':          'regional-bank-theme',
+  '保険':              'insurance-theme',
+  'フィンテック':      'fintech-theme',
+  '不動産':            'real-estate-theme',
+  '建設・インフラ':    'construction-infra-theme',
+  '国土強靭化計画':    'national-resilience',
+  '下水道':            'construction-infra-theme',
+  '食品・飲料':        'food-beverage-theme',
+  '農業・フードテック':'agritech-foodtech-theme',
+  '小売・EC':          'retail-ec-theme',
+  '観光・ホテル・レジャー': 'tourism-hotel-theme',
+  'インバウンド':      'inbound-theme',
+  'リユース・中古品':  'retail-ec-theme',
+  '防衛・航空':        'defense-theme',
+  '宇宙・衛星':        'space-satellite-theme',
+  'ロボット・自動化':  'robot-automation-theme',
+  'レアアース・資源':  'rare-earth-resources-theme',
+  'バフェット銘柄':    'sogo-shosha-analysis',
+  'サイバーセキュリティ': 'cybersecurity-theme',
+  '警備':              'cybersecurity-theme',
+  '脱炭素・ESG':       'ev-green-theme',
+  '教育・HR・人材':    'education-hr-theme',
+  '人材派遣':          'education-hr-theme',
+  'ゲーム・エンタメ':  'game-entertainment-theme',
+}
+
 const STATE_COLORS = {
   '🔥加速':  '#ff4560',
   '↗転換↑': '#ff8c42',
@@ -182,7 +252,7 @@ function genMomentumComment(momentumData, period) {
   return lines
 }
 
-export default function Heatmap() {
+export default function Heatmap({ onNavigate }) {
   const [tab,        setTab]        = useState('period')
   const [loading,    setLoading]    = useState(true)
   const [heatmapData, setHeatmapData] = useState(null)
@@ -257,6 +327,66 @@ export default function Heatmap() {
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
         67テーマの騰落率をヒートマップと騰落モメンタムで多角的に分析できます。
       </p>
+
+
+      {/* 注目テーマ誘導（ヒートマップ・モメンタム共通） */}
+      {onNavigate && (() => {
+        const top3Themes = tab === 'momentum'
+          ? [...momentumData].sort((a,b)=>b.pct-a.pct).slice(0,3).map(d=>d.theme)
+          : (() => {
+              if (!heatmapData) return []
+              return Object.entries(heatmapData)
+                .map(([k,v])=>({ theme:k, pct: (v['1M']||v['1W']||0) }))
+                .sort((a,b)=>b.pct-a.pct).slice(0,3).map(d=>d.theme)
+            })()
+        if (!top3Themes.length) return null
+        return (
+          <div style={{ marginBottom:'16px', padding:'12px 14px',
+            background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px' }}>
+            <div style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600,
+              letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'8px' }}>
+              🔎 上位TOP3テーマ
+            </div>
+            <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginBottom:'10px' }}>
+              {top3Themes.map((theme, i) => (
+                <div key={theme} style={{
+                  background:'rgba(255,255,255,0.03)', borderRadius:'6px', padding:'8px 12px',
+                  borderLeft:`3px solid ${i===0?'#ffd166':i===1?'rgba(192,192,192,0.6)':'rgba(205,127,50,0.6)'}`,
+                }}>
+                  <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'4px', fontWeight:600 }}>
+                    {i===0?'🥇 注目テーマ No.1':i===1?'🥈 注目テーマ No.2':'🥉 注目テーマ No.3'}
+                  </div>
+                  <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>
+                    {theme}
+                  </div>
+                  <div style={{ display:'flex', gap:'5px' }}>
+                    <button onClick={() => onNavigate('テーマ別詳細', theme)}
+                      style={{ padding:'4px 10px', borderRadius:'5px', fontSize:'11px',
+                        background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                        color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                      📊 テーマ詳細へ
+                    </button>
+                    {THEME_ARTICLE_MAP[theme] && (
+                      <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[theme])}
+                        style={{ padding:'4px 10px', borderRadius:'5px', fontSize:'11px',
+                          background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
+                          color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                        📖 解説コラムへ
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => onNavigate('週次レポート')}
+              style={{ padding:'5px 12px', borderRadius:'5px', fontSize:'11px',
+                background:'rgba(255,140,66,0.1)', border:'1px solid rgba(255,140,66,0.3)',
+                color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+              📰 最新週次レポートを読む →
+            </button>
+          </div>
+        )
+      })()}
 
       {/* タブ */}
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)',

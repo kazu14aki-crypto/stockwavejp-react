@@ -368,11 +368,24 @@ def main():
                             spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
                 except Exception:
                     spark = []
-                # 時価総額（ticker_dataのClose最終値×株式数、近似値はfast_info利用）
+                # 時価総額: ticker_dataのClose×volume近似でなく既取得dfから計算
+                # shares_outstanding = market_cap / price を逆算するのは困難
+                # → fast_info を使うが、ticker_data に含まれている場合は再利用
                 mkt_cap = 0
                 try:
+                    # fast_info はHTTP不要のキャッシュから取得できる場合が多い
                     fi = yf.Ticker(ticker).fast_info
-                    mkt_cap = int(getattr(fi, "market_cap", 0) or 0)
+                    mc = getattr(fi, 'market_cap', None)
+                    if mc and mc > 0:
+                        mkt_cap = int(mc)
+                    else:
+                        # fallback: 価格 × 推定発行株式数（売買代金/価格/日数 から推計）
+                        df_mc = ticker_data.get(ticker)
+                        if df_mc is not None and len(df_mc) >= 20:
+                            avg_vol = float(df_mc['Volume'].tail(20).mean())
+                            last_price = float(df_mc['Close'].iloc[-1])
+                            # 日次出来高から浮動株比率を0.3として推計（粗い近似）
+                            mkt_cap = int(avg_vol / 0.003 * last_price) if avg_vol > 0 else 0
                 except Exception:
                     mkt_cap = 0
                 detail_stocks.append({
@@ -445,12 +458,27 @@ def main():
                 if pdf is None or len(pdf) < 2: continue
                 d = calc_metrics(pdf)
                 if not d: continue
+                # スパークライン（6ヶ月騰落率推移）
+                spark = []
+                try:
+                    if df is not None and len(df) >= 10:
+                        import pandas as _pd4
+                        cutoff6 = _pd4.Timestamp.now() - _pd4.Timedelta(days=185)
+                        df6 = df[df.index >= cutoff6]
+                        cl6 = df6["Close"].dropna()
+                        if len(cl6) >= 4:
+                            base = float(cl6.iloc[0])
+                            step = max(1, len(cl6) // 20)
+                            spark = [round((float(v)/base-1)*100, 2) for v in cl6.iloc[::step]]
+                except Exception:
+                    spark = []
                 seg_detail.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
                     "contribution": round(d["pct"] / len(seg_stocks), 2),
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
+                    "spark": spark,
                 })
             for i, s in enumerate(sorted(seg_detail, key=lambda x: x["volume"], reverse=True)):
                 s["vol_rank"] = i + 1

@@ -541,29 +541,44 @@ export default function TopPage({ onNavigate }) {
             const top3 = [...(themes.themes||[])].sort((a,b)=>b.pct-a.pct).slice(0,3)
             return (
               <div style={{ marginTop:'14px' }}>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px',
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'10px',
                   fontWeight:600, letterSpacing:'0.08em', textTransform:'uppercase' }}>
-                  🔎 注目テーマ（上昇TOP3）
+                  🔎 注目テーマ TOP3
                 </div>
-                <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', marginBottom:'10px' }}>
-                  {top3.map(t => (
-                    <div key={t.theme} style={{ display:'flex', gap:'4px' }}>
-                      <button onClick={() => onNavigate('テーマ別詳細', t.theme)}
-                        style={{ padding:'5px 10px', borderRadius:'5px', fontSize:'11px',
-                          background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
-                          color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600,
-                          whiteSpace:'nowrap' }}>
-                        📊 {t.theme}
-                      </button>
-                      {THEME_ARTICLE_MAP[t.theme] && (
-                        <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[t.theme])}
-                          style={{ padding:'5px 10px', borderRadius:'5px', fontSize:'11px',
-                            background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
-                            color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)',
-                            whiteSpace:'nowrap' }}>
-                          📖 コラム
+                <div style={{ display:'flex', flexDirection:'column', gap:'8px', marginBottom:'12px' }}>
+                  {top3.map((t, i) => (
+                    <div key={t.theme} style={{
+                      background:'var(--bg2)', border:'1px solid var(--border)',
+                      borderRadius:'8px', padding:'10px 14px',
+                      borderLeft:`3px solid ${i===0?'#ffd166':i===1?'rgba(192,192,192,0.6)':'rgba(205,127,50,0.6)'}`,
+                    }}>
+                      <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'4px', fontWeight:600 }}>
+                        {i===0?'🥇 注目テーマ No.1':i===1?'🥈 注目テーマ No.2':'🥉 注目テーマ No.3'}
+                      </div>
+                      <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>
+                        {t.theme}
+                        <span style={{ marginLeft:'8px', fontSize:'12px', fontWeight:700,
+                          color: t.pct >= 0 ? 'var(--red)' : 'var(--green)',
+                          fontFamily:'var(--mono)' }}>
+                          {t.pct >= 0 ? '+' : ''}{t.pct?.toFixed(1)}%
+                        </span>
+                      </div>
+                      <div style={{ display:'flex', gap:'6px' }}>
+                        <button onClick={() => onNavigate('テーマ別詳細', t.theme)}
+                          style={{ padding:'5px 12px', borderRadius:'5px', fontSize:'11px',
+                            background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                            color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                          📊 テーマ詳細へ
                         </button>
-                      )}
+                        {THEME_ARTICLE_MAP[t.theme] && (
+                          <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[t.theme])}
+                            style={{ padding:'5px 12px', borderRadius:'5px', fontSize:'11px',
+                              background:'rgba(74,158,255,0.07)', border:'1px solid rgba(74,158,255,0.2)',
+                              color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                            📖 解説コラムへ
+                          </button>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>

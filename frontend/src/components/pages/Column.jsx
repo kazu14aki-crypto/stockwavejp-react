@@ -257,6 +257,36 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           実際の投資判断はご自身の責任において行ってください。
         </div>
 
+        {/* ⑤ 関連テーマセクション（col.themesフィールドベース） */}
+        {col.themes && col.themes.length > 0 && onNavigate && (
+          <div style={{ marginTop:'24px', padding:'16px 20px',
+            background:'var(--bg2)', border:'1px solid var(--border)',
+            borderRadius:'10px' }}>
+            <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text3)',
+              letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'10px' }}>
+              🔗 関連テーマ
+            </div>
+            <p style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.8, marginBottom:'12px' }}>
+              {'関連テーマ: ' + col.themes.join('、')}
+            </p>
+            <div style={{ display:'flex', flexWrap:'wrap', gap:'8px' }}>
+              {col.themes.map(theme => (
+                <button key={theme}
+                  onClick={() => onNavigate('テーマ別詳細', theme)}
+                  style={{ padding:'7px 14px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+                    background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                    color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', transition:'all 0.15s',
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.background='rgba(170,119,255,0.2)'}
+                  onMouseLeave={e => e.currentTarget.style.background='rgba(170,119,255,0.1)'}
+                >
+                  📊 {theme}テーマのデータを見る
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* テーマデータへのリンクボタン */}
         {(() => {
           const CAT_TO_THEME = {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useThemes, useCustomThemeStats, useMacro, useMomentum } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
@@ -561,10 +561,15 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 
 
 function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
-  const maxVal = valueKey === 'pct' ? 0 : Math.max(...items.map(t => Math.abs(t[valueKey] || 0)))
+  const [showAll, setShowAll] = useState(false)
+  const LIMIT = 10
+  const displayed = showAll ? items : items.slice(0, LIMIT)
+  const hasMore = items.length > LIMIT
+  const maxVal = valueKey === 'pct' ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)))
   return (
+    <>
     <div className="theme-card-grid">
-      {items.map((item, idx) => (
+      {displayed.map((item, idx) => (
         <ThemeCard key={item.theme} item={item} rank={idx+1}
           maxAbs={maxVal} valueKey={valueKey}
           barColor={barColor} pctColor={pctColor}
@@ -576,6 +581,20 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           momentumPct={momentumMap?.get(item.theme)?.pct} />
       ))}
     </div>
+    {hasMore && (
+      <div style={{ textAlign:'center', marginTop:'12px', marginBottom:'4px' }}>
+        <button onClick={() => setShowAll(s => !s)} style={{
+          padding:'8px 24px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+          cursor:'pointer', fontFamily:'var(--font)',
+          background: showAll ? 'rgba(255,255,255,0.05)' : 'rgba(74,158,255,0.1)',
+          border: showAll ? '1px solid var(--border)' : '1px solid rgba(74,158,255,0.3)',
+          color: showAll ? 'var(--text3)' : 'var(--accent)',
+        }}>
+          {showAll ? '▲ 上位' + LIMIT + '件に絞る' : '▼ 全' + items.length + 'テーマを表示'}
+        </button>
+      </div>
+    )}
+    </>
   )
 }
 

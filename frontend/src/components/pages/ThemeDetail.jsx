@@ -114,7 +114,7 @@ function Sparkline({ data }) {
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
   const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+    <svg width='100%' height='100%' viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' style={{ display:'block' }}>
       {/* ゼロライン */}
       <line x1={0} y1={zeroY} x2={W} y2={zeroY}
         stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
@@ -472,9 +472,13 @@ function StockTable({ stocks }) {
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky',
                     left:'32px', zIndex:2, minWidth:'160px', maxWidth:'220px' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'nowrap' }}>
-                      <span style={{ fontSize:'13px' }}>{s.name}</span>
-                      <Sparkline data={s.spark} />
+                    <div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
+                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
+                        textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
+                      <span style={{ display:'inline-block', width:'64px', minWidth:'64px',
+                        height:'22px', flexShrink:0, verticalAlign:'middle' }}>
+                        <Sparkline data={s.spark} />
+                      </span>
                     </div>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
