@@ -355,7 +355,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           type="text"
           placeholder="キーワード・テーマ名で検索..."
           value={searchQuery}
-          onChange={e => setSearchQuery(e.target.value); setPage(1)}
+          onChange={e => { setSearchQuery(e.target.value); setPage(1) }}
           style={{
             width:'100%', padding:'9px 36px 9px 14px',
             background:'var(--bg2)', border:'1px solid var(--border)',
@@ -375,7 +375,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       {/* カテゴリフィルタ */}
       <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', marginBottom:'24px' }}>
         {CATEGORIES.map(cat => (
-          <button key={cat} onClick={() => setActiveCat(cat); setPage(1)} style={{
+          <button key={cat} onClick={() => { setActiveCat(cat); setPage(1) }} style={{
             padding:'5px 14px', borderRadius:'20px', fontSize:'12px', cursor:'pointer',
             fontFamily:'var(--font)', transition:'all 0.15s',
             border: activeCat === cat ? '1px solid var(--accent)' : '1px solid var(--border)',
