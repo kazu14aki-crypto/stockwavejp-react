@@ -28,38 +28,44 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
     }
   }, [isMobile, isOpen, onOpen, onClose])
 
+  // スマホ時は画面幅の75%（最小240px・最大280px）、PCは固定220px
+  const sidebarWidth = isMobile ? 'min(280px, 75vw)' : 'var(--sidebar)'
+
   const sidebarStyle = {
     position: 'fixed',
     top: 'var(--header)',
-    left: 0,          /* 常に左固定 */
+    left: 0,
     right: 'auto',
     bottom: 0,
-    width: 'var(--sidebar)',
+    width: sidebarWidth,
     background: 'var(--bg2)',
     borderRight: '1px solid var(--border)',
     borderLeft: 'none',
-    padding: '16px 8px',
+    padding: isMobile ? '12px 6px' : '16px 8px',
     overflowY: 'auto',
+    overflowX: 'hidden',
     zIndex: 900,
     transition: 'transform 0.25s cubic-bezier(0.22,1,0.36,1)',
     transform: isMobile && !isOpen ? 'translateX(-100%)' : 'translateX(0)',
-    boxShadow: isMobile && isOpen ? '4px 0 20px rgba(0,0,0,0.3)' : 'none',
+    boxShadow: isMobile && isOpen ? '6px 0 24px rgba(0,0,0,0.4)' : 'none',
+    WebkitOverflowScrolling: 'touch',
   }
 
   const NavBtn = ({ icon, label }) => {
     const isActive = currentPage === label
     return (
       <button onClick={() => onPageChange(label)} style={{
-        padding: '7px 10px',
+        // スマホ: タップしやすいよう縦幅を大きく（最低44px = Apple HIG推奨）
+        padding: isMobile ? '11px 10px' : '7px 10px',
+        minHeight: isMobile ? '44px' : 'auto',
         fontSize: '12px',
         color: isActive ? 'var(--text)' : 'var(--text2)',
-        borderRadius: '6px', marginBottom: '1px', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', gap: '6px',
+        borderRadius: '6px', marginBottom: '2px', cursor: 'pointer',
+        display: 'flex', alignItems: 'center', gap: '8px',
         letterSpacing: '-0.01em', fontWeight: isActive ? 600 : 400,
-        borderLeft: isActive ? '2px solid var(--accent)' : '2px solid transparent',
-        borderRight: '2px solid transparent',
-        borderTop: 'none', borderBottom: 'none',
-        background: isActive ? 'rgba(74,158,255,0.1)' : 'transparent',
+        borderLeft: isActive ? '3px solid var(--accent)' : '3px solid transparent',
+        borderRight: 'none', borderTop: 'none', borderBottom: 'none',
+        background: isActive ? 'rgba(74,158,255,0.12)' : 'transparent',
         width: '100%', textAlign: 'left', fontFamily: 'var(--font)',
         transition: 'all 0.15s',
         overflow: 'hidden',
@@ -67,8 +73,8 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
         onMouseEnter={e => { if (!isActive) { e.currentTarget.style.background='rgba(74,158,255,0.06)'; e.currentTarget.style.color='#8aaad0' }}}
         onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background='transparent'; e.currentTarget.style.color='var(--text2)' }}}
       >
-        <span style={{ fontSize:'12px', opacity:0.7, flexShrink:0 }}>{icon}</span>
-        <span style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{label}</span>
+        <span style={{ fontSize:'13px', opacity:0.75, flexShrink:0, width:'18px', textAlign:'center' }}>{icon}</span>
+        <span style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis', flex:1 }}>{label}</span>
       </button>
     )
   }

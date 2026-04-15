@@ -101,7 +101,10 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // ── 複数折れ線グラフ（Compare移植）──
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
-  if (!data || data.length < 3) return null
+  if (!data || data.length < 3) {
+    // データなしでも枠のスペースを確保（整列のため）
+    return <svg viewBox="0 0 64 24" width="100%" height="100%" />
+  }
   const W = 64, H = 24
   const min = Math.min(...data)
   const max = Math.max(...data)
@@ -112,20 +115,20 @@ function Sparkline({ data }) {
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
-  // ゼロライン位置
-  const zeroY = H - ((0 - min) / range) * H
-  const clampedZeroY = Math.max(0, Math.min(H, zeroY))
+  const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
+    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%"
+      style={{ display:'block', overflow:'hidden' }}
+      preserveAspectRatio="none">
       {/* ゼロライン */}
-      <line x1={0} y1={clampedZeroY} x2={W} y2={clampedZeroY}
-        stroke="rgba(255,255,255,0.12)" strokeWidth="0.5" strokeDasharray="2,2" />
+      <line x1={0} y1={zeroY} x2={W} y2={zeroY}
+        stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
       {/* 塗りつぶし */}
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
-        fill={`${color}20`} stroke="none" />
+        fill={`${color}18`} stroke="none" />
       {/* 折れ線 */}
-      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.2"
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.4"
         strokeLinejoin="round" strokeLinecap="round" />
     </svg>
   )
@@ -264,57 +267,78 @@ function VolTvChart({ selTheme }) {
 function PickupStocks({ stocks, period }) {
   if (!stocks || stocks.length === 0) return null
 
-  // 総合スコアを計算して注目銘柄を抽出
+  const fmtL = (v) => {
+    if (!v || v === 0) return '-'
+    if (v >= 1e12) return (v / 1e12).toFixed(1) + '兆'
+    if (v >= 1e8)  return (v / 1e8).toFixed(1) + '億'
+    if (v >= 1e4)  return (v / 1e4).toFixed(1) + '万'
+    return v.toLocaleString()
+  }
+
+  // 各銘柄のスコアと根拠を計算
   const scored = stocks.map(s => {
-    // 1. 騰落率スコア（0〜40点）
-    const pctScore = Math.min(40, Math.max(0, (s.pct ?? 0) * 2))
+    const reasons = []
+    let totalScore = 0
 
-    // 2. 出来高急増スコア（0〜25点）
-    const volScore = Math.min(25, Math.max(0, (s.volume_chg ?? 0) * 0.5))
+    // ① 騰落率スコア（最大40点）
+    const pct = s.pct ?? 0
+    const pctScore = Math.min(40, Math.max(0, pct * 2))
+    totalScore += pctScore
+    if (pct >= 10)       reasons.push({ label: `騰落率 +${pct.toFixed(1)}%`, score: pctScore, color: '#ff5370' })
+    else if (pct >= 5)   reasons.push({ label: `騰落率 +${pct.toFixed(1)}%`, score: pctScore, color: '#ff8c42' })
+    else if (pct >= 2)   reasons.push({ label: `騰落率 +${pct.toFixed(1)}%`, score: pctScore, color: '#ffd166' })
 
-    // 3. スパーク（騰落速度）スコア（0〜20点）
-    // スパークの末尾5点の傾きを計算
+    // ② 出来高急増スコア（最大25点）
+    const volChg = s.volume_chg ?? 0
+    const volScore = Math.min(25, Math.max(0, volChg * 0.5))
+    totalScore += volScore
+    if (volChg >= 50)    reasons.push({ label: `出来高 +${volChg.toFixed(0)}% 急増`, score: volScore, color: '#ff5370' })
+    else if (volChg >= 20) reasons.push({ label: `出来高 +${volChg.toFixed(0)}% 増加`, score: volScore, color: '#ff8c42' })
+
+    // ③ 直近加速スコア（スパーク末尾の傾き、最大20点）
     let sparkScore = 0
-    if (s.spark && s.spark.length >= 5) {
+    let sparkLabel = ''
+    if (s.spark && s.spark.length >= 6) {
       const sp = s.spark
-      const recent = sp.slice(-5)
-      const slope = (recent[recent.length - 1] - recent[0]) / recent.length
-      sparkScore = Math.min(20, Math.max(0, slope * 4))
+      const n = sp.length
+      // 前半・後半を比較して加速を判定
+      const firstHalf = sp.slice(0, Math.floor(n/2))
+      const lastHalf  = sp.slice(Math.floor(n/2))
+      const avgFirst  = firstHalf.reduce((a,b) => a+b, 0) / firstHalf.length
+      const avgLast   = lastHalf.reduce((a,b) => a+b, 0)  / lastHalf.length
+      const accel = avgLast - avgFirst
+      sparkScore = Math.min(20, Math.max(0, accel * 3))
+      totalScore += sparkScore
+      if (accel > 3)       { sparkLabel = '直近で加速中'; reasons.push({ label: `直近加速（後半+${accel.toFixed(1)}%）`, score: sparkScore, color: '#aa77ff' }) }
+      else if (accel > 1)  { sparkLabel = '上昇トレンド'; reasons.push({ label: `上昇トレンド（後半+${accel.toFixed(1)}%）`, score: sparkScore, color: '#aa77ff' }) }
     }
 
-    // 4. 売買代金スコア（0〜15点）
-    const tvScore = Math.min(15, (s.trade_value ?? 0) > 0 ?
-      Math.log10(s.trade_value) * 1.5 : 0)
+    // ④ 売買代金スコア（最大15点）
+    const tv = s.trade_value ?? 0
+    const tvScore = tv > 0 ? Math.min(15, Math.log10(tv) * 1.5) : 0
+    totalScore += tvScore
+    if (tv >= 5e9)       reasons.push({ label: `売買代金 ${fmtL(tv)}（大）`, score: tvScore, color: '#4a9eff' })
+    else if (tv >= 1e9)  reasons.push({ label: `売買代金 ${fmtL(tv)}`, score: tvScore, color: '#4a9eff' })
 
-    const totalScore = pctScore + volScore + sparkScore + tvScore
+    // 理由が一つもない場合
+    if (reasons.length === 0) {
+      reasons.push({ label: '総合スコア上位', score: totalScore, color: 'var(--text3)' })
+    }
 
-    return { ...s, _score: totalScore, _pctScore: pctScore, _volScore: volScore, _sparkScore: sparkScore }
+    return { ...s, _score: totalScore, _reasons: reasons }
   })
-  .filter(s => s._score > 5)
+  .filter(s => s._score > 3 && (s.pct ?? 0) > 0)
   .sort((a, b) => b._score - a._score)
   .slice(0, 3)
 
   if (scored.length === 0) return null
 
-  const fmtL = (v) => {
-    if (!v || v === 0) return '-'
-    if (v >= 1e8) return (v / 1e8).toFixed(1) + '億'
-    if (v >= 1e4) return (v / 1e4).toFixed(1) + '万'
-    return v.toLocaleString()
-  }
-
-  const reasons = (s) => {
-    const rs = []
-    if ((s.pct ?? 0) >= 5)           rs.push(`騰落率+${s.pct?.toFixed(1)}%`)
-    if ((s.volume_chg ?? 0) >= 20)   rs.push(`出来高+${s.volume_chg?.toFixed(0)}%急増`)
-    if (s._sparkScore > 8)            rs.push('直近加速中')
-    if ((s.trade_value ?? 0) > 1e9)  rs.push('売買代金大')
-    if (rs.length === 0)              rs.push('総合スコア上位')
-    return rs
-  }
+  const medals = ['🥇', '🥈', '🥉']
+  const medalColors = ['#ffd166', 'rgba(192,192,192,0.8)', 'rgba(205,127,50,0.8)']
 
   return (
     <div style={{ marginBottom:'20px' }}>
+      {/* セクションヘッダー */}
       <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px' }}>
         <span style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em',
           color:'var(--text3)', textTransform:'uppercase' }}>
@@ -322,161 +346,106 @@ function PickupStocks({ stocks, period }) {
         </span>
         <div style={{ flex:1, height:'1px', background:'var(--border)' }} />
         <span style={{ fontSize:'10px', color:'var(--text3)' }}>
-          騰落率・出来高・勢い等を総合判断
+          騰落率・出来高・直近加速・売買代金を総合スコア化
         </span>
       </div>
+
+      {/* カードグリッド */}
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'10px' }}
         className="pickup-grid">
         {scored.map((s, i) => {
           const upColor = (s.pct ?? 0) >= 0 ? '#ff5370' : '#00c48c'
           return (
             <div key={s.ticker} style={{
-              background:'var(--bg2)', border:'1px solid var(--border)',
-              borderRadius:'8px', padding:'12px 14px',
-              borderLeft: `3px solid ${i === 0 ? '#ffd166' : i === 1 ? 'rgba(255,209,102,0.5)' : 'rgba(255,209,102,0.25)'}`,
+              background:'var(--bg2)', borderRadius:'8px', padding:'12px 14px',
+              border:'1px solid var(--border)',
+              borderTop: `3px solid ${medalColors[i]}`,
             }}>
-              {/* 順位バッジ */}
+              {/* 順位 + ティッカー */}
               <div style={{ display:'flex', alignItems:'center', gap:'6px', marginBottom:'6px' }}>
-                <span style={{ fontSize:'10px', fontWeight:700,
-                  background: i === 0 ? '#ffd166' : 'rgba(255,209,102,0.2)',
-                  color: i === 0 ? '#333' : '#ffd166',
-                  borderRadius:'4px', padding:'1px 6px' }}>
-                  {i === 0 ? '🥇 注目' : i === 1 ? '🥈 2位' : '🥉 3位'}
-                </span>
+                <span style={{ fontSize:'13px' }}>{medals[i]}</span>
                 <span style={{ fontSize:'10px', color:'var(--text3)',
-                  fontFamily:'var(--mono)' }}>
+                  fontFamily:'var(--mono)', letterSpacing:'0.05em' }}>
                   {s.ticker.replace('.T','')}
                 </span>
-              </div>
-              {/* 銘柄名 + スパーク */}
-              <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'6px' }}>
-                <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)',
-                  flex:1, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-                  {s.name}
-                </span>
-                <Sparkline data={s.spark} />
-              </div>
-              {/* 指標 */}
-              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginBottom:'6px' }}>
-                <span style={{ fontSize:'12px', fontWeight:700,
+                <span style={{ marginLeft:'auto', fontSize:'13px', fontWeight:700,
                   fontFamily:'var(--mono)', color: upColor }}>
                   {(s.pct ?? 0) >= 0 ? '+' : ''}{s.pct?.toFixed(1)}%
                 </span>
+              </div>
+
+              {/* 銘柄名 + スパークライン（固定枠） */}
+              <div style={{ display:'flex', alignItems:'center',
+                marginBottom:'8px', minWidth:0, width:'100%' }}>
+                <span style={{ flex:1, fontSize:'12px', fontWeight:700,
+                  color:'var(--text)', overflow:'hidden', minWidth:0,
+                  textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+                  {s.name}
+                </span>
+                <div style={{ width:'68px', minWidth:'68px', height:'26px',
+                  flexShrink:0, marginLeft:'8px',
+                  background:'rgba(255,255,255,0.04)', borderRadius:'3px',
+                  overflow:'hidden', border:'1px solid rgba(255,255,255,0.08)' }}>
+                  <Sparkline data={s.spark} />
+                </div>
+              </div>
+
+              {/* 副指標 */}
+              <div style={{ display:'flex', gap:'8px', marginBottom:'8px',
+                fontSize:'10px', fontFamily:'var(--mono)', color:'var(--text3)' }}>
                 {(s.volume_chg ?? 0) !== 0 && (
-                  <span style={{ fontSize:'10px', color:(s.volume_chg ?? 0) >= 0 ? '#ff5370' : '#00c48c',
-                    fontFamily:'var(--mono)' }}>
+                  <span style={{ color:(s.volume_chg ?? 0) >= 0 ? '#ff8c42' : '#00c48c' }}>
                     出来高{(s.volume_chg ?? 0) >= 0 ? '+' : ''}{s.volume_chg?.toFixed(0)}%
                   </span>
                 )}
-                <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
-                  ¥{s.price?.toLocaleString()}
-                </span>
+                {(s.trade_value ?? 0) > 0 && (
+                  <span>売買代金 {fmtL(s.trade_value)}</span>
+                )}
               </div>
-              {/* 選定理由 */}
-              <div style={{ display:'flex', gap:'4px', flexWrap:'wrap' }}>
-                {reasons(s).map((r, j) => (
-                  <span key={j} style={{ fontSize:'9px', background:'rgba(255,209,102,0.1)',
-                    border:'1px solid rgba(255,209,102,0.25)', borderRadius:'3px',
-                    padding:'1px 5px', color:'#ffd166' }}>
-                    {r}
-                  </span>
-                ))}
+
+              {/* 選定理由（なぜこの銘柄か） */}
+              <div style={{ borderTop:'1px solid rgba(255,255,255,0.06)',
+                paddingTop:'7px', marginTop:'4px' }}>
+                <div style={{ fontSize:'9px', fontWeight:600, color:'var(--text3)',
+                  marginBottom:'5px', letterSpacing:'0.08em', textTransform:'uppercase' }}>
+                  ▷ 選定理由
+                </div>
+                <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+                  {s._reasons.map((r, j) => (
+                    <div key={j} style={{ display:'flex', alignItems:'center', gap:'6px' }}>
+                      {/* スコアバー（視覚的な根拠の強さを表示） */}
+                      <div style={{ width:'36px', height:'4px',
+                        background:'rgba(255,255,255,0.06)', borderRadius:'2px',
+                        flexShrink:0, overflow:'hidden' }}>
+                        <div style={{
+                          width:`${Math.round(Math.min(100, r.score / 40 * 100))}%`,
+                          height:'100%', background:r.color,
+                          borderRadius:'2px',
+                        }} />
+                      </div>
+                      <span style={{ fontSize:'10px', color:r.color, fontWeight:500, lineHeight:1.4 }}>
+                        {r.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           )
         })}
       </div>
-    </div>
-  )
-}
-
-function MultiLineChart({ trends, selected, title }) {
-  if (!selected.length) return (
-    <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
-      テーマを1つ以上選択してください
-    </div>
-  )
-
-  const allDates = new Set()
-  selected.forEach(theme => (trends[theme] ?? []).forEach(d => allDates.add(d.date)))
-  const dates = [...allDates].sort()
-  if (!dates.length) return (
-    <div style={{ textAlign:'center', padding:'30px', color:'var(--text3)', fontSize:'13px' }}>
-      データを取得中...
-    </div>
-  )
-
-  const W = 800, H = 220, PL = 46, PR = 16, PT = 16, PB = 32
-
-  let yMin = Infinity, yMax = -Infinity
-  selected.forEach(theme => {
-    ;(trends[theme] ?? []).forEach(d => {
-      if (d.pct < yMin) yMin = d.pct
-      if (d.pct > yMax) yMax = d.pct
-    })
-  })
-  if (yMin === Infinity) { yMin = -1; yMax = 1 }
-
-  const { ticks, nMin, nMax } = niceScale(yMin, yMax)
-  const xS = (i) => PL + (i / Math.max(dates.length - 1, 1)) * (W - PL - PR)
-  const yS = (v) => PT + (1 - (v - nMin) / (nMax - nMin)) * (H - PT - PB)
-
-  const xLabels = []
-  const step = Math.max(1, Math.floor(dates.length / 5))
-  for (let i = 0; i < dates.length; i += step) xLabels.push({ i, date: dates[i] })
-
-  return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', padding:'14px', overflowX:'auto' }}>
-      {title && <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text3)', letterSpacing:'0.08em', textTransform:'uppercase', marginBottom:'8px' }}>{title}</div>}
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px' }}>
-        {ticks.map(v => (
-          <g key={v}>
-            <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(74,120,200,0.08)" strokeWidth="1"/>
-            <text x={PL-4} y={yS(v)+3} textAnchor="end" fill="var(--text3)" fontSize="9" fontFamily="DM Mono">
-              {Number.isInteger(v) ? v+'%' : v.toFixed(1)+'%'}
-            </text>
-          </g>
-        ))}
-        {yMin < 0 && yMax > 0 && (
-          <line x1={PL} y1={yS(0)} x2={W-PR} y2={yS(0)} stroke="rgba(74,120,200,0.3)" strokeWidth="1" strokeDasharray="4,4"/>
-        )}
-        {xLabels.map(({ i, date }) => (
-          <text key={date} x={xS(i)} y={H-6} textAnchor="middle" fill="var(--text3)" fontSize="9" fontFamily="DM Sans">{fmtDate(date)}</text>
-        ))}
-        {selected.map((theme, ti) => {
-          const data = trends[theme] ?? []
-          if (!data.length) return null
-          const pts = data.map(d => {
-            const xi = dates.indexOf(d.date)
-            return xi >= 0 ? `${xS(xi)},${yS(d.pct)}` : null
-          }).filter(Boolean)
-          return pts.length ? (
-            <polyline key={theme} points={pts.join(' ')} fill="none"
-              stroke={COLORS[ti % COLORS.length]} strokeWidth="2"
-              strokeLinejoin="round" strokeLinecap="round"/>
-          ) : null
-        })}
-      </svg>
-      {/* 凡例 */}
-      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
-        {selected.map((theme, ti) => {
-          const data = trends[theme] ?? []
-          const last = data[data.length - 1]
-          const color = COLORS[ti % COLORS.length]
-          return (
-            <div key={theme} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
-              <div style={{ width:'16px', height:'2px', background:color }} />
-              <span style={{ fontSize:'11px', color:'var(--text2)' }}>{theme}</span>
-              {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color, fontWeight:600 }}>
-                {last.pct >= 0 ? '+' : ''}{last.pct.toFixed(1)}%
-              </span>}
-            </div>
-          )
-        })}
+      <div style={{ marginTop:'8px', padding:'7px 12px',
+        background:'rgba(255,255,255,0.03)', borderRadius:'6px',
+        border:'1px solid rgba(255,255,255,0.06)' }}>
+        <span style={{ fontSize:'10px', color:'var(--text3)', lineHeight:1.6, display:'block' }}>
+          ⚠️ 上記ピックアップは騰落率・出来高増減・直近加速・売買代金を独自スコアで機械的に集計したものです。
+          特定銘柄の購入・売却を推奨するものではなく、<strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします</strong>。
+        </span>
       </div>
     </div>
   )
 }
+
 
 // ── 銘柄テーブル ──
 function StockTable({ stocks }) {
@@ -510,11 +479,18 @@ function StockTable({ stocks }) {
                     {i+1}
                   </td>
                   <td style={{ ...tdL, fontWeight:600, color:'var(--text)',
-                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
+                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky',
+                    left:'32px', zIndex:2, minWidth:'160px', maxWidth:'220px' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
-                      <span style={{ fontSize:'13px' }}>{s.name}</span>
-                      <Sparkline data={s.spark} />
+                    <div style={{ display:'flex', alignItems:'center', gap:0, width:'100%' }}>
+                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
+                        textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
+                      <div style={{ width:'68px', minWidth:'68px', height:'26px',
+                        marginLeft:'6px', background:'rgba(255,255,255,0.03)',
+                        borderRadius:'3px', overflow:'hidden',
+                        border:'1px solid rgba(255,255,255,0.05)' }}>
+                        <Sparkline data={s.spark} />
+                      </div>
                     </div>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>

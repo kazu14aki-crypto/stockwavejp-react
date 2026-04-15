@@ -68,7 +68,9 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
-  if (!data || data.length < 3) return null
+  if (!data || data.length < 3) {
+    return <svg viewBox="0 0 64 24" width="100%" height="100%" />
+  }
   const W = 64, H = 24
   const min = Math.min(...data)
   const max = Math.max(...data)
@@ -79,16 +81,17 @@ function Sparkline({ data }) {
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
   const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
-  const zeroY = H - ((0 - min) / range) * H
-  const clampedZeroY = Math.max(0, Math.min(H, zeroY))
+  const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
   return (
-    <svg width={W} height={H} style={{ display:'block', overflow:'visible' }}>
-      <line x1={0} y1={clampedZeroY} x2={W} y2={clampedZeroY}
-        stroke="rgba(255,255,255,0.12)" strokeWidth="0.5" strokeDasharray="2,2" />
+    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%"
+      style={{ display:'block', overflow:'hidden' }}
+      preserveAspectRatio="none">
+      <line x1={0} y1={zeroY} x2={W} y2={zeroY}
+        stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
-        fill={`${color}20`} stroke="none" />
-      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.2"
+        fill={`${color}18`} stroke="none" />
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.4"
         strokeLinejoin="round" strokeLinecap="round" />
     </svg>
   )
@@ -121,9 +124,15 @@ function StockTable({ stocks, onAddToTheme }) {
                 </td>
                 <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                   <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-<div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
-  <div style={{ fontSize:'13px' }}>{s.name}</div>
-  <Sparkline data={s.spark} />
+<div style={{ display:'flex', alignItems:'center', gap:0, width:'100%' }}>
+  <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
+    textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
+  <div style={{ width:'68px', minWidth:'68px', height:'26px',
+    marginLeft:'6px', background:'rgba(255,255,255,0.03)',
+    borderRadius:'3px', overflow:'hidden',
+    border:'1px solid rgba(255,255,255,0.05)' }}>
+    <Sparkline data={s.spark} />
+  </div>
 </div>
                 </td>
                 <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
