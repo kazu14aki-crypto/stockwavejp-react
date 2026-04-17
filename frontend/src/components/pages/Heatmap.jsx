@@ -99,10 +99,6 @@ function Loading() {
         }} />
       ))}
 
-      {/* 📊 資金フロー散布図 */}
-      {tab === 'scatter' && (
-        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
-      )}
     </div>
   )
 }
@@ -155,10 +151,6 @@ function HeatmapTable({ data, columns }) {
         </tbody>
       </table>
 
-      {/* 📊 資金フロー散布図 */}
-      {tab === 'scatter' && (
-        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
-      )}
     </div>
   )
 }
@@ -201,10 +193,6 @@ function AutoComment({ lines }) {
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
       {rendered}
 
-      {/* 📊 資金フロー散布図 */}
-      {tab === 'scatter' && (
-        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
-      )}
     </div>
   )
 }
@@ -864,6 +852,7 @@ export default function Heatmap({ onNavigate }) {
       {tab === 'scatter' && (
         <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
       )}
+
     </div>
   )
 }
