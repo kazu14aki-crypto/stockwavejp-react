@@ -368,23 +368,28 @@ def main():
                             spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
                 except Exception:
                     spark = []
-                # 時価総額: ticker_dataのClose×volume近似でなく既取得dfから計算
-                # shares_outstanding = market_cap / price を逆算するのは困難
-                # → fast_info を使うが、ticker_data に含まれている場合は再利用
+                # 時価総額: fast_info → info["marketCap"] → 推計 の順でフォールバック
                 mkt_cap = 0
                 try:
-                    # fast_info はHTTP不要のキャッシュから取得できる場合が多い
-                    fi = yf.Ticker(ticker).fast_info
+                    t_obj = yf.Ticker(ticker)
+                    fi = t_obj.fast_info
                     mc = getattr(fi, 'market_cap', None)
                     if mc and mc > 0:
                         mkt_cap = int(mc)
                     else:
-                        # fallback: 価格 × 推定発行株式数（売買代金/価格/日数 から推計）
+                        # fast_infoで取得できない場合はinfoを試みる
+                        try:
+                            info_mc = t_obj.info.get('marketCap', 0) or 0
+                            if info_mc > 0:
+                                mkt_cap = int(info_mc)
+                        except Exception:
+                            pass
+                    # それでも0なら出来高ベースで近似
+                    if mkt_cap == 0:
                         df_mc = ticker_data.get(ticker)
                         if df_mc is not None and len(df_mc) >= 20:
                             avg_vol = float(df_mc['Volume'].tail(20).mean())
                             last_price = float(df_mc['Close'].iloc[-1])
-                            # 日次出来高から浮動株比率を0.3として推計（粗い近似）
                             mkt_cap = int(avg_vol / 0.003 * last_price) if avg_vol > 0 else 0
                 except Exception:
                     mkt_cap = 0
@@ -562,7 +567,15 @@ def main():
             elif dw > 2:               state = "↗転換↑"
             elif dw < -2:              state = "↘転換↓"
             else:                      state = "→横ばい"
-            momentum.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm, "state": state})
+            # 散布図用: 出来高急増率と売買代金を追加
+            detail_d = output.get(f"theme_detail_{theme_name}_{period}", {})
+            stocks_for_m = detail_d.get("stocks", []) if detail_d else []
+            vol_chg_m = round(
+                sum(s.get("volume_chg", 0) for s in stocks_for_m) / len(stocks_for_m), 1
+            ) if stocks_for_m else 0.0
+            tv_m = sum(s.get("trade_value", 0) for s in stocks_for_m)
+            momentum.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm,
+                             "state": state, "volume_chg": vol_chg_m, "trade_value": tv_m})
         momentum.sort(key=lambda x: x["pct"], reverse=True)
         output[f"momentum_{period}"] = {
             "period": period, "data": momentum,
