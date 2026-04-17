@@ -567,13 +567,11 @@ def main():
             elif dw > 2:               state = "↗転換↑"
             elif dw < -2:              state = "↘転換↓"
             else:                      state = "→横ばい"
-            # 散布図用: 出来高急増率と売買代金を追加
-            detail_d = output.get(f"theme_detail_{theme_name}_{period}", {})
-            stocks_for_m = detail_d.get("stocks", []) if detail_d else []
-            vol_chg_m = round(
-                sum(s.get("volume_chg", 0) for s in stocks_for_m) / len(stocks_for_m), 1
-            ) if stocks_for_m else 0.0
-            tv_m = sum(s.get("trade_value", 0) for s in stocks_for_m)
+            # 散布図用: themes_{period}から直接取得（theme_detailは未生成のため）
+            themes_data = output.get(f"themes_{period}", {}).get("themes", [])
+            theme_row = next((t for t in themes_data if t["theme"] == theme_name), None)
+            vol_chg_m = float(theme_row.get("volume_chg", 0)) if theme_row else 0.0
+            tv_m      = int(theme_row.get("trade_value", 0))   if theme_row else 0
             momentum.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm,
                              "state": state, "volume_chg": vol_chg_m, "trade_value": tv_m})
         momentum.sort(key=lambda x: x["pct"], reverse=True)

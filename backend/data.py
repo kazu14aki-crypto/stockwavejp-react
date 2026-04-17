@@ -755,16 +755,19 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
     return result
 
 def fetch_momentum_data(themes: dict, period: str) -> list:
-    cache_key = f"momentum_{period}"
+    cache_key = f"momentum_v2_{period}"  # v2: volume_chg/trade_value追加
     cached = _get_mem_cache(cache_key)
     if cached is not None: return cached
 
-    cur_map = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, period)}
-    w1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "5d")}
-    m1_map  = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "1mo")}
+    # テーマ結果をまとめて取得（pct + volume_chg + trade_value 含む）
+    cur_results = fetch_theme_results(themes, period)
+    cur_map  = {r["theme"]: r for r in cur_results}
+    w1_map   = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "5d")}
+    m1_map   = {r["theme"]: r["pct"] for r in fetch_theme_results(themes, "1mo")}
 
     result = []
-    for theme_name, cur in cur_map.items():
+    for theme_name, row in cur_map.items():
+        cur = row["pct"]
         dw = round(cur - w1_map.get(theme_name, cur), 2)
         if period == "1mo":
             dm = round(m1_map.get(theme_name, 0) - w1_map.get(theme_name, 0), 2)
@@ -775,21 +778,11 @@ def fetch_momentum_data(themes: dict, period: str) -> list:
         elif dw > 2:               state = "↗転換↑"
         elif dw < -2:              state = "↘転換↓"
         else:                      state = "→横ばい"
-            # 散布図用: 出来高急増率と売買代金を追加
-        vol_chg_val = 0.0
-        tv_val = 0
-        try:
-            th_stocks = themes.get(theme_name, {})
-            if th_stocks:
-                detail = fetch_theme_detail(theme_name, th_stocks, period)
-                if detail and detail.get("stocks"):
-                    stocks_d = detail["stocks"]
-                    vol_chg_val = round(
-                        sum(s.get("volume_chg", 0) for s in stocks_d) / len(stocks_d), 1
-                    )
-                    tv_val = sum(s.get("trade_value", 0) for s in stocks_d)
-        except Exception:
-            pass
+
+        # volume_chg と trade_value を fetch_theme_results から直接取得
+        vol_chg_val = float(row.get("volume_chg", 0))
+        tv_val      = int(row.get("trade_value", 0))
+
         result.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm,
                        "state": state, "volume_chg": vol_chg_val, "trade_value": tv_val})
 
