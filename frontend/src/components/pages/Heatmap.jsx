@@ -277,34 +277,41 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
   const GH = H - PT - PB
 
   // ── データ準備 ──────────────────────────────────
-  // volume_chg が数値として存在するものだけ使う（未取得の場合はpctのみでフォールバック）
-  const hasVolChg = data.some(d => typeof d.volume_chg === 'number')
-  const filtered = data.filter(d =>
-    d.pct != null && !isNaN(d.pct) &&
-    (hasVolChg ? typeof d.volume_chg === 'number' : true)
-  )
+  const filtered = data.filter(d => d.pct != null && !isNaN(d.pct))
 
-  // volume_chg がない場合は week_diff で代替表示
+  // Y軸: volume_chgが有効データ（0以外が1つでもある）なら出来高急増率、なければweek_diff
+  const volChgValues = filtered.map(d => typeof d.volume_chg === 'number' ? d.volume_chg : null)
+  const hasRealVolChg = volChgValues.some(v => v !== null && v !== 0)
+
   const getY = d => {
-    if (typeof d.volume_chg === 'number') return d.volume_chg
-    if (typeof d.week_diff  === 'number') return d.week_diff
+    if (hasRealVolChg && typeof d.volume_chg === 'number') return d.volume_chg
+    if (typeof d.week_diff === 'number') return d.week_diff
     return 0
   }
-  const yAxisLabel = hasVolChg ? '出来高急増率' : '先週比'
+  const yAxisLabel = hasRealVolChg ? '出来高急増率 (%)' : '先週比 (pt)'
+
+  // Y軸: trade_valueが有効かどうか
+  const tvValues = filtered.map(d => d.trade_value ?? 0)
+  const hasRealTV = tvValues.some(v => v > 0)
+
+  const getSizeVal = d => hasRealTV ? (d.trade_value ?? 0) : Math.abs(d.pct ?? 0) * 10e8
 
   const pcts    = filtered.map(d => d.pct)
   const volChgs = filtered.map(d => getY(d))
-  const tvs     = filtered.map(d => d.trade_value ?? 0)
+  const tvs     = filtered.map(d => getSizeVal(d))
 
-  // 軸の範囲（最小でも1以上の幅を確保してゼロ除算防止）
+  // 軸の範囲（ゼロ除算防止）
   const rawXMin = pcts.length ? Math.min(...pcts) : -5
   const rawXMax = pcts.length ? Math.max(...pcts) : 5
   const rawYMin = volChgs.length ? Math.min(...volChgs) : -10
   const rawYMax = volChgs.length ? Math.max(...volChgs) : 10
-  const xMin = rawXMin - 1.5
-  const xMax = rawXMax + 1.5
-  const yMin = rawYMin - 8
-  const yMax = rawYMax + 8
+  // Y軸が全て同じ値の場合は強制的に範囲を広げる
+  const xMargin = Math.max((rawXMax - rawXMin) * 0.15, 1.5)
+  const yMargin = Math.max((rawYMax - rawYMin) * 0.15, 2)
+  const xMin = rawXMin - xMargin
+  const xMax = rawXMax + xMargin
+  const yMin = rawYMin - yMargin
+  const yMax = rawYMax + yMargin
   const tvMax = Math.max(...tvs.filter(v => v > 0), 1)
 
   // データが不足している場合（GitHub Actions未実行等）はフォールバック表示
@@ -336,27 +343,27 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
     return 8 + ratio * 34
   }
 
-  // 色（騰落率）
+  // 色（騰落率）サイトのred/green変数に合わせる
   const bColor = pct => {
-    if (pct >= 5)   return '#e03030'
-    if (pct >= 2)   return '#e06040'
-    if (pct >= 0.5) return '#c08060'
-    if (pct >= 0)   return '#907060'
-    if (pct >= -2)  return '#406860'
-    if (pct >= -5)  return '#2a9060'
-    return '#1a7850'
+    if (pct >= 8)   return '#ff2244'
+    if (pct >= 4)   return '#ff5370'
+    if (pct >= 1.5) return '#ff8c42'
+    if (pct >= 0)   return '#e8a040'
+    if (pct >= -1.5)return '#3db88a'
+    if (pct >= -4)  return '#00c48c'
+    return '#00a878'
   }
 
   // ゼロライン位置
   const x0 = xS(0)
   const y0 = yS(0)
 
-  // ── ゾーン定義 ──
+  // ── ゾーン定義（サイトカラーに合わせた暗いトーン）──
   const zones = [
-    { label:'注目ゾーン 上昇+出来高増',  x:x0, y:PT,  w:PL+GW-x0, h:y0-PT,    bg:'rgba(220,60,60,0.06)',  border:'rgba(220,60,60,0.15)'  },
-    { label:'売り圧力 下落+出来高増',    x:PL, y:PT,  w:x0-PL,    h:y0-PT,    bg:'rgba(30,160,100,0.05)', border:'rgba(30,160,100,0.12)' },
-    { label:'静かな上昇 出来高少',       x:x0, y:y0,  w:PL+GW-x0, h:PT+GH-y0, bg:'rgba(200,120,60,0.04)', border:'none'                  },
-    { label:'静かな下落',                x:PL, y:y0,  w:x0-PL,    h:PT+GH-y0, bg:'rgba(20,120,80,0.03)',  border:'none'                  },
+    { label:'注目ゾーン 上昇+出来高増',  x:x0, y:PT,  w:PL+GW-x0, h:y0-PT,    bg:'rgba(255,83,112,0.08)', border:'rgba(255,83,112,0.22)' },
+    { label:'売り圧力 下落+出来高増',    x:PL, y:PT,  w:x0-PL,    h:y0-PT,    bg:'rgba(0,196,140,0.07)',  border:'rgba(0,196,140,0.18)'  },
+    { label:'静かな上昇 出来高少',       x:x0, y:y0,  w:PL+GW-x0, h:PT+GH-y0, bg:'rgba(255,140,66,0.05)', border:'rgba(255,140,66,0.12)' },
+    { label:'静かな下落',                x:PL, y:y0,  w:x0-PL,    h:PT+GH-y0, bg:'rgba(74,158,255,0.04)', border:'none'                  },
   ]
 
   // 目盛り生成
@@ -396,10 +403,10 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
       {/* ゾーン説明 */}
       <div style={{ display:'flex', gap:'12px', flexWrap:'wrap', marginBottom:'12px', fontSize:'11px' }}>
         {[
-          { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'rgba(220,60,60,0.8)' },
-          { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'rgba(30,160,100,0.7)' },
-          { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少=じわり上昇',     color:'rgba(200,120,60,0.6)' },
-          { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'rgba(100,160,130,0.5)' },
+          { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'#ff5370' },
+          { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'#00c48c' },
+          { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少＝じわり上昇',    color:'#ff8c42' },
+          { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'#4a9eff' },
         ].map(z => (
           <div key={z.label} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
             <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:z.color, flexShrink:0 }} />
@@ -431,24 +438,24 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
           {/* グリッド線 */}
           {xTicks.map(v => (
             <line key={v} x1={xS(v)} y1={PT} x2={xS(v)} y2={PT+GH}
-              stroke="rgba(255,255,255,0.07)" strokeWidth="1" />
+              stroke="rgba(255,255,255,0.1)" strokeWidth="0.8" strokeDasharray="3,4" />
           ))}
           {yTicks.map(v => (
             <line key={v} x1={PL} y1={yS(v)} x2={PL+GW} y2={yS(v)}
-              stroke="rgba(255,255,255,0.07)" strokeWidth="1" />
+              stroke="rgba(255,255,255,0.1)" strokeWidth="0.8" strokeDasharray="3,4" />
           ))}
 
           {/* ゼロライン */}
           <line x1={x0} y1={PT} x2={x0} y2={PT+GH}
-            stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" strokeDasharray="6,3" />
+            stroke="rgba(255,255,255,0.35)" strokeWidth="1.5" strokeDasharray="5,3" />
           <line x1={PL} y1={y0} x2={PL+GW} y2={y0}
-            stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" strokeDasharray="6,3" />
+            stroke="rgba(255,255,255,0.35)" strokeWidth="1.5" strokeDasharray="5,3" />
 
           {/* ゾーンラベル */}
-          <text x={x0+8} y={PT+14} fontSize="10" fill="rgba(220,80,80,0.7)" fontWeight="600">🔥 注目ゾーン</text>
-          <text x={PL+6} y={PT+14} fontSize="10" fill="rgba(30,160,100,0.6)" fontWeight="600">⚠️ 売り圧力</text>
-          <text x={x0+8} y={PT+GH-6} fontSize="10" fill="rgba(200,120,60,0.55)" fontWeight="600">📈 静かな上昇</text>
-          <text x={PL+6} y={PT+GH-6} fontSize="10" fill="rgba(80,160,120,0.5)" fontWeight="600">❄️ 静かな下落</text>
+          <text x={x0+8} y={PT+16} fontSize="11" fill="rgba(255,83,112,0.85)" fontWeight="700">🔥 注目ゾーン</text>
+          <text x={PL+6} y={PT+16} fontSize="11" fill="rgba(0,196,140,0.8)" fontWeight="700">⚠️ 売り圧力</text>
+          <text x={x0+8} y={PT+GH-8} fontSize="11" fill="rgba(255,140,66,0.7)" fontWeight="600">📈 静かな上昇</text>
+          <text x={PL+6} y={PT+GH-8} fontSize="11" fill="rgba(74,158,255,0.65)" fontWeight="600">❄️ 静かな下落</text>
 
           {/* バブル（ホバーされていないものを先に描画） */}
           {filtered

@@ -296,11 +296,41 @@ export function useMonthlyHeatmap() {
  * useMomentum — 騰落モメンタム ★market.json優先に変更
  */
 export function useMomentum(period = '1mo') {
-  return useMarketJsonKey(
-    `momentum_${period}`,
-    `${API}/api/momentum?period=${period}`,
-    [period]
-  )
+  const [data,    setData]    = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    ;(async () => {
+      // market.jsonを試みる
+      let result = null
+      try {
+        const json = await fetchMarketJson()
+        const raw  = json[`momentum_${period}`]
+        if (raw) {
+          const arr = raw?.data || raw || []
+          // volume_chgが全て0またはnullの場合はAPIにフォールバック
+          const hasVol = Array.isArray(arr) && arr.some(d => d.volume_chg && d.volume_chg !== 0)
+          if (hasVol) result = raw
+        }
+      } catch {}
+
+      // Render APIにフォールバック（volume_chgが取れない場合も含む）
+      if (!result) {
+        try {
+          const r   = await fetch(`${API}/api/momentum?period=${period}`)
+          const j   = await r.json()
+          if (!cancelled) result = j
+        } catch {}
+      }
+
+      if (!cancelled) { setData(result); setLoading(false) }
+    })()
+    return () => { cancelled = true }
+  }, [period])
+
+  return { data, loading }
 }
 
 
