@@ -646,170 +646,6 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
 }
 
 
-// ── 月次テーマ別折れ線グラフ ─────────────────────────────────
-const MONTHLY_COLORS = [
-  '#4a9eff', '#ff5370', '#00c48c', '#ffd166',
-  '#aa77ff', '#ff8c42', '#4ecdc4', '#ff6b6b',
-]
-
-function MonthlyLineChart({ data, months, onNavigate }) {
-  const allThemes = data ? Object.keys(data) : []
-  const [selected, setSelected] = React.useState(() => allThemes.slice(0, 3))
-
-  // データが変わったらデフォルト3テーマを再設定
-  React.useEffect(() => {
-    if (allThemes.length > 0 && selected.length === 0) {
-      setSelected(allThemes.slice(0, 3))
-    }
-  }, [allThemes.length])
-
-  const toggleTheme = t =>
-    setSelected(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
-
-  if (!data || !months || months.length === 0) {
-    return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)' }}>データを読み込み中...</div>
-  }
-
-  // 表示する月（最新12ヶ月）
-  const dispMonths = months.slice(-12)
-
-  // Y軸の範囲計算（5%刻み）
-  const allVals = selected.flatMap(t =>
-    dispMonths.map(m => data[t]?.[m]).filter(v => v != null)
-  )
-  const rawMin = allVals.length ? Math.min(...allVals) : -10
-  const rawMax = allVals.length ? Math.max(...allVals) : 10
-  const yStep  = 5
-  const yMin   = Math.floor(rawMin / yStep) * yStep - yStep
-  const yMax   = Math.ceil(rawMax / yStep)  * yStep + yStep
-
-  // SVGレイアウト
-  const W = 900, H = 400
-  const PL = 52, PR = 20, PT = 32, PB = 56
-  const GW = W - PL - PR
-  const GH = H - PT - PB
-
-  const xS = i => PL + (i / Math.max(dispMonths.length - 1, 1)) * GW
-  const yS = v => PT + GH - ((v - yMin) / (yMax - yMin || 1)) * GH
-
-  // Y軸目盛り
-  const yTicks = []
-  for (let y = yMin; y <= yMax; y += yStep) yTicks.push(y)
-
-  // 月ラベル（短縮形）
-  const shortMonth = m => {
-    const parts = m.split('/')
-    return parts.length >= 2 ? parts[0].slice(2) + '/' + parts[1] : m
-  }
-
-  return (
-    <div>
-      {/* テーマ選択 */}
-      <div style={{ marginBottom:'12px' }}>
-        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px', fontWeight:600,
-          letterSpacing:'0.06em', textTransform:'uppercase' }}>
-          テーマを選択（複数可）
-        </div>
-        <div style={{ display:'flex', flexWrap:'wrap', gap:'6px' }}>
-          {allThemes.map((t, ti) => {
-            const isOn = selected.includes(t)
-            const col  = MONTHLY_COLORS[selected.indexOf(t) % MONTHLY_COLORS.length]
-            return (
-              <button key={t} onClick={() => toggleTheme(t)}
-                style={{
-                  padding:'4px 10px', borderRadius:'20px', fontSize:'11px',
-                  cursor:'pointer', fontFamily:'var(--font)', fontWeight: isOn ? 600 : 400,
-                  border: isOn ? '2px solid ' + col : '1px solid var(--border)',
-                  background: isOn ? col + '22' : 'transparent',
-                  color: isOn ? col : 'var(--text3)',
-                  transition:'all 0.15s',
-                }}>
-                {t}
-              </button>
-            )
-          })}
-        </div>
-      </div>
-
-      {/* 折れ線グラフ */}
-      {selected.length > 0 && (
-        <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
-          <svg viewBox={'0 0 ' + W + ' ' + H}
-            style={{ width:'100%', minWidth:'480px', display:'block',
-              background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
-
-            {/* ゼロライン */}
-            {yTicks.includes(0) && (
-              <line x1={PL} y1={yS(0)} x2={PL+GW} y2={yS(0)}
-                stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="4,3" />
-            )}
-
-            {/* グリッド線・Y軸目盛り */}
-            {yTicks.map(y => (
-              <g key={y}>
-                <line x1={PL} y1={yS(y)} x2={PL+GW} y2={yS(y)}
-                  stroke="rgba(255,255,255,0.07)" strokeWidth="0.8" />
-                <text x={PL-6} y={yS(y)+4} textAnchor="end"
-                  fontSize="10" fill="rgba(255,255,255,0.45)">
-                  {y >= 0 ? '+' : ''}{y}%
-                </text>
-              </g>
-            ))}
-
-            {/* X軸目盛り */}
-            {dispMonths.map((m, i) => (
-              <text key={m} x={xS(i)} y={PT+GH+18} textAnchor="middle"
-                fontSize="9" fill="rgba(255,255,255,0.4)">
-                {shortMonth(m)}
-              </text>
-            ))}
-
-            {/* 折れ線 */}
-            {selected.map((t, si) => {
-              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
-              const pts = dispMonths
-                .map((m, i) => ({ i, v: data[t]?.[m] }))
-                .filter(p => p.v != null)
-              if (pts.length < 2) return null
-              const pathD = pts.map((p, pi) =>
-                (pi === 0 ? 'M' : 'L') + xS(p.i).toFixed(1) + ',' + yS(p.v).toFixed(1)
-              ).join(' ')
-              return (
-                <g key={t}>
-                  <path d={pathD} fill="none" stroke={col} strokeWidth="2"
-                    strokeLinejoin="round" strokeLinecap="round" opacity="0.9" />
-                  {pts.map(p => (
-                    <circle key={p.i} cx={xS(p.i)} cy={yS(p.v)} r="3"
-                      fill={col} stroke="var(--bg2)" strokeWidth="1.5" />
-                  ))}
-                </g>
-              )
-            })}
-
-            {/* 凡例 */}
-            {selected.map((t, si) => {
-              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
-              return (
-                <g key={t}>
-                  <rect x={PL + si * 160} y={PT - 22} width="12" height="12" rx="2" fill={col} opacity="0.85" />
-                  <text x={PL + si * 160 + 16} y={PT - 12} fontSize="10" fill="rgba(255,255,255,0.75)">
-                    {t.length > 12 ? t.slice(0, 12) + '…' : t}
-                  </text>
-                </g>
-              )
-            })}
-          </svg>
-        </div>
-      )}
-      {selected.length === 0 && (
-        <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)',
-          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
-          上のボタンでテーマを選択してください
-        </div>
-      )}
-    </div>
-  )
-}
 
 export default function Heatmap({ onNavigate }) {
   const [tab,        setTab]        = useState('scatter')
@@ -868,7 +704,6 @@ export default function Heatmap({ onNavigate }) {
   const TABS = [
     { key:'scatter',  label:'📊 ヒートマップ' },
     { key:'period',   label:'🟥 期間別' },
-    { key:'monthly',  label:'📅 月次' },
     { key:'momentum', label:'📡 モメンタム' },
   ]
 
@@ -918,9 +753,7 @@ export default function Heatmap({ onNavigate }) {
       )}
 
       {/* 月次ヒートマップ */}
-      {tab === 'monthly' && (
-        <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
-      )}
+      
       {tab === 'momentum' && (
         <>
           {/* コントロール */}
@@ -994,7 +827,7 @@ export default function Heatmap({ onNavigate }) {
       <style>{`
         .heatmap-tab-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           gap: 6px;
         }
         .scatter-zone-desc > div {
@@ -1004,7 +837,7 @@ export default function Heatmap({ onNavigate }) {
         }
         @media (max-width: 640px) {
           .heatmap-tab-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
           }
           .scatter-zone-desc {
             font-size: 10px;

@@ -422,7 +422,7 @@ function PickupStocks({ stocks, period }) {
 function StockTable({ stocks }) {
   if (!stocks || !stocks.length) return null
   const [modalStock, setModalStock] = useState(null)
-  const headers = ['株価','騰落率','時価総額','連動度','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['ミニチャート','株価','騰落率','時価総額','連動度','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
   return (
     <>
       {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
@@ -432,7 +432,10 @@ function StockTable({ stocks }) {
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
               <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
               <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
-              {headers.map(h => <th key={h} style={{ ...thStyle, minWidth:'80px' }}>{h}</th>)}
+              {headers.map(h => (
+                <th key={h} style={{ ...thStyle, minWidth: h === 'ミニチャート' ? '72px' : '80px',
+                  width: h === 'ミニチャート' ? '72px' : undefined }}>{h}</th>
+              ))}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
           </thead>
@@ -453,14 +456,15 @@ function StockTable({ stocks }) {
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky',
                     left:'32px', zIndex:2, minWidth:'160px', maxWidth:'220px' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
-                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
-                        textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-                      <span style={{ display:'inline-block', width:'64px', minWidth:'64px',
-                        height:'22px', flexShrink:0, verticalAlign:'middle' }}>
-                        <Sparkline data={s.spark} />
-                      </span>
+                    <div style={{ display:'flex', alignItems:'center' }}>
+                      <span style={{ fontSize:'13px', overflow:'hidden',
+                        textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{s.name}</span>
                     </div>
+                  </td>
+                  <td style={{ ...tdC, padding:'4px 8px', minWidth:'72px', width:'72px' }}>
+                    <span style={{ display:'inline-block', width:'64px', height:'22px', verticalAlign:'middle' }}>
+                      <Sparkline data={s.spark} />
+                    </span>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
@@ -763,14 +767,25 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
       <div className="theme-detail-body" style={{ padding:'20px 32px 48px' }}>
         {loading ? <Loading /> : detail ? (
           <>
-            {/* ── サマリーヘッダー（先月比・状態含む）── */}
-            {/* ── サマリーヘッダー（スマホ最適化済み） ── */}
+            {/* ── サマリーヘッダー ── */}
             <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
               borderRadius:'10px', padding:'12px 16px', marginBottom:'16px' }}>
-              {/* 1行目: テーマ名 + 騰落率 */}
-              <div style={{ display:'flex', alignItems:'center', gap:'10px',
-                flexWrap:'wrap', marginBottom:'6px' }}>
-                <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', flex:'1 1 120px', minWidth:0 }}>
+              {/* 1行目: テーマ名 + 騰落率 + 解説ボタン（左詰め） */}
+              <div style={{ display:'flex', alignItems:'center', gap:'10px', flexWrap:'wrap', marginBottom:'6px' }}>
+                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                  <button
+                    onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                    style={{ padding:'4px 10px', flexShrink:0,
+                      background:'rgba(74,158,255,0.08)',
+                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
+                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}
+                  >
+                    📖 解説記事
+                  </button>
+                )}
+                <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', flex:'1 1 80px', minWidth:0,
+                  overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
                   {selTheme}
                 </span>
                 <span style={{ fontSize:'18px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
@@ -790,8 +805,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                     <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'20px',
                       color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
                       background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
-                      border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40',
-                    }}>
+                      border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
                       {momentum.state}
                     </span>
                     <span style={{ width:'1px', height:'12px', background:'var(--border)', flexShrink:0 }} />
@@ -800,19 +814,6 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 <span style={{ fontSize:'11px', color:'var(--text3)' }}>
                   {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
                 </span>
-                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
-                  <button
-                    onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                    style={{ marginLeft:'auto', padding:'5px 10px',
-                      background:'rgba(74,158,255,0.08)',
-                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
-                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
-                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
-                      flexShrink:0 }}
-                  >
-                    📖 解説記事
-                  </button>
-                )}
               </div>
             </div>
 
@@ -837,10 +838,10 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             {/* ── 出来高・売買代金 1年推移 ── */}
             <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
-                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
+                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
               </div>
-              <div className="voltv-chart-wrap" style={{ height:'180px' }}>
+              <div className="voltv-chart-wrap" style={{ height:'280px' }}>
                 <VolTvChart selTheme={selTheme} />
               </div>
             </div>
@@ -853,7 +854,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         @media (max-width:640px) {
           .top5g { grid-template-columns: 1fr !important; }
           .pickup-grid { grid-template-columns: 1fr !important; }
-          .voltv-chart-wrap { height: 220px !important; }
+          .voltv-chart-wrap { height: 260px !important; }
           .theme-detail-body { padding: 12px 12px 48px !important; }
         }
       `}</style>
