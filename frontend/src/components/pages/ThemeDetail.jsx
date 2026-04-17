@@ -325,14 +325,16 @@ function PickupStocks({ stocks, period }) {
 
   return (
     <div style={{ marginBottom:'20px' }}>
-      <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px' }}>
-        <span style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em',
-          color:'var(--text3)', textTransform:'uppercase' }}>
-          🔎 注目銘柄ピックアップ
-        </span>
-        <div style={{ flex:1, height:'1px', background:'var(--border)' }} />
-        <span style={{ fontSize:'10px', color:'var(--text3)' }}>
-          騰落率・出来高・勢い・売買代金を総合判断
+      {/* PickupStocksヘッダー: スマホで1行目タイトル/2行目説明 */}
+      <div style={{ marginBottom:'12px' }}>
+        <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'4px' }}>
+          <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>
+            🔎 注目銘柄ピックアップ
+          </span>
+          <div style={{ flex:1, height:'1px', background:'var(--border)' }} />
+        </div>
+        <span style={{ fontSize:'10px', color:'var(--text3)', display:'block', paddingLeft:'2px' }}>
+          騰落率・出来高・勢い・売買代金を総合スコアで機械的に集計した参考情報です
         </span>
       </div>
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'10px' }}
@@ -758,54 +760,60 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         </select>
       </div>
 
-      <div style={{ padding:'20px 32px 48px' }}>
+      <div className="theme-detail-body" style={{ padding:'20px 32px 48px' }}>
         {loading ? <Loading /> : detail ? (
           <>
             {/* ── サマリーヘッダー（先月比・状態含む）── */}
-            <div style={{ display:'flex', alignItems:'center', gap:'12px', marginBottom:'20px', flexWrap:'wrap',
-              background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px' }}>
-              <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
-              <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
-                color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
-              </span>
-              {momentum && (
-                <>
-                  <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
-                  <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
-                  <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
-                    color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                    {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
-                  </span>
-                  <span style={{ fontSize:'12px', fontWeight:600, padding:'2px 10px', borderRadius:'20px',
-                    color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
-                    background: `${STATE_COLORS[momentum.state] ?? '#4a6080'}18`,
-                    border: `1px solid ${STATE_COLORS[momentum.state] ?? 'var(--border)'}40`,
-                  }}>
-                    {momentum.state}
-                  </span>
-                </>
-              )}
-              <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
-                {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
-              </span>
-              {/* 関連コラムボタン */}
-              {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
-                <button
-                  onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                  style={{
-                    padding:'6px 14px', background:'rgba(74,158,255,0.08)',
-                    border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
-                    color:'var(--accent)', cursor:'pointer', fontSize:'11px',
-                    fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
-                    transition:'all 0.15s', flexShrink:0,
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.background='rgba(74,158,255,0.18)'}
-                  onMouseLeave={e => e.currentTarget.style.background='rgba(74,158,255,0.08)'}
-                >
-                  📖 解説記事を読む
-                </button>
-              )}
+            {/* ── サマリーヘッダー（スマホ最適化済み） ── */}
+            <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+              borderRadius:'10px', padding:'12px 16px', marginBottom:'16px' }}>
+              {/* 1行目: テーマ名 + 騰落率 */}
+              <div style={{ display:'flex', alignItems:'center', gap:'10px',
+                flexWrap:'wrap', marginBottom:'6px' }}>
+                <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', flex:'1 1 120px', minWidth:0 }}>
+                  {selTheme}
+                </span>
+                <span style={{ fontSize:'18px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
+                  color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                  {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                </span>
+              </div>
+              {/* 2行目: モメンタム + 構成数 */}
+              <div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap' }}>
+                {momentum && (
+                  <>
+                    <span style={{ fontSize:'11px', color:'var(--text3)' }}>先月比</span>
+                    <span style={{ fontSize:'12px', fontFamily:'var(--mono)', fontWeight:600,
+                      color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                      {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
+                    </span>
+                    <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'20px',
+                      color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
+                      background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
+                      border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40',
+                    }}>
+                      {momentum.state}
+                    </span>
+                    <span style={{ width:'1px', height:'12px', background:'var(--border)', flexShrink:0 }} />
+                  </>
+                )}
+                <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+                  {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
+                </span>
+                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                  <button
+                    onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                    style={{ marginLeft:'auto', padding:'5px 10px',
+                      background:'rgba(74,158,255,0.08)',
+                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
+                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
+                      flexShrink:0 }}
+                  >
+                    📖 解説記事
+                  </button>
+                )}
+              </div>
             </div>
 
             {/* ── TOP5グラフ（小型）── */}
@@ -827,12 +835,14 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* ── 出来高・売買代金 1年推移 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'28px' }}>
-              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'16px' }}>
-                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
+                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
               </div>
-              <VolTvChart selTheme={selTheme} />
+              <div className="voltv-chart-wrap" style={{ height:'180px' }}>
+                <VolTvChart selTheme={selTheme} />
+              </div>
             </div>
           </>
         ) : (
@@ -840,7 +850,12 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         )}
       </div>
       <style>{`
-        @media (max-width:640px){.top5g{grid-template-columns:1fr !important;} .pickup-grid{grid-template-columns:1fr !important;}}
+        @media (max-width:640px) {
+          .top5g { grid-template-columns: 1fr !important; }
+          .pickup-grid { grid-template-columns: 1fr !important; }
+          .voltv-chart-wrap { height: 220px !important; }
+          .theme-detail-body { padding: 12px 12px 48px !important; }
+        }
       `}</style>
     </div>
   )
