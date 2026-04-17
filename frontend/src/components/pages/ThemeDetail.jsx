@@ -158,7 +158,7 @@ function VolTvChart({ selTheme }) {
     return <div style={{ textAlign:'center', padding:'32px', color:'var(--text3)', fontSize:'12px' }}>推移データがありません（GitHub Actionsの次回実行後に表示されます）</div>
 
   const { dates, volumes, trade_values } = data
-  const W = 800, H = 220, PL = 72, PR = 72, PT = 18, PB = 36
+  const W = 900, H = 300, PL = 72, PR = 72, PT = 24, PB = 40
   const GW = W - PL - PR, GH = H - PT - PB
   const n = dates.length
 
@@ -199,7 +199,7 @@ function VolTvChart({ selTheme }) {
 
   return (
     <div style={{ width:'100%', overflowX:'auto' }}>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'320px', fontFamily:'var(--font)' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%" style={{ display:'block', minWidth:'320px', fontFamily:'var(--font)' }}>
         {/* グリッド */}
         {[0.25, 0.5, 0.75, 1].map(r => (
           <line key={r} x1={PL} y1={PT + GH - r * GH} x2={PL + GW} y2={PT + GH - r * GH}
@@ -767,53 +767,92 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
       <div className="theme-detail-body" style={{ padding:'20px 32px 48px' }}>
         {loading ? <Loading /> : detail ? (
           <>
-            {/* ── サマリーヘッダー ── */}
-            <div style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+            {/* ── サマリーヘッダー（PC: 従来1行 / スマホ: 2行） ── */}
+            <div className="theme-summary-card" style={{ background:'var(--bg2)', border:'1px solid var(--border)',
               borderRadius:'10px', padding:'12px 16px', marginBottom:'16px' }}>
-              {/* 1行目: テーマ名 + 騰落率 + 解説ボタン（左詰め） */}
-              <div style={{ display:'flex', alignItems:'center', gap:'10px', flexWrap:'wrap', marginBottom:'6px' }}>
-                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
-                  <button
-                    onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                    style={{ padding:'4px 10px', flexShrink:0,
-                      background:'rgba(74,158,255,0.08)',
-                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
-                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
-                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}
-                  >
-                    📖 解説記事
-                  </button>
-                )}
-                <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', flex:'1 1 80px', minWidth:0,
-                  overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-                  {selTheme}
-                </span>
-                <span style={{ fontSize:'18px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
+              {/* PC版: 1行横並び（従来デザイン） */}
+              <div className="theme-summary-pc" style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}>
+                <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
+                <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
                   color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                  {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                  平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
                 </span>
-              </div>
-              {/* 2行目: モメンタム + 構成数 */}
-              <div style={{ display:'flex', alignItems:'center', gap:'8px', flexWrap:'wrap' }}>
                 {momentum && (
                   <>
-                    <span style={{ fontSize:'11px', color:'var(--text3)' }}>先月比</span>
-                    <span style={{ fontSize:'12px', fontFamily:'var(--mono)', fontWeight:600,
+                    <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
+                    <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
+                    <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
                       color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
                       {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
                     </span>
-                    <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'20px',
+                    <span style={{ fontSize:'12px', fontWeight:600, padding:'2px 10px', borderRadius:'20px',
                       color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
                       background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
                       border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
                       {momentum.state}
                     </span>
-                    <span style={{ width:'1px', height:'12px', background:'var(--border)', flexShrink:0 }} />
                   </>
                 )}
-                <span style={{ fontSize:'11px', color:'var(--text3)' }}>
-                  {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
+                <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
+                  {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
                 </span>
+                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                    style={{ padding:'6px 14px', background:'rgba(74,158,255,0.08)',
+                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
+                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
+                      transition:'all 0.15s', flexShrink:0 }}
+                    onMouseEnter={e => e.currentTarget.style.background='rgba(74,158,255,0.18)'}
+                    onMouseLeave={e => e.currentTarget.style.background='rgba(74,158,255,0.08)'}
+                  >
+                    📖 解説記事を読む
+                  </button>
+                )}
+              </div>
+              {/* スマホ版: 2行レイアウト */}
+              <div className="theme-summary-mobile">
+                <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'6px' }}>
+                  {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                    <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                      style={{ padding:'4px 10px', flexShrink:0,
+                        background:'rgba(74,158,255,0.08)',
+                        border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
+                        color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                        fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}>
+                      📖 解説記事
+                    </button>
+                  )}
+                  <span style={{ fontSize:'15px', fontWeight:700, color:'var(--text)',
+                    flex:1, minWidth:0, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+                    {selTheme}
+                  </span>
+                  <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
+                    color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                    {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                  </span>
+                </div>
+                <div style={{ display:'flex', alignItems:'center', gap:'6px', flexWrap:'wrap' }}>
+                  {momentum && (
+                    <>
+                      <span style={{ fontSize:'10px', color:'var(--text3)' }}>先月比</span>
+                      <span style={{ fontSize:'11px', fontFamily:'var(--mono)', fontWeight:600,
+                        color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                        {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
+                      </span>
+                      <span style={{ fontSize:'10px', fontWeight:600, padding:'2px 7px', borderRadius:'20px',
+                        color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
+                        background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
+                        border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
+                        {momentum.state}
+                      </span>
+                      <span style={{ width:'1px', height:'10px', background:'var(--border)' }} />
+                    </>
+                  )}
+                  <span style={{ fontSize:'10px', color:'var(--text3)' }}>
+                    {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -841,7 +880,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
               </div>
-              <div className="voltv-chart-wrap" style={{ height:'280px' }}>
+              <div className="voltv-chart-wrap" style={{ height:'340px' }}>
                 <VolTvChart selTheme={selTheme} />
               </div>
             </div>
@@ -851,11 +890,17 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         )}
       </div>
       <style>{`
+        /* PC版: PCヘッダー表示 / スマホヘッダー非表示 */
+        .theme-summary-pc     { display: flex; }
+        .theme-summary-mobile { display: none; }
         @media (max-width:640px) {
           .top5g { grid-template-columns: 1fr !important; }
           .pickup-grid { grid-template-columns: 1fr !important; }
-          .voltv-chart-wrap { height: 260px !important; }
+          .voltv-chart-wrap { height: 360px !important; }
           .theme-detail-body { padding: 12px 12px 48px !important; }
+          /* スマホ版: PCヘッダー非表示 / スマホヘッダー表示 */
+          .theme-summary-pc     { display: none !important; }
+          .theme-summary-mobile { display: block !important; }
         }
       `}</style>
     </div>

@@ -368,31 +368,27 @@ def main():
                             spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
                 except Exception:
                     spark = []
-                # 時価総額: fast_info → info["marketCap"] → 推計 の順でフォールバック
+                # 時価総額: fast_info（軽量）→ 出来高近似（確実）の順で取得
                 mkt_cap = 0
                 try:
-                    t_obj = yf.Ticker(ticker)
-                    fi = t_obj.fast_info
+                    fi = yf.Ticker(ticker).fast_info
                     mc = getattr(fi, 'market_cap', None)
                     if mc and mc > 0:
                         mkt_cap = int(mc)
-                    else:
-                        # fast_infoで取得できない場合はinfoを試みる
-                        try:
-                            info_mc = t_obj.info.get('marketCap', 0) or 0
-                            if info_mc > 0:
-                                mkt_cap = int(info_mc)
-                        except Exception:
-                            pass
-                    # それでも0なら出来高ベースで近似
-                    if mkt_cap == 0:
-                        df_mc = ticker_data.get(ticker)
-                        if df_mc is not None and len(df_mc) >= 20:
-                            avg_vol = float(df_mc['Volume'].tail(20).mean())
-                            last_price = float(df_mc['Close'].iloc[-1])
-                            mkt_cap = int(avg_vol / 0.003 * last_price) if avg_vol > 0 else 0
                 except Exception:
-                    mkt_cap = 0
+                    pass
+                # fast_infoが0または失敗 → 株価×出来高近似（最も確実）
+                if mkt_cap == 0:
+                    try:
+                        df_mc = ticker_data.get(ticker)
+                        if df_mc is not None and len(df_mc) >= 5:
+                            last_price = float(df_mc['Close'].dropna().iloc[-1])
+                            # 直近20日平均出来高 × 1/出来高回転率(0.5%)で発行済み株式数を推計
+                            avg_vol = float(df_mc['Volume'].dropna().tail(20).mean())
+                            if avg_vol > 0 and last_price > 0:
+                                mkt_cap = int(avg_vol / 0.005 * last_price)
+                    except Exception:
+                        mkt_cap = 0
                 detail_stocks.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
@@ -477,10 +473,30 @@ def main():
                             spark = [round((float(v)/base-1)*100, 2) for v in cl6.iloc[::step]]
                 except Exception:
                     spark = []
+                # 時価総額取得（詳細と同じ方法）
+                seg_mkt_cap = 0
+                try:
+                    seg_fi = yf.Ticker(ticker).fast_info
+                    seg_mc = getattr(seg_fi, 'market_cap', None)
+                    if seg_mc and seg_mc > 0:
+                        seg_mkt_cap = int(seg_mc)
+                except Exception:
+                    pass
+                if seg_mkt_cap == 0:
+                    try:
+                        df_seg = ticker_data.get(ticker)
+                        if df_seg is not None and len(df_seg) >= 5:
+                            seg_lp = float(df_seg['Close'].dropna().iloc[-1])
+                            seg_av = float(df_seg['Volume'].dropna().tail(20).mean())
+                            if seg_av > 0 and seg_lp > 0:
+                                seg_mkt_cap = int(seg_av / 0.005 * seg_lp)
+                    except Exception:
+                        pass
                 seg_detail.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
                     "contribution": round(d["pct"] / len(seg_stocks), 2),
+                    "market_cap": seg_mkt_cap,
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
                     "spark": spark,

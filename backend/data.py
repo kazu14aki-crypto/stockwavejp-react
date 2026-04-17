@@ -577,7 +577,7 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
         except Exception:
             spark = []
-        # 時価総額: fast_info から軽量取得
+        # 時価総額: fast_info → 出来高近似フォールバック
         market_cap = 0
         try:
             fi2 = yf.Ticker(ticker).fast_info
@@ -585,7 +585,17 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
             if mc2 and mc2 > 0:
                 market_cap = int(mc2)
         except Exception:
-            market_cap = 0
+            pass
+        if market_cap == 0:
+            try:
+                df_seg2 = _fetch_df(ticker)
+                if df_seg2 is not None and len(df_seg2) >= 5:
+                    lp2 = float(df_seg2['Close'].dropna().iloc[-1])
+                    av2 = float(df_seg2['Volume'].dropna().tail(20).mean())
+                    if av2 > 0 and lp2 > 0:
+                        market_cap = int(av2 / 0.005 * lp2)
+            except Exception:
+                pass
         # ③連動度: セグメント平均日次騰落率との相関係数 (-100〜100)
         seg_correlation = 0.0
         try:
@@ -721,9 +731,7 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
         except Exception:
             spark = []
 
-        # ④市場時価総額: 株価×100万株で近似（fast_info API呼び出し廃止）
-        # 実際の発行済み株式数は不明だが株価から大まかな規模は判断可能
-        # 時価総額: fast_info から軽量取得（HTTP1回のみ）
+        # 時価総額: fast_info → 出来高近似の順
         market_cap = 0
         try:
             fi = yf.Ticker(ticker).fast_info
@@ -731,7 +739,18 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
             if mc and mc > 0:
                 market_cap = int(mc)
         except Exception:
-            market_cap = 0
+            pass
+        if market_cap == 0:
+            try:
+                # dfはraw[ticker][1]として取得済み
+                df_raw = raw.get(ticker, (None, None))[1]
+                if df_raw is not None and len(df_raw) >= 5:
+                    lp = float(df_raw['Close'].dropna().iloc[-1])
+                    av = float(df_raw['Volume'].dropna().tail(20).mean())
+                    if av > 0 and lp > 0:
+                        market_cap = int(av / 0.005 * lp)
+            except Exception:
+                pass
 
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
