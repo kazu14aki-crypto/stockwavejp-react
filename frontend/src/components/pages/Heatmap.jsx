@@ -99,7 +99,7 @@ function Loading() {
         }} />
       ))}
 
-    </div>
+          </div>
   )
 }
 
@@ -401,7 +401,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
       </div>
 
       {/* ゾーン説明 */}
-      <div style={{ display:'flex', gap:'12px', flexWrap:'wrap', marginBottom:'12px', fontSize:'11px' }}>
+      <div className="scatter-zone-desc">
         {[
           { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'#ff5370' },
           { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'#00c48c' },
@@ -417,10 +417,10 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
       </div>
 
       {/* SVGチャート */}
-      <div style={{ width:'100%', overflowX:'auto', position:'relative' }}>
+      <div style={{ width:'100%', overflowX:'auto', position:'relative', WebkitOverflowScrolling:'touch' }}>
         <svg
           viewBox={`0 0 ${W} ${H}`}
-          style={{ width:'100%', minWidth:'560px', display:'block',
+          style={{ width:'100%', minWidth:'480px', display:'block',
             background:'var(--bg2)', borderRadius:'10px',
             border:'1px solid var(--border)' }}
           onMouseLeave={() => setHovered(null)}
@@ -646,7 +646,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
 }
 
 export default function Heatmap({ onNavigate }) {
-  const [tab,        setTab]        = useState('period')
+  const [tab,        setTab]        = useState('scatter')
   const [loading,    setLoading]    = useState(true)
   const [heatmapData, setHeatmapData] = useState(null)
   const [monthlyData, setMonthlyData] = useState(null)
@@ -700,10 +700,10 @@ export default function Heatmap({ onNavigate }) {
   }, [tab])
 
   const TABS = [
-    { key:'period',   label:'🟥 期間別ヒートマップ' },
-    { key:'monthly',  label:'📅 月次ヒートマップ' },
-    { key:'momentum', label:'📡 騰落モメンタム' },
-    { key:'scatter',  label:'📊 資金フロー散布図' },
+    { key:'scatter',  label:'📊 ヒートマップ' },
+    { key:'period',   label:'🟥 期間別' },
+    { key:'monthly',  label:'📅 月次' },
+    { key:'momentum', label:'📡 モメンタム' },
   ]
 
   let sorted = [...momentumData]
@@ -782,14 +782,13 @@ export default function Heatmap({ onNavigate }) {
         )
       })()}
 
-      {/* タブ */}
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)',
-        gap:'4px', marginBottom:'20px', width:'100%', maxWidth:'480px' }}>
+      {/* タブ（スマホ: 2×2グリッド / PC: 4列） */}
+      <div className="heatmap-tab-grid" style={{ marginBottom:'20px', width:'100%' }}>
         {TABS.map(t => (
           <button key={t.key} onClick={() => setTab(t.key)} style={{
-            padding:'8px 6px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
+            padding:'10px 6px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
             cursor:'pointer', fontFamily:'var(--font)', whiteSpace:'nowrap',
-            textAlign:'center', lineHeight:1.3,
+            textAlign:'center', lineHeight:1.3, minHeight:'44px',
             border: tab === t.key ? '2px solid var(--accent)' : '1px solid var(--border)',
             background: tab === t.key ? 'rgba(74,158,255,0.12)' : 'var(--bg2)',
             color: tab === t.key ? 'var(--accent)' : 'var(--text3)',
@@ -888,11 +887,31 @@ export default function Heatmap({ onNavigate }) {
         </>
       )}
 
-      {/* 📊 資金フロー散布図 */}
+      {/* 📊 ヒートマップ（資金フロー散布図） */}
       {tab === 'scatter' && (
         <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
       )}
 
+      <style>{`
+        .heatmap-tab-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 6px;
+        }
+        .scatter-zone-desc > div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        @media (max-width: 640px) {
+          .heatmap-tab-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .scatter-zone-desc {
+            font-size: 10px;
+          }
+        }
+      `}</style>
     </div>
   )
 }
