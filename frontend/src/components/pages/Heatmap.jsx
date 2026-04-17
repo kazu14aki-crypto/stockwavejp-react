@@ -270,7 +270,6 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
       </div>
     )
   }
-
   // ── レイアウト定数 ──────────────────────────────
   const W = 900, H = 520
   const PL = 68, PR = 30, PT = 48, PB = 52
@@ -278,23 +277,57 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
   const GH = H - PT - PB
 
   // ── データ準備 ──────────────────────────────────
-  // pct: 騰落率, volume_chg: 出来高急増率, trade_value: 売買代金
-  const filtered = data.filter(d => d.pct != null && d.volume_chg != null)
+  // volume_chg が数値として存在するものだけ使う（未取得の場合はpctのみでフォールバック）
+  const hasVolChg = data.some(d => typeof d.volume_chg === 'number')
+  const filtered = data.filter(d =>
+    d.pct != null && !isNaN(d.pct) &&
+    (hasVolChg ? typeof d.volume_chg === 'number' : true)
+  )
 
-  const pcts     = filtered.map(d => d.pct)
-  const volChgs  = filtered.map(d => d.volume_chg ?? 0)
-  const tvs      = filtered.map(d => d.trade_value ?? 0)
+  // volume_chg がない場合は week_diff で代替表示
+  const getY = d => {
+    if (typeof d.volume_chg === 'number') return d.volume_chg
+    if (typeof d.week_diff  === 'number') return d.week_diff
+    return 0
+  }
+  const yAxisLabel = hasVolChg ? '出来高急増率' : '先週比'
 
-  // 軸の範囲（余裕を持たせる）
-  const xMin = Math.min(...pcts)   - 1.5
-  const xMax = Math.max(...pcts)   + 1.5
-  const yMin = Math.min(...volChgs) - 8
-  const yMax = Math.max(...volChgs) + 8
-  const tvMax = Math.max(...tvs) || 1
+  const pcts    = filtered.map(d => d.pct)
+  const volChgs = filtered.map(d => getY(d))
+  const tvs     = filtered.map(d => d.trade_value ?? 0)
 
-  // スケール関数
-  const xS = v => PL + ((v - xMin) / (xMax - xMin)) * GW
-  const yS = v => PT + GH - ((v - yMin) / (yMax - yMin)) * GH
+  // 軸の範囲（最小でも1以上の幅を確保してゼロ除算防止）
+  const rawXMin = pcts.length ? Math.min(...pcts) : -5
+  const rawXMax = pcts.length ? Math.max(...pcts) : 5
+  const rawYMin = volChgs.length ? Math.min(...volChgs) : -10
+  const rawYMax = volChgs.length ? Math.max(...volChgs) : 10
+  const xMin = rawXMin - 1.5
+  const xMax = rawXMax + 1.5
+  const yMin = rawYMin - 8
+  const yMax = rawYMax + 8
+  const tvMax = Math.max(...tvs.filter(v => v > 0), 1)
+
+  // データが不足している場合（GitHub Actions未実行等）はフォールバック表示
+  if (filtered.length === 0) {
+    return (
+      <div style={{ textAlign:'center', padding:'40px 20px', color:'var(--text3)',
+        background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+        <div style={{ fontSize:'24px', marginBottom:'12px' }}>📊</div>
+        <div style={{ fontSize:'13px', marginBottom:'6px', color:'var(--text2)' }}>
+          散布図データを準備中です
+        </div>
+        <div style={{ fontSize:'11px' }}>
+          GitHub Actions「Fetch Market Data」を手動実行すると表示されます
+        </div>
+      </div>
+    )
+  }
+
+  // スケール関数（ゼロ除算ガード付き）
+  const xRange = (xMax - xMin) || 1
+  const yRange = (yMax - yMin) || 1
+  const xS = v => PL + ((v - xMin) / xRange) * GW
+  const yS = v => PT + GH - ((v - yMin) / yRange) * GH
 
   // 円サイズ（売買代金に比例、最小8・最大40px）
   const rS = tv => {
@@ -356,7 +389,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
           ))}
         </select>
         <span style={{ fontSize:'11px', color:'var(--text3)' }}>
-          X軸=騰落率　Y軸=出来高急増率　円サイズ=売買代金
+          X軸=騰落率　Y軸={yAxisLabel}　円サイズ=売買代金
         </span>
       </div>
 
@@ -494,7 +527,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
                         {'騰落率: ' + (d.pct >= 0 ? '+' : '') + (d.pct?.toFixed(1) ?? '-') + '%'}
                       </text>
                       <text x={tx+10} y={ty+45} fontSize="10" fill={(d.volume_chg ?? 0) >= 0 ? '#ff8c42' : '#4a9eff'}>
-                        {'出来高: ' + ((d.volume_chg ?? 0) >= 0 ? '+' : '') + (d.volume_chg?.toFixed(0) ?? '-') + '%'}
+                        {(yAxisLabel + ': ') + (getY(d) >= 0 ? '+' : '') + getY(d).toFixed(0) + '%'}
                       </text>
                       <text x={tx+10} y={ty+59} fontSize="10" fill="#8b949e">
                         {'売買代金: ' + fmtL(d.trade_value)}
@@ -528,7 +561,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
           <text x={16} y={PT + GH/2}
             textAnchor="middle" fontSize="11" fill="rgba(255,255,255,0.4)"
             transform={`rotate(-90, 16, ${PT + GH/2})`}>
-            出来高急増率
+            {yAxisLabel}
           </text>
 
           {/* 凡例（売買代金バブルサイズ） */}
