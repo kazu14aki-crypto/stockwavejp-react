@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHeatmap, useMonthlyHeatmap, useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
@@ -98,6 +98,11 @@ function Loading() {
           animation:`pulse 1.2s ease-in-out ${d}s infinite`,
         }} />
       ))}
+
+      {/* 📊 資金フロー散布図 */}
+      {tab === 'scatter' && (
+        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
+      )}
     </div>
   )
 }
@@ -149,6 +154,11 @@ function HeatmapTable({ data, columns }) {
           ))}
         </tbody>
       </table>
+
+      {/* 📊 資金フロー散布図 */}
+      {tab === 'scatter' && (
+        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
+      )}
     </div>
   )
 }
@@ -190,6 +200,11 @@ function AutoComment({ lines }) {
   return (
     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px', marginBottom:'20px' }}>
       {rendered}
+
+      {/* 📊 資金フロー散布図 */}
+      {tab === 'scatter' && (
+        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
+      )}
     </div>
   )
 }
@@ -252,6 +267,356 @@ function genMomentumComment(momentumData, period) {
   return lines
 }
 
+// ═══════════════════════════════════════════════════════════════
+// 📊 資金フロー散布図（バブルチャート）
+// X軸 = 騰落率   Y軸 = 出来高急増率   円サイズ = 売買代金   色 = 騰落率
+// ═══════════════════════════════════════════════════════════════
+function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
+  const [hovered, setHovered] = React.useState(null)
+  const [tooltipPos, setTooltipPos] = React.useState({ x: 0, y: 0 })
+
+  if (!data || data.length === 0) {
+    return (
+      <div style={{ textAlign:'center', padding:'60px', color:'var(--text3)' }}>
+        データを読み込み中...
+      </div>
+    )
+  }
+
+  // ── レイアウト定数 ──────────────────────────────
+  const W = 900, H = 520
+  const PL = 68, PR = 30, PT = 48, PB = 52
+  const GW = W - PL - PR
+  const GH = H - PT - PB
+
+  // ── データ準備 ──────────────────────────────────
+  // pct: 騰落率, volume_chg: 出来高急増率, trade_value: 売買代金
+  const filtered = data.filter(d => d.pct != null && d.volume_chg != null)
+
+  const pcts     = filtered.map(d => d.pct)
+  const volChgs  = filtered.map(d => d.volume_chg ?? 0)
+  const tvs      = filtered.map(d => d.trade_value ?? 0)
+
+  // 軸の範囲（余裕を持たせる）
+  const xMin = Math.min(...pcts)   - 1.5
+  const xMax = Math.max(...pcts)   + 1.5
+  const yMin = Math.min(...volChgs) - 8
+  const yMax = Math.max(...volChgs) + 8
+  const tvMax = Math.max(...tvs) || 1
+
+  // スケール関数
+  const xS = v => PL + ((v - xMin) / (xMax - xMin)) * GW
+  const yS = v => PT + GH - ((v - yMin) / (yMax - yMin)) * GH
+
+  // 円サイズ（売買代金に比例、最小8・最大40px）
+  const rS = tv => {
+    if (!tv || tv === 0) return 7
+    const ratio = tv / tvMax
+    return 8 + ratio * 34
+  }
+
+  // 色（騰落率）
+  const bColor = pct => {
+    if (pct >= 5)   return '#e03030'
+    if (pct >= 2)   return '#e06040'
+    if (pct >= 0.5) return '#c08060'
+    if (pct >= 0)   return '#907060'
+    if (pct >= -2)  return '#406860'
+    if (pct >= -5)  return '#2a9060'
+    return '#1a7850'
+  }
+
+  // ゼロライン位置
+  const x0 = xS(0)
+  const y0 = yS(0)
+
+  // ── ゾーン定義 ──
+  const zones = [
+    { label:'注目ゾーン 上昇+出来高増',  x:x0, y:PT,  w:PL+GW-x0, h:y0-PT,    bg:'rgba(220,60,60,0.06)',  border:'rgba(220,60,60,0.15)'  },
+    { label:'売り圧力 下落+出来高増',    x:PL, y:PT,  w:x0-PL,    h:y0-PT,    bg:'rgba(30,160,100,0.05)', border:'rgba(30,160,100,0.12)' },
+    { label:'静かな上昇 出来高少',       x:x0, y:y0,  w:PL+GW-x0, h:PT+GH-y0, bg:'rgba(200,120,60,0.04)', border:'none'                  },
+    { label:'静かな下落',                x:PL, y:y0,  w:x0-PL,    h:PT+GH-y0, bg:'rgba(20,120,80,0.03)',  border:'none'                  },
+  ]
+
+  // 目盛り生成
+  const xTicks = []
+  const xStep = Math.ceil((xMax - xMin) / 7)
+  for (let v = Math.ceil(xMin); v <= xMax; v += xStep || 1) xTicks.push(v)
+
+  const yTicks = []
+  const yStep = Math.ceil((yMax - yMin) / 6)
+  for (let v = Math.ceil(yMin / yStep) * yStep; v <= yMax; v += yStep || 1) yTicks.push(v)
+
+  const fmtL = tv => {
+    if (!tv) return '-'
+    if (tv >= 1e8) return (tv/1e8).toFixed(0) + '億'
+    if (tv >= 1e4) return (tv/1e4).toFixed(0) + '万'
+    return tv.toLocaleString()
+  }
+
+  return (
+    <div>
+      {/* 期間セレクタ */}
+      <div style={{ display:'flex', gap:'8px', alignItems:'center', marginBottom:'16px' }}>
+        <select value={mPeriod} onChange={e => setMPeriod(e.target.value)}
+          style={{ background:'var(--bg3)', color:'var(--text)',
+            border:'1px solid var(--border)', borderRadius:'6px',
+            fontFamily:'var(--font)', fontSize:'13px',
+            padding:'6px 12px', cursor:'pointer', outline:'none' }}>
+          {[{v:'1d',l:'1日'},{v:'5d',l:'1週間'},{v:'1mo',l:'1ヶ月'},{v:'3mo',l:'3ヶ月'},{v:'6mo',l:'6ヶ月'}].map(p => (
+            <option key={p.v} value={p.v}>{p.l}</option>
+          ))}
+        </select>
+        <span style={{ fontSize:'11px', color:'var(--text3)' }}>
+          X軸=騰落率　Y軸=出来高急増率　円サイズ=売買代金
+        </span>
+      </div>
+
+      {/* ゾーン説明 */}
+      <div style={{ display:'flex', gap:'12px', flexWrap:'wrap', marginBottom:'12px', fontSize:'11px' }}>
+        {[
+          { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'rgba(220,60,60,0.8)' },
+          { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'rgba(30,160,100,0.7)' },
+          { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少=じわり上昇',     color:'rgba(200,120,60,0.6)' },
+          { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'rgba(100,160,130,0.5)' },
+        ].map(z => (
+          <div key={z.label} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
+            <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:z.color, flexShrink:0 }} />
+            <span style={{ color:'var(--text3)' }}>{z.label}：</span>
+            <span style={{ color:'var(--text2)' }}>{z.desc}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* SVGチャート */}
+      <div style={{ width:'100%', overflowX:'auto', position:'relative' }}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          style={{ width:'100%', minWidth:'560px', display:'block',
+            background:'var(--bg2)', borderRadius:'10px',
+            border:'1px solid var(--border)' }}
+          onMouseLeave={() => setHovered(null)}
+        >
+          {/* ゾーン背景 */}
+          {zones.map((z, i) => (
+            <g key={i}>
+              <rect x={z.x} y={z.y} width={z.w} height={z.h}
+                fill={z.bg} rx="4"
+                stroke={z.border || 'none'} strokeWidth={z.border ? 0.8 : 0}
+                strokeDasharray="4,3" />
+            </g>
+          ))}
+
+          {/* グリッド線 */}
+          {xTicks.map(v => (
+            <line key={v} x1={xS(v)} y1={PT} x2={xS(v)} y2={PT+GH}
+              stroke="rgba(255,255,255,0.07)" strokeWidth="1" />
+          ))}
+          {yTicks.map(v => (
+            <line key={v} x1={PL} y1={yS(v)} x2={PL+GW} y2={yS(v)}
+              stroke="rgba(255,255,255,0.07)" strokeWidth="1" />
+          ))}
+
+          {/* ゼロライン */}
+          <line x1={x0} y1={PT} x2={x0} y2={PT+GH}
+            stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" strokeDasharray="6,3" />
+          <line x1={PL} y1={y0} x2={PL+GW} y2={y0}
+            stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" strokeDasharray="6,3" />
+
+          {/* ゾーンラベル */}
+          <text x={x0+8} y={PT+14} fontSize="10" fill="rgba(220,80,80,0.7)" fontWeight="600">🔥 注目ゾーン</text>
+          <text x={PL+6} y={PT+14} fontSize="10" fill="rgba(30,160,100,0.6)" fontWeight="600">⚠️ 売り圧力</text>
+          <text x={x0+8} y={PT+GH-6} fontSize="10" fill="rgba(200,120,60,0.55)" fontWeight="600">📈 静かな上昇</text>
+          <text x={PL+6} y={PT+GH-6} fontSize="10" fill="rgba(80,160,120,0.5)" fontWeight="600">❄️ 静かな下落</text>
+
+          {/* バブル（ホバーされていないものを先に描画） */}
+          {filtered
+            .filter(d => d.theme !== hovered?.theme)
+            .map(d => {
+              const cx = xS(d.pct)
+              const cy = yS(d.volume_chg ?? 0)
+              const r  = rS(d.trade_value)
+              const col = bColor(d.pct)
+              return (
+                <g key={d.theme}
+                  style={{ cursor: onNavigate ? 'pointer' : 'default' }}
+                  onMouseEnter={e => {
+                    const svg = e.currentTarget.closest('svg')
+                    const rect = svg.getBoundingClientRect()
+                    const scaleX = W / rect.width
+                    setHovered(d)
+                    setTooltipPos({
+                      x: cx,
+                      y: cy - r - 6,
+                    })
+                  }}
+                  onClick={() => onNavigate && onNavigate('テーマ別詳細', d.theme)}
+                >
+                  <circle cx={cx} cy={cy} r={r}
+                    fill={col} fillOpacity="0.75"
+                    stroke={col} strokeWidth="1.2" strokeOpacity="0.9" />
+                  {r >= 16 && (
+                    <text x={cx} y={cy+3} textAnchor="middle"
+                      fontSize={Math.min(10, r * 0.55)} fill="white"
+                      fontWeight="600" style={{ pointerEvents:'none' }}>
+                      {d.theme.length > 6 ? d.theme.slice(0, 6) + '…' : d.theme}
+                    </text>
+                  )}
+                </g>
+              )
+            })
+          }
+
+          {/* ホバー中のバブル（最前面） */}
+          {hovered && (() => {
+            const d = hovered
+            const cx = xS(d.pct)
+            const cy = yS(d.volume_chg ?? 0)
+            const r  = rS(d.trade_value)
+            const col = bColor(d.pct)
+            return (
+              <g key="hovered"
+                style={{ cursor: onNavigate ? 'pointer' : 'default' }}
+                onMouseEnter={() => setHovered(d)}
+                onClick={() => onNavigate && onNavigate('テーマ別詳細', d.theme)}
+              >
+                <circle cx={cx} cy={cy} r={r + 3}
+                  fill="none" stroke="white" strokeWidth="2" strokeOpacity="0.8" />
+                <circle cx={cx} cy={cy} r={r}
+                  fill={col} fillOpacity="0.9"
+                  stroke={col} strokeWidth="1.5" />
+                <text x={cx} y={cy+4} textAnchor="middle"
+                  fontSize="10" fill="white" fontWeight="700"
+                  style={{ pointerEvents:'none' }}>
+                  {d.theme.length > 8 ? d.theme.slice(0,8)+'…' : d.theme}
+                </text>
+
+                {/* ツールチップ */}
+                {(() => {
+                  const tx = Math.min(cx, W - 170)
+                  const ty = Math.max(PT + 4, cy - r - 72)
+                  return (
+                    <g style={{ pointerEvents:'none' }}>
+                      <rect x={tx} y={ty} width="162" height="66"
+                        rx="6" fill="#1a1f2e" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+                      <text x={tx+10} y={ty+16} fontSize="11" fill="#e8f0ff" fontWeight="700">
+                        {d.theme}
+                      </text>
+                      <text x={tx+10} y={ty+31} fontSize="10" fill={bColor(d.pct)}>
+                        {'騰落率: ' + (d.pct >= 0 ? '+' : '') + (d.pct?.toFixed(1) ?? '-') + '%'}
+                      </text>
+                      <text x={tx+10} y={ty+45} fontSize="10" fill={(d.volume_chg ?? 0) >= 0 ? '#ff8c42' : '#4a9eff'}>
+                        {'出来高: ' + ((d.volume_chg ?? 0) >= 0 ? '+' : '') + (d.volume_chg?.toFixed(0) ?? '-') + '%'}
+                      </text>
+                      <text x={tx+10} y={ty+59} fontSize="10" fill="#8b949e">
+                        {'売買代金: ' + fmtL(d.trade_value)}
+                      </text>
+                    </g>
+                  )
+                })()}
+              </g>
+            )
+          })()}
+
+          {/* X軸ラベル */}
+          {xTicks.map(v => (
+            <text key={v} x={xS(v)} y={PT+GH+16}
+              textAnchor="middle" fontSize="10" fill="rgba(255,255,255,0.4)">
+              {v >= 0 ? '+' : ''}{v}%
+            </text>
+          ))}
+          <text x={PL + GW/2} y={H-4}
+            textAnchor="middle" fontSize="11" fill="rgba(255,255,255,0.4)">
+            ← 下落　　騰落率　　上昇 →
+          </text>
+
+          {/* Y軸ラベル */}
+          {yTicks.map(v => (
+            <text key={v} x={PL-6} y={yS(v)+4}
+              textAnchor="end" fontSize="10" fill="rgba(255,255,255,0.4)">
+              {v >= 0 ? '+' : ''}{v}%
+            </text>
+          ))}
+          <text x={16} y={PT + GH/2}
+            textAnchor="middle" fontSize="11" fill="rgba(255,255,255,0.4)"
+            transform={`rotate(-90, 16, ${PT + GH/2})`}>
+            出来高急増率
+          </text>
+
+          {/* 凡例（売買代金バブルサイズ） */}
+          {[{tv:500e8,l:'5000億'},{tv:100e8,l:'1000億'},{tv:20e8,l:'200億'}].map((item, i) => {
+            const r = rS(item.tv)
+            const bx = PL + GW + PR - 24
+            const by = PT + 20 + i * 44
+            return (
+              <g key={i}>
+                <circle cx={bx} cy={by + r} r={r}
+                  fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" strokeWidth="1" />
+                <text x={bx} y={by + r*2 + 12}
+                  textAnchor="middle" fontSize="8.5" fill="rgba(255,255,255,0.4)">
+                  {item.l}
+                </text>
+              </g>
+            )
+          })}
+
+          {/* クリック誘導 */}
+          {onNavigate && (
+            <text x={PL + GW/2} y={PT - 12}
+              textAnchor="middle" fontSize="10" fill="rgba(255,255,255,0.3)">
+              バブルをクリック → テーマ別詳細へ
+            </text>
+          )}
+        </svg>
+      </div>
+
+      {/* 上位テーマリスト（注目ゾーン） */}
+      {(() => {
+        const hot = filtered
+          .filter(d => d.pct > 0 && (d.volume_chg ?? 0) > 0)
+          .sort((a, b) => (b.pct * 0.6 + (b.volume_chg ?? 0) * 0.4) - (a.pct * 0.6 + (a.volume_chg ?? 0) * 0.4))
+          .slice(0, 5)
+        if (!hot.length) return null
+        return (
+          <div style={{ marginTop:'16px', padding:'14px 18px',
+            background:'rgba(220,60,60,0.06)', border:'1px solid rgba(220,60,60,0.15)',
+            borderRadius:'8px' }}>
+            <div style={{ fontSize:'11px', fontWeight:600, color:'rgba(220,80,80,0.9)',
+              marginBottom:'10px', letterSpacing:'0.08em' }}>
+              🔥 注目ゾーン上位（上昇＋出来高増加）
+            </div>
+            <div style={{ display:'flex', flexWrap:'wrap', gap:'8px' }}>
+              {hot.map(d => (
+                <div key={d.theme} style={{
+                  background:'var(--bg2)', border:'1px solid rgba(220,60,60,0.2)',
+                  borderRadius:'6px', padding:'6px 12px',
+                  display:'flex', alignItems:'center', gap:'8px',
+                }}>
+                  <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)' }}>{d.theme}</span>
+                  <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color:'#ff5370', fontWeight:700 }}>
+                    {d.pct >= 0 ? '+' : ''}{d.pct?.toFixed(1)}%
+                  </span>
+                  <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color:'#ff8c42' }}>
+                    {'出来高' + (d.volume_chg >= 0 ? '+' : '') + d.volume_chg?.toFixed(0) + '%'}
+                  </span>
+                  {onNavigate && (
+                    <button onClick={() => onNavigate('テーマ別詳細', d.theme)}
+                      style={{ padding:'2px 8px', borderRadius:'4px', fontSize:'10px',
+                        background:'rgba(170,119,255,0.1)', border:'1px solid rgba(170,119,255,0.3)',
+                        color:'#aa77ff', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                      詳細 →
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })()}
+    </div>
+  )
+}
+
 export default function Heatmap({ onNavigate }) {
   const [tab,        setTab]        = useState('period')
   const [loading,    setLoading]    = useState(true)
@@ -310,6 +675,7 @@ export default function Heatmap({ onNavigate }) {
     { key:'period',   label:'🟥 期間別ヒートマップ' },
     { key:'monthly',  label:'📅 月次ヒートマップ' },
     { key:'momentum', label:'📡 騰落モメンタム' },
+    { key:'scatter',  label:'📊 資金フロー散布図' },
   ]
 
   let sorted = [...momentumData]
@@ -389,7 +755,7 @@ export default function Heatmap({ onNavigate }) {
       })()}
 
       {/* タブ */}
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)',
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)',
         gap:'4px', marginBottom:'20px', width:'100%', maxWidth:'480px' }}>
         {TABS.map(t => (
           <button key={t.key} onClick={() => setTab(t.key)} style={{
@@ -492,6 +858,11 @@ export default function Heatmap({ onNavigate }) {
             </>
           )}
         </>
+      )}
+
+      {/* 📊 資金フロー散布図 */}
+      {tab === 'scatter' && (
+        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
       )}
     </div>
   )
