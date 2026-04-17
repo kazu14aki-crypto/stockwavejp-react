@@ -577,7 +577,15 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                     spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
         except Exception:
             spark = []
-        market_cap = 0  # fetch_data.py の GitHub Actions 実行時に更新
+        # 時価総額: fast_info から軽量取得
+        market_cap = 0
+        try:
+            fi2 = yf.Ticker(ticker).fast_info
+            mc2 = getattr(fi2, 'market_cap', None)
+            if mc2 and mc2 > 0:
+                market_cap = int(mc2)
+        except Exception:
+            market_cap = 0
         # ③連動度: セグメント平均日次騰落率との相関係数 (-100〜100)
         seg_correlation = 0.0
         try:
@@ -715,8 +723,15 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
 
         # ④市場時価総額: 株価×100万株で近似（fast_info API呼び出し廃止）
         # 実際の発行済み株式数は不明だが株価から大まかな規模は判断可能
-        # market_cap は fetch_data.py のGitHub Actions実行時にのみ正確取得
+        # 時価総額: fast_info から軽量取得（HTTP1回のみ）
         market_cap = 0
+        try:
+            fi = yf.Ticker(ticker).fast_info
+            mc = getattr(fi, 'market_cap', None)
+            if mc and mc > 0:
+                market_cap = int(mc)
+        except Exception:
+            market_cap = 0
 
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
@@ -760,7 +775,23 @@ def fetch_momentum_data(themes: dict, period: str) -> list:
         elif dw > 2:               state = "↗転換↑"
         elif dw < -2:              state = "↘転換↓"
         else:                      state = "→横ばい"
-        result.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm, "state": state})
+            # 散布図用: 出来高急増率と売買代金を追加
+        vol_chg_val = 0.0
+        tv_val = 0
+        try:
+            th_stocks = themes.get(theme_name, {})
+            if th_stocks:
+                detail = fetch_theme_detail(theme_name, th_stocks, period)
+                if detail and detail.get("stocks"):
+                    stocks_d = detail["stocks"]
+                    vol_chg_val = round(
+                        sum(s.get("volume_chg", 0) for s in stocks_d) / len(stocks_d), 1
+                    )
+                    tv_val = sum(s.get("trade_value", 0) for s in stocks_d)
+        except Exception:
+            pass
+        result.append({"theme": theme_name, "pct": cur, "week_diff": dw, "month_diff": dm,
+                       "state": state, "volume_chg": vol_chg_val, "trade_value": tv_val})
 
     result.sort(key=lambda x: x["pct"], reverse=True)
     _set_mem_cache(cache_key, result)
