@@ -265,6 +265,7 @@ function KpiCard({ label, value, valueColor, sub, delay=0, loading=false, arrow=
   )
 }
 
+export default function TopPage({ onNavigate }) {
   const { data: themes,  loading: loadingT } = useThemes('1mo')
   const { data: macroRaw, loading: loadingM } = useMacro('1mo')
   const macro   = macroRaw?.data || {}
