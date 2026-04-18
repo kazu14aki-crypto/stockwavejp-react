@@ -735,7 +735,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   // ⑥ 選択テーマのヒートマップデータ取得
-  const [themeHeatmap, setThemeHeatmap] = React.useState(null)
+  const [themeHeatmap, setThemeHeatmap] = useState(null)
   useEffect(() => {
     if (!selTheme) return
     let cancelled = false
