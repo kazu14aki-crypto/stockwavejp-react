@@ -271,8 +271,8 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
     )
   }
   // ── レイアウト定数 ──────────────────────────────
-  const W = 900, H = 520
-  const PL = 68, PR = 30, PT = 48, PB = 52
+  const W = 800, H = 400
+  const PL = 60, PR = 28, PT = 40, PB = 48
   const GW = W - PL - PR
   const GH = H - PT - PB
 
@@ -420,7 +420,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
       <div style={{ width:'100%', overflowX:'auto', position:'relative', WebkitOverflowScrolling:'touch' }}>
         <svg
           viewBox={`0 0 ${W} ${H}`}
-          style={{ width:'100%', minWidth:'480px', display:'block',
+          style={{ width:'100%', minWidth:'380px', display:'block',
             background:'var(--bg2)', borderRadius:'10px',
             border:'1px solid var(--border)' }}
           onMouseLeave={() => setHovered(null)}

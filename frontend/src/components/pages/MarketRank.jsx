@@ -137,7 +137,7 @@ function StockTable({ stocks, onAddToTheme }) {
          (s.contribution ?? 0) >= 40 ? '#ff8c42' :
          (s.contribution ?? 0) >= 0  ? 'var(--text2)' : '#4a9eff' }}
   title="連動度: テーマ平均との日次騰落率の相関係数（-100〜+100）">
-  {s.contribution?.toFixed(0)}
+  {s.contribution != null ? s.contribution.toFixed(1) : '-'}
 </td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>

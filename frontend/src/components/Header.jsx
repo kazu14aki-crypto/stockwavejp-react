@@ -76,15 +76,11 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
             </span>
             {status.updatedAt && (
               <span className="status-updated" style={{ fontSize: '10px', color: 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
-                最終取得: {status.updatedAt.replace(/\d{4}\//,'').replace(' JST','')}
+                最終更新: {status.updatedAt.replace(/.*?(\d{1,2}:\d{2}).*/,'$1')}
               </span>
             )}
           </div>
 
-          {/* 時刻 */}
-          <span className="status-time" style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: 'var(--text3)', whiteSpace: 'nowrap' }}>
-            {status.time}
-          </span>
 
           {/* PC/SP切替（常時表示・見切れなし） */}
           <div style={{

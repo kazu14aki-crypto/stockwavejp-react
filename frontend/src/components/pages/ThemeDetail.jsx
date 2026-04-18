@@ -474,7 +474,7 @@ function StockTable({ stocks }) {
                     (s.contribution ?? 0) >= 40 ? '#ff8c42' :
                     (s.contribution ?? 0) >= 0  ? 'var(--text2)' : '#4a9eff' }}
                     title="連動度: テーマ平均との日次騰落率の相関係数（-100〜+100）">
-                    {s.contribution?.toFixed(0)}
+                    {s.contribution != null ? (s.contribution >= 0 ? '' : '') + s.contribution.toFixed(1) : '-'}
                   </td>
                   <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
@@ -880,7 +880,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
               </div>
-              <div className="voltv-chart-wrap" style={{ height:'340px' }}>
+              <div className="voltv-chart-wrap" style={{ height:'240px' }}>
                 <VolTvChart selTheme={selTheme} />
               </div>
             </div>
