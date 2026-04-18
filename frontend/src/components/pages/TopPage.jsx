@@ -161,7 +161,7 @@ function generateMarketComment(themeData, macro) {
   // マクロ情報
   const macroKeys = macro ? Object.keys(macro) : []
   const nikkei = macro?.['国内主要株(1321)'] || macro?.['日経225連動型(1321)']
-  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX連動型(1306)']
+  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX連動型(1306)'] || macro?.['1306.T'] || macro?.['TOPIX(1306)']
   const sp500  = macro?.['S&P500 ETF(SPY)']
   const usdjpy = macro?.['ドル円']
   const lastNK = nikkei ? nikkei[nikkei.length-1]?.pct : null
@@ -322,7 +322,7 @@ function MacroLineChart({ macro }) {
   const dates = [...allDates].sort()
   if (!dates.length) return null
 
-  const W = 800, H = 220, PL = 46, PR = 16, PT = 16, PB = 32
+  const W = 800, H = 160, PL = 46, PR = 16, PT = 12, PB = 28
 
   // 各指標を独立スケールで正規化（0基準→期間内の相対変化を均等表示）
   // Y軸は「相対騰落率（各指標の期間内変化幅を揃える）」
@@ -545,12 +545,12 @@ export default function TopPage({ onNavigate }) {
                   fontWeight:600, letterSpacing:'0.08em', textTransform:'uppercase' }}>
                   🔎 注目テーマ TOP3
                 </div>
-                <div style={{ display:'flex', flexDirection:'column', gap:'8px', marginBottom:'12px' }}>
+                <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'10px', marginBottom:'12px' }} className="top3-grid">
                   {top3.map((t, i) => (
                     <div key={t.theme} style={{
                       background:'var(--bg2)', border:'1px solid var(--border)',
                       borderRadius:'8px', padding:'10px 14px',
-                      borderLeft:`3px solid ${i===0?'#ffd166':i===1?'rgba(192,192,192,0.6)':'rgba(205,127,50,0.6)'}`,
+                      borderTop:`3px solid ${i===0?'#ffd166':i===1?'rgba(192,192,192,0.6)':'rgba(205,127,50,0.6)'}`,
                     }}>
                       <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'4px', fontWeight:600 }}>
                         {i===0?'🥇 注目テーマ No.1':i===1?'🥈 注目テーマ No.2':'🥉 注目テーマ No.3'}
@@ -608,6 +608,10 @@ export default function TopPage({ onNavigate }) {
         @media (max-width:640px) {
           .col-quick-grid { grid-template-columns: 1fr !important; }
           .macro-mini-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        .top3-grid { grid-template-columns: repeat(3,1fr) !important; }
+        @media (max-width:640px) {
+          .top3-grid { grid-template-columns: 1fr !important; }
         }
         .hero-desc { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         @media (max-width:900px) {
