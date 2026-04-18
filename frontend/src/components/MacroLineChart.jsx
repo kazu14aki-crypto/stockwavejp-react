@@ -160,7 +160,7 @@ export default function MacroLineChart({ macro }) {
   )
 }
 
-function SHead({ title }) {
+export function SHead({ title }) {
   return (
     <div style={{ display:'flex', alignItems:'center', gap:'10px', margin:'20px 0 12px' }}>
       <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text2)', letterSpacing:'0.06em', textTransform:'uppercase', whiteSpace:'nowrap' }}>{title}</span>
