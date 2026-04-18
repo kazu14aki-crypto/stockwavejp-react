@@ -197,43 +197,6 @@ function AutoComment({ lines }) {
   )
 }
 
-function genHeatmapComment(data, tab, months) {
-  if (!data) return null
-  const themes = Object.keys(data)
-  if (!themes.length) return null
-  const lines = []
-  if (tab === 'period') {
-    const periods = ['1W','1M','3M','6M','1Y']
-    const bullAll = themes.filter(t => periods.every(p => (data[t]?.[p] ?? 0) > 0))
-    const bearAll = themes.filter(t => periods.every(p => (data[t]?.[p] ?? 0) < 0))
-    const risingStart = themes.filter(t => (data[t]?.['1W'] ?? 0) > 1 && (data[t]?.['1M'] ?? 0) > 0 && (data[t]?.['3M'] ?? 0) < 0)
-    const topZone = themes.filter(t => (data[t]?.['1W'] ?? 0) < -1 && (data[t]?.['1M'] ?? 0) < 0 && (data[t]?.['3M'] ?? 0) > 5)
-    const byYear = [...themes].sort((a,b) => (data[b]?.['1Y']||0)-(data[a]?.['1Y']||0))
-    const topYear = byYear.slice(0,3), botYear = byYear.slice(-3).reverse()
-    lines.push(`【期間別ヒートマップ分析】全${themes.length}テーマの短期〜長期騰落率を俯瞰。1年間で最も強いテーマは「${topYear[0]}」(+${data[topYear[0]]?.['1Y']?.toFixed(1)}%)、「${topYear[1]}」「${topYear[2]}」が続く。最弱は「${botYear[0]}」(${data[botYear[0]]?.['1Y']?.toFixed(1)}%)。`)
-    if (bullAll.length > 0) lines.push(`✅ 全期間一貫上昇：「${bullAll.slice(0,4).join('」「')}」。強いトレンドが継続中でモメンタム戦略に適する。`)
-    if (bearAll.length > 0) lines.push(`⚠️ 全期間一貫下落：「${bearAll.slice(0,4).join('」「')}」。構造的な弱さが続いており底値確認には時間が必要。`)
-    if (risingStart.length > 0) lines.push(`↗ 上がり始めシグナル（短期プラス転換・中長期はまだマイナス）：「${risingStart.slice(0,3).join('」「')}」。底値反転初動の可能性。出来高増加を確認できれば仕込み場として注目。`)
-    if (topZone.length > 0) lines.push(`↘ 天井圏・調整の可能性（短期急落・長期はまだ強い）：「${topZone.slice(0,3).join('」「')}」。高値からの利確売りが出ている状態。押し目水準を見極めたい。`)
-    lines.push(`💡 活用法：全期間緑から週次・月次が赤に転換したテーマは「底値から上がり始め」のサイン。逆に全期間赤から直近が緑に転じたテーマは「高値から下落し始め」の注意サイン。`)
-  } else {
-    const recentMonths = months?.slice(-3) || []
-    if (!recentMonths.length) return null
-    const streak3 = themes.filter(t => recentMonths.every(m => (data[t]?.[m] ?? 0) > 0))
-    const fall3   = themes.filter(t => recentMonths.every(m => (data[t]?.[m] ?? 0) < 0))
-    const lastM = recentMonths[recentMonths.length-1], prevM = recentMonths[recentMonths.length-2]
-    const freshRising  = themes.filter(t => (data[t]?.[lastM] ?? 0) > 1 && (data[t]?.[prevM] ?? 0) < 0)
-    const freshFalling = themes.filter(t => (data[t]?.[lastM] ?? 0) < -1 && (data[t]?.[prevM] ?? 0) > 0)
-    const avg = themes.map(t => data[t]?.[lastM] ?? 0).reduce((s,v)=>s+v,0) / (themes.length||1)
-    lines.push(`【月次ヒートマップ分析】直近月（${lastM}）の平均騰落率は${avg>=0?'+':''}${avg.toFixed(1)}%。${streak3.length > 0 ? `直近3ヶ月連続上昇：「${streak3.slice(0,4).join('」「')}」が強いトレンドを維持。` : '3ヶ月連続上昇テーマは少なく上昇は散発的。'}`)
-    if (freshRising.length > 0)  lines.push(`↗ 今月プラス転換（前月まで下落）：「${freshRising.slice(0,4).join('」「')}」。下落から反転した初動の可能性。`)
-    if (freshFalling.length > 0) lines.push(`↘ 今月マイナス転換（前月まで上昇）：「${freshFalling.slice(0,4).join('」「')}」。上昇トレンドが一服。調整か転換かを見極めたい。`)
-    if (fall3.length > 0)        lines.push(`⚠️ 直近3ヶ月連続下落：「${fall3.slice(0,4).join('」「')}」。中期的な下落が継続中。反転サインを待ちたい。`)
-    lines.push(`💡 見方：「緑→赤→赤」パターンは上昇初期段階、「赤→緑→緑」は調整入りのサインとして機能しやすい。`)
-  }
-  return lines
-}
-
 function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
   const [hovered, setHovered] = React.useState(null)
   const [tooltipPos, setTooltipPos] = React.useState({ x: 0, y: 0 })
@@ -625,7 +588,6 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
 export default function Heatmap({ onNavigate }) {
   const [tab,        setTab]        = useState('scatter')
   const [loading,    setLoading]    = useState(true)
-  const [heatmapData, setHeatmapData] = useState(null)
   const [monthlyData, setMonthlyData] = useState(null)
   const [months,     setMonths]     = useState([])
   const [mPeriod,    setMPeriod]    = useState('1mo')
@@ -633,43 +595,35 @@ export default function Heatmap({ onNavigate }) {
   const { data: momentumRaw, loading: loadingM } = useMomentum(mPeriod)
   const momentumData = momentumRaw?.data || []
 
-  // ヒートマップデータ取得
+  // 月次ヒートマップデータ取得（period削除済み）
   useEffect(() => {
-    if (tab !== 'period' && tab !== 'monthly') return
+    if (tab !== 'monthly') return
     setLoading(true)
-    const CACHE_KEY = `heatmap_${tab}`
+    const CACHE_KEY = 'heatmap_monthly'
     ;(async () => {
       try {
         const cached = JSON.parse(localStorage.getItem('swjp_v3_' + CACHE_KEY) || 'null')
         if (cached?.data) {
-          if (tab === 'period')  setHeatmapData(cached.data.heatmap || cached.data)
-          else { setMonthlyData(cached.data.heatmap || cached.data); setMonths(cached.data.months || []) }
+          setMonthlyData(cached.data.heatmap || cached.data)
+          setMonths(cached.data.months || [])
           setLoading(false)
         }
       } catch {}
       try {
-        const res  = await fetch('/data/market.json?t=' + Date.now())
-        const json = await res.json()
-        if (tab === 'period' && json.heatmap) {
-          setHeatmapData(json.heatmap.data)
-          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap.data }, ts:Date.now() }))
-          setLoading(false); return
-        }
-        if (tab === 'monthly' && json.heatmap_monthly) {
+        const json = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
+        if (json.heatmap_monthly) {
           setMonthlyData(json.heatmap_monthly.data)
           setMonths(json.heatmap_monthly.months || [])
-          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({ data:{ heatmap:json.heatmap_monthly.data, months:json.heatmap_monthly.months }, ts:Date.now() }))
+          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({
+            data:{ heatmap:json.heatmap_monthly.data, months:json.heatmap_monthly.months }, ts:Date.now()
+          }))
           setLoading(false); return
         }
       } catch {}
       try {
-        if (tab === 'period') {
-          const res = await fetch(`${API}/api/heatmap`); const json = await res.json()
-          setHeatmapData(json.data)
-        } else {
-          const res = await fetch(`${API}/api/heatmap/monthly`); const json = await res.json()
-          setMonthlyData(json.data); setMonths(json.months)
-        }
+        const res = await fetch(`${API}/api/heatmap/monthly`)
+        const json = await res.json()
+        setMonthlyData(json.data); setMonths(json.months)
       } catch {}
       setLoading(false)
     })()
@@ -677,11 +631,9 @@ export default function Heatmap({ onNavigate }) {
 
   const TABS = [
     { key:'scatter', label:'📊 ヒートマップ' },
-    { key:'period',  label:'🟥 期間別' },
   ]
 
 
-  const heatComment = tab === 'period' ? genHeatmapComment(heatmapData, 'period', months) : null
 
   return (
     <div style={{ padding:'20px 24px 48px', maxWidth:'1280px', margin:'0 auto' }}>
@@ -711,15 +663,7 @@ export default function Heatmap({ onNavigate }) {
       </div>
 
       {/* 期間別ヒートマップ */}
-      {tab === 'period' && (
-        <>
-          <AutoComment lines={heatComment} />
-          {loading ? <Loading /> : heatmapData
-            ? <HeatmapTable data={heatmapData} columns={['1W','1M','3M','6M','1Y']} />
-            : <div style={{ color:'var(--text3)', fontSize:'13px' }}>データを取得できませんでした</div>
-          }
-        </>
-      )}
+
 
 
 
@@ -731,7 +675,7 @@ export default function Heatmap({ onNavigate }) {
       <style>{`
         .heatmap-tab-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(1, 1fr);
           gap: 6px;
         }
         .scatter-zone-desc > div {
@@ -741,7 +685,7 @@ export default function Heatmap({ onNavigate }) {
         }
         @media (max-width: 640px) {
           .heatmap-tab-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
           }
           .scatter-zone-desc {
             font-size: 10px;

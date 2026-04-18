@@ -158,7 +158,9 @@ function VolTvChart({ selTheme }) {
     return <div style={{ textAlign:'center', padding:'32px', color:'var(--text3)', fontSize:'12px' }}>推移データがありません（GitHub Actionsの次回実行後に表示されます）</div>
 
   const { dates, volumes, trade_values } = data
-  const W = 900, H = 300, PL = 72, PR = 72, PT = 24, PB = 40
+  // 売買代金が全て0の場合はvolumesのみ表示
+  const hasTV = trade_values.some(v => v > 0)
+  const W = 900, H = 300, PL = 72, PR = hasTV ? 72 : 20, PT = 24, PB = 40
   const GW = W - PL - PR, GH = H - PT - PB
   const n = dates.length
 
@@ -207,7 +209,7 @@ function VolTvChart({ selTheme }) {
         ))}
 
         {/* 縦棒（売買代金・右軸） */}
-        {trade_values.map((v, i) => {
+        {hasTV && trade_values.map((v, i) => {
           const bh = yTV(minTV) - yTV(v)
           if (bh <= 0) return null
           return (
@@ -241,8 +243,8 @@ function VolTvChart({ selTheme }) {
         ))}
 
         {/* 右軸ラベル（売買代金） */}
-        <text x={W - 4} y={PT - 4} fontSize="9" fill="#ff8c42" textAnchor="end">売買代金</text>
-        {tvTicks.map((v, i) => (
+        {hasTV && <text x={W - 4} y={PT - 4} fontSize="9" fill="#ff8c42" textAnchor="end">売買代金</text>}
+        {hasTV && tvTicks.map((v, i) => (
           <text key={i} x={PL + GW + 4} y={yTV(v) + 3} textAnchor="start"
             fontSize="8" fill="rgba(255,140,66,0.7)">{fmtLarge(v)}</text>
         ))}
@@ -251,7 +253,7 @@ function VolTvChart({ selTheme }) {
         <circle cx={PL + 10} cy={PT - 5} r="4" fill="#4a9eff" />
         <text x={PL + 18} y={PT - 1} fontSize="9" fill="#4a9eff">出来高（折れ線・左軸）</text>
         <rect x={PL + 140} y={PT - 10} width="10" height="8" fill="rgba(255,140,66,0.6)" rx="1" />
-        <text x={PL + 154} y={PT - 1} fontSize="9" fill="#ff8c42">売買代金（棒グラフ・右軸）</text>
+        {hasTV && <text x={PL + 154} y={PT - 1} fontSize="9" fill="#ff8c42">売買代金（棒グラフ・右軸）</text>}
       </svg>
     </div>
   )
@@ -1087,7 +1089,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* ── 出来高・売買代金 1年推移 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'160px' }}>
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'40px', paddingBottom:'120px', marginTop:'30px' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
@@ -1099,7 +1101,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
 
             {/* ── 選択テーマのヒートマップ ── */}
             {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'160px' }}>
+              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'40px', paddingBottom:'120px', marginTop:'30px' }}>
                 <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
                   📅 {selTheme}のヒートマップ（期間別騰落率）
                 </div>

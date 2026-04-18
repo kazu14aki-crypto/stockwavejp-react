@@ -161,7 +161,7 @@ function generateMarketComment(themeData, macro) {
   // マクロ情報
   const macroKeys = macro ? Object.keys(macro) : []
   const nikkei = macro?.['国内主要株(1321)'] || macro?.['日経225連動型(1321)']
-  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX連動型(1306)'] || macro?.['1306.T'] || macro?.['TOPIX(1306)']
+  const topix  = macro?.['TOPIX連動型上場投信(1306)'] || macro?.['TOPIX指数'] || macro?.['TOPIX連動型(1306)'] || macro?.['1306.T']
   const sp500  = macro?.['S&P500 ETF(SPY)']
   const usdjpy = macro?.['ドル円']
   const lastNK = nikkei ? nikkei[nikkei.length-1]?.pct : null

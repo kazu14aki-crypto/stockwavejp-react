@@ -21,6 +21,7 @@ from themes import DEFAULT_THEMES as THEMES
 MACRO_TICKERS = {
     "国内主要株(1321)":          "1321.T",
     "TOPIX連動型上場投信(1306)": "1306.T",
+    "TOPIX指数":                 "^TOPIX",
     "S&P500 ETF(SPY)":          "SPY",
     "ドル円":                    "JPY=X",
     "米国ハイテク株100(QQQ)":   "QQQ",
