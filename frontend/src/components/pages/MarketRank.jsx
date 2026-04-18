@@ -216,25 +216,6 @@ function MacroCard({ name, data, color }) {
   )
 }
 
-// APIから来るキー名をそのまま表示（バックエンドのMACRO_TICKERSと一致させる）
-// キー名はdata.pyのMACRO_TICKERSで管理
-const MACRO_COLORS = ['#ff4560','#ff8c42','#ffd166','#06d6a0','#4a9eff','#aa77ff']
-
-// niceScale
-function niceScaleTop(yMin, yMax, count=5) {
-  if (yMin === yMax) { yMin -= 1; yMax += 1 }
-  const range = yMax - yMin
-  const rawStep = range / count
-  const mag = Math.pow(10, Math.floor(Math.log10(rawStep || 1)))
-  const step = mag * ([1,2,2.5,5,10].find(c => c*mag >= rawStep) || 1)
-  const nMin = Math.floor(yMin / step) * step
-  const nMax = Math.ceil(yMax / step) * step
-  const ticks = []
-  for (let v = nMin; v <= nMax + step*0.01; v += step)
-    ticks.push(Math.round(v*1000)/1000)
-  return { ticks, nMin, nMax }
-}
-
 function MacroLineChart({ macro }) {
   const names = Object.keys(macro)
   if (!names.length) return null
@@ -368,7 +349,6 @@ function fmtDate(dateStr) {
   const d = parts[2]          // '28'
   return `${y}.${m}/${d}`
 }
-
 
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
