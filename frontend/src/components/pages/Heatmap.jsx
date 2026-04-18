@@ -629,7 +629,6 @@ export default function Heatmap({ onNavigate }) {
   const [monthlyData, setMonthlyData] = useState(null)
   const [months,     setMonths]     = useState([])
   const [mPeriod,    setMPeriod]    = useState('1mo')
-  const [sortKey,    setSortKey]    = useState('騰落率（降順）')
 
   const { data: momentumRaw, loading: loadingM } = useMomentum(mPeriod)
   const momentumData = momentumRaw?.data || []
@@ -681,9 +680,6 @@ export default function Heatmap({ onNavigate }) {
     { key:'period',  label:'🟥 期間別' },
   ]
 
-  let sorted = [...momentumData]
-  if (sortKey === '騰落率（降順）') sorted.sort((a,b) => b.pct - a.pct)
-  if (sortKey === '騰落率（昇順）') sorted.sort((a,b) => a.pct - b.pct)
 
   const heatComment = tab === 'period' ? genHeatmapComment(heatmapData, 'period', months) : null
 
@@ -725,62 +721,7 @@ export default function Heatmap({ onNavigate }) {
         </>
       )}
 
-      {/* 月次ヒートマップ */}            </select>
-            <select value={sortKey} onChange={e => setSortKey(e.target.value)} style={selStyle}>
-              {['騰落率（降順）','騰落率（昇順）'].map(s => <option key={s} value={s}>{s}</option>)}
-            </select>
-          </div>
 
-          {loadingM ? <Loading /> : (
-            <>
-              <div style={{ display:'grid', gridTemplateColumns:'1fr 80px 70px 110px',
-                gap:'8px', padding:'4px 12px', fontSize:'11px', color:'var(--text3)', fontWeight:600,
-                marginBottom:'4px' }}>
-                <span>テーマ名</span>
-                <span style={{ textAlign:'right' }}>騰落率</span>
-                <span style={{ textAlign:'right' }}>先週比</span>
-                <span style={{ textAlign:'center' }}>状態</span>
-              </div>
-              {sorted.map((d, i) => (
-                <div key={d.theme} style={{
-                  display:'grid', gridTemplateColumns:'1fr 80px 70px 110px',
-                  gap:'8px', alignItems:'center',
-                  background:'var(--bg2)', border:'1px solid var(--border)',
-                  borderRadius:'6px', padding:'8px 12px', marginBottom:'4px',
-                  animation:`fadeUp 0.3s cubic-bezier(0.22,1,0.36,1) ${i*0.02}s both`,
-                }}
-                  onMouseEnter={e => { e.currentTarget.style.background='rgba(74,158,255,0.04)'; e.currentTarget.style.borderColor='rgba(74,158,255,0.18)' }}
-                  onMouseLeave={e => { e.currentTarget.style.background='var(--bg2)'; e.currentTarget.style.borderColor='var(--border)' }}
-                >
-                  <span style={{ fontSize:'13px', color:'var(--text2)', fontWeight:500 }}>
-                    <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)', marginRight:'8px' }}>
-                      {String(i+1).padStart(2,'0')}
-                    </span>
-                    {d.theme}
-                  </span>
-                  <span style={{ fontFamily:'var(--mono)', fontSize:'14px', fontWeight:700, textAlign:'right', color:pctColor(d.pct) }}>
-                    {d.pct>=0?'+':''}{ d.pct?.toFixed(1)}%
-                  </span>
-                  <span style={{ fontFamily:'var(--mono)', fontSize:'13px', textAlign:'right', color:pctColor(d.week_diff) }}>
-                    {d.week_diff>=0?'+':''}{ d.week_diff?.toFixed(1)}pt
-                  </span>
-                  <span style={{ fontSize:'12px', fontWeight:600, textAlign:'center',
-                    color: STATE_COLORS[d.state] || 'var(--text3)',
-                    background:'rgba(128,128,128,0.08)', borderRadius:'20px',
-                    padding:'2px 8px', whiteSpace:'nowrap' }}>
-                    {d.state || '—'}
-                  </span>
-                </div>
-              ))}
-              {sorted.length === 0 && (
-                <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)', fontSize:'13px' }}>
-                  データがありません
-                </div>
-              )}
-            </>
-          )}
-        </>
-      )}
 
       {/* 📊 ヒートマップ（資金フロー散布図） */}
       {tab === 'scatter' && (
