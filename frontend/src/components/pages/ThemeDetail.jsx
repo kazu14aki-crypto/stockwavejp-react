@@ -875,7 +875,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* ── 出来高・売買代金 1年推移 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'100px' }}>
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'160px' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
@@ -897,7 +897,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
           .top5g { grid-template-columns: 1fr !important; }
           .pickup-grid { grid-template-columns: 1fr !important; }
           .voltv-chart-wrap { height: 360px !important; }
-          .theme-detail-body { padding: 12px 12px 80px !important; }
+          .theme-detail-body { padding: 12px 12px 120px !important; }
           /* スマホ版: PCヘッダー非表示 / スマホヘッダー表示 */
           .theme-summary-pc     { display: none !important; }
           .theme-summary-mobile { display: block !important; }

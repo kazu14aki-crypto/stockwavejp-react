@@ -234,31 +234,6 @@ function genHeatmapComment(data, tab, months) {
   return lines
 }
 
-function genMomentumComment(momentumData, period) {
-  const data = momentumData?.data || momentumData || []
-  if (!data.length) return null
-  const periodLabel = { '1d':'本日','5d':'週間','1mo':'1ヶ月','3mo':'3ヶ月','6mo':'6ヶ月','1y':'1年間' }[period] || period
-  const accel  = data.filter(t => t.state?.includes('加速'))
-  const decel  = data.filter(t => t.state?.includes('失速'))
-  const turnUp = data.filter(t => t.state?.includes('転換↑'))
-  const turnDn = data.filter(t => t.state?.includes('転換↓'))
-  const flat   = data.filter(t => t.state?.includes('横ばい'))
-  const avg    = data.length ? data.reduce((s,t)=>s+(t.pct||0),0)/data.length : 0
-  const lines  = []
-  lines.push(`【${periodLabel}の騰落モメンタム概況】全${data.length}テーマ、上昇${data.filter(t=>t.pct>0).length}・下落${data.filter(t=>t.pct<0).length}テーマ。平均騰落率${avg>=0?'+':''}${avg.toFixed(2)}%。モメンタム別：加速${accel.length}・転換↑${turnUp.length}・横ばい${flat.length}・転換↓${turnDn.length}・失速${decel.length}テーマ。`)
-  if (accel.length  > 0) lines.push(`🔥 加速（${accel.length}テーマ）：「${accel.slice(0,4).map(t=>t.theme).join('」「')}」など。短中期ともに上昇加速中。トレンドフォロー戦略が有効。`)
-  if (turnUp.length > 0) lines.push(`↗ 転換↑（${turnUp.length}テーマ）：「${turnUp.slice(0,3).map(t=>t.theme).join('」「')}」など。下落から上昇への転換初動。出来高増加を確認できれば仕込み場の可能性。`)
-  if (flat.length   > 0) lines.push(`→ 横ばい（${flat.length}テーマ）：「${flat.slice(0,3).map(t=>t.theme).join('」「')}」など。方向感が定まらない状態。ブレイクの方向を見極めてから参入が無難。`)
-  if (turnDn.length > 0) lines.push(`↘ 転換↓（${turnDn.length}テーマ）：「${turnDn.slice(0,3).map(t=>t.theme).join('」「')}」など。上昇トレンドが失速し始めたシグナル。利益確定を検討する局面。`)
-  if (decel.length  > 0) lines.push(`❄️ 失速（${decel.length}テーマ）：「${decel.slice(0,4).map(t=>t.theme).join('」「')}」など。下落継続・加速中。反転サインが出るまで慎重姿勢。`)
-  lines.push(`💡 活用法：「加速」＋「転換↑」が最も強い買いシグナル。「転換↓」＋「失速」は売り圧力継続中のサイン。週次で状態変化を追うことでトレンド転換を先読みできる。`)
-  return lines
-}
-
-// ═══════════════════════════════════════════════════════════════
-// 📊 資金フロー散布図（バブルチャート）
-// X軸 = 騰落率   Y軸 = 出来高急増率   円サイズ = 売買代金   色 = 騰落率
-// ═══════════════════════════════════════════════════════════════
 function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
   const [hovered, setHovered] = React.useState(null)
   const [tooltipPos, setTooltipPos] = React.useState({ x: 0, y: 0 })
@@ -702,22 +677,20 @@ export default function Heatmap({ onNavigate }) {
   }, [tab])
 
   const TABS = [
-    { key:'scatter',  label:'📊 ヒートマップ' },
-    { key:'period',   label:'🟥 期間別' },
-    { key:'momentum', label:'📡 モメンタム' },
+    { key:'scatter', label:'📊 ヒートマップ' },
+    { key:'period',  label:'🟥 期間別' },
   ]
 
   let sorted = [...momentumData]
   if (sortKey === '騰落率（降順）') sorted.sort((a,b) => b.pct - a.pct)
   if (sortKey === '騰落率（昇順）') sorted.sort((a,b) => a.pct - b.pct)
 
-  const heatComment     = tab === 'momentum' ? null : genHeatmapComment(tab==='period'?heatmapData:monthlyData, tab, months)
-  const momentumComment = tab === 'momentum' ? genMomentumComment(momentumData, mPeriod) : null
+  const heatComment = tab === 'period' ? genHeatmapComment(heatmapData, 'period', months) : null
 
   return (
     <div style={{ padding:'20px 24px 48px', maxWidth:'1280px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>
-        ヒートマップ・モメンタム
+        ヒートマップ
       </h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
         67テーマの騰落率をヒートマップと騰落モメンタムで多角的に分析できます。
@@ -752,22 +725,12 @@ export default function Heatmap({ onNavigate }) {
         </>
       )}
 
-      {/* 月次ヒートマップ */}
-      
-      {tab === 'momentum' && (
-        <>
-          {/* コントロール */}
-          <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginBottom:'16px', alignItems:'center' }}>
-            <select value={mPeriod} onChange={e => setMPeriod(e.target.value)} style={selStyle}>
-              {[{v:'1d',l:'1日'},{v:'5d',l:'1週間'},{v:'1mo',l:'1ヶ月'},{v:'3mo',l:'3ヶ月'},{v:'6mo',l:'6ヶ月'},{v:'1y',l:'1年'}].map(p => (
-                <option key={p.v} value={p.v}>{p.l}</option>
-              ))}
-            </select>
+      {/* 月次ヒートマップ */}            </select>
             <select value={sortKey} onChange={e => setSortKey(e.target.value)} style={selStyle}>
               {['騰落率（降順）','騰落率（昇順）'].map(s => <option key={s} value={s}>{s}</option>)}
             </select>
           </div>
-          <AutoComment lines={momentumComment} />
+
           {loadingM ? <Loading /> : (
             <>
               <div style={{ display:'grid', gridTemplateColumns:'1fr 80px 70px 110px',
@@ -827,7 +790,7 @@ export default function Heatmap({ onNavigate }) {
       <style>{`
         .heatmap-tab-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 6px;
         }
         .scatter-zone-desc > div {
@@ -837,7 +800,7 @@ export default function Heatmap({ onNavigate }) {
         }
         @media (max-width: 640px) {
           .heatmap-tab-grid {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
           }
           .scatter-zone-desc {
             font-size: 10px;

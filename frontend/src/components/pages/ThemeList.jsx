@@ -453,9 +453,22 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
       }}>{rank}</div>
 
       <div style={{ flex:1, minWidth:0 }}>
-        <div style={{ fontSize:'11px', fontWeight:600, color:'var(--text)',
-          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', marginBottom:'3px' }}>
-          {item.theme}
+        <div style={{ display:'flex', alignItems:'center', gap:'4px', marginBottom:'3px', minWidth:0 }}>
+          <span style={{ fontSize:'11px', fontWeight:600, color:'var(--text)',
+            overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', flex:1, minWidth:0 }}>
+            {item.theme}
+          </span>
+          {valueKey === 'pct' && momentumState && (() => {
+            const stateColors = { '🔥加速':'#ff4560','↗転換↑':'#ff8c42','→横ばい':'var(--text3)','↘転換↓':'#4a9eff','❄️失速':'#4a9eff' }
+            const sc = stateColors[momentumState] || 'var(--text3)'
+            return (
+              <span style={{ fontSize:'8px', fontWeight:700, color:sc, flexShrink:0,
+                background:`${sc}18`, borderRadius:'8px', padding:'1px 5px',
+                border:`1px solid ${sc}40`, whiteSpace:'nowrap' }}>
+                {momentumState}
+              </span>
+            )
+          })()}
         </div>
 
         {valueKey === 'pct' ? (
@@ -476,21 +489,6 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 {rankTag(tvRank, '#ff8c42')}
               </span>
             </div>
-            {/* 騰落モメンタム（valueKey==='pct'のカードのみ）*/}
-            {valueKey === 'pct' && momentumState && (() => {
-              const stateColors = { '🔥加速':'#ff4560','↗転換↑':'#ff8c42','→横ばい':'var(--text3)','↘転換↓':'#4a9eff','❄️失速':'#00c48c' }
-              const sc = stateColors[momentumState] || 'var(--text3)'
-              return (
-                <div style={{ marginTop:'4px', display:'flex', justifyContent:'space-between', alignItems:'center', gap:'4px' }}>
-                  <span style={{ fontSize:'9px', color:'var(--text3)' }}>モメンタム</span>
-                  <span style={{ fontSize:'9px', fontWeight:700, color:sc,
-                    background:`${sc}18`, borderRadius:'10px', padding:'1px 7px',
-                    border:`1px solid ${sc}40`, whiteSpace:'nowrap' }}>
-                    {momentumState}
-                  </span>
-                </div>
-              )
-            })()}
             {/* テーマ詳細ボタン + 関連コラムリンク */}
             {onNavigate && (
               <button

@@ -202,11 +202,16 @@ export default function MarketRank() {
   const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
   const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
   const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
-  const stocks    = rawStocks.map(s => ({
+  // 時価総額グループは市価総額降順、それ以外は騰落率降順
+  const isTVGroup = activeGroup === '国内全般' && activeSeg?.includes('時価総額')
+  const mappedStocks = rawStocks.map(s => ({
     ...s,
     vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
     tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
   }))
+  const stocks = isTVGroup
+    ? [...mappedStocks].sort((a,b) => (b.market_cap||0) - (a.market_cap||0))
+    : [...mappedStocks].sort((a,b) => b.pct - a.pct)
   const detailAvg = detail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
