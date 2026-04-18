@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useThemes, useMacro } from '../../hooks/useMarketData'
+import MacroLineChart, { MacroCard } from '../MacroLineChart'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -264,42 +265,6 @@ function KpiCard({ label, value, valueColor, sub, delay=0, loading=false, arrow=
   )
 }
 
-function MacroCard({ name, data, color }) {
-  if (!data||!data.length) return null
-  const last  = data[data.length-1]
-  const pctColor = last.pct>=0 ? 'var(--red)' : 'var(--green)'
-  const lineColor = color || pctColor
-  const vals  = data.map(d=>d.pct)
-  const min   = Math.min(...vals), max = Math.max(...vals)
-  const W=120, H=44
-  // 各指標独立スケールでスパークライン描画
-  const pts = vals.map((v,i)=>`${2+(i/Math.max(vals.length-1,1))*(W-4)},${2+(1-((v-min)/(max-min||0.01)))*(H-4)}`).join(' ')
-  return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px',
-      padding:'10px 12px', display:'flex', flexDirection:'column', gap:'6px', minWidth:0 }}>
-      <div style={{ fontSize:'10px', color:'var(--text3)', fontWeight:600, letterSpacing:'0.05em',
-        overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</div>
-      <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', gap:'8px' }}>
-        <div style={{ fontFamily:'var(--mono)', fontSize:'16px', fontWeight:700, color:pctColor, lineHeight:1 }}>
-          {last.pct>=0?'+':''}{last.pct.toFixed(1)}%
-        </div>
-        <div style={{ width:`${W}px`, height:`${H}px`, flexShrink:0, overflow:'hidden', maxWidth:'45%' }}>
-          <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} style={{ display:'block', overflow:'hidden' }}>
-            <polyline points={pts} fill="none" stroke={lineColor} strokeWidth="1.8"
-              strokeLinejoin="round" strokeLinecap="round"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-// APIから来るキー名をそのまま表示（バックエンドのMACRO_TICKERSと一致させる）
-// キー名はdata.pyのMACRO_TICKERSで管理
-import MacroLineChart, { MacroCard } from '../MacroLineChart'
-
-
-export default function TopPage({ onNavigate }) {
   const { data: themes,  loading: loadingT } = useThemes('1mo')
   const { data: macroRaw, loading: loadingM } = useMacro('1mo')
   const macro   = macroRaw?.data || {}
