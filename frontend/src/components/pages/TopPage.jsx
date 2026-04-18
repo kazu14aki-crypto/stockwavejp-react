@@ -470,7 +470,7 @@ export default function TopPage({ onNavigate }) {
         </h1>
         {/* PC:1行 / SP:折り返し */}
         <p style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.7 }} className="hero-desc">
-          日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで追跡。どのテーマに資金が集まっているかを視覚的に把握できます。
+          日本株67テーマの騰落率・出来高・売買代金を定期取得し、資金の流れをテーマ別に可視化。期間別ヒートマップや市場別詳細、解説コラムを組み合わせ、より実践的な投資分析をサポートします。
         </p>
       </div>
 

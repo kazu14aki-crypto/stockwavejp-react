@@ -338,17 +338,18 @@ export function useMomentum(period = '1mo') {
  * useSegmentDetail — 市場別銘柄詳細 ★market.json優先に変更（最重要）
  */
 export function useSegmentDetail(segName, period) {
-  const jsonKey = `seg_${segName}_${period}`
-  const [data,    setData]    = useState(() => readCache(jsonKey))
-  const [loading, setLoading] = useState(!readCache(jsonKey))
+  const [data,    setData]    = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     if (!segName) return
     let cancelled = false
-    const cached = readCache(jsonKey)
-    if (cached) { setData(cached); setLoading(false) }
-
+    setData(null)
+    setLoading(true)
+    const jsonKey = `seg_${segName}_${period}`
     ;(async () => {
+      const cached = readCache(jsonKey)
+      if (cached && !cancelled) { setData(cached); setLoading(false) }
       try {
         const json   = await fetchMarketJson()
         const result = json[jsonKey]
@@ -356,7 +357,6 @@ export function useSegmentDetail(segName, period) {
           setData(result); writeCache(jsonKey, result); setLoading(false); return
         }
       } catch {}
-      // フォールバック: Render API
       try {
         const r    = await fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
         const json = await r.json()
@@ -364,10 +364,8 @@ export function useSegmentDetail(segName, period) {
       } catch {}
       if (!cancelled) setLoading(false)
     })()
-
     return () => { cancelled = true }
   }, [segName, period])
-
   return { data, loading }
 }
 

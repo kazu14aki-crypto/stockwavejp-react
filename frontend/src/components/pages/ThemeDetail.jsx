@@ -734,6 +734,29 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
 
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+  // ⑥ 選択テーマのヒートマップデータ取得
+  const [themeHeatmap, setThemeHeatmap] = React.useState(null)
+  useEffect(() => {
+    if (!selTheme) return
+    let cancelled = false
+    ;(async () => {
+      try {
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
+        const hm = mj['heatmap']
+        if (hm && hm[selTheme] && !cancelled) {
+          setThemeHeatmap(hm[selTheme])
+          return
+        }
+        // monthlyも確認
+        const mhm = mj['heatmap_monthly']
+        if (mhm?.data?.[selTheme] && !cancelled) {
+          setThemeHeatmap({ monthly: mhm.data[selTheme], months: mhm.months || [] })
+        }
+      } catch {}
+    })()
+    return () => { cancelled = true }
+  }, [selTheme])
+
   const pctColor = (v) => v >= 0 ? 'var(--red)' : 'var(--green)'
   // vol_rank・tv_rankをフロントで再計算（market.jsonの値を上書き）
   const rawStocks = detail?.stocks ?? []
@@ -884,6 +907,36 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 <VolTvChart selTheme={selTheme} />
               </div>
             </div>
+
+            {/* ── 選択テーマのヒートマップ ── */}
+            {themeHeatmap && !Array.isArray(themeHeatmap) && (
+              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'160px' }}>
+                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
+                  📅 {selTheme}のヒートマップ（期間別騰落率）
+                </div>
+                <div style={{ display:'flex', gap:'6px', flexWrap:'wrap' }}>
+                  {['1W','1M','3M','6M','1Y'].map(period => {
+                    const v = themeHeatmap[period]
+                    if (v == null) return null
+                    const col = v >= 0 ? 'var(--red)' : 'var(--green)'
+                    const bg = v >= 0 ? `rgba(255,83,112,${Math.min(Math.abs(v)/15*0.5+0.05,0.6)})`
+                                      : `rgba(0,196,140,${Math.min(Math.abs(v)/15*0.5+0.05,0.6)})`
+                    return (
+                      <div key={period} style={{
+                        background:'var(--bg2)', border:`1px solid var(--border)`,
+                        borderRadius:'8px', padding:'10px 16px', minWidth:'80px', textAlign:'center',
+                        borderTop:`3px solid ${col}`,
+                      }}>
+                        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'4px' }}>{period}</div>
+                        <div style={{ fontSize:'16px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
+                          {v >= 0 ? '+' : ''}{v.toFixed(1)}%
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
           </>
         ) : (
           <div style={{ color:'var(--text3)', fontSize:'13px' }}>テーマを選択してください</div>

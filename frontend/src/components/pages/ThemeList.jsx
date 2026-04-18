@@ -561,6 +561,7 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
   const [showAll, setShowAll] = useState(false)
   const LIMIT = 10
+  const MOBILE_LIMIT = 3
   const displayed = showAll ? items : items.slice(0, LIMIT)
   const hasMore = items.length > LIMIT
   const maxVal = valueKey === 'pct' ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)))
@@ -568,7 +569,8 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
     <>
     <div className="theme-card-grid">
       {displayed.map((item, idx) => (
-        <ThemeCard key={item.theme} item={item} rank={idx+1}
+        <div key={item.theme} className={idx >= MOBILE_LIMIT ? 'mobile-hidden-card' : ''}>
+        <ThemeCard item={item} rank={idx+1}
           maxAbs={maxVal} valueKey={valueKey}
           barColor={barColor} pctColor={pctColor}
           pctRank={pctRankMap?.get(item.theme)}
@@ -577,6 +579,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           onNavigate={onNavigate}
           momentumState={momentumMap?.get(item.theme)?.state}
           momentumPct={momentumMap?.get(item.theme)?.pct} />
+        </div>
       ))}
     </div>
     {hasMore && (
@@ -606,6 +609,7 @@ const MONTHLY_COLORS = [
 function MonthlyLineChart({ data, months, onNavigate }) {
   const allThemes = data ? Object.keys(data) : []
   const [selected, setSelected] = React.useState(() => allThemes.slice(0, 3))
+  const [showPicker, setShowPicker] = React.useState(false)
 
   // データが変わったらデフォルト3テーマを再設定
   React.useEffect(() => {
@@ -655,31 +659,78 @@ function MonthlyLineChart({ data, months, onNavigate }) {
 
   return (
     <div>
-      {/* テーマ選択 */}
+      {/* テーマ選択（モーダル式） */}
       <div style={{ marginBottom:'12px' }}>
-        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'8px', fontWeight:600,
-          letterSpacing:'0.06em', textTransform:'uppercase' }}>
-          テーマを選択（複数可）
-        </div>
-        <div style={{ display:'flex', flexWrap:'wrap', gap:'6px' }}>
-          {allThemes.map((t, ti) => {
-            const isOn = selected.includes(t)
-            const col  = MONTHLY_COLORS[selected.indexOf(t) % MONTHLY_COLORS.length]
+        {/* 選択中テーマのバッジ + 追加ボタン */}
+        <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', alignItems:'center', marginBottom:'8px' }}>
+          {selected.map((t, si) => {
+            const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
             return (
-              <button key={t} onClick={() => toggleTheme(t)}
-                style={{
-                  padding:'4px 10px', borderRadius:'20px', fontSize:'11px',
-                  cursor:'pointer', fontFamily:'var(--font)', fontWeight: isOn ? 600 : 400,
-                  border: isOn ? '2px solid ' + col : '1px solid var(--border)',
-                  background: isOn ? col + '22' : 'transparent',
-                  color: isOn ? col : 'var(--text3)',
-                  transition:'all 0.15s',
-                }}>
+              <span key={t} style={{
+                display:'inline-flex', alignItems:'center', gap:'4px',
+                padding:'3px 8px 3px 10px', borderRadius:'20px', fontSize:'11px',
+                fontWeight:600, border:'1.5px solid ' + col,
+                background: col + '22', color: col,
+              }}>
                 {t}
-              </button>
+                <button onClick={() => toggleTheme(t)}
+                  style={{ background:'none', border:'none', cursor:'pointer',
+                    color: col, fontSize:'12px', lineHeight:1, padding:'0 2px',
+                    fontFamily:'var(--font)' }}>
+                  ×
+                </button>
+              </span>
             )
           })}
+          <button onClick={() => setShowPicker(s => !s)}
+            style={{ padding:'4px 12px', borderRadius:'20px', fontSize:'11px',
+              cursor:'pointer', fontFamily:'var(--font)', fontWeight:600,
+              border:'1px dashed var(--accent)', background:'rgba(74,158,255,0.06)',
+              color:'var(--accent)', transition:'all 0.15s' }}>
+            {showPicker ? '▲ 閉じる' : '＋ テーマを追加する'}
+          </button>
+          {selected.length > 0 && (
+            <button onClick={() => setSelected([])}
+              style={{ padding:'4px 10px', borderRadius:'20px', fontSize:'10px',
+                cursor:'pointer', fontFamily:'var(--font)',
+                border:'1px solid var(--border)', background:'transparent',
+                color:'var(--text3)', transition:'all 0.15s' }}>
+              すべて解除
+            </button>
+          )}
         </div>
+        {/* テーマピッカー（開閉式） */}
+        {showPicker && (
+          <div style={{
+            background:'var(--bg2)', border:'1px solid var(--border)',
+            borderRadius:'10px', padding:'12px 14px', marginBottom:'8px',
+            maxHeight:'200px', overflowY:'auto',
+          }}>
+            <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'8px',
+              letterSpacing:'0.06em', textTransform:'uppercase', fontWeight:600 }}>
+              テーマを選択（複数可）
+            </div>
+            <div style={{ display:'flex', flexWrap:'wrap', gap:'5px' }}>
+              {allThemes.map((t, ti) => {
+                const isOn = selected.includes(t)
+                const col  = isOn ? MONTHLY_COLORS[selected.indexOf(t) % MONTHLY_COLORS.length] : null
+                return (
+                  <button key={t} onClick={() => toggleTheme(t)}
+                    style={{
+                      padding:'3px 9px', borderRadius:'16px', fontSize:'10px',
+                      cursor:'pointer', fontFamily:'var(--font)', fontWeight: isOn ? 600 : 400,
+                      border: isOn ? '1.5px solid ' + col : '1px solid var(--border)',
+                      background: isOn ? col + '22' : 'transparent',
+                      color: isOn ? col : 'var(--text3)',
+                      transition:'all 0.12s',
+                    }}>
+                    {isOn ? '✓ ' : ''}{t}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 折れ線グラフ */}
@@ -948,6 +999,11 @@ export default function ThemeList({ onNavigate }) {
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
+      <style>{`
+        @media (max-width: 640px) {
+          .mobile-hidden-card { display: none !important; }
         }
       `}</style>
     </div>
