@@ -344,23 +344,24 @@ export function useSegmentDetail(segName, period) {
   useEffect(() => {
     if (!segName) return
     let cancelled = false
+    // セグメント変更時は必ずnullリセット（古いデータ残存防止）
     setData(null)
     setLoading(true)
     const jsonKey = `seg_${segName}_${period}`
     ;(async () => {
-      const cached = readCache(jsonKey)
-      if (cached && !cancelled) { setData(cached); setLoading(false) }
+      // market.json を優先（キャッシュは使わず毎回取得）
       try {
         const json   = await fetchMarketJson()
         const result = json[jsonKey]
         if (result && !cancelled) {
-          setData(result); writeCache(jsonKey, result); setLoading(false); return
+          setData(result); setLoading(false); return
         }
       } catch {}
+      // フォールバック: Render API
       try {
         const r    = await fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
         const json = await r.json()
-        if (!cancelled) { setData(json); writeCache(jsonKey, json) }
+        if (!cancelled) { setData(json) }
       } catch {}
       if (!cancelled) setLoading(false)
     })()

@@ -1089,7 +1089,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* ── 出来高・売買代金 1年推移 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'40px', paddingBottom:'120px', marginTop:'30px' }}>
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'48px', paddingBottom:'120px', marginTop:'60px' }}>
               <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
                 <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
@@ -1101,7 +1101,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
 
             {/* ── 選択テーマのヒートマップ ── */}
             {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'40px', paddingBottom:'120px', marginTop:'30px' }}>
+              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'48px', paddingBottom:'120px', marginTop:'60px' }}>
                 <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
                   📅 {selTheme}のヒートマップ（期間別騰落率）
                 </div>
