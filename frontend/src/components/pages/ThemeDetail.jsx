@@ -742,15 +742,11 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
     ;(async () => {
       try {
         const mj = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
-        const hm = mj['heatmap']
-        if (hm && hm[selTheme] && !cancelled) {
-          setThemeHeatmap(hm[selTheme])
+        // heatmap.data[テーマ名] = {"1W": x, "1M": x, "3M": x, "6M": x, "1Y": x}
+        const hmData = mj['heatmap']?.data
+        if (hmData && hmData[selTheme] && !cancelled) {
+          setThemeHeatmap(hmData[selTheme])
           return
-        }
-        // monthlyも確認
-        const mhm = mj['heatmap_monthly']
-        if (mhm?.data?.[selTheme] && !cancelled) {
-          setThemeHeatmap({ monthly: mhm.data[selTheme], months: mhm.months || [] })
         }
       } catch {}
     })()
@@ -909,7 +905,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* ── 選択テーマのヒートマップ ── */}
-            {themeHeatmap && !Array.isArray(themeHeatmap) && (
+            {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
               <div style={{ borderTop:'1px solid var(--border)', paddingTop:'20px', paddingBottom:'160px' }}>
                 <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
                   📅 {selTheme}のヒートマップ（期間別騰落率）
