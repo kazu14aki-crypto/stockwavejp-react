@@ -168,6 +168,115 @@ const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color
 const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
+
+// ── マクロ指標折れ線グラフ（コンパクト版） ──────────────────────
+const MACRO_COLORS_MR = ['#4a9eff','#ff5370','#00c48c','#ffd166','#aa77ff','#ff8c42']
+
+function MacroLineChartMR({ macro }) {
+  const names = Object.keys(macro).filter(n => macro[n]?.length > 0)
+  if (!names.length) return null
+
+  const allDates = new Set()
+  names.forEach(n => (macro[n] || []).forEach(d => allDates.add(d.date)))
+  const dates = [...allDates].sort()
+  if (!dates.length) return null
+
+  const W = 700, H = 160, PL = 40, PR = 12, PT = 12, PB = 28
+  const GW = W - PL - PR, GH = H - PT - PB
+
+  // 各指標を正規化（期間内の相対変化を均等表示）
+  const scaledData = {}
+  names.forEach(n => {
+    const data = macro[n] || []
+    const vals = data.map(d => d.pct)
+    const dMin = Math.min(...vals), dMax = Math.max(...vals)
+    const range = dMax - dMin || 0.01
+    scaledData[n] = data.map(d => ({
+      date: d.date,
+      pct: d.pct,
+      scaled: ((d.pct - dMin) / range) * 80 - 40
+    }))
+  })
+
+  const nMin = -45, nMax = 45
+  const xS = i => PL + (i / Math.max(dates.length - 1, 1)) * GW
+  const yS = v => PT + (1 - (v - nMin) / (nMax - nMin)) * GH
+
+  const xStep = Math.max(1, Math.floor(dates.length / 4))
+  const xLabels = []
+  for (let i = 0; i < dates.length; i += xStep) xLabels.push({ i, date: dates[i] })
+
+  return (
+    <div style={{ marginTop:'12px', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
+      <svg viewBox={`0 0 ${W} ${H}`}
+        style={{ width:'100%', minWidth:'320px', display:'block',
+          background:'var(--bg3)', borderRadius:'8px', border:'1px solid var(--border)' }}>
+        {/* ゼロライン */}
+        <line x1={PL} y1={yS(0)} x2={PL+GW} y2={yS(0)}
+          stroke="rgba(255,255,255,0.2)" strokeWidth="1" strokeDasharray="4,3" />
+        {/* グリッド */}
+        {[-40,-20,0,20,40].map(v => (
+          <line key={v} x1={PL} y1={yS(v)} x2={PL+GW} y2={yS(v)}
+            stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
+        ))}
+        {/* 折れ線 */}
+        {names.map((name, ni) => {
+          const col = MACRO_COLORS_MR[ni % MACRO_COLORS_MR.length]
+          const data = scaledData[name] || []
+          const pts = data.map((d, i) => {
+            const di = dates.indexOf(d.date)
+            return { di, scaled: d.scaled }
+          }).filter(p => p.di >= 0)
+          if (pts.length < 2) return null
+          const pathD = pts.map((p, pi) =>
+            (pi === 0 ? 'M' : 'L') + xS(p.di).toFixed(1) + ',' + yS(p.scaled).toFixed(1)
+          ).join(' ')
+          const last = pts[pts.length - 1]
+          const lastPct = data[data.length - 1]?.pct ?? 0
+          return (
+            <g key={name}>
+              <path d={pathD} fill="none" stroke={col} strokeWidth="1.5"
+                strokeLinejoin="round" strokeLinecap="round" opacity="0.9" />
+              <text x={PL + GW + 3} y={yS(last.scaled) + 4}
+                fontSize="8" fill={col} fontFamily="DM Mono">
+                {lastPct >= 0 ? '+' : ''}{lastPct.toFixed(1)}%
+              </text>
+            </g>
+          )
+        })}
+        {/* X軸ラベル */}
+        {xLabels.map(({ i, date }) => (
+          <text key={date} x={xS(i)} y={PT+GH+16} textAnchor="middle"
+            fontSize="8" fill="rgba(255,255,255,0.35)">
+            {date.slice(5)}
+          </text>
+        ))}
+      </svg>
+      {/* 凡例 */}
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', marginTop:'6px' }}>
+        {names.map((name, ni) => {
+          const col = MACRO_COLORS_MR[ni % MACRO_COLORS_MR.length]
+          const last = (macro[name] || []).slice(-1)[0]
+          const pct = last?.pct ?? 0
+          const shortName = name.replace(/\(.*?\)/g,'').trim()
+          return (
+            <span key={name} style={{ display:'flex', alignItems:'center', gap:'4px',
+              fontSize:'10px', color:'var(--text2)' }}>
+              <span style={{ display:'inline-block', width:'16px', height:'2px',
+                background:col, borderRadius:'1px' }} />
+              {shortName}
+              <span style={{ fontFamily:'var(--mono)', fontSize:'10px',
+                color: pct >= 0 ? 'var(--red)' : 'var(--green)', fontWeight:700 }}>
+                {pct >= 0 ? '+' : ''}{pct.toFixed(1)}%
+              </span>
+            </span>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
   const [period,      setPeriod]      = useState('1mo')
@@ -321,7 +430,7 @@ export default function MarketRank() {
           <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
             📈 マーケット指標（{PERIODS.find(p=>p.value===period)?.label}）
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(140px,1fr))', gap:'8px' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(130px,1fr))', gap:'8px', marginBottom:'4px' }}>
             {Object.entries(macro).map(([name, data]) => {
               if (!data?.length) return null
               const last = data[data.length-1]
@@ -344,6 +453,7 @@ export default function MarketRank() {
               )
             })}
           </div>
+          <MacroLineChartMR macro={macro} />
         </div>
       )}
       <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
