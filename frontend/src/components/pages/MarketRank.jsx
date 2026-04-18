@@ -95,7 +95,7 @@ function Sparkline({ data }) {
 
 function StockTable({ stocks, onAddToTheme }) {
   if (!stocks||!stocks.length) return null
-  const headers = ['株価','騰落率','時価総額','連動度','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   return (
     <div className="sticky-table">
       <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
@@ -133,11 +133,11 @@ function StockTable({ stocks, onAddToTheme }) {
                 <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)',
-  color: (s.contribution ?? 0) >= 70 ? '#ff5370' :
-         (s.contribution ?? 0) >= 40 ? '#ff8c42' :
-         (s.contribution ?? 0) >= 0  ? 'var(--text2)' : '#4a9eff' }}
-  title="連動度: テーマ平均との日次騰落率の相関係数（-100〜+100）">
-  {s.contribution != null ? s.contribution.toFixed(1) : '-'}
+  color: (s.contribution ?? 0) >= 0.5 ? '#ff5370' :
+         (s.contribution ?? 0) >= 0.1 ? '#ff8c42' :
+         (s.contribution ?? 0) > -0.1 ? 'var(--text2)' : '#4a9eff' }}
+  title="寄与度: この銘柄がセグメント騰落率に貢献した割合（%）">
+  {s.contribution != null ? (s.contribution >= 0 ? '+' : '') + s.contribution.toFixed(2) + '%' : '-'}
 </td>
                 <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
                 <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>

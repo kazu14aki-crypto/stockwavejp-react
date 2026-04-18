@@ -270,6 +270,10 @@ def main():
     for stocks in THEMES.values():
         all_tickers.update(stocks.values())
     all_tickers.update(MACRO_TICKERS.values())
+    # ② 市場区分銘柄も並列取得に含める（個別取得を不要にする）
+    market_segs = build_market_segments()
+    for seg_stocks in market_segs.values():
+        all_tickers.update(seg_stocks.values())
     all_tickers = list(all_tickers)
     print(f"取得対象: {len(all_tickers)} ティッカー")
 
@@ -434,7 +438,7 @@ def main():
                 detail_stocks.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
-                    "contribution": round(d["pct"] / len(stocks), 2),
+                    "contribution": round(d["pct"] / max(len(stocks), 1), 4),  # 寄与度
                     "market_cap": mkt_cap,
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
@@ -483,7 +487,7 @@ def main():
         }
 
         print("集計: seg_detail（全セグメント × 2期間）")
-    MARKET_SEGMENTS = build_market_segments()
+    MARKET_SEGMENTS = market_segs  # すでにbuild済み
     for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         for seg_name, seg_stocks in MARKET_SEGMENTS.items():
             seg_detail = []
@@ -537,7 +541,7 @@ def main():
                 seg_detail.append({
                     "ticker": ticker, "name": name,
                     "price": d["price"], "pct": d["pct"],
-                    "contribution": round(d["pct"] / len(seg_stocks), 2),
+                    "contribution": round(d["pct"] / max(len(seg_stocks), 1), 4),  # 寄与度
                     "market_cap": seg_mkt_cap,
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,

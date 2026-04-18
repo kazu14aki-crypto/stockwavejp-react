@@ -76,7 +76,10 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
             </span>
             {status.updatedAt && (
               <span className="status-updated" style={{ fontSize: '10px', color: 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
-                最終更新: {status.updatedAt.replace(/.*?(\d{1,2}:\d{2}).*/,'$1')}
+                {(() => {
+                  const m = (status.updatedAt || '').match(/(\d{2}\/\d{2} \d{2}:\d{2})/)
+                  return '最終更新：' + (m ? m[1] : status.updatedAt.slice(0,16))
+                })()}
               </span>
             )}
           </div>
