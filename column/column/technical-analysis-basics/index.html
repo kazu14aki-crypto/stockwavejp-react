@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テクニカル分析の基礎：移動平均線・RSI・MACDの読み方 | StockWaveJP</title>
+  <meta name="description" content="テクニカル分析の基本的な指標（移動平均線・RSI・MACD）の読み方を初心者向けに解説します。チャートの見方からシグナルの使い方まで、実践的な投資判断に役立てましょう。">
+  <meta property="og:title" content="テクニカル分析の基礎：移動平均線・RSI・MACDの読み方">
+  <meta property="og:description" content="テクニカル分析の基本的な指標（移動平均線・RSI・MACD）の読み方を初心者向けに解説します。チャートの見方からシグナルの使い方まで、実践的な投資判断に役立てましょう。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://stockwavejp.com/column/technical-analysis-basics/">
+  <meta property="og:site_name" content="StockWaveJP">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://stockwavejp.com/column/technical-analysis-basics/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"テクニカル分析の基礎：移動平均線・RSI・MACDの読み方","description":"テクニカル分析の基本的な指標（移動平均線・RSI・MACD）の読み方を初心者向けに解説します。チャートの見方からシグナルの使い方まで、実践的な投資判断に役立てましょう。","datePublished":"2026/04/05","publisher":{"@type":"Organization","name":"StockWaveJP","url":"https://stockwavejp.com"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3390301710035197" crossorigin="anonymous"></script>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:820px;margin:0 auto;padding:20px 16px;color:#1a1a1a;line-height:1.8}
+    h1{font-size:1.5rem;color:#1a1a2e;border-bottom:2px solid #4a9eff;padding-bottom:10px;margin-bottom:8px}
+    h2{font-size:1.15rem;color:#1a3a6e;margin-top:2rem;border-left:4px solid #4a9eff;padding-left:10px}
+    h3{font-size:1rem;color:#4a9eff}
+    nav{font-size:0.85rem;margin-bottom:20px;color:#666}
+    nav a{color:#4a9eff;text-decoration:none}
+    .meta{color:#888;font-size:0.85rem;margin-bottom:12px}
+    .summary{background:#f0f7ff;border-left:4px solid #4a9eff;padding:12px 16px;margin:16px 0;border-radius:0 6px 6px 0;font-size:0.95rem}
+    .cta{display:inline-block;background:#4a9eff;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;margin:12px 0;font-weight:600}
+    .disclaimer{background:#fff8e1;border:1px solid #ffd54f;padding:12px 16px;border-radius:6px;font-size:0.85rem;margin-top:2rem;color:#555}
+    ul{padding-left:1.5rem;margin:8px 0}
+    li{margin-bottom:6px}
+    footer{border-top:1px solid #eee;margin-top:2rem;padding-top:1rem;font-size:0.85rem;color:#888}
+    footer a{color:#4a9eff;text-decoration:none;margin-right:12px}
+  </style>
+  <script>
+    if(typeof window!=='undefined'&&window.location.pathname.startsWith('/column/')){
+      window.location.replace('https://stockwavejp.com/#column/technical-analysis-basics');
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="https://stockwavejp.com/">🏠 StockWaveJP</a> &rsaquo;
+    <a href="https://stockwavejp.com/#column/">コラム一覧</a> &rsaquo;
+    投資手法
+  </nav>
+  <article itemscope itemtype="https://schema.org/Article">
+    <p class="meta">📂 投資手法&ensp;|&ensp;📅 2026/04/05</p>
+    <h1 itemprop="headline">📊 テクニカル分析の基礎：移動平均線・RSI・MACDの読み方</h1>
+    <div class="summary" itemprop="description">テクニカル分析の基本的な指標（移動平均線・RSI・MACD）の読み方を初心者向けに解説します。チャートの見方からシグナルの使い方まで、実践的な投資判断に役立てましょう。</div>
+    <a href="https://stockwavejp.com/#column/technical-analysis-basics" class="cta">📊 StockWaveJPで読む（データ・チャート付き）</a>
+    <section itemprop="articleBody">
+      <h2>テクニカル分析とは</h2>
+<p>テクニカル分析とは、過去の株価・出来高のデータをグラフ（チャート）で分析し、将来の株価の方向性を予測する手法です。「市場の価格はすべての情報を織り込んでいる」という前提のもと、チャートパターンや数学的指標から売買タイミングを判断します。</p>
+<p>ファンダメンタルズ分析（企業の業績・財務分析）が「何を買うか」を決めるのに対し、テクニカル分析は「いつ買う・いつ売るか」のタイミングを決めるのに適しています。多くの投資家がテクニカル分析を組み合わせて使っています。</p>
+<h2>ローソク足チャートの読み方</h2>
+<p>ローソク足は1日（または週・月）の株価の動きを「始値・高値・安値・終値」の4本値で表示します。終値が始値より高い（上昇した日）は白・緑の「陽線」、終値が始値より低い（下落した日）は黒・赤の「陰線」で表示されます。</p>
+<p>長い上ひげ（上に長いひげ）は「高値圏での売り圧力が強い」サイン、長い下ひげは「安値圏での買い意欲が強い」サインとして解釈されます。</p>
+<h2>移動平均線（MA）</h2>
+<p>移動平均線は直近N日間の終値の平均を結んだ線です。よく使われるのは25日線（約1ヶ月）・75日線（約3ヶ月）・200日線（約1年）です。</p>
+<p>ゴールデンクロス：短期線（25日）が長期線（75日）を下から上に突き抜けるパターン。上昇トレンドへの転換シグナルとして有名です。</p>
+<p>デッドクロス：短期線が長期線を上から下に突き抜けるパターン。下落トレンドへの転換シグナルです。</p>
+<p>移動平均線より株価が上にある状態（株価＞移動平均線）はトレンドが強い、下にある状態は弱いと判断します。</p>
+<h2>RSI（相対力指数）</h2>
+<p>RSIは0〜100の数値で表される「買われすぎ・売られすぎ」を示す指標です。一般的に70以上で「買われすぎ（過熱）」、30以下で「売られすぎ（底値圏）」と判断されます。</p>
+<p>RSIが70を超えて高値をつけた後に70を割り込んだ場合は利益確定のサイン、30を下回った後に30を上回った場合は底打ちサインとして使われます。</p>
+<p>ただしトレンドが強い上昇相場ではRSIが70以上でも上昇が継続することが多く、RSI単独での判断は避け、移動平均線や出来高と組み合わせることが重要です。</p>
+<h2>MACD（移動平均収束拡散法）</h2>
+<p>MACDは短期EMA（指数平滑移動平均）と長期EMAの差（MACDライン）と、そのシグナルライン（MACDの移動平均）を組み合わせた指標です。</p>
+<p>MACDラインがシグナルラインを下から上に突き抜ける「ゴールデンクロス」が買いシグナル、上から下に突き抜ける「デッドクロス」が売りシグナルです。MACDがゼロラインを上回っているときは上昇トレンド、下回っているときは下降トレンドを意味します。</p>
+<h2>テクニカル分析の注意点</h2>
+<p>テクニカル分析は「過去のパターンの繰り返し」を前提にしていますが、未来は必ずしも過去と同じではありません。決算発表・政策変更・地政学的イベントなどのファンダメンタルな要因により、テクニカルシグナルが無効化されることがあります。</p>
+<p>複数の指標が同時にシグナルを発したとき（例：移動平均ゴールデンクロス＋RSI底打ち＋出来高急増）は信頼度が高くなります。テクニカル分析はシグナルの重ね合わせ（コンフルエンス）が重要です。</p>
+<h2>テーマ株へのテクニカル分析の応用</h2>
+<p>StockWaveJPのテーマ別騰落率データをテクニカル的に活用する場合、複数週にわたる騰落率の推移が「下落→横ばい→上昇」のパターンを示したときが底値からのエントリーのタイミングです。出来高の増加と騰落モメンタムの「転換↑」シグナルとの組み合わせで信頼度が高まります。</p>
+
+    </section>
+    <div class="disclaimer">
+      ⚠️ 本コラムは情報提供を目的としており、特定の銘柄・投資方法を推奨するものではありません。
+      投資に関する最終的な判断はご自身の責任において行ってください。
+    </div>
+  </article>
+  <footer>
+    <a href="https://stockwavejp.com/">トップ</a>
+    <a href="https://stockwavejp.com/#column/">コラム一覧</a>
+    <a href="https://stockwavejp.com/#terms">利用規約</a>
+    <a href="https://stockwavejp.com/#privacy">プライバシーポリシー</a>
+    <span style="float:right">&copy; 2026 StockWaveJP</span>
+  </footer>
+</body>
+</html>
