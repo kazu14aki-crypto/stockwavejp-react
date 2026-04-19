@@ -245,11 +245,6 @@ function fmtDate(dateStr) {
 // ── カスタムテーマ用 銘柄散布図 ─────────────────────────────────
 function CustomBubbleChart({ stocks, period }) {
   const [details, setDetails] = useState({})
-  const API_URL = typeof import !== 'undefined'
-    ? (import.meta?.env?.VITE_API_URL || 'http://127.0.0.1:8000')
-    : 'http://127.0.0.1:8000'
-
-  useState(() => {}) // dummy
 
   // useEffectでAPIからpct/volume_chg/trade_valueを取得
   useEffect(() => {
