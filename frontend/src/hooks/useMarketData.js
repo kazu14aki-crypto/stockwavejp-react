@@ -22,7 +22,7 @@ import { useState, useEffect, useCallback } from 'react'
 
 const API          = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const DATA_URL     = '/data/market.json'
-const CACHE_PREFIX = 'swjp_v3_'  // v3: 67テーマ対応でキャッシュ更新
+const CACHE_PREFIX = 'swjp_v4_'  // v4: セグメント定義修正によるキャッシュ全リセット
 const CACHE_TTL = 12 * 60 * 60 * 1000  // 12時間
 
 // ── LocalStorage ─────────────────────────────
