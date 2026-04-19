@@ -954,7 +954,21 @@ def fetch_macro_data(period: str) -> dict:
     result = {}
     for name, ticker in MACRO_TICKERS.items():
         df = _fetch_df(ticker)
+        # ETF（1306.Tなど）は最新データが欠落する場合があるため短期再取得を試みる
         pdf = _period_df(df, period)
+        if pdf is None or len(pdf) < 2:
+            # 短期再取得フォールバック
+            try:
+                import warnings as _w
+                with _w.catch_warnings(): 
+                    _w.simplefilter("ignore")
+                    df2 = yf.Ticker(ticker).history(period="3mo", interval="1d",
+                                                    auto_adjust=True, timeout=20)
+                if df2 is not None and len(df2) >= 2:
+                    df2.index = df2.index.tz_localize(None)
+                    pdf = _period_df(df2, period)
+            except Exception:
+                pass
         if pdf is None or len(pdf) < 2: continue
         cl = pdf["Close"].dropna()
         if len(cl) < 2: continue
