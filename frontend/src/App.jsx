@@ -24,7 +24,7 @@ const PAGES = [
   { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🔥', label:'ヒートマップ',              component:Heatmap       },
+  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [
@@ -129,7 +129,7 @@ function AppInner() {
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange }
     if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange, initialTheme: targetTheme }
-    if (currentPage === 'ヒートマップ') return { onNavigate: handlePageChange }
+    if (currentPage === 'テーマヒートマップ') return { onNavigate: handlePageChange }
     if (currentPage === '週次レポート') return { onNavigate: handlePageChange }
     if (currentPage === '市場別詳細') return { onNavigate: handlePageChange }
     return {}

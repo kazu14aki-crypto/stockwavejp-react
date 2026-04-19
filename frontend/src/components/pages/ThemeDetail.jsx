@@ -906,6 +906,26 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               </div>
             </div>
 
+            {/* ── 関連ページへの遷移ボタン ── */}
+            {onNavigate && (
+              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginTop:'16px', marginBottom:'8px' }}>
+                {THEME_ARTICLE_MAP[selTheme] && (
+                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                    style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                      background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)',
+                      color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                    📖 {selTheme}のコラム記事を読む
+                  </button>
+                )}
+                <button onClick={() => onNavigate('週次レポート')}
+                  style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                    background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
+                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                  📰 週次レポートを確認する →
+                </button>
+              </div>
+            )}
+
             {/* ── 選択テーマのヒートマップ ── */}
             {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
               <div style={{ borderTop:'1px solid var(--border)', paddingTop:'48px', paddingBottom:'120px', marginTop:'60px' }}>

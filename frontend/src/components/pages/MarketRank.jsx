@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
-import { useSegmentDetail, useMarketRankList, useMacro } from '../../hooks/useMarketData'
+import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 
 const PERIODS = [
   {label:'1日',value:'1d'},{ label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
@@ -169,7 +169,6 @@ const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
 
-import MacroLineChart, { MacroCard } from '../MacroLineChart'
 
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
@@ -181,8 +180,6 @@ export default function MarketRank() {
   const [detail,      setDetail]      = useState(null)
 
   const { data: marketData, loading: loadingS } = useMarketRankList(period)
-  const { data: macroRaw } = useMacro(period)
-  const macro = macroRaw?.data || {}
 
   useEffect(()=>{
     if (!marketData) return
@@ -321,38 +318,6 @@ export default function MarketRank() {
         )}
       </div>
 
-      {/* マーケット指標（コンパクト） */}
-      {Object.keys(macro).length > 0 && (
-        <div style={{ marginTop:'20px', paddingTop:'16px', borderTop:'1px solid var(--border)', maxWidth:'720px' }}>
-          <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
-            📈 マーケット指標（{PERIODS.find(p=>p.value===period)?.label}）
-          </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(110px,1fr))', gap:'6px', marginBottom:'4px' }}>
-            {Object.entries(macro).map(([name, data]) => {
-              if (!data?.length) return null
-              const last = data[data.length-1]
-              const pct = last?.pct ?? 0
-              const col = pct >= 0 ? 'var(--red)' : 'var(--green)'
-              const shortName = name.replace(/\(.*?\)/g,'').trim()
-              return (
-                <div key={name} style={{
-                  background:'var(--bg2)', border:'1px solid var(--border)',
-                  borderRadius:'8px', padding:'8px 12px',
-                }}>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'2px',
-                    overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-                    {shortName}
-                  </div>
-                  <div style={{ fontSize:'15px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
-                    {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-          <MacroLineChart macro={macro} />
-        </div>
-      )}
       <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
     </div>
   )

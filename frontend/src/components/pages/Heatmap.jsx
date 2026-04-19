@@ -595,7 +595,7 @@ export default function Heatmap({ onNavigate }) {
   const { data: momentumRaw, loading: loadingM } = useMomentum(mPeriod)
   const momentumData = momentumRaw?.data || []
 
-  // 月次ヒートマップデータ取得（period削除済み）
+  // 月次テーマヒートマップデータ取得（period削除済み）
   useEffect(() => {
     if (tab !== 'monthly') return
     setLoading(true)
@@ -630,7 +630,7 @@ export default function Heatmap({ onNavigate }) {
   }, [tab])
 
   const TABS = [
-    { key:'scatter', label:'📊 ヒートマップ' },
+    { key:'scatter', label:'📊 テーマヒートマップ' },
   ]
 
 
@@ -638,10 +638,10 @@ export default function Heatmap({ onNavigate }) {
   return (
     <div style={{ padding:'20px 24px 48px', maxWidth:'1280px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>
-        ヒートマップ
+        テーマヒートマップ
       </h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-        67テーマの騰落率をヒートマップと騰落モメンタムで多角的に分析できます。
+        67テーマの騰落率をテーマヒートマップと騰落モメンタムで多角的に分析できます。
       </p>
 
 
@@ -662,12 +662,12 @@ export default function Heatmap({ onNavigate }) {
         ))}
       </div>
 
-      {/* 期間別ヒートマップ */}
+      {/* 期間別テーマヒートマップ */}
 
 
 
 
-      {/* 📊 ヒートマップ（資金フロー散布図） */}
+      {/* 📊 テーマヒートマップ（資金フロー散布図） */}
       {tab === 'scatter' && (
         <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
       )}

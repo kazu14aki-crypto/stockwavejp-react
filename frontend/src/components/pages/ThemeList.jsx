@@ -956,6 +956,16 @@ export default function ThemeList({ onNavigate }) {
 
             {/* ③ 自動コメント */}
             <AutoComment lines={themeComment} />
+            {onNavigate && (
+              <div style={{ textAlign:'right', marginTop:'-4px', marginBottom:'8px' }}>
+                <button onClick={() => onNavigate('週次レポート')}
+                  style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px',
+                    background:'rgba(255,140,66,0.1)', border:'1px solid rgba(255,140,66,0.3)',
+                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                  📰 詳細な週次レポートを読む →
+                </button>
+              </div>
+            )}
 
             {/* 全テーマ 騰落率ランキング（カードグリッド） */}
             <SectionHead title="📊 全テーマ 騰落率ランキング" />
