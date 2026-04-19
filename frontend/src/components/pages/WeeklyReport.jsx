@@ -153,12 +153,12 @@ export default function WeeklyReport() {
         <strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします。</strong>
       </div>
 
-      <style>{\`
+      <style>{`
         @keyframes pulse {
           0%, 100% { opacity: 0.3; transform: scale(0.8); }
           50% { opacity: 1; transform: scale(1.1); }
         }
-      \`}</style>
+      `}</style>
     </div>
   )
 }
