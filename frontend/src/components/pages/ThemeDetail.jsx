@@ -587,11 +587,7 @@ const THEME_ARTICLE_MAP = {
   '警備':              'cybersecurity-theme',
   '脱炭素・ESG':       'ev-green-theme',
   '教育・HR・人材':    'education-hr-theme',
-  '人材派遣':          'education-hr-thetext>
-        </svg>
-      </div>
-    </div>
-  )
+  '人材派遣':          'education-hr-theme',
 }
 
 export default function ThemeDetail({ onNavigate, initialTheme }) {
