@@ -2,6 +2,7 @@
  * CustomTheme.jsx — カスタムテーマ管理＋詳細表示＋URLエクスポート
  */
 import { useState, useEffect } from 'react'
+import StockBubbleChart from '../StockBubbleChart'
 import { useCustomThemes, themeToUrl, themeFromUrl } from '../../hooks/useCustomThemes'
 import { useAuth } from '../../hooks/useAuth.jsx'
 
@@ -242,16 +243,17 @@ function fmtDate(dateStr) {
 }
 
 
-// ── カスタムテーマ用 銘柄散布図 ─────────────────────────────────
-function CustomBubbleChart({ stocks, period }) {
-  const [details, setDetails] = useState({})
 
-  // useEffectでAPIからpct/volume_chg/trade_valueを取得
+// ── カスタムテーマ用散布図ラッパー ─────────────────────────────────
+function CustomBubbleScatter({ stocks, period }) {
+  const [details, setDetails] = useState({})
+  const API_LOCAL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+
   useEffect(() => {
     if (!stocks?.length) return
     Promise.all(
       stocks.map(s =>
-        fetch(`${API}/api/stock-info/${encodeURIComponent(s.ticker)}`)
+        fetch(`${API_LOCAL}/api/stock-info/${encodeURIComponent(s.ticker)}`)
           .then(r => r.json()).catch(() => null)
       )
     ).then(results => {
@@ -261,110 +263,32 @@ function CustomBubbleChart({ stocks, period }) {
     })
   }, [stocks, period])
 
-  const [hovered, setHovered] = useState(null)
+  // StockBubbleChartが期待する形式に変換
+  const enriched = stocks
+    .filter(s => details[s.ticker]?.pct != null)
+    .map(s => ({
+      ticker: s.ticker,
+      name: s.name,
+      pct: details[s.ticker].pct ?? 0,
+      volume_chg: details[s.ticker].volume_chg ?? 0,
+      trade_value: details[s.ticker].trade_value ?? 0,
+    }))
 
-  const filtered = stocks.filter(s => details[s.ticker]?.pct != null)
-  if (filtered.length < 2) return (
+  if (enriched.length < 2) return (
     <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
-      background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
+      background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', marginTop:'20px' }}>
       {stocks.length === 0 ? '銘柄がありません' : 'データ取得中...'}
     </div>
   )
 
-  const W = 700, H = 320
-  const PL = 52, PR = 20, PT = 32, PB = 40
-  const GW = W - PL - PR, GH = H - PT - PB
-
-  const pcts    = filtered.map(s => details[s.ticker].pct)
-  const volChgs = filtered.map(s => details[s.ticker].volume_chg ?? 0)
-  const tvs     = filtered.map(s => details[s.ticker].trade_value ?? 0)
-  const hasVol  = volChgs.some(v => v !== 0)
-  const yVals   = hasVol ? volChgs : pcts.map(v => v * 0.5)
-
-  const xMin = Math.min(...pcts) - 1.5, xMax = Math.max(...pcts) + 1.5
-  const yMin = Math.min(...yVals) - 2,  yMax = Math.max(...yVals) + 2
-  const tvMax = Math.max(...tvs.filter(v => v > 0), 1)
-  const xS = v => PL + ((v - xMin) / (xMax - xMin || 1)) * GW
-  const yS = v => PT + GH - ((v - yMin) / (yMax - yMin || 1)) * GH
-  const rS = tv => tv > 0 ? 7 + (tv / tvMax) * 20 : 7
-
-  const bColor = pct => pct >= 4 ? '#ff2244' : pct >= 1.5 ? '#ff5370' : pct >= 0 ? '#ff8c42'
-                      : pct >= -1.5 ? '#3db88a' : pct >= -4 ? '#00c48c' : '#009966'
-
-  const x0 = xS(0), y0 = yS(0)
-  const fmtL = tv => !tv ? '-' : tv >= 1e8 ? (tv/1e8).toFixed(0)+'億' : tv >= 1e4 ? (tv/1e4).toFixed(0)+'万' : tv.toLocaleString()
-
-  const xStep = Math.max(1, Math.ceil((xMax - xMin) / 5))
-  const xTicks = []
-  for (let v = Math.ceil(xMin); v <= xMax; v += xStep) xTicks.push(v)
-  const yStep = Math.max(1, Math.ceil((yMax - yMin) / 4))
-  const yTicks = []
-  for (let v = Math.ceil(yMin/yStep)*yStep; v <= yMax; v += yStep) yTicks.push(v)
-
   return (
-    <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
-      <svg viewBox={`0 0 ${W} ${H}`}
-        style={{ width:'100%', minWidth:'320px', display:'block',
-          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}
-        onMouseLeave={() => setHovered(null)}>
-
-        {/* ゾーン背景 */}
-        <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.06)" />
-        <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.05)" />
-        <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.04)" />
-        <rect x={PL} y={y0} width={x0-PL} height={PT+GH-y0} fill="rgba(74,158,255,0.03)" />
-
-        {/* グリッド */}
-        {xTicks.map(v => <line key={v} x1={xS(v)} y1={PT} x2={xS(v)} y2={PT+GH} stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" strokeDasharray="3,4"/>)}
-        {yTicks.map(v => <line key={v} x1={PL} y1={yS(v)} x2={PL+GW} y2={yS(v)} stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" strokeDasharray="3,4"/>)}
-
-        {/* ゼロライン */}
-        <line x1={x0} y1={PT} x2={x0} y2={PT+GH} stroke="rgba(255,255,255,0.3)" strokeWidth="1.4" strokeDasharray="5,3"/>
-        <line x1={PL} y1={y0} x2={PL+GW} y2={y0} stroke="rgba(255,255,255,0.3)" strokeWidth="1.4" strokeDasharray="5,3"/>
-
-        {/* バブル */}
-        {filtered.map(s => {
-          const d = details[s.ticker]
-          const cx = xS(d.pct)
-          const cy = yS(hasVol ? (d.volume_chg ?? 0) : d.pct * 0.5)
-          const r  = rS(d.trade_value)
-          const col = bColor(d.pct)
-          const isHov = hovered?.ticker === s.ticker
-          return (
-            <g key={s.ticker} style={{ cursor:'pointer' }}
-              onMouseEnter={() => setHovered({...s, ...d})}
-              onMouseLeave={() => setHovered(null)}>
-              {isHov && <circle cx={cx} cy={cy} r={r+4} fill="none" stroke="white" strokeWidth="2" strokeOpacity="0.8"/>}
-              <circle cx={cx} cy={cy} r={r} fill={col} fillOpacity={isHov?0.95:0.78} stroke={col} strokeWidth="1"/>
-              {r >= 12 && <text x={cx} y={cy+3} textAnchor="middle" fontSize="8" fill="white" fontWeight="700" style={{pointerEvents:'none'}}>
-                {s.name.slice(0,5)}
-              </text>}
-            </g>
-          )
-        })}
-
-        {/* ツールチップ */}
-        {hovered && (() => {
-          const cx = xS(hovered.pct)
-          const cy = yS(hasVol ? (hovered.volume_chg ?? 0) : hovered.pct * 0.5)
-          const tx = Math.min(cx+12, W-150), ty = Math.max(PT+4, cy-60)
-          const col = bColor(hovered.pct)
-          return (
-            <g style={{pointerEvents:'none'}}>
-              <rect x={tx} y={ty} width="148" height="58" rx="6" fill="#1a1f2e" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-              <text x={tx+7} y={ty+14} fontSize="10" fill="#e8f0ff" fontWeight="700">{hovered.name.slice(0,14)}</text>
-              <text x={tx+7} y={ty+28} fontSize="9" fill={col}>騰落率: {hovered.pct>=0?'+':''}{hovered.pct?.toFixed(2)}%</text>
-              {hasVol && <text x={tx+7} y={ty+41} fontSize="9" fill={(hovered.volume_chg??0)>=0?'#ff8c42':'#4a9eff'}>出来高: {(hovered.volume_chg??0)>=0?'+':''}{hovered.volume_chg?.toFixed(0)}%</text>}
-              <text x={tx+7} y={ty+53} fontSize="9" fill="#8b949e">売買代金: {fmtL(hovered.trade_value)}</text>
-            </g>
-          )
-        })()}
-
-        {/* 軸ラベル */}
-        {xTicks.map(v => <text key={v} x={xS(v)} y={PT+GH+16} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.4)">{v>=0?'+':''}{v}%</text>)}
-        <text x={PL+GW/2} y={H-3} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.3)">← 下落　騰落率　上昇 →</text>
-        {yTicks.map(v => <text key={v} x={PL-5} y={yS(v)+3} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.4)">{v>=0?'+':''}{v}%</text>)}
-      </svg>
+    <div style={{ marginTop:'20px' }}>
+      <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
+        display:'flex', alignItems:'center', gap:'8px' }}>
+        <span>📊 資金フロー散布図</span>
+        <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
+      </div>
+      <StockBubbleChart stocks={enriched} themeName={''} onNavigate={null} />
     </div>
   )
 }
@@ -584,16 +508,8 @@ export default function CustomTheme() {
         </div>
       </div>
 
-      {/* 📊 銘柄別散布図 */}
-      <div style={{ marginTop:'20px' }}>
-        <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
-          display:'flex', alignItems:'center', gap:'8px' }}>
-          <span>📊 資金フロー散布図</span>
-          <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
-          <span style={{ fontSize:'10px', fontWeight:400 }}>X軸=騰落率 Y軸=出来高増減 円=売買代金</span>
-        </div>
-        <CustomBubbleChart stocks={activeTheme.stocks} period={period} />
-      </div>
+      {/* 📊 銘柄別散布図（CustomStockTableのdetailsを利用） */}
+      <CustomBubbleScatter stocks={activeTheme.stocks} period={period} />
 
       {/* URLエクスポート説明 */}
       <div style={{ marginTop:'20px', padding:'12px 16px', background:'rgba(74,158,255,0.06)',

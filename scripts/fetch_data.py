@@ -199,7 +199,7 @@ def build_market_segments():
             "ソフトバンクグループ":"9984.T","三菱電機":"6503.T","富士フイルムHD":"4901.T",
             "塩野義製薬":"4507.T","セブン＆アイHD":"3382.T","伊藤忠商事":"8001.T",
             "住友商事":"8053.T","丸紅":"8002.T","デンソー":"6902.T",
-            "SMC":"6273.T","オリックス":"8591.T","日本電産":"6594.T",
+            "SMC":"6273.T","オリックス":"8591.T","オムロン":"6645.T",
             "武田薬品工業":"4502.T","アステラス製薬":"4503.T","大塚HD":"4578.T",
             "エーザイ":"4523.T","第一三共":"4568.T","富士通":"6702.T",
             "NEC":"6701.T","パナソニックHD":"6752.T","シャープ":"6753.T",
@@ -237,7 +237,7 @@ def build_market_segments():
             "インフォマート":"2492.T","ソウルドアウト":"9553.T","ブレインパッド":"3655.T",
             "ユーザーローカル":"3984.T","エヌ・ティ・ティ・データ":"9613.T",
             "AppBank":"6177.T","BASE":"4477.T","Appier":"4180.T",
-            "スペースマーケット":"4487.T","ラクスル":"4384.T","フリー":"4478.T",
+            "スペースマーケット":"4487.T","ラクスル":"4384.T","ランサーズ":"4484.T",
             "スマートHR":"4485.T","オープンハウスグループ":"3288.T","アイスタイル":"3660.T",
             "SHIFT":"3697.T","ギックス":"9219.T","データセクション":"3905.T",
             "JDSC":"4418.T","フォトシンス":"4379.T","アイドマHD":"7373.T",
@@ -246,7 +246,7 @@ def build_market_segments():
             "マクアケ":"4479.T","スペースフライヤーユニオン":"7047.T",
             "エクサウィザーズ":"4259.T","CureApp":"4389.T","メドレー":"4480.T",
             "ウェルスナビ":"7342.T","Finatext":"4419.T","GreenBee":"9272.T",
-            "M&Aクラウド":"9553.T","プロパティデータバンク":"4389.T",
+            "ウォンテッドリー":"3991.T","クラウドワークス":"3900.T",
         },
     }
     return nikkei
@@ -330,6 +330,33 @@ def main():
         }
 
     # マクロデータ
+    # ④ 1306.T(TOPIX ETF)は最新データ欠落対策として直前に個別取得
+    print("TOPIX ETF(1306.T) 個別取得中...")
+    try:
+        import warnings as _wmacro
+        with _wmacro.catch_warnings():
+            _wmacro.simplefilter("ignore")
+            df_1306_fresh = yf.Ticker("1306.T").history(
+                period="3mo", interval="1d", auto_adjust=True, timeout=30
+            )
+        if df_1306_fresh is not None and len(df_1306_fresh) >= 5:
+            df_1306_fresh.index = pd.to_datetime(df_1306_fresh.index).tz_localize(None)
+            # 既存のticker_dataを最新データで上書き（より新しいデータがあれば）
+            existing = ticker_data.get("1306.T")
+            if existing is None or len(df_1306_fresh) > len(existing):
+                ticker_data["1306.T"] = df_1306_fresh
+                print(f"  1306.T: {len(df_1306_fresh)}行（最新日: {df_1306_fresh.index[-1].date()}）")
+            # ^TOPIXも同様
+            df_topix_fresh = yf.Ticker("^TOPIX").history(
+                period="3mo", interval="1d", auto_adjust=True, timeout=30
+            )
+            if df_topix_fresh is not None and len(df_topix_fresh) >= 5:
+                df_topix_fresh.index = pd.to_datetime(df_topix_fresh.index).tz_localize(None)
+                ticker_data["^TOPIX"] = df_topix_fresh
+                print(f"  ^TOPIX: {len(df_topix_fresh)}行")
+    except Exception as e:
+        print(f"  1306.T個別取得エラー: {e}")
+
     for period in ["1d", "5d", "1mo", "3mo", "6mo", "1y"]:
         macro_result = {}
         for name, ticker in MACRO_TICKERS.items():

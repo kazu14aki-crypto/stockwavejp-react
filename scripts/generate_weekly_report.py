@@ -176,14 +176,48 @@ def main():
         "report": report_text,
     }
 
+    # 次回更新予定（翌週金曜16時JST）
+    next_friday = now_jst + timedelta(days=(4 - now_jst.weekday()) % 7 + 7 if now_jst.weekday() == 4 else timedelta(days=(4 - now_jst.weekday()) % 7).days)
+    # 単純に7日後の金曜
+    next_report_dt = now_jst + timedelta(days=7)
+    output["next_report_at"] = next_report_dt.strftime("%Y年%m月%d日 16:00")
+
     out_dir = os.path.join(os.path.dirname(__file__), "..", "frontend", "public", "data")
     os.makedirs(out_dir, exist_ok=True)
+
+    # 最新レポートを保存
     out_path = os.path.join(out_dir, "weekly_report.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    # 過去ログ: weekly_reports/{week_str}.json にも保存
+    archive_dir = os.path.join(out_dir, "weekly_reports")
+    os.makedirs(archive_dir, exist_ok=True)
+    archive_path = os.path.join(archive_dir, f"{week_str}.json")
+    with open(archive_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
+    # インデックスファイル更新（過去レポート一覧）
+    index_path = os.path.join(archive_dir, "index.json")
+    index = []
+    if os.path.exists(index_path):
+        with open(index_path, encoding="utf-8") as f:
+            index = json.load(f)
+    # 既存エントリの更新または追加
+    existing = next((x for x in index if x["week"] == week_str), None)
+    entry = {"week": week_str, "title": output["title"], "generated_at": output["generated_at"],
+             "avg_pct_1w": summary["avg_pct_1w"]}
+    if existing:
+        index = [entry if x["week"] == week_str else x for x in index]
+    else:
+        index.insert(0, entry)  # 新しい順
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
+
     print(f"✅ 保存完了: {out_path}")
+    print(f"   アーカイブ: {archive_path}")
     print(f"   レポート文字数: {len(report_text)}")
+    print(f"   次回更新予定: {output['next_report_at']}")
 
 if __name__ == "__main__":
     main()

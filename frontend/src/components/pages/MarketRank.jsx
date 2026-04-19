@@ -323,11 +323,11 @@ export default function MarketRank() {
 
       {/* マーケット指標（コンパクト） */}
       {Object.keys(macro).length > 0 && (
-        <div style={{ marginTop:'32px', paddingTop:'20px', borderTop:'1px solid var(--border)' }}>
+        <div style={{ marginTop:'20px', paddingTop:'16px', borderTop:'1px solid var(--border)', maxWidth:'720px' }}>
           <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
             📈 マーケット指標（{PERIODS.find(p=>p.value===period)?.label}）
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(130px,1fr))', gap:'8px', marginBottom:'4px' }}>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(110px,1fr))', gap:'6px', marginBottom:'4px' }}>
             {Object.entries(macro).map(([name, data]) => {
               if (!data?.length) return null
               const last = data[data.length-1]
