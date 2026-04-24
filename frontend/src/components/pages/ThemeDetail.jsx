@@ -884,6 +884,35 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               </div>
             </div>
 
+            {/* ── ④ ヒートマップ（TOP5の上・デバイス問わず横並び） ── */}
+            {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
+              <div style={{ marginBottom:'20px' }}>
+                <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                  📅 {selTheme}のヒートマップ（期間別騰落率）
+                </div>
+                {/* 期間別数値カード: 常に横並び（flex wrap） */}
+                <div style={{ display:'flex', gap:'6px', flexWrap:'nowrap', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
+                  {['1W','1M','3M','6M','1Y'].map(p => {
+                    const v = themeHeatmap[p]
+                    if (v == null) return null
+                    const col = v >= 0 ? 'var(--red)' : 'var(--green)'
+                    return (
+                      <div key={p} style={{
+                        background:'var(--bg2)', border:'1px solid var(--border)',
+                        borderRadius:'8px', padding:'8px 14px', minWidth:'72px', textAlign:'center',
+                        borderTop:`3px solid ${col}`, flexShrink:0,
+                      }}>
+                        <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'3px' }}>{p}</div>
+                        <div style={{ fontSize:'15px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
+                          {v >= 0 ? '+' : ''}{v.toFixed(1)}%
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+
             {/* ── TOP5グラフ（小型）── */}
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'20px' }} className="top5g">
               <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
@@ -902,32 +931,9 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               <StockTable stocks={stocks}/>
             </div>
 
-            {/* ── ⑦ ヒートマップ（銘柄表の直下） ── */}
+            {/* ── ⑦ 銘柄別ヒートマップ（構成銘柄表の直下） ── */}
             {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
               <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginTop:'8px', marginBottom:'32px' }}>
-                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
-                  📅 {selTheme}のヒートマップ（期間別騰落率）
-                </div>
-                {/* 期間別数値カード */}
-                <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', marginBottom:'20px' }}>
-                  {['1W','1M','3M','6M','1Y'].map(p => {
-                    const v = themeHeatmap[p]
-                    if (v == null) return null
-                    const col = v >= 0 ? 'var(--red)' : 'var(--green)'
-                    return (
-                      <div key={p} style={{
-                        background:'var(--bg2)', border:'1px solid var(--border)',
-                        borderRadius:'8px', padding:'10px 16px', minWidth:'80px', textAlign:'center',
-                        borderTop:`3px solid ${col}`,
-                      }}>
-                        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'4px' }}>{p}</div>
-                        <div style={{ fontSize:'16px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
-                          {v >= 0 ? '+' : ''}{v.toFixed(1)}%
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
                 {/* ⑤ 銘柄別ヒートマップ（名称変更） */}
                 <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>
                   📊 銘柄別ヒートマップ

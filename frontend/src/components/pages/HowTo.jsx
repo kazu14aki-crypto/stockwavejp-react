@@ -249,7 +249,7 @@ export default function HowTo() {
 
   return (
     <div style={{ padding: '28px 32px 48px', maxWidth: '900px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: '#ffffff', marginBottom: '4px' }}>
+      <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--text)', marginBottom: '4px' }}>
         使い方
       </h1>
       <p style={{ fontSize: '13px', color: 'var(--text2)', marginBottom: '28px' }}>
@@ -262,7 +262,7 @@ export default function HowTo() {
         border: '1px solid rgba(74,158,255,0.2)',
         borderRadius: 'var(--radius)', padding: '20px 24px', marginBottom: '24px',
       }}>
-        <div style={{ fontSize: '14px', fontWeight: 700, color: '#ffffff', marginBottom: '8px' }}>
+        <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>
           StockWaveJP とは
         </div>
         <div style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9 }}>

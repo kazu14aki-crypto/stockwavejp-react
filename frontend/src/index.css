@@ -115,6 +115,46 @@ body {
   color: #111827 !important;
 }
 
+/* ③ ホワイトテーマ: SVGグラフ軸・ラベルの白文字対策 */
+[data-theme="light"] svg text {
+  fill: #374151 !important;
+}
+/* ③ ヒートマップテーブルセルの白文字は背景色が濃いため例外許可 */
+[data-theme="light"] .heatmap-cell-text {
+  fill: #fff !important;
+}
+/* ③ Settings・HowToページのハードコード#ffffff */
+[data-theme="light"] [data-white-text] {
+  color: #111827 !important;
+}
+/* ③ SVG fill="white" の上書き（グラフのバブルラベル等） */
+[data-theme="light"] svg [fill="white"],
+[data-theme="light"] svg [fill="#fff"],
+[data-theme="light"] svg [fill="#FFF"] {
+  fill: #1a1d24 !important;
+}
+/* ③ CustomTheme期間ボタンの#fff文字 */
+[data-theme="light"] button {
+  color: var(--text);
+}
+/* ③ グラフ内 rgba(255,255,255,0.x) テキストの上書き */
+[data-theme="light"] svg text[fill^="rgba(255,255,255"] {
+  fill: rgba(30,40,80,0.6) !important;
+}
+/* ③ SVGのツールチップ背景(#1a1f2e) */
+[data-theme="light"] rect[fill="#1a1f2e"] {
+  fill: #f4f6fa !important;
+}
+[data-theme="light"] rect[fill="#1a1f2e"] + text {
+  fill: #111827 !important;
+}
+/* ③ Heatmap cellBg色の上文字 */
+[data-theme="light"] td[style*="color: rgb(255, 255, 255)"],
+[data-theme="light"] td[style*="color:#fff"],
+[data-theme="light"] td[style*='color:"#fff"'] {
+  color: #fff !important; /* ヒートマップセルは背景が濃いのでそのまま白 */
+}
+
 
 /* PC向け：コンテンツ最大幅 */
 @media (min-width: 1400px) {

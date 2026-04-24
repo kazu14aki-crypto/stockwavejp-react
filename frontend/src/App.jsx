@@ -22,9 +22,9 @@ import WeeklyReport from './components/pages/WeeklyReport'
 const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
   { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
+  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
   { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
   { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
 const PAGES_OTHER = [

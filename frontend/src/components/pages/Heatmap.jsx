@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useHeatmap, useMonthlyHeatmap, useMomentum } from '../../hooks/useMarketData'
+import React, { useState } from 'react'
+import { useMomentum } from '../../hooks/useMarketData'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -586,54 +586,9 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
 
 
 export default function Heatmap({ onNavigate }) {
-  const [tab,        setTab]        = useState('scatter')
-  const [loading,    setLoading]    = useState(true)
-  const [monthlyData, setMonthlyData] = useState(null)
-  const [months,     setMonths]     = useState([])
-  const [mPeriod,    setMPeriod]    = useState('1mo')
-
+  const [mPeriod, setMPeriod] = useState('1mo')
   const { data: momentumRaw, loading: loadingM } = useMomentum(mPeriod)
   const momentumData = momentumRaw?.data || []
-
-  // 月次テーマヒートマップデータ取得（period削除済み）
-  useEffect(() => {
-    if (tab !== 'monthly') return
-    setLoading(true)
-    const CACHE_KEY = 'heatmap_monthly'
-    ;(async () => {
-      try {
-        const cached = JSON.parse(localStorage.getItem('swjp_v3_' + CACHE_KEY) || 'null')
-        if (cached?.data) {
-          setMonthlyData(cached.data.heatmap || cached.data)
-          setMonths(cached.data.months || [])
-          setLoading(false)
-        }
-      } catch {}
-      try {
-        const json = await fetch('/data/market.json?t=' + Date.now()).then(r => r.json())
-        if (json.heatmap_monthly) {
-          setMonthlyData(json.heatmap_monthly.data)
-          setMonths(json.heatmap_monthly.months || [])
-          localStorage.setItem('swjp_v3_' + CACHE_KEY, JSON.stringify({
-            data:{ heatmap:json.heatmap_monthly.data, months:json.heatmap_monthly.months }, ts:Date.now()
-          }))
-          setLoading(false); return
-        }
-      } catch {}
-      try {
-        const res = await fetch(`${API}/api/heatmap/monthly`)
-        const json = await res.json()
-        setMonthlyData(json.data); setMonths(json.months)
-      } catch {}
-      setLoading(false)
-    })()
-  }, [tab])
-
-  const TABS = [
-    { key:'scatter', label:'📊 テーマヒートマップ' },
-  ]
-
-
 
   return (
     <div style={{ padding:'20px 24px 48px', maxWidth:'1280px', margin:'0 auto' }}>
@@ -644,39 +599,16 @@ export default function Heatmap({ onNavigate }) {
         67テーマの騰落率をテーマヒートマップと騰落モメンタムで多角的に分析できます。
       </p>
 
-
-      {/* タブ（スマホ: 2×2グリッド / PC: 4列） */}
-      <div className="heatmap-tab-grid" style={{ marginBottom:'20px', width:'100%' }}>
-        {TABS.map(t => (
-          <button key={t.key} onClick={() => setTab(t.key)} style={{
-            padding:'10px 6px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
-            cursor:'pointer', fontFamily:'var(--font)', whiteSpace:'nowrap',
-            textAlign:'center', lineHeight:1.3, minHeight:'44px',
-            border: tab === t.key ? '2px solid var(--accent)' : '1px solid var(--border)',
-            background: tab === t.key ? 'rgba(74,158,255,0.12)' : 'var(--bg2)',
-            color: tab === t.key ? 'var(--accent)' : 'var(--text3)',
-            transition:'all 0.15s',
-          }}>
-            {t.label}
-          </button>
-        ))}
-      </div>
-
-      {/* 期間別テーマヒートマップ */}
-
-
-
-
-      {/* 📊 テーマヒートマップ（資金フロー散布図） */}
-      {tab === 'scatter' && (
-        <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
-      )}
+      {/* ⑥ タブ削除・散布図を直接表示 */}
+      <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />
 
       <style>{`
-        .heatmap-tab-grid {
+        /* ⑥ PC版：注目ゾーン説明を横並び4列 */
+        .scatter-zone-desc {
           display: grid;
-          grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 6px;
+          margin-bottom: 10px;
         }
         .scatter-zone-desc > div {
           display: flex;
@@ -684,10 +616,8 @@ export default function Heatmap({ onNavigate }) {
           gap: 5px;
         }
         @media (max-width: 640px) {
-          .heatmap-tab-grid {
-            grid-template-columns: repeat(1, 1fr);
-          }
           .scatter-zone-desc {
+            grid-template-columns: 1fr 1fr;
             font-size: 10px;
           }
         }

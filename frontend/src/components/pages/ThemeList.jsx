@@ -220,6 +220,62 @@ const THEME_ARTICLE_MAP = {
   'ゲーム・エンタメ':  'game-entertainment-theme',
 }
 
+// ① PC版：グラフを縮小表示＋クリックで拡大モーダル
+function ExpandableChart({ title, children }) {
+  const [expanded, setExpanded] = React.useState(false)
+  // スマホでは通常表示のみ
+  return (
+    <>
+      {/* PC版: 縮小ラッパー */}
+      <div className="expandable-chart-wrap">
+        {/* 縮小表示（PC: scale down + クリックで拡大） */}
+        <div className="expandable-chart-preview" onClick={() => setExpanded(true)}
+          title="クリックで拡大">
+          <div style={{ pointerEvents:'none', transformOrigin:'top left' }}>
+            {children}
+          </div>
+          <div className="expandable-chart-overlay">
+            <span style={{ fontSize:'12px', fontWeight:600, color:'#fff',
+              background:'rgba(0,0,0,0.55)', padding:'4px 12px', borderRadius:'20px',
+              backdropFilter:'blur(4px)' }}>
+              🔍 クリックで拡大
+            </span>
+          </div>
+        </div>
+        {/* スマホ版: 通常表示 */}
+        <div className="expandable-chart-mobile">
+          {children}
+        </div>
+      </div>
+
+      {/* 拡大モーダル */}
+      {expanded && (
+        <div onClick={() => setExpanded(false)} style={{
+          position:'fixed', inset:0, background:'rgba(0,0,0,0.75)',
+          zIndex:2000, display:'flex', alignItems:'center', justifyContent:'center',
+          padding:'20px', backdropFilter:'blur(4px)',
+        }}>
+          <div onClick={e => e.stopPropagation()} style={{
+            background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
+            padding:'20px', width:'min(92vw, 1100px)', maxHeight:'88vh',
+            overflowY:'auto', position:'relative',
+          }}>
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
+              <span style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>{title}</span>
+              <button onClick={() => setExpanded(false)} style={{
+                background:'rgba(255,255,255,0.08)', border:'1px solid var(--border)',
+                borderRadius:'6px', color:'var(--text2)', cursor:'pointer',
+                fontSize:'13px', padding:'4px 12px', fontFamily:'var(--font)',
+              }}>✕ 閉じる</button>
+            </div>
+            {children}
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
+
 function SectionHead({ title }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '28px 0 14px' }}>
@@ -559,18 +615,19 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 
 
 function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
-  const [showAll, setShowAll] = useState(false)
-  const LIMIT = 10
-  const MOBILE_LIMIT = 3
-  const displayed = showAll ? items : items.slice(0, LIMIT)
-  const hasMore = items.length > LIMIT
-  const maxVal = valueKey === 'pct' ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)))
+  // ② デフォルト4件、TOP10・全件ボタン横並び
+  const [displayMode, setDisplayMode] = useState('top4') // 'top4' | 'top10' | 'all'
+  const DEFAULT_LIMIT = 4
+  const TOP10_LIMIT = 10
+  const displayed = displayMode === 'all' ? items
+    : displayMode === 'top10' ? items.slice(0, TOP10_LIMIT)
+    : items.slice(0, DEFAULT_LIMIT)
+  const maxVal = valueKey === 'pct' ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)), 0)
   return (
     <>
     <div className="theme-card-grid">
       {displayed.map((item, idx) => (
-        <div key={item.theme} className={idx >= MOBILE_LIMIT ? 'mobile-hidden-card' : ''}>
-        <ThemeCard item={item} rank={idx+1}
+        <ThemeCard key={item.theme} item={item} rank={idx+1}
           maxAbs={maxVal} valueKey={valueKey}
           barColor={barColor} pctColor={pctColor}
           pctRank={pctRankMap?.get(item.theme)}
@@ -579,22 +636,32 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           onNavigate={onNavigate}
           momentumState={momentumMap?.get(item.theme)?.state}
           momentumPct={momentumMap?.get(item.theme)?.pct} />
-        </div>
       ))}
     </div>
-    {hasMore && (
-      <div style={{ textAlign:'center', marginTop:'12px', marginBottom:'4px' }}>
-        <button onClick={() => setShowAll(s => !s)} style={{
-          padding:'8px 24px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+    {/* ② 展開ボタン横並び */}
+    <div style={{ display:'flex', gap:'8px', marginTop:'12px', marginBottom:'4px', justifyContent:'center', flexWrap:'wrap' }}>
+      {displayMode !== 'top4' && (
+        <button onClick={() => setDisplayMode('top4')} style={{
+          padding:'7px 18px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
           cursor:'pointer', fontFamily:'var(--font)',
-          background: showAll ? 'rgba(255,255,255,0.05)' : 'rgba(74,158,255,0.1)',
-          border: showAll ? '1px solid var(--border)' : '1px solid rgba(74,158,255,0.3)',
-          color: showAll ? 'var(--text3)' : 'var(--accent)',
-        }}>
-          {showAll ? '▲ 上位' + LIMIT + '件に絞る' : '▼ 全' + items.length + 'テーマを表示'}
-        </button>
-      </div>
-    )}
+          background:'rgba(255,255,255,0.05)', border:'1px solid var(--border)', color:'var(--text3)',
+        }}>▲ トップ4に戻す</button>
+      )}
+      {displayMode !== 'top10' && items.length > DEFAULT_LIMIT && (
+        <button onClick={() => setDisplayMode('top10')} style={{
+          padding:'7px 18px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+          cursor:'pointer', fontFamily:'var(--font)',
+          background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)', color:'var(--accent)',
+        }}>トップ10を表示</button>
+      )}
+      {displayMode !== 'all' && items.length > TOP10_LIMIT && (
+        <button onClick={() => setDisplayMode('all')} style={{
+          padding:'7px 18px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+          cursor:'pointer', fontFamily:'var(--font)',
+          background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)', color:'#ff8c42',
+        }}>全{items.length}テーマを表示</button>
+      )}
+    </div>
     </>
   )
 }
@@ -1184,9 +1251,11 @@ export default function ThemeList({ onNavigate }) {
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
             <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
 
-            {/* 📅 月次テーマ別騰落率（折れ線グラフ） */}
+            {/* 📅 月次テーマ別騰落率（折れ線グラフ） - ①PC版クリック拡大 */}
             <SectionHead title="📅 月次テーマ別騰落率推移" />
-            <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
+            <ExpandableChart title="月次テーマ別騰落率推移">
+              <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
+            </ExpandableChart>
 
             {/* ③ 月次テーマ別出来高推移 */}
             {Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
@@ -1194,10 +1263,14 @@ export default function ThemeList({ onNavigate }) {
               return (
                 <>
                   <SectionHead title="📊 月次テーマ別出来高推移" />
-                  <MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                  <ExpandableChart title="月次テーマ別出来高推移">
+                    <MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                  </ExpandableChart>
 
                   <SectionHead title="💴 月次テーマ別売買代金推移" />
-                  <MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                  <ExpandableChart title="月次テーマ別売買代金推移">
+                    <MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                  </ExpandableChart>
                 </>
               )
             })()}
@@ -1207,6 +1280,39 @@ export default function ThemeList({ onNavigate }) {
       </div>
 
       <style>{`
+        /* ① ExpandableChart: PC=縮小+拡大ボタン / スマホ=通常 */
+        .expandable-chart-wrap {}
+        .expandable-chart-preview {
+          display: none;
+          position: relative;
+          cursor: pointer;
+          border-radius: 10px;
+          overflow: hidden;
+          max-height: 220px;
+        }
+        .expandable-chart-preview > div {
+          transform: scale(0.55);
+          transform-origin: top left;
+          width: 182%;
+          pointer-events: none;
+        }
+        .expandable-chart-overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0,0,0,0.18);
+          transition: background 0.2s;
+        }
+        .expandable-chart-preview:hover .expandable-chart-overlay {
+          background: rgba(0,0,0,0.35);
+        }
+        .expandable-chart-mobile { display: block; }
+        @media (min-width: 769px) {
+          .expandable-chart-preview { display: block; }
+          .expandable-chart-mobile  { display: none; }
+        }
         .responsive-grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
         @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .responsive-grid-6 { grid-template-columns:repeat(2,1fr); } }
