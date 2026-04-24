@@ -70,7 +70,15 @@ def extract_stock_highlights(mj: dict, summary: dict) -> dict:
 
 def generate_report_with_claude(summary: dict, stocks: dict, date_str: str) -> str:
     """Claude APIで週次レポート本文を生成"""
-    client = anthropic.Anthropic()
+    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    if not api_key:
+        raise EnvironmentError(
+            "ANTHROPIC_API_KEY が設定されていません。\n"
+            "GitHub Actions の場合: Settings → Secrets and variables → Actions → "
+            "New repository secret で ANTHROPIC_API_KEY を追加してください。\n"
+            "ローカル実行の場合: export ANTHROPIC_API_KEY=sk-ant-... を実行してください。"
+        )
+    client = anthropic.Anthropic(api_key=api_key)
 
     # プロンプトデータ構築
     top5_text = "\n".join(

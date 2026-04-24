@@ -606,29 +606,101 @@ const MONTHLY_COLORS = [
   '#aa77ff', '#ff8c42', '#4ecdc4', '#ff6b6b',
 ]
 
+// 月次チャートの共通テーマ選択UI（騰落率・出来高・売買代金で共有）
+function MonthlyThemePicker({ allThemes, selected, setSelected }) {
+  const [showPicker, setShowPicker] = React.useState(false)
+  const toggleTheme = t =>
+    setSelected(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
+
+  return (
+    <div style={{ marginBottom:'12px' }}>
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', alignItems:'center', marginBottom:'8px' }}>
+        {selected.map((t, si) => {
+          const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
+          return (
+            <span key={t} style={{
+              display:'inline-flex', alignItems:'center', gap:'4px',
+              padding:'3px 8px 3px 10px', borderRadius:'20px', fontSize:'11px',
+              fontWeight:600, border:'1.5px solid ' + col,
+              background: col + '22', color: col,
+            }}>
+              {t}
+              <button onClick={() => toggleTheme(t)}
+                style={{ background:'none', border:'none', cursor:'pointer',
+                  color: col, fontSize:'12px', lineHeight:1, padding:'0 2px',
+                  fontFamily:'var(--font)' }}>
+                ×
+              </button>
+            </span>
+          )
+        })}
+        <button onClick={() => setShowPicker(s => !s)}
+          style={{ padding:'4px 12px', borderRadius:'20px', fontSize:'11px',
+            cursor:'pointer', fontFamily:'var(--font)', fontWeight:600,
+            border:'1px dashed var(--accent)', background:'rgba(74,158,255,0.06)',
+            color:'var(--accent)', transition:'all 0.15s' }}>
+          {showPicker ? '▲ 閉じる' : '＋ テーマを追加する'}
+        </button>
+        {selected.length > 0 && (
+          <button onClick={() => setSelected([])}
+            style={{ padding:'4px 10px', borderRadius:'20px', fontSize:'10px',
+              cursor:'pointer', fontFamily:'var(--font)',
+              border:'1px solid var(--border)', background:'transparent',
+              color:'var(--text3)', transition:'all 0.15s' }}>
+            すべて解除
+          </button>
+        )}
+      </div>
+      {showPicker && (
+        <div style={{
+          background:'var(--bg2)', border:'1px solid var(--border)',
+          borderRadius:'10px', padding:'12px 14px', marginBottom:'8px',
+          maxHeight:'200px', overflowY:'auto',
+        }}>
+          <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'8px',
+            letterSpacing:'0.06em', textTransform:'uppercase', fontWeight:600 }}>
+            テーマを選択（複数可）
+          </div>
+          <div style={{ display:'flex', flexWrap:'wrap', gap:'5px' }}>
+            {allThemes.map((t) => {
+              const isOn = selected.includes(t)
+              const col  = isOn ? MONTHLY_COLORS[selected.indexOf(t) % MONTHLY_COLORS.length] : null
+              return (
+                <button key={t} onClick={() => toggleTheme(t)}
+                  style={{
+                    padding:'3px 9px', borderRadius:'16px', fontSize:'10px',
+                    cursor:'pointer', fontFamily:'var(--font)', fontWeight: isOn ? 600 : 400,
+                    border: isOn ? '1.5px solid ' + col : '1px solid var(--border)',
+                    background: isOn ? col + '22' : 'transparent',
+                    color: isOn ? col : 'var(--text3)',
+                    transition:'all 0.12s',
+                  }}>
+                  {isOn ? '✓ ' : ''}{t}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 function MonthlyLineChart({ data, months, onNavigate }) {
   const allThemes = data ? Object.keys(data) : []
   const [selected, setSelected] = React.useState(() => allThemes.slice(0, 3))
-  const [showPicker, setShowPicker] = React.useState(false)
 
-  // データが変わったらデフォルト3テーマを再設定
   React.useEffect(() => {
     if (allThemes.length > 0 && selected.length === 0) {
       setSelected(allThemes.slice(0, 3))
     }
   }, [allThemes.length])
 
-  const toggleTheme = t =>
-    setSelected(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
-
   if (!data || !months || months.length === 0) {
     return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)' }}>データを読み込み中...</div>
   }
 
-  // 表示する月（最新12ヶ月）
   const dispMonths = months.slice(-12)
-
-  // Y軸の範囲計算（5%刻み）
   const allVals = selected.flatMap(t =>
     dispMonths.map(m => data[t]?.[m]).filter(v => v != null)
   )
@@ -638,7 +710,6 @@ function MonthlyLineChart({ data, months, onNavigate }) {
   const yMin   = Math.floor(rawMin / yStep) * yStep - yStep
   const yMax   = Math.ceil(rawMax / yStep)  * yStep + yStep
 
-  // SVGレイアウト
   const W = 900, H = 400
   const PL = 52, PR = 20, PT = 32, PB = 56
   const GW = W - PL - PR
@@ -647,11 +718,9 @@ function MonthlyLineChart({ data, months, onNavigate }) {
   const xS = i => PL + (i / Math.max(dispMonths.length - 1, 1)) * GW
   const yS = v => PT + GH - ((v - yMin) / (yMax - yMin || 1)) * GH
 
-  // Y軸目盛り
   const yTicks = []
   for (let y = yMin; y <= yMax; y += yStep) yTicks.push(y)
 
-  // 月ラベル（短縮形）
   const shortMonth = m => {
     const parts = m.split('/')
     return parts.length >= 2 ? parts[0].slice(2) + '/' + parts[1] : m
@@ -659,94 +728,16 @@ function MonthlyLineChart({ data, months, onNavigate }) {
 
   return (
     <div>
-      {/* テーマ選択（モーダル式） */}
-      <div style={{ marginBottom:'12px' }}>
-        {/* 選択中テーマのバッジ + 追加ボタン */}
-        <div style={{ display:'flex', flexWrap:'wrap', gap:'6px', alignItems:'center', marginBottom:'8px' }}>
-          {selected.map((t, si) => {
-            const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
-            return (
-              <span key={t} style={{
-                display:'inline-flex', alignItems:'center', gap:'4px',
-                padding:'3px 8px 3px 10px', borderRadius:'20px', fontSize:'11px',
-                fontWeight:600, border:'1.5px solid ' + col,
-                background: col + '22', color: col,
-              }}>
-                {t}
-                <button onClick={() => toggleTheme(t)}
-                  style={{ background:'none', border:'none', cursor:'pointer',
-                    color: col, fontSize:'12px', lineHeight:1, padding:'0 2px',
-                    fontFamily:'var(--font)' }}>
-                  ×
-                </button>
-              </span>
-            )
-          })}
-          <button onClick={() => setShowPicker(s => !s)}
-            style={{ padding:'4px 12px', borderRadius:'20px', fontSize:'11px',
-              cursor:'pointer', fontFamily:'var(--font)', fontWeight:600,
-              border:'1px dashed var(--accent)', background:'rgba(74,158,255,0.06)',
-              color:'var(--accent)', transition:'all 0.15s' }}>
-            {showPicker ? '▲ 閉じる' : '＋ テーマを追加する'}
-          </button>
-          {selected.length > 0 && (
-            <button onClick={() => setSelected([])}
-              style={{ padding:'4px 10px', borderRadius:'20px', fontSize:'10px',
-                cursor:'pointer', fontFamily:'var(--font)',
-                border:'1px solid var(--border)', background:'transparent',
-                color:'var(--text3)', transition:'all 0.15s' }}>
-              すべて解除
-            </button>
-          )}
-        </div>
-        {/* テーマピッカー（開閉式） */}
-        {showPicker && (
-          <div style={{
-            background:'var(--bg2)', border:'1px solid var(--border)',
-            borderRadius:'10px', padding:'12px 14px', marginBottom:'8px',
-            maxHeight:'200px', overflowY:'auto',
-          }}>
-            <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'8px',
-              letterSpacing:'0.06em', textTransform:'uppercase', fontWeight:600 }}>
-              テーマを選択（複数可）
-            </div>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:'5px' }}>
-              {allThemes.map((t, ti) => {
-                const isOn = selected.includes(t)
-                const col  = isOn ? MONTHLY_COLORS[selected.indexOf(t) % MONTHLY_COLORS.length] : null
-                return (
-                  <button key={t} onClick={() => toggleTheme(t)}
-                    style={{
-                      padding:'3px 9px', borderRadius:'16px', fontSize:'10px',
-                      cursor:'pointer', fontFamily:'var(--font)', fontWeight: isOn ? 600 : 400,
-                      border: isOn ? '1.5px solid ' + col : '1px solid var(--border)',
-                      background: isOn ? col + '22' : 'transparent',
-                      color: isOn ? col : 'var(--text3)',
-                      transition:'all 0.12s',
-                    }}>
-                    {isOn ? '✓ ' : ''}{t}
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* 折れ線グラフ */}
-      {selected.length > 0 && (
+      <MonthlyThemePicker allThemes={allThemes} selected={selected} setSelected={setSelected} />
+      {selected.length > 0 ? (
         <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
           <svg viewBox={'0 0 ' + W + ' ' + H}
             style={{ width:'100%', minWidth:'480px', display:'block',
               background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
-
-            {/* ゼロライン */}
             {yTicks.includes(0) && (
               <line x1={PL} y1={yS(0)} x2={PL+GW} y2={yS(0)}
                 stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="4,3" />
             )}
-
-            {/* グリッド線・Y軸目盛り */}
             {yTicks.map(y => (
               <g key={y}>
                 <line x1={PL} y1={yS(y)} x2={PL+GW} y2={yS(y)}
@@ -757,16 +748,12 @@ function MonthlyLineChart({ data, months, onNavigate }) {
                 </text>
               </g>
             ))}
-
-            {/* X軸目盛り */}
             {dispMonths.map((m, i) => (
               <text key={m} x={xS(i)} y={PT+GH+18} textAnchor="middle"
                 fontSize="9" fill="rgba(255,255,255,0.4)">
                 {shortMonth(m)}
               </text>
             ))}
-
-            {/* 折れ線 */}
             {selected.map((t, si) => {
               const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
               const pts = dispMonths
@@ -787,8 +774,6 @@ function MonthlyLineChart({ data, months, onNavigate }) {
                 </g>
               )
             })}
-
-            {/* 凡例 */}
             {selected.map((t, si) => {
               const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
               return (
@@ -802,8 +787,206 @@ function MonthlyLineChart({ data, months, onNavigate }) {
             })}
           </svg>
         </div>
+      ) : (
+        <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)',
+          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+          上のボタンでテーマを選択してください
+        </div>
       )}
-      {selected.length === 0 && (
+    </div>
+  )
+}
+
+// 出来高月次グラフ本体
+function MonthlyVolChart({ volTrendData, allThemeNames, months }) {
+  const [selected, setSelected] = React.useState(() => (allThemeNames || []).slice(0, 3))
+  React.useEffect(() => {
+    if (allThemeNames?.length > 0 && selected.length === 0) setSelected(allThemeNames.slice(0, 3))
+  }, [allThemeNames?.length])
+
+  if (!volTrendData || !allThemeNames) return null
+
+  // 週次→月次変換
+  const monthlyByTheme = {}
+  allThemeNames.forEach(t => {
+    const d = volTrendData[`vol_trend_${t}`]
+    if (!d?.dates) return
+    const monthly = {}
+    d.dates.forEach((date, i) => {
+      const m = date.slice(0, 7).replace('-', '/')
+      if (!monthly[m]) monthly[m] = 0
+      monthly[m] += (d.volumes?.[i] || 0)
+    })
+    monthlyByTheme[t] = monthly
+  })
+
+  const dispMonths = months.slice(-12)
+  const allVals = selected.flatMap(t => dispMonths.map(m => monthlyByTheme[t]?.[m] || 0))
+  const maxV = Math.max(...allVals, 1)
+
+  const W=900, H=340, PL=80, PR=20, PT=32, PB=48
+  const GW=W-PL-PR, GH=H-PT-PB
+  const xS = i => PL + (i / Math.max(dispMonths.length-1, 1)) * GW
+  const yS = v => PT + GH - (v / maxV) * GH
+
+  const fmtL = v => {
+    if (!v) return '0'
+    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(1)+'兆'
+    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(1)+'億'
+    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(1)+'万'
+    return v.toLocaleString()
+  }
+  const yTicks = [0,0.25,0.5,0.75,1].map(r => maxV*r)
+  const shortM = m => m.slice(2)+'月' // '2025/04' → '25/04月'... → '04月'
+  const shortMonth = m => { const p=m.split('/'); return p.length>=2?p[0].slice(2)+'/'+p[1]:m }
+
+  return (
+    <div>
+      <MonthlyThemePicker allThemes={allThemeNames} selected={selected} setSelected={setSelected} />
+      {selected.length > 0 ? (
+        <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
+          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'480px', display:'block',
+            background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+            {/* グリッド */}
+            {[0.25,0.5,0.75,1].map(r => (
+              <line key={r} x1={PL} y1={yS(maxV*r)} x2={PL+GW} y2={yS(maxV*r)}
+                stroke="rgba(255,255,255,0.06)" strokeWidth="0.8"/>
+            ))}
+            {/* Y軸ラベル */}
+            {yTicks.map((v,i) => (
+              <text key={i} x={PL-6} y={yS(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.45)">
+                {fmtL(v)}
+              </text>
+            ))}
+            {/* X軸ラベル */}
+            {dispMonths.map((m,i) => (
+              <text key={m} x={xS(i)} y={PT+GH+18} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.4)">
+                {shortMonth(m)}
+              </text>
+            ))}
+            {/* 折れ線 */}
+            {selected.map((t,si) => {
+              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
+              const pts = dispMonths.map((m,i) => ({ i, v: monthlyByTheme[t]?.[m] || 0 }))
+              const pathD = pts.map((p,pi) => (pi===0?'M':'L') + xS(p.i).toFixed(1)+','+yS(p.v).toFixed(1)).join(' ')
+              return (
+                <g key={t}>
+                  <path d={pathD} fill="none" stroke={col} strokeWidth="2" strokeLinejoin="round" opacity="0.9"/>
+                  {pts.map(p => <circle key={p.i} cx={xS(p.i)} cy={yS(p.v)} r="3" fill={col} stroke="var(--bg2)" strokeWidth="1.5"/>)}
+                </g>
+              )
+            })}
+            {/* 凡例 */}
+            {selected.map((t,si) => {
+              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
+              return (
+                <g key={t}>
+                  <rect x={PL+si*160} y={PT-22} width="12" height="12" rx="2" fill={col} opacity="0.85"/>
+                  <text x={PL+si*160+16} y={PT-12} fontSize="10" fill="rgba(255,255,255,0.75)">
+                    {t.length > 12 ? t.slice(0,12)+'…' : t}
+                  </text>
+                </g>
+              )
+            })}
+          </svg>
+        </div>
+      ) : (
+        <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)',
+          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+          上のボタンでテーマを選択してください
+        </div>
+      )}
+    </div>
+  )
+}
+
+// 売買代金月次グラフ本体
+function MonthlyTVChart({ volTrendData, allThemeNames, months }) {
+  const [selected, setSelected] = React.useState(() => (allThemeNames || []).slice(0, 3))
+  React.useEffect(() => {
+    if (allThemeNames?.length > 0 && selected.length === 0) setSelected(allThemeNames.slice(0, 3))
+  }, [allThemeNames?.length])
+
+  if (!volTrendData || !allThemeNames) return null
+
+  const tvByTheme = {}
+  allThemeNames.forEach(t => {
+    const d = volTrendData[`vol_trend_${t}`]
+    if (!d?.dates) return
+    const monthly = {}
+    d.dates.forEach((date, i) => {
+      const m = date.slice(0, 7).replace('-', '/')
+      if (!monthly[m]) monthly[m] = 0
+      monthly[m] += (d.trade_values?.[i] || 0)
+    })
+    tvByTheme[t] = monthly
+  })
+
+  const dispMonths = months.slice(-12)
+  const allVals = selected.flatMap(t => dispMonths.map(m => tvByTheme[t]?.[m] || 0))
+  const maxV = Math.max(...allVals, 1)
+
+  const W=900, H=340, PL=80, PR=20, PT=32, PB=48
+  const GW=W-PL-PR, GH=H-PT-PB
+  const xS = i => PL + (i / Math.max(dispMonths.length-1, 1)) * GW
+  const yS = v => PT + GH - (v / maxV) * GH
+
+  const fmtL = v => {
+    if (!v) return '0'
+    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(1)+'兆'
+    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(1)+'億'
+    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(1)+'万'
+    return v.toLocaleString()
+  }
+  const yTicks = [0,0.25,0.5,0.75,1].map(r => maxV*r)
+  const shortMonth = m => { const p=m.split('/'); return p.length>=2?p[0].slice(2)+'/'+p[1]:m }
+
+  return (
+    <div>
+      <MonthlyThemePicker allThemes={allThemeNames} selected={selected} setSelected={setSelected} />
+      {selected.length > 0 ? (
+        <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
+          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'480px', display:'block',
+            background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+            {[0.25,0.5,0.75,1].map(r => (
+              <line key={r} x1={PL} y1={yS(maxV*r)} x2={PL+GW} y2={yS(maxV*r)}
+                stroke="rgba(255,255,255,0.06)" strokeWidth="0.8"/>
+            ))}
+            {yTicks.map((v,i) => (
+              <text key={i} x={PL-6} y={yS(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.45)">
+                {fmtL(v)}
+              </text>
+            ))}
+            {dispMonths.map((m,i) => (
+              <text key={m} x={xS(i)} y={PT+GH+18} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.4)">
+                {shortMonth(m)}
+              </text>
+            ))}
+            {selected.map((t,si) => {
+              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
+              const pts = dispMonths.map((m,i) => ({ i, v: tvByTheme[t]?.[m] || 0 }))
+              const pathD = pts.map((p,pi) => (pi===0?'M':'L') + xS(p.i).toFixed(1)+','+yS(p.v).toFixed(1)).join(' ')
+              return (
+                <g key={t}>
+                  <path d={pathD} fill="none" stroke={col} strokeWidth="2" strokeLinejoin="round" opacity="0.9"/>
+                  {pts.map(p => <circle key={p.i} cx={xS(p.i)} cy={yS(p.v)} r="3" fill={col} stroke="var(--bg2)" strokeWidth="1.5"/>)}
+                </g>
+              )
+            })}
+            {selected.map((t,si) => {
+              const col = MONTHLY_COLORS[si % MONTHLY_COLORS.length]
+              return (
+                <g key={t}>
+                  <rect x={PL+si*160} y={PT-22} width="12" height="12" rx="2" fill={col} opacity="0.85"/>
+                  <text x={PL+si*160+16} y={PT-12} fontSize="10" fill="rgba(255,255,255,0.75)">
+                    {t.length > 12 ? t.slice(0,12)+'…' : t}
+                  </text>
+                </g>
+              )
+            })}
+          </svg>
+        </div>
+      ) : (
         <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)',
           background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
           上のボタンでテーマを選択してください
@@ -818,6 +1001,19 @@ export default function ThemeList({ onNavigate }) {
   const { data: monthlyRaw } = useMonthlyHeatmap()
   const monthlyData = monthlyRaw?.data || null
   const months = monthlyRaw?.months || []
+  // ③ vol_trendデータをmarket.jsonから取得
+  const [volTrendData, setVolTrendData] = React.useState({})
+  React.useEffect(() => {
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(mj => {
+        const vtKeys = Object.keys(mj).filter(k => k.startsWith('vol_trend_'))
+        const vtData = {}
+        vtKeys.forEach(k => { vtData[k] = mj[k] })
+        setVolTrendData(vtData)
+      })
+      .catch(() => {})
+  }, [])
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
   const { data: momentumData } = useMomentum(period)
@@ -991,6 +1187,20 @@ export default function ThemeList({ onNavigate }) {
             {/* 📅 月次テーマ別騰落率（折れ線グラフ） */}
             <SectionHead title="📅 月次テーマ別騰落率推移" />
             <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
+
+            {/* ③ 月次テーマ別出来高推移 */}
+            {Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
+              const allThemeNames = Object.keys(volTrendData).map(k => k.replace('vol_trend_', ''))
+              return (
+                <>
+                  <SectionHead title="📊 月次テーマ別出来高推移" />
+                  <MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+
+                  <SectionHead title="💴 月次テーマ別売買代金推移" />
+                  <MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                </>
+              )
+            })()}
 
           </>
         )}

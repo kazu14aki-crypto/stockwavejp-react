@@ -124,15 +124,15 @@ function AppInner() {
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme }
-    if (currentPage === 'ホーム') return { onNavigate: handlePageChange }
-    if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange }
-    if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange }
-    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange, initialTheme: targetTheme }
-    if (currentPage === 'テーマヒートマップ') return { onNavigate: handlePageChange }
-    if (currentPage === '週次レポート') return { onNavigate: handlePageChange }
-    if (currentPage === '市場別詳細') return { onNavigate: handlePageChange }
-    return {}
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, isMobile }
+    if (currentPage === 'ホーム') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange, isMobile }
+    if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange, initialTheme: targetTheme, isMobile }
+    if (currentPage === 'テーマヒートマップ') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === '週次レポート') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === '市場別詳細') return { onNavigate: handlePageChange, isMobile }
+    return { isMobile }
   })()
 
   return (

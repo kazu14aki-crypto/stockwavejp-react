@@ -636,6 +636,13 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
     if (initialTheme) setSelTheme(initialTheme)
   }, [initialTheme])
 
+  // selThemeが変わったらselThemesにも含める（騰落率グラフ用）
+  useEffect(() => {
+    if (selTheme) {
+      setSelThemes(s => s.includes(selTheme) ? s : [selTheme, ...s.slice(0, 2)])
+    }
+  }, [selTheme])
+
   // テーマ別詳細取得（market.json優先）
   useEffect(() => {
     if (!selTheme) return
@@ -895,40 +902,9 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               <StockTable stocks={stocks}/>
             </div>
 
-            {/* ── 出来高・売買代金 1年推移 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'48px', paddingBottom:'120px', marginTop:'60px' }}>
-              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
-                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
-                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
-              </div>
-              <div className="voltv-chart-wrap" style={{ height:'200px' }}>
-                <VolTvChart selTheme={selTheme} />
-              </div>
-            </div>
-
-            {/* ── 関連ページへの遷移ボタン ── */}
-            {onNavigate && (
-              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginTop:'16px', marginBottom:'8px' }}>
-                {THEME_ARTICLE_MAP[selTheme] && (
-                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                    style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
-                      background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)',
-                      color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
-                    📖 {selTheme}のコラム記事を読む
-                  </button>
-                )}
-                <button onClick={() => onNavigate('週次レポート')}
-                  style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
-                    background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
-                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
-                  📰 週次レポートを確認する →
-                </button>
-              </div>
-            )}
-
-            {/* ── 選択テーマのヒートマップ ── */}
+            {/* ── ⑦ ヒートマップ（銘柄表の直下） ── */}
             {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'48px', paddingBottom:'120px', marginTop:'60px' }}>
+              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginTop:'8px', marginBottom:'32px' }}>
                 <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'12px' }}>
                   📅 {selTheme}のヒートマップ（期間別騰落率）
                 </div>
@@ -952,11 +928,100 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                     )
                   })}
                 </div>
-                {/* 銘柄版散布図 */}
+                {/* ⑤ 銘柄別ヒートマップ（名称変更） */}
                 <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>
-                  📊 銘柄別 資金フロー散布図
+                  📊 銘柄別ヒートマップ
                 </div>
                 <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
+              </div>
+            )}
+
+            {/* ── ⑦ 選択テーマの騰落率グラフ（ヒートマップの下） ── */}
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginBottom:'32px' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
+                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>📈 {selTheme} 騰落率推移</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の平均騰落率</div>
+              </div>
+              {(() => {
+                // themeTrendsが比較用のため、市場jsonからselThemeの1y trendを取得
+                const trendData = themeTrends[selTheme]
+                if (!trendData || !trendData.dates || trendData.dates.length === 0) {
+                  return <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
+                    background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+                    騰落率推移データがありません（GitHub Actionsの次回実行後に表示されます）
+                  </div>
+                }
+                const { dates, values } = trendData
+                const W2=900, H2=220, PL2=52, PR2=20, PT2=24, PB2=36
+                const GW2=W2-PL2-PR2, GH2=H2-PT2-PB2
+                const n2=dates.length
+                const minV=Math.min(...values,0), maxV=Math.max(...values,0.01)
+                const range2=maxV-minV||1
+                const xP=(i)=>PL2+(i/Math.max(n2-1,1))*GW2
+                const yP=(v)=>PT2+GH2-((v-minV)/range2)*GH2
+                const pts2=values.map((v,i)=>`${xP(i).toFixed(1)},${yP(v).toFixed(1)}`).join(' ')
+                const zero2=Math.max(PT2,Math.min(PT2+GH2,yP(0)))
+                // x軸ラベル（月初）
+                const xlabs=[]
+                let lastM2=null
+                dates.forEach((d,i)=>{ const m=d.slice(0,7); if(m!==lastM2){xlabs.push({i,label:d.slice(5,7)+'月'});lastM2=m} })
+                return (
+                  <div style={{ width:'100%', overflowX:'auto' }}>
+                    <svg viewBox={`0 0 ${W2} ${H2}`} width="100%" style={{ display:'block', minWidth:'320px',
+                      background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+                      <line x1={PL2} y1={zero2} x2={PL2+GW2} y2={zero2}
+                        stroke="rgba(255,255,255,0.25)" strokeWidth="1" strokeDasharray="4,3"/>
+                      {[0.25,0.5,0.75,1].map(r=>(
+                        <line key={r} x1={PL2} y1={PT2+GH2-r*GH2} x2={PL2+GW2} y2={PT2+GH2-r*GH2}
+                          stroke="rgba(255,255,255,0.06)" strokeWidth="1"/>
+                      ))}
+                      {/* Y軸ラベル */}
+                      {[0,0.25,0.5,0.75,1].map(r=>{
+                        const v=minV+r*range2
+                        return <text key={r} x={PL2-4} y={yP(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.4)">{v>=0?'+':''}{v.toFixed(1)}%</text>
+                      })}
+                      {/* 塗りつぶし */}
+                      <polyline points={`${xP(0)},${zero2} ${pts2} ${xP(n2-1)},${zero2}`}
+                        fill="rgba(74,158,255,0.12)" stroke="none"/>
+                      <polyline points={pts2} fill="none" stroke="#4a9eff" strokeWidth="1.8" strokeLinejoin="round"/>
+                      {/* x軸ラベル */}
+                      {xlabs.map(({i,label})=>(
+                        <text key={i} x={xP(i)} y={H2-4} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.35)">{label}</text>
+                      ))}
+                    </svg>
+                  </div>
+                )
+              })()}
+            </div>
+
+            {/* ── ⑦ 出来高・売買代金グラフ（騰落率グラフの下）⑥ボタンをグラフ下に移動 ── */}
+            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginBottom:'16px' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
+                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
+              </div>
+              <div className="voltv-chart-wrap" style={{ height:'200px' }}>
+                <VolTvChart selTheme={selTheme} />
+              </div>
+            </div>
+
+            {/* ── ⑥ 関連ページへの遷移ボタン（グラフの真下・被りなし） ── */}
+            {onNavigate && (
+              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginTop:'20px', marginBottom:'40px', paddingBottom:'40px' }}>
+                {THEME_ARTICLE_MAP[selTheme] && (
+                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                    style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                      background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)',
+                      color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                    📖 {selTheme}のコラム記事を読む
+                  </button>
+                )}
+                <button onClick={() => onNavigate('週次レポート')}
+                  style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                    background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
+                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                  📰 週次レポートを確認する →
+                </button>
               </div>
             )}
           </>
@@ -971,11 +1036,16 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         @media (max-width:640px) {
           .top5g { grid-template-columns: 1fr !important; }
           .pickup-grid { grid-template-columns: 1fr !important; }
-          .voltv-chart-wrap { height: 360px !important; }
-          .theme-detail-body { padding: 12px 12px 120px !important; }
+          .voltv-chart-wrap { height: 220px !important; }
+          .theme-detail-body { padding: 10px 10px 40px !important; }
           /* スマホ版: PCヘッダー非表示 / スマホヘッダー表示 */
           .theme-summary-pc     { display: none !important; }
           .theme-summary-mobile { display: block !important; }
+        }
+        /* PC版: 情報密度を高める */
+        @media (min-width:1200px) {
+          .theme-detail-body { padding: 16px 40px 60px !important; }
+          .top5g { grid-template-columns: 1fr 1fr; gap: 16px; }
         }
       `}</style>
     </div>
