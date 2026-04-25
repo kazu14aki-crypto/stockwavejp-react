@@ -258,7 +258,7 @@ function ExpandableChart({ title, children, showZoneDesc = false }) {
         }}>
           <div onClick={e => e.stopPropagation()} style={{
             background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
-            padding:'20px', width:'min(92vw, 1200px)', maxHeight:'90vh',
+            padding:'16px', width:'min(80vw, 860px)', maxHeight:'80vh',
             overflowY:'auto', position:'relative',
           }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
@@ -296,6 +296,7 @@ function ExpandableChart({ title, children, showZoneDesc = false }) {
 // BubbleScatterのミニ版（ThemeList内埋め込み用・useMomentumを使用）
 function BubbleScatterMini({ onNavigate }) {
   const [mPeriod, setMPeriod] = React.useState('1mo')
+  const [hovered, setHovered] = React.useState(null)
   const { data: momentumRaw } = useMomentum(mPeriod)
   const data = momentumRaw?.data || []
   if (!data.length) return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)', fontSize:'12px' }}>データ読み込み中...</div>
@@ -303,7 +304,8 @@ function BubbleScatterMini({ onNavigate }) {
   const filtered = data.filter(d => d.pct != null && !isNaN(d.pct))
   const W=800, H=380, PL=54, PR=24, PT=32, PB=44
   const GW=W-PL-PR, GH=H-PT-PB
-  const pcts=filtered.map(d=>d.pct), volChgs=filtered.map(d=>d.volume_chg??d.week_diff??0)
+  const pcts=filtered.map(d=>d.pct)
+  const volChgs=filtered.map(d=>d.volume_chg??d.week_diff??0)
   const tvs=filtered.map(d=>d.trade_value??0), tvMax=Math.max(...tvs.filter(v=>v>0),1)
   const rSt=Math.max((Math.max(...pcts)-Math.min(...pcts))*0.15,1.5)
   const rSy=Math.max((Math.max(...volChgs)-Math.min(...volChgs))*0.15,2)
@@ -313,6 +315,7 @@ function BubbleScatterMini({ onNavigate }) {
   const yS=v=>PT+GH-((v-yMin)/(yMax-yMin||1))*GH
   const rS=tv=>tv>0?8+(tv/tvMax)*30:6
   const bC=pct=>pct>=8?'#ff2244':pct>=4?'#ff5370':pct>=1.5?'#ff8c42':pct>=0?'#e8a040':pct>=-1.5?'#3db88a':pct>=-4?'#00c48c':'#00a878'
+  const fmtL=tv=>{ if(!tv)return'-'; if(tv>=1e12)return(tv/1e12).toFixed(1)+'兆'; if(tv>=1e8)return(tv/1e8).toFixed(1)+'億'; if(tv>=1e4)return(tv/1e4).toFixed(1)+'万'; return tv.toLocaleString() }
   const x0=xS(0), y0=yS(0)
   return (
     <div>
@@ -326,16 +329,9 @@ function BubbleScatterMini({ onNavigate }) {
         </select>
         <span style={{ fontSize:'10px', color:'var(--text3)' }}>X=騰落率 Y=出来高急増率 円=売買代金</span>
       </div>
-      <div style={{ width:'100%', overflowX:'auto' }}>
+      <div style={{ width:'100%', overflowX:'auto' }} onMouseLeave={()=>setHovered(null)}>
         <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'320px', display:'block',
-          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}
-          onClick={e=>{
-            const svg=e.currentTarget, rect=svg.getBoundingClientRect()
-            const mx=(e.clientX-rect.left)*(W/rect.width), my=(e.clientY-rect.top)*(H/rect.height)
-            let closest=null, minD=Infinity
-            filtered.forEach(d=>{const cx=xS(d.pct),cy=yS(d.volume_chg??d.week_diff??0),dd=Math.hypot(mx-cx,my-cy);if(dd<minD){minD=dd;closest=d}})
-            if(closest&&minD<30&&onNavigate) onNavigate('テーマ別詳細', closest.theme)
-          }} style={{ cursor:'pointer' }}>
+          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
           {/* ゾーン背景 */}
           <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.07)" rx="3"/>
           <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.06)" rx="3"/>
@@ -346,16 +342,41 @@ function BubbleScatterMini({ onNavigate }) {
           <text x={PL+6} y={PT+14} fontSize="10" fill="rgba(0,196,140,0.75)" fontWeight="700">⚠️ 売圧</text>
           <text x={x0+6} y={PT+GH-6} fontSize="10" fill="rgba(255,140,66,0.7)">📈 静上昇</text>
           <text x={PL+6} y={PT+GH-6} fontSize="10" fill="rgba(74,158,255,0.65)">❄️ 静下落</text>
-          {filtered.map(d=>{
+          {/* バブル（ホバー以外） */}
+          {filtered.filter(d=>d.theme!==hovered?.theme).map(d=>{
             const cx=xS(d.pct), cy=yS(d.volume_chg??d.week_diff??0), r=rS(d.trade_value), col=bC(d.pct)
             return (
-              <g key={d.theme}>
+              <g key={d.theme} style={{ cursor:'pointer' }}
+                onMouseEnter={()=>setHovered(d)}
+                onClick={()=>onNavigate&&onNavigate('テーマ別詳細',d.theme)}>
                 <circle cx={cx} cy={cy} r={r} fill={col} opacity="0.75" stroke={col} strokeWidth="0.5"/>
                 {r>14&&<text x={cx} y={cy+3} textAnchor="middle" fontSize="7" fill="white" fontWeight="600"
                   style={{ pointerEvents:'none' }}>{d.theme.slice(0,5)}</text>}
               </g>
             )
           })}
+          {/* ホバー中バブル＋ツールチップ */}
+          {hovered&&(()=>{
+            const d=hovered
+            const cx=xS(d.pct), cy=yS(d.volume_chg??d.week_diff??0), r=rS(d.trade_value), col=bC(d.pct)
+            const tx=Math.min(cx,W-170), ty=Math.max(PT+4,cy-r-80)
+            return (
+              <g key="hov" style={{ cursor:'pointer' }}
+                onMouseEnter={()=>setHovered(d)}
+                onClick={()=>onNavigate&&onNavigate('テーマ別詳細',d.theme)}>
+                <circle cx={cx} cy={cy} r={r+3} fill="none" stroke="white" strokeWidth="2" strokeOpacity="0.8"/>
+                <circle cx={cx} cy={cy} r={r} fill={col} opacity="0.9" stroke={col} strokeWidth="1.5"/>
+                {r>10&&<text x={cx} y={cy+3} textAnchor="middle" fontSize="8" fill="white" fontWeight="700" style={{ pointerEvents:'none' }}>{d.theme.slice(0,6)}</text>}
+                <g style={{ pointerEvents:'none' }}>
+                  <rect x={tx} y={ty} width="164" height="74" rx="6" fill="#1a1f2e" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+                  <text x={tx+8} y={ty+16} fontSize="11" fill="#e8f0ff" fontWeight="700">{d.theme}</text>
+                  <text x={tx+8} y={ty+32} fontSize="10" fill={col}>{'騰落率: '+(d.pct>=0?'+':'')+d.pct.toFixed(2)+'%'}</text>
+                  <text x={tx+8} y={ty+47} fontSize="10" fill={(d.volume_chg??0)>=0?'#ff8c42':'#4a9eff'}>{'出来高増減: '+((d.volume_chg??0)>=0?'+':'')+(d.volume_chg??0).toFixed(0)+'%'}</text>
+                  <text x={tx+8} y={ty+62} fontSize="10" fill="#8b949e">{'売買代金: '+fmtL(d.trade_value)}</text>
+                </g>
+              </g>
+            )
+          })()}
         </svg>
       </div>
     </div>

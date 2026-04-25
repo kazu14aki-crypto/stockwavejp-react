@@ -419,31 +419,32 @@ export default function MarketRank() {
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄</span>
                 </div>
 
-                <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'24px' }} className="top5g">
+                <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'20px' }} className="top5g">
                   <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
                   <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
-                <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
-                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
-                </div>
-                <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
-                  <StockTable stocks={stocks} onAddToTheme={setModalStock} />
-                </div>
-
-                {/* ④ 出来高・売買代金グラフ＋銘柄別ヒートマップ（2カラム） */}
-                <div className="mr-bottom-grid" style={{ marginTop:'28px' }}>
+                {/* ⑥ 下部2カラム: 左=グラフ群 / 右=銘柄表 */}
+                <div className="mr-bottom-grid">
+                  {/* 左: 出来高・売買代金グラフ ＋ 銘柄別ヒートマップ */}
                   <div>
                     <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
                       📊 出来高・売買代金ランキング（上位15銘柄）
                     </div>
                     <MrVolTvChart stocks={stocks} />
-                  </div>
-                  <div>
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'16px 0 10px' }}>
                       🔥 銘柄別ヒートマップ
                     </div>
                     <MrBubbleChart stocks={stocks} />
+                  </div>
+                  {/* 右: 銘柄詳細表 */}
+                  <div>
+                    <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
+                      構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
+                    </div>
+                    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
+                      <StockTable stocks={stocks} onAddToTheme={setModalStock} />
+                    </div>
                   </div>
                 </div>
               </div>
