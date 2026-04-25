@@ -220,28 +220,29 @@ const THEME_ARTICLE_MAP = {
   'ゲーム・エンタメ':  'game-entertainment-theme',
 }
 
-// ① PC版：グラフを縮小表示＋クリックで拡大モーダル
-function ExpandableChart({ title, children }) {
+// ヒートマップゾーン説明（拡大時に表示）
+const ZONE_DESCS = [
+  { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'#ff5370' },
+  { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'#00c48c' },
+  { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少＝じわり上昇',    color:'#ff8c42' },
+  { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'#4a9eff' },
+]
+
+function ExpandableChart({ title, children, showZoneDesc = false }) {
   const [expanded, setExpanded] = React.useState(false)
-  // スマホでは通常表示のみ
   return (
     <>
-      {/* PC版: 縮小ラッパー */}
       <div className="expandable-chart-wrap">
-        {/* 縮小表示（PC: scale down + クリックで拡大） */}
-        <div className="expandable-chart-preview" onClick={() => setExpanded(true)}
-          title="クリックで拡大">
+        {/* PC版: 縮小表示 */}
+        <div className="expandable-chart-preview">
           <div style={{ pointerEvents:'none', transformOrigin:'top left' }}>
             {children}
           </div>
-          <div className="expandable-chart-overlay">
-            <span style={{ fontSize:'12px', fontWeight:600, color:'#fff',
-              background:'rgba(0,0,0,0.55)', padding:'4px 12px', borderRadius:'20px',
-              backdropFilter:'blur(4px)' }}>
-              🔍 クリックで拡大
-            </span>
-          </div>
         </div>
+        {/* PC版: クリックで拡大ボタン（グラフ下部） */}
+        <button className="expandable-chart-btn" onClick={() => setExpanded(true)}>
+          🔍 クリックで拡大
+        </button>
         {/* スマホ版: 通常表示 */}
         <div className="expandable-chart-mobile">
           {children}
@@ -257,7 +258,7 @@ function ExpandableChart({ title, children }) {
         }}>
           <div onClick={e => e.stopPropagation()} style={{
             background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
-            padding:'20px', width:'min(92vw, 1100px)', maxHeight:'88vh',
+            padding:'20px', width:'min(92vw, 1200px)', maxHeight:'90vh',
             overflowY:'auto', position:'relative',
           }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
@@ -268,11 +269,96 @@ function ExpandableChart({ title, children }) {
                 fontSize:'13px', padding:'4px 12px', fontFamily:'var(--font)',
               }}>✕ 閉じる</button>
             </div>
+            {/* ヒートマップ拡大時のみゾーン説明を表示 */}
+            {showZoneDesc && (
+              <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'6px', marginBottom:'12px' }}>
+                {ZONE_DESCS.map(z => (
+                  <div key={z.label} style={{ display:'flex', alignItems:'center', gap:'5px',
+                    background:'var(--bg2)', borderRadius:'6px', padding:'6px 8px',
+                    border:'1px solid var(--border)' }}>
+                    <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:z.color, flexShrink:0 }} />
+                    <div>
+                      <div style={{ fontSize:'10px', fontWeight:600, color:'var(--text)' }}>{z.label}</div>
+                      <div style={{ fontSize:'9px', color:'var(--text3)' }}>{z.desc}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
             {children}
           </div>
         </div>
       )}
     </>
+  )
+}
+
+// BubbleScatterのミニ版（ThemeList内埋め込み用・useMomentumを使用）
+function BubbleScatterMini({ onNavigate }) {
+  const [mPeriod, setMPeriod] = React.useState('1mo')
+  const { data: momentumRaw } = useMomentum(mPeriod)
+  const data = momentumRaw?.data || []
+  if (!data.length) return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)', fontSize:'12px' }}>データ読み込み中...</div>
+
+  const filtered = data.filter(d => d.pct != null && !isNaN(d.pct))
+  const W=800, H=380, PL=54, PR=24, PT=32, PB=44
+  const GW=W-PL-PR, GH=H-PT-PB
+  const pcts=filtered.map(d=>d.pct), volChgs=filtered.map(d=>d.volume_chg??d.week_diff??0)
+  const tvs=filtered.map(d=>d.trade_value??0), tvMax=Math.max(...tvs.filter(v=>v>0),1)
+  const rSt=Math.max((Math.max(...pcts)-Math.min(...pcts))*0.15,1.5)
+  const rSy=Math.max((Math.max(...volChgs)-Math.min(...volChgs))*0.15,2)
+  const xMin=Math.min(...pcts)-rSt, xMax=Math.max(...pcts)+rSt
+  const yMin=Math.min(...volChgs)-rSy, yMax=Math.max(...volChgs)+rSy
+  const xS=v=>PL+((v-xMin)/(xMax-xMin||1))*GW
+  const yS=v=>PT+GH-((v-yMin)/(yMax-yMin||1))*GH
+  const rS=tv=>tv>0?8+(tv/tvMax)*30:6
+  const bC=pct=>pct>=8?'#ff2244':pct>=4?'#ff5370':pct>=1.5?'#ff8c42':pct>=0?'#e8a040':pct>=-1.5?'#3db88a':pct>=-4?'#00c48c':'#00a878'
+  const x0=xS(0), y0=yS(0)
+  return (
+    <div>
+      <div style={{ display:'flex', gap:'8px', alignItems:'center', marginBottom:'8px' }}>
+        <select value={mPeriod} onChange={e=>setMPeriod(e.target.value)} style={{
+          background:'var(--bg3)', color:'var(--text)', border:'1px solid var(--border)',
+          borderRadius:'6px', fontFamily:'var(--font)', fontSize:'12px', padding:'4px 10px', cursor:'pointer' }}>
+          {[{v:'1d',l:'1日'},{v:'5d',l:'1週間'},{v:'1mo',l:'1ヶ月'},{v:'3mo',l:'3ヶ月'}].map(p=>(
+            <option key={p.v} value={p.v}>{p.l}</option>
+          ))}
+        </select>
+        <span style={{ fontSize:'10px', color:'var(--text3)' }}>X=騰落率 Y=出来高急増率 円=売買代金</span>
+      </div>
+      <div style={{ width:'100%', overflowX:'auto' }}>
+        <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'320px', display:'block',
+          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}
+          onClick={e=>{
+            const svg=e.currentTarget, rect=svg.getBoundingClientRect()
+            const mx=(e.clientX-rect.left)*(W/rect.width), my=(e.clientY-rect.top)*(H/rect.height)
+            let closest=null, minD=Infinity
+            filtered.forEach(d=>{const cx=xS(d.pct),cy=yS(d.volume_chg??d.week_diff??0),dd=Math.hypot(mx-cx,my-cy);if(dd<minD){minD=dd;closest=d}})
+            if(closest&&minD<30&&onNavigate) onNavigate('テーマ別詳細', closest.theme)
+          }} style={{ cursor:'pointer' }}>
+          {/* ゾーン背景 */}
+          <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.07)" rx="3"/>
+          <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.06)" rx="3"/>
+          <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.04)" rx="3"/>
+          <line x1={x0} y1={PT} x2={x0} y2={PT+GH} stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="5,3"/>
+          <line x1={PL} y1={y0} x2={PL+GW} y2={y0} stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="5,3"/>
+          <text x={x0+6} y={PT+14} fontSize="10" fill="rgba(255,83,112,0.8)" fontWeight="700">🔥 注目</text>
+          <text x={PL+6} y={PT+14} fontSize="10" fill="rgba(0,196,140,0.75)" fontWeight="700">⚠️ 売圧</text>
+          <text x={x0+6} y={PT+GH-6} fontSize="10" fill="rgba(255,140,66,0.7)">📈 静上昇</text>
+          <text x={PL+6} y={PT+GH-6} fontSize="10" fill="rgba(74,158,255,0.65)">❄️ 静下落</text>
+          {filtered.map(d=>{
+            const cx=xS(d.pct), cy=yS(d.volume_chg??d.week_diff??0), r=rS(d.trade_value), col=bC(d.pct)
+            return (
+              <g key={d.theme}>
+                <circle cx={cx} cy={cy} r={r} fill={col} opacity="0.75" stroke={col} strokeWidth="0.5"/>
+                {r>14&&<text x={cx} y={cy+3} textAnchor="middle" fontSize="7" fill="white" fontWeight="600"
+                  style={{ pointerEvents:'none' }}>{d.theme.slice(0,5)}</text>}
+              </g>
+            )
+          })}
+        </svg>
+      </div>
+    </div>
   )
 }
 
@@ -894,17 +980,22 @@ function MonthlyVolChart({ volTrendData, allThemeNames, months }) {
   const W=900, H=340, PL=80, PR=20, PT=32, PB=48
   const GW=W-PL-PR, GH=H-PT-PB
   const xS = i => PL + (i / Math.max(dispMonths.length-1, 1)) * GW
-  const yS = v => PT + GH - (v / maxV) * GH
+
+  // ③ 5億刻みでY軸目盛りを生成
+  const OKU5 = 5e8  // 5億
+  const volStep = maxV < 5e9 ? OKU5 : maxV < 5e10 ? 5e9 : 5e10
+  const nVolTicks = Math.ceil(maxV / volStep)
+  const volAxisMax = nVolTicks * volStep
+  const yTicks = Array.from({ length: nVolTicks + 1 }, (_, i) => i * volStep)
+  const yS = v => PT + GH - (v / volAxisMax) * GH
 
   const fmtL = v => {
     if (!v) return '0'
-    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(1)+'兆'
-    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(1)+'億'
-    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(1)+'万'
+    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(v%1e12===0?0:1)+'兆'
+    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(v%1e8===0?0:1)+'億'
+    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(0)+'万'
     return v.toLocaleString()
   }
-  const yTicks = [0,0.25,0.5,0.75,1].map(r => maxV*r)
-  const shortM = m => m.slice(2)+'月' // '2025/04' → '25/04月'... → '04月'
   const shortMonth = m => { const p=m.split('/'); return p.length>=2?p[0].slice(2)+'/'+p[1]:m }
 
   return (
@@ -996,16 +1087,22 @@ function MonthlyTVChart({ volTrendData, allThemeNames, months }) {
   const W=900, H=340, PL=80, PR=20, PT=32, PB=48
   const GW=W-PL-PR, GH=H-PT-PB
   const xS = i => PL + (i / Math.max(dispMonths.length-1, 1)) * GW
-  const yS = v => PT + GH - (v / maxV) * GH
+
+  // ③ 5兆刻みでY軸目盛りを生成（売買代金は大きい値）
+  const CHO5 = 5e12  // 5兆
+  const tvStep = maxV < 5e11 ? 5e10 : maxV < 5e12 ? 5e11 : CHO5
+  const nTvTicks = Math.ceil(maxV / tvStep)
+  const tvAxisMax = nTvTicks * tvStep
+  const yTicks = Array.from({ length: nTvTicks + 1 }, (_, i) => i * tvStep)
+  const yS = v => PT + GH - (v / tvAxisMax) * GH
 
   const fmtL = v => {
     if (!v) return '0'
-    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(1)+'兆'
-    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(1)+'億'
-    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(1)+'万'
+    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(v%1e12===0?0:1)+'兆'
+    if (Math.abs(v) >= 1e8) return (v/1e8).toFixed(v%1e8===0?0:1)+'億'
+    if (Math.abs(v) >= 1e4) return (v/1e4).toFixed(0)+'万'
     return v.toLocaleString()
   }
-  const yTicks = [0,0.25,0.5,0.75,1].map(r => maxV*r)
   const shortMonth = m => { const p=m.split('/'); return p.length>=2?p[0].slice(2)+'/'+p[1]:m }
 
   return (
@@ -1251,27 +1348,40 @@ export default function ThemeList({ onNavigate }) {
             <SectionHead title="💴 全テーマ 売買代金ランキング" />
             <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
 
-            {/* 📅 月次テーマ別騰落率（折れ線グラフ） - ①PC版クリック拡大 */}
-            <SectionHead title="📅 月次テーマ別騰落率推移" />
-            <ExpandableChart title="月次テーマ別騰落率推移">
-              <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
-            </ExpandableChart>
-
-            {/* ③ 月次テーマ別出来高推移 */}
+            {/* 📅 月次グラフ ＋ ヒートマップ: PC版2×2グリッド */}
             {Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
               const allThemeNames = Object.keys(volTrendData).map(k => k.replace('vol_trend_', ''))
               return (
-                <>
-                  <SectionHead title="📊 月次テーマ別出来高推移" />
-                  <ExpandableChart title="月次テーマ別出来高推移">
-                    <MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
-                  </ExpandableChart>
-
-                  <SectionHead title="💴 月次テーマ別売買代金推移" />
-                  <ExpandableChart title="月次テーマ別売買代金推移">
-                    <MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
-                  </ExpandableChart>
-                </>
+                <div className="monthly-chart-grid">
+                  {/* 月次騰落率 */}
+                  <div className="monthly-chart-cell">
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>📅 月次テーマ別騰落率推移</div>
+                    <ExpandableChart title="月次テーマ別騰落率推移">
+                      <MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate} />
+                    </ExpandableChart>
+                  </div>
+                  {/* 月次出来高 */}
+                  <div className="monthly-chart-cell">
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>📊 月次テーマ別出来高推移</div>
+                    <ExpandableChart title="月次テーマ別出来高推移">
+                      <MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                    </ExpandableChart>
+                  </div>
+                  {/* 月次売買代金 */}
+                  <div className="monthly-chart-cell">
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>💴 月次テーマ別売買代金推移</div>
+                    <ExpandableChart title="月次テーマ別売買代金推移">
+                      <MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months} />
+                    </ExpandableChart>
+                  </div>
+                  {/* テーマヒートマップ（BubbleScatter） */}
+                  <div className="monthly-chart-cell">
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>🔥 テーマヒートマップ</div>
+                    <ExpandableChart title="テーマヒートマップ（資金フロー）" showZoneDesc>
+                      <BubbleScatterMini onNavigate={onNavigate} />
+                    </ExpandableChart>
+                  </div>
+                </div>
               )
             })()}
 
@@ -1280,38 +1390,59 @@ export default function ThemeList({ onNavigate }) {
       </div>
 
       <style>{`
-        /* ① ExpandableChart: PC=縮小+拡大ボタン / スマホ=通常 */
-        .expandable-chart-wrap {}
+        /* ② 月次グラフ2×2グリッド */
+        .monthly-chart-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 16px;
+          margin-top: 8px;
+        }
+        @media (min-width: 900px) {
+          .monthly-chart-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        .monthly-chart-cell {
+          background: var(--bg2);
+          border: 1px solid var(--border);
+          border-radius: 10px;
+          padding: 14px;
+        }
+        /* ExpandableChart: PC=縮小+ボタン下部 / スマホ=通常 */
         .expandable-chart-preview {
           display: none;
           position: relative;
-          cursor: pointer;
-          border-radius: 10px;
+          border-radius: 8px;
           overflow: hidden;
-          max-height: 220px;
+          max-height: 200px;
         }
         .expandable-chart-preview > div {
-          transform: scale(0.55);
+          transform: scale(0.52);
           transform-origin: top left;
-          width: 182%;
+          width: 192%;
           pointer-events: none;
         }
-        .expandable-chart-overlay {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: rgba(0,0,0,0.18);
-          transition: background 0.2s;
+        .expandable-chart-btn {
+          display: none;
+          width: 100%;
+          margin-top: 6px;
+          padding: 6px 0;
+          border-radius: 6px;
+          border: 1px solid var(--border);
+          background: rgba(74,158,255,0.06);
+          color: var(--accent);
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+          font-family: var(--font);
+          transition: background 0.15s;
         }
-        .expandable-chart-preview:hover .expandable-chart-overlay {
-          background: rgba(0,0,0,0.35);
-        }
+        .expandable-chart-btn:hover { background: rgba(74,158,255,0.14); }
         .expandable-chart-mobile { display: block; }
         @media (min-width: 769px) {
           .expandable-chart-preview { display: block; }
-          .expandable-chart-mobile  { display: none; }
+          .expandable-chart-btn    { display: block; }
+          .expandable-chart-mobile { display: none; }
         }
         .responsive-grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
         @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }

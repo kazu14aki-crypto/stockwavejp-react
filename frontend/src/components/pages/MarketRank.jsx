@@ -1,6 +1,124 @@
 import { useState, useEffect } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
+import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
+
+// 出来高・売買代金 棒グラフ（MarketRank用）
+function MrVolTvChart({ stocks }) {
+  const [mode, setMode] = useState('tv') // 'tv' | 'vol'
+  const [expanded, setExpanded] = useState(false)
+  if (!stocks || stocks.length === 0) return null
+  const sorted = [...stocks].sort((a,b) => (b[mode==='tv'?'trade_value':'volume']||0)-(a[mode==='tv'?'trade_value':'volume']||0)).slice(0,15)
+  const maxV = Math.max(...sorted.map(s => s[mode==='tv'?'trade_value':'volume']||0), 1)
+  const fmtL = v => {
+    if (!v) return '0'
+    if (v >= 1e12) return (v/1e12).toFixed(1)+'兆'
+    if (v >= 1e8) return (v/1e8).toFixed(1)+'億'
+    if (v >= 1e4) return (v/1e4).toFixed(1)+'万'
+    return v.toLocaleString()
+  }
+  const chart = (
+    <div>
+      <div style={{ display:'flex', gap:'8px', marginBottom:'10px' }}>
+        {[{v:'tv',l:'売買代金'},{v:'vol',l:'出来高'}].map(m=>(
+          <button key={m.v} onClick={()=>setMode(m.v)} style={{
+            padding:'4px 12px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+            cursor:'pointer', fontFamily:'var(--font)',
+            background: mode===m.v?'rgba(74,158,255,0.15)':'transparent',
+            border: mode===m.v?'1px solid rgba(74,158,255,0.4)':'1px solid var(--border)',
+            color: mode===m.v?'var(--accent)':'var(--text3)',
+          }}>{m.l}</button>
+        ))}
+      </div>
+      <div style={{ display:'flex', flexDirection:'column', gap:'4px' }}>
+        {sorted.map(s => {
+          const v = s[mode==='tv'?'trade_value':'volume']||0
+          const w = v/maxV*100
+          const pc = s.pct>=0?'var(--red)':'var(--green)'
+          return (
+            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'110px 1fr 70px 56px', gap:'6px', alignItems:'center' }}>
+              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
+              <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+                <div style={{ height:'100%', width:`${w}%`, background:mode==='tv'?'#ff8c42':'#378ADD', borderRadius:'3px', opacity:0.85 }}/>
+              </div>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', color:'var(--text2)', textAlign:'right', whiteSpace:'nowrap' }}>{fmtL(v)}</span>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:pc, textAlign:'right', whiteSpace:'nowrap' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+  return (
+    <div>
+      {chart}
+      <button onClick={()=>setExpanded(true)} style={{
+        display:'block', width:'100%', marginTop:'8px', padding:'5px 0',
+        borderRadius:'6px', border:'1px solid var(--border)',
+        background:'rgba(74,158,255,0.06)', color:'var(--accent)',
+        fontSize:'11px', fontWeight:600, cursor:'pointer', fontFamily:'var(--font)',
+      }}>🔍 クリックで拡大</button>
+      {expanded && (
+        <div onClick={()=>setExpanded(false)} style={{
+          position:'fixed', inset:0, background:'rgba(0,0,0,0.75)', zIndex:2000,
+          display:'flex', alignItems:'center', justifyContent:'center', padding:'20px', backdropFilter:'blur(4px)',
+        }}>
+          <div onClick={e=>e.stopPropagation()} style={{
+            background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
+            padding:'20px', width:'min(92vw,900px)', maxHeight:'90vh', overflowY:'auto',
+          }}>
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
+              <span style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金ランキング（拡大）</span>
+              <button onClick={()=>setExpanded(false)} style={{
+                background:'rgba(255,255,255,0.08)', border:'1px solid var(--border)',
+                borderRadius:'6px', color:'var(--text2)', cursor:'pointer', fontSize:'13px', padding:'4px 12px', fontFamily:'var(--font)',
+              }}>✕ 閉じる</button>
+            </div>
+            {chart}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+// 銘柄別ヒートマップ（MarketRank用・拡大機能付き）
+function MrBubbleChart({ stocks }) {
+  const [expanded, setExpanded] = useState(false)
+  if (!stocks || !stocks.length) return null
+  const chart = <StockBubbleChart stocks={stocks} themeName="" onNavigate={null} />
+  return (
+    <div>
+      {chart}
+      <button onClick={()=>setExpanded(true)} style={{
+        display:'block', width:'100%', marginTop:'8px', padding:'5px 0',
+        borderRadius:'6px', border:'1px solid var(--border)',
+        background:'rgba(74,158,255,0.06)', color:'var(--accent)',
+        fontSize:'11px', fontWeight:600, cursor:'pointer', fontFamily:'var(--font)',
+      }}>🔍 クリックで拡大</button>
+      {expanded && (
+        <div onClick={()=>setExpanded(false)} style={{
+          position:'fixed', inset:0, background:'rgba(0,0,0,0.75)', zIndex:2000,
+          display:'flex', alignItems:'center', justifyContent:'center', padding:'20px', backdropFilter:'blur(4px)',
+        }}>
+          <div onClick={e=>e.stopPropagation()} style={{
+            background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
+            padding:'20px', width:'min(92vw,1000px)', maxHeight:'90vh', overflowY:'auto',
+          }}>
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
+              <span style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>銘柄別ヒートマップ（拡大）</span>
+              <button onClick={()=>setExpanded(false)} style={{
+                background:'rgba(255,255,255,0.08)', border:'1px solid var(--border)',
+                borderRadius:'6px', color:'var(--text2)', cursor:'pointer', fontSize:'13px', padding:'4px 12px', fontFamily:'var(--font)',
+              }}>✕ 閉じる</button>
+            </div>
+            {chart}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 const PERIODS = [
   {label:'1日',value:'1d'},{ label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
@@ -312,13 +430,42 @@ export default function MarketRank() {
                 <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
                   <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                 </div>
+
+                {/* ④ 出来高・売買代金グラフ＋銘柄別ヒートマップ（2カラム） */}
+                <div className="mr-bottom-grid" style={{ marginTop:'28px' }}>
+                  <div>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                      📊 出来高・売買代金ランキング（上位15銘柄）
+                    </div>
+                    <MrVolTvChart stocks={stocks} />
+                  </div>
+                  <div>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                      🔥 銘柄別ヒートマップ
+                    </div>
+                    <MrBubbleChart stocks={stocks} />
+                  </div>
+                </div>
               </div>
             ) : null}
           </div>
         )}
       </div>
 
-      <style>{`@media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}`}</style>
+      <style>{`
+        @media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}
+        .mr-bottom-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        @media (min-width: 900px) {
+          .mr-bottom-grid {
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+          }
+        }
+      `}</style>
     </div>
   )
 }

@@ -70,7 +70,7 @@ def extract_stock_highlights(mj: dict, summary: dict) -> dict:
 
 def generate_report_with_claude(summary: dict, stocks: dict, date_str: str) -> str:
     """Claude APIで週次レポート本文を生成"""
-    api_key = os.environ.get('ANTHROPIC_API_KEY')
+    api_key = os.environ.get('ANTHROPIC_API_KEY', '').strip()
     if not api_key:
         raise EnvironmentError(
             "ANTHROPIC_API_KEY が設定されていません。\n"
@@ -136,7 +136,7 @@ def generate_report_with_claude(summary: dict, stocks: dict, date_str: str) -> s
 レポートをMarkdown形式で作成してください。"""
 
     message = client.messages.create(
-        model="claude-opus-4-5",
+        model="claude-sonnet-4-6",
         max_tokens=8192,
         messages=[{"role": "user", "content": prompt}]
     )

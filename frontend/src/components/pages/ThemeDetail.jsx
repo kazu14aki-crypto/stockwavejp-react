@@ -2,6 +2,45 @@ import { useState, useEffect } from 'react'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
 
+// テーマ別詳細用：グラフ下部にクリックで拡大ボタン付きラッパー
+function TdExpandable({ title, children, style }) {
+  const [expanded, setExpanded] = useState(false)
+  return (
+    <div style={style}>
+      <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
+      {children}
+      <button onClick={() => setExpanded(true)} style={{
+        display:'block', width:'100%', marginTop:'6px', padding:'5px 0',
+        borderRadius:'6px', border:'1px solid var(--border)',
+        background:'rgba(74,158,255,0.06)', color:'var(--accent)',
+        fontSize:'11px', fontWeight:600, cursor:'pointer', fontFamily:'var(--font)',
+      }}>🔍 クリックで拡大</button>
+      {expanded && (
+        <div onClick={() => setExpanded(false)} style={{
+          position:'fixed', inset:0, background:'rgba(0,0,0,0.75)', zIndex:2000,
+          display:'flex', alignItems:'center', justifyContent:'center',
+          padding:'20px', backdropFilter:'blur(4px)',
+        }}>
+          <div onClick={e => e.stopPropagation()} style={{
+            background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
+            padding:'20px', width:'min(92vw, 1100px)', maxHeight:'90vh', overflowY:'auto',
+          }}>
+            <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
+              <span style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>{title}</span>
+              <button onClick={() => setExpanded(false)} style={{
+                background:'rgba(255,255,255,0.08)', border:'1px solid var(--border)',
+                borderRadius:'6px', color:'var(--text2)', cursor:'pointer', fontSize:'13px',
+                padding:'4px 12px', fontFamily:'var(--font)',
+              }}>✕ 閉じる</button>
+            </div>
+            {children}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
   {label:'1日',value:'1d'},{ label:'1週間',value:'5d'},{label:'1ヶ月',value:'1mo'},
@@ -795,263 +834,244 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
       <div className="theme-detail-body" style={{ padding:'20px 32px 80px' }}>
         {loading ? <Loading /> : detail ? (
           <>
-            {/* ── サマリーヘッダー（PC: 従来1行 / スマホ: 2行） ── */}
-            <div className="theme-summary-card" style={{ background:'var(--bg2)', border:'1px solid var(--border)',
-              borderRadius:'10px', padding:'12px 16px', marginBottom:'16px' }}>
-              {/* PC版: 1行横並び（従来デザイン） */}
-              <div className="theme-summary-pc" style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}>
-                <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
-                <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
-                  color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                  平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
-                </span>
-                {momentum && (
-                  <>
-                    <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
-                    <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
-                    <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
-                      color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                      {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
-                    </span>
-                    <span style={{ fontSize:'12px', fontWeight:600, padding:'2px 10px', borderRadius:'20px',
-                      color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
-                      background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
-                      border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
-                      {momentum.state}
-                    </span>
-                  </>
-                )}
-                <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
-                  {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
-                </span>
-                {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
-                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                    style={{ padding:'6px 14px', background:'rgba(74,158,255,0.08)',
-                      border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
-                      color:'var(--accent)', cursor:'pointer', fontSize:'11px',
-                      fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap',
-                      transition:'all 0.15s', flexShrink:0 }}
-                    onMouseEnter={e => e.currentTarget.style.background='rgba(74,158,255,0.18)'}
-                    onMouseLeave={e => e.currentTarget.style.background='rgba(74,158,255,0.08)'}
-                  >
-                    📖 解説記事を読む
-                  </button>
-                )}
-              </div>
-              {/* スマホ版: 2行レイアウト */}
-              <div className="theme-summary-mobile">
-                <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'6px' }}>
-                  {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
-                    <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                      style={{ padding:'4px 10px', flexShrink:0,
-                        background:'rgba(74,158,255,0.08)',
-                        border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
-                        color:'var(--accent)', cursor:'pointer', fontSize:'11px',
-                        fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}>
-                      📖 解説記事
-                    </button>
-                  )}
-                  <span style={{ fontSize:'15px', fontWeight:700, color:'var(--text)',
-                    flex:1, minWidth:0, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
-                    {selTheme}
-                  </span>
-                  <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
-                    color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                    {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
-                  </span>
-                </div>
-                <div style={{ display:'flex', alignItems:'center', gap:'6px', flexWrap:'wrap' }}>
-                  {momentum && (
-                    <>
-                      <span style={{ fontSize:'10px', color:'var(--text3)' }}>先月比</span>
-                      <span style={{ fontSize:'11px', fontFamily:'var(--mono)', fontWeight:600,
-                        color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                        {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
-                      </span>
-                      <span style={{ fontSize:'10px', fontWeight:600, padding:'2px 7px', borderRadius:'20px',
-                        color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
-                        background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
-                        border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
-                        {momentum.state}
-                      </span>
-                      <span style={{ width:'1px', height:'10px', background:'var(--border)' }} />
-                    </>
-                  )}
-                  <span style={{ fontSize:'10px', color:'var(--text3)' }}>
-                    {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
-                  </span>
-                </div>
-              </div>
-            </div>
+            {/* ── PC版2カラムレイアウト ── */}
+            <div className="td-layout">
 
-            {/* ── ④ ヒートマップ（TOP5の上・デバイス問わず横並び） ── */}
-            {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ marginBottom:'20px' }}>
-                <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
-                  📅 {selTheme}のヒートマップ（期間別騰落率）
+              {/* 左カラム: サマリー・ヒートマップカード・TOP5・ピックアップ・銘柄表 */}
+              <div className="td-left">
+                {/* サマリーカード */}
+                <div className="theme-summary-card" style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+                  borderRadius:'10px', padding:'12px 16px', marginBottom:'16px' }}>
+                  <div className="theme-summary-pc" style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}>
+                    <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
+                    <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
+                      color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                      平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                    </span>
+                    {momentum && (
+                      <>
+                        <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
+                        <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
+                        <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
+                          color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                          {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
+                        </span>
+                        <span style={{ fontSize:'12px', fontWeight:600, padding:'2px 10px', borderRadius:'20px',
+                          color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
+                          background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
+                          border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
+                          {momentum.state}
+                        </span>
+                      </>
+                    )}
+                    <span style={{ fontSize:'11px', color:'var(--text3)', marginLeft:'auto' }}>
+                      {stocks.length}銘柄構成 ／ {PERIODS.find(p => p.value === period)?.label}
+                    </span>
+                    {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                      <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                        style={{ padding:'6px 14px', background:'rgba(74,158,255,0.08)',
+                          border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
+                          color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                          fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}>
+                        📖 解説記事を読む
+                      </button>
+                    )}
+                  </div>
+                  <div className="theme-summary-mobile">
+                    <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'6px' }}>
+                      {THEME_ARTICLE_MAP[selTheme] && onNavigate && (
+                        <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                          style={{ padding:'4px 10px', flexShrink:0, background:'rgba(74,158,255,0.08)',
+                            border:'1px solid rgba(74,158,255,0.3)', borderRadius:'5px',
+                            color:'var(--accent)', cursor:'pointer', fontSize:'11px',
+                            fontFamily:'var(--font)', fontWeight:600, whiteSpace:'nowrap' }}>
+                          📖 解説記事
+                        </button>
+                      )}
+                      <span style={{ fontSize:'15px', fontWeight:700, color:'var(--text)',
+                        flex:1, minWidth:0, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>
+                        {selTheme}
+                      </span>
+                      <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700, flexShrink:0,
+                        color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                        {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                      </span>
+                    </div>
+                    <div style={{ display:'flex', alignItems:'center', gap:'6px', flexWrap:'wrap' }}>
+                      {momentum && (
+                        <>
+                          <span style={{ fontSize:'10px', color:'var(--text3)' }}>先月比</span>
+                          <span style={{ fontSize:'11px', fontFamily:'var(--mono)', fontWeight:600,
+                            color: momentum.month_diff >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                            {momentum.month_diff >= 0 ? '+' : ''}{momentum.month_diff?.toFixed(1)}pt
+                          </span>
+                          <span style={{ fontSize:'10px', fontWeight:600, padding:'2px 7px', borderRadius:'20px',
+                            color: STATE_COLORS[momentum.state] ?? 'var(--text2)',
+                            background: (STATE_COLORS[momentum.state] ?? '#4a6080') + '18',
+                            border: '1px solid ' + (STATE_COLORS[momentum.state] ?? 'var(--border)') + '40' }}>
+                            {momentum.state}
+                          </span>
+                        </>
+                      )}
+                      <span style={{ fontSize:'10px', color:'var(--text3)' }}>
+                        {stocks.length}銘柄 ／ {PERIODS.find(p => p.value === period)?.label}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                {/* 期間別数値カード: 常に横並び（flex wrap） */}
-                <div style={{ display:'flex', gap:'6px', flexWrap:'nowrap', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
-                  {['1W','1M','3M','6M','1Y'].map(p => {
-                    const v = themeHeatmap[p]
-                    if (v == null) return null
-                    const col = v >= 0 ? 'var(--red)' : 'var(--green)'
+
+                {/* ④ ヒートマップカード（期間別騰落率）*/}
+                {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
+                  <div style={{ marginBottom:'16px' }}>
+                    <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>
+                      📅 {selTheme}のヒートマップ（期間別騰落率）
+                    </div>
+                    <div style={{ display:'flex', gap:'6px', flexWrap:'nowrap', overflowX:'auto' }}>
+                      {['1W','1M','3M','6M','1Y'].map(p => {
+                        const v = themeHeatmap[p]; if (v == null) return null
+                        const col = v >= 0 ? 'var(--red)' : 'var(--green)'
+                        return (
+                          <div key={p} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+                            borderRadius:'8px', padding:'8px 12px', minWidth:'66px', textAlign:'center',
+                            borderTop:`3px solid ${col}`, flexShrink:0 }}>
+                            <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'2px' }}>{p}</div>
+                            <div style={{ fontSize:'14px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
+                              {v >= 0 ? '+' : ''}{v.toFixed(1)}%
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* TOP5グラフ */}
+                <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'16px' }} className="top5g">
+                  <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
+                  <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
+                </div>
+
+                {/* 注目銘柄ピックアップ */}
+                <PickupStocks stocks={stocks} period={period} />
+
+                {/* 構成銘柄テーブル */}
+                <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)',
+                  textTransform:'uppercase', marginBottom:'8px' }}>
+                  構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプ</span>
+                </div>
+                <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
+                  <StockTable stocks={stocks}/>
+                </div>
+              </div>
+
+              {/* 右カラム: 出来高グラフ・騰落率グラフ・銘柄別ヒートマップ */}
+              <div className="td-right">
+
+                {/* 出来高・売買代金グラフ + クリックで拡大 */}
+                <TdExpandable title="出来高・売買代金 推移（1年間・週次）">
+                  <div style={{ height:'220px' }}>
+                    <VolTvChart selTheme={selTheme} />
+                  </div>
+                </TdExpandable>
+
+                {/* 選択テーマ騰落率グラフ + クリックで拡大 */}
+                <TdExpandable title={`📈 ${selTheme} 騰落率推移`} style={{ marginTop:'16px' }}>
+                  {(() => {
+                    const trendData = themeTrends[selTheme]
+                    if (!trendData || !trendData.dates || trendData.dates.length === 0) {
+                      return <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
+                        background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+                        騰落率推移データがありません
+                      </div>
+                    }
+                    const { dates, values } = trendData
+                    const W2=860, H2=200, PL2=52, PR2=16, PT2=20, PB2=32
+                    const GW2=W2-PL2-PR2, GH2=H2-PT2-PB2, n2=dates.length
+                    const minV=Math.min(...values,0), maxV=Math.max(...values,0.01)
+                    const range2=maxV-minV||1
+                    const xP=(i)=>PL2+(i/Math.max(n2-1,1))*GW2
+                    const yP=(v)=>PT2+GH2-((v-minV)/range2)*GH2
+                    const pts2=values.map((v,i)=>`${xP(i).toFixed(1)},${yP(v).toFixed(1)}`).join(' ')
+                    const zero2=Math.max(PT2,Math.min(PT2+GH2,yP(0)))
+                    const xlabs=[]
+                    let lastM2=null
+                    dates.forEach((d,i)=>{ const m=d.slice(0,7); if(m!==lastM2){xlabs.push({i,label:d.slice(5,7)+'月'});lastM2=m} })
                     return (
-                      <div key={p} style={{
-                        background:'var(--bg2)', border:'1px solid var(--border)',
-                        borderRadius:'8px', padding:'8px 14px', minWidth:'72px', textAlign:'center',
-                        borderTop:`3px solid ${col}`, flexShrink:0,
-                      }}>
-                        <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'3px' }}>{p}</div>
-                        <div style={{ fontSize:'15px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
-                          {v >= 0 ? '+' : ''}{v.toFixed(1)}%
-                        </div>
+                      <div style={{ width:'100%', overflowX:'auto' }}>
+                        <svg viewBox={`0 0 ${W2} ${H2}`} width="100%" style={{ display:'block', minWidth:'280px',
+                          background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
+                          <line x1={PL2} y1={zero2} x2={PL2+GW2} y2={zero2} stroke="rgba(255,255,255,0.25)" strokeWidth="1" strokeDasharray="4,3"/>
+                          {[0.25,0.5,0.75,1].map(r=>(<line key={r} x1={PL2} y1={PT2+GH2-r*GH2} x2={PL2+GW2} y2={PT2+GH2-r*GH2} stroke="rgba(255,255,255,0.06)" strokeWidth="1"/>))}
+                          {[0,0.25,0.5,0.75,1].map(r=>{ const v=minV+r*range2; return <text key={r} x={PL2-4} y={yP(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.4)">{v>=0?'+':''}{v.toFixed(1)}%</text> })}
+                          <polyline points={`${xP(0)},${zero2} ${pts2} ${xP(n2-1)},${zero2}`} fill="rgba(74,158,255,0.12)" stroke="none"/>
+                          <polyline points={pts2} fill="none" stroke="#4a9eff" strokeWidth="1.8" strokeLinejoin="round"/>
+                          {xlabs.map(({i,label})=>(<text key={i} x={xP(i)} y={H2-4} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.35)">{label}</text>))}
+                        </svg>
                       </div>
                     )
-                  })}
-                </div>
-              </div>
-            )}
+                  })()}
+                </TdExpandable>
 
-            {/* ── TOP5グラフ（小型）── */}
-            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'20px' }} className="top5g">
-              <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
-              <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
-            </div>
-
-            {/* ── 注目銘柄ピックアップ ── */}
-            <PickupStocks stocks={stocks} period={period} />
-
-            {/* ── 構成銘柄テーブル ── */}
-            <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)',
-              textTransform:'uppercase', marginBottom:'8px' }}>
-              構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
-            </div>
-            <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden', marginBottom:'32px' }}>
-              <StockTable stocks={stocks}/>
-            </div>
-
-            {/* ── ⑦ 銘柄別ヒートマップ（構成銘柄表の直下） ── */}
-            {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginTop:'8px', marginBottom:'32px' }}>
-                {/* ⑤ 銘柄別ヒートマップ（名称変更） */}
-                <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>
-                  📊 銘柄別ヒートマップ
-                </div>
-                <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
-              </div>
-            )}
-
-            {/* ── ⑦ 選択テーマの騰落率グラフ（ヒートマップの下） ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginBottom:'32px' }}>
-              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
-                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>📈 {selTheme} 騰落率推移</div>
-                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の平均騰落率</div>
-              </div>
-              {(() => {
-                // themeTrendsが比較用のため、市場jsonからselThemeの1y trendを取得
-                const trendData = themeTrends[selTheme]
-                if (!trendData || !trendData.dates || trendData.dates.length === 0) {
-                  return <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
-                    background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
-                    騰落率推移データがありません（GitHub Actionsの次回実行後に表示されます）
-                  </div>
-                }
-                const { dates, values } = trendData
-                const W2=900, H2=220, PL2=52, PR2=20, PT2=24, PB2=36
-                const GW2=W2-PL2-PR2, GH2=H2-PT2-PB2
-                const n2=dates.length
-                const minV=Math.min(...values,0), maxV=Math.max(...values,0.01)
-                const range2=maxV-minV||1
-                const xP=(i)=>PL2+(i/Math.max(n2-1,1))*GW2
-                const yP=(v)=>PT2+GH2-((v-minV)/range2)*GH2
-                const pts2=values.map((v,i)=>`${xP(i).toFixed(1)},${yP(v).toFixed(1)}`).join(' ')
-                const zero2=Math.max(PT2,Math.min(PT2+GH2,yP(0)))
-                // x軸ラベル（月初）
-                const xlabs=[]
-                let lastM2=null
-                dates.forEach((d,i)=>{ const m=d.slice(0,7); if(m!==lastM2){xlabs.push({i,label:d.slice(5,7)+'月'});lastM2=m} })
-                return (
-                  <div style={{ width:'100%', overflowX:'auto' }}>
-                    <svg viewBox={`0 0 ${W2} ${H2}`} width="100%" style={{ display:'block', minWidth:'320px',
-                      background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
-                      <line x1={PL2} y1={zero2} x2={PL2+GW2} y2={zero2}
-                        stroke="rgba(255,255,255,0.25)" strokeWidth="1" strokeDasharray="4,3"/>
-                      {[0.25,0.5,0.75,1].map(r=>(
-                        <line key={r} x1={PL2} y1={PT2+GH2-r*GH2} x2={PL2+GW2} y2={PT2+GH2-r*GH2}
-                          stroke="rgba(255,255,255,0.06)" strokeWidth="1"/>
-                      ))}
-                      {/* Y軸ラベル */}
-                      {[0,0.25,0.5,0.75,1].map(r=>{
-                        const v=minV+r*range2
-                        return <text key={r} x={PL2-4} y={yP(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.4)">{v>=0?'+':''}{v.toFixed(1)}%</text>
-                      })}
-                      {/* 塗りつぶし */}
-                      <polyline points={`${xP(0)},${zero2} ${pts2} ${xP(n2-1)},${zero2}`}
-                        fill="rgba(74,158,255,0.12)" stroke="none"/>
-                      <polyline points={pts2} fill="none" stroke="#4a9eff" strokeWidth="1.8" strokeLinejoin="round"/>
-                      {/* x軸ラベル */}
-                      {xlabs.map(({i,label})=>(
-                        <text key={i} x={xP(i)} y={H2-4} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.35)">{label}</text>
-                      ))}
-                    </svg>
-                  </div>
-                )
-              })()}
-            </div>
-
-            {/* ── ⑦ 出来高・売買代金グラフ（騰落率グラフの下）⑥ボタンをグラフ下に移動 ── */}
-            <div style={{ borderTop:'1px solid var(--border)', paddingTop:'24px', marginBottom:'16px' }}>
-              <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
-                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>出来高・売買代金 推移（1年間・週次）</div>
-                <div style={{ fontSize:'11px', color:'var(--text3)' }}>テーマ構成銘柄の合計値</div>
-              </div>
-              <div className="voltv-chart-wrap" style={{ height:'200px' }}>
-                <VolTvChart selTheme={selTheme} />
-              </div>
-            </div>
-
-            {/* ── ⑥ 関連ページへの遷移ボタン（グラフの真下・被りなし） ── */}
-            {onNavigate && (
-              <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginTop:'20px', marginBottom:'40px', paddingBottom:'40px' }}>
-                {THEME_ARTICLE_MAP[selTheme] && (
-                  <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
-                    style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
-                      background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)',
-                      color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
-                    📖 {selTheme}のコラム記事を読む
-                  </button>
+                {/* 銘柄別ヒートマップ（散布図） + クリックで拡大 */}
+                {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
+                  <TdExpandable title="📊 銘柄別ヒートマップ" style={{ marginTop:'16px' }}>
+                    <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
+                  </TdExpandable>
                 )}
-                <button onClick={() => onNavigate('週次レポート')}
-                  style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
-                    background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
-                    color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
-                  📰 週次レポートを確認する →
-                </button>
+
+                {/* 遷移ボタン */}
+                {onNavigate && (
+                  <div style={{ display:'flex', gap:'8px', flexWrap:'wrap', marginTop:'16px' }}>
+                    {THEME_ARTICLE_MAP[selTheme] && (
+                      <button onClick={() => onNavigate('コラム・解説', THEME_ARTICLE_MAP[selTheme])}
+                        style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                          background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)',
+                          color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                        📖 {selTheme}のコラム記事を読む
+                      </button>
+                    )}
+                    <button onClick={() => onNavigate('週次レポート')}
+                      style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
+                        background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
+                        color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
+                      📰 週次レポート →
+                    </button>
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </>
         ) : (
           <div style={{ color:'var(--text3)', fontSize:'13px' }}>テーマを選択してください</div>
         )}
       </div>
       <style>{`
-        /* PC版: PCヘッダー表示 / スマホヘッダー非表示 */
         .theme-summary-pc     { display: flex; }
         .theme-summary-mobile { display: none; }
+        /* ⑤ 2カラムレイアウト */
+        .td-layout {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .td-left  { min-width: 0; }
+        .td-right { min-width: 0; }
+        @media (min-width: 900px) {
+          .td-layout {
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+          }
+        }
         @media (max-width:640px) {
           .top5g { grid-template-columns: 1fr !important; }
           .pickup-grid { grid-template-columns: 1fr !important; }
-          .voltv-chart-wrap { height: 220px !important; }
           .theme-detail-body { padding: 10px 10px 40px !important; }
-          /* スマホ版: PCヘッダー非表示 / スマホヘッダー表示 */
           .theme-summary-pc     { display: none !important; }
           .theme-summary-mobile { display: block !important; }
         }
-        /* PC版: 情報密度を高める */
         @media (min-width:1200px) {
           .theme-detail-body { padding: 16px 40px 60px !important; }
-          .top5g { grid-template-columns: 1fr 1fr; gap: 16px; }
+          .td-layout { grid-template-columns: 1fr 1fr; gap: 28px; }
         }
       `}</style>
     </div>
