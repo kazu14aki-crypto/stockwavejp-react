@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useThemes, useCustomThemeStats, useMacro, useMomentum, useMonthlyHeatmap } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
@@ -229,7 +229,7 @@ const ZONE_DESCS = [
 ]
 
 function ExpandableChart({ title, children, showZoneDesc = false }) {
-  const [expanded, setExpanded] = React.useState(false)
+  const [expanded, setExpanded] = useState(false)
   return (
     <>
       <div className="expandable-chart-wrap">
@@ -295,8 +295,8 @@ function ExpandableChart({ title, children, showZoneDesc = false }) {
 
 // BubbleScatterのミニ版（ThemeList内埋め込み用・useMomentumを使用）
 function BubbleScatterMini({ onNavigate }) {
-  const [mPeriod, setMPeriod] = React.useState('1mo')
-  const [hovered, setHovered] = React.useState(null)
+  const [mPeriod, setMPeriod] = useState('1mo')
+  const [hovered, setHovered] = useState(null)
   const { data: momentumRaw } = useMomentum(mPeriod)
   const data = momentumRaw?.data || []
   if (!data.length) return <div style={{ textAlign:'center', padding:'40px', color:'var(--text3)', fontSize:'12px' }}>データ読み込み中...</div>
@@ -782,7 +782,7 @@ const MONTHLY_COLORS = [
 
 // 月次チャートの共通テーマ選択UI（騰落率・出来高・売買代金で共有）
 function MonthlyThemePicker({ allThemes, selected, setSelected }) {
-  const [showPicker, setShowPicker] = React.useState(false)
+  const [showPicker, setShowPicker] = useState(false)
   const toggleTheme = t =>
     setSelected(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
 
@@ -862,9 +862,9 @@ function MonthlyThemePicker({ allThemes, selected, setSelected }) {
 
 function MonthlyLineChart({ data, months, onNavigate }) {
   const allThemes = data ? Object.keys(data) : []
-  const [selected, setSelected] = React.useState(() => allThemes.slice(0, 3))
+  const [selected, setSelected] = useState(() => allThemes.slice(0, 3))
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (allThemes.length > 0 && selected.length === 0) {
       setSelected(allThemes.slice(0, 3))
     }
@@ -973,8 +973,8 @@ function MonthlyLineChart({ data, months, onNavigate }) {
 
 // 出来高月次グラフ本体
 function MonthlyVolChart({ volTrendData, allThemeNames, months }) {
-  const [selected, setSelected] = React.useState(() => (allThemeNames || []).slice(0, 3))
-  React.useEffect(() => {
+  const [selected, setSelected] = useState(() => (allThemeNames || []).slice(0, 3))
+  useEffect(() => {
     if (allThemeNames?.length > 0 && selected.length === 0) setSelected(allThemeNames.slice(0, 3))
   }, [allThemeNames?.length])
 
@@ -1081,8 +1081,8 @@ function MonthlyVolChart({ volTrendData, allThemeNames, months }) {
 
 // 売買代金月次グラフ本体
 function MonthlyTVChart({ volTrendData, allThemeNames, months }) {
-  const [selected, setSelected] = React.useState(() => (allThemeNames || []).slice(0, 3))
-  React.useEffect(() => {
+  const [selected, setSelected] = useState(() => (allThemeNames || []).slice(0, 3))
+  useEffect(() => {
     if (allThemeNames?.length > 0 && selected.length === 0) setSelected(allThemeNames.slice(0, 3))
   }, [allThemeNames?.length])
 
@@ -1187,8 +1187,8 @@ export default function ThemeList({ onNavigate }) {
   const monthlyData = monthlyRaw?.data || null
   const months = monthlyRaw?.months || []
   // ③ vol_trendデータをmarket.jsonから取得
-  const [volTrendData, setVolTrendData] = React.useState({})
-  React.useEffect(() => {
+  const [volTrendData, setVolTrendData] = useState({})
+  useEffect(() => {
     fetch('/data/market.json?t=' + Date.now())
       .then(r => r.json())
       .then(mj => {

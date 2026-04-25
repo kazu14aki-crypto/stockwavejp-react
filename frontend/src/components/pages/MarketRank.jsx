@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
 import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
@@ -215,11 +215,11 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
   if (!rawStocks||!rawStocks.length) return null
   const [sortKey, setSortKey] = useState('pct')
   const [sortAsc, setSortAsc] = useState(false)
-  const tableRef = React.useRef(null)
-  const topScrollRef = React.useRef(null)
-  const isDragging = React.useRef(false)
-  const startX = React.useRef(0)
-  const scrollLeft = React.useRef(0)
+  const tableRef = useRef(null)
+  const topScrollRef = useRef(null)
+  const isDragging = useRef(false)
+  const startX = useRef(0)
+  const scrollLeft = useRef(0)
 
   // ⑤ ソート
   const stocks = [...rawStocks].sort((a, b) => {
@@ -228,7 +228,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
   })
 
   // ② 上下スクロールバー同期
-  React.useEffect(() => {
+  useEffect(() => {
     const table = tableRef.current; const top = topScrollRef.current
     if (!table || !top) return
     const syncT = () => { top.scrollLeft = table.scrollLeft }

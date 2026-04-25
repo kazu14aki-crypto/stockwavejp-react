@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
 
@@ -475,11 +475,11 @@ function StockTable({ stocks: rawStocks }) {
   const [sortKey, setSortKey] = useState('pct')
   const [sortAsc, setSortAsc] = useState(false)
   // ② ドラッグスクロール
-  const tableRef = React.useRef(null)
-  const topScrollRef = React.useRef(null)
-  const isDragging = React.useRef(false)
-  const startX = React.useRef(0)
-  const scrollLeft = React.useRef(0)
+  const tableRef = useRef(null)
+  const topScrollRef = useRef(null)
+  const isDragging = useRef(false)
+  const startX = useRef(0)
+  const scrollLeft = useRef(0)
 
   // ⑤ ソート処理
   const stocks = [...rawStocks].sort((a, b) => {
@@ -489,7 +489,7 @@ function StockTable({ stocks: rawStocks }) {
   })
 
   // ② 上部スクロールバーと表を同期
-  React.useEffect(() => {
+  useEffect(() => {
     const table = tableRef.current
     const top = topScrollRef.current
     if (!table || !top) return

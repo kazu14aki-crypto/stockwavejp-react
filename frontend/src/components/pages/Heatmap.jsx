@@ -198,8 +198,8 @@ function AutoComment({ lines }) {
 }
 
 function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
-  const [hovered, setHovered] = React.useState(null)
-  const [tooltipPos, setTooltipPos] = React.useState({ x: 0, y: 0 })
+  const [hovered, setHovered] = useState(null)
+  const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 })
 
   if (!data || data.length === 0) {
     return (
