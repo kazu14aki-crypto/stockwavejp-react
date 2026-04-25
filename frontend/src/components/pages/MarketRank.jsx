@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
 import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
@@ -211,73 +211,124 @@ function Sparkline({ data }) {
   )
 }
 
-function StockTable({ stocks, onAddToTheme }) {
-  if (!stocks||!stocks.length) return null
+function StockTable({ stocks: rawStocks, onAddToTheme }) {
+  if (!rawStocks||!rawStocks.length) return null
+  const [sortKey, setSortKey] = useState('pct')
+  const [sortAsc, setSortAsc] = useState(false)
+  const tableRef = React.useRef(null)
+  const topScrollRef = React.useRef(null)
+  const isDragging = React.useRef(false)
+  const startX = React.useRef(0)
+  const scrollLeft = React.useRef(0)
+
+  // ⑤ ソート
+  const stocks = [...rawStocks].sort((a, b) => {
+    const va = a[sortKey] ?? 0; const vb = b[sortKey] ?? 0
+    return sortAsc ? va - vb : vb - va
+  })
+
+  // ② 上下スクロールバー同期
+  React.useEffect(() => {
+    const table = tableRef.current; const top = topScrollRef.current
+    if (!table || !top) return
+    const syncT = () => { top.scrollLeft = table.scrollLeft }
+    const syncH = () => { table.scrollLeft = top.scrollLeft }
+    table.addEventListener('scroll', syncT); top.addEventListener('scroll', syncH)
+    return () => { table.removeEventListener('scroll', syncT); top.removeEventListener('scroll', syncH) }
+  }, [])
+
+  const onMouseDown = (e) => {
+    isDragging.current = true; startX.current = e.pageX - tableRef.current.offsetLeft
+    scrollLeft.current = tableRef.current.scrollLeft; tableRef.current.style.cursor = 'grabbing'
+  }
+  const onMouseMove = (e) => {
+    if (!isDragging.current) return; e.preventDefault()
+    tableRef.current.scrollLeft = scrollLeft.current - (e.pageX - tableRef.current.offsetLeft - startX.current) * 1.2
+  }
+  const onMouseUp = () => { isDragging.current = false; if (tableRef.current) tableRef.current.style.cursor = 'grab' }
+
   const headers = ['株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const sortBtns = [{key:'pct',label:'騰落率'},{key:'volume',label:'出来高'},{key:'trade_value',label:'売買代金'}]
+
   return (
-    <div className="sticky-table">
-      <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
-        <thead>
-          <tr style={{ borderBottom:'1px solid var(--border)' }}>
-            <th style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
-            <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
-            {headers.map(h => (
-              <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {stocks.map((s,i)=>{
-            const pColor = s.pct>=0?'var(--red)':'var(--green)'
-            const cColor = s.contribution>=0?'var(--red)':'var(--green)'
-            return (
-              <tr key={s.ticker} style={{ borderBottom:'1px solid var(--border)' }}>
-                <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
-                  background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px' }}>
-                  {i+1}
-                </td>
-                <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
-                  <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-<div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
-  <span style={{ flex:1, fontSize:'13px', overflow:'hidden',
-    textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-  <span style={{ display:'inline-block', width:'64px', minWidth:'64px',
-    height:'22px', flexShrink:0, verticalAlign:'middle' }}>
-    <Sparkline data={s.spark} />
-  </span>
-</div>
-                </td>
-                <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
-                <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)',
-  color: (s.contribution ?? 0) >= 0.5 ? '#ff5370' :
-         (s.contribution ?? 0) >= 0.1 ? '#ff8c42' :
-         (s.contribution ?? 0) > -0.1 ? 'var(--text2)' : '#4a9eff' }}
-  title="寄与度: この銘柄がセグメント騰落率に貢献した割合（%）">
-  {s.contribution != null ? (s.contribution >= 0 ? '+' : '') + s.contribution.toFixed(2) + '%' : '-'}
-</td>
-                <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
-                <td style={tdC}>{s.vol_rank}位</td>
-                <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
-                <td style={tdC}>{s.tv_rank}位</td>
-                <td style={tdC}>
-                  <button
-                    onClick={() => onAddToTheme && onAddToTheme({ ticker: s.ticker, name: s.name, price: s.price })}
-                    title="カスタムテーマに追加"
-                    style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
-                      borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
-                      padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>
-                    ＋
-                  </button>
-                </td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    </div>
+    <>
+      {/* ⑤ ソートボタン */}
+      <div style={{ display:'flex', gap:'6px', alignItems:'center', marginBottom:'8px', flexWrap:'wrap' }}>
+        <span style={{ fontSize:'10px', color:'var(--text3)', fontWeight:600, whiteSpace:'nowrap' }}>並び替え:</span>
+        {sortBtns.map(b => (
+          <button key={b.key} onClick={() => { if (sortKey===b.key) setSortAsc(a=>!a); else { setSortKey(b.key); setSortAsc(false) } }}
+            style={{ padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600, cursor:'pointer', fontFamily:'var(--font)',
+              background: sortKey===b.key?'rgba(74,158,255,0.15)':'transparent',
+              border: sortKey===b.key?'1px solid rgba(74,158,255,0.4)':'1px solid var(--border)',
+              color: sortKey===b.key?'var(--accent)':'var(--text3)' }}>
+            {b.label} {sortKey===b.key?(sortAsc?'↑':'↓'):''}
+          </button>
+        ))}
+        <button onClick={()=>setSortAsc(a=>!a)} style={{ padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600,
+          cursor:'pointer', fontFamily:'var(--font)', background:'transparent', border:'1px solid var(--border)', color:'var(--text3)' }}>
+          {sortAsc?'↑ 昇順':'↓ 降順'}
+        </button>
+      </div>
+      {/* ② 上部スクロールバー */}
+      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'14px', marginBottom:'2px' }}>
+        <div style={{ width:'1400px', height:'1px' }} />
+      </div>
+      <div ref={tableRef} className="sticky-table" style={{ cursor:'grab', userSelect:'none' }}
+        onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp}>
+        <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
+          <thead>
+            <tr style={{ borderBottom:'1px solid var(--border)' }}>
+              <th style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
+              <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
+              {headers.map(h => (
+                <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {stocks.map((s,i)=>{
+              const pColor = s.pct>=0?'var(--red)':'var(--green)'
+              return (
+                <tr key={s.ticker} style={{ borderBottom:'1px solid var(--border)' }}>
+                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:'var(--text3)',
+                    background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px' }}>
+                    {i+1}
+                  </td>
+                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
+                    <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
+                    <div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
+                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
+                      <span style={{ display:'inline-block', width:'64px', minWidth:'64px', height:'22px', flexShrink:0 }}>
+                        <Sparkline data={s.spark} />
+                      </span>
+                    </div>
+                  </td>
+                  <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
+                  <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:(s.contribution??0)>=0.5?'#ff5370':(s.contribution??0)>=0.1?'#ff8c42':(s.contribution??0)>-0.1?'var(--text2)':'#4a9eff' }}
+                    title="寄与度">
+                    {s.contribution != null ? (s.contribution>=0?'+':'')+s.contribution.toFixed(2)+'%' : '-'}
+                  </td>
+                  <td style={{ ...tdR, color:s.volume_chg>=0?'var(--red)':'var(--green)', fontFamily:'var(--mono)' }}>{s.volume_chg>=0?'+':''}{s.volume_chg?.toFixed(1)}%</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.volume)}</td>
+                  <td style={tdC}>{s.vol_rank}位</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
+                  <td style={tdC}>{s.tv_rank}位</td>
+                  <td style={tdC}>
+                    <button onClick={() => onAddToTheme && onAddToTheme({ ticker:s.ticker, name:s.name, price:s.price })}
+                      title="カスタムテーマに追加"
+                      style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
+                        borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
+                        padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>＋</button>
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
   )
 }
 
@@ -424,20 +475,9 @@ export default function MarketRank() {
                   <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
-                {/* ⑥ 下部2カラム: 左=グラフ群 / 右=銘柄表 */}
+                {/* ④ 50:50 下部2カラム: 左=銘柄表 / 右=ヒートマップ→出来高グラフ */}
                 <div className="mr-bottom-grid">
-                  {/* 左: 出来高・売買代金グラフ ＋ 銘柄別ヒートマップ */}
-                  <div>
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
-                      📊 出来高・売買代金ランキング（上位15銘柄）
-                    </div>
-                    <MrVolTvChart stocks={stocks} />
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'16px 0 10px' }}>
-                      🔥 銘柄別ヒートマップ
-                    </div>
-                    <MrBubbleChart stocks={stocks} />
-                  </div>
-                  {/* 右: 銘柄詳細表 */}
+                  {/* 左: 銘柄詳細表 */}
                   <div>
                     <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
                       構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
@@ -445,6 +485,17 @@ export default function MarketRank() {
                     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
                       <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                     </div>
+                  </div>
+                  {/* 右: ヒートマップ → 出来高グラフ */}
+                  <div>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                      🔥 銘柄別ヒートマップ
+                    </div>
+                    <MrBubbleChart stocks={stocks} />
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'16px 0 10px' }}>
+                      📊 出来高・売買代金ランキング（上位15銘柄）
+                    </div>
+                    <MrVolTvChart stocks={stocks} />
                   </div>
                 </div>
               </div>

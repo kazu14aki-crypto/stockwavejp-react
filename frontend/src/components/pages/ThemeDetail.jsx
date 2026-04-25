@@ -468,14 +468,111 @@ function PickupStocks({ stocks, period }) {
 
 
 // ── 銘柄テーブル ──
-function StockTable({ stocks }) {
-  if (!stocks || !stocks.length) return null
+function StockTable({ stocks: rawStocks }) {
+  if (!rawStocks || !rawStocks.length) return null
   const [modalStock, setModalStock] = useState(null)
+  // ⑤ ソート状態
+  const [sortKey, setSortKey] = useState('pct')
+  const [sortAsc, setSortAsc] = useState(false)
+  // ② ドラッグスクロール
+  const tableRef = React.useRef(null)
+  const topScrollRef = React.useRef(null)
+  const isDragging = React.useRef(false)
+  const startX = React.useRef(0)
+  const scrollLeft = React.useRef(0)
+
+  // ⑤ ソート処理
+  const stocks = [...rawStocks].sort((a, b) => {
+    const va = a[sortKey] ?? 0
+    const vb = b[sortKey] ?? 0
+    return sortAsc ? va - vb : vb - va
+  })
+
+  // ② 上部スクロールバーと表を同期
+  React.useEffect(() => {
+    const table = tableRef.current
+    const top = topScrollRef.current
+    if (!table || !top) return
+    const syncFromTable = () => { top.scrollLeft = table.scrollLeft }
+    const syncFromTop = () => { table.scrollLeft = top.scrollLeft }
+    table.addEventListener('scroll', syncFromTable)
+    top.addEventListener('scroll', syncFromTop)
+    return () => {
+      table.removeEventListener('scroll', syncFromTable)
+      top.removeEventListener('scroll', syncFromTop)
+    }
+  }, [])
+
+  // ② ドラッグハンドラ
+  const onMouseDown = (e) => {
+    isDragging.current = true
+    startX.current = e.pageX - tableRef.current.offsetLeft
+    scrollLeft.current = tableRef.current.scrollLeft
+    tableRef.current.style.cursor = 'grabbing'
+  }
+  const onMouseMove = (e) => {
+    if (!isDragging.current) return
+    e.preventDefault()
+    const x = e.pageX - tableRef.current.offsetLeft
+    const walk = (x - startX.current) * 1.2
+    tableRef.current.scrollLeft = scrollLeft.current - walk
+  }
+  const onMouseUp = () => {
+    isDragging.current = false
+    if (tableRef.current) tableRef.current.style.cursor = 'grab'
+  }
+
   const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+
+  // ⑤ ソートボタン定義
+  const sortBtns = [
+    { key:'pct', label:'騰落率' },
+    { key:'volume', label:'出来高' },
+    { key:'trade_value', label:'売買代金' },
+  ]
+
   return (
     <>
       {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
-      <div className="sticky-table">
+
+      {/* ⑤ ソートボタン */}
+      <div style={{ display:'flex', gap:'6px', alignItems:'center', marginBottom:'8px', flexWrap:'wrap' }}>
+        <span style={{ fontSize:'10px', color:'var(--text3)', fontWeight:600, whiteSpace:'nowrap' }}>並び替え:</span>
+        {sortBtns.map(b => (
+          <button key={b.key} onClick={() => {
+            if (sortKey === b.key) setSortAsc(a => !a)
+            else { setSortKey(b.key); setSortAsc(false) }
+          }} style={{
+            padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600,
+            cursor:'pointer', fontFamily:'var(--font)',
+            background: sortKey === b.key ? 'rgba(74,158,255,0.15)' : 'transparent',
+            border: sortKey === b.key ? '1px solid rgba(74,158,255,0.4)' : '1px solid var(--border)',
+            color: sortKey === b.key ? 'var(--accent)' : 'var(--text3)',
+          }}>
+            {b.label} {sortKey === b.key ? (sortAsc ? '↑' : '↓') : ''}
+          </button>
+        ))}
+        <button onClick={() => setSortAsc(a => !a)} style={{
+          padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600,
+          cursor:'pointer', fontFamily:'var(--font)',
+          background:'transparent', border:'1px solid var(--border)', color:'var(--text3)',
+        }}>
+          {sortAsc ? '↑ 昇順' : '↓ 降順'}
+        </button>
+      </div>
+
+      {/* ② 上部スクロールバー */}
+      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'14px', marginBottom:'2px' }}>
+        <div style={{ width:'1400px', height:'1px' }} />
+      </div>
+
+      {/* ② ドラッグ可能な銘柄表 */}
+      <div ref={tableRef} className="sticky-table"
+        style={{ cursor:'grab', userSelect:'none' }}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseUp}>
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
@@ -491,7 +588,6 @@ function StockTable({ stocks }) {
           <tbody>
             {stocks.map((s, i) => {
               const pColor = s.pct >= 0 ? 'var(--red)' : 'var(--green)'
-              const cColor = s.contribution >= 0 ? 'var(--red)' : 'var(--green)'
               return (
                 <tr key={s.ticker} style={{
                   borderBottom:'1px solid rgba(255,255,255,0.04)',
@@ -535,8 +631,7 @@ function StockTable({ stocks }) {
                       title="カスタムテーマに追加"
                       style={{ background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.25)',
                         borderRadius:'4px', color:'var(--accent)', cursor:'pointer', fontSize:'13px',
-                        padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1,
-                        transition:'all 0.12s' }}>＋</button>
+                        padding:'3px 7px', fontFamily:'var(--font)', lineHeight:1 }}>＋</button>
                   </td>
                 </tr>
               )
@@ -916,28 +1011,6 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
               </div>
             </div>
 
-            {/* ヒートマップカード（期間別騰落率） - 全幅 */}
-            {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-              <div style={{ marginBottom:'12px' }}>
-                <div style={{ display:'flex', gap:'6px', flexWrap:'nowrap', overflowX:'auto' }}>
-                  {['1W','1M','3M','6M','1Y'].map(p => {
-                    const v = themeHeatmap[p]; if (v == null) return null
-                    const col = v >= 0 ? 'var(--red)' : 'var(--green)'
-                    return (
-                      <div key={p} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
-                        borderRadius:'8px', padding:'8px 14px', minWidth:'72px', textAlign:'center',
-                        borderTop:`3px solid ${col}`, flexShrink:0 }}>
-                        <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'2px' }}>{p}</div>
-                        <div style={{ fontSize:'15px', fontWeight:700, fontFamily:'var(--mono)', color:col }}>
-                          {v >= 0 ? '+' : ''}{v.toFixed(1)}%
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
-
             {/* TOP5グラフ - 全幅 */}
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'12px' }} className="top5g">
               <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
@@ -1025,19 +1098,19 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                   )}
                 </TdExpandable>
 
-                {/* 出来高・売買代金グラフ */}
+                {/* ③ 銘柄別ヒートマップ（散布図）を先に */}
+                {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
+                  <TdExpandable title="🔥 銘柄別ヒートマップ">
+                    <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
+                  </TdExpandable>
+                )}
+
+                {/* 出来高・売買代金グラフ（ヒートマップの下） */}
                 <TdExpandable title="📊 出来高・売買代金 推移（週次）" style={{ marginTop:'14px' }}>
                   <div style={{ height:'200px' }}>
                     <VolTvChart selTheme={selTheme} />
                   </div>
                 </TdExpandable>
-
-                {/* 銘柄別ヒートマップ（散布図） */}
-                {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
-                  <TdExpandable title="🔥 銘柄別ヒートマップ" style={{ marginTop:'14px' }}>
-                    <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
-                  </TdExpandable>
-                )}
 
                 {/* 遷移ボタン */}
                 {onNavigate && (

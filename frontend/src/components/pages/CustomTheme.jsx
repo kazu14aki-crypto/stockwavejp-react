@@ -371,6 +371,7 @@ export default function CustomTheme() {
   }
   const addStock = (s) => {
     if (stocks.find(x => x.ticker === s.ticker)) { setSearchErr('すでに追加済みです'); return }
+    if (stocks.length >= 10) { setSearchErr('1テーマあたりの銘柄上限は10個です'); return }
     setStocks(p => [...p, s]); setResults([]); setQuery(''); setSearchErr(''); setExpanded(null)
   }
   const removeStock = (ticker) => setStocks(p => p.filter(s => s.ticker !== ticker))
@@ -607,7 +608,7 @@ export default function CustomTheme() {
 
       {stocks.length > 0 && (
         <div style={{ marginBottom:'24px' }}>
-          <label style={lbl}>追加済み銘柄（{stocks.length}銘柄）</label>
+          <label style={lbl}>追加済み銘柄（{stocks.length}/10銘柄　※最大10銘柄まで）</label>
           <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
             {stocks.map((s, i) => (
               <div key={s.ticker} style={{ display:'flex', alignItems:'center', gap:'10px',

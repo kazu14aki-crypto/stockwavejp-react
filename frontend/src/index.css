@@ -212,3 +212,44 @@ body {
   .responsive-grid-3 { grid-template-columns:1fr 1fr !important; }
   .responsive-grid-2 { grid-template-columns:1fr !important; }
 }
+
+/* ⑦ スマホ版サイズ最適化 ─────────────────────────── */
+@media (max-width: 640px) {
+  /* 全体パディング縮小 */
+  .page-content-wide,
+  .page-content-narrow { padding: 0 !important; }
+
+  /* 月次グラフグリッド: スマホは1列 */
+  .monthly-chart-grid { grid-template-columns: 1fr !important; }
+  .monthly-chart-cell { padding: 10px !important; }
+
+  /* 拡大グラフ: スマホは通常表示のみ */
+  .expandable-chart-preview { display: none !important; }
+  .expandable-chart-btn     { display: none !important; }
+  .expandable-chart-mobile  { display: block !important; }
+
+  /* 市場別詳細グリッドもスマホは1列 */
+  .mr-bottom-grid { grid-template-columns: 1fr !important; }
+
+  /* テーマ別詳細の2カラムもスマホは1列 */
+  .td-bottom-grid { grid-template-columns: 1fr !important; }
+
+  /* sticky-tableのフォントサイズ縮小 */
+  .sticky-table table { font-size: 11px !important; }
+  .sticky-table th, .sticky-table td { padding: 5px 6px !important; }
+
+  /* SVGグラフをはみ出させない */
+  svg { max-width: 100%; }
+
+  /* minWidth制限を解除（SVGはviewBoxで対応） */
+  .monthly-chart-cell svg { min-width: 0 !important; }
+}
+
+@media (max-width: 480px) {
+  /* さらに小さな画面向け */
+  .theme-card-grid { grid-template-columns: 1fr 1fr !important; gap: 6px !important; }
+  .top5g           { grid-template-columns: 1fr !important; }
+  .pickup-grid     { grid-template-columns: 1fr !important; }
+  .mr-bottom-grid  { gap: 12px !important; }
+  .td-bottom-grid  { gap: 12px !important; }
+}

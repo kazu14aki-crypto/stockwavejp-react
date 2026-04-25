@@ -906,7 +906,7 @@ function MonthlyLineChart({ data, months, onNavigate }) {
       {selected.length > 0 ? (
         <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
           <svg viewBox={'0 0 ' + W + ' ' + H}
-            style={{ width:'100%', minWidth:'480px', display:'block',
+            style={{ width:'100%', minWidth:'0', display:'block',
               background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
             {yTicks.includes(0) && (
               <line x1={PL} y1={yS(0)} x2={PL+GW} y2={yS(0)}
@@ -1024,7 +1024,7 @@ function MonthlyVolChart({ volTrendData, allThemeNames, months }) {
       <MonthlyThemePicker allThemes={allThemeNames} selected={selected} setSelected={setSelected} />
       {selected.length > 0 ? (
         <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
-          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'480px', display:'block',
+          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'0', display:'block',
             background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
             {/* グリッド */}
             {[0.25,0.5,0.75,1].map(r => (
@@ -1131,7 +1131,7 @@ function MonthlyTVChart({ volTrendData, allThemeNames, months }) {
       <MonthlyThemePicker allThemes={allThemeNames} selected={selected} setSelected={setSelected} />
       {selected.length > 0 ? (
         <div style={{ width:'100%', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
-          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'480px', display:'block',
+          <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'0', display:'block',
             background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
             {[0.25,0.5,0.75,1].map(r => (
               <line key={r} x1={PL} y1={yS(maxV*r)} x2={PL+GW} y2={yS(maxV*r)}
