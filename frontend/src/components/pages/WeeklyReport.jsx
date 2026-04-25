@@ -14,29 +14,77 @@ function Loading() {
 
 function RenderMd({ text, onNavigate }) {
   if (!text) return null
-  return (
-    <div>
-      {text.split('\n').map((line, i) => {
-        if (line.startsWith('# '))  return <h1 key={i} style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>{line.slice(2)}</h1>
-        if (line.startsWith('## ')) return <h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'18px 0 8px' }}>{line.slice(3)}</h2>
-        if (line.startsWith('### ')) return <h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text2)', margin:'14px 0 6px' }}>{line.slice(4)}</h3>
-        if (line.startsWith('- ') || line.startsWith('・')) return (
-          <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'4px', paddingLeft:'8px' }}>
-            <span style={{ color:'var(--accent)', flexShrink:0 }}>▸</span>
-            <span style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.7 }}>{line.slice(2)}</span>
-          </div>
-        )
-        if (line.startsWith('**') && line.endsWith('**')) return (
-          <div key={i} style={{ fontWeight:700, color:'var(--text)', fontSize:'14px', margin:'8px 0 4px' }}>
-            {line.slice(2,-2)}
-          </div>
-        )
-        if (line.trim() === '---') return <hr key={i} style={{ border:'none', borderTop:'1px solid var(--border)', margin:'16px 0' }}/>
-        if (line.trim() === '') return <div key={i} style={{ height:'6px' }}/>
-        return <p key={i} style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.8, marginBottom:'4px' }}>{line}</p>
-      })}
-    </div>
-  )
+  // テーマ名を抽出するためのパターン（### X位: テーマ名 形式）
+  const lines = text.split('\n')
+  const result = []
+  let currentTheme = null
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
+
+    // ### 1位: SaaS のような行からテーマ名を抽出
+    const themeMatch = line.match(/^###?\s*(?:\d+位[：:]\s*)?(.+?)(?:（.+）)?$/)
+
+    if (line.startsWith('# ')) {
+      result.push(<h1 key={i} style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>{line.slice(2)}</h1>)
+    } else if (line.startsWith('## ')) {
+      result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'18px 0 8px' }}>{line.slice(3)}</h2>)
+    } else if (line.startsWith('### ')) {
+      const title = line.slice(4)
+      // テーマ名を「位：」の後ろから抽出
+      const m = title.match(/\d+位[：:]\s*(.+?)(?:\s*（|$)/)
+      currentTheme = m ? m[1].trim() : null
+      result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text2)', margin:'14px 0 6px' }}>{title}</h3>)
+    } else if (line.startsWith('- ') || line.startsWith('・')) {
+      result.push(
+        <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'4px', paddingLeft:'8px' }}>
+          <span style={{ color:'var(--accent)', flexShrink:0 }}>▸</span>
+          <span style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.7 }}>{line.slice(2)}</span>
+        </div>
+      )
+    } else if (line.trim() === '---') {
+      result.push(<hr key={i} style={{ border:'none', borderTop:'1px solid var(--border)', margin:'16px 0' }}/>)
+    } else if (line.trim() === '') {
+      // 空行の後にテーマボタンを挿入（h3の後のセクションで）
+      if (currentTheme && i > 0 && lines[i-1].trim() !== '') {
+        result.push(<div key={`space-${i}`} style={{ height:'6px' }}/>)
+        // 次の行が新しいセクション(##や###)になる前にボタンを挿入
+        const nextNonEmpty = lines.slice(i+1).find(l => l.trim() !== '')
+        if (nextNonEmpty && (nextNonEmpty.startsWith('##') || nextNonEmpty.startsWith('---') || i === lines.length-1)) {
+          result.push(
+            <div key={`btn-${i}`} style={{ display:'flex', gap:'8px', flexWrap:'wrap', margin:'8px 0 12px' }}>
+              {onNavigate && (
+                <>
+                  <button onClick={() => onNavigate('テーマ別詳細', currentTheme)}
+                    style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
+                      cursor:'pointer', fontFamily:'var(--font)',
+                      background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.3)',
+                      color:'var(--accent)' }}>
+                    📊 {currentTheme}の詳細 →
+                  </button>
+                  <button onClick={() => onNavigate('コラム・解説')}
+                    style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
+                      cursor:'pointer', fontFamily:'var(--font)',
+                      background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
+                      color:'#aa77ff' }}>
+                    📖 コラムを読む →
+                  </button>
+                </>
+              )}
+            </div>
+          )
+          currentTheme = null
+        } else {
+          result.push(<div key={`space2-${i}`} style={{ height:'6px' }}/>)
+        }
+      } else {
+        result.push(<div key={i} style={{ height:'6px' }}/>)
+      }
+    } else {
+      result.push(<p key={i} style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.8, marginBottom:'4px' }}>{line}</p>)
+    }
+  }
+  return <div>{result}</div>
 }
 
 // ① レポートカード（コラム形式）
@@ -238,6 +286,18 @@ export default function WeeklyReport({ onNavigate }) {
           border:'1px solid rgba(255,255,255,0.05)', borderRadius:'8px', fontSize:'11px', color:'var(--text3)', lineHeight:1.7 }}>
           ⚠️ 本レポートはStockWaveJPの市場データをもとに作成した参考情報です。特定銘柄の購入・売却を推奨するものではなく、
           <strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします。</strong>
+        </div>
+
+        {/* ④ 最下部に一覧に戻るボタン */}
+        <div style={{ textAlign:'center', marginTop:'24px' }}>
+          <button onClick={() => setShowReport(false)} style={{
+            padding:'10px 28px', borderRadius:'8px', fontSize:'13px', fontWeight:600,
+            cursor:'pointer', fontFamily:'var(--font)',
+            background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.3)',
+            color:'var(--accent)',
+          }}>
+            ← レポート一覧に戻る
+          </button>
         </div>
 
         <style>{`@keyframes pulse{0%,100%{opacity:0.3;transform:scale(0.8);}50%{opacity:1;transform:scale(1.1);}}`}</style>

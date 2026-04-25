@@ -1,450 +1,205 @@
-import { useState } from 'react'
-import React from 'react'
+import React, { useState } from 'react'
 
 const SECTIONS = [
   {
-    icon: '🏠',
-    title: 'ホーム',
-    color: '#4a9eff',
-    summary: 'サイト全体の概況をひと目で把握',
-    detail: {
-      overview: 'ホームは市場全体の状況を一覧できるダッシュボードです。毎日の投資判断の出発点として活用できます。',
-      features: [
-        {
-          name: 'マーケットサマリー（KPI）',
-          desc: '上昇テーマ数・全テーマ平均騰落率・資金流入TOP・資金流出TOPを表示します。矢印（↗↘）で方向感を確認できます。',
-        },
-        {
-          name: 'マーケット指標・ミニカード',
-          desc: '国内主要株ETF・国内広域ETF・米国株ETF・ドル円・米国ハイテクETF・VIX先物ETFの6指標をカード形式で表示。',
-        },
-      ],
-      tips: [
-        'まずホームで全体の地合いを確認してから、テーマ一覧に移るのが効率的なルーティンです。',
-        'VIX（恐怖指数）が高い局面は市場の不安定性が高まっているサイン。リスク管理を優先しましょう。',
-      ],
-    },
-  },
-  {
     icon: '📊',
     title: 'テーマ一覧',
-    color: '#4a9eff',
-    summary: '67テーマの騰落率・出来高・売買代金を一覧比較',
-    detail: {
-      overview: '日本株67テーマの騰落率・出来高・売買代金をランキング形式で一覧比較できます。どのテーマに資金が流入・流出しているかを一目で把握できます。',
-      features: [
-        {
-          name: '期間切り替え',
-          desc: '1日・1週間・1ヶ月・3ヶ月・6ヶ月・1年の6期間で表示を切り替え可能。短期と長期のトレンドを使い分けて比較できます。',
-        },
-        {
-          name: '上昇・下落TOP5',
-          desc: '直近の資金流入TOP5テーマと流出TOP5テーマを横棒グラフで強調表示。最も注目すべきテーマを瞬時に把握できます。',
-        },
-        {
-          name: '📊 テーマ詳細を確認ボタン',
-          desc: '各テーマカードの「テーマ詳細を確認」ボタンからテーマ別詳細ページに直接移動できます。',
-        },
-      ],
-      tips: [
-        '「上昇TOP5」に連続して登場するテーマは強いトレンドの可能性があります。出来高・売買代金も同時に確認しましょう。',
-        '「全テーマ平均騰落率」がマイナスの日は市場全体が下落局面。その中でプラスのテーマが本当に強いテーマです。',
-      ],
-    },
-  },
-  {
-    icon: '🔍',
-    title: 'テーマ別詳細',
-    color: '#aa77ff',
-    summary: '特定テーマの構成銘柄・連動度・比較グラフを詳細分析',
-    detail: {
-      overview: '気になるテーマを選択し、構成銘柄の個別状況から全体の比較まで、テーマの「中身」を深く掘り下げるページです。',
-      features: [
-        {
-          name: 'テーマ選択・サマリーカード',
-          desc: 'ページ上部のセレクトボックスでテーマを選択。平均騰落率・総出来高・売買代金などのKPIカードが即座に更新されます。',
-        },
-        {
-          name: '注目銘柄ピックアップ',
-          desc: 'テーマ内の構成銘柄を騰落率・出来高急増・直近加速・売買代金で総合スコア化し、上位3銘柄を選定理由付きで表示します。投資推奨ではありません。',
-        },
-        {
-          name: '構成銘柄テーブル',
-          desc: '構成銘柄の株価・騰落率・時価総額・連動度・出来高・売買代金・スパークライン（6ヶ月推移）を一覧表示。横スワイプで全詳細を確認できます。',
-        },
-        {
-          name: '出来高・売買代金グラフ',
-          desc: 'テーマ全体の1年間の週次出来高（折れ線・左軸）と売買代金（棒グラフ・右軸）の推移グラフ。資金流入の継続性を確認できます。',
-        },
-      ],
-      tips: [
-        '「連動度」は各銘柄のテーマ平均騰落率への貢献度を示します。連動度が高い銘柄はテーマの代表株として動きます。',
-        'スパークライン（銘柄名横の折れ線）で6ヶ月の騰落トレンドを一目確認。上昇トレンドは赤、下落は緑で表示されます。',
-      ],
-    },
-  },
-  {
-    icon: '📋',
-    title: '市場別詳細',
-    color: '#06d6a0',
-    summary: '日経225・時価総額上位・市場区分別の銘柄分析',
-    detail: {
-      overview: '日経225採用銘柄・時価総額上位150銘柄・市場区分（プライム・スタンダード・グロース）ごとに銘柄の騰落率・出来高・売買代金を確認できます。',
-      features: [
-        {
-          name: '国内主要株タブ',
-          desc: '日経225銘柄を「技術・金融・消費・素材・資本財・運輸」の6セグメントに分類して表示。どのセクターに資金が流入しているかを把握できます。',
-        },
-        {
-          name: '国内全般タブ',
-          desc: '時価総額上位50・上位51-100位・上位101-150位の3グループで時価総額上位銘柄の動向を確認できます。',
-        },
-        {
-          name: '市場区分タブ',
-          desc: 'プライム・スタンダード・グロース市場の代表銘柄を表示。市場区分ごとの資金動向を確認できます。',
-        },
-      ],
-      tips: [
-        '日経225の「技術セグメント」が強い時は半導体・AI関連テーマへの資金流入が続いている可能性があります。',
-        'スパークライン（銘柄名横）で個別銘柄の6ヶ月トレンドを確認し、上昇継続中の銘柄を見つけましょう。',
-      ],
-    },
+    desc: '67テーマの騰落率・出来高・売買代金を一覧比較できるページです。',
+    items: [
+      '上部の期間セレクター（1日/1週間/1ヶ月/3ヶ月/6ヶ月/1年）で表示期間を切り替えられます。',
+      '「全テーマ 騰落率ランキング」はデフォルトで上位4件を表示。「トップ10を表示」「全67テーマを表示」ボタンで拡張できます。',
+      'ページ下部の月次グラフ（騰落率・出来高・売買代金）はPC版ではクリックで拡大表示できます。スマホ版は通常表示です。',
+      '月次グラフはテーマを複数選択して比較できます。テーマバッジをクリックで解除、「＋ テーマを追加する」ボタンで追加できます。',
+      'テーマヒートマップ（右下）はPC版でクリック拡大。拡大時に注目ゾーンの説明が表示されます。バブルにカーソルを当てるとテーマ名・騰落率・出来高・売買代金がツールチップで表示されます。',
+    ]
   },
   {
     icon: '🔥',
     title: 'テーマヒートマップ',
-    color: '#ffd166',
-    summary: '資金フロー散布図・テーマヒートマップで67テーマを多角分析',
-    detail: {
-      overview: '4つのタブで構成。「📊テーマヒートマップ（資金フロー散布図）」が最初に表示されます。67テーマの騰落率・出来高・売買代金を散布図・テーマヒートマップで多角的に分析できます。',
-      features: [
-        {
-          name: '📊 テーマヒートマップ（資金フロー散布図）★デフォルト表示',
-          desc: 'X軸=騰落率、Y軸=出来高急増率、円サイズ=売買代金のバブルチャート。右上の「注目ゾーン（上昇＋出来高増）」に位置する大きな円が最も注目すべきテーマです。バブルをクリックするとテーマ別詳細に移動できます。',
-        },
-        {
-          name: '🟥 期間別テーマヒートマップ',
-          desc: '1週・1ヶ月・3ヶ月・6ヶ月・1年の5期間の騰落率を色で表示。赤が上昇・緑が下落。全期間で赤のテーマは強いトレンドが継続中です。',
-        },
-        {
-          name: '📅 月次テーマヒートマップ',
-          desc: '過去12ヶ月の月別騰落率をカレンダー形式で表示。季節性のあるテーマの特定や月ごとの相場パターン把握に活用できます。',
-        },
-        {
-          name: '📡 モメンタム',
-          desc: 'テーマごとに「騰落率・先週比・状態」を表示。状態は🔥加速・❄️失速・↗転換↑・↘転換↓・→横ばいの5種類。モメンタムの変化でトレンドの転換点を早期把握できます。',
-        },
-      ],
-      tips: [
-        '資金フロー散布図で「右上の大きな円」（上昇＋出来高増＋売買代金大）が今週最も注目すべきテーマです。投資判断の出発点として活用してください。',
-        '期間別テーマヒートマップで「全期間赤（上昇）」のテーマは短期・中期・長期すべてで資金が流入している強いトレンドのサインです。',
-        'モメンタムで「🔥加速」と「↗転換↑」が同時に増えている局面は市場の強気サイン。逆に「❄️失速」が増えたら調整に備えましょう。',
-        '月次テーマヒートマップで特定の月に毎年上昇するテーマを探すと、季節性戦略のヒントが得られます。',
-      ],
-    },
+    desc: '67テーマの資金フローを散布図で可視化するページです。',
+    items: [
+      'X軸が騰落率（右ほど上昇）、Y軸が出来高急増率（上ほど出来高増）、バブルの大きさが売買代金を示します。',
+      '右上の「注目ゾーン」は上昇＋出来高急増の最強シグナルエリアです。左上は売り圧力、右下は静かな上昇、左下は静かな下落を示します。',
+      'バブルにカーソルを当てるとテーマ名・騰落率・出来高急増率・売買代金が表示されます。',
+      'バブルをクリックするとそのテーマの詳細ページに移動します。',
+      '上部のセレクターで期間（1日/1週間/1ヶ月/3ヶ月）を切り替えられます。',
+    ]
+  },
+  {
+    icon: '🔍',
+    title: 'テーマ別詳細',
+    desc: '個別テーマの構成銘柄を詳細分析するページです。',
+    items: [
+      '上部ドロップダウンでテーマを選択。期間も切り替え可能です。',
+      '上昇/下落TOP5、注目銘柄ピックアップ（※リアルタイムではなくデータ取得タイミングに依存）が全幅で表示されます。',
+      'ページ下部は2カラム構成（PC版）。左カラムに出来高グラフ・銘柄別ヒートマップ・遷移ボタン、右カラムに構成銘柄表が配置されます。',
+      '銘柄表は騰落率・出来高・売買代金でソート可能。ヘッダーのボタンで昇順/降順も切り替えられます。',
+      '表はクリック&ドラッグで横移動できます。上部にもスクロールバーが表示されています。',
+      '各グラフはクリックで拡大表示できます。',
+      '「＋」ボタンで銘柄をカスタムテーマに追加できます。',
+    ]
+  },
+  {
+    icon: '📋',
+    title: '市場別詳細',
+    desc: '市場区分・業種別セグメントの銘柄を比較分析するページです。',
+    items: [
+      '上部でセグメント（国内主要株・テクノロジー・金融・プライム市場など）と期間を切り替えられます。',
+      'ページ下部は2カラム構成（PC版）。左カラムに銘柄表、右カラムに銘柄別ヒートマップ・出来高/売買代金グラフが配置されます。',
+      '銘柄表はドラッグスクロール・ソートボタン対応。上部スクロールバーも表示されています。',
+      'バブルにカーソルを当てると銘柄名・騰落率・出来高・売買代金が表示されます。',
+    ]
   },
   {
     icon: '🎨',
     title: 'カスタムテーマ',
-    color: '#aa77ff',
-    summary: '自分だけのオリジナルテーマを作成・管理',
-    detail: {
-      overview: '任意の銘柄を組み合わせて独自のテーマを作成できます。既存67テーマに含まれない組み合わせを自由に設定できます。',
-      features: [
-        {
-          name: 'テーマ作成',
-          desc: '銘柄コード（例：7203.T）または銘柄名で検索して追加。テーマ名・説明文も自由に設定できます。',
-        },
-        {
-          name: 'テーマ一覧・詳細との連携',
-          desc: 'カスタムテーマはテーマ一覧・テーマ別詳細に通常テーマと同様に表示され、騰落率・出来高・売買代金・連動度も自動集計されます。',
-        },
-      ],
-      tips: [
-        'ウォッチリストとして活用する方法が人気です。気になる銘柄を登録しておくと毎日の変動を一括確認できます。',
-        '作成したカスタムテーマはブラウザのLocalStorageに保存されます（最大3テーマ）。',
-      ],
-    },
+    desc: '自分だけのテーマを作成して銘柄を比較追跡できます。',
+    items: [
+      '最大3テーマ、1テーマあたり最大10銘柄まで作成できます。',
+      '銘柄名または4桁証券コードで日本株を検索して追加できます。',
+      'Googleログインするとデバイスをまたいでテーマが同期されます。未ログインの場合はブラウザのLocalStorageに保存されます。',
+      'テーマ詳細では騰落率グラフ・出来高グラフ・銘柄別ヒートマップ・構成銘柄表が表示されます（2カラム構成・PC版）。',
+      '「URLをコピー」でテーマを他のユーザーと共有できます。',
+    ]
+  },
+  {
+    icon: '📰',
+    title: '週次レポート',
+    desc: '毎週末更新のマーケットレポートです。',
+    items: [
+      'レポートはカード形式で一覧表示されます。クリックするとレポート全文が表示されます。',
+      'レポート内でテーマ名が登場する箇所の近くに「テーマ別詳細」「コラムを読む」ボタンが表示されます。',
+      '週間上昇/下落TOP5テーマのバッジをクリックするとそのテーマの詳細ページに移動できます。',
+      'AIによる自動生成ではなく、市場データをもとに手動作成しています。',
+    ]
+  },
+  {
+    icon: '📝',
+    title: 'コラム・解説',
+    desc: '各テーマの詳細解説・関連銘柄分析記事を掲載しています。',
+    items: [
+      '67テーマすべての解説コラムと主要銘柄の個別分析記事があります。',
+      'テーマ別詳細ページからも「関連コラム記事を読む」ボタンで直接移動できます。',
+    ]
   },
   {
     icon: '⚙️',
     title: '設定',
-    color: '#4a6080',
-    summary: '表示設定・カラーテーマのカスタマイズ',
-    detail: {
-      overview: 'サイトの表示設定を変更できます。ダーク/ライトモードの切り替えや表示カスタマイズが可能です。',
-      features: [
-        {
-          name: 'カラーテーマ',
-          desc: 'ダークモード（デフォルト）とライトモードを切り替えられます。目の疲れや環境に合わせて選択してください。',
-        },
-      ],
-      tips: [
-        '設定はブラウザのLocalStorageに保存され、次回アクセス時も引き継がれます。',
-      ],
-    },
+    desc: 'カラーテーマやグラフ表示モードを変更できます。',
+    items: [
+      'カラーテーマ: ダーク（デフォルト）・ライト（ホワイト）から選択できます。',
+      '一部グラフ要素でカラーテーマ切替時に色が変わらない場合がありますが、順次改善中です。',
+    ]
   },
 ]
 
-const USAGE_SCENARIOS = [
+const QA = [
   {
-    title: '📅 毎朝の市場確認ルーティン',
-    steps: [
-      'ホームで「上昇テーマ数」と「資金流入TOP」を確認',
-      'テーマ一覧（1週間）で直近の動きが強いテーマをチェック',
-      'テーマ別詳細で気になるテーマの構成銘柄を確認',
-    ],
+    q: 'データはリアルタイムですか？',
+    a: 'リアルタイムではありません。GitHub Actionsにより1日数回（平日7:00/9:00/12:00/15:30/23:30 UTC）自動更新されます。最新データの反映には最大数時間かかる場合があります。ページ右上の「最終更新」時刻を確認してください。',
   },
   {
-    title: '🔍 テーマの本格調査',
-    steps: [
-      'テーマヒートマップで複数期間の強さを確認（短期だけでなく中長期も強いか）',
-      'テーマ別詳細で先月比・状態を確認（加速中か失速中か）',
-      'テーマヒートマップでモメンタムの持続性を確認',
-      '構成銘柄テーブルで連動度の高い銘柄を特定',
-    ],
+    q: '注目銘柄ピックアップはどのように選ばれていますか？',
+    a: '騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計しています。リアルタイムデータではなくデータ取得タイミングに依存するため、最新の市場状況と乖離する場合があります。投資判断の参考程度としてご利用ください。',
   },
   {
-    title: '📊 市場全体の地合い判断',
-    steps: [
-      'ホームのマクロ指標で国内株ETF・米国株ETF・VIX先物ETFを確認',
-      'テーマヒートマップで「🔥加速」「❄️失速」の数を比較',
-      'テーマヒートマップ全体の色の傾向（赤多=強気・緑多=弱気）を確認',
-    ],
+    q: '売買代金の単位は何ですか？',
+    a: '億・兆単位で表示しています（例：2.4兆 = 2.4兆円）。出来高は株数です。',
+  },
+  {
+    q: 'カスタムテーマはいくつまで作れますか？',
+    a: '最大3テーマ、1テーマあたり最大10銘柄まで作成できます。Googleログインするとデバイス間でデータが同期されます。未ログイン時はブラウザのLocalStorageに保存されるため、ブラウザのデータを削除すると失われます。',
+  },
+  {
+    q: 'テーマヒートマップのゾーン分けはどういう意味ですか？',
+    a: '🔥注目ゾーン（右上）：上昇+出来高急増=最強シグナル / ⚠️売り圧力（左上）：下落+出来高急増=強い売り / 📈静かな上昇（右下）：上昇+出来高少=じわり上昇 / ❄️静かな下落（左下）：弱含みだが動意なし',
+  },
+  {
+    q: '騰落率はどのように計算していますか？',
+    a: 'テーマの騰落率はそのテーマに属する構成銘柄の騰落率の単純平均値です。個別銘柄は終値ベースで計算しています。',
+  },
+  {
+    q: 'スマホで表が見づらいのですが？',
+    a: '銘柄表は横スクロール対応です。表を左右にスワイプしてください。PC版ではクリック&ドラッグでも横移動できます。スマホではグラフが自動的に縮小表示されます。',
+  },
+  {
+    q: 'データソースはどこですか？',
+    a: '現在はyfinance（Yahoo Finance非公式API）を利用しています。将来的には商用APIへの移行を予定しています。データの正確性については保証できません。',
   },
 ]
 
-
-function QAItem({ q, a, delay = 0 }) {
-  const [open, setOpen] = React.useState(false)
+function Chevron({ open }) {
   return (
-    <div style={{
-      background: 'var(--bg2)', border: '1px solid var(--border)',
-      borderRadius: '8px', marginBottom: '6px', overflow: 'hidden',
-      animation: `fadeUp 0.3s ease ${delay}s both`,
-    }}>
-      <button onClick={() => setOpen(o => !o)} style={{
-        width: '100%', background: 'transparent', border: 'none', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', gap: '10px',
-        padding: '12px 16px', fontFamily: 'var(--font)', textAlign: 'left',
-      }}>
-        <span style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 700, flexShrink: 0 }}>Q</span>
-        <span style={{ flex: 1, fontSize: '13px', fontWeight: 600, color: 'var(--text)' }}>{q}</span>
-        <span style={{ fontSize: '11px', color: 'var(--text3)', flexShrink: 0 }}>{open ? '▲' : '▼'}</span>
-      </button>
-      {open && (
-        <div style={{ padding: '0 16px 14px 16px', borderTop: '1px solid var(--border)' }}>
-          <div style={{ display: 'flex', gap: '10px', paddingTop: '12px' }}>
-            <span style={{ fontSize: '13px', color: 'var(--green)', fontWeight: 700, flexShrink: 0 }}>A</span>
-            <span style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9 }}>{a}</span>
-          </div>
-        </div>
-      )}
-    </div>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ transition:'transform 0.2s', transform: open?'rotate(180deg)':'rotate(0deg)', flexShrink:0 }}>
+      <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
   )
 }
 
 export default function HowTo() {
-  const [activeSection, setActiveSection] = useState(null)
+  const [openQ, setOpenQ] = useState(null)
 
   return (
-    <div style={{ padding: '28px 32px 48px', maxWidth: '900px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '24px', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--text)', marginBottom: '4px' }}>
-        使い方
-      </h1>
-      <p style={{ fontSize: '13px', color: 'var(--text2)', marginBottom: '28px' }}>
-        StockWaveJP の各機能の使い方・活用方法・見方の解説
+    <div style={{ padding:'24px 28px 60px', maxWidth:'900px', margin:'0 auto' }}>
+      <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>📖 使い方・Q&A</h1>
+      <p style={{ fontSize:'13px', color:'var(--text3)', marginBottom:'28px' }}>
+        StockWaveJPの各機能の使い方と、よくある質問をまとめています。
       </p>
 
-      {/* 概要カード */}
-      <div style={{
-        background: 'linear-gradient(135deg, rgba(74,158,255,0.1), rgba(255,69,96,0.08))',
-        border: '1px solid rgba(74,158,255,0.2)',
-        borderRadius: 'var(--radius)', padding: '20px 24px', marginBottom: '24px',
-      }}>
-        <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>
-          StockWaveJP とは
-        </div>
-        <div style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9 }}>
-          日本株のテーマ別騰落率・出来高・売買代金をリアルタイムで追跡するダッシュボードです。
-          平日9時〜16時の間、1時間おきに自動更新（1日最大8回）。データはETF価格をもとに算出した独自指標を使用しており、
-          各指数の公式数値ではありません。投資助言ではなく、参考情報の提供を目的としています。
-        </div>
-      </div>
-
-      {/* 活用シナリオ */}
-      <div style={{ marginBottom: '28px' }}>
-        <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text)', marginBottom: '12px',
-          display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span>💡 活用シナリオ</span>
-          <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px' }} className="scenario-grid">
-          {USAGE_SCENARIOS.map((sc, i) => (
-            <div key={i} style={{
-              background: 'var(--bg2)', border: '1px solid var(--border)',
-              borderRadius: '10px', padding: '14px 16px',
-            }}>
-              <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text)', marginBottom: '10px' }}>
-                {sc.title}
+      {/* 機能ガイド */}
+      <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'14px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
+        🗺️ 機能ガイド
+      </h2>
+      <div style={{ display:'flex', flexDirection:'column', gap:'12px', marginBottom:'32px' }}>
+        {SECTIONS.map((sec, si) => (
+          <div key={si} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px' }}>
+            <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'8px' }}>
+              <span style={{ fontSize:'18px' }}>{sec.icon}</span>
+              <div>
+                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>{sec.title}</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'2px' }}>{sec.desc}</div>
               </div>
-              <ol style={{ margin: 0, paddingLeft: '16px' }}>
-                {sc.steps.map((step, j) => (
-                  <li key={j} style={{ fontSize: '11px', color: 'var(--text2)', lineHeight: 1.8, marginBottom: '2px' }}>
-                    {step}
-                  </li>
-                ))}
-              </ol>
             </div>
-          ))}
-        </div>
+            <ul style={{ margin:0, paddingLeft:'20px', display:'flex', flexDirection:'column', gap:'4px' }}>
+              {sec.items.map((item, ii) => (
+                <li key={ii} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.7 }}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-
-      {/* 各ページの説明（クリックで詳細展開） */}
-      <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text)', marginBottom: '12px',
-        display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span>📖 各ページの詳細説明</span>
-        <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        {SECTIONS.map((s, i) => {
-          const isOpen = activeSection === i
-          return (
-            <div key={i} style={{
-              background: 'var(--bg2)', border: `1px solid ${isOpen ? s.color + '55' : 'var(--border)'}`,
-              borderRadius: '10px', overflow: 'hidden',
-              transition: 'border-color 0.2s',
-            }}>
-              {/* ヘッダー */}
-              <button onClick={() => setActiveSection(isOpen ? null : i)} style={{
-                width: '100%', background: 'transparent', border: 'none', cursor: 'pointer',
-                display: 'flex', alignItems: 'center', gap: '12px',
-                padding: '14px 18px', fontFamily: 'var(--font)',
-              }}>
-                <span style={{ fontSize: '20px', flexShrink: 0 }}>{s.icon}</span>
-                <div style={{ flex: 1, textAlign: 'left' }}>
-                  <div style={{ fontSize: '14px', fontWeight: 700, color: 'var(--text)', marginBottom: '2px' }}>
-                    {s.title}
-                  </div>
-                  <div style={{ fontSize: '11px', color: 'var(--text3)' }}>{s.summary}</div>
-                </div>
-                <span style={{ fontSize: '12px', color: isOpen ? s.color : 'var(--text3)',
-                  fontWeight: 600, flexShrink: 0, transition: 'color 0.2s' }}>
-                  {isOpen ? '▲ 閉じる' : '▼ 詳細を見る'}
-                </span>
-              </button>
-
-              {/* 詳細 */}
-              {isOpen && (
-                <div style={{ padding: '0 18px 18px', borderTop: `1px solid ${s.color}33` }}>
-                  <p style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9, margin: '14px 0 16px' }}>
-                    {s.detail.overview}
-                  </p>
-
-                  {/* 機能一覧 */}
-                  <div style={{ marginBottom: '16px' }}>
-                    <div style={{ fontSize: '11px', fontWeight: 600, color: s.color,
-                      letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '8px' }}>
-                      主な機能
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                      {s.detail.features.map((f, fi) => (
-                        <div key={fi} style={{
-                          background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)',
-                          borderRadius: '8px', padding: '10px 14px',
-                        }}>
-                          <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text)', marginBottom: '4px' }}>
-                            {f.name}
-                          </div>
-                          <div style={{ fontSize: '12px', color: 'var(--text2)', lineHeight: 1.8 }}>
-                            {f.desc}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* 活用Tips */}
-                  <div style={{ background: `${s.color}0e`, border: `1px solid ${s.color}33`,
-                    borderRadius: '8px', padding: '12px 14px' }}>
-                    <div style={{ fontSize: '11px', fontWeight: 600, color: s.color,
-                      letterSpacing: '0.1em', marginBottom: '8px' }}>
-                      💡 活用Tips
-                    </div>
-                    <ul style={{ margin: 0, paddingLeft: '16px' }}>
-                      {s.detail.tips.map((t, ti) => (
-                        <li key={ti} style={{ fontSize: '12px', color: 'var(--text2)', lineHeight: 1.9, marginBottom: '2px' }}>
-                          {t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
-          )
-        })}
-      </div>
-
 
       {/* Q&A */}
-      <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text)', margin: '28px 0 12px',
-        display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span>❓ よくある質問（Q&A）</span>
-        <div style={{ flex: 1, height: '1px', background: 'var(--border)' }} />
+      <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'14px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
+        ❓ よくある質問
+      </h2>
+      <div style={{ display:'flex', flexDirection:'column', gap:'8px', marginBottom:'32px' }}>
+        {QA.map((qa, i) => (
+          <div key={i} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', overflow:'hidden' }}>
+            <button onClick={() => setOpenQ(openQ === i ? null : i)}
+              style={{ width:'100%', display:'flex', alignItems:'center', justifyContent:'space-between',
+                gap:'12px', padding:'12px 16px', background:'transparent', border:'none',
+                cursor:'pointer', textAlign:'left', fontFamily:'var(--font)', color:'var(--text)' }}>
+              <span style={{ fontSize:'13px', fontWeight:600 }}>Q. {qa.q}</span>
+              <Chevron open={openQ === i} />
+            </button>
+            {openQ === i && (
+              <div style={{ padding:'0 16px 14px', fontSize:'12px', color:'var(--text2)', lineHeight:1.8,
+                borderTop:'1px solid var(--border)' }}>
+                <div style={{ paddingTop:'10px' }}>A. {qa.a}</div>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {[
-        {
-          q: 'データはどのくらいの頻度で更新されますか？',
-          a: '平日の9時5分頃〜15時40分頃まで、1時間おきに最大8回、GitHub Actionsにより自動更新されます。土日・祝日は更新されません。ヘッダーの「最終取得」表示で最新のデータ取得時刻を確認できます。',
-        },
-        {
-          q: '表示されているデータはリアルタイムですか？',
-          a: 'いいえ。データは最大1時間の遅延があります。取引時間中のリアルタイム価格ではなく、直近の更新タイミングの終値を基準に集計されます。実際の売買には証券会社の公式データをご使用ください。',
-        },
 
-        {
-          q: '騰落率はどのように計算されていますか？',
-          a: '各テーマの騰落率は、テーマに含まれる構成銘柄それぞれの騰落率（期間開始日の終値を基準とした変化率）を平均したものです。公式の指数（日経平均株価・TOPIXなど）とは異なる独自の集計値です。',
-        },
-        {
-          q: '「連動度」とは何ですか？',
-          a: '連動度は、その銘柄の日次騰落率がテーマ全体の平均日次騰落率にどれだけ連動しているかを示す相関係数（-100〜+100）です。+100に近いほど「テーマと同じ方向に動きやすい代表銘柄」、0に近いほどテーマとは独立して動く銘柄です。マイナスは逆方向に動く傾向があることを示します。テーマの中心的な動きを担う銘柄を探す指標として活用してください。',
-        },
-        {
-          q: 'カスタムテーマとは何ですか？どこに保存されますか？',
-          a: 'カスタムテーマはサイドメニューの「カスタムテーマ」から自分だけのテーマを作成できる機能です。1アカウントにつき最大3テーマまで作成できます。Googleアカウントでログインするとクラウドに保存されマルチデバイスで同期できます。未ログインの場合はブラウザのローカルストレージに保存されます。カスタムテーマはテーマ一覧・テーマ別詳細にも表示されます。',
-        },
-
-        {
-          q: 'テーマヒートマップページを開くと最初に何が表示されますか？',
-          a: '「📊 テーマヒートマップ（資金フロー散布図）」が最初に表示されます。X軸が騰落率、Y軸が出来高急増率、円の大きさが売買代金を表すバブルチャートです。右上の「注目ゾーン」に位置する大きな円が今週最も資金が集まっているテーマです。期間別テーマヒートマップや月次テーマヒートマップを見たい場合はタブを切り替えてください。',
-        },
-        {
-          q: '資金フロー散布図の「注目ゾーン」とはどういう意味ですか？',
-          a: '散布図の右上エリア（騰落率プラス×出来高急増）を「注目ゾーン」と呼びます。価格が上昇しながら出来高も急増しているテーマで、機関投資家の資金流入が強く示唆されます。バブル（円）が大きいほど売買代金も多く、主力銘柄として積極的に売買されています。',
-        },
-        {
-          q: '「状態（加速・失速・転換）」はどう判定されますか？',
-          a: 'モメンタムの状態は、騰落率と先週比の組み合わせで判定しています。🔥加速：先週比+3pt超かつ先月比+5pt超、❄️失速：その逆、↗転換↑：先週比+2pt超（下落から上昇へ）、↘転換↓：先週比-2pt未満（上昇から下落へ）、→横ばい：それ以外です。',
-        },
-
-
-        {
-          q: 'データに誤りがあると思われる場合はどうすればよいですか？',
-          a: 'サイドメニューの「当サイトについて」ページよりご連絡ください。データプロバイダに起因する誤りの場合は修正が困難な場合もありますが、内容を確認の上対応いたします。',
-        },
-      ].map((item, i) => (
-        <QAItem key={i} q={item.q} a={item.a} delay={i * 0.04} />
-      ))}
-
-
-
-      <style>{`
-        @media (max-width: 768px) {
-          .scenario-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
+      {/* 免責事項 */}
+      <div style={{ padding:'14px 18px', background:'rgba(255,193,7,0.05)',
+        border:'1px solid rgba(255,193,7,0.2)', borderRadius:'8px', fontSize:'12px', color:'var(--text3)', lineHeight:1.8 }}>
+        ⚠️ <strong style={{ color:'var(--text2)' }}>免責事項：</strong>
+        当サイトに掲載されている情報は参考目的のみであり、特定の銘柄の売買を推奨するものではありません。
+        投資の最終判断はご自身の責任でお願いします。データの正確性・最新性について保証するものではありません。
+      </div>
     </div>
   )
 }

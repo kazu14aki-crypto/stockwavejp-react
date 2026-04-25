@@ -211,6 +211,11 @@ function Sparkline({ data }) {
   )
 }
 
+const thStyle = { padding:'6px 8px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
+const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color:'var(--text2)' }
+const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
+const tdL = { padding:'8px 12px', textAlign:'left' }
+
 function StockTable({ stocks: rawStocks, onAddToTheme }) {
   if (!rawStocks||!rawStocks.length) return null
   const [sortKey, setSortKey] = useState('pct')
@@ -332,10 +337,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
   )
 }
 
-const thStyle = { padding:'6px 8px', textAlign:'right', fontSize:'10px', fontWeight:600, letterSpacing:'0.06em', color:'var(--text3)', textTransform:'uppercase', whiteSpace:'nowrap', background:'var(--bg3)' }
-const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color:'var(--text2)' }
-const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
-const tdL = { padding:'8px 12px', textAlign:'left' }
+// ↓ StockTable前に定数定義
 
 
 

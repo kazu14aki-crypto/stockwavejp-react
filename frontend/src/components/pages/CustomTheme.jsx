@@ -228,6 +228,89 @@ function CustomStockTable({ stocks, period, onRemove }) {
   )
 }
 
+// ③ カスタムテーマ用 出来高・売買代金グラフ
+function CustomVolTvChart({ stocks }) {
+  const [volData, setVolData] = useState({})
+  const [mode, setMode] = useState('tv')
+  useEffect(() => {
+    if (!stocks?.length) return
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(mj => {
+        const map = {}
+        stocks.forEach(s => {
+          // ティッカー形式の違いを吸収（7203.T → vol_trend内のキーと照合）
+          const keys = Object.keys(mj).filter(k => k.startsWith('vol_trend_'))
+          // カスタムテーマのvol_trendはテーマ名ベースではないためAPIから取得
+        })
+        setVolData(map)
+      }).catch(() => {})
+  }, [stocks])
+
+  // シンプルな棒グラフ（APIの/api/stock-infoからvolumeとtrade_valueを取得）
+  const [details, setDetails] = useState({})
+  const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+  useEffect(() => {
+    if (!stocks?.length) return
+    Promise.all(stocks.map(s =>
+      fetch(`${API_URL}/api/stock-info/${encodeURIComponent(s.ticker)}`).then(r=>r.json()).catch(()=>null)
+    )).then(results => {
+      const map = {}
+      results.forEach((r,i) => { if(r) map[stocks[i].ticker] = r })
+      setDetails(map)
+    })
+  }, [stocks])
+
+  if (!Object.keys(details).length) return (
+    <div style={{ textAlign:'center', padding:'20px', color:'var(--text3)', fontSize:'12px',
+      background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>データ取得中...</div>
+  )
+
+  const dataKey = mode === 'tv' ? 'trade_value' : 'volume'
+  const sorted = stocks.map(s => ({
+    ...s, val: details[s.ticker]?.[dataKey] ?? 0, pct: details[s.ticker]?.pct ?? 0
+  })).sort((a,b) => b.val - a.val)
+  const maxV = Math.max(...sorted.map(s => s.val), 1)
+  const fmtL = v => {
+    if (!v) return '0'
+    if (v >= 1e12) return (v/1e12).toFixed(1)+'兆'
+    if (v >= 1e8) return (v/1e8).toFixed(1)+'億'
+    if (v >= 1e4) return (v/1e4).toFixed(1)+'万'
+    return v.toLocaleString()
+  }
+  return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'12px' }}>
+      <div style={{ display:'flex', gap:'8px', marginBottom:'10px' }}>
+        {[{v:'tv',l:'売買代金'},{v:'vol',l:'出来高'}].map(m => (
+          <button key={m.v} onClick={() => setMode(m.v)} style={{
+            padding:'4px 12px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
+            cursor:'pointer', fontFamily:'var(--font)',
+            background: mode===m.v?'rgba(74,158,255,0.15)':'transparent',
+            border: mode===m.v?'1px solid rgba(74,158,255,0.4)':'1px solid var(--border)',
+            color: mode===m.v?'var(--accent)':'var(--text3)',
+          }}>{m.l}</button>
+        ))}
+      </div>
+      <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
+        {sorted.map(s => {
+          const w = s.val/maxV*100
+          const pCol = s.pct>=0?'var(--red)':'var(--green)'
+          return (
+            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'100px 1fr 70px 54px', gap:'6px', alignItems:'center' }}>
+              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
+              <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
+                <div style={{ height:'100%', width:`${w}%`, background: mode==='tv'?'#ff8c42':'#378ADD', borderRadius:'3px', opacity:0.85 }}/>
+              </div>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', color:'var(--text2)', textAlign:'right' }}>{fmtL(s.val)}</span>
+              <span style={{ fontFamily:'var(--mono)', fontSize:'11px', fontWeight:700, color:pCol, textAlign:'right' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 // ── メインコンポーネント ────────────────────────
 // 横軸日付フォーマット：日付の重複を避けるためユニーク表示
 function fmtDate(dateStr) {
@@ -487,36 +570,63 @@ export default function CustomTheme() {
         </div>
       </div>
 
-      {/* 騰落率グラフ */}
-      <div style={{ marginBottom:'20px' }}>
-        <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
-          display:'flex', alignItems:'center', gap:'8px' }}>
-          <span>📈 構成銘柄 騰落率推移</span>
-          <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
-        </div>
-        <ThemeTrendChart stocks={activeTheme.stocks} period={period} />
-      </div>
+      {/* ③ 2カラムレイアウト: 左=グラフ群 / 右=銘柄表 */}
+      <div className="ct-detail-grid">
+        {/* 左: グラフ群 */}
+        <div>
+          {/* 騰落率グラフ */}
+          <div style={{ marginBottom:'16px' }}>
+            <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
+              display:'flex', alignItems:'center', gap:'8px' }}>
+              <span>📈 構成銘柄 騰落率推移</span>
+              <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
+            </div>
+            <ThemeTrendChart stocks={activeTheme.stocks} period={period} />
+          </div>
 
-      {/* 銘柄テーブル */}
-      <div>
-        <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
-          display:'flex', alignItems:'center', gap:'8px' }}>
-          <span>📋 構成銘柄 詳細データ（{period === '5d' ? '1週間' : period === '1mo' ? '1ヶ月' : '3ヶ月'}）</span>
-          <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
+          {/* ③ 出来高・売買代金グラフ */}
+          <div style={{ marginBottom:'16px' }}>
+            <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
+              display:'flex', alignItems:'center', gap:'8px' }}>
+              <span>📊 出来高・売買代金推移</span>
+              <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
+            </div>
+            <CustomVolTvChart stocks={activeTheme.stocks} />
+          </div>
+
+          {/* 銘柄別散布図 */}
+          <CustomBubbleScatter stocks={activeTheme.stocks} period={period} />
         </div>
-        <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px' }}>
-          <CustomStockTable stocks={activeTheme.stocks} period={period} />
+
+        {/* 右: 銘柄表（拡充版） */}
+        <div>
+          <div style={{ fontSize:'12px', fontWeight:600, color:'var(--text3)', marginBottom:'8px',
+            display:'flex', alignItems:'center', gap:'8px' }}>
+            <span>📋 構成銘柄 詳細データ（{activeTheme.stocks.length}/10銘柄）</span>
+            <div style={{ flex:1, height:'1px', background:'var(--border)' }}/>
+          </div>
+          <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px' }}>
+            <CustomStockTable stocks={activeTheme.stocks} period={period} />
+          </div>
         </div>
       </div>
-
-      {/* 📊 銘柄別散布図（CustomStockTableのdetailsを利用） */}
-      <CustomBubbleScatter stocks={activeTheme.stocks} period={period} />
 
       {/* URLエクスポート説明 */}
       <div style={{ marginTop:'20px', padding:'12px 16px', background:'rgba(74,158,255,0.06)',
         border:'1px solid rgba(74,158,255,0.15)', borderRadius:'8px', fontSize:'12px', color:'var(--text3)' }}>
         💡 「URLをコピー」でこのテーマを共有・ブックマークできます。URLにアクセスすると自動でインポートされます。
       </div>
+
+      <style>{`
+        .ct-detail-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        @media (min-width: 900px) {
+          .ct-detail-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+        }
+      `}</style>
     </div>
   )
 
