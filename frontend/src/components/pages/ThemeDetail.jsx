@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
 
-// テーマ別詳細用：グラフ下部にクリックで拡大ボタン付きラッパー
+// テーマ別詳細用：グラフ全体＋下部ボタンクリックで拡大
 function TdExpandable({ title, children, style }) {
   const [expanded, setExpanded] = useState(false)
   return (
     <div style={style}>
       <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>{title}</div>
-      {children}
+      {/* ⑦ グラフ全体をクリックで拡大 */}
+      <div onClick={() => setExpanded(true)} style={{ cursor:'pointer', position:'relative' }}>
+        {children}
+      </div>
       <button onClick={() => setExpanded(true)} style={{
         display:'block', width:'100%', marginTop:'6px', padding:'5px 0',
         borderRadius:'6px', border:'1px solid var(--border)',
@@ -447,11 +450,15 @@ function PickupStocks({ stocks, period }) {
           )
         })}
       </div>
-      <div style={{ marginTop:'8px', padding:'7px 12px',
-        background:'rgba(255,255,255,0.02)', borderRadius:'5px',
-        border:'1px solid rgba(255,255,255,0.05)', fontSize:'10px',
-        color:'var(--text3)', lineHeight:1.7 }}>
-        ⚠️ 上記は騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計したものです。
+      <div style={{ marginTop:'8px', padding:'8px 12px',
+        background:'rgba(255,193,7,0.05)', borderRadius:'5px',
+        border:'1px solid rgba(255,193,7,0.15)', fontSize:'10px',
+        color:'var(--text3)', lineHeight:1.8 }}>
+        ⚠️ <strong style={{ color:'var(--text2)' }}>注意：</strong>
+        上記ピックアップは騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計したものです。
+        <strong style={{ color:'var(--text2)' }}>リアルタイムデータではなく</strong>、
+        GitHub Actionsによるデータ取得タイミング（1日数回更新）に依存するため、
+        最新の市場状況と乖離する場合があります。
         特定銘柄の購入・売却を推奨するものではなく、
         <strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします</strong>。
       </div>
@@ -958,37 +965,38 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                       {k:'1Y', label:'1Y', v: themeHeatmap['1Y']},
                     ].filter(p => p.v != null)
                     const allVals = periods6.map(p => p.v)
-                    const minV = Math.min(...allVals, 0)
-                    const maxV = Math.max(...allVals, 0.01)
-                    const absMax = Math.max(Math.abs(minV), Math.abs(maxV), 0.01)
-                    const W3=520, H3=200, PL3=52, PR3=16, PT3=16, PB3=32
+                    const rawMin = Math.min(...allVals)
+                    const rawMax = Math.max(...allVals)
+                    const STEP = 10
+                    const yMin = rawMin >= 0 ? 0 : Math.floor(rawMin / STEP) * STEP - STEP
+                    const yMax = Math.ceil(rawMax / STEP) * STEP + STEP
+                    const yRange = yMax - yMin || 1
+                    const W3=520, H3=210, PL3=54, PR3=16, PT3=16, PB3=32
                     const GW3=W3-PL3-PR3, GH3=H3-PT3-PB3
-                    const barW = Math.floor(GW3 / periods6.length) - 4
-                    const zero3 = PT3 + GH3 * (absMax / (absMax * 2))
-                    const yS3 = v => {
-                      const ratio = v / (absMax * 2)
-                      return PT3 + GH3 * (0.5 - ratio)
-                    }
-                    const yTicks3 = [-absMax, -absMax/2, 0, absMax/2, absMax].filter((v,i,a)=>a.indexOf(v)===i)
+                    const barW = Math.floor(GW3 / periods6.length) - 6
+                    const yS3 = v => PT3 + GH3 - ((v - yMin) / yRange) * GH3
+                    const zero3 = yS3(0)
+                    const yTicks3 = []
+                    for (let y = yMin; y <= yMax; y += STEP) yTicks3.push(y)
                     return (
                       <div style={{ width:'100%', overflowX:'auto' }}>
                         <svg viewBox={`0 0 ${W3} ${H3}`} width="100%" style={{ display:'block',
                           background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)',
                           minWidth:'280px' }}>
-                          {/* グリッドとゼロライン */}
-                          {yTicks3.map((v,i) => (
-                            <g key={i}>
+                          {/* ③ 10%刻みグリッド */}
+                          {yTicks3.map((v) => (
+                            <g key={v}>
                               <line x1={PL3} y1={yS3(v)} x2={PL3+GW3} y2={yS3(v)}
-                                stroke={v===0 ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.06)'}
+                                stroke={v===0 ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.07)'}
                                 strokeWidth={v===0 ? 1.2 : 0.8} strokeDasharray={v===0 ? '4,3' : '3,4'}/>
                               <text x={PL3-4} y={yS3(v)+4} textAnchor="end" fontSize="9" fill="rgba(255,255,255,0.4)">
-                                {v===0 ? '0%' : (v>0?'+':'')+v.toFixed(0)+'%'}
+                                {v===0 ? '0%' : (v>0?'+':'')+v+'%'}
                               </text>
                             </g>
                           ))}
                           {/* 棒グラフ */}
                           {periods6.map((p, i) => {
-                            const bx = PL3 + i * (GW3 / periods6.length) + 2
+                            const bx = PL3 + i * (GW3 / periods6.length) + 3
                             const col = p.v >= 0 ? '#ff5370' : '#00c48c'
                             const by = p.v >= 0 ? yS3(p.v) : zero3
                             const bh = Math.abs(yS3(p.v) - zero3)

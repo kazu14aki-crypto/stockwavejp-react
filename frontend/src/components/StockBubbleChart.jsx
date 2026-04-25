@@ -144,20 +144,20 @@ function StockBubbleChart({ stocks, themeName, onNavigate }) {
                   {(s.name||s.ticker.replace('.T','')).slice(0,8)}
                 </text>
                 <g style={{ pointerEvents:'none' }}>
-                  <rect x={tx} y={ty} width="152" height="62" rx="6"
-                    fill="#1a1f2e" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
-                  <text x={tx+8} y={ty+15} fontSize="10" fill="#e8f0ff" fontWeight="700">
-                    {(s.name||s.ticker.replace('.T','')).slice(0,14)}
+                  <rect x={tx} y={ty} width="185" height="82"
+                    rx="8" fill="#1a1f2e" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" />
+                  <text x={tx+10} y={ty+18} fontSize="12" fill="#e8f0ff" fontWeight="700">
+                    {(s.name||s.ticker.replace('.T','')).slice(0,16)}
                   </text>
-                  <text x={tx+8} y={ty+30} fontSize="9" fill={col}>
+                  <text x={tx+10} y={ty+36} fontSize="12" fill={col}>
                     {'騰落率: ' + (s.pct >= 0 ? '+' : '') + (s.pct?.toFixed(2) ?? '-') + '%'}
                   </text>
                   {hasVol && (
-                    <text x={tx+8} y={ty+44} fontSize="9" fill={(s.volume_chg??0)>=0?'#ff8c42':'#4a9eff'}>
-                      {'出来高: ' + ((s.volume_chg??0)>=0?'+':'') + (s.volume_chg?.toFixed(0)??'-') + '%'}
+                    <text x={tx+10} y={ty+53} fontSize="12" fill={(s.volume_chg??0)>=0?'#ff8c42':'#4a9eff'}>
+                      {'出来高: ' + ((s.volume_chg??0)>=0?'+':'') + (s.volume_chg?.toFixed(1)??'-') + '%'}
                     </text>
                   )}
-                  <text x={tx+8} y={ty+57} fontSize="9" fill="#8b949e">
+                  <text x={tx+10} y={ty+70} fontSize="12" fill="#8b949e">
                     {'売買代金: ' + fmtL(s.trade_value)}
                   </text>
                 </g>

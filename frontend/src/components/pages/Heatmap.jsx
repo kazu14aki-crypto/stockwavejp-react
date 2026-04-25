@@ -457,24 +457,25 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
                   {d.theme.length > 8 ? d.theme.slice(0,8)+'…' : d.theme}
                 </text>
 
-                {/* ツールチップ */}
+                {/* ⑥ ツールチップ（大きく表示） */}
                 {(() => {
-                  const tx = Math.min(cx, W - 170)
-                  const ty = Math.max(PT + 4, cy - r - 72)
+                  const TW = 210, TH = 90
+                  const tx = cx + r + 8 > W - TW ? cx - TW - r - 4 : cx + r + 4
+                  const ty = Math.max(PT, Math.min(PT + GH - TH, cy - TH/2))
                   return (
                     <g style={{ pointerEvents:'none' }}>
-                      <rect x={tx} y={ty} width="162" height="66"
-                        rx="6" fill="#1a1f2e" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
-                      <text x={tx+10} y={ty+16} fontSize="11" fill="#e8f0ff" fontWeight="700">
+                      <rect x={tx} y={ty} width={TW} height={TH}
+                        rx="8" fill="#1a1f2e" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" />
+                      <text x={tx+12} y={ty+20} fontSize="13" fill="#e8f0ff" fontWeight="700">
                         {d.theme}
                       </text>
-                      <text x={tx+10} y={ty+31} fontSize="10" fill={bColor(d.pct)}>
-                        {'騰落率: ' + (d.pct >= 0 ? '+' : '') + (d.pct?.toFixed(1) ?? '-') + '%'}
+                      <text x={tx+12} y={ty+38} fontSize="12" fill={bColor(d.pct)}>
+                        {'騰落率: ' + (d.pct >= 0 ? '+' : '') + (d.pct?.toFixed(2) ?? '-') + '%'}
                       </text>
-                      <text x={tx+10} y={ty+45} fontSize="10" fill={(d.volume_chg ?? 0) >= 0 ? '#ff8c42' : '#4a9eff'}>
-                        {(yAxisLabel + ': ') + (getY(d) >= 0 ? '+' : '') + getY(d).toFixed(0) + '%'}
+                      <text x={tx+12} y={ty+56} fontSize="12" fill={(d.volume_chg ?? 0) >= 0 ? '#ff8c42' : '#4a9eff'}>
+                        {(yAxisLabel + ': ') + (getY(d) >= 0 ? '+' : '') + getY(d).toFixed(1) + '%'}
                       </text>
-                      <text x={tx+10} y={ty+59} fontSize="10" fill="#8b949e">
+                      <text x={tx+12} y={ty+74} fontSize="12" fill="#8b949e">
                         {'売買代金: ' + fmtL(d.trade_value)}
                       </text>
                     </g>

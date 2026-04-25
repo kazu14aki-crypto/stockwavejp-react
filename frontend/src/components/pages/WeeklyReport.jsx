@@ -78,7 +78,7 @@ export default function WeeklyReport({ onNavigate }) {
     <div style={{ padding:'40px 24px', textAlign:'center' }}>
       <div style={{ fontSize:'48px', marginBottom:'16px' }}>📭</div>
       <div style={{ color:'var(--text2)', fontSize:'15px', marginBottom:'8px' }}>今週のレポートはまだ生成されていません</div>
-      <div style={{ color:'var(--text3)', fontSize:'12px' }}>毎週金曜日 16:00 JST 頃に自動生成されます</div>
+      <div style={{ color:'var(--text3)', fontSize:'12px' }}>毎週末 更新予定</div>
     </div>
   )
 
@@ -99,7 +99,7 @@ export default function WeeklyReport({ onNavigate }) {
         <div style={{ display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap', fontSize:'11px', color:'var(--text3)' }}>
           <span>生成: {report?.generated_at}</span>
           {report?.next_report_at && (
-            <span style={{ color:'var(--accent)' }}>📅 次回更新予定: {report.next_report_at}</span>
+            <span style={{ color:'var(--accent)' }}>📅 {report.next_report_at}</span>
           )}
         </div>
 
