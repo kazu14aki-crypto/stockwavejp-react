@@ -109,15 +109,19 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
 
       <style>{`
         @media (max-width: 900px) {
-          .hamburger-btn { display: flex !important; }
-          .status-label  { display: none !important; }
+          .hamburger-btn  { display: flex !important; }
+          .status-label   { display: none !important; }
           .status-updated { display: none !important; }
           .logo-text .logo-main { font-size: 13px !important; }
           .logo-text .logo-sub  { display: none !important; }
           .auth-btn-label { display: none !important; }
         }
+        /* ② タブレット横向き（901px〜1200px）でもハンバーガー維持 */
+        @media (min-width: 901px) and (max-width: 1200px) {
+          .hamburger-btn { display: flex !important; }
+        }
         @media (max-width: 400px) {
-          .status-area   { display: none !important; }
+          .status-area { display: none !important; }
         }
       `}</style>
     </>

@@ -487,9 +487,20 @@ export default function MarketRank() {
                   <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
 
-                {/* ④ 50:50 下部2カラム: 左=銘柄表 / 右=ヒートマップ→出来高グラフ */}
+                {/* ① テーマ別詳細と同じレイアウト: 左=グラフ群 / 右=銘柄表 */}
                 <div className="mr-bottom-grid">
-                  {/* 左: 銘柄詳細表 */}
+                  {/* 左: 出来高グラフ → ヒートマップ */}
+                  <div>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
+                      📊 出来高・売買代金ランキング（上位15銘柄）
+                    </div>
+                    <MrVolTvChart stocks={stocks} />
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'20px 0 10px' }}>
+                      🔥 銘柄別ヒートマップ
+                    </div>
+                    <MrBubbleChart stocks={stocks} />
+                  </div>
+                  {/* 右: 銘柄詳細表 */}
                   <div>
                     <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
                       構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
@@ -497,17 +508,6 @@ export default function MarketRank() {
                     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'visible' }}>
                       <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                     </div>
-                  </div>
-                  {/* 右: ヒートマップ → 出来高グラフ */}
-                  <div>
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
-                      🔥 銘柄別ヒートマップ
-                    </div>
-                    <MrBubbleChart stocks={stocks} />
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'16px 0 10px' }}>
-                      📊 出来高・売買代金ランキング（上位15銘柄）
-                    </div>
-                    <MrVolTvChart stocks={stocks} />
                   </div>
                 </div>
               </div>
