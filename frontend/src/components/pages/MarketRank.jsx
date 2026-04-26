@@ -7,7 +7,12 @@ import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 function MrVolTvChart({ stocks }) {
   const [mode, setMode] = useState('tv') // 'tv' | 'vol'
   const [expanded, setExpanded] = useState(false)
-  if (!stocks || stocks.length === 0) return null
+  if (!stocks || stocks.length === 0) return (
+    <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
+      background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
+      データ取得中...
+    </div>
+  )
   const sorted = [...stocks].sort((a,b) => (b[mode==='tv'?'trade_value':'volume']||0)-(a[mode==='tv'?'trade_value':'volume']||0)).slice(0,15)
   const maxV = Math.max(...sorted.map(s => s[mode==='tv'?'trade_value':'volume']||0), 1)
   const fmtL = v => {
@@ -85,7 +90,12 @@ function MrVolTvChart({ stocks }) {
 // 銘柄別ヒートマップ（MarketRank用・拡大機能付き）
 function MrBubbleChart({ stocks }) {
   const [expanded, setExpanded] = useState(false)
-  if (!stocks || !stocks.length) return null
+  if (!stocks || !stocks.length) return (
+    <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
+      background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
+      データ取得中...
+    </div>
+  )
   const chart = <StockBubbleChart stocks={stocks} themeName="" onNavigate={null} />
   return (
     <div>
@@ -484,7 +494,7 @@ export default function MarketRank() {
                     <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
                       構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                     </div>
-                    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
+                    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'visible' }}>
                       <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                     </div>
                   </div>

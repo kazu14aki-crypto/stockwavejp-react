@@ -138,6 +138,7 @@ function Chevron({ open }) {
 
 export default function HowTo() {
   const [openQ, setOpenQ] = useState(null)
+  const [openS, setOpenS] = useState(null)
 
   return (
     <div style={{ padding:'24px 28px 60px', maxWidth:'900px', margin:'0 auto' }}>
@@ -146,25 +147,35 @@ export default function HowTo() {
         StockWaveJPの各機能の使い方と、よくある質問をまとめています。
       </p>
 
-      {/* 機能ガイド */}
+      {/* 機能ガイド（アコーディオン形式） */}
       <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'14px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
         🗺️ 機能ガイド
       </h2>
-      <div style={{ display:'flex', flexDirection:'column', gap:'12px', marginBottom:'32px' }}>
+      <div style={{ display:'flex', flexDirection:'column', gap:'8px', marginBottom:'32px' }}>
         {SECTIONS.map((sec, si) => (
-          <div key={si} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'16px 18px' }}>
-            <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'8px' }}>
-              <span style={{ fontSize:'18px' }}>{sec.icon}</span>
-              <div>
-                <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>{sec.title}</div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'2px' }}>{sec.desc}</div>
+          <div key={si} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', overflow:'hidden' }}>
+            <button onClick={() => setOpenS(openS === si ? null : si)}
+              style={{ width:'100%', display:'flex', alignItems:'center', justifyContent:'space-between',
+                gap:'12px', padding:'12px 16px', background:'transparent', border:'none',
+                cursor:'pointer', textAlign:'left', fontFamily:'var(--font)', color:'var(--text)' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'10px' }}>
+                <span style={{ fontSize:'18px' }}>{sec.icon}</span>
+                <div>
+                  <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)' }}>{sec.title}</div>
+                  <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'2px' }}>{sec.desc}</div>
+                </div>
               </div>
-            </div>
-            <ul style={{ margin:0, paddingLeft:'20px', display:'flex', flexDirection:'column', gap:'4px' }}>
-              {sec.items.map((item, ii) => (
-                <li key={ii} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.7 }}>{item}</li>
-              ))}
-            </ul>
+              <Chevron open={openS === si} />
+            </button>
+            {openS === si && (
+              <div style={{ padding:'0 16px 14px', borderTop:'1px solid var(--border)' }}>
+                <ul style={{ margin:'10px 0 0', paddingLeft:'20px', display:'flex', flexDirection:'column', gap:'5px' }}>
+                  {sec.items.map((item, ii) => (
+                    <li key={ii} style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.7 }}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         ))}
       </div>

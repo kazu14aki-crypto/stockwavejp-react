@@ -108,12 +108,10 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
       </header>
 
       <style>{`
-        @media (max-width: 768px) {
-          .hamburger-btn { display: block !important; }
+        @media (max-width: 900px) {
+          .hamburger-btn { display: flex !important; }
           .status-label  { display: none !important; }
-          .status-time    { display: none !important; }
           .status-updated { display: none !important; }
-          .logo-text     { display: block !important; }
           .logo-text .logo-main { font-size: 13px !important; }
           .logo-text .logo-sub  { display: none !important; }
           .auth-btn-label { display: none !important; }
