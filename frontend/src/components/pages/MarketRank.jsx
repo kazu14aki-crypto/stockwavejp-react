@@ -435,9 +435,9 @@ export default function MarketRank() {
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
           color:'var(--text)', lineHeight:1.8 }}>
           <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
-          時価総額上位150銘柄・市場区分（プライム・スタンダード・グロース）ごとに、
+          時価総額上位150銘柄・市場区分（プライム・スタンダード・グロース）・ETF（6カテゴリ）ごとに、
           構成銘柄の騰落率ランキングと詳細データを確認できます。
-          上部のタブで「国内主要株」「国内全般」「市場区分」を切り替え、各グループ内のセグメントを選択してください。
+          上部のタブで「国内主要株」「国内全般」「市場区分」「ETF」を切り替え、各グループ内のセグメントを選択してください。
           <br/>
           <span style={{ fontSize:'11px', color:'var(--text3)' }}>
             💡 活用ポイント：「テクノロジー」セグメントが強い時はテーマ一覧の「半導体」「AI・クラウド」も
