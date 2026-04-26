@@ -25,7 +25,7 @@ export default function About() {
         <h2 style={{ fontSize:'15px', fontWeight:700, color:'#e8f0ff', marginBottom:'14px' }}>サイトについて</h2>
         <p style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, marginBottom:'12px' }}>
           StockWaveJPは、日本株のテーマ別動向を視覚的に把握するためのダッシュボードです。
-          半導体・AI・防衛・インバウンドなど30テーマの騰落率・出来高・売買代金を自動集計し、
+          半導体・AI・防衛・インバウンドなど67テーマの騰落率・出来高・売買代金を自動集計し、
           どのテーマに資金が集まっているかをリアルタイムで確認できます。
         </p>
         <p style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, marginBottom:'0' }}>

@@ -110,7 +110,7 @@ function genThemeComment(themes, summary, period, momentum) {
 
   // 全体相場概況
   const mktTone = avg >= 2 ? '強気' : avg >= 0.5 ? 'やや強気' : avg <= -2 ? '弱気' : avg <= -0.5 ? 'やや弱気' : '中立'
-  lines.push(`【${periodLabel}の全体概況】${periodLabel}の全30テーマを見ると、上昇${rising.length}テーマ・下落${falling.length}テーマで平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%（${mktTone}）。`)
+  lines.push(`【${periodLabel}の全体概況】${periodLabel}の全67テーマを見ると、上昇${rising.length}テーマ・下落${falling.length}テーマで平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%（${mktTone}）。`)
 
   // トップ・ボトム
   lines.push(`最高騰テーマは「${top?.theme}」(${top?.pct >= 0 ? '+' : ''}${top?.pct?.toFixed(2)}%)、最大下落テーマは「${bot?.theme}」(${bot?.pct?.toFixed(2)}%)で、その差は${(top?.pct - bot?.pct)?.toFixed(1)}ptと${Math.abs(top?.pct - bot?.pct) > 15 ? 'テーマ間の格差が大きい' : 'テーマ間のばらつきは比較的小さい'}。`)

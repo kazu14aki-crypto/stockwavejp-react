@@ -26,7 +26,7 @@ function TdExpandable({ title, children, style }) {
         }}>
           <div onClick={e => e.stopPropagation()} style={{
             background:'var(--bg)', borderRadius:'12px', border:'1px solid var(--border)',
-            padding:'16px', width:'min(80vw, 860px)', maxHeight:'80vh', overflowY:'auto',
+            padding:'20px', width:'min(92vw, 1200px)', maxHeight:'90vh', overflowY:'auto',
           }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'14px' }}>
               <span style={{ fontSize:'14px', fontWeight:700, color:'var(--text)' }}>{title}</span>
@@ -145,19 +145,19 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
   if (!data || data.length < 3) return null
-  const W = 64, H = 24
+  const W = 64, H = 28
   const min = Math.min(...data)
   const max = Math.max(...data)
   const range = max - min || 1
   const pts = data.map((v, i) => {
     const x = (i / (data.length - 1)) * W
-    const y = H - ((v - min) / range) * (H - 2) - 1
+    const y = H - ((v - min) / range) * (H - 3) - 1.5
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
   const color = data[data.length - 1] >= data[0] ? 'var(--red)' : 'var(--green)'
   return (
-    <svg width="64" height="24" viewBox={`0 0 ${W} ${H}`}
-      style={{ display:'block', overflow:'visible' }}>
+    <svg width="100%" height="100%" viewBox={`0 0 ${W} ${H}`}
+      style={{ display:'block' }} preserveAspectRatio="xMidYMid meet">
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
         fill={color} fillOpacity="0.12" stroke="none" />
@@ -408,7 +408,7 @@ function PickupStocks({ stocks, period }) {
               </div>
               {/* スパークライン */}
               {s.spark && s.spark.length >= 3 && (
-                <span style={{ display:'inline-block', width:'100%', height:'24px' }}>
+                <span style={{ display:'block', width:'100%', height:'36px' }}>
                   <Sparkline data={s.spark} />
                 </span>
               )}

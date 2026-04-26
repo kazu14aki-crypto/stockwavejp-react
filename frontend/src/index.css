@@ -1,3 +1,5 @@
+html { overflow-x: clip; }
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap');
 
 /* ── ダーク（デフォルト）── */
@@ -94,7 +96,6 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  overflow-x: hidden;
   min-height: 100vh;
   font-size: 14px;
   line-height: 1.6;

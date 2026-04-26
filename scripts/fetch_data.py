@@ -341,19 +341,31 @@ def main():
             )
         if df_1306_fresh is not None and len(df_1306_fresh) >= 5:
             df_1306_fresh.index = pd.to_datetime(df_1306_fresh.index).tz_localize(None)
-            # 既存のticker_dataを最新データで上書き（より新しいデータがあれば）
+            # 常に最新データで上書き（日付が新しければ強制置換）
             existing = ticker_data.get("1306.T")
-            if existing is None or len(df_1306_fresh) > len(existing):
+            if (existing is None or
+                df_1306_fresh.index[-1] > existing.index[-1] or
+                len(df_1306_fresh) > len(existing)):
                 ticker_data["1306.T"] = df_1306_fresh
-                print(f"  1306.T: {len(df_1306_fresh)}行（最新日: {df_1306_fresh.index[-1].date()}）")
-            # ^TOPIXも同様
-            df_topix_fresh = yf.Ticker("^TOPIX").history(
-                period="3mo", interval="1d", auto_adjust=True, timeout=30
-            )
-            if df_topix_fresh is not None and len(df_topix_fresh) >= 5:
-                df_topix_fresh.index = pd.to_datetime(df_topix_fresh.index).tz_localize(None)
-                ticker_data["^TOPIX"] = df_topix_fresh
-                print(f"  ^TOPIX: {len(df_topix_fresh)}行")
+                print(f"  1306.T: {len(df_1306_fresh)}行（最新日: {df_1306_fresh.index[-1].date()}）✅")
+            else:
+                print(f"  1306.T: 既存データが最新（{existing.index[-1].date()}）")
+        else:
+            # フォールバック: ^N225のデータをTOPIXの代替として使用
+            print("  1306.T: データ取得失敗、^N225で代替取得を試みる")
+            df_n225 = yf.Ticker("^N225").history(period="3mo", interval="1d", auto_adjust=True, timeout=30)
+            if df_n225 is not None and len(df_n225) >= 5:
+                df_n225.index = pd.to_datetime(df_n225.index).tz_localize(None)
+                ticker_data["1306.T"] = df_n225
+                print(f"  1306.T(^N225代替): {len(df_n225)}行（最新日: {df_n225.index[-1].date()}）")
+        # ^TOPIXも同様
+        df_topix_fresh = yf.Ticker("^TOPIX").history(
+            period="3mo", interval="1d", auto_adjust=True, timeout=30
+        )
+        if df_topix_fresh is not None and len(df_topix_fresh) >= 5:
+            df_topix_fresh.index = pd.to_datetime(df_topix_fresh.index).tz_localize(None)
+            ticker_data["^TOPIX"] = df_topix_fresh
+            print(f"  ^TOPIX: {len(df_topix_fresh)}行")
     except Exception as e:
         print(f"  1306.T個別取得エラー: {e}")
 
