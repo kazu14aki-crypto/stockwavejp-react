@@ -242,14 +242,28 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
     return sortAsc ? va - vb : vb - va
   })
 
-  // ② 上下スクロールバー同期
+  // ① 上下スクロールバー同期 + table実幅をspacerに反映
   useEffect(() => {
-    const table = tableRef.current; const top = topScrollRef.current
+    const table = tableRef.current
+    const top = topScrollRef.current
     if (!table || !top) return
     const syncT = () => { top.scrollLeft = table.scrollLeft }
     const syncH = () => { table.scrollLeft = top.scrollLeft }
-    table.addEventListener('scroll', syncT); top.addEventListener('scroll', syncH)
-    return () => { table.removeEventListener('scroll', syncT); top.removeEventListener('scroll', syncH) }
+    table.addEventListener('scroll', syncT)
+    top.addEventListener('scroll', syncH)
+    // table実際のscrollWidthをspacerに設定してスクロールバーを正確に表示
+    const updateSpacer = () => {
+      const spacer = document.getElementById('mr-scroll-spacer')
+      if (spacer) spacer.style.width = table.scrollWidth + 'px'
+    }
+    updateSpacer()
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(updateSpacer) : null
+    ro?.observe(table)
+    return () => {
+      table.removeEventListener('scroll', syncT)
+      top.removeEventListener('scroll', syncH)
+      ro?.disconnect()
+    }
   }, [])
 
   const onMouseDown = (e) => {
@@ -284,9 +298,10 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
           {sortAsc?'↑ 昇順':'↓ 降順'}
         </button>
       </div>
-      {/* ② 上部スクロールバー */}
-      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'14px', marginBottom:'2px' }}>
-        <div style={{ width:'1400px', height:'1px' }} />
+      {/* ① 上部スクロールバー（table幅に合わせて動的同期） */}
+      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'12px', marginBottom:'2px',
+        background:'rgba(255,255,255,0.02)', borderRadius:'4px' }}>
+        <div id="mr-scroll-spacer" style={{ height:'1px' }} />
       </div>
       <div ref={tableRef} className="sticky-table" style={{ cursor:'grab', userSelect:'none' }}
         onMouseDown={onMouseDown} onMouseMove={onMouseMove} onMouseUp={onMouseUp} onMouseLeave={onMouseUp}>

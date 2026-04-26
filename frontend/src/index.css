@@ -94,6 +94,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
+  overflow-x: hidden;
   min-height: 100vh;
   font-size: 14px;
   line-height: 1.6;

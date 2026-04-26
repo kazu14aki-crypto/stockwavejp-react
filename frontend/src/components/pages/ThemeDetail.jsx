@@ -151,23 +151,18 @@ function Sparkline({ data }) {
   const range = max - min || 1
   const pts = data.map((v, i) => {
     const x = (i / (data.length - 1)) * W
-    const y = H - ((v - min) / range) * H
+    const y = H - ((v - min) / range) * (H - 2) - 1
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
-  const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
-  const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
+  const color = data[data.length - 1] >= data[0] ? 'var(--red)' : 'var(--green)'
   return (
-    <svg width='100%' height='100%' viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' style={{ display:'block' }}>
-      {/* ゼロライン */}
-      <line x1={0} y1={zeroY} x2={W} y2={zeroY}
-        stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
-      {/* 塗りつぶし */}
+    <svg width="64" height="24" viewBox={`0 0 ${W} ${H}`}
+      style={{ display:'block', overflow:'visible' }}>
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
-        fill={`${color}18`} stroke="none" />
-      {/* 折れ線 */}
-      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.4"
-        strokeLinejoin="round" strokeLinecap="round" />
+        fill={color} fillOpacity="0.12" stroke="none" />
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.5"
+        strokeLinejoin="round" strokeLinecap="round" vectorEffect="non-scaling-stroke" />
     </svg>
   )
 }
@@ -497,9 +492,17 @@ function StockTable({ stocks: rawStocks }) {
     const syncFromTop = () => { table.scrollLeft = top.scrollLeft }
     table.addEventListener('scroll', syncFromTable)
     top.addEventListener('scroll', syncFromTop)
+    const updateSpacer = () => {
+      const spacer = document.getElementById('td-scroll-spacer')
+      if (spacer) spacer.style.width = table.scrollWidth + 'px'
+    }
+    updateSpacer()
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(updateSpacer) : null
+    ro?.observe(table)
     return () => {
       table.removeEventListener('scroll', syncFromTable)
       top.removeEventListener('scroll', syncFromTop)
+      ro?.disconnect()
     }
   }, [])
 
@@ -562,8 +565,9 @@ function StockTable({ stocks: rawStocks }) {
       </div>
 
       {/* ② 上部スクロールバー */}
-      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'14px', marginBottom:'2px' }}>
-        <div style={{ width:'1400px', height:'1px' }} />
+      <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'12px', marginBottom:'2px',
+        background:'rgba(255,255,255,0.02)', borderRadius:'4px' }}>
+        <div id="td-scroll-spacer" style={{ height:'1px' }} />
       </div>
 
       {/* ② ドラッグ可能な銘柄表 */}
