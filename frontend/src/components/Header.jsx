@@ -108,8 +108,8 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
       </header>
 
       <style>{`
-        /* タブレット・スマホ（〜1024px）でハンバーガー表示 */
-        @media (max-width: 1024px) {
+        /* タブレット・スマホ（〜1280px）でハンバーガー表示 */
+        @media (max-width: 1280px) {
           .hamburger-btn  { display: flex !important; }
           .status-label   { display: none !important; }
           .status-updated { display: none !important; }

@@ -75,7 +75,7 @@ function AppInner() {
   }, [])
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
-  const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1024)
+  const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1280)
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
@@ -90,11 +90,17 @@ function AppInner() {
     const check = () => {
       if (viewMode === 'mobile') { setIsMobile(true); return }
       if (viewMode === 'pc')     { setIsMobile(false); return }
-      setIsMobile(window.innerWidth <= 1024)
+      // iPad Pro横向き(1366px)まで対応するため1280px以下をタブレット扱い
+      setIsMobile(window.innerWidth <= 1280)
     }
     check()
     window.addEventListener('resize', check)
-    return () => window.removeEventListener('resize', check)
+    const onOrientChange = () => setTimeout(check, 150)
+    window.addEventListener('orientationchange', onOrientChange)
+    return () => {
+      window.removeEventListener('resize', check)
+      window.removeEventListener('orientationchange', onOrientChange)
+    }
   }, [viewMode])
 
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
