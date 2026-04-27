@@ -203,20 +203,18 @@ function Sparkline({ data }) {
   const range = max - min || 1
   const pts = data.map((v, i) => {
     const x = (i / (data.length - 1)) * W
-    const y = H - ((v - min) / range) * H
+    const y = H - ((v - min) / range) * (H - 3) - 1.5
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
-  const color = data[data.length - 1] >= data[0] ? '#ff5370' : '#00c48c'
-  const zeroY = Math.max(0, Math.min(H, H - ((0 - min) / range) * H))
+  const color = data[data.length - 1] >= data[0] ? 'var(--red)' : 'var(--green)'
   return (
-    <svg width='100%' height='100%' viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' style={{ display:'block' }}>
-      <line x1={0} y1={zeroY} x2={W} y2={zeroY}
-        stroke="rgba(255,255,255,0.15)" strokeWidth="0.8" strokeDasharray="2,2" />
+    <svg width="100%" height="100%" viewBox={`0 0 ${W} ${H}`}
+      style={{ display:'block' }} preserveAspectRatio="xMidYMid meet">
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
-        fill={`${color}18`} stroke="none" />
-      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.4"
-        strokeLinejoin="round" strokeLinecap="round" />
+        fill={color} fillOpacity="0.12" stroke="none" />
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.5"
+        strokeLinejoin="round" strokeLinecap="round" vectorEffect="non-scaling-stroke" />
     </svg>
   )
 }
@@ -341,7 +339,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                     <div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
                       <span style={{ flex:1, fontSize:'13px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-                      <span style={{ display:'inline-block', width:'64px', minWidth:'64px', height:'22px', flexShrink:0 }}>
+                      <span style={{ display:'inline-block', width:'80px', minWidth:'64px', maxWidth:'100px', height:'22px', flexShrink:1 }}>
                         <Sparkline data={s.spark} />
                       </span>
                     </div>
