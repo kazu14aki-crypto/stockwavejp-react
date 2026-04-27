@@ -857,7 +857,7 @@ export default function MarketRank() {
           grid-template-columns: 1fr;
           gap: 16px;
         }
-        @media (min-width: 900px) {
+        @media (min-width: 641px) {
           .mr-bottom-grid {
             grid-template-columns: 1fr 1fr;
             align-items: start;

@@ -1165,7 +1165,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         }
         .td-left  { min-width: 0; }
         .td-right { min-width: 0; }
-        @media (min-width: 900px) {
+        @media (min-width: 641px) {
           .td-bottom-grid {
             grid-template-columns: 1fr 1fr;
             align-items: start;
