@@ -108,14 +108,16 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
       </header>
 
       <style>{`
-        /* ③ スマホのみ（〜640px）ハンバーガー表示・タブレット以上はPC版 */
-        @media (max-width: 640px) {
+        /* スマホ（〜640px）とタブレット（641〜900px）でハンバーガー表示 */
+        @media (max-width: 900px) {
           .hamburger-btn  { display: flex !important; }
           .status-label   { display: none !important; }
           .status-updated { display: none !important; }
-          .logo-text .logo-main { font-size: 13px !important; }
           .logo-text .logo-sub  { display: none !important; }
           .auth-btn-label { display: none !important; }
+        }
+        @media (max-width: 640px) {
+          .logo-text .logo-main { font-size: 13px !important; }
         }
         @media (max-width: 400px) {
           .status-area { display: none !important; }

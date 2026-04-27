@@ -79,7 +79,7 @@ function StockBubbleChart({ stocks, themeName, onNavigate }) {
           {/* ゾーン背景 */}
           <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.06)" />
           <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.05)" />
-          <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.04)" />
+          <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.10)" />
           <rect x={PL} y={y0} width={x0-PL} height={PT+GH-y0} fill="rgba(74,158,255,0.03)" />
 
           {/* グリッド */}

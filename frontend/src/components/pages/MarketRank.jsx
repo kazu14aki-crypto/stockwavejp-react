@@ -4,6 +4,169 @@ import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 
 // 出来高・売買代金 棒グラフ（MarketRank用）
+// ── 注目銘柄ピックアップ ──────────────────────────────
+function PickupStocks({ stocks, period }) {
+  if (!stocks || stocks.length === 0) return null
+
+  const fmtL = (v) => {
+    if (!v || v === 0) return '-'
+    if (v >= 1e12) return (v / 1e12).toFixed(1) + '兆'
+    if (v >= 1e8)  return (v / 1e8).toFixed(1) + '億'
+    if (v >= 1e4)  return (v / 1e4).toFixed(1) + '万'
+    return v.toLocaleString()
+  }
+
+  const scored = stocks.map(s => {
+    const pct    = s.pct ?? 0
+    const volChg = s.volume_chg ?? 0
+    const tv     = s.trade_value ?? 0
+
+    const pctScore = Math.min(40, Math.max(0, pct * 2))
+    const volScore = Math.min(25, Math.max(0, volChg * 0.5))
+    const tvScore  = tv > 0 ? Math.min(15, Math.log10(tv) * 1.5) : 0
+
+    let sparkScore = 0
+    let sparkAccel = 0
+    if (s.spark && s.spark.length >= 6) {
+      const sp = s.spark, n = sp.length
+      const h  = Math.floor(n / 2)
+      const avgFirst = sp.slice(0, h).reduce((a, b) => a + b, 0) / h
+      const avgLast  = sp.slice(h).reduce((a, b) => a + b, 0) / (n - h)
+      sparkAccel = avgLast - avgFirst
+      sparkScore = Math.min(20, Math.max(0, sparkAccel * 3))
+    }
+
+    const totalScore = pctScore + volScore + sparkScore + tvScore
+
+    const buildReason = () => {
+      const parts = []
+      if (pct >= 10)       parts.push('この期間の騰落率は+' + pct.toFixed(1) + '%と大幅上昇しており、テーマ全体を牽引する動きを見せています')
+      else if (pct >= 5)   parts.push('この期間の騰落率は+' + pct.toFixed(1) + '%と堅調で、テーマ内の上位上昇銘柄です')
+      else if (pct >= 2)   parts.push('+' + pct.toFixed(1) + '%の上昇でテーマ平均を上回っています')
+      else if (pct > 0)    parts.push('+' + pct.toFixed(1) + '%と小幅ながらプラスを維持しています')
+
+      if (volChg >= 50)      parts.push('出来高が+' + volChg.toFixed(0) + '%と急増しており、機関投資家・外国人投資家の大口資金の流入が強く示唆されます')
+      else if (volChg >= 20) parts.push('出来高が+' + volChg.toFixed(0) + '%増加しており、市場参加者の注目が高まっています')
+
+      if (sparkAccel > 3)    parts.push('直近の価格推移が後半にかけて加速（後半平均+' + sparkAccel.toFixed(1) + '%）しており、モメンタムが強まっています')
+      else if (sparkAccel > 1) parts.push('価格推移が後半にかけてやや改善（後半+' + sparkAccel.toFixed(1) + '%）しています')
+
+      if (tv >= 5e9)       parts.push('売買代金は' + fmtL(tv) + 'と非常に大きく、流動性が高い主力銘柄として積極的に売買されています')
+      else if (tv >= 1e9)  parts.push('売買代金は' + fmtL(tv) + 'と十分な規模があり、積極的な売買が行われています')
+
+      if (parts.length === 0) parts.push('騰落率・出来高・価格推移・売買代金の総合評価で、このテーマ内での注目度が高い銘柄として選定されました')
+      return parts.join('。') + '。'
+    }
+
+    return { ...s, _score: totalScore, _reason: buildReason() }
+  })
+  .filter(s => (s.pct ?? 0) > 0 && s._score > 3)
+  .sort((a, b) => b._score - a._score)
+  .slice(0, 3)
+
+  if (scored.length === 0) return null
+
+  const medals      = ['🥇', '🥈', '🥉']
+  const medalColors = ['#ffd166', 'rgba(192,192,192,0.7)', 'rgba(205,127,50,0.7)']
+
+  return (
+    <div style={{ marginBottom:'20px' }}>
+      {/* PickupStocksヘッダー: スマホで1行目タイトル/2行目説明 */}
+      <div style={{ marginBottom:'12px' }}>
+        <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'4px' }}>
+          <span style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>
+            🔎 注目銘柄ピックアップ
+          </span>
+          <div style={{ flex:1, height:'1px', background:'var(--border)' }} />
+        </div>
+        <span style={{ fontSize:'10px', color:'var(--text3)', display:'block', paddingLeft:'2px' }}>
+          騰落率・出来高・勢い・売買代金を総合スコアで機械的に集計した参考情報です
+        </span>
+      </div>
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:'10px' }}
+        className="pickup-grid">
+        {scored.map((s, i) => {
+          const upColor   = (s.pct ?? 0) >= 0 ? '#ff5370' : '#00c48c'
+          const scoreNum  = Math.min(100, Math.round(s._score))
+          const scoreColor = scoreNum >= 60 ? '#ff5370' : scoreNum >= 35 ? '#ff8c42' : '#ffd166'
+          return (
+            <div key={s.ticker} style={{
+              background:'var(--bg2)', borderRadius:'8px', padding:'12px 14px',
+              border:'1px solid var(--border)',
+              borderTop:'3px solid ' + medalColors[i],
+              display:'flex', flexDirection:'column', gap:'6px',
+            }}>
+              {/* 順位 + ティッカー + 騰落率 */}
+              <div style={{ display:'flex', alignItems:'center', gap:'6px' }}>
+                <span style={{ fontSize:'14px' }}>{medals[i]}</span>
+                <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
+                  {s.ticker.replace('.T', '')}
+                </span>
+                <span style={{ marginLeft:'auto', fontSize:'13px', fontWeight:700,
+                  color:upColor, fontFamily:'var(--mono)' }}>
+                  {(s.pct ?? 0) >= 0 ? '+' : ''}{s.pct?.toFixed(1)}%
+                </span>
+              </div>
+              {/* 銘柄名（必ず表示） */}
+              <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)',
+                lineHeight:1.4 }}>
+                {s.name || s.ticker.replace('.T', '')}
+              </div>
+              {/* スパークライン ④ 高さを拡大 */}
+              {s.spark && s.spark.length >= 3 && (
+                <span style={{ display:'block', width:'100%', height:'56px' }}>
+                  <Sparkline data={s.spark} />
+                </span>
+              )}
+              {/* 株価 + 売買代金 */}
+              <div style={{ display:'flex', gap:'10px', fontSize:'10px',
+                fontFamily:'var(--mono)', color:'var(--text3)' }}>
+                {'¥' + (s.price?.toLocaleString() || '-')}
+                {(s.trade_value ?? 0) > 0 && (
+                  <span>{'売買代金 ' + fmtL(s.trade_value)}</span>
+                )}
+              </div>
+              {/* 注目度スコア */}
+              <div style={{ display:'flex', alignItems:'center', gap:'6px' }}>
+                <span style={{ fontSize:'9px', color:'var(--text3)', fontWeight:600,
+                  textTransform:'uppercase', letterSpacing:'0.06em', flexShrink:0 }}>
+                  注目度
+                </span>
+                <span style={{ fontSize:'15px', fontWeight:800, fontFamily:'var(--mono)',
+                  color:scoreColor, lineHeight:1 }}>
+                  {scoreNum}
+                </span>
+                <span style={{ fontSize:'9px', color:'var(--text3)', marginRight:'4px' }}>/100</span>
+                <div style={{ flex:1, height:'4px', background:'rgba(255,255,255,0.06)',
+                  borderRadius:'2px', overflow:'hidden' }}>
+                  <div style={{ width:scoreNum + '%', height:'100%',
+                    background:scoreColor, borderRadius:'2px' }} />
+                </div>
+              </div>
+              {/* 根拠文章 */}
+              <p style={{ fontSize:'10px', color:'var(--text2)', lineHeight:1.75, margin:0 }}>
+                {s._reason}
+              </p>
+            </div>
+          )
+        })}
+      </div>
+      <div style={{ marginTop:'8px', padding:'8px 12px',
+        background:'rgba(255,193,7,0.05)', borderRadius:'5px',
+        border:'1px solid rgba(255,193,7,0.15)', fontSize:'10px',
+        color:'var(--text3)', lineHeight:1.8 }}>
+        ⚠️ <strong style={{ color:'var(--text2)' }}>注意：</strong>
+        上記ピックアップは騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計したものです。
+        <strong style={{ color:'var(--text2)' }}>リアルタイムデータではなく</strong>、
+        GitHub Actionsによるデータ取得タイミング（1日数回更新）に依存するため、
+        最新の市場状況と乖離する場合があります。
+        特定銘柄の購入・売却を推奨するものではなく、
+        <strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします</strong>。
+      </div>
+    </div>
+  )
+}
+
 function MrVolTvChart({ stocks }) {
   const [mode, setMode] = useState('tv') // 'tv' | 'vol'
   const [expanded, setExpanded] = useState(false)
@@ -287,7 +450,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
   }
   const onMouseUp = () => { isDragging.current = false; if (tableRef.current) tableRef.current.style.cursor = 'grab' }
 
-  const headers = ['株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
   const sortBtns = [{key:'pct',label:'騰落率'},{key:'volume',label:'出来高'},{key:'trade_value',label:'売買代金'}]
 
   return (
@@ -337,12 +500,13 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
                   </td>
                   <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
-                    <div style={{ display:'flex', alignItems:'center', gap:'6px', width:'100%', minWidth:0 }}>
-                      <span style={{ flex:1, fontSize:'13px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', minWidth:0 }}>{s.name}</span>
-                      <span style={{ display:'inline-block', width:'80px', minWidth:'64px', maxWidth:'100px', height:'22px', flexShrink:1 }}>
-                        <Sparkline data={s.spark} />
-                      </span>
-                    </div>
+                    <span style={{ fontSize:'13px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', display:'block' }}>{s.name}</span>
+                  </td>
+                  {/* ① ミニチャート列（固定なし・横スクロールで動く） */}
+                  <td style={{ ...tdC, padding:'4px 8px', minWidth:'72px', width:'72px' }}>
+                    <span style={{ display:'inline-block', width:'64px', height:'22px', verticalAlign:'middle' }}>
+                      <Sparkline data={s.spark} />
+                    </span>
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
@@ -648,6 +812,9 @@ export default function MarketRank() {
                   <Top5Bar items={top5} title={`▲ 上昇TOP5（${stocks.filter(s=>s.pct>0).length}銘柄上昇）`} colorFn={pctColor} emptyMsg="上昇銘柄なし"/>
                   <Top5Bar items={bot5} title={`▼ 下落TOP5（${stocks.filter(s=>s.pct<0).length}銘柄下落）`} colorFn={pctColor} emptyMsg="下落銘柄なし"/>
                 </div>
+
+                {/* ③ 注目銘柄ピックアップ */}
+                <PickupStocks stocks={stocks} period={period} />
 
                 {/* ① テーマ別詳細と同じレイアウト: 左=グラフ群 / 右=銘柄表 */}
                 <div className="mr-bottom-grid">

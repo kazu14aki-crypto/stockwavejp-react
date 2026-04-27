@@ -298,10 +298,10 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
 
   // ── ゾーン定義（サイトカラーに合わせた暗いトーン）──
   const zones = [
-    { label:'注目ゾーン 上昇+出来高増',  x:x0, y:PT,  w:PL+GW-x0, h:y0-PT,    bg:'rgba(255,83,112,0.08)', border:'rgba(255,83,112,0.22)' },
-    { label:'売り圧力 下落+出来高増',    x:PL, y:PT,  w:x0-PL,    h:y0-PT,    bg:'rgba(0,196,140,0.07)',  border:'rgba(0,196,140,0.18)'  },
-    { label:'静かな上昇 出来高少',       x:x0, y:y0,  w:PL+GW-x0, h:PT+GH-y0, bg:'rgba(255,140,66,0.05)', border:'rgba(255,140,66,0.12)' },
-    { label:'静かな下落',                x:PL, y:y0,  w:x0-PL,    h:PT+GH-y0, bg:'rgba(74,158,255,0.04)', border:'none'                  },
+    { label:'注目ゾーン 上昇+出来高増',  x:x0, y:PT,  w:PL+GW-x0, h:y0-PT,    bg:'rgba(255,83,112,0.14)', border:'rgba(255,83,112,0.40)' },
+    { label:'売り圧力 下落+出来高増',    x:PL, y:PT,  w:x0-PL,    h:y0-PT,    bg:'rgba(0,196,140,0.12)',  border:'rgba(0,196,140,0.35)'  },
+    { label:'静かな上昇 出来高少',       x:x0, y:y0,  w:PL+GW-x0, h:PT+GH-y0, bg:'rgba(255,140,66,0.10)', border:'rgba(255,140,66,0.30)' },
+    { label:'静かな下落',                x:PL, y:y0,  w:x0-PL,    h:PT+GH-y0, bg:'rgba(74,158,255,0.08)', border:'rgba(74,158,255,0.25)' },
   ]
 
   // 目盛り生成
