@@ -853,14 +853,14 @@ export default function MarketRank() {
           .mr-page-body { padding: 20px 32px 48px !important; }
         }
         .mr-bottom-grid {
-          display: grid;
-          grid-template-columns: 1fr;
+          display: grid !important;
+          grid-template-columns: 1fr !important;
           gap: 16px;
         }
         @media (min-width: 641px) {
           .mr-bottom-grid {
-            grid-template-columns: 1fr 1fr;
-            align-items: start;
+            grid-template-columns: 1fr 1fr !important;
+            align-items: start !important;
           }
           .mr-bottom-grid > div {
             min-width: 0;

@@ -1158,8 +1158,8 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         .theme-summary-mobile { display: none; }
         /* ④ 下部2カラム: 左=グラフ / 右=銘柄表 */
         .td-bottom-grid {
-          display: grid;
-          grid-template-columns: 1fr;
+          display: grid !important;
+          grid-template-columns: 1fr !important;
           gap: 20px;
           margin-top: 12px;
         }
@@ -1167,8 +1167,8 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         .td-right { min-width: 0; }
         @media (min-width: 641px) {
           .td-bottom-grid {
-            grid-template-columns: 1fr 1fr;
-            align-items: start;
+            grid-template-columns: 1fr 1fr !important;
+            align-items: start !important;
           }
         }
         @media (max-width:640px) {
