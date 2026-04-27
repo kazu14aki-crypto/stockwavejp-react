@@ -333,9 +333,9 @@ function BubbleScatterMini({ onNavigate }) {
         <svg viewBox={`0 0 ${W} ${H}`} style={{ width:'100%', minWidth:'320px', display:'block',
           background:'var(--bg2)', borderRadius:'10px', border:'1px solid var(--border)' }}>
           {/* ゾーン背景 */}
-          <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.14)" rx="3"/>
-          <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.12)" rx="3"/>
-          <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.10)" rx="3"/>
+          <rect x={x0} y={PT} width={PL+GW-x0} height={y0-PT} fill="rgba(255,83,112,0.22)" rx="3"/>
+          <rect x={PL} y={PT} width={x0-PL} height={y0-PT} fill="rgba(0,196,140,0.18)" rx="3"/>
+          <rect x={x0} y={y0} width={PL+GW-x0} height={PT+GH-y0} fill="rgba(255,140,66,0.15)" rx="3"/>
           <line x1={x0} y1={PT} x2={x0} y2={PT+GH} stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="5,3"/>
           <line x1={PL} y1={y0} x2={PL+GW} y2={y0} stroke="rgba(255,255,255,0.3)" strokeWidth="1.2" strokeDasharray="5,3"/>
           <text x={x0+6} y={PT+14} fontSize="10" fill="rgba(255,83,112,0.8)" fontWeight="700">🔥 注目</text>
@@ -758,7 +758,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
         <button onClick={() => setDisplayMode('top10')} style={{
           padding:'7px 18px', borderRadius:'6px', fontSize:'12px', fontWeight:600,
           cursor:'pointer', fontFamily:'var(--font)',
-          background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.3)', color:'var(--accent)',
+          background:'rgba(74,158,255,0.13)', border:'1px solid rgba(74,158,255,0.3)', color:'var(--accent)',
         }}>トップ10を表示</button>
       )}
       {displayMode !== 'all' && items.length > TOP10_LIMIT && (

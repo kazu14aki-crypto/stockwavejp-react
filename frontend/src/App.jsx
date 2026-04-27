@@ -75,7 +75,7 @@ function AppInner() {
   }, [])
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
-  const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 640)
+  const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1024)
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
@@ -90,7 +90,7 @@ function AppInner() {
     const check = () => {
       if (viewMode === 'mobile') { setIsMobile(true); return }
       if (viewMode === 'pc')     { setIsMobile(false); return }
-      setIsMobile(window.innerWidth <= 640)
+      setIsMobile(window.innerWidth <= 1024)
     }
     check()
     window.addEventListener('resize', check)

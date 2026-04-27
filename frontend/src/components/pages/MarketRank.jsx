@@ -158,7 +158,7 @@ function PickupStocks({ stocks, period }) {
         ⚠️ <strong style={{ color:'var(--text2)' }}>注意：</strong>
         上記ピックアップは騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計したものです。
         <strong style={{ color:'var(--text2)' }}>リアルタイムデータではなく</strong>、
-        GitHub Actionsによるデータ取得タイミング（1日数回更新）に依存するため、
+        データ取得タイミング（1日数回更新）に依存するため、
         最新の市場状況と乖離する場合があります。
         特定銘柄の購入・売却を推奨するものではなく、
         <strong style={{ color:'var(--text2)' }}>投資の最終判断はご自身の責任でお願いします</strong>。
