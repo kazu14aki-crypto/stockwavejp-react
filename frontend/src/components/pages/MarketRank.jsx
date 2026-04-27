@@ -247,14 +247,26 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
     const table = tableRef.current
     const top = topScrollRef.current
     if (!table || !top) return
-    const syncT = () => { top.scrollLeft = table.scrollLeft }
+    const syncT = () => {
+      top.scrollLeft = table.scrollLeft
+      const bot = document.getElementById('mr-bottom-scroll')
+      if (bot) bot.scrollLeft = table.scrollLeft
+    }
     const syncH = () => { table.scrollLeft = top.scrollLeft }
+    const syncBot = () => {
+      const bot = document.getElementById('mr-bottom-scroll')
+      if (bot) table.scrollLeft = bot.scrollLeft
+    }
     table.addEventListener('scroll', syncT)
     top.addEventListener('scroll', syncH)
+    document.getElementById('mr-bottom-scroll')?.addEventListener('scroll', syncBot)
     // table実際のscrollWidthをspacerに設定してスクロールバーを正確に表示
     const updateSpacer = () => {
+      const w = table.scrollWidth + 'px'
       const spacer = document.getElementById('mr-scroll-spacer')
-      if (spacer) spacer.style.width = table.scrollWidth + 'px'
+      if (spacer) spacer.style.width = w
+      const botSpacer = document.getElementById('mr-bottom-spacer')
+      if (botSpacer) botSpacer.style.width = w
     }
     updateSpacer()
     const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(updateSpacer) : null
@@ -262,6 +274,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
     return () => {
       table.removeEventListener('scroll', syncT)
       top.removeEventListener('scroll', syncH)
+      document.getElementById('mr-bottom-scroll')?.removeEventListener('scroll', syncBot)
       ro?.disconnect()
     }
   }, [])
@@ -357,6 +370,11 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
             })}
           </tbody>
         </table>
+      </div>
+      {/* ② 下部スクロールバー（上部と同期） */}
+      <div id="mr-bottom-scroll" style={{ overflowX:'auto', overflowY:'hidden', height:'12px', marginTop:'2px',
+        background:'rgba(255,255,255,0.02)', borderRadius:'4px' }}>
+        <div id="mr-bottom-spacer" style={{ height:'1px' }} />
       </div>
     </>
   )
@@ -466,46 +484,52 @@ export default function MarketRank() {
   useEffect(()=>{ setDetail(null); setEtfDetail(null) }, [activeSeg, period])
 
   // ETFグループ選択時はyfinanceからリアルタイム取得
+  // ① ETFグループ選択時 → market.json → Render API → プレースホルダーの順でフォールバック
   useEffect(() => {
     if (activeGroup !== 'ETF' || !activeSeg) return
     const tickerMap = ETF_GROUPS[activeSeg]
     if (!tickerMap) return
     setEtfLoading(true)
     setEtfDetail(null)
-    const tickers = Object.keys(tickerMap).map(t => t + '.T')
-    // APIから各ETFの情報を取得（並列）
-    Promise.all(
-      tickers.map(ticker =>
-        fetch(`${typeof window !== 'undefined' && (import.meta.env?.VITE_API_URL || 'https://stockwavejp-backend.onrender.com')}/api/stock-info/${encodeURIComponent(ticker)}`)
-          .then(r => r.ok ? r.json() : null)
-          .catch(() => null)
-      )
-    ).then(results => {
-      const stocks = results
-        .map((r, i) => {
-          if (!r) return null
-          const ticker = tickers[i]
-          const code = ticker.replace('.T', '')
-          return {
-            ticker,
-            name: tickerMap[code] || r.name || ticker,
-            price: r.price ?? r.current_price ?? 0,
-            pct: r.pct ?? 0,
-            volume: r.volume ?? 0,
-            trade_value: r.trade_value ?? 0,
-            volume_chg: r.volume_chg ?? 0,
-            market_cap: r.market_cap ?? 0,
-            spark: r.spark ?? [],
-            contribution: null,
-            vol_rank: 0,
-            tv_rank: 0,
+    const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+    ;(async () => {
+      // Step1: market.jsonのseg_キーを確認（GitHub Actions実行後に反映）
+      try {
+        const mj = await fetch('/data/market.json?t=' + Date.now()).then(r=>r.json())
+        const key = 'seg_' + activeSeg + '_' + period
+        if (mj[key]) {
+          const raw = mj[key]
+          const ss = Array.isArray(raw) ? raw : (raw.stocks ?? [])
+          if (ss.length > 0) {
+            const avg = ss.reduce((s,x)=>s+(x.pct??0),0)/ss.length
+            setEtfDetail({ stocks: ss, avg })
+            setEtfLoading(false); return
           }
-        })
-        .filter(Boolean)
-      const avg = stocks.length ? stocks.reduce((s,x)=>s+x.pct,0)/stocks.length : 0
-      setEtfDetail({ stocks, avg })
+        }
+      } catch {}
+      // Step2: Render APIの /api/market-rank/{seg_name}
+      try {
+        const r = await fetch(API_BASE + '/api/market-rank/' + encodeURIComponent(activeSeg) + '?period=' + period)
+        if (r.ok) {
+          const json = await r.json()
+          const ss = Array.isArray(json) ? json : (json.data ?? json.stocks ?? [])
+          if (ss.length > 0) {
+            const enriched = ss.map(s => ({
+              ...s, name: tickerMap[s.ticker?.replace('.T','')] || s.name || s.ticker,
+            }))
+            setEtfDetail({ stocks: enriched, avg: enriched.reduce((s,x)=>s+(x.pct??0),0)/enriched.length })
+            setEtfLoading(false); return
+          }
+        }
+      } catch {}
+      // Step3: APIも失敗 → 銘柄名だけ表示
+      const placeholders = Object.entries(tickerMap).map(([code, name]) => ({
+        ticker: code+'.T', name, price:0, pct:0, volume:0, trade_value:0,
+        volume_chg:0, market_cap:0, spark:[], contribution:null, vol_rank:0, tv_rank:0, _noData:true,
+      }))
+      setEtfDetail({ stocks: placeholders, avg: 0, _noData: true })
       setEtfLoading(false)
-    })
+    })()
   }, [activeSeg, activeGroup, period])
 
   // ETFグループ以外のセグメント詳細取得

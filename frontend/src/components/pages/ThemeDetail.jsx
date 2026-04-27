@@ -406,9 +406,9 @@ function PickupStocks({ stocks, period }) {
                 lineHeight:1.4 }}>
                 {s.name || s.ticker.replace('.T', '')}
               </div>
-              {/* スパークライン */}
+              {/* スパークライン ④ 高さを拡大 */}
               {s.spark && s.spark.length >= 3 && (
-                <span style={{ display:'block', width:'100%', height:'36px' }}>
+                <span style={{ display:'block', width:'100%', height:'56px' }}>
                   <Sparkline data={s.spark} />
                 </span>
               )}
