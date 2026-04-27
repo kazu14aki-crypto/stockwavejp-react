@@ -633,9 +633,9 @@ export default function MarketRank() {
               })}
             </div>
 
-            {loadingD ? (
-              <Loading msg="個別株データ取得中..." />
-            ) : detail ? (
+            {isLoading ? (
+              <Loading msg="データ取得中..." />
+            ) : currentDetail ? (
               <div>
                 <div style={{ display:'flex', alignItems:'center', gap:'16px', marginBottom:'20px', flexWrap:'wrap' }}>
                   <span style={{ fontSize:'16px', fontWeight:700, color:'var(--text)' }}>{activeSeg ? (activeSeg.split('｜')[1] || activeSeg) : ''}</span>
@@ -665,11 +665,11 @@ export default function MarketRank() {
                     <MrBubbleChart stocks={stocks} />
                   </div>
                   {/* 右: 銘柄詳細表 */}
-                  <div>
+                  <div style={{ minWidth: 0 }}>
                     <div style={{ fontSize:'11px', fontWeight:600, letterSpacing:'0.1em', color:'var(--text3)', textTransform:'uppercase', marginBottom:'8px' }}>
                       構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                     </div>
-                    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'visible' }}>
+                    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
                       <StockTable stocks={stocks} onAddToTheme={setModalStock} />
                     </div>
                   </div>
@@ -696,6 +696,10 @@ export default function MarketRank() {
           .mr-bottom-grid {
             grid-template-columns: 1fr 1fr;
             align-items: start;
+          }
+          .mr-bottom-grid > div {
+            min-width: 0;
+            overflow: hidden;
           }
         }
         /* ③ スマホ版の表・グラフはみ出し防止 */

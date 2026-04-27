@@ -145,13 +145,13 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
   if (!data || data.length < 3) return null
-  const W = 64, H = 28
+  const W = 200, H = 56
   const min = Math.min(...data)
   const max = Math.max(...data)
   const range = max - min || 1
   const pts = data.map((v, i) => {
     const x = (i / (data.length - 1)) * W
-    const y = H - ((v - min) / range) * (H - 3) - 1.5
+    const y = H - ((v - min) / range) * (H - 4) - 2
     return `${x.toFixed(1)},${y.toFixed(1)}`
   }).join(' ')
   const color = data[data.length - 1] >= data[0] ? 'var(--red)' : 'var(--green)'
@@ -161,7 +161,7 @@ function Sparkline({ data }) {
       <polyline
         points={`0,${H} ${pts} ${W},${H}`}
         fill={color} fillOpacity="0.12" stroke="none" />
-      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.5"
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="2"
         strokeLinejoin="round" strokeLinecap="round" vectorEffect="non-scaling-stroke" />
     </svg>
   )
