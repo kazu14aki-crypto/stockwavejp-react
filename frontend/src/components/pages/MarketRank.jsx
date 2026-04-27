@@ -366,6 +366,74 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
 
 
 
+// ETFセグメント定義（market.jsonに未登録のためフロントエンドでハードコード）
+const ETF_GROUPS = {
+  'ETF｜国内株式インデックス': {
+    '1321': 'NEXT FUNDS 日経225連動型',
+    '1306': 'TOPIX連動型上場投信',
+    '1308': 'NEXT FUNDS TOPIX連動型',
+    '1330': '上場インデックスファンド225',
+    '1346': 'MAXIS 日経225上場投信',
+    '1329': 'iシェアーズ 日経225 ETF',
+    '1348': 'MAXIS TOPIX上場投信',
+    '1591': 'JPX日経400 ETF',
+    '1577': '日本株高配当70 ETF',
+    '1489': '日経平均高配当株50',
+    '1343': 'NEXT FUNDS 東証REIT指数連動型',
+    '1597': 'MAXIS Jリート上場投信',
+    '1476': 'iシェアーズ・コア Jリート ETF',
+    '1488': 'iFreeETF 東証REIT指数',
+    '1478': 'iシェアーズ 日本高配当株 ETF',
+  },
+  'ETF｜国内株式テーマ': {
+    '2644': 'グローバルX半導体 ETF',
+    '1626': 'NEXT FUNDS 情報通信・サービス',
+    '1625': 'NEXT FUNDS 電機・精密',
+    '1622': 'NEXT FUNDS 輸送用機器',
+    '1615': 'NEXT FUNDS 銀行業',
+    '1617': 'NEXT FUNDS 証券・商品先物',
+    '1619': 'NEXT FUNDS 保険業',
+    '1631': 'NEXT FUNDS 不動産業',
+    '2085': 'MAXIS 高配当日本株アクティブ',
+    '2868': 'グローバルX S&P500配当貴族 ETF',
+  },
+  'ETF｜海外株式・先進国': {
+    '2558': 'NEXT FUNDS S&P500指数',
+    '1655': 'iシェアーズ S&P500 ETF',
+    '2559': 'MAXIS 全世界株式(オルカン)',
+    '2631': 'NEXT FUNDS ナスダック100',
+    '2841': 'iシェアーズ ナスダック100 ETF',
+    '1680': 'NEXT FUNDS 外国株式MSCI-KOKUSAI',
+    '1554': 'iシェアーズ MSCI 全世界株式',
+    '1546': 'NEXT FUNDS ダウ・ジョーンズ',
+    '1547': '上場インデックスファンド米国株式S&P500',
+  },
+  'ETF｜新興国・アジア': {
+    '1678': 'NEXT FUNDS インドNifty50連動型',
+    '2850': 'グローバルX インド株式 ETF',
+    '2854': 'グローバルX チャイナEV・テック ETF',
+    '1575': 'iシェアーズ 中国株式 ETF',
+    '1495': '上場インデックスファンド アジアリート',
+  },
+  'ETF｜債券・コモディティ': {
+    '2510': 'NEXT FUNDS 国内債券インデックス',
+    '1487': 'iシェアーズ 日本国債 ETF',
+    '1540': 'NEXT FUNDS 金Price連動型',
+    '1699': 'NEXT FUNDS 原油価格連動型',
+    '1482': 'iシェアーズ 米国債7-10年 ETF',
+    '2861': 'グローバルX 金・貴金属 ETF',
+    '1671': 'WisdomTree WTI 原油',
+  },
+  'ETF｜レバレッジ・インバース': {
+    '1570': 'NEXT FUNDS 日経平均レバレッジ2倍',
+    '1571': 'NEXT FUNDS 日経平均ダブルインバース',
+    '1568': 'NEXT FUNDS TOPIX レバレッジ(2倍)',
+    '1569': 'NEXT FUNDS TOPIX インバース(-1倍)',
+    '1365': '楽天ETF 日経ダブルブル',
+    '1580': '大和ETF 日経225インバース',
+  },
+}
+
 export default function MarketRank() {
   const [modalStock,  setModalStock]  = useState(null)
   const [period,      setPeriod]      = useState('1mo')
@@ -374,20 +442,75 @@ export default function MarketRank() {
   const [activeGroup, setActiveGroup] = useState('国内主要株')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
+  // ETF専用状態
+  const [etfDetail,   setEtfDetail]   = useState(null)
+  const [etfLoading,  setEtfLoading]  = useState(false)
 
   const { data: marketData, loading: loadingS } = useMarketRankList(period)
 
   useEffect(()=>{
     if (!marketData) return
-    setSummary(marketData.data); setGroups(marketData.groups||{})
-    const firstSeg = (marketData.groups?.['国内主要株'] || Object.values(marketData.groups||{})[0] || [])[0]
+    setSummary(marketData.data)
+    // ①「ETF」グループをmarket.jsonの外でフロント側に追加
+    const baseGroups = marketData.groups || {}
+    const allGroups = {
+      ...baseGroups,
+      'ETF': Object.keys(ETF_GROUPS),
+    }
+    setGroups(allGroups)
+    const firstSeg = (baseGroups['国内主要株'] || Object.values(baseGroups)[0] || [])[0]
     if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
   },[marketData])
 
   // activeSeg変更時は即detailをリセット（古いデータ残存防止）
-  useEffect(()=>{ setDetail(null) }, [activeSeg, period])
+  useEffect(()=>{ setDetail(null); setEtfDetail(null) }, [activeSeg, period])
 
-  const { data: segDetailRaw, loading: loadingD } = useSegmentDetail(activeSeg, period)
+  // ETFグループ選択時はyfinanceからリアルタイム取得
+  useEffect(() => {
+    if (activeGroup !== 'ETF' || !activeSeg) return
+    const tickerMap = ETF_GROUPS[activeSeg]
+    if (!tickerMap) return
+    setEtfLoading(true)
+    setEtfDetail(null)
+    const tickers = Object.keys(tickerMap).map(t => t + '.T')
+    // APIから各ETFの情報を取得（並列）
+    Promise.all(
+      tickers.map(ticker =>
+        fetch(`${typeof window !== 'undefined' && (import.meta.env?.VITE_API_URL || 'https://stockwavejp-backend.onrender.com')}/api/stock-info/${encodeURIComponent(ticker)}`)
+          .then(r => r.ok ? r.json() : null)
+          .catch(() => null)
+      )
+    ).then(results => {
+      const stocks = results
+        .map((r, i) => {
+          if (!r) return null
+          const ticker = tickers[i]
+          const code = ticker.replace('.T', '')
+          return {
+            ticker,
+            name: tickerMap[code] || r.name || ticker,
+            price: r.price ?? r.current_price ?? 0,
+            pct: r.pct ?? 0,
+            volume: r.volume ?? 0,
+            trade_value: r.trade_value ?? 0,
+            volume_chg: r.volume_chg ?? 0,
+            market_cap: r.market_cap ?? 0,
+            spark: r.spark ?? [],
+            contribution: null,
+            vol_rank: 0,
+            tv_rank: 0,
+          }
+        })
+        .filter(Boolean)
+      const avg = stocks.length ? stocks.reduce((s,x)=>s+x.pct,0)/stocks.length : 0
+      setEtfDetail({ stocks, avg })
+      setEtfLoading(false)
+    })
+  }, [activeSeg, activeGroup, period])
+
+  // ETFグループ以外のセグメント詳細取得
+  const segNameForHook = activeGroup !== 'ETF' ? activeSeg : null
+  const { data: segDetailRaw, loading: loadingD } = useSegmentDetail(segNameForHook, period)
   useEffect(()=>{
     if (!segDetailRaw) { setDetail(null); return }
     if (Array.isArray(segDetailRaw)) {
@@ -398,22 +521,24 @@ export default function MarketRank() {
   },[segDetailRaw])
 
   const pctColor = (v) => v>=0 ? 'var(--red)' : 'var(--green)'
-  const rawStocks = detail?.stocks ?? []
+  // ETFグループ時はetfDetailを使用
+  const currentDetail = activeGroup === 'ETF' ? etfDetail : detail
+  const isLoading = activeGroup === 'ETF' ? etfLoading : loadingD
+  const rawStocks = currentDetail?.stocks ?? []
   const volSorted = [...rawStocks].sort((a,b) => (b.volume||0)-(a.volume||0))
   const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
   const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
   const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
-  // 時価総額グループは市価総額降順、それ以外は騰落率降順
-  const isTVGroup = activeGroup === '国内全般' && activeSeg?.includes('時価総額')
+  // ①国内全般は時価総額降順、ETFは騰落率降順、その他は騰落率降順
   const mappedStocks = rawStocks.map(s => ({
     ...s,
     vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
     tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
   }))
-  const stocks = isTVGroup
+  const stocks = activeGroup === '国内全般'
     ? [...mappedStocks].sort((a,b) => (b.market_cap||0) - (a.market_cap||0))
     : [...mappedStocks].sort((a,b) => b.pct - a.pct)
-  const detailAvg = detail?.avg ?? 0
+  const detailAvg = currentDetail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
 
@@ -430,7 +555,7 @@ export default function MarketRank() {
         </select>
       </div>
 
-      <div style={{ padding:'20px 32px 48px', maxWidth:'1280px', margin:'0 auto' }}>
+      <div style={{ padding:'12px 12px 48px', maxWidth:'1280px', margin:'0 auto' }} className="mr-page-body">
         <div style={{ background:'rgba(6,214,160,0.05)', border:'1px solid rgba(6,214,160,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
           color:'var(--text)', lineHeight:1.8 }}>
@@ -533,16 +658,26 @@ export default function MarketRank() {
 
       <style>{`
         @media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}
+        /* ③ スマホ版パディング調整 */
+        .mr-page-body { padding: 10px 10px 40px !important; }
+        @media (min-width: 641px) {
+          .mr-page-body { padding: 20px 32px 48px !important; }
+        }
         .mr-bottom-grid {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 20px;
+          gap: 16px;
         }
         @media (min-width: 900px) {
           .mr-bottom-grid {
             grid-template-columns: 1fr 1fr;
             align-items: start;
           }
+        }
+        /* ③ スマホ版の表・グラフはみ出し防止 */
+        @media (max-width: 640px) {
+          .mr-page-body .sticky-table { max-width: calc(100vw - 20px); }
+          .mr-page-body svg { max-width: 100%; }
         }
       `}</style>
     </div>
