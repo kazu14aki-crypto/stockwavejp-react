@@ -848,7 +848,7 @@ export default function MarketRank() {
       <style>{`
         @media (max-width:640px){.top5g{grid-template-columns:1fr !important;}}
         /* ③ スマホ版パディング調整 */
-        .mr-page-body { padding: 10px 10px 40px !important; }
+        .mr-page-body { padding: 10px 12px 40px !important; }
         @media (min-width: 641px) {
           .mr-page-body { padding: 20px 32px 48px !important; }
         }
@@ -864,8 +864,11 @@ export default function MarketRank() {
           }
           .mr-bottom-grid > div {
             min-width: 0;
-            overflow: hidden;
           }
+        }
+        /* ② スマホ版: 右端をTOP5に揃える */
+        @media (max-width: 640px) {
+          .mr-bottom-grid { padding: 0 !important; }
         }
         /* ③ スマホ版の表・グラフはみ出し防止 */
         @media (max-width: 640px) {
