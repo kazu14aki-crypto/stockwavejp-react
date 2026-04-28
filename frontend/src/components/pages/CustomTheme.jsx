@@ -8,9 +8,12 @@ import { useAuth } from '../../hooks/useAuth.jsx'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
-  { label:'1週間', value:'5d' },
+  { label:'1日',   value:'1d'  },
+  { label:'1週間', value:'5d'  },
   { label:'1ヶ月', value:'1mo' },
   { label:'3ヶ月', value:'3mo' },
+  { label:'6ヶ月', value:'6mo' },
+  { label:'1年',   value:'1y'  },
 ]
 
 function formatLarge(n) {
