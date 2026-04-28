@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap');
+/* Google Fontsはindex.htmlのpreconnect+media="print"で非同期読み込み済み */
 
 html { overflow-x: clip; }
 
@@ -216,8 +216,8 @@ body {
   .responsive-grid-2 { grid-template-columns:1fr !important; }
 }
 
-/* ② タブレット＋スマホ（〜900px）: スマホ版レイアウト */
-@media (max-width: 900px) {
+/* ③ スマホのみ（〜640px）: スマホ版レイアウト */
+@media (max-width: 640px) {
   .monthly-chart-grid   { grid-template-columns: 1fr !important; }
   .mr-bottom-grid       { grid-template-columns: 1fr !important; }
   .td-bottom-grid       { grid-template-columns: 1fr !important; }
@@ -227,8 +227,6 @@ body {
   .theme-summary-pc         { display: none !important; }
   .theme-summary-mobile     { display: block !important; }
   .ct-detail-grid           { grid-template-columns: 1fr !important; }
-}
-@media (max-width: 640px) {
   .sticky-table table { font-size: 11px !important; }
   .sticky-table th, .sticky-table td { padding: 5px 6px !important; }
   .theme-detail-body { padding: 10px 10px 40px !important; }

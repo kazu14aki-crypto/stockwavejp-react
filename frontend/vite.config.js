@@ -15,10 +15,24 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1500,
+    // CSS最小化を明示的に有効化
+    cssMinify: true,
+    minify: 'esbuild',
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
+        manualChunks(id) {
+          // Reactコアを分離
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'react-vendor'
+          }
+          // Supabaseを分離（大きいライブラリ）
+          if (id.includes('node_modules/@supabase')) {
+            return 'supabase'
+          }
+          // columnDataは大きいので分離
+          if (id.includes('columnData')) {
+            return 'column-data'
+          }
         },
       },
     },
