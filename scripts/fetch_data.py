@@ -1,6 +1,6 @@
 """
 fetch_data.py — GitHub Actionsで実行するデータ取得スクリプト
-yfinanceから全テーマデータを取得してJSONに保存する
+Infoway API（優先）→ yfinance（フォールバック）でデータを取得してJSONに保存する
 """
 import yfinance as yf
 import numpy as np
@@ -8,9 +8,24 @@ import pandas as pd
 import json
 import os
 import sys
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
+from datetime import datetime, timedelta
 import pytz
+
+# Infoway API設定（環境変数から読み込み）
+INFOWAY_API_KEY = os.environ.get("INFOWAY_API_KEY", "")
+# ドキュメント確認済みの正式エンドポイント
+INFOWAY_STOCK_URL  = "https://data.infoway.io/v2/stock/batch_kline"
+INFOWAY_FOREX_URL  = "https://data.infoway.io/v2/forex/v2/batch_kline"
+USE_INFOWAY        = bool(INFOWAY_API_KEY)
+# klineType: 4=日足, klineNum: 最大500本
+INFOWAY_KLINE_TYPE = 4   # 日足
+INFOWAY_KLINE_NUM  = 180 # 過去約6ヶ月（約126取引日）
+
+def infoway_headers():
+    """ドキュメント仕様: apiKey ヘッダー"""
+    return {"apiKey": INFOWAY_API_KEY, "Content-Type": "application/json"}
 
 # themes.pyからTHEMESをimport（themes.pyと自動同期）
 import sys as _sys
@@ -40,7 +55,94 @@ def robust_avg(pcts):
     return round(float(f.mean() if len(f) > 0 else np.median(arr)), 2)
 
 
+def fetch_ticker_infoway(ticker):
+    """
+    Infoway API（POST /v2/stock/batch_kline）から日次OHLCVを取得してDataFrameに変換
+    ドキュメント仕様:
+      - endpoint: https://data.infoway.io/v2/stock/batch_kline
+      - method: POST
+      - header: apiKey
+      - body: {klineType:4, klineNum:180, codes:["7203.JP"], timestamp:unix_ts}
+      - response: {s:"7203.JP", respList:[{t,h,o,l,c,na,pc,pct},...]}
+    """
+    try:
+        code = ticker.replace(".T", "")
+        if not code.isdigit():
+            return None  # 非日本株はスキップ
+
+        # タイムスタンプ: 今から6ヶ月前のUnixタイムスタンプ
+        ts_start = int((datetime.now() - timedelta(days=190)).timestamp())
+
+        payload = {
+            "klineType": INFOWAY_KLINE_TYPE,  # 4=日足
+            "klineNum":  INFOWAY_KLINE_NUM,   # 最大500本（約6ヶ月）
+            "codes":     [f"{code}.JP"],        # 7203.JP 形式
+            "timestamp": ts_start,
+        }
+        r = requests.post(
+            INFOWAY_STOCK_URL,
+            headers=infoway_headers(),
+            json=payload,
+            timeout=25
+        )
+        if r.status_code != 200:
+            print(f"  INFOWAY HTTP {r.status_code}: {ticker}")
+            return None
+
+        data = r.json()
+        if data.get("ret") != 200:
+            print(f"  INFOWAY ret={data.get('ret')}: {ticker}")
+            return None
+
+        # レスポンス: data["data"] = [{s:"7203.JP", respList:[...]}, ...]
+        items = data.get("data", [])
+        if not items:
+            return None
+
+        resp_list = items[0].get("respList", []) if isinstance(items, list) else []
+        if not resp_list:
+            return None
+
+        # respListフィールド: t=タイムスタンプ, h=高値, o=始値, l=安値, c=終値, na=出来高?, pc=前日比, pct=騰落率
+        rows = []
+        for row in resp_list:
+            try:
+                ts = int(row["t"])
+                rows.append({
+                    "Date":   pd.Timestamp(ts, unit="ms").normalize(),
+                    "Open":   float(row.get("o", 0)),
+                    "High":   float(row.get("h", 0)),
+                    "Low":    float(row.get("l", 0)),
+                    "Close":  float(row.get("c", 0)),
+                    "Volume": float(row.get("na", row.get("v", 0))),
+                })
+            except (KeyError, ValueError):
+                continue
+
+        if len(rows) < 5:
+            return None
+
+        df = pd.DataFrame(rows).set_index("Date").sort_index()
+        df.index = df.index.tz_localize(None)
+        print(f"  INFOWAY OK: {ticker} → {len(df)} rows, last={df.index[-1].date()}")
+        return df
+
+    except Exception as e:
+        print(f"  INFOWAY ERROR: {ticker} → {type(e).__name__}: {e}")
+        return None
+
+
 def fetch_ticker(ticker):
+    """Infoway API優先、失敗時はyfinanceにフォールバック"""
+    # Infoway APIが設定されている場合は優先使用（日本株のみ）
+    if USE_INFOWAY and ticker.endswith(".T"):
+        df = fetch_ticker_infoway(ticker)
+        if df is not None and len(df) >= 5:
+            return df
+        # Infowayが失敗した場合はyfinanceにフォールバック
+        print(f"  INFOWAY→yfinance fallback: {ticker}")
+
+    # yfinance（フォールバック or 非日本株）
     try:
         df = yf.Ticker(ticker).history(
             period="2y", interval="1d",
@@ -50,7 +152,7 @@ def fetch_ticker(ticker):
             print(f"  EMPTY: {ticker} → rows={len(df) if df is not None else 0}")
             return None
         df.index = df.index.tz_localize(None)
-        print(f"  OK: {ticker} → {len(df)} rows, last={df.index[-1].date()}")
+        print(f"  YF OK: {ticker} → {len(df)} rows, last={df.index[-1].date()}")
         return df
     except Exception as e:
         print(f"  ERROR: {ticker} → {type(e).__name__}: {e}")
@@ -323,14 +425,43 @@ def main():
     now_jst = datetime.now(jst)
     print(f"=== 開始: {now_jst.strftime('%Y/%m/%d %H:%M JST')} ===")
     print(f"yfinance version: {yf.__version__}")
+    print(f"Infoway API: {'✅ 有効 (環境変数設定済み)' if USE_INFOWAY else '❌ 無効 (yfinanceのみ使用)'}")
 
-    # テスト取得（トヨタ1銘柄で接続確認）
-    print("接続テスト中（トヨタ 7203.T）...")
-    test_df = yf.Ticker("7203.T").history(period="5d", interval="1d", auto_adjust=True)
-    if test_df is not None and len(test_df) > 0:
-        print(f"接続テスト成功: {len(test_df)}行取得")
+    # 接続テスト
+    if USE_INFOWAY:
+        print("Infoway接続テスト中（POST /v2/stock/batch_kline トヨタ 7203.JP）...")
+        try:
+            payload = {
+                "klineType": 4,   # 日足
+                "klineNum":  5,   # 直近5本のみ
+                "codes":     ["7203.JP"],
+                "timestamp": int((datetime.now() - timedelta(days=10)).timestamp()),
+            }
+            r = requests.post(
+                INFOWAY_STOCK_URL,
+                headers=infoway_headers(),
+                json=payload,
+                timeout=15
+            )
+            if r.status_code == 200:
+                data = r.json()
+                if data.get("ret") == 200:
+                    items = data.get("data", [])
+                    n = len(items[0].get("respList", [])) if items else 0
+                    print(f"Infoway接続テスト成功: {n}件取得 ✅")
+                else:
+                    print(f"Infoway接続テスト失敗: ret={data.get('ret')} → yfinanceにフォールバック")
+            else:
+                print(f"Infoway接続テスト失敗: HTTP {r.status_code} → yfinanceにフォールバック")
+        except Exception as e:
+            print(f"Infoway接続テストエラー: {e} → yfinanceにフォールバック")
     else:
-        print("接続テスト失敗: データなし")
+        print("接続テスト中（トヨタ 7203.T / yfinance）...")
+        test_df = yf.Ticker("7203.T").history(period="5d", interval="1d", auto_adjust=True)
+        if test_df is not None and len(test_df) > 0:
+            print(f"yfinance接続テスト成功: {len(test_df)}行取得")
+        else:
+            print("yfinance接続テスト失敗: データなし")
 
     # 全ユニークティッカーを並列取得
     all_tickers = set()
