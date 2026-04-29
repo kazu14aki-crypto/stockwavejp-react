@@ -1,4 +1,4 @@
-const LogoSvg = () => (
+﻿const LogoSvg = () => (
   <svg width="28" height="28" viewBox="0 0 56 56" fill="none">
     <line x1="28" y1="4"  x2="28" y2="10" stroke="#e63030" strokeWidth="2.2" strokeLinecap="round"/>
     <line x1="42" y1="9"  x2="38" y2="14" stroke="#e63030" strokeWidth="2.2" strokeLinecap="round"/>
@@ -108,26 +108,20 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
       </header>
 
       <style>{`
-<<<<<<< Updated upstream
         /* タブレット・スマホ（〜1280px）でハンバーガー表示 */
         @media (max-width: 1280px) {
-=======
         @media (max-width: 900px) {
->>>>>>> Stashed changes
           .hamburger-btn  { display: flex !important; }
           .status-label   { display: none !important; }
           .status-updated { display: none !important; }
           .logo-text .logo-sub  { display: none !important; }
           .auth-btn-label { display: none !important; }
         }
-<<<<<<< Updated upstream
         @media (max-width: 640px) {
           .logo-text .logo-main { font-size: 13px !important; }
-=======
         /* ② タブレット横向き（901px〜1200px）でもハンバーガー維持 */
         @media (min-width: 901px) and (max-width: 1200px) {
           .hamburger-btn { display: flex !important; }
->>>>>>> Stashed changes
         }
         @media (max-width: 400px) {
           .status-area { display: none !important; }
