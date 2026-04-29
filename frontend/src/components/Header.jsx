@@ -1,4 +1,4 @@
-﻿const LogoSvg = () => (
+const LogoSvg = () => (
   <svg width="28" height="28" viewBox="0 0 56 56" fill="none">
     <line x1="28" y1="4"  x2="28" y2="10" stroke="#e63030" strokeWidth="2.2" strokeLinecap="round"/>
     <line x1="42" y1="9"  x2="38" y2="14" stroke="#e63030" strokeWidth="2.2" strokeLinecap="round"/>
