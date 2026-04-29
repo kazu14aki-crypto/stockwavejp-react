@@ -75,11 +75,7 @@ function AppInner() {
   }, [])
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
-<<<<<<< Updated upstream
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1280)
-=======
-  const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1200)
->>>>>>> Stashed changes
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
@@ -94,12 +90,8 @@ function AppInner() {
     const check = () => {
       if (viewMode === 'mobile') { setIsMobile(true); return }
       if (viewMode === 'pc')     { setIsMobile(false); return }
-<<<<<<< Updated upstream
       // iPad Pro横向き(1366px)まで対応するため1280px以下をタブレット扱い
       setIsMobile(window.innerWidth <= 1280)
-=======
-      setIsMobile(window.innerWidth <= 1200)
->>>>>>> Stashed changes
     }
     check()
     window.addEventListener('resize', check)
