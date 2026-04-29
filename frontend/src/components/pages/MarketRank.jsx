@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react'
+﻿﻿import React, { useState, useEffect, useRef } from 'react'
 import AddToThemeModal from '../AddToThemeModal'
 import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
