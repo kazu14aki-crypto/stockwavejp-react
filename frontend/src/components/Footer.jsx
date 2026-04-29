@@ -78,7 +78,7 @@ export default function Footer() {
         paddingTop: '12px', borderTop: '1px solid var(--border)',
         display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px',
       }}>
-        <span>© 2025 StockWaveJP. All rights reserved.</span>
+        <span>© 2026 StockWaveJP. All rights reserved.</span>
         <span style={{ color: 'var(--text3)' }}>
           ※ 本サービスの情報は投資助言ではありません。投資は自己責任で行ってください。
         </span>
