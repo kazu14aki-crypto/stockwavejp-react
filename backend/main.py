@@ -453,13 +453,13 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
         if now - ts < _CACHE_TTL:
             return {**cached, "cached": True}
 
-    EDINET_BASE = "https://disclosure2.edinet-fsa.go.jp/api/v2"
+    EDINET_BASE = "https://api.edinet-fsa.go.jp/api/v2"
     # 登録APIキー（環境変数から取得）
     api_key = os.environ.get("EDINET_API_KEY", "")
     headers = {}
     if api_key:
         # EDINET登録APIのヘッダー形式
-        headers["Ocp-Apim-Subscription-Key"] = api_key
+        headers["Subscription-Key"] = api_key 
 
     results = []
     today = date.today()
@@ -472,8 +472,13 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
                 try:
                     res = await client.get(
                         f"{EDINET_BASE}/documents.json",
-                        params={"date": target, "type": 2},
-                        timeout=12.0
+                        params = {"date": target, "type": 2}
+                        if api_key:
+                            params["Subscription-Key"] = api_key
+                   　　 res = await client.get(
+                       　　 f"{EDINET_BASE}/documents.json",
+                       　　 params=params,
+                       　　 timeout=12.0
                     )
                     if not res.is_success:
                         # 403の場合はAPIキーの問題なのでログに出す
