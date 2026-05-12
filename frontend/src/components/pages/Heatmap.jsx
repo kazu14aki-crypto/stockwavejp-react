@@ -338,18 +338,20 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
         </span>
       </div>
 
-      {/* ゾーン説明 */}
-      <div className="scatter-zone-desc">
+      {/* ゾーン説明 — 1行横並び */}
+      <div style={{
+        display:'flex', flexWrap:'wrap', gap:'6px 16px',
+        marginBottom:'10px', fontSize:'11px',
+      }}>
         {[
-          { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'#ff5370' },
-          { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'#00c48c' },
-          { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少＝じわり上昇',    color:'#ff8c42' },
-          { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'#4a9eff' },
+          { dot:'#ff5370', text:'🔥 注目ゾーン（右上）上昇＋出来高急増' },
+          { dot:'#00c48c', text:'⚠️ 売り圧力（左上）下落＋出来高急増' },
+          { dot:'#ff8c42', text:'📈 静かな上昇（右下）上昇＋出来高少' },
+          { dot:'#4a9eff', text:'❄️ 静かな下落（左下）弱含み・動意なし' },
         ].map(z => (
-          <div key={z.label} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
-            <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:z.color, flexShrink:0 }} />
-            <span style={{ color:'var(--text3)' }}>{z.label}：</span>
-            <span style={{ color:'var(--text2)' }}>{z.desc}</span>
+          <div key={z.text} style={{ display:'flex', alignItems:'center', gap:'4px', whiteSpace:'nowrap' }}>
+            <div style={{ width:'7px', height:'7px', borderRadius:'50%', background:z.dot, flexShrink:0 }} />
+            <span style={{ color:'var(--text3)' }}>{z.text}</span>
           </div>
         ))}
       </div>

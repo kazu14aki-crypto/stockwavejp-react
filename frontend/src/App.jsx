@@ -18,6 +18,8 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import TermsOfService from './components/pages/TermsOfService'
 import SiteInfo    from './components/pages/SiteInfo'
 import WeeklyReport from './components/pages/WeeklyReport'
+import InstitutionalHoldings from './components/pages/InstitutionalHoldings'
+import Plan          from './components/pages/Plan'
 
 const PAGES = [
   { icon:'🏠', label:'ホーム',                   component:TopPage       },
@@ -31,8 +33,10 @@ const PAGES_OTHER = [
   { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
   { icon:'📣', label:'お知らせ',            component:News          },
   { icon:'📖', label:'使い方',              component:HowTo         },
+  { icon:'🏦', label:'機関投資家保有', component:InstitutionalHoldings },
   { icon:'📰', label:'週次レポート',          component:WeeklyReport  },
   { icon:'📝', label:'コラム・解説',        component:Column        },
+  { icon:'💰', label:'プラン・料金',  component:Plan         },
   { icon:'⚙️', label:'設定',               component:Settings      },
   { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
