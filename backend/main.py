@@ -1,4 +1,4 @@
-import numpy as np
+﻿import numpy as np
 """
 main.py — FastAPI メインサーバー v2.1
 """
@@ -521,3 +521,4 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
     }
     _edinet_cache[cache_key] = (now, payload)
     return payload
+
