@@ -424,3 +424,77 @@ def search_stocks(q: str = Query(default="")):
         return {"results": results[:8]}
     except Exception as e:
         return {"results": [], "error": str(e)}
+
+
+
+# ── EDINET 大量保有報告書プロキシ（キャッシュ付き） ──────────────
+import httpx
+from datetime import date, timedelta
+from functools import lru_cache
+import time
+
+# メモリキャッシュ（クエリ → (タイムスタンプ, 結果)）
+_edinet_cache: dict = {}
+_CACHE_TTL = 3600  # 1時間キャッシュ
+
+@app.get("/api/edinet/large-holdings")
+async def edinet_large_holdings(q: str = "", days: int = 60):
+    """
+    EDINET大量保有報告書を検索（CORSを回避するバックエンドプロキシ）
+    結果は1時間メモリキャッシュ。初回のみ時間がかかります。
+    """
+    cache_key = f"{q.strip().lower()}:{min(days,90)}"
+    now = time.time()
+
+    # キャッシュヒット
+    if cache_key in _edinet_cache:
+        ts, cached = _edinet_cache[cache_key]
+        if now - ts < _CACHE_TTL:
+            return {**cached, "cached": True}
+
+    EDINET_BASE = "https://disclosure2.edinet-fsa.go.jp/api/v2"
+    results = []
+    today = date.today()
+    q_lower = (q or "").strip().lower()
+
+    try:
+        async with httpx.AsyncClient(timeout=15.0) as client:
+            for i in range(min(days, 90)):
+                target = (today - timedelta(days=i)).isoformat()
+                try:
+                    res = await client.get(
+                        f"{EDINET_BASE}/documents.json",
+                        params={"date": target, "type": 2},
+                        timeout=10.0
+                    )
+                    if not res.is_success:
+                        continue
+                    docs = res.json().get("results", [])
+                    for doc in docs:
+                        if doc.get("docTypeCode") not in ["28", "29", "30"]:
+                            continue
+                        if q_lower:
+                            issuer = (doc.get("issuerName") or "").lower()
+                            sec    = (doc.get("secCode")    or "").lower()
+                            filer  = (doc.get("filerName")  or "").lower()
+                            if not (q_lower in issuer or q_lower in sec or q_lower in filer):
+                                continue
+                        results.append({
+                            "docID":        doc.get("docID"),
+                            "submitDate":   target,
+                            "issuerName":   doc.get("issuerName"),
+                            "secCode":      doc.get("secCode"),
+                            "filerName":    doc.get("filerName"),
+                            "docTypeCode":  doc.get("docTypeCode"),
+                            "holdingRatio": doc.get("otherExplanatoryStatement"),
+                        })
+                    if len(results) >= 100:
+                        break
+                except Exception:
+                    continue
+    except Exception as e:
+        return {"results": [], "query": q, "count": 0, "error": str(e)}
+
+    payload = {"results": results, "query": q, "count": len(results), "cached": False}
+    _edinet_cache[cache_key] = (now, payload)
+    return payload
