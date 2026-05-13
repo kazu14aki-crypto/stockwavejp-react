@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 """
 main.py — FastAPI メインサーバー v2.1
 """
@@ -428,12 +428,13 @@ def search_stocks(q: str = Query(default="")):
 
 
 # ── EDINET 大量保有報告書プロキシ（登録APIキー対応・キャッシュ付き） ────
+# 正しいURL: https://api.edinet-fsa.go.jp/api/v2/
+# 正しい認証: クエリパラメータ Subscription-Key={APIキー}
 import httpx
 from datetime import date, timedelta
 import time
 import os
 
-# メモリキャッシュ（クエリ → (タイムスタンプ, 結果)）
 _edinet_cache: dict = {}
 _CACHE_TTL = 3600  # 1時間キャッシュ
 
@@ -442,9 +443,9 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
     """
     EDINET大量保有報告書を検索（CORSを回避するバックエンドプロキシ）
     環境変数 EDINET_API_KEY に登録APIキーを設定してください。
-    結果は1時間メモリキャッシュ。
+    APIキーはクエリパラメータ Subscription-Key として送信します。
     """
-    cache_key = f"{q.strip().lower()}:{min(days,90)}"
+    cache_key = f"{q.strip().lower()}:{min(days,60)}"
     now = time.time()
 
     # キャッシュヒット
@@ -453,44 +454,55 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
         if now - ts < _CACHE_TTL:
             return {**cached, "cached": True}
 
+    # 正しいEDINET API v2のベースURL
     EDINET_BASE = "https://api.edinet-fsa.go.jp/api/v2"
-    # 登録APIキー（環境変数から取得）
     api_key = os.environ.get("EDINET_API_KEY", "")
-    headers = {}
-    if api_key:
-        # EDINET登録APIのヘッダー形式
-        headers["Subscription-Key"] = api_key 
 
     results = []
     today = date.today()
     q_lower = (q or "").strip().lower()
+    errors = []
 
     try:
-        async with httpx.AsyncClient(timeout=20.0, headers=headers) as client:
+        async with httpx.AsyncClient(timeout=20.0) as client:
             for i in range(min(days, 60)):
                 target = (today - timedelta(days=i)).isoformat()
                 try:
+                    # APIキーはクエリパラメータとして送信（正しい方式）
+                    params = {"date": target, "type": 2}
+                    if api_key:
+                        params["Subscription-Key"] = api_key
+
                     res = await client.get(
                         f"{EDINET_BASE}/documents.json",
-                        params = {"date": target, "type": 2}
-                        if api_key:
-                            params["Subscription-Key"] = api_key
-                            res = await client.get(
-                                f"{EDINET_BASE}/documents.json",
-                                params=params,
-                                timeout=12.0
+                        params=params,
+                        timeout=12.0
                     )
-                    if not res.is_success:
-                        # 403の場合はAPIキーの問題なのでログに出す
-                        if res.status_code == 403:
+
+                    if res.status_code == 403:
+                        errors.append(f"403 on {target}")
+                        # 最初の403でAPIキーエラーを返す
+                        if i == 0:
                             return {
                                 "results": [], "query": q, "count": 0,
-                                "error": f"EDINET 403 Forbidden (date={target}). APIキーを確認してください。",
-                                "api_key_set": bool(api_key)
+                                "error": "EDINET 403: APIキーが無効か、アクセスが拒否されました。",
+                                "api_key_set": bool(api_key),
+                                "url_used": EDINET_BASE
                             }
                         continue
-                    docs = res.json().get("results", [])
+
+                    if not res.is_success:
+                        continue
+
+                    data = res.json()
+                    # metadataのstatusを確認
+                    meta = data.get("metadata", {})
+                    if meta.get("status") != "200":
+                        continue
+
+                    docs = data.get("results", [])
                     for doc in docs:
+                        # 大量保有報告書: docTypeCode 28=新規, 29=変更, 30=一部免除
                         if doc.get("docTypeCode") not in ["28", "29", "30"]:
                             continue
                         if q_lower:
@@ -502,17 +514,21 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
                         results.append({
                             "docID":        doc.get("docID"),
                             "submitDate":   target,
+                            "submitDateTime": doc.get("submitDateTime"),
                             "issuerName":   doc.get("issuerName"),
                             "secCode":      doc.get("secCode"),
                             "filerName":    doc.get("filerName"),
                             "docTypeCode":  doc.get("docTypeCode"),
                             "holdingRatio": doc.get("otherExplanatoryStatement"),
+                            "docDescription": doc.get("docDescription"),
                         })
                     if len(results) >= 100:
                         break
                 except httpx.TimeoutException:
+                    errors.append(f"timeout on {target}")
                     continue
-                except Exception as e:
+                except Exception as ex:
+                    errors.append(f"error on {target}: {str(ex)}")
                     continue
     except Exception as e:
         return {"results": [], "query": q, "count": 0, "error": str(e)}
@@ -522,10 +538,9 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
         "query": q,
         "count": len(results),
         "cached": False,
-        "api_key_set": bool(api_key)
+        "api_key_set": bool(api_key),
+        "errors_count": len(errors),
     }
-    _edinet_cache[cache_key] = (now, payload)
+    if results:
+        _edinet_cache[cache_key] = (now, payload)
     return payload
-
-
-
