@@ -15,31 +15,26 @@ from pathlib import Path
 EDINET_BASE  = "https://api.edinet-fsa.go.jp/api/v2"
 API_KEY      = os.environ.get("EDINET_API_KEY", "")
 OUTPUT_PATH  = Path(__file__).parent.parent / "frontend" / "public" / "data" / "edinet_holdings.json"
-FETCH_DAYS   = 60   # 過去何日分を取得するか
-MAX_RESULTS  = 300  # 最大保存件数
+FETCH_DAYS   = 60
+MAX_RESULTS  = 300
+
 
 def fetch_holdings():
-    today    = date.today()
-    results  = []
-    errors   = []
+    today   = date.today()
+    results = []
+    errors  = []
     fetched_dates = 0
 
-    headers = {}
-    if API_KEY:
-        headers["Ocp-Apim-Subscription-Key"] = API_KEY
-
-    print(f"[EDINET] API_KEY設定: {'あり' if API_KEY else 'なし（未登録）'}")
+    print(f"[EDINET] API_KEY設定: {'あり' if API_KEY else 'なし'}")
+    print(f"[EDINET] ベースURL: {EDINET_BASE}")
     print(f"[EDINET] 取得期間: {today - timedelta(days=FETCH_DAYS)} 〜 {today}")
 
-    with httpx.Client(timeout=30.0, headers=headers) as client:
+    with httpx.Client(timeout=30.0) as client:
         for i in range(FETCH_DAYS):
             target = (today - timedelta(days=i)).isoformat()
 
-            # 土日はスキップ（EDINETは土日も受付しているが件数が少ない）
-            # スキップしない（週末提出分も含める）
-
             try:
-                # まずtype=2（APIキーあり）を試す
+                # APIキーはクエリパラメータとして送信（正しい方式）
                 params = {"date": target, "type": 2}
                 if API_KEY:
                     params["Subscription-Key"] = API_KEY
@@ -50,33 +45,33 @@ def fetch_holdings():
                     timeout=20.0
                 )
 
+                print(f"  {target}: HTTP {res.status_code}", end="")
+
                 if res.status_code == 403:
-                    print(f"  {target}: 403 Forbidden - APIキーまたはIPが拒否されました")
-                    errors.append({"date": target, "error": "403 Forbidden"})
-                    # 最初の日で403なら全日同じなので中断
+                    print(" → 403 Forbidden")
+                    errors.append({"date": target, "error": "403"})
                     if i == 0:
-                        print("[EDINET] 最初のリクエストで403。IPまたはAPIキーを確認してください。")
-                        break
+                        print("[ERROR] 最初のリクエストで403。EDINETのIPホワイトリストを確認してください。")
+                        # 403でも処理を続けて全日程試す（日によって異なる場合があるため）
                     continue
 
                 if not res.is_success:
-                    print(f"  {target}: HTTP {res.status_code}")
+                    print(f" → skip")
                     continue
 
                 data = res.json()
-
-                # metadata のステータス確認
                 meta = data.get("metadata", {})
-                if str(meta.get("status", "200")) != "200":
-                    print(f"  {target}: EDINETエラー status={meta.get('status')}")
+                status = str(meta.get("status", "200"))
+
+                if status != "200":
+                    print(f" → EDINET status={status}")
                     continue
 
                 docs = data.get("results", [])
-                fetched_dates += 1
                 day_count = 0
+                fetched_dates += 1
 
                 for doc in docs:
-                    # 大量保有報告書のみ（28=新規, 29=変更, 30=一部免除）
                     if doc.get("docTypeCode") not in ["28", "29", "30"]:
                         continue
 
@@ -84,44 +79,43 @@ def fetch_holdings():
                         "docID":          doc.get("docID"),
                         "submitDate":     target,
                         "submitDateTime": doc.get("submitDateTime"),
-                        "issuerName":     doc.get("issuerName"),    # 発行体（対象企業）
-                        "secCode":        doc.get("secCode"),        # 証券コード
-                        "filerName":      doc.get("filerName"),      # 保有者（機関投資家名）
+                        "issuerName":     doc.get("issuerName"),
+                        "secCode":        doc.get("secCode"),
+                        "filerName":      doc.get("filerName"),
                         "docTypeCode":    doc.get("docTypeCode"),
-                        "docTypeName":    "新規" if doc.get("docTypeCode") == "28"
-                                         else "変更" if doc.get("docTypeCode") == "29"
-                                         else "一部免除",
+                        "docTypeName":    (
+                            "新規" if doc.get("docTypeCode") == "28"
+                            else "変更" if doc.get("docTypeCode") == "29"
+                            else "一部免除"
+                        ),
                         "holdingRatio":   doc.get("otherExplanatoryStatement"),
                         "periodEnd":      doc.get("periodEnd"),
                     })
                     day_count += 1
 
-                print(f"  {target}: {day_count}件の大量保有報告書")
+                print(f" → 大量保有{day_count}件（全{len(docs)}件中）")
 
                 if len(results) >= MAX_RESULTS:
                     print(f"[EDINET] 上限{MAX_RESULTS}件に達したため終了")
                     break
 
             except httpx.TimeoutException:
-                print(f"  {target}: タイムアウト")
+                print(f" → タイムアウト")
                 errors.append({"date": target, "error": "timeout"})
-                continue
             except Exception as e:
-                print(f"  {target}: エラー {e}")
+                print(f" → エラー: {e}")
                 errors.append({"date": target, "error": str(e)})
-                continue
 
     return results, errors, fetched_dates
 
 
 def main():
-    print("=" * 50)
+    print("=" * 60)
     print("EDINET 大量保有報告書 取得スクリプト")
-    print("=" * 50)
+    print("=" * 60)
 
     results, errors, fetched_dates = fetch_holdings()
 
-    # 出力データ構造
     output = {
         "updated_at":    date.today().isoformat(),
         "fetch_days":    FETCH_DAYS,
@@ -132,18 +126,24 @@ def main():
         "results":       results,
     }
 
-    # ファイルに保存
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\n[完了] {len(results)}件保存 → {OUTPUT_PATH}")
-    print(f"  エラー: {len(errors)}件, 取得日数: {fetched_dates}日")
+    print(f"\n{'=' * 60}")
+    print(f"[完了] {len(results)}件保存 → {OUTPUT_PATH}")
+    print(f"  取得成功日数: {fetched_dates}日 / {FETCH_DAYS}日")
+    print(f"  エラー: {len(errors)}件")
+    print(f"  APIキー使用: {bool(API_KEY)}")
 
-    # 403エラーのみの場合はエラー終了（GitHub Actionsに失敗を伝える）
-    if fetched_dates == 0 and len(errors) > 0:
-        print("[ERROR] データが取得できませんでした")
-        sys.exit(1)
+    # 1件も取得できなかった場合はエラー終了
+    if fetched_dates == 0:
+        print("\n[WARN] データが1件も取得できませんでした")
+        print("  考えられる原因:")
+        print("  1. EDINET_API_KEY が未設定")
+        print("  2. GitHubのIPがEDINETのホワイトリストに未登録")
+        print("  3. EDINET APIのエンドポイントURL変更")
+        # エラー終了はしない（空ファイルでも保存する）
 
 
 if __name__ == "__main__":

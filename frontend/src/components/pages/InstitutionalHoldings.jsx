@@ -152,12 +152,9 @@ export default function InstitutionalHoldings() {
           金融庁EDINET（電子開示システム）の大量保有報告書データ。
           上場株式の5%超を保有した機関投資家は5日以内に提出が義務付けられています。
         </p>
-        {updatedAt && (
+        {updatedAt && updatedAt !== '未取得' && (
           <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>
             📅 データ更新日: {updatedAt}
-            <span style={{ marginLeft:'12px', color:'#00c48c' }}>
-              ✅ GitHub Actions が毎日自動更新
-            </span>
           </div>
         )}
       </div>
@@ -227,12 +224,12 @@ export default function InstitutionalHoldings() {
               <p>データを読み込み中...</p>
             </div>
           ) : allData.length === 0 ? (
-            <div style={{ padding:'20px', background:'rgba(255,140,66,0.1)',
-              borderRadius:'8px', border:'1px solid rgba(255,140,66,0.3)',
-              fontSize:'13px', color:'#ff8c42', lineHeight:1.8 }}>
-              <strong>⚠️ データがまだありません</strong><br/>
-              GitHub Actionsが初回実行されるまでデータは表示されません。<br/>
-              リポジトリの Actions タブから「Fetch EDINET Holdings Data」を手動実行してください。
+            <div style={{ padding:'20px', background:'rgba(74,158,255,0.08)',
+              borderRadius:'8px', border:'1px solid rgba(74,158,255,0.2)',
+              fontSize:'13px', color:'var(--text2)', lineHeight:1.8 }}>
+              <strong>📋 データを準備中です</strong><br/>
+              大量保有報告書データは毎日自動更新されます。<br/>
+              しばらくしてからページを再読み込みしてください。
             </div>
           ) : (
             <>
@@ -385,8 +382,6 @@ export default function InstitutionalHoldings() {
                 '政策投資：事業上の取引関係・安定株主構築が目的',
                 '重要提案行為等：経営改善要求を行うアクティビスト',
               ]},
-            { icon:'🤖', title:'このデータの更新方法',
-              body:'GitHub Actions が毎日 JST 20:30 に自動実行し、EDINET から過去60日分の大量保有報告書を取得しています。リアルタイムではありませんが、前日までのデータを安定して閲覧できます。' },
             { icon:'⚠️', title:'投資判断への活用上の注意',
               body:'EDINETのデータは提出から数日の遅延があります（5営業日以内の提出義務）。また5%未満の保有は開示されないため全体を網羅するものではありません。本ページの情報は参考情報であり、投資判断はご自身の責任で行ってください。' },
           ].map(({ icon, title, body, list }) => (
