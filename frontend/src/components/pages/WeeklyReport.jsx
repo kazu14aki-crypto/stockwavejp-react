@@ -91,14 +91,38 @@ function RenderMd({ text, onNavigate }) {
 function ReportCard({ entry, isActive, onClick }) {
   const avg = entry.avg_pct_1w
   const col = avg >= 0 ? 'var(--red)' : 'var(--green)'
-  // "2026-04-24" → "4/20〜4/24" の表示
+  // "2026-04-24" or "2026-W18" → 週の表示
   const weekLabel = (() => {
     try {
-      const d = new Date(entry.week)
-      const end = `${d.getMonth()+1}/${d.getDate()}`
-      const start = new Date(d); start.setDate(d.getDate()-4)
-      const s = `${start.getMonth()+1}/${start.getDate()}`
-      return `${s}〜${end}`
+      // entry.dateが存在する場合はそれを使う（例: "2026/05/01"）
+      const dateStr = entry.date
+      if (dateStr) {
+        const normalized = dateStr.replace(/\//g, '-')
+        const d = new Date(normalized)
+        if (!isNaN(d.getTime())) {
+          const end = `${d.getMonth()+1}/${d.getDate()}`
+          const start = new Date(d); start.setDate(d.getDate()-4)
+          const s = `${start.getMonth()+1}/${start.getDate()}`
+          return `${s}〜${end}`
+        }
+      }
+      // entry.weekから解析
+      const w = entry.week || ''
+      // 2026-W18 形式の場合はtitleから日付を取得
+      if (w.match(/^\d{4}-W\d+$/)) {
+        const titleMatch = (entry.title || '').match(/(\d+\/\d+)[〜～](\d+\/\d+)/)
+        if (titleMatch) return `${titleMatch[1]}〜${titleMatch[2]}`
+        return w
+      }
+      // 2026-04-24 形式
+      const d = new Date(w)
+      if (!isNaN(d.getTime())) {
+        const end = `${d.getMonth()+1}/${d.getDate()}`
+        const start = new Date(d); start.setDate(d.getDate()-4)
+        const s = `${start.getMonth()+1}/${start.getDate()}`
+        return `${s}〜${end}`
+      }
+      return w
     } catch { return entry.week }
   })()
 

@@ -1,0 +1,48 @@
+name: Fetch EDINET Holdings Data
+
+on:
+  schedule:
+    # 毎日 JST 20:30 に実行（UTC 11:30）
+    - cron: '30 11 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  fetch-edinet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install httpx
+
+      - name: Fetch EDINET data
+        env:
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+        run: |
+          cd ${{ github.workspace }}
+          python backend/fetch_edinet.py
+
+      - name: Check if data was updated
+        id: check_changes
+        run: |
+          git diff --quiet frontend/public/data/edinet_holdings.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated data
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/edinet_holdings.json
+          git commit -m "Auto: Update EDINET holdings data $(date +'%Y-%m-%d')"
+          git push
