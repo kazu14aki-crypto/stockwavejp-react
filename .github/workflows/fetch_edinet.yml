@@ -6,6 +6,9 @@ on:
     - cron: '30 11 * * *'
   workflow_dispatch:  # 手動実行も可能
 
+permissions:
+  contents: write  # リポジトリへのpushを許可
+
 jobs:
   fetch-edinet:
     runs-on: ubuntu-latest
