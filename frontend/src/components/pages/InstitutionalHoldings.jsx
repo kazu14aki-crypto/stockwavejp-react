@@ -100,9 +100,8 @@ export default function InstitutionalHoldings() {
 
   // ── 検索フィルタ ──────────────────────────────────────────────
   const search = useCallback((q) => {
-    setQuery(q)
-    if (!q.trim()) { setFiltered(allData); return }
-    const ql = q.trim().toLowerCase()
+    const ql = (q || '').trim().toLowerCase()
+    if (!ql) { setFiltered(allData); return }
     setFiltered(allData.filter(doc =>
       (doc.issuerName || '').toLowerCase().includes(ql) ||
       (doc.secCode    || '').toLowerCase().includes(ql) ||
@@ -180,9 +179,10 @@ export default function InstitutionalHoldings() {
           <div style={{ display:'flex', gap:'10px', marginBottom:'12px', flexWrap:'wrap' }}>
             <input
               type="text"
-              placeholder="銘柄名・証券コード・保有者名で絞り込み（例：トヨタ、7203、ブラックロック）"
+              placeholder="銘柄名・証券コード・保有者名で検索（例：トヨタ、7203、ブラックロック）"
               value={query}
-              onChange={e => search(e.target.value)}
+              onChange={e => setQuery(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && search(query)}
               style={{
                 flex:'1', minWidth:'280px', padding:'10px 14px',
                 background:'var(--bg2)', border:'1px solid var(--border)',
@@ -190,9 +190,14 @@ export default function InstitutionalHoldings() {
                 fontFamily:'var(--font)', outline:'none',
               }}
             />
-            {query && (
-              <button onClick={() => search('')} style={{
-                padding:'10px 16px', background:'var(--bg3)',
+            <button onClick={() => search(query)} style={{
+              padding:'10px 20px', background:'var(--accent)', color:'#fff',
+              border:'none', borderRadius:'8px', cursor:'pointer',
+              fontFamily:'var(--font)', fontSize:'13px', fontWeight:600, flexShrink:0,
+            }}>🔍 検索</button>
+            {filtered.length < allData.length && (
+              <button onClick={() => { setQuery(''); setFiltered(allData) }} style={{
+                padding:'10px 14px', background:'var(--bg3)',
                 border:'1px solid var(--border)', borderRadius:'8px',
                 color:'var(--text2)', cursor:'pointer', fontFamily:'var(--font)', fontSize:'13px',
               }}>クリア</button>

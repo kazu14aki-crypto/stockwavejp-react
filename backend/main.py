@@ -150,7 +150,6 @@ def get_market_rank_list(period: str = Query(default="1mo")):
 @app.get("/api/vol-trend/{theme_name}")
 def get_vol_trend(theme_name: str):
     """テーマ別出来高・売買代金週次推移（1年間）"""
-    import yfinance as yf
     import pandas as pd
     import warnings
     warnings.filterwarnings("ignore")
@@ -162,11 +161,12 @@ def get_vol_trend(theme_name: str):
         try:
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
-                df = yf.Ticker(ticker).history(period="1y", interval="1d",
-                                               auto_adjust=True, timeout=15)
+                from data import _fetch_df
+                df = _fetch_df(ticker, period="2y")
             if df is None or len(df) < 5:
                 continue
-            df.index = pd.to_datetime(df.index).tz_localize(None)
+            if df.index.tz is not None:
+                df.index = df.index.tz_localize(None)
             df = df[df.index >= cutoff]
             if len(df) < 5:
                 continue
@@ -213,65 +213,56 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo")):
 
 @app.get("/api/stock-info/{ticker}")
 def get_stock_info(ticker: str):
-    """銘柄情報取得（カスタムテーマ用）"""
+    """銘柄情報取得（カスタムテーマ用）— Infoway/market.jsonベース"""
     try:
-        import yfinance as yf
         from data import _fetch_df, _period_df
-        # 日本語名を優先（main.py内のJP_STOCK_NAMESを参照）
+        # 日本語名を優先
         jp_name = JP_STOCK_NAMES.get(ticker)
-        # 1ヶ月のデータを取得して騰落率・出来高・売買代金を計算
-        df = _fetch_df(ticker)
+        # Infowayからデータ取得
+        df    = _fetch_df(ticker)
         df_1mo = _period_df(df, "1mo")
-        price, pct, volume, trade_value = None, None, None, None
+        price = pct = volume = trade_value = None
+        if df is not None and len(df) > 0:
+            price = round(float(df["Close"].iloc[-1]), 2) if "Close" in df.columns else None
         if df_1mo is not None and len(df_1mo) >= 2:
-            cl = df_1mo["Close"].dropna()
-            vol = df_1mo["Volume"].dropna()
-            if len(cl) >= 2 and (cl > 0).all():
-                price = round(float(cl.iloc[-1]), 0)
-                pct = round((float(cl.iloc[-1]) / float(cl.iloc[0]) - 1) * 100, 2)
-                half = max(len(df_1mo) // 2, 1)
-                rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
-                volume = int(rv)
-                trade_value = int(rv * price) if price else 0
-        # 名前取得（APIがスロー返答の場合でも価格データから）
-        if not jp_name:
-            try:
-                t = yf.Ticker(ticker)
-                info = t.info
-                jp_name = info.get("longName") or info.get("shortName") or ticker
-            except Exception:
-                jp_name = ticker
+            p0 = float(df_1mo["Close"].iloc[0])
+            p1 = float(df_1mo["Close"].iloc[-1])
+            pct = round((p1 - p0) / p0 * 100, 2) if p0 else None
+            if "Volume" in df_1mo.columns:
+                volume = int(df_1mo["Volume"].sum())
+            if "Close" in df_1mo.columns and "Volume" in df_1mo.columns:
+                trade_value = int((df_1mo["Close"] * df_1mo["Volume"]).sum())
         return {
-            "ticker": ticker, "name": jp_name, "price": price,
-            "pct": pct, "volume": volume, "trade_value": trade_value,
+            "ticker": ticker,
+            "name":   jp_name or ticker,
+            "price":  price,
+            "pct":    pct,
+            "volume": volume,
+            "trade_value": trade_value,
         }
     except Exception as e:
-        return {"ticker": ticker, "name": None, "price": None,
-                "pct": None, "volume": None, "trade_value": None, "error": str(e)}
-
+        return {"ticker": ticker, "name": JP_STOCK_NAMES.get(ticker, ticker),
+                "price": None, "pct": None, "error": str(e)}
 
 @app.get("/api/stock-history/{ticker}")
 def get_stock_history(ticker: str, period: str = "1mo"):
-    """銘柄の騰落率履歴（カスタムテーマグラフ用）"""
+    """銘柄株価履歴取得（カスタムテーマ用）— Infowayベース"""
     try:
         from data import _fetch_df, _period_df
-        df  = _fetch_df(ticker)
-        pdf = _period_df(df, period)
-        if pdf is None or len(pdf) < 2:
-            return {"ticker": ticker, "data": []}
-        cl  = pdf["Close"].dropna()
-        if len(cl) < 2 or not (cl > 0).all():
-            return {"ticker": ticker, "data": []}
-        cum = (cl / cl.iloc[0] - 1) * 100
-        # 重複インデックス除去
-        cum = cum[~cum.index.duplicated(keep='last')]
-        data = [{"date": str(d.date()), "pct": round(float(v), 2)}
-                for d, v in cum.items() if not np.isnan(v)]
-        return {"ticker": ticker, "data": data}
+        df = _fetch_df(ticker)
+        df_p = _period_df(df, period)
+        if df_p is None or len(df_p) == 0:
+            return {"ticker": ticker, "period": period, "data": []}
+        records = []
+        for ts, row in df_p.iterrows():
+            records.append({
+                "date":  str(ts.date()),
+                "close": round(float(row["Close"]), 2) if "Close" in row else None,
+                "volume": int(row["Volume"]) if "Volume" in row else None,
+            })
+        return {"ticker": ticker, "period": period, "data": records}
     except Exception as e:
-        return {"ticker": ticker, "data": [], "error": str(e)}
-
-
+        return {"ticker": ticker, "period": period, "data": [], "error": str(e)}
 
 @app.post("/api/custom-theme-stats")
 async def get_custom_theme_stats(request: Request):
@@ -352,91 +343,41 @@ JP_STOCK_NAMES = {
 
 @app.get("/api/stock-search")
 def search_stocks(q: str = Query(default="")):
-    """銘柄名または証券コードで検索（カスタムテーマ用・日本株のみ）"""
+    """銘柄名または証券コードで検索（カスタムテーマ用・日本株のみ）
+    JP_STOCK_NAMES マスターを検索。yfinanceは使用しない。"""
     if not q.strip():
         return {"results": []}
     try:
-        import yfinance as yf
         q = q.strip()
         results = []
 
-        # 4桁数字 → 日本株ティッカー
+        # 4桁数字 → 直接ティッカー検索
         if q.isdigit() and len(q) == 4:
             ticker = q + ".T"
-            try:
-                t    = yf.Ticker(ticker)
-                info = t.info
-                hist = t.history(period="5d", interval="1d", auto_adjust=True)
-                price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-                # 日本語名を優先
-                jp_name = JP_STOCK_NAMES.get(ticker)
-                en_name = info.get("longName") or info.get("shortName") or ""
-                name = jp_name or en_name or ticker
-                if name and name != ticker:
-                    results.append({"ticker": ticker, "name": name, "price": price})
-                else:
-                    results.append({"ticker": ticker, "name": ticker, "price": price})
-            except Exception:
-                pass
+            name = JP_STOCK_NAMES.get(ticker)
+            if name:
+                results.append({"ticker": ticker, "name": name, "price": None})
 
-        else:
-            # 銘柄名検索：まず日本語名マスターから前方一致・部分一致で検索
+        # 文字列 → 銘柄名マスターを部分一致検索
+        if not results:
             q_lower = q.lower()
-            for ticker, jp_name in JP_STOCK_NAMES.items():
-                if q_lower in jp_name.lower() or q in jp_name:
-                    try:
-                        hist = yf.Ticker(ticker).history(period="5d", auto_adjust=True)
-                        price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-                    except Exception:
-                        price = None
-                    results.append({
-                        "ticker": ticker,
-                        "name": jp_name,
-                        "price": price,
-                    })
-                    if len(results) >= 8:
-                        break
+            for ticker, name in JP_STOCK_NAMES.items():
+                if q_lower in name.lower() or q_lower in ticker.lower():
+                    results.append({"ticker": ticker, "name": name, "price": None})
+                if len(results) >= 10:
+                    break
 
-            # マスターにない場合はyfinance Searchで補完（日本株のみ）
-            if not results:
-                try:
-                    search = yf.Search(q + " japan stock", max_results=15)
-                    for item in (search.quotes or []):
-                        sym = item.get("symbol", "")
-                        if not sym.endswith(".T"):
-                            continue
-                        jp_name = JP_STOCK_NAMES.get(sym)
-                        en_name = item.get("longname") or item.get("shortname") or sym
-                        name = jp_name or en_name
-                        if sym and name:
-                            results.append({
-                                "ticker": sym,
-                                "name": name,
-                                "price": None,
-                            })
-                            if len(results) >= 8:
-                                break
-                except Exception:
-                    pass
+        # 証券コード部分一致（4〜5文字の英数字）
+        if not results and len(q) >= 3:
+            for ticker, name in JP_STOCK_NAMES.items():
+                if ticker.startswith(q.upper()):
+                    results.append({"ticker": ticker, "name": name, "price": None})
+                if len(results) >= 10:
+                    break
 
-        # 日本株（.T）のみに絞る
-        results = [r for r in results if r["ticker"].endswith(".T")]
-        return {"results": results[:8]}
+        return {"results": results[:10]}
     except Exception as e:
         return {"results": [], "error": str(e)}
-
-
-
-# ── EDINET 大量保有報告書プロキシ（登録APIキー対応・キャッシュ付き） ────
-# 正しいURL: https://api.edinet-fsa.go.jp/api/v2/
-# 正しい認証: クエリパラメータ Subscription-Key={APIキー}
-import httpx
-from datetime import date, timedelta
-import time
-import os
-
-_edinet_cache: dict = {}
-_CACHE_TTL = 3600  # 1時間キャッシュ
 
 @app.get("/api/edinet/large-holdings")
 async def edinet_large_holdings(q: str = "", days: int = 60):

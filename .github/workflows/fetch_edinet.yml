@@ -31,13 +31,27 @@ jobs:
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
         run: python backend/fetch_edinet.py
 
+      - name: Show result
+        run: |
+          echo "=== edinet_holdings.json ==="
+          cat frontend/public/data/edinet_holdings.json | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          print(f'updated_at: {d[\"updated_at\"]}')
+          print(f'count: {d[\"count\"]}')
+          print(f'fetched_dates: {d[\"fetched_dates\"]}')
+          print(f'api_key_used: {d[\"api_key_used\"]}')
+          "
+
       - name: Check if data changed
         id: check
         run: |
           if git diff --quiet frontend/public/data/edinet_holdings.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            echo "データ変更なし（前回と同一）"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
+            echo "データ更新あり"
           fi
 
       - name: Commit and push updated data
@@ -48,3 +62,25 @@ jobs:
           git add frontend/public/data/edinet_holdings.json
           git commit -m "chore: update EDINET holdings data $(date +'%Y/%m/%d' -d '+9 hours')"
           git push
+
+      # データ変更がなくても強制的にdeploy.ymlをトリガーしてサイトを更新
+      - name: Setup Node.js for deploy
+        if: steps.check.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install and build frontend
+        if: steps.check.outputs.changed == 'true'
+        working-directory: frontend
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        if: steps.check.outputs.changed == 'true'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/dist
+          branch: gh-pages
+          clean: true

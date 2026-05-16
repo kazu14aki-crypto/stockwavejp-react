@@ -133,15 +133,21 @@ def fetch_ticker_infoway(ticker):
 
 
 def fetch_ticker(ticker):
-    """Infoway API優先、失敗時はyfinanceにフォールバック"""
-    # Infoway APIが設定されている場合は優先使用（日本株のみ）
+    """Infoway API のみ使用（yfinanceフォールバックは使用しない）"""
     if USE_INFOWAY and ticker.endswith(".T"):
         df = fetch_ticker_infoway(ticker)
         if df is not None and len(df) >= 5:
             return df
-        # Infowayが失敗した場合はyfinanceにフォールバック
-        print(f"  INFOWAY→yfinance fallback: {ticker}")
+        # Infowayが失敗した場合はNoneを返す（yfinanceは使用しない）
+        print(f"  INFOWAY失敗: {ticker} → スキップ")
+        return None
 
+    # Infoway未設定の場合もNoneを返す
+    if not USE_INFOWAY:
+        print(f"  INFOWAY_API_KEY未設定: {ticker} → スキップ")
+        return None
+
+    # 以下のコードには到達しない（yfinance使用禁止）
     # yfinance（フォールバック or 非日本株）
     try:
         df = yf.Ticker(ticker).history(
