@@ -288,7 +288,7 @@ export default function InstitutionalHoldings() {
                         </td>
                         <td style={{ padding:'9px 12px', fontSize:'11px' }}>
                           {doc.docTypeName === '新規' ? '🆕 新規'
-                           : doc.docTypeName === '変更' ? '🔄 変更' : '⚡ 特例'}
+                           : doc.docTypeName === '変更' ? '🔄 変更' : doc.docTypeName === '訂正' ? '✏️ 訂正' : '📄 その他'}
                         </td>
                         <td style={{ padding:'9px 12px' }}>
                           {doc.docID && (

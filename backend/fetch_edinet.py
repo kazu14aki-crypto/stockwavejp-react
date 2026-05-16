@@ -58,7 +58,7 @@ def fetch_one_day(client: httpx.Client, target: str) -> list:
             all_codes = list(set(d.get("docTypeCode","?") for d in results))
 
             # 大量保有報告書をフィルタ
-            large = [d for d in results if d.get("docTypeCode") in ["28","29","30"]]
+            large = [d for d in results if d.get("docTypeCode") in ["340","350","360"]]
             print(f"    type={type_val}: 全{total}件, codes={all_codes[:10]}, 大量保有={len(large)}件")
 
             if large:
@@ -109,9 +109,9 @@ def fetch_holdings():
                         "filerName":    doc.get("filerName"),
                         "docTypeCode":  doc.get("docTypeCode"),
                         "docTypeName":  (
-                            "新規" if doc.get("docTypeCode") == "28"
-                            else "変更" if doc.get("docTypeCode") == "29"
-                            else "一部免除"
+                            "新規" if doc.get("docTypeCode") == "340"
+                            else "変更" if doc.get("docTypeCode") == "350"
+                            else "訂正"
                         ),
                         "holdingRatio": doc.get("otherExplanatoryStatement"),
                         "periodEnd":    doc.get("periodEnd"),
