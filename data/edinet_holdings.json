@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-15",
+  "updated_at": "2026-05-16",
   "fetch_days": 60,
-  "fetched_dates": 60,
+  "fetched_dates": 0,
+  "empty_dates": 60,
   "count": 0,
-  "error_count": 0,
-  "api_key_used": false,
+  "api_key_used": true,
   "results": []
 }
