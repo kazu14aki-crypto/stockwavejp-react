@@ -4,7 +4,7 @@ on:
   schedule:
     # 毎日 JST 20:30 に実行（UTC 11:30）
     - cron: '30 11 * * *'
-  workflow_dispatch:  # 手動実行も可能
+  workflow_dispatch:
 
 jobs:
   fetch-edinet:
@@ -33,14 +33,13 @@ jobs:
 
       - name: Show result
         run: |
-          echo "=== edinet_holdings.json ==="
-          cat frontend/public/data/edinet_holdings.json | python3 -c "
-          import json,sys
-          d=json.load(sys.stdin)
+          python3 -c "
+          import json
+          with open('frontend/public/data/edinet_holdings.json') as f:
+              d = json.load(f)
           print(f'updated_at: {d[\"updated_at\"]}')
           print(f'count: {d[\"count\"]}')
           print(f'fetched_dates: {d[\"fetched_dates\"]}')
-          print(f'api_key_used: {d[\"api_key_used\"]}')
           "
 
       - name: Check if data changed
@@ -48,34 +47,35 @@ jobs:
         run: |
           if git diff --quiet frontend/public/data/edinet_holdings.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "データ変更なし（前回と同一）"
+            echo "変更なし"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "データ更新あり"
+            echo "更新あり"
           fi
 
-      - name: Commit and push updated data
-        if: steps.check.outputs.changed == 'true'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/data/edinet_holdings.json
-          git commit -m "chore: update EDINET holdings data $(date +'%Y/%m/%d' -d '+9 hours')"
-          git push
-
-      # データ変更がなくても強制的にdeploy.ymlをトリガーしてサイトを更新
-      - name: Setup Node.js for deploy
+      # git pushとビルドを同一ステップで実行してタイミングずれを防ぐ
+      - name: Setup Node.js
         if: steps.check.outputs.changed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Install and build frontend
+      - name: Build frontend with latest data
         if: steps.check.outputs.changed == 'true'
         working-directory: frontend
         run: |
           npm install
           npm run build
+
+      - name: Commit data and deploy to gh-pages
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          # まずmainブランチにデータをコミット
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/edinet_holdings.json
+          git commit -m "chore: update EDINET holdings data $(date +'%Y/%m/%d' -d '+9 hours')"
+          git push
 
       - name: Deploy to GitHub Pages
         if: steps.check.outputs.changed == 'true'
