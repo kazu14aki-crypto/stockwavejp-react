@@ -13,6 +13,7 @@ import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
+import LegalNotice from './components/pages/LegalNotice'
 import Column      from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import TermsOfService from './components/pages/TermsOfService'
@@ -34,11 +35,16 @@ const PAGES = [
 ]
 
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
-  { icon:'📣', label:'お知らせ',            component:News          },
-  { icon:'📖', label:'使い方',              component:HowTo         },
-  { icon:'💰', label:'プラン・料金',        component:Plan          },
-  { icon:'⚙️', label:'設定',               component:Settings      },
+  { icon:'🏢', label:'当サイトについて',        component:SiteInfo      },
+  { icon:'📣', label:'お知らせ',                component:News          },
+  { icon:'📖', label:'使い方',                  component:HowTo         },
+  { icon:'💰', label:'プラン・料金',            component:Plan          },
+  { icon:'⚙️', label:'設定',                   component:Settings      },
+  { icon:'🛒', label:'特定商取引法に基づく表示', component:LegalNotice   },
+]
+
+// フッターのみ表示するページ（メニューバーには表示しない）
+const PAGES_FOOTER = [
   { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
   { icon:'📋', label:'利用規約',            component:TermsOfService},
@@ -46,7 +52,7 @@ const PAGES_OTHER = [
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
-const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
+const ALL_PAGES     = [...PAGES, ...PAGES_OTHER, ...PAGES_FOOTER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 
 function AppInner() {
@@ -208,6 +214,11 @@ function AppInner() {
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
               textDecoration:'underline', textUnderlineOffset:'2px',
             }}>利用規約</button>
+            <button onClick={() => handlePageChange('特定商取引法に基づく表示')} style={{
+              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
+              fontSize:'11px', fontFamily:'var(--font)', padding:0,
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>特定商取引法に基づく表示</button>
             <a href={CONTACT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{
               color:'var(--text3)', fontSize:'11px', fontFamily:'var(--font)',
               textDecoration:'underline', textUnderlineOffset:'2px',

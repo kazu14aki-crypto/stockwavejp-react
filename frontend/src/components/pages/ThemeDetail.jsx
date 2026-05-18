@@ -809,6 +809,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         const momentumKey = `momentum_1mo`
         const detailData  = mj[detailKey]
         const momentumData = mj[momentumKey]?.data || []
+        console.log('[ThemeDetail] key:', detailKey, 'found:', !!detailData, 'keys:', Object.keys(mj).filter(k=>k.includes('theme_detail')).length)
 
         if (detailData) {
           setDetail(detailData)  // {stocks:[], avg:X, updated_at:...}
@@ -817,7 +818,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
           setLoading(false)
           return
         }
-      } catch {}
+      } catch (e) { console.error('[ThemeDetail] market.json fetch error:', e) }
 
       // 1moでのフォールバック（1dがmarket.jsonにない場合）
       try {
