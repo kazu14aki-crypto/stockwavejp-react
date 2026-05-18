@@ -532,13 +532,19 @@ export default function Column({ initialArticleId = null, onNavigate }) {
               onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(74,158,255,0.3)'; e.currentTarget.style.transform='translateY(-2px)' }}
               onMouseLeave={e => { e.currentTarget.style.borderColor='var(--border)'; e.currentTarget.style.transform='translateY(0)' }}
             >
-              <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'10px' }}>
-                <span style={{ fontSize:'20px' }}>{col.icon}</span>
-                <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'12px',
-                  background:cat.bg, color:cat.color, border:`1px solid ${cat.border}` }}>
-                  {col.category}
-                </span>
-                <span style={{ fontSize:'10px', color:'var(--text3)', marginLeft:'auto', fontFamily:'var(--mono)' }}>
+              {/* カードヘッダー: 日付を右上に独立配置 */}
+              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'10px' }}>
+                <div style={{ display:'flex', alignItems:'center', gap:'8px', minWidth:0, flex:1 }}>
+                  <span style={{ fontSize:'22px', flexShrink:0 }}>{col.icon}</span>
+                  <span style={{
+                    fontSize:'11px', fontWeight:600, padding:'3px 8px', borderRadius:'12px',
+                    background:cat.bg, color:cat.color, border:`1px solid ${cat.border}`,
+                    whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis', maxWidth:'120px',
+                  }}>
+                    {col.category}
+                  </span>
+                </div>
+                <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', flexShrink:0, marginLeft:'6px' }}>
                   {col.date}
                 </span>
               </div>
