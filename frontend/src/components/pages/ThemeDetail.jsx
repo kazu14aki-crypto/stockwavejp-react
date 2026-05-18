@@ -145,16 +145,24 @@ function Top5Bar({ items, title, colorFn, emptyMsg }) {
 // スパークライン（銘柄の6ヶ月騰落率推移）
 function Sparkline({ data }) {
   if (!data || data.length < 3) return null
+  // NaN/Inf/null を除去
+  const clean = data.map(v => (typeof v === 'number' && isFinite(v) ? v : null))
+  if (clean.filter(v => v !== null).length < 3) return null
   const W = 200, H = 56
-  const min = Math.min(...data)
-  const max = Math.max(...data)
+  const validVals = clean.filter(v => v !== null)
+  const min = Math.min(...validVals)
+  const max = Math.max(...validVals)
   const range = max - min || 1
-  const pts = data.map((v, i) => {
-    const x = (i / (data.length - 1)) * W
+  const n = clean.length
+  const pts = clean.map((v, i) => {
+    if (v === null) return null
+    const x = n > 1 ? (i / (n - 1)) * W : W / 2
     const y = H - ((v - min) / range) * (H - 4) - 2
+    if (!isFinite(x) || !isFinite(y)) return null
     return `${x.toFixed(1)},${y.toFixed(1)}`
-  }).join(' ')
-  const color = data[data.length - 1] >= data[0] ? 'var(--red)' : 'var(--green)'
+  }).filter(Boolean).join(' ')
+  if (!pts) return null
+  const color = clean[clean.length - 1] >= clean[0] ? 'var(--red)' : 'var(--green)'
   return (
     <svg width="100%" height="100%" viewBox={`0 0 ${W} ${H}`}
       style={{ display:'block' }} preserveAspectRatio="xMidYMid meet">
@@ -919,6 +927,14 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
     vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
     tv_rank:  tvRankMap.get(s.ticker) ?? s.tv_rank,
   }))
+  // ① 時価総額加重平均騰落率（Infoway契約後に正式採用）
+  const mcWeightedAvg = (() => {
+    const valid = stocks.filter(s => s.market_cap > 0 && typeof s.pct === 'number')
+    if (valid.length < 2) return null
+    const totalMC = valid.reduce((sum, s) => sum + s.market_cap, 0)
+    if (totalMC === 0) return null
+    return valid.reduce((sum, s) => sum + s.pct * (s.market_cap / totalMC), 0)
+  })()
   // 上昇のみ・下落のみでフィルタリング
   const top5   = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -949,8 +965,17 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 <span style={{ fontSize:'18px', fontWeight:700, color:'var(--text)' }}>{selTheme}</span>
                 <span style={{ fontSize:'16px', fontFamily:'var(--mono)', fontWeight:700,
                   color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                  平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
+                  単純平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
                 </span>
+                {mcWeightedAvg !== null && (
+                  <span style={{ fontSize:'13px', fontFamily:'var(--mono)', fontWeight:600,
+                    color: mcWeightedAvg >= 0 ? 'var(--red)' : 'var(--green)',
+                    background:'rgba(74,158,255,0.1)', padding:'2px 8px', borderRadius:'4px',
+                    display:'flex', alignItems:'center', gap:'4px' }}>
+                    <span style={{ fontSize:'10px', color:'var(--text3)' }}>時価総額加重</span>
+                    {mcWeightedAvg >= 0 ? '+' : ''}{mcWeightedAvg.toFixed(1)}%
+                  </span>
+                )}
                 {momentum && (<>
                   <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
