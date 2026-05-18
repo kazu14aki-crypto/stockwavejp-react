@@ -701,8 +701,10 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                 cl_sp = df_sp6["Close"].dropna()
                 if len(cl_sp) >= 4:
                     base = float(cl_sp.iloc[0])
-                    step = max(1, len(cl_sp) // 20)
-                    spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
+                    if base and base > 0:  # base=0またはNaNによるゼロ除算を防ぐ
+                        step = max(1, len(cl_sp) // 20)
+                        spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]
+                                 if not (isinstance(v, float) and (v != v))]  # NaN除去
         except Exception:
             spark = []
         # 時価総額: fast_info → 出来高近似フォールバック

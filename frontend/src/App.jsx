@@ -22,25 +22,26 @@ import InstitutionalHoldings from './components/pages/InstitutionalHoldings'
 import Plan          from './components/pages/Plan'
 
 const PAGES = [
-  { icon:'🏠', label:'ホーム',                   component:TopPage       },
-  { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
-  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
-  { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
-  { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
+  { icon:'🏠', label:'ホーム',            component:TopPage       },
+  { icon:'📊', label:'テーマ一覧',         component:ThemeList     },
+  { icon:'🔥', label:'テーマヒートマップ',   component:Heatmap       },
+  { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail   },
+  { icon:'📋', label:'市場別詳細',         component:MarketRank    },
+  { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme   },
+  { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
+  { icon:'📰', label:'週次レポート',        component:WeeklyReport  },
+  { icon:'📝', label:'コラム・解説',       component:Column        },
 ]
+
 const PAGES_OTHER = [
   { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
   { icon:'📣', label:'お知らせ',            component:News          },
   { icon:'📖', label:'使い方',              component:HowTo         },
-  { icon:'🏦', label:'機関投資家保有', component:InstitutionalHoldings },
-  { icon:'📰', label:'週次レポート',          component:WeeklyReport  },
-  { icon:'📝', label:'コラム・解説',        component:Column        },
-  { icon:'💰', label:'プラン・料金',  component:Plan         },
+  { icon:'💰', label:'プラン・料金',        component:Plan          },
   { icon:'⚙️', label:'設定',               component:Settings      },
   { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
-  { icon:'📋', label:'利用規約',             component:TermsOfService},
+  { icon:'📋', label:'利用規約',            component:TermsOfService},
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
