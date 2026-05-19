@@ -81,8 +81,9 @@ function ThemeTrendChart({ stocks, period }) {
   for (let i = 0; i < allDates.length; i += xStep) xLabels.push({ i, date: allDates[i] })
 
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px', overflowX:'auto' }}>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'280px' }}>
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px' }}>
+      <div style={{ overflowX:'auto' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'300px', maxWidth:'100%' }}>
         {ticks.map(v => (
           <g key={v}>
             <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(120,140,180,0.1)" strokeWidth="1"/>
@@ -110,6 +111,7 @@ function ThemeTrendChart({ stocks, period }) {
           ) : null
         })}
       </svg>
+      </div>
       {/* 凡例 */}
       <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
         {names.map((name, ti) => {
@@ -724,18 +726,57 @@ export default function CustomTheme() {
           <label style={lbl}>追加済み銘柄（{stocks.length}/10銘柄　※最大10銘柄まで）</label>
           <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
             {stocks.map((s, i) => (
-              <div key={s.ticker} style={{ display:'flex', alignItems:'center', gap:'10px',
-                background:'var(--bg2)', border:'1px solid var(--border)',
+              <div key={s.ticker} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
                 borderRadius:'6px', padding:'8px 12px',
                 animation:`fadeUp 0.2s ease ${i*0.03}s both` }}>
-                <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'60px', flexShrink:0 }}>
-                  {s.ticker.replace('.T','')}
-                </span>
-                <span style={{ flex:1, fontSize:'13px', color:'var(--text)', fontWeight:500 }}>{s.name}</span>
-                {s.price && <span style={{ fontSize:'12px', color:'var(--text2)', fontFamily:'var(--mono)' }}>¥{s.price.toLocaleString()}</span>}
-                <button onClick={() => removeStock(s.ticker)} style={{ background:'none', border:'1px solid var(--border)',
-                  borderRadius:'4px', color:'var(--text3)', cursor:'pointer', padding:'3px 8px',
-                  fontSize:'12px', fontFamily:'var(--font)' }}>✕</button>
+                {/* 銘柄情報行 */}
+                <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom: s.costPrice !== undefined ? '6px' : '0' }}>
+                  <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'52px', flexShrink:0 }}>
+                    {s.ticker.replace('.T','')}
+                  </span>
+                  <span style={{ flex:1, fontSize:'13px', color:'var(--text)', fontWeight:500, minWidth:0,
+                    overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{s.name}</span>
+                  {s.price && <span style={{ fontSize:'12px', color:'var(--text2)', fontFamily:'var(--mono)', flexShrink:0 }}>
+                    ¥{s.price.toLocaleString()}
+                  </span>}
+                  {/* 損益率 */}
+                  {s.costPrice > 0 && s.price && (() => {
+                    const pct = (s.price - s.costPrice) / s.costPrice * 100
+                    return (
+                      <span style={{ fontSize:'12px', fontWeight:700, fontFamily:'var(--mono)', flexShrink:0,
+                        color: pct >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                        {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+                      </span>
+                    )
+                  })()}
+                  <button onClick={() => removeStock(s.ticker)} style={{ background:'none', border:'1px solid var(--border)',
+                    borderRadius:'4px', color:'var(--text3)', cursor:'pointer', padding:'3px 8px',
+                    fontSize:'12px', fontFamily:'var(--font)', flexShrink:0 }}>✕</button>
+                </div>
+                {/* 取得価格入力行 */}
+                <div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
+                  <span style={{ fontSize:'11px', color:'var(--text3)', whiteSpace:'nowrap' }}>取得価格:</span>
+                  <input
+                    type="number"
+                    placeholder="例: 2500"
+                    value={s.costPrice || ''}
+                    onChange={e => {
+                      const v = parseFloat(e.target.value) || 0
+                      setStocks(p => p.map(st => st.ticker === s.ticker ? {...st, costPrice: v} : st))
+                    }}
+                    style={{ ...inp, width:'110px', padding:'4px 8px', fontSize:'12px', flexShrink:0 }}
+                  />
+                  <span style={{ fontSize:'11px', color:'var(--text3)' }}>円</span>
+                  {s.costPrice > 0 && s.price && (() => {
+                    const pct = (s.price - s.costPrice) / s.costPrice * 100
+                    const diff = s.price - s.costPrice
+                    return (
+                      <span style={{ fontSize:'11px', color: pct>=0?'var(--red)':'var(--green)' }}>
+                        {pct >= 0 ? '▲' : '▼'} {Math.abs(diff).toLocaleString()}円
+                      </span>
+                    )
+                  })()}
+                </div>
               </div>
             ))}
           </div>

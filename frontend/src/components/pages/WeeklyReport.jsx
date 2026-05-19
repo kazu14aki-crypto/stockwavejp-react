@@ -62,7 +62,24 @@ function RenderMd({ text, onNavigate }) {
                       color:'var(--accent)' }}>
                     📊 {currentTheme}の詳細 →
                   </button>
-                  <button onClick={() => onNavigate('コラム・解説')}
+                  <button onClick={() => {
+                    // THEME_ARTICLE_MAPからarticleIdを取得してコラムに直接ジャンプ
+                    const THEME_MAP = {
+                      '半導体製造装置':'semiconductor-theme','半導体検査装置':'semiconductor-theme',
+                      '半導体材料':'semiconductor-theme','メモリ':'semiconductor-theme',
+                      'パワー半導体':'power-semiconductor','次世代半導体':'semiconductor-theme',
+                      '生成AI':'ai-cloud-theme','AIデータセンター':'ai-cloud-theme',
+                      'フィジカルAI':'physical-ai-edge-ai','AI半導体':'semiconductor-theme',
+                      'エッジAI':'physical-ai-edge-ai','防衛・セキュリティ':'defense-theme',
+                      '宇宙・衛星':'defense-theme','サイバーセキュリティ':'defense-theme',
+                      'インバウンド':'inbound-theme','観光・ホテル・レジャー':'inbound-theme',
+                      '銀行':'banking-fintech-theme','証券':'banking-fintech-theme',
+                      '保険':'banking-fintech-theme','SaaS':'saas-dx-theme',
+                      'DX':'saas-dx-theme','EV・電気自動車':'ev-green-theme',
+                    }
+                    const articleId = currentTheme ? THEME_MAP[currentTheme] : null
+                    onNavigate('コラム・解説', articleId)
+                  }}
                     style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
                       cursor:'pointer', fontFamily:'var(--font)',
                       background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',

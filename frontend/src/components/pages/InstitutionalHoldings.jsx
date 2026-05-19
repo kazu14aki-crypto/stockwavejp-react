@@ -361,9 +361,9 @@ export default function InstitutionalHoldings() {
   }
 
   const tabs = [
-    ['issuer', '🏢 銘柄から探す（推奨）'],
-    ['holder', '🏦 機関投資家から探す'],
-    ['guide',  '💡 読み方ガイド'],
+    ['issuer', '🏢 銘柄で探す'],
+    ['holder', '🏦 機関投資家'],
+    ['guide',  '💡 ガイド'],
   ]
 
   return (
@@ -383,7 +383,7 @@ export default function InstitutionalHoldings() {
       </div>
 
       {/* タブ */}
-      <div style={{ display:'flex', gap:'4px', marginBottom:'18px', borderBottom:'1px solid var(--border)' }}>
+      <div style={{ display:'flex', gap:'4px', marginBottom:'18px', borderBottom:'1px solid var(--border)', overflowX:'auto' }}>
         {tabs.map(([k, label]) => (
           <button key={k} onClick={() => setTab(k)} style={{
             padding:'8px 14px', border:'none', cursor:'pointer',
