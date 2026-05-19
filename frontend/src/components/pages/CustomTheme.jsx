@@ -559,27 +559,34 @@ export default function CustomTheme() {
 
   // ── テーマ詳細 ──────────────────────────────
   if (mode === 'detail' && activeTheme) return (
-    <div style={{ padding:'20px 24px 48px' }}>
-      <div style={{ display:'flex', alignItems:'center', gap:'12px', marginBottom:'20px', flexWrap:'wrap' }}>
+    <div style={{ padding:'16px 16px 48px' }}>
+      {/* ヘッダー：戻る + テーマ名（スマホ対応） */}
+      <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'10px' }}>
         <button onClick={() => setMode('list')} style={{ background:'none', border:'none',
-          color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0 }}>←</button>
-        <h1 style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', flex:1 }}>{activeTheme.name}</h1>
-        <div style={{ display:'flex', gap:'6px', flexWrap:'wrap' }}>
-          {PERIODS.map(p => (
-            <button key={p.value} onClick={() => setPeriod(p.value)} style={{
-              padding:'4px 12px', borderRadius:'6px', fontSize:'11px', cursor:'pointer',
-              fontFamily:'var(--font)', fontWeight: period===p.value ? 700 : 400,
-              border: period===p.value ? '1px solid var(--accent)' : '1px solid var(--border)',
-              background: period===p.value ? 'rgba(74,158,255,0.12)' : 'transparent',
-              color: period===p.value ? 'var(--accent)' : 'var(--text3)',
-            }}>{p.label}</button>
-          ))}
-          <button onClick={() => startEdit(activeIndex)} style={btnS}>✏️ 編集</button>
-          <button onClick={copyUrl} style={{ ...btnS, color: urlCopied ? 'var(--green)' : 'var(--text2)' }}>
-            {urlCopied ? '✓ コピー済み' : '🔗 URLをコピー'}
-          </button>
-        </div>
+          color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0, flexShrink:0 }}>←</button>
+        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', flex:1, minWidth:0,
+          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{activeTheme.name}</h1>
       </div>
+      {/* 期間ボタン */}
+      <div style={{ display:'flex', gap:'5px', flexWrap:'wrap', marginBottom:'8px' }}>
+        {PERIODS.map(p => (
+          <button key={p.value} onClick={() => setPeriod(p.value)} style={{
+            padding:'4px 10px', borderRadius:'6px', fontSize:'11px', cursor:'pointer',
+            fontFamily:'var(--font)', fontWeight: period===p.value ? 700 : 400,
+            border: period===p.value ? '1px solid var(--accent)' : '1px solid var(--border)',
+            background: period===p.value ? 'rgba(74,158,255,0.12)' : 'transparent',
+            color: period===p.value ? 'var(--accent)' : 'var(--text3)',
+          }}>{p.label}</button>
+        ))}
+      </div>
+      {/* 操作ボタン */}
+      <div style={{ display:'flex', gap:'6px', marginBottom:'16px' }}>
+        <button onClick={() => startEdit(activeIndex)} style={btnS}>✏️ 編集</button>
+        <button onClick={copyUrl} style={{ ...btnS, color: urlCopied ? 'var(--green)' : 'var(--text2)' }}>
+          {urlCopied ? '✓ コピー済み' : '🔗 URLをコピー'}
+        </button>
+      </div>
+
 
       {/* ③ 2カラムレイアウト: 左=グラフ群 / 右=銘柄表 */}
       <div className="ct-detail-grid">
