@@ -601,6 +601,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
 
       <style>{`
         @media (max-width:640px) { .col-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; } }
+        @media (max-width:400px) { .col-grid { grid-template-columns: 1fr !important; } }
         @media (max-width:640px) { .col-grid > div { padding: 12px 12px !important; } }
       `}</style>
     </div>

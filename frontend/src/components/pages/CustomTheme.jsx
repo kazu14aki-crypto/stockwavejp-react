@@ -113,14 +113,14 @@ function ThemeTrendChart({ stocks, period }) {
       </svg>
       </div>
       {/* 凡例 */}
-      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', marginTop:'8px', maxWidth:'100%' }}>
         {names.map((name, ti) => {
           const last = seriesData[name]?.at(-1)
           const c = COLORS[ti % COLORS.length]
           return (
-            <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
+            <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px', minWidth:0 }}>
               <div style={{ width:'14px', height:'2px', background:c, borderRadius:'1px' }}/>
-              <span style={{ fontSize:'11px', color:'var(--text2)' }}>{name}</span>
+              <span style={{ fontSize:'11px', color:'var(--text2)', maxWidth:'90px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</span>
               {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color:c, fontWeight:700 }}>
                 {last.pct>=0?'+':''}{last.pct?.toFixed(1)}%
               </span>}
