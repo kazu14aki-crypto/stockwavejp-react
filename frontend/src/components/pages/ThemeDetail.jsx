@@ -796,7 +796,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
     }
   }, [selTheme])
 
-  // テーマ別詳細取得（market.json優先）
+  // テーマ別詳細取得（market.json優先 v2）
   useEffect(() => {
     if (!selTheme) return
     setLoading(true); setDetail(null); setMomentum(null)
@@ -809,7 +809,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
         const momentumKey = `momentum_1mo`
         const detailData  = mj[detailKey]
         const momentumData = mj[momentumKey]?.data || []
-        console.log('[ThemeDetail] key:', detailKey, 'found:', !!detailData, 'keys:', Object.keys(mj).filter(k=>k.includes('theme_detail')).length)
+        console.log('[ThemeDetail] key:', detailKey, 'found:', !!detailData, 'stocks:', detailData?.stocks?.length, 'avg:', detailData?.avg)
 
         if (detailData) {
           setDetail(detailData)  // {stocks:[], avg:X, updated_at:...}

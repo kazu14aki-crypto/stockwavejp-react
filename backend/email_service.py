@@ -117,13 +117,13 @@ def send_subscription_email(
 
 <div class="note">
   📬 このメールに心当たりがない場合、または送信先のメールアドレスが間違っている可能性がある場合は、
-  <a href="mailto:info@stockwavejp.com">info@stockwavejp.com</a> にご連絡の上、このメールを削除してください。
+  <a href="mailto:stockwavejp26@gmail.com">stockwavejp26@gmail.com</a> にご連絡の上、このメールを削除してください。
   第三者が誤って受信した場合、内容の転用・共有はお控えください。
 </div>
 
 <div style="margin-top:20px;font-size:13px;color:#8b949e;">
   ご不明な点は <a href="{CONTACT_URL}">お問い合わせページ</a> または
-  <a href="mailto:info@stockwavejp.com">info@stockwavejp.com</a> までご連絡ください。
+  <a href="mailto:stockwavejp26@gmail.com">stockwavejp26@gmail.com</a> までご連絡ください。
 </div>
 """
 
@@ -189,7 +189,7 @@ def send_contact_autoresponse(
 
 <div class="note">
   📬 このメールに心当たりがない場合は、お手数ですが
-  <a href="mailto:info@stockwavejp.com">info@stockwavejp.com</a>
+  <a href="mailto:stockwavejp26@gmail.com">stockwavejp26@gmail.com</a>
   までご連絡の上、このメールを削除してください。
 </div>
 """
@@ -204,7 +204,7 @@ def send_contact_autoresponse(
         # 管理者にも通知
         resend.Emails.send({
             "from":    FROM_ADDRESS,
-            "to":      "info@stockwavejp.com",
+            "to":      "stockwavejp26@gmail.com",
             "subject": f"[お問い合わせ] {inquiry_type} — {user_name}",
             "html":    _wrap(f"<p>差出人: {user_name} &lt;{user_email}&gt;</p><p>種別: {inquiry_type}</p><hr><p>{content_escaped}</p>"),
         })

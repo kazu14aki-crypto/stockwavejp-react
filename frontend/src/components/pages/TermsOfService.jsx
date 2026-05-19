@@ -38,7 +38,7 @@ export default function TermsOfService() {
         <li>当サービスの重大な障害により、連続7日間以上サービスが利用できない場合</li>
         <li>当サービス側の過誤による二重請求が発生した場合</li>
       </ul>
-      <p style={p}>返金のご請求はinfo@stockwavejp.comまでお問い合わせください。</p>
+      <p style={p}>返金のご請求はstockwavejp26@gmail.comまでお問い合わせください。</p>
 
       <h2 style={h2}>7. 禁止事項</h2>
       <ul style={{ paddingLeft:'20px', marginBottom:'12px' }}>
@@ -70,7 +70,7 @@ export default function TermsOfService() {
       <p style={p}>本規約は日本法に準拠します。本サービスの利用に関して生じた紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
 
       <h2 style={h2}>14. お問い合わせ</h2>
-      <p style={p}>本規約に関するご質問・解約のお申し出は、info@stockwavejp.com までお問い合わせください。</p>
+      <p style={p}>本規約に関するご質問・解約のお申し出は、stockwavejp26@gmail.com までお問い合わせください。</p>
     </div>
   )
 }

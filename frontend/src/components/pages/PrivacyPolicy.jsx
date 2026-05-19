@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
         <li>個人情報の削除を求める権利（アカウント削除）</li>
         <li>個人情報の処理への異議申立て権</li>
       </ul>
-      <p style={p}>これらの権利を行使する場合は、info@stockwavejp.com までご連絡ください。</p>
+      <p style={p}>これらの権利を行使する場合は、stockwavejp26@gmail.com までご連絡ください。</p>
 
       <h2 style={h2}>9. 未成年者について</h2>
       <p style={p}>本サービスは18歳未満の方を対象としておらず、意図的に未成年者の個人情報を収集しません。</p>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
       <p style={p}>本ポリシーを変更する場合は、本ページで更新日とともに公表します。有料会員には変更の30日前までにメール通知を行います。</p>
 
       <h2 style={h2}>11. お問い合わせ</h2>
-      <p style={p}>本ポリシーに関するご質問は、info@stockwavejp.com までお問い合わせください。</p>
+      <p style={p}>本ポリシーに関するご質問は、stockwavejp26@gmail.com までお問い合わせください。</p>
     </div>
   )
 }

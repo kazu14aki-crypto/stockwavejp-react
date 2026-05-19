@@ -35,12 +35,11 @@ const PAGES = [
 ]
 
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',        component:SiteInfo      },
-  { icon:'📣', label:'お知らせ',                component:News          },
-  { icon:'📖', label:'使い方',                  component:HowTo         },
-  { icon:'💰', label:'プラン・料金',            component:Plan          },
-  { icon:'⚙️', label:'設定',                   component:Settings      },
-  { icon:'🛒', label:'特定商取引法に基づく表示', component:LegalNotice   },
+  { icon:'🏢', label:'当サイトについて',  component:SiteInfo  },
+  { icon:'📣', label:'お知らせ',          component:News      },
+  { icon:'📖', label:'使い方',            component:HowTo     },
+  { icon:'💰', label:'プラン・料金',      component:Plan      },
+  { icon:'⚙️', label:'設定',             component:Settings  },
 ]
 
 // フッターのみ表示するページ（メニューバーには表示しない）

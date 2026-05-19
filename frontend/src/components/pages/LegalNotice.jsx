@@ -23,7 +23,7 @@ export default function LegalNotice() {
         {row('販売業者', 'StockWaveJP運営')}
         {row('所在地', '請求があった場合には、遅滞なく開示します。')}
         {row('電話番号', '請求があった場合には、遅滞なく開示します。')}
-        {row('メールアドレス', 'info@stockwavejp.com')}
+        {row('メールアドレス', 'stockwavejp26@gmail.com')}
         {row('サービス名', 'StockWaveJP')}
         {row('サービスURL', 'https://stockwavejp.com')}
       </div>
@@ -68,7 +68,7 @@ export default function LegalNotice() {
         <li>法令上の消費者保護規定が適用される場合</li>
       </ul>
       <p style={{ ...p, fontSize:'12px', color:'var(--text3)' }}>
-        返金のご請求は info@stockwavejp.com までお問い合わせください。
+        返金のご請求は stockwavejp26@gmail.com までお問い合わせください。
       </p>
 
       <h2 style={h2}>動作環境</h2>
@@ -97,8 +97,8 @@ export default function LegalNotice() {
       </p>
       <div style={{ padding:'12px 16px', background:'var(--bg2)', borderRadius:'8px',
         border:'1px solid var(--border)', fontSize:'13px' }}>
-        メールアドレス: <a href="mailto:info@stockwavejp.com" style={{ color:'var(--accent)' }}>
-          info@stockwavejp.com
+        メールアドレス: <a href="mailto:stockwavejp26@gmail.com" style={{ color:'var(--accent)' }}>
+          stockwavejp26@gmail.com
         </a>
       </div>
 

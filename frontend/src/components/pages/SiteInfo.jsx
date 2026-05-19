@@ -84,7 +84,7 @@ export default function SiteInfo() {
           {[
             ['サービス名', 'StockWaveJP'],
             ['URL', 'https://stockwavejp.com'],
-            ['お問い合わせ', 'info@stockwavejp.com'],
+            ['お問い合わせ', 'stockwavejp26@gmail.com'],
             ['開始時期', '2025年3月'],
             ['目的', '日本株テーマ別の騰落率・出来高・売買代金のリアルタイム可視化（投資参考情報の提供）'],
             ['対象ユーザー', '日本株に関心を持つ個人投資家・初心者'],
