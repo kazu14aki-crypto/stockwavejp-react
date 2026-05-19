@@ -178,7 +178,7 @@ function CustomStockTable({ stocks, period, onRemove }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%', minWidth:'600px' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              {['#','銘柄名','株価','騰落率','出来高','売買代金','操作'].map(h => (
+              {['#','銘柄名','株価','騰落率','取得比','出来高','売買代金','操作'].map(h => (
                 <th key={h} style={{ padding:'6px 10px', textAlign: h==='銘柄名'?'left':'right',
                   fontSize:'10px', fontWeight:600, color:'var(--text3)', textTransform:'uppercase',
                   letterSpacing:'0.06em', whiteSpace:'nowrap', background:'var(--bg3)',
@@ -207,6 +207,12 @@ function CustomStockTable({ stocks, period, onRemove }) {
                   </td>
                   <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', fontWeight:700, color: loading ? 'var(--text3)' : pColor }}>
                     {loading ? '...' : d?.pct != null ? `${d.pct>=0?'+':''}${d.pct.toFixed(1)}%` : '-'}
+                  </td>
+                  <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', fontSize:'11px' }}>
+                    {s.costPrice > 0 && d?.price ? (() => {
+                      const g = (d.price - s.costPrice) / s.costPrice * 100
+                      return <span style={{ fontWeight:700, color: g>=0?'var(--red)':'var(--green)' }}>{g>=0?'+':''}{g.toFixed(1)}%</span>
+                    })() : <span style={{ color:'var(--text3)' }}>-</span>}
                   </td>
                   <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', color:'var(--text2)' }}>
                     {loading ? '...' : formatLarge(d?.volume)}

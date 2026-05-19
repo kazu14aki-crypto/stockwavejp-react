@@ -31,8 +31,9 @@ function RenderMd({ text, onNavigate }) {
       result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'18px 0 8px' }}>{line.slice(3)}</h2>)
     } else if (line.startsWith('### ')) {
       const title = line.slice(4)
-      // テーマ名を「位：」の後ろから抽出
-      const m = title.match(/\d+位[：:]\s*(.+?)(?:\s*（|$)/)
+      // テーマ名を「：」または「:」の後から抽出（絵文字・順位記号に対応）
+      // 例: "🥇 1位：防衛・セキュリティ（+11.2%）" → "防衛・セキュリティ"
+      const m = title.match(/[：:]\s*([^\s（(][^（(/]*?)(?:\s*[（(]|\s*$)/);
       currentTheme = m ? m[1].trim() : null
       result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text2)', margin:'14px 0 6px' }}>{title}</h3>)
     } else if (line.startsWith('- ') || line.startsWith('・')) {
