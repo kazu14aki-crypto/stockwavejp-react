@@ -307,7 +307,7 @@ function CustomVolTvChart({ stocks }) {
           const w = s.val/maxV*100
           const pCol = s.pct>=0?'var(--red)':'var(--green)'
           return (
-            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'100px 1fr 70px 54px', gap:'6px', alignItems:'center' }}>
+            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'minmax(60px,90px) 1fr minmax(50px,70px) minmax(40px,50px)', gap:'6px', alignItems:'center', overflow:'hidden' }}>
               <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
               <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
                 <div style={{ height:'100%', width:`${w}%`, background: mode==='tv'?'#ff8c42':'#378ADD', borderRadius:'3px', opacity:0.85 }}/>

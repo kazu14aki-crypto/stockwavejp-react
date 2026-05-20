@@ -403,8 +403,8 @@ export default function InstitutionalHoldings() {
           <input
             type="text"
             placeholder={tab==='issuer'
-              ? '銘柄名・証券コードで検索（例：トヨタ、7203）'
-              : '機関投資家名・銘柄名で検索'}
+              ? '銘柄名または証券コードを入力'
+              : '機関投資家名または銘柄名を入力'}
             value={query}
             onChange={e => setQuery(e.target.value)}
             onKeyDown={e => e.key==='Enter' && doSearch()}
@@ -441,13 +441,18 @@ export default function InstitutionalHoldings() {
             <strong>📋 データを準備中です</strong><br/>
             大量保有報告書データは毎日自動更新されます。
           </div>
+        ) : !searchQ ? (
+          // 検索前: ガイドメッセージ
+          <div style={{ padding:'40px 20px', textAlign:'center', color:'var(--text3)', fontSize:'13px', lineHeight:2 }}>
+            <div style={{ fontSize:'32px', marginBottom:'10px' }}>🔍</div>
+            <div style={{ fontWeight:600, color:'var(--text2)', marginBottom:'6px' }}>銘柄名または証券コードを入力して検索</div>
+            <div style={{ fontSize:'11px' }}>例: トヨタ自動車　7203　ソニーグループ　6758</div>
+          </div>
         ) : (
           <>
-            {searchQ && (
-              <div style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'12px' }}>
-                「{searchQ}」: <strong style={{ color:'var(--text)' }}>{issuerGroups.length}銘柄</strong>
-              </div>
-            )}
+            <div style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'12px' }}>
+              「{searchQ}」: <strong style={{ color:'var(--text)' }}>{issuerGroups.length}銘柄</strong>
+            </div>
             {issuerGroups.length === 0 ? (
               <div style={{ padding:'16px', background:'rgba(255,83,112,0.08)',
                 borderRadius:'8px', fontSize:'13px', color:'#ff5370' }}>
