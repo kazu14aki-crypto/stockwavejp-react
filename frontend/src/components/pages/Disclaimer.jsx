@@ -1,53 +1,66 @@
-const SECTIONS = [
-  {
-    title: '情報の目的と責任',
-    body: '本ツール（StockWaveJP）は、株式市場の動向分析のための参考情報の提供を目的としており、投資勧誘や特定の銘柄の推奨、投資助言を行うものではありません。投資に関する最終決定は、お客様ご自身の判断と責任において行われるようお願いいたします。',
-  },
-  {
-    title: 'データの独自集計について',
-    body: '当サイトで表示される各数値（「国内主要225銘柄」「大型株70社」等の平均騰落率および集計データ）は、対象となる個別銘柄の終値を元に、当サイトが独自に集計・算出したものです。日本経済新聞社が公表する「日経平均株価」や、株式会社JPX総研が公表する「TOPIX」等の公式な指数値ではありません。',
-  },
-  {
-    title: 'データの正確性とソース',
-    body: '当サイトの情報は信頼できると考えられるデータプロバイダーより取得しておりますが、データの正確性、完全性、最新性を保証するものではありません。提供データには市場に応じた遅延（15分〜20分程度、または日次更新）が含まれます。実際の投資に際しては、必ず証券会社等の公式データをご確認ください。',
-  },
-  {
-    title: '損害への責任',
-    body: '本ツールの利用により生じたいかなる損害（直接・間接を問わず）についても、運営者は一切の責任を負いません。本サービスは「現状のまま」提供されており、保守、中断、不具合等による損害についても同様とします。',
-  },
-  {
-    title: '著作権について',
-    body: '本ツールのコード・デザイン・データ構成は著作権により保護されています。無断転載・複製・商用利用を禁止します。',
-  },
-]
-
 export default function Disclaimer() {
+  const s  = { padding:'32px 28px 60px', maxWidth:'780px', margin:'0 auto', lineHeight:1.9, fontSize:'13px', color:'var(--text2)' }
+  const h1 = { fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }
+  const h2 = { fontSize:'14px', fontWeight:700, color:'var(--text)', margin:'24px 0 8px', paddingBottom:'6px', borderBottom:'1px solid var(--border)' }
+  const p  = { marginBottom:'12px' }
+
   return (
-    <div style={{ padding:'28px 32px 48px' }}>
-      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
-        免責事項
-      </h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'28px' }}>
-        StockWaveJP 免責事項
+    <div style={s}>
+      <h1 style={h1}>免責事項</h1>
+      <p style={{ ...p, fontSize:'12px', color:'var(--text3)' }}>最終更新日：2025年3月1日</p>
+
+      <h2 style={h2}>1. 情報の目的と性質</h2>
+      <p style={p}>
+        本サービス「StockWaveJP」は、株式市場のテーマ別騰落率・出来高・売買代金の可視化ツールです。
+        投資判断の参考情報の提供を目的としており、<strong>特定の有価証券の売買を推奨・勧誘するものではありません。</strong>
+        本サービスは金融商品取引法に基づく投資助言業の登録を行っておらず、投資助言には該当しません。
       </p>
 
-      {SECTIONS.map((s,i) => (
-        <div key={i} style={{
-          background:'var(--bg2)', border:'1px solid var(--border)',
-          borderRadius:'var(--radius)', padding:'20px 24px', marginBottom:'12px',
-          animation:`fadeUp 0.3s ease ${i*0.06}s both`,
-        }}>
-          <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'10px',
-            borderLeft:'3px solid var(--accent)', paddingLeft:'10px' }}>
-            {s.title}
-          </div>
-          <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9 }}>{s.body}</div>
-        </div>
-      ))}
+      <h2 style={h2}>2. データの独自集計について</h2>
+      <p style={p}>
+        当サイトで表示される各数値（テーマ別騰落率・出来高・売買代金等）は、対象銘柄のデータを元に当サイトが独自に集計・算出したものです。
+        日本経済新聞社が公表する「日経平均株価」や、JPX総研が公表する「TOPIX」等の公式指数値ではありません。
+      </p>
 
-      <div style={{ fontSize:'12px', color:'var(--text3)', marginTop:'20px', textAlign:'center' }}>
-        © 2026 StockWaveJP. All rights reserved.
-      </div>
+      <h2 style={h2}>3. データの正確性とソース</h2>
+      <p style={p}>
+        当サイトの情報はInfoway（data.infoway.io）および金融庁EDINET等のデータプロバイダーより取得しておりますが、
+        データの正確性・完全性・最新性を保証するものではありません。
+        実際の投資に際しては、必ず証券会社等の公式データをご確認ください。
+      </p>
+      <p style={p}>
+        提供データには市場に応じた遅延（リアルタイムデータは当日分、日次データは前営業日分）が含まれる場合があります。
+      </p>
+
+      <h2 style={h2}>4. 損害への免責</h2>
+      <p style={p}>
+        本サービスの情報に基づく投資判断の結果生じた損失・損害（直接・間接を問わず）について、当運営者は一切の責任を負いません。
+        本サービスは「現状のまま（as-is）」で提供されており、サービスの中断・不具合・データの欠落等による損害についても同様です。
+      </p>
+
+      <h2 style={h2}>5. 外部リンクについて</h2>
+      <p style={p}>
+        本サービスに掲載されている外部リンク（証券会社・金融機関・EDINET等）は参考情報として提供しています。
+        リンク先のコンテンツ・サービスについて当運営者は責任を負いません。
+      </p>
+
+      <h2 style={h2}>6. 著作権について</h2>
+      <p style={p}>
+        本サービスのコード・デザイン・テーマ分析記事・コラム等のコンテンツは著作権により保護されています。
+        個人的・非商業的な目的での閲覧・参照のみを許可します。
+        無断転載・複製・商業利用はお断りします。
+      </p>
+
+      <h2 style={h2}>7. 本免責事項の変更</h2>
+      <p style={p}>
+        本免責事項は予告なく変更する場合があります。変更後も引き続き本サービスをご利用いただいた場合、
+        変更後の内容に同意いただいたものとみなします。
+      </p>
+
+      <h2 style={h2}>8. お問い合わせ</h2>
+      <p style={p}>
+        本免責事項に関するご質問は <a href="mailto:stockwavejp26@gmail.com" style={{ color:'var(--accent)' }}>stockwavejp26@gmail.com</a> までお問い合わせください。
+      </p>
     </div>
   )
 }

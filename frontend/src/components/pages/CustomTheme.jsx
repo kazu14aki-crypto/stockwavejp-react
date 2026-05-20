@@ -479,7 +479,7 @@ export default function CustomTheme() {
 
   // ── テーマ一覧 ──────────────────────────────
   if (mode === 'list') return (
-    <div style={{ padding:'28px 24px 48px' }}>
+    <div style={{ padding:'20px 16px 48px', maxWidth:'900px', margin:'0 auto' }}>
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'4px' }}>
         <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)' }}>カスタムテーマ</h1>
         <button onClick={startCreate}
@@ -644,13 +644,18 @@ export default function CustomTheme() {
         @media (min-width: 900px) {
           .ct-detail-grid { grid-template-columns: 1fr 1fr; align-items: start; }
         }
+        @media (max-width: 640px) {
+          .ct-detail-grid { grid-template-columns: 1fr !important; }
+          .ct-list-card { padding: 10px 12px !important; }
+          .ct-stock-row { grid-template-columns: minmax(50px,80px) 1fr minmax(44px,60px) !important; }
+        }
       `}</style>
     </div>
   )
 
   // ── 作成/編集フォーム ──────────────────────
   return (
-    <div style={{ padding:'28px 24px 48px' }}>
+    <div style={{ padding:'20px 16px 48px', maxWidth:'900px', margin:'0 auto' }}>
       <div style={{ display:'flex', alignItems:'center', gap:'14px', marginBottom:'24px' }}>
         <button onClick={() => setMode('list')} style={{ background:'none', border:'none',
           color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0 }}>←</button>

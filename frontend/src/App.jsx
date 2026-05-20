@@ -44,9 +44,10 @@ const PAGES_OTHER = [
 
 // フッターのみ表示するページ（メニューバーには表示しない）
 const PAGES_FOOTER = [
-  { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
-  { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
-  { icon:'📋', label:'利用規約',            component:TermsOfService},
+  { icon:'⚖️', label:'免責事項',               component:Disclaimer    },
+  { icon:'🔒', label:'プライバシーポリシー',     component:PrivacyPolicy },
+  { icon:'📋', label:'利用規約',                component:TermsOfService},
+  { icon:'🛒', label:'特定商取引法に基づく表示', component:LegalNotice   },
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
