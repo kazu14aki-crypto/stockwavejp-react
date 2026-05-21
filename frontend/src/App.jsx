@@ -95,7 +95,29 @@ function AppInner() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
     localStorage.setItem(COLOR_THEME_KEY, colorTheme)
+    // Supabaseのuser_metadataにテーマを保存（ログイン済みの場合）
+    import('./lib/supabase').then(({ supabase }) => {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session) {
+          supabase.auth.updateUser({ data: { colorTheme } }).catch(() => {})
+        }
+      })
+    }).catch(() => {})
   }, [colorTheme])
+
+  // Googleログイン後にSupabaseのuser_metadataからテーマを復元
+  useEffect(() => {
+    import('./lib/supabase').then(({ supabase }) => {
+      supabase.auth.onAuthStateChange((event, session) => {
+        if (event === 'SIGNED_IN' && session?.user?.user_metadata?.colorTheme) {
+          const savedTheme = session.user.user_metadata.colorTheme
+          if (['dark','midnight','light','sand'].includes(savedTheme)) {
+            setColorTheme(savedTheme)
+          }
+        }
+      })
+    }).catch(() => {})
+  }, [])
 
   useEffect(() => {
     const check = () => {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 /* Google FontsはHTMLのpreconnectで非同期読み込み済み */
 html { overflow-x: clip; }
@@ -18,7 +18,7 @@ html { overflow-x: clip; }
   --accent:  #60A5FA;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'DM Mono',monospace;
+  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -36,28 +36,65 @@ html { overflow-x: clip; }
   --accent:  #c8b050;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'DM Mono',monospace;
+  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
-/* ── ライト ── */
+/* ── ライト（オフホワイト・長時間疲れにくい） ── */
 [data-theme="light"] {
   color-scheme: light;
-  --bg:      #F8FAFC;
+  --bg:      #F7F7F5;
   --bg2:     #FFFFFF;
-  --bg3:     #F1F5F9;
-  --border:  rgba(15,23,42,0.10);
-  --text:    #0F172A;
-  --text2:   #475569;
-  --text3:   #64748B;
-  --red:     #DC2626;
-  --green:   #16A34A;
-  --accent:  #2563EB;
+  --bg3:     #EFEFEC;
+  --border:  rgba(28,28,40,0.10);
+  --text:    #1C1C28;
+  --text2:   #4A4A5A;
+  --text3:   #767688;
+  --red:     #C0392B;
+  --green:   #1A7A4A;
+  --accent:  #2356C4;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'DM Mono',monospace;
+  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
+/* ── ミッドナイト（深い青・長時間OK） ── */
+[data-theme="midnight"] {
+  --bg:      #0A0F1E;
+  --bg2:     #111827;
+  --bg3:     #1A2236;
+  --border:  rgba(255,255,255,0.08);
+  --text:    #E2E8F4;
+  --text2:   #9BA8C0;
+  --text3:   #5A6480;
+  --red:     #FF6B6B;
+  --green:   #51CF66;
+  --accent:  #74B9FF;
+  --logo-red:#e63030;
+  --font:    'Noto Sans JP',sans-serif;
+  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --radius:  10px; --sidebar:220px; --header:52px;
+}
+
+/* ── サンド（温かみ・目に優しいベージュ） ── */
+[data-theme="sand"] {
+  color-scheme: light;
+  --bg:      #FAF7F2;
+  --bg2:     #FFF9F0;
+  --bg3:     #F0EBE0;
+  --border:  rgba(100,80,40,0.12);
+  --text:    #2D2416;
+  --text2:   #5C4A30;
+  --text3:   #8C7A60;
+  --red:     #C0392B;
+  --green:   #1A7A3A;
+  --accent:  #7C5CBF;
+  --logo-red:#e63030;
+  --font:    'Noto Sans JP',sans-serif;
+  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --radius:  10px; --sidebar:220px; --header:52px;
+}
+
 
 /* ホワイトテーマ：白文字を強制的に暗くする */
 [data-theme="light"] {

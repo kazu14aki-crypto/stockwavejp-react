@@ -28,14 +28,14 @@ function RenderMd({ text, onNavigate }) {
     if (line.startsWith('# ')) {
       result.push(<h1 key={i} style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>{line.slice(2)}</h1>)
     } else if (line.startsWith('## ')) {
-      result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'18px 0 8px' }}>{line.slice(3)}</h2>)
+      result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'28px 0 10px', paddingTop:'20px', borderTop:'1px solid var(--border)', borderLeft:'3px solid var(--accent)', paddingLeft:'10px', lineHeight:1.4 }}>{line.slice(3)}</h2>)
     } else if (line.startsWith('### ')) {
       const title = line.slice(4)
       // テーマ名を「：」または「:」の後から抽出（絵文字・順位記号に対応）
       // 例: "🥇 1位：防衛・セキュリティ（+11.2%）" → "防衛・セキュリティ"
       const m = title.match(/[：:]\s*([^\s（(][^（(/]*?)(?:\s*[（(]|\s*$)/);
       currentTheme = m ? m[1].trim() : null
-      result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text2)', margin:'14px 0 6px' }}>{title}</h3>)
+      result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', margin:'20px 0 6px', paddingLeft:'8px', borderLeft:'2px solid var(--accent)', opacity:0.95, lineHeight:1.5 }}>{title}</h3>)
     } else if (line.startsWith('- ') || line.startsWith('・')) {
       result.push(
         <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'4px', paddingLeft:'8px' }}>

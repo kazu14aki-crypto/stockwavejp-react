@@ -9,8 +9,10 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
   )
 
   const COLOR_THEMES = [
-    { key:'dark',  label:'🌑 ブラック', desc:'ダークモード（デフォルト）' },
-    { key:'light', label:'☀️ ホワイト', desc:'ライトモード' },
+    { key:'dark',      label:'🌑 ブラック',       desc:'深いダーク（デフォルト）' },
+    { key:'midnight',  label:'🌙 ミッドナイト',   desc:'深夜も疲れにくい青みダーク' },
+    { key:'light',     label:'☀️ オフホワイト',   desc:'目に優しいライトモード' },
+    { key:'sand',      label:'🏖 サンド',          desc:'温かみのあるベージュ' },
   ]
 
   return (
