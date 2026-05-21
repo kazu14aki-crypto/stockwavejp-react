@@ -8,7 +8,8 @@ import ThemeList   from './components/pages/ThemeList'
 import Heatmap     from './components/pages/Heatmap'
 import MarketRank  from './components/pages/MarketRank'
 import ThemeDetail from './components/pages/ThemeDetail'
-import CustomTheme from './components/pages/CustomTheme'
+import CustomTheme   from './components/pages/CustomTheme'
+import StockSearch   from './components/pages/StockSearch'
 import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
@@ -28,6 +29,7 @@ const PAGES = [
   { icon:'🔥', label:'テーマヒートマップ',   component:Heatmap       },
   { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail   },
   { icon:'📋', label:'市場別詳細',         component:MarketRank    },
+  { icon:'🔎', label:'銘柄検索',             component:StockSearch   },
   { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme   },
   { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
   { icon:'📰', label:'週次レポート',        component:WeeklyReport  },

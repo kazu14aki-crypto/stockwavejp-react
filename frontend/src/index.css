@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Mono:wght@400;500&display=swap');
 
 /* Google FontsはHTMLのpreconnectで非同期読み込み済み */
 html { overflow-x: clip; }
@@ -18,7 +18,7 @@ html { overflow-x: clip; }
   --accent:  #60A5FA;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -36,7 +36,7 @@ html { overflow-x: clip; }
   --accent:  #c8b050;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -55,7 +55,7 @@ html { overflow-x: clip; }
   --accent:  #2356C4;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 /* ── ミッドナイト（深い青・長時間OK） ── */
@@ -72,7 +72,7 @@ html { overflow-x: clip; }
   --accent:  #74B9FF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -91,7 +91,7 @@ html { overflow-x: clip; }
   --accent:  #7C5CBF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'JetBrains Mono','IBM Plex Mono',monospace;
+  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -113,10 +113,52 @@ html { overflow-x: clip; }
 [data-theme="light"] code {
   color: inherit;
 }
-/* ホワイトテーマのサイドバー・ヘッダーを明るく */
+/* ── ライトテーマ上書き：ハードコードされた白文字を修正 ── */
+
+/* ヘッダー・サイドバー */
 [data-theme="light"] nav,
 [data-theme="light"] header {
   background: var(--bg2) !important;
+}
+
+/* 白背景ボタン上の白文字 → ダーク文字に */
+[data-theme="light"] button[style*="color: rgb(255, 255, 255)"],
+[data-theme="light"] button[style*="color:#fff"],
+[data-theme="light"] button[style*="color: white"] {
+  /* アクセントカラー背景のボタン（青・オレンジ等）の白文字は維持 */
+}
+
+/* 暗い背景カードのテキスト強制 */
+[data-theme="light"] .dark-card {
+  background: var(--bg2) !important;
+  color: var(--text) !important;
+}
+
+/* SVGテキスト（グラフラベル） */
+[data-theme="light"] svg text[fill="white"],
+[data-theme="light"] svg text[fill="#fff"],
+[data-theme="light"] svg text[fill="#FFF"] {
+  /* セルに重なるバブルテキストは背景色に応じて白のまま維持 */
+  fill: #FFFFFF !important;
+}
+
+/* ヒートマップセルの文字は白を維持（濃い背景の上） */
+[data-theme="light"] .heatmap-cell-text { fill: #fff !important; }
+
+/* タイトル・ヘッダーの白文字強制 */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] .page-header-sticky h1 {
+  color: var(--text) !important;
+}
+
+/* 変数で指定されているbg系のバックグラウンドを持つカードの文字 */
+[data-theme="light"] [style*="background: rgb(10,"] *,
+[data-theme="light"] [style*="background: rgb(8,"] *,
+[data-theme="light"] [style*="background: rgb(15,"] *,
+[data-theme="light"] [style*="background: rgb(5,"] * {
+  color: var(--text) !important;
 }
 /* ホワイトテーマのselect/input */
 [data-theme="light"] select,
@@ -279,3 +321,9 @@ body {
 [data-theme="light"] ::-webkit-scrollbar-thumb { background: rgba(15,23,42,0.2); }
 [data-theme="light"] ::-webkit-scrollbar-track  { background: rgba(15,23,42,0.05); }
 [data-theme="light"] .sticky-table::-webkit-scrollbar-thumb { background: rgba(15,23,42,0.2); }
+/* ① 数字ゼロのスラッシュ・ドットを排除 */
+:root { font-variant-numeric: normal; }
+.mono, [style*="fontFamily: 'mono'"], code, pre {
+  font-variant-numeric: normal;
+  font-feature-settings: "zero" 0;
+}
