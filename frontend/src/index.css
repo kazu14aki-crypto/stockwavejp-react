@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+Mono:wght@400;500;600&display=swap');
 
 /* Google FontsはHTMLのpreconnectで非同期読み込み済み */
 html { overflow-x: clip; }
@@ -18,7 +18,7 @@ html { overflow-x: clip; }
   --accent:  #60A5FA;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
+  --mono:    'Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -36,7 +36,7 @@ html { overflow-x: clip; }
   --accent:  #c8b050;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
+  --mono:    'Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -55,7 +55,7 @@ html { overflow-x: clip; }
   --accent:  #2356C4;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
+  --mono:    'Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 /* ── ミッドナイト（深い青・長時間OK） ── */
@@ -72,7 +72,7 @@ html { overflow-x: clip; }
   --accent:  #74B9FF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
+  --mono:    'Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -91,7 +91,7 @@ html { overflow-x: clip; }
   --accent:  #7C5CBF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'IBM Plex Mono','Noto Sans Mono',monospace;
+  --mono:    'Noto Sans Mono',monospace;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -181,6 +181,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background 0.3s, color 0.3s;
+  font-variant-numeric: normal;
+  font-feature-settings: "zero" 0, "ss01" 0;
 }
 
 ::-webkit-scrollbar { width:6px; height:10px; }
@@ -327,3 +329,10 @@ body {
   font-variant-numeric: normal;
   font-feature-settings: "zero" 0;
 }
+
+/* ③ ライトテーマ: テーブル上のカーソルを黒に */
+[data-theme="light"] .sticky-table { cursor: default; caret-color: #1C1C28; }
+[data-theme="light"] .sticky-table * { cursor: default; }
+[data-theme="light"] table * { cursor: default; }
+/* ③ ライトテーマ: 上昇赤をlogo-redと揃え、緑を明るく */
+[data-theme="light"] { --red: #e63030; --green: #1a9a50; }

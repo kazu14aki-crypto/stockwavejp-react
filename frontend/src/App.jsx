@@ -89,10 +89,27 @@ function AppInner() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1280)
+  const [colorDir,    setColorDir]    = useState(
+    () => localStorage.getItem(COLOR_DIR_KEY) || 'jp'  // 'jp'=赤上昇 / 'us'=緑上昇
+  )
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
   const status = useStatus()
+
+  useEffect(() => {
+    localStorage.setItem(COLOR_DIR_KEY, colorDir)
+    const root = document.documentElement
+    if (colorDir === 'us') {
+      // 米国式: 緑=上昇, 赤=下落
+      root.style.setProperty('--up',   'var(--green)')
+      root.style.setProperty('--down', 'var(--red)')
+    } else {
+      // 日本式: 赤=上昇, 緑=下落 (デフォルト)
+      root.style.setProperty('--up',   'var(--red)')
+      root.style.setProperty('--down', 'var(--green)')
+    }
+  }, [colorDir])
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
@@ -165,7 +182,7 @@ function AppInner() {
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, isMobile }
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, colorDir, onColorDirChange:setColorDir, onColorThemeChange:setColorTheme, isMobile }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange, isMobile }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
