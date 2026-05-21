@@ -56,6 +56,7 @@ const PAGES_FOOTER = [
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER, ...PAGES_FOOTER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
+const COLOR_DIR_KEY   = 'sw_color_dir'
 
 function AppInner() {
   const [currentPage,   setCurrentPage]   = useState('ホーム')
