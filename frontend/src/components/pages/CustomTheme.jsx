@@ -81,9 +81,8 @@ function ThemeTrendChart({ stocks, period }) {
   for (let i = 0; i < allDates.length; i += xStep) xLabels.push({ i, date: allDates[i] })
 
   return (
-    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px' }}>
-      <div style={{ overflowX:'auto' }}>
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'300px', maxWidth:'100%' }}>
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px', overflowX:'auto' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display:'block', minWidth:'280px' }}>
         {ticks.map(v => (
           <g key={v}>
             <line x1={PL} y1={yS(v)} x2={W-PR} y2={yS(v)} stroke="rgba(120,140,180,0.1)" strokeWidth="1"/>
@@ -111,16 +110,15 @@ function ThemeTrendChart({ stocks, period }) {
           ) : null
         })}
       </svg>
-      </div>
       {/* 凡例 */}
-      <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', marginTop:'8px', maxWidth:'100%' }}>
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'10px', marginTop:'8px' }}>
         {names.map((name, ti) => {
           const last = seriesData[name]?.at(-1)
           const c = COLORS[ti % COLORS.length]
           return (
-            <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px', minWidth:0 }}>
+            <div key={name} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
               <div style={{ width:'14px', height:'2px', background:c, borderRadius:'1px' }}/>
-              <span style={{ fontSize:'11px', color:'var(--text2)', maxWidth:'90px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{name}</span>
+              <span style={{ fontSize:'11px', color:'var(--text2)' }}>{name}</span>
               {last && <span style={{ fontSize:'11px', fontFamily:'var(--mono)', color:c, fontWeight:700 }}>
                 {last.pct>=0?'+':''}{last.pct?.toFixed(1)}%
               </span>}
@@ -178,7 +176,7 @@ function CustomStockTable({ stocks, period, onRemove }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%', minWidth:'600px' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              {['#','銘柄名','株価','騰落率','取得比','出来高','売買代金','操作'].map(h => (
+              {['#','銘柄名','株価','騰落率','出来高','売買代金','操作'].map(h => (
                 <th key={h} style={{ padding:'6px 10px', textAlign: h==='銘柄名'?'left':'right',
                   fontSize:'10px', fontWeight:600, color:'var(--text3)', textTransform:'uppercase',
                   letterSpacing:'0.06em', whiteSpace:'nowrap', background:'var(--bg3)',
@@ -207,12 +205,6 @@ function CustomStockTable({ stocks, period, onRemove }) {
                   </td>
                   <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', fontWeight:700, color: loading ? 'var(--text3)' : pColor }}>
                     {loading ? '...' : d?.pct != null ? `${d.pct>=0?'+':''}${d.pct.toFixed(1)}%` : '-'}
-                  </td>
-                  <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', fontSize:'11px' }}>
-                    {s.costPrice > 0 && d?.price ? (() => {
-                      const g = (d.price - s.costPrice) / s.costPrice * 100
-                      return <span style={{ fontWeight:700, color: g>=0?'var(--red)':'var(--green)' }}>{g>=0?'+':''}{g.toFixed(1)}%</span>
-                    })() : <span style={{ color:'var(--text3)' }}>-</span>}
                   </td>
                   <td style={{ padding:'8px 10px', textAlign:'right', fontFamily:'var(--mono)', color:'var(--text2)' }}>
                     {loading ? '...' : formatLarge(d?.volume)}
@@ -307,7 +299,7 @@ function CustomVolTvChart({ stocks }) {
           const w = s.val/maxV*100
           const pCol = s.pct>=0?'var(--red)':'var(--green)'
           return (
-            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'minmax(60px,90px) 1fr minmax(50px,70px) minmax(40px,50px)', gap:'6px', alignItems:'center', overflow:'hidden' }}>
+            <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'100px 1fr 70px 54px', gap:'6px', alignItems:'center' }}>
               <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
               <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
                 <div style={{ height:'100%', width:`${w}%`, background: mode==='tv'?'#ff8c42':'#378ADD', borderRadius:'3px', opacity:0.85 }}/>
@@ -479,7 +471,7 @@ export default function CustomTheme() {
 
   // ── テーマ一覧 ──────────────────────────────
   if (mode === 'list') return (
-    <div style={{ padding:'20px 16px 48px', maxWidth:'900px', margin:'0 auto' }}>
+    <div style={{ padding:'28px 24px 48px' }}>
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'4px' }}>
         <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)' }}>カスタムテーマ</h1>
         <button onClick={startCreate}
@@ -539,12 +531,9 @@ export default function CustomTheme() {
               <div style={{ flex:1, minWidth:0 }}>
                 <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>{t.name}</div>
                 <div style={{ display:'flex', flexWrap:'wrap', gap:'4px' }}>
-                  {(t.stocks||[]).map(s => (
-                    <span key={s.ticker} style={{ fontSize:'11px', padding:'2px 8px', borderRadius:'20px',
-                      background:'rgba(74,158,255,0.1)', color:'var(--accent)', border:'1px solid rgba(74,158,255,0.2)' }}>
-                      {s.name}
-                    </span>
-                  ))}
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>
+                  {(t.stocks||[]).length}銘柄
+                </div>
                 </div>
               </div>
               <span style={{ fontSize:'12px', color:'var(--text3)', whiteSpace:'nowrap' }}>{(t.stocks||[]).length}銘柄</span>
@@ -559,34 +548,27 @@ export default function CustomTheme() {
 
   // ── テーマ詳細 ──────────────────────────────
   if (mode === 'detail' && activeTheme) return (
-    <div style={{ padding:'16px 16px 48px' }}>
-      {/* ヘッダー：戻る + テーマ名（スマホ対応） */}
-      <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'10px' }}>
+    <div style={{ padding:'20px 24px 48px' }}>
+      <div style={{ display:'flex', alignItems:'center', gap:'12px', marginBottom:'20px', flexWrap:'wrap' }}>
         <button onClick={() => setMode('list')} style={{ background:'none', border:'none',
-          color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0, flexShrink:0 }}>←</button>
-        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', flex:1, minWidth:0,
-          overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{activeTheme.name}</h1>
+          color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0 }}>←</button>
+        <h1 style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', flex:1 }}>{activeTheme.name}</h1>
+        <div style={{ display:'flex', gap:'6px', flexWrap:'wrap' }}>
+          {PERIODS.map(p => (
+            <button key={p.value} onClick={() => setPeriod(p.value)} style={{
+              padding:'4px 12px', borderRadius:'6px', fontSize:'11px', cursor:'pointer',
+              fontFamily:'var(--font)', fontWeight: period===p.value ? 700 : 400,
+              border: period===p.value ? '1px solid var(--accent)' : '1px solid var(--border)',
+              background: period===p.value ? 'rgba(74,158,255,0.12)' : 'transparent',
+              color: period===p.value ? 'var(--accent)' : 'var(--text3)',
+            }}>{p.label}</button>
+          ))}
+          <button onClick={() => startEdit(activeIndex)} style={btnS}>✏️ 編集</button>
+          <button onClick={copyUrl} style={{ ...btnS, color: urlCopied ? 'var(--green)' : 'var(--text2)' }}>
+            {urlCopied ? '✓ コピー済み' : '🔗 URLをコピー'}
+          </button>
+        </div>
       </div>
-      {/* 期間ボタン */}
-      <div style={{ display:'flex', gap:'5px', flexWrap:'wrap', marginBottom:'8px' }}>
-        {PERIODS.map(p => (
-          <button key={p.value} onClick={() => setPeriod(p.value)} style={{
-            padding:'4px 10px', borderRadius:'6px', fontSize:'11px', cursor:'pointer',
-            fontFamily:'var(--font)', fontWeight: period===p.value ? 700 : 400,
-            border: period===p.value ? '1px solid var(--accent)' : '1px solid var(--border)',
-            background: period===p.value ? 'rgba(74,158,255,0.12)' : 'transparent',
-            color: period===p.value ? 'var(--accent)' : 'var(--text3)',
-          }}>{p.label}</button>
-        ))}
-      </div>
-      {/* 操作ボタン */}
-      <div style={{ display:'flex', gap:'6px', marginBottom:'16px' }}>
-        <button onClick={() => startEdit(activeIndex)} style={btnS}>✏️ 編集</button>
-        <button onClick={copyUrl} style={{ ...btnS, color: urlCopied ? 'var(--green)' : 'var(--text2)' }}>
-          {urlCopied ? '✓ コピー済み' : '🔗 URLをコピー'}
-        </button>
-      </div>
-
 
       {/* ③ 2カラムレイアウト: 左=グラフ群 / 右=銘柄表 */}
       <div className="ct-detail-grid">
@@ -644,18 +626,13 @@ export default function CustomTheme() {
         @media (min-width: 900px) {
           .ct-detail-grid { grid-template-columns: 1fr 1fr; align-items: start; }
         }
-        @media (max-width: 640px) {
-          .ct-detail-grid { grid-template-columns: 1fr !important; }
-          .ct-list-card { padding: 10px 12px !important; }
-          .ct-stock-row { grid-template-columns: minmax(50px,80px) 1fr minmax(44px,60px) !important; }
-        }
       `}</style>
     </div>
   )
 
   // ── 作成/編集フォーム ──────────────────────
   return (
-    <div style={{ padding:'20px 16px 48px', maxWidth:'900px', margin:'0 auto' }}>
+    <div style={{ padding:'28px 24px 48px' }}>
       <div style={{ display:'flex', alignItems:'center', gap:'14px', marginBottom:'24px' }}>
         <button onClick={() => setMode('list')} style={{ background:'none', border:'none',
           color:'var(--text2)', cursor:'pointer', fontSize:'20px', padding:0 }}>←</button>
@@ -744,57 +721,18 @@ export default function CustomTheme() {
           <label style={lbl}>追加済み銘柄（{stocks.length}/10銘柄　※最大10銘柄まで）</label>
           <div style={{ display:'flex', flexDirection:'column', gap:'5px' }}>
             {stocks.map((s, i) => (
-              <div key={s.ticker} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+              <div key={s.ticker} style={{ display:'flex', alignItems:'center', gap:'10px',
+                background:'var(--bg2)', border:'1px solid var(--border)',
                 borderRadius:'6px', padding:'8px 12px',
                 animation:`fadeUp 0.2s ease ${i*0.03}s both` }}>
-                {/* 銘柄情報行 */}
-                <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom: s.costPrice !== undefined ? '6px' : '0' }}>
-                  <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'52px', flexShrink:0 }}>
-                    {s.ticker.replace('.T','')}
-                  </span>
-                  <span style={{ flex:1, fontSize:'13px', color:'var(--text)', fontWeight:500, minWidth:0,
-                    overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{s.name}</span>
-                  {s.price && <span style={{ fontSize:'12px', color:'var(--text2)', fontFamily:'var(--mono)', flexShrink:0 }}>
-                    ¥{s.price.toLocaleString()}
-                  </span>}
-                  {/* 損益率 */}
-                  {s.costPrice > 0 && s.price && (() => {
-                    const pct = (s.price - s.costPrice) / s.costPrice * 100
-                    return (
-                      <span style={{ fontSize:'12px', fontWeight:700, fontFamily:'var(--mono)', flexShrink:0,
-                        color: pct >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                        {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
-                      </span>
-                    )
-                  })()}
-                  <button onClick={() => removeStock(s.ticker)} style={{ background:'none', border:'1px solid var(--border)',
-                    borderRadius:'4px', color:'var(--text3)', cursor:'pointer', padding:'3px 8px',
-                    fontSize:'12px', fontFamily:'var(--font)', flexShrink:0 }}>✕</button>
-                </div>
-                {/* 取得価格入力行 */}
-                <div style={{ display:'flex', alignItems:'center', gap:'8px' }}>
-                  <span style={{ fontSize:'11px', color:'var(--text3)', whiteSpace:'nowrap' }}>取得価格:</span>
-                  <input
-                    type="number"
-                    placeholder="例: 2500"
-                    value={s.costPrice || ''}
-                    onChange={e => {
-                      const v = parseFloat(e.target.value) || 0
-                      setStocks(p => p.map(st => st.ticker === s.ticker ? {...st, costPrice: v} : st))
-                    }}
-                    style={{ ...inp, width:'110px', padding:'4px 8px', fontSize:'12px', flexShrink:0 }}
-                  />
-                  <span style={{ fontSize:'11px', color:'var(--text3)' }}>円</span>
-                  {s.costPrice > 0 && s.price && (() => {
-                    const pct = (s.price - s.costPrice) / s.costPrice * 100
-                    const diff = s.price - s.costPrice
-                    return (
-                      <span style={{ fontSize:'11px', color: pct>=0?'var(--red)':'var(--green)' }}>
-                        {pct >= 0 ? '▲' : '▼'} {Math.abs(diff).toLocaleString()}円
-                      </span>
-                    )
-                  })()}
-                </div>
+                <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)', width:'60px', flexShrink:0 }}>
+                  {s.ticker.replace('.T','')}
+                </span>
+                <span style={{ flex:1, fontSize:'13px', color:'var(--text)', fontWeight:500 }}>{s.name}</span>
+                {s.price && <span style={{ fontSize:'12px', color:'var(--text2)', fontFamily:'var(--mono)' }}>¥{s.price.toLocaleString()}</span>}
+                <button onClick={() => removeStock(s.ticker)} style={{ background:'none', border:'1px solid var(--border)',
+                  borderRadius:'4px', color:'var(--text3)', cursor:'pointer', padding:'3px 8px',
+                  fontSize:'12px', fontFamily:'var(--font)' }}>✕</button>
               </div>
             ))}
           </div>

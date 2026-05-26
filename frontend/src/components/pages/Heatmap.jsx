@@ -198,6 +198,8 @@ function AutoComment({ lines }) {
 }
 
 function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
+  const [popupTheme, setPopupTheme] = React.useState(null)
+  const [popupPos,   setPopupPos]   = React.useState({ x: 0, y: 0 })
   const [hovered, setHovered] = useState(null)
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 })
 
@@ -321,7 +323,76 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
   }
 
   return (
-    <div>
+    <div onClick={() => setPopupTheme(null)}>
+      {/* ⑥ バブルタップポップアップ */}
+      {popupTheme && (
+        <div
+          onClick={e => e.stopPropagation()}
+          style={{
+            position:'fixed',
+            left: Math.min(popupPos.x + 12, (typeof window !== 'undefined' ? window.innerWidth : 400) - 230),
+            top:  Math.min(popupPos.y + 12, (typeof window !== 'undefined' ? window.innerHeight : 600) - 220),
+            zIndex: 2000,
+            background: 'var(--bg2)',
+            border: '1px solid var(--border)',
+            borderRadius: '12px',
+            padding: '16px 18px',
+            minWidth: '210px',
+            boxShadow: '0 6px 24px rgba(0,0,0,0.35)',
+          }}
+        >
+          <div style={{ fontWeight:700, fontSize:'14px', color:'var(--text)', marginBottom:'12px' }}>
+            {popupTheme.theme}
+          </div>
+          <div style={{ display:'flex', flexDirection:'column', gap:'8px' }}>
+            <div style={{ display:'flex', justifyContent:'space-between', fontSize:'12px' }}>
+              <span style={{ color:'var(--text3)' }}>騰落率</span>
+              <span style={{ fontFamily:'var(--mono)', fontWeight:700,
+                color: popupTheme.pct >= 0 ? 'var(--red)' : 'var(--green)' }}>
+                {popupTheme.pct >= 0 ? '+' : ''}{popupTheme.pct?.toFixed(2)}%
+              </span>
+            </div>
+            <div style={{ display:'flex', justifyContent:'space-between', fontSize:'12px' }}>
+              <span style={{ color:'var(--text3)' }}>出来高</span>
+              <span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>
+                {popupTheme.volume ? (popupTheme.volume >= 1e6
+                  ? (popupTheme.volume/1e6).toFixed(1)+'M'
+                  : popupTheme.volume.toLocaleString()) : '-'}
+              </span>
+            </div>
+            <div style={{ display:'flex', justifyContent:'space-between', fontSize:'12px' }}>
+              <span style={{ color:'var(--text3)' }}>売買代金</span>
+              <span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>
+                {popupTheme.trade_value ? (popupTheme.trade_value >= 1e8
+                  ? (popupTheme.trade_value/1e8).toFixed(1)+'億'
+                  : (popupTheme.trade_value/1e6).toFixed(0)+'百万') : '-'}
+              </span>
+            </div>
+          </div>
+          <button
+            onClick={() => { onNavigate?.('テーマ別詳細', popupTheme.theme); setPopupTheme(null) }}
+            style={{
+              marginTop:'14px', width:'100%', padding:'8px',
+              background:'rgba(74,158,255,0.1)', border:'1px solid rgba(74,158,255,0.3)',
+              borderRadius:'8px', color:'var(--accent)', cursor:'pointer',
+              fontFamily:'var(--font)', fontSize:'12px', fontWeight:600,
+            }}
+          >
+            📊 テーマ別詳細を見る →
+          </button>
+          <button
+            onClick={() => setPopupTheme(null)}
+            style={{
+              marginTop:'6px', width:'100%', padding:'6px',
+              background:'transparent', border:'none',
+              color:'var(--text3)', cursor:'pointer',
+              fontFamily:'var(--font)', fontSize:'11px',
+            }}
+          >
+            閉じる
+          </button>
+        </div>
+      )}
       {/* 期間セレクタ */}
       <div style={{ display:'flex', gap:'8px', alignItems:'center', marginBottom:'16px' }}>
         <select value={mPeriod} onChange={e => setMPeriod(e.target.value)}
@@ -338,20 +409,18 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
         </span>
       </div>
 
-      {/* ゾーン説明 — 1行横並び */}
-      <div style={{
-        display:'flex', flexWrap:'wrap', gap:'6px 16px',
-        marginBottom:'10px', fontSize:'11px',
-      }}>
+      {/* ゾーン説明 */}
+      <div className="scatter-zone-desc">
         {[
-          { dot:'#ff5370', text:'🔥 注目ゾーン（右上）上昇＋出来高急増' },
-          { dot:'#00c48c', text:'⚠️ 売り圧力（左上）下落＋出来高急増' },
-          { dot:'#ff8c42', text:'📈 静かな上昇（右下）上昇＋出来高少' },
-          { dot:'#4a9eff', text:'❄️ 静かな下落（左下）弱含み・動意なし' },
+          { label:'🔥 注目ゾーン（右上）', desc:'上昇＋出来高急増＝最強シグナル', color:'#ff5370' },
+          { label:'⚠️ 売り圧力（左上）',   desc:'下落＋出来高急増＝強い売り',    color:'#00c48c' },
+          { label:'📈 静かな上昇（右下）',  desc:'上昇＋出来高少＝じわり上昇',    color:'#ff8c42' },
+          { label:'❄️ 静かな下落（左下）',  desc:'弱含みだが動意なし',             color:'#4a9eff' },
         ].map(z => (
-          <div key={z.text} style={{ display:'flex', alignItems:'center', gap:'4px', whiteSpace:'nowrap' }}>
-            <div style={{ width:'7px', height:'7px', borderRadius:'50%', background:z.dot, flexShrink:0 }} />
-            <span style={{ color:'var(--text3)' }}>{z.text}</span>
+          <div key={z.label} style={{ display:'flex', alignItems:'center', gap:'5px' }}>
+            <div style={{ width:'8px', height:'8px', borderRadius:'50%', background:z.color, flexShrink:0 }} />
+            <span style={{ color:'var(--text3)' }}>{z.label}：</span>
+            <span style={{ color:'var(--text2)' }}>{z.desc}</span>
           </div>
         ))}
       </div>
@@ -407,7 +476,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
               const col = bColor(d.pct)
               return (
                 <g key={d.theme}
-                  style={{ cursor: onNavigate ? 'pointer' : 'default' }}
+                  style={{ cursor: 'pointer' }}
                   onMouseEnter={e => {
                     const svg = e.currentTarget.closest('svg')
                     const rect = svg.getBoundingClientRect()
@@ -418,7 +487,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
                       y: cy - r - 6,
                     })
                   }}
-                  onClick={() => onNavigate && onNavigate('テーマ別詳細', d.theme)}
+                  onClick={(e) => { e.stopPropagation(); setPopupTheme(d); setPopupPos({ x: e.clientX, y: e.clientY }) }}
                 >
                   <circle cx={cx} cy={cy} r={r}
                     fill={col} fillOpacity="0.75"
@@ -444,9 +513,9 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
             const col = bColor(d.pct)
             return (
               <g key="hovered"
-                style={{ cursor: onNavigate ? 'pointer' : 'default' }}
+                style={{ cursor: 'pointer' }}
                 onMouseEnter={() => setHovered(d)}
-                onClick={() => onNavigate && onNavigate('テーマ別詳細', d.theme)}
+                onClick={(e) => { e.stopPropagation(); setPopupTheme(d); setPopupPos({ x: e.clientX, y: e.clientY }) }}
               >
                 <circle cx={cx} cy={cy} r={r + 3}
                   fill="none" stroke="white" strokeWidth="2" strokeOpacity="0.8" />
