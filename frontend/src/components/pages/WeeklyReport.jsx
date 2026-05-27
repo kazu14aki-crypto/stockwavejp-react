@@ -28,14 +28,13 @@ function RenderMd({ text, onNavigate }) {
     if (line.startsWith('# ')) {
       result.push(<h1 key={i} style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>{line.slice(2)}</h1>)
     } else if (line.startsWith('## ')) {
-      result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'28px 0 10px', paddingTop:'20px', borderTop:'1px solid var(--border)', borderLeft:'3px solid var(--accent)', paddingLeft:'10px', lineHeight:1.4 }}>{line.slice(3)}</h2>)
+      result.push(<h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:'18px 0 8px' }}>{line.slice(3)}</h2>)
     } else if (line.startsWith('### ')) {
       const title = line.slice(4)
-      // テーマ名を「：」または「:」の後から抽出（絵文字・順位記号に対応）
-      // 例: "🥇 1位：防衛・セキュリティ（+11.2%）" → "防衛・セキュリティ"
-      const m = title.match(/[：:]\s*([^\s（(][^（(/]*?)(?:\s*[（(]|\s*$)/);
+      // テーマ名を「位：」の後ろから抽出
+      const m = title.match(/\d+位[：:]\s*(.+?)(?:\s*（|$)/)
       currentTheme = m ? m[1].trim() : null
-      result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', margin:'20px 0 6px', paddingLeft:'8px', borderLeft:'2px solid var(--accent)', opacity:0.95, lineHeight:1.5 }}>{title}</h3>)
+      result.push(<h3 key={i} style={{ fontSize:'14px', fontWeight:700, color:'var(--text2)', margin:'14px 0 6px' }}>{title}</h3>)
     } else if (line.startsWith('- ') || line.startsWith('・')) {
       result.push(
         <div key={i} style={{ display:'flex', gap:'8px', marginBottom:'4px', paddingLeft:'8px' }}>
@@ -46,13 +45,10 @@ function RenderMd({ text, onNavigate }) {
     } else if (line.trim() === '---') {
       result.push(<hr key={i} style={{ border:'none', borderTop:'1px solid var(--border)', margin:'16px 0' }}/>)
     } else if (line.trim() === '') {
-      // 空行の後にテーマボタンを挿入（h3の後のセクションで）
       if (currentTheme && i > 0 && lines[i-1].trim() !== '') {
-        result.push(<div key={`space-${i}`} style={{ height:'6px' }}/>)
-        // 次の行が新しいセクション(##や###)になる前にボタンを挿入
         const nextNonEmpty = lines.slice(i+1).find(l => l.trim() !== '')
         if (nextNonEmpty && (nextNonEmpty.startsWith('##') || nextNonEmpty.startsWith('---') || i === lines.length-1)) {
-          // ★ クロージャ問題を防ぐためconstに固定（letのcurrentThemeは後でnullになる）
+          // ★ クロージャ問題防止: constで固定
           const capturedTheme = currentTheme
           const THEME_COL_MAP = {
             '半導体製造装置':'semiconductor-theme','半導体検査装置':'semiconductor-theme',
@@ -60,14 +56,15 @@ function RenderMd({ text, onNavigate }) {
             'パワー半導体':'power-semiconductor','次世代半導体':'semiconductor-theme',
             '生成AI':'ai-cloud-theme','AIデータセンター':'ai-cloud-theme',
             'フィジカルAI':'physical-ai-edge-ai','AI半導体':'semiconductor-theme',
-            'エッジAI':'physical-ai-edge-ai','防衛・セキュリティ':'defense-theme',
-            '宇宙・衛星':'defense-theme','サイバーセキュリティ':'defense-theme',
-            'インバウンド':'inbound-theme','観光・ホテル・レジャー':'inbound-theme',
-            '銀行':'banking-fintech-theme','証券':'banking-fintech-theme',
-            '保険':'banking-fintech-theme','SaaS':'saas-dx-theme',
-            'DX':'saas-dx-theme','EV・電気自動車':'ev-green-theme',
-            '光通信':'optical-theme','通信':'telecom-theme',
+            'エッジAI':'physical-ai-edge-ai','防衛・航空':'defense-theme',
+            '防衛・セキュリティ':'defense-theme','宇宙・衛星':'defense-theme',
+            'サイバーセキュリティ':'defense-theme','インバウンド':'inbound-theme',
+            '観光・ホテル・レジャー':'inbound-theme','銀行':'banking-finance-theme',
+            'SaaS':'saas-dx-theme','DX':'saas-dx-theme',
+            'EV・電気自動車':'ev-green-theme','光通信':'optical-communication',
+            '半導体製造装置':'semiconductor-theme','光通信':'optical-communication',
           }
+          const colId = THEME_COL_MAP[capturedTheme] || null
           result.push(
             <div key={`btn-${i}`} style={{ display:'flex', gap:'8px', flexWrap:'wrap', margin:'8px 0 12px' }}>
               {onNavigate && (
@@ -79,13 +76,15 @@ function RenderMd({ text, onNavigate }) {
                       color:'var(--accent)' }}>
                     📊 {capturedTheme}の詳細 →
                   </button>
-                  <button onClick={() => onNavigate('コラム・解説', THEME_COL_MAP[capturedTheme] || null)}
-                    style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
-                      cursor:'pointer', fontFamily:'var(--font)',
-                      background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
-                      color:'#aa77ff' }}>
-                    📖 コラムを読む →
-                  </button>
+                  {colId && (
+                    <button onClick={() => onNavigate('コラム・解説', colId)}
+                      style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px', fontWeight:600,
+                        cursor:'pointer', fontFamily:'var(--font)',
+                        background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
+                        color:'#aa77ff' }}>
+                      📖 コラムを読む →
+                    </button>
+                  )}
                 </>
               )}
             </div>
@@ -98,7 +97,7 @@ function RenderMd({ text, onNavigate }) {
         result.push(<div key={i} style={{ height:'6px' }}/>)
       }
     } else {
-      result.push(<p key={i} style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.8, marginBottom:'4px' }}>{line}</p>)
+      result.push(<p key={i} style={{ color:'var(--text)', fontSize:'13px', lineHeight:1.8, margin:'4px 0' }}>{line}</p>)
     }
   }
   return <div>{result}</div>
@@ -108,38 +107,14 @@ function RenderMd({ text, onNavigate }) {
 function ReportCard({ entry, isActive, onClick }) {
   const avg = entry.avg_pct_1w
   const col = avg >= 0 ? 'var(--red)' : 'var(--green)'
-  // "2026-04-24" or "2026-W18" → 週の表示
+  // "2026-04-24" → "4/20〜4/24" の表示
   const weekLabel = (() => {
     try {
-      // entry.dateが存在する場合はそれを使う（例: "2026/05/01"）
-      const dateStr = entry.date
-      if (dateStr) {
-        const normalized = dateStr.replace(/\//g, '-')
-        const d = new Date(normalized)
-        if (!isNaN(d.getTime())) {
-          const end = `${d.getMonth()+1}/${d.getDate()}`
-          const start = new Date(d); start.setDate(d.getDate()-4)
-          const s = `${start.getMonth()+1}/${start.getDate()}`
-          return `${s}〜${end}`
-        }
-      }
-      // entry.weekから解析
-      const w = entry.week || ''
-      // 2026-W18 形式の場合はtitleから日付を取得
-      if (w.match(/^\d{4}-W\d+$/)) {
-        const titleMatch = (entry.title || '').match(/(\d+\/\d+)[〜～](\d+\/\d+)/)
-        if (titleMatch) return `${titleMatch[1]}〜${titleMatch[2]}`
-        return w
-      }
-      // 2026-04-24 形式
-      const d = new Date(w)
-      if (!isNaN(d.getTime())) {
-        const end = `${d.getMonth()+1}/${d.getDate()}`
-        const start = new Date(d); start.setDate(d.getDate()-4)
-        const s = `${start.getMonth()+1}/${start.getDate()}`
-        return `${s}〜${end}`
-      }
-      return w
+      const d = new Date(entry.week)
+      const end = `${d.getMonth()+1}/${d.getDate()}`
+      const start = new Date(d); start.setDate(d.getDate()-4)
+      const s = `${start.getMonth()+1}/${start.getDate()}`
+      return `${s}〜${end}`
     } catch { return entry.week }
   })()
 

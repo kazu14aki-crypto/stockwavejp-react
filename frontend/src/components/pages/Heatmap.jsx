@@ -380,6 +380,41 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
           >
             📊 テーマ別詳細を見る →
           </button>
+          {/* コラムボタン */}
+          {(() => {
+            const THEME_COL_MAP = {
+              '半導体製造装置':'semiconductor-theme','半導体検査装置':'semiconductor-theme',
+              '半導体材料':'semiconductor-theme','メモリ':'semiconductor-theme',
+              'パワー半導体':'power-semiconductor','次世代半導体':'semiconductor-theme',
+              '生成AI':'ai-cloud-theme','AIデータセンター':'ai-cloud-theme',
+              'フィジカルAI':'physical-ai-edge-ai','AI半導体':'semiconductor-theme',
+              'エッジAI':'physical-ai-edge-ai','防衛・航空':'defense-theme',
+              '防衛・セキュリティ':'defense-theme','宇宙・衛星':'defense-theme',
+              'サイバーセキュリティ':'defense-theme','インバウンド':'inbound-theme',
+              '観光・ホテル・レジャー':'inbound-theme','銀行':'banking-finance-theme',
+              '銀行・金融':'banking-finance-theme','SaaS':'saas-dx-theme',
+              'DX':'saas-dx-theme','EV・電気自動車':'ev-green-theme',
+              '光通信':'optical-communication','量子コンピューター':'ai-cloud-theme',
+              'ロボット・自動化':'robot-automation-theme','医薬品・バイオ':'pharma-bio-theme',
+              'ヘルスケア・介護':'healthcare-nursing-theme','不動産':'real-estate-theme',
+              '建設・インフラ':'construction-infra-theme','食品・飲料':'food-beverage-theme',
+            }
+            const colId = THEME_COL_MAP[popupTheme?.theme]
+            if (!colId) return null
+            return (
+              <button
+                onClick={() => { onNavigate?.('コラム・解説', colId); setPopupTheme(null) }}
+                style={{
+                  marginTop:'6px', width:'100%', padding:'8px',
+                  background:'rgba(170,119,255,0.08)', border:'1px solid rgba(170,119,255,0.25)',
+                  borderRadius:'8px', color:'#aa77ff', cursor:'pointer',
+                  fontFamily:'var(--font)', fontSize:'12px', fontWeight:600,
+                }}
+              >
+                📖 コラムを読む →
+              </button>
+            )
+          })()}
           <button
             onClick={() => setPopupTheme(null)}
             style={{
