@@ -6,8 +6,8 @@
  *     <InstitutionalHoldings ... />
  *   </PlanGate>
  */
-import { useAuth }         from '../../hooks/useAuth.jsx'
-import { useSubscription } from '../../hooks/useSubscription.jsx'
+import { useAuth }         from '../hooks/useAuth.jsx'
+import { useSubscription } from '../hooks/useSubscription.jsx'
 
 const FEATURE_LABELS = {
   institutional:      { name:'機関投資家大量保有情報', requiredPlan:'プロ', requiredKey:'pro' },
