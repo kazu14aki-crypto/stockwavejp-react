@@ -1,3 +1,4 @@
+import UpgradePlanButton from '../UpgradePlanButton'
 import { useState, useEffect } from 'react'
 import { useAuth }         from '../../hooks/useAuth.jsx'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
@@ -143,6 +144,13 @@ export default function Plan({ onNavigate }) {
                 </li>
               ))}
             </ul>
+            {/* 申し込みボタン */}
+            {p.key !== 'free' && (
+              <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'14px' }}>
+                <UpgradePlanButton priceKey={`${p.key}_monthly`} label={`${p.name}（月払い）`} color={p.color} disabled={p.badge==='近日公開'}/>
+                <UpgradePlanButton priceKey={`${p.key}_yearly`}  label={`${p.name}（年払い・17%OFF）`} color={p.color} disabled={p.badge==='近日公開'}/>
+              </div>
+            )}
           </div>
         ))}
       </div>

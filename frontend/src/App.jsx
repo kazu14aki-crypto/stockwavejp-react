@@ -19,29 +19,38 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import TermsOfService from './components/pages/TermsOfService'
 import SiteInfo    from './components/pages/SiteInfo'
 import WeeklyReport from './components/pages/WeeklyReport'
+import InstitutionalHoldings from './components/pages/InstitutionalHoldings'
+import StockSearch  from './components/pages/StockSearch'
+import LegalNotice  from './components/pages/LegalNotice'
 import Plan         from './components/pages/Plan'
 import PlanGate     from './components/PlanGate'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
 const PAGES = [
-  { icon:'🏠', label:'ホーム',                   component:TopPage       },
-  { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
-  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
-  { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
-  { icon:'📋', label:'市場別詳細',           component:MarketRank    },
-  { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
+  { icon:'🏠', label:'ホーム',            component:TopPage              },
+  { icon:'📊', label:'テーマ一覧',         component:ThemeList            },
+  { icon:'🔥', label:'テーマヒートマップ',   component:Heatmap              },
+  { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail          },
+  { icon:'📋', label:'市場別詳細',         component:MarketRank           },
+  { icon:'🔎', label:'銘柄検索',           component:StockSearch          },
+  { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme          },
+  { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
+  { icon:'📰', label:'週次レポート',        component:WeeklyReport         },
+  { icon:'📝', label:'コラム・解説',       component:Column               },
 ]
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
-  { icon:'📣', label:'お知らせ',            component:News          },
-  { icon:'📖', label:'使い方',              component:HowTo         },
-  { icon:'📰', label:'週次レポート',          component:WeeklyReport  },
-  { icon:'📝', label:'コラム・解説',        component:Column        },
-  { icon:'💰', label:'プラン・料金',        component:Plan          },
-  { icon:'⚙️', label:'設定',               component:Settings      },
-  { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
-  { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
-  { icon:'📋', label:'利用規約',             component:TermsOfService},
+  { icon:'🏢', label:'当サイトについて',  component:SiteInfo   },
+  { icon:'📣', label:'お知らせ',          component:News       },
+  { icon:'📖', label:'使い方',            component:HowTo      },
+  { icon:'💰', label:'プラン・料金',      component:Plan       },
+  { icon:'⚙️', label:'設定',             component:Settings   },
+]
+
+const PAGES_FOOTER = [
+  { icon:'⚖️', label:'免責事項',               component:Disclaimer    },
+  { icon:'🔒', label:'プライバシーポリシー',     component:PrivacyPolicy },
+  { icon:'📋', label:'利用規約',                component:TermsOfService},
+  { icon:'🛒', label:'特定商取引法に基づく表示', component:LegalNotice   },
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
