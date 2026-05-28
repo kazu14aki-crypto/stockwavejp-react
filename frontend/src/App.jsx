@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useStatus }   from './hooks/useMarketData'
-import { AuthProvider } from './hooks/useAuth.jsx'
+import { AuthProvider }        from './hooks/useAuth.jsx'
+import { SubscriptionProvider } from './hooks/useSubscription.jsx'
 import Header      from './components/Header'
 import Sidebar     from './components/Sidebar'
 import TopPage     from './components/pages/TopPage'
@@ -8,55 +9,45 @@ import ThemeList   from './components/pages/ThemeList'
 import Heatmap     from './components/pages/Heatmap'
 import MarketRank  from './components/pages/MarketRank'
 import ThemeDetail from './components/pages/ThemeDetail'
-import CustomTheme   from './components/pages/CustomTheme'
-import StockSearch   from './components/pages/StockSearch'
+import CustomTheme from './components/pages/CustomTheme'
 import News        from './components/pages/News'
 import HowTo       from './components/pages/HowTo'
 import Settings    from './components/pages/Settings'
 import Disclaimer  from './components/pages/Disclaimer'
-import LegalNotice from './components/pages/LegalNotice'
 import Column      from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import TermsOfService from './components/pages/TermsOfService'
 import SiteInfo    from './components/pages/SiteInfo'
 import WeeklyReport from './components/pages/WeeklyReport'
-import InstitutionalHoldings from './components/pages/InstitutionalHoldings'
-import Plan          from './components/pages/Plan'
+import Plan         from './components/pages/Plan'
+import PlanGate     from './components/PlanGate'
+import { useSubscription } from './hooks/useSubscription.jsx'
 
 const PAGES = [
-  { icon:'🏠', label:'ホーム',            component:TopPage       },
-  { icon:'📊', label:'テーマ一覧',         component:ThemeList     },
-  { icon:'🔥', label:'テーマヒートマップ',   component:Heatmap       },
-  { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail   },
-  { icon:'📋', label:'市場別詳細',         component:MarketRank    },
-  { icon:'🔎', label:'銘柄検索',             component:StockSearch   },
-  { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme   },
-  { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
-  { icon:'📰', label:'週次レポート',        component:WeeklyReport  },
-  { icon:'📝', label:'コラム・解説',       component:Column        },
+  { icon:'🏠', label:'ホーム',                   component:TopPage       },
+  { icon:'📊', label:'テーマ一覧',                component:ThemeList     },
+  { icon:'🔥', label:'テーマヒートマップ',              component:Heatmap       },
+  { icon:'🔍', label:'テーマ別詳細',              component:ThemeDetail   },
+  { icon:'📋', label:'市場別詳細',           component:MarketRank    },
+  { icon:'🎨', label:'カスタムテーマ',             component:CustomTheme   },
 ]
-
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',  component:SiteInfo  },
-  { icon:'📣', label:'お知らせ',          component:News      },
-  { icon:'📖', label:'使い方',            component:HowTo     },
-  { icon:'💰', label:'プラン・料金',      component:Plan      },
-  { icon:'⚙️', label:'設定',             component:Settings  },
-]
-
-// フッターのみ表示するページ（メニューバーには表示しない）
-const PAGES_FOOTER = [
-  { icon:'⚖️', label:'免責事項',               component:Disclaimer    },
-  { icon:'🔒', label:'プライバシーポリシー',     component:PrivacyPolicy },
-  { icon:'📋', label:'利用規約',                component:TermsOfService},
-  { icon:'🛒', label:'特定商取引法に基づく表示', component:LegalNotice   },
+  { icon:'🏢', label:'当サイトについて',    component:SiteInfo      },
+  { icon:'📣', label:'お知らせ',            component:News          },
+  { icon:'📖', label:'使い方',              component:HowTo         },
+  { icon:'📰', label:'週次レポート',          component:WeeklyReport  },
+  { icon:'📝', label:'コラム・解説',        component:Column        },
+  { icon:'💰', label:'プラン・料金',        component:Plan          },
+  { icon:'⚙️', label:'設定',               component:Settings      },
+  { icon:'⚖️', label:'免責事項',           component:Disclaimer    },
+  { icon:'🔒', label:'プライバシーポリシー', component:PrivacyPolicy },
+  { icon:'📋', label:'利用規約',             component:TermsOfService},
 ]
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
-const ALL_PAGES     = [...PAGES, ...PAGES_OTHER, ...PAGES_FOOTER]
+const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
-const COLOR_DIR_KEY   = 'sw_color_dir'
 
 function AppInner() {
   const [currentPage,   setCurrentPage]   = useState('ホーム')
@@ -90,54 +81,15 @@ function AppInner() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1280)
-  const [colorDir,    setColorDir]    = useState(
-    () => localStorage.getItem(COLOR_DIR_KEY) || 'jp'  // 'jp'=赤上昇 / 'us'=緑上昇
-  )
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
   const status = useStatus()
 
   useEffect(() => {
-    localStorage.setItem(COLOR_DIR_KEY, colorDir)
-    const root = document.documentElement
-    if (colorDir === 'us') {
-      // 米国式: 緑=上昇, 赤=下落
-      root.style.setProperty('--up',   'var(--green)')
-      root.style.setProperty('--down', 'var(--red)')
-    } else {
-      // 日本式: 赤=上昇, 緑=下落 (デフォルト)
-      root.style.setProperty('--up',   'var(--red)')
-      root.style.setProperty('--down', 'var(--green)')
-    }
-  }, [colorDir])
-
-  useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
     localStorage.setItem(COLOR_THEME_KEY, colorTheme)
-    // Supabaseのuser_metadataにテーマを保存（ログイン済みの場合）
-    import('./lib/supabase').then(({ supabase }) => {
-      supabase.auth.getSession().then(({ data: { session } }) => {
-        if (session) {
-          supabase.auth.updateUser({ data: { colorTheme } }).catch(() => {})
-        }
-      })
-    }).catch(() => {})
   }, [colorTheme])
-
-  // Googleログイン後にSupabaseのuser_metadataからテーマを復元
-  useEffect(() => {
-    import('./lib/supabase').then(({ supabase }) => {
-      supabase.auth.onAuthStateChange((event, session) => {
-        if (event === 'SIGNED_IN' && session?.user?.user_metadata?.colorTheme) {
-          const savedTheme = session.user.user_metadata.colorTheme
-          if (['dark','midnight','light','sand'].includes(savedTheme)) {
-            setColorTheme(savedTheme)
-          }
-        }
-      })
-    }).catch(() => {})
-  }, [])
 
   useEffect(() => {
     const check = () => {
@@ -183,7 +135,7 @@ function AppInner() {
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, colorDir, onColorDirChange:setColorDir, onColorThemeChange:setColorTheme, isMobile }
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, isMobile }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange, isMobile }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
@@ -228,7 +180,13 @@ function AppInner() {
         background: 'var(--bg)',
       }}>
         {PageComponent ? (
-          <PageComponent {...pageProps} />
+          currentPage === '機関投資家保有' ? (
+            <PlanGate feature="institutional" onNavigate={handlePageChange}>
+              <PageComponent {...pageProps} />
+            </PlanGate>
+          ) : (
+            <PageComponent {...pageProps} />
+          )
         ) : (
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center',
             height:'calc(100vh - var(--header))', flexDirection:'column', gap:'16px', color:'var(--text3)' }}>
@@ -256,11 +214,6 @@ function AppInner() {
               fontSize:'11px', fontFamily:'var(--font)', padding:0,
               textDecoration:'underline', textUnderlineOffset:'2px',
             }}>利用規約</button>
-            <button onClick={() => handlePageChange('特定商取引法に基づく表示')} style={{
-              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
-              fontSize:'11px', fontFamily:'var(--font)', padding:0,
-              textDecoration:'underline', textUnderlineOffset:'2px',
-            }}>特定商取引法に基づく表示</button>
             <a href={CONTACT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{
               color:'var(--text3)', fontSize:'11px', fontFamily:'var(--font)',
               textDecoration:'underline', textUnderlineOffset:'2px',
@@ -299,7 +252,9 @@ function AppInner() {
 export default function App() {
   return (
     <AuthProvider>
+      <SubscriptionProvider>
       <AppInner />
+    </SubscriptionProvider>
     </AuthProvider>
   )
 }

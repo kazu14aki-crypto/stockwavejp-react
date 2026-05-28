@@ -109,13 +109,34 @@ function ReportCard({ entry, isActive, onClick }) {
   const col = avg >= 0 ? 'var(--red)' : 'var(--green)'
   // "2026-04-24" → "4/20〜4/24" の表示
   const weekLabel = (() => {
-    try {
-      const d = new Date(entry.week)
-      const end = `${d.getMonth()+1}/${d.getDate()}`
-      const start = new Date(d); start.setDate(d.getDate()-4)
-      const s = `${start.getMonth()+1}/${start.getDate()}`
-      return `${s}〜${end}`
-    } catch { return entry.week }
+    // titleから「5/11〜5/15」の形式を抽出（最優先）
+    if (entry.title) {
+      const m = entry.title.match(/([\d/〜]+(?:〜[\d/]+)?)/)
+      if (m && m[1].includes('〜')) return m[1]
+    }
+    // dateフィールドが「2026/05/15」形式なら「5/11〜5/15」を計算
+    if (entry.date) {
+      const d = new Date(entry.date.replace(/\//g, '-'))
+      if (!isNaN(d)) {
+        const end = `${d.getMonth()+1}/${d.getDate()}`
+        const start = new Date(d); start.setDate(d.getDate()-4)
+        const s = `${start.getMonth()+1}/${start.getDate()}`
+        return `${s}〜${end}`
+      }
+    }
+    // weekがISO形式「2026-W21」→ 週番号から計算
+    if (entry.week && entry.week.match(/\d{4}-W\d{2}/)) {
+      const [yr, wk] = entry.week.split('-W').map(Number)
+      const jan4 = new Date(yr, 0, 4)
+      const d = new Date(jan4)
+      d.setDate(jan4.getDate() + (wk - 1) * 7 - jan4.getDay() + 5)
+      if (!isNaN(d)) {
+        const end = `${d.getMonth()+1}/${d.getDate()}`
+        const start = new Date(d); start.setDate(d.getDate()-4)
+        return `${start.getMonth()+1}/${start.getDate()}〜${end}`
+      }
+    }
+    return entry.week || ''
   })()
 
   return (
@@ -338,7 +359,12 @@ export default function WeeklyReport({ onNavigate }) {
       ) : (
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:'12px' }}>
           {/* 最新レポートを先頭に */}
-          {index.map((entry, i) => (
+          {[...index].sort((a, b) => {
+            // dateフィールド優先、なければweekで比較
+            const da = a.date ? a.date.replace(/\//g, '-') : a.week
+            const db = b.date ? b.date.replace(/\//g, '-') : b.week
+            return db.localeCompare(da)
+          }).map((entry, i) => (
             <ReportCard
               key={entry.week}
               entry={{

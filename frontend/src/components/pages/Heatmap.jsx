@@ -637,7 +637,7 @@ function BubbleScatter({ data, mPeriod, setMPeriod, onNavigate }) {
           {onNavigate && (
             <text x={PL + GW/2} y={PT - 12}
               textAnchor="middle" fontSize="10" fill="rgba(255,255,255,0.3)">
-              バブルをクリック → テーマ別詳細へ
+              バブルをタップ → 詳細ポップアップ表示
             </text>
           )}
         </svg>

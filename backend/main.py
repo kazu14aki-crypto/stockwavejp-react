@@ -485,3 +485,130 @@ async def edinet_large_holdings(q: str = "", days: int = 60):
     if results:
         _edinet_cache[cache_key] = (now, payload)
     return payload
+# backend/main.py に追加するエンドポイント
+
+import stripe
+import os
+from fastapi import HTTPException, Request
+from pydantic import BaseModel
+
+stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
+WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
+
+PRICE_IDS = {
+    "standard_monthly": os.environ.get("STRIPE_PRICE_STD_MONTHLY"),
+    "standard_yearly":  os.environ.get("STRIPE_PRICE_STD_YEARLY"),
+    "pro_monthly":      os.environ.get("STRIPE_PRICE_PRO_MONTHLY"),
+    "pro_yearly":       os.environ.get("STRIPE_PRICE_PRO_YEARLY"),
+}
+
+class CheckoutRequest(BaseModel):
+    price_key: str      # "standard_monthly" など
+    user_id:   str      # Supabaseのユーザーid
+    email:     str      # ユーザーのメールアドレス
+    success_url: str    # 決済成功後のリダイレクト先
+    cancel_url:  str    # キャンセル時のリダイレクト先
+
+@app.post("/api/stripe/create-checkout")
+async def create_checkout_session(req: CheckoutRequest):
+    """Stripe Checkoutセッションを作成"""
+    price_id = PRICE_IDS.get(req.price_key)
+    if not price_id:
+        raise HTTPException(400, f"Invalid price_key: {req.price_key}")
+
+    try:
+        session = stripe.checkout.Session.create(
+            payment_method_types=["card"],
+            mode="subscription",
+            line_items=[{"price": price_id, "quantity": 1}],
+            customer_email=req.email,
+            client_reference_id=req.user_id,  # SupabaseのユーザーIDを保持
+            success_url=req.success_url + "?session_id={CHECKOUT_SESSION_ID}",
+            cancel_url=req.cancel_url,
+            subscription_data={
+                "metadata": {
+                    "user_id": req.user_id,
+                    "plan": "standard" if "standard" in req.price_key else "pro",
+                }
+            },
+            locale="ja",  # 日本語UI
+        )
+        return {"url": session.url}
+    except stripe.error.StripeError as e:
+        raise HTTPException(400, str(e))
+
+
+@app.post("/api/stripe/webhook")
+async def stripe_webhook(request: Request):
+    """StripeからのWebhookを受信してSupabaseを更新"""
+    payload = await request.body()
+    sig_header = request.headers.get("stripe-signature")
+
+    try:
+        event = stripe.Webhook.construct_event(payload, sig_header, WEBHOOK_SECRET)
+    except (ValueError, stripe.error.SignatureVerificationError):
+        raise HTTPException(400, "Invalid webhook signature")
+
+    # サブスクリプション開始
+    if event["type"] == "checkout.session.completed":
+        session = event["data"]["object"]
+        user_id = session["client_reference_id"]
+        plan = session["subscription_data"]["metadata"]["plan"]
+        sub_id = session["subscription"]
+
+        # Stripeからサブスクリプション詳細を取得
+        sub = stripe.Subscription.retrieve(sub_id)
+        period_end = sub["current_period_end"]
+
+        # SupabaseのSubscriptionsテーブルを更新
+        from supabase import create_client
+        import datetime
+        sb = create_client(
+            os.environ["VITE_SUPABASE_URL"],
+            os.environ["SUPABASE_SERVICE_ROLE_KEY"]  # ← Service Role Key（Webhookのみ使用）
+        )
+        sb.table("subscriptions").upsert({
+            "user_id": user_id,
+            "plan": plan,
+            "status": "active",
+            "stripe_subscription_id": sub_id,
+            "stripe_customer_id": session["customer"],
+            "current_period_end": datetime.datetime.fromtimestamp(
+                period_end, tz=datetime.timezone.utc
+            ).isoformat(),
+        }, on_conflict="user_id").execute()
+
+    # サブスクリプション更新（自動更新時）
+    elif event["type"] == "invoice.payment_succeeded":
+        sub_id = event["data"]["object"]["subscription"]
+        sub = stripe.Subscription.retrieve(sub_id)
+        user_id = sub["metadata"].get("user_id")
+        if user_id:
+            from supabase import create_client
+            import datetime
+            sb = create_client(
+                os.environ["VITE_SUPABASE_URL"],
+                os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+            )
+            sb.table("subscriptions").update({
+                "status": "active",
+                "current_period_end": datetime.datetime.fromtimestamp(
+                    sub["current_period_end"], tz=datetime.timezone.utc
+                ).isoformat(),
+            }).eq("stripe_subscription_id", sub_id).execute()
+
+    # サブスクリプションキャンセル
+    elif event["type"] in ["customer.subscription.deleted", "customer.subscription.updated"]:
+        sub = event["data"]["object"]
+        sub_id = sub["id"]
+        status = "canceled" if event["type"].endswith("deleted") else sub["status"]
+        from supabase import create_client
+        sb = create_client(
+            os.environ["VITE_SUPABASE_URL"],
+            os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+        )
+        sb.table("subscriptions").update({"status": status}).eq(
+            "stripe_subscription_id", sub_id
+        ).execute()
+
+    return {"status": "ok"}
