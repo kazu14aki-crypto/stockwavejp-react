@@ -416,8 +416,7 @@ export default function WeeklyReport({ onNavigate }) {
               }}
               isActive={entry.week === selWeek}
               onClick={() => {
-                if (i === 0) loadLatest()
-                else loadArchive(entry.week)
+                loadArchive(entry.week)
               }}
             isLocked={isLocked}
             onUpgrade={() => onNavigate?.('プラン・料金')}

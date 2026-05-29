@@ -18,6 +18,23 @@ const THEME_ARTICLE_MAP = {
   'MLCC・電子部品':'mlcc-murata-analysis','フィジカルAI':'physical-ai-edge-ai',
 }
 
+// ④ コラムIDの表示ラベル
+const COL_LABELS = {
+  'semiconductor-theme':    '半導体製造装置・AIチップ コラム',
+  'power-semiconductor':    'パワー半導体 コラム',
+  'ai-cloud-theme':         '生成AI・クラウド コラム',
+  'physical-ai-edge-ai':    'フィジカルAI・エッジAI コラム',
+  'defense-theme':          '防衛・宇宙・サイバー コラム',
+  'inbound-theme':          'インバウンド消費 コラム',
+  'banking-finance-theme':  '銀行・金融 コラム',
+  'saas-dx-theme':          'SaaS・DX コラム',
+  'ev-green-theme':         'EV・グリーン コラム',
+  'optical-communication':  '光通信 コラム',
+  'mlcc-murata-analysis':   '村田製作所・MLCC コラム',
+  'optical-theme':          '光通信 コラム',
+  'murata-seisakusho-analysis': '村田製作所 コラム',
+}
+
 function guessETF(ticker, themes = []) {
   const code = parseInt(ticker)
   const etfs = []
@@ -239,7 +256,10 @@ export default function StockSearch({ onNavigate }) {
       {selected && (() => {
         const s = selected
         const code = s.ticker.replace('.T','')
-        const colId = s.themes?.map(t => THEME_ARTICLE_MAP[t]).find(Boolean)
+        // ④ 重複除去して全コラムIDを取得
+        const colIds = [...new Set(
+          (s.themes || []).map(t => THEME_ARTICLE_MAP[t]).filter(Boolean)
+        )]
         const etfs = guessETF(s.ticker, s.themes)
         return (
           <div>
@@ -276,14 +296,14 @@ export default function StockSearch({ onNavigate }) {
                   background:'rgba(74,158,255,0.1)', color:'var(--accent)' }}>
                 ＋ カスタムテーマに追加
               </button>
-              {colId && (
-                <button onClick={() => onNavigate?.('コラム・解説', colId)}
+              {colIds.map(cid => (
+                <button key={cid} onClick={() => onNavigate?.('コラム・解説', cid)}
                   style={{ padding:'10px 18px', border:'1px solid rgba(170,119,255,0.3)', borderRadius:'8px',
                     cursor:'pointer', fontFamily:'var(--font)', fontSize:'13px', fontWeight:600,
                     background:'rgba(170,119,255,0.08)', color:'#aa77ff' }}>
-                  📖 関連コラム
+                  📖 {COL_LABELS[cid] || 'コラムを読む'}
                 </button>
-              )}
+              ))}
             </div>
 
             {/* 期間選択 */}
