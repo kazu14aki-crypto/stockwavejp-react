@@ -32,7 +32,12 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
       if (data.url) window.location.href = data.url
       else throw new Error(data.error || 'エラー')
     } catch (e) {
-      alert('決済ページの読み込みに失敗しました。時間をおいて再試行してください。')
+      console.error('Checkout error:', e)
+      if (e.message?.includes('400') || e.message?.includes('Invalid')) {
+        alert('決済ページの準備中です。Stripe製品ID等の設定完了後に利用可能になります。\n（管理者：Render環境変数を確認してください）')
+      } else {
+        alert('決済ページの読み込みに失敗しました。時間をおいて再試行してください。')
+      }
     } finally {
       setLoading(false)
     }

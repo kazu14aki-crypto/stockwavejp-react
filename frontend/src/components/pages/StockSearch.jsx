@@ -1,3 +1,4 @@
+import AddToThemeModal from '../AddToThemeModal'
 import { useState, useEffect, useMemo } from 'react'
 
 const THEME_ARTICLE_MAP = {
@@ -64,6 +65,9 @@ export default function StockSearch({ onNavigate }) {
 
   return (
     <div style={{ padding:'20px 16px 60px', maxWidth:'900px', margin:'0 auto' }}>
+      {modalStock && (
+        <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />
+      )}
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>🔎 銘柄検索</h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'18px', lineHeight:1.7 }}>銘柄名または証券コードで検索。テーマ・コラムへのリンクを表示します。</p>
       <div style={{ display:'flex', gap:'10px', marginBottom:'16px' }}>

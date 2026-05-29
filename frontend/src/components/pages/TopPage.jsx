@@ -75,14 +75,14 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
-  { date:'2026/04/19', tag:'NEW',    title:'週次レポート機能追加（毎週金曜自動生成）' },
-  { date:'2026/04/19', tag:'UPDATE', title:'カスタムテーマに資金フロー散布図を追加' },
-  { date:'2026/04/19', tag:'UPDATE', title:'テーマヒートマップの期間別タブを削除・整理' },
-  { date:'2026/04/15', tag:'UPDATE', title:'市場別詳細の銘柄定義を修正・重複解消' },
-  { date:'2026/04/10', tag:'UPDATE', title:'メニュー名「ヒートマップ」を「テーマヒートマップ」に変更' },
-  { date:'2026/04/01', tag:'UPDATE', title:'コラム8本追加・各記事説明文充実' },
-  { date:'2026/03/31', tag:'UPDATE', title:'カスタムテーマ機能強化' },
-  { date:'2026/03/14', tag:'NEW',    title:'React版リリース' },
+  { date:'2026/05/29', tag:'NEW',    title:'MLCCテーマ追加・村田製作所＆MLCC解説コラム公開' },
+  { date:'2026/05/29', tag:'NEW',    title:'週次レポート（5/25〜5/29）公開' },
+  { date:'2026/05/22', tag:'NEW',    title:'週次レポート（5/18〜5/22）公開' },
+  { date:'2026/05/19', tag:'NEW',    title:'機関投資家大量保有情報ページを追加' },
+  { date:'2026/05/18', tag:'UPDATE', title:'カスタムテーマに取得価格・損益管理機能を追加' },
+  { date:'2026/05/15', tag:'NEW',    title:'週次レポート（5/11〜5/15）公開' },
+  { date:'2026/05/08', tag:'NEW',    title:'週次レポート（5/4〜5/8）公開' },
+  { date:'2026/03/14', tag:'NEW',    title:'StockWaveJP React版リリース' },
 ]
 // 降順ソート・最新3件
 const NEWS_LIST = [...ALL_NEWS].sort((a,b) => b.date.localeCompare(a.date)).slice(0,3)

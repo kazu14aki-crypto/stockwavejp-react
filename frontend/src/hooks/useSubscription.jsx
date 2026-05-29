@@ -47,6 +47,23 @@ export function SubscriptionProvider({ children }) {
           return
         }
 
+        // ③ 初回ログインから30日間はProプラン体験版
+        const userMeta = session.user.user_metadata || {}
+        const firstLoginAt = userMeta.first_login_at
+        if (!firstLoginAt) {
+          // 初回ログイン日時を記録
+          await supabase.auth.updateUser({
+            data: { first_login_at: new Date().toISOString() }
+          }).catch(() => {})
+          if (!cancelled) { setPlan('pro_trial'); setLoading(false) }
+          return
+        }
+        const daysSinceFirst = (Date.now() - new Date(firstLoginAt).getTime()) / (1000 * 60 * 60 * 24)
+        if (daysSinceFirst < 30) {
+          if (!cancelled) { setPlan('pro_trial'); setLoading(false) }
+          return
+        }
+
         // Supabaseのsubscriptionsテーブルから状態取得
         const { data, error } = await supabase
           .from('subscriptions')
@@ -55,7 +72,7 @@ export function SubscriptionProvider({ children }) {
           .eq('status', 'active')
           .order('created_at', { ascending: false })
           .limit(1)
-          .single()
+          .maybeSingle()
 
         if (error || !data) {
           if (!cancelled) { setPlan('free'); setLoading(false) }
@@ -97,21 +114,23 @@ export function SubscriptionProvider({ children }) {
     expiresAt,
     // 便利なbooleanヘルパー
     isFree:     plan === 'free',
-    isStandard: plan === 'standard' || plan === 'pro' || plan === 'dev',
-    isPro:      plan === 'pro' || plan === 'dev',
+    isStandard: ['standard','pro','pro_trial','dev'].includes(plan),
+    isPro:      ['pro','pro_trial','dev'].includes(plan),
     isDev:      plan === 'dev',
     // 機能アクセス判定
     canAccess: (feature) => {
       const rules = {
-        'weekly_archive':      ['standard', 'pro', 'dev'],  // 週次レポートアーカイブ
-        'institutional':       ['pro', 'dev'],               // 機関投資家保有
-        'custom_theme_ai':     ['pro', 'dev'],               // カスタムテーマAI分析
-        'multiple_alerts':     ['pro', 'dev'],               // 複数アラート
-        'portfolio_analysis':  ['pro', 'dev'],               // ポートフォリオ分析
+        'weekly_archive':      ['standard', 'pro', 'pro_trial', 'dev'],
+        'institutional':       ['pro', 'pro_trial', 'dev'],
+        'custom_theme_ai':     ['pro', 'pro_trial', 'dev'],
+        'multiple_alerts':     ['pro', 'pro_trial', 'dev'],
+        'portfolio_analysis':  ['pro', 'pro_trial', 'dev'],
       }
-      return rules[feature]?.includes(plan) ?? true  // 未定義の機能はデフォルト開放
+      return rules[feature]?.includes(plan) ?? true
     },
-    planLabel: { free:'Free', standard:'スタンダード', pro:'プロ', dev:'開発者' }[plan] || 'Free',
+    planLabel: {
+      free:'Free', standard:'スタンダード', pro:'プロ', pro_trial:'プロ体験版（無料）', dev:'開発者'
+    }[plan] || 'Free',
   }
 
   return <SubscriptionContext.Provider value={value}>{children}</SubscriptionContext.Provider>

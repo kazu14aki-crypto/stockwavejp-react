@@ -155,7 +155,7 @@ function ReportCard({ entry, isActive, onClick, isLocked, onUpgrade }) {
         <div style={{ padding:'5px 12px', background:'rgba(74,158,255,0.1)',
           border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
           fontSize:'11px', color:'var(--accent)', fontWeight:600, flexShrink:0 }}>
-          スタンダード以上で閲覧
+          スタンダード以上で全期間閲覧
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@ function ReportCard({ entry, isActive, onClick, isLocked, onUpgrade }) {
 
 export default function WeeklyReport({ onNavigate }) {
   const { isStandard, isDev } = useSubscription()
-  const canViewRecent = isStandard || isDev  // Freeは2週間以上前のみ閲覧可
+  const canViewRecent = isStandard || isDev  // Freeは1ヶ月以上前のみ閲覧可
   const [report,    setReport]    = useState(null)
   const [index,     setIndex]     = useState([])
   const [loading,   setLoading]   = useState(true)
@@ -216,7 +216,16 @@ export default function WeeklyReport({ onNavigate }) {
           const latest = d[0]
           fetch(`/data/weekly_reports/${latest.week}.json?t=${Date.now()}`)
             .then(r => r.ok ? r.json() : null)
-            .then(rd => { if (rd) { setReport(rd); setLoading(false) } })
+            .then(rd => {
+              if (rd) {
+                setReport(rd)
+                setSelWeek(latest.week)  // ④ 最新を選択状態に
+                setShowReport(true)       // ④ 本文表示モードに
+                setLoading(false)
+              } else {
+                setLoading(false)
+              }
+            })
             .catch(() => setLoading(false))
         } else {
           setLoading(false)
@@ -401,8 +410,8 @@ export default function WeeklyReport({ onNavigate }) {
           }).map((entry, i) => {
             // ③ Free制限: 2週間以内の記事はStandard以上のみ閲覧可
             const entryDate = entry.date ? new Date(entry.date.replace(/\//g, '-')) : null
-            const twoWeeksAgo = new Date(); twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14)
-            const isRecent = entryDate && entryDate > twoWeeksAgo
+            const oneMonthAgo = new Date(); oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1)
+            const isRecent = entryDate && entryDate > oneMonthAgo
             const isLocked = isRecent && !canViewRecent
             return (
             <ReportCard

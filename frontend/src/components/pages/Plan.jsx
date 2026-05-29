@@ -6,7 +6,7 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 export default function Plan({ onNavigate }) {
   const [isMobile, setIsMobile] = useState(false)
   const { isLoggedIn, signIn }  = useAuth()
-  const { plan: currentPlan, planLabel } = useSubscription()
+  const { plan: currentPlan, planLabel, isPro } = useSubscription()
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 640)
@@ -82,6 +82,14 @@ export default function Plan({ onNavigate }) {
   return (
     <div style={{ padding:'16px 16px 60px', maxWidth:'860px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>💰 料金プラン</h1>
+      {currentPlan === 'pro_trial' && (
+        <div style={{ padding:'12px 16px', background:'rgba(170,119,255,0.12)',
+          border:'1px solid rgba(170,119,255,0.3)', borderRadius:'10px',
+          fontSize:'13px', color:'#aa77ff', marginBottom:'16px', lineHeight:1.7 }}>
+          🎉 <strong>プロプラン体験版（無料）</strong>をご利用中です。<br/>
+          <span style={{ fontSize:'11px', color:'var(--text2)' }}>初回ログインから30日間、全機能を無料でお試しいただけます。期間終了後は自動的にFreeプランになります。</span>
+        </div>
+      )}
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px', lineHeight:1.7 }}>
         現在のプラン: <strong style={{ color:'#4a9eff' }}>{planLabel}</strong>。有料プランへのアップグレードは下記ボタンから。
         {!isLoggedIn && (
