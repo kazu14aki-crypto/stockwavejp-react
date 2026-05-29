@@ -2,9 +2,10 @@ import numpy as np
 """
 main.py — FastAPI メインサーバー v2.1
 """
-from fastapi import FastAPI, Query, Request
+from fastapi import FastAPI, Query, Request, HTTPException
 from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from datetime import datetime
 import pytz
 
