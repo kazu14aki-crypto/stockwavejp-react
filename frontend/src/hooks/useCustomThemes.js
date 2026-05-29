@@ -1,3 +1,4 @@
+import { useSubscription } from './useSubscription.jsx'
 /**
  * useCustomThemes — カスタムテーマ管理フック
  *
@@ -60,6 +61,7 @@ async function dbDelete(id) {
 
 // ── メインフック ──────────────────────────────────
 export function useCustomThemes() {
+  const { maxThemes, maxStocks } = useSubscription()
   const { user, isLoggedIn } = useAuth()
   const [themes,  setThemes]  = useState([])
   const [syncing, setSyncing] = useState(false)
@@ -95,12 +97,12 @@ export function useCustomThemes() {
   }, [isLoggedIn, user?.id])
 
   // テーマ保存（作成・編集）
-  const MAX_THEMES = 3  // 1人あたりの上限
+  // MAX_THEMES はuseSubscription().maxThemesで動的に取得
 
   const saveTheme = useCallback(async (theme, editIndex = null) => {
     // 新規追加の場合は上限チェック
-    if (editIndex === null && themes.length >= MAX_THEMES) {
-      alert(`カスタムテーマは最大${MAX_THEMES}つまで作成できます。\n既存のテーマを削除してから追加してください。`)
+    if (editIndex === null && themes.length >= maxThemes) {
+      alert(`カスタムテーマは現在のプランでは最大${maxThemes}つまでです。\n既存のテーマを削除するかプランをアップグレードしてください。`)
       return false
     }
     if (isLoggedIn && user) {

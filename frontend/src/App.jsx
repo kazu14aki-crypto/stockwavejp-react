@@ -142,6 +142,8 @@ function AppInner() {
     setCurrentPage(label)
     setSidebarOpen(false)
     setTargetArticleId(articleId)
+    // ⑥ ページ遷移時に必ず最上部にスクロール
+    window.scrollTo({ top: 0, behavior: 'instant' })
     // テーマ別詳細の場合はテーマ名を保存
     if (label === 'テーマ別詳細') {
       setTargetTheme(articleId || null)
@@ -210,6 +212,10 @@ function AppInner() {
         {PageComponent ? (
           currentPage === '機関投資家保有' ? (
             <PlanGate feature="institutional" onNavigate={handlePageChange}>
+              <PageComponent {...pageProps} />
+            </PlanGate>
+          ) : currentPage === '市場別詳細' ? (
+            <PlanGate feature="market_detail" onNavigate={handlePageChange}>
               <PageComponent {...pageProps} />
             </PlanGate>
           ) : (

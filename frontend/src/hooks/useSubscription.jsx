@@ -125,9 +125,22 @@ export function SubscriptionProvider({ children }) {
         'custom_theme_ai':     ['pro', 'pro_trial', 'dev'],
         'multiple_alerts':     ['pro', 'pro_trial', 'dev'],
         'portfolio_analysis':  ['pro', 'pro_trial', 'dev'],
+        // ① 短期期間（1日・1週・1ヶ月・2ヶ月）はStandard以上のみ
+        'short_period':        ['standard', 'pro', 'pro_trial', 'dev'],
+        // ① 市場別詳細はStandard以上のみ
+        'market_detail':       ['standard', 'pro', 'pro_trial', 'dev'],
       }
       return rules[feature]?.includes(plan) ?? true
     },
+    // ① 期間アクセス判定（Free: 3ヶ月/6ヶ月/1年のみ、Standard以上: 全期間）
+    canAccessPeriod: (period) => {
+      const FREE_PERIODS = ['3mo', '6mo', '1y', '2y']  // Freeで閲覧可能
+      if (['standard', 'pro', 'pro_trial', 'dev'].includes(plan)) return true
+      return FREE_PERIODS.includes(period)
+    },
+    // ② カスタムテーマ上限
+    maxThemes: { free:1, standard:5, pro:30, pro_trial:30, dev:999 }[plan] ?? 1,
+    maxStocks: { free:10, standard:20, pro:50, pro_trial:50, dev:999 }[plan] ?? 10,
     planLabel: {
       free:'Free', standard:'スタンダード', pro:'プロ', pro_trial:'プロ体験版（無料）', dev:'開発者'
     }[plan] || 'Free',
