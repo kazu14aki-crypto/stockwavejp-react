@@ -6,7 +6,7 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 export default function Plan({ onNavigate }) {
   const [isMobile, setIsMobile] = useState(false)
   const { isLoggedIn, signIn }  = useAuth()
-  const { plan: currentPlan }   = useSubscription()
+  const { plan: currentPlan, planLabel } = useSubscription()
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 640)
@@ -37,7 +37,7 @@ export default function Plan({ onNavigate }) {
     {
       key: 'standard',
       name: 'スタンダード', color: '#ff8c42',
-      badge: currentPlan === 'standard' ? '現在利用中' : '近日公開',
+      badge: currentPlan === 'standard' ? '現在利用中' : null,
       monthly: { price: '¥980',  label: '単月契約', perDay: perDay(980)  },
       yearly:  null,  // 年額は一時停止中（半年後に復活予定）
       features: [
@@ -49,7 +49,7 @@ export default function Plan({ onNavigate }) {
     {
       key: 'pro',
       name: 'プロ', color: '#aa77ff',
-      badge: currentPlan === 'pro' ? '現在利用中' : '近日公開',
+      badge: currentPlan === 'pro' ? '現在利用中' : null,
       monthly: { price: '¥1,980', label: '単月契約', perDay: perDay(1980) },
       yearly:  null,  // 年額は一時停止中（半年後に復活予定）
       features: [
@@ -83,7 +83,7 @@ export default function Plan({ onNavigate }) {
     <div style={{ padding:'16px 16px 60px', maxWidth:'860px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>💰 料金プラン</h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px', lineHeight:1.7 }}>
-        現在は<strong style={{ color:'#4a9eff' }}>完全無料</strong>でご利用いただけます。有料プランは近日公開予定です（月払いプランのみ）。
+        現在のプラン: <strong style={{ color:'#4a9eff' }}>{planLabel}</strong>。有料プランへのアップグレードは下記ボタンから。
         {!isLoggedIn && (
           <span>サブスクリプション加入には<button onClick={signIn} style={{ background:'none', border:'none', color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)', fontSize:'12px', fontWeight:700, padding:'0 2px' }}>Googleログイン</button>が必要です。</span>
         )}
@@ -141,7 +141,7 @@ export default function Plan({ onNavigate }) {
             {/* 申し込みボタン */}
             {p.key !== 'free' && (
               <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'14px' }}>
-                <UpgradePlanButton priceKey={`${p.key}_monthly`} label={`${p.name}（月払い）`} color={p.color} disabled={p.badge==='近日公開'}/>
+                <UpgradePlanButton priceKey={`${p.key}_monthly`} label={`${p.name}（月払い）`} color={p.color} disabled={false}/>
               </div>
             )}
           </div>

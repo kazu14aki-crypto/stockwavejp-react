@@ -420,8 +420,11 @@ def search_stocks(q: str = Query(default="")):
                 except Exception:
                     pass
 
-        # 日本株（.T）のみに絞る
-        results = [r for r in results if r["ticker"].endswith(".T")]
+        # 日本株（4桁数字.T形式）のみに厳密に絞る
+        import re as _re
+        results = [r for r in results
+                   if _re.match(r'^\d{4}\.T$', r["ticker"])
+                   and r.get("name") and r["name"] != r["ticker"]]
         return {"results": results[:8]}
     except Exception as e:
         return {"results": [], "error": str(e)}

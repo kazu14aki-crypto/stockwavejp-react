@@ -206,13 +206,23 @@ export default function WeeklyReport({ onNavigate }) {
   const [showReport, setShowReport] = useState(false)
 
   useEffect(() => {
-    fetch('/data/weekly_report.json?t=' + Date.now())
-      .then(r => { if (!r.ok) throw new Error('レポートがありません'); return r.json() })
-      .then(d => { setReport(d); setLoading(false) })
-      .catch(e => { setError(e.message); setLoading(false) })
+    // index.jsonを取得し、最新（先頭）のレポートを自動選択
     fetch('/data/weekly_reports/index.json?t=' + Date.now())
       .then(r => r.ok ? r.json() : [])
-      .then(d => setIndex(d))
+      .then(d => {
+        setIndex(d)
+        // 最新レポートを自動的に取得して表示
+        if (d.length > 0 && !selWeek) {
+          const latest = d[0]
+          fetch(`/data/weekly_reports/${latest.week}.json?t=${Date.now()}`)
+            .then(r => r.ok ? r.json() : null)
+            .then(rd => { if (rd) { setReport(rd); setLoading(false) } })
+            .catch(() => setLoading(false))
+        } else {
+          setLoading(false)
+        }
+      })
+      .catch(e => { setError(e.message); setLoading(false) })
       .catch(() => {})
   }, [])
 
