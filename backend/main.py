@@ -150,6 +150,7 @@ def get_market_rank_list(period: str = Query(default="1mo")):
 @app.get("/api/vol-trend/{theme_name}")
 def get_vol_trend(theme_name: str):
     """テーマ別出来高・売買代金週次推移（1年間）"""
+    import yfinance as yf
     import pandas as pd
     import warnings
     warnings.filterwarnings("ignore")
@@ -161,12 +162,11 @@ def get_vol_trend(theme_name: str):
         try:
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
-                from data import _fetch_df
-                df = _fetch_df(ticker, period="2y")
+                df = yf.Ticker(ticker).history(period="1y", interval="1d",
+                                               auto_adjust=True, timeout=15)
             if df is None or len(df) < 5:
                 continue
-            if df.index.tz is not None:
-                df.index = df.index.tz_localize(None)
+            df.index = pd.to_datetime(df.index).tz_localize(None)
             df = df[df.index >= cutoff]
             if len(df) < 5:
                 continue
@@ -213,56 +213,65 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo")):
 
 @app.get("/api/stock-info/{ticker}")
 def get_stock_info(ticker: str):
-    """銘柄情報取得（カスタムテーマ用）— Infoway/market.jsonベース"""
+    """銘柄情報取得（カスタムテーマ用）"""
     try:
+        import yfinance as yf
         from data import _fetch_df, _period_df
-        # 日本語名を優先
+        # 日本語名を優先（main.py内のJP_STOCK_NAMESを参照）
         jp_name = JP_STOCK_NAMES.get(ticker)
-        # Infowayからデータ取得
-        df    = _fetch_df(ticker)
+        # 1ヶ月のデータを取得して騰落率・出来高・売買代金を計算
+        df = _fetch_df(ticker)
         df_1mo = _period_df(df, "1mo")
-        price = pct = volume = trade_value = None
-        if df is not None and len(df) > 0:
-            price = round(float(df["Close"].iloc[-1]), 2) if "Close" in df.columns else None
+        price, pct, volume, trade_value = None, None, None, None
         if df_1mo is not None and len(df_1mo) >= 2:
-            p0 = float(df_1mo["Close"].iloc[0])
-            p1 = float(df_1mo["Close"].iloc[-1])
-            pct = round((p1 - p0) / p0 * 100, 2) if p0 else None
-            if "Volume" in df_1mo.columns:
-                volume = int(df_1mo["Volume"].sum())
-            if "Close" in df_1mo.columns and "Volume" in df_1mo.columns:
-                trade_value = int((df_1mo["Close"] * df_1mo["Volume"]).sum())
+            cl = df_1mo["Close"].dropna()
+            vol = df_1mo["Volume"].dropna()
+            if len(cl) >= 2 and (cl > 0).all():
+                price = round(float(cl.iloc[-1]), 0)
+                pct = round((float(cl.iloc[-1]) / float(cl.iloc[0]) - 1) * 100, 2)
+                half = max(len(df_1mo) // 2, 1)
+                rv = float(vol.tail(half).mean()) if len(vol) > 0 else 0
+                volume = int(rv)
+                trade_value = int(rv * price) if price else 0
+        # 名前取得（APIがスロー返答の場合でも価格データから）
+        if not jp_name:
+            try:
+                t = yf.Ticker(ticker)
+                info = t.info
+                jp_name = info.get("longName") or info.get("shortName") or ticker
+            except Exception:
+                jp_name = ticker
         return {
-            "ticker": ticker,
-            "name":   jp_name or ticker,
-            "price":  price,
-            "pct":    pct,
-            "volume": volume,
-            "trade_value": trade_value,
+            "ticker": ticker, "name": jp_name, "price": price,
+            "pct": pct, "volume": volume, "trade_value": trade_value,
         }
     except Exception as e:
-        return {"ticker": ticker, "name": JP_STOCK_NAMES.get(ticker, ticker),
-                "price": None, "pct": None, "error": str(e)}
+        return {"ticker": ticker, "name": None, "price": None,
+                "pct": None, "volume": None, "trade_value": None, "error": str(e)}
+
 
 @app.get("/api/stock-history/{ticker}")
 def get_stock_history(ticker: str, period: str = "1mo"):
-    """銘柄株価履歴取得（カスタムテーマ用）— Infowayベース"""
+    """銘柄の騰落率履歴（カスタムテーマグラフ用）"""
     try:
         from data import _fetch_df, _period_df
-        df = _fetch_df(ticker)
-        df_p = _period_df(df, period)
-        if df_p is None or len(df_p) == 0:
-            return {"ticker": ticker, "period": period, "data": []}
-        records = []
-        for ts, row in df_p.iterrows():
-            records.append({
-                "date":  str(ts.date()),
-                "close": round(float(row["Close"]), 2) if "Close" in row else None,
-                "volume": int(row["Volume"]) if "Volume" in row else None,
-            })
-        return {"ticker": ticker, "period": period, "data": records}
+        df  = _fetch_df(ticker)
+        pdf = _period_df(df, period)
+        if pdf is None or len(pdf) < 2:
+            return {"ticker": ticker, "data": []}
+        cl  = pdf["Close"].dropna()
+        if len(cl) < 2 or not (cl > 0).all():
+            return {"ticker": ticker, "data": []}
+        cum = (cl / cl.iloc[0] - 1) * 100
+        # 重複インデックス除去
+        cum = cum[~cum.index.duplicated(keep='last')]
+        data = [{"date": str(d.date()), "pct": round(float(v), 2)}
+                for d, v in cum.items() if not np.isnan(v)]
+        return {"ticker": ticker, "data": data}
     except Exception as e:
-        return {"ticker": ticker, "period": period, "data": [], "error": str(e)}
+        return {"ticker": ticker, "data": [], "error": str(e)}
+
+
 
 @app.post("/api/custom-theme-stats")
 async def get_custom_theme_stats(request: Request):
@@ -343,272 +352,169 @@ JP_STOCK_NAMES = {
 
 @app.get("/api/stock-search")
 def search_stocks(q: str = Query(default="")):
-    """銘柄名または証券コードで検索（カスタムテーマ用・日本株のみ）
-    JP_STOCK_NAMES マスターを検索。yfinanceは使用しない。"""
+    """銘柄名または証券コードで検索（カスタムテーマ用・日本株のみ）"""
     if not q.strip():
         return {"results": []}
     try:
+        import yfinance as yf
         q = q.strip()
         results = []
 
-        # 4桁数字 → 直接ティッカー検索
+        # 4桁数字 → 日本株ティッカー
         if q.isdigit() and len(q) == 4:
             ticker = q + ".T"
-            name = JP_STOCK_NAMES.get(ticker)
-            if name:
-                results.append({"ticker": ticker, "name": name, "price": None})
+            try:
+                t    = yf.Ticker(ticker)
+                info = t.info
+                hist = t.history(period="5d", interval="1d", auto_adjust=True)
+                price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
+                # 日本語名を優先
+                jp_name = JP_STOCK_NAMES.get(ticker)
+                en_name = info.get("longName") or info.get("shortName") or ""
+                name = jp_name or en_name or ticker
+                if name and name != ticker:
+                    results.append({"ticker": ticker, "name": name, "price": price})
+                else:
+                    results.append({"ticker": ticker, "name": ticker, "price": price})
+            except Exception:
+                pass
 
-        # 文字列 → 銘柄名マスターを部分一致検索
-        if not results:
+        else:
+            # 銘柄名検索：まず日本語名マスターから前方一致・部分一致で検索
             q_lower = q.lower()
-            for ticker, name in JP_STOCK_NAMES.items():
-                if q_lower in name.lower() or q_lower in ticker.lower():
-                    results.append({"ticker": ticker, "name": name, "price": None})
-                if len(results) >= 10:
-                    break
+            for ticker, jp_name in JP_STOCK_NAMES.items():
+                if q_lower in jp_name.lower() or q in jp_name:
+                    try:
+                        hist = yf.Ticker(ticker).history(period="5d", auto_adjust=True)
+                        price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
+                    except Exception:
+                        price = None
+                    results.append({
+                        "ticker": ticker,
+                        "name": jp_name,
+                        "price": price,
+                    })
+                    if len(results) >= 8:
+                        break
 
-        # 証券コード部分一致（4〜5文字の英数字）
-        if not results and len(q) >= 3:
-            for ticker, name in JP_STOCK_NAMES.items():
-                if ticker.startswith(q.upper()):
-                    results.append({"ticker": ticker, "name": name, "price": None})
-                if len(results) >= 10:
-                    break
+            # マスターにない場合はyfinance Searchで補完（日本株のみ）
+            if not results:
+                try:
+                    search = yf.Search(q + " japan stock", max_results=15)
+                    for item in (search.quotes or []):
+                        sym = item.get("symbol", "")
+                        if not sym.endswith(".T"):
+                            continue
+                        jp_name = JP_STOCK_NAMES.get(sym)
+                        en_name = item.get("longname") or item.get("shortname") or sym
+                        name = jp_name or en_name
+                        if sym and name:
+                            results.append({
+                                "ticker": sym,
+                                "name": name,
+                                "price": None,
+                            })
+                            if len(results) >= 8:
+                                break
+                except Exception:
+                    pass
 
-        return {"results": results[:10]}
+        # 日本株（.T）のみに絞る
+        results = [r for r in results if r["ticker"].endswith(".T")]
+        return {"results": results[:8]}
     except Exception as e:
         return {"results": [], "error": str(e)}
 
-@app.get("/api/edinet/large-holdings")
-async def edinet_large_holdings(q: str = "", days: int = 60):
-    """
-    EDINET大量保有報告書を検索（CORSを回避するバックエンドプロキシ）
-    環境変数 EDINET_API_KEY に登録APIキーを設定してください。
-    APIキーはクエリパラメータ Subscription-Key として送信します。
-    """
-    cache_key = f"{q.strip().lower()}:{min(days,60)}"
-    now = time.time()
+# ── Stripe Checkout ────────────────────────────────────────────
+import stripe as _stripe
+from supabase import create_client as _sb_client
+import datetime as _dt
 
-    # キャッシュヒット
-    if cache_key in _edinet_cache:
-        ts, cached = _edinet_cache[cache_key]
-        if now - ts < _CACHE_TTL:
-            return {**cached, "cached": True}
-
-    # 正しいEDINET API v2のベースURL
-    EDINET_BASE = "https://api.edinet-fsa.go.jp/api/v2"
-    api_key = os.environ.get("EDINET_API_KEY", "")
-
-    results = []
-    today = date.today()
-    q_lower = (q or "").strip().lower()
-    errors = []
-
-    try:
-        async with httpx.AsyncClient(timeout=20.0) as client:
-            for i in range(min(days, 60)):
-                target = (today - timedelta(days=i)).isoformat()
-                try:
-                    # APIキーはクエリパラメータとして送信（正しい方式）
-                    params = {"date": target, "type": 2}
-                    if api_key:
-                        params["Subscription-Key"] = api_key
-
-                    res = await client.get(
-                        f"{EDINET_BASE}/documents.json",
-                        params=params,
-                        timeout=12.0
-                    )
-
-                    if res.status_code == 403:
-                        errors.append(f"403 on {target}")
-                        # 最初の403でAPIキーエラーを返す
-                        if i == 0:
-                            return {
-                                "results": [], "query": q, "count": 0,
-                                "error": "EDINET 403: APIキーが無効か、アクセスが拒否されました。",
-                                "api_key_set": bool(api_key),
-                                "url_used": EDINET_BASE
-                            }
-                        continue
-
-                    if not res.is_success:
-                        continue
-
-                    data = res.json()
-                    # metadataのstatusを確認
-                    meta = data.get("metadata", {})
-                    if meta.get("status") != "200":
-                        continue
-
-                    docs = data.get("results", [])
-                    for doc in docs:
-                        # 大量保有報告書: docTypeCode 28=新規, 29=変更, 30=一部免除
-                        if doc.get("docTypeCode") not in ["28", "29", "30"]:
-                            continue
-                        if q_lower:
-                            issuer = (doc.get("issuerName") or "").lower()
-                            sec    = (doc.get("secCode")    or "").lower()
-                            filer  = (doc.get("filerName")  or "").lower()
-                            if not (q_lower in issuer or q_lower in sec or q_lower in filer):
-                                continue
-                        results.append({
-                            "docID":        doc.get("docID"),
-                            "submitDate":   target,
-                            "submitDateTime": doc.get("submitDateTime"),
-                            "issuerName":   doc.get("issuerName"),
-                            "secCode":      doc.get("secCode"),
-                            "filerName":    doc.get("filerName"),
-                            "docTypeCode":  doc.get("docTypeCode"),
-                            "holdingRatio": doc.get("otherExplanatoryStatement"),
-                            "docDescription": doc.get("docDescription"),
-                        })
-                    if len(results) >= 100:
-                        break
-                except httpx.TimeoutException:
-                    errors.append(f"timeout on {target}")
-                    continue
-                except Exception as ex:
-                    errors.append(f"error on {target}: {str(ex)}")
-                    continue
-    except Exception as e:
-        return {"results": [], "query": q, "count": 0, "error": str(e)}
-
-    payload = {
-        "results": results,
-        "query": q,
-        "count": len(results),
-        "cached": False,
-        "api_key_set": bool(api_key),
-        "errors_count": len(errors),
-    }
-    if results:
-        _edinet_cache[cache_key] = (now, payload)
-    return payload
-# backend/main.py に追加するエンドポイント
-
-import stripe
-import os
-from fastapi import HTTPException, Request
-from pydantic import BaseModel
-
-stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
-WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
-
-PRICE_IDS = {
+_stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
+_WEBHOOK_SECRET  = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
+_PRICE_IDS = {
     "standard_monthly": os.environ.get("STRIPE_PRICE_STD_MONTHLY"),
     "standard_yearly":  os.environ.get("STRIPE_PRICE_STD_YEARLY"),
     "pro_monthly":      os.environ.get("STRIPE_PRICE_PRO_MONTHLY"),
     "pro_yearly":       os.environ.get("STRIPE_PRICE_PRO_YEARLY"),
 }
 
-class CheckoutRequest(BaseModel):
-    price_key: str      # "standard_monthly" など
-    user_id:   str      # Supabaseのユーザーid
-    email:     str      # ユーザーのメールアドレス
-    success_url: str    # 決済成功後のリダイレクト先
-    cancel_url:  str    # キャンセル時のリダイレクト先
+class CheckoutReq(BaseModel):
+    price_key:   str
+    user_id:     str
+    email:       str
+    success_url: str
+    cancel_url:  str
 
 @app.post("/api/stripe/create-checkout")
-async def create_checkout_session(req: CheckoutRequest):
-    """Stripe Checkoutセッションを作成"""
-    price_id = PRICE_IDS.get(req.price_key)
-    if not price_id:
+async def create_checkout(req: CheckoutReq):
+    pid = _PRICE_IDS.get(req.price_key)
+    if not pid:
         raise HTTPException(400, f"Invalid price_key: {req.price_key}")
-
     try:
-        session = stripe.checkout.Session.create(
+        plan = "standard" if "standard" in req.price_key else "pro"
+        session = _stripe.checkout.Session.create(
             payment_method_types=["card"],
             mode="subscription",
-            line_items=[{"price": price_id, "quantity": 1}],
+            line_items=[{"price": pid, "quantity": 1}],
             customer_email=req.email,
-            client_reference_id=req.user_id,  # SupabaseのユーザーIDを保持
-            success_url=req.success_url + "?session_id={CHECKOUT_SESSION_ID}",
-            cancel_url=req.cancel_url,
-            subscription_data={
-                "metadata": {
-                    "user_id": req.user_id,
-                    "plan": "standard" if "standard" in req.price_key else "pro",
-                }
-            },
-            locale="ja",  # 日本語UI
+            client_reference_id=req.user_id,
+            success_url=req.success_url + "?checkout=success",
+            cancel_url=req.cancel_url + "?checkout=cancel",
+            subscription_data={"metadata": {"user_id": req.user_id, "plan": plan}},
+            locale="ja",
         )
         return {"url": session.url}
-    except stripe.error.StripeError as e:
+    except _stripe.error.StripeError as e:
         raise HTTPException(400, str(e))
-
 
 @app.post("/api/stripe/webhook")
 async def stripe_webhook(request: Request):
-    """StripeからのWebhookを受信してSupabaseを更新"""
     payload = await request.body()
-    sig_header = request.headers.get("stripe-signature")
-
+    sig = request.headers.get("stripe-signature", "")
     try:
-        event = stripe.Webhook.construct_event(payload, sig_header, WEBHOOK_SECRET)
-    except (ValueError, stripe.error.SignatureVerificationError):
-        raise HTTPException(400, "Invalid webhook signature")
+        event = _stripe.Webhook.construct_event(payload, sig, _WEBHOOK_SECRET)
+    except Exception:
+        raise HTTPException(400, "Invalid webhook")
 
-    # サブスクリプション開始
-    if event["type"] == "checkout.session.completed":
-        session = event["data"]["object"]
-        user_id = session["client_reference_id"]
-        plan = session["subscription_data"]["metadata"]["plan"]
-        sub_id = session["subscription"]
-
-        # Stripeからサブスクリプション詳細を取得
-        sub = stripe.Subscription.retrieve(sub_id)
-        period_end = sub["current_period_end"]
-
-        # SupabaseのSubscriptionsテーブルを更新
-        from supabase import create_client
-        import datetime
-        sb = create_client(
-            os.environ["VITE_SUPABASE_URL"],
-            os.environ["SUPABASE_SERVICE_ROLE_KEY"]  # ← Service Role Key（Webhookのみ使用）
+    def _sb():
+        return _sb_client(
+            os.environ.get("VITE_SUPABASE_URL", ""),
+            os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
         )
-        sb.table("subscriptions").upsert({
-            "user_id": user_id,
-            "plan": plan,
-            "status": "active",
-            "stripe_subscription_id": sub_id,
-            "stripe_customer_id": session["customer"],
-            "current_period_end": datetime.datetime.fromtimestamp(
-                period_end, tz=datetime.timezone.utc
-            ).isoformat(),
-        }, on_conflict="user_id").execute()
 
-    # サブスクリプション更新（自動更新時）
-    elif event["type"] == "invoice.payment_succeeded":
-        sub_id = event["data"]["object"]["subscription"]
-        sub = stripe.Subscription.retrieve(sub_id)
-        user_id = sub["metadata"].get("user_id")
-        if user_id:
-            from supabase import create_client
-            import datetime
-            sb = create_client(
-                os.environ["VITE_SUPABASE_URL"],
-                os.environ["SUPABASE_SERVICE_ROLE_KEY"]
-            )
-            sb.table("subscriptions").update({
-                "status": "active",
-                "current_period_end": datetime.datetime.fromtimestamp(
-                    sub["current_period_end"], tz=datetime.timezone.utc
-                ).isoformat(),
-            }).eq("stripe_subscription_id", sub_id).execute()
+    et = event["type"]
+    if et == "checkout.session.completed":
+        s = event["data"]["object"]
+        uid = s.get("client_reference_id")
+        sub_id = s.get("subscription")
+        if uid and sub_id:
+            sub = _stripe.Subscription.retrieve(sub_id)
+            plan = sub["metadata"].get("plan", "standard")
+            exp  = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
+            _sb().table("subscriptions").upsert({
+                "user_id": uid, "plan": plan, "status": "active",
+                "stripe_subscription_id": sub_id,
+                "stripe_customer_id": s.get("customer"),
+                "current_period_end": exp,
+            }, on_conflict="user_id").execute()
 
-    # サブスクリプションキャンセル
-    elif event["type"] in ["customer.subscription.deleted", "customer.subscription.updated"]:
+    elif et == "invoice.payment_succeeded":
+        sub_id = event["data"]["object"].get("subscription")
+        if sub_id:
+            sub = _stripe.Subscription.retrieve(sub_id)
+            uid = sub["metadata"].get("user_id")
+            if uid:
+                exp = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
+                _sb().table("subscriptions").update({
+                    "status": "active", "current_period_end": exp
+                }).eq("stripe_subscription_id", sub_id).execute()
+
+    elif et in ["customer.subscription.deleted", "customer.subscription.updated"]:
         sub = event["data"]["object"]
-        sub_id = sub["id"]
-        status = "canceled" if event["type"].endswith("deleted") else sub["status"]
-        from supabase import create_client
-        sb = create_client(
-            os.environ["VITE_SUPABASE_URL"],
-            os.environ["SUPABASE_SERVICE_ROLE_KEY"]
-        )
-        sb.table("subscriptions").update({"status": status}).eq(
-            "stripe_subscription_id", sub_id
+        status = "canceled" if et.endswith("deleted") else sub.get("status", "active")
+        _sb().table("subscriptions").update({"status": status}).eq(
+            "stripe_subscription_id", sub["id"]
         ).execute()
 
-    return {"status": "ok"}
+    return {"ok": True}

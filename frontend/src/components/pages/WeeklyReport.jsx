@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useSubscription } from '../../hooks/useSubscription.jsx'
 
 function Loading() {
   return (
@@ -103,7 +104,7 @@ function RenderMd({ text, onNavigate }) {
 }
 
 // ① レポートカード（コラム形式）
-function ReportCard({ entry, isActive, onClick }) {
+function ReportCard({ entry, isActive, onClick, isLocked, onUpgrade }) {
   const avg = entry.avg_pct_1w
   const col = avg >= 0 ? 'var(--red)' : 'var(--green)'
   // "2026-04-24" → "4/20〜4/24" の表示
@@ -137,6 +138,27 @@ function ReportCard({ entry, isActive, onClick }) {
     }
     return entry.week || ''
   })()
+
+  if (isLocked) return (
+    <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px',
+      padding:'14px 18px', marginBottom:'8px', opacity:0.7, cursor:'pointer' }}
+      onClick={onUpgrade}
+    >
+      <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between' }}>
+        <div>
+          <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>
+            🔒 {entry.title}
+          </div>
+          <div style={{ fontSize:'11px', color:'var(--text3)' }}>{entry.date}</div>
+        </div>
+        <div style={{ padding:'5px 12px', background:'rgba(74,158,255,0.1)',
+          border:'1px solid rgba(74,158,255,0.3)', borderRadius:'6px',
+          fontSize:'11px', color:'var(--accent)', fontWeight:600, flexShrink:0 }}>
+          スタンダード以上で閲覧
+        </div>
+      </div>
+    </div>
+  )
 
   return (
     <div onClick={onClick} style={{
@@ -173,6 +195,8 @@ function ReportCard({ entry, isActive, onClick }) {
 }
 
 export default function WeeklyReport({ onNavigate }) {
+  const { isStandard, isDev } = useSubscription()
+  const canViewRecent = isStandard || isDev  // Freeは2週間以上前のみ閲覧可
   const [report,    setReport]    = useState(null)
   const [index,     setIndex]     = useState([])
   const [loading,   setLoading]   = useState(true)
@@ -363,7 +387,13 @@ export default function WeeklyReport({ onNavigate }) {
             const da = a.date ? a.date.replace(/\//g, '-') : a.week
             const db = b.date ? b.date.replace(/\//g, '-') : b.week
             return db.localeCompare(da)
-          }).map((entry, i) => (
+          }).map((entry, i) => {
+            // ③ Free制限: 2週間以内の記事はStandard以上のみ閲覧可
+            const entryDate = entry.date ? new Date(entry.date.replace(/\//g, '-')) : null
+            const twoWeeksAgo = new Date(); twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14)
+            const isRecent = entryDate && entryDate > twoWeeksAgo
+            const isLocked = isRecent && !canViewRecent
+            return (
             <ReportCard
               key={entry.week}
               entry={{
@@ -376,8 +406,11 @@ export default function WeeklyReport({ onNavigate }) {
                 if (i === 0) loadLatest()
                 else loadArchive(entry.week)
               }}
+            isLocked={isLocked}
+            onUpgrade={() => onNavigate?.('プラン・料金')}
             />
-          ))}
+            )
+          })}
         </div>
       )}
 
