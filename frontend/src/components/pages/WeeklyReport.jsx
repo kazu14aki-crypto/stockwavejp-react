@@ -214,19 +214,12 @@ export default function WeeklyReport({ onNavigate }) {
         // 最新レポートを自動的に取得して表示
         if (d.length > 0 && !selWeek) {
           const latest = d[0]
+          // 最新レポートをプリフェッチ（表示はユーザーのクリック後）
           fetch(`/data/weekly_reports/${latest.week}.json?t=${Date.now()}`)
             .then(r => r.ok ? r.json() : null)
-            .then(rd => {
-              if (rd) {
-                setReport(rd)
-                setSelWeek(latest.week)  // ④ 最新を選択状態に
-                setShowReport(true)       // ④ 本文表示モードに
-                setLoading(false)
-              } else {
-                setLoading(false)
-              }
-            })
-            .catch(() => setLoading(false))
+            .then(rd => { if (rd) setReport(rd) })
+            .catch(() => {})
+          setLoading(false)
         } else {
           setLoading(false)
         }
@@ -421,7 +414,7 @@ export default function WeeklyReport({ onNavigate }) {
                 top_theme: entry.top5_themes?.[0]?.theme ?? null,
                 generated_at: entry.generated_at,
               }}
-              isActive={i === 0 && !selWeek}
+              isActive={entry.week === selWeek}
               onClick={() => {
                 if (i === 0) loadLatest()
                 else loadArchive(entry.week)

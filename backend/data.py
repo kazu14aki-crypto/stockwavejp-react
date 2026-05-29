@@ -18,55 +18,6 @@ import pytz
 import os
 import pickle
 import hashlib
-# ── Infoway API 設定（yfinanceの代替） ───────────────────────────
-import httpx as _httpx
-INFOWAY_API_KEY  = os.environ.get("INFOWAY_API_KEY", "")
-INFOWAY_STOCK_URL = "https://data.infoway.io/v2/stock/batch_kline"
-INFOWAY_KLINE_TYPE = 4    # 日足
-INFOWAY_KLINE_NUM  = 520  # 約2年分
-
-def _infoway_headers():
-    return {"apiKey": INFOWAY_API_KEY, "Content-Type": "application/json"}
-
-def _fetch_df_infoway(ticker: str, period: str = "2y") -> "pd.DataFrame | None":
-    """Infoway APIから日次OHLCVを取得（_fetch_dfのInfoway版）"""
-    if not INFOWAY_API_KEY:
-        return None
-    try:
-        code = ticker.replace(".T", "")
-        if not code.isdigit():
-            return None
-        kline_num = {"1d":1,"5d":5,"1mo":30,"3mo":90,"6mo":180,"1y":260,"2y":520}.get(period, 520)
-        payload = {
-            "klineType": INFOWAY_KLINE_TYPE,
-            "klineNum": kline_num,
-            "codes": [f"{code}.JP"],
-            "timestamp": int(__import__("time").time()),
-        }
-        r = _httpx.post(INFOWAY_STOCK_URL, json=payload, headers=_infoway_headers(), timeout=15.0)
-        if not r.is_success:
-            return None
-        data = r.json()
-        resp = next((d for d in (data if isinstance(data, list) else []) if d.get("s") == f"{code}.JP"), None)
-        if not resp:
-            return None
-        rows = resp.get("respList", [])
-        if len(rows) < 3:
-            return None
-        df = pd.DataFrame([{
-            "Date":   pd.to_datetime(row["t"], unit="s"),
-            "Open":   float(row.get("o", 0)),
-            "High":   float(row.get("h", 0)),
-            "Low":    float(row.get("l", 0)),
-            "Close":  float(row.get("c", 0)),
-            "Volume": int(row.get("na", 0)),
-        } for row in rows]).set_index("Date").sort_index()
-        df.index = df.index.tz_localize(None)
-        return df if len(df) >= 3 else None
-    except Exception:
-        return None
-
-
 
 # ── マクロティッカー ──
 # マクロ指標：ETFを使用（商標権・ライセンス問題を回避）
@@ -523,43 +474,23 @@ def _set_mem_cache(key: str, value):
     with _mem_cache_lock:
         _mem_cache[key] = {"value": value, "ts": time.time()}
 
-# ── yfinance取得 ──
+# ── データ取得（Infoway専用・yfinanceは廃止）──
 def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
     if ticker in _invalid_tickers: return None
     cache_key = f"df_{ticker}_{period}"
-    # DataFrame専用キャッシュ（bool評価しない）
     with _mem_cache_lock:
         entry = _df_cache.get(cache_key)
         if entry is not None and time.time() - entry["ts"] < CACHE_TTL:
             return entry["value"]
-    # ── Infoway優先取得 ──
+    # Infoway APIから取得（yfinanceは利用規約上の問題により廃止）
     if INFOWAY_API_KEY:
         df_iw = _fetch_df_infoway(ticker, period)
         if df_iw is not None and len(df_iw) >= 3:
             with _mem_cache_lock:
                 _df_cache[cache_key] = {"value": df_iw, "ts": time.time()}
             return df_iw
-    # ── yfinance（Infoway未設定またはInfoway失敗時のフォールバック） ──
-    try:
-        # yfinanceのwarningを一時的に抑制
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            df = yf.Ticker(ticker).history(period=period, interval="1d", auto_adjust=True, repair=True, timeout=20)
-        if df is None or len(df) < 3:
-            _invalid_tickers.add(ticker)
-            print(f"[SKIP] {ticker}: データ不足または上場廃止（テーマ計算から除外）")
-            return None
-        df.index = df.index.tz_localize(None)
-        with _mem_cache_lock:
-            _df_cache[cache_key] = {"value": df, "ts": time.time()}
-        return df
-    except Exception as e:
-        err_str = str(e).lower()
-        if any(k in err_str for k in ["404", "delisted", "no data found", "no price data"]):
-            _invalid_tickers.add(ticker)
-            print(f"[SKIP] {ticker}: 上場廃止またはデータなし（テーマ計算から除外）")
-        return None
-
+    # Infoway未設定・失敗時はNoneを返す（ホワイトなサイト方針）
+    return None
 def _period_df(df: pd.DataFrame, period: str) -> pd.DataFrame | None:
     if df is None: return None
     delta_map = {
@@ -758,10 +689,8 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                 cl_sp = df_sp6["Close"].dropna()
                 if len(cl_sp) >= 4:
                     base = float(cl_sp.iloc[0])
-                    if base and base > 0:  # base=0またはNaNによるゼロ除算を防ぐ
-                        step = max(1, len(cl_sp) // 20)
-                        spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]
-                                 if not (isinstance(v, float) and (v != v))]  # NaN除去
+                    step = max(1, len(cl_sp) // 20)
+                    spark = [round((float(v) / base - 1) * 100, 2) for v in cl_sp.iloc[::step]]
         except Exception:
             spark = []
         # 時価総額: fast_info → 出来高近似フォールバック

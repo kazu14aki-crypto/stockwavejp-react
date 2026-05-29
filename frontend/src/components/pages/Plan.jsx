@@ -149,7 +149,7 @@ export default function Plan({ onNavigate }) {
             {/* 申し込みボタン */}
             {p.key !== 'free' && (
               <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'14px' }}>
-                <UpgradePlanButton priceKey={`${p.key}_monthly`} label={`${p.name}（月払い）`} color={p.color} disabled={false}/>
+                <UpgradePlanButton priceKey={`${p.key}_monthly`} label={p.name} color={p.color} disabled={false}/>
               </div>
             )}
           </div>
