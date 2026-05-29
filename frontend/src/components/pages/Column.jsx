@@ -130,7 +130,7 @@ function RenderBody({ text }) {
     if (!line) { i++; continue }
     if (line.startsWith('H2: ')) {
       elements.push(
-        <h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)',
+        <h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'#e8f0ff',
           margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
           {line.slice(4)}
         </h2>
@@ -143,7 +143,7 @@ function RenderBody({ text }) {
       )
     } else if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'var(--text)',
+        <h2 key={i} style={{ fontSize:'16px', fontWeight:700, color:'#e8f0ff',
           margin:'24px 0 10px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
           {line.slice(3)}
         </h2>
@@ -163,7 +163,7 @@ function RenderBody({ text }) {
       elements.push(
         <ul key={`ul-${i}`} style={{ margin:'6px 0 12px', paddingLeft:'20px' }}>
           {items.map((item, j) => (
-            <li key={j} style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.8, marginBottom:'2px' }}>
+            <li key={j} style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.8, marginBottom:'2px' }}>
               {item.includes('（') ? (
                 <>
                   <span style={{ color:'var(--text)', fontWeight:600 }}>{item.split('：')[0]}</span>
@@ -201,7 +201,7 @@ function RenderBody({ text }) {
                 {rows.slice(1).map((row, ri) => (
                   <tr key={ri} style={{ borderBottom:'1px solid rgba(255,255,255,0.04)' }}>
                     {row.map((cell, ci) => (
-                      <td key={ci} style={{ padding:'8px 12px', color:'var(--text)', lineHeight:1.6 }}>
+                      <td key={ci} style={{ padding:'8px 12px', color:'#e8f0ff', lineHeight:1.6 }}>
                         {cell}
                       </td>
                     ))}
@@ -215,7 +215,7 @@ function RenderBody({ text }) {
       continue
     } else {
       elements.push(
-        <p key={i} style={{ fontSize:'13px', color:'var(--text)', lineHeight:1.9, margin:'0 0 12px' }}>
+        <p key={i} style={{ fontSize:'13px', color:'#e8f0ff', lineHeight:1.9, margin:'0 0 12px' }}>
           {line}
         </p>
       )
@@ -286,7 +286,12 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         (col.themes || []).some(t => t.toLowerCase().includes(q))
       )
     })
-    .sort((a, b) => b.date.localeCompare(a.date))
+    .sort((a, b) => {
+      // スラッシュ・ハイフン両形式に対応した日付降順ソート
+      const da = (a.date||'').replace(/\//g, '-')
+      const db = (b.date||'').replace(/\//g, '-')
+      return db.localeCompare(da)
+    })
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE)
   const pagedItems = filtered.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE)
@@ -310,7 +315,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           display:'inline-block', marginBottom:'12px' }}>
           {col.category}
         </span>
-        <h1 style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', lineHeight:1.5, marginBottom:'8px' }}>
+        <h1 style={{ fontSize:'20px', fontWeight:700, color:'#e8f0ff', lineHeight:1.5, marginBottom:'8px' }}>
           {col.title}
         </h1>
         <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'24px' }}>
@@ -321,7 +326,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           <RenderBody text={col.body} />
         </div>
         <div style={{ background:'rgba(255,140,66,0.07)', border:'1px solid rgba(255,140,66,0.2)',
-          borderRadius:'8px', padding:'14px 18px', fontSize:'12px', color:'var(--text)', lineHeight:1.8 }}>
+          borderRadius:'8px', padding:'14px 18px', fontSize:'12px', color:'#e8f0ff', lineHeight:1.8 }}>
           ⚠️ 本コラムは情報提供を目的としており、特定の銘柄・投資方法を推奨するものではありません。
           実際の投資判断はご自身の責任において行ってください。
         </div>
@@ -465,7 +470,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
 
   return (
     <div style={{ padding:'20px 32px 60px' }}>
-      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
+      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         コラム・解説
       </h1>
       <p style={{ fontSize:'13px', color:'var(--text3)', marginBottom:'24px' }}>
@@ -532,23 +537,17 @@ export default function Column({ initialArticleId = null, onNavigate }) {
               onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(74,158,255,0.3)'; e.currentTarget.style.transform='translateY(-2px)' }}
               onMouseLeave={e => { e.currentTarget.style.borderColor='var(--border)'; e.currentTarget.style.transform='translateY(0)' }}
             >
-              {/* カードヘッダー: 日付を右上に独立配置 */}
-              <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'10px' }}>
-                <div style={{ display:'flex', alignItems:'center', gap:'8px', minWidth:0, flex:1 }}>
-                  <span style={{ fontSize:'22px', flexShrink:0 }}>{col.icon}</span>
-                  <span style={{
-                    fontSize:'11px', fontWeight:600, padding:'3px 8px', borderRadius:'12px',
-                    background:cat.bg, color:cat.color, border:`1px solid ${cat.border}`,
-                    whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis', maxWidth:'120px',
-                  }}>
-                    {col.category}
-                  </span>
-                </div>
-                <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', flexShrink:0, marginLeft:'6px' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'10px' }}>
+                <span style={{ fontSize:'20px' }}>{col.icon}</span>
+                <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'12px',
+                  background:cat.bg, color:cat.color, border:`1px solid ${cat.border}` }}>
+                  {col.category}
+                </span>
+                <span style={{ fontSize:'10px', color:'var(--text3)', marginLeft:'auto', fontFamily:'var(--mono)' }}>
                   {col.date}
                 </span>
               </div>
-              <h2 style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', lineHeight:1.5, marginBottom:'8px' }}>
+              <h2 style={{ fontSize:'13px', fontWeight:700, color:'#e8f0ff', lineHeight:1.5, marginBottom:'8px' }}>
                 {col.title}
               </h2>
               <p style={{ fontSize:'12px', color:'var(--text3)', lineHeight:1.7, margin:0,
@@ -600,9 +599,8 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       )}
 
       <style>{`
-        @media (max-width:640px) { .col-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; } }
-        @media (max-width:360px) { .col-grid { grid-template-columns: 1fr !important; gap: 6px !important; } }
-        @media (max-width:640px) { .col-grid > div { padding: 10px 10px !important; } }
+        @media (max-width:640px) { .col-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; } }
+        @media (max-width:640px) { .col-grid > div { padding: 12px 12px !important; } }
       `}</style>
     </div>
   )
