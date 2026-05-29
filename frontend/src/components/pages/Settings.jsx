@@ -9,10 +9,8 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
   )
 
   const COLOR_THEMES = [
-    { key:'dark',      label:'🌑 ブラック',       desc:'深いダーク（デフォルト）' },
-    { key:'midnight',  label:'🌙 ミッドナイト',   desc:'深夜も疲れにくい青みダーク' },
-    { key:'light',     label:'☀️ オフホワイト',   desc:'目に優しいライトモード' },
-    { key:'sand',      label:'🏖 サンド',          desc:'温かみのあるベージュ' },
+    { key:'dark',  label:'🌑 ブラック', desc:'ダークモード（デフォルト）' },
+    { key:'light', label:'☀️ ホワイト', desc:'ライトモード' },
   ]
 
   return (
@@ -51,29 +49,29 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
         <SLabel>上昇・下落カラー</SLabel>
         <div style={{ display:'flex', gap:'12px', flexWrap:'wrap' }}>
           {[
-            { key:'jp', label:'🇯🇵 日本式',  desc:'上昇=赤 / 下落=緑（デフォルト）', up:'#e63030', down:'#1a9a50' },
-            { key:'us', label:'🇺🇸 米国式',  desc:'上昇=緑 / 下落=赤',              up:'#1a9a50', down:'#e63030' },
-          ].map(({ key, label, desc, up, down }) => (
+            { key:'jp', flag:'🇯🇵', label:'日本式', desc:'上昇=赤 / 下落=緑', upColor:'#e63030', downColor:'#1a9a50' },
+            { key:'us', flag:'🇺🇸', label:'米国式', desc:'上昇=緑 / 下落=赤', upColor:'#1a9a50', downColor:'#e63030' },
+          ].map(({ key, flag, label, desc, upColor, downColor }) => (
             <button key={key} onClick={() => onColorDirChange?.(key)} style={{
               padding:'12px 20px', borderRadius:'8px', cursor:'pointer',
               border:`2px solid ${colorDir===key?'var(--accent)':'var(--border)'}`,
               background:colorDir===key?'rgba(74,158,255,0.1)':'var(--bg3)',
               fontFamily:'var(--font)', transition:'all 0.15s',
               display:'flex', flexDirection:'column', alignItems:'flex-start', gap:'6px',
-              minWidth:'160px',
+              minWidth:'150px',
             }}>
-              <span style={{ fontSize:'14px', color:'var(--text)', fontWeight:600 }}>{label}</span>
+              <span style={{ fontSize:'14px', color:'var(--text)', fontWeight:600 }}>{flag} {label}</span>
               <span style={{ fontSize:'11px', color:'var(--text2)' }}>{desc}</span>
               <div style={{ display:'flex', gap:'8px', marginTop:'2px' }}>
-                <span style={{ fontSize:'12px', background:up, color:'#fff', padding:'2px 8px', borderRadius:'4px', fontWeight:700 }}>+2.5%</span>
-                <span style={{ fontSize:'12px', background:down, color:'#fff', padding:'2px 8px', borderRadius:'4px', fontWeight:700 }}>-1.8%</span>
+                <span style={{ fontSize:'12px', background:upColor, color:'#fff', padding:'2px 8px', borderRadius:'4px', fontWeight:700 }}>+2.5%</span>
+                <span style={{ fontSize:'12px', background:downColor, color:'#fff', padding:'2px 8px', borderRadius:'4px', fontWeight:700 }}>-1.8%</span>
               </div>
               {colorDir===key && <span style={{ fontSize:'10px',color:'var(--accent)',fontWeight:600 }}>✓ 適用中</span>}
             </button>
           ))}
         </div>
-        <p style={{ fontSize:'11px',color:'var(--text3)',marginTop:'12px' }}>
-          ※ 変更は即時反映されます
+        <p style={{ fontSize:'11px',color:'var(--text3)',marginTop:'10px',marginBottom:0 }}>
+          変更は即時反映されます（ページリロード不要）
         </p>
       </Card>
 

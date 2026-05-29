@@ -426,6 +426,7 @@ def search_stocks(q: str = Query(default="")):
         return {"results": [], "error": str(e)}
 
 # ── Stripe Checkout ────────────────────────────────────────────
+import os
 import stripe as _stripe
 from supabase import create_client as _sb_client
 import datetime as _dt

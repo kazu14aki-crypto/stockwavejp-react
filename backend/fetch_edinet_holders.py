@@ -71,7 +71,9 @@ def parse_major_shareholders(xbrl_content: str) -> list:
 
 def process_doc(doc: dict, out_dir: Path) -> bool:
     """1件の書類を処理"""
-    sec_code = doc.get("secCode", "").replace("0", "", 1) if doc.get("secCode","").endswith("0") else doc.get("secCode","")
+    # secCodeがNoneの場合に対応
+    raw_sec = doc.get("secCode") or ""
+    sec_code = raw_sec[:-1] if raw_sec.endswith("0") and len(raw_sec) > 1 else raw_sec
     issuer   = doc.get("filerName", "")
     doc_id   = doc.get("docID", "")
     doc_type = doc.get("docTypeCode","")

@@ -57,6 +57,7 @@ const PAGES_FOOTER = [
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const ALL_PAGES     = [...PAGES, ...PAGES_OTHER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
+const COLOR_DIR_KEY   = 'sw_color_dir'
 
 function AppInner() {
   const [currentPage,   setCurrentPage]   = useState('ホーム')
@@ -90,14 +91,32 @@ function AppInner() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [viewMode,    setViewMode]    = useState('auto')
   const [isMobile,    setIsMobile]    = useState(() => typeof window !== 'undefined' && window.innerWidth <= 1280)
+  const [colorDir,    setColorDir]    = useState(
+    () => localStorage.getItem(COLOR_DIR_KEY) || 'jp'
+  )
   const [colorTheme,  setColorTheme]  = useState(
     () => localStorage.getItem(COLOR_THEME_KEY) || 'dark'
   )
   const status = useStatus()
 
+
+  // ④ 上昇下落カラー方向のuseEffect
+  useEffect(() => {
+    localStorage.setItem(COLOR_DIR_KEY, colorDir)
+    const root = document.documentElement
+    if (colorDir === 'us') {
+      root.style.setProperty('--red',   '#1a9a50')  // 米国式: 緑=上昇
+      root.style.setProperty('--green', '#e63030')  // 米国式: 赤=下落
+    } else {
+      root.style.setProperty('--red',   '')          // 日本式: デフォルトに戻す
+      root.style.setProperty('--green', '')
+    }
+  }, [colorDir])
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', colorTheme)
     localStorage.setItem(COLOR_THEME_KEY, colorTheme)
+    // Supabaseへのテーマ保存（ログイン時）
   }, [colorTheme])
 
   useEffect(() => {
@@ -144,7 +163,7 @@ function AppInner() {
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, isMobile }
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, colorDir, onColorDirChange:setColorDir, isMobile }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange, isMobile }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
