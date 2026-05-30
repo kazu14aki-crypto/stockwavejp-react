@@ -555,44 +555,61 @@ async def stripe_webhook(request: Request):
     except Exception:
         raise HTTPException(400, "Invalid webhook")
 
+    # Supabaseクライアントをキャッシュして共有
+    _supabase_url = os.environ.get("SUPABASE_URL", "")
+    _supabase_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+    if not _supabase_url or not _supabase_key:
+        print(f"[WEBHOOK ERROR] Supabase env vars missing: URL={bool(_supabase_url)}, KEY={bool(_supabase_key)}")
+        raise HTTPException(500, "Supabase configuration missing")
+
     def _sb():
-        return _sb_client(
-            os.environ.get("VITE_SUPABASE_URL", ""),
-            os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-        )
+        return _sb_client(_supabase_url, _supabase_key)
 
     et = event["type"]
-    if et == "checkout.session.completed":
-        s = event["data"]["object"]
-        uid = s.get("client_reference_id")
-        sub_id = s.get("subscription")
-        if uid and sub_id:
-            sub = _stripe.Subscription.retrieve(sub_id)
-            plan = sub["metadata"].get("plan", "standard")
-            exp  = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
-            _sb().table("subscriptions").upsert({
-                "user_id": uid, "plan": plan, "status": "active",
-                "stripe_subscription_id": sub_id,
-                "stripe_customer_id": s.get("customer"),
-                "current_period_end": exp,
-            }, on_conflict="user_id").execute()
+    print(f"[WEBHOOK] Processing event: {et}")
 
-    elif et == "invoice.payment_succeeded":
-        sub_id = event["data"]["object"].get("subscription")
-        if sub_id:
-            sub = _stripe.Subscription.retrieve(sub_id)
-            uid = sub["metadata"].get("user_id")
-            if uid:
-                exp = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
-                _sb().table("subscriptions").update({
-                    "status": "active", "current_period_end": exp
-                }).eq("stripe_subscription_id", sub_id).execute()
+    try:
+        if et == "checkout.session.completed":
+            s = event["data"]["object"]
+            uid = s.get("client_reference_id")
+            sub_id = s.get("subscription")
+            print(f"[WEBHOOK] checkout.session.completed: uid={uid}, sub_id={sub_id}")
+            if uid and sub_id:
+                sub = _stripe.Subscription.retrieve(sub_id)
+                plan = sub["metadata"].get("plan", "standard")
+                exp  = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
+                result = _sb().table("subscriptions").upsert({
+                    "user_id": uid, "plan": plan, "status": "active",
+                    "stripe_subscription_id": sub_id,
+                    "stripe_customer_id": s.get("customer"),
+                    "current_period_end": exp,
+                }, on_conflict="user_id").execute()
+                print(f"[WEBHOOK] Supabase upsert result: {result}")
+            else:
+                print(f"[WEBHOOK WARNING] Missing uid or sub_id in checkout.session.completed")
 
-    elif et in ["customer.subscription.deleted", "customer.subscription.updated"]:
-        sub = event["data"]["object"]
-        status = "canceled" if et.endswith("deleted") else sub.get("status", "active")
-        _sb().table("subscriptions").update({"status": status}).eq(
-            "stripe_subscription_id", sub["id"]
-        ).execute()
+        elif et == "invoice.payment_succeeded":
+            sub_id = event["data"]["object"].get("subscription")
+            if sub_id:
+                sub = _stripe.Subscription.retrieve(sub_id)
+                uid = sub["metadata"].get("user_id")
+                if uid:
+                    exp = _dt.datetime.fromtimestamp(sub["current_period_end"], tz=_dt.timezone.utc).isoformat()
+                    _sb().table("subscriptions").update({
+                        "status": "active", "current_period_end": exp
+                    }).eq("stripe_subscription_id", sub_id).execute()
+                    print(f"[WEBHOOK] invoice.payment_succeeded: uid={uid} updated")
+
+        elif et in ["customer.subscription.deleted", "customer.subscription.updated"]:
+            sub = event["data"]["object"]
+            status = "canceled" if et.endswith("deleted") else sub.get("status", "active")
+            _sb().table("subscriptions").update({"status": status}).eq(
+                "stripe_subscription_id", sub["id"]
+            ).execute()
+            print(f"[WEBHOOK] Subscription status updated: {status}")
+
+    except Exception as e:
+        print(f"[WEBHOOK ERROR] Failed to process {et}: {e}")
+        raise HTTPException(500, f"Webhook processing failed: {str(e)}")
 
     return {"ok": True}
