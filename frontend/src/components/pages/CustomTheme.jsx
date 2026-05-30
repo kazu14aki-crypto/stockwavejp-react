@@ -380,7 +380,7 @@ function CustomBubbleScatter({ stocks, period }) {
 }
 
 export default function CustomTheme() {
-  const { themes, saveTheme, deleteTheme, syncing } = useCustomThemes()
+  const { themes, saveTheme, deleteTheme, syncing, maxThemes, maxStocks } = useCustomThemes()
   const { isLoggedIn, signIn } = useAuth()
   const [mode,        setMode]        = useState('list')  // 'list'|'detail'|'edit'|'create'
   const [activeIndex, setActiveIndex] = useState(null)
