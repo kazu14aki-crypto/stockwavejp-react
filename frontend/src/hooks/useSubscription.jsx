@@ -48,11 +48,12 @@ export function SubscriptionProvider({ children }) {
         }
 
         // ③ Supabaseのサブスクリプション状態を先に確認（サブスク契約済みが最優先）
+        // active または canceling（解約予約中）のサブスクを取得
         const { data: subData, error: subError } = await supabase
           .from('subscriptions')
           .select('plan, status, current_period_end, stripe_subscription_id')
           .eq('user_id', session.user.id)
-          .eq('status', 'active')
+          .in('status', ['active', 'canceling'])
           .order('created_at', { ascending: false })
           .limit(1)
           .maybeSingle()

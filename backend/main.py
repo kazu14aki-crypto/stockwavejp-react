@@ -445,11 +445,12 @@ _PRICE_IDS = {
 }
 
 class CheckoutReq(BaseModel):
-    price_key:   str
-    user_id:     str
-    email:       str
-    success_url: str
-    cancel_url:  str
+    price_key:      str
+    user_id:        str
+    email:          str
+    success_url:    str
+    cancel_url:     str
+    billing_timing: str = 'period_end'  # 'immediate' or 'period_end'
 # ── Stripe サブスクリプション解約 ──────────────────────────────────────
 @app.post("/api/stripe/cancel-subscription")
 async def cancel_subscription(req: Request):
@@ -537,6 +538,8 @@ async def create_checkout(req: CheckoutReq):
             success_url=req.success_url + "?checkout=success",
             cancel_url=req.cancel_url + "?checkout=cancel",
             subscription_data={"metadata": {"user_id": req.user_id, "plan": plan}},
+            # billing_timing='immediate': Stripeがproration(日割り)で即時切替
+            # billing_timing='period_end': 次回更新時に切替（Stripeのサブスク変更で制御）
             locale="ja",
         )
         return {"url": session.url}

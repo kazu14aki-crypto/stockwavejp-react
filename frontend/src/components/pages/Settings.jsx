@@ -200,7 +200,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
       {/* ── 上昇下落カラー ── */}
       <Card>
         <SLabel>📈 上昇・下落カラー</SLabel>
-        <div style={{ display:'flex', gap:'10px', flexWrap:'wrap' }}>
+        <div style={{ display:'flex', gap:'10px', flexWrap:'wrap', marginBottom:'12px' }}>
           {COLOR_DIRS.map(d => (
             <button key={d.key} onClick={() => setColorDir(d.key)}
               style={{ ...btnBase,
@@ -213,7 +213,27 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
             </button>
           ))}
         </div>
-        <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'10px' }}>
+        {/* ④ 上昇下落カラーの例 */}
+        <div style={{ display:'flex', gap:'10px', marginBottom:'10px' }}>
+          <div style={{ fontSize:'12px', color:'var(--text3)', marginRight:'8px', lineHeight:'28px' }}>表示例：</div>
+          <div style={{ display:'flex', gap:'6px', alignItems:'center' }}>
+            <span style={{
+              padding:'3px 10px', borderRadius:'6px', fontSize:'12px', fontWeight:700,
+              color: colorDir === 'us' ? '#4ade80' : '#f87171',
+              background: colorDir === 'us' ? 'rgba(74,222,128,0.12)' : 'rgba(248,113,113,0.12)',
+            }}>▲ +2.5%</span>
+            <span style={{ fontSize:'11px', color:'var(--text3)' }}>上昇</span>
+          </div>
+          <div style={{ display:'flex', gap:'6px', alignItems:'center' }}>
+            <span style={{
+              padding:'3px 10px', borderRadius:'6px', fontSize:'12px', fontWeight:700,
+              color: colorDir === 'us' ? '#f87171' : '#4ade80',
+              background: colorDir === 'us' ? 'rgba(248,113,113,0.12)' : 'rgba(74,222,128,0.12)',
+            }}>▼ -1.8%</span>
+            <span style={{ fontSize:'11px', color:'var(--text3)' }}>下落</span>
+          </div>
+        </div>
+        <div style={{ fontSize:'11px', color:'var(--text3)' }}>
           ※ 変更は即時反映されます
         </div>
       </Card>

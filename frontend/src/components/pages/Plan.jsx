@@ -103,7 +103,7 @@ export default function Plan({ onNavigate }) {
       {/* プランカード */}
       <div style={{ display:'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3,1fr)', gap:'14px', marginBottom:'28px' }}>
         {PLANS.map(p => (
-          <div key={p.key} style={{ background:'var(--bg2)', border:`2px solid ${p.color}40`, borderRadius:'12px', padding:'18px 16px', borderTop:`4px solid ${p.color}` }}>
+          <div key={p.key} style={{ background:'var(--bg2)', border:`2px solid ${p.color}40`, borderRadius:'12px', padding:'18px 16px', borderTop:`4px solid ${p.color}`, display:'flex', flexDirection:'column' }}>
             <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'14px' }}>
               <span style={{ fontSize:'16px', fontWeight:800, color:p.color }}>{p.name}</span>
               {p.badge && (
