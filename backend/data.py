@@ -16,6 +16,9 @@ import threading
 from datetime import datetime, timedelta
 import pytz
 import os
+
+# Infoway APIキー（未設定の場合はNone → yfinanceも廃止済みのためデータなしとなる）
+INFOWAY_API_KEY = os.environ.get("INFOWAY_API_KEY", None)
 import pickle
 import hashlib
 

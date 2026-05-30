@@ -7,3 +7,4 @@ pytz
 scipy>=1.11
 stripe>=7.0.0
 supabase>=2.0.0
+httpx>=0.28.0
