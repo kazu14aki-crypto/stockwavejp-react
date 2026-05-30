@@ -128,6 +128,10 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
                     border:'1px solid rgba(255,100,100,0.4)', opacity: cancelling ? 0.6 : 1 }}>
                   {cancelling ? '処理中...' : '🔴 サブスクリプションを解約する'}
                 </button>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'8px', lineHeight:1.7 }}>
+                  ※ 解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。<br/>
+                  ※ 無料体験期間中に加入した場合、加入時点から有料契約が開始されています。
+                </div>
               </div>
             )}
 

@@ -47,7 +47,31 @@ export function SubscriptionProvider({ children }) {
           return
         }
 
-        // ③ 初回ログインから30日間はProプラン体験版
+        // ③ Supabaseのサブスクリプション状態を先に確認（サブスク契約済みが最優先）
+        const { data: subData, error: subError } = await supabase
+          .from('subscriptions')
+          .select('plan, status, current_period_end, stripe_subscription_id')
+          .eq('user_id', session.user.id)
+          .eq('status', 'active')
+          .order('created_at', { ascending: false })
+          .limit(1)
+          .maybeSingle()
+
+        // 有効なサブスクリプションがあれば最優先で返す
+        if (!subError && subData) {
+          const expiry = subData.current_period_end ? new Date(subData.current_period_end) : null
+          const isValid = expiry ? expiry > new Date() : true
+          if (isValid) {
+            if (!cancelled) {
+              setPlan(subData.plan || 'free')
+              setExpiresAt(expiry)
+              setLoading(false)
+            }
+            return  // サブスク確認済み → 以降のチェック不要
+          }
+        }
+
+        // サブスクなし → 初回ログイン30日間はProプラン体験版
         const userMeta = session.user.user_metadata || {}
         const firstLoginAt = userMeta.first_login_at
         if (!firstLoginAt) {
@@ -64,35 +88,7 @@ export function SubscriptionProvider({ children }) {
           return
         }
 
-        // Supabaseのsubscriptionsテーブルから状態取得
-        const { data, error } = await supabase
-          .from('subscriptions')
-          .select('plan, status, current_period_end, stripe_subscription_id')
-          .eq('user_id', session.user.id)
-          .eq('status', 'active')
-          .order('created_at', { ascending: false })
-          .limit(1)
-          .maybeSingle()
-
-        if (error || !data) {
-          if (!cancelled) { setPlan('free'); setLoading(false) }
-          return
-        }
-
-        // 有効期限チェック
-        const expiry = data.current_period_end ? new Date(data.current_period_end) : null
-        const isValid = expiry ? expiry > new Date() : true
-
-        if (isValid) {
-          if (!cancelled) {
-            setPlan(data.plan || 'free')
-            setExpiresAt(expiry)
-            setLoading(false)
-          }
-        } else {
-          if (!cancelled) { setPlan('free'); setLoading(false) }
-        }
-      } catch {
+        // 30日経過・サブスクなし → Free
         if (!cancelled) { setPlan('free'); setLoading(false) }
       }
     }

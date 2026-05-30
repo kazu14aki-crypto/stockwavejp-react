@@ -188,6 +188,19 @@ export default function Plan({ onNavigate }) {
           ※ 料金は消費税込み。有料プランは近日公開予定。
         </p>
       </div>
+      {/* 無料体験期間中の契約に関する注意事項 */}
+      <div style={{ background:'rgba(255,200,50,0.08)', border:'1px solid rgba(255,200,50,0.3)',
+        borderRadius:'12px', padding:'16px 20px', marginTop:'8px' }}>
+        <div style={{ fontSize:'13px', fontWeight:700, color:'#ffd619', marginBottom:'8px' }}>
+          ⚠️ 無料体験期間中のサブスク加入について
+        </div>
+        <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.8 }}>
+          無料体験期間中（初回ログインから30日間）にサブスクリプションへ加入された場合、
+          <strong>加入した時点で無料体験期間が終了し、有料契約期間が開始</strong>となります。<br/>
+          設定ページの「現在のプラン」には加入したプランが表示され、解約ボタンから解約できます。<br/>
+          解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。
+        </div>
+      </div>
     </div>
   )
 }
