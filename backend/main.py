@@ -450,6 +450,76 @@ class CheckoutReq(BaseModel):
     email:       str
     success_url: str
     cancel_url:  str
+# ── Stripe サブスクリプション解約 ──────────────────────────────────────
+@app.post("/api/stripe/cancel-subscription")
+async def cancel_subscription(req: Request):
+    body = await req.json()
+    user_id = body.get("user_id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="user_id required")
+    try:
+        # Supabaseからstripe_subscription_idを取得
+        from supabase import create_client
+        sb_url = os.environ.get("SUPABASE_URL", "")
+        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+        sb = create_client(sb_url, sb_key)
+        result = sb.table("subscriptions") \
+            .select("stripe_subscription_id") \
+            .eq("user_id", user_id) \
+            .eq("status", "active") \
+            .limit(1) \
+            .execute()
+        if not result.data:
+            raise HTTPException(status_code=404, detail="有効なサブスクリプションが見つかりません")
+        sub_id = result.data[0]["stripe_subscription_id"]
+
+        # Stripeでキャンセル（期間終了時に自動解約）
+        stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
+
+        # Supabaseのステータスを更新
+        sb.table("subscriptions") \
+            .update({"status": "canceling"}) \
+            .eq("stripe_subscription_id", sub_id) \
+            .execute()
+
+        return {"ok": True, "message": "解約予約を受け付けました。契約期間終了日まで引き続きご利用いただけます。"}
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ── Stripe Customer Portal ─────────────────────────────────────────────
+@app.post("/api/stripe/create-portal")
+async def create_portal(req: Request):
+    body = await req.json()
+    user_id = body.get("user_id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="user_id required")
+    try:
+        from supabase import create_client
+        sb_url = os.environ.get("SUPABASE_URL", "")
+        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+        sb = create_client(sb_url, sb_key)
+        result = sb.table("subscriptions") \
+            .select("stripe_customer_id") \
+            .eq("user_id", user_id) \
+            .limit(1) \
+            .execute()
+        if not result.data or not result.data[0].get("stripe_customer_id"):
+            raise HTTPException(status_code=404, detail="Stripe顧客情報が見つかりません")
+        customer_id = result.data[0]["stripe_customer_id"]
+        session = stripe.billing_portal.Session.create(
+            customer=customer_id,
+            return_url="https://stockwavejp.com",
+        )
+        return {"url": session.url}
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 
 @app.post("/api/stripe/create-checkout")
 async def create_checkout(req: CheckoutReq):
