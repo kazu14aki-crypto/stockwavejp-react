@@ -90,6 +90,8 @@ export function SubscriptionProvider({ children }) {
 
         // 30日経過・サブスクなし → Free
         if (!cancelled) { setPlan('free'); setLoading(false) }
+      } catch {
+        if (!cancelled) { setPlan('free'); setLoading(false) }
       }
     }
 
