@@ -153,7 +153,7 @@ export function useCustomThemes() {
     await saveTheme({ name: themeName.trim(), stocks: [stock] })
   }, [saveTheme])
 
-  return { themes, syncing, saveTheme, deleteTheme, addStockToTheme, createThemeWithStock }
+  return { themes, syncing, saveTheme, deleteTheme, addStockToTheme, createThemeWithStock, maxThemes, maxStocks }
 }
 
 // ── URLエクスポート/インポート ───────────────────

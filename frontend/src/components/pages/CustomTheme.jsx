@@ -488,7 +488,7 @@ export default function CustomTheme() {
         marginBottom:'16px', display:'flex', alignItems:'center', gap:'6px' }}>
         <span style={{ fontWeight:600 }}>📌 作成数: {themes.length} / 3</span>
         {themes.length >= 3 && <span>（上限に達しました。既存テーマを削除してから追加してください）</span>}
-        {themes.length < 3 && <span>（最大3テーマまで作成できます）</span>}
+        {themes.length < maxThemes && <span>（あと{maxThemes - themes.length}テーマ作成できます）</span>}
       </div>
       {/* ログイン誘導バナー */}
       {!isLoggedIn && (

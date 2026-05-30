@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useSubscription } from '../../hooks/useSubscription.jsx'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
 

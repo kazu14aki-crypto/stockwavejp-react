@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { useSubscription } from '../hooks/useSubscription.jsx'
 
 export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, isOpen, isMobile, onOpen, onClose, contactUrl }) {
   const touchStartX = useRef(null)
@@ -51,8 +52,17 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
     WebkitOverflowScrolling: 'touch',
   }
 
+  const { canAccess } = useSubscription()
+
+  // ロックが必要なページ定義
+  const LOCKED_PAGES = {
+    '市場別詳細':     !canAccess('market_detail'),
+    '機関投資家保有': !canAccess('institutional'),
+  }
+
   const NavBtn = ({ icon, label }) => {
     const isActive = currentPage === label
+    const isLocked = LOCKED_PAGES[label] ?? false
     return (
       <button onClick={() => onPageChange(label)} style={{
         // スマホ: タップしやすいよう縦幅を大きく（最低44px = Apple HIG推奨）
@@ -75,6 +85,11 @@ export default function Sidebar({ pages, pagesOther, currentPage, onPageChange, 
       >
         <span style={{ fontSize:'13px', opacity:0.75, flexShrink:0, width:'18px', textAlign:'center' }}>{icon}</span>
         <span style={{ whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis', flex:1 }}>{label}</span>
+        {isLocked && (
+          <span style={{ fontSize:'10px', color:'rgba(255,200,50,0.8)', flexShrink:0, marginLeft:'2px' }}>
+            🔒
+          </span>
+        )}
       </button>
     )
   }
