@@ -552,103 +552,131 @@ async def stripe_webhook(request: Request):
     sig       = request.headers.get("stripe-signature", "")
     wh_secret = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
 
+    # 1. 署名検証
     try:
         event = _stripe.Webhook.construct_event(payload, sig, wh_secret)
-    except _stripe.error.SignatureVerificationError as e:
-        print(f"[WEBHOOK] Invalid signature: {e}")
-        raise HTTPException(400, "Invalid webhook signature")
     except Exception as e:
-        print(f"[WEBHOOK] Parse error: {e}")
-        raise HTTPException(400, "Invalid webhook payload")
+        print(f"[WEBHOOK] Signature error: {e}")
+        raise HTTPException(400, "Invalid signature")
 
     et = event["type"]
-    print(f"[WEBHOOK] Received: {et}")
+    print(f"[WEBHOOK] type={et}")
 
-    import httpx as _httpx
+    # 2. Supabase 環境変数確認
     sb_url = os.environ.get("SUPABASE_URL", "")
     sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-
     if not sb_url or not sb_key:
-        print(f"[WEBHOOK ERROR] Missing env vars: URL={bool(sb_url)} KEY={bool(sb_key)}")
-        raise HTTPException(500, "Supabase configuration missing")
+        print(f"[WEBHOOK ERROR] Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY")
+        raise HTTPException(500, "Supabase env missing")
 
-    _hdrs = {
+    import httpx as _httpx
+    import json as _json
+
+    base_hdrs = {
         "apikey":        sb_key,
         "Authorization": f"Bearer {sb_key}",
         "Content-Type":  "application/json",
+        "Prefer":        "return=minimal",
     }
 
-    def sb_upsert(data: dict):
-        r = _httpx.post(
-            f"{sb_url}/rest/v1/subscriptions",
-            headers={**_hdrs, "Prefer": "resolution=merge-duplicates,return=minimal"},
-            json=data, timeout=10,
-        )
-        print(f"[WEBHOOK] upsert → {r.status_code}: {r.text[:300]}")
+    def safe_get(obj, key, default=None):
+        """StripeObject/dict両対応の安全なget"""
+        try:
+            v = obj[key]
+            return v if v is not None else default
+        except (KeyError, TypeError, IndexError):
+            return default
 
-    def sb_update(sub_id: str, data: dict):
-        r = _httpx.patch(
-            f"{sb_url}/rest/v1/subscriptions?stripe_subscription_id=eq.{sub_id}",
-            headers={**_hdrs, "Prefer": "return=minimal"},
-            json=data, timeout=10,
-        )
-        print(f"[WEBHOOK] update → {r.status_code}: {r.text[:300]}")
+    def to_isoformat(ts):
+        """Unixタイムスタンプ → ISO8601文字列"""
+        try:
+            return _dt.datetime.fromtimestamp(int(ts), tz=_dt.timezone.utc).isoformat()
+        except Exception:
+            return None
+
+    def sb_upsert(data):
+        try:
+            r = _httpx.post(
+                f"{sb_url}/rest/v1/subscriptions",
+                headers={**base_hdrs, "Prefer": "resolution=merge-duplicates,return=minimal"},
+                content=_json.dumps(data).encode(),
+                timeout=15,
+            )
+            print(f"[WEBHOOK] upsert {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            print(f"[WEBHOOK] upsert error: {e}")
+            raise
+
+    def sb_update_by_sub(sub_stripe_id, data):
+        try:
+            r = _httpx.patch(
+                f"{sb_url}/rest/v1/subscriptions?stripe_subscription_id=eq.{sub_stripe_id}",
+                headers=base_hdrs,
+                content=_json.dumps(data).encode(),
+                timeout=15,
+            )
+            print(f"[WEBHOOK] update {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            print(f"[WEBHOOK] update error: {e}")
+            raise
 
     try:
         if et == "checkout.session.completed":
-            s           = event["data"]["object"]
-            uid         = s.get("client_reference_id")
-            sub_id      = s.get("subscription")
-            customer_id = s.get("customer")
-            print(f"[WEBHOOK] checkout uid={uid} sub_id={sub_id}")
+            obj    = event["data"]["object"]
+            uid    = safe_get(obj, "client_reference_id")
+            sub_id = safe_get(obj, "subscription")
+            cust   = safe_get(obj, "customer")
+            print(f"[WEBHOOK] checkout uid={uid} sub={sub_id} cust={cust}")
             if uid and sub_id:
                 sub  = _stripe.Subscription.retrieve(sub_id)
-                plan = sub["metadata"].get("plan", "standard")
-                exp  = _dt.datetime.fromtimestamp(
-                    sub["current_period_end"], tz=_dt.timezone.utc
-                ).isoformat()
+                # メタデータ取得（StripeObject → dict変換は使わず直接アクセス）
+                try:
+                    plan = sub.metadata["plan"]
+                except Exception:
+                    plan = "standard"
+                exp = to_isoformat(sub["current_period_end"])
                 sb_upsert({
                     "user_id":                uid,
                     "plan":                   plan,
                     "status":                 "active",
                     "stripe_subscription_id": sub_id,
-                    "stripe_customer_id":     customer_id,
+                    "stripe_customer_id":     cust,
                     "current_period_end":     exp,
                 })
-            else:
-                print(f"[WEBHOOK WARNING] uid={uid} sub_id={sub_id}")
 
         elif et == "invoice.payment_succeeded":
             obj    = event["data"]["object"]
-            sub_id = obj.get("subscription")
+            sub_id = safe_get(obj, "subscription")
+            print(f"[WEBHOOK] invoice.payment_succeeded sub={sub_id}")
             if sub_id:
                 sub = _stripe.Subscription.retrieve(sub_id)
-                exp = _dt.datetime.fromtimestamp(
-                    sub["current_period_end"], tz=_dt.timezone.utc
-                ).isoformat()
-                sb_update(sub_id, {"status": "active", "current_period_end": exp})
+                exp = to_isoformat(sub["current_period_end"])
+                sb_update_by_sub(sub_id, {
+                    "status":             "active",
+                    "current_period_end": exp,
+                })
 
         elif et == "customer.subscription.updated":
-            sub    = event["data"]["object"]
-            sub_id = sub["id"]
-            status = "canceling" if sub.get("cancel_at_period_end") else sub.get("status", "active")
-            sb_update(sub_id, {"status": status})
+            obj    = event["data"]["object"]
+            sub_id = safe_get(obj, "id")
+            cancel = safe_get(obj, "cancel_at_period_end", False)
+            status = "canceling" if cancel else safe_get(obj, "status", "active")
+            print(f"[WEBHOOK] sub.updated sub={sub_id} status={status}")
+            if sub_id:
+                sb_update_by_sub(sub_id, {"status": status})
 
         elif et == "customer.subscription.deleted":
-            sub_id = event["data"]["object"]["id"]
-            sb_update(sub_id, {"status": "canceled"})
+            obj    = event["data"]["object"]
+            sub_id = safe_get(obj, "id")
+            print(f"[WEBHOOK] sub.deleted sub={sub_id}")
+            if sub_id:
+                sb_update_by_sub(sub_id, {"status": "canceled"})
 
         else:
-            print(f"[WEBHOOK] Unhandled: {et}")
+            print(f"[WEBHOOK] unhandled: {et}")
 
-    except _httpx.RequestError as e:
-        print(f"[WEBHOOK ERROR] HTTP: {e}")
-        raise HTTPException(500, f"Supabase request failed: {e}")
-    except _stripe.error.StripeError as e:
-        print(f"[WEBHOOK ERROR] Stripe: {e}")
-        raise HTTPException(500, f"Stripe error: {e}")
     except Exception as e:
-        print(f"[WEBHOOK ERROR] {et}: {e}")
+        print(f"[WEBHOOK ERROR] {et}: {type(e).__name__}: {e}")
         raise HTTPException(500, f"Webhook error: {e}")
 
     return {"ok": True}
