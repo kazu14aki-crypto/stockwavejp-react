@@ -212,7 +212,6 @@ export default function InstitutionalHoldings() {
   return (
     <div style={{ padding:'24px 20px 60px', maxWidth:'900px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>🏦 機関投資家 大量保有情報</h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', lineHeight:1.7 }}>金融庁EDINETの大量保有報告書データ。5%超保有の機関投資家は5日以内に提出義務があります。</p>
       {updatedAt && <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>📅 データ更新日: {updatedAt}　全{allData.length}件</div>}
 
       <div style={{ display:'flex', gap:'4px', marginBottom:'18px', borderBottom:'1px solid var(--border)', marginTop:'16px', overflowX:'auto' }}>

@@ -382,9 +382,6 @@ export default function WeeklyReport({ onNavigate }) {
   return (
     <div style={{ padding:'20px 24px 80px', maxWidth:'960px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'20px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>📰 週次レポート</h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'20px' }}>
-        毎週末更新予定。各カードをクリックしてレポート全文を確認できます。
-      </p>
 
       {error && index.length === 0 ? (
         <div style={{ textAlign:'center', padding:'40px' }}>

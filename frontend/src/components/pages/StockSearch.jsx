@@ -166,9 +166,6 @@ export default function StockSearch({ onNavigate }) {
       ) : (
         <>
           <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>🔎 銘柄検索</h1>
-          <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'18px', lineHeight:1.7 }}>
-            銘柄名または証券コードで検索。株価チャート・テーマ・コラムへのリンクを表示します。
-          </p>
         </>
       )}
 
@@ -246,6 +243,24 @@ export default function StockSearch({ onNavigate }) {
                   </div>
                   <span style={{ color:'var(--text3)', fontSize:'16px' }}>›</span>
                 </div>
+                {/* コラムボタン（一覧） */}
+                {(() => {
+                  const cids = [...new Set((s.themes||[]).map(t=>THEME_ARTICLE_MAP[t]).filter(Boolean))]
+                  return cids.length > 0 ? (
+                    <div style={{ display:'flex', gap:'6px', flexWrap:'wrap', marginTop:'6px', paddingLeft:'4px' }}>
+                      {cids.map(cid => (
+                        <button key={cid}
+                          onClick={e => { e.stopPropagation(); onNavigate?.('コラム・解説', cid) }}
+                          style={{ fontSize:'10px', padding:'2px 8px',
+                            background:'rgba(170,119,255,0.08)', color:'#aa77ff',
+                            border:'1px solid rgba(170,119,255,0.2)', borderRadius:'10px',
+                            cursor:'pointer', fontFamily:'var(--font)' }}>
+                          📖 {COL_LABELS[cid] || 'コラムを読む'}
+                        </button>
+                      ))}
+                    </div>
+                  ) : null
+                })()}
               ))}
             </div>
           )}

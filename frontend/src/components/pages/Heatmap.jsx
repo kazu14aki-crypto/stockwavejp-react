@@ -702,9 +702,6 @@ export default function Heatmap({ onNavigate }) {
       <h1 style={{ fontSize:'22px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>
         テーマヒートマップ
       </h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'16px' }}>
-        67テーマの騰落率をテーマヒートマップと騰落モメンタムで多角的に分析できます。
-      </p>
 
       {/* ⑥ タブ削除・散布図を直接表示 */}
       <BubbleScatter data={momentumData} mPeriod={mPeriod} setMPeriod={setMPeriod} onNavigate={onNavigate} />

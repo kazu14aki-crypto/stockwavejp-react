@@ -138,7 +138,7 @@ export function SubscriptionProvider({ children }) {
       return FREE_PERIODS.includes(period)
     },
     // ② カスタムテーマ上限
-    maxThemes: { free:1, standard:5, pro:30, pro_trial:30, dev:999 }[plan] ?? 1,
+    maxThemes: { free:1, standard:5, pro:10, pro_trial:10, dev:999 }[plan] ?? 1,
     maxStocks: { free:10, standard:20, pro:50, pro_trial:50, dev:999 }[plan] ?? 10,
     planLabel: {
       free:'Free', standard:'スタンダード', pro:'プロ', pro_trial:'プロ体験版（無料）', dev:'開発者'

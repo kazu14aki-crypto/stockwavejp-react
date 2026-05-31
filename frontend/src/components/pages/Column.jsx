@@ -473,10 +473,6 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'#e8f0ff', marginBottom:'4px' }}>
         コラム・解説
       </h1>
-      <p style={{ fontSize:'13px', color:'var(--text3)', marginBottom:'24px' }}>
-        テーマ株投資の基礎から各テーマの詳細解説まで、投資判断に役立つ情報を提供します。
-      </p>
-
       {/* キーワード・テーマ検索 */}
       <div style={{ position:'relative', marginBottom:'12px', maxWidth:'400px' }}>
         <input

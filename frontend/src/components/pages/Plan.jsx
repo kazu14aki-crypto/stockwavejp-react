@@ -56,7 +56,7 @@ export default function Plan({ onNavigate }) {
       yearly:  null,  // 年額は一時停止中（半年後に復活予定）
       features: [
         'スタンダードの全機能',
-        'カスタムテーマ 30テーマ・50銘柄/テーマ',
+        'カスタムテーマ 10テーマ・50銘柄/テーマ',
         '機関投資家大量保有情報（EDINET連携）',
         '優先サポート',
       ],
@@ -72,7 +72,7 @@ export default function Plan({ onNavigate }) {
     ['コラム・解説記事（全本）',                  '✅','✅','✅'],
     ['カスタムテーマ 1テーマ・10銘柄',            '✅','❌','❌'],
     ['カスタムテーマ 5テーマ・20銘柄/テーマ',    '❌','✅','❌'],
-    ['カスタムテーマ 30テーマ・50銘柄/テーマ',   '❌','❌','✅'],
+    ['カスタムテーマ 10テーマ・50銘柄/テーマ',   '❌','❌','✅'],
     ['週次レポート（1ヶ月以上前のみ）',           '✅','✅','✅'],
     ['週次レポート（全アーカイブ）',              '❌','✅','✅'],
     ['市場別詳細ページ',                          '❌','✅','✅'],
@@ -142,7 +142,7 @@ export default function Plan({ onNavigate }) {
             )}
 
             {/* 機能リスト */}
-            <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'6px' }}>
+            <ul style={{ listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'6px', flexGrow:1, marginBottom:'14px' }}>
               {p.features.map((f, i) => (
                 <li key={i} style={{ fontSize:'12px', color:'var(--text2)', display:'flex', gap:'6px', lineHeight:1.5 }}>
                   <span style={{ color:p.color, flexShrink:0 }}>✓</span>{f}
@@ -151,7 +151,7 @@ export default function Plan({ onNavigate }) {
             </ul>
             {/* 申し込みボタン */}
             {p.key !== 'free' && (
-              <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'14px' }}>
+              <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'auto' }}>
                 <UpgradePlanButton priceKey={`${p.key}_monthly`} label={p.name} color={p.color} disabled={false}/>
               </div>
             )}
