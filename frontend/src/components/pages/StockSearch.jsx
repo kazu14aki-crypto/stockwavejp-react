@@ -209,8 +209,8 @@ export default function StockSearch({ onNavigate }) {
             </div>
           ) : (
             <div style={{ display:'flex', flexDirection:'column', gap:'8px' }}>
-              {results.map(s => (
-                <div key={s.ticker} onClick={() => setSelected(s)}
+              {results.map(s => <React.Fragment key={s.ticker}>
+                <div onClick={() => setSelected(s)}
                   style={{ background:'var(--bg2)', border:'1px solid var(--border)',
                     borderRadius:'10px', padding:'12px 16px', cursor:'pointer',
                     display:'flex', alignItems:'center', gap:'12px', flexWrap:'wrap' }}
@@ -261,7 +261,7 @@ export default function StockSearch({ onNavigate }) {
                     </div>
                   ) : null
                 })()}
-              ))}
+              </React.Fragment>)}
             </div>
           )}
         </>

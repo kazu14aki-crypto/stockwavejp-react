@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import StockBubbleChart from '../StockBubbleChart'
 import { useCustomThemes, themeToUrl, themeFromUrl } from '../../hooks/useCustomThemes'
 import { useAuth } from '../../hooks/useAuth.jsx'
+import { useSubscription } from '../../hooks/useSubscription.jsx'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -519,17 +520,42 @@ export default function CustomTheme() {
         </div>
       ) : (
         <div style={{ display:'flex', flexDirection:'column', gap:'8px' }}>
-          {themes.map((t, i) => (
-            <div key={i} style={{ background:'var(--bg2)', border:'1px solid var(--border)',
+
+          {themes.length > maxThemes && (
+            <div style={{ padding:'12px 16px', background:'rgba(255,150,50,0.08)',
+              border:'1px solid rgba(255,150,50,0.3)', borderRadius:'10px', fontSize:'12px',
+              color:'#ffaa50', marginBottom:'4px', lineHeight:1.7 }}>
+              ⚠️ 現在のプラン（{plan}）では <strong>{maxThemes}テーマ</strong> まで利用可能です。<br/>
+              <span style={{ color:'var(--text3)' }}>
+                上限を超えたテーマは読み取り専用になっています。プランをアップグレードするか、不要なテーマを削除してください。<br/>
+                ※ プランを戻すと、ロックされたテーマはいつでも復活します。
+              </span>
+            </div>
+          )}
+          {themes.map((t, i) => {
+            const isLocked = i >= maxThemes  // 現在のプランの上限を超えたテーマ
+            return (
+            <div key={i} style={{ background:'var(--bg2)',
+              border: isLocked ? '1px solid rgba(255,100,100,0.25)' : '1px solid var(--border)',
               borderRadius:'10px', padding:'14px 18px',
               display:'flex', alignItems:'center', gap:'12px',
               animation:`fadeUp 0.3s ease ${i*0.05}s both`,
-              cursor:'pointer', transition:'border-color 0.15s' }}
-              onClick={() => { setActiveIndex(i); setMode('detail') }}
-              onMouseEnter={e => e.currentTarget.style.borderColor='rgba(74,158,255,0.3)'}
-              onMouseLeave={e => e.currentTarget.style.borderColor='var(--border)'}>
-              <div style={{ flex:1, minWidth:0 }}>
-                <div style={{ fontSize:'15px', fontWeight:700, color:'var(--text)', marginBottom:'6px' }}>{t.name}</div>
+              cursor: isLocked ? 'default' : 'pointer',
+              opacity: isLocked ? 0.7 : 1,
+              transition:'border-color 0.15s' }}
+              onClick={() => { if (!isLocked) { setActiveIndex(i); setMode('detail') } }}
+              onMouseEnter={e => { if (!isLocked) e.currentTarget.style.borderColor='rgba(74,158,255,0.3)' }}
+              onMouseLeave={e => { if (!isLocked) e.currentTarget.style.borderColor='var(--border)' }}>
+              {isLocked && (
+                <div style={{ position:'absolute', top:'8px', right:'8px',
+                  fontSize:'10px', color:'#ff6464', fontWeight:700,
+                  background:'rgba(255,100,100,0.1)', padding:'2px 8px',
+                  borderRadius:'10px', border:'1px solid rgba(255,100,100,0.3)' }}>
+                  🔒 プランダウングレード中
+                </div>
+              )}
+              <div style={{ flex:1, minWidth:0, position:'relative' }}>
+                <div style={{ fontSize:'15px', fontWeight:700, color: isLocked ? 'var(--text3)' : 'var(--text)', marginBottom:'6px' }}>{t.name}</div>
                 <div style={{ display:'flex', flexWrap:'wrap', gap:'4px' }}>
                 <div style={{ fontSize:'11px', color:'var(--text3)', marginTop:'4px' }}>
                   {(t.stocks||[]).length}銘柄
@@ -540,7 +566,7 @@ export default function CustomTheme() {
               <button onClick={e => { e.stopPropagation(); startEdit(i) }} style={btnS}>編集</button>
               <button onClick={e => { e.stopPropagation(); window.confirm('削除しますか？') && deleteTheme(i) }} style={btnD}>削除</button>
             </div>
-          ))}
+          )})}
         </div>
       )}
     </div>
