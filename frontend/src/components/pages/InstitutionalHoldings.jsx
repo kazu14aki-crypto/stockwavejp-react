@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 
-const DATA_PATH = '/data/edinet_holdings.json'
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+const DATA_PATH = API + '/api/edinet/holdings'
 
 function RatioBar({ ratio }) {
   const r = parseFloat(ratio) || 0
@@ -158,12 +159,14 @@ export default function InstitutionalHoldings() {
   }, [])
 
   useEffect(() => {
-    fetch(`${DATA_PATH}?t=${Date.now()}`)
+    setLoading(true)
+    setAllData([])
+    fetch(`${DATA_PATH}?query=${encodeURIComponent(searchQ)}&t=${Date.now()}`)
       .then(r => { if(!r.ok) throw new Error(); return r.json() })
       .then(d => { setAllData(d.results||[]); setUpdatedAt(d.updated_at||'') })
-      .catch(() => {})
+      .catch(e => console.error('[InstitutionalHoldings] fetch error:', e))
       .finally(() => setLoading(false))
-  }, [])
+  }, [searchQ])
 
   const issuerGroups = useMemo(() => {
     const ql = searchQ.trim().toLowerCase()

@@ -6100,7 +6100,7 @@ H2: まとめ（詳細版）
   },
   {
     id: 'murata-seisakusho-analysis',
-    category: '個別銘柄解説',
+    category: '個別銘柄',
     tag: '電子部品',
     title: '村田製作所（6981）徹底分析：時価総額14兆円を突破した電子部品の巨人の実力と今後',
     date: '2026/05/29',

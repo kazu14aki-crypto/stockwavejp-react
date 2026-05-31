@@ -634,7 +634,7 @@ async def stripe_webhook(request: Request):
                     plan = sub.metadata["plan"]
                 except Exception:
                     plan = "standard"
-                exp = to_isoformat(sub["current_period_end"])
+                exp = to_isoformat(safe_get(sub, "current_period_end"))
                 sb_upsert({
                     "user_id":                uid,
                     "plan":                   plan,
@@ -650,7 +650,7 @@ async def stripe_webhook(request: Request):
             print(f"[WEBHOOK] invoice.payment_succeeded sub={sub_id}")
             if sub_id:
                 sub = _stripe.Subscription.retrieve(sub_id)
-                exp = to_isoformat(sub["current_period_end"])
+                exp = to_isoformat(safe_get(sub, "current_period_end"))
                 sb_update_by_sub(sub_id, {
                     "status":             "active",
                     "current_period_end": exp,
@@ -680,4 +680,80 @@ async def stripe_webhook(request: Request):
         raise HTTPException(500, f"Webhook error: {e}")
 
     return {"ok": True}
+
+
+# ── EDINET 大量保有報告書データ ───────────────────────────────────
+@app.get("/api/edinet/holdings")
+async def get_edinet_holdings(query: str = "", limit: int = 200):
+    """
+    EDINET OPEN APIから大量保有報告書データを取得。
+    クエリパラメータでissuer名またはfiler名を絞り込み。
+    """
+    import httpx as _httpx_ed
+    import datetime as _dt_ed
+
+    EDINET_API = "https://disclosure.edinet-fsa.go.jp/api/v2/documents.json"
+
+    try:
+        # 過去60日間の大量保有報告書を取得
+        today = _dt_ed.date.today()
+        results = []
+
+        # 最新30日分を取得
+        for delta in range(0, 30):
+            d = today - _dt_ed.timedelta(days=delta)
+            date_str = d.strftime("%Y-%m-%d")
+            try:
+                r = _httpx_ed.get(
+                    EDINET_API,
+                    params={
+                        "date": date_str,
+                        "type": 2,  # 書類一覧（大量保有報告書含む）
+                    },
+                    timeout=10,
+                )
+                if not r.is_success:
+                    continue
+                data = r.json()
+                docs = data.get("results", [])
+                for doc in docs:
+                    # 大量保有報告書 = docTypeCode "43" (大量保有報告書)
+                    # または "44" (変更報告書)
+                    if doc.get("docTypeCode") not in ("43", "44"):
+                        continue
+                    issuer = doc.get("issuerName", "")
+                    filer  = doc.get("filerName", "")
+                    sec    = doc.get("secCode", "") or ""
+                    # クエリフィルタ
+                    if query:
+                        ql = query.lower()
+                        if ql not in issuer.lower() and ql not in filer.lower() and ql not in sec:
+                            continue
+                    results.append({
+                        "docID":         doc.get("docID", ""),
+                        "docTypeCode":   doc.get("docTypeCode", ""),
+                        "issuerName":    issuer,
+                        "secCode":       sec.rstrip("0") if sec else "",
+                        "filerName":     filer,
+                        "holdingRatio":  doc.get("submitDateTime", "")[:10],
+                        "submitDate":    doc.get("submitDateTime", "")[:10],
+                        "docDescription":doc.get("docDescription", ""),
+                        "pdfURL":        f"https://disclosure.edinet-fsa.go.jp/api/v2/documents/{doc.get('docID','')}?type=2",
+                    })
+                    if len(results) >= limit:
+                        break
+                if len(results) >= limit:
+                    break
+            except Exception as e:
+                print(f"[EDINET] Error for {date_str}: {e}")
+                continue
+
+        return {
+            "updated_at": today.isoformat(),
+            "count": len(results),
+            "results": results,
+        }
+    except Exception as e:
+        print(f"[EDINET ERROR] {e}")
+        raise HTTPException(500, f"EDINET fetch error: {e}")
 
