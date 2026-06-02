@@ -90,7 +90,7 @@ export default function Plan({ onNavigate }) {
           border:'1px solid rgba(170,119,255,0.3)', borderRadius:'10px',
           fontSize:'13px', color:'#aa77ff', marginBottom:'16px', lineHeight:1.7 }}>
           🎉 <strong>プロプラン体験版（無料）</strong>をご利用中です。<br/>
-          <span style={{ fontSize:'11px', color:'var(--text2)' }}>初回ログインから30日間、全機能を無料でお試しいただけます。期間終了後は自動的にFreeプランになります。</span>
+          <span style={{ fontSize:'11px', color:'var(--text2)' }}>初回ログインから14日間、全機能を無料でお試しいただけます。期間終了後は自動的にFreeプランになります。</span>
         </div>
       )}
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px', lineHeight:1.7 }}>
@@ -195,7 +195,7 @@ export default function Plan({ onNavigate }) {
           ⚠️ 無料体験期間中のサブスク加入について
         </div>
         <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.8 }}>
-          無料体験期間中（初回ログインから30日間）にサブスクリプションへ加入された場合、
+          無料体験期間中（初回ログインから14日間）にサブスクリプションへ加入された場合、
           <strong>加入した時点で無料体験期間が終了し、有料契約期間が開始</strong>となります。<br/>
           設定ページの「現在のプラン」には加入したプランが表示され、解約ボタンから解約できます。<br/>
           解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。
