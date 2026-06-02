@@ -15,7 +15,7 @@ const THEME_ARTICLE_MAP = {
   '観光・ホテル・レジャー':'inbound-theme','銀行':'banking-finance-theme',
   'SaaS':'saas-dx-theme','DX':'saas-dx-theme',
   'EV・電気自動車':'ev-green-theme','光通信':'optical-communication',
-  'MLCC・電子部品':'mlcc-murata-analysis','フィジカルAI':'physical-ai-edge-ai',
+  'MLCC・電子部品':'mlcc-murata-analysis',
 }
 
 // ④ コラムIDの表示ラベル
