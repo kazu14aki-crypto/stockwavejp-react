@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: frontend
-        run: npm install
+        run: npm ci
 
       - name: Build (includes postbuild SSG)
         working-directory: frontend
@@ -38,9 +38,12 @@ jobs:
         working-directory: frontend
         run: |
           echo "=== 生成されたファイル ==="
-          ls dist/column/ | head -10
-          echo "..."
-          echo "Total column HTMLs: $(ls dist/column/ | wc -l)"
+          if [ -d dist/column ]; then
+            ls dist/column/ | head -10
+            echo "Total column HTMLs: $(ls dist/column/ | wc -l)"
+          else
+            echo "dist/column/ not found (columnData.js not available in this run)"
+          fi
           echo "sitemap.xml: $(test -f dist/sitemap.xml && echo 'OK' || echo 'MISSING')"
           echo "robots.txt: $(test -f dist/robots.txt && echo 'OK' || echo 'MISSING')"
 

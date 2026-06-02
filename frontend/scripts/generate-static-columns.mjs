@@ -21,9 +21,12 @@ const PUBLIC_DIR = join(ROOT_DIR, 'public')
 const DIST_DIR  = join(ROOT_DIR, 'dist')
 const BASE_URL  = 'https://stockwavejp.com'
 
-const rawData = readFileSync(
-  join(ROOT_DIR, 'src', 'components', 'pages', 'columnData.js'), 'utf8'
-)
+const columnDataPath = join(ROOT_DIR, 'src', 'components', 'pages', 'columnData.js')
+if (!existsSync(columnDataPath)) {
+  console.log('[generate-static-columns] columnData.js not found, skipping.')
+  process.exit(0)
+}
+const rawData = readFileSync(columnDataPath, 'utf8')
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')
