@@ -120,7 +120,7 @@ export function SubscriptionProvider({ children }) {
     canAccess: (feature) => {
       const rules = {
         'weekly_archive':      ['standard', 'pro', 'pro_trial', 'dev'],
-        'institutional':       ['pro', 'pro_trial', 'dev'],
+        'institutional':       ['dev'],  // Developer only — Coming Soon
         'custom_theme_ai':     ['pro', 'pro_trial', 'dev'],
         'multiple_alerts':     ['pro', 'pro_trial', 'dev'],
         'portfolio_analysis':  ['pro', 'pro_trial', 'dev'],

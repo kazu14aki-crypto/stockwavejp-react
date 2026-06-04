@@ -57,7 +57,7 @@ export default function Plan({ onNavigate }) {
       features: [
         'スタンダードの全機能',
         'カスタムテーマ 10テーマ・50銘柄/テーマ',
-        '機関投資家大量保有情報（EDINET連携）',
+        '🚧 機関投資家大量保有情報（準備中）',
         '優先サポート',
       ],
     },
