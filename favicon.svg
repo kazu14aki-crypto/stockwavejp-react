@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0d1117"/>
+  <!-- 放射線 -->
+  <line x1="32" y1="4"  x2="32" y2="12" stroke="#e63030" stroke-width="3" stroke-linecap="round"/>
+  <line x1="48" y1="9"  x2="44" y2="16" stroke="#e63030" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="16" y1="9"  x2="20" y2="16" stroke="#e63030" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="57" y1="24" x2="51" y2="26" stroke="#e63030" stroke-width="2" stroke-linecap="round"/>
+  <line x1="7"  y1="24" x2="13" y2="26" stroke="#e63030" stroke-width="2" stroke-linecap="round"/>
+  <!-- 半円アーク -->
+  <path d="M13,36 A19,19 0 0,1 51,36" fill="none" stroke="#e63030" stroke-width="3"/>
+  <!-- 中心円 -->
+  <circle cx="32" cy="36" r="6" fill="#e63030"/>
+  <!-- 水平線 -->
+  <line x1="4"  y1="36" x2="13" y2="36" stroke="#e63030" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="51" y1="36" x2="60" y2="36" stroke="#e63030" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 波線 -->
+  <path d="M4,50 Q10,42 17,50 Q24,58 31,50 Q38,42 45,50 Q52,58 60,50"
+    stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
