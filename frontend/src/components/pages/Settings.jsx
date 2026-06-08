@@ -87,7 +87,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'pro_trial' && (
                 <span style={{ fontSize:'11px', padding:'3px 10px', borderRadius:'20px',
                   background:'rgba(170,119,255,0.15)', color:'#aa77ff', border:'1px solid rgba(170,119,255,0.3)' }}>
-                  初回14日無料体験中 — 終了日：{expiresAt ? expiresAt.toLocaleDateString('ja-JP') : '確認中'}
+                  初回14日無料体験中{expiresAt ? '　終了日：' + expiresAt.toLocaleDateString('ja-JP') : ''}
                 </span>
               )}
             </div>
