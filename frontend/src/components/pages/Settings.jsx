@@ -3,7 +3,7 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 import { useAuth }         from '../../hooks/useAuth.jsx'
 
 export default function Settings({ viewMode, onViewModeChange, colorTheme, onColorThemeChange, isMobile, onNavigate }) {
-  const { plan, planLabel, isPro, isStandard } = useSubscription()
+  const { plan, planLabel, isPro, isStandard, expiresAt } = useSubscription()
   const { isLoggedIn, user } = useAuth()
   const [cancelling,  setCancelling]  = useState(false)
   const [cancelDone,  setCancelDone]  = useState(false)
@@ -87,7 +87,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'pro_trial' && (
                 <span style={{ fontSize:'11px', padding:'3px 10px', borderRadius:'20px',
                   background:'rgba(170,119,255,0.15)', color:'#aa77ff', border:'1px solid rgba(170,119,255,0.3)' }}>
-                  初回14日無料体験中
+                  初回14日無料体験中 — 終了日：{expiresAt ? expiresAt.toLocaleDateString('ja-JP') : '確認中'}
                 </span>
               )}
             </div>
@@ -108,7 +108,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
             )}
 
             {/* 解約ボタン */}
-            {(plan === 'standard' || plan === 'pro') && !cancelDone && (
+            {(plan === 'standard' || plan === 'pro' || plan === 'pro_trial') && !cancelDone && (
               <div style={{ marginTop:'8px', padding:'14px', background:'rgba(255,100,100,0.08)',
                 border:'1px solid rgba(255,100,100,0.25)', borderRadius:'10px' }}>
                 <div style={{ fontSize:'13px', fontWeight:600, color:'#ff6464', marginBottom:'8px' }}>
