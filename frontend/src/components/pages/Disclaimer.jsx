@@ -1,53 +1,44 @@
-const SECTIONS = [
-  {
-    title: '情報の目的と責任',
-    body: '本ツール（StockWaveJP）は、株式市場の動向分析のための参考情報の提供を目的としており、投資勧誘や特定の銘柄の推奨、投資助言を行うものではありません。投資に関する最終決定は、お客様ご自身の判断と責任において行われるようお願いいたします。',
-  },
-  {
-    title: 'データの独自集計について',
-    body: '当サイトで表示される各数値（「国内主要225銘柄」「大型株70社」等の平均騰落率および集計データ）は、対象となる個別銘柄の終値を元に、当サイトが独自に集計・算出したものです。日本経済新聞社が公表する「日経平均株価」や、株式会社JPX総研が公表する「TOPIX」等の公式な指数値ではありません。',
-  },
-  {
-    title: 'データの正確性とソース',
-    body: '当サイトの情報は信頼できると考えられるデータプロバイダーより取得しておりますが、データの正確性、完全性、最新性を保証するものではありません。提供データには市場に応じた遅延（15分〜20分程度、または日次更新）が含まれます。実際の投資に際しては、必ず証券会社等の公式データをご確認ください。',
-  },
-  {
-    title: '損害への責任',
-    body: '本ツールの利用により生じたいかなる損害（直接・間接を問わず）についても、運営者は一切の責任を負いません。本サービスは「現状のまま」提供されており、保守、中断、不具合等による損害についても同様とします。',
-  },
-  {
-    title: '著作権について',
-    body: '本ツールのコード・デザイン・データ構成は著作権により保護されています。無断転載・複製・商用利用を禁止します。',
-  },
-]
-
 export default function Disclaimer() {
   return (
-    <div style={{ padding:'28px 32px 48px' }}>
-      <h1 style={{ fontSize:'24px', fontWeight:700, letterSpacing:'-0.02em', color:'var(--text)', marginBottom:'4px' }}>
-        免責事項
-      </h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'28px' }}>
-        StockWaveJP 免責事項
-      </p>
-
-      {SECTIONS.map((s,i) => (
-        <div key={i} style={{
-          background:'var(--bg2)', border:'1px solid var(--border)',
-          borderRadius:'var(--radius)', padding:'20px 24px', marginBottom:'12px',
-          animation:`fadeUp 0.3s ease ${i*0.06}s both`,
-        }}>
-          <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'10px',
-            borderLeft:'3px solid var(--accent)', paddingLeft:'10px' }}>
+    <div style={{ padding:'28px 32px 60px', maxWidth:'760px', margin:'0 auto' }}>
+      <h1 style={{ fontSize:'24px', fontWeight:700, color:'#e8f0ff', marginBottom:'4px' }}>免責事項</h1>
+      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'32px' }}>最終更新日：2026年3月26日</p>
+      {[
+        {
+          title: '1. 情報の正確性について',
+          body: 'StockWaveJP（以下「当サイト」）に掲載されている情報は、信頼できると考えられる情報源に基づいて作成していますが、その正確性・完全性・最新性を保証するものではありません。株価・テーマデータ・指数等は実際の市場データと相違が生じる場合があります。',
+        },
+        {
+          title: '2. 投資判断について',
+          body: '当サイトに掲載されている情報は、投資助言・投資勧誘を目的とするものではありません。株式投資にはリスクが伴います。投資の最終判断は、必ずご自身の責任のもとで行ってください。当サイトの情報を参考にして生じたいかなる損害についても、当サイト運営者は一切責任を負いません。',
+        },
+        {
+          title: '3. データの更新・停止について',
+          body: '当サイトのデータは定期的に更新されますが、システムメンテナンス・APIの仕様変更・その他の事情により、データの更新が遅延・停止する場合があります。このような場合においても、当サイト運営者は一切の責任を負いません。',
+        },
+        {
+          title: '4. 外部リンクについて',
+          body: '当サイトから外部サイトへのリンクを掲載する場合がありますが、リンク先の内容・運営については一切の責任を負いません。',
+        },
+        {
+          title: '5. 著作権について',
+          body: '当サイトに掲載されているコンテンツ（テキスト・グラフ・UI等）の著作権は当サイト運営者に帰属します。無断転載・複製を禁じます。',
+        },
+        {
+          title: '6. 免責事項の変更',
+          body: '当サイトは、必要に応じて本免責事項を予告なく変更することがあります。変更後の内容は本ページに掲載した時点で効力を生じます。',
+        },
+      ].map((s, i) => (
+        <div key={i} style={{ marginBottom:'28px' }}>
+          <h2 style={{ fontSize:'15px', fontWeight:700, color:'#e8f0ff', marginBottom:'10px',
+            borderLeft:'3px solid var(--accent)', paddingLeft:'12px' }}>
             {s.title}
+          </h2>
+          <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, whiteSpace:'pre-line' }}>
+            {s.body}
           </div>
-          <div style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9 }}>{s.body}</div>
         </div>
       ))}
-
-      <div style={{ fontSize:'12px', color:'var(--text3)', marginTop:'20px', textAlign:'center' }}>
-        © 2026 StockWaveJP. All rights reserved.
-      </div>
     </div>
   )
 }
