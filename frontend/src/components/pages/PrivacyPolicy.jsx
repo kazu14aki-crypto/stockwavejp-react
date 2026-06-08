@@ -37,12 +37,11 @@ export default function PrivacyPolicy() {
           title: '8. お問い合わせ',
           body: `プライバシーポリシーに関するお問い合わせは、X（旧Twitter）のDM（@StockWaveJP）またはサイト内のお問い合わせフォームよりご連絡ください。`,
         },
-      ,
-    {
-      title: '9. アフィリエイト広告について',
+        {
+          title: '9. アフィリエイト広告について',
       body: `当サイト（StockWaveJP）はA8.netをはじめとするアフィリエイトプログラムに参加しています。当サイトのリンクを経由して商品・サービスをご購入いただいた場合、当サイトに報酬が支払われることがあります。広告収入はサービスの継続・改善のために使用されます。広告主から特定の商品・サービスの推奨を依頼されることは一切なく、掲載している広告はユーザーの投資判断に影響を与えることを目的としたものではありません。`,
-    }
-  ].map((s, i) => (
+        }
+      ].map((s, i) => (
         <div key={i} style={{ marginBottom:'28px' }}>
           <h2 style={{ fontSize:'15px', fontWeight:700, color:'#e8f0ff', marginBottom:'10px',
             borderLeft:'3px solid var(--accent)', paddingLeft:'12px' }}>
