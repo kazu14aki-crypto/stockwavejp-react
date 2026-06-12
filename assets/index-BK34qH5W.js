@@ -98,15 +98,18 @@ import{r as m,j as e,R as lt,c as Vt}from"./react-vendor-DyijHb0D.js";import{c a
         .responsive-grid-6 { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
         @media (max-width:1024px) { .responsive-grid-6 { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .responsive-grid-6 { grid-template-columns:repeat(2,1fr); } }
-        .theme-card-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+        .theme-card-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; overflow:hidden; }
         .momentum-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
         @media (max-width:1024px) { .momentum-grid { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .momentum-grid { grid-template-columns:repeat(2,1fr); } }
         @media (max-width:1024px) { .theme-card-grid { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .theme-card-grid { grid-template-columns:repeat(2,1fr); } }
+        .theme-card-grid > * { min-width:0; overflow:hidden; }
+        @media (max-width:480px) { .theme-card-grid { grid-template-columns:1fr !important; } }
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }
+          .top5-grid > * { min-width: 0; overflow: hidden; }
         }
       `}),e.jsx("style",{children:`
         @media (max-width: 640px) {
