@@ -526,7 +526,8 @@ async def create_portal(req: Request):
 async def create_checkout(req: CheckoutReq):
     pid = _PRICE_IDS.get(req.price_key)
     if not pid:
-        raise HTTPException(400, f"Invalid price_key: {req.price_key}")
+        missing = "STRIPE_PRICE_STD_MONTHLY" if "standard" in req.price_key else "STRIPE_PRICE_PRO_MONTHLY"
+        return {"error": f"価格IDが設定されていません。Renderの環境変数 {missing} を確認してください。"}
     try:
         plan = "standard" if "standard" in req.price_key else "pro"
         session = _stripe.checkout.Session.create(
@@ -538,13 +539,13 @@ async def create_checkout(req: CheckoutReq):
             success_url=req.success_url + "?checkout=success",
             cancel_url=req.cancel_url + "?checkout=cancel",
             subscription_data={"metadata": {"user_id": req.user_id, "plan": plan}},
-            # billing_timing='immediate': Stripeがproration(日割り)で即時切替
-            # billing_timing='period_end': 次回更新時に切替（Stripeのサブスク変更で制御）
             locale="ja",
         )
         return {"url": session.url}
     except _stripe.error.StripeError as e:
-        raise HTTPException(400, str(e))
+        return {"error": f"Stripe エラー: {str(e)}"}
+    except Exception as e:
+        return {"error": f"サーバーエラー: {str(e)}"}
 
 @app.post("/api/stripe/webhook")
 async def stripe_webhook(request: Request):
