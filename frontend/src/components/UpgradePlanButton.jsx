@@ -1,14 +1,24 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useAuth }         from '../hooks/useAuth.jsx'
 import { useSubscription } from '../hooks/useSubscription.jsx'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+
+// バックエンドをウォームアップ（コールドスタート対策）
+let backendWarmed = false
+export function warmupBackend() {
+  if (backendWarmed) return
+  backendWarmed = true
+  fetch(`${API}/health`, { method:'GET' }).catch(() => {})
+}
 
 export default function UpgradePlanButton({ priceKey, label, color, disabled }) {
   const { user, isLoggedIn, signIn } = useAuth()
   const { plan: currentPlan }        = useSubscription()
   const [loading,      setLoading]      = useState(false)
   const [showOptions,  setShowOptions]  = useState(false)
+  const prefetchedUrl = useRef(null)
+  const prefetching   = useRef(false)
 
   const targetPlan  = priceKey.includes('pro') ? 'pro' : 'standard'
   const isDowngrade = currentPlan === 'pro' && targetPlan === 'standard'
@@ -23,7 +33,6 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
     </div>
   )
 
-  // 現在のプランと同じ場合
   if (isActive) return (
     <div style={{ marginTop:'14px', padding:'10px', textAlign:'center',
       background:`${color}20`, border:`1px solid ${color}50`,
@@ -32,10 +41,38 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
     </div>
   )
 
+  // hoverでpre-fetch（新規加入のみ。アップグレードはタイミング選択後）
+  const handleMouseEnter = async () => {
+    if (!isLoggedIn || isUpgrade || prefetching.current || prefetchedUrl.current) return
+    prefetching.current = true
+    try {
+      const res = await fetch(`${API}/api/stripe/create-checkout`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          price_key:   priceKey,
+          user_id:     user?.id || 'prefetch',
+          email:       user?.email || '',
+          success_url: window.location.origin,
+          cancel_url:  window.location.origin,
+          billing_timing: 'period_end',
+        }),
+      })
+      const data = await res.json()
+      if (data.url) prefetchedUrl.current = data.url
+    } catch {}
+    prefetching.current = false
+  }
+
   const doCheckout = async (timing) => {
     setLoading(true)
     setShowOptions(false)
     try {
+      // pre-fetchされたURLがあれば即使用
+      if (prefetchedUrl.current && timing === 'period_end') {
+        window.location.href = prefetchedUrl.current
+        return
+      }
       const res = await fetch(`${API}/api/stripe/create-checkout`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -45,7 +82,7 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
           email:       user.email,
           success_url: window.location.origin,
           cancel_url:  window.location.origin,
-          billing_timing: timing,  // 'immediate' or 'period_end'
+          billing_timing: timing,
         }),
       })
       const data = await res.json()
@@ -61,12 +98,7 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
 
   const handleClick = async () => {
     if (!isLoggedIn) { signIn(); return }
-    // スタンダード→プロへのアップグレードは即時 or 期間終了後を選択
-    if (isUpgrade) {
-      setShowOptions(true)
-      return
-    }
-    // その他（新規加入・ダウングレード）はそのまま
+    if (isUpgrade) { setShowOptions(true); return }
     doCheckout('period_end')
   }
 
@@ -81,7 +113,8 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
 
   return (
     <div>
-      <button onClick={handleClick} disabled={loading} style={btnStyle}>
+      <button onClick={handleClick} onMouseEnter={handleMouseEnter}
+        disabled={loading} style={btnStyle}>
         {loading ? '読み込み中...' :
          isLoggedIn ? (
            isDowngrade ? `ダウングレード（${label}）→` :
@@ -90,7 +123,6 @@ export default function UpgradePlanButton({ priceKey, label, color, disabled }) 
          ) : '🔑 ログインして申し込む'}
       </button>
 
-      {/* ② スタンダード→プロ切替タイミング選択モーダル */}
       {showOptions && (
         <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.6)',
           zIndex:9999, display:'flex', alignItems:'center', justifyContent:'center',

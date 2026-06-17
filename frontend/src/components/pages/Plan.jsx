@@ -1,4 +1,4 @@
-import UpgradePlanButton from '../UpgradePlanButton'
+import UpgradePlanButton, { warmupBackend } from '../UpgradePlanButton'
 import { useState, useEffect } from 'react'
 import { useAuth }         from '../../hooks/useAuth.jsx'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
