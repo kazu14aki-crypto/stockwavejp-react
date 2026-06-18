@@ -165,7 +165,7 @@ function AppInner() {
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
 
   const pageProps = (() => {
-    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, colorDir, onColorDirChange:setColorDir, isMobile }
+    if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, colorDir, onColorDirChange:setColorDir, isMobile, onNavigate: handlePageChange }
     if (currentPage === 'ホーム') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'コラム・解説') return { initialArticleId: targetArticleId, onNavigate: handlePageChange, isMobile }
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
