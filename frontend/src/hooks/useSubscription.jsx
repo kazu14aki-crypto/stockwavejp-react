@@ -23,7 +23,7 @@ const DEV_EMAILS = [
 const SubscriptionContext = createContext(null)
 
 export function SubscriptionProvider({ children }) {
-  const [plan,      setPlan]      = useState('free')   // 'free' | 'standard' | 'pro' | 'dev'
+  const [plan,      setPlan]      = useState('free')   // 'free' | 'standard' | 'pro' | 'trial_expired' | 'dev'
   const [loading,   setLoading]   = useState(true)
   const [expiresAt, setExpiresAt] = useState(null)
 
@@ -72,7 +72,7 @@ export function SubscriptionProvider({ children }) {
           }
         }
 
-        // サブスクなし → 初回ログイン30日間はProプラン体験版
+        // サブスクなし → 初回ログイン14日間はProプラン体験版
         const userMeta = session.user.user_metadata || {}
         const firstLoginAt = userMeta.first_login_at
         if (!firstLoginAt) {
@@ -84,12 +84,12 @@ export function SubscriptionProvider({ children }) {
           return
         }
         const daysSinceFirst = (Date.now() - new Date(firstLoginAt).getTime()) / (1000 * 60 * 60 * 24)
-        if (daysSinceFirst < 30) {
+        if (daysSinceFirst < 14) {
           if (!cancelled) { setPlan('pro_trial'); setLoading(false) }
           return
         }
 
-        // 30日経過・サブスクなし → Free
+        // 14日経過・サブスクなし → Free
         if (!cancelled) { setPlan('free'); setLoading(false) }
       } catch {
         if (!cancelled) { setPlan('free'); setLoading(false) }
@@ -141,7 +141,7 @@ export function SubscriptionProvider({ children }) {
     maxThemes: { free:1, standard:5, pro:10, pro_trial:10, dev:999 }[plan] ?? 1,
     maxStocks: { free:10, standard:20, pro:50, pro_trial:50, dev:999 }[plan] ?? 10,
     planLabel: {
-      free:'Free', standard:'スタンダード', pro:'プロ', pro_trial:'プロ体験版（無料）', dev:'開発者'
+      free:'Free', standard:'スタンダード', pro:'プロ', pro_trial:'プロ体験版（無料）', trial_expired:'無料体験済み', dev:'開発者'
     }[plan] || 'Free',
   }
 

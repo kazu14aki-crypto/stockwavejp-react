@@ -45,7 +45,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
   }
 
   // プランラベル色
-  const planColor = { free:'#4a9eff', standard:'#ff8c42', pro:'#aa77ff', pro_trial:'#aa77ff', dev:'#00c48c' }[plan] || '#4a9eff'
+  const planColor = { free:'#4a9eff', standard:'#ff8c42', pro:'#aa77ff', pro_trial:'#aa77ff', trial_expired:'#888', dev:'#00c48c' }[plan] || '#4a9eff'
 
   // 解約処理
   const handleCancel = async () => {
@@ -87,10 +87,10 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'pro_trial' && (
                 <span style={{ fontSize:'11px', padding:'3px 10px', borderRadius:'20px',
                   background:'rgba(170,119,255,0.15)', color:'#aa77ff', border:'1px solid rgba(170,119,255,0.3)' }}>
-                  初回30日間無料体験中{(() => {
+                  初回14日間無料体験中{(() => {
                     const fl = user?.user_metadata?.first_login_at
                     if (!fl) return ''
-                    const end = new Date(new Date(fl).getTime() + 30*24*60*60*1000)
+                    const end = new Date(new Date(fl).getTime() + 14*24*60*60*1000)
                     const rem = Math.max(0, Math.ceil((end - new Date()) / 86400000))
                     return '　終了日：' + end.toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'}) + '　（残り' + rem + '日）'
                   })()}
@@ -101,7 +101,8 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'free' && 'Freeプラン：基本機能をご利用いただけます。'}
               {plan === 'standard' && 'スタンダードプラン：月額980円。全期間・全アーカイブにアクセスできます。'}
               {plan === 'pro' && 'プロプラン：月額1,980円。全機能・機関投資家情報にアクセスできます。'}
-              {plan === 'pro_trial' && 'プロプラン30日無料体験中。期間終了後はFreeプランに自動移行します。'}
+              {plan === 'trial_expired' && '14日間の無料体験期間が終了しました。引き続きご利用いただくには有料プランへのお申し込みをお願いします。'}
+            {plan === 'pro_trial' && 'プロプラン14日無料体験中。期間終了後はFreeプランに自動移行します。'}
               {plan === 'dev' && '開発者アカウント：全機能利用可能。'}
             </div>
 
