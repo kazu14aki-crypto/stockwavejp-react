@@ -4,7 +4,6 @@ import { useAuth }         from '../../hooks/useAuth.jsx'
 
 export default function Settings({ viewMode, onViewModeChange, colorTheme, onColorThemeChange, isMobile, onNavigate }) {
   const { plan, planLabel, isPro, isStandard, expiresAt } = useSubscription()
-  const { user } = useAuth()
   const { isLoggedIn, user } = useAuth()
   const [cancelling,  setCancelling]  = useState(false)
   const [cancelDone,  setCancelDone]  = useState(false)
@@ -92,8 +91,8 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
                     const fl = user?.user_metadata?.first_login_at
                     if (!fl) return ''
                     const end = new Date(new Date(fl).getTime() + 30*24*60*60*1000)
-                    const remaining = Math.max(0, Math.ceil((end - new Date()) / 86400000))
-                    return '　終了日：' + end.toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'}) + '　（残り' + remaining + '日）'
+                    const rem = Math.max(0, Math.ceil((end - new Date()) / 86400000))
+                    return '　終了日：' + end.toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'}) + '　（残り' + rem + '日）'
                   })()}
                 </span>
               )}
