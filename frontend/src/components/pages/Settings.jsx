@@ -4,6 +4,7 @@ import { useAuth }         from '../../hooks/useAuth.jsx'
 
 export default function Settings({ viewMode, onViewModeChange, colorTheme, onColorThemeChange, isMobile, onNavigate }) {
   const { plan, planLabel, isPro, isStandard, expiresAt } = useSubscription()
+  const { user } = useAuth()
   const { isLoggedIn, user } = useAuth()
   const [cancelling,  setCancelling]  = useState(false)
   const [cancelDone,  setCancelDone]  = useState(false)
@@ -87,7 +88,13 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'pro_trial' && (
                 <span style={{ fontSize:'11px', padding:'3px 10px', borderRadius:'20px',
                   background:'rgba(170,119,255,0.15)', color:'#aa77ff', border:'1px solid rgba(170,119,255,0.3)' }}>
-                  初回14日無料体験中{expiresAt ? '　終了日：' + expiresAt.toLocaleDateString('ja-JP') : ''}
+                  初回30日間無料体験中{(() => {
+                    const fl = user?.user_metadata?.first_login_at
+                    if (!fl) return ''
+                    const end = new Date(new Date(fl).getTime() + 30*24*60*60*1000)
+                    const remaining = Math.max(0, Math.ceil((end - new Date()) / 86400000))
+                    return '　終了日：' + end.toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'}) + '　（残り' + remaining + '日）'
+                  })()}
                 </span>
               )}
             </div>
@@ -95,7 +102,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
               {plan === 'free' && 'Freeプラン：基本機能をご利用いただけます。'}
               {plan === 'standard' && 'スタンダードプラン：月額980円。全期間・全アーカイブにアクセスできます。'}
               {plan === 'pro' && 'プロプラン：月額1,980円。全機能・機関投資家情報にアクセスできます。'}
-              {plan === 'pro_trial' && 'プロプラン無料体験中。期間終了後はFreeプランに自動移行します。'}
+              {plan === 'pro_trial' && 'プロプラン30日無料体験中。期間終了後はFreeプランに自動移行します。'}
               {plan === 'dev' && '開発者アカウント：全機能利用可能。'}
             </div>
 
