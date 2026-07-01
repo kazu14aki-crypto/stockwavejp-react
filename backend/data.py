@@ -19,6 +19,85 @@ import os
 
 # Infoway APIキー（未設定の場合はNone → yfinanceも廃止済みのためデータなしとなる）
 INFOWAY_API_KEY = os.environ.get("INFOWAY_API_KEY", None)
+
+# ── Infoway: バリュエーション指標（PER/PBR/PEG 現在・来期予想）取得 ──
+# 契約後、エンドポイント・レスポンスのフィールド名を実機で確認し _parse_valuation() を調整してください。
+_VALUATION_CACHE: dict = {}
+_VALUATION_CACHE_TTL = 60 * 60 * 24  # 24時間（決算をまたがない限り変動しないため）
+
+def _parse_valuation(raw: dict) -> dict:
+    """Infowayレスポンスを内部スキーマに正規化。フィールド名は契約後に要確認。"""
+    return {
+        "per":     raw.get("per") or raw.get("pe_ratio"),
+        "per_fwd": raw.get("forward_per") or raw.get("forward_pe"),
+        "pbr":     raw.get("pbr") or raw.get("pb_ratio"),
+        "pbr_fwd": raw.get("forward_pbr"),
+        "peg":     raw.get("peg") or raw.get("peg_ratio"),
+        "peg_fwd": raw.get("forward_peg"),
+    }
+
+def get_valuation(ticker: str) -> dict | None:
+    """1銘柄のPER/PBR/PEG（現在・来期予想）をInfowayから取得。未契約・失敗時はNone。"""
+    if not INFOWAY_API_KEY:
+        return None
+    cache_key = f"valuation_{ticker}"
+    now = time.time()
+    cached = _VALUATION_CACHE.get(cache_key)
+    if cached and now - cached["ts"] < _VALUATION_CACHE_TTL:
+        return cached["value"]
+    try:
+        import requests
+        code = ticker.replace(".T", "")
+        resp = requests.get(
+            "https://api.infoway.io/v1/market-data/fundamentals",
+            params={"symbol": code, "market": "JP"},
+            headers={"Authorization": f"Bearer {INFOWAY_API_KEY}"},
+            timeout=5,
+        )
+        if resp.status_code != 200:
+            return None
+        parsed = _parse_valuation(resp.json())
+        _VALUATION_CACHE[cache_key] = {"value": parsed, "ts": now}
+        return parsed
+    except Exception:
+        return None
+
+
+# ── 株式分割テーブル（2026年。価格データの分割調整チェック用）──
+# Infowayが分割調整済み（split-adjusted）の四本値を提供する場合は通常不要だが、
+# 念のため過去株価をまたぐ騰落率計算時にここで二重チェック・補正する。
+# 形式: ティッカー: [(効力発生日, 分割比率), ...]  比率2 = 1株→2株
+STOCK_SPLITS_2026 = {
+    "5801.T": [("2026-07-01", 10)],   # 古河電気工業: 1→10
+    "5802.T": [("2026-07-01", 4)],    # 住友電気工業: 1→4
+    "4452.T": [("2026-07-01", 2)],    # 花王: 1→2
+    "8053.T": [("2026-07-01", 4)],    # 住友商事: 1→4
+    # 2026年7月1日前後に分割を実施する銘柄は他に約30社あり。
+    # 確認次第、本リストに追加してください（東証適時開示・各社IR資料を参照）。
+}
+
+def _adjust_for_splits(df: "pd.DataFrame", ticker: str) -> "pd.DataFrame":
+    """
+    指定ティッカーに既知の分割がある場合、効力発生日より前の価格を分割比率で割り、
+    出来高を分割比率倍することで、分割をまたぐ騰落率計算のブレを防ぐ。
+    （Infoway側で既に分割調整済みの場合はここでの補正は不要・無害なノーオペレーションとなるよう
+      日付ベースでガードしている）
+    """
+    splits = STOCK_SPLITS_2026.get(ticker)
+    if not splits or df is None or df.empty:
+        return df
+    df = df.copy()
+    for eff_date_str, ratio in splits:
+        eff_date = pd.Timestamp(eff_date_str)
+        mask = df.index < eff_date
+        if mask.any():
+            for col in ("Open", "High", "Low", "Close"):
+                if col in df.columns:
+                    df.loc[mask, col] = df.loc[mask, col] / ratio
+            if "Volume" in df.columns:
+                df.loc[mask, "Volume"] = df.loc[mask, "Volume"] * ratio
+    return df
+
 import pickle
 import hashlib
 
@@ -489,6 +568,7 @@ def _fetch_df(ticker: str, period: str = "2y") -> pd.DataFrame | None:
     if INFOWAY_API_KEY:
         df_iw = _fetch_df_infoway(ticker, period)
         if df_iw is not None and len(df_iw) >= 3:
+            df_iw = _adjust_for_splits(df_iw, ticker)  # 株式分割の二重チェック補正
             with _mem_cache_lock:
                 _df_cache[cache_key] = {"value": df_iw, "ts": time.time()}
             return df_iw
@@ -728,6 +808,7 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
                     seg_correlation = round(float(corr2) * 100, 1)
         except Exception:
             seg_correlation = 0.0
+        _val = get_valuation(ticker)
         result.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct, "contribution": round(pct / max(len(result)+1, 1), 4),  # 寄与度
@@ -737,6 +818,9 @@ def fetch_segment_detail(seg_name: str, period: str) -> list:
             "major": cls_info.get("major", ""),
             "minor": cls_info.get("minor", ""),
             "spark": spark,
+            "per": (_val or {}).get("per"), "per_fwd": (_val or {}).get("per_fwd"),
+            "pbr": (_val or {}).get("pbr"), "pbr_fwd": (_val or {}).get("pbr_fwd"),
+            "peg": (_val or {}).get("peg"), "peg_fwd": (_val or {}).get("peg_fwd"),
         })
 
     result.sort(key=lambda x: x["pct"], reverse=True)
@@ -871,6 +955,7 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
             except Exception:
                 pass
 
+        _val = get_valuation(ticker)
         stocks.append({
             "ticker": ticker, "name": name, "price": price,
             "pct": pct,
@@ -879,6 +964,9 @@ def fetch_theme_detail(theme_name: str, theme_stocks: dict, period: str) -> dict
             "volume": int(rv), "volume_chg": vol_chg, "trade_value": tv,
             "spark": spark,
             "vol_rank": 0, "tv_rank": 0,
+            "per": (_val or {}).get("per"), "per_fwd": (_val or {}).get("per_fwd"),
+            "pbr": (_val or {}).get("pbr"), "pbr_fwd": (_val or {}).get("pbr_fwd"),
+            "peg": (_val or {}).get("peg"), "peg_fwd": (_val or {}).get("peg_fwd"),
         })
 
     stocks.sort(key=lambda x: x["pct"], reverse=True)

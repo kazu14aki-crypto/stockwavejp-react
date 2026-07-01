@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { useSubscription } from '../../hooks/useSubscription'
 import AddToThemeModal from '../AddToThemeModal'
 import StockBubbleChart from '../StockBubbleChart'
 import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
@@ -388,6 +389,8 @@ const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
 function StockTable({ stocks: rawStocks, onAddToTheme }) {
+  const { plan } = useSubscription()
+  const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
   if (!rawStocks||!rawStocks.length) return null
   const [sortKey, setSortKey] = useState('pct')
   const [sortAsc, setSortAsc] = useState(false)
@@ -450,7 +453,8 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
   }
   const onMouseUp = () => { isDragging.current = false; if (tableRef.current) tableRef.current.style.cursor = 'grab' }
 
-  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','追加']
+  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ','追加']
+  const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
   const sortBtns = [{key:'pct',label:'騰落率'},{key:'volume',label:'出来高'},{key:'trade_value',label:'売買代金'}]
 
   return (
@@ -485,7 +489,10 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
               <th style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
               <th style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
               {headers.map(h => (
-                <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px' }}>{h}</th>
+                <th key={h} style={{ ...thStyle, minWidth: h==='株価'||h==='騰落率'?'70px':'80px',
+                  color: VALUATION_HEADERS.includes(h) && !isSubscribed ? 'var(--text3)' : undefined }}>
+                  {VALUATION_HEADERS.includes(h) && !isSubscribed ? '🔒 ' : ''}{h}
+                </th>
               ))}
             </tr>
           </thead>
@@ -520,6 +527,18 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
                   <td style={tdC}>{s.vol_rank}位</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
                   <td style={tdC}>{s.tv_rank}位</td>
+                  {isSubscribed ? (
+                    <>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.per != null ? s.per.toFixed(1) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.per_fwd != null ? s.per_fwd.toFixed(1) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.pbr != null ? s.pbr.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.pbr_fwd != null ? s.pbr_fwd.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.peg != null ? s.peg.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.peg_fwd != null ? s.peg_fwd.toFixed(2) : '-'}</td>
+                    </>
+                  ) : (
+                    <td colSpan={6} style={{ ...tdC, color:'var(--text3)', fontSize:'11px' }}>🔒 サブスク限定</td>
+                  )}
                   <td style={tdC}>
                     <button onClick={() => onAddToTheme && onAddToTheme({ ticker:s.ticker, name:s.name, price:s.price })}
                       title="カスタムテーマに追加"

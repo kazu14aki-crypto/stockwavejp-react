@@ -538,7 +538,10 @@ function StockTable({ stocks: rawStocks }) {
     if (tableRef.current) tableRef.current.style.cursor = 'grab'
   }
 
-  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位']
+  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
+  const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
+  const { plan } = useSubscription()
+  const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
 
   // ⑤ ソートボタン定義
   const sortBtns = [
@@ -597,7 +600,10 @@ function StockTable({ stocks: rawStocks }) {
               <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
               {headers.map(h => (
                 <th key={h} style={{ ...thStyle, minWidth: h === 'ミニチャート' ? '72px' : '80px',
-                  width: h === 'ミニチャート' ? '72px' : undefined }}>{h}</th>
+                  width: h === 'ミニチャート' ? '72px' : undefined,
+                  color: VALUATION_HEADERS.includes(h) && !isSubscribed ? 'var(--text3)' : undefined }}>
+                  {VALUATION_HEADERS.includes(h) && !isSubscribed ? '🔒 ' : ''}{h}
+                </th>
               ))}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
@@ -643,6 +649,20 @@ function StockTable({ stocks: rawStocks }) {
                   <td style={tdC}>{s.vol_rank}位</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{formatLarge(s.trade_value)}</td>
                   <td style={tdC}>{s.tv_rank}位</td>
+                  {isSubscribed ? (
+                    <>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.per != null ? s.per.toFixed(1) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.per_fwd != null ? s.per_fwd.toFixed(1) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.pbr != null ? s.pbr.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.pbr_fwd != null ? s.pbr_fwd.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.peg != null ? s.peg.toFixed(2) : '-'}</td>
+                      <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.peg_fwd != null ? s.peg_fwd.toFixed(2) : '-'}</td>
+                    </>
+                  ) : (
+                    <td colSpan={6} style={{ ...tdC, color:'var(--text3)', fontSize:'11px' }}>
+                      🔒 サブスク限定
+                    </td>
+                  )}
                   <td style={tdC}>
                     <button onClick={() => setModalStock({ ticker: s.ticker, name: s.name, price: s.price })}
                       title="カスタムテーマに追加"

@@ -18,6 +18,48 @@ from data import (
     get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
 )
 
+# ── サブスクリプションプラン判定（バリュエーション列のアクセス制御用）──
+from supabase import create_client as _create_client
+import os as _os
+_sb_url = _os.environ.get("SUPABASE_URL", "")
+_sb_key = _os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+_sb_plan_client = _create_client(_sb_url, _sb_key) if _sb_url and _sb_key else None
+
+def _is_subscribed(uid: str | None) -> bool:
+    """uidが有料プラン（standard/pro/pro_trial）であればTrue。無料・期限切れ・未ログインはFalse。"""
+    if not uid or not _sb_plan_client:
+        return False
+    try:
+        res = _sb_plan_client.table("subscriptions") \
+            .select("status,plan") \
+            .eq("user_id", uid) \
+            .eq("status", "active") \
+            .execute()
+        if res.data and len(res.data) > 0:
+            return True  # アクティブな有料サブスクあり
+    except Exception:
+        pass
+    # サブスクなし → pro_trial（14日間無料体験）の判定はフロント側のuser_metadataベースのため、
+    # バックエンドではサブスクテーブルの有無のみで判定（トライアル中はフロントのUIで別途出し分け）
+    return False
+
+def _strip_valuation_if_locked(payload: dict, uid: str | None) -> dict:
+    """サブスク未加入の場合、per/per_fwd/pbr/pbr_fwd/peg/peg_fwdをNoneにし、ロックフラグを付与する。"""
+    subscribed = _is_subscribed(uid)
+    stocks = (payload.get("data") or {}).get("stocks") if isinstance(payload.get("data"), dict) else None
+    if stocks is None and isinstance(payload.get("data"), list):
+        stocks = payload.get("data")
+    if stocks:
+        for s in stocks:
+            if not subscribed:
+                for k in ("per", "per_fwd", "pbr", "pbr_fwd", "peg", "peg_fwd"):
+                    if k in s:
+                        s[k] = None
+    payload["valuation_locked"] = not subscribed
+    return payload
+
+
+
 app = FastAPI(title="StockWaveJP API", version="2.2.0")  # 67テーマ対応
 app.add_middleware(
     CORSMiddleware,
@@ -190,12 +232,13 @@ def get_vol_trend(theme_name: str):
     }
 
 @app.get("/api/market-rank/{seg_name}")
-def get_segment_detail(seg_name: str, period: str = Query(default="1mo")):
-    return {
+def get_segment_detail(seg_name: str, period: str = Query(default="1mo"), uid: str = Query(default=None)):
+    payload = {
         "period":   period,
         "segment":  seg_name,
         "data":     fetch_segment_detail(seg_name, period),
     }
+    return _strip_valuation_if_locked(payload, uid)
 
 
 @app.get("/api/nikkei-classification/{seg_name}")
@@ -205,11 +248,12 @@ def get_nikkei_classification(seg_name: str):
 
 
 @app.get("/api/theme-detail/{theme_name}")
-def get_theme_detail(theme_name: str, period: str = Query(default="1mo")):
-    return {
+def get_theme_detail(theme_name: str, period: str = Query(default="1mo"), uid: str = Query(default=None)):
+    payload = {
         "period": period,
         "data":   fetch_theme_detail(theme_name, DEFAULT_THEMES.get(theme_name, {}), period),
     }
+    return _strip_valuation_if_locked(payload, uid)
 
 
 @app.get("/api/stock-info/{ticker}")
