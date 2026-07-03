@@ -18,7 +18,7 @@ html { overflow-x: clip; }
   --accent:  #60A5FA;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'Noto Sans Mono',monospace;
+  --mono:    'Noto Sans JP',sans-serif;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -36,7 +36,7 @@ html { overflow-x: clip; }
   --accent:  #c8b050;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'Noto Sans Mono',monospace;
+  --mono:    'Noto Sans JP',sans-serif;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -55,7 +55,7 @@ html { overflow-x: clip; }
   --accent:  #2356C4;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'Noto Sans Mono',monospace;
+  --mono:    'Noto Sans JP',sans-serif;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 /* ── ミッドナイト（深い青・長時間OK） ── */
@@ -72,7 +72,7 @@ html { overflow-x: clip; }
   --accent:  #74B9FF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'Noto Sans Mono',monospace;
+  --mono:    'Noto Sans JP',sans-serif;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
@@ -91,7 +91,7 @@ html { overflow-x: clip; }
   --accent:  #7C5CBF;
   --logo-red:#e63030;
   --font:    'Noto Sans JP',sans-serif;
-  --mono:    'Noto Sans Mono',monospace;
+  --mono:    'Noto Sans JP',sans-serif;
   --radius:  10px; --sidebar:220px; --header:52px;
 }
 
