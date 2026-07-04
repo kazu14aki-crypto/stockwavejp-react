@@ -1,0 +1,214 @@
+{
+  "secCode": "548A",
+  "issuerName": "株式会社システムエグゼ",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アセット３１０合同会社",
+      "shares": 1013000,
+      "ratio": 20.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 1000000,
+      "ratio": 20.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大場康次",
+      "shares": 323000,
+      "ratio": 6.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ウイングアーク１ｓｔ株式会社",
+      "shares": 320000,
+      "ratio": 6.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "後藤清孝",
+      "shares": 300000,
+      "ratio": 6.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "髙橋光司",
+      "shares": 295000,
+      "ratio": 6.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "白銀亨",
+      "shares": 220000,
+      "ratio": 4.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "荻野弘昭",
+      "shares": 107000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "新船幸広",
+      "shares": 107000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤林隆司",
+      "shares": 105000,
+      "ratio": 2.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.27,
+      "individual": 30.13
+    },
+    "individual_total": 30.13,
+    "top10_total": 78.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YKKE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アセット３１０合同会社",
+          "shares": 1013000,
+          "ratio": 20.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 1000000,
+          "ratio": 20.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大場康次",
+          "shares": 323000,
+          "ratio": 6.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ウイングアーク１ｓｔ株式会社",
+          "shares": 320000,
+          "ratio": 6.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "後藤清孝",
+          "shares": 300000,
+          "ratio": 6.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "髙橋光司",
+          "shares": 295000,
+          "ratio": 6.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "白銀亨",
+          "shares": 220000,
+          "ratio": 4.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "荻野弘昭",
+          "shares": 107000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "新船幸広",
+          "shares": 107000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤林隆司",
+          "shares": 105000,
+          "ratio": 2.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.27,
+          "individual": 30.13
+        },
+        "individual_total": 30.13,
+        "top10_total": 78.4
+      }
+    }
+  ]
+}

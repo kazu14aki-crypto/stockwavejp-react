@@ -1,0 +1,218 @@
+{
+  "secCode": "9509",
+  "issuerName": "北海道電力株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 18319000,
+      "ratio": 8.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社北洋銀行",
+      "shares": 10215000,
+      "ratio": 4.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 6519000,
+      "ratio": 3.17,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 5927000,
+      "ratio": 2.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社",
+      "shares": 5062000,
+      "ratio": 2.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "北海道電力従業員持株会",
+      "shares": 4964000,
+      "ratio": 2.41,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)(常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 4423000,
+      "ratio": 2.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "明治安田生命保険相互会社",
+      "shares": 4048000,
+      "ratio": 1.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社北海道銀行",
+      "shares": 3631000,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE (常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 3388000,
+      "ratio": 1.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 11.78,
+      "financial": 11.15,
+      "foreign": 6.97,
+      "employee": 2.41
+    },
+    "individual_total": 0,
+    "top10_total": 32.31
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第102期(2025/04/01－2026/03/31)",
+      "docID": "S100YDWY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 18319000,
+          "ratio": 8.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社北洋銀行",
+          "shares": 10215000,
+          "ratio": 4.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 6519000,
+          "ratio": 3.17,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 5927000,
+          "ratio": 2.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社",
+          "shares": 5062000,
+          "ratio": 2.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "北海道電力従業員持株会",
+          "shares": 4964000,
+          "ratio": 2.41,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)(常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 4423000,
+          "ratio": 2.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "明治安田生命保険相互会社",
+          "shares": 4048000,
+          "ratio": 1.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社北海道銀行",
+          "shares": 3631000,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE (常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 3388000,
+          "ratio": 1.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 11.78,
+          "financial": 11.15,
+          "foreign": 6.97,
+          "employee": 2.41
+        },
+        "individual_total": 0,
+        "top10_total": 32.31
+      }
+    }
+  ]
+}

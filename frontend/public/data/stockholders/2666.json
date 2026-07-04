@@ -1,0 +1,218 @@
+{
+  "secCode": "2666",
+  "issuerName": "株式会社　オートウェーブ",
+  "updated_at": "2026/07/04 17:51 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "廣岡　大介",
+      "shares": 2318100,
+      "ratio": 16.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ウェーブ会",
+      "shares": 1306000,
+      "ratio": 9.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "オートウェーブ従業員持株会",
+      "shares": 1230000,
+      "ratio": 8.51,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "廣岡　昭彦",
+      "shares": 669660,
+      "ratio": 4.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "フクイ　クニオ",
+      "shares": 530000,
+      "ratio": 3.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "廣岡　耕平",
+      "shares": 489660,
+      "ratio": 3.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "中村　忠明",
+      "shares": 260000,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "星川　輝",
+      "shares": 211000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上田八木短資株式会社",
+      "shares": 196400,
+      "ratio": 1.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松井証券株式会社",
+      "shares": 177200,
+      "ratio": 1.23,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 40.03,
+      "employee": 8.51,
+      "corporate": 1.36,
+      "securities": 1.23
+    },
+    "individual_total": 40.03,
+    "top10_total": 51.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第37期(2025/04/01－2026/03/31)",
+      "docID": "S100YLV8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "廣岡　大介",
+          "shares": 2318100,
+          "ratio": 16.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ウェーブ会",
+          "shares": 1306000,
+          "ratio": 9.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "オートウェーブ従業員持株会",
+          "shares": 1230000,
+          "ratio": 8.51,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "廣岡　昭彦",
+          "shares": 669660,
+          "ratio": 4.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "フクイ　クニオ",
+          "shares": 530000,
+          "ratio": 3.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "廣岡　耕平",
+          "shares": 489660,
+          "ratio": 3.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "中村　忠明",
+          "shares": 260000,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "星川　輝",
+          "shares": 211000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上田八木短資株式会社",
+          "shares": 196400,
+          "ratio": 1.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松井証券株式会社",
+          "shares": 177200,
+          "ratio": 1.23,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 40.03,
+          "employee": 8.51,
+          "corporate": 1.36,
+          "securities": 1.23
+        },
+        "individual_total": 40.03,
+        "top10_total": 51.13
+      }
+    }
+  ]
+}

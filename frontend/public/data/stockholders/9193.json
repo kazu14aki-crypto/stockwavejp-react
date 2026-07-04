@@ -1,0 +1,216 @@
+{
+  "secCode": "9193",
+  "issuerName": "東京汽船株式会社",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "１　齊　藤　宏　之",
+      "shares": 1733000,
+      "ratio": 17.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "２　株式会社商船三井",
+      "shares": 1112000,
+      "ratio": 11.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "３　共栄火災海上保険株式会社",
+      "shares": 500000,
+      "ratio": 5.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "４　京浜急行電鉄株式会社",
+      "shares": 500000,
+      "ratio": 5.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "５　株式会社みずほ銀行",
+      "shares": 350000,
+      "ratio": 3.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "６　東海汽船株式会社",
+      "shares": 326000,
+      "ratio": 3.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "７　株式会社横浜銀行",
+      "shares": 307000,
+      "ratio": 3.08,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "８　日本生命保険相互会社",
+      "shares": 300000,
+      "ratio": 3.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "９　コクサイエアロマリン株式会社",
+      "shares": 275000,
+      "ratio": 2.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "10　須賀工業株式会社",
+      "shares": 245000,
+      "ratio": 2.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 17.42,
+      "corporate": 24.7,
+      "financial": 14.63
+    },
+    "individual_total": 17.42,
+    "top10_total": 56.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第88期(2025/04/01－2026/03/31)",
+      "docID": "S100YEHQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "１　齊　藤　宏　之",
+          "shares": 1733000,
+          "ratio": 17.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "２　株式会社商船三井",
+          "shares": 1112000,
+          "ratio": 11.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "３　共栄火災海上保険株式会社",
+          "shares": 500000,
+          "ratio": 5.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "４　京浜急行電鉄株式会社",
+          "shares": 500000,
+          "ratio": 5.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "５　株式会社みずほ銀行",
+          "shares": 350000,
+          "ratio": 3.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "６　東海汽船株式会社",
+          "shares": 326000,
+          "ratio": 3.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "７　株式会社横浜銀行",
+          "shares": 307000,
+          "ratio": 3.08,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "８　日本生命保険相互会社",
+          "shares": 300000,
+          "ratio": 3.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "９　コクサイエアロマリン株式会社",
+          "shares": 275000,
+          "ratio": 2.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "10　須賀工業株式会社",
+          "shares": 245000,
+          "ratio": 2.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 17.42,
+          "corporate": 24.7,
+          "financial": 14.63
+        },
+        "individual_total": 17.42,
+        "top10_total": 56.75
+      }
+    }
+  ]
+}

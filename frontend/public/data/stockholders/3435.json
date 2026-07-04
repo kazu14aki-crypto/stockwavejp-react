@@ -1,0 +1,220 @@
+{
+  "secCode": "3435",
+  "issuerName": "サンコーテクノ株式会社",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "洞下 英人",
+      "shares": 1190000,
+      "ratio": 15.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 720000,
+      "ratio": 9.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社サンワールド",
+      "shares": 680000,
+      "ratio": 8.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "サンコーテクノ社員持株会",
+      "shares": 322000,
+      "ratio": 4.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "新井 栄",
+      "shares": 208000,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐藤 静男",
+      "shares": 191000,
+      "ratio": 2.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "洞下 正人",
+      "shares": 188000,
+      "ratio": 2.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行",
+      "shares": 178000,
+      "ratio": 2.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐久間 菊子",
+      "shares": 156000,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "SINOPACSEC （常任代理人 日産証券株式会社）",
+      "shares": 128000,
+      "ratio": 1.62,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 24.41,
+      "corporate": 17.69,
+      "employee": 4.07,
+      "financial": 2.25,
+      "securities": 1.62
+    },
+    "individual_total": 24.41,
+    "top10_total": 50.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YHPR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "洞下 英人",
+          "shares": 1190000,
+          "ratio": 15.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 720000,
+          "ratio": 9.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社サンワールド",
+          "shares": 680000,
+          "ratio": 8.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "サンコーテクノ社員持株会",
+          "shares": 322000,
+          "ratio": 4.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "新井 栄",
+          "shares": 208000,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐藤 静男",
+          "shares": 191000,
+          "ratio": 2.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "洞下 正人",
+          "shares": 188000,
+          "ratio": 2.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行",
+          "shares": 178000,
+          "ratio": 2.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐久間 菊子",
+          "shares": 156000,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "SINOPACSEC （常任代理人 日産証券株式会社）",
+          "shares": 128000,
+          "ratio": 1.62,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 24.41,
+          "corporate": 17.69,
+          "employee": 4.07,
+          "financial": 2.25,
+          "securities": 1.62
+        },
+        "individual_total": 24.41,
+        "top10_total": 50.04
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "3280",
+  "issuerName": "株式会社エストラスト",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "西部ガスホールディングス株式会社",
+      "shares": 3145295,
+      "ratio": 51.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "岡部産業株式会社",
+      "shares": 267000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "笹原　友也",
+      "shares": 200161,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大溝　延子",
+      "shares": 180000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村證券株式会社",
+      "shares": 160148,
+      "ratio": 2.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大溝　一晴",
+      "shares": 120300,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岩男　登記子",
+      "shares": 93792,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社山口銀行",
+      "shares": 90000,
+      "ratio": 1.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社福岡銀行",
+      "shares": 85000,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＴプロパティ",
+      "shares": 84256,
+      "ratio": 1.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 60.3,
+      "individual": 9.8,
+      "financial": 2.9
+    },
+    "individual_total": 9.8,
+    "top10_total": 73.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第28期(2025/03/01－2026/02/28)",
+      "docID": "S100YI6D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "西部ガスホールディングス株式会社",
+          "shares": 3145295,
+          "ratio": 51.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "岡部産業株式会社",
+          "shares": 267000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "笹原　友也",
+          "shares": 200161,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大溝　延子",
+          "shares": 180000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村證券株式会社",
+          "shares": 160148,
+          "ratio": 2.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大溝　一晴",
+          "shares": 120300,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岩男　登記子",
+          "shares": 93792,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社山口銀行",
+          "shares": 90000,
+          "ratio": 1.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社福岡銀行",
+          "shares": 85000,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＴプロパティ",
+          "shares": 84256,
+          "ratio": 1.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 60.3,
+          "individual": 9.8,
+          "financial": 2.9
+        },
+        "individual_total": 9.8,
+        "top10_total": 73.0
+      }
+    }
+  ]
+}

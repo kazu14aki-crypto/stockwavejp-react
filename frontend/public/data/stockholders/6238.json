@@ -1,0 +1,218 @@
+{
+  "secCode": "6238",
+  "issuerName": "フリュー株式会社",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "風流商事株式会社",
+      "shares": 4360000,
+      "ratio": 16.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1959300,
+      "ratio": 7.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "TM株式会社",
+      "shares": 1415000,
+      "ratio": 5.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "フリュー社員持株会",
+      "shares": 900700,
+      "ratio": 3.39,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田坂　吉朗",
+      "shares": 840000,
+      "ratio": 3.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "稲毛　勝行",
+      "shares": 750000,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "吉田　眞人",
+      "shares": 551432,
+      "ratio": 2.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中村　真司",
+      "shares": 511300,
+      "ratio": 1.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "YOSHIDA株式会社",
+      "shares": 493000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 466600,
+      "ratio": 1.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.56,
+      "trust": 9.12,
+      "employee": 3.39,
+      "individual": 9.97
+    },
+    "individual_total": 9.97,
+    "top10_total": 46.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/04/01－2026/03/31)",
+      "docID": "S100YFJB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "風流商事株式会社",
+          "shares": 4360000,
+          "ratio": 16.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1959300,
+          "ratio": 7.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "TM株式会社",
+          "shares": 1415000,
+          "ratio": 5.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "フリュー社員持株会",
+          "shares": 900700,
+          "ratio": 3.39,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田坂　吉朗",
+          "shares": 840000,
+          "ratio": 3.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "稲毛　勝行",
+          "shares": 750000,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "吉田　眞人",
+          "shares": 551432,
+          "ratio": 2.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中村　真司",
+          "shares": 511300,
+          "ratio": 1.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "YOSHIDA株式会社",
+          "shares": 493000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 466600,
+          "ratio": 1.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.56,
+          "trust": 9.12,
+          "employee": 3.39,
+          "individual": 9.97
+        },
+        "individual_total": 9.97,
+        "top10_total": 46.04
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "9341",
+  "issuerName": "株式会社ＧＥＮＯＶＡ",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "平瀬　智樹",
+      "shares": 5602700,
+      "ratio": 32.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社平瀬商店",
+      "shares": 1333200,
+      "ratio": 7.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社EPARK",
+      "shares": 1091600,
+      "ratio": 6.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 930400,
+      "ratio": 5.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "内藤　信至",
+      "shares": 422700,
+      "ratio": 2.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "青山　圭秀",
+      "shares": 407800,
+      "ratio": 2.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "提橋　由幾",
+      "shares": 200000,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "UNION BANCAIRE PRIVEE, UBP SA SINGAPORE BRANCH - GCSG-JP-CLIENT ASEET(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 200000,
+      "ratio": 1.15,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 193600,
+      "ratio": 1.12,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 174000,
+      "ratio": 1.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.26,
+      "corporate": 13.99,
+      "trust": 6.37,
+      "other": 1.15,
+      "foreign": 1.12
+    },
+    "individual_total": 38.26,
+    "top10_total": 60.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YFQH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "平瀬　智樹",
+          "shares": 5602700,
+          "ratio": 32.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社平瀬商店",
+          "shares": 1333200,
+          "ratio": 7.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社EPARK",
+          "shares": 1091600,
+          "ratio": 6.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 930400,
+          "ratio": 5.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "内藤　信至",
+          "shares": 422700,
+          "ratio": 2.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "青山　圭秀",
+          "shares": 407800,
+          "ratio": 2.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "提橋　由幾",
+          "shares": 200000,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "UNION BANCAIRE PRIVEE, UBP SA SINGAPORE BRANCH - GCSG-JP-CLIENT ASEET(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 200000,
+          "ratio": 1.15,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 193600,
+          "ratio": 1.12,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 174000,
+          "ratio": 1.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.26,
+          "corporate": 13.99,
+          "trust": 6.37,
+          "other": 1.15,
+          "foreign": 1.12
+        },
+        "individual_total": 38.26,
+        "top10_total": 60.89
+      }
+    }
+  ]
+}

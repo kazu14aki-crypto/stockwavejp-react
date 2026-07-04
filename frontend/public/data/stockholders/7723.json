@@ -1,0 +1,220 @@
+{
+  "secCode": "7723",
+  "issuerName": "愛知時計電機株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD‐SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221‐623793（常任代理人 香港上海銀行東京支店）",
+      "shares": 1414000,
+      "ratio": 9.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険相互会社",
+      "shares": 1157000,
+      "ratio": 7.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1081000,
+      "ratio": 7.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "東邦瓦斯株式会社",
+      "shares": 691000,
+      "ratio": 4.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "明治安田生命保険相互会社",
+      "shares": 603000,
+      "ratio": 3.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "愛知時計電機共栄会",
+      "shares": 584000,
+      "ratio": 3.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "愛知時計電機社員持株会",
+      "shares": 497000,
+      "ratio": 3.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "みずほリース株式会社",
+      "shares": 492000,
+      "ratio": 3.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本車輌製造株式会社",
+      "shares": 480000,
+      "ratio": 3.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "御法川 法男",
+      "shares": 401000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 20.6,
+      "trust": 7.0,
+      "corporate": 10.8,
+      "individual": 6.4,
+      "employee": 3.2
+    },
+    "individual_total": 6.4,
+    "top10_total": 48.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YF4W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD‐SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221‐623793（常任代理人 香港上海銀行東京支店）",
+          "shares": 1414000,
+          "ratio": 9.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険相互会社",
+          "shares": 1157000,
+          "ratio": 7.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1081000,
+          "ratio": 7.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "東邦瓦斯株式会社",
+          "shares": 691000,
+          "ratio": 4.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "明治安田生命保険相互会社",
+          "shares": 603000,
+          "ratio": 3.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "愛知時計電機共栄会",
+          "shares": 584000,
+          "ratio": 3.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "愛知時計電機社員持株会",
+          "shares": 497000,
+          "ratio": 3.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "みずほリース株式会社",
+          "shares": 492000,
+          "ratio": 3.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本車輌製造株式会社",
+          "shares": 480000,
+          "ratio": 3.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "御法川 法男",
+          "shares": 401000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 20.6,
+          "trust": 7.0,
+          "corporate": 10.8,
+          "individual": 6.4,
+          "employee": 3.2
+        },
+        "individual_total": 6.4,
+        "top10_total": 48.0
+      }
+    }
+  ]
+}

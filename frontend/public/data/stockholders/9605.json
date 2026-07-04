@@ -1,0 +1,218 @@
+{
+  "secCode": "9605",
+  "issuerName": "東映株式会社",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社テレビ朝日ホールディングス",
+      "shares": 12640000,
+      "ratio": 19.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＴＢＳテレビ",
+      "shares": 6075000,
+      "ratio": 9.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社バンダイナムコホールディングス",
+      "shares": 5177000,
+      "ratio": 7.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ　３８０７５２\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 4662000,
+      "ratio": 7.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4207000,
+      "ratio": 6.47,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 3227000,
+      "ratio": 4.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東急株式会社",
+      "shares": 3000000,
+      "ratio": 4.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社フジ・メディア・ホールディングス",
+      "shares": 2862000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本テレビ放送網株式会社",
+      "shares": 2400000,
+      "ratio": 3.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 1720000,
+      "ratio": 2.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.43,
+      "financial": 7.17,
+      "trust": 11.43,
+      "securities": 2.65
+    },
+    "individual_total": 0,
+    "top10_total": 70.68
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YI7S",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社テレビ朝日ホールディングス",
+          "shares": 12640000,
+          "ratio": 19.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＴＢＳテレビ",
+          "shares": 6075000,
+          "ratio": 9.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社バンダイナムコホールディングス",
+          "shares": 5177000,
+          "ratio": 7.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ　３８０７５２\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 4662000,
+          "ratio": 7.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4207000,
+          "ratio": 6.47,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 3227000,
+          "ratio": 4.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東急株式会社",
+          "shares": 3000000,
+          "ratio": 4.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社フジ・メディア・ホールディングス",
+          "shares": 2862000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本テレビ放送網株式会社",
+          "shares": 2400000,
+          "ratio": 3.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 1720000,
+          "ratio": 2.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.43,
+          "financial": 7.17,
+          "trust": 11.43,
+          "securities": 2.65
+        },
+        "individual_total": 0,
+        "top10_total": 70.68
+      }
+    }
+  ]
+}

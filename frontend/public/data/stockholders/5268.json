@@ -1,0 +1,216 @@
+{
+  "secCode": "5268",
+  "issuerName": "旭コンクリート工業株式会社",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本ヒューム株式会社",
+      "shares": 3904200,
+      "ratio": 29.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "太平洋セメント株式会社",
+      "shares": 1207500,
+      "ratio": 9.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "柳内光子",
+      "shares": 717100,
+      "ratio": 5.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "みずほ信託銀行株式会社退職給付信託太平洋セメント口",
+      "shares": 700000,
+      "ratio": 5.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 565000,
+      "ratio": 4.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山一産協株式会社",
+      "shares": 502300,
+      "ratio": 3.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高周波熱錬株式会社",
+      "shares": 501700,
+      "ratio": 3.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本コンクリート工業株式会社",
+      "shares": 300000,
+      "ratio": 2.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ケイコン株式会社",
+      "shares": 295000,
+      "ratio": 2.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 230900,
+      "ratio": 1.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 50.95,
+      "individual": 5.44,
+      "financial": 11.35
+    },
+    "individual_total": 5.44,
+    "top10_total": 67.74
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第146期(2025/04/01－2026/03/31)",
+      "docID": "S100YIYA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本ヒューム株式会社",
+          "shares": 3904200,
+          "ratio": 29.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "太平洋セメント株式会社",
+          "shares": 1207500,
+          "ratio": 9.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "柳内光子",
+          "shares": 717100,
+          "ratio": 5.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "みずほ信託銀行株式会社退職給付信託太平洋セメント口",
+          "shares": 700000,
+          "ratio": 5.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 565000,
+          "ratio": 4.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山一産協株式会社",
+          "shares": 502300,
+          "ratio": 3.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高周波熱錬株式会社",
+          "shares": 501700,
+          "ratio": 3.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本コンクリート工業株式会社",
+          "shares": 300000,
+          "ratio": 2.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ケイコン株式会社",
+          "shares": 295000,
+          "ratio": 2.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 230900,
+          "ratio": 1.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 50.95,
+          "individual": 5.44,
+          "financial": 11.35
+        },
+        "individual_total": 5.44,
+        "top10_total": 67.74
+      }
+    }
+  ]
+}

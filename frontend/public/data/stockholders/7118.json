@@ -1,0 +1,214 @@
+{
+  "secCode": "7118",
+  "issuerName": "株式会社伸和ホールディングス",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＳＴＴ",
+      "shares": 599900,
+      "ratio": 43.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐々木　稔之",
+      "shares": 290000,
+      "ratio": 21.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "佐々木　智範",
+      "shares": 290000,
+      "ratio": 21.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大野　誠",
+      "shares": 6500,
+      "ratio": 0.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "唐川　光広",
+      "shares": 6500,
+      "ratio": 0.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "北本　哲也",
+      "shares": 3400,
+      "ratio": 0.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山田　義文",
+      "shares": 2200,
+      "ratio": 0.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大山　達",
+      "shares": 2200,
+      "ratio": 0.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "織田　博",
+      "shares": 1500,
+      "ratio": 0.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "林　勝美",
+      "shares": 1400,
+      "ratio": 0.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.53,
+      "individual": 43.8
+    },
+    "individual_total": 43.8,
+    "top10_total": 87.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/04/01－2026/03/31)",
+      "docID": "S100YK6C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＳＴＴ",
+          "shares": 599900,
+          "ratio": 43.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐々木　稔之",
+          "shares": 290000,
+          "ratio": 21.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐々木　智範",
+          "shares": 290000,
+          "ratio": 21.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大野　誠",
+          "shares": 6500,
+          "ratio": 0.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "唐川　光広",
+          "shares": 6500,
+          "ratio": 0.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "北本　哲也",
+          "shares": 3400,
+          "ratio": 0.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山田　義文",
+          "shares": 2200,
+          "ratio": 0.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大山　達",
+          "shares": 2200,
+          "ratio": 0.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "織田　博",
+          "shares": 1500,
+          "ratio": 0.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "林　勝美",
+          "shares": 1400,
+          "ratio": 0.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.53,
+          "individual": 43.8
+        },
+        "individual_total": 43.8,
+        "top10_total": 87.33
+      }
+    }
+  ]
+}

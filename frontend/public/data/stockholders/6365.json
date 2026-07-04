@@ -1,0 +1,222 @@
+{
+  "secCode": "6365",
+  "issuerName": "株式会社電業社機械製作所",
+  "updated_at": "2026/07/04 18:12 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社GM INVESTMENTS",
+      "shares": 506900,
+      "ratio": 12.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "電業社取引先持株会",
+      "shares": 261800,
+      "ratio": 6.31,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "明治安田生命保険相互会社\n（常任代理人 株式会社日本カストディ銀行）",
+      "shares": 175800,
+      "ratio": 4.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 164000,
+      "ratio": 3.95,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社明電舎",
+      "shares": 127500,
+      "ratio": 3.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "一般財団法人生産技術研究奨励会",
+      "shares": 120000,
+      "ratio": 2.89,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 104500,
+      "ratio": 2.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "水道機工株式会社",
+      "shares": 70600,
+      "ratio": 1.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "電業社従業員持株会",
+      "shares": 65600,
+      "ratio": 1.58,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社鶴見製作所",
+      "shares": 65200,
+      "ratio": 1.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.55,
+      "employee": 7.89,
+      "trust": 4.24,
+      "other": 3.95,
+      "foundation": 2.89,
+      "financial": 2.52
+    },
+    "individual_total": 0,
+    "top10_total": 40.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第91期(2025/04/01－2026/03/31)",
+      "docID": "S100YI72",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社GM INVESTMENTS",
+          "shares": 506900,
+          "ratio": 12.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "電業社取引先持株会",
+          "shares": 261800,
+          "ratio": 6.31,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "明治安田生命保険相互会社\n（常任代理人 株式会社日本カストディ銀行）",
+          "shares": 175800,
+          "ratio": 4.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 164000,
+          "ratio": 3.95,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社明電舎",
+          "shares": 127500,
+          "ratio": 3.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "一般財団法人生産技術研究奨励会",
+          "shares": 120000,
+          "ratio": 2.89,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 104500,
+          "ratio": 2.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "水道機工株式会社",
+          "shares": 70600,
+          "ratio": 1.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "電業社従業員持株会",
+          "shares": 65600,
+          "ratio": 1.58,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社鶴見製作所",
+          "shares": 65200,
+          "ratio": 1.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.55,
+          "employee": 7.89,
+          "trust": 4.24,
+          "other": 3.95,
+          "foundation": 2.89,
+          "financial": 2.52
+        },
+        "individual_total": 0,
+        "top10_total": 40.04
+      }
+    }
+  ]
+}

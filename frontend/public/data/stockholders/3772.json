@@ -1,0 +1,214 @@
+{
+  "secCode": "3772",
+  "issuerName": "ウェルス・マネジメント株式会社",
+  "updated_at": "2026/07/04 18:43 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社第一ライフグループ（旧会社名　第一生命ホールディングス株式会社）",
+      "shares": 5459200,
+      "ratio": 28.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "赤坂社中有限責任事業組合",
+      "shares": 3356400,
+      "ratio": 17.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "千野　和俊",
+      "shares": 1610300,
+      "ratio": 8.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "目時　伴雄",
+      "shares": 505000,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小島　秀明",
+      "shares": 270800,
+      "ratio": 1.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "麻布社中有限責任事業組合",
+      "shares": 248000,
+      "ratio": 1.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三原　大介",
+      "shares": 142100,
+      "ratio": 0.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "奥山　泰",
+      "shares": 140800,
+      "ratio": 0.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "今田　昭博",
+      "shares": 116200,
+      "ratio": 0.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券株式会社",
+      "shares": 104933,
+      "ratio": 0.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.02,
+      "individual": 33.31
+    },
+    "individual_total": 33.31,
+    "top10_total": 62.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/04/01－2026/03/31)",
+      "docID": "S100YGX4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社第一ライフグループ（旧会社名　第一生命ホールディングス株式会社）",
+          "shares": 5459200,
+          "ratio": 28.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "赤坂社中有限責任事業組合",
+          "shares": 3356400,
+          "ratio": 17.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "千野　和俊",
+          "shares": 1610300,
+          "ratio": 8.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "目時　伴雄",
+          "shares": 505000,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小島　秀明",
+          "shares": 270800,
+          "ratio": 1.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "麻布社中有限責任事業組合",
+          "shares": 248000,
+          "ratio": 1.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三原　大介",
+          "shares": 142100,
+          "ratio": 0.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "奥山　泰",
+          "shares": 140800,
+          "ratio": 0.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "今田　昭博",
+          "shares": 116200,
+          "ratio": 0.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 104933,
+          "ratio": 0.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.02,
+          "individual": 33.31
+        },
+        "individual_total": 33.31,
+        "top10_total": 62.33
+      }
+    }
+  ]
+}

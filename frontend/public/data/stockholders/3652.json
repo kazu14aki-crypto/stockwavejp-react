@@ -1,0 +1,216 @@
+{
+  "secCode": "3652",
+  "issuerName": "株式会社ディジタルメディアプロフェッショナル",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ヤマハ発動機株式会社",
+      "shares": 320000,
+      "ratio": 10.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社レスター",
+      "shares": 285000,
+      "ratio": 9.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山本達夫",
+      "shares": 71700,
+      "ratio": 2.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三津久直",
+      "shares": 66900,
+      "ratio": 2.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "楽天証券株式会社共有口",
+      "shares": 66500,
+      "ratio": 2.11,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上田八木短資株式会社",
+      "shares": 60000,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社SBI証券",
+      "shares": 56081,
+      "ratio": 1.78,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "土田博康",
+      "shares": 42100,
+      "ratio": 1.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吹上了",
+      "shares": 32000,
+      "ratio": 1.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "伊原俊一",
+      "shares": 29700,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 21.13,
+      "individual": 7.67,
+      "securities": 3.89
+    },
+    "individual_total": 7.67,
+    "top10_total": 32.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第24期(2025/04/01－2026/03/31)",
+      "docID": "S100YGPD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ヤマハ発動機株式会社",
+          "shares": 320000,
+          "ratio": 10.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社レスター",
+          "shares": 285000,
+          "ratio": 9.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山本達夫",
+          "shares": 71700,
+          "ratio": 2.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三津久直",
+          "shares": 66900,
+          "ratio": 2.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社共有口",
+          "shares": 66500,
+          "ratio": 2.11,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上田八木短資株式会社",
+          "shares": 60000,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社SBI証券",
+          "shares": 56081,
+          "ratio": 1.78,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "土田博康",
+          "shares": 42100,
+          "ratio": 1.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吹上了",
+          "shares": 32000,
+          "ratio": 1.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "伊原俊一",
+          "shares": 29700,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 21.13,
+          "individual": 7.67,
+          "securities": 3.89
+        },
+        "individual_total": 7.67,
+        "top10_total": 32.69
+      }
+    }
+  ]
+}

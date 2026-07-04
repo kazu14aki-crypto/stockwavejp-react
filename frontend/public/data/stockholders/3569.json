@@ -1,0 +1,220 @@
+{
+  "secCode": "3569",
+  "issuerName": "セーレン株式会社",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 7611000,
+      "ratio": 12.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7376000,
+      "ratio": 12.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社北陸銀行",
+      "shares": 2346000,
+      "ratio": 3.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "SG/UCITS V/INV  （常任代理人　   香港上海銀行東京支店）",
+      "shares": 2072000,
+      "ratio": 3.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "セーレン共栄会",
+      "shares": 2009000,
+      "ratio": 3.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "GOVERNMENT OF NORWAY （常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1636000,
+      "ratio": 2.78,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "旭化成株式会社",
+      "shares": 1624000,
+      "ratio": 2.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 1505000,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東京海上日動火災保険株式会社",
+      "shares": 1130000,
+      "ratio": 1.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "久光製薬株式会社",
+      "shares": 1090000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 25.48,
+      "financial": 10.07,
+      "individual": 3.42,
+      "other": 2.78,
+      "corporate": 6.53
+    },
+    "individual_total": 3.42,
+    "top10_total": 48.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第154期(2025/04/01－2026/03/31)",
+      "docID": "S100YH1G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 7611000,
+          "ratio": 12.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7376000,
+          "ratio": 12.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社北陸銀行",
+          "shares": 2346000,
+          "ratio": 3.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "SG/UCITS V/INV  （常任代理人　   香港上海銀行東京支店）",
+          "shares": 2072000,
+          "ratio": 3.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "セーレン共栄会",
+          "shares": 2009000,
+          "ratio": 3.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "GOVERNMENT OF NORWAY （常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1636000,
+          "ratio": 2.78,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "旭化成株式会社",
+          "shares": 1624000,
+          "ratio": 2.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 1505000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東京海上日動火災保険株式会社",
+          "shares": 1130000,
+          "ratio": 1.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "久光製薬株式会社",
+          "shares": 1090000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 25.48,
+          "financial": 10.07,
+          "individual": 3.42,
+          "other": 2.78,
+          "corporate": 6.53
+        },
+        "individual_total": 3.42,
+        "top10_total": 48.28
+      }
+    }
+  ]
+}

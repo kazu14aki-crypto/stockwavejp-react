@@ -1,0 +1,220 @@
+{
+  "secCode": "5280",
+  "issuerName": "ヨシコン株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ワイズ株式会社",
+      "shares": 2501000,
+      "ratio": 35.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "太平洋セメント株式会社",
+      "shares": 320000,
+      "ratio": 4.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ヨシコン取引先持株会",
+      "shares": 291000,
+      "ratio": 4.17,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社静岡銀行",
+      "shares": 248000,
+      "ratio": 3.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 248000,
+      "ratio": 3.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社商工組合中央金庫",
+      "shares": 218000,
+      "ratio": 3.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "内藤　征吾",
+      "shares": 186000,
+      "ratio": 2.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 148000,
+      "ratio": 2.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉田　立志",
+      "shares": 102000,
+      "ratio": 1.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "吉田　尚洋",
+      "shares": 102000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.47,
+      "employee": 4.17,
+      "financial": 7.12,
+      "individual": 5.6,
+      "securities": 2.13
+    },
+    "individual_total": 5.6,
+    "top10_total": 62.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第58期(2025/04/01－2026/03/31)",
+      "docID": "S100YJO9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ワイズ株式会社",
+          "shares": 2501000,
+          "ratio": 35.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "太平洋セメント株式会社",
+          "shares": 320000,
+          "ratio": 4.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ヨシコン取引先持株会",
+          "shares": 291000,
+          "ratio": 4.17,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社静岡銀行",
+          "shares": 248000,
+          "ratio": 3.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 248000,
+          "ratio": 3.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社商工組合中央金庫",
+          "shares": 218000,
+          "ratio": 3.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "内藤　征吾",
+          "shares": 186000,
+          "ratio": 2.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 148000,
+          "ratio": 2.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉田　立志",
+          "shares": 102000,
+          "ratio": 1.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "吉田　尚洋",
+          "shares": 102000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.47,
+          "employee": 4.17,
+          "financial": 7.12,
+          "individual": 5.6,
+          "securities": 2.13
+        },
+        "individual_total": 5.6,
+        "top10_total": 62.49
+      }
+    }
+  ]
+}

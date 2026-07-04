@@ -1,0 +1,220 @@
+{
+  "secCode": "7220",
+  "issuerName": "武蔵精密工業株式会社",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "本田技研工業株式会社",
+      "shares": 16364000,
+      "ratio": 24.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4979000,
+      "ratio": 7.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口)",
+      "shares": 4349000,
+      "ratio": 6.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "合資会社大塚ホールディングス",
+      "shares": 2603000,
+      "ratio": 3.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "MISAKI ENGAGEMENT MASTER FUND\n（常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ部）",
+      "shares": 2555000,
+      "ratio": 3.89,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 2441000,
+      "ratio": 3.72,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大塚　浩史",
+      "shares": 1513000,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS （常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ部）",
+      "shares": 1450000,
+      "ratio": 2.21,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "CGML PB CLIENT ACCOUNT/COLLATERAL（常任代理人 シティバンク、エヌ・エイ東京支店カストディ業務部）",
+      "shares": 1446000,
+      "ratio": 2.2,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301 (常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 1233000,
+      "ratio": 1.88,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.93,
+      "trust": 14.22,
+      "financial": 3.89,
+      "foreign": 10.01,
+      "individual": 2.3
+    },
+    "individual_total": 2.3,
+    "top10_total": 59.35
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第99期(2025/04/01－2026/03/31)",
+      "docID": "S100YGX6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "本田技研工業株式会社",
+          "shares": 16364000,
+          "ratio": 24.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4979000,
+          "ratio": 7.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口)",
+          "shares": 4349000,
+          "ratio": 6.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "合資会社大塚ホールディングス",
+          "shares": 2603000,
+          "ratio": 3.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "MISAKI ENGAGEMENT MASTER FUND\n（常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ部）",
+          "shares": 2555000,
+          "ratio": 3.89,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 2441000,
+          "ratio": 3.72,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大塚　浩史",
+          "shares": 1513000,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS （常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ部）",
+          "shares": 1450000,
+          "ratio": 2.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "CGML PB CLIENT ACCOUNT/COLLATERAL（常任代理人 シティバンク、エヌ・エイ東京支店カストディ業務部）",
+          "shares": 1446000,
+          "ratio": 2.2,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301 (常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 1233000,
+          "ratio": 1.88,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.93,
+          "trust": 14.22,
+          "financial": 3.89,
+          "foreign": 10.01,
+          "individual": 2.3
+        },
+        "individual_total": 2.3,
+        "top10_total": 59.35
+      }
+    }
+  ]
+}

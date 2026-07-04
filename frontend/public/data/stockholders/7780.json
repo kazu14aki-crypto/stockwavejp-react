@@ -1,0 +1,220 @@
+{
+  "secCode": "7780",
+  "issuerName": "株式会社メニコン",
+  "updated_at": "2026/07/04 18:05 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 8721000,
+      "ratio": 11.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社トヨトミ",
+      "shares": 3964000,
+      "ratio": 5.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GOLDMAN,SACHS & CO.REG （常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 3304000,
+      "ratio": 4.42,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 3109000,
+      "ratio": 4.16,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田中　英成",
+      "shares": 2517000,
+      "ratio": 3.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "塚本　香津子",
+      "shares": 2266000,
+      "ratio": 3.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社（信託口2052116）",
+      "shares": 2000000,
+      "ratio": 2.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "メニコングループ社員持株会",
+      "shares": 1834000,
+      "ratio": 2.45,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社マミ",
+      "shares": 1747000,
+      "ratio": 2.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 （常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1617000,
+      "ratio": 2.16,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.5,
+      "corporate": 7.63,
+      "foreign": 6.58,
+      "individual": 6.39,
+      "employee": 2.45
+    },
+    "individual_total": 6.39,
+    "top10_total": 41.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第69期(2025/04/01－2026/03/31)",
+      "docID": "S100YIHS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 8721000,
+          "ratio": 11.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社トヨトミ",
+          "shares": 3964000,
+          "ratio": 5.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GOLDMAN,SACHS & CO.REG （常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 3304000,
+          "ratio": 4.42,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3109000,
+          "ratio": 4.16,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田中　英成",
+          "shares": 2517000,
+          "ratio": 3.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "塚本　香津子",
+          "shares": 2266000,
+          "ratio": 3.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社（信託口2052116）",
+          "shares": 2000000,
+          "ratio": 2.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "メニコングループ社員持株会",
+          "shares": 1834000,
+          "ratio": 2.45,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社マミ",
+          "shares": 1747000,
+          "ratio": 2.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 （常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1617000,
+          "ratio": 2.16,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.5,
+          "corporate": 7.63,
+          "foreign": 6.58,
+          "individual": 6.39,
+          "employee": 2.45
+        },
+        "individual_total": 6.39,
+        "top10_total": 41.55
+      }
+    }
+  ]
+}

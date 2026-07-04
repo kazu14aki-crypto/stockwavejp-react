@@ -1,0 +1,220 @@
+{
+  "secCode": "7912",
+  "issuerName": "大日本印刷株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 75183000,
+      "ratio": 17.43,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 24254000,
+      "ratio": 5.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１（常任代理人　株式会社みずほ銀行）",
+      "shares": 13233000,
+      "ratio": 3.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "自社従業員持株会",
+      "shares": 12441000,
+      "ratio": 2.88,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "第一生命保険株式会社",
+      "shares": 11923000,
+      "ratio": 2.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本生命保険相互会社",
+      "shares": 9471000,
+      "ratio": 2.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社みずほ銀行",
+      "shares": 7666000,
+      "ratio": 1.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＧＯＶＥＲＮＭＥＮＴ  ＯＦ  ＮＯＲＷＡＹ（常任代理人  シティバンク）",
+      "shares": 5903000,
+      "ratio": 1.37,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１（常任代理人　株式会社みずほ銀行）",
+      "shares": 5739000,
+      "ratio": 1.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPモルガン証券株式会社",
+      "shares": 5048000,
+      "ratio": 1.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.05,
+      "financial": 11.14,
+      "employee": 2.88,
+      "other": 1.37,
+      "securities": 1.17
+    },
+    "individual_total": 0,
+    "top10_total": 39.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第132期(2025/04/01－2026/03/31)",
+      "docID": "S100YF74",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 75183000,
+          "ratio": 17.43,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 24254000,
+          "ratio": 5.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１（常任代理人　株式会社みずほ銀行）",
+          "shares": 13233000,
+          "ratio": 3.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "自社従業員持株会",
+          "shares": 12441000,
+          "ratio": 2.88,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "第一生命保険株式会社",
+          "shares": 11923000,
+          "ratio": 2.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本生命保険相互会社",
+          "shares": 9471000,
+          "ratio": 2.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社みずほ銀行",
+          "shares": 7666000,
+          "ratio": 1.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＧＯＶＥＲＮＭＥＮＴ  ＯＦ  ＮＯＲＷＡＹ（常任代理人  シティバンク）",
+          "shares": 5903000,
+          "ratio": 1.37,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１（常任代理人　株式会社みずほ銀行）",
+          "shares": 5739000,
+          "ratio": 1.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 5048000,
+          "ratio": 1.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.05,
+          "financial": 11.14,
+          "employee": 2.88,
+          "other": 1.37,
+          "securities": 1.17
+        },
+        "individual_total": 0,
+        "top10_total": 39.61
+      }
+    }
+  ]
+}

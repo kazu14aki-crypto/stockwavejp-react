@@ -1,0 +1,220 @@
+{
+  "secCode": "3059",
+  "issuerName": "ヒラキ株式会社",
+  "updated_at": "2026/07/04 17:47 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社マヤハ",
+      "shares": 752000,
+      "ratio": 15.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "神戸信用金庫",
+      "shares": 251000,
+      "ratio": 5.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ヒラキ従業員持株会",
+      "shares": 236000,
+      "ratio": 4.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みなと銀行",
+      "shares": 211000,
+      "ratio": 4.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "平木　和代",
+      "shares": 195000,
+      "ratio": 4.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社山陰合同銀行",
+      "shares": 184000,
+      "ratio": 3.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "兵庫県信用農業協同組合連合会",
+      "shares": 110000,
+      "ratio": 2.25,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "梅木　孝雄",
+      "shares": 97000,
+      "ratio": 1.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社山口銀行",
+      "shares": 81000,
+      "ratio": 1.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上野　万弓",
+      "shares": 51000,
+      "ratio": 1.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 15.44,
+      "financial": 14.93,
+      "employee": 4.85,
+      "individual": 7.05,
+      "government": 2.25
+    },
+    "individual_total": 7.05,
+    "top10_total": 44.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第49期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ9F",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社マヤハ",
+          "shares": 752000,
+          "ratio": 15.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "神戸信用金庫",
+          "shares": 251000,
+          "ratio": 5.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ヒラキ従業員持株会",
+          "shares": 236000,
+          "ratio": 4.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みなと銀行",
+          "shares": 211000,
+          "ratio": 4.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "平木　和代",
+          "shares": 195000,
+          "ratio": 4.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社山陰合同銀行",
+          "shares": 184000,
+          "ratio": 3.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "兵庫県信用農業協同組合連合会",
+          "shares": 110000,
+          "ratio": 2.25,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "梅木　孝雄",
+          "shares": 97000,
+          "ratio": 1.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社山口銀行",
+          "shares": 81000,
+          "ratio": 1.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上野　万弓",
+          "shares": 51000,
+          "ratio": 1.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 15.44,
+          "financial": 14.93,
+          "employee": 4.85,
+          "individual": 7.05,
+          "government": 2.25
+        },
+        "individual_total": 7.05,
+        "top10_total": 44.52
+      }
+    }
+  ]
+}

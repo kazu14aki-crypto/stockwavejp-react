@@ -1,0 +1,220 @@
+{
+  "secCode": "2810",
+  "issuerName": "ハウス食品グループ本社株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+      "shares": 8791500,
+      "ratio": 9.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ハウス興産株式会社",
+      "shares": 8458916,
+      "ratio": 9.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社HKL",
+      "shares": 7908100,
+      "ratio": 8.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "公益財団法人浦上食品・食文化\n振興財団",
+      "shares": 2900218,
+      "ratio": 3.18,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 2202500,
+      "ratio": 2.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 1900027,
+      "ratio": 2.08,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "浦上　節子",
+      "shares": 1849569,
+      "ratio": 2.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 1844810,
+      "ratio": 2.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 1750000,
+      "ratio": 1.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1731749,
+      "ratio": 1.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 12.06,
+      "corporate": 17.95,
+      "foundation": 3.18,
+      "financial": 7.92,
+      "individual": 2.03
+    },
+    "individual_total": 2.03,
+    "top10_total": 43.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YD7A",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+          "shares": 8791500,
+          "ratio": 9.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ハウス興産株式会社",
+          "shares": 8458916,
+          "ratio": 9.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社HKL",
+          "shares": 7908100,
+          "ratio": 8.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "公益財団法人浦上食品・食文化\n振興財団",
+          "shares": 2900218,
+          "ratio": 3.18,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 2202500,
+          "ratio": 2.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 1900027,
+          "ratio": 2.08,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "浦上　節子",
+          "shares": 1849569,
+          "ratio": 2.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 1844810,
+          "ratio": 2.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 1750000,
+          "ratio": 1.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1731749,
+          "ratio": 1.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 12.06,
+          "corporate": 17.95,
+          "foundation": 3.18,
+          "financial": 7.92,
+          "individual": 2.03
+        },
+        "individual_total": 2.03,
+        "top10_total": 43.14
+      }
+    }
+  ]
+}

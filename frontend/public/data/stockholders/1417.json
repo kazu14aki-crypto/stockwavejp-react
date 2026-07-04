@@ -1,0 +1,220 @@
+{
+  "secCode": "1417",
+  "issuerName": "株式会社ミライト・ワン",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 12475000,
+      "ratio": 14.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 5724000,
+      "ratio": 6.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友電気工業株式会社",
+      "shares": 3668000,
+      "ratio": 4.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行）",
+      "shares": 2373000,
+      "ratio": 2.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ミライト・ワン従業員持株会",
+      "shares": 2213000,
+      "ratio": 2.48,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "住友電設株式会社",
+      "shares": 1991000,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "GOVERNMENT OF NORWAY （常任代理人 シティバンク）",
+      "shares": 1504000,
+      "ratio": 1.69,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行（常任代理人 株式会社日本カストディ銀行）",
+      "shares": 1300000,
+      "ratio": 1.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385781 （常任代理人 株式会社みずほ銀行）",
+      "shares": 1177000,
+      "ratio": 1.32,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人 株式会社みずほ銀行）",
+      "shares": 1170000,
+      "ratio": 1.31,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 21.88,
+      "corporate": 6.35,
+      "foreign": 5.29,
+      "employee": 2.48,
+      "other": 1.69
+    },
+    "individual_total": 0,
+    "top10_total": 37.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第16期(2025/04/01－2026/03/31)",
+      "docID": "S100YG40",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 12475000,
+          "ratio": 14.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 5724000,
+          "ratio": 6.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友電気工業株式会社",
+          "shares": 3668000,
+          "ratio": 4.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行）",
+          "shares": 2373000,
+          "ratio": 2.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ミライト・ワン従業員持株会",
+          "shares": 2213000,
+          "ratio": 2.48,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "住友電設株式会社",
+          "shares": 1991000,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "GOVERNMENT OF NORWAY （常任代理人 シティバンク）",
+          "shares": 1504000,
+          "ratio": 1.69,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行（常任代理人 株式会社日本カストディ銀行）",
+          "shares": 1300000,
+          "ratio": 1.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385781 （常任代理人 株式会社みずほ銀行）",
+          "shares": 1177000,
+          "ratio": 1.32,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人 株式会社みずほ銀行）",
+          "shares": 1170000,
+          "ratio": 1.31,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 21.88,
+          "corporate": 6.35,
+          "foreign": 5.29,
+          "employee": 2.48,
+          "other": 1.69
+        },
+        "individual_total": 0,
+        "top10_total": 37.69
+      }
+    }
+  ]
+}

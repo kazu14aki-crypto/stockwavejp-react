@@ -1,0 +1,220 @@
+{
+  "secCode": "3010",
+  "issuerName": "ポラリス・ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "SAJP VI 3.0 LP",
+      "shares": 106199591,
+      "ratio": 45.4,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "Star Asia Opportunity III LP",
+      "shares": 62368390,
+      "ratio": 26.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE BANK OF NEW YORK MELLON 140040\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 23159988,
+      "ratio": 9.9,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "DBLDN HSE EQT 2\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 3800100,
+      "ratio": 1.62,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "マルコム・エフ・マクリーン４世",
+      "shares": 2287742,
+      "ratio": 0.97,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "増山 太郎",
+      "shares": 2287742,
+      "ratio": 0.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "CHARLES SCHWAB FBO\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 721000,
+      "ratio": 0.3,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "PERSHING SEC INT LTD CLIENT ASSET CUSTODY A/C\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 652800,
+      "ratio": 0.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS SINGAPORE/2S/JASDEC/CLIENT ASSET\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 505200,
+      "ratio": 0.21,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 450000,
+      "ratio": 0.19,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 82.15,
+      "other": 2.89,
+      "individual": 0.97,
+      "corporate": 0.27,
+      "financial": 0.21
+    },
+    "individual_total": 0.97,
+    "top10_total": 86.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第152期(2025/04/01－2026/03/31)",
+      "docID": "S100YITQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "SAJP VI 3.0 LP",
+          "shares": 106199591,
+          "ratio": 45.4,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "Star Asia Opportunity III LP",
+          "shares": 62368390,
+          "ratio": 26.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE BANK OF NEW YORK MELLON 140040\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 23159988,
+          "ratio": 9.9,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "DBLDN HSE EQT 2\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 3800100,
+          "ratio": 1.62,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "マルコム・エフ・マクリーン４世",
+          "shares": 2287742,
+          "ratio": 0.97,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "増山 太郎",
+          "shares": 2287742,
+          "ratio": 0.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "CHARLES SCHWAB FBO\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 721000,
+          "ratio": 0.3,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "PERSHING SEC INT LTD CLIENT ASSET CUSTODY A/C\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 652800,
+          "ratio": 0.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS SINGAPORE/2S/JASDEC/CLIENT ASSET\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 505200,
+          "ratio": 0.21,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 450000,
+          "ratio": 0.19,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 82.15,
+          "other": 2.89,
+          "individual": 0.97,
+          "corporate": 0.27,
+          "financial": 0.21
+        },
+        "individual_total": 0.97,
+        "top10_total": 86.49
+      }
+    }
+  ]
+}

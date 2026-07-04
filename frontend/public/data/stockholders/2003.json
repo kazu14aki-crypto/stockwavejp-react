@@ -1,0 +1,220 @@
+{
+  "secCode": "2003",
+  "issuerName": "日東富士製粉株式会社",
+  "updated_at": "2026/07/04 18:04 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三菱商事株式会社",
+      "shares": 5905600,
+      "ratio": 64.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 423500,
+      "ratio": 4.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 138100,
+      "ratio": 1.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "山崎製パン株式会社",
+      "shares": 123800,
+      "ratio": 1.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日東富士製粉持株会",
+      "shares": 99800,
+      "ratio": 1.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日清食品ホールディングス株式会社",
+      "shares": 86300,
+      "ratio": 0.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鈴与株式会社",
+      "shares": 51500,
+      "ratio": 0.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社中村屋",
+      "shares": 50000,
+      "ratio": 0.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＤＦＡ ＩＮＴＬ ＳＭＡＬＬ ＣＡＰ ＶＡＬＵＥ ＰＯＲＴＦＯＬＩＯ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 38800,
+      "ratio": 0.43,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "新潟県砂糖卸荷受商業協同組合",
+      "shares": 28000,
+      "ratio": 0.31,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 68.16,
+      "trust": 6.15,
+      "employee": 1.09,
+      "other": 0.43,
+      "government": 0.31
+    },
+    "individual_total": 0,
+    "top10_total": 76.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第128期(2025/04/01－2026/03/31)",
+      "docID": "S100YK99",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三菱商事株式会社",
+          "shares": 5905600,
+          "ratio": 64.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 423500,
+          "ratio": 4.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 138100,
+          "ratio": 1.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "山崎製パン株式会社",
+          "shares": 123800,
+          "ratio": 1.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日東富士製粉持株会",
+          "shares": 99800,
+          "ratio": 1.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日清食品ホールディングス株式会社",
+          "shares": 86300,
+          "ratio": 0.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鈴与株式会社",
+          "shares": 51500,
+          "ratio": 0.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社中村屋",
+          "shares": 50000,
+          "ratio": 0.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＤＦＡ ＩＮＴＬ ＳＭＡＬＬ ＣＡＰ ＶＡＬＵＥ ＰＯＲＴＦＯＬＩＯ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 38800,
+          "ratio": 0.43,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "新潟県砂糖卸荷受商業協同組合",
+          "shares": 28000,
+          "ratio": 0.31,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 68.16,
+          "trust": 6.15,
+          "employee": 1.09,
+          "other": 0.43,
+          "government": 0.31
+        },
+        "individual_total": 0,
+        "top10_total": 76.14
+      }
+    }
+  ]
+}

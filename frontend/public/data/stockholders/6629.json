@@ -1,0 +1,224 @@
+{
+  "secCode": "6629",
+  "issuerName": "テクノホライゾン株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社野村トラスト",
+      "shares": 1480000,
+      "ratio": 10.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社野村興産",
+      "shares": 585000,
+      "ratio": 4.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "楽天証券株式会社共有口",
+      "shares": 288000,
+      "ratio": 2.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社大垣共立銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 264000,
+      "ratio": 1.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 253000,
+      "ratio": 1.88,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "榊　雅信",
+      "shares": 253000,
+      "ratio": 1.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "テクノホライゾン従業員持株会",
+      "shares": 216000,
+      "ratio": 1.6,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　Ａ／Ｃ　ＩＰＢ　ＳＥＧＲＥＧＡＴＥＤ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 210000,
+      "ratio": 1.55,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＬＩＥＮＴ　ＯＭＮＩＢＵＳ　ＡＣＣＯＵＮＴ（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 204000,
+      "ratio": 1.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰＭＳＬＬＣ　ＣＬ　ＪＰＹ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 188000,
+      "ratio": 1.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 16.71,
+      "securities": 4.01,
+      "trust": 1.95,
+      "individual": 1.88,
+      "employee": 1.6,
+      "other": 1.55,
+      "financial": 1.51
+    },
+    "individual_total": 1.88,
+    "top10_total": 29.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第16期(2025/04/01－2026/03/31)",
+      "docID": "S100YLV9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社野村トラスト",
+          "shares": 1480000,
+          "ratio": 10.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社野村興産",
+          "shares": 585000,
+          "ratio": 4.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "楽天証券株式会社共有口",
+          "shares": 288000,
+          "ratio": 2.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社大垣共立銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 264000,
+          "ratio": 1.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 253000,
+          "ratio": 1.88,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "榊　雅信",
+          "shares": 253000,
+          "ratio": 1.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テクノホライゾン従業員持株会",
+          "shares": 216000,
+          "ratio": 1.6,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　Ａ／Ｃ　ＩＰＢ　ＳＥＧＲＥＧＡＴＥＤ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 210000,
+          "ratio": 1.55,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＬＩＥＮＴ　ＯＭＮＩＢＵＳ　ＡＣＣＯＵＮＴ（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 204000,
+          "ratio": 1.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰＭＳＬＬＣ　ＣＬ　ＪＰＹ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 188000,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 16.71,
+          "securities": 4.01,
+          "trust": 1.95,
+          "individual": 1.88,
+          "employee": 1.6,
+          "other": 1.55,
+          "financial": 1.51
+        },
+        "individual_total": 1.88,
+        "top10_total": 29.21
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "1938",
+  "issuerName": "日本リーテック株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東日本旅客鉄道株式会社",
+      "shares": 4851000,
+      "ratio": 19.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1764000,
+      "ratio": 7.12,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本電設工業株式会社",
+      "shares": 1045000,
+      "ratio": 4.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 973000,
+      "ratio": 3.93,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本リーテック従業員持株会",
+      "shares": 959000,
+      "ratio": 3.87,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 895000,
+      "ratio": 3.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本リーテック取引先持株会",
+      "shares": 778000,
+      "ratio": 3.14,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "トーグ安全工業株式会社",
+      "shares": 649000,
+      "ratio": 2.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本信号株式会社",
+      "shares": 570000,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大同信号株式会社",
+      "shares": 502000,
+      "ratio": 2.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 30.75,
+      "trust": 10.74,
+      "other": 3.93,
+      "employee": 7.01
+    },
+    "individual_total": 0,
+    "top10_total": 52.43
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/04/01－2026/03/31)",
+      "docID": "S100YI6M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東日本旅客鉄道株式会社",
+          "shares": 4851000,
+          "ratio": 19.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1764000,
+          "ratio": 7.12,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本電設工業株式会社",
+          "shares": 1045000,
+          "ratio": 4.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 973000,
+          "ratio": 3.93,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本リーテック従業員持株会",
+          "shares": 959000,
+          "ratio": 3.87,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 895000,
+          "ratio": 3.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本リーテック取引先持株会",
+          "shares": 778000,
+          "ratio": 3.14,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "トーグ安全工業株式会社",
+          "shares": 649000,
+          "ratio": 2.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本信号株式会社",
+          "shares": 570000,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大同信号株式会社",
+          "shares": 502000,
+          "ratio": 2.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 30.75,
+          "trust": 10.74,
+          "other": 3.93,
+          "employee": 7.01
+        },
+        "individual_total": 0,
+        "top10_total": 52.43
+      }
+    }
+  ]
+}

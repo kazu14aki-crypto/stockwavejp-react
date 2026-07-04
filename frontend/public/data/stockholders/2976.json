@@ -1,0 +1,214 @@
+{
+  "secCode": "2976",
+  "issuerName": "日本グランデ株式会社",
+  "updated_at": "2026/07/04 18:12 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "雅リアルエステート株式会社",
+      "shares": 350000,
+      "ratio": 26.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "平山恒産株式会社",
+      "shares": 344000,
+      "ratio": 25.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "平野　雅博",
+      "shares": 180100,
+      "ratio": 13.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "矢代　俊二",
+      "shares": 59300,
+      "ratio": 4.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社クレックス",
+      "shares": 53100,
+      "ratio": 3.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社土屋ホールディングス",
+      "shares": 18800,
+      "ratio": 1.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社アート不動産",
+      "shares": 18000,
+      "ratio": 1.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "米盛　公和",
+      "shares": 12900,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "青山　泰長",
+      "shares": 12100,
+      "ratio": 0.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田畠　勉",
+      "shares": 11000,
+      "ratio": 0.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 58.31,
+      "individual": 20.48
+    },
+    "individual_total": 20.48,
+    "top10_total": 78.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YIXO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "雅リアルエステート株式会社",
+          "shares": 350000,
+          "ratio": 26.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "平山恒産株式会社",
+          "shares": 344000,
+          "ratio": 25.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "平野　雅博",
+          "shares": 180100,
+          "ratio": 13.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "矢代　俊二",
+          "shares": 59300,
+          "ratio": 4.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社クレックス",
+          "shares": 53100,
+          "ratio": 3.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社土屋ホールディングス",
+          "shares": 18800,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社アート不動産",
+          "shares": 18000,
+          "ratio": 1.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "米盛　公和",
+          "shares": 12900,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "青山　泰長",
+          "shares": 12100,
+          "ratio": 0.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田畠　勉",
+          "shares": 11000,
+          "ratio": 0.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 58.31,
+          "individual": 20.48
+        },
+        "individual_total": 20.48,
+        "top10_total": 78.79
+      }
+    }
+  ]
+}

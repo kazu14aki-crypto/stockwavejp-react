@@ -1,0 +1,222 @@
+{
+  "secCode": "6157",
+  "issuerName": "日進工具株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社エムワイコーポレーション",
+      "shares": 2497000,
+      "ratio": 10.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ソルプティ",
+      "shares": 2435000,
+      "ratio": 10.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NORTHERN TRUST CO．(AVFC) RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2092000,
+      "ratio": 8.91,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1864000,
+      "ratio": 7.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ティ・アイロード",
+      "shares": 1847000,
+      "ratio": 7.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "後藤　弘治",
+      "shares": 788000,
+      "ratio": 3.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BANK LOMBARD ODIER AND CO LTD GENEVA\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 783000,
+      "ratio": 3.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "後藤　隆司",
+      "shares": 778000,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "後藤　勇二",
+      "shares": 661000,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日進工具従業員持株会",
+      "shares": 449000,
+      "ratio": 1.92,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.87,
+      "foreign": 8.91,
+      "trust": 7.94,
+      "individual": 9.49,
+      "financial": 3.34,
+      "employee": 1.92
+    },
+    "individual_total": 9.49,
+    "top10_total": 60.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第65期(2025/04/01－2026/03/31)",
+      "docID": "S100YG7J",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社エムワイコーポレーション",
+          "shares": 2497000,
+          "ratio": 10.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ソルプティ",
+          "shares": 2435000,
+          "ratio": 10.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NORTHERN TRUST CO．(AVFC) RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2092000,
+          "ratio": 8.91,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1864000,
+          "ratio": 7.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ティ・アイロード",
+          "shares": 1847000,
+          "ratio": 7.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "後藤　弘治",
+          "shares": 788000,
+          "ratio": 3.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BANK LOMBARD ODIER AND CO LTD GENEVA\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 783000,
+          "ratio": 3.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "後藤　隆司",
+          "shares": 778000,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "後藤　勇二",
+          "shares": 661000,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日進工具従業員持株会",
+          "shares": 449000,
+          "ratio": 1.92,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.87,
+          "foreign": 8.91,
+          "trust": 7.94,
+          "individual": 9.49,
+          "financial": 3.34,
+          "employee": 1.92
+        },
+        "individual_total": 9.49,
+        "top10_total": 60.47
+      }
+    }
+  ]
+}

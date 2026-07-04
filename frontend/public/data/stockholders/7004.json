@@ -1,0 +1,218 @@
+{
+  "secCode": "7004",
+  "issuerName": "カナデビア株式会社",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 29082000,
+      "ratio": 17.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 8980000,
+      "ratio": 5.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 5556000,
+      "ratio": 3.3,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 5370000,
+      "ratio": 3.19,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 5291000,
+      "ratio": 3.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 4013000,
+      "ratio": 2.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "HSBC－FUND SERVICES HSBC － 006 MF EFM\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 3100000,
+      "ratio": 1.84,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "HSBC BANK PLC A/C M AND G（ACS）VALUE PARTNERS\nCHINA EQUITY FUND\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 3086000,
+      "ratio": 1.83,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "カナデビア職員持株会",
+      "shares": 2636000,
+      "ratio": 1.56,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON 140042\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 2621000,
+      "ratio": 1.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.59,
+      "foreign": 14.1,
+      "financial": 3.14,
+      "employee": 1.56
+    },
+    "individual_total": 0,
+    "top10_total": 41.39
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第129期(2025/04/01－2026/03/31)",
+      "docID": "S100YGOR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 29082000,
+          "ratio": 17.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 8980000,
+          "ratio": 5.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 5556000,
+          "ratio": 3.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 5370000,
+          "ratio": 3.19,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 5291000,
+          "ratio": 3.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 4013000,
+          "ratio": 2.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "HSBC－FUND SERVICES HSBC － 006 MF EFM\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 3100000,
+          "ratio": 1.84,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "HSBC BANK PLC A/C M AND G（ACS）VALUE PARTNERS\nCHINA EQUITY FUND\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 3086000,
+          "ratio": 1.83,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "カナデビア職員持株会",
+          "shares": 2636000,
+          "ratio": 1.56,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON 140042\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 2621000,
+          "ratio": 1.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.59,
+          "foreign": 14.1,
+          "financial": 3.14,
+          "employee": 1.56
+        },
+        "individual_total": 0,
+        "top10_total": 41.39
+      }
+    }
+  ]
+}

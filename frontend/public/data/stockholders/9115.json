@@ -1,0 +1,214 @@
+{
+  "secCode": "9115",
+  "issuerName": "明海グループ株式会社",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "明治土地建物株式会社",
+      "shares": 3000000,
+      "ratio": 8.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "京町産業株式会社",
+      "shares": 2247000,
+      "ratio": 6.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "メディカ・サポート株式会社",
+      "shares": 1859000,
+      "ratio": 5.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 1794000,
+      "ratio": 4.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "タクティ株式会社",
+      "shares": 1699000,
+      "ratio": 4.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社マネックスマリンエンタープライズ",
+      "shares": 1595000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "明海興産株式会社",
+      "shares": 1141000,
+      "ratio": 3.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "パックトレーディング株式会社",
+      "shares": 1100000,
+      "ratio": 3.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山崎金属産業株式会社",
+      "shares": 1050000,
+      "ratio": 2.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社シーアールケイ",
+      "shares": 1010000,
+      "ratio": 2.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.5,
+      "financial": 4.9
+    },
+    "individual_total": 0,
+    "top10_total": 45.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第172期(2025/04/01－2026/03/31)",
+      "docID": "S100YGYV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "明治土地建物株式会社",
+          "shares": 3000000,
+          "ratio": 8.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "京町産業株式会社",
+          "shares": 2247000,
+          "ratio": 6.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "メディカ・サポート株式会社",
+          "shares": 1859000,
+          "ratio": 5.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 1794000,
+          "ratio": 4.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "タクティ株式会社",
+          "shares": 1699000,
+          "ratio": 4.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社マネックスマリンエンタープライズ",
+          "shares": 1595000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "明海興産株式会社",
+          "shares": 1141000,
+          "ratio": 3.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "パックトレーディング株式会社",
+          "shares": 1100000,
+          "ratio": 3.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山崎金属産業株式会社",
+          "shares": 1050000,
+          "ratio": 2.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社シーアールケイ",
+          "shares": 1010000,
+          "ratio": 2.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.5,
+          "financial": 4.9
+        },
+        "individual_total": 0,
+        "top10_total": 45.4
+      }
+    }
+  ]
+}

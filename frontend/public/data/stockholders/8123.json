@@ -1,0 +1,214 @@
+{
+  "secCode": "8123",
+  "issuerName": "川辺株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一広株式会社",
+      "shares": 1004000,
+      "ratio": 55.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "丸山　三千夫",
+      "shares": 55000,
+      "ratio": 3.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "伊藤忠商事株式会社",
+      "shares": 53000,
+      "ratio": 2.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松本　恒吉",
+      "shares": 20000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "越智　康行",
+      "shares": 19000,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大島　勇",
+      "shares": 11000,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岩澤　雅弥",
+      "shares": 11000,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大関　誠",
+      "shares": 11000,
+      "ratio": 0.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "川辺　浩子",
+      "shares": 10000,
+      "ratio": 0.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 10,
+      "name": "越智　勲",
+      "shares": 10000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 57.94,
+      "individual": 8.25
+    },
+    "individual_total": 8.25,
+    "top10_total": 66.19
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第81期(2025/04/01－2026/03/31)",
+      "docID": "S100YLIH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一広株式会社",
+          "shares": 1004000,
+          "ratio": 55.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "丸山　三千夫",
+          "shares": 55000,
+          "ratio": 3.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "伊藤忠商事株式会社",
+          "shares": 53000,
+          "ratio": 2.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松本　恒吉",
+          "shares": 20000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "越智　康行",
+          "shares": 19000,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大島　勇",
+          "shares": 11000,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岩澤　雅弥",
+          "shares": 11000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大関　誠",
+          "shares": 11000,
+          "ratio": 0.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "川辺　浩子",
+          "shares": 10000,
+          "ratio": 0.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 10,
+          "name": "越智　勲",
+          "shares": 10000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 57.94,
+          "individual": 8.25
+        },
+        "individual_total": 8.25,
+        "top10_total": 66.19
+      }
+    }
+  ]
+}

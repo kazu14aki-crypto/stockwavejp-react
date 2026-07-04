@@ -1,0 +1,214 @@
+{
+  "secCode": "3477",
+  "issuerName": "フォーライフ株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "奥本　健二",
+      "shares": 2640000,
+      "ratio": 66.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "フォーライフ従業員持株会",
+      "shares": 185800,
+      "ratio": 4.65,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "若杉　精三郎",
+      "shares": 58300,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "髙橋　効志",
+      "shares": 41991,
+      "ratio": 1.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中村　仁",
+      "shares": 41991,
+      "ratio": 1.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "嶋田　文吾",
+      "shares": 33000,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山本　守之",
+      "shares": 26000,
+      "ratio": 0.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "花光　雅丸",
+      "shares": 24600,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "花井　栄治",
+      "shares": 24200,
+      "ratio": 0.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "細谷　光弘",
+      "shares": 23400,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 72.87,
+      "employee": 4.65
+    },
+    "individual_total": 72.87,
+    "top10_total": 77.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/04/01－2026/03/31)",
+      "docID": "S100YKFC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "奥本　健二",
+          "shares": 2640000,
+          "ratio": 66.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "フォーライフ従業員持株会",
+          "shares": 185800,
+          "ratio": 4.65,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "若杉　精三郎",
+          "shares": 58300,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "髙橋　効志",
+          "shares": 41991,
+          "ratio": 1.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中村　仁",
+          "shares": 41991,
+          "ratio": 1.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "嶋田　文吾",
+          "shares": 33000,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山本　守之",
+          "shares": 26000,
+          "ratio": 0.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "花光　雅丸",
+          "shares": 24600,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "花井　栄治",
+          "shares": 24200,
+          "ratio": 0.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "細谷　光弘",
+          "shares": 23400,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 72.87,
+          "employee": 4.65
+        },
+        "individual_total": 72.87,
+        "top10_total": 77.52
+      }
+    }
+  ]
+}

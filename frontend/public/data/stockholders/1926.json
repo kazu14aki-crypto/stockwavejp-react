@@ -1,0 +1,216 @@
+{
+  "secCode": "1926",
+  "issuerName": "ライト工業株式会社",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5260000,
+      "ratio": 12.47,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "太陽生命保険株式会社",
+      "shares": 2734000,
+      "ratio": 6.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2517000,
+      "ratio": 5.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本生命保険相互会社",
+      "shares": 2039000,
+      "ratio": 4.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三井住友銀行",
+      "shares": 1950000,
+      "ratio": 4.62,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社北陸銀行",
+      "shares": 1269000,
+      "ratio": 3.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "AVI JAPAN OPPORTUNITY TRUST PLC\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 877000,
+      "ratio": 2.08,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 854000,
+      "ratio": 2.02,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "あいおいニッセイ同和損害保険株式会社",
+      "shares": 612000,
+      "ratio": 1.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 603000,
+      "ratio": 1.43,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.44,
+      "financial": 22.47,
+      "foreign": 3.45
+    },
+    "individual_total": 0,
+    "top10_total": 44.36
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YIK2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5260000,
+          "ratio": 12.47,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "太陽生命保険株式会社",
+          "shares": 2734000,
+          "ratio": 6.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2517000,
+          "ratio": 5.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本生命保険相互会社",
+          "shares": 2039000,
+          "ratio": 4.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 1950000,
+          "ratio": 4.62,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社北陸銀行",
+          "shares": 1269000,
+          "ratio": 3.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "AVI JAPAN OPPORTUNITY TRUST PLC\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 877000,
+          "ratio": 2.08,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 854000,
+          "ratio": 2.02,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "shares": 612000,
+          "ratio": 1.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 603000,
+          "ratio": 1.43,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.44,
+          "financial": 22.47,
+          "foreign": 3.45
+        },
+        "individual_total": 0,
+        "top10_total": 44.36
+      }
+    }
+  ]
+}

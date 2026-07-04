@@ -1,0 +1,220 @@
+{
+  "secCode": "9254",
+  "issuerName": "株式会社ラバブルマーケティンググループ",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "AIフュージョンキャピタルグループ株式会社",
+      "shares": 734900,
+      "ratio": 45.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "合同会社みやびマネージメント (注)２",
+      "shares": 184450,
+      "ratio": 11.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "楽天証券株式会社共有口",
+      "shares": 81700,
+      "ratio": 5.1,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "林　雅之",
+      "shares": 72114,
+      "ratio": 4.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＫＧＩ　ＡＳＩＡ　ＬＩＭＩＴＥＤ－ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　香港上海銀行東京支店）",
+      "shares": 50300,
+      "ratio": 3.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "各務　正人",
+      "shares": 45000,
+      "ratio": 2.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "長谷川　直紀",
+      "shares": 25500,
+      "ratio": 1.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "青木　達也",
+      "shares": 19000,
+      "ratio": 1.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ラバブルマーケティンググループ社員持株会",
+      "shares": 18737,
+      "ratio": 1.17,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "鵜川　太郎",
+      "shares": 16525,
+      "ratio": 1.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 57.38,
+      "securities": 5.1,
+      "individual": 11.12,
+      "financial": 3.14,
+      "employee": 1.17
+    },
+    "individual_total": 11.12,
+    "top10_total": 77.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/11/01－2026/03/31)",
+      "docID": "S100YIBJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "AIフュージョンキャピタルグループ株式会社",
+          "shares": 734900,
+          "ratio": 45.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "合同会社みやびマネージメント (注)２",
+          "shares": 184450,
+          "ratio": 11.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "楽天証券株式会社共有口",
+          "shares": 81700,
+          "ratio": 5.1,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "林　雅之",
+          "shares": 72114,
+          "ratio": 4.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＫＧＩ　ＡＳＩＡ　ＬＩＭＩＴＥＤ－ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　香港上海銀行東京支店）",
+          "shares": 50300,
+          "ratio": 3.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "各務　正人",
+          "shares": 45000,
+          "ratio": 2.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "長谷川　直紀",
+          "shares": 25500,
+          "ratio": 1.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "青木　達也",
+          "shares": 19000,
+          "ratio": 1.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ラバブルマーケティンググループ社員持株会",
+          "shares": 18737,
+          "ratio": 1.17,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鵜川　太郎",
+          "shares": 16525,
+          "ratio": 1.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 57.38,
+          "securities": 5.1,
+          "individual": 11.12,
+          "financial": 3.14,
+          "employee": 1.17
+        },
+        "individual_total": 11.12,
+        "top10_total": 77.91
+      }
+    }
+  ]
+}

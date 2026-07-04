@@ -1,0 +1,218 @@
+{
+  "secCode": "6786",
+  "issuerName": "株式会社ＲＶＨ",
+  "updated_at": "2026/07/04 18:09 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ヘーリオスエネルギー",
+      "shares": 3257550,
+      "ratio": 12.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社SEED",
+      "shares": 2114300,
+      "ratio": 8.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社SBI証券",
+      "shares": 1398900,
+      "ratio": 5.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "奥条　瑳京",
+      "shares": 1228100,
+      "ratio": 4.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "西本　誠治",
+      "shares": 1224100,
+      "ratio": 4.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社SPV2号",
+      "shares": 1188500,
+      "ratio": 4.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ユーキトラスト",
+      "shares": 1135000,
+      "ratio": 4.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村證券株式会社",
+      "shares": 957640,
+      "ratio": 3.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社アドマンクリエイティブ",
+      "shares": 603000,
+      "ratio": 2.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW(常任代理人　野村證券株式会社)",
+      "shares": 321205,
+      "ratio": 1.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.55,
+      "securities": 5.52,
+      "individual": 9.68,
+      "foreign": 1.27
+    },
+    "individual_total": 9.68,
+    "top10_total": 53.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YKOS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ヘーリオスエネルギー",
+          "shares": 3257550,
+          "ratio": 12.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社SEED",
+          "shares": 2114300,
+          "ratio": 8.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社SBI証券",
+          "shares": 1398900,
+          "ratio": 5.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "奥条　瑳京",
+          "shares": 1228100,
+          "ratio": 4.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "西本　誠治",
+          "shares": 1224100,
+          "ratio": 4.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社SPV2号",
+          "shares": 1188500,
+          "ratio": 4.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ユーキトラスト",
+          "shares": 1135000,
+          "ratio": 4.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村證券株式会社",
+          "shares": 957640,
+          "ratio": 3.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社アドマンクリエイティブ",
+          "shares": 603000,
+          "ratio": 2.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW(常任代理人　野村證券株式会社)",
+          "shares": 321205,
+          "ratio": 1.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.55,
+          "securities": 5.52,
+          "individual": 9.68,
+          "foreign": 1.27
+        },
+        "individual_total": 9.68,
+        "top10_total": 53.02
+      }
+    }
+  ]
+}

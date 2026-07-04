@@ -1,0 +1,218 @@
+{
+  "secCode": "3291",
+  "issuerName": "飯田グループホールディングス株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "飯田興産株式会社",
+      "shares": 52970373,
+      "ratio": 19.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "西河洋一",
+      "shares": 27940720,
+      "ratio": 10.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 24956600,
+      "ratio": 9.03,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "森和彦",
+      "shares": 18420533,
+      "ratio": 6.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社Ｋ．フォレスト",
+      "shares": 11662080,
+      "ratio": 4.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ． （ＡＶＦＣ） ＲＥ\nＳＩＬＣＨＥＳＴＥＲ \nＩＮＴＥＲＮＡＴＩＯＮＡＬ \nＩＮＶＥＳＴＯＲＳ ＩＮＴＥＲＮＡＴＩＯＮＡＬ ＶＡＬＵＥ ＥＱＵＩＴＹ ＴＲＵＳＴ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 11086900,
+      "ratio": 4.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 9078700,
+      "ratio": 3.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "飯田和美",
+      "shares": 8350340,
+      "ratio": 3.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "山本商事株式会社",
+      "shares": 6642000,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ） ＲＥ Ｕ．Ｓ． ＴＡＸ \nＥＸＥＭＰＴＥＤ ＰＥＮＳＩＯＮ \nＦＵＮＤＳ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 6340520,
+      "ratio": 2.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.79,
+      "individual": 19.8,
+      "trust": 12.32,
+      "financial": 6.3
+    },
+    "individual_total": 19.8,
+    "top10_total": 64.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/04/01－2026/03/31)",
+      "docID": "S100YID4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "飯田興産株式会社",
+          "shares": 52970373,
+          "ratio": 19.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "西河洋一",
+          "shares": 27940720,
+          "ratio": 10.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 24956600,
+          "ratio": 9.03,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "森和彦",
+          "shares": 18420533,
+          "ratio": 6.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社Ｋ．フォレスト",
+          "shares": 11662080,
+          "ratio": 4.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ． （ＡＶＦＣ） ＲＥ\nＳＩＬＣＨＥＳＴＥＲ \nＩＮＴＥＲＮＡＴＩＯＮＡＬ \nＩＮＶＥＳＴＯＲＳ ＩＮＴＥＲＮＡＴＩＯＮＡＬ ＶＡＬＵＥ ＥＱＵＩＴＹ ＴＲＵＳＴ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 11086900,
+          "ratio": 4.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 9078700,
+          "ratio": 3.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "飯田和美",
+          "shares": 8350340,
+          "ratio": 3.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "山本商事株式会社",
+          "shares": 6642000,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ） ＲＥ Ｕ．Ｓ． ＴＡＸ \nＥＸＥＭＰＴＥＤ ＰＥＮＳＩＯＮ \nＦＵＮＤＳ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 6340520,
+          "ratio": 2.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.79,
+          "individual": 19.8,
+          "trust": 12.32,
+          "financial": 6.3
+        },
+        "individual_total": 19.8,
+        "top10_total": 64.21
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "2204",
+  "issuerName": "株式会社中村屋",
+  "updated_at": "2026/07/04 18:38 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "中村屋取引先持株会",
+      "shares": 651000,
+      "ratio": 11.4,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 387000,
+      "ratio": 6.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 279000,
+      "ratio": 4.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三井不動産株式会社",
+      "shares": 180000,
+      "ratio": 3.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ニップン",
+      "shares": 130000,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本カストディ銀行（信託口）",
+      "shares": 128000,
+      "ratio": 2.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日東富士製粉株式会社",
+      "shares": 124000,
+      "ratio": 2.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 115000,
+      "ratio": 2.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中村屋従業員持株会",
+      "shares": 95000,
+      "ratio": 1.7,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社セブン－イレブン・ジャパン",
+      "shares": 70000,
+      "ratio": 1.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 13.1,
+      "trust": 9.0,
+      "financial": 6.9,
+      "corporate": 8.8
+    },
+    "individual_total": 0,
+    "top10_total": 37.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第105期(2025/04/01－2026/03/31)",
+      "docID": "S100YF3Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "中村屋取引先持株会",
+          "shares": 651000,
+          "ratio": 11.4,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 387000,
+          "ratio": 6.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 279000,
+          "ratio": 4.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三井不動産株式会社",
+          "shares": 180000,
+          "ratio": 3.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ニップン",
+          "shares": 130000,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本カストディ銀行（信託口）",
+          "shares": 128000,
+          "ratio": 2.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日東富士製粉株式会社",
+          "shares": 124000,
+          "ratio": 2.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 115000,
+          "ratio": 2.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中村屋従業員持株会",
+          "shares": 95000,
+          "ratio": 1.7,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社セブン－イレブン・ジャパン",
+          "shares": 70000,
+          "ratio": 1.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 13.1,
+          "trust": 9.0,
+          "financial": 6.9,
+          "corporate": 8.8
+        },
+        "individual_total": 0,
+        "top10_total": 37.8
+      }
+    }
+  ]
+}

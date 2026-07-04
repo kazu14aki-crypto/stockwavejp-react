@@ -1,0 +1,218 @@
+{
+  "secCode": "5612",
+  "issuerName": "日本鋳鉄管株式会社",
+  "updated_at": "2026/07/04 18:08 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＪＦＥスチール株式会社",
+      "shares": 960000,
+      "ratio": 29.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東京瓦斯株式会社",
+      "shares": 333000,
+      "ratio": 10.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松田健太郎",
+      "shares": 75000,
+      "ratio": 2.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社Ｗ不動産",
+      "shares": 60000,
+      "ratio": 1.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "高城裕（常任代理人　三田証券株式会社）",
+      "shares": 35000,
+      "ratio": 1.09,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "中田勇",
+      "shares": 30000,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社共有口",
+      "shares": 28000,
+      "ratio": 0.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 27000,
+      "ratio": 0.85,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "南富俊",
+      "shares": 22000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "村瀬充",
+      "shares": 20000,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.12,
+      "individual": 4.61,
+      "securities": 1.99,
+      "trust": 0.85
+    },
+    "individual_total": 4.61,
+    "top10_total": 49.57
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第122期(2025/04/01－2026/03/31)",
+      "docID": "S100YKL0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＪＦＥスチール株式会社",
+          "shares": 960000,
+          "ratio": 29.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東京瓦斯株式会社",
+          "shares": 333000,
+          "ratio": 10.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松田健太郎",
+          "shares": 75000,
+          "ratio": 2.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社Ｗ不動産",
+          "shares": 60000,
+          "ratio": 1.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "高城裕（常任代理人　三田証券株式会社）",
+          "shares": 35000,
+          "ratio": 1.09,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "中田勇",
+          "shares": 30000,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社共有口",
+          "shares": 28000,
+          "ratio": 0.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 27000,
+          "ratio": 0.85,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "南富俊",
+          "shares": 22000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "村瀬充",
+          "shares": 20000,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.12,
+          "individual": 4.61,
+          "securities": 1.99,
+          "trust": 0.85
+        },
+        "individual_total": 4.61,
+        "top10_total": 49.57
+      }
+    }
+  ]
+}

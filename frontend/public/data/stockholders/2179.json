@@ -1,0 +1,218 @@
+{
+  "secCode": "2179",
+  "issuerName": "株式会社成学社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "太田　明弘",
+      "shares": 1471200,
+      "ratio": 26.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社オーシャス",
+      "shares": 1176000,
+      "ratio": 21.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "学校法人高宮学園",
+      "shares": 277000,
+      "ratio": 4.99,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "成学社従業員持株会",
+      "shares": 252800,
+      "ratio": 4.55,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社くふうカンパニーホールディングス",
+      "shares": 249900,
+      "ratio": 4.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "太田　貴美子",
+      "shares": 174000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社さなる",
+      "shares": 159000,
+      "ratio": 2.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社仙台進学プラザ",
+      "shares": 119400,
+      "ratio": 2.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "永井　博",
+      "shares": 104326,
+      "ratio": 1.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "有限会社日本作文指導協会",
+      "shares": 58600,
+      "ratio": 1.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 31.52,
+      "corporate": 31.75,
+      "foundation": 4.99,
+      "employee": 4.55
+    },
+    "individual_total": 31.52,
+    "top10_total": 72.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/04/01－2026/03/31)",
+      "docID": "S100YCFW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "太田　明弘",
+          "shares": 1471200,
+          "ratio": 26.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社オーシャス",
+          "shares": 1176000,
+          "ratio": 21.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "学校法人高宮学園",
+          "shares": 277000,
+          "ratio": 4.99,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "成学社従業員持株会",
+          "shares": 252800,
+          "ratio": 4.55,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社くふうカンパニーホールディングス",
+          "shares": 249900,
+          "ratio": 4.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "太田　貴美子",
+          "shares": 174000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社さなる",
+          "shares": 159000,
+          "ratio": 2.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社仙台進学プラザ",
+          "shares": 119400,
+          "ratio": 2.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "永井　博",
+          "shares": 104326,
+          "ratio": 1.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "有限会社日本作文指導協会",
+          "shares": 58600,
+          "ratio": 1.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 31.52,
+          "corporate": 31.75,
+          "foundation": 4.99,
+          "employee": 4.55
+        },
+        "individual_total": 31.52,
+        "top10_total": 72.81
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "3946",
+  "issuerName": "株式会社トーモク",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 1615000,
+      "ratio": 9.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "丸紅㈱",
+      "shares": 923000,
+      "ratio": 5.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 864000,
+      "ratio": 5.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本製紙㈱",
+      "shares": 719000,
+      "ratio": 4.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ホッカンホールディングス㈱",
+      "shares": 604000,
+      "ratio": 3.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "トーモク社員持株会",
+      "shares": 540000,
+      "ratio": 3.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "特種東海製紙㈱",
+      "shares": 540000,
+      "ratio": 3.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱みずほ銀行（常任代理人 ㈱日本カストディ銀行）",
+      "shares": 388000,
+      "ratio": 2.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社（常任代理人 日本マスタートラスト信託銀行㈱）",
+      "shares": 388000,
+      "ratio": 2.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三菱ＵＦＪ信託銀行㈱（常任代理人 日本マスタートラスト信託銀行㈱）",
+      "shares": 329000,
+      "ratio": 1.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 21.72,
+      "individual": 13.21,
+      "corporate": 3.66,
+      "employee": 3.27
+    },
+    "individual_total": 13.21,
+    "top10_total": 41.86
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第87期(2025/04/01－2026/03/31)",
+      "docID": "S100YFA2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 1615000,
+          "ratio": 9.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "丸紅㈱",
+          "shares": 923000,
+          "ratio": 5.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 864000,
+          "ratio": 5.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本製紙㈱",
+          "shares": 719000,
+          "ratio": 4.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ホッカンホールディングス㈱",
+          "shares": 604000,
+          "ratio": 3.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "トーモク社員持株会",
+          "shares": 540000,
+          "ratio": 3.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "特種東海製紙㈱",
+          "shares": 540000,
+          "ratio": 3.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱みずほ銀行（常任代理人 ㈱日本カストディ銀行）",
+          "shares": 388000,
+          "ratio": 2.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社（常任代理人 日本マスタートラスト信託銀行㈱）",
+          "shares": 388000,
+          "ratio": 2.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三菱ＵＦＪ信託銀行㈱（常任代理人 日本マスタートラスト信託銀行㈱）",
+          "shares": 329000,
+          "ratio": 1.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 21.72,
+          "individual": 13.21,
+          "corporate": 3.66,
+          "employee": 3.27
+        },
+        "individual_total": 13.21,
+        "top10_total": 41.86
+      }
+    }
+  ]
+}

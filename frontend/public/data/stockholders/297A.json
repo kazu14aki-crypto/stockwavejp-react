@@ -1,0 +1,214 @@
+{
+  "secCode": "297A",
+  "issuerName": "アルピコホールディングス株式会社",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "サンリン株式会社",
+      "shares": 6369426,
+      "ratio": 9.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高沢産業株式会社",
+      "shares": 5095540,
+      "ratio": 7.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "キッセイ薬品工業株式会社",
+      "shares": 4000000,
+      "ratio": 5.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鈴与株式会社",
+      "shares": 3184710,
+      "ratio": 4.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ホクト株式会社",
+      "shares": 3052800,
+      "ratio": 4.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社八十二長野銀行",
+      "shares": 2951814,
+      "ratio": 4.28,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "八十二キャピタル株式会社",
+      "shares": 2950000,
+      "ratio": 4.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "昭和商事株式会社",
+      "shares": 2928000,
+      "ratio": 4.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本アクセス",
+      "shares": 2000000,
+      "ratio": 2.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社高見澤",
+      "shares": 1940000,
+      "ratio": 2.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.66,
+      "financial": 4.28
+    },
+    "individual_total": 0,
+    "top10_total": 49.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YC5Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "サンリン株式会社",
+          "shares": 6369426,
+          "ratio": 9.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高沢産業株式会社",
+          "shares": 5095540,
+          "ratio": 7.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "キッセイ薬品工業株式会社",
+          "shares": 4000000,
+          "ratio": 5.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鈴与株式会社",
+          "shares": 3184710,
+          "ratio": 4.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ホクト株式会社",
+          "shares": 3052800,
+          "ratio": 4.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社八十二長野銀行",
+          "shares": 2951814,
+          "ratio": 4.28,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "八十二キャピタル株式会社",
+          "shares": 2950000,
+          "ratio": 4.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "昭和商事株式会社",
+          "shares": 2928000,
+          "ratio": 4.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本アクセス",
+          "shares": 2000000,
+          "ratio": 2.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社高見澤",
+          "shares": 1940000,
+          "ratio": 2.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.66,
+          "financial": 4.28
+        },
+        "individual_total": 0,
+        "top10_total": 49.94
+      }
+    }
+  ]
+}

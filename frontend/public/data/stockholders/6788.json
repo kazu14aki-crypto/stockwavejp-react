@@ -1,0 +1,220 @@
+{
+  "secCode": "6788",
+  "issuerName": "株式会社日本トリム",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "森澤　紳勝（注１）",
+      "shares": 3350580,
+      "ratio": 41.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社プレミアムウォーターホールディングス",
+      "shares": 717200,
+      "ratio": 8.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "プレミアムウォーター株式会社",
+      "shares": 622900,
+      "ratio": 7.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）（注２）",
+      "shares": 432510,
+      "ratio": 5.38,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）（注３）",
+      "shares": 399000,
+      "ratio": 4.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村信託銀行株式会社（日本トリム従業員持株会専用信託口）（注４）",
+      "shares": 170800,
+      "ratio": 2.12,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本トリム従業員持株会",
+      "shares": 134472,
+      "ratio": 1.67,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三谷　禎秀",
+      "shares": 70390,
+      "ratio": 0.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "光通信株式会社",
+      "shares": 69800,
+      "ratio": 0.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781　（常任代理人　株式会社みずほ銀行）",
+      "shares": 52883,
+      "ratio": 0.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 42.55,
+      "corporate": 17.52,
+      "trust": 10.34,
+      "employee": 3.79,
+      "foreign": 0.65
+    },
+    "individual_total": 42.55,
+    "top10_total": 74.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/04/01－2026/03/31)",
+      "docID": "S100YF0Y",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "森澤　紳勝（注１）",
+          "shares": 3350580,
+          "ratio": 41.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社プレミアムウォーターホールディングス",
+          "shares": 717200,
+          "ratio": 8.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "プレミアムウォーター株式会社",
+          "shares": 622900,
+          "ratio": 7.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）（注２）",
+          "shares": 432510,
+          "ratio": 5.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）（注３）",
+          "shares": 399000,
+          "ratio": 4.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村信託銀行株式会社（日本トリム従業員持株会専用信託口）（注４）",
+          "shares": 170800,
+          "ratio": 2.12,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本トリム従業員持株会",
+          "shares": 134472,
+          "ratio": 1.67,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三谷　禎秀",
+          "shares": 70390,
+          "ratio": 0.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "光通信株式会社",
+          "shares": 69800,
+          "ratio": 0.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781　（常任代理人　株式会社みずほ銀行）",
+          "shares": 52883,
+          "ratio": 0.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 42.55,
+          "corporate": 17.52,
+          "trust": 10.34,
+          "employee": 3.79,
+          "foreign": 0.65
+        },
+        "individual_total": 42.55,
+        "top10_total": 74.85
+      }
+    }
+  ]
+}

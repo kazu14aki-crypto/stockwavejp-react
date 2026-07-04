@@ -1,0 +1,222 @@
+{
+  "secCode": "4242",
+  "issuerName": "株式会社タカギセイコー",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "高木　章裕",
+      "shares": 312756,
+      "ratio": 11.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "タカギセイコー従業員持株会",
+      "shares": 133396,
+      "ratio": 4.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "トナミホールディングス㈱",
+      "shares": 130000,
+      "ratio": 4.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券㈱",
+      "shares": 128700,
+      "ratio": 4.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱みずほ銀行（常任代理人　㈱日本カストディ銀行）",
+      "shares": 102300,
+      "ratio": 3.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱北國銀行",
+      "shares": 97600,
+      "ratio": 3.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＴＳＫ持株会",
+      "shares": 87400,
+      "ratio": 3.1,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "高木　弘美",
+      "shares": 85268,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱北陸銀行",
+      "shares": 60834,
+      "ratio": 2.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松木　教子",
+      "shares": 58026,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 16.3,
+      "employee": 7.9,
+      "corporate": 4.6,
+      "securities": 4.6,
+      "trust": 3.7,
+      "financial": 5.7
+    },
+    "individual_total": 16.3,
+    "top10_total": 42.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第67期(2025/04/01－2026/03/31)",
+      "docID": "S100YGHA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "高木　章裕",
+          "shares": 312756,
+          "ratio": 11.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "タカギセイコー従業員持株会",
+          "shares": 133396,
+          "ratio": 4.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "トナミホールディングス㈱",
+          "shares": 130000,
+          "ratio": 4.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券㈱",
+          "shares": 128700,
+          "ratio": 4.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱みずほ銀行（常任代理人　㈱日本カストディ銀行）",
+          "shares": 102300,
+          "ratio": 3.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱北國銀行",
+          "shares": 97600,
+          "ratio": 3.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＴＳＫ持株会",
+          "shares": 87400,
+          "ratio": 3.1,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "高木　弘美",
+          "shares": 85268,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱北陸銀行",
+          "shares": 60834,
+          "ratio": 2.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松木　教子",
+          "shares": 58026,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 16.3,
+          "employee": 7.9,
+          "corporate": 4.6,
+          "securities": 4.6,
+          "trust": 3.7,
+          "financial": 5.7
+        },
+        "individual_total": 16.3,
+        "top10_total": 42.8
+      }
+    }
+  ]
+}

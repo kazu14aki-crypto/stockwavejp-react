@@ -1,0 +1,216 @@
+{
+  "secCode": "8699",
+  "issuerName": "ＨＳホールディングス株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ウプシロン投資事業有限責任組合",
+      "shares": 12686000,
+      "ratio": 42.15,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+      "shares": 2550000,
+      "ratio": 8.47,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "川村　洋一",
+      "shares": 2006000,
+      "ratio": 6.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松井証券株式会社",
+      "shares": 1918000,
+      "ratio": 6.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本証券金融株式会社",
+      "shares": 1296000,
+      "ratio": 4.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 1292000,
+      "ratio": 4.29,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "浦上　新一郎",
+      "shares": 1000000,
+      "ratio": 3.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "岡三証券株式会社",
+      "shares": 721000,
+      "ratio": 2.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＭＢＣ日興証券株式会社",
+      "shares": 552000,
+      "ratio": 1.84,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "INTERACTIBE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 242000,
+      "ratio": 0.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 42.15,
+      "securities": 28.49,
+      "individual": 9.99
+    },
+    "individual_total": 9.99,
+    "top10_total": 80.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第69期(2025/04/01－2026/03/31)",
+      "docID": "S100YJQ6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ウプシロン投資事業有限責任組合",
+          "shares": 12686000,
+          "ratio": 42.15,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+          "shares": 2550000,
+          "ratio": 8.47,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "川村　洋一",
+          "shares": 2006000,
+          "ratio": 6.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松井証券株式会社",
+          "shares": 1918000,
+          "ratio": 6.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本証券金融株式会社",
+          "shares": 1296000,
+          "ratio": 4.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 1292000,
+          "ratio": 4.29,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "浦上　新一郎",
+          "shares": 1000000,
+          "ratio": 3.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "岡三証券株式会社",
+          "shares": 721000,
+          "ratio": 2.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＭＢＣ日興証券株式会社",
+          "shares": 552000,
+          "ratio": 1.84,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "INTERACTIBE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 242000,
+          "ratio": 0.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 42.15,
+          "securities": 28.49,
+          "individual": 9.99
+        },
+        "individual_total": 9.99,
+        "top10_total": 80.63
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "4549",
+  "issuerName": "栄研化学株式会社",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 4185600,
+      "ratio": 12.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "NIPPON ACTIVE VALUE FUND PLC（常任代理人 香港上海銀行東京支店）",
+      "shares": 3269300,
+      "ratio": 9.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "AVI JAPAN OPPORTUNITY TRUST PLC（常任代理人 株式会社みずほ銀行 決済営業部）",
+      "shares": 2250000,
+      "ratio": 6.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 2188100,
+      "ratio": 6.64,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE BANK OF NEW YORK - JASDECTREATY ACCOUNT（常任代理人 株式会社みずほ銀行 決済営業部）",
+      "shares": 1463200,
+      "ratio": 4.44,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1264800,
+      "ratio": 3.84,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NAVF SELECT LLC（常任代理人 香港上海銀行東京支店）",
+      "shares": 1250000,
+      "ratio": 3.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社（常任代理人 株式会社日本カストディ銀行）",
+      "shares": 1100000,
+      "ratio": 3.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN,SACHS ＆ CO.REG (常任代理人 ゴールドマン・サックス証券株式会社)",
+      "shares": 920900,
+      "ratio": 2.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "CACEIS BANK， LUXEMBOURG BRANCH ／AIF CLIENTS ASSETS（常任代理人 香港上海銀行東京支店）",
+      "shares": 828500,
+      "ratio": 2.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 19.88,
+      "financial": 20.54,
+      "foreign": 16.38
+    },
+    "individual_total": 0,
+    "top10_total": 56.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第88期(2025/04/01－2026/03/31)",
+      "docID": "S100YFP4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 4185600,
+          "ratio": 12.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "NIPPON ACTIVE VALUE FUND PLC（常任代理人 香港上海銀行東京支店）",
+          "shares": 3269300,
+          "ratio": 9.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "AVI JAPAN OPPORTUNITY TRUST PLC（常任代理人 株式会社みずほ銀行 決済営業部）",
+          "shares": 2250000,
+          "ratio": 6.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 2188100,
+          "ratio": 6.64,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE BANK OF NEW YORK - JASDECTREATY ACCOUNT（常任代理人 株式会社みずほ銀行 決済営業部）",
+          "shares": 1463200,
+          "ratio": 4.44,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1264800,
+          "ratio": 3.84,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NAVF SELECT LLC（常任代理人 香港上海銀行東京支店）",
+          "shares": 1250000,
+          "ratio": 3.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社（常任代理人 株式会社日本カストディ銀行）",
+          "shares": 1100000,
+          "ratio": 3.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN,SACHS ＆ CO.REG (常任代理人 ゴールドマン・サックス証券株式会社)",
+          "shares": 920900,
+          "ratio": 2.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "CACEIS BANK， LUXEMBOURG BRANCH ／AIF CLIENTS ASSETS（常任代理人 香港上海銀行東京支店）",
+          "shares": 828500,
+          "ratio": 2.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 19.88,
+          "financial": 20.54,
+          "foreign": 16.38
+        },
+        "individual_total": 0,
+        "top10_total": 56.8
+      }
+    }
+  ]
+}

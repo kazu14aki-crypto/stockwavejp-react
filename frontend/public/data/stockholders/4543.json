@@ -1,0 +1,216 @@
+{
+  "secCode": "4543",
+  "issuerName": "テルモ株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 328609000,
+      "ratio": 22.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 140223000,
+      "ratio": 9.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "第一生命保険株式会社",
+      "shares": 51827000,
+      "ratio": 3.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 45819000,
+      "ratio": 3.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "明治安田生命保険相互会社",
+      "shares": 44494000,
+      "ratio": 3.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３（常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 29466000,
+      "ratio": 2.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "公益財団法人テルモ生命科学振興財団",
+      "shares": 29440000,
+      "ratio": 2.0,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 27404000,
+      "ratio": 1.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＨＳＢＣ　ＨＯＮＧ　ＫＯＮＧ－ＴＲＥＡＳＵＲＹ　ＳＥＲＶＩＣＥＳ　Ａ／Ｃ　ＡＳＩＡＮ　ＥＱＵＩＴＩＥＳ　ＤＥＲＩＶＡＴＩＶＥＳ（常任代理人　香港上海銀行東京支店)",
+      "shares": 23430000,
+      "ratio": 1.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＴＨＥ　ＣＨＡＳＥ　ＭＡＮＨＡＴＴＡＮ　ＢＡＮＫ，Ｎ．Ａ．　ＬＯＮＤＯＮＳＥＣＳ　ＬＥＮＤＩＮＧ　ＯＭＮＩＢＵＳ　ＡＣＣＯＵＮＴ（常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 22563000,
+      "ratio": 1.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 31.8,
+      "financial": 16.6,
+      "foundation": 2.0
+    },
+    "individual_total": 0,
+    "top10_total": 50.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第111期(2025/04/01－2026/03/31)",
+      "docID": "S100YGMG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 328609000,
+          "ratio": 22.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 140223000,
+          "ratio": 9.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "第一生命保険株式会社",
+          "shares": 51827000,
+          "ratio": 3.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 45819000,
+          "ratio": 3.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "明治安田生命保険相互会社",
+          "shares": 44494000,
+          "ratio": 3.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３（常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 29466000,
+          "ratio": 2.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "公益財団法人テルモ生命科学振興財団",
+          "shares": 29440000,
+          "ratio": 2.0,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 27404000,
+          "ratio": 1.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＨＳＢＣ　ＨＯＮＧ　ＫＯＮＧ－ＴＲＥＡＳＵＲＹ　ＳＥＲＶＩＣＥＳ　Ａ／Ｃ　ＡＳＩＡＮ　ＥＱＵＩＴＩＥＳ　ＤＥＲＩＶＡＴＩＶＥＳ（常任代理人　香港上海銀行東京支店)",
+          "shares": 23430000,
+          "ratio": 1.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＴＨＥ　ＣＨＡＳＥ　ＭＡＮＨＡＴＴＡＮ　ＢＡＮＫ，Ｎ．Ａ．　ＬＯＮＤＯＮＳＥＣＳ　ＬＥＮＤＩＮＧ　ＯＭＮＩＢＵＳ　ＡＣＣＯＵＮＴ（常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 22563000,
+          "ratio": 1.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 31.8,
+          "financial": 16.6,
+          "foundation": 2.0
+        },
+        "individual_total": 0,
+        "top10_total": 50.4
+      }
+    }
+  ]
+}

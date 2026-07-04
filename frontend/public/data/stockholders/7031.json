@@ -1,0 +1,216 @@
+{
+  "secCode": "7031",
+  "issuerName": "株式会社インバウンドテック",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｓｈｅｌｔｅｒ",
+      "shares": 326400,
+      "ratio": 13.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "下大薗　豊",
+      "shares": 296243,
+      "ratio": 12.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社グローバルキャスト",
+      "shares": 263700,
+      "ratio": 11.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＵＨ Ｐａｒｔｎｅｒｓ ２\n投資事業有限責任組合",
+      "shares": 185000,
+      "ratio": 7.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＵＨ Ｐａｒｔｎｅｒｓ ３\n投資事業有限責任組合",
+      "shares": 185000,
+      "ratio": 7.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 156100,
+      "ratio": 6.54,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "金子　将之",
+      "shares": 74125,
+      "ratio": 3.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東間　大",
+      "shares": 67669,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本旅行",
+      "shares": 52800,
+      "ratio": 2.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社フォーカスキャピタル",
+      "shares": 35000,
+      "ratio": 1.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.4,
+      "individual": 18.35,
+      "other": 22.04
+    },
+    "individual_total": 18.35,
+    "top10_total": 68.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/04/01－2026/03/31)",
+      "docID": "S100YMRC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｓｈｅｌｔｅｒ",
+          "shares": 326400,
+          "ratio": 13.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "下大薗　豊",
+          "shares": 296243,
+          "ratio": 12.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社グローバルキャスト",
+          "shares": 263700,
+          "ratio": 11.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＵＨ Ｐａｒｔｎｅｒｓ ２\n投資事業有限責任組合",
+          "shares": 185000,
+          "ratio": 7.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＵＨ Ｐａｒｔｎｅｒｓ ３\n投資事業有限責任組合",
+          "shares": 185000,
+          "ratio": 7.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 156100,
+          "ratio": 6.54,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "金子　将之",
+          "shares": 74125,
+          "ratio": 3.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東間　大",
+          "shares": 67669,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本旅行",
+          "shares": 52800,
+          "ratio": 2.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社フォーカスキャピタル",
+          "shares": 35000,
+          "ratio": 1.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.4,
+          "individual": 18.35,
+          "other": 22.04
+        },
+        "individual_total": 18.35,
+        "top10_total": 68.79
+      }
+    }
+  ]
+}

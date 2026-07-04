@@ -1,0 +1,218 @@
+{
+  "secCode": "7269",
+  "issuerName": "スズキ株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 290925000,
+      "ratio": 15.08,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 125182000,
+      "ratio": 6.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "トヨタ自動車株式会社",
+      "shares": 96000000,
+      "ratio": 4.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 64003000,
+      "ratio": 3.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ザ チェース マンハッタンバンク エヌエイ ロンドン エス エル オムニバス アカウント(常任代理人)株式会社みずほ銀行決済営業部",
+      "shares": 58178000,
+      "ratio": 3.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社りそな銀行",
+      "shares": 52000000,
+      "ratio": 2.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社静岡銀行(常任代理人)日本マスタートラスト信託銀行株式会社",
+      "shares": 46402000,
+      "ratio": 2.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ステート ストリート バンク アンド トラスト カンパニー 505001(常任代理人)株式会社みずほ銀行決済営業部",
+      "shares": 37344000,
+      "ratio": 1.94,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JPモルガン証券株式会社",
+      "shares": 28912000,
+      "ratio": 1.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ステート ストリート バンク アンド トラスト カンパニー 505223(常任代理人)株式会社みずほ銀行決済営業部",
+      "shares": 26959000,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.97,
+      "corporate": 4.98,
+      "financial": 12.36,
+      "securities": 1.5
+    },
+    "individual_total": 0,
+    "top10_total": 42.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第160期(2025/04/01－2026/03/31)",
+      "docID": "S100YFG2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 290925000,
+          "ratio": 15.08,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 125182000,
+          "ratio": 6.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "トヨタ自動車株式会社",
+          "shares": 96000000,
+          "ratio": 4.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 64003000,
+          "ratio": 3.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ザ チェース マンハッタンバンク エヌエイ ロンドン エス エル オムニバス アカウント(常任代理人)株式会社みずほ銀行決済営業部",
+          "shares": 58178000,
+          "ratio": 3.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社りそな銀行",
+          "shares": 52000000,
+          "ratio": 2.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社静岡銀行(常任代理人)日本マスタートラスト信託銀行株式会社",
+          "shares": 46402000,
+          "ratio": 2.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ステート ストリート バンク アンド トラスト カンパニー 505001(常任代理人)株式会社みずほ銀行決済営業部",
+          "shares": 37344000,
+          "ratio": 1.94,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JPモルガン証券株式会社",
+          "shares": 28912000,
+          "ratio": 1.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ステート ストリート バンク アンド トラスト カンパニー 505223(常任代理人)株式会社みずほ銀行決済営業部",
+          "shares": 26959000,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.97,
+          "corporate": 4.98,
+          "financial": 12.36,
+          "securities": 1.5
+        },
+        "individual_total": 0,
+        "top10_total": 42.81
+      }
+    }
+  ]
+}

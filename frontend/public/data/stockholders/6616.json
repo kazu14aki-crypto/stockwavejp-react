@@ -1,0 +1,222 @@
+{
+  "secCode": "6616",
+  "issuerName": "トレックス・セミコンダクター株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "PERSHING-DIV. OF DLJ SECS. CORP.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1408500,
+      "ratio": 13.17,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 941400,
+      "ratio": 8.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "藤阪　知之",
+      "shares": 483460,
+      "ratio": 4.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社中国銀行",
+      "shares": 472190,
+      "ratio": 4.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アルス株式会社",
+      "shares": 452000,
+      "ratio": 4.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "吉備興業株式会社",
+      "shares": 397730,
+      "ratio": 3.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "尾崎　貴紀",
+      "shares": 321500,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "芝宮　孝司",
+      "shares": 299200,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 293530,
+      "ratio": 2.74,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JAPAN ABSOLUTE VALUE FUND\n（常任代理人　立花証券株式会社）",
+      "shares": 259300,
+      "ratio": 2.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 13.17,
+      "trust": 11.54,
+      "individual": 10.32,
+      "financial": 4.41,
+      "corporate": 7.94,
+      "securities": 2.42
+    },
+    "individual_total": 10.32,
+    "top10_total": 49.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/04/01－2026/03/31)",
+      "docID": "S100YFAJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "PERSHING-DIV. OF DLJ SECS. CORP.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1408500,
+          "ratio": 13.17,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 941400,
+          "ratio": 8.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "藤阪　知之",
+          "shares": 483460,
+          "ratio": 4.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社中国銀行",
+          "shares": 472190,
+          "ratio": 4.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アルス株式会社",
+          "shares": 452000,
+          "ratio": 4.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "吉備興業株式会社",
+          "shares": 397730,
+          "ratio": 3.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "尾崎　貴紀",
+          "shares": 321500,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "芝宮　孝司",
+          "shares": 299200,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 293530,
+          "ratio": 2.74,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JAPAN ABSOLUTE VALUE FUND\n（常任代理人　立花証券株式会社）",
+          "shares": 259300,
+          "ratio": 2.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 13.17,
+          "trust": 11.54,
+          "individual": 10.32,
+          "financial": 4.41,
+          "corporate": 7.94,
+          "securities": 2.42
+        },
+        "individual_total": 10.32,
+        "top10_total": 49.8
+      }
+    }
+  ]
+}

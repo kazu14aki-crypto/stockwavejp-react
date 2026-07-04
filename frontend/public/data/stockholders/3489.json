@@ -1,0 +1,216 @@
+{
+  "secCode": "3489",
+  "issuerName": "株式会社フェイスネットワーク",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社８８",
+      "shares": 12000000,
+      "ratio": 40.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "蜂谷　二郎",
+      "shares": 911025,
+      "ratio": 3.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "小泉　和弘",
+      "shares": 600000,
+      "ratio": 2.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "山元　孝行",
+      "shares": 498333,
+      "ratio": 1.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "吉田　俊雄",
+      "shares": 452805,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "石丸　洋介",
+      "shares": 373233,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高瀬　宏江",
+      "shares": 360600,
+      "ratio": 1.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "樋口　匠",
+      "shares": 317691,
+      "ratio": 1.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "谷口　華恵",
+      "shares": 251100,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大和証券株式会社",
+      "shares": 244032,
+      "ratio": 0.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.48,
+      "individual": 12.7,
+      "securities": 0.82
+    },
+    "individual_total": 12.7,
+    "top10_total": 54.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YHL1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社８８",
+          "shares": 12000000,
+          "ratio": 40.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "蜂谷　二郎",
+          "shares": 911025,
+          "ratio": 3.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "小泉　和弘",
+          "shares": 600000,
+          "ratio": 2.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "山元　孝行",
+          "shares": 498333,
+          "ratio": 1.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "吉田　俊雄",
+          "shares": 452805,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "石丸　洋介",
+          "shares": 373233,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高瀬　宏江",
+          "shares": 360600,
+          "ratio": 1.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "樋口　匠",
+          "shares": 317691,
+          "ratio": 1.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "谷口　華恵",
+          "shares": 251100,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大和証券株式会社",
+          "shares": 244032,
+          "ratio": 0.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.48,
+          "individual": 12.7,
+          "securities": 0.82
+        },
+        "individual_total": 12.7,
+        "top10_total": 54.0
+      }
+    }
+  ]
+}

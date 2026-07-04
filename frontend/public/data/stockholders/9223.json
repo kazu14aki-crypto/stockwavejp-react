@@ -1,0 +1,218 @@
+{
+  "secCode": "9223",
+  "issuerName": "株式会社ＡＳＮＯＶＡ",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一般社団法人ニチレン",
+      "shares": 5132400,
+      "ratio": 41.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "上田　桂司",
+      "shares": 3975800,
+      "ratio": 31.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 214300,
+      "ratio": 1.72,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中村　真一郎",
+      "shares": 120000,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＡＳＮＯＶＡ従業員持株会",
+      "shares": 99400,
+      "ratio": 0.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社",
+      "shares": 82800,
+      "ratio": 0.67,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "張　賀楠",
+      "shares": 76300,
+      "ratio": 0.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "グローバル・タイガー・ファンド４号投資事業有限責任組合",
+      "shares": 65700,
+      "ratio": 0.53,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "伊東　達也",
+      "shares": 63500,
+      "ratio": 0.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "井藤　智哉",
+      "shares": 47000,
+      "ratio": 0.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 75.69,
+      "securities": 2.39,
+      "employee": 0.8,
+      "other": 0.53
+    },
+    "individual_total": 75.69,
+    "top10_total": 79.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ2P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一般社団法人ニチレン",
+          "shares": 5132400,
+          "ratio": 41.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "上田　桂司",
+          "shares": 3975800,
+          "ratio": 31.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 214300,
+          "ratio": 1.72,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中村　真一郎",
+          "shares": 120000,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＡＳＮＯＶＡ従業員持株会",
+          "shares": 99400,
+          "ratio": 0.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社",
+          "shares": 82800,
+          "ratio": 0.67,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "張　賀楠",
+          "shares": 76300,
+          "ratio": 0.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "グローバル・タイガー・ファンド４号投資事業有限責任組合",
+          "shares": 65700,
+          "ratio": 0.53,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊東　達也",
+          "shares": 63500,
+          "ratio": 0.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "井藤　智哉",
+          "shares": 47000,
+          "ratio": 0.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 75.69,
+          "securities": 2.39,
+          "employee": 0.8,
+          "other": 0.53
+        },
+        "individual_total": 75.69,
+        "top10_total": 79.41
+      }
+    }
+  ]
+}

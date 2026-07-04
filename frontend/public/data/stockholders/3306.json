@@ -1,0 +1,218 @@
+{
+  "secCode": "3306",
+  "issuerName": "日本製麻株式会社",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "LEOMO.Inc.",
+      "shares": 740000,
+      "ratio": 16.8,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ゴーゴーカレーグループ",
+      "shares": 706000,
+      "ratio": 16.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本証券金融株式会社",
+      "shares": 483000,
+      "ratio": 10.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "アクセスアジア株式会社",
+      "shares": 200000,
+      "ratio": 4.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "INTERACTIVE BROKERS LLC",
+      "shares": 126000,
+      "ratio": 2.88,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上代　浩司",
+      "shares": 94000,
+      "ratio": 2.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山内　祐美",
+      "shares": 90000,
+      "ratio": 2.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "吉田　恵実",
+      "shares": 83000,
+      "ratio": 1.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 78000,
+      "ratio": 1.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "頴川　欽和",
+      "shares": 43000,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 19.68,
+      "corporate": 22.37,
+      "securities": 10.96,
+      "individual": 7.07
+    },
+    "individual_total": 7.07,
+    "top10_total": 60.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第98期(2025/04/01－2026/03/31)",
+      "docID": "S100YFIL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "LEOMO.Inc.",
+          "shares": 740000,
+          "ratio": 16.8,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ゴーゴーカレーグループ",
+          "shares": 706000,
+          "ratio": 16.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本証券金融株式会社",
+          "shares": 483000,
+          "ratio": 10.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "アクセスアジア株式会社",
+          "shares": 200000,
+          "ratio": 4.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "INTERACTIVE BROKERS LLC",
+          "shares": 126000,
+          "ratio": 2.88,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上代　浩司",
+          "shares": 94000,
+          "ratio": 2.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山内　祐美",
+          "shares": 90000,
+          "ratio": 2.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "吉田　恵実",
+          "shares": 83000,
+          "ratio": 1.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 78000,
+          "ratio": 1.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "頴川　欽和",
+          "shares": 43000,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 19.68,
+          "corporate": 22.37,
+          "securities": 10.96,
+          "individual": 7.07
+        },
+        "individual_total": 7.07,
+        "top10_total": 60.08
+      }
+    }
+  ]
+}

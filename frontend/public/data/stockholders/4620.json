@@ -1,0 +1,220 @@
+{
+  "secCode": "4620",
+  "issuerName": "藤倉化成株式会社",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社フジクラ",
+      "shares": 6576200,
+      "ratio": 22.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2563100,
+      "ratio": 8.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BNP　PARIBAS　FRANKFURT　2S/JASDEC/GERMAN RESIDENTS-OTHERS",
+      "shares": 888300,
+      "ratio": 3.05,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 780000,
+      "ratio": 2.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "DBS　BANK　LTD　70017",
+      "shares": 742000,
+      "ratio": 2.54,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "植島　幹九郎",
+      "shares": 735300,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNYM　RE　BNYMLB　RE　GPP　CLIENT　MONEY　AND　ASSETS　AC",
+      "shares": 701400,
+      "ratio": 2.41,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "藤倉コンポジット株式会社",
+      "shares": 606500,
+      "ratio": 2.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "極東貿易株式会社",
+      "shares": 584000,
+      "ratio": 2.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤倉化成従業員持株会",
+      "shares": 575500,
+      "ratio": 1.97,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.63,
+      "trust": 11.46,
+      "foreign": 8.0,
+      "individual": 2.52,
+      "employee": 1.97
+    },
+    "individual_total": 2.52,
+    "top10_total": 50.58
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第115期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ15",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社フジクラ",
+          "shares": 6576200,
+          "ratio": 22.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2563100,
+          "ratio": 8.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BNP　PARIBAS　FRANKFURT　2S/JASDEC/GERMAN RESIDENTS-OTHERS",
+          "shares": 888300,
+          "ratio": 3.05,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 780000,
+          "ratio": 2.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "DBS　BANK　LTD　70017",
+          "shares": 742000,
+          "ratio": 2.54,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "植島　幹九郎",
+          "shares": 735300,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNYM　RE　BNYMLB　RE　GPP　CLIENT　MONEY　AND　ASSETS　AC",
+          "shares": 701400,
+          "ratio": 2.41,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "藤倉コンポジット株式会社",
+          "shares": 606500,
+          "ratio": 2.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "極東貿易株式会社",
+          "shares": 584000,
+          "ratio": 2.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤倉化成従業員持株会",
+          "shares": 575500,
+          "ratio": 1.97,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.63,
+          "trust": 11.46,
+          "foreign": 8.0,
+          "individual": 2.52,
+          "employee": 1.97
+        },
+        "individual_total": 2.52,
+        "top10_total": 50.58
+      }
+    }
+  ]
+}

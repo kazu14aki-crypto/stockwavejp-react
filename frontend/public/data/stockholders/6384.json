@@ -1,0 +1,218 @@
+{
+  "secCode": "6384",
+  "issuerName": "株式会社昭和真空",
+  "updated_at": "2026/07/04 18:05 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社アルバック",
+      "shares": 1329000,
+      "ratio": 21.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "小俣　邦正",
+      "shares": 584000,
+      "ratio": 9.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社小俣興産",
+      "shares": 341000,
+      "ratio": 5.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小俣　佳子",
+      "shares": 160000,
+      "ratio": 2.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 145000,
+      "ratio": 2.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐々木　嘉樹",
+      "shares": 140000,
+      "ratio": 2.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 115000,
+      "ratio": 1.85,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 96000,
+      "ratio": 1.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小俣　みつこ",
+      "shares": 80000,
+      "ratio": 1.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "池谷　誠一",
+      "shares": 70000,
+      "ratio": 1.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.79,
+      "individual": 16.59,
+      "financial": 2.33,
+      "trust": 3.39
+    },
+    "individual_total": 16.59,
+    "top10_total": 49.1
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YKGJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社アルバック",
+          "shares": 1329000,
+          "ratio": 21.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "小俣　邦正",
+          "shares": 584000,
+          "ratio": 9.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社小俣興産",
+          "shares": 341000,
+          "ratio": 5.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小俣　佳子",
+          "shares": 160000,
+          "ratio": 2.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 145000,
+          "ratio": 2.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐々木　嘉樹",
+          "shares": 140000,
+          "ratio": 2.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 115000,
+          "ratio": 1.85,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 96000,
+          "ratio": 1.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小俣　みつこ",
+          "shares": 80000,
+          "ratio": 1.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "池谷　誠一",
+          "shares": 70000,
+          "ratio": 1.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.79,
+          "individual": 16.59,
+          "financial": 2.33,
+          "trust": 3.39
+        },
+        "individual_total": 16.59,
+        "top10_total": 49.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4008",
+  "issuerName": "住友精化株式会社",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "住友化学株式会社",
+      "shares": 4195000,
+      "ratio": 32.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 970000,
+      "ratio": 7.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE CHASE MANHATTAN BANK,N.A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行　決済代行部)",
+      "shares": 326000,
+      "ratio": 2.52,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 317000,
+      "ratio": 2.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "住友生命保険相互会社",
+      "shares": 310000,
+      "ratio": 2.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 215000,
+      "ratio": 1.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "多木化学株式会社",
+      "shares": 206000,
+      "ratio": 1.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "RE FUND 107-CLIENT AC\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 198000,
+      "ratio": 1.53,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "住友精化社員持株会",
+      "shares": 187000,
+      "ratio": 1.45,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385642\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 149000,
+      "ratio": 1.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.03,
+      "trust": 9.96,
+      "foreign": 5.2,
+      "financial": 4.07,
+      "employee": 1.45
+    },
+    "individual_total": 0,
+    "top10_total": 54.71
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第113期(2025/04/01－2026/03/31)",
+      "docID": "S100YKNS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "住友化学株式会社",
+          "shares": 4195000,
+          "ratio": 32.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 970000,
+          "ratio": 7.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE CHASE MANHATTAN BANK,N.A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行　決済代行部)",
+          "shares": 326000,
+          "ratio": 2.52,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 317000,
+          "ratio": 2.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "住友生命保険相互会社",
+          "shares": 310000,
+          "ratio": 2.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 215000,
+          "ratio": 1.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "多木化学株式会社",
+          "shares": 206000,
+          "ratio": 1.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "RE FUND 107-CLIENT AC\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 198000,
+          "ratio": 1.53,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "住友精化社員持株会",
+          "shares": 187000,
+          "ratio": 1.45,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385642\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 149000,
+          "ratio": 1.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.03,
+          "trust": 9.96,
+          "foreign": 5.2,
+          "financial": 4.07,
+          "employee": 1.45
+        },
+        "individual_total": 0,
+        "top10_total": 54.71
+      }
+    }
+  ]
+}

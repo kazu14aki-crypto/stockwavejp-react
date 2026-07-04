@@ -1,0 +1,218 @@
+{
+  "secCode": "285A",
+  "issuerName": "キオクシアホールディングス株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社東芝",
+      "shares": 96050000,
+      "ratio": 17.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BCPE Pangea Cayman2, Ltd.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+      "shares": 77400000,
+      "ratio": 14.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BCPE Pangea Cayman 1A, L.P.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+      "shares": 26790000,
+      "ratio": 4.91,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 20435000,
+      "ratio": 3.74,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 17240000,
+      "ratio": 3.16,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 16227000,
+      "ratio": 2.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 12316000,
+      "ratio": 2.26,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 8053000,
+      "ratio": 1.47,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BCPE Pangea Cayman 1B, L.P.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+      "shares": 7698000,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BCPE Pangea Cayman, L.P.",
+      "shares": 7545000,
+      "ratio": 1.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.59,
+      "securities": 22.75,
+      "foreign": 8.09,
+      "trust": 4.63
+    },
+    "individual_total": 0,
+    "top10_total": 53.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ18",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社東芝",
+          "shares": 96050000,
+          "ratio": 17.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BCPE Pangea Cayman2, Ltd.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+          "shares": 77400000,
+          "ratio": 14.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BCPE Pangea Cayman 1A, L.P.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+          "shares": 26790000,
+          "ratio": 4.91,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 20435000,
+          "ratio": 3.74,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 17240000,
+          "ratio": 3.16,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 16227000,
+          "ratio": 2.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 12316000,
+          "ratio": 2.26,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 8053000,
+          "ratio": 1.47,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BCPE Pangea Cayman 1B, L.P.\n（常任代理人　三菱UFJモルガン・スタンレー証券株式会社）",
+          "shares": 7698000,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BCPE Pangea Cayman, L.P.",
+          "shares": 7545000,
+          "ratio": 1.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.59,
+          "securities": 22.75,
+          "foreign": 8.09,
+          "trust": 4.63
+        },
+        "individual_total": 0,
+        "top10_total": 53.06
+      }
+    }
+  ]
+}

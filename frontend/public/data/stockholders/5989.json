@@ -1,0 +1,222 @@
+{
+  "secCode": "5989",
+  "issuerName": "株式会社エイチワン",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "本田技研工業株式会社",
+      "shares": 6055000,
+      "ratio": 21.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2247000,
+      "ratio": 7.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ (常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 1184000,
+      "ratio": 4.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "エイチワン従業員持株会",
+      "shares": 886000,
+      "ratio": 3.12,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社埼玉りそな銀行",
+      "shares": 780000,
+      "ratio": 2.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＦＥ商事株式会社",
+      "shares": 727000,
+      "ratio": 2.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平田　宇理",
+      "shares": 479000,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中條　祐子",
+      "shares": 419000,
+      "ratio": 1.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 408000,
+      "ratio": 1.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 374000,
+      "ratio": 1.32,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.89,
+      "trust": 9.36,
+      "securities": 5.49,
+      "employee": 3.12,
+      "financial": 2.75,
+      "individual": 3.17
+    },
+    "individual_total": 3.17,
+    "top10_total": 47.78
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/04/01－2026/03/31)",
+      "docID": "S100YFUA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "本田技研工業株式会社",
+          "shares": 6055000,
+          "ratio": 21.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2247000,
+          "ratio": 7.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ (常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 1184000,
+          "ratio": 4.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "エイチワン従業員持株会",
+          "shares": 886000,
+          "ratio": 3.12,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社埼玉りそな銀行",
+          "shares": 780000,
+          "ratio": 2.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＦＥ商事株式会社",
+          "shares": 727000,
+          "ratio": 2.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平田　宇理",
+          "shares": 479000,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中條　祐子",
+          "shares": 419000,
+          "ratio": 1.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 408000,
+          "ratio": 1.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 374000,
+          "ratio": 1.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.89,
+          "trust": 9.36,
+          "securities": 5.49,
+          "employee": 3.12,
+          "financial": 2.75,
+          "individual": 3.17
+        },
+        "individual_total": 3.17,
+        "top10_total": 47.78
+      }
+    }
+  ]
+}

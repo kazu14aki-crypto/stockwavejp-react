@@ -1,0 +1,220 @@
+{
+  "secCode": "7187",
+  "issuerName": "ジェイリース株式会社",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "JLホールディングス株式会社",
+      "shares": 4280000,
+      "ratio": 23.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1564000,
+      "ratio": 8.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "中島　拓",
+      "shares": 807000,
+      "ratio": 4.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 344000,
+      "ratio": 1.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社豊和銀行",
+      "shares": 320000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社大分銀行",
+      "shares": 320000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ジェイリース従業員持株会",
+      "shares": 201000,
+      "ratio": 1.1,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託E口）",
+      "shares": 201000,
+      "ratio": 1.1,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "阿部　兼三",
+      "shares": 200000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大塚　玄二郎",
+      "shares": 196000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.7,
+      "trust": 11.7,
+      "individual": 6.7,
+      "financial": 3.6,
+      "employee": 1.1
+    },
+    "individual_total": 6.7,
+    "top10_total": 46.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YM65",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "JLホールディングス株式会社",
+          "shares": 4280000,
+          "ratio": 23.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1564000,
+          "ratio": 8.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "中島　拓",
+          "shares": 807000,
+          "ratio": 4.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 344000,
+          "ratio": 1.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社豊和銀行",
+          "shares": 320000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社大分銀行",
+          "shares": 320000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ジェイリース従業員持株会",
+          "shares": 201000,
+          "ratio": 1.1,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託E口）",
+          "shares": 201000,
+          "ratio": 1.1,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "阿部　兼三",
+          "shares": 200000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大塚　玄二郎",
+          "shares": 196000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.7,
+          "trust": 11.7,
+          "individual": 6.7,
+          "financial": 3.6,
+          "employee": 1.1
+        },
+        "individual_total": 6.7,
+        "top10_total": 46.8
+      }
+    }
+  ]
+}

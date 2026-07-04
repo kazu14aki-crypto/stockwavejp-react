@@ -1,0 +1,218 @@
+{
+  "secCode": "5958",
+  "issuerName": "三洋工業株式会社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三洋工業協力会社持株会",
+      "shares": 514000,
+      "ratio": 18.36,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE BROKERS LLC (常任代理人インタラクティブ・  ブローカーズ証券㈱)",
+      "shares": 162000,
+      "ratio": 5.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三洋工業社員持株会",
+      "shares": 97000,
+      "ratio": 3.48,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "新海　秀治",
+      "shares": 88000,
+      "ratio": 3.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中谷　登世子",
+      "shares": 84000,
+      "ratio": 3.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山岸　文男",
+      "shares": 73000,
+      "ratio": 2.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "トーケン工業㈱",
+      "shares": 71000,
+      "ratio": 2.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS (常任代理人㈱三菱UFJ銀行)",
+      "shares": 66000,
+      "ratio": 2.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険(相)",
+      "shares": 63000,
+      "ratio": 2.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "内木　真哉",
+      "shares": 57000,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 21.84,
+      "securities": 5.8,
+      "individual": 13.41,
+      "financial": 4.62
+    },
+    "individual_total": 13.41,
+    "top10_total": 45.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/04/01－2026/03/31)",
+      "docID": "S100YFD2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三洋工業協力会社持株会",
+          "shares": 514000,
+          "ratio": 18.36,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE BROKERS LLC (常任代理人インタラクティブ・  ブローカーズ証券㈱)",
+          "shares": 162000,
+          "ratio": 5.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三洋工業社員持株会",
+          "shares": 97000,
+          "ratio": 3.48,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "新海　秀治",
+          "shares": 88000,
+          "ratio": 3.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中谷　登世子",
+          "shares": 84000,
+          "ratio": 3.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山岸　文男",
+          "shares": 73000,
+          "ratio": 2.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "トーケン工業㈱",
+          "shares": 71000,
+          "ratio": 2.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS (常任代理人㈱三菱UFJ銀行)",
+          "shares": 66000,
+          "ratio": 2.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険(相)",
+          "shares": 63000,
+          "ratio": 2.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "内木　真哉",
+          "shares": 57000,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 21.84,
+          "securities": 5.8,
+          "individual": 13.41,
+          "financial": 4.62
+        },
+        "individual_total": 13.41,
+        "top10_total": 45.67
+      }
+    }
+  ]
+}

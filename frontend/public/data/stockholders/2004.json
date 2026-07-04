@@ -1,0 +1,220 @@
+{
+  "secCode": "2004",
+  "issuerName": "昭和産業株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "伊藤忠商事㈱",
+      "shares": 2290000,
+      "ratio": 7.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 2070000,
+      "ratio": 6.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井物産㈱（常任代理人㈱日本カストディ銀行）",
+      "shares": 1540000,
+      "ratio": 4.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "昭和産業取引先持株会",
+      "shares": 1248000,
+      "ratio": 3.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ユアサ・フナショク㈱",
+      "shares": 1233000,
+      "ratio": 3.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "カーギルジャパン合同会社",
+      "shares": 940000,
+      "ratio": 2.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "昭和産業グループ従業員持株会",
+      "shares": 825000,
+      "ratio": 2.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱千葉銀行",
+      "shares": 772000,
+      "ratio": 2.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "みずほ信託銀行㈱退職給付信託みずほ銀行口 再信託受託者　㈱日本カストディ銀行",
+      "shares": 750000,
+      "ratio": 2.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "丸紅㈱",
+      "shares": 590000,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 12.6,
+      "trust": 13.4,
+      "employee": 6.3,
+      "corporate": 2.9,
+      "financial": 2.4
+    },
+    "individual_total": 12.6,
+    "top10_total": 37.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第125期(2025/04/01－2026/03/31)",
+      "docID": "S100YGEO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "伊藤忠商事㈱",
+          "shares": 2290000,
+          "ratio": 7.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 2070000,
+          "ratio": 6.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井物産㈱（常任代理人㈱日本カストディ銀行）",
+          "shares": 1540000,
+          "ratio": 4.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "昭和産業取引先持株会",
+          "shares": 1248000,
+          "ratio": 3.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ユアサ・フナショク㈱",
+          "shares": 1233000,
+          "ratio": 3.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "カーギルジャパン合同会社",
+          "shares": 940000,
+          "ratio": 2.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "昭和産業グループ従業員持株会",
+          "shares": 825000,
+          "ratio": 2.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱千葉銀行",
+          "shares": 772000,
+          "ratio": 2.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "みずほ信託銀行㈱退職給付信託みずほ銀行口 再信託受託者　㈱日本カストディ銀行",
+          "shares": 750000,
+          "ratio": 2.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "丸紅㈱",
+          "shares": 590000,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 12.6,
+          "trust": 13.4,
+          "employee": 6.3,
+          "corporate": 2.9,
+          "financial": 2.4
+        },
+        "individual_total": 12.6,
+        "top10_total": 37.6
+      }
+    }
+  ]
+}

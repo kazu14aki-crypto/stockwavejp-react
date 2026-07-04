@@ -1,0 +1,222 @@
+{
+  "secCode": "8242",
+  "issuerName": "エイチ・ツー・オー　リテイリング株式会社",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "阪神電気鉄道㈱",
+      "shares": 14749000,
+      "ratio": 12.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱ （信託口）",
+      "shares": 12992000,
+      "ratio": 11.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "阪急阪神ホールディングス㈱",
+      "shares": 8336000,
+      "ratio": 7.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "関西フードマーケット取引先持株会",
+      "shares": 5146000,
+      "ratio": 4.47,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 3310000,
+      "ratio": 2.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 2705000,
+      "ratio": 2.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "H2Oリテイリンググループ従業員持株会",
+      "shares": 1895000,
+      "ratio": 1.65,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "伊藤忠食品㈱",
+      "shares": 1431000,
+      "ratio": 1.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "国分グループ本社㈱",
+      "shares": 1415000,
+      "ratio": 1.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+      "shares": 1265000,
+      "ratio": 1.1,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 15.3,
+      "trust": 14.18,
+      "corporate": 7.25,
+      "employee": 6.12,
+      "foreign": 2.35,
+      "securities": 1.1
+    },
+    "individual_total": 15.3,
+    "top10_total": 46.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第107期(2025/04/01－2026/03/31)",
+      "docID": "S100YDD0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "阪神電気鉄道㈱",
+          "shares": 14749000,
+          "ratio": 12.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱ （信託口）",
+          "shares": 12992000,
+          "ratio": 11.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "阪急阪神ホールディングス㈱",
+          "shares": 8336000,
+          "ratio": 7.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "関西フードマーケット取引先持株会",
+          "shares": 5146000,
+          "ratio": 4.47,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 3310000,
+          "ratio": 2.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 2705000,
+          "ratio": 2.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "H2Oリテイリンググループ従業員持株会",
+          "shares": 1895000,
+          "ratio": 1.65,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "伊藤忠食品㈱",
+          "shares": 1431000,
+          "ratio": 1.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "国分グループ本社㈱",
+          "shares": 1415000,
+          "ratio": 1.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+          "shares": 1265000,
+          "ratio": 1.1,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 15.3,
+          "trust": 14.18,
+          "corporate": 7.25,
+          "employee": 6.12,
+          "foreign": 2.35,
+          "securities": 1.1
+        },
+        "individual_total": 15.3,
+        "top10_total": 46.3
+      }
+    }
+  ]
+}

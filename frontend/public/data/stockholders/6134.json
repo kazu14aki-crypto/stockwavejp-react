@@ -1,0 +1,218 @@
+{
+  "secCode": "6134",
+  "issuerName": "株式会社ＦＵＪＩ",
+  "updated_at": "2026/07/04 17:57 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社\n(信託口)",
+      "shares": 13218000,
+      "ratio": 15.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 5528000,
+      "ratio": 6.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ\nＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ\n５０５００１\n常任代理人　株式会社みずほ銀行",
+      "shares": 5411000,
+      "ratio": 6.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＦＵＪＩ取引先持株会",
+      "shares": 3063000,
+      "ratio": 3.47,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 2288000,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大同生命保険株式会社\n常任代理人　株式会社日本カストディ銀行",
+      "shares": 1671000,
+      "ratio": 1.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社名古屋銀行",
+      "shares": 1554000,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ\nＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ\n５０５１０３\n常任代理人　株式会社みずほ銀行",
+      "shares": 1524000,
+      "ratio": 1.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ\nＹＯＲＫ　ＭＥＬＬＯＮ　１４００４４\n常任代理人　株式会社みずほ銀行",
+      "shares": 1320000,
+      "ratio": 1.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＭＳＩＰ　ＣＬＩＥＮＴ\nＳＥＣＵＲＩＴＩＥＳ\n常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 1211000,
+      "ratio": 1.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.16,
+      "financial": 13.71,
+      "employee": 3.47,
+      "securities": 1.37
+    },
+    "individual_total": 0,
+    "top10_total": 41.71
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YKAW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社\n(信託口)",
+          "shares": 13218000,
+          "ratio": 15.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 5528000,
+          "ratio": 6.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ\nＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ\n５０５００１\n常任代理人　株式会社みずほ銀行",
+          "shares": 5411000,
+          "ratio": 6.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＦＵＪＩ取引先持株会",
+          "shares": 3063000,
+          "ratio": 3.47,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 2288000,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大同生命保険株式会社\n常任代理人　株式会社日本カストディ銀行",
+          "shares": 1671000,
+          "ratio": 1.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社名古屋銀行",
+          "shares": 1554000,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ\nＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ\n５０５１０３\n常任代理人　株式会社みずほ銀行",
+          "shares": 1524000,
+          "ratio": 1.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ\nＹＯＲＫ　ＭＥＬＬＯＮ　１４００４４\n常任代理人　株式会社みずほ銀行",
+          "shares": 1320000,
+          "ratio": 1.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＭＳＩＰ　ＣＬＩＥＮＴ\nＳＥＣＵＲＩＴＩＥＳ\n常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 1211000,
+          "ratio": 1.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.16,
+          "financial": 13.71,
+          "employee": 3.47,
+          "securities": 1.37
+        },
+        "individual_total": 0,
+        "top10_total": 41.71
+      }
+    }
+  ]
+}

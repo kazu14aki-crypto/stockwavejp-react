@@ -1,0 +1,224 @@
+{
+  "secCode": "2674",
+  "issuerName": "株式会社ハードオフコーポレーション",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ヤマモトアセット株式会社",
+      "shares": 4662000,
+      "ratio": 33.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+      "shares": 1264300,
+      "ratio": 9.09,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 814200,
+      "ratio": 5.85,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ハードオフコーポレーション社員持株会",
+      "shares": 376000,
+      "ratio": 2.7,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山　本　善　政",
+      "shares": 300000,
+      "ratio": 2.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社アイマット",
+      "shares": 264000,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 140400,
+      "ratio": 1.01,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MORGAN STANLEY & CO. LLC\n（常任代理人 モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 137300,
+      "ratio": 0.99,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山本　太郎",
+      "shares": 124000,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＦＰ成長支援Ａ号投資事業有限責任組合",
+      "shares": 120000,
+      "ratio": 0.86,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 35.41,
+      "trust": 14.94,
+      "employee": 2.7,
+      "individual": 3.05,
+      "securities": 1.01,
+      "foreign": 0.99,
+      "other": 0.86
+    },
+    "individual_total": 3.05,
+    "top10_total": 58.96
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YHYF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ヤマモトアセット株式会社",
+          "shares": 4662000,
+          "ratio": 33.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+          "shares": 1264300,
+          "ratio": 9.09,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 814200,
+          "ratio": 5.85,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ハードオフコーポレーション社員持株会",
+          "shares": 376000,
+          "ratio": 2.7,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山　本　善　政",
+          "shares": 300000,
+          "ratio": 2.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社アイマット",
+          "shares": 264000,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 140400,
+          "ratio": 1.01,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MORGAN STANLEY & CO. LLC\n（常任代理人 モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 137300,
+          "ratio": 0.99,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山本　太郎",
+          "shares": 124000,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＦＰ成長支援Ａ号投資事業有限責任組合",
+          "shares": 120000,
+          "ratio": 0.86,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 35.41,
+          "trust": 14.94,
+          "employee": 2.7,
+          "individual": 3.05,
+          "securities": 1.01,
+          "foreign": 0.99,
+          "other": 0.86
+        },
+        "individual_total": 3.05,
+        "top10_total": 58.96
+      }
+    }
+  ]
+}

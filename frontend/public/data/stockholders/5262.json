@@ -1,0 +1,218 @@
+{
+  "secCode": "5262",
+  "issuerName": "日本ヒューム株式会社",
+  "updated_at": "2026/07/04 18:12 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "みずほ信託銀行株式会社退職給付信託太平洋セメント口",
+      "shares": 4800000,
+      "ratio": 8.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "旭コンクリート工業株式会社",
+      "shares": 2936800,
+      "ratio": 5.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE HONGKONG AND SHANGHAI BANKINGCORPORATION LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221-623793(常任代理人　香港上海銀行）",
+      "shares": 2826800,
+      "ratio": 5.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2773200,
+      "ratio": 5.12,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 2051700,
+      "ratio": 3.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "太平洋セメント株式会社",
+      "shares": 2040700,
+      "ratio": 3.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＮＪＳ",
+      "shares": 2019000,
+      "ratio": 3.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 1624100,
+      "ratio": 3.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＭＢＣ日興証券株式会社",
+      "shares": 1597700,
+      "ratio": 2.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "丸全昭和運輸株式会社",
+      "shares": 1489800,
+      "ratio": 2.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 17.87,
+      "corporate": 15.67,
+      "trust": 8.12,
+      "securities": 2.95
+    },
+    "individual_total": 0,
+    "top10_total": 44.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第143期(2025/04/01－2026/03/31)",
+      "docID": "S100YL8F",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "みずほ信託銀行株式会社退職給付信託太平洋セメント口",
+          "shares": 4800000,
+          "ratio": 8.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "旭コンクリート工業株式会社",
+          "shares": 2936800,
+          "ratio": 5.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE HONGKONG AND SHANGHAI BANKINGCORPORATION LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221-623793(常任代理人　香港上海銀行）",
+          "shares": 2826800,
+          "ratio": 5.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2773200,
+          "ratio": 5.12,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 2051700,
+          "ratio": 3.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "太平洋セメント株式会社",
+          "shares": 2040700,
+          "ratio": 3.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＮＪＳ",
+          "shares": 2019000,
+          "ratio": 3.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 1624100,
+          "ratio": 3.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＭＢＣ日興証券株式会社",
+          "shares": 1597700,
+          "ratio": 2.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "丸全昭和運輸株式会社",
+          "shares": 1489800,
+          "ratio": 2.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 17.87,
+          "corporate": 15.67,
+          "trust": 8.12,
+          "securities": 2.95
+        },
+        "individual_total": 0,
+        "top10_total": 44.61
+      }
+    }
+  ]
+}

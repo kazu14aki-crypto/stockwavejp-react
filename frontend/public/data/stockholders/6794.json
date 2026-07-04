@@ -1,0 +1,216 @@
+{
+  "secCode": "6794",
+  "issuerName": "フォスター電機株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ\n（常任代理人　立花証券株式会社）",
+      "shares": 3440000,
+      "ratio": 15.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2537000,
+      "ratio": 11.19,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ\n（常任代理人　立花証券株式会社）",
+      "shares": 2224000,
+      "ratio": 9.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＡＶＩ　ＪＡＰＡＮ　ＯＰＰＯＲＴＵＮＩＴＹ　ＴＲＵＳＴ　ＰＬＣ\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 1406000,
+      "ratio": 6.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 1016000,
+      "ratio": 4.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 945000,
+      "ratio": 4.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 747000,
+      "ratio": 3.3,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 713000,
+      "ratio": 3.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "立花証券株式会社",
+      "shares": 459000,
+      "ratio": 2.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 405000,
+      "ratio": 1.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 27.01,
+      "trust": 14.34,
+      "financial": 19.94
+    },
+    "individual_total": 0,
+    "top10_total": 61.29
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/04/01－2026/03/31)",
+      "docID": "S100YJIM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ\n（常任代理人　立花証券株式会社）",
+          "shares": 3440000,
+          "ratio": 15.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2537000,
+          "ratio": 11.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ\n（常任代理人　立花証券株式会社）",
+          "shares": 2224000,
+          "ratio": 9.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＡＶＩ　ＪＡＰＡＮ　ＯＰＰＯＲＴＵＮＩＴＹ　ＴＲＵＳＴ　ＰＬＣ\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 1406000,
+          "ratio": 6.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 1016000,
+          "ratio": 4.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 945000,
+          "ratio": 4.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 747000,
+          "ratio": 3.3,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 713000,
+          "ratio": 3.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "立花証券株式会社",
+          "shares": 459000,
+          "ratio": 2.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 405000,
+          "ratio": 1.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 27.01,
+          "trust": 14.34,
+          "financial": 19.94
+        },
+        "individual_total": 0,
+        "top10_total": 61.29
+      }
+    }
+  ]
+}

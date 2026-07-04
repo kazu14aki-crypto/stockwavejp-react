@@ -1,0 +1,224 @@
+{
+  "secCode": "9072",
+  "issuerName": "ニッコンホールディングス株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "GOLDMAN, SACHS & CO.REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 25110000,
+      "ratio": 21.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7393000,
+      "ratio": 6.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDON SPECIAL ACCOUNT NO.1\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 6280000,
+      "ratio": 5.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "一般社団法人黒岩会",
+      "shares": 5120000,
+      "ratio": 4.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "本田技研工業株式会社",
+      "shares": 4898000,
+      "ratio": 4.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Panicum Funding Ltd.\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 4000000,
+      "ratio": 3.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人　野村證券株式会社）",
+      "shares": 3944000,
+      "ratio": 3.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 2701000,
+      "ratio": 2.31,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ニッコンホールディングス従業員持株会",
+      "shares": 2602000,
+      "ratio": 2.22,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 2542000,
+      "ratio": 2.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 32.55,
+      "trust": 6.33,
+      "individual": 4.38,
+      "corporate": 4.19,
+      "securities": 3.42,
+      "employee": 2.22,
+      "financial": 2.17
+    },
+    "individual_total": 4.38,
+    "top10_total": 55.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YLI5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "GOLDMAN, SACHS & CO.REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 25110000,
+          "ratio": 21.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7393000,
+          "ratio": 6.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDON SPECIAL ACCOUNT NO.1\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 6280000,
+          "ratio": 5.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "一般社団法人黒岩会",
+          "shares": 5120000,
+          "ratio": 4.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "本田技研工業株式会社",
+          "shares": 4898000,
+          "ratio": 4.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Panicum Funding Ltd.\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 4000000,
+          "ratio": 3.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人　野村證券株式会社）",
+          "shares": 3944000,
+          "ratio": 3.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 2701000,
+          "ratio": 2.31,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ニッコンホールディングス従業員持株会",
+          "shares": 2602000,
+          "ratio": 2.22,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 2542000,
+          "ratio": 2.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 32.55,
+          "trust": 6.33,
+          "individual": 4.38,
+          "corporate": 4.19,
+          "securities": 3.42,
+          "employee": 2.22,
+          "financial": 2.17
+        },
+        "individual_total": 4.38,
+        "top10_total": 55.26
+      }
+    }
+  ]
+}

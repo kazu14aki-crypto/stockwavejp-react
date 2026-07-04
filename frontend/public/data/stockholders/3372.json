@@ -1,0 +1,216 @@
+{
+  "secCode": "3372",
+  "issuerName": "株式会社関門海",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社椿台",
+      "shares": 4198400,
+      "ratio": 30.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "サントリー株式会社",
+      "shares": 698100,
+      "ratio": 5.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "田原久美子",
+      "shares": 250900,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "笠井武史",
+      "shares": 230000,
+      "ratio": 1.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "尾家産業株式会社",
+      "shares": 220000,
+      "ratio": 1.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "関門海福株会",
+      "shares": 174600,
+      "ratio": 1.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 148300,
+      "ratio": 1.08,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "吉田福太郎",
+      "shares": 135200,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小野秀昭",
+      "shares": 77800,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "金子旺子",
+      "shares": 55550,
+      "ratio": 0.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 37.36,
+      "individual": 6.75,
+      "securities": 1.08
+    },
+    "individual_total": 6.75,
+    "top10_total": 45.19
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第38期(2025/04/01－2026/03/31)",
+      "docID": "S100YGBF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社椿台",
+          "shares": 4198400,
+          "ratio": 30.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "サントリー株式会社",
+          "shares": 698100,
+          "ratio": 5.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "田原久美子",
+          "shares": 250900,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "笠井武史",
+          "shares": 230000,
+          "ratio": 1.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "尾家産業株式会社",
+          "shares": 220000,
+          "ratio": 1.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "関門海福株会",
+          "shares": 174600,
+          "ratio": 1.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 148300,
+          "ratio": 1.08,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "吉田福太郎",
+          "shares": 135200,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小野秀昭",
+          "shares": 77800,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "金子旺子",
+          "shares": 55550,
+          "ratio": 0.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 37.36,
+          "individual": 6.75,
+          "securities": 1.08
+        },
+        "individual_total": 6.75,
+        "top10_total": 45.19
+      }
+    }
+  ]
+}

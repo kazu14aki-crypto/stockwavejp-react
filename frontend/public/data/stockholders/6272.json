@@ -1,0 +1,222 @@
+{
+  "secCode": "6272",
+  "issuerName": "レオン自動機株式会社",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "公益財団法人林レオロジー記念財団",
+      "shares": 3030000,
+      "ratio": 11.2,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2979000,
+      "ratio": 11.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ラム商事有限会社",
+      "shares": 1703000,
+      "ratio": 6.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1614000,
+      "ratio": 6.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社足利銀行",
+      "shares": 1160000,
+      "ratio": 4.3,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "レオン自動機従業員持株会",
+      "shares": 884000,
+      "ratio": 3.3,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 624000,
+      "ratio": 2.3,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社栃木銀行",
+      "shares": 480000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "双葉企画株式会社",
+      "shares": 478000,
+      "ratio": 1.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 467000,
+      "ratio": 1.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 11.2,
+      "trust": 17.0,
+      "corporate": 8.1,
+      "financial": 7.8,
+      "employee": 3.3,
+      "foreign": 2.3
+    },
+    "individual_total": 0,
+    "top10_total": 49.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100YFES",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人林レオロジー記念財団",
+          "shares": 3030000,
+          "ratio": 11.2,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2979000,
+          "ratio": 11.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ラム商事有限会社",
+          "shares": 1703000,
+          "ratio": 6.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1614000,
+          "ratio": 6.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社足利銀行",
+          "shares": 1160000,
+          "ratio": 4.3,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "レオン自動機従業員持株会",
+          "shares": 884000,
+          "ratio": 3.3,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 624000,
+          "ratio": 2.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社栃木銀行",
+          "shares": 480000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "双葉企画株式会社",
+          "shares": 478000,
+          "ratio": 1.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 467000,
+          "ratio": 1.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 11.2,
+          "trust": 17.0,
+          "corporate": 8.1,
+          "financial": 7.8,
+          "employee": 3.3,
+          "foreign": 2.3
+        },
+        "individual_total": 0,
+        "top10_total": 49.7
+      }
+    }
+  ]
+}

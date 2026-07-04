@@ -1,0 +1,216 @@
+{
+  "secCode": "2158",
+  "issuerName": "株式会社ＦＲＯＮＴＥＯ",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "守本  正宏",
+      "shares": 6383800,
+      "ratio": 16.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社フォーカスシステムズ",
+      "shares": 3637420,
+      "ratio": 9.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "池上  成朝",
+      "shares": 2630300,
+      "ratio": 6.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上田八木短資株式会社",
+      "shares": 520000,
+      "ratio": 1.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社学研ホールディングス",
+      "shares": 391600,
+      "ratio": 0.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村證券株式会社",
+      "shares": 315438,
+      "ratio": 0.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三菱ＵＦＪモルガン・スタンレー証券株式会社",
+      "shares": 255400,
+      "ratio": 0.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 242300,
+      "ratio": 0.61,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "堀田　高志",
+      "shares": 178900,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野崎　周作",
+      "shares": 144300,
+      "ratio": 0.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.81,
+      "corporate": 12.39,
+      "securities": 1.26
+    },
+    "individual_total": 23.81,
+    "top10_total": 37.46
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YGJA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "守本  正宏",
+          "shares": 6383800,
+          "ratio": 16.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社フォーカスシステムズ",
+          "shares": 3637420,
+          "ratio": 9.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "池上  成朝",
+          "shares": 2630300,
+          "ratio": 6.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上田八木短資株式会社",
+          "shares": 520000,
+          "ratio": 1.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社学研ホールディングス",
+          "shares": 391600,
+          "ratio": 0.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村證券株式会社",
+          "shares": 315438,
+          "ratio": 0.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三菱ＵＦＪモルガン・スタンレー証券株式会社",
+          "shares": 255400,
+          "ratio": 0.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 242300,
+          "ratio": 0.61,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "堀田　高志",
+          "shares": 178900,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野崎　周作",
+          "shares": 144300,
+          "ratio": 0.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.81,
+          "corporate": 12.39,
+          "securities": 1.26
+        },
+        "individual_total": 23.81,
+        "top10_total": 37.46
+      }
+    }
+  ]
+}

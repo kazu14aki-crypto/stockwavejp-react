@@ -1,0 +1,216 @@
+{
+  "secCode": "6307",
+  "issuerName": "サンセイ株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社光通信",
+      "shares": 1518000,
+      "ratio": 19.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "小嶋　敦",
+      "shares": 880000,
+      "ratio": 11.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信株式会社",
+      "shares": 439000,
+      "ratio": 5.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "和田　秀樹",
+      "shares": 338000,
+      "ratio": 4.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "サンセイ従業員持株会",
+      "shares": 173000,
+      "ratio": 2.23,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "石井　秀明",
+      "shares": 172000,
+      "ratio": 2.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小嶋　悦子",
+      "shares": 170000,
+      "ratio": 2.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "西村　宗一郎",
+      "shares": 150000,
+      "ratio": 1.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "櫻井　敏夫",
+      "shares": 115000,
+      "ratio": 1.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "佐藤　光昭",
+      "shares": 110000,
+      "ratio": 1.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.19,
+      "individual": 24.92,
+      "employee": 2.23
+    },
+    "individual_total": 24.92,
+    "top10_total": 52.34
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第71期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ78",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社光通信",
+          "shares": 1518000,
+          "ratio": 19.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "小嶋　敦",
+          "shares": 880000,
+          "ratio": 11.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信株式会社",
+          "shares": 439000,
+          "ratio": 5.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "和田　秀樹",
+          "shares": 338000,
+          "ratio": 4.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "サンセイ従業員持株会",
+          "shares": 173000,
+          "ratio": 2.23,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "石井　秀明",
+          "shares": 172000,
+          "ratio": 2.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小嶋　悦子",
+          "shares": 170000,
+          "ratio": 2.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "西村　宗一郎",
+          "shares": 150000,
+          "ratio": 1.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "櫻井　敏夫",
+          "shares": 115000,
+          "ratio": 1.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "佐藤　光昭",
+          "shares": 110000,
+          "ratio": 1.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.19,
+          "individual": 24.92,
+          "employee": 2.23
+        },
+        "individual_total": 24.92,
+        "top10_total": 52.34
+      }
+    }
+  ]
+}

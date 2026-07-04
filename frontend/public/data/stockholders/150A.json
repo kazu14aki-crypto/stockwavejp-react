@@ -1,0 +1,216 @@
+{
+  "secCode": "150A",
+  "issuerName": "株式会社ＪＳＨ",
+  "updated_at": "2026/07/04 18:48 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "野口　和輝",
+      "shares": 1976000,
+      "ratio": 34.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ジャフコSV５共有投資事業有限責任組合",
+      "shares": 979600,
+      "ratio": 17.28,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ジャフコSV５スター投資事業有限責任組合",
+      "shares": 242100,
+      "ratio": 4.27,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "東京センチュリー株式会社",
+      "shares": 180000,
+      "ratio": 3.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社はじめカンパニー",
+      "shares": 170000,
+      "ratio": 3.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "速水　裕",
+      "shares": 110800,
+      "ratio": 1.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "Ariake Secondary Fund Ⅲ LP Bergen Jon（常任代理人あいざわアセットマネジメント株式会社）",
+      "shares": 106600,
+      "ratio": 1.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ホテル・アルファ・ワン事業本社",
+      "shares": 100000,
+      "ratio": 1.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ホテル・アルファーワン事業共同組合",
+      "shares": 100000,
+      "ratio": 1.76,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ホテルアルファ―ワン・ディベロップメント",
+      "shares": 100000,
+      "ratio": 1.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 36.82,
+      "other": 23.31,
+      "corporate": 11.57
+    },
+    "individual_total": 36.82,
+    "top10_total": 71.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第10期(2025/04/01－2026/03/31)",
+      "docID": "S100YFUO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "野口　和輝",
+          "shares": 1976000,
+          "ratio": 34.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ジャフコSV５共有投資事業有限責任組合",
+          "shares": 979600,
+          "ratio": 17.28,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ジャフコSV５スター投資事業有限責任組合",
+          "shares": 242100,
+          "ratio": 4.27,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "東京センチュリー株式会社",
+          "shares": 180000,
+          "ratio": 3.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社はじめカンパニー",
+          "shares": 170000,
+          "ratio": 3.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "速水　裕",
+          "shares": 110800,
+          "ratio": 1.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "Ariake Secondary Fund Ⅲ LP Bergen Jon（常任代理人あいざわアセットマネジメント株式会社）",
+          "shares": 106600,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ホテル・アルファ・ワン事業本社",
+          "shares": 100000,
+          "ratio": 1.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ホテル・アルファーワン事業共同組合",
+          "shares": 100000,
+          "ratio": 1.76,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ホテルアルファ―ワン・ディベロップメント",
+          "shares": 100000,
+          "ratio": 1.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 36.82,
+          "other": 23.31,
+          "corporate": 11.57
+        },
+        "individual_total": 36.82,
+        "top10_total": 71.7
+      }
+    }
+  ]
+}

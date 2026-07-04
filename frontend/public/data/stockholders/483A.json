@@ -1,0 +1,222 @@
+{
+  "secCode": "483A",
+  "issuerName": "テラテクノロジー株式会社",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ネッツ",
+      "shares": 860000,
+      "ratio": 52.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "宮本一成",
+      "shares": 114500,
+      "ratio": 7.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "上田八木短資株式会社",
+      "shares": 43900,
+      "ratio": 2.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BBH LUX/BROWN BROTHERS HARRIMAN (LUXEMBOURG) SCA CUSTODIAN FOR SMD-AM FUNDS - DSBI JAPAN EQUITY SMALL CAP ABSOLUTE VALUE\n（常任代理人　株式会社三井住友銀行）",
+      "shares": 42000,
+      "ratio": 2.58,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+      "shares": 38600,
+      "ratio": 2.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 38100,
+      "ratio": 2.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "テラテクノロジー従業員持株会",
+      "shares": 20800,
+      "ratio": 1.28,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 17000,
+      "ratio": 1.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 15553,
+      "ratio": 0.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岩崎　泰次",
+      "shares": 11700,
+      "ratio": 0.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 55.45,
+      "individual": 7.74,
+      "foreign": 4.95,
+      "trust": 2.34,
+      "employee": 1.28,
+      "securities": 1.99
+    },
+    "individual_total": 7.74,
+    "top10_total": 73.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第36期(2025/04/01－2026/03/31)",
+      "docID": "S100YGDD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ネッツ",
+          "shares": 860000,
+          "ratio": 52.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "宮本一成",
+          "shares": 114500,
+          "ratio": 7.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "上田八木短資株式会社",
+          "shares": 43900,
+          "ratio": 2.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BBH LUX/BROWN BROTHERS HARRIMAN (LUXEMBOURG) SCA CUSTODIAN FOR SMD-AM FUNDS - DSBI JAPAN EQUITY SMALL CAP ABSOLUTE VALUE\n（常任代理人　株式会社三井住友銀行）",
+          "shares": 42000,
+          "ratio": 2.58,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+          "shares": 38600,
+          "ratio": 2.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 38100,
+          "ratio": 2.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テラテクノロジー従業員持株会",
+          "shares": 20800,
+          "ratio": 1.28,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 17000,
+          "ratio": 1.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 15553,
+          "ratio": 0.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岩崎　泰次",
+          "shares": 11700,
+          "ratio": 0.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 55.45,
+          "individual": 7.74,
+          "foreign": 4.95,
+          "trust": 2.34,
+          "employee": 1.28,
+          "securities": 1.99
+        },
+        "individual_total": 7.74,
+        "top10_total": 73.75
+      }
+    }
+  ]
+}

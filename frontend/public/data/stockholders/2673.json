@@ -1,0 +1,216 @@
+{
+  "secCode": "2673",
+  "issuerName": "夢みつけ隊株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "佐々木　ベジ",
+      "shares": 5334000,
+      "ratio": 52.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤　彰浩",
+      "shares": 200000,
+      "ratio": 1.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "楽天証券株式会社",
+      "shares": 177000,
+      "ratio": 1.76,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SBI証券",
+      "shares": 132000,
+      "ratio": 1.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "稲田　幹弘",
+      "shares": 110000,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大和証券株式会社",
+      "shares": 109000,
+      "ratio": 1.08,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BARCLAYS CAPITAL SECURITIES LIMITED(常任代理人 バークレイズ証券株式会社)",
+      "shares": 107000,
+      "ratio": 1.06,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "西川　紘未",
+      "shares": 80000,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "UBS AG LONDON ASIA EQUITIES(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 71000,
+      "ratio": 0.71,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "J.P.MORGAN SECURITIES PLC(常任代理人　JPモルガン証券株式会社)",
+      "shares": 64000,
+      "ratio": 0.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 56.58,
+      "securities": 4.78,
+      "foreign": 1.77
+    },
+    "individual_total": 56.58,
+    "top10_total": 63.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/04/01－2026/03/31)",
+      "docID": "S100YE9G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "佐々木　ベジ",
+          "shares": 5334000,
+          "ratio": 52.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤　彰浩",
+          "shares": 200000,
+          "ratio": 1.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "楽天証券株式会社",
+          "shares": 177000,
+          "ratio": 1.76,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SBI証券",
+          "shares": 132000,
+          "ratio": 1.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "稲田　幹弘",
+          "shares": 110000,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大和証券株式会社",
+          "shares": 109000,
+          "ratio": 1.08,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BARCLAYS CAPITAL SECURITIES LIMITED(常任代理人 バークレイズ証券株式会社)",
+          "shares": 107000,
+          "ratio": 1.06,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "西川　紘未",
+          "shares": 80000,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "UBS AG LONDON ASIA EQUITIES(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 71000,
+          "ratio": 0.71,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "J.P.MORGAN SECURITIES PLC(常任代理人　JPモルガン証券株式会社)",
+          "shares": 64000,
+          "ratio": 0.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 56.58,
+          "securities": 4.78,
+          "foreign": 1.77
+        },
+        "individual_total": 56.58,
+        "top10_total": 63.13
+      }
+    }
+  ]
+}

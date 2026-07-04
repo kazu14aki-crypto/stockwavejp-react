@@ -1,0 +1,220 @@
+{
+  "secCode": "8115",
+  "issuerName": "ムーンバット株式会社",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "八木通商株式会社",
+      "shares": 1103000,
+      "ratio": 24.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ムーンバット持株共栄会",
+      "shares": 278000,
+      "ratio": 6.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三井住友銀行",
+      "shares": 224000,
+      "ratio": 4.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "岡本綠",
+      "shares": 175000,
+      "ratio": 3.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ムーンバット役員持株会",
+      "shares": 174000,
+      "ratio": 3.87,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社京都銀行",
+      "shares": 170000,
+      "ratio": 3.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 160000,
+      "ratio": 3.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ニード",
+      "shares": 130000,
+      "ratio": 2.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "フシアインベストメント　　　リミテッド\n（常任代理人　福島貴士）",
+      "shares": 104000,
+      "ratio": 2.31,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "西井　賢治",
+      "shares": 100000,
+      "ratio": 2.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.38,
+      "individual": 12.29,
+      "financial": 12.3,
+      "employee": 3.87,
+      "other": 2.31
+    },
+    "individual_total": 12.29,
+    "top10_total": 58.15
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YDWL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "八木通商株式会社",
+          "shares": 1103000,
+          "ratio": 24.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ムーンバット持株共栄会",
+          "shares": 278000,
+          "ratio": 6.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三井住友銀行",
+          "shares": 224000,
+          "ratio": 4.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "岡本綠",
+          "shares": 175000,
+          "ratio": 3.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ムーンバット役員持株会",
+          "shares": 174000,
+          "ratio": 3.87,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社京都銀行",
+          "shares": 170000,
+          "ratio": 3.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 160000,
+          "ratio": 3.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ニード",
+          "shares": 130000,
+          "ratio": 2.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "フシアインベストメント　　　リミテッド\n（常任代理人　福島貴士）",
+          "shares": 104000,
+          "ratio": 2.31,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "西井　賢治",
+          "shares": 100000,
+          "ratio": 2.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.38,
+          "individual": 12.29,
+          "financial": 12.3,
+          "employee": 3.87,
+          "other": 2.31
+        },
+        "individual_total": 12.29,
+        "top10_total": 58.15
+      }
+    }
+  ]
+}

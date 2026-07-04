@@ -1,0 +1,218 @@
+{
+  "secCode": "247A",
+  "issuerName": "Ａｉロボティクス株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "龍川　誠",
+      "shares": 11929300,
+      "ratio": 18.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 4147700,
+      "ratio": 6.39,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "桑山　友美",
+      "shares": 2360000,
+      "ratio": 3.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＢＩインキュベーション株式会社",
+      "shares": 2066500,
+      "ratio": 3.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "立川　好美",
+      "shares": 2030000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "相川　佳之\n（常任代理人　相川　慶子）",
+      "shares": 1830000,
+      "ratio": 2.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "近藤　太香巳",
+      "shares": 1793000,
+      "ratio": 2.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山本　幸央",
+      "shares": 1720000,
+      "ratio": 2.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社エニグモ",
+      "shares": 1529200,
+      "ratio": 2.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ブランジスタ",
+      "shares": 1400000,
+      "ratio": 2.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 30.56,
+      "trust": 6.39,
+      "corporate": 7.7,
+      "other": 2.82
+    },
+    "individual_total": 30.56,
+    "top10_total": 47.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第10期(2025/04/01－2026/03/31)",
+      "docID": "S100YGSY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "龍川　誠",
+          "shares": 11929300,
+          "ratio": 18.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 4147700,
+          "ratio": 6.39,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "桑山　友美",
+          "shares": 2360000,
+          "ratio": 3.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＢＩインキュベーション株式会社",
+          "shares": 2066500,
+          "ratio": 3.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "立川　好美",
+          "shares": 2030000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "相川　佳之\n（常任代理人　相川　慶子）",
+          "shares": 1830000,
+          "ratio": 2.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "近藤　太香巳",
+          "shares": 1793000,
+          "ratio": 2.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　幸央",
+          "shares": 1720000,
+          "ratio": 2.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社エニグモ",
+          "shares": 1529200,
+          "ratio": 2.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ブランジスタ",
+          "shares": 1400000,
+          "ratio": 2.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 30.56,
+          "trust": 6.39,
+          "corporate": 7.7,
+          "other": 2.82
+        },
+        "individual_total": 30.56,
+        "top10_total": 47.47
+      }
+    }
+  ]
+}

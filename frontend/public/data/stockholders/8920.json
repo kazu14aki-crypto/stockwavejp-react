@@ -1,0 +1,218 @@
+{
+  "secCode": "8920",
+  "issuerName": "株式会社　東　祥",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "沓　名　俊　裕",
+      "shares": 15788000,
+      "ratio": 43.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "沓　名　裕一郎（注２）",
+      "shares": 4181000,
+      "ratio": 11.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2271000,
+      "ratio": 6.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "沓　名　一　樹（注２）",
+      "shares": 1216000,
+      "ratio": 3.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ラセット合同会社",
+      "shares": 1145000,
+      "ratio": 3.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "沓　名　眞裕美",
+      "shares": 667000,
+      "ratio": 1.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 666000,
+      "ratio": 1.84,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MORGAN STANLEY＆ CO. LLC\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 428000,
+      "ratio": 1.19,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO．(AVFC) RE NON TREATY CLIENTS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 413000,
+      "ratio": 1.14,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NORTHERN TRUST CO．(AVFC) RE STATE TEACHERS RETIREMENT SYSTEM OF OHIO\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 286000,
+      "ratio": 0.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 60.51,
+      "trust": 8.13,
+      "corporate": 3.17,
+      "foreign": 3.12
+    },
+    "individual_total": 60.51,
+    "top10_total": 74.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/04/01－2026/03/31)",
+      "docID": "S100YI5M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "沓　名　俊　裕",
+          "shares": 15788000,
+          "ratio": 43.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "沓　名　裕一郎（注２）",
+          "shares": 4181000,
+          "ratio": 11.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2271000,
+          "ratio": 6.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "沓　名　一　樹（注２）",
+          "shares": 1216000,
+          "ratio": 3.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ラセット合同会社",
+          "shares": 1145000,
+          "ratio": 3.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "沓　名　眞裕美",
+          "shares": 667000,
+          "ratio": 1.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 666000,
+          "ratio": 1.84,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MORGAN STANLEY＆ CO. LLC\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 428000,
+          "ratio": 1.19,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO．(AVFC) RE NON TREATY CLIENTS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 413000,
+          "ratio": 1.14,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NORTHERN TRUST CO．(AVFC) RE STATE TEACHERS RETIREMENT SYSTEM OF OHIO\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 286000,
+          "ratio": 0.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 60.51,
+          "trust": 8.13,
+          "corporate": 3.17,
+          "foreign": 3.12
+        },
+        "individual_total": 60.51,
+        "top10_total": 74.93
+      }
+    }
+  ]
+}

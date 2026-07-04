@@ -1,0 +1,218 @@
+{
+  "secCode": "3317",
+  "issuerName": "株式会社フライングガーデン",
+  "updated_at": "2026/07/04 18:14 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "野沢八千万",
+      "shares": 832780,
+      "ratio": 28.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社アクティヴ",
+      "shares": 241920,
+      "ratio": 8.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野沢卓史",
+      "shares": 132248,
+      "ratio": 4.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野沢通子",
+      "shares": 108288,
+      "ratio": 3.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野沢良史",
+      "shares": 103448,
+      "ratio": 3.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＦＧ持株会",
+      "shares": 87132,
+      "ratio": 3.01,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "須田忠雄",
+      "shares": 63688,
+      "ratio": 2.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４０\n(常任代理人\n株式会社みずほ銀行決済営業部)",
+      "shares": 40600,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "綾羽静江",
+      "shares": 40000,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野中浩二",
+      "shares": 34500,
+      "ratio": 1.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.49,
+      "corporate": 8.37,
+      "employee": 3.01,
+      "financial": 1.4
+    },
+    "individual_total": 45.49,
+    "top10_total": 58.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第45期(2025/04/01－2026/03/31)",
+      "docID": "S100YHND",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "野沢八千万",
+          "shares": 832780,
+          "ratio": 28.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社アクティヴ",
+          "shares": 241920,
+          "ratio": 8.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野沢卓史",
+          "shares": 132248,
+          "ratio": 4.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野沢通子",
+          "shares": 108288,
+          "ratio": 3.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野沢良史",
+          "shares": 103448,
+          "ratio": 3.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＦＧ持株会",
+          "shares": 87132,
+          "ratio": 3.01,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "須田忠雄",
+          "shares": 63688,
+          "ratio": 2.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４０\n(常任代理人\n株式会社みずほ銀行決済営業部)",
+          "shares": 40600,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "綾羽静江",
+          "shares": 40000,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野中浩二",
+          "shares": 34500,
+          "ratio": 1.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.49,
+          "corporate": 8.37,
+          "employee": 3.01,
+          "financial": 1.4
+        },
+        "individual_total": 45.49,
+        "top10_total": 58.27
+      }
+    }
+  ]
+}

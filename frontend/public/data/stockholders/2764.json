@@ -1,0 +1,218 @@
+{
+  "secCode": "2764",
+  "issuerName": "株式会社ひらまつ",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社マルハン太平洋クラブインベストメント",
+      "shares": 25568100,
+      "ratio": 36.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ロードスターキャピタル株式会社",
+      "shares": 1500000,
+      "ratio": 2.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ひらまつ社員持株会",
+      "shares": 1256500,
+      "ratio": 1.78,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中川　一",
+      "shares": 706800,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "新行内　儀春",
+      "shares": 665200,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 600000,
+      "ratio": 0.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社太平洋クラブ",
+      "shares": 568100,
+      "ratio": 0.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "江頭　和子",
+      "shares": 500000,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "重川　龍子",
+      "shares": 314600,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "遠藤　宣夫",
+      "shares": 312600,
+      "ratio": 0.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.11,
+      "employee": 1.78,
+      "individual": 3.54,
+      "financial": 0.85
+    },
+    "individual_total": 3.54,
+    "top10_total": 45.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/04/01－2026/03/31)",
+      "docID": "S100YL5S",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社マルハン太平洋クラブインベストメント",
+          "shares": 25568100,
+          "ratio": 36.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ロードスターキャピタル株式会社",
+          "shares": 1500000,
+          "ratio": 2.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ひらまつ社員持株会",
+          "shares": 1256500,
+          "ratio": 1.78,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中川　一",
+          "shares": 706800,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "新行内　儀春",
+          "shares": 665200,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 600000,
+          "ratio": 0.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社太平洋クラブ",
+          "shares": 568100,
+          "ratio": 0.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "江頭　和子",
+          "shares": 500000,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "重川　龍子",
+          "shares": 314600,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "遠藤　宣夫",
+          "shares": 312600,
+          "ratio": 0.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.11,
+          "employee": 1.78,
+          "individual": 3.54,
+          "financial": 0.85
+        },
+        "individual_total": 3.54,
+        "top10_total": 45.28
+      }
+    }
+  ]
+}

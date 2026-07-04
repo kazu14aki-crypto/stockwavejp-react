@@ -1,0 +1,222 @@
+{
+  "secCode": "6588",
+  "issuerName": "東芝テック株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱東芝",
+      "shares": 26605000,
+      "ratio": 50.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 3198000,
+      "ratio": 6.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+      "shares": 2939000,
+      "ratio": 5.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ステート ストリート バンクアンド トラスト カンパニー５１０３１２（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 1411000,
+      "ratio": 2.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ステート ストリート バンクアンド トラスト カンパニー５１０３１１（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 1075000,
+      "ratio": 2.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱デジタルガレージ",
+      "shares": 1009000,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 866000,
+      "ratio": 1.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ゴールドマン・サックス・インターナショナル（常任代理人　ゴールドマン・サックス証券㈱）",
+      "shares": 765000,
+      "ratio": 1.44,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東芝テック社員持株会",
+      "shares": 760000,
+      "ratio": 1.43,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人　シティバンク、エヌ・エイ東京　支店）",
+      "shares": 674000,
+      "ratio": 1.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 52.12,
+      "trust": 7.67,
+      "securities": 6.99,
+      "financial": 4.69,
+      "employee": 1.43,
+      "foreign": 1.27
+    },
+    "individual_total": 52.12,
+    "top10_total": 74.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第101期(2025/04/01－2026/03/31)",
+      "docID": "S100YHCF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱東芝",
+          "shares": 26605000,
+          "ratio": 50.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 3198000,
+          "ratio": 6.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+          "shares": 2939000,
+          "ratio": 5.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ステート ストリート バンクアンド トラスト カンパニー５１０３１２（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 1411000,
+          "ratio": 2.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ステート ストリート バンクアンド トラスト カンパニー５１０３１１（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 1075000,
+          "ratio": 2.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱デジタルガレージ",
+          "shares": 1009000,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 866000,
+          "ratio": 1.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ゴールドマン・サックス・インターナショナル（常任代理人　ゴールドマン・サックス証券㈱）",
+          "shares": 765000,
+          "ratio": 1.44,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東芝テック社員持株会",
+          "shares": 760000,
+          "ratio": 1.43,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人　シティバンク、エヌ・エイ東京　支店）",
+          "shares": 674000,
+          "ratio": 1.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 52.12,
+          "trust": 7.67,
+          "securities": 6.99,
+          "financial": 4.69,
+          "employee": 1.43,
+          "foreign": 1.27
+        },
+        "individual_total": 52.12,
+        "top10_total": 74.17
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "8104",
+  "issuerName": "クワザワホールディングス株式会社",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "太平洋セメント株式会社",
+      "shares": 2700000,
+      "ratio": 18.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "桑澤商事株式会社",
+      "shares": 1394000,
+      "ratio": 9.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "吉野石膏株式会社",
+      "shares": 802000,
+      "ratio": 5.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＬＩＸＩＬ",
+      "shares": 339000,
+      "ratio": 2.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 327000,
+      "ratio": 2.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社北海道銀行",
+      "shares": 324000,
+      "ratio": 2.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "クワザワ従業員持株会",
+      "shares": 321000,
+      "ratio": 2.17,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社北洋銀行",
+      "shares": 310000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "パナソニックハウジングソリューションズ株式会社",
+      "shares": 167000,
+      "ratio": 1.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "桑澤　嘉英",
+      "shares": 164000,
+      "ratio": 1.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.5,
+      "trust": 2.21,
+      "financial": 4.29,
+      "employee": 2.17,
+      "individual": 1.11
+    },
+    "individual_total": 1.11,
+    "top10_total": 46.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YJIQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "太平洋セメント株式会社",
+          "shares": 2700000,
+          "ratio": 18.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "桑澤商事株式会社",
+          "shares": 1394000,
+          "ratio": 9.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "吉野石膏株式会社",
+          "shares": 802000,
+          "ratio": 5.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＬＩＸＩＬ",
+          "shares": 339000,
+          "ratio": 2.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 327000,
+          "ratio": 2.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社北海道銀行",
+          "shares": 324000,
+          "ratio": 2.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "クワザワ従業員持株会",
+          "shares": 321000,
+          "ratio": 2.17,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社北洋銀行",
+          "shares": 310000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "パナソニックハウジングソリューションズ株式会社",
+          "shares": 167000,
+          "ratio": 1.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "桑澤　嘉英",
+          "shares": 164000,
+          "ratio": 1.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.5,
+          "trust": 2.21,
+          "financial": 4.29,
+          "employee": 2.17,
+          "individual": 1.11
+        },
+        "individual_total": 1.11,
+        "top10_total": 46.28
+      }
+    }
+  ]
+}

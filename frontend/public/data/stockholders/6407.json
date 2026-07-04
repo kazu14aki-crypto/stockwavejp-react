@@ -1,0 +1,220 @@
+{
+  "secCode": "6407",
+  "issuerName": "ＣＫＤ株式会社",
+  "updated_at": "2026/07/04 18:00 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社 (信託口)",
+      "shares": 9689000,
+      "ratio": 14.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行  （信託口)",
+      "shares": 5667000,
+      "ratio": 8.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "CKD持株会",
+      "shares": 2605000,
+      "ratio": 3.9,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "住友生命保険相互会社",
+      "shares": 1914000,
+      "ratio": 2.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "CKD協力企業投資会",
+      "shares": 1801000,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC) (常任代理人 株式会社三菱UFJ銀行)",
+      "shares": 1534000,
+      "ratio": 2.3,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "第一生命保険株式会社",
+      "shares": 1400000,
+      "ratio": 2.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 1281000,
+      "ratio": 1.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人 株式会社みずほ銀行)",
+      "shares": 1191000,
+      "ratio": 1.78,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE CHASE MANHATTANBANK,N.A. LONDONSECSLENDING OMNIBUS ACCOUNT (常任代理人 株式会社みずほ銀行)",
+      "shares": 1010000,
+      "ratio": 1.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.98,
+      "employee": 3.9,
+      "financial": 6.87,
+      "individual": 2.7,
+      "foreign": 5.59
+    },
+    "individual_total": 2.7,
+    "top10_total": 42.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第106期(2025/04/01－2026/03/31)",
+      "docID": "S100YGB2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社 (信託口)",
+          "shares": 9689000,
+          "ratio": 14.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行  （信託口)",
+          "shares": 5667000,
+          "ratio": 8.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "CKD持株会",
+          "shares": 2605000,
+          "ratio": 3.9,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "住友生命保険相互会社",
+          "shares": 1914000,
+          "ratio": 2.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "CKD協力企業投資会",
+          "shares": 1801000,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC) (常任代理人 株式会社三菱UFJ銀行)",
+          "shares": 1534000,
+          "ratio": 2.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "第一生命保険株式会社",
+          "shares": 1400000,
+          "ratio": 2.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 1281000,
+          "ratio": 1.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人 株式会社みずほ銀行)",
+          "shares": 1191000,
+          "ratio": 1.78,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE CHASE MANHATTANBANK,N.A. LONDONSECSLENDING OMNIBUS ACCOUNT (常任代理人 株式会社みずほ銀行)",
+          "shares": 1010000,
+          "ratio": 1.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.98,
+          "employee": 3.9,
+          "financial": 6.87,
+          "individual": 2.7,
+          "foreign": 5.59
+        },
+        "individual_total": 2.7,
+        "top10_total": 42.04
+      }
+    }
+  ]
+}

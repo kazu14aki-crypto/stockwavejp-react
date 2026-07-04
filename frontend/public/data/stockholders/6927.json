@@ -1,0 +1,218 @@
+{
+  "secCode": "6927",
+  "issuerName": "ヘリオス　テクノ　ホールディング株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "NIPPON ACTIVE VALUE FUND PLC(常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+      "shares": 2219200,
+      "ratio": 12.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 1382600,
+      "ratio": 7.61,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NAVF SELECT LLC(常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+      "shares": 1380900,
+      "ratio": 7.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 1320248,
+      "ratio": 7.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC) (常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 1029322,
+      "ratio": 5.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "THE BANK OF NEW YORK - JASDECTREATY ACCOUNT(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 823000,
+      "ratio": 4.53,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "PERSHING-DIV.OF DLJ SECS.CORP. (常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 510000,
+      "ratio": 2.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 291868,
+      "ratio": 1.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "MSCO CUSTOMER SECURITIES(常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社)",
+      "shares": 291431,
+      "ratio": 1.6,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "DALTON INVESTMENTS TRUST - SERIES C (常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+      "shares": 246400,
+      "ratio": 1.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 21.17,
+      "foreign": 19.41,
+      "securities": 8.87,
+      "other": 2.8
+    },
+    "individual_total": 0,
+    "top10_total": 52.25
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/04/01－2026/03/31)",
+      "docID": "S100YF8D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "NIPPON ACTIVE VALUE FUND PLC(常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+          "shares": 2219200,
+          "ratio": 12.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 1382600,
+          "ratio": 7.61,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NAVF SELECT LLC(常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+          "shares": 1380900,
+          "ratio": 7.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 1320248,
+          "ratio": 7.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC) (常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 1029322,
+          "ratio": 5.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "THE BANK OF NEW YORK - JASDECTREATY ACCOUNT(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 823000,
+          "ratio": 4.53,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "PERSHING-DIV.OF DLJ SECS.CORP. (常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 510000,
+          "ratio": 2.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 291868,
+          "ratio": 1.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "MSCO CUSTOMER SECURITIES(常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社)",
+          "shares": 291431,
+          "ratio": 1.6,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "DALTON INVESTMENTS TRUST - SERIES C (常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ)",
+          "shares": 246400,
+          "ratio": 1.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 21.17,
+          "foreign": 19.41,
+          "securities": 8.87,
+          "other": 2.8
+        },
+        "individual_total": 0,
+        "top10_total": 52.25
+      }
+    }
+  ]
+}

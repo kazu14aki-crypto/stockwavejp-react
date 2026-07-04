@@ -1,0 +1,216 @@
+{
+  "secCode": "2183",
+  "issuerName": "株式会社リニカル",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社秦野",
+      "shares": 4510000,
+      "ratio": 19.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社髙橋",
+      "shares": 2001000,
+      "ratio": 8.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "辻本　桂吾",
+      "shares": 1024000,
+      "ratio": 4.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社坂本",
+      "shares": 810000,
+      "ratio": 3.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "秦野　和浩",
+      "shares": 742000,
+      "ratio": 3.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "髙橋　明宏",
+      "shares": 741000,
+      "ratio": 3.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高木　幸一",
+      "shares": 720000,
+      "ratio": 3.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "河合　順",
+      "shares": 600000,
+      "ratio": 2.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "宮崎　正哉",
+      "shares": 600000,
+      "ratio": 2.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "公益財団法人マルホ・高木皮膚科学振興財団",
+      "shares": 480000,
+      "ratio": 2.12,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.4,
+      "individual": 19.57,
+      "foundation": 2.12
+    },
+    "individual_total": 19.57,
+    "top10_total": 54.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YGWG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社秦野",
+          "shares": 4510000,
+          "ratio": 19.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社髙橋",
+          "shares": 2001000,
+          "ratio": 8.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "辻本　桂吾",
+          "shares": 1024000,
+          "ratio": 4.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社坂本",
+          "shares": 810000,
+          "ratio": 3.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "秦野　和浩",
+          "shares": 742000,
+          "ratio": 3.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "髙橋　明宏",
+          "shares": 741000,
+          "ratio": 3.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高木　幸一",
+          "shares": 720000,
+          "ratio": 3.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "河合　順",
+          "shares": 600000,
+          "ratio": 2.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "宮崎　正哉",
+          "shares": 600000,
+          "ratio": 2.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "公益財団法人マルホ・高木皮膚科学振興財団",
+          "shares": 480000,
+          "ratio": 2.12,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.4,
+          "individual": 19.57,
+          "foundation": 2.12
+        },
+        "individual_total": 19.57,
+        "top10_total": 54.09
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "6428",
+  "issuerName": "株式会社オーイズミ",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社オーイズミホールディングス",
+      "shares": 10630000,
+      "ratio": 47.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大泉秀治",
+      "shares": 3120000,
+      "ratio": 13.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大泉充輝",
+      "shares": 1011000,
+      "ratio": 4.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大泉賢治",
+      "shares": 604000,
+      "ratio": 2.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "オーイズミ取引先持株会",
+      "shares": 244000,
+      "ratio": 1.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "石川雄一",
+      "shares": 233000,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社商工組合中央金庫",
+      "shares": 210000,
+      "ratio": 0.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "波佐間絵美",
+      "shares": 187000,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "オーイズミ従業員持株会",
+      "shares": 171000,
+      "ratio": 0.76,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上田八木短資株式会社",
+      "shares": 123000,
+      "ratio": 0.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.73,
+      "individual": 22.93,
+      "employee": 1.85
+    },
+    "individual_total": 22.93,
+    "top10_total": 73.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第58期(2025/04/01－2026/03/31)",
+      "docID": "S100YLT7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社オーイズミホールディングス",
+          "shares": 10630000,
+          "ratio": 47.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大泉秀治",
+          "shares": 3120000,
+          "ratio": 13.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大泉充輝",
+          "shares": 1011000,
+          "ratio": 4.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大泉賢治",
+          "shares": 604000,
+          "ratio": 2.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "オーイズミ取引先持株会",
+          "shares": 244000,
+          "ratio": 1.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "石川雄一",
+          "shares": 233000,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社商工組合中央金庫",
+          "shares": 210000,
+          "ratio": 0.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "波佐間絵美",
+          "shares": 187000,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "オーイズミ従業員持株会",
+          "shares": 171000,
+          "ratio": 0.76,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上田八木短資株式会社",
+          "shares": 123000,
+          "ratio": 0.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.73,
+          "individual": 22.93,
+          "employee": 1.85
+        },
+        "individual_total": 22.93,
+        "top10_total": 73.51
+      }
+    }
+  ]
+}

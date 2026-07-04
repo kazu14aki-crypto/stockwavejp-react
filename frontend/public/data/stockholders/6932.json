@@ -1,0 +1,222 @@
+{
+  "secCode": "6932",
+  "issuerName": "株式会社遠藤照明",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社アーバン",
+      "shares": 4933000,
+      "ratio": 33.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 652000,
+      "ratio": 4.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社",
+      "shares": 364000,
+      "ratio": 2.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE－AC） (常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 337000,
+      "ratio": 2.28,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 258000,
+      "ratio": 1.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JPモルガン証券株式会社",
+      "shares": 251000,
+      "ratio": 1.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＴＨＥ ＢＡＮＫ ＯＦ ＮＥＷ ＹＯＲＫ　ＭＥＬＬＯＮ １４００４４（常任代理人　株式会社みずほ銀行）",
+      "shares": 244000,
+      "ratio": 1.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 219000,
+      "ratio": 1.48,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "遠藤照明従業員持株会",
+      "shares": 212000,
+      "ratio": 1.44,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "RE FUND 107‐CLIENT AC （常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 200000,
+      "ratio": 1.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.4,
+      "trust": 6.16,
+      "financial": 4.11,
+      "foreign": 3.63,
+      "securities": 3.18,
+      "employee": 1.44
+    },
+    "individual_total": 0,
+    "top10_total": 51.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/04/01－2026/03/31)",
+      "docID": "S100YH7Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社アーバン",
+          "shares": 4933000,
+          "ratio": 33.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 652000,
+          "ratio": 4.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 364000,
+          "ratio": 2.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE－AC） (常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 337000,
+          "ratio": 2.28,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 258000,
+          "ratio": 1.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JPモルガン証券株式会社",
+          "shares": 251000,
+          "ratio": 1.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＴＨＥ ＢＡＮＫ ＯＦ ＮＥＷ ＹＯＲＫ　ＭＥＬＬＯＮ １４００４４（常任代理人　株式会社みずほ銀行）",
+          "shares": 244000,
+          "ratio": 1.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 219000,
+          "ratio": 1.48,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "遠藤照明従業員持株会",
+          "shares": 212000,
+          "ratio": 1.44,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "RE FUND 107‐CLIENT AC （常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 200000,
+          "ratio": 1.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.4,
+          "trust": 6.16,
+          "financial": 4.11,
+          "foreign": 3.63,
+          "securities": 3.18,
+          "employee": 1.44
+        },
+        "individual_total": 0,
+        "top10_total": 51.92
+      }
+    }
+  ]
+}

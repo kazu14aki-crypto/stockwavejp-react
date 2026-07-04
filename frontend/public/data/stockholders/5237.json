@@ -1,0 +1,216 @@
+{
+  "secCode": "5237",
+  "issuerName": "株式会社ノザワ",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ノザワ取引先持株会",
+      "shares": 701000,
+      "ratio": 5.89,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社三井住友銀行",
+      "shares": 567000,
+      "ratio": 4.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "神栄株式会社",
+      "shares": 486000,
+      "ratio": 4.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本生命保険相互会社",
+      "shares": 436000,
+      "ratio": 3.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "損害保険ジャパン株式会社",
+      "shares": 331000,
+      "ratio": 2.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＣＢＣ株式会社",
+      "shares": 301000,
+      "ratio": 2.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日工株式会社",
+      "shares": 284000,
+      "ratio": 2.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ノザワ従業員持株会",
+      "shares": 263000,
+      "ratio": 2.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社トクヤマ",
+      "shares": 262000,
+      "ratio": 2.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社みなと銀行",
+      "shares": 210000,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 8.09,
+      "financial": 12.97,
+      "corporate": 11.19
+    },
+    "individual_total": 0,
+    "top10_total": 32.25
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第166期(2025/04/01－2026/03/31)",
+      "docID": "S100YK4Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ノザワ取引先持株会",
+          "shares": 701000,
+          "ratio": 5.89,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社三井住友銀行",
+          "shares": 567000,
+          "ratio": 4.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "神栄株式会社",
+          "shares": 486000,
+          "ratio": 4.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本生命保険相互会社",
+          "shares": 436000,
+          "ratio": 3.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "損害保険ジャパン株式会社",
+          "shares": 331000,
+          "ratio": 2.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＣＢＣ株式会社",
+          "shares": 301000,
+          "ratio": 2.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日工株式会社",
+          "shares": 284000,
+          "ratio": 2.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ノザワ従業員持株会",
+          "shares": 263000,
+          "ratio": 2.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社トクヤマ",
+          "shares": 262000,
+          "ratio": 2.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社みなと銀行",
+          "shares": 210000,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 8.09,
+          "financial": 12.97,
+          "corporate": 11.19
+        },
+        "individual_total": 0,
+        "top10_total": 32.25
+      }
+    }
+  ]
+}

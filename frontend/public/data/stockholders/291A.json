@@ -1,0 +1,218 @@
+{
+  "secCode": "291A",
+  "issuerName": "株式会社リスキル",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "松田　航",
+      "shares": 1427700,
+      "ratio": 70.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 227600,
+      "ratio": 11.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社SBI証券",
+      "shares": 46380,
+      "ratio": 2.28,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BBH LUX/BROWN BROTHERS HARRI MAN(LUXEMBOURG) SCA CUSTODIAN FOR SMD・AM FUNDS・DSBI JAPAN EQUITY SMALL CAP ABSOLUTE VALUE（常任代理人　株式会社三井住友銀行）",
+      "shares": 40300,
+      "ratio": 1.98,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 34100,
+      "ratio": 1.68,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN(CASHPB)\n（常任代理人　野村證券株式会社）",
+      "shares": 32300,
+      "ratio": 1.59,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 24500,
+      "ratio": 1.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JPモルガン証券株式会社",
+      "shares": 15100,
+      "ratio": 0.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社共有口",
+      "shares": 8600,
+      "ratio": 0.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "南角　光彦",
+      "shares": 6200,
+      "ratio": 0.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 70.44,
+      "trust": 14.06,
+      "securities": 3.44,
+      "foreign": 3.57
+    },
+    "individual_total": 70.44,
+    "top10_total": 91.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第4期(2025/04/01－2026/03/31)",
+      "docID": "S100YI71",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "松田　航",
+          "shares": 1427700,
+          "ratio": 70.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 227600,
+          "ratio": 11.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社SBI証券",
+          "shares": 46380,
+          "ratio": 2.28,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BBH LUX/BROWN BROTHERS HARRI MAN(LUXEMBOURG) SCA CUSTODIAN FOR SMD・AM FUNDS・DSBI JAPAN EQUITY SMALL CAP ABSOLUTE VALUE（常任代理人　株式会社三井住友銀行）",
+          "shares": 40300,
+          "ratio": 1.98,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 34100,
+          "ratio": 1.68,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN(CASHPB)\n（常任代理人　野村證券株式会社）",
+          "shares": 32300,
+          "ratio": 1.59,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 24500,
+          "ratio": 1.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JPモルガン証券株式会社",
+          "shares": 15100,
+          "ratio": 0.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 8600,
+          "ratio": 0.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "南角　光彦",
+          "shares": 6200,
+          "ratio": 0.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 70.44,
+          "trust": 14.06,
+          "securities": 3.44,
+          "foreign": 3.57
+        },
+        "individual_total": 70.44,
+        "top10_total": 91.51
+      }
+    }
+  ]
+}

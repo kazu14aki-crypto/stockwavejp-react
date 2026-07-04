@@ -1,0 +1,323 @@
+{
+  "secCode": "2323",
+  "issuerName": "株式会社ｆｏｎｆｕｎ",
+  "updated_at": "2026/07/04 18:08 JST",
+  "latestDate": "2026-07-02",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "サイブリッジ合同会社",
+      "shares": 10071006,
+      "ratio": 47.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "サイブリッジグループ株式会社",
+      "shares": 2987700,
+      "ratio": 14.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "クリアデラ株式会社",
+      "shares": 1008600,
+      "ratio": 4.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本証券金融株式会社",
+      "shares": 361900,
+      "ratio": 1.72,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "賀川正宣",
+      "shares": 351600,
+      "ratio": 1.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＥＧＩＪ",
+      "shares": 312600,
+      "ratio": 1.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "佐野敦彦",
+      "shares": 300000,
+      "ratio": 1.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "張ヶ谷拓実",
+      "shares": 264500,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "牧野史朗",
+      "shares": 186500,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "マリーングロース株式会社",
+      "shares": 180000,
+      "ratio": 0.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 69.33,
+      "securities": 1.72,
+      "individual": 5.25
+    },
+    "individual_total": 5.25,
+    "top10_total": 76.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-02",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YOGM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "サイブリッジ合同会社",
+          "shares": 10071006,
+          "ratio": 47.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "サイブリッジグループ株式会社",
+          "shares": 2987700,
+          "ratio": 14.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "クリアデラ株式会社",
+          "shares": 1008600,
+          "ratio": 4.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融株式会社",
+          "shares": 361900,
+          "ratio": 1.72,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "賀川正宣",
+          "shares": 351600,
+          "ratio": 1.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＥＧＩＪ",
+          "shares": 312600,
+          "ratio": 1.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "佐野敦彦",
+          "shares": 300000,
+          "ratio": 1.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "張ヶ谷拓実",
+          "shares": 264500,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "牧野史朗",
+          "shares": 186500,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "マリーングロース株式会社",
+          "shares": 180000,
+          "ratio": 0.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 69.33,
+          "securities": 1.72,
+          "individual": 5.25
+        },
+        "individual_total": 5.25,
+        "top10_total": 76.3
+      }
+    },
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YKRB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "サイブリッジ合同会社",
+          "shares": 10071006,
+          "ratio": 47.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "サイブリッジグループ株式会社",
+          "shares": 2987700,
+          "ratio": 14.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "クリアデラ株式会社",
+          "shares": 1008600,
+          "ratio": 4.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融株式会社",
+          "shares": 361900,
+          "ratio": 1.72,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "賀川正宣",
+          "shares": 351600,
+          "ratio": 1.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＥＧＩＪ",
+          "shares": 312600,
+          "ratio": 1.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "佐野敦彦",
+          "shares": 300000,
+          "ratio": 1.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "張ヶ谷拓実",
+          "shares": 264500,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "牧野史朗",
+          "shares": 186500,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "マリーングロース株式会社",
+          "shares": 180000,
+          "ratio": 0.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 69.33,
+          "securities": 1.72,
+          "individual": 5.25
+        },
+        "individual_total": 5.25,
+        "top10_total": 76.3
+      }
+    }
+  ]
+}

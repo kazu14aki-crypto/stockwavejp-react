@@ -1,0 +1,218 @@
+{
+  "secCode": "3512",
+  "issuerName": "日本フエルト株式会社",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "王子ホールディングス株式会社",
+      "shares": 1674000,
+      "ratio": 9.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本証券金融株式会社",
+      "shares": 804000,
+      "ratio": 4.64,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本製紙株式会社",
+      "shares": 762000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 513000,
+      "ratio": 2.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本フエルト従業員持株会",
+      "shares": 478000,
+      "ratio": 2.76,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社武蔵野銀行",
+      "shares": 357000,
+      "ratio": 2.06,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本フイルコン株式会社",
+      "shares": 330000,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NORDEA BANK ABP / FINNISH CLIENTS \n(常任代理人 香港上海銀行東京支店)",
+      "shares": 300000,
+      "ratio": 1.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社SBI証券",
+      "shares": 291000,
+      "ratio": 1.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "DBS BANK LTD 700170\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 243000,
+      "ratio": 1.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 15.96,
+      "securities": 6.32,
+      "financial": 8.16,
+      "employee": 2.76
+    },
+    "individual_total": 0,
+    "top10_total": 33.2
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第162期(2025/04/01－2026/03/31)",
+      "docID": "S100YIXB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "王子ホールディングス株式会社",
+          "shares": 1674000,
+          "ratio": 9.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本証券金融株式会社",
+          "shares": 804000,
+          "ratio": 4.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本製紙株式会社",
+          "shares": 762000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 513000,
+          "ratio": 2.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本フエルト従業員持株会",
+          "shares": 478000,
+          "ratio": 2.76,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社武蔵野銀行",
+          "shares": 357000,
+          "ratio": 2.06,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本フイルコン株式会社",
+          "shares": 330000,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NORDEA BANK ABP / FINNISH CLIENTS \n(常任代理人 香港上海銀行東京支店)",
+          "shares": 300000,
+          "ratio": 1.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社SBI証券",
+          "shares": 291000,
+          "ratio": 1.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "DBS BANK LTD 700170\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 243000,
+          "ratio": 1.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 15.96,
+          "securities": 6.32,
+          "financial": 8.16,
+          "employee": 2.76
+        },
+        "individual_total": 0,
+        "top10_total": 33.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "6258",
+  "issuerName": "平田機工株式会社",
+  "updated_at": "2026/07/04 18:34 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託\n銀行株式会社（信託口）",
+      "shares": 3089400,
+      "ratio": 9.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "SMC株式会社",
+      "shares": 1500000,
+      "ratio": 4.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 1373000,
+      "ratio": 4.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社肥後銀行",
+      "shares": 1368000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "みずほ信託銀行株式会社\n（信託口）0700096",
+      "shares": 1200000,
+      "ratio": 3.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平田雄一郎",
+      "shares": 875200,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "ニッコンホールディングス\n株式会社",
+      "shares": 817200,
+      "ratio": 2.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "平田機工社員持株会",
+      "shares": 646730,
+      "ratio": 2.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山洋電気株式会社",
+      "shares": 578700,
+      "ratio": 1.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPモルガン証券株式会社",
+      "shares": 571392,
+      "ratio": 1.85,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.31,
+      "corporate": 9.36,
+      "financial": 4.43,
+      "individual": 2.83,
+      "employee": 2.09,
+      "securities": 1.85
+    },
+    "individual_total": 2.83,
+    "top10_total": 38.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YH6Y",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託\n銀行株式会社（信託口）",
+          "shares": 3089400,
+          "ratio": 9.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "SMC株式会社",
+          "shares": 1500000,
+          "ratio": 4.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 1373000,
+          "ratio": 4.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社肥後銀行",
+          "shares": 1368000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "みずほ信託銀行株式会社\n（信託口）0700096",
+          "shares": 1200000,
+          "ratio": 3.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平田雄一郎",
+          "shares": 875200,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "ニッコンホールディングス\n株式会社",
+          "shares": 817200,
+          "ratio": 2.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "平田機工社員持株会",
+          "shares": 646730,
+          "ratio": 2.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山洋電気株式会社",
+          "shares": 578700,
+          "ratio": 1.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 571392,
+          "ratio": 1.85,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.31,
+          "corporate": 9.36,
+          "financial": 4.43,
+          "individual": 2.83,
+          "employee": 2.09,
+          "securities": 1.85
+        },
+        "individual_total": 2.83,
+        "top10_total": 38.87
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "4849",
+  "issuerName": "エン株式会社",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "越智　通勝",
+      "shares": 4383900,
+      "ratio": 11.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3836800,
+      "ratio": 10.16,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "一般財団法人エン人材教育財団",
+      "shares": 3060000,
+      "ratio": 8.1,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2665600,
+      "ratio": 7.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社えん企画",
+      "shares": 2184800,
+      "ratio": 5.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1625876,
+      "ratio": 4.31,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "越智　明之",
+      "shares": 1475200,
+      "ratio": 3.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人　株式会社みずほ銀行）",
+      "shares": 1100500,
+      "ratio": 2.91,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE SEGREGATION ACC FOR THIRD PARTY（常任代理人　香港上海銀行）",
+      "shares": 1090138,
+      "ratio": 2.89,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1038482,
+      "ratio": 2.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 15.52,
+      "trust": 17.22,
+      "foundation": 8.1,
+      "corporate": 5.79,
+      "foreign": 9.97,
+      "financial": 2.89
+    },
+    "individual_total": 15.52,
+    "top10_total": 59.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YGWT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "越智　通勝",
+          "shares": 4383900,
+          "ratio": 11.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3836800,
+          "ratio": 10.16,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "一般財団法人エン人材教育財団",
+          "shares": 3060000,
+          "ratio": 8.1,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2665600,
+          "ratio": 7.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社えん企画",
+          "shares": 2184800,
+          "ratio": 5.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1625876,
+          "ratio": 4.31,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "越智　明之",
+          "shares": 1475200,
+          "ratio": 3.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人　株式会社みずほ銀行）",
+          "shares": 1100500,
+          "ratio": 2.91,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE SEGREGATION ACC FOR THIRD PARTY（常任代理人　香港上海銀行）",
+          "shares": 1090138,
+          "ratio": 2.89,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1038482,
+          "ratio": 2.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 15.52,
+          "trust": 17.22,
+          "foundation": 8.1,
+          "corporate": 5.79,
+          "foreign": 9.97,
+          "financial": 2.89
+        },
+        "individual_total": 15.52,
+        "top10_total": 59.49
+      }
+    }
+  ]
+}

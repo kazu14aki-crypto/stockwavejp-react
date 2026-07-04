@@ -1,0 +1,216 @@
+{
+  "secCode": "7735",
+  "issuerName": "株式会社ＳＣＲＥＥＮホールディングス",
+  "updated_at": "2026/07/04 18:03 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 17434000,
+      "ratio": 18.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 8641000,
+      "ratio": 9.09,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社",
+      "shares": 3661000,
+      "ratio": 3.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社京都銀行",
+      "shares": 2692000,
+      "ratio": 2.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＳＣＲＥＥＮ取引先持株会シンクロナイズ",
+      "shares": 1879000,
+      "ratio": 1.98,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社りそな銀行",
+      "shares": 1825000,
+      "ratio": 1.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1569000,
+      "ratio": 1.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社滋賀銀行",
+      "shares": 1556000,
+      "ratio": 1.64,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５３０１\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 1481000,
+      "ratio": 1.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＨＳＢＣ　ＨＯＮＧ　ＫＯＮＧ－ＴＲＥＡＳＵＲＹ　ＳＥＲＶＩＣＥＳ　Ａ／Ｃ　ＡＳＩＡＮ　ＥＱＵＩＴＩＥＳ　ＤＥＲＩＶＡＴＩＶＥＳ\n（常任代理人　香港上海銀行）",
+      "shares": 1300000,
+      "ratio": 1.37,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 27.42,
+      "financial": 14.82,
+      "employee": 1.98
+    },
+    "individual_total": 0,
+    "top10_total": 44.22
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YK9N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 17434000,
+          "ratio": 18.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 8641000,
+          "ratio": 9.09,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 3661000,
+          "ratio": 3.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社京都銀行",
+          "shares": 2692000,
+          "ratio": 2.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＳＣＲＥＥＮ取引先持株会シンクロナイズ",
+          "shares": 1879000,
+          "ratio": 1.98,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社りそな銀行",
+          "shares": 1825000,
+          "ratio": 1.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1569000,
+          "ratio": 1.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社滋賀銀行",
+          "shares": 1556000,
+          "ratio": 1.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５３０１\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 1481000,
+          "ratio": 1.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＨＳＢＣ　ＨＯＮＧ　ＫＯＮＧ－ＴＲＥＡＳＵＲＹ　ＳＥＲＶＩＣＥＳ　Ａ／Ｃ　ＡＳＩＡＮ　ＥＱＵＩＴＩＥＳ　ＤＥＲＩＶＡＴＩＶＥＳ\n（常任代理人　香港上海銀行）",
+          "shares": 1300000,
+          "ratio": 1.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 27.42,
+          "financial": 14.82,
+          "employee": 1.98
+        },
+        "individual_total": 0,
+        "top10_total": 44.22
+      }
+    }
+  ]
+}

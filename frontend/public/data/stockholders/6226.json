@@ -1,0 +1,220 @@
+{
+  "secCode": "6226",
+  "issuerName": "守谷輸送機工業株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｍ２Ｗ",
+      "shares": 5500000,
+      "ratio": 31.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "守谷　貞夫",
+      "shares": 1515700,
+      "ratio": 8.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "守谷　順子",
+      "shares": 1330000,
+      "ratio": 7.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "濵　芽久実",
+      "shares": 1100000,
+      "ratio": 6.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "戸塚　昌代",
+      "shares": 1050000,
+      "ratio": 5.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "守谷　和香子",
+      "shares": 1050000,
+      "ratio": 5.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+      "shares": 417900,
+      "ratio": 2.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社横浜銀行",
+      "shares": 378000,
+      "ratio": 2.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "PERSHING-DIV.OF DLJSECS.CORP.（常任代理人　シティバンク、エヌ・エイ　東京支店）",
+      "shares": 348600,
+      "ratio": 1.97,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)（常任代理人 野村證券 　　　株式会社)",
+      "shares": 320300,
+      "ratio": 1.81,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 31.17,
+      "individual": 34.25,
+      "foreign": 4.17,
+      "financial": 2.14,
+      "other": 1.97
+    },
+    "individual_total": 34.25,
+    "top10_total": 73.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YGR0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｍ２Ｗ",
+          "shares": 5500000,
+          "ratio": 31.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "守谷　貞夫",
+          "shares": 1515700,
+          "ratio": 8.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "守谷　順子",
+          "shares": 1330000,
+          "ratio": 7.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "濵　芽久実",
+          "shares": 1100000,
+          "ratio": 6.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "戸塚　昌代",
+          "shares": 1050000,
+          "ratio": 5.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "守谷　和香子",
+          "shares": 1050000,
+          "ratio": 5.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+          "shares": 417900,
+          "ratio": 2.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社横浜銀行",
+          "shares": 378000,
+          "ratio": 2.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "PERSHING-DIV.OF DLJSECS.CORP.（常任代理人　シティバンク、エヌ・エイ　東京支店）",
+          "shares": 348600,
+          "ratio": 1.97,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)（常任代理人 野村證券 　　　株式会社)",
+          "shares": 320300,
+          "ratio": 1.81,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 31.17,
+          "individual": 34.25,
+          "foreign": 4.17,
+          "financial": 2.14,
+          "other": 1.97
+        },
+        "individual_total": 34.25,
+        "top10_total": 73.7
+      }
+    }
+  ]
+}

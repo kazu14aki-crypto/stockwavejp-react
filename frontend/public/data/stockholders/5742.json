@@ -1,0 +1,218 @@
+{
+  "secCode": "5742",
+  "issuerName": "エヌアイシ・オートテック株式会社",
+  "updated_at": "2026/07/04 18:34 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "西川　浩司",
+      "shares": 3704900,
+      "ratio": 68.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "エヌアイシ・オートテック従業員持株会",
+      "shares": 104100,
+      "ratio": 1.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三協立山株式会社",
+      "shares": 100000,
+      "ratio": 1.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "近藤　雅介",
+      "shares": 81400,
+      "ratio": 1.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ダイドー株式会社",
+      "shares": 70000,
+      "ratio": 1.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 50000,
+      "ratio": 0.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "植田　敏子",
+      "shares": 45000,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "水間　隆二",
+      "shares": 36200,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東レエンジニアリング株式会社",
+      "shares": 25000,
+      "ratio": 0.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤井　透",
+      "shares": 20700,
+      "ratio": 0.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 71.36,
+      "employee": 1.91,
+      "corporate": 3.58,
+      "financial": 0.92
+    },
+    "individual_total": 71.36,
+    "top10_total": 77.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/04/01－2026/03/31)",
+      "docID": "S100YGNV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "西川　浩司",
+          "shares": 3704900,
+          "ratio": 68.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "エヌアイシ・オートテック従業員持株会",
+          "shares": 104100,
+          "ratio": 1.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三協立山株式会社",
+          "shares": 100000,
+          "ratio": 1.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "近藤　雅介",
+          "shares": 81400,
+          "ratio": 1.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ダイドー株式会社",
+          "shares": 70000,
+          "ratio": 1.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 50000,
+          "ratio": 0.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "植田　敏子",
+          "shares": 45000,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "水間　隆二",
+          "shares": 36200,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東レエンジニアリング株式会社",
+          "shares": 25000,
+          "ratio": 0.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤井　透",
+          "shares": 20700,
+          "ratio": 0.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 71.36,
+          "employee": 1.91,
+          "corporate": 3.58,
+          "financial": 0.92
+        },
+        "individual_total": 71.36,
+        "top10_total": 77.77
+      }
+    }
+  ]
+}

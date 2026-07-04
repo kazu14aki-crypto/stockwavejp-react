@@ -1,0 +1,220 @@
+{
+  "secCode": "1944",
+  "issuerName": "株式会社きんでん",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "関西電力株式会社",
+      "shares": 58905579,
+      "ratio": 29.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 21494500,
+      "ratio": 10.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "関電不動産開発株式会社",
+      "shares": 14507319,
+      "ratio": 7.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "きんでん従業員持株会",
+      "shares": 9273757,
+      "ratio": 4.68,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 6243700,
+      "ratio": 3.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 3617326,
+      "ratio": 1.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＢＢＨ（ＬＵＸ）　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＦＵＮＤＳ　－　ＪＡＰＡＮ　ＡＤＶＡＮＴＡＧＥ　ＰＯＯＬ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2980900,
+      "ratio": 1.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "Ｊ．Ｐ．　ＭＯＲＧＡＮ　ＢＡＮＫ　ＬＵＸＥＭＢＯＵＲＧ　Ｓ．Ａ．　３８４５１３（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2121133,
+      "ratio": 1.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1852091,
+      "ratio": 0.94,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＲＢＣ　ＩＳＴ　１５　ＰＣＴ　ＬＥＮＤＩＮＧ　ＡＣＣＯＵＮＴ　－　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1696510,
+      "ratio": 0.86,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 37.08,
+      "trust": 14.01,
+      "employee": 4.68,
+      "financial": 5.35,
+      "other": 0.86
+    },
+    "individual_total": 0,
+    "top10_total": 61.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第112期(2025/04/01－2026/03/31)",
+      "docID": "S100YFY8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "関西電力株式会社",
+          "shares": 58905579,
+          "ratio": 29.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 21494500,
+          "ratio": 10.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "関電不動産開発株式会社",
+          "shares": 14507319,
+          "ratio": 7.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "きんでん従業員持株会",
+          "shares": 9273757,
+          "ratio": 4.68,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 6243700,
+          "ratio": 3.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 3617326,
+          "ratio": 1.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＢＢＨ（ＬＵＸ）　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＦＵＮＤＳ　－　ＪＡＰＡＮ　ＡＤＶＡＮＴＡＧＥ　ＰＯＯＬ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2980900,
+          "ratio": 1.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "Ｊ．Ｐ．　ＭＯＲＧＡＮ　ＢＡＮＫ　ＬＵＸＥＭＢＯＵＲＧ　Ｓ．Ａ．　３８４５１３（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2121133,
+          "ratio": 1.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1852091,
+          "ratio": 0.94,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＲＢＣ　ＩＳＴ　１５　ＰＣＴ　ＬＥＮＤＩＮＧ　ＡＣＣＯＵＮＴ　－　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1696510,
+          "ratio": 0.86,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 37.08,
+          "trust": 14.01,
+          "employee": 4.68,
+          "financial": 5.35,
+          "other": 0.86
+        },
+        "individual_total": 0,
+        "top10_total": 61.98
+      }
+    }
+  ]
+}

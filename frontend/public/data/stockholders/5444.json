@@ -1,0 +1,218 @@
+{
+  "secCode": "5444",
+  "issuerName": "大和工業株式会社",
+  "updated_at": "2026/07/04 17:57 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "井上　浩行",
+      "shares": 7662000,
+      "ratio": 12.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 6371000,
+      "ratio": 10.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "井上不動産㈲",
+      "shares": 4642000,
+      "ratio": 7.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三井物産㈱",
+      "shares": 4573000,
+      "ratio": 7.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 4180000,
+      "ratio": 6.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱SMBC信託銀行（㈱三井住友銀行退職給付信託口）",
+      "shares": 2837000,
+      "ratio": 4.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST　COMPANY 505001（常任代理人 ㈱みずほ銀行決済営業部）",
+      "shares": 2055000,
+      "ratio": 3.39,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "井上　喜美子",
+      "shares": 1739000,
+      "ratio": 2.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱みずほ銀行",
+      "shares": 1675000,
+      "ratio": 2.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "SECカーボン㈱",
+      "shares": 1307000,
+      "ratio": 2.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 32.82,
+      "trust": 22.06,
+      "foreign": 3.39,
+      "financial": 2.76
+    },
+    "individual_total": 32.82,
+    "top10_total": 61.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第107期(2025/04/01－2026/03/31)",
+      "docID": "S100YGVD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "井上　浩行",
+          "shares": 7662000,
+          "ratio": 12.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 6371000,
+          "ratio": 10.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "井上不動産㈲",
+          "shares": 4642000,
+          "ratio": 7.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三井物産㈱",
+          "shares": 4573000,
+          "ratio": 7.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 4180000,
+          "ratio": 6.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱SMBC信託銀行（㈱三井住友銀行退職給付信託口）",
+          "shares": 2837000,
+          "ratio": 4.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST　COMPANY 505001（常任代理人 ㈱みずほ銀行決済営業部）",
+          "shares": 2055000,
+          "ratio": 3.39,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "井上　喜美子",
+          "shares": 1739000,
+          "ratio": 2.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱みずほ銀行",
+          "shares": 1675000,
+          "ratio": 2.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "SECカーボン㈱",
+          "shares": 1307000,
+          "ratio": 2.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 32.82,
+          "trust": 22.06,
+          "foreign": 3.39,
+          "financial": 2.76
+        },
+        "individual_total": 32.82,
+        "top10_total": 61.03
+      }
+    }
+  ]
+}

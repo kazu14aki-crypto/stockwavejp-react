@@ -1,0 +1,220 @@
+{
+  "secCode": "6549",
+  "issuerName": "ディーエムソリューションズ株式会社",
+  "updated_at": "2026/07/04 18:28 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "花矢　卓司",
+      "shares": 919800,
+      "ratio": 33.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "福村　寛敏",
+      "shares": 578700,
+      "ratio": 20.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アセットインクリーズ株式会社",
+      "shares": 260000,
+      "ratio": 9.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中村　  剛",
+      "shares": 80100,
+      "ratio": 2.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ディーエムソリューションズ社員持株会",
+      "shares": 31000,
+      "ratio": 1.12,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "岩崎　康二",
+      "shares": 30000,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 28518,
+      "ratio": 1.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "松本　和久",
+      "shares": 25000,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "金子　主税",
+      "shares": 24700,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 20200,
+      "ratio": 0.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 60.07,
+      "corporate": 9.42,
+      "employee": 1.12,
+      "securities": 1.03,
+      "trust": 0.73
+    },
+    "individual_total": 60.07,
+    "top10_total": 72.37
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YJGW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "花矢　卓司",
+          "shares": 919800,
+          "ratio": 33.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "福村　寛敏",
+          "shares": 578700,
+          "ratio": 20.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アセットインクリーズ株式会社",
+          "shares": 260000,
+          "ratio": 9.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中村　  剛",
+          "shares": 80100,
+          "ratio": 2.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ディーエムソリューションズ社員持株会",
+          "shares": 31000,
+          "ratio": 1.12,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "岩崎　康二",
+          "shares": 30000,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 28518,
+          "ratio": 1.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "松本　和久",
+          "shares": 25000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "金子　主税",
+          "shares": 24700,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 20200,
+          "ratio": 0.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 60.07,
+          "corporate": 9.42,
+          "employee": 1.12,
+          "securities": 1.03,
+          "trust": 0.73
+        },
+        "individual_total": 60.07,
+        "top10_total": 72.37
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "5258",
+  "issuerName": "株式会社トランザクション・メディア・ネットワークス",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三菱商事株式会社",
+      "shares": 4958800,
+      "ratio": 16.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "トヨタファイナンシャルサービス株式会社",
+      "shares": 2408800,
+      "ratio": 8.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ジェーシービー",
+      "shares": 1396400,
+      "ratio": 4.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三井住友カード株式会社",
+      "shares": 1396400,
+      "ratio": 4.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村證券株式会社",
+      "shares": 932336,
+      "ratio": 3.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "水元　公仁",
+      "shares": 900000,
+      "ratio": 3.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "木田　裕介",
+      "shares": 860200,
+      "ratio": 2.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三津　久直",
+      "shares": 680300,
+      "ratio": 2.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ユーシーカード株式会社",
+      "shares": 664400,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 657800,
+      "ratio": 2.21,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.59,
+      "individual": 8.21,
+      "financial": 2.21
+    },
+    "individual_total": 8.21,
+    "top10_total": 50.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ6W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三菱商事株式会社",
+          "shares": 4958800,
+          "ratio": 16.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "トヨタファイナンシャルサービス株式会社",
+          "shares": 2408800,
+          "ratio": 8.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ジェーシービー",
+          "shares": 1396400,
+          "ratio": 4.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三井住友カード株式会社",
+          "shares": 1396400,
+          "ratio": 4.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村證券株式会社",
+          "shares": 932336,
+          "ratio": 3.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "水元　公仁",
+          "shares": 900000,
+          "ratio": 3.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "木田　裕介",
+          "shares": 860200,
+          "ratio": 2.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三津　久直",
+          "shares": 680300,
+          "ratio": 2.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ユーシーカード株式会社",
+          "shares": 664400,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 657800,
+          "ratio": 2.21,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.59,
+          "individual": 8.21,
+          "financial": 2.21
+        },
+        "individual_total": 8.21,
+        "top10_total": 50.01
+      }
+    }
+  ]
+}

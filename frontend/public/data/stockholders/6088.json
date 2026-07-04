@@ -1,0 +1,218 @@
+{
+  "secCode": "6088",
+  "issuerName": "株式会社シグマクシス・ホールディングス",
+  "updated_at": "2026/07/04 18:43 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "伊藤忠商事株式会社",
+      "shares": 8200000,
+      "ratio": 9.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社インターネットイニシアティブ",
+      "shares": 7920000,
+      "ratio": 9.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7528800,
+      "ratio": 9.12,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社インテック",
+      "shares": 6585000,
+      "ratio": 7.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 6442545,
+      "ratio": 7.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY  505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2057067,
+      "ratio": 2.49,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/\nJASDEC/FIM/LUXEMBOURG FUNDS/\nUCITS ASSETS\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2050000,
+      "ratio": 2.48,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15 PCT TREATY ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2000000,
+      "ratio": 2.42,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "シグマクシス従業員持株会",
+      "shares": 1761800,
+      "ratio": 2.13,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505025\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1122690,
+      "ratio": 1.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.5,
+      "trust": 16.92,
+      "foreign": 8.75,
+      "employee": 2.13
+    },
+    "individual_total": 0,
+    "top10_total": 55.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YG2R",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "伊藤忠商事株式会社",
+          "shares": 8200000,
+          "ratio": 9.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社インターネットイニシアティブ",
+          "shares": 7920000,
+          "ratio": 9.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7528800,
+          "ratio": 9.12,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社インテック",
+          "shares": 6585000,
+          "ratio": 7.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 6442545,
+          "ratio": 7.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY  505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2057067,
+          "ratio": 2.49,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/\nJASDEC/FIM/LUXEMBOURG FUNDS/\nUCITS ASSETS\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2050000,
+          "ratio": 2.48,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15 PCT TREATY ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2000000,
+          "ratio": 2.42,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "シグマクシス従業員持株会",
+          "shares": 1761800,
+          "ratio": 2.13,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505025\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1122690,
+          "ratio": 1.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.5,
+          "trust": 16.92,
+          "foreign": 8.75,
+          "employee": 2.13
+        },
+        "individual_total": 0,
+        "top10_total": 55.3
+      }
+    }
+  ]
+}

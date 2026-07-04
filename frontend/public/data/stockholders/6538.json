@@ -1,0 +1,218 @@
+{
+  "secCode": "6538",
+  "issuerName": "株式会社ディスラプターズ",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "板倉　広高",
+      "shares": 11731200,
+      "ratio": 57.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ\n（常任代理人モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 920800,
+      "ratio": 4.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "齊藤　慶介",
+      "shares": 672000,
+      "ratio": 3.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ \n（ＦＥ－ＡＣ）\n（常任代理人株式会社三菱UFJ銀行）",
+      "shares": 466357,
+      "ratio": 2.28,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社GranSfida",
+      "shares": 306300,
+      "ratio": 1.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "外池　榮一郎",
+      "shares": 175000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山下　博",
+      "shares": 174200,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "柴崎　初男",
+      "shares": 150000,
+      "ratio": 0.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社 \n代表取締役社長 \n李家　輝",
+      "shares": 144838,
+      "ratio": 0.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "宇津　茂和",
+      "shares": 143900,
+      "ratio": 0.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 63.72,
+      "securities": 5.21,
+      "financial": 2.28,
+      "corporate": 1.5
+    },
+    "individual_total": 63.72,
+    "top10_total": 72.71
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YH9V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "板倉　広高",
+          "shares": 11731200,
+          "ratio": 57.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ\n（常任代理人モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 920800,
+          "ratio": 4.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "齊藤　慶介",
+          "shares": 672000,
+          "ratio": 3.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ \n（ＦＥ－ＡＣ）\n（常任代理人株式会社三菱UFJ銀行）",
+          "shares": 466357,
+          "ratio": 2.28,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社GranSfida",
+          "shares": 306300,
+          "ratio": 1.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "外池　榮一郎",
+          "shares": 175000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山下　博",
+          "shares": 174200,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "柴崎　初男",
+          "shares": 150000,
+          "ratio": 0.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社 \n代表取締役社長 \n李家　輝",
+          "shares": 144838,
+          "ratio": 0.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "宇津　茂和",
+          "shares": 143900,
+          "ratio": 0.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 63.72,
+          "securities": 5.21,
+          "financial": 2.28,
+          "corporate": 1.5
+        },
+        "individual_total": 63.72,
+        "top10_total": 72.71
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "7570",
+  "issuerName": "橋本総業ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ハット企画",
+      "shares": 4586000,
+      "ratio": 23.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "橋本総業従業員持株会",
+      "shares": 1389000,
+      "ratio": 7.11,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "橋本総業取引先持株会",
+      "shares": 1314000,
+      "ratio": 6.73,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "橋本総業得意先持株会",
+      "shares": 807000,
+      "ratio": 4.13,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "橋本　政昭",
+      "shares": 563000,
+      "ratio": 2.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+      "shares": 546000,
+      "ratio": 2.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三井住友銀行",
+      "shares": 544000,
+      "ratio": 2.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 459000,
+      "ratio": 2.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ヨコヤマ",
+      "shares": 384000,
+      "ratio": 1.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社小泉",
+      "shares": 340000,
+      "ratio": 1.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.17,
+      "employee": 17.97,
+      "individual": 2.88,
+      "trust": 2.79,
+      "financial": 5.14
+    },
+    "individual_total": 2.88,
+    "top10_total": 55.95
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第89期(2025/04/01－2026/03/31)",
+      "docID": "S100YK09",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ハット企画",
+          "shares": 4586000,
+          "ratio": 23.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "橋本総業従業員持株会",
+          "shares": 1389000,
+          "ratio": 7.11,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "橋本総業取引先持株会",
+          "shares": 1314000,
+          "ratio": 6.73,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "橋本総業得意先持株会",
+          "shares": 807000,
+          "ratio": 4.13,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "橋本　政昭",
+          "shares": 563000,
+          "ratio": 2.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+          "shares": 546000,
+          "ratio": 2.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三井住友銀行",
+          "shares": 544000,
+          "ratio": 2.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 459000,
+          "ratio": 2.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ヨコヤマ",
+          "shares": 384000,
+          "ratio": 1.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社小泉",
+          "shares": 340000,
+          "ratio": 1.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.17,
+          "employee": 17.97,
+          "individual": 2.88,
+          "trust": 2.79,
+          "financial": 5.14
+        },
+        "individual_total": 2.88,
+        "top10_total": 55.95
+      }
+    }
+  ]
+}

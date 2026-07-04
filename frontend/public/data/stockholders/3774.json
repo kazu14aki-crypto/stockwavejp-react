@@ -1,0 +1,216 @@
+{
+  "secCode": "3774",
+  "issuerName": "株式会社インターネットイニシアティブ",
+  "updated_at": "2026/07/04 17:59 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "KDDI株式会社",
+      "shares": 20387000,
+      "ratio": 11.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "NTT株式会社",
+      "shares": 12227000,
+      "ratio": 6.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（その他信託口）（注)2",
+      "shares": 8904200,
+      "ratio": 5.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "NTTドコモビジネス株式会社",
+      "shares": 8160000,
+      "ratio": 4.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "伊藤忠テクノソリューションズ株式会社",
+      "shares": 7808000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "鈴木　幸一",
+      "shares": 7427521,
+      "ratio": 4.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行株式会社（投資信託口）（注)2",
+      "shares": 7009400,
+      "ratio": 3.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社 （常任代理人 株式会社日本カストディ銀行）",
+      "shares": 5123800,
+      "ratio": 2.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（投資信託口）(注)3",
+      "shares": 3902800,
+      "ratio": 2.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社KS Holdings（注)4",
+      "shares": 3240000,
+      "ratio": 1.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.23,
+      "trust": 14.06,
+      "individual": 4.19
+    },
+    "individual_total": 4.19,
+    "top10_total": 47.48
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第34期(2025/04/01－2026/03/31)",
+      "docID": "S100YHYH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "KDDI株式会社",
+          "shares": 20387000,
+          "ratio": 11.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "NTT株式会社",
+          "shares": 12227000,
+          "ratio": 6.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（その他信託口）（注)2",
+          "shares": 8904200,
+          "ratio": 5.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "NTTドコモビジネス株式会社",
+          "shares": 8160000,
+          "ratio": 4.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "伊藤忠テクノソリューションズ株式会社",
+          "shares": 7808000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "鈴木　幸一",
+          "shares": 7427521,
+          "ratio": 4.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行株式会社（投資信託口）（注)2",
+          "shares": 7009400,
+          "ratio": 3.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社 （常任代理人 株式会社日本カストディ銀行）",
+          "shares": 5123800,
+          "ratio": 2.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（投資信託口）(注)3",
+          "shares": 3902800,
+          "ratio": 2.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社KS Holdings（注)4",
+          "shares": 3240000,
+          "ratio": 1.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.23,
+          "trust": 14.06,
+          "individual": 4.19
+        },
+        "individual_total": 4.19,
+        "top10_total": 47.48
+      }
+    }
+  ]
+}

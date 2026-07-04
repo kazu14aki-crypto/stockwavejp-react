@@ -1,0 +1,222 @@
+{
+  "secCode": "6617",
+  "issuerName": "株式会社東光高岳",
+  "updated_at": "2026/07/04 18:07 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東京電力パワーグリッド株式会社",
+      "shares": 5671000,
+      "ratio": 34.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1455000,
+      "ratio": 8.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 839000,
+      "ratio": 5.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＢＮＰ ＰＡＲＩＢＡＳ ＬＵＸＥＭＢＯＵＲＧ／２Ｓ／ＪＡＳＤＥＣ／ＦＩＭ／ＬＵＸＥＭＢＯＵＲＧ ＦＵＮＤＳ／ＵＣＩＴＳ ＡＳＳＥＴＳ（常任代理人　香港上海銀行東京支店）",
+      "shares": 390000,
+      "ratio": 2.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東光高岳従業員持株会",
+      "shares": 258000,
+      "ratio": 1.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＤＦＡ　ＩＮＴＬ　ＳＭＡＬＬ　ＣＡＰ　ＶＡＬＵＥ　ＰＯＲＴＦＯＬＩＯ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 221000,
+      "ratio": 1.36,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ （ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 212000,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大樹生命保険株式会社",
+      "shares": 209000,
+      "ratio": 1.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "明治安田生命保険相互会社",
+      "shares": 200000,
+      "ratio": 1.23,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "前尾 吉信",
+      "shares": 200000,
+      "ratio": 1.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.97,
+      "trust": 14.14,
+      "financial": 6.23,
+      "employee": 1.59,
+      "other": 1.36,
+      "individual": 1.23
+    },
+    "individual_total": 1.23,
+    "top10_total": 59.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/04/01－2026/03/31)",
+      "docID": "S100YL24",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東京電力パワーグリッド株式会社",
+          "shares": 5671000,
+          "ratio": 34.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1455000,
+          "ratio": 8.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 839000,
+          "ratio": 5.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＮＰ ＰＡＲＩＢＡＳ ＬＵＸＥＭＢＯＵＲＧ／２Ｓ／ＪＡＳＤＥＣ／ＦＩＭ／ＬＵＸＥＭＢＯＵＲＧ ＦＵＮＤＳ／ＵＣＩＴＳ ＡＳＳＥＴＳ（常任代理人　香港上海銀行東京支店）",
+          "shares": 390000,
+          "ratio": 2.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東光高岳従業員持株会",
+          "shares": 258000,
+          "ratio": 1.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＤＦＡ　ＩＮＴＬ　ＳＭＡＬＬ　ＣＡＰ　ＶＡＬＵＥ　ＰＯＲＴＦＯＬＩＯ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 221000,
+          "ratio": 1.36,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ （ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 212000,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大樹生命保険株式会社",
+          "shares": 209000,
+          "ratio": 1.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "明治安田生命保険相互会社",
+          "shares": 200000,
+          "ratio": 1.23,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "前尾 吉信",
+          "shares": 200000,
+          "ratio": 1.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.97,
+          "trust": 14.14,
+          "financial": 6.23,
+          "employee": 1.59,
+          "other": 1.36,
+          "individual": 1.23
+        },
+        "individual_total": 1.23,
+        "top10_total": 59.52
+      }
+    }
+  ]
+}

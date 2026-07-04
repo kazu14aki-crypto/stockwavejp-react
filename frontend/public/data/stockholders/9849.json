@@ -1,0 +1,216 @@
+{
+  "secCode": "9849",
+  "issuerName": "株式会社共同紙販ホールディングス",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本製紙株式会社",
+      "shares": 126000,
+      "ratio": 18.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本紙通商株式会社",
+      "shares": 78000,
+      "ratio": 11.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本紙パルプ商事株式会社",
+      "shares": 71000,
+      "ratio": 10.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "KPPグループホールディングス株式会社",
+      "shares": 44000,
+      "ratio": 6.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "巣鴨信用金庫",
+      "shares": 18000,
+      "ratio": 2.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "郡司　 光太",
+      "shares": 10000,
+      "ratio": 1.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "新生紙パルプ商事株式会社",
+      "shares": 10000,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "郡司   勝美",
+      "shares": 10000,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三井住友銀行",
+      "shares": 9000,
+      "ratio": 1.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "堀川産業株式会社",
+      "shares": 7000,
+      "ratio": 1.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 50.03,
+      "financial": 4.04,
+      "individual": 3.08
+    },
+    "individual_total": 3.08,
+    "top10_total": 57.15
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YM2W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本製紙株式会社",
+          "shares": 126000,
+          "ratio": 18.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本紙通商株式会社",
+          "shares": 78000,
+          "ratio": 11.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本紙パルプ商事株式会社",
+          "shares": 71000,
+          "ratio": 10.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "KPPグループホールディングス株式会社",
+          "shares": 44000,
+          "ratio": 6.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "巣鴨信用金庫",
+          "shares": 18000,
+          "ratio": 2.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "郡司　 光太",
+          "shares": 10000,
+          "ratio": 1.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "新生紙パルプ商事株式会社",
+          "shares": 10000,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "郡司   勝美",
+          "shares": 10000,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三井住友銀行",
+          "shares": 9000,
+          "ratio": 1.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "堀川産業株式会社",
+          "shares": 7000,
+          "ratio": 1.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 50.03,
+          "financial": 4.04,
+          "individual": 3.08
+        },
+        "individual_total": 3.08,
+        "top10_total": 57.15
+      }
+    }
+  ]
+}

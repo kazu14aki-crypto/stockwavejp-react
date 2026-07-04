@@ -1,0 +1,220 @@
+{
+  "secCode": "6039",
+  "issuerName": "株式会社日本動物高度医療センター",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "KCPエクイティアシスト１号投資事業有限責任組合",
+      "shares": 1600000,
+      "ratio": 11.74,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 1005800,
+      "ratio": 7.38,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 699300,
+      "ratio": 5.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "風越建設株式会社",
+      "shares": 600000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 572600,
+      "ratio": 4.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社SBI証券",
+      "shares": 467610,
+      "ratio": 3.43,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平尾　秀博",
+      "shares": 450500,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 432000,
+      "ratio": 3.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "サンリツサービス株式会社",
+      "shares": 345000,
+      "ratio": 2.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小沼　滋紀",
+      "shares": 342200,
+      "ratio": 2.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 11.74,
+      "securities": 10.81,
+      "trust": 12.5,
+      "corporate": 6.93,
+      "individual": 5.82
+    },
+    "individual_total": 5.82,
+    "top10_total": 47.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YGKM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "KCPエクイティアシスト１号投資事業有限責任組合",
+          "shares": 1600000,
+          "ratio": 11.74,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 1005800,
+          "ratio": 7.38,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 699300,
+          "ratio": 5.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "風越建設株式会社",
+          "shares": 600000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 572600,
+          "ratio": 4.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社SBI証券",
+          "shares": 467610,
+          "ratio": 3.43,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平尾　秀博",
+          "shares": 450500,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 432000,
+          "ratio": 3.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "サンリツサービス株式会社",
+          "shares": 345000,
+          "ratio": 2.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小沼　滋紀",
+          "shares": 342200,
+          "ratio": 2.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 11.74,
+          "securities": 10.81,
+          "trust": 12.5,
+          "corporate": 6.93,
+          "individual": 5.82
+        },
+        "individual_total": 5.82,
+        "top10_total": 47.8
+      }
+    }
+  ]
+}

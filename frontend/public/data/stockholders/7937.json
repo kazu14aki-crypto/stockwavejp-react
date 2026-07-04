@@ -1,0 +1,224 @@
+{
+  "secCode": "7937",
+  "issuerName": "株式会社ツツミ",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "堤　倭子",
+      "shares": 8003000,
+      "ratio": 51.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "互　夕希子",
+      "shares": 1539000,
+      "ratio": 9.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "石花　千花",
+      "shares": 1521000,
+      "ratio": 9.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "公益財団法人堤征二記念奨学財団",
+      "shares": 1000000,
+      "ratio": 6.39,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 523000,
+      "ratio": 3.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "MERCURY AIFLNP V.C.I.C. LTD(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 212000,
+      "ratio": 1.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103 (常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 117000,
+      "ratio": 0.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK 134105(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 116000,
+      "ratio": 0.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 102000,
+      "ratio": 0.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "HOST-PLUS PTY LIMITED-HOSTPLUS POOLED SUPERANNUATION TRUST HOSKING PARTNERS LLP (常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 97000,
+      "ratio": 0.62,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 70.78,
+      "foundation": 6.39,
+      "trust": 3.99,
+      "corporate": 1.36,
+      "foreign": 0.75,
+      "financial": 0.74,
+      "other": 0.62
+    },
+    "individual_total": 70.78,
+    "top10_total": 84.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第53期(2025/04/01－2026/03/31)",
+      "docID": "S100Y7SI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "堤　倭子",
+          "shares": 8003000,
+          "ratio": 51.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "互　夕希子",
+          "shares": 1539000,
+          "ratio": 9.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "石花　千花",
+          "shares": 1521000,
+          "ratio": 9.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "公益財団法人堤征二記念奨学財団",
+          "shares": 1000000,
+          "ratio": 6.39,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 523000,
+          "ratio": 3.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "MERCURY AIFLNP V.C.I.C. LTD(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 212000,
+          "ratio": 1.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103 (常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 117000,
+          "ratio": 0.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK 134105(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 116000,
+          "ratio": 0.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 102000,
+          "ratio": 0.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "HOST-PLUS PTY LIMITED-HOSTPLUS POOLED SUPERANNUATION TRUST HOSKING PARTNERS LLP (常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 97000,
+          "ratio": 0.62,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 70.78,
+          "foundation": 6.39,
+          "trust": 3.99,
+          "corporate": 1.36,
+          "foreign": 0.75,
+          "financial": 0.74,
+          "other": 0.62
+        },
+        "individual_total": 70.78,
+        "top10_total": 84.63
+      }
+    }
+  ]
+}

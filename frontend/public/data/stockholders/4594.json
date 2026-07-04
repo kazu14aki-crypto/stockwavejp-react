@@ -1,0 +1,218 @@
+{
+  "secCode": "4594",
+  "issuerName": "ブライトパス・バイオ株式会社",
+  "updated_at": "2026/07/04 18:08 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "楽天証券株式会社共有口",
+      "shares": 3441200,
+      "ratio": 2.47,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 3423094,
+      "ratio": 2.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "上田八木短資株式会社",
+      "shares": 2800000,
+      "ratio": 2.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD",
+      "shares": 1857304,
+      "ratio": 1.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本証券金融株式会社",
+      "shares": 1457400,
+      "ratio": 1.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松井証券株式会社",
+      "shares": 1449900,
+      "ratio": 1.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "マネックス証券株式会社",
+      "shares": 1143971,
+      "ratio": 0.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "妹尾　浩弥",
+      "shares": 1000000,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱ＵＦＪｅスマート証券株式会社",
+      "shares": 796000,
+      "ratio": 0.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＧＭＯクリック証券株式会社",
+      "shares": 664000,
+      "ratio": 0.47,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 8.87,
+      "corporate": 2.01,
+      "foreign": 1.33,
+      "individual": 0.71
+    },
+    "individual_total": 0.71,
+    "top10_total": 12.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ3C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "楽天証券株式会社共有口",
+          "shares": 3441200,
+          "ratio": 2.47,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 3423094,
+          "ratio": 2.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "上田八木短資株式会社",
+          "shares": 2800000,
+          "ratio": 2.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD",
+          "shares": 1857304,
+          "ratio": 1.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本証券金融株式会社",
+          "shares": 1457400,
+          "ratio": 1.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松井証券株式会社",
+          "shares": 1449900,
+          "ratio": 1.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "マネックス証券株式会社",
+          "shares": 1143971,
+          "ratio": 0.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "妹尾　浩弥",
+          "shares": 1000000,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱ＵＦＪｅスマート証券株式会社",
+          "shares": 796000,
+          "ratio": 0.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＧＭＯクリック証券株式会社",
+          "shares": 664000,
+          "ratio": 0.47,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 8.87,
+          "corporate": 2.01,
+          "foreign": 1.33,
+          "individual": 0.71
+        },
+        "individual_total": 0.71,
+        "top10_total": 12.92
+      }
+    }
+  ]
+}

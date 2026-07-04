@@ -1,0 +1,218 @@
+{
+  "secCode": "9760",
+  "issuerName": "株式会社　進学会ホールディングス",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社平井興産",
+      "shares": 6372000,
+      "ratio": 38.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "平井　睦雄",
+      "shares": 2330000,
+      "ratio": 13.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社学研ホールディングス",
+      "shares": 1117000,
+      "ratio": 6.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "平井　将浩",
+      "shares": 593000,
+      "ratio": 3.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 385000,
+      "ratio": 2.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "進学会職員持株会",
+      "shares": 347000,
+      "ratio": 2.08,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小野　真太郎",
+      "shares": 124000,
+      "ratio": 0.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "平井　純子",
+      "shares": 124000,
+      "ratio": 0.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小川　由晃",
+      "shares": 122000,
+      "ratio": 0.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "まこと交通株式会社",
+      "shares": 66000,
+      "ratio": 0.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.37,
+      "individual": 19.76,
+      "securities": 2.31,
+      "employee": 2.08
+    },
+    "individual_total": 19.76,
+    "top10_total": 69.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/04/01－2026/03/31)",
+      "docID": "S100YM41",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社平井興産",
+          "shares": 6372000,
+          "ratio": 38.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "平井　睦雄",
+          "shares": 2330000,
+          "ratio": 13.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社学研ホールディングス",
+          "shares": 1117000,
+          "ratio": 6.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "平井　将浩",
+          "shares": 593000,
+          "ratio": 3.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 385000,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "進学会職員持株会",
+          "shares": 347000,
+          "ratio": 2.08,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小野　真太郎",
+          "shares": 124000,
+          "ratio": 0.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "平井　純子",
+          "shares": 124000,
+          "ratio": 0.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小川　由晃",
+          "shares": 122000,
+          "ratio": 0.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "まこと交通株式会社",
+          "shares": 66000,
+          "ratio": 0.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.37,
+          "individual": 19.76,
+          "securities": 2.31,
+          "employee": 2.08
+        },
+        "individual_total": 19.76,
+        "top10_total": 69.52
+      }
+    }
+  ]
+}

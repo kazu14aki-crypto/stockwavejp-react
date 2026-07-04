@@ -1,0 +1,216 @@
+{
+  "secCode": "5142",
+  "issuerName": "アキレス株式会社",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1324000,
+      "ratio": 9.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東京アキレス協和会",
+      "shares": 820000,
+      "ratio": 6.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大阪アキレス協和会",
+      "shares": 553000,
+      "ratio": 4.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 496000,
+      "ratio": 3.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "足利アキレス協和会",
+      "shares": 481000,
+      "ratio": 3.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "朝日生命保険相互会社",
+      "shares": 431000,
+      "ratio": 3.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡　秀朋",
+      "shares": 421000,
+      "ratio": 3.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社足利銀行",
+      "shares": 343000,
+      "ratio": 2.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "セコム損害保険株式会社",
+      "shares": 315000,
+      "ratio": 2.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 253000,
+      "ratio": 1.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 11.55,
+      "individual": 16.66,
+      "financial": 11.61
+    },
+    "individual_total": 16.66,
+    "top10_total": 39.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第106期(2025/04/01－2026/03/31)",
+      "docID": "S100YJF9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1324000,
+          "ratio": 9.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東京アキレス協和会",
+          "shares": 820000,
+          "ratio": 6.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大阪アキレス協和会",
+          "shares": 553000,
+          "ratio": 4.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 496000,
+          "ratio": 3.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "足利アキレス協和会",
+          "shares": 481000,
+          "ratio": 3.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "朝日生命保険相互会社",
+          "shares": 431000,
+          "ratio": 3.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡　秀朋",
+          "shares": 421000,
+          "ratio": 3.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社足利銀行",
+          "shares": 343000,
+          "ratio": 2.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "セコム損害保険株式会社",
+          "shares": 315000,
+          "ratio": 2.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 253000,
+          "ratio": 1.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 11.55,
+          "individual": 16.66,
+          "financial": 11.61
+        },
+        "individual_total": 16.66,
+        "top10_total": 39.82
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4031",
+  "issuerName": "片倉コープアグリ株式会社",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "全国農業協同組合連合会",
+      "shares": 2122000,
+      "ratio": 23.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "丸紅株式会社",
+      "shares": 2033000,
+      "ratio": 22.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "農林中央金庫",
+      "shares": 345000,
+      "ratio": 3.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ラサ工業株式会社",
+      "shares": 275000,
+      "ratio": 3.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大久保敬一",
+      "shares": 200000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "片倉コープアグリ従業員持株会",
+      "shares": 160000,
+      "ratio": 1.77,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "篠川宏明",
+      "shares": 160000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "共栄火災海上保険株式会社",
+      "shares": 124000,
+      "ratio": 1.37,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社みずほ銀行",
+      "shares": 105000,
+      "ratio": 1.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 82000,
+      "ratio": 0.91,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 27.52,
+      "corporate": 25.6,
+      "financial": 6.36,
+      "employee": 1.77,
+      "securities": 0.91
+    },
+    "individual_total": 27.52,
+    "top10_total": 62.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第111期(2025/04/01－2026/03/31)",
+      "docID": "S100YFRR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "全国農業協同組合連合会",
+          "shares": 2122000,
+          "ratio": 23.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "丸紅株式会社",
+          "shares": 2033000,
+          "ratio": 22.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "農林中央金庫",
+          "shares": 345000,
+          "ratio": 3.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ラサ工業株式会社",
+          "shares": 275000,
+          "ratio": 3.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大久保敬一",
+          "shares": 200000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "片倉コープアグリ従業員持株会",
+          "shares": 160000,
+          "ratio": 1.77,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "篠川宏明",
+          "shares": 160000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "共栄火災海上保険株式会社",
+          "shares": 124000,
+          "ratio": 1.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社みずほ銀行",
+          "shares": 105000,
+          "ratio": 1.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 82000,
+          "ratio": 0.91,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 27.52,
+          "corporate": 25.6,
+          "financial": 6.36,
+          "employee": 1.77,
+          "securities": 0.91
+        },
+        "individual_total": 27.52,
+        "top10_total": 62.16
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "8938",
+  "issuerName": "グローム・ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "HK BEIDA JADE BIRD INVESTMENTS LIMITED（常任代理人　森川　和）",
+      "shares": 2040600,
+      "ratio": 22.54,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "金子　修",
+      "shares": 968800,
+      "ratio": 10.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+      "shares": 433400,
+      "ratio": 4.78,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松井証券株式会社",
+      "shares": 423700,
+      "ratio": 4.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アパテックジャパン株式会社",
+      "shares": 296400,
+      "ratio": 3.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNP PARIBAS SINGAPORE/ 2S/ JASDEC/ UOB KAY HIAN PRIVATE LIMITED（常任代理人　香港上海銀行東京支店）",
+      "shares": 242900,
+      "ratio": 2.68,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "青山　英男",
+      "shares": 172400,
+      "ratio": 1.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三菱ＵＦＪ　ｅスマート証券株式会社",
+      "shares": 171300,
+      "ratio": 1.89,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 156875,
+      "ratio": 1.73,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 143496,
+      "ratio": 1.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 22.54,
+      "individual": 12.6,
+      "securities": 14.66,
+      "corporate": 3.27,
+      "financial": 2.68
+    },
+    "individual_total": 12.6,
+    "top10_total": 55.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第34期(2025/04/01－2026/03/31)",
+      "docID": "S100YJMT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "HK BEIDA JADE BIRD INVESTMENTS LIMITED（常任代理人　森川　和）",
+          "shares": 2040600,
+          "ratio": 22.54,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "金子　修",
+          "shares": 968800,
+          "ratio": 10.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+          "shares": 433400,
+          "ratio": 4.78,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松井証券株式会社",
+          "shares": 423700,
+          "ratio": 4.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アパテックジャパン株式会社",
+          "shares": 296400,
+          "ratio": 3.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNP PARIBAS SINGAPORE/ 2S/ JASDEC/ UOB KAY HIAN PRIVATE LIMITED（常任代理人　香港上海銀行東京支店）",
+          "shares": 242900,
+          "ratio": 2.68,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "青山　英男",
+          "shares": 172400,
+          "ratio": 1.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三菱ＵＦＪ　ｅスマート証券株式会社",
+          "shares": 171300,
+          "ratio": 1.89,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 156875,
+          "ratio": 1.73,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 143496,
+          "ratio": 1.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 22.54,
+          "individual": 12.6,
+          "securities": 14.66,
+          "corporate": 3.27,
+          "financial": 2.68
+        },
+        "individual_total": 12.6,
+        "top10_total": 55.75
+      }
+    }
+  ]
+}

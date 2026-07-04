@@ -1,0 +1,220 @@
+{
+  "secCode": "7291",
+  "issuerName": "日本プラスト株式会社",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 1429000,
+      "ratio": 7.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "広瀬　信",
+      "shares": 1298000,
+      "ratio": 6.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ダイセル",
+      "shares": 1000000,
+      "ratio": 5.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 586300,
+      "ratio": 3.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ（常任代理人 インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 521800,
+      "ratio": 2.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＢＨ ＣＯ ＦＯＲ ＡＲＣＵＳ ＪＡＰＡＮ ＶＡＬＵＥ ＦＵＮＤ（常任代理人 株式会社三菱ＵＦＪ銀行）",
+      "shares": 423500,
+      "ratio": 2.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "水元　公仁",
+      "shares": 406100,
+      "ratio": 2.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 331800,
+      "ratio": 1.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "伊藤忠プラスチックス株式会社",
+      "shares": 317200,
+      "ratio": 1.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社みずほ銀行",
+      "shares": 309000,
+      "ratio": 1.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 14.25,
+      "individual": 8.85,
+      "trust": 4.76,
+      "securities": 2.71,
+      "financial": 3.8
+    },
+    "individual_total": 8.85,
+    "top10_total": 34.37
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第88期(2025/04/01－2026/03/31)",
+      "docID": "S100YHRY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 1429000,
+          "ratio": 7.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "広瀬　信",
+          "shares": 1298000,
+          "ratio": 6.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ダイセル",
+          "shares": 1000000,
+          "ratio": 5.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 586300,
+          "ratio": 3.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ（常任代理人 インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 521800,
+          "ratio": 2.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＢＨ ＣＯ ＦＯＲ ＡＲＣＵＳ ＪＡＰＡＮ ＶＡＬＵＥ ＦＵＮＤ（常任代理人 株式会社三菱ＵＦＪ銀行）",
+          "shares": 423500,
+          "ratio": 2.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "水元　公仁",
+          "shares": 406100,
+          "ratio": 2.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 331800,
+          "ratio": 1.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊藤忠プラスチックス株式会社",
+          "shares": 317200,
+          "ratio": 1.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社みずほ銀行",
+          "shares": 309000,
+          "ratio": 1.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 14.25,
+          "individual": 8.85,
+          "trust": 4.76,
+          "securities": 2.71,
+          "financial": 3.8
+        },
+        "individual_total": 8.85,
+        "top10_total": 34.37
+      }
+    }
+  ]
+}

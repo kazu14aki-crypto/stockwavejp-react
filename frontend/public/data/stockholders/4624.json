@@ -1,0 +1,222 @@
+{
+  "secCode": "4624",
+  "issuerName": "イサム塗料株式会社",
+  "updated_at": "2026/07/04 18:22 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "北村　初美",
+      "shares": 443000,
+      "ratio": 23.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "北村　健",
+      "shares": 442000,
+      "ratio": 23.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "イサム塗料栄勇会",
+      "shares": 147000,
+      "ratio": 7.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "日本証券金融株式会社",
+      "shares": 70000,
+      "ratio": 3.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＣＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 46000,
+      "ratio": 2.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 40000,
+      "ratio": 2.11,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "長瀬産業株式会社",
+      "shares": 33000,
+      "ratio": 1.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "イサム塗料従業員持株会",
+      "shares": 25000,
+      "ratio": 1.31,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 24000,
+      "ratio": 1.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＤＥＵＴＳＣＨＥ ＢＡＮＫ ＡＧ，　ＳＩＮＧＡＰＯＲＥ　Ａ／Ｃ　ＣＬＩＥＮＴＳ（ＴＲＥＡＴＹ）\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 20000,
+      "ratio": 1.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 54.18,
+      "securities": 7.42,
+      "other": 2.11,
+      "corporate": 1.75,
+      "employee": 1.31,
+      "financial": 1.04
+    },
+    "individual_total": 54.18,
+    "top10_total": 67.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YJCY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "北村　初美",
+          "shares": 443000,
+          "ratio": 23.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "北村　健",
+          "shares": 442000,
+          "ratio": 23.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "イサム塗料栄勇会",
+          "shares": 147000,
+          "ratio": 7.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融株式会社",
+          "shares": 70000,
+          "ratio": 3.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＣＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 46000,
+          "ratio": 2.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 40000,
+          "ratio": 2.11,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "長瀬産業株式会社",
+          "shares": 33000,
+          "ratio": 1.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "イサム塗料従業員持株会",
+          "shares": 25000,
+          "ratio": 1.31,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 24000,
+          "ratio": 1.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＤＥＵＴＳＣＨＥ ＢＡＮＫ ＡＧ，　ＳＩＮＧＡＰＯＲＥ　Ａ／Ｃ　ＣＬＩＥＮＴＳ（ＴＲＥＡＴＹ）\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 20000,
+          "ratio": 1.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 54.18,
+          "securities": 7.42,
+          "other": 2.11,
+          "corporate": 1.75,
+          "employee": 1.31,
+          "financial": 1.04
+        },
+        "individual_total": 54.18,
+        "top10_total": 67.81
+      }
+    }
+  ]
+}

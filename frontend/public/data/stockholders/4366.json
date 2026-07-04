@@ -1,0 +1,218 @@
+{
+  "secCode": "4366",
+  "issuerName": "ダイトーケミックス株式会社",
+  "updated_at": "2026/07/04 18:14 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "平松　裕将",
+      "shares": 4246000,
+      "ratio": 13.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東京応化工業㈱",
+      "shares": 1566000,
+      "ratio": 4.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三木産業㈱",
+      "shares": 1505000,
+      "ratio": 4.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本生命保険(相)",
+      "shares": 1499000,
+      "ratio": 4.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ダイトーケミックス取引先持株会",
+      "shares": 1486000,
+      "ratio": 4.61,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大阪有機化学工業㈱",
+      "shares": 1208000,
+      "ratio": 3.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "竹中　一雄",
+      "shares": 1140000,
+      "ratio": 3.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＫＯＲＥＡ ＳＥＣＵＲＩＴＩＥＳ ＤＥＰＯＳＩＴＯＲＹ－ＳＨＩＮＨＡＮＳＥＣＵＲＩＴＩＥＳ\n（常任代理人：シティバンク、エヌ・エイ東京支店）",
+      "shares": 886000,
+      "ratio": 2.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ダイトーケミックス社員持株会",
+      "shares": 685000,
+      "ratio": 2.13,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本精化㈱",
+      "shares": 603000,
+      "ratio": 1.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 31.88,
+      "financial": 4.66,
+      "employee": 6.74,
+      "other": 2.75
+    },
+    "individual_total": 31.88,
+    "top10_total": 46.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YGAU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "平松　裕将",
+          "shares": 4246000,
+          "ratio": 13.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東京応化工業㈱",
+          "shares": 1566000,
+          "ratio": 4.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三木産業㈱",
+          "shares": 1505000,
+          "ratio": 4.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本生命保険(相)",
+          "shares": 1499000,
+          "ratio": 4.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ダイトーケミックス取引先持株会",
+          "shares": 1486000,
+          "ratio": 4.61,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大阪有機化学工業㈱",
+          "shares": 1208000,
+          "ratio": 3.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "竹中　一雄",
+          "shares": 1140000,
+          "ratio": 3.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＫＯＲＥＡ ＳＥＣＵＲＩＴＩＥＳ ＤＥＰＯＳＩＴＯＲＹ－ＳＨＩＮＨＡＮＳＥＣＵＲＩＴＩＥＳ\n（常任代理人：シティバンク、エヌ・エイ東京支店）",
+          "shares": 886000,
+          "ratio": 2.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ダイトーケミックス社員持株会",
+          "shares": 685000,
+          "ratio": 2.13,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本精化㈱",
+          "shares": 603000,
+          "ratio": 1.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 31.88,
+          "financial": 4.66,
+          "employee": 6.74,
+          "other": 2.75
+        },
+        "individual_total": 31.88,
+        "top10_total": 46.03
+      }
+    }
+  ]
+}

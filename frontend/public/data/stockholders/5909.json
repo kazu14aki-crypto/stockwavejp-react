@@ -1,0 +1,222 @@
+{
+  "secCode": "5909",
+  "issuerName": "株式会社　コロナ",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社コロナ興産",
+      "shares": 11057000,
+      "ratio": 37.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "公益財団法人内田エネルギー科学振興財団",
+      "shares": 2359000,
+      "ratio": 8.07,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社第四北越銀行",
+      "shares": 1316000,
+      "ratio": 4.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1047000,
+      "ratio": 3.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "コロナ社員持株会",
+      "shares": 956000,
+      "ratio": 3.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ ３８５７８１(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 610000,
+      "ratio": 2.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５１０３(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 429000,
+      "ratio": 1.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 406000,
+      "ratio": 1.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "外山産業株式会社",
+      "shares": 365000,
+      "ratio": 1.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "内田　力",
+      "shares": 321000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.06,
+      "foundation": 8.07,
+      "financial": 9.45,
+      "trust": 3.58,
+      "employee": 3.27,
+      "individual": 1.1
+    },
+    "individual_total": 1.1,
+    "top10_total": 64.53
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YF55",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社コロナ興産",
+          "shares": 11057000,
+          "ratio": 37.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "公益財団法人内田エネルギー科学振興財団",
+          "shares": 2359000,
+          "ratio": 8.07,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社第四北越銀行",
+          "shares": 1316000,
+          "ratio": 4.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1047000,
+          "ratio": 3.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "コロナ社員持株会",
+          "shares": 956000,
+          "ratio": 3.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ ３８５７８１(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 610000,
+          "ratio": 2.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５１０３(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 429000,
+          "ratio": 1.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 406000,
+          "ratio": 1.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "外山産業株式会社",
+          "shares": 365000,
+          "ratio": 1.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "内田　力",
+          "shares": 321000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.06,
+          "foundation": 8.07,
+          "financial": 9.45,
+          "trust": 3.58,
+          "employee": 3.27,
+          "individual": 1.1
+        },
+        "individual_total": 1.1,
+        "top10_total": 64.53
+      }
+    }
+  ]
+}

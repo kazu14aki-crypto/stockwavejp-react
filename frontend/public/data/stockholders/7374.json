@@ -1,0 +1,218 @@
+{
+  "secCode": "7374",
+  "issuerName": "株式会社コンフィデンス・インターワークス",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社アミューズキャピタル",
+      "shares": 1402000,
+      "ratio": 22.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社アミューズキャピタルインベストメント",
+      "shares": 1100000,
+      "ratio": 17.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "中山　隼雄",
+      "shares": 406000,
+      "ratio": 6.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "木村　重晴",
+      "shares": 188000,
+      "ratio": 3.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 183000,
+      "ratio": 2.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "澤岻　宣之",
+      "shares": 106000,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社Ａ．Ｃ企画",
+      "shares": 102000,
+      "ratio": 1.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "光１号配当特化投資事業有限責任組合",
+      "shares": 102000,
+      "ratio": 1.63,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社大一商会",
+      "shares": 100000,
+      "ratio": 1.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "アイビー投資事業有限責任組合",
+      "shares": 100000,
+      "ratio": 1.6,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.29,
+      "individual": 11.21,
+      "trust": 2.94,
+      "other": 3.23
+    },
+    "individual_total": 11.21,
+    "top10_total": 60.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/04/01－2026/03/31)",
+      "docID": "S100YKQ9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社アミューズキャピタル",
+          "shares": 1402000,
+          "ratio": 22.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社アミューズキャピタルインベストメント",
+          "shares": 1100000,
+          "ratio": 17.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "中山　隼雄",
+          "shares": 406000,
+          "ratio": 6.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "木村　重晴",
+          "shares": 188000,
+          "ratio": 3.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 183000,
+          "ratio": 2.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "澤岻　宣之",
+          "shares": 106000,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社Ａ．Ｃ企画",
+          "shares": 102000,
+          "ratio": 1.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "光１号配当特化投資事業有限責任組合",
+          "shares": 102000,
+          "ratio": 1.63,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社大一商会",
+          "shares": 100000,
+          "ratio": 1.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "アイビー投資事業有限責任組合",
+          "shares": 100000,
+          "ratio": 1.6,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.29,
+          "individual": 11.21,
+          "trust": 2.94,
+          "other": 3.23
+        },
+        "individual_total": 11.21,
+        "top10_total": 60.67
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "4684",
+  "issuerName": "株式会社オービック",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＭＮホールディングス",
+      "shares": 84545000,
+      "ratio": 19.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 65260000,
+      "ratio": 15.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 22690000,
+      "ratio": 5.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野田　順弘",
+      "shares": 14405000,
+      "ratio": 3.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野田　みづき",
+      "shares": 13905000,
+      "ratio": 3.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ステートストリートバンクアンド\nトラストカンパニー505103\n（常任代理人　(株)みずほ銀行決済営業部）",
+      "shares": 9482000,
+      "ratio": 2.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ステートストリートバンクアンド\nトラストカンパニー505001\n（常任代理人　(株)みずほ銀行決済営業部）",
+      "shares": 8109000,
+      "ratio": 1.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ステートストリートバンクアンド\nトラストカンパニー505223\n（常任代理人　(株)みずほ銀行決済営業部",
+      "shares": 8096000,
+      "ratio": 1.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "全国共済農業協同組合連合会",
+      "shares": 6567000,
+      "ratio": 1.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ザチェースマンハッタンバンク\nエヌエイロンドン\nエスエルオムニバスアカウント\n（常任代理人　(株)みずほ銀行決済営業部）",
+      "shares": 5442000,
+      "ratio": 1.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.51,
+      "trust": 20.29,
+      "individual": 6.52,
+      "financial": 8.67
+    },
+    "individual_total": 6.52,
+    "top10_total": 54.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第59期(2025/04/01－2026/03/31)",
+      "docID": "S100YGBS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＭＮホールディングス",
+          "shares": 84545000,
+          "ratio": 19.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 65260000,
+          "ratio": 15.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 22690000,
+          "ratio": 5.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野田　順弘",
+          "shares": 14405000,
+          "ratio": 3.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野田　みづき",
+          "shares": 13905000,
+          "ratio": 3.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ステートストリートバンクアンド\nトラストカンパニー505103\n（常任代理人　(株)みずほ銀行決済営業部）",
+          "shares": 9482000,
+          "ratio": 2.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ステートストリートバンクアンド\nトラストカンパニー505001\n（常任代理人　(株)みずほ銀行決済営業部）",
+          "shares": 8109000,
+          "ratio": 1.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ステートストリートバンクアンド\nトラストカンパニー505223\n（常任代理人　(株)みずほ銀行決済営業部",
+          "shares": 8096000,
+          "ratio": 1.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "全国共済農業協同組合連合会",
+          "shares": 6567000,
+          "ratio": 1.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ザチェースマンハッタンバンク\nエヌエイロンドン\nエスエルオムニバスアカウント\n（常任代理人　(株)みずほ銀行決済営業部）",
+          "shares": 5442000,
+          "ratio": 1.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.51,
+          "trust": 20.29,
+          "individual": 6.52,
+          "financial": 8.67
+        },
+        "individual_total": 6.52,
+        "top10_total": 54.99
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "2162",
+  "issuerName": "ｎｍｓホールディングス株式会社",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ワールドホールディングス",
+      "shares": 6319700,
+      "ratio": 32.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "小野　文明",
+      "shares": 3596000,
+      "ratio": 18.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "投資事業有限責任組合ＪＡＩＣサプライチェーンファンド",
+      "shares": 763200,
+      "ratio": 3.97,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松井証券株式会社",
+      "shares": 719000,
+      "ratio": 3.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "福本　英久",
+      "shares": 440000,
+      "ratio": 2.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンド",
+      "shares": 345700,
+      "ratio": 1.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "塩澤　一光",
+      "shares": 340000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "西條　雅明",
+      "shares": 310000,
+      "ratio": 1.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "島根　良明",
+      "shares": 214100,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＧＯＶＥＲＮＯＲＳ株式会社",
+      "shares": 200000,
+      "ratio": 1.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.95,
+      "individual": 25.52,
+      "other": 5.77,
+      "securities": 3.74
+    },
+    "individual_total": 25.52,
+    "top10_total": 68.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2025/04/01－2026/03/31)",
+      "docID": "S100YF8Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ワールドホールディングス",
+          "shares": 6319700,
+          "ratio": 32.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "小野　文明",
+          "shares": 3596000,
+          "ratio": 18.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "投資事業有限責任組合ＪＡＩＣサプライチェーンファンド",
+          "shares": 763200,
+          "ratio": 3.97,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松井証券株式会社",
+          "shares": 719000,
+          "ratio": 3.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "福本　英久",
+          "shares": 440000,
+          "ratio": 2.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンド",
+          "shares": 345700,
+          "ratio": 1.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "塩澤　一光",
+          "shares": 340000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "西條　雅明",
+          "shares": 310000,
+          "ratio": 1.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "島根　良明",
+          "shares": 214100,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＧＯＶＥＲＮＯＲＳ株式会社",
+          "shares": 200000,
+          "ratio": 1.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.95,
+          "individual": 25.52,
+          "other": 5.77,
+          "securities": 3.74
+        },
+        "individual_total": 25.52,
+        "top10_total": 68.98
+      }
+    }
+  ]
+}

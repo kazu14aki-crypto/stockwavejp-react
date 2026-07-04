@@ -1,0 +1,216 @@
+{
+  "secCode": "7991",
+  "issuerName": "マミヤ・オーピー株式会社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社データ・アート",
+      "shares": 3974700,
+      "ratio": 38.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "Ambition Capital\n１号投資事業有限責任組合",
+      "shares": 1246500,
+      "ratio": 11.94,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "Ｊ－ＮＥＴ株式会社",
+      "shares": 230400,
+      "ratio": 2.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 208600,
+      "ratio": 2.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "Ambition Capital\n１号投資事業有限責任組合",
+      "shares": 173000,
+      "ratio": 1.66,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本証券金融株式会社",
+      "shares": 131700,
+      "ratio": 1.26,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ\n（常任代理人　三田証券㈱）",
+      "shares": 91000,
+      "ratio": 0.87,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "サクサ株式会社",
+      "shares": 65000,
+      "ratio": 0.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＭＩ２",
+      "shares": 49100,
+      "ratio": 0.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券㈱）",
+      "shares": 46700,
+      "ratio": 0.45,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.38,
+      "other": 13.6,
+      "securities": 4.58
+    },
+    "individual_total": 0,
+    "top10_total": 59.56
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第84期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ8W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社データ・アート",
+          "shares": 3974700,
+          "ratio": 38.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "Ambition Capital\n１号投資事業有限責任組合",
+          "shares": 1246500,
+          "ratio": 11.94,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "Ｊ－ＮＥＴ株式会社",
+          "shares": 230400,
+          "ratio": 2.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 208600,
+          "ratio": 2.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "Ambition Capital\n１号投資事業有限責任組合",
+          "shares": 173000,
+          "ratio": 1.66,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本証券金融株式会社",
+          "shares": 131700,
+          "ratio": 1.26,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ\n（常任代理人　三田証券㈱）",
+          "shares": 91000,
+          "ratio": 0.87,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "サクサ株式会社",
+          "shares": 65000,
+          "ratio": 0.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＭＩ２",
+          "shares": 49100,
+          "ratio": 0.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券㈱）",
+          "shares": 46700,
+          "ratio": 0.45,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.38,
+          "other": 13.6,
+          "securities": 4.58
+        },
+        "individual_total": 0,
+        "top10_total": 59.56
+      }
+    }
+  ]
+}

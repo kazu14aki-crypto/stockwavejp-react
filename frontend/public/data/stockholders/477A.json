@@ -1,0 +1,216 @@
+{
+  "secCode": "477A",
+  "issuerName": "株式会社スタートライン",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ストーン",
+      "shares": 1102300,
+      "ratio": 26.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ウエスト",
+      "shares": 428000,
+      "ratio": 10.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "西村　賢治",
+      "shares": 239000,
+      "ratio": 5.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "長谷川　新里",
+      "shares": 239000,
+      "ratio": 5.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "白木　孝一",
+      "shares": 239000,
+      "ratio": 5.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐々木　嶺一",
+      "shares": 195500,
+      "ratio": 4.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＳＭＢＣ日興証券株式会社",
+      "shares": 133000,
+      "ratio": 3.22,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "池原　諒平",
+      "shares": 124600,
+      "ratio": 3.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社共有口",
+      "shares": 116800,
+      "ratio": 2.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 99869,
+      "ratio": 2.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 37.04,
+      "individual": 25.12,
+      "securities": 8.45
+    },
+    "individual_total": 25.12,
+    "top10_total": 70.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/04/01－2026/03/31)",
+      "docID": "S100YM56",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ストーン",
+          "shares": 1102300,
+          "ratio": 26.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ウエスト",
+          "shares": 428000,
+          "ratio": 10.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "西村　賢治",
+          "shares": 239000,
+          "ratio": 5.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "長谷川　新里",
+          "shares": 239000,
+          "ratio": 5.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "白木　孝一",
+          "shares": 239000,
+          "ratio": 5.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐々木　嶺一",
+          "shares": 195500,
+          "ratio": 4.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＳＭＢＣ日興証券株式会社",
+          "shares": 133000,
+          "ratio": 3.22,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "池原　諒平",
+          "shares": 124600,
+          "ratio": 3.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 116800,
+          "ratio": 2.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 99869,
+          "ratio": 2.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 37.04,
+          "individual": 25.12,
+          "securities": 8.45
+        },
+        "individual_total": 25.12,
+        "top10_total": 70.61
+      }
+    }
+  ]
+}

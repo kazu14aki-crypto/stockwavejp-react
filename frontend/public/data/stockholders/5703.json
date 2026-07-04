@@ -1,0 +1,220 @@
+{
+  "secCode": "5703",
+  "issuerName": "日本軽金属ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 9155000,
+      "ratio": 14.78,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 5028000,
+      "ratio": 8.12,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日軽ケイユー会",
+      "shares": 2037000,
+      "ratio": 3.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人） ㈱みずほ銀行決済営業部",
+      "shares": 1878000,
+      "ratio": 3.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "朝日生命保険相互会社",
+      "shares": 1598000,
+      "ratio": 2.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "第一生命保険㈱",
+      "shares": 1500000,
+      "ratio": 2.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "公益財団法人軽金属奨学会",
+      "shares": 1491000,
+      "ratio": 2.41,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人） ㈱みずほ銀行決済営業部",
+      "shares": 1379000,
+      "ratio": 2.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱みずほ銀行",
+      "shares": 1126000,
+      "ratio": 1.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人） ㈱みずほ銀行決済営業部",
+      "shares": 916000,
+      "ratio": 1.48,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.9,
+      "individual": 3.29,
+      "foreign": 6.74,
+      "financial": 6.82,
+      "foundation": 2.41
+    },
+    "individual_total": 3.29,
+    "top10_total": 42.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/04/01－2026/03/31)",
+      "docID": "S100YFJY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 9155000,
+          "ratio": 14.78,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 5028000,
+          "ratio": 8.12,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日軽ケイユー会",
+          "shares": 2037000,
+          "ratio": 3.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人） ㈱みずほ銀行決済営業部",
+          "shares": 1878000,
+          "ratio": 3.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "朝日生命保険相互会社",
+          "shares": 1598000,
+          "ratio": 2.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "第一生命保険㈱",
+          "shares": 1500000,
+          "ratio": 2.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "公益財団法人軽金属奨学会",
+          "shares": 1491000,
+          "ratio": 2.41,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人） ㈱みずほ銀行決済営業部",
+          "shares": 1379000,
+          "ratio": 2.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱みずほ銀行",
+          "shares": 1126000,
+          "ratio": 1.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人） ㈱みずほ銀行決済営業部",
+          "shares": 916000,
+          "ratio": 1.48,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.9,
+          "individual": 3.29,
+          "foreign": 6.74,
+          "financial": 6.82,
+          "foundation": 2.41
+        },
+        "individual_total": 3.29,
+        "top10_total": 42.16
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "6545",
+  "issuerName": "株式会社インターネットインフィニティー",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社別宮圭一事務所",
+      "shares": 1018000,
+      "ratio": 19.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大同生命保険株式会社",
+      "shares": 400000,
+      "ratio": 7.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "別宮　圭一",
+      "shares": 283000,
+      "ratio": 5.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "藤澤　卓",
+      "shares": 271000,
+      "ratio": 5.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "キユーピー株式会社",
+      "shares": 240000,
+      "ratio": 4.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "永井　詳二",
+      "shares": 158000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "星野　健治",
+      "shares": 116000,
+      "ratio": 2.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE－AC) （常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 113000,
+      "ratio": 2.13,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "別宮　均",
+      "shares": 77000,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "インターネットインフィニティー従業員持株会",
+      "shares": 71000,
+      "ratio": 1.34,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.55,
+      "financial": 7.48,
+      "individual": 16.99,
+      "foreign": 2.13,
+      "employee": 1.34
+    },
+    "individual_total": 16.99,
+    "top10_total": 51.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YLGZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社別宮圭一事務所",
+          "shares": 1018000,
+          "ratio": 19.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大同生命保険株式会社",
+          "shares": 400000,
+          "ratio": 7.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "別宮　圭一",
+          "shares": 283000,
+          "ratio": 5.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "藤澤　卓",
+          "shares": 271000,
+          "ratio": 5.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "キユーピー株式会社",
+          "shares": 240000,
+          "ratio": 4.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "永井　詳二",
+          "shares": 158000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "星野　健治",
+          "shares": 116000,
+          "ratio": 2.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE－AC) （常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 113000,
+          "ratio": 2.13,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "別宮　均",
+          "shares": 77000,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "インターネットインフィニティー従業員持株会",
+          "shares": 71000,
+          "ratio": 1.34,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.55,
+          "financial": 7.48,
+          "individual": 16.99,
+          "foreign": 2.13,
+          "employee": 1.34
+        },
+        "individual_total": 16.99,
+        "top10_total": 51.49
+      }
+    }
+  ]
+}

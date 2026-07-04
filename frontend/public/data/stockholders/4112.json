@@ -1,0 +1,218 @@
+{
+  "secCode": "4112",
+  "issuerName": "保土谷化学工業株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 1580000,
+      "ratio": 9.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東ソー㈱",
+      "shares": 1400000,
+      "ratio": 8.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松井証券㈱",
+      "shares": 895000,
+      "ratio": 5.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本証券金融㈱",
+      "shares": 711000,
+      "ratio": 4.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱みずほ銀行",
+      "shares": 597000,
+      "ratio": 3.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "農林中央金庫",
+      "shares": 454000,
+      "ratio": 2.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱日本カストディ銀行（信託Ｅ口）",
+      "shares": 369000,
+      "ratio": 2.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 349000,
+      "ratio": 2.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "明治安田生命保険(相)",
+      "shares": 329000,
+      "ratio": 2.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱東邦銀行",
+      "shares": 296000,
+      "ratio": 1.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.12,
+      "individual": 8.6,
+      "securities": 9.87,
+      "financial": 10.3
+    },
+    "individual_total": 8.6,
+    "top10_total": 42.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第168期(2025/04/01－2026/03/31)",
+      "docID": "S100YGIX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 1580000,
+          "ratio": 9.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東ソー㈱",
+          "shares": 1400000,
+          "ratio": 8.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松井証券㈱",
+          "shares": 895000,
+          "ratio": 5.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融㈱",
+          "shares": 711000,
+          "ratio": 4.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱みずほ銀行",
+          "shares": 597000,
+          "ratio": 3.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "農林中央金庫",
+          "shares": 454000,
+          "ratio": 2.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱日本カストディ銀行（信託Ｅ口）",
+          "shares": 369000,
+          "ratio": 2.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 349000,
+          "ratio": 2.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "明治安田生命保険(相)",
+          "shares": 329000,
+          "ratio": 2.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱東邦銀行",
+          "shares": 296000,
+          "ratio": 1.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.12,
+          "individual": 8.6,
+          "securities": 9.87,
+          "financial": 10.3
+        },
+        "individual_total": 8.6,
+        "top10_total": 42.89
+      }
+    }
+  ]
+}

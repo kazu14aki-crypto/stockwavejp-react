@@ -1,0 +1,220 @@
+{
+  "secCode": "6620",
+  "issuerName": "宮越ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:04 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "宮越グループ株式会社",
+      "shares": 15498000,
+      "ratio": 38.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "センチュリー パラマウント インベストメント リミテッド(常任代理人 リーディング証券㈱)",
+      "shares": 5224000,
+      "ratio": 13.06,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ロンウィン ホールディングス リミテッド(常任代理人 リーディング証券㈱)",
+      "shares": 5019000,
+      "ratio": 12.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "パシフィック ステート ホールディングス リミテッド(常任代理人 リーディング証券㈱)",
+      "shares": 3902000,
+      "ratio": 9.75,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アジアン スカイ インベストメンツ リミテッド(常任代理人 リーディング証券㈱)",
+      "shares": 3122000,
+      "ratio": 7.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "PHILLIP SECURITIES(HONG KONG)LIMITED(常任代理人 フィリップ証券㈱)",
+      "shares": 1032000,
+      "ratio": 2.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNP PARIBAS SINGAPORE/2S/JASDEC/UOBKHP/L-UOBHK-ACCLT(常任代理人 香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ)",
+      "shares": 1024000,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 550000,
+      "ratio": 1.38,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "渡邉　敏行",
+      "shares": 340000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "橋野　雅幸",
+      "shares": 224000,
+      "ratio": 0.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.73,
+      "securities": 45.73,
+      "financial": 2.56,
+      "trust": 1.38,
+      "individual": 1.41
+    },
+    "individual_total": 1.41,
+    "top10_total": 89.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第15期(2025/04/01－2026/03/31)",
+      "docID": "S100YJZT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "宮越グループ株式会社",
+          "shares": 15498000,
+          "ratio": 38.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "センチュリー パラマウント インベストメント リミテッド(常任代理人 リーディング証券㈱)",
+          "shares": 5224000,
+          "ratio": 13.06,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ロンウィン ホールディングス リミテッド(常任代理人 リーディング証券㈱)",
+          "shares": 5019000,
+          "ratio": 12.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "パシフィック ステート ホールディングス リミテッド(常任代理人 リーディング証券㈱)",
+          "shares": 3902000,
+          "ratio": 9.75,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アジアン スカイ インベストメンツ リミテッド(常任代理人 リーディング証券㈱)",
+          "shares": 3122000,
+          "ratio": 7.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "PHILLIP SECURITIES(HONG KONG)LIMITED(常任代理人 フィリップ証券㈱)",
+          "shares": 1032000,
+          "ratio": 2.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNP PARIBAS SINGAPORE/2S/JASDEC/UOBKHP/L-UOBHK-ACCLT(常任代理人 香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ)",
+          "shares": 1024000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 550000,
+          "ratio": 1.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "渡邉　敏行",
+          "shares": 340000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "橋野　雅幸",
+          "shares": 224000,
+          "ratio": 0.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.73,
+          "securities": 45.73,
+          "financial": 2.56,
+          "trust": 1.38,
+          "individual": 1.41
+        },
+        "individual_total": 1.41,
+        "top10_total": 89.81
+      }
+    }
+  ]
+}

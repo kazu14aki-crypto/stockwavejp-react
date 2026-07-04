@@ -1,0 +1,222 @@
+{
+  "secCode": "5983",
+  "issuerName": "イワブチ株式会社",
+  "updated_at": "2026/07/04 18:28 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "イワブチ取引先持株会",
+      "shares": 114000,
+      "ratio": 10.95,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE　BROKERS　LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 94900,
+      "ratio": 9.11,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友商事株式会社",
+      "shares": 50000,
+      "ratio": 4.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "公益財団法人光奨学会",
+      "shares": 47100,
+      "ratio": 4.52,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "イワブチグループ従業員持株会",
+      "shares": 37400,
+      "ratio": 3.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社常陽銀行",
+      "shares": 35900,
+      "ratio": 3.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本製鉄株式会社",
+      "shares": 32000,
+      "ratio": 3.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "光岡  毅",
+      "shares": 22700,
+      "ratio": 2.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山口プレス工業株式会社",
+      "shares": 16300,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 14100,
+      "ratio": 1.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 14.54,
+      "securities": 9.11,
+      "corporate": 9.43,
+      "foundation": 4.52,
+      "financial": 4.8,
+      "individual": 2.18
+    },
+    "individual_total": 2.18,
+    "top10_total": 44.58
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YHYU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "イワブチ取引先持株会",
+          "shares": 114000,
+          "ratio": 10.95,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE　BROKERS　LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 94900,
+          "ratio": 9.11,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友商事株式会社",
+          "shares": 50000,
+          "ratio": 4.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "公益財団法人光奨学会",
+          "shares": 47100,
+          "ratio": 4.52,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "イワブチグループ従業員持株会",
+          "shares": 37400,
+          "ratio": 3.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社常陽銀行",
+          "shares": 35900,
+          "ratio": 3.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本製鉄株式会社",
+          "shares": 32000,
+          "ratio": 3.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "光岡  毅",
+          "shares": 22700,
+          "ratio": 2.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山口プレス工業株式会社",
+          "shares": 16300,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 14100,
+          "ratio": 1.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 14.54,
+          "securities": 9.11,
+          "corporate": 9.43,
+          "foundation": 4.52,
+          "financial": 4.8,
+          "individual": 2.18
+        },
+        "individual_total": 2.18,
+        "top10_total": 44.58
+      }
+    }
+  ]
+}

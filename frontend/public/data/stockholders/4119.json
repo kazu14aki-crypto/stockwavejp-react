@@ -1,0 +1,222 @@
+{
+  "secCode": "4119",
+  "issuerName": "株式会社日本ピグメントホールディングス",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本ピグメント取引先持株会",
+      "shares": 199000,
+      "ratio": 12.72,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 73000,
+      "ratio": 4.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行(常任代理人 株式会社日本カストディ銀行)",
+      "shares": 70000,
+      "ratio": 4.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社十六銀行",
+      "shares": 69000,
+      "ratio": 4.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口)",
+      "shares": 45000,
+      "ratio": 2.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Ｆｕｔｕ　Ｓｅｃｕｒｉｔｉｅｓ　Ｉｎｔｅｒｎａｔｉｏｎａｌ　（Ｈｏｎｇ　Ｋｏｎｇ）　Ｌｉｍｉｔｅｄ　（ｍｏｏｍｏｏ証券株式会社）",
+      "shares": 35000,
+      "ratio": 2.24,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "千葉　鴻儀",
+      "shares": 33000,
+      "ratio": 2.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "長瀬産業株式会社",
+      "shares": 32000,
+      "ratio": 2.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "田中　洋二",
+      "shares": 30000,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社(常任代理人 株式会社日本カストディ銀行)",
+      "shares": 29000,
+      "ratio": 1.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 12.72,
+      "securities": 6.94,
+      "trust": 9.24,
+      "financial": 4.45,
+      "individual": 4.06,
+      "corporate": 2.08
+    },
+    "individual_total": 4.06,
+    "top10_total": 39.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第90期(2025/04/01－2026/03/31)",
+      "docID": "S100YGDM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本ピグメント取引先持株会",
+          "shares": 199000,
+          "ratio": 12.72,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 73000,
+          "ratio": 4.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行(常任代理人 株式会社日本カストディ銀行)",
+          "shares": 70000,
+          "ratio": 4.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社十六銀行",
+          "shares": 69000,
+          "ratio": 4.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口)",
+          "shares": 45000,
+          "ratio": 2.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Ｆｕｔｕ　Ｓｅｃｕｒｉｔｉｅｓ　Ｉｎｔｅｒｎａｔｉｏｎａｌ　（Ｈｏｎｇ　Ｋｏｎｇ）　Ｌｉｍｉｔｅｄ　（ｍｏｏｍｏｏ証券株式会社）",
+          "shares": 35000,
+          "ratio": 2.24,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "千葉　鴻儀",
+          "shares": 33000,
+          "ratio": 2.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "長瀬産業株式会社",
+          "shares": 32000,
+          "ratio": 2.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "田中　洋二",
+          "shares": 30000,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社(常任代理人 株式会社日本カストディ銀行)",
+          "shares": 29000,
+          "ratio": 1.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 12.72,
+          "securities": 6.94,
+          "trust": 9.24,
+          "financial": 4.45,
+          "individual": 4.06,
+          "corporate": 2.08
+        },
+        "individual_total": 4.06,
+        "top10_total": 39.49
+      }
+    }
+  ]
+}

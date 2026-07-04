@@ -1,0 +1,220 @@
+{
+  "secCode": "9882",
+  "issuerName": "株式会社イエローハット",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社幸栄企画",
+      "shares": 12549000,
+      "ratio": 14.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERTRUST TRUSTEES(CAYMAN)LIMITED SOLEL　Y IN ITS CAPACITY AS TRUSTEE OF JAPAN-UP(常任代理人:　　　株式会社みずほ銀行決済営業部)",
+      "shares": 8285000,
+      "ratio": 9.68,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7894000,
+      "ratio": 9.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "イエローハット共和会",
+      "shares": 5498000,
+      "ratio": 6.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "INTERTRUST TRUSTEES CAYMAN LIMITED AS TRUSTEE OF JAPAN-UP UNIT TRUST(常任代理人:立花証券株式会社)",
+      "shares": 3997000,
+      "ratio": 4.67,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本カストディ銀行（信託口）",
+      "shares": 2884000,
+      "ratio": 3.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鍵山 幸一郎",
+      "shares": 1576000,
+      "ratio": 1.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "住友ゴム工業株式会社",
+      "shares": 1247000,
+      "ratio": 1.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "横浜ゴム株式会社",
+      "shares": 1188000,
+      "ratio": 1.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ソフト９９コーポレーション",
+      "shares": 1186000,
+      "ratio": 1.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.91,
+      "financial": 9.68,
+      "trust": 12.6,
+      "individual": 8.27,
+      "securities": 4.67
+    },
+    "individual_total": 8.27,
+    "top10_total": 54.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YC2P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社幸栄企画",
+          "shares": 12549000,
+          "ratio": 14.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERTRUST TRUSTEES(CAYMAN)LIMITED SOLEL　Y IN ITS CAPACITY AS TRUSTEE OF JAPAN-UP(常任代理人:　　　株式会社みずほ銀行決済営業部)",
+          "shares": 8285000,
+          "ratio": 9.68,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7894000,
+          "ratio": 9.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "イエローハット共和会",
+          "shares": 5498000,
+          "ratio": 6.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "INTERTRUST TRUSTEES CAYMAN LIMITED AS TRUSTEE OF JAPAN-UP UNIT TRUST(常任代理人:立花証券株式会社)",
+          "shares": 3997000,
+          "ratio": 4.67,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本カストディ銀行（信託口）",
+          "shares": 2884000,
+          "ratio": 3.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鍵山 幸一郎",
+          "shares": 1576000,
+          "ratio": 1.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "住友ゴム工業株式会社",
+          "shares": 1247000,
+          "ratio": 1.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "横浜ゴム株式会社",
+          "shares": 1188000,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ソフト９９コーポレーション",
+          "shares": 1186000,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.91,
+          "financial": 9.68,
+          "trust": 12.6,
+          "individual": 8.27,
+          "securities": 4.67
+        },
+        "individual_total": 8.27,
+        "top10_total": 54.13
+      }
+    }
+  ]
+}

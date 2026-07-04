@@ -1,0 +1,220 @@
+{
+  "secCode": "1959",
+  "issuerName": "株式会社クラフティア",
+  "updated_at": "2026/07/04 18:40 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "九州電力株式会社",
+      "shares": 15980000,
+      "ratio": 22.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7215000,
+      "ratio": 10.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 5213000,
+      "ratio": 7.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 3249000,
+      "ratio": 4.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社福岡銀行",
+      "shares": 3133000,
+      "ratio": 4.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "クラフティア従業員持株会",
+      "shares": 1693000,
+      "ratio": 2.39,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BBH（LUX） FOR FIDELITY FUNDS - JAPAN ADVANTAGE POOL（常任代理人　株式会社三菱ＵＦＪ銀行決済事業部）",
+      "shares": 1485000,
+      "ratio": 2.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "クラフティアユニオン",
+      "shares": 1300000,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "西日本鉄道株式会社",
+      "shares": 1142000,
+      "ratio": 1.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1133000,
+      "ratio": 1.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 24.16,
+      "trust": 17.53,
+      "financial": 12.68,
+      "employee": 2.39,
+      "individual": 1.83
+    },
+    "individual_total": 1.83,
+    "top10_total": 58.59
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第98期(2025/04/01－2026/03/31)",
+      "docID": "S100YI0L",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "九州電力株式会社",
+          "shares": 15980000,
+          "ratio": 22.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7215000,
+          "ratio": 10.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 5213000,
+          "ratio": 7.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 3249000,
+          "ratio": 4.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社福岡銀行",
+          "shares": 3133000,
+          "ratio": 4.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "クラフティア従業員持株会",
+          "shares": 1693000,
+          "ratio": 2.39,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BBH（LUX） FOR FIDELITY FUNDS - JAPAN ADVANTAGE POOL（常任代理人　株式会社三菱ＵＦＪ銀行決済事業部）",
+          "shares": 1485000,
+          "ratio": 2.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "クラフティアユニオン",
+          "shares": 1300000,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "西日本鉄道株式会社",
+          "shares": 1142000,
+          "ratio": 1.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1133000,
+          "ratio": 1.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 24.16,
+          "trust": 17.53,
+          "financial": 12.68,
+          "employee": 2.39,
+          "individual": 1.83
+        },
+        "individual_total": 1.83,
+        "top10_total": 58.59
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "2329",
+  "issuerName": "株式会社東北新社",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "植村　久子",
+      "shares": 29148984,
+      "ratio": 21.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "3D WH OPPORTUNITY MASTER OFC - 3D WH OPPORTUNITY HOLDINGS\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 25727800,
+      "ratio": 18.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "植村　綾",
+      "shares": 22028133,
+      "ratio": 16.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社NAMC",
+      "shares": 10992000,
+      "ratio": 7.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社from B",
+      "shares": 10992000,
+      "ratio": 7.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "きらぼしキャピタル東京Sparkle投資事業有限責任組合",
+      "shares": 10392000,
+      "ratio": 7.55,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東北新社従業員持株会",
+      "shares": 3810664,
+      "ratio": 2.76,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "J.P. MORGAN SE - LUXEMBOURG BRANCH  381639\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2928000,
+      "ratio": 2.12,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2644000,
+      "ratio": 1.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "清原　達郎",
+      "shares": 2199500,
+      "ratio": 1.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.78,
+      "financial": 18.7,
+      "corporate": 15.96,
+      "other": 7.55,
+      "employee": 2.76,
+      "foreign": 4.04
+    },
+    "individual_total": 38.78,
+    "top10_total": 87.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100YKO9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "植村　久子",
+          "shares": 29148984,
+          "ratio": 21.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "3D WH OPPORTUNITY MASTER OFC - 3D WH OPPORTUNITY HOLDINGS\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 25727800,
+          "ratio": 18.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "植村　綾",
+          "shares": 22028133,
+          "ratio": 16.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社NAMC",
+          "shares": 10992000,
+          "ratio": 7.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社from B",
+          "shares": 10992000,
+          "ratio": 7.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "きらぼしキャピタル東京Sparkle投資事業有限責任組合",
+          "shares": 10392000,
+          "ratio": 7.55,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東北新社従業員持株会",
+          "shares": 3810664,
+          "ratio": 2.76,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "J.P. MORGAN SE - LUXEMBOURG BRANCH  381639\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2928000,
+          "ratio": 2.12,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2644000,
+          "ratio": 1.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "清原　達郎",
+          "shares": 2199500,
+          "ratio": 1.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.78,
+          "financial": 18.7,
+          "corporate": 15.96,
+          "other": 7.55,
+          "employee": 2.76,
+          "foreign": 4.04
+        },
+        "individual_total": 38.78,
+        "top10_total": 87.79
+      }
+    }
+  ]
+}

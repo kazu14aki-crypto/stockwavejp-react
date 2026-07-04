@@ -1,0 +1,218 @@
+{
+  "secCode": "8135",
+  "issuerName": "ゼット株式会社",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社眞徳",
+      "shares": 3863000,
+      "ratio": 19.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社みずほ銀行",
+      "shares": 970000,
+      "ratio": 4.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ゼット共栄会",
+      "shares": 955000,
+      "ratio": 4.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "渡辺　泰男",
+      "shares": 611000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ゼット持株会",
+      "shares": 503000,
+      "ratio": 2.57,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "渡辺　裕之",
+      "shares": 492000,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社タナベスポーツ",
+      "shares": 417000,
+      "ratio": 2.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 401000,
+      "ratio": 2.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社モルテン",
+      "shares": 397000,
+      "ratio": 2.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 333000,
+      "ratio": 1.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.89,
+      "financial": 8.72,
+      "individual": 10.52,
+      "employee": 2.57
+    },
+    "individual_total": 10.52,
+    "top10_total": 45.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YJPU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社眞徳",
+          "shares": 3863000,
+          "ratio": 19.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社みずほ銀行",
+          "shares": 970000,
+          "ratio": 4.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ゼット共栄会",
+          "shares": 955000,
+          "ratio": 4.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "渡辺　泰男",
+          "shares": 611000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ゼット持株会",
+          "shares": 503000,
+          "ratio": 2.57,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "渡辺　裕之",
+          "shares": 492000,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社タナベスポーツ",
+          "shares": 417000,
+          "ratio": 2.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 401000,
+          "ratio": 2.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社モルテン",
+          "shares": 397000,
+          "ratio": 2.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 333000,
+          "ratio": 1.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.89,
+          "financial": 8.72,
+          "individual": 10.52,
+          "employee": 2.57
+        },
+        "individual_total": 10.52,
+        "top10_total": 45.7
+      }
+    }
+  ]
+}

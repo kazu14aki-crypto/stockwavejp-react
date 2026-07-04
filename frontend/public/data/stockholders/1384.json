@@ -1,0 +1,220 @@
+{
+  "secCode": "1384",
+  "issuerName": "株式会社　ホクリヨウ",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ココリコ",
+      "shares": 3556000,
+      "ratio": 42.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社十文字チキンカンパニー",
+      "shares": 420000,
+      "ratio": 4.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "米山　惠子",
+      "shares": 263500,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "米山　大介",
+      "shares": 222800,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社北海道銀行",
+      "shares": 170000,
+      "ratio": 2.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社北陸銀行",
+      "shares": 132000,
+      "ratio": 1.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社北洋銀行",
+      "shares": 132000,
+      "ratio": 1.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "都丸　高志",
+      "shares": 83500,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大和証券株式会社",
+      "shares": 81400,
+      "ratio": 0.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG(FE-AC)（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 75441,
+      "ratio": 0.89,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 47.01,
+      "individual": 6.74,
+      "financial": 5.13,
+      "securities": 0.96,
+      "foreign": 0.89
+    },
+    "individual_total": 6.74,
+    "top10_total": 60.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YK1Y",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ココリコ",
+          "shares": 3556000,
+          "ratio": 42.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社十文字チキンカンパニー",
+          "shares": 420000,
+          "ratio": 4.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "米山　惠子",
+          "shares": 263500,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "米山　大介",
+          "shares": 222800,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社北海道銀行",
+          "shares": 170000,
+          "ratio": 2.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社北陸銀行",
+          "shares": 132000,
+          "ratio": 1.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社北洋銀行",
+          "shares": 132000,
+          "ratio": 1.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "都丸　高志",
+          "shares": 83500,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大和証券株式会社",
+          "shares": 81400,
+          "ratio": 0.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG(FE-AC)（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 75441,
+          "ratio": 0.89,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 47.01,
+          "individual": 6.74,
+          "financial": 5.13,
+          "securities": 0.96,
+          "foreign": 0.89
+        },
+        "individual_total": 6.74,
+        "top10_total": 60.73
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "9997",
+  "issuerName": "株式会社ベルーナ",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社フレンドステージ",
+      "shares": 41383000,
+      "ratio": 42.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4876000,
+      "ratio": 5.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "安　野　　　清",
+      "shares": 2916000,
+      "ratio": 3.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "安　野　　　公",
+      "shares": 2914000,
+      "ratio": 3.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2832000,
+      "ratio": 2.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 2246000,
+      "ratio": 2.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社（退職給付信託三菱ＵＦＪ銀行口）",
+      "shares": 1968000,
+      "ratio": 2.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ベルーナ共栄会",
+      "shares": 1688000,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口４）",
+      "shares": 1136000,
+      "ratio": 1.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ベルーナ従業員持株会",
+      "shares": 1013000,
+      "ratio": 1.05,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.99,
+      "trust": 11.22,
+      "individual": 7.8,
+      "financial": 2.33,
+      "employee": 1.05
+    },
+    "individual_total": 7.8,
+    "top10_total": 65.39
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ5M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社フレンドステージ",
+          "shares": 41383000,
+          "ratio": 42.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4876000,
+          "ratio": 5.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "安　野　　　清",
+          "shares": 2916000,
+          "ratio": 3.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "安　野　　　公",
+          "shares": 2914000,
+          "ratio": 3.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2832000,
+          "ratio": 2.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 2246000,
+          "ratio": 2.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社（退職給付信託三菱ＵＦＪ銀行口）",
+          "shares": 1968000,
+          "ratio": 2.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ベルーナ共栄会",
+          "shares": 1688000,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 1136000,
+          "ratio": 1.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ベルーナ従業員持株会",
+          "shares": 1013000,
+          "ratio": 1.05,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.99,
+          "trust": 11.22,
+          "individual": 7.8,
+          "financial": 2.33,
+          "employee": 1.05
+        },
+        "individual_total": 7.8,
+        "top10_total": 65.39
+      }
+    }
+  ]
+}

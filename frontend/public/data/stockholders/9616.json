@@ -1,0 +1,220 @@
+{
+  "secCode": "9616",
+  "issuerName": "株式会社共立メンテナンス",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱マイルストーン",
+      "shares": 8485000,
+      "ratio": 9.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱\n\n\n（信託口）",
+      "shares": 8056000,
+      "ratio": 8.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "一般財団法人共立国際交流奨学財団",
+      "shares": 4075000,
+      "ratio": 4.48,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "石塚　晴久",
+      "shares": 2117000,
+      "ratio": 2.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 1962000,
+      "ratio": 2.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱三井住友銀行",
+      "shares": 1585000,
+      "ratio": 1.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行㈱（投信口）",
+      "shares": 1524000,
+      "ratio": 1.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n\n\n（常任代理人　ゴールドマン・サックス証券㈱）",
+      "shares": 1218000,
+      "ratio": 1.34,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社\n\n\n（常任代理人　日本マスタートラスト信託銀行㈱）",
+      "shares": 1097000,
+      "ratio": 1.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 1021000,
+      "ratio": 1.12,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 11.65,
+      "trust": 13.88,
+      "foundation": 4.48,
+      "financial": 1.74,
+      "foreign": 2.46
+    },
+    "individual_total": 11.65,
+    "top10_total": 34.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第47期(2025/04/01－2026/03/31)",
+      "docID": "S100YIIM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱マイルストーン",
+          "shares": 8485000,
+          "ratio": 9.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱\n\n\n（信託口）",
+          "shares": 8056000,
+          "ratio": 8.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "一般財団法人共立国際交流奨学財団",
+          "shares": 4075000,
+          "ratio": 4.48,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "石塚　晴久",
+          "shares": 2117000,
+          "ratio": 2.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 1962000,
+          "ratio": 2.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱三井住友銀行",
+          "shares": 1585000,
+          "ratio": 1.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行㈱（投信口）",
+          "shares": 1524000,
+          "ratio": 1.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n\n\n（常任代理人　ゴールドマン・サックス証券㈱）",
+          "shares": 1218000,
+          "ratio": 1.34,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社\n\n\n（常任代理人　日本マスタートラスト信託銀行㈱）",
+          "shares": 1097000,
+          "ratio": 1.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 1021000,
+          "ratio": 1.12,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 11.65,
+          "trust": 13.88,
+          "foundation": 4.48,
+          "financial": 1.74,
+          "foreign": 2.46
+        },
+        "individual_total": 11.65,
+        "top10_total": 34.21
+      }
+    }
+  ]
+}

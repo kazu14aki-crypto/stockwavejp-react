@@ -1,0 +1,216 @@
+{
+  "secCode": "1848",
+  "issuerName": "株式会社富士ピー・エス",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "太平洋セメント株式会社",
+      "shares": 3221000,
+      "ratio": 17.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "住友電気工業株式会社",
+      "shares": 2383000,
+      "ratio": 13.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（退職給付信託口・九州電力株式会社及び九州電力送配電株式会社口）",
+      "shares": 2309000,
+      "ratio": 12.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "西日本鉄道株式会社",
+      "shares": 773000,
+      "ratio": 4.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "みずほ信託銀行株式会社退職給付信託神鋼鋼線工業口再信託受託者株式会社日本カストディ銀行",
+      "shares": 722000,
+      "ratio": 4.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日鉄ＳＧワイヤ株式会社",
+      "shares": 423000,
+      "ratio": 2.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 346000,
+      "ratio": 1.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社渡辺藤吉本店",
+      "shares": 267000,
+      "ratio": 1.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社福岡銀行",
+      "shares": 261000,
+      "ratio": 1.44,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 252000,
+      "ratio": 1.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.22,
+      "trust": 18.74,
+      "financial": 2.83
+    },
+    "individual_total": 0,
+    "top10_total": 60.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第74期(2025/04/01－2026/03/31)",
+      "docID": "S100YG4M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "太平洋セメント株式会社",
+          "shares": 3221000,
+          "ratio": 17.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "住友電気工業株式会社",
+          "shares": 2383000,
+          "ratio": 13.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（退職給付信託口・九州電力株式会社及び九州電力送配電株式会社口）",
+          "shares": 2309000,
+          "ratio": 12.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "西日本鉄道株式会社",
+          "shares": 773000,
+          "ratio": 4.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "みずほ信託銀行株式会社退職給付信託神鋼鋼線工業口再信託受託者株式会社日本カストディ銀行",
+          "shares": 722000,
+          "ratio": 4.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日鉄ＳＧワイヤ株式会社",
+          "shares": 423000,
+          "ratio": 2.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 346000,
+          "ratio": 1.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社渡辺藤吉本店",
+          "shares": 267000,
+          "ratio": 1.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社福岡銀行",
+          "shares": 261000,
+          "ratio": 1.44,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 252000,
+          "ratio": 1.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.22,
+          "trust": 18.74,
+          "financial": 2.83
+        },
+        "individual_total": 0,
+        "top10_total": 60.79
+      }
+    }
+  ]
+}

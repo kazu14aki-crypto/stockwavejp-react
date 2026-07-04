@@ -1,0 +1,218 @@
+{
+  "secCode": "2351",
+  "issuerName": "株式会社ＡＳＪ",
+  "updated_at": "2026/07/04 18:40 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "丸山　治昭",
+      "shares": 1971900,
+      "ratio": 25.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "公益財団法人ＡＳＪ財団",
+      "shares": 1192700,
+      "ratio": 15.29,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 287513,
+      "ratio": 3.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 136300,
+      "ratio": 1.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田村　公一",
+      "shares": 119600,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "青木　邦哲",
+      "shares": 117900,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社埼玉りそな銀行",
+      "shares": 113600,
+      "ratio": 1.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "堀　正明",
+      "shares": 90400,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "黒岩　潤司",
+      "shares": 90300,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "丸山　德廣",
+      "shares": 85000,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 31.72,
+      "foundation": 15.29,
+      "securities": 3.69,
+      "financial": 3.21
+    },
+    "individual_total": 31.72,
+    "top10_total": 53.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/04/01－2026/03/31)",
+      "docID": "S100YHBT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "丸山　治昭",
+          "shares": 1971900,
+          "ratio": 25.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "公益財団法人ＡＳＪ財団",
+          "shares": 1192700,
+          "ratio": 15.29,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 287513,
+          "ratio": 3.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 136300,
+          "ratio": 1.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田村　公一",
+          "shares": 119600,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "青木　邦哲",
+          "shares": 117900,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社埼玉りそな銀行",
+          "shares": 113600,
+          "ratio": 1.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "堀　正明",
+          "shares": 90400,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "黒岩　潤司",
+          "shares": 90300,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "丸山　德廣",
+          "shares": 85000,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 31.72,
+          "foundation": 15.29,
+          "securities": 3.69,
+          "financial": 3.21
+        },
+        "individual_total": 31.72,
+        "top10_total": 53.91
+      }
+    }
+  ]
+}

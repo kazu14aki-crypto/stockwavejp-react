@@ -1,0 +1,220 @@
+{
+  "secCode": "6317",
+  "issuerName": "株式会社北川鉄工所",
+  "updated_at": "2026/07/04 17:57 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 815000,
+      "ratio": 8.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "北川鉄工所みのり会",
+      "shares": 748000,
+      "ratio": 8.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ （常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 483000,
+      "ratio": 5.23,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社広島銀行",
+      "shares": 446000,
+      "ratio": 4.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 230000,
+      "ratio": 2.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "北川鉄工所自社株投資会",
+      "shares": 229000,
+      "ratio": 2.48,
+      "category": "treasury",
+      "category_label": "自己株式",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "秋元　利規",
+      "shares": 200000,
+      "ratio": 2.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 176000,
+      "ratio": 1.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "朝日生命保険相互会社",
+      "shares": 171000,
+      "ratio": 1.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "北川　祐治",
+      "shares": 143000,
+      "ratio": 1.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 10.71,
+      "individual": 11.8,
+      "securities": 5.23,
+      "financial": 9.16,
+      "treasury": 2.48
+    },
+    "individual_total": 11.8,
+    "top10_total": 39.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第116期(2025/04/01－2026/03/31)",
+      "docID": "S100YHUP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 815000,
+          "ratio": 8.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "北川鉄工所みのり会",
+          "shares": 748000,
+          "ratio": 8.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ （常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 483000,
+          "ratio": 5.23,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社広島銀行",
+          "shares": 446000,
+          "ratio": 4.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 230000,
+          "ratio": 2.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "北川鉄工所自社株投資会",
+          "shares": 229000,
+          "ratio": 2.48,
+          "category": "treasury",
+          "category_label": "自己株式",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "秋元　利規",
+          "shares": 200000,
+          "ratio": 2.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 176000,
+          "ratio": 1.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "朝日生命保険相互会社",
+          "shares": 171000,
+          "ratio": 1.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "北川　祐治",
+          "shares": 143000,
+          "ratio": 1.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 10.71,
+          "individual": 11.8,
+          "securities": 5.23,
+          "financial": 9.16,
+          "treasury": 2.48
+        },
+        "individual_total": 11.8,
+        "top10_total": 39.38
+      }
+    }
+  ]
+}

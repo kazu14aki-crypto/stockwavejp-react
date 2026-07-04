@@ -1,0 +1,220 @@
+{
+  "secCode": "6436",
+  "issuerName": "アマノ株式会社",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行(株)(信託口)",
+      "shares": 8772000,
+      "ratio": 12.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "(公財)天野工業技術研究所",
+      "shares": 6071000,
+      "ratio": 8.68,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "(株)日本カストディ銀行(信託口)",
+      "shares": 4209000,
+      "ratio": 6.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "第一生命保険(株)",
+      "shares": 3940000,
+      "ratio": 5.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険(相)",
+      "shares": 3743000,
+      "ratio": 5.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUSTCOMPANY 505001 (常任代理人 (株)みずほ銀行)",
+      "shares": 2120000,
+      "ratio": 3.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "(株)みずほ銀行",
+      "shares": 1624000,
+      "ratio": 2.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東京海上日動火災保険(株)",
+      "shares": 1585000,
+      "ratio": 2.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "(株)三菱UFJ銀行",
+      "shares": 1470000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUSTCOMPANY 505103 (常任代理人 (株)みずほ銀行)",
+      "shares": 930000,
+      "ratio": 1.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.56,
+      "other": 8.68,
+      "financial": 15.4,
+      "foreign": 4.36,
+      "corporate": 2.27
+    },
+    "individual_total": 0,
+    "top10_total": 49.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第110期(2025/04/01－2026/03/31)",
+      "docID": "S100YJFL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行(株)(信託口)",
+          "shares": 8772000,
+          "ratio": 12.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "(公財)天野工業技術研究所",
+          "shares": 6071000,
+          "ratio": 8.68,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "(株)日本カストディ銀行(信託口)",
+          "shares": 4209000,
+          "ratio": 6.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "第一生命保険(株)",
+          "shares": 3940000,
+          "ratio": 5.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険(相)",
+          "shares": 3743000,
+          "ratio": 5.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUSTCOMPANY 505001 (常任代理人 (株)みずほ銀行)",
+          "shares": 2120000,
+          "ratio": 3.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "(株)みずほ銀行",
+          "shares": 1624000,
+          "ratio": 2.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東京海上日動火災保険(株)",
+          "shares": 1585000,
+          "ratio": 2.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "(株)三菱UFJ銀行",
+          "shares": 1470000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUSTCOMPANY 505103 (常任代理人 (株)みずほ銀行)",
+          "shares": 930000,
+          "ratio": 1.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.56,
+          "other": 8.68,
+          "financial": 15.4,
+          "foreign": 4.36,
+          "corporate": 2.27
+        },
+        "individual_total": 0,
+        "top10_total": 49.27
+      }
+    }
+  ]
+}

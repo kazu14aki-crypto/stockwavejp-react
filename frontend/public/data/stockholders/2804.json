@@ -1,0 +1,218 @@
+{
+  "secCode": "2804",
+  "issuerName": "ブルドックソース株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 794000,
+      "ratio": 6.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "興和株式会社",
+      "shares": 720000,
+      "ratio": 5.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ブルドック持株会",
+      "shares": 569000,
+      "ratio": 4.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "佐藤食品工業株式会社",
+      "shares": 467000,
+      "ratio": 3.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社",
+      "shares": 441000,
+      "ratio": 3.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "養命酒製造株式会社",
+      "shares": 372000,
+      "ratio": 2.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社福岡銀行",
+      "shares": 372000,
+      "ratio": 2.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ウェルネオシュガー株式会社",
+      "shares": 293000,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社あいち銀行",
+      "shares": 260000,
+      "ratio": 2.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社テクノ菱和",
+      "shares": 240000,
+      "ratio": 1.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 6.22,
+      "corporate": 16.4,
+      "employee": 4.46,
+      "financial": 8.42
+    },
+    "individual_total": 0,
+    "top10_total": 35.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第101期(2025/04/01－2026/03/31)",
+      "docID": "S100YGZB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 794000,
+          "ratio": 6.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "興和株式会社",
+          "shares": 720000,
+          "ratio": 5.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ブルドック持株会",
+          "shares": 569000,
+          "ratio": 4.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "佐藤食品工業株式会社",
+          "shares": 467000,
+          "ratio": 3.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社",
+          "shares": 441000,
+          "ratio": 3.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "養命酒製造株式会社",
+          "shares": 372000,
+          "ratio": 2.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社福岡銀行",
+          "shares": 372000,
+          "ratio": 2.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ウェルネオシュガー株式会社",
+          "shares": 293000,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社あいち銀行",
+          "shares": 260000,
+          "ratio": 2.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社テクノ菱和",
+          "shares": 240000,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 6.22,
+          "corporate": 16.4,
+          "employee": 4.46,
+          "financial": 8.42
+        },
+        "individual_total": 0,
+        "top10_total": 35.5
+      }
+    }
+  ]
+}

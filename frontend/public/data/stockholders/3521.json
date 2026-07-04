@@ -1,0 +1,212 @@
+{
+  "secCode": "3521",
+  "issuerName": "テルマー湯ホールディングス株式会社",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ウェブ",
+      "shares": 2551000,
+      "ratio": 9.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社船橋カントリー倶楽部",
+      "shares": 1820000,
+      "ratio": 6.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ロイヤル観光有限会社",
+      "shares": 1775000,
+      "ratio": 6.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＮＦＫホールディングス",
+      "shares": 1530000,
+      "ratio": 5.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社トーテム",
+      "shares": 1287000,
+      "ratio": 4.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社広共コーポレーション",
+      "shares": 1182000,
+      "ratio": 4.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "伊豆シャボテンリゾート株式会社",
+      "shares": 1020000,
+      "ratio": 3.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社ＭＢＬ",
+      "shares": 650000,
+      "ratio": 2.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社広共",
+      "shares": 540000,
+      "ratio": 2.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東拓観光有限会社",
+      "shares": 377000,
+      "ratio": 1.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.1
+    },
+    "individual_total": 0,
+    "top10_total": 48.1
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第146期(2025/04/01－2026/03/31)",
+      "docID": "S100YMXL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ウェブ",
+          "shares": 2551000,
+          "ratio": 9.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社船橋カントリー倶楽部",
+          "shares": 1820000,
+          "ratio": 6.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ロイヤル観光有限会社",
+          "shares": 1775000,
+          "ratio": 6.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＮＦＫホールディングス",
+          "shares": 1530000,
+          "ratio": 5.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社トーテム",
+          "shares": 1287000,
+          "ratio": 4.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社広共コーポレーション",
+          "shares": 1182000,
+          "ratio": 4.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "伊豆シャボテンリゾート株式会社",
+          "shares": 1020000,
+          "ratio": 3.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社ＭＢＬ",
+          "shares": 650000,
+          "ratio": 2.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社広共",
+          "shares": 540000,
+          "ratio": 2.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東拓観光有限会社",
+          "shares": 377000,
+          "ratio": 1.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.1
+        },
+        "individual_total": 0,
+        "top10_total": 48.1
+      }
+    }
+  ]
+}

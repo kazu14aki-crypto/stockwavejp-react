@@ -1,0 +1,218 @@
+{
+  "secCode": "6248",
+  "issuerName": "株式会社横田製作所",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一般社団法人ヨコタ",
+      "shares": 612000,
+      "ratio": 32.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 120000,
+      "ratio": 6.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "広島信用金庫",
+      "shares": 120000,
+      "ratio": 6.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "横　田　征　子",
+      "shares": 108000,
+      "ratio": 5.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "横田製作所従業員持株会",
+      "shares": 100000,
+      "ratio": 5.36,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "新　海　秀　治",
+      "shares": 55000,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "石　田　　　勇",
+      "shares": 44000,
+      "ratio": 2.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三　浦　治　子",
+      "shares": 40000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "田　中　尚　子",
+      "shares": 40000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大地みらい信用金庫",
+      "shares": 22000,
+      "ratio": 1.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 48.22,
+      "other": 6.44,
+      "financial": 7.62,
+      "employee": 5.36
+    },
+    "individual_total": 48.22,
+    "top10_total": 67.64
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第73期(2025/04/01－2026/03/31)",
+      "docID": "S100YETX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一般社団法人ヨコタ",
+          "shares": 612000,
+          "ratio": 32.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 120000,
+          "ratio": 6.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "広島信用金庫",
+          "shares": 120000,
+          "ratio": 6.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "横　田　征　子",
+          "shares": 108000,
+          "ratio": 5.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "横田製作所従業員持株会",
+          "shares": 100000,
+          "ratio": 5.36,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "新　海　秀　治",
+          "shares": 55000,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "石　田　　　勇",
+          "shares": 44000,
+          "ratio": 2.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三　浦　治　子",
+          "shares": 40000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "田　中　尚　子",
+          "shares": 40000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大地みらい信用金庫",
+          "shares": 22000,
+          "ratio": 1.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 48.22,
+          "other": 6.44,
+          "financial": 7.62,
+          "employee": 5.36
+        },
+        "individual_total": 48.22,
+        "top10_total": 67.64
+      }
+    }
+  ]
+}

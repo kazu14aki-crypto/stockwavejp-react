@@ -1,0 +1,220 @@
+{
+  "secCode": "5408",
+  "issuerName": "株式会社中山製鋼所",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "阪和興業株式会社",
+      "shares": 8058000,
+      "ratio": 14.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "エア・ウォーター株式会社",
+      "shares": 4729000,
+      "ratio": 8.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）（注）",
+      "shares": 3836000,
+      "ratio": 7.07,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大阪瓦斯株式会社",
+      "shares": 1923000,
+      "ratio": 3.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "丸一鋼管株式会社",
+      "shares": 1300000,
+      "ratio": 2.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "尼崎製罐株式会社",
+      "shares": 1274000,
+      "ratio": 2.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNYMSANV RE BNYMIL RE WS ZENNOR JAPAN EQUITY INCOME FUND(常任代理人 株式会社三菱UFJ銀行)",
+      "shares": 1058000,
+      "ratio": 1.95,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中山持株共栄会",
+      "shares": 859000,
+      "ratio": 1.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "日鉄物産株式会社",
+      "shares": 815000,
+      "ratio": 1.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "DIMENSIONAL ETF TRUST-DIMENSIONAL INTERNATIONAL SMALL CAP VALUE ETF(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 598000,
+      "ratio": 1.1,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.36,
+      "trust": 7.07,
+      "foreign": 1.95,
+      "individual": 1.58,
+      "other": 1.1
+    },
+    "individual_total": 1.58,
+    "top10_total": 45.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第132期(2025/04/01－2026/03/31)",
+      "docID": "S100YIVA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "阪和興業株式会社",
+          "shares": 8058000,
+          "ratio": 14.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "エア・ウォーター株式会社",
+          "shares": 4729000,
+          "ratio": 8.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）（注）",
+          "shares": 3836000,
+          "ratio": 7.07,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大阪瓦斯株式会社",
+          "shares": 1923000,
+          "ratio": 3.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "丸一鋼管株式会社",
+          "shares": 1300000,
+          "ratio": 2.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "尼崎製罐株式会社",
+          "shares": 1274000,
+          "ratio": 2.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNYMSANV RE BNYMIL RE WS ZENNOR JAPAN EQUITY INCOME FUND(常任代理人 株式会社三菱UFJ銀行)",
+          "shares": 1058000,
+          "ratio": 1.95,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中山持株共栄会",
+          "shares": 859000,
+          "ratio": 1.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "日鉄物産株式会社",
+          "shares": 815000,
+          "ratio": 1.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "DIMENSIONAL ETF TRUST-DIMENSIONAL INTERNATIONAL SMALL CAP VALUE ETF(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 598000,
+          "ratio": 1.1,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.36,
+          "trust": 7.07,
+          "foreign": 1.95,
+          "individual": 1.58,
+          "other": 1.1
+        },
+        "individual_total": 1.58,
+        "top10_total": 45.06
+      }
+    }
+  ]
+}

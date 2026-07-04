@@ -1,0 +1,216 @@
+{
+  "secCode": "4667",
+  "issuerName": "アイサンテクノロジー株式会社",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "加藤　清久",
+      "shares": 554000,
+      "ratio": 10.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三菱電機株式会社",
+      "shares": 350000,
+      "ratio": 6.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＫＤＤＩ株式会社",
+      "shares": 280000,
+      "ratio": 5.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "有限会社アット",
+      "shares": 254000,
+      "ratio": 4.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "佐々木　薫",
+      "shares": 200000,
+      "ratio": 3.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "安藤　和久",
+      "shares": 120000,
+      "ratio": 2.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "各務　正人",
+      "shares": 103000,
+      "ratio": 1.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社タイムチケット",
+      "shares": 101000,
+      "ratio": 1.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "加藤　淳",
+      "shares": 84000,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "アイサンテクノロジー従業員持株会",
+      "shares": 69000,
+      "ratio": 1.32,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 20.11,
+      "corporate": 18.65,
+      "employee": 1.32
+    },
+    "individual_total": 20.11,
+    "top10_total": 40.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第56期(2025/04/01－2026/03/31)",
+      "docID": "S100YBI7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "加藤　清久",
+          "shares": 554000,
+          "ratio": 10.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三菱電機株式会社",
+          "shares": 350000,
+          "ratio": 6.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＫＤＤＩ株式会社",
+          "shares": 280000,
+          "ratio": 5.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "有限会社アット",
+          "shares": 254000,
+          "ratio": 4.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "佐々木　薫",
+          "shares": 200000,
+          "ratio": 3.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "安藤　和久",
+          "shares": 120000,
+          "ratio": 2.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "各務　正人",
+          "shares": 103000,
+          "ratio": 1.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社タイムチケット",
+          "shares": 101000,
+          "ratio": 1.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "加藤　淳",
+          "shares": 84000,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "アイサンテクノロジー従業員持株会",
+          "shares": 69000,
+          "ratio": 1.32,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 20.11,
+          "corporate": 18.65,
+          "employee": 1.32
+        },
+        "individual_total": 20.11,
+        "top10_total": 40.08
+      }
+    }
+  ]
+}

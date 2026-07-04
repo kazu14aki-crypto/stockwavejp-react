@@ -1,0 +1,220 @@
+{
+  "secCode": "7987",
+  "issuerName": "ナカバヤシ株式会社",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "フエル共益会",
+      "shares": 2387000,
+      "ratio": 8.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2173000,
+      "ratio": 8.01,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "第一生命保険株式会社",
+      "shares": 2108000,
+      "ratio": 7.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ナカバヤシ従業員持株会",
+      "shares": 1260000,
+      "ratio": 4.64,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社りそな銀行",
+      "shares": 997000,
+      "ratio": 3.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 765000,
+      "ratio": 2.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 477000,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "住友生命保険相互会社",
+      "shares": 458000,
+      "ratio": 1.68,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ODKソリューションズ",
+      "shares": 413000,
+      "ratio": 1.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "SECカーボン株式会社",
+      "shares": 361000,
+      "ratio": 1.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 8.8,
+      "trust": 10.83,
+      "financial": 14.88,
+      "employee": 4.64,
+      "corporate": 2.85
+    },
+    "individual_total": 8.8,
+    "top10_total": 42.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YKAO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "フエル共益会",
+          "shares": 2387000,
+          "ratio": 8.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2173000,
+          "ratio": 8.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "第一生命保険株式会社",
+          "shares": 2108000,
+          "ratio": 7.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ナカバヤシ従業員持株会",
+          "shares": 1260000,
+          "ratio": 4.64,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社りそな銀行",
+          "shares": 997000,
+          "ratio": 3.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 765000,
+          "ratio": 2.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 477000,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "住友生命保険相互会社",
+          "shares": 458000,
+          "ratio": 1.68,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ODKソリューションズ",
+          "shares": 413000,
+          "ratio": 1.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "SECカーボン株式会社",
+          "shares": 361000,
+          "ratio": 1.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 8.8,
+          "trust": 10.83,
+          "financial": 14.88,
+          "employee": 4.64,
+          "corporate": 2.85
+        },
+        "individual_total": 8.8,
+        "top10_total": 42.0
+      }
+    }
+  ]
+}

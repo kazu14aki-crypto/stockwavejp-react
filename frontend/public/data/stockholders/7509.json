@@ -1,0 +1,214 @@
+{
+  "secCode": "7509",
+  "issuerName": "アイエーグループ株式会社",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社草創",
+      "shares": 580400000,
+      "ratio": 39.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＳＮホールディングス",
+      "shares": 57000000,
+      "ratio": 3.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "内　藤　征　吾",
+      "shares": 48700000,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "古　川　教　行",
+      "shares": 48580000,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "古　川　恵　子",
+      "shares": 48360000,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小　黒　良太郎",
+      "shares": 46800000,
+      "ratio": 3.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡　　　秀　朋",
+      "shares": 38100000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社オートバックスセブン",
+      "shares": 36000000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上田八木短資株式会社",
+      "shares": 31200000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小　黒　美樹子",
+      "shares": 30600000,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.3,
+      "individual": 17.8
+    },
+    "individual_total": 17.8,
+    "top10_total": 66.1
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/04/01－2026/03/31)",
+      "docID": "S100YGK3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社草創",
+          "shares": 580400000,
+          "ratio": 39.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＳＮホールディングス",
+          "shares": 57000000,
+          "ratio": 3.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "内　藤　征　吾",
+          "shares": 48700000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "古　川　教　行",
+          "shares": 48580000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "古　川　恵　子",
+          "shares": 48360000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小　黒　良太郎",
+          "shares": 46800000,
+          "ratio": 3.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡　　　秀　朋",
+          "shares": 38100000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社オートバックスセブン",
+          "shares": 36000000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上田八木短資株式会社",
+          "shares": 31200000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小　黒　美樹子",
+          "shares": 30600000,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.3,
+          "individual": 17.8
+        },
+        "individual_total": 17.8,
+        "top10_total": 66.1
+      }
+    }
+  ]
+}

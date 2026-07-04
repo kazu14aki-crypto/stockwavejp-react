@@ -1,0 +1,220 @@
+{
+  "secCode": "6027",
+  "issuerName": "弁護士ドットコム株式会社",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Authense Holdings合同会社",
+      "shares": 9824000,
+      "ratio": 42.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "元榮　太一郎",
+      "shares": 4574000,
+      "ratio": 20.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1269000,
+      "ratio": 5.55,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "THE BANK OF NEW YORK MELLON 140051（常任代理人）株式会社みずほ銀行",
+      "shares": 512000,
+      "ratio": 2.24,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE BANK OF NEW YORK 133652（常任代理人）株式会社みずほ銀行",
+      "shares": 480000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "THE BANK OF NEW YORK 133595（常任代理人）株式会社みずほ銀行",
+      "shares": 380000,
+      "ratio": 1.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "JP MORGAN CHASE BANK 385839（常任代理人）株式会社みずほ銀行",
+      "shares": 358000,
+      "ratio": 1.57,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK 133612（常任代理人）株式会社みずほ銀行",
+      "shares": 332000,
+      "ratio": 1.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 294000,
+      "ratio": 1.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON 140040（常任代理人）株式会社みずほ銀行",
+      "shares": 256000,
+      "ratio": 1.12,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.97,
+      "individual": 20.01,
+      "trust": 6.84,
+      "foreign": 4.93,
+      "financial": 5.22
+    },
+    "individual_total": 20.01,
+    "top10_total": 79.97
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YFWI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Authense Holdings合同会社",
+          "shares": 9824000,
+          "ratio": 42.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "元榮　太一郎",
+          "shares": 4574000,
+          "ratio": 20.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1269000,
+          "ratio": 5.55,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "THE BANK OF NEW YORK MELLON 140051（常任代理人）株式会社みずほ銀行",
+          "shares": 512000,
+          "ratio": 2.24,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE BANK OF NEW YORK 133652（常任代理人）株式会社みずほ銀行",
+          "shares": 480000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "THE BANK OF NEW YORK 133595（常任代理人）株式会社みずほ銀行",
+          "shares": 380000,
+          "ratio": 1.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "JP MORGAN CHASE BANK 385839（常任代理人）株式会社みずほ銀行",
+          "shares": 358000,
+          "ratio": 1.57,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK 133612（常任代理人）株式会社みずほ銀行",
+          "shares": 332000,
+          "ratio": 1.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 294000,
+          "ratio": 1.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON 140040（常任代理人）株式会社みずほ銀行",
+          "shares": 256000,
+          "ratio": 1.12,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.97,
+          "individual": 20.01,
+          "trust": 6.84,
+          "foreign": 4.93,
+          "financial": 5.22
+        },
+        "individual_total": 20.01,
+        "top10_total": 79.97
+      }
+    }
+  ]
+}

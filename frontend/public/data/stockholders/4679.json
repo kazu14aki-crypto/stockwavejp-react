@@ -1,0 +1,218 @@
+{
+  "secCode": "4679",
+  "issuerName": "株式会社　田　谷",
+  "updated_at": "2026/07/04 18:51 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ティーズ",
+      "shares": 1077000,
+      "ratio": 14.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 715000,
+      "ratio": 9.62,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "L&Y貿易株式会社",
+      "shares": 600000,
+      "ratio": 8.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ランニング",
+      "shares": 600000,
+      "ratio": 8.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "CITIBANK HONG KONG PBG CLIENTS H.K（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 600000,
+      "ratio": 8.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "田谷　千秋",
+      "shares": 155000,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社赤城自動車教習所",
+      "shares": 136000,
+      "ratio": 1.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "榊原　卓丸",
+      "shares": 120000,
+      "ratio": 1.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "田谷　和正",
+      "shares": 81000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社",
+      "shares": 39000,
+      "ratio": 0.53,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.45,
+      "securities": 10.15,
+      "foreign": 8.07,
+      "individual": 4.8
+    },
+    "individual_total": 4.8,
+    "top10_total": 55.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第52期(2025/04/01－2026/03/31)",
+      "docID": "S100YFEW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ティーズ",
+          "shares": 1077000,
+          "ratio": 14.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 715000,
+          "ratio": 9.62,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "L&Y貿易株式会社",
+          "shares": 600000,
+          "ratio": 8.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ランニング",
+          "shares": 600000,
+          "ratio": 8.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "CITIBANK HONG KONG PBG CLIENTS H.K（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 600000,
+          "ratio": 8.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "田谷　千秋",
+          "shares": 155000,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社赤城自動車教習所",
+          "shares": 136000,
+          "ratio": 1.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "榊原　卓丸",
+          "shares": 120000,
+          "ratio": 1.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "田谷　和正",
+          "shares": 81000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社",
+          "shares": 39000,
+          "ratio": 0.53,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.45,
+          "securities": 10.15,
+          "foreign": 8.07,
+          "individual": 4.8
+        },
+        "individual_total": 4.8,
+        "top10_total": 55.47
+      }
+    }
+  ]
+}

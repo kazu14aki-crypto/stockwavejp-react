@@ -1,0 +1,222 @@
+{
+  "secCode": "6018",
+  "issuerName": "阪神内燃機工業株式会社",
+  "updated_at": "2026/07/04 17:58 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人ゴールドマン・サックス証券株式会社）",
+      "shares": 269000,
+      "ratio": 8.32,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "阪神ディーゼル取引先持株会",
+      "shares": 225000,
+      "ratio": 6.95,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社オゾネ",
+      "shares": 202000,
+      "ratio": 6.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 158000,
+      "ratio": 4.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社アンダーウッド",
+      "shares": 147000,
+      "ratio": 4.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "木 下 和 彦",
+      "shares": 102000,
+      "ratio": 3.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ノザワ",
+      "shares": 93000,
+      "ratio": 2.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "玉 越 裕 美 子",
+      "shares": 92000,
+      "ratio": 2.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "京阪神興業株式会社",
+      "shares": 90000,
+      "ratio": 2.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 82000,
+      "ratio": 2.55,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 8.32,
+      "employee": 6.95,
+      "corporate": 16.42,
+      "financial": 4.87,
+      "individual": 6.0,
+      "other": 2.55
+    },
+    "individual_total": 6.0,
+    "top10_total": 45.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第161期(2025/04/01－2026/03/31)",
+      "docID": "S100YJVP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人ゴールドマン・サックス証券株式会社）",
+          "shares": 269000,
+          "ratio": 8.32,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "阪神ディーゼル取引先持株会",
+          "shares": 225000,
+          "ratio": 6.95,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社オゾネ",
+          "shares": 202000,
+          "ratio": 6.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 158000,
+          "ratio": 4.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社アンダーウッド",
+          "shares": 147000,
+          "ratio": 4.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "木 下 和 彦",
+          "shares": 102000,
+          "ratio": 3.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ノザワ",
+          "shares": 93000,
+          "ratio": 2.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "玉 越 裕 美 子",
+          "shares": 92000,
+          "ratio": 2.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "京阪神興業株式会社",
+          "shares": 90000,
+          "ratio": 2.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 82000,
+          "ratio": 2.55,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 8.32,
+          "employee": 6.95,
+          "corporate": 16.42,
+          "financial": 4.87,
+          "individual": 6.0,
+          "other": 2.55
+        },
+        "individual_total": 6.0,
+        "top10_total": 45.11
+      }
+    }
+  ]
+}

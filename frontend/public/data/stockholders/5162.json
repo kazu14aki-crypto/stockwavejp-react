@@ -1,0 +1,220 @@
+{
+  "secCode": "5162",
+  "issuerName": "株式会社朝日ラバー",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社伊藤コーポレーション",
+      "shares": 477000,
+      "ratio": 10.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "晋文金属株式会社",
+      "shares": 343000,
+      "ratio": 7.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "朝日ラバ―従業員持株会",
+      "shares": 243000,
+      "ratio": 5.29,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "佐藤　尚美",
+      "shares": 228000,
+      "ratio": 4.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "朝日ラバー共栄持株会",
+      "shares": 223000,
+      "ratio": 4.83,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 222000,
+      "ratio": 4.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社東邦銀行",
+      "shares": 207000,
+      "ratio": 4.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社武蔵野銀行",
+      "shares": 196000,
+      "ratio": 4.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "黄　聖博",
+      "shares": 139000,
+      "ratio": 3.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "横山　林吉",
+      "shares": 138000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.78,
+      "employee": 10.12,
+      "individual": 10.97,
+      "trust": 4.82,
+      "financial": 8.75
+    },
+    "individual_total": 10.97,
+    "top10_total": 52.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第56期(2025/04/01－2026/03/31)",
+      "docID": "S100YKQB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社伊藤コーポレーション",
+          "shares": 477000,
+          "ratio": 10.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "晋文金属株式会社",
+          "shares": 343000,
+          "ratio": 7.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "朝日ラバ―従業員持株会",
+          "shares": 243000,
+          "ratio": 5.29,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "佐藤　尚美",
+          "shares": 228000,
+          "ratio": 4.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "朝日ラバー共栄持株会",
+          "shares": 223000,
+          "ratio": 4.83,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 222000,
+          "ratio": 4.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社東邦銀行",
+          "shares": 207000,
+          "ratio": 4.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社武蔵野銀行",
+          "shares": 196000,
+          "ratio": 4.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "黄　聖博",
+          "shares": 139000,
+          "ratio": 3.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "横山　林吉",
+          "shares": 138000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.78,
+          "employee": 10.12,
+          "individual": 10.97,
+          "trust": 4.82,
+          "financial": 8.75
+        },
+        "individual_total": 10.97,
+        "top10_total": 52.44
+      }
+    }
+  ]
+}

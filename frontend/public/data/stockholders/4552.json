@@ -1,0 +1,220 @@
+{
+  "secCode": "4552",
+  "issuerName": "ＪＣＲファーマ株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社メディパルホールディングス",
+      "shares": 29131000,
+      "ratio": 23.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 9273000,
+      "ratio": 7.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "フューチャーブレーン株式会社",
+      "shares": 8711000,
+      "ratio": 7.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野村信託銀行株式会社（Ａ信託口）",
+      "shares": 5498000,
+      "ratio": 4.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 5169000,
+      "ratio": 4.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "キッセイ薬品工業株式会社",
+      "shares": 4918000,
+      "ratio": 4.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "持田製薬株式会社",
+      "shares": 2200000,
+      "ratio": 1.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ゴールドマン・サックス証券株式会社BNYM\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 1527000,
+      "ratio": 1.24,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉村　光司",
+      "shares": 1500000,
+      "ratio": 1.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＣＲファーマ従業員持株会",
+      "shares": 1489000,
+      "ratio": 1.21,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.77,
+      "trust": 16.29,
+      "foreign": 1.24,
+      "individual": 1.22,
+      "employee": 1.21
+    },
+    "individual_total": 1.22,
+    "top10_total": 56.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/04/01－2026/03/31)",
+      "docID": "S100YF19",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社メディパルホールディングス",
+          "shares": 29131000,
+          "ratio": 23.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 9273000,
+          "ratio": 7.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "フューチャーブレーン株式会社",
+          "shares": 8711000,
+          "ratio": 7.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野村信託銀行株式会社（Ａ信託口）",
+          "shares": 5498000,
+          "ratio": 4.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 5169000,
+          "ratio": 4.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "キッセイ薬品工業株式会社",
+          "shares": 4918000,
+          "ratio": 4.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "持田製薬株式会社",
+          "shares": 2200000,
+          "ratio": 1.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ゴールドマン・サックス証券株式会社BNYM\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 1527000,
+          "ratio": 1.24,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉村　光司",
+          "shares": 1500000,
+          "ratio": 1.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＣＲファーマ従業員持株会",
+          "shares": 1489000,
+          "ratio": 1.21,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.77,
+          "trust": 16.29,
+          "foreign": 1.24,
+          "individual": 1.22,
+          "employee": 1.21
+        },
+        "individual_total": 1.22,
+        "top10_total": 56.73
+      }
+    }
+  ]
+}

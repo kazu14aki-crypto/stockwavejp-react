@@ -1,0 +1,218 @@
+{
+  "secCode": "1892",
+  "issuerName": "徳倉建設株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "徳友会グループ持株会",
+      "shares": 207000,
+      "ratio": 9.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 133000,
+      "ratio": 6.29,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三徳物産株式会社",
+      "shares": 124000,
+      "ratio": 5.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+      "shares": 121000,
+      "ratio": 5.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 101000,
+      "ratio": 4.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本生命保険相互会社",
+      "shares": 79000,
+      "ratio": 3.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 70000,
+      "ratio": 3.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大成ホールディングス株式会社",
+      "shares": 63000,
+      "ratio": 2.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "共栄火災海上保険株式会社",
+      "shares": 60000,
+      "ratio": 2.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "あいおいニッセイ同和損害保険株式会社",
+      "shares": 57000,
+      "ratio": 2.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 9.8,
+      "other": 12.04,
+      "corporate": 8.88,
+      "financial": 17.35
+    },
+    "individual_total": 0,
+    "top10_total": 48.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第81期(2025/04/01－2026/03/31)",
+      "docID": "S100YKW2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "徳友会グループ持株会",
+          "shares": 207000,
+          "ratio": 9.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 133000,
+          "ratio": 6.29,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三徳物産株式会社",
+          "shares": 124000,
+          "ratio": 5.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+          "shares": 121000,
+          "ratio": 5.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 101000,
+          "ratio": 4.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本生命保険相互会社",
+          "shares": 79000,
+          "ratio": 3.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 70000,
+          "ratio": 3.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大成ホールディングス株式会社",
+          "shares": 63000,
+          "ratio": 2.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "共栄火災海上保険株式会社",
+          "shares": 60000,
+          "ratio": 2.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "shares": 57000,
+          "ratio": 2.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 9.8,
+          "other": 12.04,
+          "corporate": 8.88,
+          "financial": 17.35
+        },
+        "individual_total": 0,
+        "top10_total": 48.07
+      }
+    }
+  ]
+}

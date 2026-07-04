@@ -1,0 +1,216 @@
+{
+  "secCode": "8020",
+  "issuerName": "兼松株式会社",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 26222000,
+      "ratio": 15.56,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 12860000,
+      "ratio": 7.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー ５０５００１\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 7113000,
+      "ratio": 4.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 5480000,
+      "ratio": 3.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ゴールドマン・サックス・インターナショナル\n\n\n(常任代理人　ゴールドマン・サックス証券㈱)",
+      "shares": 3389000,
+      "ratio": 2.01,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "エムエスアイピークライアントセキユリテイーズ\n\n\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券㈱）",
+      "shares": 3259000,
+      "ratio": 1.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ザ　バンク　オブ　ニューヨーク　メロン\n\n\n１４００４４\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 2847000,
+      "ratio": 1.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ジェーピー　モルガン　チェース　バンク\n\n\n３８５７８１\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 2362000,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ザ　バンク　オブ　ニューヨーク　メロン\n\n\n１４００４２\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 2155000,
+      "ratio": 1.27,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５１０３\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 1843000,
+      "ratio": 1.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.19,
+      "financial": 12.92,
+      "securities": 3.94
+    },
+    "individual_total": 0,
+    "top10_total": 40.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第132期(2025/04/01－2026/03/31)",
+      "docID": "S100YGCZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 26222000,
+          "ratio": 15.56,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 12860000,
+          "ratio": 7.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー ５０５００１\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 7113000,
+          "ratio": 4.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 5480000,
+          "ratio": 3.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ゴールドマン・サックス・インターナショナル\n\n\n(常任代理人　ゴールドマン・サックス証券㈱)",
+          "shares": 3389000,
+          "ratio": 2.01,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "エムエスアイピークライアントセキユリテイーズ\n\n\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券㈱）",
+          "shares": 3259000,
+          "ratio": 1.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ザ　バンク　オブ　ニューヨーク　メロン\n\n\n１４００４４\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 2847000,
+          "ratio": 1.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ジェーピー　モルガン　チェース　バンク\n\n\n３８５７８１\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 2362000,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ザ　バンク　オブ　ニューヨーク　メロン\n\n\n１４００４２\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 2155000,
+          "ratio": 1.27,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５１０３\n\n\n（常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 1843000,
+          "ratio": 1.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.19,
+          "financial": 12.92,
+          "securities": 3.94
+        },
+        "individual_total": 0,
+        "top10_total": 40.05
+      }
+    }
+  ]
+}

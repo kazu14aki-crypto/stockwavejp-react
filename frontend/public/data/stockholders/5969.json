@@ -1,0 +1,216 @@
+{
+  "secCode": "5969",
+  "issuerName": "株式会社ロブテックス",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ニッセンリベット㈱",
+      "shares": 200000,
+      "ratio": 10.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日栄会",
+      "shares": 162800,
+      "ratio": 8.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈲ヤマチ",
+      "shares": 106000,
+      "ratio": 5.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日理会",
+      "shares": 102800,
+      "ratio": 5.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ロブテックス従業員持株会",
+      "shares": 97300,
+      "ratio": 5.21,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱三井住友銀行",
+      "shares": 92400,
+      "ratio": 4.95,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "地引　俊爲",
+      "shares": 67200,
+      "ratio": 3.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱南都銀行",
+      "shares": 40000,
+      "ratio": 2.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱山善",
+      "shares": 33500,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "稲垣　貞男",
+      "shares": 32000,
+      "ratio": 1.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 37.74,
+      "employee": 5.21,
+      "financial": 7.09
+    },
+    "individual_total": 37.74,
+    "top10_total": 50.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第143期(2025/04/01－2026/03/31)",
+      "docID": "S100YGO7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ニッセンリベット㈱",
+          "shares": 200000,
+          "ratio": 10.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日栄会",
+          "shares": 162800,
+          "ratio": 8.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈲ヤマチ",
+          "shares": 106000,
+          "ratio": 5.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日理会",
+          "shares": 102800,
+          "ratio": 5.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ロブテックス従業員持株会",
+          "shares": 97300,
+          "ratio": 5.21,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱三井住友銀行",
+          "shares": 92400,
+          "ratio": 4.95,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "地引　俊爲",
+          "shares": 67200,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱南都銀行",
+          "shares": 40000,
+          "ratio": 2.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱山善",
+          "shares": 33500,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "稲垣　貞男",
+          "shares": 32000,
+          "ratio": 1.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 37.74,
+          "employee": 5.21,
+          "financial": 7.09
+        },
+        "individual_total": 37.74,
+        "top10_total": 50.04
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "9501",
+  "issuerName": "東京電力ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "原子力損害賠償・廃炉等支援機構",
+      "shares": 1940000000,
+      "ratio": 54.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 197048000,
+      "ratio": 5.56,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 53509000,
+      "ratio": 1.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "東京電力グループ従業員持株会",
+      "shares": 48613000,
+      "ratio": 1.37,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東京都",
+      "shares": 42676000,
+      "ratio": 1.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行)",
+      "shares": 27115000,
+      "ratio": 0.77,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 26400000,
+      "ratio": 0.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人　株式会社みずほ銀行）",
+      "shares": 23610000,
+      "ratio": 0.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行)",
+      "shares": 21873000,
+      "ratio": 0.62,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 17963000,
+      "ratio": 0.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 54.75,
+      "trust": 7.07,
+      "employee": 1.37,
+      "individual": 1.2,
+      "foreign": 2.06,
+      "financial": 1.26
+    },
+    "individual_total": 1.2,
+    "top10_total": 67.71
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第102期(2025/04/01－2026/03/31)",
+      "docID": "S100YIHR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "原子力損害賠償・廃炉等支援機構",
+          "shares": 1940000000,
+          "ratio": 54.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 197048000,
+          "ratio": 5.56,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 53509000,
+          "ratio": 1.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "東京電力グループ従業員持株会",
+          "shares": 48613000,
+          "ratio": 1.37,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東京都",
+          "shares": 42676000,
+          "ratio": 1.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行)",
+          "shares": 27115000,
+          "ratio": 0.77,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 26400000,
+          "ratio": 0.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人　株式会社みずほ銀行）",
+          "shares": 23610000,
+          "ratio": 0.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行)",
+          "shares": 21873000,
+          "ratio": 0.62,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 17963000,
+          "ratio": 0.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 54.75,
+          "trust": 7.07,
+          "employee": 1.37,
+          "individual": 1.2,
+          "foreign": 2.06,
+          "financial": 1.26
+        },
+        "individual_total": 1.2,
+        "top10_total": 67.71
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "7084",
+  "issuerName": "株式会社Ｓｍｉｌｅ　Ｈｏｌｄｉｎｇｓ",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社エーエムカンパニー",
+      "shares": 1500000,
+      "ratio": 46.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中西　正文",
+      "shares": 730000,
+      "ratio": 22.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "上田八木短資株式会社",
+      "shares": 92800,
+      "ratio": 2.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中西　亜由美",
+      "shares": 75000,
+      "ratio": 2.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "木下　圭一郎",
+      "shares": 46500,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小沼　滋紀",
+      "shares": 42200,
+      "ratio": 1.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "神谷　正俊",
+      "shares": 25400,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 21498,
+      "ratio": 0.67,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD （常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 16012,
+      "ratio": 0.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPモルガン証券株式会社",
+      "shares": 11600,
+      "ratio": 0.36,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.7,
+      "individual": 28.67,
+      "securities": 1.03,
+      "foreign": 0.5
+    },
+    "individual_total": 28.67,
+    "top10_total": 79.9
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YL46",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社エーエムカンパニー",
+          "shares": 1500000,
+          "ratio": 46.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中西　正文",
+          "shares": 730000,
+          "ratio": 22.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "上田八木短資株式会社",
+          "shares": 92800,
+          "ratio": 2.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中西　亜由美",
+          "shares": 75000,
+          "ratio": 2.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "木下　圭一郎",
+          "shares": 46500,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小沼　滋紀",
+          "shares": 42200,
+          "ratio": 1.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "神谷　正俊",
+          "shares": 25400,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 21498,
+          "ratio": 0.67,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD （常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 16012,
+          "ratio": 0.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 11600,
+          "ratio": 0.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.7,
+          "individual": 28.67,
+          "securities": 1.03,
+          "foreign": 0.5
+        },
+        "individual_total": 28.67,
+        "top10_total": 79.9
+      }
+    }
+  ]
+}

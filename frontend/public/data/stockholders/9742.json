@@ -1,0 +1,222 @@
+{
+  "secCode": "9742",
+  "issuerName": "株式会社アイネス",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社三菱総合研究所",
+      "shares": 4052000,
+      "ratio": 19.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 1903000,
+      "ratio": 9.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1832000,
+      "ratio": 8.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "AVI JAPAN OPPORTUNITY TRUST PLC\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1274000,
+      "ratio": 6.12,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アイネスグループ社員持株会",
+      "shares": 883000,
+      "ratio": 4.24,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/JANUS HENDERSON HORIZON FUND\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 748000,
+      "ratio": 3.6,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 554000,
+      "ratio": 2.66,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 514000,
+      "ratio": 2.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "LIM JAPAN EVENT MASTER FUND\n（常任代理人　立花証券株式会社）",
+      "shares": 384000,
+      "ratio": 1.85,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 348000,
+      "ratio": 1.68,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.47,
+      "foreign": 14.43,
+      "trust": 11.47,
+      "financial": 8.59,
+      "employee": 4.24,
+      "securities": 1.85
+    },
+    "individual_total": 0,
+    "top10_total": 60.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100YF4O",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社三菱総合研究所",
+          "shares": 4052000,
+          "ratio": 19.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 1903000,
+          "ratio": 9.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1832000,
+          "ratio": 8.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "AVI JAPAN OPPORTUNITY TRUST PLC\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1274000,
+          "ratio": 6.12,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アイネスグループ社員持株会",
+          "shares": 883000,
+          "ratio": 4.24,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/JANUS HENDERSON HORIZON FUND\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 748000,
+          "ratio": 3.6,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 554000,
+          "ratio": 2.66,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 514000,
+          "ratio": 2.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "LIM JAPAN EVENT MASTER FUND\n（常任代理人　立花証券株式会社）",
+          "shares": 384000,
+          "ratio": 1.85,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 348000,
+          "ratio": 1.68,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.47,
+          "foreign": 14.43,
+          "trust": 11.47,
+          "financial": 8.59,
+          "employee": 4.24,
+          "securities": 1.85
+        },
+        "individual_total": 0,
+        "top10_total": 60.05
+      }
+    }
+  ]
+}

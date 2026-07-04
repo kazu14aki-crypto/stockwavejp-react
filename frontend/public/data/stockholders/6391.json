@@ -1,0 +1,220 @@
+{
+  "secCode": "6391",
+  "issuerName": "株式会社加地テック",
+  "updated_at": "2026/07/04 18:05 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社三井E&S",
+      "shares": 844546,
+      "ratio": 51.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "加地取引先持株会",
+      "shares": 36000,
+      "ratio": 2.18,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "早川　直希",
+      "shares": 15000,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "桜井　昭一",
+      "shares": 14300,
+      "ratio": 0.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東京短資株式会社",
+      "shares": 13000,
+      "ratio": 0.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村證券株式会社",
+      "shares": 12648,
+      "ratio": 0.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社SBI証券",
+      "shares": 11890,
+      "ratio": 0.72,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP JPMSE LUX RE CITIGROUP GLOBAL MARKETS L EQ CO\n\n \n\n（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 10800,
+      "ratio": 0.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "曽山　邦子",
+      "shares": 10600,
+      "ratio": 0.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "加地テック役員持株会",
+      "shares": 10090,
+      "ratio": 0.61,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.61,
+      "employee": 2.79,
+      "individual": 2.41,
+      "securities": 0.72,
+      "financial": 0.65
+    },
+    "individual_total": 2.41,
+    "top10_total": 59.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第93期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ76",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社三井E&S",
+          "shares": 844546,
+          "ratio": 51.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "加地取引先持株会",
+          "shares": 36000,
+          "ratio": 2.18,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "早川　直希",
+          "shares": 15000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "桜井　昭一",
+          "shares": 14300,
+          "ratio": 0.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東京短資株式会社",
+          "shares": 13000,
+          "ratio": 0.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村證券株式会社",
+          "shares": 12648,
+          "ratio": 0.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社SBI証券",
+          "shares": 11890,
+          "ratio": 0.72,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP JPMSE LUX RE CITIGROUP GLOBAL MARKETS L EQ CO\n\n \n\n（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 10800,
+          "ratio": 0.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "曽山　邦子",
+          "shares": 10600,
+          "ratio": 0.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "加地テック役員持株会",
+          "shares": 10090,
+          "ratio": 0.61,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.61,
+          "employee": 2.79,
+          "individual": 2.41,
+          "securities": 0.72,
+          "financial": 0.65
+        },
+        "individual_total": 2.41,
+        "top10_total": 59.18
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "9900",
+  "issuerName": "株式会社サガミホールディングス",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2608000,
+      "ratio": 8.61,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "昭和産業株式会社",
+      "shares": 1194000,
+      "ratio": 3.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アサヒビール株式会社",
+      "shares": 1032000,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社あいち銀行",
+      "shares": 923000,
+      "ratio": 3.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社昭和",
+      "shares": 433000,
+      "ratio": 1.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 378000,
+      "ratio": 1.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "サガミ共栄会",
+      "shares": 377000,
+      "ratio": 1.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "サガミグループ従業員持株会",
+      "shares": 347000,
+      "ratio": 1.14,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGARN CHASE BANK 385781 （常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 298000,
+      "ratio": 0.98,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 294000,
+      "ratio": 0.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 9.86,
+      "corporate": 8.77,
+      "financial": 3.05,
+      "individual": 1.24,
+      "employee": 1.14,
+      "foreign": 1.95
+    },
+    "individual_total": 1.24,
+    "top10_total": 26.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第56期(2025/04/01－2026/03/31)",
+      "docID": "S100YGZJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2608000,
+          "ratio": 8.61,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "昭和産業株式会社",
+          "shares": 1194000,
+          "ratio": 3.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アサヒビール株式会社",
+          "shares": 1032000,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社あいち銀行",
+          "shares": 923000,
+          "ratio": 3.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社昭和",
+          "shares": 433000,
+          "ratio": 1.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 378000,
+          "ratio": 1.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "サガミ共栄会",
+          "shares": 377000,
+          "ratio": 1.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "サガミグループ従業員持株会",
+          "shares": 347000,
+          "ratio": 1.14,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGARN CHASE BANK 385781 （常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 298000,
+          "ratio": 0.98,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 294000,
+          "ratio": 0.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 9.86,
+          "corporate": 8.77,
+          "financial": 3.05,
+          "individual": 1.24,
+          "employee": 1.14,
+          "foreign": 1.95
+        },
+        "individual_total": 1.24,
+        "top10_total": 26.01
+      }
+    }
+  ]
+}

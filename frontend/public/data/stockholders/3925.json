@@ -1,0 +1,220 @@
+{
+  "secCode": "3925",
+  "issuerName": "株式会社ダブルスタンダード",
+  "updated_at": "2026/07/04 17:45 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "中島 正三",
+      "shares": 3407000,
+      "ratio": 25.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＳＢＩファイナンシャルサービシーズ株式会社",
+      "shares": 2717500,
+      "ratio": 20.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 753300,
+      "ratio": 5.57,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "清水 康裕",
+      "shares": 500000,
+      "ratio": 3.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 390200,
+      "ratio": 2.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505044 (常任代理人株式会社みずほ銀行)",
+      "shares": 285200,
+      "ratio": 2.11,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "本田 浩之",
+      "shares": 278600,
+      "ratio": 2.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "赤浦　徹",
+      "shares": 240000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO.(AVFC) RE USL NON TREATY CLIENTS ACCOUNT",
+      "shares": 209300,
+      "ratio": 1.54,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大和証券株式会社",
+      "shares": 90350,
+      "ratio": 0.66,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 32.72,
+      "corporate": 20.1,
+      "trust": 8.45,
+      "foreign": 3.65,
+      "securities": 0.66
+    },
+    "individual_total": 32.72,
+    "top10_total": 65.58
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/04/01－2026/03/31)",
+      "docID": "S100YN9T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "中島 正三",
+          "shares": 3407000,
+          "ratio": 25.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＳＢＩファイナンシャルサービシーズ株式会社",
+          "shares": 2717500,
+          "ratio": 20.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 753300,
+          "ratio": 5.57,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "清水 康裕",
+          "shares": 500000,
+          "ratio": 3.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 390200,
+          "ratio": 2.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505044 (常任代理人株式会社みずほ銀行)",
+          "shares": 285200,
+          "ratio": 2.11,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "本田 浩之",
+          "shares": 278600,
+          "ratio": 2.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "赤浦　徹",
+          "shares": 240000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO.(AVFC) RE USL NON TREATY CLIENTS ACCOUNT",
+          "shares": 209300,
+          "ratio": 1.54,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大和証券株式会社",
+          "shares": 90350,
+          "ratio": 0.66,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 32.72,
+          "corporate": 20.1,
+          "trust": 8.45,
+          "foreign": 3.65,
+          "securities": 0.66
+        },
+        "individual_total": 32.72,
+        "top10_total": 65.58
+      }
+    }
+  ]
+}

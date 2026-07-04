@@ -1,0 +1,218 @@
+{
+  "secCode": "3839",
+  "issuerName": "株式会社ＯＤＫソリューションズ",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社学研ホールディングス",
+      "shares": 1350000,
+      "ratio": 16.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ファルコホールディングス",
+      "shares": 850000,
+      "ratio": 10.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 531600,
+      "ratio": 6.49,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ナカバヤシ株式会社",
+      "shares": 450000,
+      "ratio": 5.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本通信紙株式会社",
+      "shares": 400000,
+      "ratio": 4.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "広田証券株式会社",
+      "shares": 300076,
+      "ratio": 3.66,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本システム技術株式会社",
+      "shares": 300000,
+      "ratio": 3.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 300000,
+      "ratio": 3.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三井住友銀行",
+      "shares": 300000,
+      "ratio": 3.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社りそな銀行",
+      "shares": 300000,
+      "ratio": 3.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.88,
+      "other": 6.49,
+      "securities": 3.66,
+      "financial": 10.98
+    },
+    "individual_total": 0,
+    "top10_total": 62.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YHN8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社学研ホールディングス",
+          "shares": 1350000,
+          "ratio": 16.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ファルコホールディングス",
+          "shares": 850000,
+          "ratio": 10.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 531600,
+          "ratio": 6.49,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ナカバヤシ株式会社",
+          "shares": 450000,
+          "ratio": 5.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本通信紙株式会社",
+          "shares": 400000,
+          "ratio": 4.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "広田証券株式会社",
+          "shares": 300076,
+          "ratio": 3.66,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本システム技術株式会社",
+          "shares": 300000,
+          "ratio": 3.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 300000,
+          "ratio": 3.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三井住友銀行",
+          "shares": 300000,
+          "ratio": 3.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社りそな銀行",
+          "shares": 300000,
+          "ratio": 3.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.88,
+          "other": 6.49,
+          "securities": 3.66,
+          "financial": 10.98
+        },
+        "individual_total": 0,
+        "top10_total": 62.01
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "secCode": "7950",
+  "issuerName": "日本デコラックス株式会社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "高平商事株式会社",
+      "shares": 365000,
+      "ratio": 46.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "木村重夫",
+      "shares": 26000,
+      "ratio": 3.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "木村勇夫",
+      "shares": 26000,
+      "ratio": 3.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "有限会社キムラ",
+      "shares": 24000,
+      "ratio": 3.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "市川由美",
+      "shares": 22000,
+      "ratio": 2.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "丹羽淳雄",
+      "shares": 21000,
+      "ratio": 2.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "丹羽由一",
+      "shares": 21000,
+      "ratio": 2.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "丹羽産業株式会社",
+      "shares": 18000,
+      "ratio": 2.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "丹羽厚詞",
+      "shares": 15000,
+      "ratio": 1.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "瀨戸山咲也香",
+      "shares": 14000,
+      "ratio": 1.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.22,
+      "individual": 19.04
+    },
+    "individual_total": 19.04,
+    "top10_total": 71.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YI56",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "高平商事株式会社",
+          "shares": 365000,
+          "ratio": 46.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "木村重夫",
+          "shares": 26000,
+          "ratio": 3.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "木村勇夫",
+          "shares": 26000,
+          "ratio": 3.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "有限会社キムラ",
+          "shares": 24000,
+          "ratio": 3.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "市川由美",
+          "shares": 22000,
+          "ratio": 2.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "丹羽淳雄",
+          "shares": 21000,
+          "ratio": 2.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "丹羽由一",
+          "shares": 21000,
+          "ratio": 2.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "丹羽産業株式会社",
+          "shares": 18000,
+          "ratio": 2.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "丹羽厚詞",
+          "shares": 15000,
+          "ratio": 1.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "瀨戸山咲也香",
+          "shares": 14000,
+          "ratio": 1.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.22,
+          "individual": 19.04
+        },
+        "individual_total": 19.04,
+        "top10_total": 71.26
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "7743",
+  "issuerName": "株式会社シード",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "管理信託（A001）受託者　株式会社ＳＭＢＣ　\n信託銀行",
+      "shares": 5447000,
+      "ratio": 18.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "みずほ信託銀行　有価証券管理信託0700026",
+      "shares": 4319000,
+      "ratio": 14.27,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村信託銀行株式会社（信託口2052116）",
+      "shares": 3604000,
+      "ratio": 11.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三井住友信託銀行株式会社（信託口　甲１号）",
+      "shares": 1396000,
+      "ratio": 4.61,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "浦壁　昌広",
+      "shares": 618000,
+      "ratio": 2.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本証券金融株式会社",
+      "shares": 611000,
+      "ratio": 2.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "シード社員持株会",
+      "shares": 283000,
+      "ratio": 0.94,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "井上　忠",
+      "shares": 260000,
+      "ratio": 0.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 196000,
+      "ratio": 0.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＰＨＩＬＬＩＰ　ＳＥＣＵＲＩＴＩＥＳ（ＨＯＮＧ　ＫＯＮＧ）ＬＩＭＩＴＥＤ\n（常任代理人　フィリップ証券株式会社）",
+      "shares": 181000,
+      "ratio": 0.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 32.27,
+      "trust": 16.52,
+      "individual": 2.9,
+      "securities": 3.27,
+      "employee": 0.94
+    },
+    "individual_total": 2.9,
+    "top10_total": 55.9
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第70期(2025/04/01－2026/03/31)",
+      "docID": "S100YGWB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "管理信託（A001）受託者　株式会社ＳＭＢＣ　\n信託銀行",
+          "shares": 5447000,
+          "ratio": 18.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "みずほ信託銀行　有価証券管理信託0700026",
+          "shares": 4319000,
+          "ratio": 14.27,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村信託銀行株式会社（信託口2052116）",
+          "shares": 3604000,
+          "ratio": 11.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三井住友信託銀行株式会社（信託口　甲１号）",
+          "shares": 1396000,
+          "ratio": 4.61,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "浦壁　昌広",
+          "shares": 618000,
+          "ratio": 2.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本証券金融株式会社",
+          "shares": 611000,
+          "ratio": 2.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "シード社員持株会",
+          "shares": 283000,
+          "ratio": 0.94,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "井上　忠",
+          "shares": 260000,
+          "ratio": 0.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 196000,
+          "ratio": 0.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＰＨＩＬＬＩＰ　ＳＥＣＵＲＩＴＩＥＳ（ＨＯＮＧ　ＫＯＮＧ）ＬＩＭＩＴＥＤ\n（常任代理人　フィリップ証券株式会社）",
+          "shares": 181000,
+          "ratio": 0.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 32.27,
+          "trust": 16.52,
+          "individual": 2.9,
+          "securities": 3.27,
+          "employee": 0.94
+        },
+        "individual_total": 2.9,
+        "top10_total": 55.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6859",
+  "issuerName": "エスペック株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+      "shares": 3189000,
+      "ratio": 14.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1733000,
+      "ratio": 7.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "エスペック取引先持株会",
+      "shares": 1630000,
+      "ratio": 7.49,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "エスペック従業員持株会",
+      "shares": 744000,
+      "ratio": 3.42,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 553000,
+      "ratio": 2.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＬＵＸＥＭＢＯＵＲＧ／２Ｓ／ＪＡＳＤＥＣ／ＦＩＭ／ＬＵＸＥＭＢＯＵＲＧＦＵＮＤＳ／ＵＣＩＴＳ　ＡＳＳＥＴＳ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 445000,
+      "ratio": 2.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 327000,
+      "ratio": 1.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 287000,
+      "ratio": 1.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "第一生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 276000,
+      "ratio": 1.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 268000,
+      "ratio": 1.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 28.96,
+      "employee": 10.91,
+      "financial": 2.04,
+      "securities": 1.5
+    },
+    "individual_total": 0,
+    "top10_total": 43.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第73期(2025/04/01－2026/03/31)",
+      "docID": "S100YG4Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+          "shares": 3189000,
+          "ratio": 14.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1733000,
+          "ratio": 7.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "エスペック取引先持株会",
+          "shares": 1630000,
+          "ratio": 7.49,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "エスペック従業員持株会",
+          "shares": 744000,
+          "ratio": 3.42,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 553000,
+          "ratio": 2.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＬＵＸＥＭＢＯＵＲＧ／２Ｓ／ＪＡＳＤＥＣ／ＦＩＭ／ＬＵＸＥＭＢＯＵＲＧＦＵＮＤＳ／ＵＣＩＴＳ　ＡＳＳＥＴＳ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 445000,
+          "ratio": 2.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 327000,
+          "ratio": 1.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 287000,
+          "ratio": 1.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "第一生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 276000,
+          "ratio": 1.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 268000,
+          "ratio": 1.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 28.96,
+          "employee": 10.91,
+          "financial": 2.04,
+          "securities": 1.5
+        },
+        "individual_total": 0,
+        "top10_total": 43.41
+      }
+    }
+  ]
+}

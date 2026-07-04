@@ -1,0 +1,222 @@
+{
+  "secCode": "9880",
+  "issuerName": "イノテック株式会社",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1672000,
+      "ratio": 13.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "Castlewilder Unlimited Company\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 456000,
+      "ratio": 3.72,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 420000,
+      "ratio": 3.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 399000,
+      "ratio": 3.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "イノテック社員持株会",
+      "shares": 294000,
+      "ratio": 2.41,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "DFA INTL SMALL CAP VALUE PORTFOLIO\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 285000,
+      "ratio": 2.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "澄田　誠",
+      "shares": 200000,
+      "ratio": 1.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n(常任代理人　野村證券株式会社)",
+      "shares": 175000,
+      "ratio": 1.43,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 174000,
+      "ratio": 1.42,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "竹内 賀子",
+      "shares": 148000,
+      "ratio": 1.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 16.91,
+      "other": 3.72,
+      "financial": 3.43,
+      "employee": 2.41,
+      "foreign": 5.18,
+      "individual": 2.85
+    },
+    "individual_total": 2.85,
+    "top10_total": 34.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ5D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1672000,
+          "ratio": 13.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "Castlewilder Unlimited Company\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 456000,
+          "ratio": 3.72,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 420000,
+          "ratio": 3.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 399000,
+          "ratio": 3.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "イノテック社員持株会",
+          "shares": 294000,
+          "ratio": 2.41,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "DFA INTL SMALL CAP VALUE PORTFOLIO\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 285000,
+          "ratio": 2.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "澄田　誠",
+          "shares": 200000,
+          "ratio": 1.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n(常任代理人　野村證券株式会社)",
+          "shares": 175000,
+          "ratio": 1.43,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 174000,
+          "ratio": 1.42,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "竹内 賀子",
+          "shares": 148000,
+          "ratio": 1.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 16.91,
+          "other": 3.72,
+          "financial": 3.43,
+          "employee": 2.41,
+          "foreign": 5.18,
+          "individual": 2.85
+        },
+        "individual_total": 2.85,
+        "top10_total": 34.5
+      }
+    }
+  ]
+}

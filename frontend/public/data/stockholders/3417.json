@@ -1,0 +1,218 @@
+{
+  "secCode": "3417",
+  "issuerName": "大木ヘルスケアホールディングス株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ロート製薬株式会社",
+      "shares": 1759000,
+      "ratio": 12.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東邦ホールディングス株式会社",
+      "shares": 1413000,
+      "ratio": 10.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "国分グループ本社株式会社",
+      "shares": 1000000,
+      "ratio": 7.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大木ヘルスケアホールディングス取引先持株会",
+      "shares": 605000,
+      "ratio": 4.44,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 567000,
+      "ratio": 4.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ツムラ",
+      "shares": 559000,
+      "ratio": 4.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本証券金融株式会社",
+      "shares": 548000,
+      "ratio": 4.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "久光製薬株式会社",
+      "shares": 412000,
+      "ratio": 3.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社明治",
+      "shares": 318000,
+      "ratio": 2.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ　７００１７０（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 300000,
+      "ratio": 2.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.06,
+      "employee": 4.44,
+      "financial": 6.36,
+      "securities": 4.02
+    },
+    "individual_total": 0,
+    "top10_total": 54.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/04/01－2026/03/31)",
+      "docID": "S100YF0K",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ロート製薬株式会社",
+          "shares": 1759000,
+          "ratio": 12.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東邦ホールディングス株式会社",
+          "shares": 1413000,
+          "ratio": 10.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "国分グループ本社株式会社",
+          "shares": 1000000,
+          "ratio": 7.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大木ヘルスケアホールディングス取引先持株会",
+          "shares": 605000,
+          "ratio": 4.44,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 567000,
+          "ratio": 4.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ツムラ",
+          "shares": 559000,
+          "ratio": 4.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本証券金融株式会社",
+          "shares": 548000,
+          "ratio": 4.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "久光製薬株式会社",
+          "shares": 412000,
+          "ratio": 3.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社明治",
+          "shares": 318000,
+          "ratio": 2.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ　７００１７０（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 300000,
+          "ratio": 2.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.06,
+          "employee": 4.44,
+          "financial": 6.36,
+          "securities": 4.02
+        },
+        "individual_total": 0,
+        "top10_total": 54.88
+      }
+    }
+  ]
+}

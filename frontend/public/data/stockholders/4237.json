@@ -1,0 +1,214 @@
+{
+  "secCode": "4237",
+  "issuerName": "フジプレアム株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "フォローウインド株式会社",
+      "shares": 12092000,
+      "ratio": 42.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "松本倫長",
+      "shares": 2264000,
+      "ratio": 7.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松本庄藏",
+      "shares": 1854000,
+      "ratio": 6.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日亜化学工業株式会社",
+      "shares": 1425000,
+      "ratio": 4.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東レ株式会社",
+      "shares": 1040000,
+      "ratio": 3.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ジェイアンドエム株式会社",
+      "shares": 475000,
+      "ratio": 1.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "リンテック株式会社",
+      "shares": 312000,
+      "ratio": 1.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "津田鉄也",
+      "shares": 282000,
+      "ratio": 0.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "藤田和也",
+      "shares": 258000,
+      "ratio": 0.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "蔵野孝行",
+      "shares": 166000,
+      "ratio": 0.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.67,
+      "individual": 16.86
+    },
+    "individual_total": 16.86,
+    "top10_total": 70.53
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/04/01－2026/03/31)",
+      "docID": "S100YH1C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "フォローウインド株式会社",
+          "shares": 12092000,
+          "ratio": 42.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "松本倫長",
+          "shares": 2264000,
+          "ratio": 7.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松本庄藏",
+          "shares": 1854000,
+          "ratio": 6.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日亜化学工業株式会社",
+          "shares": 1425000,
+          "ratio": 4.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東レ株式会社",
+          "shares": 1040000,
+          "ratio": 3.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ジェイアンドエム株式会社",
+          "shares": 475000,
+          "ratio": 1.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "リンテック株式会社",
+          "shares": 312000,
+          "ratio": 1.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "津田鉄也",
+          "shares": 282000,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "藤田和也",
+          "shares": 258000,
+          "ratio": 0.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "蔵野孝行",
+          "shares": 166000,
+          "ratio": 0.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.67,
+          "individual": 16.86
+        },
+        "individual_total": 16.86,
+        "top10_total": 70.53
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "7235",
+  "issuerName": "東京ラヂエーター製造株式会社",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "マレリ株式会社",
+      "shares": 1153000,
+      "ratio": 12.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "いすゞ自動車株式会社",
+      "shares": 675000,
+      "ratio": 7.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山崎金属産業株式会社",
+      "shares": 525000,
+      "ratio": 5.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "佐藤商事株式会社",
+      "shares": 501000,
+      "ratio": 5.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日色　隆善",
+      "shares": 470000,
+      "ratio": 4.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "合同会社フルーエ",
+      "shares": 316000,
+      "ratio": 3.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社みずほ銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 300000,
+      "ratio": 3.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 248000,
+      "ratio": 2.61,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東京ラヂエーター製造　取引先持株会",
+      "shares": 198000,
+      "ratio": 2.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＥＵＲＯＰＥＡＮ ＤＥＰＯＳＩＴＡＲＹ ＢＡＮＫ ＳＡ－ＤＵＢＬＩＮ － ＢＵＴＴＥＲＭＥＲＥ ＤＥＥＰ ＶＡＬＵＥ ＦＵＮＤ ＬＩＭＩＴＥＤ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 193000,
+      "ratio": 2.03,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.29,
+      "individual": 4.94,
+      "trust": 3.15,
+      "securities": 2.61,
+      "employee": 2.09,
+      "other": 2.03
+    },
+    "individual_total": 4.94,
+    "top10_total": 48.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第122期(2025/04/01－2026/03/31)",
+      "docID": "S100YG1L",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "マレリ株式会社",
+          "shares": 1153000,
+          "ratio": 12.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "いすゞ自動車株式会社",
+          "shares": 675000,
+          "ratio": 7.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山崎金属産業株式会社",
+          "shares": 525000,
+          "ratio": 5.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "佐藤商事株式会社",
+          "shares": 501000,
+          "ratio": 5.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日色　隆善",
+          "shares": 470000,
+          "ratio": 4.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "合同会社フルーエ",
+          "shares": 316000,
+          "ratio": 3.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社みずほ銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 300000,
+          "ratio": 3.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 248000,
+          "ratio": 2.61,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東京ラヂエーター製造　取引先持株会",
+          "shares": 198000,
+          "ratio": 2.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＥＵＲＯＰＥＡＮ ＤＥＰＯＳＩＴＡＲＹ ＢＡＮＫ ＳＡ－ＤＵＢＬＩＮ － ＢＵＴＴＥＲＭＥＲＥ ＤＥＥＰ ＶＡＬＵＥ ＦＵＮＤ ＬＩＭＩＴＥＤ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 193000,
+          "ratio": 2.03,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.29,
+          "individual": 4.94,
+          "trust": 3.15,
+          "securities": 2.61,
+          "employee": 2.09,
+          "other": 2.03
+        },
+        "individual_total": 4.94,
+        "top10_total": 48.11
+      }
+    }
+  ]
+}

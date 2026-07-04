@@ -1,0 +1,218 @@
+{
+  "secCode": "4259",
+  "issuerName": "株式会社エクサウィザーズ",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ベータカタリスト",
+      "shares": 8185000,
+      "ratio": 9.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "坂根　裕",
+      "shares": 3776000,
+      "ratio": 4.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3254000,
+      "ratio": 3.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "古屋　俊和",
+      "shares": 3215000,
+      "ratio": 3.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＲＨ",
+      "shares": 3000000,
+      "ratio": 3.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＫＨ",
+      "shares": 3000000,
+      "ratio": 3.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 2946000,
+      "ratio": 3.43,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "上田八木短資株式会社",
+      "shares": 2000000,
+      "ratio": 2.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "春田　真",
+      "shares": 1572000,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Ｄ４Ｖ１号投資事業有限責任組合",
+      "shares": 1500000,
+      "ratio": 1.74,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.84,
+      "individual": 9.97,
+      "trust": 7.22,
+      "other": 1.74
+    },
+    "individual_total": 9.97,
+    "top10_total": 37.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/04/01－2026/03/31)",
+      "docID": "S100YFZ6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ベータカタリスト",
+          "shares": 8185000,
+          "ratio": 9.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "坂根　裕",
+          "shares": 3776000,
+          "ratio": 4.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3254000,
+          "ratio": 3.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "古屋　俊和",
+          "shares": 3215000,
+          "ratio": 3.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＲＨ",
+          "shares": 3000000,
+          "ratio": 3.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＫＨ",
+          "shares": 3000000,
+          "ratio": 3.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 2946000,
+          "ratio": 3.43,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "上田八木短資株式会社",
+          "shares": 2000000,
+          "ratio": 2.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "春田　真",
+          "shares": 1572000,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Ｄ４Ｖ１号投資事業有限責任組合",
+          "shares": 1500000,
+          "ratio": 1.74,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.84,
+          "individual": 9.97,
+          "trust": 7.22,
+          "other": 1.74
+        },
+        "individual_total": 9.97,
+        "top10_total": 37.77
+      }
+    }
+  ]
+}

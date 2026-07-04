@@ -1,0 +1,218 @@
+{
+  "secCode": "3542",
+  "issuerName": "株式会社ベガコーポレーション",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社アルタイル",
+      "shares": 3600000,
+      "ratio": 33.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "浮　城　智　和",
+      "shares": 2870500,
+      "ratio": 26.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 588600,
+      "ratio": 5.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 508800,
+      "ratio": 4.74,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 404000,
+      "ratio": 3.76,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "手　島　武　雄",
+      "shares": 393800,
+      "ratio": 3.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD - SINGAPORE BRANCH PRIVATE BANKING DIVISION A/C CLIENTS（常任代理人　香港上海銀行東京支店）",
+      "shares": 251400,
+      "ratio": 2.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "河　端　一　宏",
+      "shares": 182800,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉　田　裕　紀",
+      "shares": 162700,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 97150,
+      "ratio": 0.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.55,
+      "individual": 33.63,
+      "trust": 14.88,
+      "financial": 2.34
+    },
+    "individual_total": 33.63,
+    "top10_total": 84.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YIJ8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社アルタイル",
+          "shares": 3600000,
+          "ratio": 33.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "浮　城　智　和",
+          "shares": 2870500,
+          "ratio": 26.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 588600,
+          "ratio": 5.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 508800,
+          "ratio": 4.74,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 404000,
+          "ratio": 3.76,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "手　島　武　雄",
+          "shares": 393800,
+          "ratio": 3.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD - SINGAPORE BRANCH PRIVATE BANKING DIVISION A/C CLIENTS（常任代理人　香港上海銀行東京支店）",
+          "shares": 251400,
+          "ratio": 2.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "河　端　一　宏",
+          "shares": 182800,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉　田　裕　紀",
+          "shares": 162700,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 97150,
+          "ratio": 0.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.55,
+          "individual": 33.63,
+          "trust": 14.88,
+          "financial": 2.34
+        },
+        "individual_total": 33.63,
+        "top10_total": 84.4
+      }
+    }
+  ]
+}

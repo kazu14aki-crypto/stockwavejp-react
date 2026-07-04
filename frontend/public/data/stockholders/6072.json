@@ -1,0 +1,180 @@
+{
+  "secCode": "6072",
+  "issuerName": "地盤ネットホールディングス株式会社",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Kaihou",
+      "shares": 2192800,
+      "ratio": 9.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "楽天証券株式会社共有口",
+      "shares": 1710300,
+      "ratio": 7.62,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社SBI証券",
+      "shares": 1287686,
+      "ratio": 5.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "山本　強",
+      "shares": 685000,
+      "ratio": 3.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社アートフォースジャパン",
+      "shares": 470000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社玉里自動車学校",
+      "shares": 365000,
+      "ratio": 1.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三菱UFJeスマート証券株式会社",
+      "shares": 344400,
+      "ratio": 1.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "永井　崇久",
+      "shares": 315000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 13.51,
+      "securities": 14.9,
+      "individual": 4.45
+    },
+    "individual_total": 4.45,
+    "top10_total": 32.86
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YM7M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Kaihou",
+          "shares": 2192800,
+          "ratio": 9.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "楽天証券株式会社共有口",
+          "shares": 1710300,
+          "ratio": 7.62,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社SBI証券",
+          "shares": 1287686,
+          "ratio": 5.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "山本　強",
+          "shares": 685000,
+          "ratio": 3.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社アートフォースジャパン",
+          "shares": 470000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社玉里自動車学校",
+          "shares": 365000,
+          "ratio": 1.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三菱UFJeスマート証券株式会社",
+          "shares": 344400,
+          "ratio": 1.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "永井　崇久",
+          "shares": 315000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 13.51,
+          "securities": 14.9,
+          "individual": 4.45
+        },
+        "individual_total": 4.45,
+        "top10_total": 32.86
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "7013",
+  "issuerName": "株式会社ＩＨＩ",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 158637000,
+      "ratio": 14.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 75857000,
+      "ratio": 7.12,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 61042000,
+      "ratio": 5.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 37234000,
+      "ratio": 3.49,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＩＨＩ共栄会",
+      "shares": 18009000,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "J.P. MORGAN BANK LUXEMBOURG S. A. 384513\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 16742000,
+      "ratio": 1.57,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＩＨＩ従業員持株会",
+      "shares": 15297000,
+      "ratio": 1.43,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 13253000,
+      "ratio": 1.24,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385642\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 13232000,
+      "ratio": 1.24,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "第一生命保険株式会社",
+      "shares": 12086000,
+      "ratio": 1.13,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.64,
+      "foreign": 14.66,
+      "individual": 1.69,
+      "employee": 1.43,
+      "financial": 1.13
+    },
+    "individual_total": 1.69,
+    "top10_total": 39.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第209期(2025/04/01－2026/03/31)",
+      "docID": "S100YENT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 158637000,
+          "ratio": 14.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 75857000,
+          "ratio": 7.12,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 61042000,
+          "ratio": 5.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 37234000,
+          "ratio": 3.49,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＩＨＩ共栄会",
+          "shares": 18009000,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "J.P. MORGAN BANK LUXEMBOURG S. A. 384513\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 16742000,
+          "ratio": 1.57,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＩＨＩ従業員持株会",
+          "shares": 15297000,
+          "ratio": 1.43,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 13253000,
+          "ratio": 1.24,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385642\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 13232000,
+          "ratio": 1.24,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "第一生命保険株式会社",
+          "shares": 12086000,
+          "ratio": 1.13,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.64,
+          "foreign": 14.66,
+          "individual": 1.69,
+          "employee": 1.43,
+          "financial": 1.13
+        },
+        "individual_total": 1.69,
+        "top10_total": 39.55
+      }
+    }
+  ]
+}

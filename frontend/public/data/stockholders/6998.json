@@ -1,0 +1,218 @@
+{
+  "secCode": "6998",
+  "issuerName": "日本タングステン株式会社",
+  "updated_at": "2026/07/04 18:07 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(退職給付信託口・九州電力株式会社及び九州電力送配電株式会社口)",
+      "shares": 333000,
+      "ratio": 6.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社福岡銀行",
+      "shares": 214000,
+      "ratio": 4.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本タングステン取引先持株会",
+      "shares": 209000,
+      "ratio": 4.31,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本タングステン従業員持株会",
+      "shares": 187000,
+      "ratio": 3.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 128000,
+      "ratio": 2.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "明治安田生命保険相互会社",
+      "shares": 120000,
+      "ratio": 2.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 101000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社佐賀銀行",
+      "shares": 100000,
+      "ratio": 2.06,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "HMG JAPAN FUND(常任代理人 香港上海銀行東京支店)",
+      "shares": 93000,
+      "ratio": 1.93,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "宇部マテリアルズ株式会社",
+      "shares": 80000,
+      "ratio": 1.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 6.86,
+      "financial": 15.64,
+      "employee": 8.16,
+      "corporate": 1.65
+    },
+    "individual_total": 0,
+    "top10_total": 32.31
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第115期(2025/04/01－2026/03/31)",
+      "docID": "S100YIQP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(退職給付信託口・九州電力株式会社及び九州電力送配電株式会社口)",
+          "shares": 333000,
+          "ratio": 6.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社福岡銀行",
+          "shares": 214000,
+          "ratio": 4.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本タングステン取引先持株会",
+          "shares": 209000,
+          "ratio": 4.31,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本タングステン従業員持株会",
+          "shares": 187000,
+          "ratio": 3.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 128000,
+          "ratio": 2.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "明治安田生命保険相互会社",
+          "shares": 120000,
+          "ratio": 2.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 101000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社佐賀銀行",
+          "shares": 100000,
+          "ratio": 2.06,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "HMG JAPAN FUND(常任代理人 香港上海銀行東京支店)",
+          "shares": 93000,
+          "ratio": 1.93,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "宇部マテリアルズ株式会社",
+          "shares": 80000,
+          "ratio": 1.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 6.86,
+          "financial": 15.64,
+          "employee": 8.16,
+          "corporate": 1.65
+        },
+        "individual_total": 0,
+        "top10_total": 32.31
+      }
+    }
+  ]
+}

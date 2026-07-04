@@ -1,0 +1,214 @@
+{
+  "secCode": "8107",
+  "issuerName": "株式会社キムラタン",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "清川　浩志",
+      "shares": 75495000,
+      "ratio": 27.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "澤田　秀雄",
+      "shares": 54177000,
+      "ratio": 19.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社レゾンディレクション",
+      "shares": 14700000,
+      "ratio": 5.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "吉丸　昌宏",
+      "shares": 11888000,
+      "ratio": 4.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "西川　勝彦",
+      "shares": 2170000,
+      "ratio": 0.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社木村海苔",
+      "shares": 1484000,
+      "ratio": 0.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "横尾　嘉信",
+      "shares": 1044000,
+      "ratio": 0.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "佐山　智紀",
+      "shares": 1000000,
+      "ratio": 0.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "西田　博行",
+      "shares": 1000000,
+      "ratio": 0.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三堀　裕美子",
+      "shares": 950000,
+      "ratio": 0.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 53.7,
+      "corporate": 5.8
+    },
+    "individual_total": 53.7,
+    "top10_total": 59.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YER7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "清川　浩志",
+          "shares": 75495000,
+          "ratio": 27.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "澤田　秀雄",
+          "shares": 54177000,
+          "ratio": 19.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社レゾンディレクション",
+          "shares": 14700000,
+          "ratio": 5.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "吉丸　昌宏",
+          "shares": 11888000,
+          "ratio": 4.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "西川　勝彦",
+          "shares": 2170000,
+          "ratio": 0.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社木村海苔",
+          "shares": 1484000,
+          "ratio": 0.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "横尾　嘉信",
+          "shares": 1044000,
+          "ratio": 0.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "佐山　智紀",
+          "shares": 1000000,
+          "ratio": 0.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "西田　博行",
+          "shares": 1000000,
+          "ratio": 0.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三堀　裕美子",
+          "shares": 950000,
+          "ratio": 0.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 53.7,
+          "corporate": 5.8
+        },
+        "individual_total": 53.7,
+        "top10_total": 59.5
+      }
+    }
+  ]
+}
