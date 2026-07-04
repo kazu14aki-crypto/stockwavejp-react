@@ -110,7 +110,7 @@ function genThemeComment(themes, summary, period, momentum) {
 
   // 全体相場概況
   const mktTone = avg >= 2 ? '強気' : avg >= 0.5 ? 'やや強気' : avg <= -2 ? '弱気' : avg <= -0.5 ? 'やや弱気' : '中立'
-  lines.push(`【${periodLabel}の全体概況】${periodLabel}の全67テーマを見ると、上昇${rising.length}テーマ・下落${falling.length}テーマで平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%（${mktTone}）。`)
+  lines.push(`【${periodLabel}の全体概況】${periodLabel}の全72テーマを見ると、上昇${rising.length}テーマ・下落${falling.length}テーマで平均騰落率は${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%（${mktTone}）。`)
 
   // トップ・ボトム
   lines.push(`最高騰テーマは「${top?.theme}」(${top?.pct >= 0 ? '+' : ''}${top?.pct?.toFixed(2)}%)、最大下落テーマは「${bot?.theme}」(${bot?.pct?.toFixed(2)}%)で、その差は${(top?.pct - bot?.pct)?.toFixed(1)}ptと${Math.abs(top?.pct - bot?.pct) > 15 ? 'テーマ間の格差が大きい' : 'テーマ間のばらつきは比較的小さい'}。`)
@@ -179,7 +179,7 @@ const THEME_ARTICLE_MAP = {
   '蓄電池':            'ev-green-theme',
   '資源（水素・ヘリウム・水）': 'rare-earth-resources-theme',
   'IOWN':              'optical-communication',
-  '光通信':            'optical-communication',
+  '光ファイバー・光部品':            'optical-communication',
   '通信':              'telecom-theme',
   '量子コンピューター':'ai-cloud-theme',
   'SaaS':              'fintech-theme',
@@ -1261,7 +1261,7 @@ export default function ThemeList({ onNavigate }) {
         {/* 説明文 */}
         <div style={{ background:'rgba(74,158,255,0.05)', border:'1px solid rgba(74,158,255,0.15)',
           borderRadius:'8px', padding:'12px 16px', marginBottom:'12px', fontSize:'13px', color:'var(--text)', lineHeight:1.9 }}>
-          日本株の主要67テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
+          日本株の主要72テーマについて、騰落率・出来高・売買代金を一覧で比較できます。
           期間（1週間〜1年）を切り替えることで、短期的な資金流入テーマと長期トレンドの両方を確認できます。
           <br />
           <span style={{ fontSize:'11px', color:'var(--text2)' }}>

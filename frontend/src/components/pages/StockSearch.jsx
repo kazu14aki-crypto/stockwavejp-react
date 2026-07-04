@@ -14,7 +14,7 @@ const THEME_ARTICLE_MAP = {
   'サイバーセキュリティ':'defense-theme','インバウンド':'inbound-theme',
   '観光・ホテル・レジャー':'inbound-theme','銀行':'banking-finance-theme',
   'SaaS':'saas-dx-theme','DX':'saas-dx-theme',
-  'EV・電気自動車':'ev-green-theme','光通信':'optical-communication',
+  'EV・電気自動車':'ev-green-theme','光ファイバー・光部品':'optical-communication',
   'MLCC・電子部品':'mlcc-murata-analysis',
 }
 

@@ -25,7 +25,7 @@ export default function Plan({ onNavigate }) {
       monthly: { price: '¥0', label: '永久無料', perDay: null },
       yearly:  null,
       features: [
-        '67テーマのリアルタイムデータ',
+        '72テーマのリアルタイムデータ',
         'テーマヒートマップ',
         '市場別詳細',
         '銘柄検索',
@@ -64,7 +64,7 @@ export default function Plan({ onNavigate }) {
   ]
 
   const FEATURES = [
-    ['テーマ一覧（67テーマ+）',                   '✅','✅','✅'],
+    ['テーマ一覧（72テーマ+）',                   '✅','✅','✅'],
     ['テーマヒートマップ',                        '✅','✅','✅'],
     ['テーマ別詳細（長期期間のみ）',              '✅','✅','✅'],
     ['テーマ別詳細（全期間）',                    '❌','✅','✅'],

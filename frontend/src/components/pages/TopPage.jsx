@@ -33,7 +33,7 @@ const THEME_ARTICLE_MAP = {
   '蓄電池':            'ev-green-theme',
   '資源（水素・ヘリウム・水）': 'rare-earth-resources-theme',
   'IOWN':              'optical-communication',
-  '光通信':            'optical-communication',
+  '光ファイバー・光部品':            'optical-communication',
   '通信':              'telecom-theme',
   '量子コンピューター':'ai-cloud-theme',
   'SaaS':              'fintech-theme',
