@@ -1,0 +1,220 @@
+{
+  "secCode": "9274",
+  "issuerName": "ＫＰＰグループホールディングス株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "王子ホールディングス株式会社",
+      "shares": 9780000,
+      "ratio": 15.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（その他信託口）",
+      "shares": 3338000,
+      "ratio": 5.19,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（りそな銀行再信託分・北越コーポレーション株式会社退職給付信託口）",
+      "shares": 2300000,
+      "ratio": 3.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "KPPグループホールディングス従業員持株会",
+      "shares": 2146000,
+      "ratio": 3.34,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村　絢（常任代理人三田証券株式会社）",
+      "shares": 2103000,
+      "ratio": 3.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ(常任代理人インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 2011000,
+      "ratio": 3.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行株式会社（役員報酬ＢＩＰ信託口・７６２６２口）",
+      "shares": 1922000,
+      "ratio": 2.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本マスタートラスト信託銀行株式会社（投資信託口）",
+      "shares": 1252000,
+      "ratio": 1.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1095000,
+      "ratio": 1.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三菱ＵＦＪ信託銀行株式会社",
+      "shares": 910000,
+      "ratio": 1.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 15.22,
+      "trust": 13.7,
+      "employee": 3.34,
+      "securities": 6.4,
+      "financial": 3.11
+    },
+    "individual_total": 0,
+    "top10_total": 41.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第152期(2025/04/01－2026/03/31)",
+      "docID": "S100YHDZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "王子ホールディングス株式会社",
+          "shares": 9780000,
+          "ratio": 15.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（その他信託口）",
+          "shares": 3338000,
+          "ratio": 5.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（りそな銀行再信託分・北越コーポレーション株式会社退職給付信託口）",
+          "shares": 2300000,
+          "ratio": 3.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "KPPグループホールディングス従業員持株会",
+          "shares": 2146000,
+          "ratio": 3.34,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村　絢（常任代理人三田証券株式会社）",
+          "shares": 2103000,
+          "ratio": 3.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ(常任代理人インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 2011000,
+          "ratio": 3.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行株式会社（役員報酬ＢＩＰ信託口・７６２６２口）",
+          "shares": 1922000,
+          "ratio": 2.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本マスタートラスト信託銀行株式会社（投資信託口）",
+          "shares": 1252000,
+          "ratio": 1.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1095000,
+          "ratio": 1.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三菱ＵＦＪ信託銀行株式会社",
+          "shares": 910000,
+          "ratio": 1.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 15.22,
+          "trust": 13.7,
+          "employee": 3.34,
+          "securities": 6.4,
+          "financial": 3.11
+        },
+        "individual_total": 0,
+        "top10_total": 41.77
+      }
+    }
+  ]
+}

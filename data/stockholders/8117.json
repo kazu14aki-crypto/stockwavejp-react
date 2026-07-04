@@ -1,0 +1,220 @@
+{
+  "secCode": "8117",
+  "issuerName": "中央自動車工業株式会社",
+  "updated_at": "2026/07/04 18:48 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "NORTHERN TRUST CO.(AVFC)RE FIDELITY FUNDS(常任代理人　香港上海銀行東京支店)",
+      "shares": 3391000,
+      "ratio": 6.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日産東京販売ホールディングス㈱",
+      "shares": 3180000,
+      "ratio": 5.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 2665000,
+      "ratio": 4.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上野 万里子",
+      "shares": 2056000,
+      "ratio": 3.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＴＰＲ㈱",
+      "shares": 1989000,
+      "ratio": 3.58,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　㈱みずほ銀行 決済営業部)",
+      "shares": 1816000,
+      "ratio": 3.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 1805000,
+      "ratio": 3.25,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "あいおいニッセイ同和損害保険㈱",
+      "shares": 1767000,
+      "ratio": 3.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱みずほ銀行",
+      "shares": 1593000,
+      "ratio": 2.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱椿本チエイン",
+      "shares": 1500000,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 9.37,
+      "corporate": 5.72,
+      "financial": 10.85,
+      "individual": 6.4,
+      "other": 6.83
+    },
+    "individual_total": 6.4,
+    "top10_total": 39.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第87期(2025/04/01－2026/03/31)",
+      "docID": "S100YFX5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "NORTHERN TRUST CO.(AVFC)RE FIDELITY FUNDS(常任代理人　香港上海銀行東京支店)",
+          "shares": 3391000,
+          "ratio": 6.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日産東京販売ホールディングス㈱",
+          "shares": 3180000,
+          "ratio": 5.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 2665000,
+          "ratio": 4.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上野 万里子",
+          "shares": 2056000,
+          "ratio": 3.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＴＰＲ㈱",
+          "shares": 1989000,
+          "ratio": 3.58,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　㈱みずほ銀行 決済営業部)",
+          "shares": 1816000,
+          "ratio": 3.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 1805000,
+          "ratio": 3.25,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "あいおいニッセイ同和損害保険㈱",
+          "shares": 1767000,
+          "ratio": 3.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱みずほ銀行",
+          "shares": 1593000,
+          "ratio": 2.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱椿本チエイン",
+          "shares": 1500000,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 9.37,
+          "corporate": 5.72,
+          "financial": 10.85,
+          "individual": 6.4,
+          "other": 6.83
+        },
+        "individual_total": 6.4,
+        "top10_total": 39.17
+      }
+    }
+  ]
+}

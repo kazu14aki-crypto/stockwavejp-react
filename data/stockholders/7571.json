@@ -1,0 +1,216 @@
+{
+  "secCode": "7571",
+  "issuerName": "株式会社ヤマノホールディングス",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ヤマノネットワーク",
+      "shares": 4838000,
+      "ratio": 13.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "山野義友",
+      "shares": 3848000,
+      "ratio": 10.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ヤマノビューティメイトグループ",
+      "shares": 3400000,
+      "ratio": 9.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "山野功子",
+      "shares": 2118000,
+      "ratio": 6.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山野美容商事株式会社",
+      "shares": 1919000,
+      "ratio": 5.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "伊藤和則",
+      "shares": 1333000,
+      "ratio": 3.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "YHC取引先持株会",
+      "shares": 1039000,
+      "ratio": 2.9,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "YHC従業員持株会",
+      "shares": 935000,
+      "ratio": 2.7,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "村山信也",
+      "shares": 918000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社アップフロントグループ",
+      "shares": 881000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 31.2,
+      "individual": 23.3,
+      "employee": 5.6
+    },
+    "individual_total": 23.3,
+    "top10_total": 60.1
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/04/01－2026/03/31)",
+      "docID": "S100YJEK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ヤマノネットワーク",
+          "shares": 4838000,
+          "ratio": 13.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "山野義友",
+          "shares": 3848000,
+          "ratio": 10.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ヤマノビューティメイトグループ",
+          "shares": 3400000,
+          "ratio": 9.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "山野功子",
+          "shares": 2118000,
+          "ratio": 6.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山野美容商事株式会社",
+          "shares": 1919000,
+          "ratio": 5.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "伊藤和則",
+          "shares": 1333000,
+          "ratio": 3.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "YHC取引先持株会",
+          "shares": 1039000,
+          "ratio": 2.9,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "YHC従業員持株会",
+          "shares": 935000,
+          "ratio": 2.7,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "村山信也",
+          "shares": 918000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社アップフロントグループ",
+          "shares": 881000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 31.2,
+          "individual": 23.3,
+          "employee": 5.6
+        },
+        "individual_total": 23.3,
+        "top10_total": 60.1
+      }
+    }
+  ]
+}

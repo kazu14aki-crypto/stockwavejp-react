@@ -1,0 +1,218 @@
+{
+  "secCode": "6222",
+  "issuerName": "株式会社島精機製作所",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "和島興産株式会社",
+      "shares": 3001000,
+      "ratio": 8.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2616000,
+      "ratio": 7.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社紀陽銀行",
+      "shares": 1387000,
+      "ratio": 4.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "島　正博",
+      "shares": 1070000,
+      "ratio": 3.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "島　三博",
+      "shares": 1061000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 880000,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "合同会社和光",
+      "shares": 780000,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "梅田　千景",
+      "shares": 632000,
+      "ratio": 1.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "龍見　恭子",
+      "shares": 572000,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山田　都",
+      "shares": 554000,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 11.15,
+      "trust": 7.71,
+      "financial": 6.68,
+      "individual": 11.47
+    },
+    "individual_total": 11.47,
+    "top10_total": 37.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第65期(2025/04/01－2026/03/31)",
+      "docID": "S100YIO7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "和島興産株式会社",
+          "shares": 3001000,
+          "ratio": 8.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2616000,
+          "ratio": 7.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社紀陽銀行",
+          "shares": 1387000,
+          "ratio": 4.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "島　正博",
+          "shares": 1070000,
+          "ratio": 3.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "島　三博",
+          "shares": 1061000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 880000,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "合同会社和光",
+          "shares": 780000,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "梅田　千景",
+          "shares": 632000,
+          "ratio": 1.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "龍見　恭子",
+          "shares": 572000,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山田　都",
+          "shares": 554000,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 11.15,
+          "trust": 7.71,
+          "financial": 6.68,
+          "individual": 11.47
+        },
+        "individual_total": 11.47,
+        "top10_total": 37.01
+      }
+    }
+  ]
+}

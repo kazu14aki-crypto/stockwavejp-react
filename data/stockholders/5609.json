@@ -1,0 +1,216 @@
+{
+  "secCode": "5609",
+  "issuerName": "日本鋳造株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "JFEスチール株式会社",
+      "shares": 1743000,
+      "ratio": 36.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日立建機株式会社",
+      "shares": 718000,
+      "ratio": 14.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "垂　水　邦　明",
+      "shares": 67000,
+      "ratio": 1.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上田八木短資株式会社",
+      "shares": 63000,
+      "ratio": 1.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小　柳　厚　三",
+      "shares": 41000,
+      "ratio": 0.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "高　橋　明　子",
+      "shares": 41000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "広　岡　靖　雄",
+      "shares": 39000,
+      "ratio": 0.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 37000,
+      "ratio": 0.77,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "井　上　豊　彦",
+      "shares": 32000,
+      "ratio": 0.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "林　田　香　代　子",
+      "shares": 30000,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.4,
+      "individual": 5.21,
+      "securities": 0.77
+    },
+    "individual_total": 5.21,
+    "top10_total": 58.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第104期(2025/04/01－2026/03/31)",
+      "docID": "S100YGG5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "JFEスチール株式会社",
+          "shares": 1743000,
+          "ratio": 36.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日立建機株式会社",
+          "shares": 718000,
+          "ratio": 14.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "垂　水　邦　明",
+          "shares": 67000,
+          "ratio": 1.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上田八木短資株式会社",
+          "shares": 63000,
+          "ratio": 1.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小　柳　厚　三",
+          "shares": 41000,
+          "ratio": 0.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "高　橋　明　子",
+          "shares": 41000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "広　岡　靖　雄",
+          "shares": 39000,
+          "ratio": 0.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 37000,
+          "ratio": 0.77,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "井　上　豊　彦",
+          "shares": 32000,
+          "ratio": 0.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "林　田　香　代　子",
+          "shares": 30000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.4,
+          "individual": 5.21,
+          "securities": 0.77
+        },
+        "individual_total": 5.21,
+        "top10_total": 58.38
+      }
+    }
+  ]
+}

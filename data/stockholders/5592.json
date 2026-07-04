@@ -1,0 +1,222 @@
+{
+  "secCode": "5592",
+  "issuerName": "株式会社くすりの窓口",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＥＰＡＲＫ",
+      "shares": 4514220,
+      "ratio": 39.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＳＢＩイノベーションファンド１号",
+      "shares": 1802700,
+      "ratio": 15.73,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＮＢＳＥ",
+      "shares": 683524,
+      "ratio": 5.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BNYM SA／NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 380500,
+      "ratio": 3.32,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "木下　圭一郎",
+      "shares": 337700,
+      "ratio": 2.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "堤　幸治",
+      "shares": 331500,
+      "ratio": 2.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "上田八木短資株式会社",
+      "shares": 217200,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 156700,
+      "ratio": 1.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "フリービット株式会社",
+      "shares": 144522,
+      "ratio": 1.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 134749,
+      "ratio": 1.18,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.53,
+      "other": 15.73,
+      "foreign": 3.32,
+      "individual": 5.84,
+      "trust": 1.37,
+      "securities": 1.18
+    },
+    "individual_total": 5.84,
+    "top10_total": 75.97
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YKTN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＥＰＡＲＫ",
+          "shares": 4514220,
+          "ratio": 39.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＳＢＩイノベーションファンド１号",
+          "shares": 1802700,
+          "ratio": 15.73,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＮＢＳＥ",
+          "shares": 683524,
+          "ratio": 5.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BNYM SA／NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 380500,
+          "ratio": 3.32,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "木下　圭一郎",
+          "shares": 337700,
+          "ratio": 2.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "堤　幸治",
+          "shares": 331500,
+          "ratio": 2.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "上田八木短資株式会社",
+          "shares": 217200,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 156700,
+          "ratio": 1.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "フリービット株式会社",
+          "shares": 144522,
+          "ratio": 1.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 134749,
+          "ratio": 1.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.53,
+          "other": 15.73,
+          "foreign": 3.32,
+          "individual": 5.84,
+          "trust": 1.37,
+          "securities": 1.18
+        },
+        "individual_total": 5.84,
+        "top10_total": 75.97
+      }
+    }
+  ]
+}

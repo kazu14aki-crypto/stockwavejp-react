@@ -1,0 +1,216 @@
+{
+  "secCode": "1992",
+  "issuerName": "神田通信機株式会社",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "佐　藤　正",
+      "shares": 288000,
+      "ratio": 12.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐　山　浄　徳",
+      "shares": 228507,
+      "ratio": 9.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "UHPartners2投資事業有限責任組合無限責任組合員 株式会社UHPartners2",
+      "shares": 162600,
+      "ratio": 7.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信KK投資事業有限責任組合無限責任組合員 光通信株式会社",
+      "shares": 154300,
+      "ratio": 6.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "平　野　博　美",
+      "shares": 129100,
+      "ratio": 5.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "神田通信機従業員持株会",
+      "shares": 110974,
+      "ratio": 4.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "神　部　雅　人",
+      "shares": 102352,
+      "ratio": 4.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "佐　藤　久　世",
+      "shares": 61200,
+      "ratio": 2.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ナカヨ",
+      "shares": 60300,
+      "ratio": 2.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "エスアイエル投資事業有限責任組合無限責任組合員 株式会社エスアイエル",
+      "shares": 56900,
+      "ratio": 2.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 35.34,
+      "corporate": 18.95,
+      "employee": 4.85
+    },
+    "individual_total": 35.34,
+    "top10_total": 59.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第89期(2025/04/01－2026/03/31)",
+      "docID": "S100Y9QZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "佐　藤　正",
+          "shares": 288000,
+          "ratio": 12.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐　山　浄　徳",
+          "shares": 228507,
+          "ratio": 9.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "UHPartners2投資事業有限責任組合無限責任組合員 株式会社UHPartners2",
+          "shares": 162600,
+          "ratio": 7.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信KK投資事業有限責任組合無限責任組合員 光通信株式会社",
+          "shares": 154300,
+          "ratio": 6.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "平　野　博　美",
+          "shares": 129100,
+          "ratio": 5.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "神田通信機従業員持株会",
+          "shares": 110974,
+          "ratio": 4.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "神　部　雅　人",
+          "shares": 102352,
+          "ratio": 4.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "佐　藤　久　世",
+          "shares": 61200,
+          "ratio": 2.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ナカヨ",
+          "shares": 60300,
+          "ratio": 2.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "エスアイエル投資事業有限責任組合無限責任組合員 株式会社エスアイエル",
+          "shares": 56900,
+          "ratio": 2.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 35.34,
+          "corporate": 18.95,
+          "employee": 4.85
+        },
+        "individual_total": 35.34,
+        "top10_total": 59.14
+      }
+    }
+  ]
+}

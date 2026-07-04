@@ -1,0 +1,222 @@
+{
+  "secCode": "7318",
+  "issuerName": "セレンディップ・ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "竹内　在",
+      "shares": 2872360,
+      "ratio": 15.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "髙村　徳康",
+      "shares": 2864144,
+      "ratio": 15.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "諸戸グループマネジメント株式会社",
+      "shares": 1800000,
+      "ratio": 9.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ネクストシークエンス合同会社",
+      "shares": 1200000,
+      "ratio": 6.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "一徳合同会社",
+      "shares": 1200000,
+      "ratio": 6.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "セレンディップグループ従業員持株会",
+      "shares": 680360,
+      "ratio": 3.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 419473,
+      "ratio": 2.31,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "竹内　弘一",
+      "shares": 248400,
+      "ratio": 1.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 214053,
+      "ratio": 1.18,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 192400,
+      "ratio": 1.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 32.93,
+      "corporate": 23.1,
+      "employee": 3.74,
+      "foreign": 2.31,
+      "securities": 1.18,
+      "trust": 1.06
+    },
+    "individual_total": 32.93,
+    "top10_total": 64.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YI8U",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "竹内　在",
+          "shares": 2872360,
+          "ratio": 15.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "髙村　徳康",
+          "shares": 2864144,
+          "ratio": 15.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "諸戸グループマネジメント株式会社",
+          "shares": 1800000,
+          "ratio": 9.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ネクストシークエンス合同会社",
+          "shares": 1200000,
+          "ratio": 6.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "一徳合同会社",
+          "shares": 1200000,
+          "ratio": 6.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "セレンディップグループ従業員持株会",
+          "shares": 680360,
+          "ratio": 3.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 419473,
+          "ratio": 2.31,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "竹内　弘一",
+          "shares": 248400,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 214053,
+          "ratio": 1.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 192400,
+          "ratio": 1.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 32.93,
+          "corporate": 23.1,
+          "employee": 3.74,
+          "foreign": 2.31,
+          "securities": 1.18,
+          "trust": 1.06
+        },
+        "individual_total": 32.93,
+        "top10_total": 64.32
+      }
+    }
+  ]
+}

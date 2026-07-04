@@ -1,0 +1,222 @@
+{
+  "secCode": "6342",
+  "issuerName": "株式会社太平製作所",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "太平製作所自社株投資会",
+      "shares": 104000,
+      "ratio": 8.03,
+      "category": "treasury",
+      "category_label": "自己株式",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+      "shares": 95000,
+      "ratio": 7.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "太平製作所取引先持株会",
+      "shares": 93000,
+      "ratio": 7.19,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "インタラクティブ・ブローカーズ証券株式会社",
+      "shares": 51000,
+      "ratio": 3.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社名南製作所",
+      "shares": 38000,
+      "ratio": 2.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "内藤　幸男",
+      "shares": 37000,
+      "ratio": 2.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "齊藤　武",
+      "shares": 31000,
+      "ratio": 2.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社あいち銀行",
+      "shares": 25000,
+      "ratio": 1.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社名古屋銀行",
+      "shares": 25000,
+      "ratio": 1.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社大東工作所",
+      "shares": 23000,
+      "ratio": 1.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "treasury": 8.03,
+      "corporate": 12.06,
+      "employee": 7.19,
+      "securities": 3.93,
+      "individual": 5.29,
+      "financial": 3.84
+    },
+    "individual_total": 5.29,
+    "top10_total": 40.34
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第139期(2025/04/01－2026/03/31)",
+      "docID": "S100YIVE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "太平製作所自社株投資会",
+          "shares": 104000,
+          "ratio": 8.03,
+          "category": "treasury",
+          "category_label": "自己株式",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+          "shares": 95000,
+          "ratio": 7.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "太平製作所取引先持株会",
+          "shares": 93000,
+          "ratio": 7.19,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "インタラクティブ・ブローカーズ証券株式会社",
+          "shares": 51000,
+          "ratio": 3.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社名南製作所",
+          "shares": 38000,
+          "ratio": 2.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "内藤　幸男",
+          "shares": 37000,
+          "ratio": 2.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "齊藤　武",
+          "shares": 31000,
+          "ratio": 2.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社あいち銀行",
+          "shares": 25000,
+          "ratio": 1.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社名古屋銀行",
+          "shares": 25000,
+          "ratio": 1.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社大東工作所",
+          "shares": 23000,
+          "ratio": 1.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "treasury": 8.03,
+          "corporate": 12.06,
+          "employee": 7.19,
+          "securities": 3.93,
+          "individual": 5.29,
+          "financial": 3.84
+        },
+        "individual_total": 5.29,
+        "top10_total": 40.34
+      }
+    }
+  ]
+}

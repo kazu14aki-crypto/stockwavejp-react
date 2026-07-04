@@ -1,0 +1,220 @@
+{
+  "secCode": "2816",
+  "issuerName": "株式会社ダイショー",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社山田興産",
+      "shares": 2442000,
+      "ratio": 25.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "一般財団法人金澤記念育英財団",
+      "shares": 1488000,
+      "ratio": 15.41,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松　本　賢　子",
+      "shares": 853000,
+      "ratio": 8.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ダイショー従業員持株会",
+      "shares": 254000,
+      "ratio": 2.63,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松　本　洋　助",
+      "shares": 206000,
+      "ratio": 2.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 180000,
+      "ratio": 1.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "松　本　俊　一",
+      "shares": 96000,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社福岡銀行",
+      "shares": 89000,
+      "ratio": 0.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松　本　ひ　か　る",
+      "shares": 75000,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松　本　寿　子",
+      "shares": 64000,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.3,
+      "foundation": 15.41,
+      "individual": 13.39,
+      "employee": 2.63,
+      "financial": 2.78
+    },
+    "individual_total": 13.39,
+    "top10_total": 59.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100YGNU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社山田興産",
+          "shares": 2442000,
+          "ratio": 25.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "一般財団法人金澤記念育英財団",
+          "shares": 1488000,
+          "ratio": 15.41,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松　本　賢　子",
+          "shares": 853000,
+          "ratio": 8.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ダイショー従業員持株会",
+          "shares": 254000,
+          "ratio": 2.63,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松　本　洋　助",
+          "shares": 206000,
+          "ratio": 2.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 180000,
+          "ratio": 1.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "松　本　俊　一",
+          "shares": 96000,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社福岡銀行",
+          "shares": 89000,
+          "ratio": 0.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松　本　ひ　か　る",
+          "shares": 75000,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松　本　寿　子",
+          "shares": 64000,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.3,
+          "foundation": 15.41,
+          "individual": 13.39,
+          "employee": 2.63,
+          "financial": 2.78
+        },
+        "individual_total": 13.39,
+        "top10_total": 59.51
+      }
+    }
+  ]
+}

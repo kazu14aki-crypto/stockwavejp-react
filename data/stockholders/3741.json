@@ -1,0 +1,218 @@
+{
+  "secCode": "3741",
+  "issuerName": "株式会社セック",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社矢野商会",
+      "shares": 2777640,
+      "ratio": 27.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 708100,
+      "ratio": 6.93,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "セック従業員持株会",
+      "shares": 501900,
+      "ratio": 4.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "矢野　恭一",
+      "shares": 355360,
+      "ratio": 3.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社近石商会",
+      "shares": 301280,
+      "ratio": 2.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 173300,
+      "ratio": 1.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "有限会社小早商事",
+      "shares": 149880,
+      "ratio": 1.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小早　紀光",
+      "shares": 134200,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小早　宏一朗",
+      "shares": 134200,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "近石　幸博",
+      "shares": 101120,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 31.61,
+      "trust": 8.62,
+      "employee": 4.91,
+      "individual": 7.09
+    },
+    "individual_total": 7.09,
+    "top10_total": 52.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第56期(2025/04/01－2026/03/31)",
+      "docID": "S100YIG2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社矢野商会",
+          "shares": 2777640,
+          "ratio": 27.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 708100,
+          "ratio": 6.93,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "セック従業員持株会",
+          "shares": 501900,
+          "ratio": 4.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "矢野　恭一",
+          "shares": 355360,
+          "ratio": 3.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社近石商会",
+          "shares": 301280,
+          "ratio": 2.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 173300,
+          "ratio": 1.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "有限会社小早商事",
+          "shares": 149880,
+          "ratio": 1.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小早　紀光",
+          "shares": 134200,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小早　宏一朗",
+          "shares": 134200,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "近石　幸博",
+          "shares": 101120,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 31.61,
+          "trust": 8.62,
+          "employee": 4.91,
+          "individual": 7.09
+        },
+        "individual_total": 7.09,
+        "top10_total": 52.23
+      }
+    }
+  ]
+}

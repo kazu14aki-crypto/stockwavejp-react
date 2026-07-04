@@ -1,0 +1,218 @@
+{
+  "secCode": "3183",
+  "issuerName": "ウイン・パートナーズ株式会社",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈲オフィスＡ",
+      "shares": 7080200,
+      "ratio": 25.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ (常任代理人 ㈱三菱ＵＦＪ銀行)",
+      "shares": 1992871,
+      "ratio": 7.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱キエマ企画",
+      "shares": 1891000,
+      "ratio": 6.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "秋田 裕二",
+      "shares": 1716290,
+      "ratio": 6.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "グリーンホスピタルサプライ㈱",
+      "shares": 1600000,
+      "ratio": 5.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 1170700,
+      "ratio": 4.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "秋沢 英海",
+      "shares": 901300,
+      "ratio": 3.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "古川 國久",
+      "shares": 726000,
+      "ratio": 2.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "伊藤 成幸",
+      "shares": 576300,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行㈱)",
+      "shares": 500000,
+      "ratio": 1.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 46.89,
+      "financial": 7.25,
+      "other": 5.82,
+      "trust": 6.08
+    },
+    "individual_total": 46.89,
+    "top10_total": 66.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/04/01－2026/03/31)",
+      "docID": "S100YEHT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈲オフィスＡ",
+          "shares": 7080200,
+          "ratio": 25.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ (常任代理人 ㈱三菱ＵＦＪ銀行)",
+          "shares": 1992871,
+          "ratio": 7.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱キエマ企画",
+          "shares": 1891000,
+          "ratio": 6.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "秋田 裕二",
+          "shares": 1716290,
+          "ratio": 6.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "グリーンホスピタルサプライ㈱",
+          "shares": 1600000,
+          "ratio": 5.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 1170700,
+          "ratio": 4.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "秋沢 英海",
+          "shares": 901300,
+          "ratio": 3.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "古川 國久",
+          "shares": 726000,
+          "ratio": 2.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊藤 成幸",
+          "shares": 576300,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行㈱)",
+          "shares": 500000,
+          "ratio": 1.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 46.89,
+          "financial": 7.25,
+          "other": 5.82,
+          "trust": 6.08
+        },
+        "individual_total": 46.89,
+        "top10_total": 66.04
+      }
+    }
+  ]
+}

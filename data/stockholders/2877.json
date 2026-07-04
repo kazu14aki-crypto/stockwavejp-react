@@ -1,0 +1,218 @@
+{
+  "secCode": "2877",
+  "issuerName": "日東ベスト株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日東ベスト取引先持株会",
+      "shares": 1634000,
+      "ratio": 13.51,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社ウチダ・コーポレート",
+      "shares": 941000,
+      "ratio": 7.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "農林中央金庫",
+      "shares": 605000,
+      "ratio": 5.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社山形銀行",
+      "shares": 600000,
+      "ratio": 4.95,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日東ベスト従業員持株会",
+      "shares": 565000,
+      "ratio": 4.67,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ウチダ・ホールディングス",
+      "shares": 527000,
+      "ratio": 4.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "国分グループ本社株式会社",
+      "shares": 293000,
+      "ratio": 2.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東洋製罐グループホールディングス株式会社",
+      "shares": 291000,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "内田　真帆子",
+      "shares": 217000,
+      "ratio": 1.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "川商フーズ株式会社",
+      "shares": 204000,
+      "ratio": 1.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 18.18,
+      "corporate": 18.64,
+      "financial": 9.95,
+      "individual": 1.79
+    },
+    "individual_total": 1.79,
+    "top10_total": 48.56
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第88期(2025/04/01－2026/03/31)",
+      "docID": "S100YGFI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日東ベスト取引先持株会",
+          "shares": 1634000,
+          "ratio": 13.51,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社ウチダ・コーポレート",
+          "shares": 941000,
+          "ratio": 7.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "農林中央金庫",
+          "shares": 605000,
+          "ratio": 5.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社山形銀行",
+          "shares": 600000,
+          "ratio": 4.95,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日東ベスト従業員持株会",
+          "shares": 565000,
+          "ratio": 4.67,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ウチダ・ホールディングス",
+          "shares": 527000,
+          "ratio": 4.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "国分グループ本社株式会社",
+          "shares": 293000,
+          "ratio": 2.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東洋製罐グループホールディングス株式会社",
+          "shares": 291000,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "内田　真帆子",
+          "shares": 217000,
+          "ratio": 1.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "川商フーズ株式会社",
+          "shares": 204000,
+          "ratio": 1.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 18.18,
+          "corporate": 18.64,
+          "financial": 9.95,
+          "individual": 1.79
+        },
+        "individual_total": 1.79,
+        "top10_total": 48.56
+      }
+    }
+  ]
+}

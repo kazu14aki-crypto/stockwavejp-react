@@ -1,0 +1,220 @@
+{
+  "secCode": "5821",
+  "issuerName": "平河ヒューテック株式会社",
+  "updated_at": "2026/07/04 18:05 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1550200,
+      "ratio": 10.47,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．　（ＡＶＦＣ）　ＲＥ　ＩＥＤＰ　ＡＩＦ　ＣＬＩＥＮＴＳ　ＮＯＮ　ＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 700665,
+      "ratio": 4.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ　ＤＩＲＥＣＴＯＲ　ＫＨ　ＡＬＩＤ　ＯＭＡＲＩ　ＩＴＯＮ\n（常任代理人　立花証券株式会社）",
+      "shares": 696600,
+      "ratio": 4.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 630000,
+      "ratio": 4.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 630000,
+      "ratio": 4.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平河ヒューテック社員持株会",
+      "shares": 628458,
+      "ratio": 4.24,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 538300,
+      "ratio": 3.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "隅田　和夫",
+      "shares": 525061,
+      "ratio": 3.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "Ｂｒｉｄｇｅｓｔｒｅａｍ Ｌｉｍｉｔｅｄ， ａｓ Ｔｒｕｓｔｅｅ ｏｆ ＡＸＣ Ｓｔｒａｔｅｇｉｃ Ｏｐｐｏｒｔｕｎｉｔｉｅｓ ＤＩＲＥＣＴＯＲ ＯＦ ＩＭ ＹＡＳＵＴＯ ＭＯＮＤＥＮ\n（常任代理人　立花証券株式会社）",
+      "shares": 524900,
+      "ratio": 3.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "隅田　文子",
+      "shares": 349849,
+      "ratio": 2.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.11,
+      "financial": 13.25,
+      "securities": 8.26,
+      "employee": 4.24,
+      "individual": 5.91
+    },
+    "individual_total": 5.91,
+    "top10_total": 45.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YKSU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1550200,
+          "ratio": 10.47,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．　（ＡＶＦＣ）　ＲＥ　ＩＥＤＰ　ＡＩＦ　ＣＬＩＥＮＴＳ　ＮＯＮ　ＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 700665,
+          "ratio": 4.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＢＲＩＤＧＥＳＴＲＥＡＭ　ＬＩＭＩＴＥＤ，　ＡＳ　ＴＲＵＳＴＥＥ　ＯＦ　ＡＸＣ　ＳＴＲＡＴＥＧＩＣ　ＯＰＰＯＲＴＵＮＩＴＩＥＳ　ＤＩＲＥＣＴＯＲ　ＫＨ　ＡＬＩＤ　ＯＭＡＲＩ　ＩＴＯＮ\n（常任代理人　立花証券株式会社）",
+          "shares": 696600,
+          "ratio": 4.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 630000,
+          "ratio": 4.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 630000,
+          "ratio": 4.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平河ヒューテック社員持株会",
+          "shares": 628458,
+          "ratio": 4.24,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 538300,
+          "ratio": 3.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "隅田　和夫",
+          "shares": 525061,
+          "ratio": 3.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "Ｂｒｉｄｇｅｓｔｒｅａｍ Ｌｉｍｉｔｅｄ， ａｓ Ｔｒｕｓｔｅｅ ｏｆ ＡＸＣ Ｓｔｒａｔｅｇｉｃ Ｏｐｐｏｒｔｕｎｉｔｉｅｓ ＤＩＲＥＣＴＯＲ ＯＦ ＩＭ ＹＡＳＵＴＯ ＭＯＮＤＥＮ\n（常任代理人　立花証券株式会社）",
+          "shares": 524900,
+          "ratio": 3.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "隅田　文子",
+          "shares": 349849,
+          "ratio": 2.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.11,
+          "financial": 13.25,
+          "securities": 8.26,
+          "employee": 4.24,
+          "individual": 5.91
+        },
+        "individual_total": 5.91,
+        "top10_total": 45.77
+      }
+    }
+  ]
+}

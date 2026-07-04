@@ -1,0 +1,218 @@
+{
+  "secCode": "331A",
+  "issuerName": "株式会社メディックス",
+  "updated_at": "2026/07/04 18:14 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "小谷中　茂樹",
+      "shares": 1530900,
+      "ratio": 19.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "水野　昌広",
+      "shares": 1215000,
+      "ratio": 15.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "メディックス従業員持株会",
+      "shares": 718700,
+      "ratio": 9.37,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小谷中　一樹",
+      "shares": 510000,
+      "ratio": 6.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田中　正則",
+      "shares": 430000,
+      "ratio": 5.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社フォローワンズハート",
+      "shares": 420000,
+      "ratio": 5.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社EPARK",
+      "shares": 299300,
+      "ratio": 3.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 129900,
+      "ratio": 1.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "今森　教仁",
+      "shares": 103750,
+      "ratio": 1.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日中ブリッジ株式会社",
+      "shares": 81100,
+      "ratio": 1.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 49.43,
+      "employee": 9.37,
+      "corporate": 10.44,
+      "securities": 1.69
+    },
+    "individual_total": 49.43,
+    "top10_total": 70.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/04/01－2026/03/31)",
+      "docID": "S100YHLO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "小谷中　茂樹",
+          "shares": 1530900,
+          "ratio": 19.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "水野　昌広",
+          "shares": 1215000,
+          "ratio": 15.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "メディックス従業員持株会",
+          "shares": 718700,
+          "ratio": 9.37,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小谷中　一樹",
+          "shares": 510000,
+          "ratio": 6.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田中　正則",
+          "shares": 430000,
+          "ratio": 5.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社フォローワンズハート",
+          "shares": 420000,
+          "ratio": 5.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社EPARK",
+          "shares": 299300,
+          "ratio": 3.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 129900,
+          "ratio": 1.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "今森　教仁",
+          "shares": 103750,
+          "ratio": 1.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日中ブリッジ株式会社",
+          "shares": 81100,
+          "ratio": 1.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 49.43,
+          "employee": 9.37,
+          "corporate": 10.44,
+          "securities": 1.69
+        },
+        "individual_total": 49.43,
+        "top10_total": 70.93
+      }
+    }
+  ]
+}

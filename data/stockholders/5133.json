@@ -1,0 +1,434 @@
+{
+  "secCode": "5133",
+  "issuerName": "株式会社テリロジーホールディングス",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "津吹　憲男",
+      "shares": 2291800,
+      "ratio": 13.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "兼松エレクトロニクス株式会社",
+      "shares": 855700,
+      "ratio": 5.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "高千穂交易株式会社",
+      "shares": 855700,
+      "ratio": 5.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "サクサ株式会社",
+      "shares": 825800,
+      "ratio": 4.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "阿部　昭彦",
+      "shares": 764800,
+      "ratio": 4.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上田八木短資株式会社",
+      "shares": 351300,
+      "ratio": 2.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大和証券株式会社",
+      "shares": 339600,
+      "ratio": 1.99,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 217300,
+      "ratio": 1.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "テリロジー社員持株会",
+      "shares": 182600,
+      "ratio": 1.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "浅井　克己",
+      "shares": 143600,
+      "ratio": 0.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 18.71,
+      "corporate": 16.88,
+      "securities": 3.26,
+      "employee": 1.07
+    },
+    "individual_total": 18.71,
+    "top10_total": 39.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第4期(2025/04/01－2026/03/31)",
+      "docID": "S100YJAH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "津吹　憲男",
+          "shares": 2291800,
+          "ratio": 13.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "兼松エレクトロニクス株式会社",
+          "shares": 855700,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "高千穂交易株式会社",
+          "shares": 855700,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "サクサ株式会社",
+          "shares": 825800,
+          "ratio": 4.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "阿部　昭彦",
+          "shares": 764800,
+          "ratio": 4.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上田八木短資株式会社",
+          "shares": 351300,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和証券株式会社",
+          "shares": 339600,
+          "ratio": 1.99,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 217300,
+          "ratio": 1.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "テリロジー社員持株会",
+          "shares": 182600,
+          "ratio": 1.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "浅井　克己",
+          "shares": 143600,
+          "ratio": 0.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.71,
+          "corporate": 16.88,
+          "securities": 3.26,
+          "employee": 1.07
+        },
+        "individual_total": 18.71,
+        "top10_total": 39.92
+      }
+    },
+    {
+      "submitDate": "2026-06-29",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第3期(2024/04/01－2025/03/31)",
+      "docID": "S100YFLU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "津吹　憲男",
+          "shares": 2291800,
+          "ratio": 13.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "兼松エレクトロニクス株式会社",
+          "shares": 855700,
+          "ratio": 5.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "高千穂交易株式会社",
+          "shares": 855700,
+          "ratio": 5.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "阿部　昭彦",
+          "shares": 764800,
+          "ratio": 4.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社SBI証券",
+          "shares": 286400,
+          "ratio": 1.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "東京短資株式会社",
+          "shares": 200000,
+          "ratio": 1.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テリロジー社員持株会",
+          "shares": 159400,
+          "ratio": 0.93,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "FUTU SECURITES INTERANTIONAL (HONG KONG) LIMITED\n（常任代理人　moomoo証券株式会社）",
+          "shares": 157300,
+          "ratio": 0.92,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱UFJモルガン・スタンレー証券株式会社",
+          "shares": 154400,
+          "ratio": 0.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "浅井　克己",
+          "shares": 129600,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.66,
+          "corporate": 11.19,
+          "securities": 3.5,
+          "employee": 0.93
+        },
+        "individual_total": 18.66,
+        "top10_total": 34.28
+      }
+    },
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第4期(2025/04/01－2026/03/31)",
+      "docID": "S100YGVT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "津吹　憲男",
+          "shares": 2291800,
+          "ratio": 13.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "兼松エレクトロニクス株式会社",
+          "shares": 855700,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "高千穂交易株式会社",
+          "shares": 855700,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "サクサ株式会社",
+          "shares": 825800,
+          "ratio": 4.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "阿部　昭彦",
+          "shares": 764800,
+          "ratio": 4.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上田八木短資株式会社",
+          "shares": 351300,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和証券株式会社",
+          "shares": 339600,
+          "ratio": 1.99,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 217300,
+          "ratio": 1.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "テリロジー社員持株会",
+          "shares": 182600,
+          "ratio": 1.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "浅井　克己",
+          "shares": 143600,
+          "ratio": 0.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.71,
+          "corporate": 16.88,
+          "securities": 3.26,
+          "employee": 1.07
+        },
+        "individual_total": 18.71,
+        "top10_total": 39.92
+      }
+    }
+  ]
+}

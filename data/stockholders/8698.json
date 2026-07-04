@@ -1,0 +1,222 @@
+{
+  "secCode": "8698",
+  "issuerName": "マネックスグループ株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社しずおかフィナンシャルグループ\n(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 51091100,
+      "ratio": 20.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 28766700,
+      "ratio": 11.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社松本",
+      "shares": 22080200,
+      "ratio": 8.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 9327486,
+      "ratio": 3.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 6248216,
+      "ratio": 2.48,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　Ａ／Ｃ　ＩＰＢ　ＳＥＧＲＥＧＡＴＥＤ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 3798697,
+      "ratio": 1.51,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "工藤　恭子",
+      "shares": 3455800,
+      "ratio": 1.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　505001\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 2618891,
+      "ratio": 1.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 2526773,
+      "ratio": 1.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 2484322,
+      "ratio": 0.98,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 35.47,
+      "corporate": 8.78,
+      "securities": 2.48,
+      "other": 1.51,
+      "individual": 1.37,
+      "financial": 3.02
+    },
+    "individual_total": 1.37,
+    "top10_total": 52.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YM8I",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社しずおかフィナンシャルグループ\n(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 51091100,
+          "ratio": 20.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 28766700,
+          "ratio": 11.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社松本",
+          "shares": 22080200,
+          "ratio": 8.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 9327486,
+          "ratio": 3.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 6248216,
+          "ratio": 2.48,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　Ａ／Ｃ　ＩＰＢ　ＳＥＧＲＥＧＡＴＥＤ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 3798697,
+          "ratio": 1.51,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "工藤　恭子",
+          "shares": 3455800,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　505001\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 2618891,
+          "ratio": 1.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 2526773,
+          "ratio": 1.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 2484322,
+          "ratio": 0.98,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 35.47,
+          "corporate": 8.78,
+          "securities": 2.48,
+          "other": 1.51,
+          "individual": 1.37,
+          "financial": 3.02
+        },
+        "individual_total": 1.37,
+        "top10_total": 52.63
+      }
+    }
+  ]
+}

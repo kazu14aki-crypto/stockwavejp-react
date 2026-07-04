@@ -1,0 +1,218 @@
+{
+  "secCode": "2218",
+  "issuerName": "日糧製パン株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "山崎製パン㈱",
+      "shares": 628000,
+      "ratio": 30.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日糧取引先持株会",
+      "shares": 340000,
+      "ratio": 16.25,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱ＡＤＥＫＡ",
+      "shares": 105000,
+      "ratio": 5.02,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱北洋銀行",
+      "shares": 103000,
+      "ratio": 4.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "相馬商事㈱",
+      "shares": 82000,
+      "ratio": 3.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日糧従業員持株会",
+      "shares": 68000,
+      "ratio": 3.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱セコマ",
+      "shares": 21000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＭＰ五協フード＆ケミカル㈱",
+      "shares": 18000,
+      "ratio": 0.89,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 17000,
+      "ratio": 0.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "釧根食糧㈱",
+      "shares": 16000,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 35.73,
+      "employee": 19.52,
+      "other": 5.91,
+      "financial": 5.79
+    },
+    "individual_total": 35.73,
+    "top10_total": 66.95
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/04/01－2026/03/31)",
+      "docID": "S100YHEK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "山崎製パン㈱",
+          "shares": 628000,
+          "ratio": 30.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日糧取引先持株会",
+          "shares": 340000,
+          "ratio": 16.25,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱ＡＤＥＫＡ",
+          "shares": 105000,
+          "ratio": 5.02,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱北洋銀行",
+          "shares": 103000,
+          "ratio": 4.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "相馬商事㈱",
+          "shares": 82000,
+          "ratio": 3.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日糧従業員持株会",
+          "shares": 68000,
+          "ratio": 3.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱セコマ",
+          "shares": 21000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＭＰ五協フード＆ケミカル㈱",
+          "shares": 18000,
+          "ratio": 0.89,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 17000,
+          "ratio": 0.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "釧根食糧㈱",
+          "shares": 16000,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 35.73,
+          "employee": 19.52,
+          "other": 5.91,
+          "financial": 5.79
+        },
+        "individual_total": 35.73,
+        "top10_total": 66.95
+      }
+    }
+  ]
+}

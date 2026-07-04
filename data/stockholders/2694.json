@@ -1,0 +1,216 @@
+{
+  "secCode": "2694",
+  "issuerName": "株式会社焼肉坂井ホールディングス",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ジー・コミュニケーション",
+      "shares": 118560000,
+      "ratio": 50.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "沼田　昭二",
+      "shares": 22618000,
+      "ratio": 9.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アリアケジャパン株式会社",
+      "shares": 2224000,
+      "ratio": 0.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "焼肉坂井ホールディングス取引先持株会",
+      "shares": 2173000,
+      "ratio": 0.92,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社Ｊ・ＡＲＴ",
+      "shares": 804000,
+      "ratio": 0.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "江川　春延",
+      "shares": 600000,
+      "ratio": 0.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡田　甲子男",
+      "shares": 400000,
+      "ratio": 0.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "杉本　英雄",
+      "shares": 391000,
+      "ratio": 0.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ニップン",
+      "shares": 338000,
+      "ratio": 0.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社マルト水谷",
+      "shares": 318000,
+      "ratio": 0.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.84,
+      "individual": 10.18,
+      "employee": 0.92
+    },
+    "individual_total": 10.18,
+    "top10_total": 62.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第67期(2025/04/01－2026/03/31)",
+      "docID": "S100YGJS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ジー・コミュニケーション",
+          "shares": 118560000,
+          "ratio": 50.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "沼田　昭二",
+          "shares": 22618000,
+          "ratio": 9.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アリアケジャパン株式会社",
+          "shares": 2224000,
+          "ratio": 0.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "焼肉坂井ホールディングス取引先持株会",
+          "shares": 2173000,
+          "ratio": 0.92,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社Ｊ・ＡＲＴ",
+          "shares": 804000,
+          "ratio": 0.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "江川　春延",
+          "shares": 600000,
+          "ratio": 0.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡田　甲子男",
+          "shares": 400000,
+          "ratio": 0.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "杉本　英雄",
+          "shares": 391000,
+          "ratio": 0.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ニップン",
+          "shares": 338000,
+          "ratio": 0.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社マルト水谷",
+          "shares": 318000,
+          "ratio": 0.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.84,
+          "individual": 10.18,
+          "employee": 0.92
+        },
+        "individual_total": 10.18,
+        "top10_total": 62.94
+      }
+    }
+  ]
+}

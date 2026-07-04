@@ -1,0 +1,218 @@
+{
+  "secCode": "2207",
+  "issuerName": "株式会社ｍｅｉｔｏ",
+  "updated_at": "2026/07/04 18:22 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "興和株式会社",
+      "shares": 1560000,
+      "ratio": 9.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "meito取引先持株会",
+      "shares": 1385000,
+      "ratio": 8.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 756000,
+      "ratio": 4.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "高砂香料株式会社",
+      "shares": 753000,
+      "ratio": 4.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東邦瓦斯株式会社",
+      "shares": 453000,
+      "ratio": 2.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "サンシャインＤ号投資事業組合",
+      "shares": 329000,
+      "ratio": 2.02,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大和産業株式会社",
+      "shares": 319000,
+      "ratio": 1.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "サンシャインＧ号投資事業組合",
+      "shares": 302000,
+      "ratio": 1.85,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "不二製油株式会社",
+      "shares": 300000,
+      "ratio": 1.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "サンシャインＥ号投資事業組合",
+      "shares": 268000,
+      "ratio": 1.65,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 20.78,
+      "employee": 8.5,
+      "trust": 4.64,
+      "other": 5.52
+    },
+    "individual_total": 0,
+    "top10_total": 39.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第84期(2025/04/01－2026/03/31)",
+      "docID": "S100YHY5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "興和株式会社",
+          "shares": 1560000,
+          "ratio": 9.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "meito取引先持株会",
+          "shares": 1385000,
+          "ratio": 8.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 756000,
+          "ratio": 4.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "高砂香料株式会社",
+          "shares": 753000,
+          "ratio": 4.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東邦瓦斯株式会社",
+          "shares": 453000,
+          "ratio": 2.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "サンシャインＤ号投資事業組合",
+          "shares": 329000,
+          "ratio": 2.02,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和産業株式会社",
+          "shares": 319000,
+          "ratio": 1.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "サンシャインＧ号投資事業組合",
+          "shares": 302000,
+          "ratio": 1.85,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "不二製油株式会社",
+          "shares": 300000,
+          "ratio": 1.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "サンシャインＥ号投資事業組合",
+          "shares": 268000,
+          "ratio": 1.65,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 20.78,
+          "employee": 8.5,
+          "trust": 4.64,
+          "other": 5.52
+        },
+        "individual_total": 0,
+        "top10_total": 39.44
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6775",
+  "issuerName": "株式会社ＴＢグループ",
+  "updated_at": "2026/07/04 18:07 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "村田　三郎",
+      "shares": 1491000,
+      "ratio": 10.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ホスピタルネット",
+      "shares": 823000,
+      "ratio": 5.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ビッグサンズ",
+      "shares": 705000,
+      "ratio": 5.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "原　信夫",
+      "shares": 532000,
+      "ratio": 3.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "楽天証券株式会社",
+      "shares": 313000,
+      "ratio": 2.24,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社SBI証券",
+      "shares": 265000,
+      "ratio": 1.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "久原　須美代",
+      "shares": 222000,
+      "ratio": 1.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "北浜IRファンド第３号投資事業\n有限責任組合",
+      "shares": 200000,
+      "ratio": 1.43,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "木村　敏数",
+      "shares": 196000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Ｊ．Ｐ．ＭＯＲＧＡＮ \nＳＥＣＵＲＩＴＩＥＳ ＰＬＣ\n（常任代理人ＪＰモルガン証券株式会社）",
+      "shares": 179000,
+      "ratio": 1.29,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 17.47,
+      "corporate": 10.94,
+      "securities": 5.43,
+      "other": 1.43
+    },
+    "individual_total": 17.47,
+    "top10_total": 35.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/04/01－2026/03/31)",
+      "docID": "S100YK9X",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "村田　三郎",
+          "shares": 1491000,
+          "ratio": 10.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ホスピタルネット",
+          "shares": 823000,
+          "ratio": 5.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ビッグサンズ",
+          "shares": 705000,
+          "ratio": 5.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "原　信夫",
+          "shares": 532000,
+          "ratio": 3.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社",
+          "shares": 313000,
+          "ratio": 2.24,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社SBI証券",
+          "shares": 265000,
+          "ratio": 1.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "久原　須美代",
+          "shares": 222000,
+          "ratio": 1.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "北浜IRファンド第３号投資事業\n有限責任組合",
+          "shares": 200000,
+          "ratio": 1.43,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "木村　敏数",
+          "shares": 196000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Ｊ．Ｐ．ＭＯＲＧＡＮ \nＳＥＣＵＲＩＴＩＥＳ ＰＬＣ\n（常任代理人ＪＰモルガン証券株式会社）",
+          "shares": 179000,
+          "ratio": 1.29,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 17.47,
+          "corporate": 10.94,
+          "securities": 5.43,
+          "other": 1.43
+        },
+        "individual_total": 17.47,
+        "top10_total": 35.27
+      }
+    }
+  ]
+}

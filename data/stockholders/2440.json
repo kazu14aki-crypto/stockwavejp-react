@@ -1,0 +1,218 @@
+{
+  "secCode": "2440",
+  "issuerName": "株式会社ぐるなび",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "楽天グループ株式会社",
+      "shares": 9274600,
+      "ratio": 16.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "滝　久雄",
+      "shares": 7097800,
+      "ratio": 12.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3268500,
+      "ratio": 5.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＳＨＩＦＴ",
+      "shares": 2257300,
+      "ratio": 4.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人日本交通文化協会",
+      "shares": 1862800,
+      "ratio": 3.3,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "杉原　章郎（注）１",
+      "shares": 1322789,
+      "ratio": 2.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小田急電鉄株式会社",
+      "shares": 1128500,
+      "ratio": 2.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東京地下鉄株式会社",
+      "shares": 973600,
+      "ratio": 1.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "滝　裕子",
+      "shares": 847000,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社オプティム",
+      "shares": 779200,
+      "ratio": 1.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.55,
+      "individual": 16.42,
+      "trust": 5.79,
+      "foundation": 3.3
+    },
+    "individual_total": 16.42,
+    "top10_total": 51.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第37期(2025/04/01－2026/03/31)",
+      "docID": "S100YJQU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "楽天グループ株式会社",
+          "shares": 9274600,
+          "ratio": 16.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "滝　久雄",
+          "shares": 7097800,
+          "ratio": 12.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3268500,
+          "ratio": 5.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＳＨＩＦＴ",
+          "shares": 2257300,
+          "ratio": 4.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人日本交通文化協会",
+          "shares": 1862800,
+          "ratio": 3.3,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "杉原　章郎（注）１",
+          "shares": 1322789,
+          "ratio": 2.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小田急電鉄株式会社",
+          "shares": 1128500,
+          "ratio": 2.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東京地下鉄株式会社",
+          "shares": 973600,
+          "ratio": 1.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "滝　裕子",
+          "shares": 847000,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社オプティム",
+          "shares": 779200,
+          "ratio": 1.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.55,
+          "individual": 16.42,
+          "trust": 5.79,
+          "foundation": 3.3
+        },
+        "individual_total": 16.42,
+        "top10_total": 51.06
+      }
+    }
+  ]
+}

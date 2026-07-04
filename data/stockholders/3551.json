@@ -1,0 +1,216 @@
+{
+  "secCode": "3551",
+  "issuerName": "ダイニック株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ニックグループ持株会",
+      "shares": 535000,
+      "ratio": 6.53,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ダイニック従業員持株会",
+      "shares": 261000,
+      "ratio": 3.19,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ヨシダトモヒロ",
+      "shares": 254000,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱ヤクルト本社",
+      "shares": 206000,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱三井住友銀行",
+      "shares": 185000,
+      "ratio": 2.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "みずほ信託銀行㈱",
+      "shares": 185000,
+      "ratio": 2.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱滋賀銀行",
+      "shares": 177000,
+      "ratio": 2.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱武蔵野銀行",
+      "shares": 177000,
+      "ratio": 2.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "オー・ジー㈱",
+      "shares": 172000,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "コクヨ㈱",
+      "shares": 167000,
+      "ratio": 2.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 9.72,
+      "individual": 9.76,
+      "financial": 8.82
+    },
+    "individual_total": 9.76,
+    "top10_total": 28.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第163期(2025/04/01－2026/03/31)",
+      "docID": "S100YFSH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ニックグループ持株会",
+          "shares": 535000,
+          "ratio": 6.53,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ダイニック従業員持株会",
+          "shares": 261000,
+          "ratio": 3.19,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ヨシダトモヒロ",
+          "shares": 254000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱ヤクルト本社",
+          "shares": 206000,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱三井住友銀行",
+          "shares": 185000,
+          "ratio": 2.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "みずほ信託銀行㈱",
+          "shares": 185000,
+          "ratio": 2.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱滋賀銀行",
+          "shares": 177000,
+          "ratio": 2.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱武蔵野銀行",
+          "shares": 177000,
+          "ratio": 2.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "オー・ジー㈱",
+          "shares": 172000,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "コクヨ㈱",
+          "shares": 167000,
+          "ratio": 2.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 9.72,
+          "individual": 9.76,
+          "financial": 8.82
+        },
+        "individual_total": 9.76,
+        "top10_total": 28.3
+      }
+    }
+  ]
+}

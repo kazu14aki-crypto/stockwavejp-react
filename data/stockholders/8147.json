@@ -1,0 +1,218 @@
+{
+  "secCode": "8147",
+  "issuerName": "株式会社トミタ",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社トミコーポレーション",
+      "shares": 503000,
+      "ratio": 9.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "トミタ共栄会",
+      "shares": 478000,
+      "ratio": 9.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "オークマ株式会社",
+      "shares": 262000,
+      "ratio": 5.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ダイキン工業株式会社",
+      "shares": 250000,
+      "ratio": 4.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行\n（常任代理人 株式会社日本カストディ銀行）",
+      "shares": 235000,
+      "ratio": 4.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "冨田　雅枝",
+      "shares": 226000,
+      "ratio": 4.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高松機械工業株式会社",
+      "shares": 217000,
+      "ratio": 4.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社北陸銀行",
+      "shares": 214000,
+      "ratio": 4.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社常陽銀行\n（常任代理人 日本マスタートラスト信託銀行株式会社）",
+      "shares": 172000,
+      "ratio": 3.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "冨田　薫",
+      "shares": 168000,
+      "ratio": 3.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.57,
+      "individual": 16.71,
+      "trust": 7.81,
+      "financial": 4.09
+    },
+    "individual_total": 16.71,
+    "top10_total": 52.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YJEU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社トミコーポレーション",
+          "shares": 503000,
+          "ratio": 9.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "トミタ共栄会",
+          "shares": 478000,
+          "ratio": 9.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "オークマ株式会社",
+          "shares": 262000,
+          "ratio": 5.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ダイキン工業株式会社",
+          "shares": 250000,
+          "ratio": 4.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行\n（常任代理人 株式会社日本カストディ銀行）",
+          "shares": 235000,
+          "ratio": 4.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "冨田　雅枝",
+          "shares": 226000,
+          "ratio": 4.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高松機械工業株式会社",
+          "shares": 217000,
+          "ratio": 4.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社北陸銀行",
+          "shares": 214000,
+          "ratio": 4.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社常陽銀行\n（常任代理人 日本マスタートラスト信託銀行株式会社）",
+          "shares": 172000,
+          "ratio": 3.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "冨田　薫",
+          "shares": 168000,
+          "ratio": 3.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.57,
+          "individual": 16.71,
+          "trust": 7.81,
+          "financial": 4.09
+        },
+        "individual_total": 16.71,
+        "top10_total": 52.18
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "9625",
+  "issuerName": "株式会社セレスポ",
+  "updated_at": "2026/07/04 18:48 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社スマイル",
+      "shares": 1100000,
+      "ratio": 20.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 323600,
+      "ratio": 5.9,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "セレスポ従業員持株会",
+      "shares": 213198,
+      "ratio": 3.89,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上田八木短資株式会社",
+      "shares": 189100,
+      "ratio": 3.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "關　俊太",
+      "shares": 170000,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "稲葉　利彦",
+      "shares": 146202,
+      "ratio": 2.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村證券株式会社",
+      "shares": 121800,
+      "ratio": 2.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "磯野　正美",
+      "shares": 102000,
+      "ratio": 1.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "北原　美子",
+      "shares": 80000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田代　剛",
+      "shares": 79684,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.74,
+      "other": 5.9,
+      "employee": 3.89,
+      "individual": 10.54
+    },
+    "individual_total": 10.54,
+    "top10_total": 46.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第49期(2025/04/01－2026/03/31)",
+      "docID": "S100YF00",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社スマイル",
+          "shares": 1100000,
+          "ratio": 20.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 323600,
+          "ratio": 5.9,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "セレスポ従業員持株会",
+          "shares": 213198,
+          "ratio": 3.89,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上田八木短資株式会社",
+          "shares": 189100,
+          "ratio": 3.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "關　俊太",
+          "shares": 170000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "稲葉　利彦",
+          "shares": 146202,
+          "ratio": 2.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 121800,
+          "ratio": 2.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "磯野　正美",
+          "shares": 102000,
+          "ratio": 1.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "北原　美子",
+          "shares": 80000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田代　剛",
+          "shares": 79684,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.74,
+          "other": 5.9,
+          "employee": 3.89,
+          "individual": 10.54
+        },
+        "individual_total": 10.54,
+        "top10_total": 46.07
+      }
+    }
+  ]
+}

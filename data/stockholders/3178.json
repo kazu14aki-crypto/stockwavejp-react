@@ -1,0 +1,216 @@
+{
+  "secCode": "3178",
+  "issuerName": "チムニー株式会社",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社やまや",
+      "shares": 9749300,
+      "ratio": 50.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "アサヒビール株式会社",
+      "shares": 1759700,
+      "ratio": 9.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "麒麟麦酒株式会社",
+      "shares": 1000000,
+      "ratio": 5.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "加藤産業株式会社",
+      "shares": 600000,
+      "ratio": 3.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "チムニー取引先持株会2",
+      "shares": 348400,
+      "ratio": 1.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "チムニー取引先持株会1",
+      "shares": 285200,
+      "ratio": 1.47,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行)",
+      "shares": 197104,
+      "ratio": 1.02,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中部飼料株式会社",
+      "shares": 103100,
+      "ratio": 0.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "チムニー社員持株会",
+      "shares": 85218,
+      "ratio": 0.44,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781(常任代理人 株式会社みずほ銀行)",
+      "shares": 68108,
+      "ratio": 0.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 68.46,
+      "employee": 3.71,
+      "foreign": 1.37
+    },
+    "individual_total": 0,
+    "top10_total": 73.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YE67",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社やまや",
+          "shares": 9749300,
+          "ratio": 50.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "アサヒビール株式会社",
+          "shares": 1759700,
+          "ratio": 9.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "麒麟麦酒株式会社",
+          "shares": 1000000,
+          "ratio": 5.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "加藤産業株式会社",
+          "shares": 600000,
+          "ratio": 3.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "チムニー取引先持株会2",
+          "shares": 348400,
+          "ratio": 1.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "チムニー取引先持株会1",
+          "shares": 285200,
+          "ratio": 1.47,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行)",
+          "shares": 197104,
+          "ratio": 1.02,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中部飼料株式会社",
+          "shares": 103100,
+          "ratio": 0.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "チムニー社員持株会",
+          "shares": 85218,
+          "ratio": 0.44,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781(常任代理人 株式会社みずほ銀行)",
+          "shares": 68108,
+          "ratio": 0.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 68.46,
+          "employee": 3.71,
+          "foreign": 1.37
+        },
+        "individual_total": 0,
+        "top10_total": 73.54
+      }
+    }
+  ]
+}

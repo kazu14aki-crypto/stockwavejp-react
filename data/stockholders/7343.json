@@ -1,0 +1,216 @@
+{
+  "secCode": "7343",
+  "issuerName": "ブロードマインド株式会社",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "伊藤　清",
+      "shares": 1424704,
+      "ratio": 24.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社クレディセゾン",
+      "shares": 1000000,
+      "ratio": 17.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "吉橋　正",
+      "shares": 567804,
+      "ratio": 9.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "笹川　治信",
+      "shares": 542400,
+      "ratio": 9.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大西　新吾",
+      "shares": 220004,
+      "ratio": 3.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "玉山　洋祐",
+      "shares": 87400,
+      "ratio": 1.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ブロードマインド従業員持株会",
+      "shares": 61100,
+      "ratio": 1.06,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社福田商事",
+      "shares": 50000,
+      "ratio": 0.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上村　浩",
+      "shares": 43900,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岡本　功治",
+      "shares": 43100,
+      "ratio": 0.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 51.02,
+      "corporate": 18.29,
+      "employee": 1.06
+    },
+    "individual_total": 51.02,
+    "top10_total": 70.37
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YKOR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "伊藤　清",
+          "shares": 1424704,
+          "ratio": 24.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社クレディセゾン",
+          "shares": 1000000,
+          "ratio": 17.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "吉橋　正",
+          "shares": 567804,
+          "ratio": 9.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "笹川　治信",
+          "shares": 542400,
+          "ratio": 9.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大西　新吾",
+          "shares": 220004,
+          "ratio": 3.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "玉山　洋祐",
+          "shares": 87400,
+          "ratio": 1.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ブロードマインド従業員持株会",
+          "shares": 61100,
+          "ratio": 1.06,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社福田商事",
+          "shares": 50000,
+          "ratio": 0.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上村　浩",
+          "shares": 43900,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岡本　功治",
+          "shares": 43100,
+          "ratio": 0.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 51.02,
+          "corporate": 18.29,
+          "employee": 1.06
+        },
+        "individual_total": 51.02,
+        "top10_total": 70.37
+      }
+    }
+  ]
+}

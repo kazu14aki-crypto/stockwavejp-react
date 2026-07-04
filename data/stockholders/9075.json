@@ -1,0 +1,328 @@
+{
+  "secCode": "9075",
+  "issuerName": "福山通運株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "公益財団法人渋谷育英会",
+      "shares": 5590000,
+      "ratio": 15.76,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3054000,
+      "ratio": 8.61,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社",
+      "shares": 2020000,
+      "ratio": 5.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社広島銀行",
+      "shares": 1762000,
+      "ratio": 4.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1602000,
+      "ratio": 4.52,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "福山通運共済会",
+      "shares": 1529000,
+      "ratio": 4.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "福山通運従業員持株会",
+      "shares": 1302000,
+      "ratio": 3.67,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "福山通運協力業者持株会",
+      "shares": 931000,
+      "ratio": 2.63,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "五洋建設株式会社",
+      "shares": 915000,
+      "ratio": 2.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社大創産業",
+      "shares": 873000,
+      "ratio": 2.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 15.76,
+      "trust": 13.13,
+      "financial": 14.97,
+      "employee": 6.3,
+      "corporate": 5.04
+    },
+    "individual_total": 0,
+    "top10_total": 55.2
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YIXL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人渋谷育英会",
+          "shares": 5590000,
+          "ratio": 15.76,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3054000,
+          "ratio": 8.61,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 2020000,
+          "ratio": 5.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社広島銀行",
+          "shares": 1762000,
+          "ratio": 4.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1602000,
+          "ratio": 4.52,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "福山通運共済会",
+          "shares": 1529000,
+          "ratio": 4.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福山通運従業員持株会",
+          "shares": 1302000,
+          "ratio": 3.67,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "福山通運協力業者持株会",
+          "shares": 931000,
+          "ratio": 2.63,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "五洋建設株式会社",
+          "shares": 915000,
+          "ratio": 2.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社大創産業",
+          "shares": 873000,
+          "ratio": 2.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 15.76,
+          "trust": 13.13,
+          "financial": 14.97,
+          "employee": 6.3,
+          "corporate": 5.04
+        },
+        "individual_total": 0,
+        "top10_total": 55.2
+      }
+    },
+    {
+      "submitDate": "2026-06-23",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第77期(2024/04/01－2025/03/31)",
+      "docID": "S100YHG2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人渋谷育英会",
+          "shares": 5590000,
+          "ratio": 14.04,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3259000,
+          "ratio": 8.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 2020000,
+          "ratio": 5.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 1813000,
+          "ratio": 4.55,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社広島銀行",
+          "shares": 1762000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "福山通運共済会",
+          "shares": 1529000,
+          "ratio": 3.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福山通運従業員持株会",
+          "shares": 1288000,
+          "ratio": 3.24,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1245000,
+          "ratio": 3.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "損害保険ジャパン株式会社",
+          "shares": 1017000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "福山通運協力業者持株会",
+          "shares": 943000,
+          "ratio": 2.37,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 14.04,
+          "trust": 15.87,
+          "financial": 15.9,
+          "employee": 5.61
+        },
+        "individual_total": 0,
+        "top10_total": 51.42
+      }
+    }
+  ]
+}

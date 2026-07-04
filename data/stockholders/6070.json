@@ -1,0 +1,220 @@
+{
+  "secCode": "6070",
+  "issuerName": "キャリアリンク株式会社",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "スマートキャピタル株式会社",
+      "shares": 5398000,
+      "ratio": 45.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 825100,
+      "ratio": 6.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 240100,
+      "ratio": 2.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ （常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 155831,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "キャリアリンク従業員持株会",
+      "shares": 132833,
+      "ratio": 1.12,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "成澤　素明",
+      "shares": 116000,
+      "ratio": 0.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "島　健人",
+      "shares": 93800,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "原　信夫",
+      "shares": 84300,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 58700,
+      "ratio": 0.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "森村　夏実",
+      "shares": 56200,
+      "ratio": 0.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.45,
+      "trust": 9.46,
+      "financial": 1.31,
+      "employee": 1.12,
+      "individual": 2.95
+    },
+    "individual_total": 2.95,
+    "top10_total": 60.29
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YHI9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "スマートキャピタル株式会社",
+          "shares": 5398000,
+          "ratio": 45.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 825100,
+          "ratio": 6.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 240100,
+          "ratio": 2.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ （常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 155831,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "キャリアリンク従業員持株会",
+          "shares": 132833,
+          "ratio": 1.12,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "成澤　素明",
+          "shares": 116000,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "島　健人",
+          "shares": 93800,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "原　信夫",
+          "shares": 84300,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 58700,
+          "ratio": 0.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "森村　夏実",
+          "shares": 56200,
+          "ratio": 0.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.45,
+          "trust": 9.46,
+          "financial": 1.31,
+          "employee": 1.12,
+          "individual": 2.95
+        },
+        "individual_total": 2.95,
+        "top10_total": 60.29
+      }
+    }
+  ]
+}

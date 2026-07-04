@@ -1,0 +1,220 @@
+{
+  "secCode": "4183",
+  "issuerName": "三井化学株式会社",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 65800000,
+      "ratio": 17.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 43471000,
+      "ratio": 11.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ゴールドマン・サックス証券株式会社ＢＮＹＭ\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 10149000,
+      "ratio": 2.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 8272000,
+      "ratio": 2.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三井化学従業員持株会",
+      "shares": 7364000,
+      "ratio": 2.0,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY\n510312\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 6457000,
+      "ratio": 1.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井化学取引先持株会",
+      "shares": 5966000,
+      "ratio": 1.62,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 510311\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 5741000,
+      "ratio": 1.55,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 5695000,
+      "ratio": 1.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 5563000,
+      "ratio": 1.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 31.91,
+      "financial": 2.75,
+      "employee": 3.62,
+      "foreign": 4.81,
+      "securities": 1.54
+    },
+    "individual_total": 0,
+    "top10_total": 44.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YGUI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 65800000,
+          "ratio": 17.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 43471000,
+          "ratio": 11.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ゴールドマン・サックス証券株式会社ＢＮＹＭ\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 10149000,
+          "ratio": 2.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 8272000,
+          "ratio": 2.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三井化学従業員持株会",
+          "shares": 7364000,
+          "ratio": 2.0,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY\n510312\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 6457000,
+          "ratio": 1.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井化学取引先持株会",
+          "shares": 5966000,
+          "ratio": 1.62,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 510311\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 5741000,
+          "ratio": 1.55,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 5695000,
+          "ratio": 1.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 5563000,
+          "ratio": 1.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 31.91,
+          "financial": 2.75,
+          "employee": 3.62,
+          "foreign": 4.81,
+          "securities": 1.54
+        },
+        "individual_total": 0,
+        "top10_total": 44.63
+      }
+    }
+  ]
+}

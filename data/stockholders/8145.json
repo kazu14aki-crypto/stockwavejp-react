@@ -1,0 +1,216 @@
+{
+  "secCode": "8145",
+  "issuerName": "中部水産株式会社",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱ニッスイ",
+      "shares": 239000,
+      "ratio": 14.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱極洋",
+      "shares": 120000,
+      "ratio": 7.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "Umios㈱",
+      "shares": 80000,
+      "ratio": 4.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱あいち銀行",
+      "shares": 78000,
+      "ratio": 4.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱名古屋銀行",
+      "shares": 63000,
+      "ratio": 3.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱スノーボールキャピタル",
+      "shares": 56000,
+      "ratio": 3.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "中央魚類㈱",
+      "shares": 46000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "服部貴男",
+      "shares": 41000,
+      "ratio": 2.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱北陸銀行",
+      "shares": 31000,
+      "ratio": 1.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱大水",
+      "shares": 25000,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 32.1,
+      "other": 4.8,
+      "financial": 10.4
+    },
+    "individual_total": 32.1,
+    "top10_total": 47.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第83期(2025/04/01－2026/03/31)",
+      "docID": "S100YI2J",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱ニッスイ",
+          "shares": 239000,
+          "ratio": 14.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱極洋",
+          "shares": 120000,
+          "ratio": 7.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "Umios㈱",
+          "shares": 80000,
+          "ratio": 4.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱あいち銀行",
+          "shares": 78000,
+          "ratio": 4.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱名古屋銀行",
+          "shares": 63000,
+          "ratio": 3.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱スノーボールキャピタル",
+          "shares": 56000,
+          "ratio": 3.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "中央魚類㈱",
+          "shares": 46000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "服部貴男",
+          "shares": 41000,
+          "ratio": 2.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱北陸銀行",
+          "shares": 31000,
+          "ratio": 1.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱大水",
+          "shares": 25000,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 32.1,
+          "other": 4.8,
+          "financial": 10.4
+        },
+        "individual_total": 32.1,
+        "top10_total": 47.3
+      }
+    }
+  ]
+}

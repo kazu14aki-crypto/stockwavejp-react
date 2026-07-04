@@ -1,0 +1,220 @@
+{
+  "secCode": "4736",
+  "issuerName": "日本ラッド株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ADVANTECH CO., LTD.（常任代理人　大和証券株式会社　決済部）",
+      "shares": 850000,
+      "ratio": 16.09,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大　塚　隆　之",
+      "shares": 755120,
+      "ratio": 14.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "阿　久　津　裕",
+      "shares": 382000,
+      "ratio": 7.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "有限会社モールネット",
+      "shares": 288000,
+      "ratio": 5.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社エフ・フィールド",
+      "shares": 200000,
+      "ratio": 3.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ADVANTECH CORPORATE INVESTMENT CO., LTD.（常任代理人　大和証券株式会社　決済部）",
+      "shares": 154310,
+      "ratio": 2.92,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BANK JULIUS BAER AND CO. LTD.（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 109200,
+      "ratio": 2.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小　中　景　子",
+      "shares": 92500,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本ラッド従業員持株会",
+      "shares": 79500,
+      "ratio": 1.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東京短資株式会社",
+      "shares": 67000,
+      "ratio": 1.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 19.01,
+      "individual": 23.27,
+      "corporate": 10.51,
+      "financial": 2.07,
+      "employee": 1.5
+    },
+    "individual_total": 23.27,
+    "top10_total": 56.36
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/04/01－2026/03/31)",
+      "docID": "S100YGDA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ADVANTECH CO., LTD.（常任代理人　大和証券株式会社　決済部）",
+          "shares": 850000,
+          "ratio": 16.09,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大　塚　隆　之",
+          "shares": 755120,
+          "ratio": 14.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "阿　久　津　裕",
+          "shares": 382000,
+          "ratio": 7.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "有限会社モールネット",
+          "shares": 288000,
+          "ratio": 5.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社エフ・フィールド",
+          "shares": 200000,
+          "ratio": 3.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ADVANTECH CORPORATE INVESTMENT CO., LTD.（常任代理人　大和証券株式会社　決済部）",
+          "shares": 154310,
+          "ratio": 2.92,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BANK JULIUS BAER AND CO. LTD.（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 109200,
+          "ratio": 2.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小　中　景　子",
+          "shares": 92500,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本ラッド従業員持株会",
+          "shares": 79500,
+          "ratio": 1.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東京短資株式会社",
+          "shares": 67000,
+          "ratio": 1.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 19.01,
+          "individual": 23.27,
+          "corporate": 10.51,
+          "financial": 2.07,
+          "employee": 1.5
+        },
+        "individual_total": 23.27,
+        "top10_total": 56.36
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "6942",
+  "issuerName": "株式会社ソフィアホールディングス",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社E-BONDホールディングス",
+      "shares": 2453000,
+      "ratio": 53.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 25500,
+      "ratio": 0.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松浦　行子",
+      "shares": 24400,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "川名　貴行",
+      "shares": 6000,
+      "ratio": 0.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "川野　光男",
+      "shares": 5800,
+      "ratio": 0.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "谷川　新一",
+      "shares": 5600,
+      "ratio": 0.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "下田　豊隆",
+      "shares": 5400,
+      "ratio": 0.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "村田　真希",
+      "shares": 5200,
+      "ratio": 0.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "久米　裕子",
+      "shares": 5200,
+      "ratio": 0.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "金久保　美喜",
+      "shares": 5180,
+      "ratio": 0.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.0,
+      "securities": 0.55,
+      "individual": 1.36
+    },
+    "individual_total": 1.36,
+    "top10_total": 54.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/04/01－2026/03/31)",
+      "docID": "S100YFIK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社E-BONDホールディングス",
+          "shares": 2453000,
+          "ratio": 53.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 25500,
+          "ratio": 0.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松浦　行子",
+          "shares": 24400,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "川名　貴行",
+          "shares": 6000,
+          "ratio": 0.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "川野　光男",
+          "shares": 5800,
+          "ratio": 0.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "谷川　新一",
+          "shares": 5600,
+          "ratio": 0.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "下田　豊隆",
+          "shares": 5400,
+          "ratio": 0.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "村田　真希",
+          "shares": 5200,
+          "ratio": 0.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "久米　裕子",
+          "shares": 5200,
+          "ratio": 0.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "金久保　美喜",
+          "shares": 5180,
+          "ratio": 0.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.0,
+          "securities": 0.55,
+          "individual": 1.36
+        },
+        "individual_total": 1.36,
+        "top10_total": 54.91
+      }
+    }
+  ]
+}

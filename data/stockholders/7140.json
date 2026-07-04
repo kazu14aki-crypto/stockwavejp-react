@@ -1,0 +1,216 @@
+{
+  "secCode": "7140",
+  "issuerName": "ペットゴー株式会社",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "黒澤　弘",
+      "shares": 291689,
+      "ratio": 15.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "青柳　和洋",
+      "shares": 164000,
+      "ratio": 8.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "中谷　将史",
+      "shares": 97200,
+      "ratio": 5.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小出　文彦",
+      "shares": 68901,
+      "ratio": 3.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ソウ・ツー",
+      "shares": 60000,
+      "ratio": 3.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "廣田　智沙",
+      "shares": 49900,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "マネックス証券株式会社",
+      "shares": 47100,
+      "ratio": 2.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社コーポレート・アドバイザーズ",
+      "shares": 43200,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "橋爪　小太郎",
+      "shares": 40500,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友商事株式会社",
+      "shares": 40000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 37.8,
+      "corporate": 7.6,
+      "securities": 2.5
+    },
+    "individual_total": 37.8,
+    "top10_total": 47.9
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YI94",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "黒澤　弘",
+          "shares": 291689,
+          "ratio": 15.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "青柳　和洋",
+          "shares": 164000,
+          "ratio": 8.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "中谷　将史",
+          "shares": 97200,
+          "ratio": 5.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小出　文彦",
+          "shares": 68901,
+          "ratio": 3.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ソウ・ツー",
+          "shares": 60000,
+          "ratio": 3.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "廣田　智沙",
+          "shares": 49900,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "マネックス証券株式会社",
+          "shares": 47100,
+          "ratio": 2.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社コーポレート・アドバイザーズ",
+          "shares": 43200,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "橋爪　小太郎",
+          "shares": 40500,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友商事株式会社",
+          "shares": 40000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 37.8,
+          "corporate": 7.6,
+          "securities": 2.5
+        },
+        "individual_total": 37.8,
+        "top10_total": 47.9
+      }
+    }
+  ]
+}

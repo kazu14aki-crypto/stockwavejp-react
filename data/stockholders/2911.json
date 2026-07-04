@@ -1,0 +1,216 @@
+{
+  "secCode": "2911",
+  "issuerName": "旭松食品株式会社",
+  "updated_at": "2026/07/04 17:59 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社八十二長野銀行",
+      "shares": 89000,
+      "ratio": 4.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "木　下　博　隆",
+      "shares": 55000,
+      "ratio": 3.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "赤　羽　源一郎",
+      "shares": 55000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "国分西日本株式会社",
+      "shares": 54000,
+      "ratio": 2.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "藤徳物産株式会社",
+      "shares": 54000,
+      "ratio": 2.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐々木　寛　雄",
+      "shares": 53000,
+      "ratio": 2.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社大乾",
+      "shares": 44000,
+      "ratio": 2.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日阪製作所",
+      "shares": 42000,
+      "ratio": 2.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ホワイトフーズ",
+      "shares": 36000,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "赤　羽　栄　子",
+      "shares": 27000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 4.82,
+      "individual": 10.32,
+      "corporate": 12.53
+    },
+    "individual_total": 10.32,
+    "top10_total": 27.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YI4Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社八十二長野銀行",
+          "shares": 89000,
+          "ratio": 4.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "木　下　博　隆",
+          "shares": 55000,
+          "ratio": 3.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "赤　羽　源一郎",
+          "shares": 55000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "国分西日本株式会社",
+          "shares": 54000,
+          "ratio": 2.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "藤徳物産株式会社",
+          "shares": 54000,
+          "ratio": 2.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐々木　寛　雄",
+          "shares": 53000,
+          "ratio": 2.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社大乾",
+          "shares": 44000,
+          "ratio": 2.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日阪製作所",
+          "shares": 42000,
+          "ratio": 2.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ホワイトフーズ",
+          "shares": 36000,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "赤　羽　栄　子",
+          "shares": 27000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 4.82,
+          "individual": 10.32,
+          "corporate": 12.53
+        },
+        "individual_total": 10.32,
+        "top10_total": 27.67
+      }
+    }
+  ]
+}

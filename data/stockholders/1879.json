@@ -1,0 +1,220 @@
+{
+  "secCode": "1879",
+  "issuerName": "新日本建設株式会社",
+  "updated_at": "2026/07/04 18:05 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社シンニホンコム",
+      "shares": 19700000,
+      "ratio": 33.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ユニオンサイト",
+      "shares": 6761000,
+      "ratio": 11.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）（注２）",
+      "shares": 4184000,
+      "ratio": 7.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社千葉銀行",
+      "shares": 2078000,
+      "ratio": 3.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社京葉銀行(常任代理人  日本マスタートラスト信託銀行株式会社)",
+      "shares": 1722000,
+      "ratio": 2.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "千葉市新日本建設・金綱一男こども若者育英基金",
+      "shares": 1626000,
+      "ratio": 2.78,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）（注３）",
+      "shares": 1320000,
+      "ratio": 2.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東方地所株式会社",
+      "shares": 1083000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "清原達郎",
+      "shares": 911000,
+      "ratio": 1.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社千葉興業銀行 (常任代理人  株式会社日本カストディ銀行)",
+      "shares": 699000,
+      "ratio": 1.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 47.09,
+      "trust": 13.55,
+      "financial": 3.55,
+      "foundation": 2.78,
+      "individual": 1.56
+    },
+    "individual_total": 1.56,
+    "top10_total": 68.53
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YHI2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社シンニホンコム",
+          "shares": 19700000,
+          "ratio": 33.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ユニオンサイト",
+          "shares": 6761000,
+          "ratio": 11.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）（注２）",
+          "shares": 4184000,
+          "ratio": 7.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社千葉銀行",
+          "shares": 2078000,
+          "ratio": 3.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社京葉銀行(常任代理人  日本マスタートラスト信託銀行株式会社)",
+          "shares": 1722000,
+          "ratio": 2.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "千葉市新日本建設・金綱一男こども若者育英基金",
+          "shares": 1626000,
+          "ratio": 2.78,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）（注３）",
+          "shares": 1320000,
+          "ratio": 2.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東方地所株式会社",
+          "shares": 1083000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "清原達郎",
+          "shares": 911000,
+          "ratio": 1.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社千葉興業銀行 (常任代理人  株式会社日本カストディ銀行)",
+          "shares": 699000,
+          "ratio": 1.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 47.09,
+          "trust": 13.55,
+          "financial": 3.55,
+          "foundation": 2.78,
+          "individual": 1.56
+        },
+        "individual_total": 1.56,
+        "top10_total": 68.53
+      }
+    }
+  ]
+}

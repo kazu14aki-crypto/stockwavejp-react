@@ -1,0 +1,218 @@
+{
+  "secCode": "6016",
+  "issuerName": "株式会社ジャパンエンジンコーポレーション",
+  "updated_at": "2026/07/04 18:39 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三菱重工業株式会社",
+      "shares": 1243000,
+      "ratio": 14.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社名村造船所",
+      "shares": 840000,
+      "ratio": 10.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社シーケービー",
+      "shares": 477000,
+      "ratio": 5.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社カナックス",
+      "shares": 436000,
+      "ratio": 5.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社新来島どっく",
+      "shares": 373000,
+      "ratio": 4.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 283000,
+      "ratio": 3.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "J.P. MORGAN BANK LUXEMBOURG S.A. 384513\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 246000,
+      "ratio": 2.94,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社赤阪鐵工所",
+      "shares": 225000,
+      "ratio": 2.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社山田クラブ21",
+      "shares": 215000,
+      "ratio": 2.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 150000,
+      "ratio": 1.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.42,
+      "trust": 3.37,
+      "foreign": 2.94,
+      "financial": 1.78
+    },
+    "individual_total": 0,
+    "top10_total": 53.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第129期(2025/04/01－2026/03/31)",
+      "docID": "S100YH5Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三菱重工業株式会社",
+          "shares": 1243000,
+          "ratio": 14.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社名村造船所",
+          "shares": 840000,
+          "ratio": 10.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社シーケービー",
+          "shares": 477000,
+          "ratio": 5.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社カナックス",
+          "shares": 436000,
+          "ratio": 5.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社新来島どっく",
+          "shares": 373000,
+          "ratio": 4.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 283000,
+          "ratio": 3.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "J.P. MORGAN BANK LUXEMBOURG S.A. 384513\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 246000,
+          "ratio": 2.94,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社赤阪鐵工所",
+          "shares": 225000,
+          "ratio": 2.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社山田クラブ21",
+          "shares": 215000,
+          "ratio": 2.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 150000,
+          "ratio": 1.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.42,
+          "trust": 3.37,
+          "foreign": 2.94,
+          "financial": 1.78
+        },
+        "individual_total": 0,
+        "top10_total": 53.51
+      }
+    }
+  ]
+}

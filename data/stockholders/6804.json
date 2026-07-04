@@ -1,0 +1,218 @@
+{
+  "secCode": "6804",
+  "issuerName": "ホシデン株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱(信託口)",
+      "shares": 5762000,
+      "ratio": 11.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "みずほ信託銀行㈱退職給付信託みずほ銀行口再信託受託者㈱日本カストディ銀行",
+      "shares": 2453000,
+      "ratio": 4.98,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険(相)(常任代理人：日本マスタートラスト信託銀行㈱)",
+      "shares": 2358000,
+      "ratio": 4.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "MSIP CLIENT SECURITIES(常任代理人：モルガン・スタンレーMUFG証券㈱)",
+      "shares": 2288000,
+      "ratio": 4.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 1340000,
+      "ratio": 2.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱三菱UFJ銀行",
+      "shares": 1300000,
+      "ratio": 2.64,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "古橋 由美",
+      "shares": 1204000,
+      "ratio": 2.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東京海上日動火災保険㈱",
+      "shares": 1200000,
+      "ratio": 2.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "古橋　健士",
+      "shares": 1078000,
+      "ratio": 2.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ホシデン共栄会",
+      "shares": 1033000,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 24.19,
+      "securities": 4.65,
+      "financial": 2.64,
+      "individual": 9.18
+    },
+    "individual_total": 9.18,
+    "top10_total": 40.66
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YI0D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱(信託口)",
+          "shares": 5762000,
+          "ratio": 11.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "みずほ信託銀行㈱退職給付信託みずほ銀行口再信託受託者㈱日本カストディ銀行",
+          "shares": 2453000,
+          "ratio": 4.98,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険(相)(常任代理人：日本マスタートラスト信託銀行㈱)",
+          "shares": 2358000,
+          "ratio": 4.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "MSIP CLIENT SECURITIES(常任代理人：モルガン・スタンレーMUFG証券㈱)",
+          "shares": 2288000,
+          "ratio": 4.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 1340000,
+          "ratio": 2.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱三菱UFJ銀行",
+          "shares": 1300000,
+          "ratio": 2.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "古橋 由美",
+          "shares": 1204000,
+          "ratio": 2.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東京海上日動火災保険㈱",
+          "shares": 1200000,
+          "ratio": 2.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "古橋　健士",
+          "shares": 1078000,
+          "ratio": 2.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ホシデン共栄会",
+          "shares": 1033000,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 24.19,
+          "securities": 4.65,
+          "financial": 2.64,
+          "individual": 9.18
+        },
+        "individual_total": 9.18,
+        "top10_total": 40.66
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "9336",
+  "issuerName": "大栄環境株式会社",
+  "updated_at": "2026/07/04 17:51 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ウイングトワ株式会社",
+      "shares": 61399500,
+      "ratio": 61.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5853200,
+      "ratio": 5.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "RBC IST 15 PCT NON LENDING ACCOUNT - CLIENT ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 2649528,
+      "ratio": 2.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2625762,
+      "ratio": 2.63,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2419895,
+      "ratio": 2.42,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "CEPLUX- THE INDEPENDENT UCITS PLATFORM 2\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1620900,
+      "ratio": 1.62,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大栄環境従業員持株会",
+      "shares": 1588115,
+      "ratio": 1.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1386388,
+      "ratio": 1.39,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1253600,
+      "ratio": 1.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1072376,
+      "ratio": 1.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 61.49,
+      "trust": 7.12,
+      "foreign": 10.16,
+      "other": 1.62,
+      "employee": 1.59
+    },
+    "individual_total": 0,
+    "top10_total": 81.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第47期(2025/04/01－2026/03/31)",
+      "docID": "S100YKY3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ウイングトワ株式会社",
+          "shares": 61399500,
+          "ratio": 61.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5853200,
+          "ratio": 5.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "RBC IST 15 PCT NON LENDING ACCOUNT - CLIENT ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 2649528,
+          "ratio": 2.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2625762,
+          "ratio": 2.63,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2419895,
+          "ratio": 2.42,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "CEPLUX- THE INDEPENDENT UCITS PLATFORM 2\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1620900,
+          "ratio": 1.62,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大栄環境従業員持株会",
+          "shares": 1588115,
+          "ratio": 1.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1386388,
+          "ratio": 1.39,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1253600,
+          "ratio": 1.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1072376,
+          "ratio": 1.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 61.49,
+          "trust": 7.12,
+          "foreign": 10.16,
+          "other": 1.62,
+          "employee": 1.59
+        },
+        "individual_total": 0,
+        "top10_total": 81.98
+      }
+    }
+  ]
+}

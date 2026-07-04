@@ -1,0 +1,218 @@
+{
+  "secCode": "9423",
+  "issuerName": "株式会社フォーバル・リアルストレート",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社フォーバル",
+      "shares": 12404200,
+      "ratio": 51.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＦＲＳ従業員持株会",
+      "shares": 411700,
+      "ratio": 1.69,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "石原勝",
+      "shares": 278000,
+      "ratio": 1.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "飯島功市郎",
+      "shares": 253200,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "吉田浩司",
+      "shares": 251700,
+      "ratio": 1.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "澤井豊",
+      "shares": 200000,
+      "ratio": 0.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "幅昭義",
+      "shares": 110500,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "溝渕健一",
+      "shares": 109300,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "里村歩",
+      "shares": 90100,
+      "ratio": 0.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "INTERACTIVE BROKERS LLC (常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 89000,
+      "ratio": 0.36,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.16,
+      "employee": 1.69,
+      "individual": 5.3,
+      "securities": 0.36
+    },
+    "individual_total": 5.3,
+    "top10_total": 58.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/04/01－2026/03/31)",
+      "docID": "S100YKOH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社フォーバル",
+          "shares": 12404200,
+          "ratio": 51.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＦＲＳ従業員持株会",
+          "shares": 411700,
+          "ratio": 1.69,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "石原勝",
+          "shares": 278000,
+          "ratio": 1.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "飯島功市郎",
+          "shares": 253200,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "吉田浩司",
+          "shares": 251700,
+          "ratio": 1.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "澤井豊",
+          "shares": 200000,
+          "ratio": 0.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "幅昭義",
+          "shares": 110500,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "溝渕健一",
+          "shares": 109300,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "里村歩",
+          "shares": 90100,
+          "ratio": 0.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "INTERACTIVE BROKERS LLC (常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 89000,
+          "ratio": 0.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.16,
+          "employee": 1.69,
+          "individual": 5.3,
+          "securities": 0.36
+        },
+        "individual_total": 5.3,
+        "top10_total": 58.51
+      }
+    }
+  ]
+}

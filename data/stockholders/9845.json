@@ -1,0 +1,218 @@
+{
+  "secCode": "9845",
+  "issuerName": "株式会社パーカーコーポレーション",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本パーカライジング株式会社",
+      "shares": 6058000,
+      "ratio": 24.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 2023000,
+      "ratio": 8.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ユニベスト株式会社",
+      "shares": 1476000,
+      "ratio": 5.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本パーカーライジング広島工場",
+      "shares": 879000,
+      "ratio": 3.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "里見 嘉重",
+      "shares": 682000,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "公益財団法人里見奨学会",
+      "shares": 646000,
+      "ratio": 2.6,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "内藤 征吾",
+      "shares": 635000,
+      "ratio": 2.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "浜田 信",
+      "shares": 585000,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社旭千代田ホールディング",
+      "shares": 548000,
+      "ratio": 2.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BBH FOR FIDELITY TRUST EMPLOYEE BENEFIT PLANS LOW PRICED STOCK POOL（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 424000,
+      "ratio": 1.7,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 35.8,
+      "foreign": 9.8,
+      "individual": 7.5,
+      "foundation": 2.6
+    },
+    "individual_total": 7.5,
+    "top10_total": 55.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第99期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ1T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本パーカライジング株式会社",
+          "shares": 6058000,
+          "ratio": 24.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 2023000,
+          "ratio": 8.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ユニベスト株式会社",
+          "shares": 1476000,
+          "ratio": 5.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本パーカーライジング広島工場",
+          "shares": 879000,
+          "ratio": 3.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "里見 嘉重",
+          "shares": 682000,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人里見奨学会",
+          "shares": 646000,
+          "ratio": 2.6,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "内藤 征吾",
+          "shares": 635000,
+          "ratio": 2.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "浜田 信",
+          "shares": 585000,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社旭千代田ホールディング",
+          "shares": 548000,
+          "ratio": 2.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BBH FOR FIDELITY TRUST EMPLOYEE BENEFIT PLANS LOW PRICED STOCK POOL（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 424000,
+          "ratio": 1.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 35.8,
+          "foreign": 9.8,
+          "individual": 7.5,
+          "foundation": 2.6
+        },
+        "individual_total": 7.5,
+        "top10_total": 55.7
+      }
+    }
+  ]
+}

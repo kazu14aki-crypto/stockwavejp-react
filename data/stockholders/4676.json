@@ -1,0 +1,218 @@
+{
+  "secCode": "4676",
+  "issuerName": "株式会社フジ・メディア・ホールディングス",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東宝㈱",
+      "shares": 18572100,
+      "ratio": 12.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 15013600,
+      "ratio": 10.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 9013700,
+      "ratio": 6.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱文化放送",
+      "shares": 7792000,
+      "ratio": 5.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱ＮＴＴドコモ",
+      "shares": 7700000,
+      "ratio": 5.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "関西テレビ放送㈱",
+      "shares": 6146100,
+      "ratio": 4.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行㈱(退職給付信託口・㈱電通口)",
+      "shares": 4650000,
+      "ratio": 3.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ヤクルト本社",
+      "shares": 3969000,
+      "ratio": 2.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村　絢(常任代理人　三田証券㈱）",
+      "shares": 3441700,
+      "ratio": 2.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東海テレビ放送株式会社",
+      "shares": 2905800,
+      "ratio": 2.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 27.66,
+      "trust": 19.73,
+      "corporate": 4.73,
+      "securities": 2.37
+    },
+    "individual_total": 27.66,
+    "top10_total": 54.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YHYX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東宝㈱",
+          "shares": 18572100,
+          "ratio": 12.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 15013600,
+          "ratio": 10.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 9013700,
+          "ratio": 6.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱文化放送",
+          "shares": 7792000,
+          "ratio": 5.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱ＮＴＴドコモ",
+          "shares": 7700000,
+          "ratio": 5.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "関西テレビ放送㈱",
+          "shares": 6146100,
+          "ratio": 4.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行㈱(退職給付信託口・㈱電通口)",
+          "shares": 4650000,
+          "ratio": 3.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ヤクルト本社",
+          "shares": 3969000,
+          "ratio": 2.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村　絢(常任代理人　三田証券㈱）",
+          "shares": 3441700,
+          "ratio": 2.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東海テレビ放送株式会社",
+          "shares": 2905800,
+          "ratio": 2.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 27.66,
+          "trust": 19.73,
+          "corporate": 4.73,
+          "securities": 2.37
+        },
+        "individual_total": 27.66,
+        "top10_total": 54.49
+      }
+    }
+  ]
+}

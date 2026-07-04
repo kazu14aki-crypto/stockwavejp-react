@@ -1,0 +1,220 @@
+{
+  "secCode": "9083",
+  "issuerName": "神姫バス株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "阪神電気鉄道株式会社",
+      "shares": 1181000,
+      "ratio": 9.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（三井住友信託銀行再信託分・山陽電気鉄道株式会社退職給付信託口）（注）３",
+      "shares": 880000,
+      "ratio": 7.28,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "神姫バス従業員持株会",
+      "shares": 307000,
+      "ratio": 2.54,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三菱ふそうトラック・バス株式会社",
+      "shares": 190000,
+      "ratio": 1.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三井住友銀行",
+      "shares": 143000,
+      "ratio": 1.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "兵庫県信用農業協同組合連合会",
+      "shares": 121000,
+      "ratio": 1.0,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "播州信用金庫",
+      "shares": 120000,
+      "ratio": 0.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "姫路信用金庫",
+      "shares": 120000,
+      "ratio": 0.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "グローリー株式会社",
+      "shares": 120000,
+      "ratio": 0.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "横浜ゴム株式会社",
+      "shares": 120000,
+      "ratio": 0.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 13.33,
+      "trust": 7.28,
+      "employee": 2.54,
+      "financial": 3.17,
+      "government": 1.0
+    },
+    "individual_total": 0,
+    "top10_total": 27.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第143期(2025/04/01－2026/03/31)",
+      "docID": "S100YHAF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "阪神電気鉄道株式会社",
+          "shares": 1181000,
+          "ratio": 9.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（三井住友信託銀行再信託分・山陽電気鉄道株式会社退職給付信託口）（注）３",
+          "shares": 880000,
+          "ratio": 7.28,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "神姫バス従業員持株会",
+          "shares": 307000,
+          "ratio": 2.54,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三菱ふそうトラック・バス株式会社",
+          "shares": 190000,
+          "ratio": 1.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 143000,
+          "ratio": 1.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "兵庫県信用農業協同組合連合会",
+          "shares": 121000,
+          "ratio": 1.0,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "播州信用金庫",
+          "shares": 120000,
+          "ratio": 0.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "姫路信用金庫",
+          "shares": 120000,
+          "ratio": 0.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "グローリー株式会社",
+          "shares": 120000,
+          "ratio": 0.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "横浜ゴム株式会社",
+          "shares": 120000,
+          "ratio": 0.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 13.33,
+          "trust": 7.28,
+          "employee": 2.54,
+          "financial": 3.17,
+          "government": 1.0
+        },
+        "individual_total": 0,
+        "top10_total": 27.32
+      }
+    }
+  ]
+}

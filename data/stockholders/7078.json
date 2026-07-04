@@ -1,0 +1,218 @@
+{
+  "secCode": "7078",
+  "issuerName": "ＩＮＣＬＵＳＩＶＥ　Ｈｏｌｄｉｎｇｓ株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "藤田　誠",
+      "shares": 4149000,
+      "ratio": 41.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "堀江　貴文",
+      "shares": 545000,
+      "ratio": 5.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "インターステラテクノロジズ\n株式会社",
+      "shares": 399000,
+      "ratio": 3.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社",
+      "shares": 214000,
+      "ratio": 2.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社Hakuhodo DY ONE",
+      "shares": 189000,
+      "ratio": 1.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ（ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 184000,
+      "ratio": 1.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "アーキタイプグループ株式会社",
+      "shares": 180000,
+      "ratio": 1.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "瀬賀　雅弥",
+      "shares": 95000,
+      "ratio": 0.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 93000,
+      "ratio": 0.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 87000,
+      "ratio": 0.87,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 47.66,
+      "corporate": 7.64,
+      "securities": 3.93,
+      "financial": 1.84
+    },
+    "individual_total": 47.66,
+    "top10_total": 61.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/03/31)",
+      "docID": "S100YMA3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "藤田　誠",
+          "shares": 4149000,
+          "ratio": 41.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "堀江　貴文",
+          "shares": 545000,
+          "ratio": 5.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "インターステラテクノロジズ\n株式会社",
+          "shares": 399000,
+          "ratio": 3.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社",
+          "shares": 214000,
+          "ratio": 2.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社Hakuhodo DY ONE",
+          "shares": 189000,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ（ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 184000,
+          "ratio": 1.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "アーキタイプグループ株式会社",
+          "shares": 180000,
+          "ratio": 1.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "瀬賀　雅弥",
+          "shares": 95000,
+          "ratio": 0.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 93000,
+          "ratio": 0.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 87000,
+          "ratio": 0.87,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 47.66,
+          "corporate": 7.64,
+          "securities": 3.93,
+          "financial": 1.84
+        },
+        "individual_total": 47.66,
+        "top10_total": 61.07
+      }
+    }
+  ]
+}

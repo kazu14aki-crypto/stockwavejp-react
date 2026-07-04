@@ -1,0 +1,222 @@
+{
+  "secCode": "7820",
+  "issuerName": "ニホンフラッシュ株式会社",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2098200,
+      "ratio": 9.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "髙橋　栄二",
+      "shares": 1937320,
+      "ratio": 8.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1488318,
+      "ratio": 6.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社阿波銀行",
+      "shares": 1120000,
+      "ratio": 4.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社徳島大正銀行",
+      "shares": 1105000,
+      "ratio": 4.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1073910,
+      "ratio": 4.72,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "七福トータルサポート株式会社",
+      "shares": 960000,
+      "ratio": 4.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社徳銀キャピタル",
+      "shares": 575000,
+      "ratio": 2.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ニホンフラッシュ従業員持株会",
+      "shares": 569160,
+      "ratio": 2.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ニホンフラッシュ取引先持株会",
+      "shares": 551000,
+      "ratio": 2.42,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 15.76,
+      "individual": 8.51,
+      "financial": 9.78,
+      "foreign": 4.72,
+      "corporate": 6.75,
+      "employee": 4.92
+    },
+    "individual_total": 8.51,
+    "top10_total": 50.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YLHV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2098200,
+          "ratio": 9.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "髙橋　栄二",
+          "shares": 1937320,
+          "ratio": 8.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1488318,
+          "ratio": 6.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社阿波銀行",
+          "shares": 1120000,
+          "ratio": 4.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社徳島大正銀行",
+          "shares": 1105000,
+          "ratio": 4.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1073910,
+          "ratio": 4.72,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "七福トータルサポート株式会社",
+          "shares": 960000,
+          "ratio": 4.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社徳銀キャピタル",
+          "shares": 575000,
+          "ratio": 2.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ニホンフラッシュ従業員持株会",
+          "shares": 569160,
+          "ratio": 2.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ニホンフラッシュ取引先持株会",
+          "shares": 551000,
+          "ratio": 2.42,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 15.76,
+          "individual": 8.51,
+          "financial": 9.78,
+          "foreign": 4.72,
+          "corporate": 6.75,
+          "employee": 4.92
+        },
+        "individual_total": 8.51,
+        "top10_total": 50.44
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "8869",
+  "issuerName": "明和地所株式会社",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱英興発",
+      "shares": 8751000,
+      "ratio": 37.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 1336000,
+      "ratio": 5.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "髙杉　純",
+      "shares": 700000,
+      "ratio": 2.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "髙杉　麻美",
+      "shares": 600000,
+      "ratio": 2.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＳＭＢＣ日興証券㈱",
+      "shares": 408000,
+      "ratio": 1.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱スペース・Ｐ",
+      "shares": 400000,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱ＧＴ",
+      "shares": 350000,
+      "ratio": 1.49,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱ＦＵＫＵ",
+      "shares": 350000,
+      "ratio": 1.49,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "原田　耕次",
+      "shares": 200000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行㈱（投信口）",
+      "shares": 188000,
+      "ratio": 0.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.4,
+      "trust": 6.49,
+      "securities": 1.74,
+      "other": 2.98
+    },
+    "individual_total": 45.4,
+    "top10_total": 56.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/04/01－2026/03/31)",
+      "docID": "S100YJF1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱英興発",
+          "shares": 8751000,
+          "ratio": 37.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 1336000,
+          "ratio": 5.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "髙杉　純",
+          "shares": 700000,
+          "ratio": 2.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "髙杉　麻美",
+          "shares": 600000,
+          "ratio": 2.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＳＭＢＣ日興証券㈱",
+          "shares": 408000,
+          "ratio": 1.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱スペース・Ｐ",
+          "shares": 400000,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱ＧＴ",
+          "shares": 350000,
+          "ratio": 1.49,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱ＦＵＫＵ",
+          "shares": 350000,
+          "ratio": 1.49,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "原田　耕次",
+          "shares": 200000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村信託銀行㈱（投信口）",
+          "shares": 188000,
+          "ratio": 0.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.4,
+          "trust": 6.49,
+          "securities": 1.74,
+          "other": 2.98
+        },
+        "individual_total": 45.4,
+        "top10_total": 56.61
+      }
+    }
+  ]
+}

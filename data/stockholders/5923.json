@@ -1,0 +1,218 @@
+{
+  "secCode": "5923",
+  "issuerName": "高田機工株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本生命保険相互会社",
+      "shares": 340000,
+      "ratio": 5.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "神吉利郎",
+      "shares": 300000,
+      "ratio": 5.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社奥村組",
+      "shares": 266000,
+      "ratio": 4.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "伊藤忠丸紅鉄鋼株式会社",
+      "shares": 243000,
+      "ratio": 4.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "内藤征吾",
+      "shares": 200000,
+      "ratio": 3.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社紀陽銀行",
+      "shares": 175000,
+      "ratio": 3.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三井住友銀行",
+      "shares": 150000,
+      "ratio": 2.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "伊藤忠丸紅住商テクノスチール株式会社",
+      "shares": 150000,
+      "ratio": 2.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東海鋼材工業株式会社",
+      "shares": 146000,
+      "ratio": 2.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "高田機工グループ社員持株会",
+      "shares": 140000,
+      "ratio": 2.4,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 11.44,
+      "individual": 8.58,
+      "corporate": 13.82,
+      "employee": 2.4
+    },
+    "individual_total": 8.58,
+    "top10_total": 36.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第97期(2025/04/01－2026/03/31)",
+      "docID": "S100YI9L",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本生命保険相互会社",
+          "shares": 340000,
+          "ratio": 5.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "神吉利郎",
+          "shares": 300000,
+          "ratio": 5.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社奥村組",
+          "shares": 266000,
+          "ratio": 4.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "伊藤忠丸紅鉄鋼株式会社",
+          "shares": 243000,
+          "ratio": 4.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "内藤征吾",
+          "shares": 200000,
+          "ratio": 3.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社紀陽銀行",
+          "shares": 175000,
+          "ratio": 3.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三井住友銀行",
+          "shares": 150000,
+          "ratio": 2.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "伊藤忠丸紅住商テクノスチール株式会社",
+          "shares": 150000,
+          "ratio": 2.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東海鋼材工業株式会社",
+          "shares": 146000,
+          "ratio": 2.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "高田機工グループ社員持株会",
+          "shares": 140000,
+          "ratio": 2.4,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 11.44,
+          "individual": 8.58,
+          "corporate": 13.82,
+          "employee": 2.4
+        },
+        "individual_total": 8.58,
+        "top10_total": 36.24
+      }
+    }
+  ]
+}

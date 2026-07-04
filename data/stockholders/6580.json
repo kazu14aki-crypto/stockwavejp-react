@@ -1,0 +1,218 @@
+{
+  "secCode": "6580",
+  "issuerName": "株式会社ライトアップ",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "白石　崇",
+      "shares": 2478000,
+      "ratio": 48.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 255000,
+      "ratio": 4.97,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大和証券株式会社",
+      "shares": 182000,
+      "ratio": 3.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 177000,
+      "ratio": 3.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "新沼　吾史",
+      "shares": 160000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社チェンジホールディングス",
+      "shares": 116000,
+      "ratio": 2.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＷＩＬＬ　ＦＩＥＬＤ　ＣＡＰＩＴＡＬ　ＰＴＥ．　ＬＴＤ．\n（常任代理人　三田証券株式会社）",
+      "shares": 100000,
+      "ratio": 1.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "槇田　重夫",
+      "shares": 87000,
+      "ratio": 1.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上田八木短資株式会社",
+      "shares": 83000,
+      "ratio": 1.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ライトアップ従業員持株会",
+      "shares": 51000,
+      "ratio": 0.99,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 53.18,
+      "securities": 13.93,
+      "corporate": 3.88,
+      "employee": 0.99
+    },
+    "individual_total": 53.18,
+    "top10_total": 71.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YLCH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "白石　崇",
+          "shares": 2478000,
+          "ratio": 48.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 255000,
+          "ratio": 4.97,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大和証券株式会社",
+          "shares": 182000,
+          "ratio": 3.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 177000,
+          "ratio": 3.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "新沼　吾史",
+          "shares": 160000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社チェンジホールディングス",
+          "shares": 116000,
+          "ratio": 2.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＷＩＬＬ　ＦＩＥＬＤ　ＣＡＰＩＴＡＬ　ＰＴＥ．　ＬＴＤ．\n（常任代理人　三田証券株式会社）",
+          "shares": 100000,
+          "ratio": 1.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "槇田　重夫",
+          "shares": 87000,
+          "ratio": 1.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上田八木短資株式会社",
+          "shares": 83000,
+          "ratio": 1.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ライトアップ従業員持株会",
+          "shares": 51000,
+          "ratio": 0.99,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 53.18,
+          "securities": 13.93,
+          "corporate": 3.88,
+          "employee": 0.99
+        },
+        "individual_total": 53.18,
+        "top10_total": 71.98
+      }
+    }
+  ]
+}

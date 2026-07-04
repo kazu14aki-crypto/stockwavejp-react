@@ -1,0 +1,218 @@
+{
+  "secCode": "7883",
+  "issuerName": "サンメッセ株式会社",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社大垣共立銀行(常任代理人　株式会社日本カストディ銀行）",
+      "shares": 772000,
+      "ratio": 4.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "サンメッセ従業員持株会",
+      "shares": 578000,
+      "ratio": 3.72,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "田中　義一",
+      "shares": 505000,
+      "ratio": 3.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "田中　良幸",
+      "shares": 487000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田中　尚一郎",
+      "shares": 427000,
+      "ratio": 2.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "田中　勝英",
+      "shares": 405000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田中　芙美子",
+      "shares": 372000,
+      "ratio": 2.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "花林　雅子",
+      "shares": 344000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社十六銀行",
+      "shares": 340000,
+      "ratio": 2.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田中　信康",
+      "shares": 333000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 4.97,
+      "employee": 3.72,
+      "individual": 18.47,
+      "financial": 2.19
+    },
+    "individual_total": 18.47,
+    "top10_total": 29.35
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第81期(2025/04/01－2026/03/31)",
+      "docID": "S100YFTU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社大垣共立銀行(常任代理人　株式会社日本カストディ銀行）",
+          "shares": 772000,
+          "ratio": 4.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "サンメッセ従業員持株会",
+          "shares": 578000,
+          "ratio": 3.72,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "田中　義一",
+          "shares": 505000,
+          "ratio": 3.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "田中　良幸",
+          "shares": 487000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田中　尚一郎",
+          "shares": 427000,
+          "ratio": 2.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "田中　勝英",
+          "shares": 405000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田中　芙美子",
+          "shares": 372000,
+          "ratio": 2.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "花林　雅子",
+          "shares": 344000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社十六銀行",
+          "shares": 340000,
+          "ratio": 2.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田中　信康",
+          "shares": 333000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 4.97,
+          "employee": 3.72,
+          "individual": 18.47,
+          "financial": 2.19
+        },
+        "individual_total": 18.47,
+        "top10_total": 29.35
+      }
+    }
+  ]
+}

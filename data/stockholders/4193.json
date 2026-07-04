@@ -1,0 +1,218 @@
+{
+  "secCode": "4193",
+  "issuerName": "株式会社ファブリカホールディングス",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社インディゴベース",
+      "shares": 680000,
+      "ratio": 13.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "LINEヤフー株式会社",
+      "shares": 621000,
+      "ratio": 12.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "谷口　政人",
+      "shares": 375300,
+      "ratio": 7.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＬＩＣＨＦＩＥＬＤ　ＬＰ\n（常任代理人　株式会社三菱ＵＦＪ銀\n　行）",
+      "shares": 351700,
+      "ratio": 6.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "奥岡　征彦",
+      "shares": 348600,
+      "ratio": 6.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "近藤　智司",
+      "shares": 343000,
+      "ratio": 6.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＴＡＫＵＭＩ　ＣＡＰＩＴＡＬ　ＭＡＮＡＧＥＭＥＮＴ　ＭＡＳＴＥＲ　ＦＵＮＤ　ＬＰ\n（常任代理人　香港上海銀行東京支\n　店）",
+      "shares": 283300,
+      "ratio": 5.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ＳＫコーポレーション",
+      "shares": 276000,
+      "ratio": 5.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社新東通信",
+      "shares": 133200,
+      "ratio": 2.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ファブリカ従業員持株会",
+      "shares": 86342,
+      "ratio": 1.67,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.08,
+      "individual": 20.75,
+      "financial": 5.51,
+      "employee": 1.67
+    },
+    "individual_total": 20.75,
+    "top10_total": 68.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/04/01－2026/03/31)",
+      "docID": "S100YK86",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社インディゴベース",
+          "shares": 680000,
+          "ratio": 13.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "LINEヤフー株式会社",
+          "shares": 621000,
+          "ratio": 12.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "谷口　政人",
+          "shares": 375300,
+          "ratio": 7.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＬＩＣＨＦＩＥＬＤ　ＬＰ\n（常任代理人　株式会社三菱ＵＦＪ銀\n　行）",
+          "shares": 351700,
+          "ratio": 6.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "奥岡　征彦",
+          "shares": 348600,
+          "ratio": 6.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "近藤　智司",
+          "shares": 343000,
+          "ratio": 6.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＴＡＫＵＭＩ　ＣＡＰＩＴＡＬ　ＭＡＮＡＧＥＭＥＮＴ　ＭＡＳＴＥＲ　ＦＵＮＤ　ＬＰ\n（常任代理人　香港上海銀行東京支\n　店）",
+          "shares": 283300,
+          "ratio": 5.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ＳＫコーポレーション",
+          "shares": 276000,
+          "ratio": 5.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社新東通信",
+          "shares": 133200,
+          "ratio": 2.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ファブリカ従業員持株会",
+          "shares": 86342,
+          "ratio": 1.67,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.08,
+          "individual": 20.75,
+          "financial": 5.51,
+          "employee": 1.67
+        },
+        "individual_total": 20.75,
+        "top10_total": 68.01
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "3739",
+  "issuerName": "コムシード株式会社",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Cykan Holdings Co.,Ltd.\n(常任代理人　山田広毅）",
+      "shares": 6860924,
+      "ratio": 50.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "清板大亮",
+      "shares": 404400,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社武雄嬉野国際カントリークラブ",
+      "shares": 377800,
+      "ratio": 2.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "飯島功市郎",
+      "shares": 282400,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "羽成正己",
+      "shares": 148600,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 137300,
+      "ratio": 1.01,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田川宗良",
+      "shares": 90000,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 78300,
+      "ratio": 0.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "鍵谷文勇",
+      "shares": 72300,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "中矢一二",
+      "shares": 70000,
+      "ratio": 0.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.56,
+      "individual": 7.87,
+      "securities": 1.58
+    },
+    "individual_total": 7.87,
+    "top10_total": 63.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/04/01－2026/03/31)",
+      "docID": "S100YFS8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Cykan Holdings Co.,Ltd.\n(常任代理人　山田広毅）",
+          "shares": 6860924,
+          "ratio": 50.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "清板大亮",
+          "shares": 404400,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社武雄嬉野国際カントリークラブ",
+          "shares": 377800,
+          "ratio": 2.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "飯島功市郎",
+          "shares": 282400,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "羽成正己",
+          "shares": 148600,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 137300,
+          "ratio": 1.01,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田川宗良",
+          "shares": 90000,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 78300,
+          "ratio": 0.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "鍵谷文勇",
+          "shares": 72300,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "中矢一二",
+          "shares": 70000,
+          "ratio": 0.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.56,
+          "individual": 7.87,
+          "securities": 1.58
+        },
+        "individual_total": 7.87,
+        "top10_total": 63.01
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "6954",
+  "issuerName": "ファナック株式会社",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 218493000,
+      "ratio": 23.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 96283000,
+      "ratio": 10.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "シティバンク エヌエイ エヌワイ アズ ディポジタリー バンク フォー ディポジタリー シェアホルダーズ（常任代理人シティバンク エヌ・エイ東京支店)",
+      "shares": 27713000,
+      "ratio": 2.97,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ステート ストリート バンク アンド トラスト カンパニー ５０５００１(常任代理人株式会社みずほ銀行決済営業部)",
+      "shares": 21023000,
+      "ratio": 2.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ジェーピー モルガン チェース バンク ３８００５５(常任代理人株式会社みずほ銀行決済営業部）",
+      "shares": 19147000,
+      "ratio": 2.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ジェーピー モルガン チェース バンク ３８５７８１(常任代理人株式会社みずほ銀行決済営業部)",
+      "shares": 15806000,
+      "ratio": 1.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ビーエヌワイエム アズ エージーテイ クライアンツ ノン トリーティー ジャスデック(常任代理人株式会社三菱UFJ銀行)",
+      "shares": 14417000,
+      "ratio": 1.54,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ビーエヌワイエム アズ エージーテイ クライアンツ １０ パーセント (常任代理人株式会社三菱UFJ銀行)",
+      "shares": 13008000,
+      "ratio": 1.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ザ バンク オブ ニューヨーク メロン １４００４０(常任代理人株式会社みずほ銀行決済営業部)",
+      "shares": 12254000,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "エイチエスビーシー ホンコン トレジャリー サービシィズ アカウント アジアン エキュイティーズ デリバティブス (常任代理人香港上海銀行東京支店カストディ業務部)",
+      "shares": 11795000,
+      "ratio": 1.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 33.73,
+      "other": 2.97,
+      "financial": 11.49
+    },
+    "individual_total": 0,
+    "top10_total": 48.19
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第57期(2025/04/01－2026/03/31)",
+      "docID": "S100YG3Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 218493000,
+          "ratio": 23.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 96283000,
+          "ratio": 10.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "シティバンク エヌエイ エヌワイ アズ ディポジタリー バンク フォー ディポジタリー シェアホルダーズ（常任代理人シティバンク エヌ・エイ東京支店)",
+          "shares": 27713000,
+          "ratio": 2.97,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ステート ストリート バンク アンド トラスト カンパニー ５０５００１(常任代理人株式会社みずほ銀行決済営業部)",
+          "shares": 21023000,
+          "ratio": 2.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ジェーピー モルガン チェース バンク ３８００５５(常任代理人株式会社みずほ銀行決済営業部）",
+          "shares": 19147000,
+          "ratio": 2.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ジェーピー モルガン チェース バンク ３８５７８１(常任代理人株式会社みずほ銀行決済営業部)",
+          "shares": 15806000,
+          "ratio": 1.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ビーエヌワイエム アズ エージーテイ クライアンツ ノン トリーティー ジャスデック(常任代理人株式会社三菱UFJ銀行)",
+          "shares": 14417000,
+          "ratio": 1.54,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ビーエヌワイエム アズ エージーテイ クライアンツ １０ パーセント (常任代理人株式会社三菱UFJ銀行)",
+          "shares": 13008000,
+          "ratio": 1.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ザ バンク オブ ニューヨーク メロン １４００４０(常任代理人株式会社みずほ銀行決済営業部)",
+          "shares": 12254000,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "エイチエスビーシー ホンコン トレジャリー サービシィズ アカウント アジアン エキュイティーズ デリバティブス (常任代理人香港上海銀行東京支店カストディ業務部)",
+          "shares": 11795000,
+          "ratio": 1.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 33.73,
+          "other": 2.97,
+          "financial": 11.49
+        },
+        "individual_total": 0,
+        "top10_total": 48.19
+      }
+    }
+  ]
+}

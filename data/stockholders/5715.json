@@ -1,0 +1,220 @@
+{
+  "secCode": "5715",
+  "issuerName": "古河機械金属株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3325600,
+      "ratio": 10.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "朝日生命保険相互会社",
+      "shares": 2373400,
+      "ratio": 7.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "清和綜合建物株式会社",
+      "shares": 1935756,
+      "ratio": 5.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社川嶋",
+      "shares": 1860000,
+      "ratio": 5.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三光",
+      "shares": 1090200,
+      "ratio": 3.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 764100,
+      "ratio": 2.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "茜会",
+      "shares": 724001,
+      "ratio": 2.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中央日本土地建物株式会社",
+      "shares": 687700,
+      "ratio": 2.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 666407,
+      "ratio": 2.05,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ADEKA",
+      "shares": 556800,
+      "ratio": 1.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 12.6,
+      "financial": 7.31,
+      "corporate": 18.88,
+      "individual": 2.23,
+      "foreign": 2.05
+    },
+    "individual_total": 2.23,
+    "top10_total": 43.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第159期(2025/04/01－2026/03/31)",
+      "docID": "S100YIDC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3325600,
+          "ratio": 10.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "朝日生命保険相互会社",
+          "shares": 2373400,
+          "ratio": 7.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "清和綜合建物株式会社",
+          "shares": 1935756,
+          "ratio": 5.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社川嶋",
+          "shares": 1860000,
+          "ratio": 5.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三光",
+          "shares": 1090200,
+          "ratio": 3.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 764100,
+          "ratio": 2.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "茜会",
+          "shares": 724001,
+          "ratio": 2.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中央日本土地建物株式会社",
+          "shares": 687700,
+          "ratio": 2.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 666407,
+          "ratio": 2.05,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ADEKA",
+          "shares": 556800,
+          "ratio": 1.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 12.6,
+          "financial": 7.31,
+          "corporate": 18.88,
+          "individual": 2.23,
+          "foreign": 2.05
+        },
+        "individual_total": 2.23,
+        "top10_total": 43.07
+      }
+    }
+  ]
+}

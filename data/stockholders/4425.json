@@ -1,0 +1,220 @@
+{
+  "secCode": "4425",
+  "issuerName": "Ｋｕｄａｎ株式会社",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大野　智弘",
+      "shares": 3314000,
+      "ratio": 29.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "UNION BANCAIRE PRIVEE(常任代理人 株式会社三菱UFJ銀行)",
+      "shares": 788000,
+      "ratio": 6.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ヘルシア",
+      "shares": 256000,
+      "ratio": 2.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BOFAS INC SEGREGATION ACCOUNT(常任代理人　BOFA証券株式会社)",
+      "shares": 203000,
+      "ratio": 1.8,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "上田八木短資株式会社",
+      "shares": 190000,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BCSL CLIENT RE BBPLC NYBR(常任代理人　バークレイズ証券株式会社)",
+      "shares": 164000,
+      "ratio": 1.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高橋　秀明",
+      "shares": 156000,
+      "ratio": 1.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社アグリ",
+      "shares": 141000,
+      "ratio": 1.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BANK JULIUS BAER AND CO. LTD. SINGAPORE CLIENTS　　　　　　　(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 81000,
+      "ratio": 0.72,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 66000,
+      "ratio": 0.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 30.72,
+      "financial": 7.69,
+      "corporate": 5.2,
+      "foreign": 1.8,
+      "securities": 2.05
+    },
+    "individual_total": 30.72,
+    "top10_total": 47.46
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/04/01－2026/03/31)",
+      "docID": "S100YIKS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大野　智弘",
+          "shares": 3314000,
+          "ratio": 29.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "UNION BANCAIRE PRIVEE(常任代理人 株式会社三菱UFJ銀行)",
+          "shares": 788000,
+          "ratio": 6.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ヘルシア",
+          "shares": 256000,
+          "ratio": 2.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BOFAS INC SEGREGATION ACCOUNT(常任代理人　BOFA証券株式会社)",
+          "shares": 203000,
+          "ratio": 1.8,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "上田八木短資株式会社",
+          "shares": 190000,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BCSL CLIENT RE BBPLC NYBR(常任代理人　バークレイズ証券株式会社)",
+          "shares": 164000,
+          "ratio": 1.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高橋　秀明",
+          "shares": 156000,
+          "ratio": 1.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社アグリ",
+          "shares": 141000,
+          "ratio": 1.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BANK JULIUS BAER AND CO. LTD. SINGAPORE CLIENTS　　　　　　　(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 81000,
+          "ratio": 0.72,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 66000,
+          "ratio": 0.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 30.72,
+          "financial": 7.69,
+          "corporate": 5.2,
+          "foreign": 1.8,
+          "securities": 2.05
+        },
+        "individual_total": 30.72,
+        "top10_total": 47.46
+      }
+    }
+  ]
+}

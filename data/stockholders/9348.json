@@ -1,0 +1,224 @@
+{
+  "secCode": "9348",
+  "issuerName": "株式会社ｉｓｐａｃｅ",
+  "updated_at": "2026/07/04 18:13 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "袴田　武史",
+      "shares": 12000000,
+      "ratio": 8.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高砂熱学工業株式会社",
+      "shares": 6997520,
+      "ratio": 4.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "JICVGIオポチュニティファンド１号投資事業有限責任組合",
+      "shares": 6410200,
+      "ratio": 4.38,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "インキュベイトファンド３号投資事業有限責任組合",
+      "shares": 5992580,
+      "ratio": 4.1,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "栗田工業株式会社",
+      "shares": 4273500,
+      "ratio": 2.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "赤浦　徹",
+      "shares": 3219282,
+      "ratio": 2.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 2986100,
+      "ratio": 2.04,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本政策投資銀行",
+      "shares": 2816180,
+      "ratio": 1.93,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "IF GROWTH OPPORTUNITY FUND １, L.P.\n（常任代理人　SMBC日興証券株式会社）",
+      "shares": 2135720,
+      "ratio": 1.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 1968500,
+      "ratio": 1.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 10.41,
+      "corporate": 7.71,
+      "government": 6.31,
+      "other": 4.1,
+      "foreign": 2.04,
+      "securities": 1.46,
+      "financial": 1.35
+    },
+    "individual_total": 10.41,
+    "top10_total": 33.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第16期(2025/04/01－2026/03/31)",
+      "docID": "S100YL5W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "袴田　武史",
+          "shares": 12000000,
+          "ratio": 8.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高砂熱学工業株式会社",
+          "shares": 6997520,
+          "ratio": 4.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "JICVGIオポチュニティファンド１号投資事業有限責任組合",
+          "shares": 6410200,
+          "ratio": 4.38,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "インキュベイトファンド３号投資事業有限責任組合",
+          "shares": 5992580,
+          "ratio": 4.1,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "栗田工業株式会社",
+          "shares": 4273500,
+          "ratio": 2.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "赤浦　徹",
+          "shares": 3219282,
+          "ratio": 2.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 2986100,
+          "ratio": 2.04,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本政策投資銀行",
+          "shares": 2816180,
+          "ratio": 1.93,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "IF GROWTH OPPORTUNITY FUND １, L.P.\n（常任代理人　SMBC日興証券株式会社）",
+          "shares": 2135720,
+          "ratio": 1.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 1968500,
+          "ratio": 1.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 10.41,
+          "corporate": 7.71,
+          "government": 6.31,
+          "other": 4.1,
+          "foreign": 2.04,
+          "securities": 1.46,
+          "financial": 1.35
+        },
+        "individual_total": 10.41,
+        "top10_total": 33.38
+      }
+    }
+  ]
+}

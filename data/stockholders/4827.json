@@ -1,0 +1,214 @@
+{
+  "secCode": "4827",
+  "issuerName": "ビジネス・ワンホールディングス株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ゴー",
+      "shares": 1534900,
+      "ratio": 37.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "平本　敏夫",
+      "shares": 800000,
+      "ratio": 19.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社九州リースサービス",
+      "shares": 320000,
+      "ratio": 7.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社Ｕ・Ｈプランニング",
+      "shares": 180000,
+      "ratio": 4.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鈴政　一夫",
+      "shares": 172100,
+      "ratio": 4.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社クリエイティブマネージメントコンサルタンツ",
+      "shares": 100000,
+      "ratio": 2.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ユーティライズ",
+      "shares": 80000,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社モダンプロジェ",
+      "shares": 80000,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "青池　美和",
+      "shares": 71300,
+      "ratio": 1.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "森山　順子",
+      "shares": 58100,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 55.32,
+      "individual": 26.55
+    },
+    "individual_total": 26.55,
+    "top10_total": 81.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第39期(2025/04/01－2026/03/31)",
+      "docID": "S100YHAI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ゴー",
+          "shares": 1534900,
+          "ratio": 37.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "平本　敏夫",
+          "shares": 800000,
+          "ratio": 19.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社九州リースサービス",
+          "shares": 320000,
+          "ratio": 7.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社Ｕ・Ｈプランニング",
+          "shares": 180000,
+          "ratio": 4.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鈴政　一夫",
+          "shares": 172100,
+          "ratio": 4.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社クリエイティブマネージメントコンサルタンツ",
+          "shares": 100000,
+          "ratio": 2.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ユーティライズ",
+          "shares": 80000,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社モダンプロジェ",
+          "shares": 80000,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "青池　美和",
+          "shares": 71300,
+          "ratio": 1.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "森山　順子",
+          "shares": 58100,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 55.32,
+          "individual": 26.55
+        },
+        "individual_total": 26.55,
+        "top10_total": 81.87
+      }
+    }
+  ]
+}

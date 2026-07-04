@@ -1,0 +1,220 @@
+{
+  "secCode": "1777",
+  "issuerName": "川崎設備工業株式会社",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社関電工",
+      "shares": 5994000,
+      "ratio": 50.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "川崎設備工業取引先持株会",
+      "shares": 1969000,
+      "ratio": 16.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "川崎設備工業従業員持株会",
+      "shares": 408000,
+      "ratio": 3.41,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "川崎重工業株式会社",
+      "shares": 215000,
+      "ratio": 1.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN(CASHOB)（常任代理人　野村證券株式会社）",
+      "shares": 164000,
+      "ratio": 1.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山信株式会社",
+      "shares": 97000,
+      "ratio": 0.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社大垣共立銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 96000,
+      "ratio": 0.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "荒川　寿彦",
+      "shares": 70000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "川野　正博",
+      "shares": 69000,
+      "ratio": 0.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "廣江　勝志",
+      "shares": 68000,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.71,
+      "employee": 19.87,
+      "foreign": 1.38,
+      "trust": 0.8,
+      "individual": 1.74
+    },
+    "individual_total": 1.74,
+    "top10_total": 76.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第99期(2025/04/01－2026/03/31)",
+      "docID": "S100YG5D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社関電工",
+          "shares": 5994000,
+          "ratio": 50.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "川崎設備工業取引先持株会",
+          "shares": 1969000,
+          "ratio": 16.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "川崎設備工業従業員持株会",
+          "shares": 408000,
+          "ratio": 3.41,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "川崎重工業株式会社",
+          "shares": 215000,
+          "ratio": 1.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN(CASHOB)（常任代理人　野村證券株式会社）",
+          "shares": 164000,
+          "ratio": 1.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山信株式会社",
+          "shares": 97000,
+          "ratio": 0.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社大垣共立銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 96000,
+          "ratio": 0.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "荒川　寿彦",
+          "shares": 70000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "川野　正博",
+          "shares": 69000,
+          "ratio": 0.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "廣江　勝志",
+          "shares": 68000,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.71,
+          "employee": 19.87,
+          "foreign": 1.38,
+          "trust": 0.8,
+          "individual": 1.74
+        },
+        "individual_total": 1.74,
+        "top10_total": 76.5
+      }
+    }
+  ]
+}

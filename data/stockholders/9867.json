@@ -1,0 +1,218 @@
+{
+  "secCode": "9867",
+  "issuerName": "ソレキア株式会社",
+  "updated_at": "2026/07/04 18:04 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "フリージア・マクロス株式会社",
+      "shares": 259000,
+      "ratio": 30.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐々木　ベジ",
+      "shares": 190000,
+      "ratio": 22.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 49000,
+      "ratio": 5.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小林　義和",
+      "shares": 38000,
+      "ratio": 4.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "竹内　理人",
+      "shares": 27000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ヨシダ　トモヒロ",
+      "shares": 24000,
+      "ratio": 2.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "富士通株式会社",
+      "shares": 23000,
+      "ratio": 2.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ソレキア従業員持株会",
+      "shares": 20000,
+      "ratio": 2.32,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小林　英之",
+      "shares": 17000,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東特塗料株式会社",
+      "shares": 16000,
+      "ratio": 1.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.67,
+      "individual": 34.56,
+      "securities": 5.68,
+      "employee": 2.32
+    },
+    "individual_total": 34.56,
+    "top10_total": 77.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YKQM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "フリージア・マクロス株式会社",
+          "shares": 259000,
+          "ratio": 30.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐々木　ベジ",
+          "shares": 190000,
+          "ratio": 22.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 49000,
+          "ratio": 5.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小林　義和",
+          "shares": 38000,
+          "ratio": 4.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "竹内　理人",
+          "shares": 27000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ヨシダ　トモヒロ",
+          "shares": 24000,
+          "ratio": 2.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "富士通株式会社",
+          "shares": 23000,
+          "ratio": 2.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ソレキア従業員持株会",
+          "shares": 20000,
+          "ratio": 2.32,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小林　英之",
+          "shares": 17000,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東特塗料株式会社",
+          "shares": 16000,
+          "ratio": 1.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.67,
+          "individual": 34.56,
+          "securities": 5.68,
+          "employee": 2.32
+        },
+        "individual_total": 34.56,
+        "top10_total": 77.23
+      }
+    }
+  ]
+}

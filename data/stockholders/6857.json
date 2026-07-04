@@ -1,0 +1,218 @@
+{
+  "secCode": "6857",
+  "issuerName": "株式会社アドバンテスト",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 206821000,
+      "ratio": 28.52,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 83860000,
+      "ratio": 11.56,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n(常任代理人　株式会社みずほ銀行)",
+      "shares": 21579000,
+      "ratio": 2.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n(常任代理人 香港上海銀行東京支店)",
+      "shares": 12758000,
+      "ratio": 1.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GOVERNMENT OF NORWAY\n(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 12534000,
+      "ratio": 1.72,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JP MORGAN CHASE BANK 385781\n(常任代理人 株式会社みずほ銀行)",
+      "shares": 10778000,
+      "ratio": 1.48,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "THE BANK OF NEW YORK MELLON 140042\n(常任代理人 株式会社みずほ銀行)",
+      "shares": 9643000,
+      "ratio": 1.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MOXLEY & CO LLC\n(常任代理人 株式会社みずほ銀行)",
+      "shares": 9398000,
+      "ratio": 1.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNYM AS AGT/CLTS 10 PERCENT\n(常任代理人 株式会社三菱UFJ銀行)",
+      "shares": 7793000,
+      "ratio": 1.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385642\n(常任代理人 株式会社みずほ銀行)",
+      "shares": 6683000,
+      "ratio": 0.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 40.08,
+      "foreign": 9.52,
+      "other": 1.72,
+      "financial": 1.29
+    },
+    "individual_total": 0,
+    "top10_total": 52.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第84期(2025/04/01－2026/03/31)",
+      "docID": "S100YKTA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 206821000,
+          "ratio": 28.52,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 83860000,
+          "ratio": 11.56,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n(常任代理人　株式会社みずほ銀行)",
+          "shares": 21579000,
+          "ratio": 2.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n(常任代理人 香港上海銀行東京支店)",
+          "shares": 12758000,
+          "ratio": 1.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GOVERNMENT OF NORWAY\n(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 12534000,
+          "ratio": 1.72,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JP MORGAN CHASE BANK 385781\n(常任代理人 株式会社みずほ銀行)",
+          "shares": 10778000,
+          "ratio": 1.48,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "THE BANK OF NEW YORK MELLON 140042\n(常任代理人 株式会社みずほ銀行)",
+          "shares": 9643000,
+          "ratio": 1.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MOXLEY & CO LLC\n(常任代理人 株式会社みずほ銀行)",
+          "shares": 9398000,
+          "ratio": 1.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNYM AS AGT/CLTS 10 PERCENT\n(常任代理人 株式会社三菱UFJ銀行)",
+          "shares": 7793000,
+          "ratio": 1.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385642\n(常任代理人 株式会社みずほ銀行)",
+          "shares": 6683000,
+          "ratio": 0.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 40.08,
+          "foreign": 9.52,
+          "other": 1.72,
+          "financial": 1.29
+        },
+        "individual_total": 0,
+        "top10_total": 52.61
+      }
+    }
+  ]
+}

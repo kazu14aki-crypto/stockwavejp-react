@@ -1,0 +1,220 @@
+{
+  "secCode": "6458",
+  "issuerName": "新晃工業株式会社",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社明晃",
+      "shares": 13521000,
+      "ratio": 19.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 7772000,
+      "ratio": 11.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ダイキン工業株式会社",
+      "shares": 4050000,
+      "ratio": 5.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505025(常任代理人 株式会社みずほ銀行 決済営業部)",
+      "shares": 3322000,
+      "ratio": 4.87,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 2231000,
+      "ratio": 3.27,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 2131000,
+      "ratio": 3.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 1864000,
+      "ratio": 2.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "新晃持株会",
+      "shares": 1144000,
+      "ratio": 1.68,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "エフホールディングス株式会社",
+      "shares": 900000,
+      "ratio": 1.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NORTHERN TRUST CO.(AVFC) RE UKAI AIF CLIENTS NON LENDING 10PCT TREATY ACCOUNT(常任代理人 香港上海銀行東京支店)",
+      "shares": 900000,
+      "ratio": 1.32,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.11,
+      "trust": 14.54,
+      "foreign": 6.19,
+      "financial": 6.0,
+      "employee": 1.68
+    },
+    "individual_total": 0,
+    "top10_total": 55.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100Y1I3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社明晃",
+          "shares": 13521000,
+          "ratio": 19.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 7772000,
+          "ratio": 11.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ダイキン工業株式会社",
+          "shares": 4050000,
+          "ratio": 5.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505025(常任代理人 株式会社みずほ銀行 決済営業部)",
+          "shares": 3322000,
+          "ratio": 4.87,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 2231000,
+          "ratio": 3.27,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 2131000,
+          "ratio": 3.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 1864000,
+          "ratio": 2.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "新晃持株会",
+          "shares": 1144000,
+          "ratio": 1.68,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "エフホールディングス株式会社",
+          "shares": 900000,
+          "ratio": 1.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NORTHERN TRUST CO.(AVFC) RE UKAI AIF CLIENTS NON LENDING 10PCT TREATY ACCOUNT(常任代理人 香港上海銀行東京支店)",
+          "shares": 900000,
+          "ratio": 1.32,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.11,
+          "trust": 14.54,
+          "foreign": 6.19,
+          "financial": 6.0,
+          "employee": 1.68
+        },
+        "individual_total": 0,
+        "top10_total": 55.52
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "520A",
+  "issuerName": "ジェイファーマ株式会社",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "JICベンチャー・グロース・ファンド1号投資事業有限責任組合",
+      "shares": 1859325,
+      "ratio": 10.34,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "EIGHT ROADS VENTURES JAPAN II LP\n（常任代理人　Eight Roads・キャピタル・アドバイザーズ・ホンコン・リミテッド）",
+      "shares": 1616000,
+      "ratio": 8.99,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NEWTON BIOCAPITAL I SA. PRICAF PRIVEE DE DROIT BELGE\n（常任代理人　三田証券株式会社）",
+      "shares": 1225000,
+      "ratio": 6.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大原薬品工業株式会社",
+      "shares": 875000,
+      "ratio": 4.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "UntroD 野村クロスオーバーインパクトファンド投資事業有限責任組合",
+      "shares": 827200,
+      "ratio": 4.6,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "スペラファーマ株式会社",
+      "shares": 625000,
+      "ratio": 3.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "MSIVCグローバルアカデミックシーズ投資事業有限責任組合",
+      "shares": 527500,
+      "ratio": 2.93,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "F-PRIME CAPITAL PARTNERS LIFE SCIENCES FUND VI LP\n（常任代理人　肥沼　誠）",
+      "shares": 485000,
+      "ratio": 2.7,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "OUVC1号投資事業有限責任組合",
+      "shares": 462500,
+      "ratio": 2.57,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社SBI証券",
+      "shares": 432200,
+      "ratio": 2.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "government": 10.34,
+      "other": 21.79,
+      "securities": 9.21,
+      "corporate": 8.35
+    },
+    "individual_total": 0,
+    "top10_total": 49.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YJUW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "JICベンチャー・グロース・ファンド1号投資事業有限責任組合",
+          "shares": 1859325,
+          "ratio": 10.34,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "EIGHT ROADS VENTURES JAPAN II LP\n（常任代理人　Eight Roads・キャピタル・アドバイザーズ・ホンコン・リミテッド）",
+          "shares": 1616000,
+          "ratio": 8.99,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NEWTON BIOCAPITAL I SA. PRICAF PRIVEE DE DROIT BELGE\n（常任代理人　三田証券株式会社）",
+          "shares": 1225000,
+          "ratio": 6.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大原薬品工業株式会社",
+          "shares": 875000,
+          "ratio": 4.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "UntroD 野村クロスオーバーインパクトファンド投資事業有限責任組合",
+          "shares": 827200,
+          "ratio": 4.6,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "スペラファーマ株式会社",
+          "shares": 625000,
+          "ratio": 3.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "MSIVCグローバルアカデミックシーズ投資事業有限責任組合",
+          "shares": 527500,
+          "ratio": 2.93,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "F-PRIME CAPITAL PARTNERS LIFE SCIENCES FUND VI LP\n（常任代理人　肥沼　誠）",
+          "shares": 485000,
+          "ratio": 2.7,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "OUVC1号投資事業有限責任組合",
+          "shares": 462500,
+          "ratio": 2.57,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社SBI証券",
+          "shares": 432200,
+          "ratio": 2.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "government": 10.34,
+          "other": 21.79,
+          "securities": 9.21,
+          "corporate": 8.35
+        },
+        "individual_total": 0,
+        "top10_total": 49.69
+      }
+    }
+  ]
+}

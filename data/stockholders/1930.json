@@ -1,0 +1,220 @@
+{
+  "secCode": "1930",
+  "issuerName": "北陸電気工事株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "北陸電力株式会社",
+      "shares": 14025310,
+      "ratio": 49.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1405900,
+      "ratio": 4.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 1036700,
+      "ratio": 3.65,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "北陸電気工事従業員持株会",
+      "shares": 914432,
+      "ratio": 3.22,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託Ｅ口)",
+      "shares": 901700,
+      "ratio": 3.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 360900,
+      "ratio": 1.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "光通信株式会社",
+      "shares": 299580,
+      "ratio": 1.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社北陸電機商会",
+      "shares": 260000,
+      "ratio": 0.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 242400,
+      "ratio": 0.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 201841,
+      "ratio": 0.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.35,
+      "trust": 9.39,
+      "other": 3.65,
+      "employee": 3.22,
+      "financial": 1.56
+    },
+    "individual_total": 0,
+    "top10_total": 69.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第112期(2025/04/01－2026/03/31)",
+      "docID": "S100YI00",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "北陸電力株式会社",
+          "shares": 14025310,
+          "ratio": 49.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1405900,
+          "ratio": 4.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 1036700,
+          "ratio": 3.65,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "北陸電気工事従業員持株会",
+          "shares": 914432,
+          "ratio": 3.22,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託Ｅ口)",
+          "shares": 901700,
+          "ratio": 3.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 360900,
+          "ratio": 1.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "光通信株式会社",
+          "shares": 299580,
+          "ratio": 1.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社北陸電機商会",
+          "shares": 260000,
+          "ratio": 0.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 242400,
+          "ratio": 0.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 201841,
+          "ratio": 0.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.35,
+          "trust": 9.39,
+          "other": 3.65,
+          "employee": 3.22,
+          "financial": 1.56
+        },
+        "individual_total": 0,
+        "top10_total": 69.17
+      }
+    }
+  ]
+}

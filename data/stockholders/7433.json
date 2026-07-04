@@ -1,0 +1,222 @@
+{
+  "secCode": "7433",
+  "issuerName": "伯東株式会社",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "公益財団法人高山国際教育財団",
+      "shares": 4226200,
+      "ratio": 22.46,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 1828000,
+      "ratio": 9.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "高山　一郎",
+      "shares": 1058900,
+      "ratio": 5.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "高山　健",
+      "shares": 1058900,
+      "ratio": 5.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "高山　龍太郎",
+      "shares": 1058800,
+      "ratio": 5.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "伯東従業員持株会",
+      "shares": 513200,
+      "ratio": 2.73,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＭＢＣ信託銀行",
+      "shares": 241000,
+      "ratio": 1.28,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 222500,
+      "ratio": 1.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 154400,
+      "ratio": 0.82,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK WEST CLIENT - TREATY 505234\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 105500,
+      "ratio": 0.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 22.46,
+      "trust": 10.9,
+      "individual": 16.89,
+      "employee": 2.73,
+      "financial": 1.28,
+      "foreign": 1.38
+    },
+    "individual_total": 16.89,
+    "top10_total": 55.64
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第73期(2024/04/01－2025/03/31)",
+      "docID": "S100YI76",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人高山国際教育財団",
+          "shares": 4226200,
+          "ratio": 22.46,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 1828000,
+          "ratio": 9.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "高山　一郎",
+          "shares": 1058900,
+          "ratio": 5.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "高山　健",
+          "shares": 1058900,
+          "ratio": 5.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "高山　龍太郎",
+          "shares": 1058800,
+          "ratio": 5.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "伯東従業員持株会",
+          "shares": 513200,
+          "ratio": 2.73,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＭＢＣ信託銀行",
+          "shares": 241000,
+          "ratio": 1.28,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 222500,
+          "ratio": 1.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 154400,
+          "ratio": 0.82,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK WEST CLIENT - TREATY 505234\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 105500,
+          "ratio": 0.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 22.46,
+          "trust": 10.9,
+          "individual": 16.89,
+          "employee": 2.73,
+          "financial": 1.28,
+          "foreign": 1.38
+        },
+        "individual_total": 16.89,
+        "top10_total": 55.64
+      }
+    }
+  ]
+}

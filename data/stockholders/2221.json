@@ -1,0 +1,222 @@
+{
+  "secCode": "2221",
+  "issuerName": "岩塚製菓株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "岩塚製菓共栄会",
+      "shares": 642000,
+      "ratio": 6.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "株式会社第四北越銀行",
+      "shares": 515000,
+      "ratio": 5.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "槇　政男",
+      "shares": 404000,
+      "ratio": 3.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "LEADING GUIDE HONG KONG LIMITED\n(常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 394000,
+      "ratio": 3.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "槇　キク",
+      "shares": 325000,
+      "ratio": 3.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平石　惠子",
+      "shares": 306000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "第四北越ジェーシービーカード株式会社",
+      "shares": 260000,
+      "ratio": 2.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第四北越証券株式会社",
+      "shares": 260000,
+      "ratio": 2.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+      "shares": 249000,
+      "ratio": 2.42,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社魚沼運輸",
+      "shares": 246000,
+      "ratio": 2.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 16.27,
+      "financial": 5.0,
+      "other": 3.82,
+      "corporate": 4.9,
+      "securities": 2.52,
+      "foreign": 2.42
+    },
+    "individual_total": 16.27,
+    "top10_total": 34.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第73期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ2N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "岩塚製菓共栄会",
+          "shares": 642000,
+          "ratio": 6.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "株式会社第四北越銀行",
+          "shares": 515000,
+          "ratio": 5.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "槇　政男",
+          "shares": 404000,
+          "ratio": 3.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "LEADING GUIDE HONG KONG LIMITED\n(常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 394000,
+          "ratio": 3.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "槇　キク",
+          "shares": 325000,
+          "ratio": 3.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平石　惠子",
+          "shares": 306000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "第四北越ジェーシービーカード株式会社",
+          "shares": 260000,
+          "ratio": 2.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第四北越証券株式会社",
+          "shares": 260000,
+          "ratio": 2.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+          "shares": 249000,
+          "ratio": 2.42,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社魚沼運輸",
+          "shares": 246000,
+          "ratio": 2.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 16.27,
+          "financial": 5.0,
+          "other": 3.82,
+          "corporate": 4.9,
+          "securities": 2.52,
+          "foreign": 2.42
+        },
+        "individual_total": 16.27,
+        "top10_total": 34.93
+      }
+    }
+  ]
+}

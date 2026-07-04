@@ -1,0 +1,220 @@
+{
+  "secCode": "6586",
+  "issuerName": "株式会社マキタ",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 35518000,
+      "ratio": 13.74,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 12641000,
+      "ratio": 4.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社マルワ",
+      "shares": 8808000,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 8426000,
+      "ratio": 3.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三井住友銀行",
+      "shares": 5800000,
+      "ratio": 2.24,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "マキタ取引先投資会",
+      "shares": 5778000,
+      "ratio": 2.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 5353000,
+      "ratio": 2.07,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "全国共済農業協同組合連合会(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 5102000,
+      "ratio": 1.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 5020000,
+      "ratio": 1.94,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS (常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 4496000,
+      "ratio": 1.73,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.67,
+      "corporate": 3.4,
+      "financial": 5.5,
+      "individual": 2.23,
+      "foreign": 3.67
+    },
+    "individual_total": 2.23,
+    "top10_total": 37.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第114期(2025/04/01－2026/03/31)",
+      "docID": "S100YH4M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 35518000,
+          "ratio": 13.74,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 12641000,
+          "ratio": 4.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社マルワ",
+          "shares": 8808000,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 8426000,
+          "ratio": 3.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 5800000,
+          "ratio": 2.24,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "マキタ取引先投資会",
+          "shares": 5778000,
+          "ratio": 2.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 5353000,
+          "ratio": 2.07,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "全国共済農業協同組合連合会(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 5102000,
+          "ratio": 1.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 (常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 5020000,
+          "ratio": 1.94,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS (常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 4496000,
+          "ratio": 1.73,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.67,
+          "corporate": 3.4,
+          "financial": 5.5,
+          "individual": 2.23,
+          "foreign": 3.67
+        },
+        "individual_total": 2.23,
+        "top10_total": 37.47
+      }
+    }
+  ]
+}

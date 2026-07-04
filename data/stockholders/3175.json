@@ -1,0 +1,216 @@
+{
+  "secCode": "3175",
+  "issuerName": "株式会社エー・ピーホールディングス",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "米山　久",
+      "shares": 5187000,
+      "ratio": 40.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MTRインベストメント株式会社",
+      "shares": 675000,
+      "ratio": 5.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "西　陽一郎",
+      "shares": 439000,
+      "ratio": 3.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "オイシックス・ラ・大地株式会社",
+      "shares": 362000,
+      "ratio": 2.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社アップフロントグループ",
+      "shares": 146000,
+      "ratio": 1.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社NSK",
+      "shares": 109000,
+      "ratio": 0.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "里見　順子",
+      "shares": 60000,
+      "ratio": 0.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "エー・ピーホールディングス従業員持株会",
+      "shares": 49000,
+      "ratio": 0.39,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 30000,
+      "ratio": 0.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "吉野　勝己",
+      "shares": 26000,
+      "ratio": 0.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.78,
+      "corporate": 10.38,
+      "employee": 0.39
+    },
+    "individual_total": 44.78,
+    "top10_total": 55.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YLZQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "米山　久",
+          "shares": 5187000,
+          "ratio": 40.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MTRインベストメント株式会社",
+          "shares": 675000,
+          "ratio": 5.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "西　陽一郎",
+          "shares": 439000,
+          "ratio": 3.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "オイシックス・ラ・大地株式会社",
+          "shares": 362000,
+          "ratio": 2.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社アップフロントグループ",
+          "shares": 146000,
+          "ratio": 1.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社NSK",
+          "shares": 109000,
+          "ratio": 0.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "里見　順子",
+          "shares": 60000,
+          "ratio": 0.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "エー・ピーホールディングス従業員持株会",
+          "shares": 49000,
+          "ratio": 0.39,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 30000,
+          "ratio": 0.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "吉野　勝己",
+          "shares": 26000,
+          "ratio": 0.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.78,
+          "corporate": 10.38,
+          "employee": 0.39
+        },
+        "individual_total": 44.78,
+        "top10_total": 55.55
+      }
+    }
+  ]
+}

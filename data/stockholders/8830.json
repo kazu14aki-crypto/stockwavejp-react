@@ -1,0 +1,218 @@
+{
+  "secCode": "8830",
+  "issuerName": "住友不動産株式会社",
+  "updated_at": "2026/07/04 18:28 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 121816000,
+      "ratio": 13.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 51364000,
+      "ratio": 5.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人株式会社みずほ銀行決済営業部）",
+      "shares": 18024000,
+      "ratio": 1.94,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 16800000,
+      "ratio": 1.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ダイキン工業株式会社",
+      "shares": 14334000,
+      "ratio": 1.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社竹中工務店",
+      "shares": 14200000,
+      "ratio": 1.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社住友倉庫",
+      "shares": 12261000,
+      "ratio": 1.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大成建設株式会社",
+      "shares": 12000000,
+      "ratio": 1.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "西武鉄道株式会社",
+      "shares": 11616000,
+      "ratio": 1.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社大林組",
+      "shares": 11181000,
+      "ratio": 1.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.67,
+      "foreign": 1.94,
+      "financial": 1.81,
+      "corporate": 8.15
+    },
+    "individual_total": 0,
+    "top10_total": 30.57
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第93期(2025/04/01－2026/03/31)",
+      "docID": "S100YI5D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 121816000,
+          "ratio": 13.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 51364000,
+          "ratio": 5.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人株式会社みずほ銀行決済営業部）",
+          "shares": 18024000,
+          "ratio": 1.94,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 16800000,
+          "ratio": 1.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ダイキン工業株式会社",
+          "shares": 14334000,
+          "ratio": 1.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社竹中工務店",
+          "shares": 14200000,
+          "ratio": 1.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社住友倉庫",
+          "shares": 12261000,
+          "ratio": 1.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大成建設株式会社",
+          "shares": 12000000,
+          "ratio": 1.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "西武鉄道株式会社",
+          "shares": 11616000,
+          "ratio": 1.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社大林組",
+          "shares": 11181000,
+          "ratio": 1.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.67,
+          "foreign": 1.94,
+          "financial": 1.81,
+          "corporate": 8.15
+        },
+        "individual_total": 0,
+        "top10_total": 30.57
+      }
+    }
+  ]
+}

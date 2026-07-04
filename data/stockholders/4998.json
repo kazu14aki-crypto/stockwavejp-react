@@ -1,0 +1,220 @@
+{
+  "secCode": "4998",
+  "issuerName": "フマキラー株式会社",
+  "updated_at": "2026/07/04 17:57 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "エステー株式会社",
+      "shares": 1728000,
+      "ratio": 10.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "公益財団法人　大下財団",
+      "shares": 1327000,
+      "ratio": 8.05,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 580000,
+      "ratio": 3.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社広島銀行",
+      "shares": 574000,
+      "ratio": 3.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大下産業株式会社",
+      "shares": 561000,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "住友化学株式会社",
+      "shares": 433000,
+      "ratio": 2.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "福山通運株式会社",
+      "shares": 300000,
+      "ratio": 1.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大下　一明",
+      "shares": 285000,
+      "ratio": 1.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大下　俊明",
+      "shares": 259000,
+      "ratio": 1.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 244000,
+      "ratio": 1.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.33,
+      "foundation": 8.05,
+      "financial": 7.0,
+      "individual": 3.3,
+      "trust": 1.48
+    },
+    "individual_total": 3.3,
+    "top10_total": 38.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YGPK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "エステー株式会社",
+          "shares": 1728000,
+          "ratio": 10.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "公益財団法人　大下財団",
+          "shares": 1327000,
+          "ratio": 8.05,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 580000,
+          "ratio": 3.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社広島銀行",
+          "shares": 574000,
+          "ratio": 3.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大下産業株式会社",
+          "shares": 561000,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "住友化学株式会社",
+          "shares": 433000,
+          "ratio": 2.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福山通運株式会社",
+          "shares": 300000,
+          "ratio": 1.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大下　一明",
+          "shares": 285000,
+          "ratio": 1.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大下　俊明",
+          "shares": 259000,
+          "ratio": 1.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 244000,
+          "ratio": 1.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.33,
+          "foundation": 8.05,
+          "financial": 7.0,
+          "individual": 3.3,
+          "trust": 1.48
+        },
+        "individual_total": 3.3,
+        "top10_total": 38.16
+      }
+    }
+  ]
+}

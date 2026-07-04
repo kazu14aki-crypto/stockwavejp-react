@@ -1,0 +1,216 @@
+{
+  "secCode": "7686",
+  "issuerName": "株式会社ひとまいる",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＳＫＹグループホールディングス",
+      "shares": 13631000,
+      "ratio": 46.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤忠食品株式会社",
+      "shares": 2250000,
+      "ratio": 7.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三菱食品株式会社",
+      "shares": 2250000,
+      "ratio": 7.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "カクヤス従業員持株会",
+      "shares": 1738000,
+      "ratio": 5.96,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "麒麟麦酒株式会社",
+      "shares": 648000,
+      "ratio": 2.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アサヒビール株式会社",
+      "shares": 630000,
+      "ratio": 2.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "サッポロビール株式会社",
+      "shares": 630000,
+      "ratio": 2.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "サントリー株式会社",
+      "shares": 630000,
+      "ratio": 2.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松井　隆行",
+      "shares": 375000,
+      "ratio": 1.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "吉川　朋孝",
+      "shares": 273000,
+      "ratio": 0.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 70.88,
+      "employee": 5.96,
+      "individual": 2.21
+    },
+    "individual_total": 2.21,
+    "top10_total": 79.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/04/01－2026/03/31)",
+      "docID": "S100YIAO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＳＫＹグループホールディングス",
+          "shares": 13631000,
+          "ratio": 46.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤忠食品株式会社",
+          "shares": 2250000,
+          "ratio": 7.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三菱食品株式会社",
+          "shares": 2250000,
+          "ratio": 7.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "カクヤス従業員持株会",
+          "shares": 1738000,
+          "ratio": 5.96,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "麒麟麦酒株式会社",
+          "shares": 648000,
+          "ratio": 2.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アサヒビール株式会社",
+          "shares": 630000,
+          "ratio": 2.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "サッポロビール株式会社",
+          "shares": 630000,
+          "ratio": 2.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "サントリー株式会社",
+          "shares": 630000,
+          "ratio": 2.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松井　隆行",
+          "shares": 375000,
+          "ratio": 1.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "吉川　朋孝",
+          "shares": 273000,
+          "ratio": 0.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 70.88,
+          "employee": 5.96,
+          "individual": 2.21
+        },
+        "individual_total": 2.21,
+        "top10_total": 79.05
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "secCode": "4406",
+  "issuerName": "新日本理化株式会社",
+  "updated_at": "2026/07/04 18:40 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ワイエムシィ",
+      "shares": 5504000,
+      "ratio": 14.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社りそな銀行",
+      "shares": 1860000,
+      "ratio": 4.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "フクダ電子株式会社",
+      "shares": 1199000,
+      "ratio": 3.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 894000,
+      "ratio": 2.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村貿易株式会社",
+      "shares": 850000,
+      "ratio": 2.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ダイソーケミカル株式会社",
+      "shares": 758000,
+      "ratio": 2.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日油株式会社",
+      "shares": 700000,
+      "ratio": 1.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三井住友海上火災保険株式会社",
+      "shares": 661000,
+      "ratio": 1.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＫＨネオケム株式会社",
+      "shares": 609000,
+      "ratio": 1.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岩谷産業株式会社",
+      "shares": 512000,
+      "ratio": 1.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.94,
+      "financial": 7.38
+    },
+    "individual_total": 0,
+    "top10_total": 36.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第154期(2025/04/01－2026/03/31)",
+      "docID": "S100YGXD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ワイエムシィ",
+          "shares": 5504000,
+          "ratio": 14.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社りそな銀行",
+          "shares": 1860000,
+          "ratio": 4.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "フクダ電子株式会社",
+          "shares": 1199000,
+          "ratio": 3.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５１０３\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 894000,
+          "ratio": 2.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村貿易株式会社",
+          "shares": 850000,
+          "ratio": 2.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ダイソーケミカル株式会社",
+          "shares": 758000,
+          "ratio": 2.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日油株式会社",
+          "shares": 700000,
+          "ratio": 1.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三井住友海上火災保険株式会社",
+          "shares": 661000,
+          "ratio": 1.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＫＨネオケム株式会社",
+          "shares": 609000,
+          "ratio": 1.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岩谷産業株式会社",
+          "shares": 512000,
+          "ratio": 1.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.94,
+          "financial": 7.38
+        },
+        "individual_total": 0,
+        "top10_total": 36.32
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "1807",
+  "issuerName": "株式会社佐藤渡辺",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "佐藤工業株式会社",
+      "shares": 1300000,
+      "ratio": 20.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社創翔",
+      "shares": 662000,
+      "ratio": 10.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "東亜道路工業株式会社",
+      "shares": 482000,
+      "ratio": 7.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社アスカ",
+      "shares": 392000,
+      "ratio": 6.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＵＢＥ三菱セメント株式会社",
+      "shares": 322000,
+      "ratio": 5.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐藤渡辺従業員持株会",
+      "shares": 243000,
+      "ratio": 3.89,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "常盤工業株式会社",
+      "shares": 210000,
+      "ratio": 3.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "内藤征吾",
+      "shares": 190000,
+      "ratio": 3.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東亜建設工業株式会社",
+      "shares": 125000,
+      "ratio": 2.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "佐藤鉄工株式会社",
+      "shares": 113000,
+      "ratio": 1.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 57.79,
+      "employee": 3.89,
+      "individual": 3.05
+    },
+    "individual_total": 3.05,
+    "top10_total": 64.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第95期(2025/04/01－2026/03/31)",
+      "docID": "S100YJEE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "佐藤工業株式会社",
+          "shares": 1300000,
+          "ratio": 20.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社創翔",
+          "shares": 662000,
+          "ratio": 10.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "東亜道路工業株式会社",
+          "shares": 482000,
+          "ratio": 7.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社アスカ",
+          "shares": 392000,
+          "ratio": 6.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＵＢＥ三菱セメント株式会社",
+          "shares": 322000,
+          "ratio": 5.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐藤渡辺従業員持株会",
+          "shares": 243000,
+          "ratio": 3.89,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "常盤工業株式会社",
+          "shares": 210000,
+          "ratio": 3.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "内藤征吾",
+          "shares": 190000,
+          "ratio": 3.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東亜建設工業株式会社",
+          "shares": 125000,
+          "ratio": 2.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "佐藤鉄工株式会社",
+          "shares": 113000,
+          "ratio": 1.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 57.79,
+          "employee": 3.89,
+          "individual": 3.05
+        },
+        "individual_total": 3.05,
+        "top10_total": 64.73
+      }
+    }
+  ]
+}

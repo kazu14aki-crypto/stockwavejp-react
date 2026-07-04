@@ -1,0 +1,216 @@
+{
+  "secCode": "2540",
+  "issuerName": "養命酒製造株式会社",
+  "updated_at": "2026/07/04 18:09 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "湯沢株式会社",
+      "shares": 4641000,
+      "ratio": 33.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＪＰ ＪＰＭＳＥ ＬＵＸ ＲＥ ＮＯＭＵＲＡ ＩＮＴ ＰＬＣ １ ＥＱ ＣＯ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 784000,
+      "ratio": 5.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三菱ＵＦＪ信託銀行株式会社",
+      "shares": 675000,
+      "ratio": 4.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社八十二長野銀行",
+      "shares": 650000,
+      "ratio": 4.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "トーア再保険株式会社",
+      "shares": 548000,
+      "ratio": 3.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 507000,
+      "ratio": 3.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＪＰ ＪＰＭＳＥ ＬＵＸ ＲＥ ＵＢＳＡＧ　ＬＯＮＤＯＮ ＢＲＡＮＣＨ ＥＱ ＣＯ （常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 341000,
+      "ratio": 2.44,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 264000,
+      "ratio": 1.89,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "キッコーマン株式会社",
+      "shares": 221000,
+      "ratio": 1.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社十八親和銀行",
+      "shares": 211000,
+      "ratio": 1.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.84,
+      "financial": 20.97,
+      "trust": 3.64
+    },
+    "individual_total": 0,
+    "top10_total": 63.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第108期(2025/04/01－2026/03/31)",
+      "docID": "S100YK3W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "湯沢株式会社",
+          "shares": 4641000,
+          "ratio": 33.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＪＰ ＪＰＭＳＥ ＬＵＸ ＲＥ ＮＯＭＵＲＡ ＩＮＴ ＰＬＣ １ ＥＱ ＣＯ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 784000,
+          "ratio": 5.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三菱ＵＦＪ信託銀行株式会社",
+          "shares": 675000,
+          "ratio": 4.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社八十二長野銀行",
+          "shares": 650000,
+          "ratio": 4.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "トーア再保険株式会社",
+          "shares": 548000,
+          "ratio": 3.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 507000,
+          "ratio": 3.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＪＰ ＪＰＭＳＥ ＬＵＸ ＲＥ ＵＢＳＡＧ　ＬＯＮＤＯＮ ＢＲＡＮＣＨ ＥＱ ＣＯ （常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 341000,
+          "ratio": 2.44,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 264000,
+          "ratio": 1.89,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "キッコーマン株式会社",
+          "shares": 221000,
+          "ratio": 1.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社十八親和銀行",
+          "shares": 211000,
+          "ratio": 1.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.84,
+          "financial": 20.97,
+          "trust": 3.64
+        },
+        "individual_total": 0,
+        "top10_total": 63.45
+      }
+    }
+  ]
+}

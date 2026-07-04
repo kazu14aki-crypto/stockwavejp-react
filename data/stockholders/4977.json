@@ -1,0 +1,218 @@
+{
+  "secCode": "4977",
+  "issuerName": "新田ゼラチン株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アイビーピー㈱",
+      "shares": 3500116,
+      "ratio": 19.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ニッタ㈱",
+      "shares": 840014,
+      "ratio": 4.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "新田ゼラチン取引先持株会",
+      "shares": 520100,
+      "ratio": 2.86,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱三井住友銀行",
+      "shares": 465286,
+      "ratio": 2.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 459074,
+      "ratio": 2.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "新田　浩士",
+      "shares": 404474,
+      "ratio": 2.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "新田ゼラチン従業員持株会",
+      "shares": 397200,
+      "ratio": 2.18,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "石塚産業㈱",
+      "shares": 390914,
+      "ratio": 2.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人㈱みずほ銀行）",
+      "shares": 336375,
+      "ratio": 1.85,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人㈱三菱ＵＦＪ銀行）",
+      "shares": 264422,
+      "ratio": 1.45,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 28.2,
+      "employee": 5.04,
+      "financial": 5.07,
+      "foreign": 3.3
+    },
+    "individual_total": 28.2,
+    "top10_total": 41.61
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第87期(2025/04/01－2026/03/31)",
+      "docID": "S100YHPC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アイビーピー㈱",
+          "shares": 3500116,
+          "ratio": 19.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ニッタ㈱",
+          "shares": 840014,
+          "ratio": 4.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "新田ゼラチン取引先持株会",
+          "shares": 520100,
+          "ratio": 2.86,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱三井住友銀行",
+          "shares": 465286,
+          "ratio": 2.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 459074,
+          "ratio": 2.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "新田　浩士",
+          "shares": 404474,
+          "ratio": 2.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "新田ゼラチン従業員持株会",
+          "shares": 397200,
+          "ratio": 2.18,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "石塚産業㈱",
+          "shares": 390914,
+          "ratio": 2.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人㈱みずほ銀行）",
+          "shares": 336375,
+          "ratio": 1.85,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人㈱三菱ＵＦＪ銀行）",
+          "shares": 264422,
+          "ratio": 1.45,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 28.2,
+          "employee": 5.04,
+          "financial": 5.07,
+          "foreign": 3.3
+        },
+        "individual_total": 28.2,
+        "top10_total": 41.61
+      }
+    }
+  ]
+}

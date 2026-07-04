@@ -1,0 +1,218 @@
+{
+  "secCode": "288A",
+  "issuerName": "ラクサス・テクノロジーズ株式会社",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ワールド",
+      "shares": 10662934,
+      "ratio": 41.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "児玉　昇司",
+      "shares": 6398249,
+      "ratio": 24.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 744200,
+      "ratio": 2.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "岡三証券株式会社",
+      "shares": 297500,
+      "ratio": 1.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村證券株式会社",
+      "shares": 268800,
+      "ratio": 1.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "吉川　直樹",
+      "shares": 220000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "志賀　和夫",
+      "shares": 216000,
+      "ratio": 0.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "斎藤　真吾",
+      "shares": 184200,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社SBI証券",
+      "shares": 155727,
+      "ratio": 0.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "内藤　征吾",
+      "shares": 144500,
+      "ratio": 0.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.31,
+      "individual": 27.72,
+      "trust": 2.88,
+      "securities": 1.75
+    },
+    "individual_total": 27.72,
+    "top10_total": 74.66
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/04/01－2026/03/31)",
+      "docID": "S100YI4C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ワールド",
+          "shares": 10662934,
+          "ratio": 41.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "児玉　昇司",
+          "shares": 6398249,
+          "ratio": 24.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 744200,
+          "ratio": 2.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "岡三証券株式会社",
+          "shares": 297500,
+          "ratio": 1.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村證券株式会社",
+          "shares": 268800,
+          "ratio": 1.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "吉川　直樹",
+          "shares": 220000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "志賀　和夫",
+          "shares": 216000,
+          "ratio": 0.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "斎藤　真吾",
+          "shares": 184200,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社SBI証券",
+          "shares": 155727,
+          "ratio": 0.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "内藤　征吾",
+          "shares": 144500,
+          "ratio": 0.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.31,
+          "individual": 27.72,
+          "trust": 2.88,
+          "securities": 1.75
+        },
+        "individual_total": 27.72,
+        "top10_total": 74.66
+      }
+    }
+  ]
+}

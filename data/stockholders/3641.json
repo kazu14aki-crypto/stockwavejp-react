@@ -1,0 +1,222 @@
+{
+  "secCode": "3641",
+  "issuerName": "株式会社パピレス",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "天谷　幹夫",
+      "shares": 3427000,
+      "ratio": 39.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "セガサミーホールディングス株式会社",
+      "shares": 900000,
+      "ratio": 10.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松井　康子",
+      "shares": 253000,
+      "ratio": 2.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "福井　智樹",
+      "shares": 92000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＮＥＷ　ＹＯＲＫ　ＢＲＡＮＣＨ － ＰＲＩＭＥ　ＢＲＯＫＥＲＡＧＥ　ＣＬＥＡＲＡＮＣＥ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 58000,
+      "ratio": 0.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村證券株式会社",
+      "shares": 42000,
+      "ratio": 0.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＣＩＴＩＢＡＮＫ　ＨＯＮＧ　ＫＯＮＧ　ＰＢＧ　ＣＬＩＥＮＴＳ　Ｈ．Ｋ．\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 40000,
+      "ratio": 0.46,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社",
+      "shares": 32000,
+      "ratio": 0.37,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 30000,
+      "ratio": 0.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 26000,
+      "ratio": 0.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 43.47,
+      "corporate": 10.87,
+      "financial": 1.04,
+      "other": 0.46,
+      "trust": 0.35,
+      "securities": 0.31
+    },
+    "individual_total": 43.47,
+    "top10_total": 56.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ7Y",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "天谷　幹夫",
+          "shares": 3427000,
+          "ratio": 39.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "セガサミーホールディングス株式会社",
+          "shares": 900000,
+          "ratio": 10.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松井　康子",
+          "shares": 253000,
+          "ratio": 2.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "福井　智樹",
+          "shares": 92000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＮＥＷ　ＹＯＲＫ　ＢＲＡＮＣＨ － ＰＲＩＭＥ　ＢＲＯＫＥＲＡＧＥ　ＣＬＥＡＲＡＮＣＥ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 58000,
+          "ratio": 0.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村證券株式会社",
+          "shares": 42000,
+          "ratio": 0.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＣＩＴＩＢＡＮＫ　ＨＯＮＧ　ＫＯＮＧ　ＰＢＧ　ＣＬＩＥＮＴＳ　Ｈ．Ｋ．\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 40000,
+          "ratio": 0.46,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社",
+          "shares": 32000,
+          "ratio": 0.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 30000,
+          "ratio": 0.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 26000,
+          "ratio": 0.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 43.47,
+          "corporate": 10.87,
+          "financial": 1.04,
+          "other": 0.46,
+          "trust": 0.35,
+          "securities": 0.31
+        },
+        "individual_total": 43.47,
+        "top10_total": 56.5
+      }
+    }
+  ]
+}

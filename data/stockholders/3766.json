@@ -1,0 +1,218 @@
+{
+  "secCode": "3766",
+  "issuerName": "システムズ・デザイン株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Kawashima",
+      "shares": 1253000,
+      "ratio": 36.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "UHPartners2投資事業有限責任組合",
+      "shares": 256000,
+      "ratio": 7.5,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 221000,
+      "ratio": 6.46,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "竹内　理人",
+      "shares": 121000,
+      "ratio": 3.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社\n （常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 80000,
+      "ratio": 2.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山下　良久",
+      "shares": 59000,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "川村　洋子",
+      "shares": 56000,
+      "ratio": 1.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "金田　真吾",
+      "shares": 55000,
+      "ratio": 1.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社みずほ銀行\n （常任代理人　株式会社日本カストディ銀行）",
+      "shares": 50000,
+      "ratio": 1.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "細谷　德男",
+      "shares": 48000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.65,
+      "other": 13.96,
+      "individual": 9.96,
+      "trust": 3.8
+    },
+    "individual_total": 9.96,
+    "top10_total": 64.37
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100YGLS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Kawashima",
+          "shares": 1253000,
+          "ratio": 36.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "UHPartners2投資事業有限責任組合",
+          "shares": 256000,
+          "ratio": 7.5,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 221000,
+          "ratio": 6.46,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "竹内　理人",
+          "shares": 121000,
+          "ratio": 3.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社\n （常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 80000,
+          "ratio": 2.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山下　良久",
+          "shares": 59000,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "川村　洋子",
+          "shares": 56000,
+          "ratio": 1.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "金田　真吾",
+          "shares": 55000,
+          "ratio": 1.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社みずほ銀行\n （常任代理人　株式会社日本カストディ銀行）",
+          "shares": 50000,
+          "ratio": 1.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "細谷　德男",
+          "shares": 48000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.65,
+          "other": 13.96,
+          "individual": 9.96,
+          "trust": 3.8
+        },
+        "individual_total": 9.96,
+        "top10_total": 64.37
+      }
+    }
+  ]
+}

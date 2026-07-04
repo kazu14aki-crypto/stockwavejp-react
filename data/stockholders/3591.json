@@ -1,0 +1,216 @@
+{
+  "secCode": "3591",
+  "issuerName": "株式会社ワコールホールディングス",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+      "shares": 4793000,
+      "ratio": 9.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "明治安田生命保険相互会社",
+      "shares": 3050000,
+      "ratio": 6.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社京都銀行",
+      "shares": 2352000,
+      "ratio": 4.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 2286000,
+      "ratio": 4.62,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 1753000,
+      "ratio": 3.55,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本生命保険相互会社",
+      "shares": 1569000,
+      "ratio": 3.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社滋賀銀行",
+      "shares": 1569000,
+      "ratio": 3.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 1569000,
+      "ratio": 3.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱ＵＦＪ信託銀行株式会社",
+      "shares": 1525000,
+      "ratio": 3.08,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（三井住友信託銀行再信託分・東レ株式会社退職給付信託口）",
+      "shares": 1205000,
+      "ratio": 2.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 15.31,
+      "financial": 24.98,
+      "foreign": 3.55
+    },
+    "individual_total": 0,
+    "top10_total": 43.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YKJC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+          "shares": 4793000,
+          "ratio": 9.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "明治安田生命保険相互会社",
+          "shares": 3050000,
+          "ratio": 6.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社京都銀行",
+          "shares": 2352000,
+          "ratio": 4.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 2286000,
+          "ratio": 4.62,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 1753000,
+          "ratio": 3.55,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本生命保険相互会社",
+          "shares": 1569000,
+          "ratio": 3.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社滋賀銀行",
+          "shares": 1569000,
+          "ratio": 3.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 1569000,
+          "ratio": 3.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱ＵＦＪ信託銀行株式会社",
+          "shares": 1525000,
+          "ratio": 3.08,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（三井住友信託銀行再信託分・東レ株式会社退職給付信託口）",
+          "shares": 1205000,
+          "ratio": 2.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 15.31,
+          "financial": 24.98,
+          "foreign": 3.55
+        },
+        "individual_total": 0,
+        "top10_total": 43.84
+      }
+    }
+  ]
+}

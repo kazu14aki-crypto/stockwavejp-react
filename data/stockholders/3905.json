@@ -1,0 +1,218 @@
+{
+  "secCode": "3905",
+  "issuerName": "データセクション株式会社",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "FIRST PLUS FINANCIAL HOLDINGS PTE. LTD.",
+      "shares": 9788000,
+      "ratio": 33.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東海東京証券株式会社",
+      "shares": 2174000,
+      "ratio": 7.34,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "FUTU SECURITIES INTERNATIONAL （HONG KONG） LIMITED",
+      "shares": 1083800,
+      "ratio": 3.66,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SBI証券",
+      "shares": 961837,
+      "ratio": 3.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社VLCセキュリティ",
+      "shares": 515000,
+      "ratio": 1.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 489900,
+      "ratio": 1.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村證券株式会社",
+      "shares": 469477,
+      "ratio": 1.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP JPMSE LUX RE MACQUARIE BANK LTD LONDON EQ CO",
+      "shares": 448480,
+      "ratio": 1.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP JPMSE LUX RE CITIGROUP GLOBAL MARKETS L EQ CO",
+      "shares": 444200,
+      "ratio": 1.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 426940,
+      "ratio": 1.44,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 36.04,
+      "securities": 13.68,
+      "other": 3.66,
+      "corporate": 3.32
+    },
+    "individual_total": 0,
+    "top10_total": 56.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YMGV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "FIRST PLUS FINANCIAL HOLDINGS PTE. LTD.",
+          "shares": 9788000,
+          "ratio": 33.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東海東京証券株式会社",
+          "shares": 2174000,
+          "ratio": 7.34,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "FUTU SECURITIES INTERNATIONAL （HONG KONG） LIMITED",
+          "shares": 1083800,
+          "ratio": 3.66,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SBI証券",
+          "shares": 961837,
+          "ratio": 3.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社VLCセキュリティ",
+          "shares": 515000,
+          "ratio": 1.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 489900,
+          "ratio": 1.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 469477,
+          "ratio": 1.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP JPMSE LUX RE MACQUARIE BANK LTD LONDON EQ CO",
+          "shares": 448480,
+          "ratio": 1.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP JPMSE LUX RE CITIGROUP GLOBAL MARKETS L EQ CO",
+          "shares": 444200,
+          "ratio": 1.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 426940,
+          "ratio": 1.44,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 36.04,
+          "securities": 13.68,
+          "other": 3.66,
+          "corporate": 3.32
+        },
+        "individual_total": 0,
+        "top10_total": 56.7
+      }
+    }
+  ]
+}

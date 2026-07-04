@@ -1,0 +1,220 @@
+{
+  "secCode": "7222",
+  "issuerName": "日産車体株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日産自動車株式会社",
+      "shares": 67726000,
+      "ratio": 50.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "イーシーエム　エムエフ\n(常任代理人　立花証券株式会社)",
+      "shares": 30602000,
+      "ratio": 22.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ゴールドマン・サックス・インターナショナル\n(常任代理人　ゴールドマン・サックス証券株式会社)",
+      "shares": 6212000,
+      "ratio": 4.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "インタートラスト　トラスティーズ（ケイマン）リミテッド　ソールリー　イン　イッツ　キャパシティー　アズ　トラスティー　オブ　ジャパン　アップ\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 4596000,
+      "ratio": 3.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 3386000,
+      "ratio": 2.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "バンク　オブ　ニユーヨーク　ジーシーエム　クライアント　アカウント　ジエイピーアールデイ　アイエスジー　エフイー－エイシー\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 2902000,
+      "ratio": 2.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日産車体取引先持株会",
+      "shares": 2379000,
+      "ratio": 1.76,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 891000,
+      "ratio": 0.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 846000,
+      "ratio": 0.62,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 800000,
+      "ratio": 0.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 50.0,
+      "securities": 27.18,
+      "financial": 7.4,
+      "trust": 2.5,
+      "employee": 1.76
+    },
+    "individual_total": 0,
+    "top10_total": 88.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YGCO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日産自動車株式会社",
+          "shares": 67726000,
+          "ratio": 50.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "イーシーエム　エムエフ\n(常任代理人　立花証券株式会社)",
+          "shares": 30602000,
+          "ratio": 22.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ゴールドマン・サックス・インターナショナル\n(常任代理人　ゴールドマン・サックス証券株式会社)",
+          "shares": 6212000,
+          "ratio": 4.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "インタートラスト　トラスティーズ（ケイマン）リミテッド　ソールリー　イン　イッツ　キャパシティー　アズ　トラスティー　オブ　ジャパン　アップ\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 4596000,
+          "ratio": 3.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 3386000,
+          "ratio": 2.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "バンク　オブ　ニユーヨーク　ジーシーエム　クライアント　アカウント　ジエイピーアールデイ　アイエスジー　エフイー－エイシー\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 2902000,
+          "ratio": 2.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日産車体取引先持株会",
+          "shares": 2379000,
+          "ratio": 1.76,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 891000,
+          "ratio": 0.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 846000,
+          "ratio": 0.62,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 800000,
+          "ratio": 0.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 50.0,
+          "securities": 27.18,
+          "financial": 7.4,
+          "trust": 2.5,
+          "employee": 1.76
+        },
+        "individual_total": 0,
+        "top10_total": 88.84
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4623",
+  "issuerName": "株式会社アサヒペン",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一般財団法人アサヒペンひかり財団",
+      "shares": 462000,
+      "ratio": 12.46,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "アサヒペン共伸会",
+      "shares": 197000,
+      "ratio": 5.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "アサヒペン共栄会",
+      "shares": 142000,
+      "ratio": 3.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 117000,
+      "ratio": 3.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 108000,
+      "ratio": 2.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "澤田　耕吾",
+      "shares": 66000,
+      "ratio": 1.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社伊予銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 62000,
+      "ratio": 1.67,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "田中　猛",
+      "shares": 60000,
+      "ratio": 1.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "田中　弘文",
+      "shares": 56000,
+      "ratio": 1.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 56000,
+      "ratio": 1.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 12.46,
+      "individual": 14.09,
+      "financial": 6.09,
+      "trust": 1.67,
+      "securities": 1.52
+    },
+    "individual_total": 14.09,
+    "top10_total": 35.83
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YLY9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一般財団法人アサヒペンひかり財団",
+          "shares": 462000,
+          "ratio": 12.46,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "アサヒペン共伸会",
+          "shares": 197000,
+          "ratio": 5.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "アサヒペン共栄会",
+          "shares": 142000,
+          "ratio": 3.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 117000,
+          "ratio": 3.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 108000,
+          "ratio": 2.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "澤田　耕吾",
+          "shares": 66000,
+          "ratio": 1.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社伊予銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 62000,
+          "ratio": 1.67,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "田中　猛",
+          "shares": 60000,
+          "ratio": 1.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "田中　弘文",
+          "shares": 56000,
+          "ratio": 1.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 56000,
+          "ratio": 1.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 12.46,
+          "individual": 14.09,
+          "financial": 6.09,
+          "trust": 1.67,
+          "securities": 1.52
+        },
+        "individual_total": 14.09,
+        "top10_total": 35.83
+      }
+    }
+  ]
+}

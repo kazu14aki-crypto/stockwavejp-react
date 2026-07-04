@@ -1,0 +1,218 @@
+{
+  "secCode": "5020",
+  "issuerName": "ＥＮＥＯＳホールディングス株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 414806000,
+      "ratio": 15.36,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 141635000,
+      "ratio": 5.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY\n505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 72589000,
+      "ratio": 2.68,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "高知信用金庫",
+      "shares": 46370000,
+      "ratio": 1.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 38055000,
+      "ratio": 1.4,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 29600000,
+      "ratio": 1.09,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 28231000,
+      "ratio": 1.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP MORGAN CHASE BANK 385771\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 28154000,
+      "ratio": 1.04,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 27190000,
+      "ratio": 1.0,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "SMBC日興証券株式会社",
+      "shares": 26726000,
+      "ratio": 0.99,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.6,
+      "foreign": 7.21,
+      "financial": 1.71,
+      "securities": 2.03
+    },
+    "individual_total": 0,
+    "top10_total": 31.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第16期(2025/04/01－2026/03/31)",
+      "docID": "S100YF7I",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 414806000,
+          "ratio": 15.36,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 141635000,
+          "ratio": 5.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY\n505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 72589000,
+          "ratio": 2.68,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "高知信用金庫",
+          "shares": 46370000,
+          "ratio": 1.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 38055000,
+          "ratio": 1.4,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 29600000,
+          "ratio": 1.09,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 28231000,
+          "ratio": 1.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP MORGAN CHASE BANK 385771\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 28154000,
+          "ratio": 1.04,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 27190000,
+          "ratio": 1.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "SMBC日興証券株式会社",
+          "shares": 26726000,
+          "ratio": 0.99,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.6,
+          "foreign": 7.21,
+          "financial": 1.71,
+          "securities": 2.03
+        },
+        "individual_total": 0,
+        "top10_total": 31.55
+      }
+    }
+  ]
+}

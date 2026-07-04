@@ -1,0 +1,218 @@
+{
+  "secCode": "7694",
+  "issuerName": "株式会社いつも",
+  "updated_at": "2026/07/04 18:22 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社つづく",
+      "shares": 2400000,
+      "ratio": 40.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社望月智之事務所",
+      "shares": 1200000,
+      "ratio": 20.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "坂本　守",
+      "shares": 247955,
+      "ratio": 4.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "望月　智之",
+      "shares": 167955,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ （常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 92900,
+      "ratio": 1.56,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 64000,
+      "ratio": 1.08,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社共有口",
+      "shares": 45300,
+      "ratio": 0.76,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 40162,
+      "ratio": 0.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５１０３７１ （常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 38800,
+      "ratio": 0.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "高木　修",
+      "shares": 34166,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 60.56,
+      "individual": 7.57,
+      "securities": 4.08,
+      "financial": 0.65
+    },
+    "individual_total": 7.57,
+    "top10_total": 72.86
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/03/31)",
+      "docID": "S100YI9F",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社つづく",
+          "shares": 2400000,
+          "ratio": 40.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社望月智之事務所",
+          "shares": 1200000,
+          "ratio": 20.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "坂本　守",
+          "shares": 247955,
+          "ratio": 4.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "望月　智之",
+          "shares": 167955,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ （常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 92900,
+          "ratio": 1.56,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 64000,
+          "ratio": 1.08,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社共有口",
+          "shares": 45300,
+          "ratio": 0.76,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 40162,
+          "ratio": 0.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５１０３７１ （常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 38800,
+          "ratio": 0.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "高木　修",
+          "shares": 34166,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 60.56,
+          "individual": 7.57,
+          "securities": 4.08,
+          "financial": 0.65
+        },
+        "individual_total": 7.57,
+        "top10_total": 72.86
+      }
+    }
+  ]
+}

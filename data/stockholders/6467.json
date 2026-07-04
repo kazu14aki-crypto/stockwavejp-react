@@ -1,0 +1,220 @@
+{
+  "secCode": "6467",
+  "issuerName": "株式会社ニチダイ",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ジャスト",
+      "shares": 883000,
+      "ratio": 9.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "田中　克尚",
+      "shares": 474000,
+      "ratio": 5.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ニチダイ従業員持株会",
+      "shares": 376000,
+      "ratio": 4.16,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中棹　知子",
+      "shares": 282000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "永井　詳二",
+      "shares": 270000,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "古屋　啓子",
+      "shares": 252000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 235000,
+      "ratio": 2.61,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 217000,
+      "ratio": 2.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "高見　千秋",
+      "shares": 154000,
+      "ratio": 1.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 154000,
+      "ratio": 1.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 11.49,
+      "individual": 15.89,
+      "employee": 4.16,
+      "securities": 2.61,
+      "financial": 2.41
+    },
+    "individual_total": 15.89,
+    "top10_total": 36.56
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第59期(2025/04/01－2026/03/31)",
+      "docID": "S100YGVK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ジャスト",
+          "shares": 883000,
+          "ratio": 9.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "田中　克尚",
+          "shares": 474000,
+          "ratio": 5.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ニチダイ従業員持株会",
+          "shares": 376000,
+          "ratio": 4.16,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中棹　知子",
+          "shares": 282000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "永井　詳二",
+          "shares": 270000,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "古屋　啓子",
+          "shares": 252000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 235000,
+          "ratio": 2.61,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 217000,
+          "ratio": 2.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "高見　千秋",
+          "shares": 154000,
+          "ratio": 1.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 154000,
+          "ratio": 1.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 11.49,
+          "individual": 15.89,
+          "employee": 4.16,
+          "securities": 2.61,
+          "financial": 2.41
+        },
+        "individual_total": 15.89,
+        "top10_total": 36.56
+      }
+    }
+  ]
+}

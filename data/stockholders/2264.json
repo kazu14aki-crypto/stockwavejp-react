@@ -1,0 +1,218 @@
+{
+  "secCode": "2264",
+  "issuerName": "森永乳業株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 11197000,
+      "ratio": 13.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 6179000,
+      "ratio": 7.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＭＢＣ信託銀行(株式会社三井住友銀行退職給付信託口)",
+      "shares": 2657000,
+      "ratio": 3.28,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 2445000,
+      "ratio": 3.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "森永乳業従業員持株会",
+      "shares": 2224000,
+      "ratio": 2.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ　７００１７０（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 1796000,
+      "ratio": 2.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "森永製菓株式会社",
+      "shares": 1375000,
+      "ratio": 1.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 1345000,
+      "ratio": 1.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 1237000,
+      "ratio": 1.53,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本マスタートラスト信託銀行株式会社(退職給付信託口・森永製菓株式会社口)",
+      "shares": 1200000,
+      "ratio": 1.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 26.19,
+      "financial": 8.43,
+      "employee": 2.74,
+      "corporate": 1.7
+    },
+    "individual_total": 0,
+    "top10_total": 39.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YIHY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 11197000,
+          "ratio": 13.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 6179000,
+          "ratio": 7.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＭＢＣ信託銀行(株式会社三井住友銀行退職給付信託口)",
+          "shares": 2657000,
+          "ratio": 3.28,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 2445000,
+          "ratio": 3.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "森永乳業従業員持株会",
+          "shares": 2224000,
+          "ratio": 2.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ　７００１７０（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 1796000,
+          "ratio": 2.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "森永製菓株式会社",
+          "shares": 1375000,
+          "ratio": 1.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 1345000,
+          "ratio": 1.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 1237000,
+          "ratio": 1.53,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本マスタートラスト信託銀行株式会社(退職給付信託口・森永製菓株式会社口)",
+          "shares": 1200000,
+          "ratio": 1.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 26.19,
+          "financial": 8.43,
+          "employee": 2.74,
+          "corporate": 1.7
+        },
+        "individual_total": 0,
+        "top10_total": 39.06
+      }
+    }
+  ]
+}

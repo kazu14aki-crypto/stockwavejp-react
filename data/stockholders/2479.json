@@ -1,0 +1,218 @@
+{
+  "secCode": "2479",
+  "issuerName": "株式会社ジェイテック",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "藤本　彰",
+      "shares": 1608000,
+      "ratio": 20.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ジェイテック従業員持株会",
+      "shares": 191400,
+      "ratio": 2.38,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "堀江　耕治",
+      "shares": 177000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "黒米　克巳",
+      "shares": 164300,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "楽天証券株式会社共有口",
+      "shares": 147800,
+      "ratio": 1.84,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "遠藤　裕三",
+      "shares": 140000,
+      "ratio": 1.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "仲西　啓",
+      "shares": 123700,
+      "ratio": 1.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "藤本　信",
+      "shares": 115500,
+      "ratio": 1.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐伯　高史",
+      "shares": 111000,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上田八木短資株式会社",
+      "shares": 89400,
+      "ratio": 1.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 30.39,
+      "employee": 2.38,
+      "securities": 1.84,
+      "corporate": 1.11
+    },
+    "individual_total": 30.39,
+    "top10_total": 35.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YN23",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "藤本　彰",
+          "shares": 1608000,
+          "ratio": 20.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ジェイテック従業員持株会",
+          "shares": 191400,
+          "ratio": 2.38,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "堀江　耕治",
+          "shares": 177000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "黒米　克巳",
+          "shares": 164300,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社共有口",
+          "shares": 147800,
+          "ratio": 1.84,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "遠藤　裕三",
+          "shares": 140000,
+          "ratio": 1.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "仲西　啓",
+          "shares": 123700,
+          "ratio": 1.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "藤本　信",
+          "shares": 115500,
+          "ratio": 1.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐伯　高史",
+          "shares": 111000,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上田八木短資株式会社",
+          "shares": 89400,
+          "ratio": 1.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 30.39,
+          "employee": 2.38,
+          "securities": 1.84,
+          "corporate": 1.11
+        },
+        "individual_total": 30.39,
+        "top10_total": 35.72
+      }
+    }
+  ]
+}

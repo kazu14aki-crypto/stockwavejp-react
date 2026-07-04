@@ -1,0 +1,216 @@
+{
+  "secCode": "4800",
+  "issuerName": "オリコン株式会社",
+  "updated_at": "2026/07/04 18:09 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈲リトルポンド",
+      "shares": 4712700,
+      "ratio": 36.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "UHPartners2投資事業有限責任組合",
+      "shares": 1018100,
+      "ratio": 7.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 884000,
+      "ratio": 6.79,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 529200,
+      "ratio": 4.07,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "エスアイエル投資事業有限責任組合",
+      "shares": 330900,
+      "ratio": 2.54,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小池　秀効",
+      "shares": 299000,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小池　尚子",
+      "shares": 296600,
+      "ratio": 2.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "嶋村　吉洋",
+      "shares": 282400,
+      "ratio": 2.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "光通信㈱",
+      "shares": 151200,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小池　結実",
+      "shares": 149400,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.27,
+      "other": 17.15,
+      "trust": 4.07
+    },
+    "individual_total": 45.27,
+    "top10_total": 66.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/04/01－2026/03/31)",
+      "docID": "S100YJQT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈲リトルポンド",
+          "shares": 4712700,
+          "ratio": 36.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "UHPartners2投資事業有限責任組合",
+          "shares": 1018100,
+          "ratio": 7.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 884000,
+          "ratio": 6.79,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 529200,
+          "ratio": 4.07,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "エスアイエル投資事業有限責任組合",
+          "shares": 330900,
+          "ratio": 2.54,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小池　秀効",
+          "shares": 299000,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小池　尚子",
+          "shares": 296600,
+          "ratio": 2.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "嶋村　吉洋",
+          "shares": 282400,
+          "ratio": 2.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "光通信㈱",
+          "shares": 151200,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小池　結実",
+          "shares": 149400,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.27,
+          "other": 17.15,
+          "trust": 4.07
+        },
+        "individual_total": 45.27,
+        "top10_total": 66.49
+      }
+    }
+  ]
+}

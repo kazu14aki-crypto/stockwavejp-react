@@ -1,0 +1,220 @@
+{
+  "secCode": "6104",
+  "issuerName": "芝浦機械株式会社",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 3919000,
+      "ratio": 16.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 2114000,
+      "ratio": 8.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村證券株式会社",
+      "shares": 1026000,
+      "ratio": 4.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社静岡銀行",
+      "shares": 596000,
+      "ratio": 2.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "芝浦機械従業員持株会",
+      "shares": 544000,
+      "ratio": 2.3,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 535000,
+      "ratio": 2.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "芝浦機械取引先持株会",
+      "shares": 487000,
+      "ratio": 2.06,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人　株式会社みずほ銀行決裁営業部）",
+      "shares": 442000,
+      "ratio": 1.87,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE SEGREGATION ACC FOR THIRD PARTY（常任代理人　香港上海銀行）",
+      "shares": 424000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決裁営業部）",
+      "shares": 369000,
+      "ratio": 1.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 25.52,
+      "corporate": 4.34,
+      "financial": 4.32,
+      "employee": 4.36,
+      "foreign": 5.7
+    },
+    "individual_total": 0,
+    "top10_total": 44.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YLEZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 3919000,
+          "ratio": 16.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 2114000,
+          "ratio": 8.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村證券株式会社",
+          "shares": 1026000,
+          "ratio": 4.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社静岡銀行",
+          "shares": 596000,
+          "ratio": 2.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "芝浦機械従業員持株会",
+          "shares": 544000,
+          "ratio": 2.3,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 535000,
+          "ratio": 2.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "芝浦機械取引先持株会",
+          "shares": 487000,
+          "ratio": 2.06,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223 （常任代理人　株式会社みずほ銀行決裁営業部）",
+          "shares": 442000,
+          "ratio": 1.87,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE SEGREGATION ACC FOR THIRD PARTY（常任代理人　香港上海銀行）",
+          "shares": 424000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決裁営業部）",
+          "shares": 369000,
+          "ratio": 1.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 25.52,
+          "corporate": 4.34,
+          "financial": 4.32,
+          "employee": 4.36,
+          "foreign": 5.7
+        },
+        "individual_total": 0,
+        "top10_total": 44.24
+      }
+    }
+  ]
+}

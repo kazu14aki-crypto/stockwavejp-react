@@ -1,0 +1,212 @@
+{
+  "secCode": "6819",
+  "issuerName": "伊豆シャボテンリゾート株式会社",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "山河企画有限会社",
+      "shares": 1359750,
+      "ratio": 7.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "柏温泉リゾート株式会社",
+      "shares": 1205000,
+      "ratio": 6.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社トーテム",
+      "shares": 1200000,
+      "ratio": 6.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社船カンショートコース",
+      "shares": 1200000,
+      "ratio": 6.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社広共",
+      "shares": 900000,
+      "ratio": 4.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＲＮＤ",
+      "shares": 700000,
+      "ratio": 3.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ロイヤル観光有限会社",
+      "shares": 650000,
+      "ratio": 3.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社ＭＢＬ",
+      "shares": 625000,
+      "ratio": 3.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ハッピーリゾート",
+      "shares": 511850,
+      "ratio": 2.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社広共コーポレーション",
+      "shares": 468450,
+      "ratio": 2.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 47.55
+    },
+    "individual_total": 0,
+    "top10_total": 47.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/04/01－2026/03/31)",
+      "docID": "S100YLUW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "山河企画有限会社",
+          "shares": 1359750,
+          "ratio": 7.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "柏温泉リゾート株式会社",
+          "shares": 1205000,
+          "ratio": 6.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社トーテム",
+          "shares": 1200000,
+          "ratio": 6.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社船カンショートコース",
+          "shares": 1200000,
+          "ratio": 6.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社広共",
+          "shares": 900000,
+          "ratio": 4.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＲＮＤ",
+          "shares": 700000,
+          "ratio": 3.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ロイヤル観光有限会社",
+          "shares": 650000,
+          "ratio": 3.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社ＭＢＬ",
+          "shares": 625000,
+          "ratio": 3.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ハッピーリゾート",
+          "shares": 511850,
+          "ratio": 2.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社広共コーポレーション",
+          "shares": 468450,
+          "ratio": 2.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 47.55
+        },
+        "individual_total": 0,
+        "top10_total": 47.55
+      }
+    }
+  ]
+}

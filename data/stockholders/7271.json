@@ -1,0 +1,222 @@
+{
+  "secCode": "7271",
+  "issuerName": "株式会社安永",
+  "updated_at": "2026/07/04 18:15 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈲ＹＡＳＮＡＧ",
+      "shares": 1151000,
+      "ratio": 11.17,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱ＳＢＩ証券",
+      "shares": 468000,
+      "ratio": 4.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "安　永　暁　俊",
+      "shares": 359000,
+      "ratio": 3.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "浅　井　裕　久",
+      "shares": 355000,
+      "ratio": 3.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "安永社員持株会",
+      "shares": 273000,
+      "ratio": 2.65,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "名古屋中小企業投資育成㈱",
+      "shares": 245000,
+      "ratio": 2.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "THE BANK OF NEW YORK MELLON 140044",
+      "shares": 215000,
+      "ratio": 2.08,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "浜　口　一　之",
+      "shares": 212000,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小　沼　滋　紀",
+      "shares": 197000,
+      "ratio": 1.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱百五銀行",
+      "shares": 160000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 11.17,
+      "securities": 4.55,
+      "individual": 13.28,
+      "employee": 2.65,
+      "foreign": 2.08,
+      "financial": 1.55
+    },
+    "individual_total": 13.28,
+    "top10_total": 35.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YFR1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈲ＹＡＳＮＡＧ",
+          "shares": 1151000,
+          "ratio": 11.17,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱ＳＢＩ証券",
+          "shares": 468000,
+          "ratio": 4.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "安　永　暁　俊",
+          "shares": 359000,
+          "ratio": 3.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "浅　井　裕　久",
+          "shares": 355000,
+          "ratio": 3.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "安永社員持株会",
+          "shares": 273000,
+          "ratio": 2.65,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "名古屋中小企業投資育成㈱",
+          "shares": 245000,
+          "ratio": 2.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "THE BANK OF NEW YORK MELLON 140044",
+          "shares": 215000,
+          "ratio": 2.08,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "浜　口　一　之",
+          "shares": 212000,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小　沼　滋　紀",
+          "shares": 197000,
+          "ratio": 1.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱百五銀行",
+          "shares": 160000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 11.17,
+          "securities": 4.55,
+          "individual": 13.28,
+          "employee": 2.65,
+          "foreign": 2.08,
+          "financial": 1.55
+        },
+        "individual_total": 13.28,
+        "top10_total": 35.28
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4662",
+  "issuerName": "株式会社フォーカスシステムズ",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1469900,
+      "ratio": 10.03,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＦＲＯＮＴＥＯ",
+      "shares": 900000,
+      "ratio": 6.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "フォーカスシステムズ社員持株会",
+      "shares": 703200,
+      "ratio": 4.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 664982,
+      "ratio": 4.53,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＢＢＨ ＦＯＲ ＦＩＤＥＬＩＴＹ ＬＯＷ－ＰＲＩＣＥＤ ＳＴＯＣＫ ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 379737,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "畑山  芳文",
+      "shares": 369200,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 360100,
+      "ratio": 2.45,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＬＩＥＮＴ ＯＭＮＩＢＵＳ ＡＣＣＯＵＮＴ ＯＭ０２ ５０５００２（常任代理人株式会社みずほ銀行決済営業部）",
+      "shares": 319000,
+      "ratio": 2.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "森　啓一",
+      "shares": 272800,
+      "ratio": 1.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岩崎　泰次",
+      "shares": 263000,
+      "ratio": 1.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 17.01,
+      "corporate": 6.14,
+      "employee": 4.8,
+      "financial": 4.76,
+      "individual": 6.17
+    },
+    "individual_total": 6.17,
+    "top10_total": 38.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/04/01－2026/03/31)",
+      "docID": "S100YFP2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1469900,
+          "ratio": 10.03,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＦＲＯＮＴＥＯ",
+          "shares": 900000,
+          "ratio": 6.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "フォーカスシステムズ社員持株会",
+          "shares": 703200,
+          "ratio": 4.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 664982,
+          "ratio": 4.53,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＢＢＨ ＦＯＲ ＦＩＤＥＬＩＴＹ ＬＯＷ－ＰＲＩＣＥＤ ＳＴＯＣＫ ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 379737,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "畑山  芳文",
+          "shares": 369200,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 360100,
+          "ratio": 2.45,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＬＩＥＮＴ ＯＭＮＩＢＵＳ ＡＣＣＯＵＮＴ ＯＭ０２ ５０５００２（常任代理人株式会社みずほ銀行決済営業部）",
+          "shares": 319000,
+          "ratio": 2.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "森　啓一",
+          "shares": 272800,
+          "ratio": 1.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岩崎　泰次",
+          "shares": 263000,
+          "ratio": 1.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 17.01,
+          "corporate": 6.14,
+          "employee": 4.8,
+          "financial": 4.76,
+          "individual": 6.17
+        },
+        "individual_total": 6.17,
+        "top10_total": 38.88
+      }
+    }
+  ]
+}

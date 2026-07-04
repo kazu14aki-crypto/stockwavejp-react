@@ -1,0 +1,218 @@
+{
+  "secCode": "2425",
+  "issuerName": "株式会社ケアサービス",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社友愛",
+      "shares": 1662800,
+      "ratio": 43.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "福原　俊晴",
+      "shares": 542200,
+      "ratio": 14.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ケアサービス従業員持株会",
+      "shares": 148900,
+      "ratio": 3.92,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "MSIP CLIENT SECURITIES(常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社)",
+      "shares": 75100,
+      "ratio": 1.97,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東京海上日動火災保険株式会社",
+      "shares": 66400,
+      "ratio": 1.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楠田　卓",
+      "shares": 45000,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ケアサービス役員持株会",
+      "shares": 34600,
+      "ratio": 0.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "宮　こずえ",
+      "shares": 30500,
+      "ratio": 0.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 26400,
+      "ratio": 0.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "古谷　洋作",
+      "shares": 26000,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.58,
+      "individual": 16.95,
+      "employee": 4.83,
+      "securities": 2.66
+    },
+    "individual_total": 16.95,
+    "top10_total": 70.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/04/01－2026/03/31)",
+      "docID": "S100YIQF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社友愛",
+          "shares": 1662800,
+          "ratio": 43.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "福原　俊晴",
+          "shares": 542200,
+          "ratio": 14.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ケアサービス従業員持株会",
+          "shares": 148900,
+          "ratio": 3.92,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "MSIP CLIENT SECURITIES(常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社)",
+          "shares": 75100,
+          "ratio": 1.97,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東京海上日動火災保険株式会社",
+          "shares": 66400,
+          "ratio": 1.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楠田　卓",
+          "shares": 45000,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ケアサービス役員持株会",
+          "shares": 34600,
+          "ratio": 0.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "宮　こずえ",
+          "shares": 30500,
+          "ratio": 0.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 26400,
+          "ratio": 0.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "古谷　洋作",
+          "shares": 26000,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.58,
+          "individual": 16.95,
+          "employee": 4.83,
+          "securities": 2.66
+        },
+        "individual_total": 16.95,
+        "top10_total": 70.02
+      }
+    }
+  ]
+}

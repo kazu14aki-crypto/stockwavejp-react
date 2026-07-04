@@ -1,0 +1,216 @@
+{
+  "secCode": "7399",
+  "issuerName": "株式会社ナンシン",
+  "updated_at": "2026/07/04 17:47 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "齋　藤　邦　彦",
+      "shares": 902000,
+      "ratio": 13.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE BROKERS LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 713000,
+      "ratio": 10.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "UH Partners2投資事業有限責任組合 無限責任組合員株式会社UH Partners2",
+      "shares": 500000,
+      "ratio": 7.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+      "shares": 429000,
+      "ratio": 6.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田中　園枝",
+      "shares": 401000,
+      "ratio": 6.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社商工組合中央金庫",
+      "shares": 225000,
+      "ratio": 3.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "エスアイエル投資事業有限責任組合無限責任組合員株式会社エスアイエル",
+      "shares": 163000,
+      "ratio": 2.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社フジシゲ",
+      "shares": 159000,
+      "ratio": 2.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "内　藤　征　吾",
+      "shares": 130000,
+      "ratio": 1.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "天　井　全　兄",
+      "shares": 122000,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.3,
+      "securities": 10.68,
+      "corporate": 22.11
+    },
+    "individual_total": 23.3,
+    "top10_total": 56.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YM6C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "齋　藤　邦　彦",
+          "shares": 902000,
+          "ratio": 13.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE BROKERS LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 713000,
+          "ratio": 10.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "UH Partners2投資事業有限責任組合 無限責任組合員株式会社UH Partners2",
+          "shares": 500000,
+          "ratio": 7.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+          "shares": 429000,
+          "ratio": 6.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田中　園枝",
+          "shares": 401000,
+          "ratio": 6.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社商工組合中央金庫",
+          "shares": 225000,
+          "ratio": 3.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "エスアイエル投資事業有限責任組合無限責任組合員株式会社エスアイエル",
+          "shares": 163000,
+          "ratio": 2.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社フジシゲ",
+          "shares": 159000,
+          "ratio": 2.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "内　藤　征　吾",
+          "shares": 130000,
+          "ratio": 1.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "天　井　全　兄",
+          "shares": 122000,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.3,
+          "securities": 10.68,
+          "corporate": 22.11
+        },
+        "individual_total": 23.3,
+        "top10_total": 56.09
+      }
+    }
+  ]
+}

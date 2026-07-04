@@ -1,0 +1,220 @@
+{
+  "secCode": "7902",
+  "issuerName": "株式会社ソノコム",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "岨野　公一",
+      "shares": 619000,
+      "ratio": 17.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社ケイエスシー",
+      "shares": 538000,
+      "ratio": 14.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "岨野　弘子",
+      "shares": 496000,
+      "ratio": 13.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE　BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 262000,
+      "ratio": 7.22,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "段　貴久子",
+      "shares": 148000,
+      "ratio": 4.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ソノコム社員持株会",
+      "shares": 109000,
+      "ratio": 3.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "水元　公仁",
+      "shares": 99000,
+      "ratio": 2.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 66000,
+      "ratio": 1.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱UFJ信託銀行株式会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 46000,
+      "ratio": 1.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "内藤　征吾",
+      "shares": 46000,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.74,
+      "corporate": 14.8,
+      "securities": 7.22,
+      "employee": 3.02,
+      "trust": 3.07
+    },
+    "individual_total": 38.74,
+    "top10_total": 66.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100YJAF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "岨野　公一",
+          "shares": 619000,
+          "ratio": 17.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社ケイエスシー",
+          "shares": 538000,
+          "ratio": 14.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "岨野　弘子",
+          "shares": 496000,
+          "ratio": 13.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE　BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 262000,
+          "ratio": 7.22,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "段　貴久子",
+          "shares": 148000,
+          "ratio": 4.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ソノコム社員持株会",
+          "shares": 109000,
+          "ratio": 3.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "水元　公仁",
+          "shares": 99000,
+          "ratio": 2.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 66000,
+          "ratio": 1.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱UFJ信託銀行株式会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 46000,
+          "ratio": 1.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "内藤　征吾",
+          "shares": 46000,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.74,
+          "corporate": 14.8,
+          "securities": 7.22,
+          "employee": 3.02,
+          "trust": 3.07
+        },
+        "individual_total": 38.74,
+        "top10_total": 66.85
+      }
+    }
+  ]
+}

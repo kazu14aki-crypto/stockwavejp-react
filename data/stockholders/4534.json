@@ -1,0 +1,220 @@
+{
+  "secCode": "4534",
+  "issuerName": "持田製薬株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "公益財団法人持田記念医学薬学振興財団",
+      "shares": 5688000,
+      "ratio": 16.05,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2981000,
+      "ratio": 8.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人高松宮妃癌研究基金",
+      "shares": 1683000,
+      "ratio": 4.75,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 1586000,
+      "ratio": 4.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "みずほ信託銀行株式会社　退職給付信託みずほ銀行口　再信託受託者株式会社日本カストディ銀行",
+      "shares": 1434000,
+      "ratio": 4.05,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ニッスイ",
+      "shares": 1200000,
+      "ratio": 3.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "持田　直幸",
+      "shares": 1023000,
+      "ratio": 2.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "持田　健志",
+      "shares": 949000,
+      "ratio": 2.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "持田　和枝",
+      "shares": 787000,
+      "ratio": 2.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 10,
+      "name": "大正製薬ホールディングス株式会社",
+      "shares": 785000,
+      "ratio": 2.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 20.8,
+      "trust": 12.46,
+      "financial": 4.48,
+      "corporate": 5.6,
+      "individual": 7.79
+    },
+    "individual_total": 7.79,
+    "top10_total": 51.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第88期(2025/04/01－2026/03/31)",
+      "docID": "S100YI28",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人持田記念医学薬学振興財団",
+          "shares": 5688000,
+          "ratio": 16.05,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2981000,
+          "ratio": 8.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人高松宮妃癌研究基金",
+          "shares": 1683000,
+          "ratio": 4.75,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 1586000,
+          "ratio": 4.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "みずほ信託銀行株式会社　退職給付信託みずほ銀行口　再信託受託者株式会社日本カストディ銀行",
+          "shares": 1434000,
+          "ratio": 4.05,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ニッスイ",
+          "shares": 1200000,
+          "ratio": 3.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "持田　直幸",
+          "shares": 1023000,
+          "ratio": 2.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "持田　健志",
+          "shares": 949000,
+          "ratio": 2.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "持田　和枝",
+          "shares": 787000,
+          "ratio": 2.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 10,
+          "name": "大正製薬ホールディングス株式会社",
+          "shares": 785000,
+          "ratio": 2.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 20.8,
+          "trust": 12.46,
+          "financial": 4.48,
+          "corporate": 5.6,
+          "individual": 7.79
+        },
+        "individual_total": 7.79,
+        "top10_total": 51.13
+      }
+    }
+  ]
+}

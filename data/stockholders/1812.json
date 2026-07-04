@@ -1,0 +1,222 @@
+{
+  "secCode": "1812",
+  "issuerName": "鹿島建設株式会社",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 71094000,
+      "ratio": 15.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 33071000,
+      "ratio": 7.07,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "鹿  島  公  子",
+      "shares": 15849000,
+      "ratio": 3.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鹿島社員持株会",
+      "shares": 8602000,
+      "ratio": 1.84,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人鹿島学術振興財団",
+      "shares": 7235000,
+      "ratio": 1.55,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ステート ストリート バンク アンドトラスト カンパニー 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 6742000,
+      "ratio": 1.44,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ジェーピー モルガン チェース バンク　385781(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 6065000,
+      "ratio": 1.3,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ビーエヌワイエム アズ エージーティクライアンツ ノン トリーティージャスデック (常任代理人 株式会社三菱ＵＦＪ銀行)",
+      "shares": 5807000,
+      "ratio": 1.24,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社かたばみ",
+      "shares": 5800000,
+      "ratio": 1.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "公益財団法人鹿島美術財団",
+      "shares": 5788000,
+      "ratio": 1.24,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.27,
+      "individual": 3.39,
+      "employee": 1.84,
+      "foundation": 2.79,
+      "financial": 3.98,
+      "corporate": 1.24
+    },
+    "individual_total": 3.39,
+    "top10_total": 35.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第129期(2025/04/01－2026/03/31)",
+      "docID": "S100YGGI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 71094000,
+          "ratio": 15.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 33071000,
+          "ratio": 7.07,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "鹿  島  公  子",
+          "shares": 15849000,
+          "ratio": 3.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鹿島社員持株会",
+          "shares": 8602000,
+          "ratio": 1.84,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人鹿島学術振興財団",
+          "shares": 7235000,
+          "ratio": 1.55,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ステート ストリート バンク アンドトラスト カンパニー 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 6742000,
+          "ratio": 1.44,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ジェーピー モルガン チェース バンク　385781(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 6065000,
+          "ratio": 1.3,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ビーエヌワイエム アズ エージーティクライアンツ ノン トリーティージャスデック (常任代理人 株式会社三菱ＵＦＪ銀行)",
+          "shares": 5807000,
+          "ratio": 1.24,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社かたばみ",
+          "shares": 5800000,
+          "ratio": 1.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "公益財団法人鹿島美術財団",
+          "shares": 5788000,
+          "ratio": 1.24,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.27,
+          "individual": 3.39,
+          "employee": 1.84,
+          "foundation": 2.79,
+          "financial": 3.98,
+          "corporate": 1.24
+        },
+        "individual_total": 3.39,
+        "top10_total": 35.51
+      }
+    }
+  ]
+}

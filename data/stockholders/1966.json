@@ -1,0 +1,220 @@
+{
+  "secCode": "1966",
+  "issuerName": "株式会社　高田工業所",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日揮株式会社",
+      "shares": 1466000,
+      "ratio": 20.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "西日本興産株式会社",
+      "shares": 785000,
+      "ratio": 10.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "UH Partners２投資事業有限責任組合",
+      "shares": 475000,
+      "ratio": 6.48,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "高田工業所社員持株会",
+      "shares": 436000,
+      "ratio": 5.96,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 409000,
+      "ratio": 5.58,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社UH Partners ３",
+      "shares": 357000,
+      "ratio": 4.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社福岡銀行",
+      "shares": 312000,
+      "ratio": 4.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本製鉄株式会社",
+      "shares": 220000,
+      "ratio": 3.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐藤　一孝",
+      "shares": 150000,
+      "ratio": 2.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "嶋　陽一",
+      "shares": 118000,
+      "ratio": 1.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.62,
+      "other": 12.06,
+      "employee": 5.96,
+      "financial": 4.26,
+      "individual": 3.65
+    },
+    "individual_total": 3.65,
+    "top10_total": 64.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YGU2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日揮株式会社",
+          "shares": 1466000,
+          "ratio": 20.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "西日本興産株式会社",
+          "shares": 785000,
+          "ratio": 10.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "UH Partners２投資事業有限責任組合",
+          "shares": 475000,
+          "ratio": 6.48,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "高田工業所社員持株会",
+          "shares": 436000,
+          "ratio": 5.96,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 409000,
+          "ratio": 5.58,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社UH Partners ３",
+          "shares": 357000,
+          "ratio": 4.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社福岡銀行",
+          "shares": 312000,
+          "ratio": 4.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本製鉄株式会社",
+          "shares": 220000,
+          "ratio": 3.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐藤　一孝",
+          "shares": 150000,
+          "ratio": 2.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "嶋　陽一",
+          "shares": 118000,
+          "ratio": 1.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.62,
+          "other": 12.06,
+          "employee": 5.96,
+          "financial": 4.26,
+          "individual": 3.65
+        },
+        "individual_total": 3.65,
+        "top10_total": 64.55
+      }
+    }
+  ]
+}

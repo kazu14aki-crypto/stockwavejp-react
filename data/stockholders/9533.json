@@ -1,0 +1,220 @@
+{
+  "secCode": "9533",
+  "issuerName": "東邦瓦斯株式会社",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 9729000,
+      "ratio": 10.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険相互会社",
+      "shares": 5506000,
+      "ratio": 6.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三井住友銀行",
+      "shares": 3304000,
+      "ratio": 3.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 2872000,
+      "ratio": 3.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2750000,
+      "ratio": 3.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "桜和投資会",
+      "shares": 2051000,
+      "ratio": 2.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "明治安田生命保険相互会社",
+      "shares": 1841000,
+      "ratio": 2.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東邦ガス共栄持株会",
+      "shares": 1591000,
+      "ratio": 1.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社クボタ",
+      "shares": 1439000,
+      "ratio": 1.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社大垣共立銀行",
+      "shares": 1410000,
+      "ratio": 1.54,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 13.71,
+      "financial": 16.39,
+      "individual": 2.25,
+      "employee": 1.74,
+      "corporate": 1.58
+    },
+    "individual_total": 2.25,
+    "top10_total": 35.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第155期(2025/04/01－2026/03/31)",
+      "docID": "S100YGFW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 9729000,
+          "ratio": 10.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険相互会社",
+          "shares": 5506000,
+          "ratio": 6.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三井住友銀行",
+          "shares": 3304000,
+          "ratio": 3.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 2872000,
+          "ratio": 3.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2750000,
+          "ratio": 3.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "桜和投資会",
+          "shares": 2051000,
+          "ratio": 2.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "明治安田生命保険相互会社",
+          "shares": 1841000,
+          "ratio": 2.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東邦ガス共栄持株会",
+          "shares": 1591000,
+          "ratio": 1.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社クボタ",
+          "shares": 1439000,
+          "ratio": 1.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社大垣共立銀行",
+          "shares": 1410000,
+          "ratio": 1.54,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 13.71,
+          "financial": 16.39,
+          "individual": 2.25,
+          "employee": 1.74,
+          "corporate": 1.58
+        },
+        "individual_total": 2.25,
+        "top10_total": 35.67
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "secCode": "7562",
+  "issuerName": "株式会社安楽亭",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "豊山開発株式会社",
+      "shares": 535000,
+      "ratio": 11.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社北与野エステート",
+      "shares": 211000,
+      "ratio": 4.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "柳　　　　　先",
+      "shares": 204000,
+      "ratio": 4.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "柳　　　　　允",
+      "shares": 201000,
+      "ratio": 4.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社サリックス",
+      "shares": 200000,
+      "ratio": 4.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アサヒビール株式会社",
+      "shares": 200000,
+      "ratio": 4.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "柳　　　詠　守",
+      "shares": 111000,
+      "ratio": 2.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "柳　　　　　京",
+      "shares": 111000,
+      "ratio": 2.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "柳　　　朱　理",
+      "shares": 111000,
+      "ratio": 2.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社Be-fresh",
+      "shares": 107000,
+      "ratio": 2.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.19,
+      "individual": 16.05
+    },
+    "individual_total": 16.05,
+    "top10_total": 43.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/04/01－2026/03/31)",
+      "docID": "S100YEJV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "豊山開発株式会社",
+          "shares": 535000,
+          "ratio": 11.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社北与野エステート",
+          "shares": 211000,
+          "ratio": 4.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "柳　　　　　先",
+          "shares": 204000,
+          "ratio": 4.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "柳　　　　　允",
+          "shares": 201000,
+          "ratio": 4.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社サリックス",
+          "shares": 200000,
+          "ratio": 4.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アサヒビール株式会社",
+          "shares": 200000,
+          "ratio": 4.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "柳　　　詠　守",
+          "shares": 111000,
+          "ratio": 2.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "柳　　　　　京",
+          "shares": 111000,
+          "ratio": 2.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "柳　　　朱　理",
+          "shares": 111000,
+          "ratio": 2.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社Be-fresh",
+          "shares": 107000,
+          "ratio": 2.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.19,
+          "individual": 16.05
+        },
+        "individual_total": 16.05,
+        "top10_total": 43.24
+      }
+    }
+  ]
+}

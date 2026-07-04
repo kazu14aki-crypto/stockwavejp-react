@@ -1,0 +1,220 @@
+{
+  "secCode": "4496",
+  "issuerName": "株式会社コマースＯｎｅホールディングス",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "岡本 高彰",
+      "shares": 2162000,
+      "ratio": 30.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "UBS AG HONG KONG（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1768000,
+      "ratio": 25.21,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 469000,
+      "ratio": 6.69,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社イー・エージェンシー",
+      "shares": 300000,
+      "ratio": 4.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社フューチャースピリッツ",
+      "shares": 264400,
+      "ratio": 3.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "伏見 裕子",
+      "shares": 261600,
+      "ratio": 3.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "木下 圭一郎",
+      "shares": 214400,
+      "ratio": 3.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "北川 輝信",
+      "shares": 150000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO. (AVFC) RE NON TREATY CLIENTS ACCOUNT（常任代理人　香港上海銀行東京支店）",
+      "shares": 103300,
+      "ratio": 1.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 89300,
+      "ratio": 1.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 39.75,
+      "foreign": 26.68,
+      "other": 6.69,
+      "corporate": 8.05,
+      "trust": 1.27
+    },
+    "individual_total": 39.75,
+    "top10_total": 82.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YHS5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "岡本 高彰",
+          "shares": 2162000,
+          "ratio": 30.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "UBS AG HONG KONG（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1768000,
+          "ratio": 25.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 469000,
+          "ratio": 6.69,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社イー・エージェンシー",
+          "shares": 300000,
+          "ratio": 4.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社フューチャースピリッツ",
+          "shares": 264400,
+          "ratio": 3.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "伏見 裕子",
+          "shares": 261600,
+          "ratio": 3.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "木下 圭一郎",
+          "shares": 214400,
+          "ratio": 3.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "北川 輝信",
+          "shares": 150000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO. (AVFC) RE NON TREATY CLIENTS ACCOUNT（常任代理人　香港上海銀行東京支店）",
+          "shares": 103300,
+          "ratio": 1.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 89300,
+          "ratio": 1.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 39.75,
+          "foreign": 26.68,
+          "other": 6.69,
+          "corporate": 8.05,
+          "trust": 1.27
+        },
+        "individual_total": 39.75,
+        "top10_total": 82.44
+      }
+    }
+  ]
+}

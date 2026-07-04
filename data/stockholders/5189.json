@@ -1,0 +1,216 @@
+{
+  "secCode": "5189",
+  "issuerName": "櫻護謨株式会社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "中　村　浩　士",
+      "shares": 241000,
+      "ratio": 12.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "岩　﨑　哲　也",
+      "shares": 224000,
+      "ratio": 11.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "梶　原　祐理子",
+      "shares": 167000,
+      "ratio": 8.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "中　村　一　雄",
+      "shares": 108000,
+      "ratio": 5.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "吉　野　友　裕",
+      "shares": 100000,
+      "ratio": 5.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "中　村　惠美子",
+      "shares": 86000,
+      "ratio": 4.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "櫻護謨取引先持株会",
+      "shares": 67000,
+      "ratio": 3.49,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱りそな銀行",
+      "shares": 66000,
+      "ratio": 3.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東京海上日動火災保険㈱",
+      "shares": 60000,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱金陽社",
+      "shares": 45000,
+      "ratio": 2.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 53.38,
+      "employee": 3.49,
+      "financial": 3.41
+    },
+    "individual_total": 53.38,
+    "top10_total": 60.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第166期(2025/04/01－2026/03/31)",
+      "docID": "S100YIQ8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "中　村　浩　士",
+          "shares": 241000,
+          "ratio": 12.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "岩　﨑　哲　也",
+          "shares": 224000,
+          "ratio": 11.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "梶　原　祐理子",
+          "shares": 167000,
+          "ratio": 8.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "中　村　一　雄",
+          "shares": 108000,
+          "ratio": 5.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "吉　野　友　裕",
+          "shares": 100000,
+          "ratio": 5.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "中　村　惠美子",
+          "shares": 86000,
+          "ratio": 4.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "櫻護謨取引先持株会",
+          "shares": 67000,
+          "ratio": 3.49,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱りそな銀行",
+          "shares": 66000,
+          "ratio": 3.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東京海上日動火災保険㈱",
+          "shares": 60000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱金陽社",
+          "shares": 45000,
+          "ratio": 2.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 53.38,
+          "employee": 3.49,
+          "financial": 3.41
+        },
+        "individual_total": 53.38,
+        "top10_total": 60.28
+      }
+    }
+  ]
+}

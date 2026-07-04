@@ -1,0 +1,222 @@
+{
+  "secCode": "9936",
+  "issuerName": "株式会社王将フードサービス",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アサヒビール株式会社",
+      "shares": 6161000,
+      "ratio": 11.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3577000,
+      "ratio": 6.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アリアケジャパン株式会社",
+      "shares": 3300000,
+      "ratio": 6.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "加藤　梅子",
+      "shares": 1834000,
+      "ratio": 3.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "加藤　ひろみ",
+      "shares": 1808000,
+      "ratio": 3.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "公益財団法人　加藤朝雄国際奨学財団",
+      "shares": 1584000,
+      "ratio": 3.0,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "王将フードサービス取引先持株会",
+      "shares": 1147000,
+      "ratio": 2.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "吉田　英里",
+      "shares": 804000,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "加藤　貴司",
+      "shares": 803000,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 712000,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.0,
+      "trust": 6.8,
+      "individual": 9.9,
+      "foundation": 3.0,
+      "employee": 2.2,
+      "financial": 1.4
+    },
+    "individual_total": 9.9,
+    "top10_total": 41.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第52期(2025/04/01－2026/03/31)",
+      "docID": "S100YHJQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アサヒビール株式会社",
+          "shares": 6161000,
+          "ratio": 11.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3577000,
+          "ratio": 6.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アリアケジャパン株式会社",
+          "shares": 3300000,
+          "ratio": 6.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "加藤　梅子",
+          "shares": 1834000,
+          "ratio": 3.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "加藤　ひろみ",
+          "shares": 1808000,
+          "ratio": 3.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人　加藤朝雄国際奨学財団",
+          "shares": 1584000,
+          "ratio": 3.0,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "王将フードサービス取引先持株会",
+          "shares": 1147000,
+          "ratio": 2.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "吉田　英里",
+          "shares": 804000,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "加藤　貴司",
+          "shares": 803000,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 712000,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.0,
+          "trust": 6.8,
+          "individual": 9.9,
+          "foundation": 3.0,
+          "employee": 2.2,
+          "financial": 1.4
+        },
+        "individual_total": 9.9,
+        "top10_total": 41.3
+      }
+    }
+  ]
+}

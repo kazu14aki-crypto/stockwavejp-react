@@ -1,0 +1,216 @@
+{
+  "secCode": "4388",
+  "issuerName": "株式会社エーアイ",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "廣飯　伸一",
+      "shares": 880000,
+      "ratio": 14.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ソルクシーズ",
+      "shares": 250000,
+      "ratio": 4.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "吉田　大介",
+      "shares": 206800,
+      "ratio": 3.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "吉田　大志",
+      "shares": 150600,
+      "ratio": 2.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "亀井　佳代",
+      "shares": 145000,
+      "ratio": 2.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本証券金融株式会社",
+      "shares": 117800,
+      "ratio": 1.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社SBI証券",
+      "shares": 94099,
+      "ratio": 1.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社",
+      "shares": 94000,
+      "ratio": 1.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "和田　章",
+      "shares": 57700,
+      "ratio": 0.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "吉田　昭",
+      "shares": 48000,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 24.4,
+      "corporate": 4.1,
+      "securities": 5.01
+    },
+    "individual_total": 24.4,
+    "top10_total": 33.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YGJY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "廣飯　伸一",
+          "shares": 880000,
+          "ratio": 14.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ソルクシーズ",
+          "shares": 250000,
+          "ratio": 4.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "吉田　大介",
+          "shares": 206800,
+          "ratio": 3.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "吉田　大志",
+          "shares": 150600,
+          "ratio": 2.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "亀井　佳代",
+          "shares": 145000,
+          "ratio": 2.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本証券金融株式会社",
+          "shares": 117800,
+          "ratio": 1.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社SBI証券",
+          "shares": 94099,
+          "ratio": 1.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社",
+          "shares": 94000,
+          "ratio": 1.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "和田　章",
+          "shares": 57700,
+          "ratio": 0.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "吉田　昭",
+          "shares": 48000,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 24.4,
+          "corporate": 4.1,
+          "securities": 5.01
+        },
+        "individual_total": 24.4,
+        "top10_total": 33.51
+      }
+    }
+  ]
+}

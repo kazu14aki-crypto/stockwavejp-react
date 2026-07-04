@@ -1,0 +1,218 @@
+{
+  "secCode": "4102",
+  "issuerName": "丸尾カルシウム株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "中国砿業株式会社",
+      "shares": 249000,
+      "ratio": 11.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "丸尾　治男",
+      "shares": 167000,
+      "ratio": 7.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "山陽化学産業株式会社",
+      "shares": 114000,
+      "ratio": 5.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "丸尾　政雄",
+      "shares": 92000,
+      "ratio": 4.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "今井　一史",
+      "shares": 72000,
+      "ratio": 3.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "丸尾　直子",
+      "shares": 54000,
+      "ratio": 2.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "中西電機工業株式会社",
+      "shares": 54000,
+      "ratio": 2.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "損害保険ジャパン株式会社",
+      "shares": 51000,
+      "ratio": 2.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "丸尾カルシウム従業員持株会",
+      "shares": 46000,
+      "ratio": 2.19,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "深津　秀郎",
+      "shares": 35000,
+      "ratio": 1.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.6,
+      "individual": 19.82,
+      "financial": 2.41,
+      "employee": 2.19
+    },
+    "individual_total": 19.82,
+    "top10_total": 44.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YFE2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "中国砿業株式会社",
+          "shares": 249000,
+          "ratio": 11.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "丸尾　治男",
+          "shares": 167000,
+          "ratio": 7.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "山陽化学産業株式会社",
+          "shares": 114000,
+          "ratio": 5.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "丸尾　政雄",
+          "shares": 92000,
+          "ratio": 4.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "今井　一史",
+          "shares": 72000,
+          "ratio": 3.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "丸尾　直子",
+          "shares": 54000,
+          "ratio": 2.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "中西電機工業株式会社",
+          "shares": 54000,
+          "ratio": 2.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "損害保険ジャパン株式会社",
+          "shares": 51000,
+          "ratio": 2.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "丸尾カルシウム従業員持株会",
+          "shares": 46000,
+          "ratio": 2.19,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "深津　秀郎",
+          "shares": 35000,
+          "ratio": 1.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.6,
+          "individual": 19.82,
+          "financial": 2.41,
+          "employee": 2.19
+        },
+        "individual_total": 19.82,
+        "top10_total": 44.02
+      }
+    }
+  ]
+}

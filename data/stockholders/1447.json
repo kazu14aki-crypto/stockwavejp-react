@@ -1,0 +1,218 @@
+{
+  "secCode": "1447",
+  "issuerName": "ＳＡＡＦホールディングス株式会社",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＦＰ成長支援Ｆ号投資事業有限責任組合",
+      "shares": 1820000,
+      "ratio": 7.47,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "前　俊守",
+      "shares": 1418770,
+      "ratio": 5.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "合同会社ＹＮ企画",
+      "shares": 1070000,
+      "ratio": 4.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＴＭフィナンシャルストラテジー",
+      "shares": 789800,
+      "ratio": 3.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ミツワ樹脂工業株式会社",
+      "shares": 622100,
+      "ratio": 2.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松井証券株式会社",
+      "shares": 595500,
+      "ratio": 2.44,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "イーグルファンドＳＰ４号有限責任事業組合",
+      "shares": 546800,
+      "ratio": 2.24,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "広田証券株式会社",
+      "shares": 500688,
+      "ratio": 2.05,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "サンネクスタグループ株式会社",
+      "shares": 466800,
+      "ratio": 1.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 429800,
+      "ratio": 1.76,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 9.71,
+      "individual": 5.82,
+      "corporate": 12.09,
+      "securities": 6.25
+    },
+    "individual_total": 5.82,
+    "top10_total": 33.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YNQL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＦＰ成長支援Ｆ号投資事業有限責任組合",
+          "shares": 1820000,
+          "ratio": 7.47,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "前　俊守",
+          "shares": 1418770,
+          "ratio": 5.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "合同会社ＹＮ企画",
+          "shares": 1070000,
+          "ratio": 4.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＴＭフィナンシャルストラテジー",
+          "shares": 789800,
+          "ratio": 3.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ミツワ樹脂工業株式会社",
+          "shares": 622100,
+          "ratio": 2.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松井証券株式会社",
+          "shares": 595500,
+          "ratio": 2.44,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "イーグルファンドＳＰ４号有限責任事業組合",
+          "shares": 546800,
+          "ratio": 2.24,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "広田証券株式会社",
+          "shares": 500688,
+          "ratio": 2.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "サンネクスタグループ株式会社",
+          "shares": 466800,
+          "ratio": 1.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 429800,
+          "ratio": 1.76,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 9.71,
+          "individual": 5.82,
+          "corporate": 12.09,
+          "securities": 6.25
+        },
+        "individual_total": 5.82,
+        "top10_total": 33.87
+      }
+    }
+  ]
+}

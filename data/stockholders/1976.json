@@ -1,0 +1,218 @@
+{
+  "secCode": "1976",
+  "issuerName": "明星工業株式会社",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "NIPPON ACTIVE VALUE FUND PLC\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 4126000,
+      "ratio": 8.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4036000,
+      "ratio": 8.76,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人富本奨学会",
+      "shares": 2695000,
+      "ratio": 5.85,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "NAVF SELECT LLC\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2257000,
+      "ratio": 4.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大同生命保険株式会社",
+      "shares": 2032000,
+      "ratio": 4.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 2000000,
+      "ratio": 4.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "明星工業取引先持株会",
+      "shares": 1965000,
+      "ratio": 4.26,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 1960000,
+      "ratio": 4.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 1400000,
+      "ratio": 3.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社伊予銀行",
+      "shares": 1166000,
+      "ratio": 2.53,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 32.43,
+      "trust": 8.76,
+      "foundation": 5.85,
+      "employee": 4.26
+    },
+    "individual_total": 0,
+    "top10_total": 51.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第84期(2025/04/01－2026/03/31)",
+      "docID": "S100YFOI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "NIPPON ACTIVE VALUE FUND PLC\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 4126000,
+          "ratio": 8.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4036000,
+          "ratio": 8.76,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人富本奨学会",
+          "shares": 2695000,
+          "ratio": 5.85,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "NAVF SELECT LLC\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2257000,
+          "ratio": 4.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大同生命保険株式会社",
+          "shares": 2032000,
+          "ratio": 4.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 2000000,
+          "ratio": 4.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "明星工業取引先持株会",
+          "shares": 1965000,
+          "ratio": 4.26,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 1960000,
+          "ratio": 4.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 1400000,
+          "ratio": 3.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社伊予銀行",
+          "shares": 1166000,
+          "ratio": 2.53,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 32.43,
+          "trust": 8.76,
+          "foundation": 5.85,
+          "employee": 4.26
+        },
+        "individual_total": 0,
+        "top10_total": 51.3
+      }
+    }
+  ]
+}

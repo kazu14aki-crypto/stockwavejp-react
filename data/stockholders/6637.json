@@ -1,0 +1,220 @@
+{
+  "secCode": "6637",
+  "issuerName": "寺崎電気産業株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社寺崎",
+      "shares": 2200600,
+      "ratio": 17.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "寺崎泰造",
+      "shares": 1149980,
+      "ratio": 9.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "荒巻かおり",
+      "shares": 738100,
+      "ratio": 6.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "寺崎雄造",
+      "shares": 677400,
+      "ratio": 5.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "株式会社芳山社",
+      "shares": 653600,
+      "ratio": 5.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "テラサキ共栄会",
+      "shares": 490900,
+      "ratio": 4.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "テラサキ従業員持株会",
+      "shares": 476788,
+      "ratio": 3.88,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社アーク",
+      "shares": 400000,
+      "ratio": 3.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 360000,
+      "ratio": 2.93,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口)",
+      "shares": 327100,
+      "ratio": 2.66,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.52,
+      "individual": 24.9,
+      "employee": 3.88,
+      "financial": 2.93,
+      "trust": 2.66
+    },
+    "individual_total": 24.9,
+    "top10_total": 60.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/04/01－2026/03/31)",
+      "docID": "S100YKLJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社寺崎",
+          "shares": 2200600,
+          "ratio": 17.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "寺崎泰造",
+          "shares": 1149980,
+          "ratio": 9.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "荒巻かおり",
+          "shares": 738100,
+          "ratio": 6.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "寺崎雄造",
+          "shares": 677400,
+          "ratio": 5.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "株式会社芳山社",
+          "shares": 653600,
+          "ratio": 5.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "テラサキ共栄会",
+          "shares": 490900,
+          "ratio": 4.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テラサキ従業員持株会",
+          "shares": 476788,
+          "ratio": 3.88,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社アーク",
+          "shares": 400000,
+          "ratio": 3.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 360000,
+          "ratio": 2.93,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口)",
+          "shares": 327100,
+          "ratio": 2.66,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.52,
+          "individual": 24.9,
+          "employee": 3.88,
+          "financial": 2.93,
+          "trust": 2.66
+        },
+        "individual_total": 24.9,
+        "top10_total": 60.89
+      }
+    }
+  ]
+}

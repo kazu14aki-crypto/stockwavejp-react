@@ -1,0 +1,218 @@
+{
+  "secCode": "4838",
+  "issuerName": "スペースシャワーＳＫＩＹＡＫＩホールディングス株式会社",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "カルチュア・コンビニエンス・クラブ㈱",
+      "shares": 2777800,
+      "ratio": 17.05,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤忠商事㈱",
+      "shares": 1650500,
+      "ratio": 10.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱フジ・メディア・ホールディングス",
+      "shares": 1650500,
+      "ratio": 10.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＫＤＤＩ㈱",
+      "shares": 1500000,
+      "ratio": 9.2,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱Ａｒａｒｉｋ",
+      "shares": 633300,
+      "ratio": 3.88,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "宮瀬卓也",
+      "shares": 385700,
+      "ratio": 2.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・\nブローカーズ証券㈱）",
+      "shares": 231428,
+      "ratio": 1.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "本多智洋",
+      "shares": 228000,
+      "ratio": 1.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大和証券㈱",
+      "shares": 215800,
+      "ratio": 1.32,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "木原直哉",
+      "shares": 174100,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 30.13,
+      "individual": 14.94,
+      "corporate": 10.13,
+      "securities": 2.74
+    },
+    "individual_total": 14.94,
+    "top10_total": 57.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/04/01－2026/03/31)",
+      "docID": "S100YHJ3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "カルチュア・コンビニエンス・クラブ㈱",
+          "shares": 2777800,
+          "ratio": 17.05,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤忠商事㈱",
+          "shares": 1650500,
+          "ratio": 10.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱フジ・メディア・ホールディングス",
+          "shares": 1650500,
+          "ratio": 10.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＫＤＤＩ㈱",
+          "shares": 1500000,
+          "ratio": 9.2,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱Ａｒａｒｉｋ",
+          "shares": 633300,
+          "ratio": 3.88,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "宮瀬卓也",
+          "shares": 385700,
+          "ratio": 2.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・\nブローカーズ証券㈱）",
+          "shares": 231428,
+          "ratio": 1.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "本多智洋",
+          "shares": 228000,
+          "ratio": 1.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大和証券㈱",
+          "shares": 215800,
+          "ratio": 1.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "木原直哉",
+          "shares": 174100,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 30.13,
+          "individual": 14.94,
+          "corporate": 10.13,
+          "securities": 2.74
+        },
+        "individual_total": 14.94,
+        "top10_total": 57.94
+      }
+    }
+  ]
+}

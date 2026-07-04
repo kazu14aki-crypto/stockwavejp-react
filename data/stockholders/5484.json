@@ -1,0 +1,216 @@
+{
+  "secCode": "5484",
+  "issuerName": "東北特殊鋼株式会社",
+  "updated_at": "2026/07/04 17:47 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大同特殊鋼株式会社",
+      "shares": 2549000,
+      "ratio": 34.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "岡谷鋼機株式会社",
+      "shares": 752000,
+      "ratio": 10.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "東京窯業株式会社",
+      "shares": 631000,
+      "ratio": 8.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 488000,
+      "ratio": 6.57,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "UH Partners 3投資事業有限責任組合",
+      "shares": 476000,
+      "ratio": 6.42,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "UH Partners 2投資事業有限責任組合",
+      "shares": 474000,
+      "ratio": 6.39,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社七十七銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 300000,
+      "ratio": 4.05,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三井住友信託銀行株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 200000,
+      "ratio": 2.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "芝本産業株式会社",
+      "shares": 173000,
+      "ratio": 2.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "エスアイエル投資事業有限責任組合",
+      "shares": 120000,
+      "ratio": 1.62,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 55.28,
+      "other": 21.0,
+      "trust": 6.74
+    },
+    "individual_total": 0,
+    "top10_total": 83.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第127期(2025/04/01－2026/03/31)",
+      "docID": "S100YNM9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大同特殊鋼株式会社",
+          "shares": 2549000,
+          "ratio": 34.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "岡谷鋼機株式会社",
+          "shares": 752000,
+          "ratio": 10.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "東京窯業株式会社",
+          "shares": 631000,
+          "ratio": 8.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 488000,
+          "ratio": 6.57,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "UH Partners 3投資事業有限責任組合",
+          "shares": 476000,
+          "ratio": 6.42,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "UH Partners 2投資事業有限責任組合",
+          "shares": 474000,
+          "ratio": 6.39,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社七十七銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 300000,
+          "ratio": 4.05,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三井住友信託銀行株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 200000,
+          "ratio": 2.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "芝本産業株式会社",
+          "shares": 173000,
+          "ratio": 2.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "エスアイエル投資事業有限責任組合",
+          "shares": 120000,
+          "ratio": 1.62,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 55.28,
+          "other": 21.0,
+          "trust": 6.74
+        },
+        "individual_total": 0,
+        "top10_total": 83.02
+      }
+    }
+  ]
+}

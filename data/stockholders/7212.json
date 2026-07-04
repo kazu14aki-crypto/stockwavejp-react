@@ -1,0 +1,224 @@
+{
+  "secCode": "7212",
+  "issuerName": "株式会社エフテック",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "本田技研工業株式会社",
+      "shares": 2551000,
+      "ratio": 13.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "福田 秋秀",
+      "shares": 891000,
+      "ratio": 4.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人エフテック奨学財団",
+      "shares": 800000,
+      "ratio": 4.27,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社埼玉りそな銀行",
+      "shares": 429000,
+      "ratio": 2.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BNP PARIBAS NEW YORK BRANCH- PRIME BROKERAGECLEARANCE ACCOUNT （常任代理人 香港上海銀行東京支店 カストディ業務部）",
+      "shares": 367000,
+      "ratio": 1.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "エフテック社員持株会",
+      "shares": 367000,
+      "ratio": 1.96,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "福田 順子",
+      "shares": 360000,
+      "ratio": 1.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 350000,
+      "ratio": 1.87,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "住友商事株式会社",
+      "shares": 347000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "有限会社フクダ興産",
+      "shares": 339000,
+      "ratio": 1.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.29,
+      "individual": 6.68,
+      "foundation": 4.27,
+      "financial": 2.29,
+      "foreign": 1.96,
+      "employee": 1.96,
+      "securities": 1.87
+    },
+    "individual_total": 6.68,
+    "top10_total": 36.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第71期(2025/04/01－2026/03/31)",
+      "docID": "S100YHFG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "本田技研工業株式会社",
+          "shares": 2551000,
+          "ratio": 13.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "福田 秋秀",
+          "shares": 891000,
+          "ratio": 4.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人エフテック奨学財団",
+          "shares": 800000,
+          "ratio": 4.27,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社埼玉りそな銀行",
+          "shares": 429000,
+          "ratio": 2.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BNP PARIBAS NEW YORK BRANCH- PRIME BROKERAGECLEARANCE ACCOUNT （常任代理人 香港上海銀行東京支店 カストディ業務部）",
+          "shares": 367000,
+          "ratio": 1.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "エフテック社員持株会",
+          "shares": 367000,
+          "ratio": 1.96,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福田 順子",
+          "shares": 360000,
+          "ratio": 1.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 350000,
+          "ratio": 1.87,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "住友商事株式会社",
+          "shares": 347000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "有限会社フクダ興産",
+          "shares": 339000,
+          "ratio": 1.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.29,
+          "individual": 6.68,
+          "foundation": 4.27,
+          "financial": 2.29,
+          "foreign": 1.96,
+          "employee": 1.96,
+          "securities": 1.87
+        },
+        "individual_total": 6.68,
+        "top10_total": 36.32
+      }
+    }
+  ]
+}

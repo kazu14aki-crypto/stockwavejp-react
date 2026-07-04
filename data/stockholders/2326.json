@@ -1,0 +1,220 @@
+{
+  "secCode": "2326",
+  "issuerName": "デジタルアーツ株式会社",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "道具　登志夫",
+      "shares": 2257999,
+      "ratio": 16.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1794800,
+      "ratio": 13.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1082100,
+      "ratio": 8.05,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "DAM株式会社",
+      "shares": 710000,
+      "ratio": 5.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BNYMSANV RE BNYMSANVDUB RE LEGAL (AND) GENERAL UCITS ETF PLC（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 708102,
+      "ratio": 5.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 390000,
+      "ratio": 2.9,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 340205,
+      "ratio": 2.53,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK MELLON 140040（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 248400,
+      "ratio": 1.85,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "THE CHASE　MANHATTAN BANK, N. A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 225100,
+      "ratio": 1.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 189700,
+      "ratio": 1.41,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 16.8,
+      "trust": 21.4,
+      "corporate": 5.28,
+      "foreign": 14.22,
+      "other": 1.41
+    },
+    "individual_total": 16.8,
+    "top10_total": 59.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/04/01－2026/03/31)",
+      "docID": "S100YKKS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "道具　登志夫",
+          "shares": 2257999,
+          "ratio": 16.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1794800,
+          "ratio": 13.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1082100,
+          "ratio": 8.05,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "DAM株式会社",
+          "shares": 710000,
+          "ratio": 5.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BNYMSANV RE BNYMSANVDUB RE LEGAL (AND) GENERAL UCITS ETF PLC（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 708102,
+          "ratio": 5.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人 香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 390000,
+          "ratio": 2.9,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 340205,
+          "ratio": 2.53,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK MELLON 140040（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 248400,
+          "ratio": 1.85,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "THE CHASE　MANHATTAN BANK, N. A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 225100,
+          "ratio": 1.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 189700,
+          "ratio": 1.41,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 16.8,
+          "trust": 21.4,
+          "corporate": 5.28,
+          "foreign": 14.22,
+          "other": 1.41
+        },
+        "individual_total": 16.8,
+        "top10_total": 59.11
+      }
+    }
+  ]
+}

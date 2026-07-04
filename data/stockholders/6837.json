@@ -1,0 +1,216 @@
+{
+  "secCode": "6837",
+  "issuerName": "株式会社京写",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱児嶋コーポレーション",
+      "shares": 2048000,
+      "ratio": 14.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "児嶋　雄二",
+      "shares": 943000,
+      "ratio": 6.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "児嶋　淳平",
+      "shares": 525000,
+      "ratio": 3.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱エヌビーシー",
+      "shares": 524000,
+      "ratio": 3.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "児嶋　一登",
+      "shares": 476000,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "児嶋　亨",
+      "shares": 466000,
+      "ratio": 3.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "池田　朋子",
+      "shares": 430000,
+      "ratio": 2.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 392000,
+      "ratio": 2.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱メイコー",
+      "shares": 273000,
+      "ratio": 1.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 260000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 39.0,
+      "trust": 2.7,
+      "financial": 1.8
+    },
+    "individual_total": 39.0,
+    "top10_total": 43.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YHX8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱児嶋コーポレーション",
+          "shares": 2048000,
+          "ratio": 14.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "児嶋　雄二",
+          "shares": 943000,
+          "ratio": 6.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "児嶋　淳平",
+          "shares": 525000,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱エヌビーシー",
+          "shares": 524000,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "児嶋　一登",
+          "shares": 476000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "児嶋　亨",
+          "shares": 466000,
+          "ratio": 3.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "池田　朋子",
+          "shares": 430000,
+          "ratio": 2.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 392000,
+          "ratio": 2.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱メイコー",
+          "shares": 273000,
+          "ratio": 1.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 260000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 39.0,
+          "trust": 2.7,
+          "financial": 1.8
+        },
+        "individual_total": 39.0,
+        "top10_total": 43.5
+      }
+    }
+  ]
+}

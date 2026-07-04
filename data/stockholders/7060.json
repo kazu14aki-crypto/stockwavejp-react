@@ -1,0 +1,220 @@
+{
+  "secCode": "7060",
+  "issuerName": "ギークス株式会社",
+  "updated_at": "2026/07/04 18:03 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社アトム",
+      "shares": 3900000,
+      "ratio": 38.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "曽根原　稔人",
+      "shares": 2702000,
+      "ratio": 26.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 357000,
+      "ratio": 3.52,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "荒井　富雄",
+      "shares": 159000,
+      "ratio": 1.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社全国個人事業者支援協会",
+      "shares": 144000,
+      "ratio": 1.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "柏木　拳志",
+      "shares": 104000,
+      "ratio": 1.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行株式会社＜信託口＞",
+      "shares": 83000,
+      "ratio": 0.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社グッドスマイルカンパニー",
+      "shares": 66000,
+      "ratio": 0.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "曽我　健",
+      "shares": 60000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４０（常任代理人株式会社みずほ銀行）",
+      "shares": 52000,
+      "ratio": 0.51,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.44,
+      "individual": 29.76,
+      "other": 3.52,
+      "trust": 0.82,
+      "financial": 0.51
+    },
+    "individual_total": 29.76,
+    "top10_total": 75.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/03/31)",
+      "docID": "S100YJZ1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社アトム",
+          "shares": 3900000,
+          "ratio": 38.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "曽根原　稔人",
+          "shares": 2702000,
+          "ratio": 26.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 357000,
+          "ratio": 3.52,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "荒井　富雄",
+          "shares": 159000,
+          "ratio": 1.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社全国個人事業者支援協会",
+          "shares": 144000,
+          "ratio": 1.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "柏木　拳志",
+          "shares": 104000,
+          "ratio": 1.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行株式会社＜信託口＞",
+          "shares": 83000,
+          "ratio": 0.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社グッドスマイルカンパニー",
+          "shares": 66000,
+          "ratio": 0.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "曽我　健",
+          "shares": 60000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４０（常任代理人株式会社みずほ銀行）",
+          "shares": 52000,
+          "ratio": 0.51,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.44,
+          "individual": 29.76,
+          "other": 3.52,
+          "trust": 0.82,
+          "financial": 0.51
+        },
+        "individual_total": 29.76,
+        "top10_total": 75.05
+      }
+    }
+  ]
+}

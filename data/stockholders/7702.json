@@ -1,0 +1,220 @@
+{
+  "secCode": "7702",
+  "issuerName": "株式会社ジェイ・エム・エス（称号　株式会社　ＪＭＳ）",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社カネカ",
+      "shares": 2539000,
+      "ratio": 10.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2051000,
+      "ratio": 8.36,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "一般財団法人土谷記念医学振興基金",
+      "shares": 1900000,
+      "ratio": 7.74,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "土谷佐枝子",
+      "shares": 1008000,
+      "ratio": 4.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "社会福祉法人千寿会",
+      "shares": 1000000,
+      "ratio": 4.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社広島銀行",
+      "shares": 895000,
+      "ratio": 3.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＪＭＳ共栄会",
+      "shares": 753000,
+      "ratio": 3.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社",
+      "shares": 645000,
+      "ratio": 2.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大下産業株式会社",
+      "shares": 571000,
+      "ratio": 2.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "合同会社センス",
+      "shares": 474000,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 14.6,
+      "trust": 8.36,
+      "foundation": 7.74,
+      "individual": 11.24,
+      "financial": 6.28
+    },
+    "individual_total": 11.24,
+    "top10_total": 48.22
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第61期(2025/04/01－2026/03/31)",
+      "docID": "S100YF50",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社カネカ",
+          "shares": 2539000,
+          "ratio": 10.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2051000,
+          "ratio": 8.36,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "一般財団法人土谷記念医学振興基金",
+          "shares": 1900000,
+          "ratio": 7.74,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "土谷佐枝子",
+          "shares": 1008000,
+          "ratio": 4.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "社会福祉法人千寿会",
+          "shares": 1000000,
+          "ratio": 4.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社広島銀行",
+          "shares": 895000,
+          "ratio": 3.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＪＭＳ共栄会",
+          "shares": 753000,
+          "ratio": 3.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社",
+          "shares": 645000,
+          "ratio": 2.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大下産業株式会社",
+          "shares": 571000,
+          "ratio": 2.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "合同会社センス",
+          "shares": 474000,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 14.6,
+          "trust": 8.36,
+          "foundation": 7.74,
+          "individual": 11.24,
+          "financial": 6.28
+        },
+        "individual_total": 11.24,
+        "top10_total": 48.22
+      }
+    }
+  ]
+}

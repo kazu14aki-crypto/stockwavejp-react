@@ -1,0 +1,218 @@
+{
+  "secCode": "7245",
+  "issuerName": "大同メタル工業株式会社",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 3516000,
+      "ratio": 7.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大同メタル従業員持株会",
+      "shares": 2062000,
+      "ratio": 4.34,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大同メタル友栄会持株会",
+      "shares": 1979000,
+      "ratio": 4.16,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 1861000,
+      "ratio": 3.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE SERI WATHANA INDUSTRY CO., LTD. 703000(常任代理人　株式会社みずほ銀行)",
+      "shares": 1000000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "エンパイヤ自動車株式会社",
+      "shares": 912000,
+      "ratio": 1.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "伊藤忠丸紅鉄鋼株式会社",
+      "shares": 886000,
+      "ratio": 1.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大同メタル協力会持株会",
+      "shares": 830000,
+      "ratio": 1.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行株式会社",
+      "shares": 823000,
+      "ratio": 1.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "カヤバ株式会社",
+      "shares": 800000,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 11.31,
+      "employee": 10.24,
+      "financial": 3.83,
+      "corporate": 5.45
+    },
+    "individual_total": 0,
+    "top10_total": 30.83
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第118期(2025/04/01－2026/03/31)",
+      "docID": "S100YFV2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 3516000,
+          "ratio": 7.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大同メタル従業員持株会",
+          "shares": 2062000,
+          "ratio": 4.34,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大同メタル友栄会持株会",
+          "shares": 1979000,
+          "ratio": 4.16,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 1861000,
+          "ratio": 3.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE SERI WATHANA INDUSTRY CO., LTD. 703000(常任代理人　株式会社みずほ銀行)",
+          "shares": 1000000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "エンパイヤ自動車株式会社",
+          "shares": 912000,
+          "ratio": 1.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "伊藤忠丸紅鉄鋼株式会社",
+          "shares": 886000,
+          "ratio": 1.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大同メタル協力会持株会",
+          "shares": 830000,
+          "ratio": 1.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行株式会社",
+          "shares": 823000,
+          "ratio": 1.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "カヤバ株式会社",
+          "shares": 800000,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 11.31,
+          "employee": 10.24,
+          "financial": 3.83,
+          "corporate": 5.45
+        },
+        "individual_total": 0,
+        "top10_total": 30.83
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "9048",
+  "issuerName": "名古屋鉄道株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 19983000,
+      "ratio": 10.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 4612000,
+      "ratio": 2.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村　絢（常任代理人　三田証券株式会社）",
+      "shares": 3581000,
+      "ratio": 1.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本生命保険相互会社",
+      "shares": 3538000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ジェーピー　モルガン　チェース　バンク　385781（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2949000,
+      "ratio": 1.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー505223（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2678000,
+      "ratio": 1.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 2457000,
+      "ratio": 1.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　505001（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2176000,
+      "ratio": 1.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東京海上日動火災保険株式会社",
+      "shares": 2012000,
+      "ratio": 1.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友海上火災保険株式会社",
+      "shares": 1863000,
+      "ratio": 0.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 12.53,
+      "securities": 1.82,
+      "financial": 7.01,
+      "corporate": 1.96
+    },
+    "individual_total": 0,
+    "top10_total": 23.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第162期(2025/04/01－2026/03/31)",
+      "docID": "S100YHOL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 19983000,
+          "ratio": 10.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 4612000,
+          "ratio": 2.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村　絢（常任代理人　三田証券株式会社）",
+          "shares": 3581000,
+          "ratio": 1.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本生命保険相互会社",
+          "shares": 3538000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ジェーピー　モルガン　チェース　バンク　385781（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2949000,
+          "ratio": 1.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー505223（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2678000,
+          "ratio": 1.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 2457000,
+          "ratio": 1.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　505001（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2176000,
+          "ratio": 1.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東京海上日動火災保険株式会社",
+          "shares": 2012000,
+          "ratio": 1.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友海上火災保険株式会社",
+          "shares": 1863000,
+          "ratio": 0.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 12.53,
+          "securities": 1.82,
+          "financial": 7.01,
+          "corporate": 1.96
+        },
+        "individual_total": 0,
+        "top10_total": 23.32
+      }
+    }
+  ]
+}

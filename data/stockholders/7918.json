@@ -1,0 +1,216 @@
+{
+  "secCode": "7918",
+  "issuerName": "株式会社ヴィア・ホールディングス",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アサヒビール㈱",
+      "shares": 3192000,
+      "ratio": 6.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "横川　てるよ",
+      "shares": 2146000,
+      "ratio": 4.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "横川　紀夫",
+      "shares": 1973000,
+      "ratio": 4.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "横川　竟",
+      "shares": 900000,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大関㈱",
+      "shares": 615000,
+      "ratio": 1.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱ウェルカム",
+      "shares": 600000,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "実井　俊介",
+      "shares": 600000,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "今井　辰男",
+      "shares": 521000,
+      "ratio": 1.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱横浜銀行",
+      "shares": 438000,
+      "ratio": 0.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱W&E",
+      "shares": 428000,
+      "ratio": 0.93,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.08,
+      "financial": 0.96,
+      "other": 0.93
+    },
+    "individual_total": 23.08,
+    "top10_total": 24.97
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第90期(2025/04/01－2026/03/31)",
+      "docID": "S100YL9S",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アサヒビール㈱",
+          "shares": 3192000,
+          "ratio": 6.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "横川　てるよ",
+          "shares": 2146000,
+          "ratio": 4.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "横川　紀夫",
+          "shares": 1973000,
+          "ratio": 4.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "横川　竟",
+          "shares": 900000,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大関㈱",
+          "shares": 615000,
+          "ratio": 1.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱ウェルカム",
+          "shares": 600000,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "実井　俊介",
+          "shares": 600000,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "今井　辰男",
+          "shares": 521000,
+          "ratio": 1.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱横浜銀行",
+          "shares": 438000,
+          "ratio": 0.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱W&E",
+          "shares": 428000,
+          "ratio": 0.93,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.08,
+          "financial": 0.96,
+          "other": 0.93
+        },
+        "individual_total": 23.08,
+        "top10_total": 24.97
+      }
+    }
+  ]
+}

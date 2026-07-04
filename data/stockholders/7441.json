@@ -1,0 +1,220 @@
+{
+  "secCode": "7441",
+  "issuerName": "株式会社Ｍｉｓｕｍｉ",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三角開発㈱",
+      "shares": 1493000,
+      "ratio": 26.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＥＮＥＯＳホールディングス㈱",
+      "shares": 779000,
+      "ratio": 13.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友生命保険(相)",
+      "shares": 332000,
+      "ratio": 5.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱三井住友銀行",
+      "shares": 284000,
+      "ratio": 4.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱鹿児島銀行",
+      "shares": 283000,
+      "ratio": 4.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＴＯＹＯ　ＴＩＲＥ㈱",
+      "shares": 183000,
+      "ratio": 3.22,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ミスミ取引先持株会",
+      "shares": 179000,
+      "ratio": 3.15,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱商工組合中央金庫",
+      "shares": 171000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱福岡銀行",
+      "shares": 141000,
+      "ratio": 2.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "損害保険ジャパン㈱",
+      "shares": 110000,
+      "ratio": 1.93,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 29.28,
+      "corporate": 13.71,
+      "financial": 20.24,
+      "other": 3.22,
+      "employee": 3.15
+    },
+    "individual_total": 29.28,
+    "top10_total": 69.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第70期(2025/04/01－2026/03/31)",
+      "docID": "S100YHK6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三角開発㈱",
+          "shares": 1493000,
+          "ratio": 26.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＥＮＥＯＳホールディングス㈱",
+          "shares": 779000,
+          "ratio": 13.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友生命保険(相)",
+          "shares": 332000,
+          "ratio": 5.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱三井住友銀行",
+          "shares": 284000,
+          "ratio": 4.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱鹿児島銀行",
+          "shares": 283000,
+          "ratio": 4.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＴＯＹＯ　ＴＩＲＥ㈱",
+          "shares": 183000,
+          "ratio": 3.22,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ミスミ取引先持株会",
+          "shares": 179000,
+          "ratio": 3.15,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱商工組合中央金庫",
+          "shares": 171000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱福岡銀行",
+          "shares": 141000,
+          "ratio": 2.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "損害保険ジャパン㈱",
+          "shares": 110000,
+          "ratio": 1.93,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 29.28,
+          "corporate": 13.71,
+          "financial": 20.24,
+          "other": 3.22,
+          "employee": 3.15
+        },
+        "individual_total": 29.28,
+        "top10_total": 69.6
+      }
+    }
+  ]
+}

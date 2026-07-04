@@ -1,0 +1,220 @@
+{
+  "secCode": "5918",
+  "issuerName": "瀧上工業株式会社",
+  "updated_at": "2026/07/04 17:59 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "瀧上精機工業株式会社",
+      "shares": 407000,
+      "ratio": 19.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "万年青投資事業有限責任組合",
+      "shares": 208000,
+      "ratio": 9.87,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ジーグ",
+      "shares": 110000,
+      "ratio": 5.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 103000,
+      "ratio": 4.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "瀧上　茂",
+      "shares": 92000,
+      "ratio": 4.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "エムエム建材株式会社",
+      "shares": 69000,
+      "ratio": 3.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "瀧上晶義",
+      "shares": 62000,
+      "ratio": 2.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ミック",
+      "shares": 47000,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "徳倉建設株式会社",
+      "shares": 45000,
+      "ratio": 2.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 45000,
+      "ratio": 2.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.19,
+      "other": 9.87,
+      "financial": 4.92,
+      "individual": 7.34,
+      "trust": 2.13
+    },
+    "individual_total": 7.34,
+    "top10_total": 56.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第89期(2025/04/01－2026/03/31)",
+      "docID": "S100YJYC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "瀧上精機工業株式会社",
+          "shares": 407000,
+          "ratio": 19.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "万年青投資事業有限責任組合",
+          "shares": 208000,
+          "ratio": 9.87,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ジーグ",
+          "shares": 110000,
+          "ratio": 5.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 103000,
+          "ratio": 4.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "瀧上　茂",
+          "shares": 92000,
+          "ratio": 4.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "エムエム建材株式会社",
+          "shares": 69000,
+          "ratio": 3.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "瀧上晶義",
+          "shares": 62000,
+          "ratio": 2.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ミック",
+          "shares": 47000,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "徳倉建設株式会社",
+          "shares": 45000,
+          "ratio": 2.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 45000,
+          "ratio": 2.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.19,
+          "other": 9.87,
+          "financial": 4.92,
+          "individual": 7.34,
+          "trust": 2.13
+        },
+        "individual_total": 7.34,
+        "top10_total": 56.45
+      }
+    }
+  ]
+}

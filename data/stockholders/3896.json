@@ -1,0 +1,218 @@
+{
+  "secCode": "3896",
+  "issuerName": "阿波製紙株式会社",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社徳応舎",
+      "shares": 2020000,
+      "ratio": 20.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三木産業株式会社",
+      "shares": 996100,
+      "ratio": 9.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日伸",
+      "shares": 800000,
+      "ratio": 8.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三木　富士彦",
+      "shares": 431392,
+      "ratio": 4.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三木　康弘",
+      "shares": 305003,
+      "ratio": 3.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社阿波銀行",
+      "shares": 296970,
+      "ratio": 2.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東京濾器株式会社",
+      "shares": 288000,
+      "ratio": 2.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三木　悠太郎",
+      "shares": 251000,
+      "ratio": 2.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "阿波製紙従業員持株会",
+      "shares": 201500,
+      "ratio": 2.01,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社徳島大正銀行",
+      "shares": 200000,
+      "ratio": 2.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.04,
+      "individual": 9.87,
+      "financial": 4.97,
+      "employee": 2.01
+    },
+    "individual_total": 9.87,
+    "top10_total": 57.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第112期(2025/04/01－2026/03/31)",
+      "docID": "S100YL59",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社徳応舎",
+          "shares": 2020000,
+          "ratio": 20.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三木産業株式会社",
+          "shares": 996100,
+          "ratio": 9.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日伸",
+          "shares": 800000,
+          "ratio": 8.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三木　富士彦",
+          "shares": 431392,
+          "ratio": 4.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三木　康弘",
+          "shares": 305003,
+          "ratio": 3.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社阿波銀行",
+          "shares": 296970,
+          "ratio": 2.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東京濾器株式会社",
+          "shares": 288000,
+          "ratio": 2.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三木　悠太郎",
+          "shares": 251000,
+          "ratio": 2.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "阿波製紙従業員持株会",
+          "shares": 201500,
+          "ratio": 2.01,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社徳島大正銀行",
+          "shares": 200000,
+          "ratio": 2.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.04,
+          "individual": 9.87,
+          "financial": 4.97,
+          "employee": 2.01
+        },
+        "individual_total": 9.87,
+        "top10_total": 57.89
+      }
+    }
+  ]
+}

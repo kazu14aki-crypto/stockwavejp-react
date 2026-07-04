@@ -1,0 +1,214 @@
+{
+  "secCode": "3753",
+  "issuerName": "株式会社フライトソリューションズ",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社SBI証券",
+      "shares": 471797,
+      "ratio": 3.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "楽天証券株式会社共有口",
+      "shares": 408900,
+      "ratio": 2.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "片岡　房雄",
+      "shares": 191400,
+      "ratio": 1.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "JPモルガン証券株式会社",
+      "shares": 171100,
+      "ratio": 1.18,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "片山　圭一朗",
+      "shares": 147800,
+      "ratio": 1.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松本　隆男",
+      "shares": 147000,
+      "ratio": 1.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "杉田　礼伸",
+      "shares": 125000,
+      "ratio": 0.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大澤　裕",
+      "shares": 109600,
+      "ratio": 0.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "河野　圭一",
+      "shares": 100300,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田中　正人",
+      "shares": 100000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 7.24,
+      "individual": 6.34
+    },
+    "individual_total": 6.34,
+    "top10_total": 13.58
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第39期(2025/04/01－2026/03/31)",
+      "docID": "S100YH2V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社SBI証券",
+          "shares": 471797,
+          "ratio": 3.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "楽天証券株式会社共有口",
+          "shares": 408900,
+          "ratio": 2.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "片岡　房雄",
+          "shares": 191400,
+          "ratio": 1.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "JPモルガン証券株式会社",
+          "shares": 171100,
+          "ratio": 1.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "片山　圭一朗",
+          "shares": 147800,
+          "ratio": 1.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松本　隆男",
+          "shares": 147000,
+          "ratio": 1.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "杉田　礼伸",
+          "shares": 125000,
+          "ratio": 0.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大澤　裕",
+          "shares": 109600,
+          "ratio": 0.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "河野　圭一",
+          "shares": 100300,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田中　正人",
+          "shares": 100000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 7.24,
+          "individual": 6.34
+        },
+        "individual_total": 6.34,
+        "top10_total": 13.58
+      }
+    }
+  ]
+}

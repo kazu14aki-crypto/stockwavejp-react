@@ -1,0 +1,218 @@
+{
+  "secCode": "8066",
+  "issuerName": "三谷商事株式会社",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三谷セキサン株式会社",
+      "shares": 13370000,
+      "ratio": 15.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "一般財団法人三谷進一育英会",
+      "shares": 8996000,
+      "ratio": 10.49,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三谷土地ホーム株式会社",
+      "shares": 7572000,
+      "ratio": 8.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三親会",
+      "shares": 6756000,
+      "ratio": 7.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三谷滋子",
+      "shares": 4668000,
+      "ratio": 5.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "三谷聡",
+      "shares": 4148000,
+      "ratio": 4.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "BBH FOR FIDELITY LOW-PRICEDSTOCK FUND（常任代理人株式会社三菱UFJ銀行）",
+      "shares": 2656000,
+      "ratio": 3.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NORTHERN TRUST CO. (AVFC) RE FIDELITY FUNDS（常任代理人香港上海銀行東京支店）",
+      "shares": 2065000,
+      "ratio": 2.41,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＵＢＥ三菱セメント株式会社",
+      "shares": 2006000,
+      "ratio": 2.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東京セキサン株式会社",
+      "shares": 1972000,
+      "ratio": 2.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.05,
+      "foundation": 10.49,
+      "individual": 18.14,
+      "foreign": 5.51
+    },
+    "individual_total": 18.14,
+    "top10_total": 63.19
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第109期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ7S",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三谷セキサン株式会社",
+          "shares": 13370000,
+          "ratio": 15.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "一般財団法人三谷進一育英会",
+          "shares": 8996000,
+          "ratio": 10.49,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三谷土地ホーム株式会社",
+          "shares": 7572000,
+          "ratio": 8.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三親会",
+          "shares": 6756000,
+          "ratio": 7.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三谷滋子",
+          "shares": 4668000,
+          "ratio": 5.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "三谷聡",
+          "shares": 4148000,
+          "ratio": 4.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "BBH FOR FIDELITY LOW-PRICEDSTOCK FUND（常任代理人株式会社三菱UFJ銀行）",
+          "shares": 2656000,
+          "ratio": 3.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NORTHERN TRUST CO. (AVFC) RE FIDELITY FUNDS（常任代理人香港上海銀行東京支店）",
+          "shares": 2065000,
+          "ratio": 2.41,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＵＢＥ三菱セメント株式会社",
+          "shares": 2006000,
+          "ratio": 2.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東京セキサン株式会社",
+          "shares": 1972000,
+          "ratio": 2.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.05,
+          "foundation": 10.49,
+          "individual": 18.14,
+          "foreign": 5.51
+        },
+        "individual_total": 18.14,
+        "top10_total": 63.19
+      }
+    }
+  ]
+}

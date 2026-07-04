@@ -1,0 +1,220 @@
+{
+  "secCode": "4819",
+  "issuerName": "株式会社デジタルガレージ",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱りそなホールディングス",
+      "shares": 14233200,
+      "ratio": 30.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "林  郁",
+      "shares": 4893970,
+      "ratio": 10.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行㈱\n（信託口）",
+      "shares": 3519700,
+      "ratio": 7.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱HAYASHI CAPITAL",
+      "shares": 2977400,
+      "ratio": 6.46,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱ジェーシービー",
+      "shares": 2364500,
+      "ratio": 5.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱日本カストディ銀行\n（信託口）",
+      "shares": 1625200,
+      "ratio": 3.53,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東芝テック㈱",
+      "shares": 949500,
+      "ratio": 2.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "THE BANK OF NEW YORK MELLON 140044\n（常任代理人  ㈱みずほ銀行決済営業部）",
+      "shares": 672100,
+      "ratio": 1.46,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人  ㈱みずほ銀行決済営業部）",
+      "shares": 599846,
+      "ratio": 1.3,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT\n（常任代理人  ㈱みずほ銀行決済営業部）",
+      "shares": 539700,
+      "ratio": 1.17,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 30.9,
+      "individual": 17.81,
+      "trust": 11.17,
+      "other": 6.46,
+      "foreign": 3.93
+    },
+    "individual_total": 17.81,
+    "top10_total": 70.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/04/01－2026/03/31)",
+      "docID": "S100YIB5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱りそなホールディングス",
+          "shares": 14233200,
+          "ratio": 30.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "林  郁",
+          "shares": 4893970,
+          "ratio": 10.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行㈱\n（信託口）",
+          "shares": 3519700,
+          "ratio": 7.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱HAYASHI CAPITAL",
+          "shares": 2977400,
+          "ratio": 6.46,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱ジェーシービー",
+          "shares": 2364500,
+          "ratio": 5.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱日本カストディ銀行\n（信託口）",
+          "shares": 1625200,
+          "ratio": 3.53,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東芝テック㈱",
+          "shares": 949500,
+          "ratio": 2.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE BANK OF NEW YORK MELLON 140044\n（常任代理人  ㈱みずほ銀行決済営業部）",
+          "shares": 672100,
+          "ratio": 1.46,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人  ㈱みずほ銀行決済営業部）",
+          "shares": 599846,
+          "ratio": 1.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT\n（常任代理人  ㈱みずほ銀行決済営業部）",
+          "shares": 539700,
+          "ratio": 1.17,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 30.9,
+          "individual": 17.81,
+          "trust": 11.17,
+          "other": 6.46,
+          "foreign": 3.93
+        },
+        "individual_total": 17.81,
+        "top10_total": 70.27
+      }
+    }
+  ]
+}

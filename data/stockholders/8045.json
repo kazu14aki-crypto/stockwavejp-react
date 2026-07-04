@@ -1,0 +1,218 @@
+{
+  "secCode": "8045",
+  "issuerName": "横浜丸魚株式会社",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Ｕｍｉｏｓ㈱",
+      "shares": 731000,
+      "ratio": 12.14,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱極洋",
+      "shares": 497000,
+      "ratio": 8.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "浜銀ファイナンス㈱",
+      "shares": 327000,
+      "ratio": 5.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱横浜銀行",
+      "shares": 267000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱岡三証券グループ",
+      "shares": 252000,
+      "ratio": 4.18,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "築地魚市場㈱",
+      "shares": 217000,
+      "ratio": 3.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "横浜冷凍㈱",
+      "shares": 207000,
+      "ratio": 3.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "㈱ニチレイフレッシュ",
+      "shares": 194000,
+      "ratio": 3.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱八丁幸",
+      "shares": 152000,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱ジャストオートリーシング",
+      "shares": 149000,
+      "ratio": 2.47,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 14.61,
+      "individual": 26.48,
+      "financial": 4.43,
+      "securities": 4.18
+    },
+    "individual_total": 26.48,
+    "top10_total": 49.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第90期(2025/04/01－2026/03/31)",
+      "docID": "S100YCTS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Ｕｍｉｏｓ㈱",
+          "shares": 731000,
+          "ratio": 12.14,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱極洋",
+          "shares": 497000,
+          "ratio": 8.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "浜銀ファイナンス㈱",
+          "shares": 327000,
+          "ratio": 5.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱横浜銀行",
+          "shares": 267000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱岡三証券グループ",
+          "shares": 252000,
+          "ratio": 4.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "築地魚市場㈱",
+          "shares": 217000,
+          "ratio": 3.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "横浜冷凍㈱",
+          "shares": 207000,
+          "ratio": 3.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "㈱ニチレイフレッシュ",
+          "shares": 194000,
+          "ratio": 3.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱八丁幸",
+          "shares": 152000,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱ジャストオートリーシング",
+          "shares": 149000,
+          "ratio": 2.47,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 14.61,
+          "individual": 26.48,
+          "financial": 4.43,
+          "securities": 4.18
+        },
+        "individual_total": 26.48,
+        "top10_total": 49.7
+      }
+    }
+  ]
+}

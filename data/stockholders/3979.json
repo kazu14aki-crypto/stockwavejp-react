@@ -1,0 +1,218 @@
+{
+  "secCode": "3979",
+  "issuerName": "株式会社うるる",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "星　知也",
+      "shares": 4837600,
+      "ratio": 17.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社エアーズロック",
+      "shares": 2640000,
+      "ratio": 9.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "UH Partners 3投資事業有限責任組合",
+      "shares": 2116800,
+      "ratio": 7.65,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社UH5",
+      "shares": 2075600,
+      "ratio": 7.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 1823200,
+      "ratio": 6.59,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "エスアイエル投資事業有限責任組合",
+      "shares": 1765200,
+      "ratio": 6.38,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "桶山　雄平",
+      "shares": 1528600,
+      "ratio": 5.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "UH Partners 2投資事業有限責任組合",
+      "shares": 778200,
+      "ratio": 2.81,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 760000,
+      "ratio": 2.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "長屋　洋介",
+      "shares": 737200,
+      "ratio": 2.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 25.66,
+      "corporate": 17.04,
+      "other": 23.43,
+      "financial": 2.75
+    },
+    "individual_total": 25.66,
+    "top10_total": 68.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YJOL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "星　知也",
+          "shares": 4837600,
+          "ratio": 17.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社エアーズロック",
+          "shares": 2640000,
+          "ratio": 9.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "UH Partners 3投資事業有限責任組合",
+          "shares": 2116800,
+          "ratio": 7.65,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社UH5",
+          "shares": 2075600,
+          "ratio": 7.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 1823200,
+          "ratio": 6.59,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "エスアイエル投資事業有限責任組合",
+          "shares": 1765200,
+          "ratio": 6.38,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "桶山　雄平",
+          "shares": 1528600,
+          "ratio": 5.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "UH Partners 2投資事業有限責任組合",
+          "shares": 778200,
+          "ratio": 2.81,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 760000,
+          "ratio": 2.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "長屋　洋介",
+          "shares": 737200,
+          "ratio": 2.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 25.66,
+          "corporate": 17.04,
+          "other": 23.43,
+          "financial": 2.75
+        },
+        "individual_total": 25.66,
+        "top10_total": 68.88
+      }
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "secCode": "7578",
+  "issuerName": "株式会社ニチリョク",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "バリューアップ・ファンド\n投資事業有限責任組合",
+      "shares": 6023000,
+      "ratio": 34.65,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MLI FOR CLIENT GENERAL NON TREATY-PB\n\n\n(常任代理人　ＢＯＦＡ証券株式会社)",
+      "shares": 1000000,
+      "ratio": 5.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "東海東京証券株式会社",
+      "shares": 405000,
+      "ratio": 2.33,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "岡三証券株式会社",
+      "shares": 301000,
+      "ratio": 1.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "阪田　和弘",
+      "shares": 190000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＮＰ　ＰＡＲＩＢＡＳ，　ＴＡＩＰＥＩ　ＢＲＡＮＣＨ\n(常任代理人　ＢＮＰパリバ証券株式会社)",
+      "shares": 184000,
+      "ratio": 1.06,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ニチリョク役員持株会",
+      "shares": 182000,
+      "ratio": 1.05,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "北口　敏文",
+      "shares": 173000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 123000,
+      "ratio": 0.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三潴  末雄",
+      "shares": 119000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 34.65,
+      "foreign": 5.75,
+      "securities": 5.13,
+      "individual": 2.79,
+      "employee": 1.05,
+      "corporate": 0.71
+    },
+    "individual_total": 2.79,
+    "top10_total": 50.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100YN6A",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "バリューアップ・ファンド\n投資事業有限責任組合",
+          "shares": 6023000,
+          "ratio": 34.65,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MLI FOR CLIENT GENERAL NON TREATY-PB\n\n\n(常任代理人　ＢＯＦＡ証券株式会社)",
+          "shares": 1000000,
+          "ratio": 5.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "東海東京証券株式会社",
+          "shares": 405000,
+          "ratio": 2.33,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "岡三証券株式会社",
+          "shares": 301000,
+          "ratio": 1.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "阪田　和弘",
+          "shares": 190000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ，　ＴＡＩＰＥＩ　ＢＲＡＮＣＨ\n(常任代理人　ＢＮＰパリバ証券株式会社)",
+          "shares": 184000,
+          "ratio": 1.06,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ニチリョク役員持株会",
+          "shares": 182000,
+          "ratio": 1.05,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "北口　敏文",
+          "shares": 173000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 123000,
+          "ratio": 0.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三潴  末雄",
+          "shares": 119000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 34.65,
+          "foreign": 5.75,
+          "securities": 5.13,
+          "individual": 2.79,
+          "employee": 1.05,
+          "corporate": 0.71
+        },
+        "individual_total": 2.79,
+        "top10_total": 50.08
+      }
+    },
+    {
+      "submitDate": "2026-06-26",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第59期(2024/04/01－2025/03/31)",
+      "docID": "S100YM11",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "バリューアップ・ファンド\n投資事業有限責任組合",
+          "shares": 7023000,
+          "ratio": 43.84,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "阪田　和弘",
+          "shares": 200000,
+          "ratio": 1.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社\n(常任代理人　日本マスター\nトラスト信託銀行株式会社)",
+          "shares": 200000,
+          "ratio": 1.24,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ，　ＴＡＩＰＥＩ　ＢＲＡＮＣＨ\n(常任代理人　ＢＮＰパリバ証券株式会社",
+          "shares": 184000,
+          "ratio": 1.14,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "青柳　弘昭",
+          "shares": 176000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "北口　敏文",
+          "shares": 171000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＢＡＲＣＬＡＹＳ　ＣＡＰＩＴＡＬ　ＳＥＣＵＲＩＴＩＥＳ　ＬＩＭＩＴＥＤ\n(常任代理人　バークレイズ証券株式会社）",
+          "shares": 157000,
+          "ratio": 0.98,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ニチリョク役員持株会",
+          "shares": 123000,
+          "ratio": 0.77,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "マネックス証券株式会社",
+          "shares": 103000,
+          "ratio": 0.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "黒須　友香",
+          "shares": 100000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 43.84,
+          "individual": 4.02,
+          "financial": 1.24,
+          "securities": 2.76,
+          "employee": 0.77
+        },
+        "individual_total": 4.02,
+        "top10_total": 52.63
+      }
+    }
+  ]
+}

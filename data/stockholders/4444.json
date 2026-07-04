@@ -1,0 +1,323 @@
+{
+  "secCode": "4444",
+  "issuerName": "株式会社インフォネット",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社フォーカスキャピタル",
+      "shares": 871000,
+      "ratio": 43.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社パスファインダー",
+      "shares": 77000,
+      "ratio": 3.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "佐野　史和",
+      "shares": 73000,
+      "ratio": 3.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社３７６",
+      "shares": 38000,
+      "ratio": 1.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "槇田　重夫",
+      "shares": 20000,
+      "ratio": 0.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大岩　鉱三",
+      "shares": 19000,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "若尾　卓郎",
+      "shares": 17000,
+      "ratio": 0.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "インフォネット従業員持株会",
+      "shares": 17000,
+      "ratio": 0.86,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大宮　典子",
+      "shares": 14000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社オッズファクトリー",
+      "shares": 13000,
+      "ratio": 0.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.41,
+      "individual": 7.08,
+      "employee": 0.86
+    },
+    "individual_total": 7.08,
+    "top10_total": 57.35
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第24期(2025/04/01－2026/03/31)",
+      "docID": "S100YNSJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社フォーカスキャピタル",
+          "shares": 871000,
+          "ratio": 43.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社パスファインダー",
+          "shares": 77000,
+          "ratio": 3.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐野　史和",
+          "shares": 73000,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社３７６",
+          "shares": 38000,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "槇田　重夫",
+          "shares": 20000,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大岩　鉱三",
+          "shares": 19000,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "若尾　卓郎",
+          "shares": 17000,
+          "ratio": 0.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "インフォネット従業員持株会",
+          "shares": 17000,
+          "ratio": 0.86,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大宮　典子",
+          "shares": 14000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社オッズファクトリー",
+          "shares": 13000,
+          "ratio": 0.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.41,
+          "individual": 7.08,
+          "employee": 0.86
+        },
+        "individual_total": 7.08,
+        "top10_total": 57.35
+      }
+    },
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第24期(2025/04/01－2026/03/31)",
+      "docID": "S100YLDD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社フォーカスキャピタル",
+          "shares": 871000,
+          "ratio": 43.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社パスファインダー",
+          "shares": 77000,
+          "ratio": 3.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐野　史和",
+          "shares": 73000,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社３７６",
+          "shares": 38000,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "槇田　重夫",
+          "shares": 20000,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大岩　鉱三",
+          "shares": 19000,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "若尾　卓郎",
+          "shares": 17000,
+          "ratio": 0.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "インフォネット従業員持株会",
+          "shares": 17000,
+          "ratio": 0.86,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大宮　典子",
+          "shares": 14000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社オッズファクトリー",
+          "shares": 13000,
+          "ratio": 0.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.41,
+          "individual": 7.08,
+          "employee": 0.86
+        },
+        "individual_total": 7.08,
+        "top10_total": 57.35
+      }
+    }
+  ]
+}

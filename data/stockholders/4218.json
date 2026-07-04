@@ -1,0 +1,220 @@
+{
+  "secCode": "4218",
+  "issuerName": "ニチバン株式会社",
+  "updated_at": "2026/07/04 18:38 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大鵬薬品工業株式会社",
+      "shares": 6758000,
+      "ratio": 33.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1374000,
+      "ratio": 6.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ニチバン取引先持株会",
+      "shares": 1189000,
+      "ratio": 5.89,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 800000,
+      "ratio": 3.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 800000,
+      "ratio": 3.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST　COMPANY 505103（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 682000,
+      "ratio": 3.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "あいおいニッセイ同和損害保険株式会社",
+      "shares": 378000,
+      "ratio": 1.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社りそな銀行",
+      "shares": 288000,
+      "ratio": 1.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT（常任代理人 香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 268000,
+      "ratio": 1.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ニチバン従業員持株会",
+      "shares": 267000,
+      "ratio": 1.33,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.49,
+      "trust": 6.81,
+      "employee": 7.22,
+      "financial": 11.22,
+      "foreign": 4.71
+    },
+    "individual_total": 0,
+    "top10_total": 63.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第122期(2025/04/01－2026/03/31)",
+      "docID": "S100YGTG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大鵬薬品工業株式会社",
+          "shares": 6758000,
+          "ratio": 33.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1374000,
+          "ratio": 6.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ニチバン取引先持株会",
+          "shares": 1189000,
+          "ratio": 5.89,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 800000,
+          "ratio": 3.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 800000,
+          "ratio": 3.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST　COMPANY 505103（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 682000,
+          "ratio": 3.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "shares": 378000,
+          "ratio": 1.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社りそな銀行",
+          "shares": 288000,
+          "ratio": 1.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT（常任代理人 香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 268000,
+          "ratio": 1.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ニチバン従業員持株会",
+          "shares": 267000,
+          "ratio": 1.33,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.49,
+          "trust": 6.81,
+          "employee": 7.22,
+          "financial": 11.22,
+          "foreign": 4.71
+        },
+        "individual_total": 0,
+        "top10_total": 63.45
+      }
+    }
+  ]
+}

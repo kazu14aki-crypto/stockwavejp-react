@@ -1,0 +1,216 @@
+{
+  "secCode": "5726",
+  "issuerName": "株式会社大阪チタニウムテクノロジーズ",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3473000,
+      "ratio": 9.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社神戸製鋼所",
+      "shares": 3000000,
+      "ratio": 8.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2143000,
+      "ratio": 5.83,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本製鉄株式会社",
+      "shares": 1807000,
+      "ratio": 4.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1556000,
+      "ratio": 4.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "住友商事株式会社",
+      "shares": 864000,
+      "ratio": 2.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 845000,
+      "ratio": 2.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 786000,
+      "ratio": 2.14,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 750000,
+      "ratio": 2.04,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券株式会社",
+      "shares": 664000,
+      "ratio": 1.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 17.57,
+      "corporate": 17.22,
+      "foreign": 8.41
+    },
+    "individual_total": 0,
+    "top10_total": 43.2
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YHFZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3473000,
+          "ratio": 9.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社神戸製鋼所",
+          "shares": 3000000,
+          "ratio": 8.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2143000,
+          "ratio": 5.83,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本製鉄株式会社",
+          "shares": 1807000,
+          "ratio": 4.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1556000,
+          "ratio": 4.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "住友商事株式会社",
+          "shares": 864000,
+          "ratio": 2.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 845000,
+          "ratio": 2.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 786000,
+          "ratio": 2.14,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 750000,
+          "ratio": 2.04,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 664000,
+          "ratio": 1.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 17.57,
+          "corporate": 17.22,
+          "foreign": 8.41
+        },
+        "individual_total": 0,
+        "top10_total": 43.2
+      }
+    }
+  ]
+}

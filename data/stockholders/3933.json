@@ -1,0 +1,216 @@
+{
+  "secCode": "3933",
+  "issuerName": "チエル株式会社",
+  "updated_at": "2026/07/04 17:47 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "川居　睦",
+      "shares": 2041300,
+      "ratio": 27.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "アルプスシステムインテグレーション株式会社",
+      "shares": 720000,
+      "ratio": 9.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社旺文社",
+      "shares": 720000,
+      "ratio": 9.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 320300,
+      "ratio": 4.28,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "キヤノンＩＴソリューションズ株式会社",
+      "shares": 237100,
+      "ratio": 3.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社旺文社キャピタルマネジメント",
+      "shares": 180000,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ダイヤ書房",
+      "shares": 122000,
+      "ratio": 1.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大賀　昭雄",
+      "shares": 100000,
+      "ratio": 1.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "森　達也",
+      "shares": 100000,
+      "ratio": 1.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社センター・オブ・エクセレンス・グループ",
+      "shares": 86000,
+      "ratio": 1.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 29.98,
+      "corporate": 27.61,
+      "other": 4.28
+    },
+    "individual_total": 29.98,
+    "top10_total": 61.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YNS5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "川居　睦",
+          "shares": 2041300,
+          "ratio": 27.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "アルプスシステムインテグレーション株式会社",
+          "shares": 720000,
+          "ratio": 9.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社旺文社",
+          "shares": 720000,
+          "ratio": 9.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 320300,
+          "ratio": 4.28,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "キヤノンＩＴソリューションズ株式会社",
+          "shares": 237100,
+          "ratio": 3.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社旺文社キャピタルマネジメント",
+          "shares": 180000,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ダイヤ書房",
+          "shares": 122000,
+          "ratio": 1.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大賀　昭雄",
+          "shares": 100000,
+          "ratio": 1.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "森　達也",
+          "shares": 100000,
+          "ratio": 1.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社センター・オブ・エクセレンス・グループ",
+          "shares": 86000,
+          "ratio": 1.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 29.98,
+          "corporate": 27.61,
+          "other": 4.28
+        },
+        "individual_total": 29.98,
+        "top10_total": 61.87
+      }
+    }
+  ]
+}

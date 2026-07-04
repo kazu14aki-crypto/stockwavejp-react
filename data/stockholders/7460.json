@@ -1,0 +1,220 @@
+{
+  "secCode": "7460",
+  "issuerName": "株式会社ヤギ",
+  "updated_at": "2026/07/04 18:39 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ヤギ共栄会",
+      "shares": 928000,
+      "ratio": 11.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "八木　隆夫",
+      "shares": 417000,
+      "ratio": 5.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 410000,
+      "ratio": 4.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三井住友銀行",
+      "shares": 380000,
+      "ratio": 4.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＮＯＭＵＲＡ　ＰＢ　ＮＯＭＩＮＥＥＳ　ＬＩＭＩＴＥＤ　ＯＭＮＩＢＵＳ―ＭＡＲＧＩＮ（ＣＡＳＨＰＢ）\n（常任代理人野村證券株式会社）",
+      "shares": 347000,
+      "ratio": 4.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 305000,
+      "ratio": 3.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "立花証券株式会社",
+      "shares": 300000,
+      "ratio": 3.64,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "清原　達郎",
+      "shares": 246000,
+      "ratio": 2.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "クロスプラス株式会社",
+      "shares": 229000,
+      "ratio": 2.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ヤギ従業員持株会",
+      "shares": 215000,
+      "ratio": 2.6,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 19.26,
+      "financial": 13.25,
+      "corporate": 6.97,
+      "securities": 3.64,
+      "employee": 2.6
+    },
+    "individual_total": 19.26,
+    "top10_total": 45.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第114期(2025/04/01－2026/03/31)",
+      "docID": "S100YHKP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ヤギ共栄会",
+          "shares": 928000,
+          "ratio": 11.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "八木　隆夫",
+          "shares": 417000,
+          "ratio": 5.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 410000,
+          "ratio": 4.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三井住友銀行",
+          "shares": 380000,
+          "ratio": 4.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＮＯＭＵＲＡ　ＰＢ　ＮＯＭＩＮＥＥＳ　ＬＩＭＩＴＥＤ　ＯＭＮＩＢＵＳ―ＭＡＲＧＩＮ（ＣＡＳＨＰＢ）\n（常任代理人野村證券株式会社）",
+          "shares": 347000,
+          "ratio": 4.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 305000,
+          "ratio": 3.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "立花証券株式会社",
+          "shares": 300000,
+          "ratio": 3.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "清原　達郎",
+          "shares": 246000,
+          "ratio": 2.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "クロスプラス株式会社",
+          "shares": 229000,
+          "ratio": 2.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ヤギ従業員持株会",
+          "shares": 215000,
+          "ratio": 2.6,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 19.26,
+          "financial": 13.25,
+          "corporate": 6.97,
+          "securities": 3.64,
+          "employee": 2.6
+        },
+        "individual_total": 19.26,
+        "top10_total": 45.72
+      }
+    }
+  ]
+}

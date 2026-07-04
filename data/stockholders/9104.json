@@ -1,0 +1,220 @@
+{
+  "secCode": "9104",
+  "issuerName": "株式会社　商船三井",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 60559000,
+      "ratio": 17.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 18268000,
+      "ratio": 5.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 7109000,
+      "ratio": 2.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BNP PARIBAS NEW YORK BRANCH – PRIME BROKERAGE SEGREGATION ACCOUNT\n（常任代理人　香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 5765000,
+      "ratio": 1.68,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 4617000,
+      "ratio": 1.34,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 4500000,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友海上火災保険株式会社",
+      "shares": 4469000,
+      "ratio": 1.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 3907000,
+      "ratio": 1.14,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BCSL CLIENT RE BBPLC NYBR\n（常任代理人　バークレイズ証券株式会社）",
+      "shares": 3649000,
+      "ratio": 1.06,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券株式会社",
+      "shares": 3307000,
+      "ratio": 0.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.94,
+      "foreign": 6.23,
+      "financial": 1.31,
+      "corporate": 2.26,
+      "securities": 1.06
+    },
+    "individual_total": 0,
+    "top10_total": 33.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書",
+      "docID": "S100YI2T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 60559000,
+          "ratio": 17.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 18268000,
+          "ratio": 5.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 7109000,
+          "ratio": 2.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BNP PARIBAS NEW YORK BRANCH – PRIME BROKERAGE SEGREGATION ACCOUNT\n（常任代理人　香港上海銀行東京支店 セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 5765000,
+          "ratio": 1.68,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 4617000,
+          "ratio": 1.34,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 4500000,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友海上火災保険株式会社",
+          "shares": 4469000,
+          "ratio": 1.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 3907000,
+          "ratio": 1.14,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BCSL CLIENT RE BBPLC NYBR\n（常任代理人　バークレイズ証券株式会社）",
+          "shares": 3649000,
+          "ratio": 1.06,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 3307000,
+          "ratio": 0.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.94,
+          "foreign": 6.23,
+          "financial": 1.31,
+          "corporate": 2.26,
+          "securities": 1.06
+        },
+        "individual_total": 0,
+        "top10_total": 33.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "9969",
+  "issuerName": "株式会社ショクブン",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社神明ホールディングス",
+      "shares": 7735000,
+      "ratio": 50.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ショクブン取引先持株会",
+      "shares": 1187000,
+      "ratio": 7.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "愛知スズキ販売株式会社",
+      "shares": 90000,
+      "ratio": 0.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社トーカン",
+      "shares": 67000,
+      "ratio": 0.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "丸進青果株式会社",
+      "shares": 54000,
+      "ratio": 0.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐伯　高史",
+      "shares": 51000,
+      "ratio": 0.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "テーブルマーク株式会社",
+      "shares": 48000,
+      "ratio": 0.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社松屋栄食品本舗",
+      "shares": 48000,
+      "ratio": 0.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中川　伴子",
+      "shares": 45000,
+      "ratio": 0.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社マルツネ",
+      "shares": 36000,
+      "ratio": 0.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.69,
+      "employee": 7.74,
+      "individual": 0.63
+    },
+    "individual_total": 0.63,
+    "top10_total": 61.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/04/01－2026/03/31)",
+      "docID": "S100YJTJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社神明ホールディングス",
+          "shares": 7735000,
+          "ratio": 50.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ショクブン取引先持株会",
+          "shares": 1187000,
+          "ratio": 7.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "愛知スズキ販売株式会社",
+          "shares": 90000,
+          "ratio": 0.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社トーカン",
+          "shares": 67000,
+          "ratio": 0.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "丸進青果株式会社",
+          "shares": 54000,
+          "ratio": 0.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐伯　高史",
+          "shares": 51000,
+          "ratio": 0.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テーブルマーク株式会社",
+          "shares": 48000,
+          "ratio": 0.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社松屋栄食品本舗",
+          "shares": 48000,
+          "ratio": 0.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中川　伴子",
+          "shares": 45000,
+          "ratio": 0.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社マルツネ",
+          "shares": 36000,
+          "ratio": 0.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.69,
+          "employee": 7.74,
+          "individual": 0.63
+        },
+        "individual_total": 0.63,
+        "top10_total": 61.06
+      }
+    }
+  ]
+}

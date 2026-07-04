@@ -1,0 +1,220 @@
+{
+  "secCode": "5706",
+  "issuerName": "三井金属株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 9419000,
+      "ratio": 16.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 4919000,
+      "ratio": 8.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 1848000,
+      "ratio": 3.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 1600000,
+      "ratio": 2.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村信託銀行株式会社(投信口)",
+      "shares": 1015000,
+      "ratio": 1.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BOFAS INC SEGREGATION ACCOUNT (常任代理人　BOFA証券株式会社）",
+      "shares": 992000,
+      "ratio": 1.73,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES(常任代理人　香港上海銀行東京支店)",
+      "shares": 976000,
+      "ratio": 1.7,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MSIP CLIENT SECURITIES (常任代理人　モルガン・スタンレーMUFG証券株式会社)",
+      "shares": 839000,
+      "ratio": 1.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三井金属社員持株会",
+      "shares": 785000,
+      "ratio": 1.37,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 781000,
+      "ratio": 1.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 25.05,
+      "foreign": 10.81,
+      "financial": 1.77,
+      "securities": 1.46,
+      "employee": 1.37
+    },
+    "individual_total": 0,
+    "top10_total": 40.46
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第101期(2025/04/01－2026/03/31)",
+      "docID": "S100YBQV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 9419000,
+          "ratio": 16.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 4919000,
+          "ratio": 8.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 1848000,
+          "ratio": 3.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 1600000,
+          "ratio": 2.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村信託銀行株式会社(投信口)",
+          "shares": 1015000,
+          "ratio": 1.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BOFAS INC SEGREGATION ACCOUNT (常任代理人　BOFA証券株式会社）",
+          "shares": 992000,
+          "ratio": 1.73,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES(常任代理人　香港上海銀行東京支店)",
+          "shares": 976000,
+          "ratio": 1.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MSIP CLIENT SECURITIES (常任代理人　モルガン・スタンレーMUFG証券株式会社)",
+          "shares": 839000,
+          "ratio": 1.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三井金属社員持株会",
+          "shares": 785000,
+          "ratio": 1.37,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 781000,
+          "ratio": 1.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 25.05,
+          "foreign": 10.81,
+          "financial": 1.77,
+          "securities": 1.46,
+          "employee": 1.37
+        },
+        "individual_total": 0,
+        "top10_total": 40.46
+      }
+    }
+  ]
+}

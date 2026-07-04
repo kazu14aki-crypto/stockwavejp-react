@@ -1,0 +1,222 @@
+{
+  "secCode": "6809",
+  "issuerName": "ＴＯＡ株式会社",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＴＯＡ取引先持株会",
+      "shares": 2899000,
+      "ratio": 8.36,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行\n 株式会社（信託口）",
+      "shares": 2852000,
+      "ratio": 8.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人神戸やまぶき財団",
+      "shares": 2000000,
+      "ratio": 5.76,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1500000,
+      "ratio": 4.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "シスメックス株式会社",
+      "shares": 1457000,
+      "ratio": 4.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "公益財団法人中谷財団",
+      "shares": 1297000,
+      "ratio": 3.74,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "井　谷　憲　次",
+      "shares": 1252000,
+      "ratio": 3.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 1188000,
+      "ratio": 3.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "国立大学法人京都大学",
+      "shares": 1000000,
+      "ratio": 2.88,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＴＯＡグループ従業員持株会",
+      "shares": 841000,
+      "ratio": 2.43,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 10.79,
+      "trust": 8.22,
+      "foundation": 12.38,
+      "financial": 7.75,
+      "corporate": 4.2,
+      "individual": 3.61
+    },
+    "individual_total": 3.61,
+    "top10_total": 46.95
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YFVG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＴＯＡ取引先持株会",
+          "shares": 2899000,
+          "ratio": 8.36,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行\n 株式会社（信託口）",
+          "shares": 2852000,
+          "ratio": 8.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人神戸やまぶき財団",
+          "shares": 2000000,
+          "ratio": 5.76,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1500000,
+          "ratio": 4.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "シスメックス株式会社",
+          "shares": 1457000,
+          "ratio": 4.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人中谷財団",
+          "shares": 1297000,
+          "ratio": 3.74,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "井　谷　憲　次",
+          "shares": 1252000,
+          "ratio": 3.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 1188000,
+          "ratio": 3.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "国立大学法人京都大学",
+          "shares": 1000000,
+          "ratio": 2.88,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＴＯＡグループ従業員持株会",
+          "shares": 841000,
+          "ratio": 2.43,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 10.79,
+          "trust": 8.22,
+          "foundation": 12.38,
+          "financial": 7.75,
+          "corporate": 4.2,
+          "individual": 3.61
+        },
+        "individual_total": 3.61,
+        "top10_total": 46.95
+      }
+    }
+  ]
+}

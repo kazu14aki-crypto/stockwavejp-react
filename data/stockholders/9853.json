@@ -1,0 +1,216 @@
+{
+  "secCode": "9853",
+  "issuerName": "株式会社銀座ルノアール",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社オーギュスト",
+      "shares": 1331000,
+      "ratio": 21.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社花見煎餅",
+      "shares": 1168000,
+      "ratio": 19.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "キーコーヒー株式会社",
+      "shares": 754000,
+      "ratio": 12.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "塩井　賢一",
+      "shares": 446000,
+      "ratio": 7.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小宮山　誠",
+      "shares": 172000,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "猪狩　安往",
+      "shares": 81000,
+      "ratio": 1.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三井住友銀行",
+      "shares": 63000,
+      "ratio": 1.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小宮山　文美",
+      "shares": 51000,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 40000,
+      "ratio": 0.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "國谷　信雄",
+      "shares": 31000,
+      "ratio": 0.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.25,
+      "individual": 12.82,
+      "financial": 1.69
+    },
+    "individual_total": 12.82,
+    "top10_total": 67.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YJPB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社オーギュスト",
+          "shares": 1331000,
+          "ratio": 21.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社花見煎餅",
+          "shares": 1168000,
+          "ratio": 19.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "キーコーヒー株式会社",
+          "shares": 754000,
+          "ratio": 12.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "塩井　賢一",
+          "shares": 446000,
+          "ratio": 7.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小宮山　誠",
+          "shares": 172000,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "猪狩　安往",
+          "shares": 81000,
+          "ratio": 1.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三井住友銀行",
+          "shares": 63000,
+          "ratio": 1.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小宮山　文美",
+          "shares": 51000,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 40000,
+          "ratio": 0.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "國谷　信雄",
+          "shares": 31000,
+          "ratio": 0.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.25,
+          "individual": 12.82,
+          "financial": 1.69
+        },
+        "individual_total": 12.82,
+        "top10_total": 67.76
+      }
+    }
+  ]
+}

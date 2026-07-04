@@ -1,0 +1,218 @@
+{
+  "secCode": "7953",
+  "issuerName": "菊水化学工業株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "菊水化学工業取引先持株会",
+      "shares": 1046000,
+      "ratio": 8.34,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社　ティー・サポート",
+      "shares": 910000,
+      "ratio": 7.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "菊水化学工業社員持株会",
+      "shares": 587000,
+      "ratio": 4.68,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社　名古屋銀行",
+      "shares": 520000,
+      "ratio": 4.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社　あいち銀行",
+      "shares": 405000,
+      "ratio": 3.23,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社　大垣共立銀行",
+      "shares": 174000,
+      "ratio": 1.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "長瀬産業　株式会社",
+      "shares": 162000,
+      "ratio": 1.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "加藤　丈博",
+      "shares": 157000,
+      "ratio": 1.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "浅海　正義",
+      "shares": 153000,
+      "ratio": 1.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "いずも産業　株式会社",
+      "shares": 141000,
+      "ratio": 1.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 13.02,
+      "corporate": 9.67,
+      "financial": 8.76,
+      "individual": 2.47
+    },
+    "individual_total": 2.47,
+    "top10_total": 33.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第69期(2025/04/01－2026/03/31)",
+      "docID": "S100YKW4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "菊水化学工業取引先持株会",
+          "shares": 1046000,
+          "ratio": 8.34,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社　ティー・サポート",
+          "shares": 910000,
+          "ratio": 7.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "菊水化学工業社員持株会",
+          "shares": 587000,
+          "ratio": 4.68,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社　名古屋銀行",
+          "shares": 520000,
+          "ratio": 4.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社　あいち銀行",
+          "shares": 405000,
+          "ratio": 3.23,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社　大垣共立銀行",
+          "shares": 174000,
+          "ratio": 1.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "長瀬産業　株式会社",
+          "shares": 162000,
+          "ratio": 1.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "加藤　丈博",
+          "shares": 157000,
+          "ratio": 1.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "浅海　正義",
+          "shares": 153000,
+          "ratio": 1.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "いずも産業　株式会社",
+          "shares": 141000,
+          "ratio": 1.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 13.02,
+          "corporate": 9.67,
+          "financial": 8.76,
+          "individual": 2.47
+        },
+        "individual_total": 2.47,
+        "top10_total": 33.92
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "secCode": "5998",
+  "issuerName": "株式会社　アドバネクス",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＡＡＡ株式会社",
+      "shares": 446000,
+      "ratio": 10.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "スマート有限会社",
+      "shares": 429000,
+      "ratio": 10.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＡＳＡＤＡ株式会社",
+      "shares": 332000,
+      "ratio": 8.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "アーク株式会社",
+      "shares": 205000,
+      "ratio": 4.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＡＲＴ株式会社",
+      "shares": 200000,
+      "ratio": 4.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 165000,
+      "ratio": 4.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "エース株式会社",
+      "shares": 142000,
+      "ratio": 3.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社アサダ",
+      "shares": 130000,
+      "ratio": 3.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "スマイル株式会社",
+      "shares": 94000,
+      "ratio": 2.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰ　ＪＰⅯＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ (常任代理人 株式会社三菱ＵＦＪ銀行)",
+      "shares": 72000,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.2,
+      "financial": 5.79
+    },
+    "individual_total": 0,
+    "top10_total": 53.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YFF6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＡＡＡ株式会社",
+          "shares": 446000,
+          "ratio": 10.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "スマート有限会社",
+          "shares": 429000,
+          "ratio": 10.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＡＳＡＤＡ株式会社",
+          "shares": 332000,
+          "ratio": 8.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "アーク株式会社",
+          "shares": 205000,
+          "ratio": 4.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＡＲＴ株式会社",
+          "shares": 200000,
+          "ratio": 4.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 165000,
+          "ratio": 4.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "エース株式会社",
+          "shares": 142000,
+          "ratio": 3.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社アサダ",
+          "shares": 130000,
+          "ratio": 3.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "スマイル株式会社",
+          "shares": 94000,
+          "ratio": 2.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰ　ＪＰⅯＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ (常任代理人 株式会社三菱ＵＦＪ銀行)",
+          "shares": 72000,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.2,
+          "financial": 5.79
+        },
+        "individual_total": 0,
+        "top10_total": 53.99
+      }
+    }
+  ]
+}

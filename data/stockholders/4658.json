@@ -1,0 +1,220 @@
+{
+  "secCode": "4658",
+  "issuerName": "日本空調サービス株式会社",
+  "updated_at": "2026/07/04 18:51 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3540000,
+      "ratio": 10.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本空調サービス従業員持株会",
+      "shares": 2613000,
+      "ratio": 7.54,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2173000,
+      "ratio": 6.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ　（常任代理人　三田証券株式会社）",
+      "shares": 1500000,
+      "ratio": 4.33,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "重田　康光",
+      "shares": 1003000,
+      "ratio": 2.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村證券株式会社",
+      "shares": 727000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡地　修",
+      "shares": 578000,
+      "ratio": 1.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "東京海上日動火災保険株式会社",
+      "shares": 564000,
+      "ratio": 1.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "林　伸健",
+      "shares": 400000,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ダイキン工業株式会社",
+      "shares": 392000,
+      "ratio": 1.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 16.49,
+      "employee": 7.54,
+      "securities": 4.33,
+      "individual": 5.72,
+      "corporate": 4.86
+    },
+    "individual_total": 5.72,
+    "top10_total": 38.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YC3N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3540000,
+          "ratio": 10.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本空調サービス従業員持株会",
+          "shares": 2613000,
+          "ratio": 7.54,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2173000,
+          "ratio": 6.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ　（常任代理人　三田証券株式会社）",
+          "shares": 1500000,
+          "ratio": 4.33,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "重田　康光",
+          "shares": 1003000,
+          "ratio": 2.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村證券株式会社",
+          "shares": 727000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡地　修",
+          "shares": 578000,
+          "ratio": 1.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "東京海上日動火災保険株式会社",
+          "shares": 564000,
+          "ratio": 1.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "林　伸健",
+          "shares": 400000,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ダイキン工業株式会社",
+          "shares": 392000,
+          "ratio": 1.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 16.49,
+          "employee": 7.54,
+          "securities": 4.33,
+          "individual": 5.72,
+          "corporate": 4.86
+        },
+        "individual_total": 5.72,
+        "top10_total": 38.94
+      }
+    }
+  ]
+}

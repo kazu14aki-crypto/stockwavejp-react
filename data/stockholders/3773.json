@@ -1,0 +1,220 @@
+{
+  "secCode": "3773",
+  "issuerName": "株式会社アドバンスト・メディア",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＬＩＭ　ＪＡＰＡＮ　ＥＶＥＮＴ　ＭＡＳＴＥＲ　ＦＵＮＤ\n（常任代理人　立花証券株式会社）",
+      "shares": 551800,
+      "ratio": 3.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光１号配当特化投資事業有限責任組合",
+      "shares": 537700,
+      "ratio": 3.43,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アイビー投資事業有限責任組合",
+      "shares": 527000,
+      "ratio": 3.37,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鈴木清幸",
+      "shares": 522400,
+      "ratio": 3.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＢＳＲ",
+      "shares": 510000,
+      "ratio": 3.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "住友不動産株式会社",
+      "shares": 469000,
+      "ratio": 2.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．（ＡＶＦＣ）　ＲＥ　Ｕ．Ｓ．　ＴＡＸ　ＥＸＥＭＰＴＥＤ　ＰＥＮＳＩＯＮ　ＦＵＮＤＳ　ＳＥＣ　ＬＥＮＤＩＮＧ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 347600,
+      "ratio": 2.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "レック株式会社",
+      "shares": 316800,
+      "ratio": 2.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中村得郎",
+      "shares": 310000,
+      "ratio": 1.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＴＳＵＣＨＩＹＡ株式会社",
+      "shares": 300000,
+      "ratio": 1.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 3.52,
+      "other": 6.8,
+      "individual": 5.32,
+      "corporate": 10.19,
+      "financial": 2.22
+    },
+    "individual_total": 5.32,
+    "top10_total": 28.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YGKZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＬＩＭ　ＪＡＰＡＮ　ＥＶＥＮＴ　ＭＡＳＴＥＲ　ＦＵＮＤ\n（常任代理人　立花証券株式会社）",
+          "shares": 551800,
+          "ratio": 3.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光１号配当特化投資事業有限責任組合",
+          "shares": 537700,
+          "ratio": 3.43,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アイビー投資事業有限責任組合",
+          "shares": 527000,
+          "ratio": 3.37,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鈴木清幸",
+          "shares": 522400,
+          "ratio": 3.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＢＳＲ",
+          "shares": 510000,
+          "ratio": 3.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "住友不動産株式会社",
+          "shares": 469000,
+          "ratio": 2.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．（ＡＶＦＣ）　ＲＥ　Ｕ．Ｓ．　ＴＡＸ　ＥＸＥＭＰＴＥＤ　ＰＥＮＳＩＯＮ　ＦＵＮＤＳ　ＳＥＣ　ＬＥＮＤＩＮＧ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 347600,
+          "ratio": 2.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "レック株式会社",
+          "shares": 316800,
+          "ratio": 2.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中村得郎",
+          "shares": 310000,
+          "ratio": 1.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＴＳＵＣＨＩＹＡ株式会社",
+          "shares": 300000,
+          "ratio": 1.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 3.52,
+          "other": 6.8,
+          "individual": 5.32,
+          "corporate": 10.19,
+          "financial": 2.22
+        },
+        "individual_total": 5.32,
+        "top10_total": 28.05
+      }
+    }
+  ]
+}

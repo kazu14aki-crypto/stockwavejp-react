@@ -1,0 +1,220 @@
+{
+  "secCode": "5602",
+  "issuerName": "株式会社栗本鐵工所",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5917000,
+      "ratio": 9.68,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "太陽生命保険株式会社",
+      "shares": 5043000,
+      "ratio": 8.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社",
+      "shares": 3393000,
+      "ratio": 5.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 3338000,
+      "ratio": 5.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社りそな銀行",
+      "shares": 2220000,
+      "ratio": 3.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社みずほ銀行",
+      "shares": 1811000,
+      "ratio": 2.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "クリモト従業員持株会",
+      "shares": 1565000,
+      "ratio": 2.56,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "岩谷産業株式会社",
+      "shares": 1449000,
+      "ratio": 2.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURGFUNDS/UCITS ASSETS （常任代理人　香港上海銀行東京支店）",
+      "shares": 1385000,
+      "ratio": 2.26,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社奥村組",
+      "shares": 1015000,
+      "ratio": 1.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 15.14,
+      "financial": 20.39,
+      "employee": 2.56,
+      "corporate": 4.03,
+      "foreign": 2.26
+    },
+    "individual_total": 0,
+    "top10_total": 44.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第130期(2025/04/01－2026/03/31)",
+      "docID": "S100YDW9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5917000,
+          "ratio": 9.68,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "太陽生命保険株式会社",
+          "shares": 5043000,
+          "ratio": 8.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 3393000,
+          "ratio": 5.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3338000,
+          "ratio": 5.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社りそな銀行",
+          "shares": 2220000,
+          "ratio": 3.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社みずほ銀行",
+          "shares": 1811000,
+          "ratio": 2.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "クリモト従業員持株会",
+          "shares": 1565000,
+          "ratio": 2.56,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "岩谷産業株式会社",
+          "shares": 1449000,
+          "ratio": 2.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURGFUNDS/UCITS ASSETS （常任代理人　香港上海銀行東京支店）",
+          "shares": 1385000,
+          "ratio": 2.26,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社奥村組",
+          "shares": 1015000,
+          "ratio": 1.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 15.14,
+          "financial": 20.39,
+          "employee": 2.56,
+          "corporate": 4.03,
+          "foreign": 2.26
+        },
+        "individual_total": 0,
+        "top10_total": 44.38
+      }
+    }
+  ]
+}

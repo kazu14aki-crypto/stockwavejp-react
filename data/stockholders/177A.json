@@ -1,0 +1,218 @@
+{
+  "secCode": "177A",
+  "issuerName": "コージンバイオ株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "中村　孝人",
+      "shares": 2209500,
+      "ratio": 43.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "TAKAコーポレーション株式会社",
+      "shares": 416500,
+      "ratio": 8.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GOLDMAN SACHS INTERNATIONAL(常任代理人 ゴールドマン・サックス証券株式会社)",
+      "shares": 389478,
+      "ratio": 7.6,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "オリエンタル酵母工業株式会社",
+      "shares": 270000,
+      "ratio": 5.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE－AC）（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 228452,
+      "ratio": 4.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "富士フイルム和光純薬株式会社",
+      "shares": 140000,
+      "ratio": 2.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "コージンバイオ従業員持株会",
+      "shares": 118579,
+      "ratio": 2.3,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "コスモ・バイオ株式会社",
+      "shares": 100000,
+      "ratio": 2.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "渡辺　恒美",
+      "shares": 78900,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "家田化学薬品株式会社",
+      "shares": 72000,
+      "ratio": 1.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.7,
+      "corporate": 19.6,
+      "foreign": 12.1,
+      "employee": 2.3
+    },
+    "individual_total": 44.7,
+    "top10_total": 78.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第45期(2025/04/01－2026/03/31)",
+      "docID": "S100YB5D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "中村　孝人",
+          "shares": 2209500,
+          "ratio": 43.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "TAKAコーポレーション株式会社",
+          "shares": 416500,
+          "ratio": 8.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GOLDMAN SACHS INTERNATIONAL(常任代理人 ゴールドマン・サックス証券株式会社)",
+          "shares": 389478,
+          "ratio": 7.6,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "オリエンタル酵母工業株式会社",
+          "shares": 270000,
+          "ratio": 5.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE－AC）（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 228452,
+          "ratio": 4.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "富士フイルム和光純薬株式会社",
+          "shares": 140000,
+          "ratio": 2.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "コージンバイオ従業員持株会",
+          "shares": 118579,
+          "ratio": 2.3,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "コスモ・バイオ株式会社",
+          "shares": 100000,
+          "ratio": 2.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "渡辺　恒美",
+          "shares": 78900,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "家田化学薬品株式会社",
+          "shares": 72000,
+          "ratio": 1.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.7,
+          "corporate": 19.6,
+          "foreign": 12.1,
+          "employee": 2.3
+        },
+        "individual_total": 44.7,
+        "top10_total": 78.7
+      }
+    }
+  ]
+}

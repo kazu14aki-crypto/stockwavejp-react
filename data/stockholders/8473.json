@@ -1,0 +1,220 @@
+{
+  "secCode": "8473",
+  "issuerName": "ＳＢＩホールディングス株式会社",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 93606800,
+      "ratio": 14.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社三井住友フィナンシャルグループ",
+      "shares": 54000000,
+      "ratio": 8.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＮＴＴ株式会社",
+      "shares": 54000000,
+      "ratio": 8.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 34720400,
+      "ratio": 5.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ザ　バンク　オブ　ニューヨーク　メロン　１４００４２",
+      "shares": 13354463,
+      "ratio": 2.07,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１",
+      "shares": 11865876,
+      "ratio": 1.84,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "北尾　吉孝",
+      "shares": 8655920,
+      "ratio": 1.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１",
+      "shares": 7973200,
+      "ratio": 1.23,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ビーエヌワイエム　アズ　エージーテイ　クライアンツ　ノン　トリーテイー　ジヤスデツク",
+      "shares": 7385876,
+      "ratio": 1.14,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三菱ＵＦＪモルガン・スタンレー証券株式会社",
+      "shares": 6517224,
+      "ratio": 1.01,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 19.85,
+      "corporate": 16.7,
+      "other": 6.28,
+      "individual": 1.34,
+      "securities": 1.01
+    },
+    "individual_total": 1.34,
+    "top10_total": 45.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第28期(2025/04/01－2026/03/31)",
+      "docID": "S100YK3R",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 93606800,
+          "ratio": 14.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社三井住友フィナンシャルグループ",
+          "shares": 54000000,
+          "ratio": 8.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＮＴＴ株式会社",
+          "shares": 54000000,
+          "ratio": 8.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 34720400,
+          "ratio": 5.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ザ　バンク　オブ　ニューヨーク　メロン　１４００４２",
+          "shares": 13354463,
+          "ratio": 2.07,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５００１",
+          "shares": 11865876,
+          "ratio": 1.84,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "北尾　吉孝",
+          "shares": 8655920,
+          "ratio": 1.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ジェーピー　モルガン　チェース　バンク　３８５７８１",
+          "shares": 7973200,
+          "ratio": 1.23,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ビーエヌワイエム　アズ　エージーテイ　クライアンツ　ノン　トリーテイー　ジヤスデツク",
+          "shares": 7385876,
+          "ratio": 1.14,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三菱ＵＦＪモルガン・スタンレー証券株式会社",
+          "shares": 6517224,
+          "ratio": 1.01,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 19.85,
+          "corporate": 16.7,
+          "other": 6.28,
+          "individual": 1.34,
+          "securities": 1.01
+        },
+        "individual_total": 1.34,
+        "top10_total": 45.18
+      }
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "secCode": "475A",
+  "issuerName": "株式会社ギミック",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｙ－Ｂｌｏｏｄ",
+      "shares": 1800000,
+      "ratio": 34.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "横嶋　大輔",
+      "shares": 631800,
+      "ratio": 12.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　１３４０８８\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 296600,
+      "ratio": 5.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松井証券株式会社",
+      "shares": 221100,
+      "ratio": 4.22,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ギミック従業員持株会",
+      "shares": 143400,
+      "ratio": 2.73,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 141200,
+      "ratio": 2.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 120651,
+      "ratio": 2.3,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＢＢＨ　ＬＵＸ／ＢＲＯＷＮ　ＢＲＯＴＨＥＲＳ　ＨＡＲＲＩＭＡＮ　（ＬＵＸＥＭＢＯＵＲＧ）　ＳＣＡ　ＣＵＳＴＯＤＩＡＮ　ＦＯＲ　ＳＭＤ－ＡＭ　ＦＵＮＤＳ　－　ＤＳＢＩ　ＪＡＰＡＮ　ＥＱＵＩＴＹ　ＳＭＡＬＬ　ＣＡＰ　ＡＢＳＯＬＵＴＥ　ＶＡＬＵＥ\n（常任代理人　株式会社三井住友銀行）",
+      "shares": 120000,
+      "ratio": 2.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 89100,
+      "ratio": 1.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Ｍａｌｃｏｌｍ　Ｆ．ＭａｃＬｅａｎ　ＩＶ",
+      "shares": 75000,
+      "ratio": 1.43,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.38,
+      "individual": 12.06,
+      "financial": 7.95,
+      "securities": 6.52,
+      "employee": 2.73,
+      "trust": 4.39,
+      "other": 1.43
+    },
+    "individual_total": 12.06,
+    "top10_total": 69.46
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YJX2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｙ－Ｂｌｏｏｄ",
+          "shares": 1800000,
+          "ratio": 34.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "横嶋　大輔",
+          "shares": 631800,
+          "ratio": 12.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　１３４０８８\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 296600,
+          "ratio": 5.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松井証券株式会社",
+          "shares": 221100,
+          "ratio": 4.22,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ギミック従業員持株会",
+          "shares": 143400,
+          "ratio": 2.73,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 141200,
+          "ratio": 2.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 120651,
+          "ratio": 2.3,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＢＢＨ　ＬＵＸ／ＢＲＯＷＮ　ＢＲＯＴＨＥＲＳ　ＨＡＲＲＩＭＡＮ　（ＬＵＸＥＭＢＯＵＲＧ）　ＳＣＡ　ＣＵＳＴＯＤＩＡＮ　ＦＯＲ　ＳＭＤ－ＡＭ　ＦＵＮＤＳ　－　ＤＳＢＩ　ＪＡＰＡＮ　ＥＱＵＩＴＹ　ＳＭＡＬＬ　ＣＡＰ　ＡＢＳＯＬＵＴＥ　ＶＡＬＵＥ\n（常任代理人　株式会社三井住友銀行）",
+          "shares": 120000,
+          "ratio": 2.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 89100,
+          "ratio": 1.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Ｍａｌｃｏｌｍ　Ｆ．ＭａｃＬｅａｎ　ＩＶ",
+          "shares": 75000,
+          "ratio": 1.43,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.38,
+          "individual": 12.06,
+          "financial": 7.95,
+          "securities": 6.52,
+          "employee": 2.73,
+          "trust": 4.39,
+          "other": 1.43
+        },
+        "individual_total": 12.06,
+        "top10_total": 69.46
+      }
+    }
+  ]
+}

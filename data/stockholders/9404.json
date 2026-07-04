@@ -1,0 +1,218 @@
+{
+  "secCode": "9404",
+  "issuerName": "日本テレビホールディングス株式会社",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社読売新聞グループ本社",
+      "shares": 37649480,
+      "ratio": 14.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 23061700,
+      "ratio": 9.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUSTCOMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 21558305,
+      "ratio": 8.45,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "読売テレビ放送株式会社",
+      "shares": 17133160,
+      "ratio": 6.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社読売新聞東京本社",
+      "shares": 15939700,
+      "ratio": 6.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "学校法人帝京大学",
+      "shares": 9623720,
+      "ratio": 3.77,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＮＴＴドコモ",
+      "shares": 7779000,
+      "ratio": 3.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社よみうりランド",
+      "shares": 5236000,
+      "ratio": 2.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中京テレビ放送株式会社",
+      "shares": 5229680,
+      "ratio": 2.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社リクルートホールディングス",
+      "shares": 5160000,
+      "ratio": 2.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.9,
+      "trust": 9.04,
+      "foreign": 8.45,
+      "foundation": 3.77
+    },
+    "individual_total": 0,
+    "top10_total": 58.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第93期(2025/04/01－2026/03/31)",
+      "docID": "S100Y9BG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社読売新聞グループ本社",
+          "shares": 37649480,
+          "ratio": 14.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 23061700,
+          "ratio": 9.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUSTCOMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 21558305,
+          "ratio": 8.45,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "読売テレビ放送株式会社",
+          "shares": 17133160,
+          "ratio": 6.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社読売新聞東京本社",
+          "shares": 15939700,
+          "ratio": 6.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "学校法人帝京大学",
+          "shares": 9623720,
+          "ratio": 3.77,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＮＴＴドコモ",
+          "shares": 7779000,
+          "ratio": 3.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社よみうりランド",
+          "shares": 5236000,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中京テレビ放送株式会社",
+          "shares": 5229680,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社リクルートホールディングス",
+          "shares": 5160000,
+          "ratio": 2.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.9,
+          "trust": 9.04,
+          "foreign": 8.45,
+          "foundation": 3.77
+        },
+        "individual_total": 0,
+        "top10_total": 58.16
+      }
+    }
+  ]
+}

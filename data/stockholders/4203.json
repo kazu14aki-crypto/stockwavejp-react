@@ -1,0 +1,220 @@
+{
+  "secCode": "4203",
+  "issuerName": "住友ベークライト株式会社",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 11748000,
+      "ratio": 13.39,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "住友化学株式会社",
+      "shares": 9251000,
+      "ratio": 10.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 7103000,
+      "ratio": 8.1,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 6640000,
+      "ratio": 7.57,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GIC PRIVATE LIMITED - C（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 6519000,
+      "ratio": 7.43,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口４）",
+      "shares": 2279000,
+      "ratio": 2.6,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1391000,
+      "ratio": 1.59,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行・三井住友信託退給口",
+      "shares": 1309000,
+      "ratio": 1.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三井住友銀行",
+      "shares": 1308000,
+      "ratio": 1.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 1079000,
+      "ratio": 1.23,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 25.58,
+      "corporate": 10.55,
+      "foreign": 16.59,
+      "financial": 1.49,
+      "securities": 1.23
+    },
+    "individual_total": 0,
+    "top10_total": 55.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第135期(2025/04/01－2026/03/31)",
+      "docID": "S100YE8L",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 11748000,
+          "ratio": 13.39,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "住友化学株式会社",
+          "shares": 9251000,
+          "ratio": 10.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 7103000,
+          "ratio": 8.1,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 6640000,
+          "ratio": 7.57,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GIC PRIVATE LIMITED - C（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 6519000,
+          "ratio": 7.43,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 2279000,
+          "ratio": 2.6,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1391000,
+          "ratio": 1.59,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行・三井住友信託退給口",
+          "shares": 1309000,
+          "ratio": 1.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三井住友銀行",
+          "shares": 1308000,
+          "ratio": 1.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 1079000,
+          "ratio": 1.23,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 25.58,
+          "corporate": 10.55,
+          "foreign": 16.59,
+          "financial": 1.49,
+          "securities": 1.23
+        },
+        "individual_total": 0,
+        "top10_total": 55.44
+      }
+    }
+  ]
+}

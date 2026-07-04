@@ -1,0 +1,222 @@
+{
+  "secCode": "8129",
+  "issuerName": "東邦ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５０１８（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 9646000,
+      "ratio": 14.91,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 7332000,
+      "ratio": 11.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "塩野義製薬株式会社",
+      "shares": 3500000,
+      "ratio": 5.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＧＯＬＤＭＡＮ，ＳＡＣＨＳ　＆　ＣＯ．ＲＥＧ （常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 2801000,
+      "ratio": 4.33,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "３Ｄ　ＷＨ　ＯＰＰＯＲＴＵＮＩＴＹ　ＭＡＳＴＥＲ　ＯＦＣ　－　３Ｄ　ＷＨ　ＯＰＰ　ＯＲＴＵＮＩＴＹ　ＨＯＬＤＩＮＧＳ （常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2400000,
+      "ratio": 3.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1622000,
+      "ratio": 2.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "河野　博行",
+      "shares": 1333000,
+      "ratio": 2.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "みずほ信託銀行株式会社　退職給付信託　第一三共口　再信託受託者　株式会社日本カストディ銀行",
+      "shares": 1328000,
+      "ratio": 2.05,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ （常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 1296000,
+      "ratio": 2.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東邦ホールディングス従業員持株会",
+      "shares": 1205000,
+      "ratio": 1.86,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 18.62,
+      "trust": 15.89,
+      "corporate": 5.41,
+      "securities": 6.33,
+      "individual": 2.06,
+      "employee": 1.86
+    },
+    "individual_total": 2.06,
+    "top10_total": 50.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YHSN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５０１８（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 9646000,
+          "ratio": 14.91,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 7332000,
+          "ratio": 11.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "塩野義製薬株式会社",
+          "shares": 3500000,
+          "ratio": 5.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＧＯＬＤＭＡＮ，ＳＡＣＨＳ　＆　ＣＯ．ＲＥＧ （常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 2801000,
+          "ratio": 4.33,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "３Ｄ　ＷＨ　ＯＰＰＯＲＴＵＮＩＴＹ　ＭＡＳＴＥＲ　ＯＦＣ　－　３Ｄ　ＷＨ　ＯＰＰ　ＯＲＴＵＮＩＴＹ　ＨＯＬＤＩＮＧＳ （常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2400000,
+          "ratio": 3.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1622000,
+          "ratio": 2.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "河野　博行",
+          "shares": 1333000,
+          "ratio": 2.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "みずほ信託銀行株式会社　退職給付信託　第一三共口　再信託受託者　株式会社日本カストディ銀行",
+          "shares": 1328000,
+          "ratio": 2.05,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ （常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 1296000,
+          "ratio": 2.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東邦ホールディングス従業員持株会",
+          "shares": 1205000,
+          "ratio": 1.86,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 18.62,
+          "trust": 15.89,
+          "corporate": 5.41,
+          "securities": 6.33,
+          "individual": 2.06,
+          "employee": 1.86
+        },
+        "individual_total": 2.06,
+        "top10_total": 50.17
+      }
+    }
+  ]
+}

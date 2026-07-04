@@ -1,0 +1,222 @@
+{
+  "secCode": "1810",
+  "issuerName": "松井建設株式会社",
+  "updated_at": "2026/07/04 17:58 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1997000,
+      "ratio": 7.01,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 1867000,
+      "ratio": 6.55,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松井建設取引先持株会",
+      "shares": 1306000,
+      "ratio": 4.58,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 1303000,
+      "ratio": 4.57,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社北陸銀行",
+      "shares": 1303000,
+      "ratio": 4.57,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社大垣共立銀行",
+      "shares": 1229000,
+      "ratio": 4.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "松井建設従業員持株会",
+      "shares": 1199000,
+      "ratio": 4.21,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社松井興産",
+      "shares": 935000,
+      "ratio": 3.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "公益財団法人松井角平記念財団",
+      "shares": 850000,
+      "ratio": 2.98,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 764000,
+      "ratio": 2.68,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 7.01,
+      "other": 6.55,
+      "employee": 8.79,
+      "financial": 16.13,
+      "corporate": 3.28,
+      "foundation": 2.98
+    },
+    "individual_total": 0,
+    "top10_total": 44.74
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第97期(2025/04/01－2026/03/31)",
+      "docID": "S100YHYW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1997000,
+          "ratio": 7.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 1867000,
+          "ratio": 6.55,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松井建設取引先持株会",
+          "shares": 1306000,
+          "ratio": 4.58,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 1303000,
+          "ratio": 4.57,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社北陸銀行",
+          "shares": 1303000,
+          "ratio": 4.57,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社大垣共立銀行",
+          "shares": 1229000,
+          "ratio": 4.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "松井建設従業員持株会",
+          "shares": 1199000,
+          "ratio": 4.21,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社松井興産",
+          "shares": 935000,
+          "ratio": 3.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "公益財団法人松井角平記念財団",
+          "shares": 850000,
+          "ratio": 2.98,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 764000,
+          "ratio": 2.68,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 7.01,
+          "other": 6.55,
+          "employee": 8.79,
+          "financial": 16.13,
+          "corporate": 3.28,
+          "foundation": 2.98
+        },
+        "individual_total": 0,
+        "top10_total": 44.74
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "5138",
+  "issuerName": "株式会社Ｒｅｂａｓｅ",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社elpido（注）2",
+      "shares": 1540000,
+      "ratio": 31.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐藤　海",
+      "shares": 815500,
+      "ratio": 16.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社El Monte Garage（注）3",
+      "shares": 396000,
+      "ratio": 8.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "髙畠　裕二",
+      "shares": 359500,
+      "ratio": 7.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社リバーフィールド",
+      "shares": 215400,
+      "ratio": 4.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社大正スカイビル",
+      "shares": 199000,
+      "ratio": 4.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 188100,
+      "ratio": 3.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "吉田　士陽",
+      "shares": 131000,
+      "ratio": 2.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 113620,
+      "ratio": 2.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "赤木　賢敏",
+      "shares": 100000,
+      "ratio": 2.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 47.79,
+      "individual": 28.58,
+      "trust": 3.82,
+      "securities": 2.31
+    },
+    "individual_total": 28.58,
+    "top10_total": 82.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/04/01－2026/03/31)",
+      "docID": "S100YGUZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社elpido（注）2",
+          "shares": 1540000,
+          "ratio": 31.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐藤　海",
+          "shares": 815500,
+          "ratio": 16.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社El Monte Garage（注）3",
+          "shares": 396000,
+          "ratio": 8.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "髙畠　裕二",
+          "shares": 359500,
+          "ratio": 7.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社リバーフィールド",
+          "shares": 215400,
+          "ratio": 4.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社大正スカイビル",
+          "shares": 199000,
+          "ratio": 4.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 188100,
+          "ratio": 3.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "吉田　士陽",
+          "shares": 131000,
+          "ratio": 2.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 113620,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "赤木　賢敏",
+          "shares": 100000,
+          "ratio": 2.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 47.79,
+          "individual": 28.58,
+          "trust": 3.82,
+          "securities": 2.31
+        },
+        "individual_total": 28.58,
+        "top10_total": 82.5
+      }
+    }
+  ]
+}

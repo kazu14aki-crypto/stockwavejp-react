@@ -1,0 +1,220 @@
+{
+  "secCode": "1878",
+  "issuerName": "大東建託株式会社",
+  "updated_at": "2026/07/04 18:02 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 47025000,
+      "ratio": 14.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 19941000,
+      "ratio": 6.11,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信株式会社",
+      "shares": 18557000,
+      "ratio": 5.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 18427000,
+      "ratio": 5.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NORTHERN TRUST CO. (AVFC) RE SILCHESTER INTERNATIONAL INVESTORS INTERNATIONAL VALUE EQUITY TRUST(常任代理人 香港上海銀行東京支店)",
+      "shares": 13191000,
+      "ratio": 4.04,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大東建託協力会持株会",
+      "shares": 8183000,
+      "ratio": 2.51,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大東建託従業員持株会",
+      "shares": 8013000,
+      "ratio": 2.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NORTHERN TRUST CO.(AVFC) RE U.S. TAX EXEMPTED PENSION FUNDS(常任代理人 香港上海銀行東京支店)",
+      "shares": 7758000,
+      "ratio": 2.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 6906000,
+      "ratio": 2.12,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NORTHERN TRUST CO.(AVFC) RE NON TREATY CLIENTS ACCOUNT(常任代理人 香港上海銀行東京支店)",
+      "shares": 6379000,
+      "ratio": 1.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.07,
+      "foreign": 14.49,
+      "corporate": 5.69,
+      "employee": 4.97,
+      "securities": 2.12
+    },
+    "individual_total": 0,
+    "top10_total": 47.34
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第52期(2025/04/01－2026/03/31)",
+      "docID": "S100YFJK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 47025000,
+          "ratio": 14.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 19941000,
+          "ratio": 6.11,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信株式会社",
+          "shares": 18557000,
+          "ratio": 5.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 18427000,
+          "ratio": 5.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NORTHERN TRUST CO. (AVFC) RE SILCHESTER INTERNATIONAL INVESTORS INTERNATIONAL VALUE EQUITY TRUST(常任代理人 香港上海銀行東京支店)",
+          "shares": 13191000,
+          "ratio": 4.04,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大東建託協力会持株会",
+          "shares": 8183000,
+          "ratio": 2.51,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大東建託従業員持株会",
+          "shares": 8013000,
+          "ratio": 2.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NORTHERN TRUST CO.(AVFC) RE U.S. TAX EXEMPTED PENSION FUNDS(常任代理人 香港上海銀行東京支店)",
+          "shares": 7758000,
+          "ratio": 2.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 6906000,
+          "ratio": 2.12,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NORTHERN TRUST CO.(AVFC) RE NON TREATY CLIENTS ACCOUNT(常任代理人 香港上海銀行東京支店)",
+          "shares": 6379000,
+          "ratio": 1.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.07,
+          "foreign": 14.49,
+          "corporate": 5.69,
+          "employee": 4.97,
+          "securities": 2.12
+        },
+        "individual_total": 0,
+        "top10_total": 47.34
+      }
+    }
+  ]
+}

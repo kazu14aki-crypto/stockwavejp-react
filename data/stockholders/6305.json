@@ -1,0 +1,220 @@
+{
+  "secCode": "6305",
+  "issuerName": "日立建機株式会社",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "HCJIホールディングス株式会社",
+      "shares": 55290000,
+      "ratio": 25.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日立製作所",
+      "shares": 39062000,
+      "ratio": 18.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 29314000,
+      "ratio": 13.78,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "シトラスインベストメント合同会社",
+      "shares": 15740000,
+      "ratio": 7.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 12196000,
+      "ratio": 5.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　株式会社みずほ銀行 決済営業部)",
+      "shares": 2223000,
+      "ratio": 1.05,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "JPモルガン証券株式会社",
+      "shares": 2033000,
+      "ratio": 0.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNYM AS AGT/CLTS 10 PERCENT(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 1899000,
+      "ratio": 0.89,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行株式会社(投信口)",
+      "shares": 1845000,
+      "ratio": 0.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES (常任代理人　香港上海銀行 東京支店)",
+      "shares": 1673000,
+      "ratio": 0.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.75,
+      "trust": 19.51,
+      "foreign": 2.73,
+      "securities": 0.96,
+      "financial": 0.87
+    },
+    "individual_total": 0,
+    "top10_total": 75.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YIBR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "HCJIホールディングス株式会社",
+          "shares": 55290000,
+          "ratio": 25.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日立製作所",
+          "shares": 39062000,
+          "ratio": 18.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 29314000,
+          "ratio": 13.78,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "シトラスインベストメント合同会社",
+          "shares": 15740000,
+          "ratio": 7.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 12196000,
+          "ratio": 5.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人　株式会社みずほ銀行 決済営業部)",
+          "shares": 2223000,
+          "ratio": 1.05,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "JPモルガン証券株式会社",
+          "shares": 2033000,
+          "ratio": 0.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNYM AS AGT/CLTS 10 PERCENT(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 1899000,
+          "ratio": 0.89,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行株式会社(投信口)",
+          "shares": 1845000,
+          "ratio": 0.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES (常任代理人　香港上海銀行 東京支店)",
+          "shares": 1673000,
+          "ratio": 0.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.75,
+          "trust": 19.51,
+          "foreign": 2.73,
+          "securities": 0.96,
+          "financial": 0.87
+        },
+        "individual_total": 0,
+        "top10_total": 75.82
+      }
+    }
+  ]
+}

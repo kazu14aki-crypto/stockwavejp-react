@@ -1,0 +1,218 @@
+{
+  "secCode": "8081",
+  "issuerName": "株式会社カナデン",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三菱電機株式会社",
+      "shares": 4720000,
+      "ratio": 21.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "カナデン取引先持株会",
+      "shares": 2959800,
+      "ratio": 13.28,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1773900,
+      "ratio": 7.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "カナデン従業員持株会",
+      "shares": 855900,
+      "ratio": 3.84,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三菱倉庫株式会社",
+      "shares": 656300,
+      "ratio": 2.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BBH BOSTON FOR NOMURA JAPAN SMALLER CAPITALIZATION FUND 620065\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 417800,
+      "ratio": 1.87,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社サンセイテクノス",
+      "shares": 230000,
+      "ratio": 1.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 222400,
+      "ratio": 1.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "DFA INTL SMALL CAP VALUE PORTFOLIO （常任代理人　シティバンク、エヌ・エイ）",
+      "shares": 210900,
+      "ratio": 0.95,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 199000,
+      "ratio": 0.89,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.14,
+      "employee": 17.12,
+      "trust": 8.96,
+      "foreign": 3.71
+    },
+    "individual_total": 0,
+    "top10_total": 54.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第176期(2025/04/01－2026/03/31)",
+      "docID": "S100YFEF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三菱電機株式会社",
+          "shares": 4720000,
+          "ratio": 21.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "カナデン取引先持株会",
+          "shares": 2959800,
+          "ratio": 13.28,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1773900,
+          "ratio": 7.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "カナデン従業員持株会",
+          "shares": 855900,
+          "ratio": 3.84,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三菱倉庫株式会社",
+          "shares": 656300,
+          "ratio": 2.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BBH BOSTON FOR NOMURA JAPAN SMALLER CAPITALIZATION FUND 620065\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 417800,
+          "ratio": 1.87,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社サンセイテクノス",
+          "shares": 230000,
+          "ratio": 1.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 222400,
+          "ratio": 1.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "DFA INTL SMALL CAP VALUE PORTFOLIO （常任代理人　シティバンク、エヌ・エイ）",
+          "shares": 210900,
+          "ratio": 0.95,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 199000,
+          "ratio": 0.89,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.14,
+          "employee": 17.12,
+          "trust": 8.96,
+          "foreign": 3.71
+        },
+        "individual_total": 0,
+        "top10_total": 54.93
+      }
+    }
+  ]
+}

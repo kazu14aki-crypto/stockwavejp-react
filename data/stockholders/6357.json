@@ -1,0 +1,326 @@
+{
+  "secCode": "6357",
+  "issuerName": "三精テクノロジーズ株式会社",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "丸一鋼管株式会社",
+      "shares": 1674000,
+      "ratio": 9.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "京阪神ビルディング株式会社",
+      "shares": 828000,
+      "ratio": 4.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三井住友銀行",
+      "shares": 805000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三十三銀行",
+      "shares": 805000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社酉島製作所",
+      "shares": 801000,
+      "ratio": 4.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三井住友ファイナンス＆リース株式会社",
+      "shares": 693000,
+      "ratio": 3.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友カード株式会社",
+      "shares": 692000,
+      "ratio": 3.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鳥海紳悟",
+      "shares": 552000,
+      "ratio": 3.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 528000,
+      "ratio": 2.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "鳥海裕二",
+      "shares": 412000,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.76,
+      "financial": 8.86,
+      "individual": 5.3,
+      "trust": 2.9
+    },
+    "individual_total": 5.3,
+    "top10_total": 42.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YMU3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "丸一鋼管株式会社",
+          "shares": 1674000,
+          "ratio": 9.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "京阪神ビルディング株式会社",
+          "shares": 828000,
+          "ratio": 4.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三井住友銀行",
+          "shares": 805000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三十三銀行",
+          "shares": 805000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社酉島製作所",
+          "shares": 801000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三井住友ファイナンス＆リース株式会社",
+          "shares": 693000,
+          "ratio": 3.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友カード株式会社",
+          "shares": 692000,
+          "ratio": 3.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鳥海紳悟",
+          "shares": 552000,
+          "ratio": 3.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 528000,
+          "ratio": 2.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鳥海裕二",
+          "shares": 412000,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.76,
+          "financial": 8.86,
+          "individual": 5.3,
+          "trust": 2.9
+        },
+        "individual_total": 5.3,
+        "top10_total": 42.82
+      }
+    },
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YE8X",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "丸一鋼管株式会社",
+          "shares": 1674000,
+          "ratio": 9.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "京阪神ビルディング株式会社",
+          "shares": 828000,
+          "ratio": 4.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三井住友銀行",
+          "shares": 805000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三十三銀行",
+          "shares": 805000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社酉島製作所",
+          "shares": 801000,
+          "ratio": 4.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三井住友ファイナンス＆リース株式会社",
+          "shares": 693000,
+          "ratio": 3.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友カード株式会社",
+          "shares": 692000,
+          "ratio": 3.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鳥海紳悟",
+          "shares": 552000,
+          "ratio": 3.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 528000,
+          "ratio": 2.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鳥海貴子",
+          "shares": 412000,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.76,
+          "financial": 8.86,
+          "individual": 5.3,
+          "trust": 2.9
+        },
+        "individual_total": 5.3,
+        "top10_total": 42.82
+      }
+    }
+  ]
+}

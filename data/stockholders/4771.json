@@ -1,0 +1,220 @@
+{
+  "secCode": "4771",
+  "issuerName": "株式会社エフアンドエム",
+  "updated_at": "2026/07/04 18:22 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社モリナカホールディングス",
+      "shares": 6450000,
+      "ratio": 43.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+      "shares": 1109800,
+      "ratio": 7.5,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "エフアンドエム従業員持株会",
+      "shares": 711597,
+      "ratio": 4.81,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 583700,
+      "ratio": 3.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 467200,
+      "ratio": 3.16,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信株式会社",
+      "shares": 351600,
+      "ratio": 2.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ヨシダ　トモヒロ",
+      "shares": 351300,
+      "ratio": 2.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "弥生株式会社",
+      "shares": 350000,
+      "ratio": 2.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "森中　一郎",
+      "shares": 303600,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "奥村　美樹江",
+      "shares": 245300,
+      "ratio": 1.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.35,
+      "other": 10.66,
+      "employee": 4.81,
+      "trust": 3.95,
+      "individual": 6.08
+    },
+    "individual_total": 6.08,
+    "top10_total": 73.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第36期(2025/04/01－2026/03/31)",
+      "docID": "S100YIXJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社モリナカホールディングス",
+          "shares": 6450000,
+          "ratio": 43.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+          "shares": 1109800,
+          "ratio": 7.5,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "エフアンドエム従業員持株会",
+          "shares": 711597,
+          "ratio": 4.81,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 583700,
+          "ratio": 3.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 467200,
+          "ratio": 3.16,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信株式会社",
+          "shares": 351600,
+          "ratio": 2.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ヨシダ　トモヒロ",
+          "shares": 351300,
+          "ratio": 2.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "弥生株式会社",
+          "shares": 350000,
+          "ratio": 2.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "森中　一郎",
+          "shares": 303600,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "奥村　美樹江",
+          "shares": 245300,
+          "ratio": 1.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.35,
+          "other": 10.66,
+          "employee": 4.81,
+          "trust": 3.95,
+          "individual": 6.08
+        },
+        "individual_total": 6.08,
+        "top10_total": 73.85
+      }
+    }
+  ]
+}

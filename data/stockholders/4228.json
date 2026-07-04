@@ -1,0 +1,220 @@
+{
+  "secCode": "4228",
+  "issuerName": "積水化成品工業株式会社",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "積水化学工業株式会社",
+      "shares": 9855000,
+      "ratio": 21.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）（注２）",
+      "shares": 3741000,
+      "ratio": 8.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "積水化成品従業員持株会",
+      "shares": 2005000,
+      "ratio": 4.4,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "積水樹脂株式会社",
+      "shares": 1419000,
+      "ratio": 3.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社エフピコ",
+      "shares": 1348000,
+      "ratio": 2.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1327000,
+      "ratio": 2.91,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "積水化成品取引先持株会",
+      "shares": 1189000,
+      "ratio": 2.61,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 985000,
+      "ratio": 2.16,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）（注２）",
+      "shares": 974000,
+      "ratio": 2.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 888000,
+      "ratio": 1.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.68,
+      "trust": 12.51,
+      "employee": 7.01,
+      "financial": 2.91,
+      "securities": 1.95
+    },
+    "individual_total": 0,
+    "top10_total": 52.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第82期(2025/04/01－2026/03/31)",
+      "docID": "S100YI2M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "積水化学工業株式会社",
+          "shares": 9855000,
+          "ratio": 21.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）（注２）",
+          "shares": 3741000,
+          "ratio": 8.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "積水化成品従業員持株会",
+          "shares": 2005000,
+          "ratio": 4.4,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "積水樹脂株式会社",
+          "shares": 1419000,
+          "ratio": 3.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社エフピコ",
+          "shares": 1348000,
+          "ratio": 2.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1327000,
+          "ratio": 2.91,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "積水化成品取引先持株会",
+          "shares": 1189000,
+          "ratio": 2.61,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 985000,
+          "ratio": 2.16,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）（注２）",
+          "shares": 974000,
+          "ratio": 2.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 888000,
+          "ratio": 1.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.68,
+          "trust": 12.51,
+          "employee": 7.01,
+          "financial": 2.91,
+          "securities": 1.95
+        },
+        "individual_total": 0,
+        "top10_total": 52.06
+      }
+    }
+  ]
+}

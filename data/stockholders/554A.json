@@ -1,0 +1,218 @@
+{
+  "secCode": "554A",
+  "issuerName": "株式会社バトンズ",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社日本Ｍ＆Ａセンターホールディングス",
+      "shares": 1400000,
+      "ratio": 32.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "神瀬　悠一",
+      "shares": 950000,
+      "ratio": 22.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "宮竹　秀太郎",
+      "shares": 599900,
+      "ratio": 13.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "XTech２号投資事業有限責任組合",
+      "shares": 365000,
+      "ratio": 8.46,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アニマルスピリッツ１号投資事業有限責任組合",
+      "shares": 352500,
+      "ratio": 8.17,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "DIMENSION２号投資事業有限責任組合",
+      "shares": 315000,
+      "ratio": 7.3,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "バトンズ社員持株会",
+      "shares": 86900,
+      "ratio": 2.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鈴木　安夫",
+      "shares": 65000,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "渡部　恒郎",
+      "shares": 30000,
+      "ratio": 0.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "朝倉　祐介",
+      "shares": 20000,
+      "ratio": 0.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.47,
+      "individual": 38.61,
+      "other": 23.93,
+      "employee": 2.02
+    },
+    "individual_total": 38.61,
+    "top10_total": 97.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YNO3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社日本Ｍ＆Ａセンターホールディングス",
+          "shares": 1400000,
+          "ratio": 32.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "神瀬　悠一",
+          "shares": 950000,
+          "ratio": 22.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "宮竹　秀太郎",
+          "shares": 599900,
+          "ratio": 13.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "XTech２号投資事業有限責任組合",
+          "shares": 365000,
+          "ratio": 8.46,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アニマルスピリッツ１号投資事業有限責任組合",
+          "shares": 352500,
+          "ratio": 8.17,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "DIMENSION２号投資事業有限責任組合",
+          "shares": 315000,
+          "ratio": 7.3,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "バトンズ社員持株会",
+          "shares": 86900,
+          "ratio": 2.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鈴木　安夫",
+          "shares": 65000,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "渡部　恒郎",
+          "shares": 30000,
+          "ratio": 0.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "朝倉　祐介",
+          "shares": 20000,
+          "ratio": 0.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.47,
+          "individual": 38.61,
+          "other": 23.93,
+          "employee": 2.02
+        },
+        "individual_total": 38.61,
+        "top10_total": 97.03
+      }
+    }
+  ]
+}

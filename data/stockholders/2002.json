@@ -1,0 +1,220 @@
+{
+  "secCode": "2002",
+  "issuerName": "株式会社日清製粉グループ本社",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 42131000,
+      "ratio": 15.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険相互会社",
+      "shares": 19387000,
+      "ratio": 6.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山崎製パン株式会社",
+      "shares": 16988000,
+      "ratio": 6.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 16089000,
+      "ratio": 5.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 8947000,
+      "ratio": 3.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "農林中央金庫",
+      "shares": 6932000,
+      "ratio": 2.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "丸紅株式会社",
+      "shares": 6284000,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "全国共済農業協同組合連合会",
+      "shares": 6045000,
+      "ratio": 2.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日清製粉グループ社員持株会",
+      "shares": 4141000,
+      "ratio": 1.47,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 3924000,
+      "ratio": 1.39,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.72,
+      "financial": 14.69,
+      "corporate": 8.27,
+      "employee": 1.47,
+      "foreign": 1.39
+    },
+    "individual_total": 0,
+    "top10_total": 46.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第182期(2025/04/01－2026/03/31)",
+      "docID": "S100YE6A",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 42131000,
+          "ratio": 15.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険相互会社",
+          "shares": 19387000,
+          "ratio": 6.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山崎製パン株式会社",
+          "shares": 16988000,
+          "ratio": 6.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 16089000,
+          "ratio": 5.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 8947000,
+          "ratio": 3.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "農林中央金庫",
+          "shares": 6932000,
+          "ratio": 2.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "丸紅株式会社",
+          "shares": 6284000,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "全国共済農業協同組合連合会",
+          "shares": 6045000,
+          "ratio": 2.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日清製粉グループ社員持株会",
+          "shares": 4141000,
+          "ratio": 1.47,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 3924000,
+          "ratio": 1.39,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.72,
+          "financial": 14.69,
+          "corporate": 8.27,
+          "employee": 1.47,
+          "foreign": 1.39
+        },
+        "individual_total": 0,
+        "top10_total": 46.54
+      }
+    }
+  ]
+}

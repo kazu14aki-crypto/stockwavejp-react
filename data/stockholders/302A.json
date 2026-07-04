@@ -1,0 +1,216 @@
+{
+  "secCode": "302A",
+  "issuerName": "株式会社ビースタイルホールディングス",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社Ｏｒｉｇｉｎａｌ３  代表社員三原邦彦",
+      "shares": 304900,
+      "ratio": 20.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "合同会社ファースト・ステージ代表社員増村一郎",
+      "shares": 228500,
+      "ratio": 15.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "島田亨",
+      "shares": 156000,
+      "ratio": 10.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "増村一郎",
+      "shares": 80000,
+      "ratio": 5.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ファースティ",
+      "shares": 51000,
+      "ratio": 3.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ビー・スタイル従業員持株会",
+      "shares": 43500,
+      "ratio": 2.98,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "笠原朗",
+      "shares": 43300,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "水元公仁",
+      "shares": 42800,
+      "ratio": 2.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "稲見吉邦",
+      "shares": 35000,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "肥田義光",
+      "shares": 26600,
+      "ratio": 1.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.15,
+      "individual": 26.34,
+      "employee": 2.98
+    },
+    "individual_total": 26.34,
+    "top10_total": 69.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第7期(2025/04/01－2026/03/31)",
+      "docID": "S100YF60",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社Ｏｒｉｇｉｎａｌ３  代表社員三原邦彦",
+          "shares": 304900,
+          "ratio": 20.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "合同会社ファースト・ステージ代表社員増村一郎",
+          "shares": 228500,
+          "ratio": 15.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "島田亨",
+          "shares": 156000,
+          "ratio": 10.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "増村一郎",
+          "shares": 80000,
+          "ratio": 5.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ファースティ",
+          "shares": 51000,
+          "ratio": 3.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ビー・スタイル従業員持株会",
+          "shares": 43500,
+          "ratio": 2.98,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "笠原朗",
+          "shares": 43300,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "水元公仁",
+          "shares": 42800,
+          "ratio": 2.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "稲見吉邦",
+          "shares": 35000,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "肥田義光",
+          "shares": 26600,
+          "ratio": 1.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.15,
+          "individual": 26.34,
+          "employee": 2.98
+        },
+        "individual_total": 26.34,
+        "top10_total": 69.47
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "3793",
+  "issuerName": "株式会社ドリコム",
+  "updated_at": "2026/07/04 18:54 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "内藤　裕紀",
+      "shares": 9930000,
+      "ratio": 33.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社バンダイナムコホールディングス",
+      "shares": 5532000,
+      "ratio": 18.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山口　憲一",
+      "shares": 728000,
+      "ratio": 2.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 523173,
+      "ratio": 1.77,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託Ｅ口)",
+      "shares": 480400,
+      "ratio": 1.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本証券金融株式会社",
+      "shares": 415800,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社共有口",
+      "shares": 415106,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社モバテック",
+      "shares": 200000,
+      "ratio": 0.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "武田　壮太郎",
+      "shares": 200000,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPモルガン証券株式会社",
+      "shares": 183980,
+      "ratio": 0.62,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 36.91,
+      "corporate": 19.48,
+      "securities": 5.21,
+      "trust": 1.63
+    },
+    "individual_total": 36.91,
+    "top10_total": 63.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YGW0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "内藤　裕紀",
+          "shares": 9930000,
+          "ratio": 33.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社バンダイナムコホールディングス",
+          "shares": 5532000,
+          "ratio": 18.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山口　憲一",
+          "shares": 728000,
+          "ratio": 2.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 523173,
+          "ratio": 1.77,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託Ｅ口)",
+          "shares": 480400,
+          "ratio": 1.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本証券金融株式会社",
+          "shares": 415800,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社共有口",
+          "shares": 415106,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社モバテック",
+          "shares": 200000,
+          "ratio": 0.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "武田　壮太郎",
+          "shares": 200000,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 183980,
+          "ratio": 0.62,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 36.91,
+          "corporate": 19.48,
+          "securities": 5.21,
+          "trust": 1.63
+        },
+        "individual_total": 36.91,
+        "top10_total": 63.23
+      }
+    }
+  ]
+}

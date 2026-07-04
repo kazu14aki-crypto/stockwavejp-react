@@ -1,0 +1,216 @@
+{
+  "secCode": "4256",
+  "issuerName": "株式会社サインド",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "奥脇 隆司",
+      "shares": 2180000,
+      "ratio": 35.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高橋 直也",
+      "shares": 1780000,
+      "ratio": 29.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "亀井 信吾",
+      "shares": 350000,
+      "ratio": 5.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 305800,
+      "ratio": 5.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "池田 英右",
+      "shares": 130000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "PERSHING-DIV. OF DLJ SECS. CORP.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 74200,
+      "ratio": 1.22,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NATIONAL FINANCIAL SERVICES LCC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 67200,
+      "ratio": 1.1,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "辻 章一",
+      "shares": 20300,
+      "ratio": 0.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "安留 但馬",
+      "shares": 20000,
+      "ratio": 0.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "正田 誠",
+      "shares": 20000,
+      "ratio": 0.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 74.18,
+      "securities": 5.04,
+      "other": 2.32
+    },
+    "individual_total": 74.18,
+    "top10_total": 81.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第15期(2025/04/01－2026/03/31)",
+      "docID": "S100YJVR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "奥脇 隆司",
+          "shares": 2180000,
+          "ratio": 35.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高橋 直也",
+          "shares": 1780000,
+          "ratio": 29.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "亀井 信吾",
+          "shares": 350000,
+          "ratio": 5.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 305800,
+          "ratio": 5.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "池田 英右",
+          "shares": 130000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "PERSHING-DIV. OF DLJ SECS. CORP.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 74200,
+          "ratio": 1.22,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NATIONAL FINANCIAL SERVICES LCC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 67200,
+          "ratio": 1.1,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "辻 章一",
+          "shares": 20300,
+          "ratio": 0.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "安留 但馬",
+          "shares": 20000,
+          "ratio": 0.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "正田 誠",
+          "shares": 20000,
+          "ratio": 0.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 74.18,
+          "securities": 5.04,
+          "other": 2.32
+        },
+        "individual_total": 74.18,
+        "top10_total": 81.54
+      }
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "secCode": "5449",
+  "issuerName": "大阪製鐵株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本製鉄(株)",
+      "shares": 16629000,
+      "ratio": 55.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERTRUST TRUSTEES（CAYMAN） LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF JAPAN-UP（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 5231000,
+      "ratio": 17.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本証券金融株式会社",
+      "shares": 836000,
+      "ratio": 2.79,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "立花証券㈱",
+      "shares": 760000,
+      "ratio": 2.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行㈱",
+      "shares": 673000,
+      "ratio": 2.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JPMSPLC CLIENT ASSETS SK JPY（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 435000,
+      "ratio": 1.45,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "CGML PB CLIENT ACCOUNT/ COLLATERAL（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 250000,
+      "ratio": 0.84,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT （常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 213000,
+      "ratio": 0.71,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN　SACHS　BANK　EUROPE　SE（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 200000,
+      "ratio": 0.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大阪製鐵社員持株会",
+      "shares": 182000,
+      "ratio": 0.61,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 55.58,
+      "financial": 17.48,
+      "securities": 5.33,
+      "trust": 2.25,
+      "other": 1.45,
+      "foreign": 2.22,
+      "employee": 0.61
+    },
+    "individual_total": 0,
+    "top10_total": 84.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/04/01－2026/03/31)",
+      "docID": "S100YHWP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本製鉄(株)",
+          "shares": 16629000,
+          "ratio": 55.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERTRUST TRUSTEES（CAYMAN） LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF JAPAN-UP（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 5231000,
+          "ratio": 17.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本証券金融株式会社",
+          "shares": 836000,
+          "ratio": 2.79,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "立花証券㈱",
+          "shares": 760000,
+          "ratio": 2.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行㈱",
+          "shares": 673000,
+          "ratio": 2.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JPMSPLC CLIENT ASSETS SK JPY（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 435000,
+          "ratio": 1.45,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "CGML PB CLIENT ACCOUNT/ COLLATERAL（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 250000,
+          "ratio": 0.84,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT （常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 213000,
+          "ratio": 0.71,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN　SACHS　BANK　EUROPE　SE（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 200000,
+          "ratio": 0.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大阪製鐵社員持株会",
+          "shares": 182000,
+          "ratio": 0.61,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 55.58,
+          "financial": 17.48,
+          "securities": 5.33,
+          "trust": 2.25,
+          "other": 1.45,
+          "foreign": 2.22,
+          "employee": 0.61
+        },
+        "individual_total": 0,
+        "top10_total": 84.92
+      }
+    }
+  ]
+}

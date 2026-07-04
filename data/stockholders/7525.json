@@ -1,0 +1,222 @@
+{
+  "secCode": "7525",
+  "issuerName": "リックス株式会社",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＮＯＫ株式会社",
+      "shares": 875000,
+      "ratio": 10.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 528000,
+      "ratio": 6.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "リックス取引先持株会",
+      "shares": 370000,
+      "ratio": 4.56,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "安井　玄一郎",
+      "shares": 243000,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "リックス従業員持株会",
+      "shares": 236000,
+      "ratio": 2.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 191000,
+      "ratio": 2.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "園　田　和佳子",
+      "shares": 171000,
+      "ratio": 2.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山　田　貴　広",
+      "shares": 162000,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "国立大学法人九州大学",
+      "shares": 130000,
+      "ratio": 1.6,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "安　井　龍之助",
+      "shares": 121000,
+      "ratio": 1.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 10.79,
+      "trust": 6.51,
+      "employee": 7.47,
+      "individual": 8.6,
+      "financial": 2.36,
+      "foundation": 1.6
+    },
+    "individual_total": 8.6,
+    "top10_total": 37.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YGQ4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＮＯＫ株式会社",
+          "shares": 875000,
+          "ratio": 10.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 528000,
+          "ratio": 6.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "リックス取引先持株会",
+          "shares": 370000,
+          "ratio": 4.56,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "安井　玄一郎",
+          "shares": 243000,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "リックス従業員持株会",
+          "shares": 236000,
+          "ratio": 2.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 191000,
+          "ratio": 2.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "園　田　和佳子",
+          "shares": 171000,
+          "ratio": 2.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山　田　貴　広",
+          "shares": 162000,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "国立大学法人九州大学",
+          "shares": 130000,
+          "ratio": 1.6,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "安　井　龍之助",
+          "shares": 121000,
+          "ratio": 1.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 10.79,
+          "trust": 6.51,
+          "employee": 7.47,
+          "individual": 8.6,
+          "financial": 2.36,
+          "foundation": 1.6
+        },
+        "individual_total": 8.6,
+        "top10_total": 37.33
+      }
+    }
+  ]
+}
