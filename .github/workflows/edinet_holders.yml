@@ -1,0 +1,39 @@
+name: Update EDINET Major Shareholders
+
+on:
+  schedule:
+    # 毎週土曜 21:00 JST (12:00 UTC) — 有報提出の反映
+    - cron: '0 12 * * 6'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '過去N日分を処理（初回は370を指定）'
+        required: false
+        default: '7'
+
+jobs:
+  update-holders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch major shareholders from EDINET
+        env:
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+        run: |
+          cd backend
+          python fetch_edinet_holders.py --days ${{ github.event.inputs.days || '7' }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/stockholders
+          git diff --cached --quiet || (git commit -m "chore: update EDINET major shareholders data" && git push)

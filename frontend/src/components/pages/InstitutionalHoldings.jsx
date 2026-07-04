@@ -42,6 +42,117 @@ function RatioSparkline({ records }) {
   )
 }
 
+// ── 大株主の属性分類メタ（バックエンドfetch_edinet_holders.pyのcategoryと対応） ──
+const CATEGORY_META = {
+  individual: { label:'個人',       color:'#ffd700', desc:'創業者・役員・個人投資家' },
+  treasury:   { label:'自己株式',   color:'#8b949e', desc:'自社保有分' },
+  employee:   { label:'持株会',     color:'#aa77ff', desc:'従業員持株会' },
+  trust:      { label:'信託口',     color:'#4a9eff', desc:'国内機関（年金・投信の名義）' },
+  foreign:    { label:'外国機関',   color:'#00c48c', desc:'海外機関投資家・カストディ' },
+  financial:  { label:'銀行・保険', color:'#5ab0ff', desc:'金融機関の政策保有等' },
+  securities: { label:'証券',       color:'#7ac0ff', desc:'証券会社' },
+  government: { label:'政府系',     color:'#ff8c42', desc:'公的機関' },
+  foundation: { label:'財団等',     color:'#c9a0ff', desc:'財団・学校法人' },
+  corporate:  { label:'事業法人',   color:'#ff5370', desc:'取引先・親会社等の政策保有' },
+  other:      { label:'その他',     color:'#8b949e', desc:'' },
+}
+
+function CategoryBadge({ category, isFounder }) {
+  const meta = CATEGORY_META[category] || CATEGORY_META.other
+  return (
+    <span style={{ display:'inline-flex', gap:'4px', flexShrink:0 }}>
+      <span style={{ fontSize:'10px', fontWeight:700, color:meta.color, background:`${meta.color}18`, border:`1px solid ${meta.color}40`, padding:'1px 6px', borderRadius:'4px', whiteSpace:'nowrap' }}>{meta.label}</span>
+      {isFounder && <span style={{ fontSize:'10px', fontWeight:700, color:'#ffd700', background:'rgba(255,215,0,0.12)', border:'1px solid rgba(255,215,0,0.35)', padding:'1px 6px', borderRadius:'4px', whiteSpace:'nowrap' }}>創業家?</span>}
+    </span>
+  )
+}
+
+// 属性別構成バー（上位10名の内訳を1本のスタックバーで可視化）
+function OwnershipCompositionBar({ summary }) {
+  if (!summary?.by_category) return null
+  const entries = Object.entries(summary.by_category).sort((a,b) => b[1]-a[1])
+  const total = summary.top10_total || entries.reduce((s,[,v])=>s+v,0)
+  if (!total) return null
+  return (
+    <div style={{ marginBottom:'14px' }}>
+      <div style={{ display:'flex', justifyContent:'space-between', fontSize:'11px', color:'var(--text3)', marginBottom:'4px' }}>
+        <span>上位10名の属性構成</span><span>合計 <strong style={{ color:'var(--text)', fontFamily:'var(--mono)' }}>{total.toFixed(1)}%</strong></span>
+      </div>
+      <div style={{ display:'flex', height:'10px', borderRadius:'5px', overflow:'hidden', background:'rgba(255,255,255,0.06)' }}>
+        {entries.map(([cat,v]) => (
+          <div key={cat} title={`${(CATEGORY_META[cat]||CATEGORY_META.other).label} ${v.toFixed(1)}%`}
+            style={{ width:`${(v/total)*100}%`, background:(CATEGORY_META[cat]||CATEGORY_META.other).color }}/>
+        ))}
+      </div>
+      <div style={{ display:'flex', flexWrap:'wrap', gap:'8px', marginTop:'6px' }}>
+        {entries.map(([cat,v]) => (
+          <span key={cat} style={{ fontSize:'10px', color:'var(--text3)', display:'inline-flex', alignItems:'center', gap:'4px' }}>
+            <span style={{ width:'8px', height:'8px', borderRadius:'2px', background:(CATEGORY_META[cat]||CATEGORY_META.other).color, display:'inline-block' }}/>
+            {(CATEGORY_META[cat]||CATEGORY_META.other).label} {v.toFixed(1)}%
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// 大株主詳細モーダル（属性バッジ・前期比増減つき）
+function ShareholderModal({ data, onClose }) {
+  const latest = data.latest || []
+  const prev = (data.history || [])[1]?.shareholders || []
+  const prevMap = {}
+  prev.forEach(sh => { prevMap[sh.name] = sh.ratio })
+  const diagnosis = (() => {
+    const s = data.latestSummary?.by_category || {}
+    const ind = (s.individual||0), inst = (s.trust||0)+(s.foreign||0)+(s.financial||0)+(s.securities||0)
+    if (ind >= 30) return { text:'オーナー系企業：創業者・個人の支配力が強く、経営の安定性が高い一方、少数株主の発言力は限定的です', color:'#ffd700' }
+    if (inst >= 30) return { text:'機関投資家主導：流動性が高くガバナンス圧力が働きやすい一方、需給は機関のフローに左右されます', color:'#4a9eff' }
+    if ((s.corporate||0) >= 25) return { text:'政策保有・親会社色が強い株主構成：安定株主が多く、TOB・再編の思惑が出やすい構造です', color:'#ff5370' }
+    return { text:'分散型の株主構成：特定株主への依存度は低めです', color:'#8b949e' }
+  })()
+  return (
+    <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:1000, display:'flex', alignItems:'center', justifyContent:'center' }} onClick={onClose}>
+      <div style={{ background:'var(--bg2)', borderRadius:'12px', padding:'24px', maxWidth:'680px', width:'92%', maxHeight:'84vh', overflowY:'auto' }} onClick={e=>e.stopPropagation()}>
+        <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'6px' }}>
+          <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:0 }}>{data.issuerName} <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{data.secCode}</span></h2>
+          <button onClick={onClose} style={{ background:'none', border:'none', color:'var(--text3)', cursor:'pointer', fontSize:'18px' }}>✕</button>
+        </div>
+        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'12px' }}>出典: 有価証券報告書（EDINET）　提出日: {data.latestDate}{prev.length > 0 && '　※増減は前期報告書との比較'}</div>
+        <OwnershipCompositionBar summary={data.latestSummary}/>
+        <div style={{ padding:'10px 14px', background:`${diagnosis.color}10`, border:`1px solid ${diagnosis.color}30`, borderRadius:'8px', fontSize:'12px', color:'var(--text2)', lineHeight:1.7, marginBottom:'14px' }}>
+          💡 {diagnosis.text}
+        </div>
+        {latest.map((sh,i) => {
+          const prevRatio = prevMap[sh.name]
+          const diff = (sh.ratio != null && prevRatio != null) ? +(sh.ratio - prevRatio).toFixed(2) : null
+          return (
+            <div key={i} style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'9px 0', borderBottom:'1px solid var(--border)', gap:'10px' }}>
+              <div style={{ display:'flex', alignItems:'center', gap:'8px', flex:1, minWidth:0 }}>
+                <span style={{ fontSize:'11px', color:'var(--text3)', width:'20px', flexShrink:0, fontFamily:'var(--mono)' }}>{sh.rank}.</span>
+                <div style={{ minWidth:0 }}>
+                  <div style={{ fontSize:'13px', color:'var(--text)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{sh.name}</div>
+                  <CategoryBadge category={sh.category} isFounder={sh.is_founder_family}/>
+                </div>
+              </div>
+              <div style={{ display:'flex', alignItems:'center', gap:'12px', flexShrink:0 }}>
+                {diff != null && diff !== 0 && (
+                  <span style={{ fontSize:'11px', fontWeight:700, fontFamily:'var(--mono)', color:diff>0?'#ff5370':'#00c48c' }}>{diff>0?'▲':'▼'}{Math.abs(diff).toFixed(2)}</span>
+                )}
+                {prevRatio == null && prev.length > 0 && <span style={{ fontSize:'10px', fontWeight:700, color:'#ff8c42' }}>NEW</span>}
+                {sh.shares != null && <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{sh.shares >= 1000000 ? (sh.shares/1000000).toFixed(1)+'百万株' : (sh.shares/1000).toFixed(0)+'千株'}</span>}
+                {sh.ratio != null && <span style={{ fontSize:'13px', fontWeight:700, color:'#4a9eff', fontFamily:'var(--mono)', minWidth:'52px', textAlign:'right' }}>{sh.ratio.toFixed(2)}%</span>}
+              </div>
+            </div>
+          )
+        })}
+        <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'12px', lineHeight:1.7 }}>
+          ※「信託口」は年金基金・投資信託等が信託銀行名義で保有する分で、実質的な機関投資家保有です。「創業家?」は姓と社名の一致による推定であり、確実な判定ではありません。
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function IssuerDetailPage({ issuerName, secCode, docs, allData, onBack }) {
   const holderMap = {}
   docs.forEach(doc => {
@@ -304,7 +415,21 @@ export default function InstitutionalHoldings() {
               return filtered.length === 0 ? (
                 <div style={{ padding:'40px 20px', textAlign:'center', color:'var(--text3)', fontSize:'13px' }}>
                   <div style={{ fontSize:'32px', marginBottom:'10px' }}>🔍</div>
-                  {shSearchQ ? `「${shSearchQ}」に該当する銘柄が見つかりません` : '銘柄名または証券コードを入力して検索してください'}
+                  {shSearchQ ? (
+                    <>
+                      <div>「{shSearchQ}」はインデックス未収載です</div>
+                      {/^\d{4}[A-Z]?$/.test(shSearchQ.trim()) && (
+                        <button onClick={async () => {
+                          try {
+                            const r = await fetch(`/data/stockholders/${shSearchQ.trim()}.json?t=${Date.now()}`)
+                            if (!r.ok) throw new Error()
+                            const d = await r.json()
+                            setShData(prev => ({...prev, selected: d}))
+                          } catch { alert('コード' + shSearchQ + 'のデータは未取得です。EDINETバッチの実行をお待ちください。') }
+                        }} style={{ marginTop:'12px', padding:'8px 18px', background:'var(--accent)', color:'#fff', border:'none', borderRadius:'8px', cursor:'pointer', fontFamily:'var(--font)', fontSize:'12px', fontWeight:600 }}>コード {shSearchQ} を直接照会</button>
+                      )}
+                    </>
+                  ) : '銘柄名または証券コードを入力して検索してください'}
                 </div>
               ) : (
                 <div style={{ display:'flex', flexDirection:'column', gap:'8px' }}>
@@ -341,29 +466,7 @@ export default function InstitutionalHoldings() {
             </div>
           )}
           {shData.selected && (
-            <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:1000, display:'flex', alignItems:'center', justifyContent:'center' }}
-              onClick={()=>setShData(p=>({...p,selected:null}))}>
-              <div style={{ background:'var(--bg2)', borderRadius:'12px', padding:'24px', maxWidth:'600px', width:'90%', maxHeight:'80vh', overflowY:'auto' }}
-                onClick={e=>e.stopPropagation()}>
-                <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'16px' }}>
-                  <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:0 }}>{shData.selected.issuerName} 大株主</h2>
-                  <button onClick={()=>setShData(p=>({...p,selected:null}))} style={{ background:'none', border:'none', color:'var(--text3)', cursor:'pointer', fontSize:'18px' }}>✕</button>
-                </div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'12px' }}>最終更新: {shData.selected.latestDate}</div>
-                {shData.selected.latest?.map((sh,i) => (
-                  <div key={i} style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 0', borderBottom:'1px solid var(--border)' }}>
-                    <div style={{ display:'flex', alignItems:'center', gap:'10px', flex:1, minWidth:0 }}>
-                      <span style={{ fontSize:'11px', color:'var(--text3)', width:'20px', flexShrink:0 }}>{sh.rank}.</span>
-                      <span style={{ fontSize:'13px', color:'var(--text)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{sh.name}</span>
-                    </div>
-                    <div style={{ display:'flex', gap:'12px', flexShrink:0, marginLeft:'10px' }}>
-                      {sh.shares && <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{(sh.shares/1000).toFixed(0)}千株</span>}
-                      {sh.ratio && <span style={{ fontSize:'13px', fontWeight:700, color:'#4a9eff', fontFamily:'var(--mono)' }}>{sh.ratio.toFixed(2)}%</span>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <ShareholderModal data={shData.selected} onClose={()=>setShData(p=>({...p,selected:null}))}/>
           )}
         </div>
       )}
