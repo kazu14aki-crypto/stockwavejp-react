@@ -1,0 +1,220 @@
+{
+  "secCode": "160A",
+  "issuerName": "株式会社アズパートナーズ",
+  "updated_at": "2026/07/04 18:28 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ブレス",
+      "shares": 1250000,
+      "ratio": 34.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MIRARTHホールディングス株式会社",
+      "shares": 342000,
+      "ratio": 9.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "植村　健志",
+      "shares": 162600,
+      "ratio": 4.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "伊藤　啓敏",
+      "shares": 152600,
+      "ratio": 4.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山本　皇自",
+      "shares": 152600,
+      "ratio": 4.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アズパートナーズ従業員持株会",
+      "shares": 124432,
+      "ratio": 3.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NOMURA PB NOMINESS LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人　野村證券株式会社）",
+      "shares": 87500,
+      "ratio": 2.43,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "上田八木短期投資株式会社",
+      "shares": 87200,
+      "ratio": 2.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松尾　篤人",
+      "shares": 57600,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社",
+      "shares": 49600,
+      "ratio": 1.38,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 46.8,
+      "individual": 14.63,
+      "employee": 3.46,
+      "foreign": 2.43,
+      "securities": 1.38
+    },
+    "individual_total": 14.63,
+    "top10_total": 68.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YIQV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ブレス",
+          "shares": 1250000,
+          "ratio": 34.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MIRARTHホールディングス株式会社",
+          "shares": 342000,
+          "ratio": 9.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "植村　健志",
+          "shares": 162600,
+          "ratio": 4.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "伊藤　啓敏",
+          "shares": 152600,
+          "ratio": 4.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山本　皇自",
+          "shares": 152600,
+          "ratio": 4.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アズパートナーズ従業員持株会",
+          "shares": 124432,
+          "ratio": 3.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NOMURA PB NOMINESS LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人　野村證券株式会社）",
+          "shares": 87500,
+          "ratio": 2.43,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "上田八木短期投資株式会社",
+          "shares": 87200,
+          "ratio": 2.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松尾　篤人",
+          "shares": 57600,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社",
+          "shares": 49600,
+          "ratio": 1.38,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 46.8,
+          "individual": 14.63,
+          "employee": 3.46,
+          "foreign": 2.43,
+          "securities": 1.38
+        },
+        "individual_total": 14.63,
+        "top10_total": 68.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "9268",
+  "issuerName": "株式会社オプティマスグループ",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "山中　信哉",
+      "shares": 12327080,
+      "ratio": 18.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ロバート・アンドリュー・ヤング",
+      "shares": 8391960,
+      "ratio": 12.26,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "マーティン・フレイザー・マッカラック",
+      "shares": 8391960,
+      "ratio": 12.26,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "内藤　征吾",
+      "shares": 2287200,
+      "ratio": 3.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "HIKARI TSUSHIN INVESTMENTS OKINAWA\n株式会社",
+      "shares": 1390100,
+      "ratio": 2.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 1137500,
+      "ratio": 1.66,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "浜本　憲至",
+      "shares": 732000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大和証券株式会社",
+      "shares": 638068,
+      "ratio": 0.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "花光　雅丸",
+      "shares": 545400,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)",
+      "shares": 446831,
+      "ratio": 0.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.2,
+      "other": 26.18,
+      "corporate": 2.03,
+      "securities": 0.93,
+      "foreign": 0.65
+    },
+    "individual_total": 23.2,
+    "top10_total": 52.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/04/01－2026/03/31)",
+      "docID": "S100YJVB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "山中　信哉",
+          "shares": 12327080,
+          "ratio": 18.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ロバート・アンドリュー・ヤング",
+          "shares": 8391960,
+          "ratio": 12.26,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "マーティン・フレイザー・マッカラック",
+          "shares": 8391960,
+          "ratio": 12.26,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "内藤　征吾",
+          "shares": 2287200,
+          "ratio": 3.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "HIKARI TSUSHIN INVESTMENTS OKINAWA\n株式会社",
+          "shares": 1390100,
+          "ratio": 2.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 1137500,
+          "ratio": 1.66,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "浜本　憲至",
+          "shares": 732000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大和証券株式会社",
+          "shares": 638068,
+          "ratio": 0.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "花光　雅丸",
+          "shares": 545400,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)",
+          "shares": 446831,
+          "ratio": 0.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.2,
+          "other": 26.18,
+          "corporate": 2.03,
+          "securities": 0.93,
+          "foreign": 0.65
+        },
+        "individual_total": 23.2,
+        "top10_total": 52.99
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "2454",
+  "issuerName": "株式会社オールアバウト",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本テレビ放送網株式会社",
+      "shares": 3385000,
+      "ratio": 24.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社NTTドコモ",
+      "shares": 2093100,
+      "ratio": 14.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社リクルートホールディングス",
+      "shares": 984900,
+      "ratio": 6.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大日本印刷株式会社",
+      "shares": 860900,
+      "ratio": 6.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山口憲一",
+      "shares": 655000,
+      "ratio": 4.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "江幡哲也",
+      "shares": 372308,
+      "ratio": 2.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 352500,
+      "ratio": 2.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "広田証券株式会社",
+      "shares": 298541,
+      "ratio": 2.12,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小西晧",
+      "shares": 236100,
+      "ratio": 1.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社SBI証券",
+      "shares": 95771,
+      "ratio": 0.68,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.98,
+      "individual": 8.97,
+      "trust": 2.5,
+      "securities": 2.8
+    },
+    "individual_total": 8.97,
+    "top10_total": 66.25
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第34期(2025/04/01－2026/03/31)",
+      "docID": "S100YFW5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本テレビ放送網株式会社",
+          "shares": 3385000,
+          "ratio": 24.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社NTTドコモ",
+          "shares": 2093100,
+          "ratio": 14.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社リクルートホールディングス",
+          "shares": 984900,
+          "ratio": 6.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大日本印刷株式会社",
+          "shares": 860900,
+          "ratio": 6.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山口憲一",
+          "shares": 655000,
+          "ratio": 4.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "江幡哲也",
+          "shares": 372308,
+          "ratio": 2.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 352500,
+          "ratio": 2.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "広田証券株式会社",
+          "shares": 298541,
+          "ratio": 2.12,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小西晧",
+          "shares": 236100,
+          "ratio": 1.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社SBI証券",
+          "shares": 95771,
+          "ratio": 0.68,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.98,
+          "individual": 8.97,
+          "trust": 2.5,
+          "securities": 2.8
+        },
+        "individual_total": 8.97,
+        "top10_total": 66.25
+      }
+    }
+  ]
+}

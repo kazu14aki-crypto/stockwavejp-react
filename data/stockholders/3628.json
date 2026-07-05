@@ -1,0 +1,214 @@
+{
+  "secCode": "3628",
+  "issuerName": "株式会社データホライゾン",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱ディー・エヌ・エー",
+      "shares": 6535300,
+      "ratio": 51.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "内海　良夫",
+      "shares": 1147900,
+      "ratio": 9.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "岩佐　実次",
+      "shares": 507800,
+      "ratio": 4.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱渡辺住研",
+      "shares": 438200,
+      "ratio": 3.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱ベネフィット・ワン",
+      "shares": 436900,
+      "ratio": 3.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ティーエスアルフレッサ㈱",
+      "shares": 360000,
+      "ratio": 2.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鹿沼　史明",
+      "shares": 220500,
+      "ratio": 1.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "渡邉　毅人",
+      "shares": 213000,
+      "ratio": 1.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "データホライゾン従業員持株会",
+      "shares": 133280,
+      "ratio": 1.05,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券㈱",
+      "shares": 98525,
+      "ratio": 0.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 78.46,
+      "employee": 1.05
+    },
+    "individual_total": 78.46,
+    "top10_total": 79.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/04/01－2026/03/31)",
+      "docID": "S100YMTV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱ディー・エヌ・エー",
+          "shares": 6535300,
+          "ratio": 51.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "内海　良夫",
+          "shares": 1147900,
+          "ratio": 9.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "岩佐　実次",
+          "shares": 507800,
+          "ratio": 4.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱渡辺住研",
+          "shares": 438200,
+          "ratio": 3.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱ベネフィット・ワン",
+          "shares": 436900,
+          "ratio": 3.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ティーエスアルフレッサ㈱",
+          "shares": 360000,
+          "ratio": 2.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鹿沼　史明",
+          "shares": 220500,
+          "ratio": 1.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "渡邉　毅人",
+          "shares": 213000,
+          "ratio": 1.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "データホライゾン従業員持株会",
+          "shares": 133280,
+          "ratio": 1.05,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券㈱",
+          "shares": 98525,
+          "ratio": 0.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 78.46,
+          "employee": 1.05
+        },
+        "individual_total": 78.46,
+        "top10_total": 79.51
+      }
+    }
+  ]
+}

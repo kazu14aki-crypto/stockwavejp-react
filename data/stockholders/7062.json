@@ -1,0 +1,218 @@
+{
+  "secCode": "7062",
+  "issuerName": "株式会社フレアス",
+  "updated_at": "2026/07/04 17:51 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社優美",
+      "shares": 800000,
+      "ratio": 30.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "澤登　拓",
+      "shares": 709100,
+      "ratio": 27.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 126081,
+      "ratio": 4.83,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "MSIP CLIENT SECURITIES（常任代理人：モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 119000,
+      "ratio": 4.56,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "フレアス従業員持株会",
+      "shares": 64900,
+      "ratio": 2.49,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三菱ＵＦＪｅスマート証券株式会社",
+      "shares": 53000,
+      "ratio": 2.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村證券株式会社",
+      "shares": 47400,
+      "ratio": 1.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "加藤　誠悟",
+      "shares": 36100,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社アルソア慧央グループ",
+      "shares": 33000,
+      "ratio": 1.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "塚田 崇",
+      "shares": 31900,
+      "ratio": 1.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.76,
+      "individual": 29.78,
+      "securities": 11.42,
+      "employee": 2.49
+    },
+    "individual_total": 29.78,
+    "top10_total": 77.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第24期(2025/04/01－2026/03/31)",
+      "docID": "S100YLVZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社優美",
+          "shares": 800000,
+          "ratio": 30.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "澤登　拓",
+          "shares": 709100,
+          "ratio": 27.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 126081,
+          "ratio": 4.83,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "MSIP CLIENT SECURITIES（常任代理人：モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 119000,
+          "ratio": 4.56,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "フレアス従業員持株会",
+          "shares": 64900,
+          "ratio": 2.49,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三菱ＵＦＪｅスマート証券株式会社",
+          "shares": 53000,
+          "ratio": 2.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 47400,
+          "ratio": 1.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "加藤　誠悟",
+          "shares": 36100,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社アルソア慧央グループ",
+          "shares": 33000,
+          "ratio": 1.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "塚田 崇",
+          "shares": 31900,
+          "ratio": 1.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.76,
+          "individual": 29.78,
+          "securities": 11.42,
+          "employee": 2.49
+        },
+        "individual_total": 29.78,
+        "top10_total": 77.45
+      }
+    }
+  ]
+}

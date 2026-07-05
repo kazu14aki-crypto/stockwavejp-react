@@ -1,0 +1,222 @@
+{
+  "secCode": "9229",
+  "issuerName": "株式会社サンウェルズ",
+  "updated_at": "2026/07/04 18:12 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社杏",
+      "shares": 13500000,
+      "ratio": 41.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "苗代　亮達",
+      "shares": 3904700,
+      "ratio": 12.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1919097,
+      "ratio": 5.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "DBS BANK LTD.700104（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1566000,
+      "ratio": 4.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1030300,
+      "ratio": 3.18,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 764800,
+      "ratio": 2.36,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 373065,
+      "ratio": 1.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "UBS証券株式会社",
+      "shares": 372576,
+      "ratio": 1.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN SACHS INTERNATIONAL（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 322235,
+      "ratio": 0.99,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "DBS BANK LTD FOR G.K.GOH STRATEG\nIC HOLDINGS PTE LTD 700551（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 320000,
+      "ratio": 0.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.62,
+      "individual": 12.04,
+      "foreign": 11.24,
+      "financial": 5.82,
+      "trust": 2.36,
+      "securities": 1.15
+    },
+    "individual_total": 12.04,
+    "top10_total": 74.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YL7U",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社杏",
+          "shares": 13500000,
+          "ratio": 41.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "苗代　亮達",
+          "shares": 3904700,
+          "ratio": 12.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1919097,
+          "ratio": 5.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "DBS BANK LTD.700104（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1566000,
+          "ratio": 4.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "JP JPMSE LUX RE UBS AG LONDON BRANCH EQ CO（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1030300,
+          "ratio": 3.18,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 764800,
+          "ratio": 2.36,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 373065,
+          "ratio": 1.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "UBS証券株式会社",
+          "shares": 372576,
+          "ratio": 1.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN SACHS INTERNATIONAL（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 322235,
+          "ratio": 0.99,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "DBS BANK LTD FOR G.K.GOH STRATEG\nIC HOLDINGS PTE LTD 700551（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 320000,
+          "ratio": 0.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.62,
+          "individual": 12.04,
+          "foreign": 11.24,
+          "financial": 5.82,
+          "trust": 2.36,
+          "securities": 1.15
+        },
+        "individual_total": 12.04,
+        "top10_total": 74.23
+      }
+    }
+  ]
+}

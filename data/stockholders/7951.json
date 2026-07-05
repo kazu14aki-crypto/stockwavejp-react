@@ -1,0 +1,216 @@
+{
+  "secCode": "7951",
+  "issuerName": "ヤマハ株式会社",
+  "updated_at": "2026/07/04 18:10 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 97981000,
+      "ratio": 22.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 37427000,
+      "ratio": 8.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友生命保険相互会社(常任代理人　株式会社日本カストディ銀行)",
+      "shares": 21900000,
+      "ratio": 4.98,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社静岡銀行(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 21576000,
+      "ratio": 4.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 15006000,
+      "ratio": 3.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ヤマハ発動機株式会社",
+      "shares": 14080000,
+      "ratio": 3.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505301(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 11251000,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505001(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 10640000,
+      "ratio": 2.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "バンク  オブ  ニューヨーク  ジーシーエム  クライアント  アカウント  ジェイピーアールディ  アイエスジー  エフイー－エイシー(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 8676000,
+      "ratio": 1.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505025(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 8544000,
+      "ratio": 1.94,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 44.07,
+      "corporate": 3.2,
+      "financial": 8.89
+    },
+    "individual_total": 0,
+    "top10_total": 56.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第202期(2025/04/01－2026/03/31)",
+      "docID": "S100YJE7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 97981000,
+          "ratio": 22.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 37427000,
+          "ratio": 8.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友生命保険相互会社(常任代理人　株式会社日本カストディ銀行)",
+          "shares": 21900000,
+          "ratio": 4.98,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社静岡銀行(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 21576000,
+          "ratio": 4.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 15006000,
+          "ratio": 3.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ヤマハ発動機株式会社",
+          "shares": 14080000,
+          "ratio": 3.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505301(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 11251000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505001(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 10640000,
+          "ratio": 2.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "バンク  オブ  ニューヨーク  ジーシーエム  クライアント  アカウント  ジェイピーアールディ  アイエスジー  エフイー－エイシー(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 8676000,
+          "ratio": 1.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ステート  ストリート  バンク  アンド  トラスト  カンパニー  505025(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 8544000,
+          "ratio": 1.94,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 44.07,
+          "corporate": 3.2,
+          "financial": 8.89
+        },
+        "individual_total": 0,
+        "top10_total": 56.16
+      }
+    }
+  ]
+}

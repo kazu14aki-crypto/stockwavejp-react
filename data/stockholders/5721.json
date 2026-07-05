@@ -1,0 +1,220 @@
+{
+  "secCode": "5721",
+  "issuerName": "エスクリプトエナジー株式会社",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "KAY LEO BROTHERS LIMITED（常任代理人　野田　洋一郎）",
+      "shares": 9317000,
+      "ratio": 5.32,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "品　田　守　敏",
+      "shares": 2300000,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1885000,
+      "ratio": 1.08,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "長　崎　裕　太",
+      "shares": 1507000,
+      "ratio": 0.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野村證券株式会社（常任代理人　株式会社三井住友銀行）",
+      "shares": 1047000,
+      "ratio": 0.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "加　藤　孝　文",
+      "shares": 1038000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "乾　峻　輔",
+      "shares": 1030000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "石  原　慎  也",
+      "shares": 1026000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "武　市　眞　次",
+      "shares": 1000000,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社東成工業",
+      "shares": 999000,
+      "ratio": 0.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 5.32,
+      "individual": 4.51,
+      "foreign": 1.08,
+      "financial": 0.6,
+      "corporate": 0.57
+    },
+    "individual_total": 4.51,
+    "top10_total": 12.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第107期(2025/04/01－2026/03/31)",
+      "docID": "S100YNKO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "KAY LEO BROTHERS LIMITED（常任代理人　野田　洋一郎）",
+          "shares": 9317000,
+          "ratio": 5.32,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "品　田　守　敏",
+          "shares": 2300000,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BNYM SA/NV FOR BNYM FOR BNY GCM CLIENT ACCOUNTS M LSCB RD（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1885000,
+          "ratio": 1.08,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "長　崎　裕　太",
+          "shares": 1507000,
+          "ratio": 0.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野村證券株式会社（常任代理人　株式会社三井住友銀行）",
+          "shares": 1047000,
+          "ratio": 0.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "加　藤　孝　文",
+          "shares": 1038000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "乾　峻　輔",
+          "shares": 1030000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "石  原　慎  也",
+          "shares": 1026000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "武　市　眞　次",
+          "shares": 1000000,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社東成工業",
+          "shares": 999000,
+          "ratio": 0.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 5.32,
+          "individual": 4.51,
+          "foreign": 1.08,
+          "financial": 0.6,
+          "corporate": 0.57
+        },
+        "individual_total": 4.51,
+        "top10_total": 12.08
+      }
+    }
+  ]
+}

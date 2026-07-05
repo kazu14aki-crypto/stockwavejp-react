@@ -1,0 +1,220 @@
+{
+  "secCode": "1815",
+  "issuerName": "鉄建建設株式会社",
+  "updated_at": "2026/07/04 18:34 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東日本旅客鉄道株式会社",
+      "shares": 2761000,
+      "ratio": 19.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1778000,
+      "ratio": 12.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 564000,
+      "ratio": 4.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鹿島建設株式会社",
+      "shares": 470000,
+      "ratio": 3.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鉄建職員持株会",
+      "shares": 274000,
+      "ratio": 1.97,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "鉄建取引先持株会",
+      "shares": 217000,
+      "ratio": 1.56,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＧＯＶＥＲＮＭＥＮＴ　ＯＦ　ＮＯＲＷＡＹ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 141000,
+      "ratio": 1.01,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５７８１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 141000,
+      "ratio": 1.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東海旅客鉄道株式会社",
+      "shares": 127000,
+      "ratio": 0.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 108000,
+      "ratio": 0.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 24.03,
+      "trust": 16.76,
+      "employee": 3.53,
+      "other": 1.01,
+      "financial": 1.79
+    },
+    "individual_total": 0,
+    "top10_total": 47.12
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YGCF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東日本旅客鉄道株式会社",
+          "shares": 2761000,
+          "ratio": 19.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1778000,
+          "ratio": 12.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 564000,
+          "ratio": 4.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鹿島建設株式会社",
+          "shares": 470000,
+          "ratio": 3.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鉄建職員持株会",
+          "shares": 274000,
+          "ratio": 1.97,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "鉄建取引先持株会",
+          "shares": 217000,
+          "ratio": 1.56,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＧＯＶＥＲＮＭＥＮＴ　ＯＦ　ＮＯＲＷＡＹ\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 141000,
+          "ratio": 1.01,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５７８１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 141000,
+          "ratio": 1.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東海旅客鉄道株式会社",
+          "shares": 127000,
+          "ratio": 0.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 108000,
+          "ratio": 0.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 24.03,
+          "trust": 16.76,
+          "employee": 3.53,
+          "other": 1.01,
+          "financial": 1.79
+        },
+        "individual_total": 0,
+        "top10_total": 47.12
+      }
+    }
+  ]
+}

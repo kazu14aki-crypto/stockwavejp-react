@@ -1,0 +1,222 @@
+{
+  "secCode": "9302",
+  "issuerName": "三井倉庫ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 6134000,
+      "ratio": 7.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 5513000,
+      "ratio": 7.18,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井不動産株式会社",
+      "shares": 5382000,
+      "ratio": 7.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大樹生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 4707000,
+      "ratio": 6.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三井住友海上火災保険株式会社",
+      "shares": 4203000,
+      "ratio": 5.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 3575000,
+      "ratio": 4.66,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三井住友銀行",
+      "shares": 2090000,
+      "ratio": 2.72,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MACQUARIE BANK LIMITED DBU AC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1999000,
+      "ratio": 2.6,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "みずほ証券株式会社",
+      "shares": 1920000,
+      "ratio": 2.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社竹中工務店",
+      "shares": 1739000,
+      "ratio": 2.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.78,
+      "foreign": 7.18,
+      "corporate": 14.74,
+      "financial": 2.72,
+      "other": 2.6,
+      "securities": 2.5
+    },
+    "individual_total": 0,
+    "top10_total": 48.52
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第178期(2025/04/01－2026/03/31)",
+      "docID": "S100YEZT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 6134000,
+          "ratio": 7.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 5513000,
+          "ratio": 7.18,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井不動産株式会社",
+          "shares": 5382000,
+          "ratio": 7.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大樹生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 4707000,
+          "ratio": 6.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三井住友海上火災保険株式会社",
+          "shares": 4203000,
+          "ratio": 5.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 3575000,
+          "ratio": 4.66,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三井住友銀行",
+          "shares": 2090000,
+          "ratio": 2.72,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MACQUARIE BANK LIMITED DBU AC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1999000,
+          "ratio": 2.6,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "みずほ証券株式会社",
+          "shares": 1920000,
+          "ratio": 2.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社竹中工務店",
+          "shares": 1739000,
+          "ratio": 2.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.78,
+          "foreign": 7.18,
+          "corporate": 14.74,
+          "financial": 2.72,
+          "other": 2.6,
+          "securities": 2.5
+        },
+        "individual_total": 0,
+        "top10_total": 48.52
+      }
+    }
+  ]
+}

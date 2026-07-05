@@ -1,0 +1,218 @@
+{
+  "secCode": "8255",
+  "issuerName": "アクシアル　リテイリング株式会社",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7237000,
+      "ratio": 8.16,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社第四北越銀行（常任代理人  日本マスタートラスト信託銀行株式会社）",
+      "shares": 4005000,
+      "ratio": 4.52,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "植木　威行",
+      "shares": 3452000,
+      "ratio": 3.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社商工組合中央金庫",
+      "shares": 2912000,
+      "ratio": 3.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "原  和彦",
+      "shares": 2801000,
+      "ratio": 3.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ニューサンライフ",
+      "shares": 2338000,
+      "ratio": 2.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "原和彦アセットマネジメント株式会社",
+      "shares": 2217000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "原  信博",
+      "shares": 2144000,
+      "ratio": 2.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1980000,
+      "ratio": 2.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "アクシアル　リテイリング従業員持株会",
+      "shares": 1742000,
+      "ratio": 1.96,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.91,
+      "individual": 9.47,
+      "corporate": 8.42,
+      "employee": 1.96
+    },
+    "individual_total": 9.47,
+    "top10_total": 34.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YBP0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7237000,
+          "ratio": 8.16,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社第四北越銀行（常任代理人  日本マスタートラスト信託銀行株式会社）",
+          "shares": 4005000,
+          "ratio": 4.52,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "植木　威行",
+          "shares": 3452000,
+          "ratio": 3.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社商工組合中央金庫",
+          "shares": 2912000,
+          "ratio": 3.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "原  和彦",
+          "shares": 2801000,
+          "ratio": 3.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ニューサンライフ",
+          "shares": 2338000,
+          "ratio": 2.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "原和彦アセットマネジメント株式会社",
+          "shares": 2217000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "原  信博",
+          "shares": 2144000,
+          "ratio": 2.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1980000,
+          "ratio": 2.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "アクシアル　リテイリング従業員持株会",
+          "shares": 1742000,
+          "ratio": 1.96,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.91,
+          "individual": 9.47,
+          "corporate": 8.42,
+          "employee": 1.96
+        },
+        "individual_total": 9.47,
+        "top10_total": 34.76
+      }
+    }
+  ]
+}

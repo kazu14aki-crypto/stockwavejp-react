@@ -1,0 +1,216 @@
+{
+  "secCode": "3934",
+  "issuerName": "株式会社ベネフィットジャパン",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "佐久間　寛",
+      "shares": 1339687,
+      "ratio": 22.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社サクマジャパン",
+      "shares": 1296000,
+      "ratio": 21.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "UHPartners3投資事業有限責任組合",
+      "shares": 502900,
+      "ratio": 8.53,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "エヌオーアイ投資事業有限責任組合",
+      "shares": 447100,
+      "ratio": 7.58,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 442900,
+      "ratio": 7.51,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社UH6",
+      "shares": 441800,
+      "ratio": 7.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "UHPartners2投資事業有限責任組合",
+      "shares": 411600,
+      "ratio": 6.98,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "アイビー投資事業有限責任組合",
+      "shares": 131700,
+      "ratio": 2.23,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "エスアイエル投資事業有限責任組合",
+      "shares": 97200,
+      "ratio": 1.65,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "光通信株式会社",
+      "shares": 60000,
+      "ratio": 1.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 22.73,
+      "corporate": 30.49,
+      "other": 34.48
+    },
+    "individual_total": 22.73,
+    "top10_total": 87.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YHUS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "佐久間　寛",
+          "shares": 1339687,
+          "ratio": 22.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社サクマジャパン",
+          "shares": 1296000,
+          "ratio": 21.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "UHPartners3投資事業有限責任組合",
+          "shares": 502900,
+          "ratio": 8.53,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "エヌオーアイ投資事業有限責任組合",
+          "shares": 447100,
+          "ratio": 7.58,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 442900,
+          "ratio": 7.51,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社UH6",
+          "shares": 441800,
+          "ratio": 7.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "UHPartners2投資事業有限責任組合",
+          "shares": 411600,
+          "ratio": 6.98,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "アイビー投資事業有限責任組合",
+          "shares": 131700,
+          "ratio": 2.23,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "エスアイエル投資事業有限責任組合",
+          "shares": 97200,
+          "ratio": 1.65,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "光通信株式会社",
+          "shares": 60000,
+          "ratio": 1.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 22.73,
+          "corporate": 30.49,
+          "other": 34.48
+        },
+        "individual_total": 22.73,
+        "top10_total": 87.7
+      }
+    }
+  ]
+}

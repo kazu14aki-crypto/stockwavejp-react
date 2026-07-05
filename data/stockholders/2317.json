@@ -1,0 +1,220 @@
+{
+  "secCode": "2317",
+  "issuerName": "株式会社システナ",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＳＭＳホールディングス有限会社",
+      "shares": 104247200,
+      "ratio": 29.03,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 40697000,
+      "ratio": 11.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 19250800,
+      "ratio": 5.36,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "NORTHERN TRUST CO.(AVFC)RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 12736200,
+      "ratio": 3.54,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST CAMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 9577387,
+      "ratio": 2.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "システナ社員持株会",
+      "shares": 6362697,
+      "ratio": 1.77,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNPPARIBASLUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURGFUNDS/UCITSASSETS\n（常任代理人　香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 4950000,
+      "ratio": 1.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST CAMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 3905894,
+      "ratio": 1.08,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 3719852,
+      "ratio": 1.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三浦　賢治",
+      "shares": 2919800,
+      "ratio": 0.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.03,
+      "trust": 16.69,
+      "foreign": 9.68,
+      "employee": 1.77,
+      "individual": 0.81
+    },
+    "individual_total": 0.81,
+    "top10_total": 57.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/04/01－2026/03/31)",
+      "docID": "S100YFPF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＳＭＳホールディングス有限会社",
+          "shares": 104247200,
+          "ratio": 29.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 40697000,
+          "ratio": 11.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 19250800,
+          "ratio": 5.36,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "NORTHERN TRUST CO.(AVFC)RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 12736200,
+          "ratio": 3.54,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST CAMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 9577387,
+          "ratio": 2.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "システナ社員持株会",
+          "shares": 6362697,
+          "ratio": 1.77,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNPPARIBASLUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURGFUNDS/UCITSASSETS\n（常任代理人　香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 4950000,
+          "ratio": 1.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST CAMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 3905894,
+          "ratio": 1.08,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 3719852,
+          "ratio": 1.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三浦　賢治",
+          "shares": 2919800,
+          "ratio": 0.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.03,
+          "trust": 16.69,
+          "foreign": 9.68,
+          "employee": 1.77,
+          "individual": 0.81
+        },
+        "individual_total": 0.81,
+        "top10_total": 57.98
+      }
+    }
+  ]
+}

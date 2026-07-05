@@ -1,0 +1,218 @@
+{
+  "secCode": "7192",
+  "issuerName": "日本モーゲージサービス株式会社",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ビルダーズシステム研究所",
+      "shares": 3739500,
+      "ratio": 25.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本レジデンシャルファンド",
+      "shares": 960000,
+      "ratio": 6.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ベル投資事業有限責任組合１\n無限責任組合員　ベル有限責任事業組合",
+      "shares": 744200,
+      "ratio": 5.06,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社OSCARホールディングス",
+      "shares": 480000,
+      "ratio": 3.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大和証券株式会社",
+      "shares": 268100,
+      "ratio": 1.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ノーブルホーム",
+      "shares": 240000,
+      "ratio": 1.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 239500,
+      "ratio": 1.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ヤマイチ株式会社",
+      "shares": 222000,
+      "ratio": 1.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "下津　和也",
+      "shares": 171000,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "友澤　悟郎",
+      "shares": 147500,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.37,
+      "other": 5.06,
+      "securities": 3.45,
+      "individual": 2.16
+    },
+    "individual_total": 2.16,
+    "top10_total": 49.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YKHZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ビルダーズシステム研究所",
+          "shares": 3739500,
+          "ratio": 25.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本レジデンシャルファンド",
+          "shares": 960000,
+          "ratio": 6.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ベル投資事業有限責任組合１\n無限責任組合員　ベル有限責任事業組合",
+          "shares": 744200,
+          "ratio": 5.06,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社OSCARホールディングス",
+          "shares": 480000,
+          "ratio": 3.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大和証券株式会社",
+          "shares": 268100,
+          "ratio": 1.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ノーブルホーム",
+          "shares": 240000,
+          "ratio": 1.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 239500,
+          "ratio": 1.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ヤマイチ株式会社",
+          "shares": 222000,
+          "ratio": 1.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "下津　和也",
+          "shares": 171000,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "友澤　悟郎",
+          "shares": 147500,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.37,
+          "other": 5.06,
+          "securities": 3.45,
+          "individual": 2.16
+        },
+        "individual_total": 2.16,
+        "top10_total": 49.04
+      }
+    }
+  ]
+}

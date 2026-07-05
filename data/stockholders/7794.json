@@ -1,0 +1,218 @@
+{
+  "secCode": "7794",
+  "issuerName": "株式会社イーディーピー",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "藤森直治",
+      "shares": 1062000,
+      "ratio": 6.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "竹内工業株式会社",
+      "shares": 911000,
+      "ratio": 5.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "加茂睦和",
+      "shares": 300000,
+      "ratio": 1.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SBI新生銀行",
+      "shares": 277000,
+      "ratio": 1.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "北城恪太郎",
+      "shares": 271000,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 258000,
+      "ratio": 1.67,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社フューチャーパートナーズ",
+      "shares": 250000,
+      "ratio": 1.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社槌屋",
+      "shares": 208000,
+      "ratio": 1.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三星ダイヤモンド工業株式会社",
+      "shares": 200000,
+      "ratio": 1.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本証券金融株式会社",
+      "shares": 106000,
+      "ratio": 0.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 10.56,
+      "corporate": 10.15,
+      "financial": 1.79,
+      "securities": 2.36
+    },
+    "individual_total": 10.56,
+    "top10_total": 24.86
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/04/01－2026/03/31)",
+      "docID": "S100YJVF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "藤森直治",
+          "shares": 1062000,
+          "ratio": 6.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "竹内工業株式会社",
+          "shares": 911000,
+          "ratio": 5.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "加茂睦和",
+          "shares": 300000,
+          "ratio": 1.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SBI新生銀行",
+          "shares": 277000,
+          "ratio": 1.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "北城恪太郎",
+          "shares": 271000,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 258000,
+          "ratio": 1.67,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社フューチャーパートナーズ",
+          "shares": 250000,
+          "ratio": 1.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社槌屋",
+          "shares": 208000,
+          "ratio": 1.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三星ダイヤモンド工業株式会社",
+          "shares": 200000,
+          "ratio": 1.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本証券金融株式会社",
+          "shares": 106000,
+          "ratio": 0.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 10.56,
+          "corporate": 10.15,
+          "financial": 1.79,
+          "securities": 2.36
+        },
+        "individual_total": 10.56,
+        "top10_total": 24.86
+      }
+    }
+  ]
+}

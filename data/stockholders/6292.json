@@ -1,0 +1,220 @@
+{
+  "secCode": "6292",
+  "issuerName": "株式会社カワタ",
+  "updated_at": "2026/07/04 17:57 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "カワタ共伸会",
+      "shares": 556000,
+      "ratio": 7.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "カワタ従業員持株会",
+      "shares": 270000,
+      "ratio": 3.81,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 227000,
+      "ratio": 3.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "島根　良明",
+      "shares": 124000,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社",
+      "shares": 110000,
+      "ratio": 1.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "明治安田生命保険相互会社",
+      "shares": 110000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 110000,
+      "ratio": 1.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本システムコントロール株式会社",
+      "shares": 109000,
+      "ratio": 1.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松井証券株式会社",
+      "shares": 102000,
+      "ratio": 1.45,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松井　久光",
+      "shares": 102000,
+      "ratio": 1.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 11.04,
+      "employee": 3.81,
+      "financial": 6.31,
+      "corporate": 3.09,
+      "securities": 1.45
+    },
+    "individual_total": 11.04,
+    "top10_total": 25.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YJHG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "カワタ共伸会",
+          "shares": 556000,
+          "ratio": 7.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "カワタ従業員持株会",
+          "shares": 270000,
+          "ratio": 3.81,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 227000,
+          "ratio": 3.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "島根　良明",
+          "shares": 124000,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社",
+          "shares": 110000,
+          "ratio": 1.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "明治安田生命保険相互会社",
+          "shares": 110000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 110000,
+          "ratio": 1.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本システムコントロール株式会社",
+          "shares": 109000,
+          "ratio": 1.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松井証券株式会社",
+          "shares": 102000,
+          "ratio": 1.45,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松井　久光",
+          "shares": 102000,
+          "ratio": 1.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 11.04,
+          "employee": 3.81,
+          "financial": 6.31,
+          "corporate": 3.09,
+          "securities": 1.45
+        },
+        "individual_total": 11.04,
+        "top10_total": 25.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "secCode": "255A",
+  "issuerName": "ジーエルテクノホールディングス株式会社",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ジーエルテクノホールディングス従業員持株会",
+      "shares": 906000,
+      "ratio": 6.96,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社島津製作所",
+      "shares": 580000,
+      "ratio": 4.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "森　禮子",
+      "shares": 527000,
+      "ratio": 4.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 487000,
+      "ratio": 3.74,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 429000,
+      "ratio": 3.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 425000,
+      "ratio": 3.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "公益財団法人世界自然保護基金ジャパン",
+      "shares": 400000,
+      "ratio": 3.07,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 376000,
+      "ratio": 2.89,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "J.P. MORGAN SE - LUXEMBOURGBRANCH 381639（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 256000,
+      "ratio": 1.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "西川計測株式会社",
+      "shares": 226000,
+      "ratio": 1.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 6.96,
+      "corporate": 9.46,
+      "individual": 4.05,
+      "other": 3.74,
+      "trust": 3.3,
+      "foundation": 3.07,
+      "securities": 2.89,
+      "foreign": 1.97
+    },
+    "individual_total": 4.05,
+    "top10_total": 35.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第2期(2025/04/01－2026/03/31)",
+      "docID": "S100YFOK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ジーエルテクノホールディングス従業員持株会",
+          "shares": 906000,
+          "ratio": 6.96,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社島津製作所",
+          "shares": 580000,
+          "ratio": 4.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "森　禮子",
+          "shares": 527000,
+          "ratio": 4.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 487000,
+          "ratio": 3.74,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 429000,
+          "ratio": 3.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 425000,
+          "ratio": 3.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "公益財団法人世界自然保護基金ジャパン",
+          "shares": 400000,
+          "ratio": 3.07,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 376000,
+          "ratio": 2.89,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "J.P. MORGAN SE - LUXEMBOURGBRANCH 381639（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 256000,
+          "ratio": 1.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "西川計測株式会社",
+          "shares": 226000,
+          "ratio": 1.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 6.96,
+          "corporate": 9.46,
+          "individual": 4.05,
+          "other": 3.74,
+          "trust": 3.3,
+          "foundation": 3.07,
+          "securities": 2.89,
+          "foreign": 1.97
+        },
+        "individual_total": 4.05,
+        "top10_total": 35.44
+      }
+    }
+  ]
+}

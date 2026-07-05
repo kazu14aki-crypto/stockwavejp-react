@@ -1,0 +1,214 @@
+{
+  "secCode": "7185",
+  "issuerName": "ヒロセ通商株式会社",
+  "updated_at": "2026/07/04 17:58 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "友延　雅昭",
+      "shares": 527200,
+      "ratio": 8.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "渋谷　誠一",
+      "shares": 430000,
+      "ratio": 6.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "石原　愛",
+      "shares": 409000,
+      "ratio": 6.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松井　隆司",
+      "shares": 361800,
+      "ratio": 5.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "野市　裕作",
+      "shares": 359000,
+      "ratio": 5.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "衣川　貴裕",
+      "shares": 329000,
+      "ratio": 5.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "松田　弥",
+      "shares": 216800,
+      "ratio": 3.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "村井　昌江",
+      "shares": 150800,
+      "ratio": 2.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "Maicos International Company Limited",
+      "shares": 93600,
+      "ratio": 1.52,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "森本　和弥",
+      "shares": 66000,
+      "ratio": 1.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 46.26,
+      "foreign": 1.52
+    },
+    "individual_total": 46.26,
+    "top10_total": 47.78
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YJPR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "友延　雅昭",
+          "shares": 527200,
+          "ratio": 8.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "渋谷　誠一",
+          "shares": 430000,
+          "ratio": 6.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "石原　愛",
+          "shares": 409000,
+          "ratio": 6.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松井　隆司",
+          "shares": 361800,
+          "ratio": 5.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "野市　裕作",
+          "shares": 359000,
+          "ratio": 5.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "衣川　貴裕",
+          "shares": 329000,
+          "ratio": 5.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "松田　弥",
+          "shares": 216800,
+          "ratio": 3.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "村井　昌江",
+          "shares": 150800,
+          "ratio": 2.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "Maicos International Company Limited",
+          "shares": 93600,
+          "ratio": 1.52,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "森本　和弥",
+          "shares": 66000,
+          "ratio": 1.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 46.26,
+          "foreign": 1.52
+        },
+        "individual_total": 46.26,
+        "top10_total": 47.78
+      }
+    }
+  ]
+}

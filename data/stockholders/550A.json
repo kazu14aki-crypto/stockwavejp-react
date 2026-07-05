@@ -1,0 +1,214 @@
+{
+  "secCode": "550A",
+  "issuerName": "株式会社ソフトテックス",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ソフトテックス従業員持株会",
+      "shares": 74400,
+      "ratio": 9.66,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "石黒　佳彦",
+      "shares": 72500,
+      "ratio": 9.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "太田　晃二",
+      "shares": 71000,
+      "ratio": 9.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "近藤　久美子",
+      "shares": 60000,
+      "ratio": 7.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "名古屋中小企業投資育成㈱",
+      "shares": 60000,
+      "ratio": 7.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱ミロク情報サービス",
+      "shares": 53100,
+      "ratio": 6.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "キムラユニティー㈱",
+      "shares": 50000,
+      "ratio": 6.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山本　哲士",
+      "shares": 40000,
+      "ratio": 5.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中島　拓穂",
+      "shares": 27000,
+      "ratio": 3.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小島　浩幸",
+      "shares": 26200,
+      "ratio": 3.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 9.66,
+      "individual": 59.72
+    },
+    "individual_total": 59.72,
+    "top10_total": 69.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/04/01－2026/03/31)",
+      "docID": "S100YA88",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ソフトテックス従業員持株会",
+          "shares": 74400,
+          "ratio": 9.66,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "石黒　佳彦",
+          "shares": 72500,
+          "ratio": 9.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "太田　晃二",
+          "shares": 71000,
+          "ratio": 9.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "近藤　久美子",
+          "shares": 60000,
+          "ratio": 7.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "名古屋中小企業投資育成㈱",
+          "shares": 60000,
+          "ratio": 7.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱ミロク情報サービス",
+          "shares": 53100,
+          "ratio": 6.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "キムラユニティー㈱",
+          "shares": 50000,
+          "ratio": 6.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　哲士",
+          "shares": 40000,
+          "ratio": 5.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中島　拓穂",
+          "shares": 27000,
+          "ratio": 3.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小島　浩幸",
+          "shares": 26200,
+          "ratio": 3.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 9.66,
+          "individual": 59.72
+        },
+        "individual_total": 59.72,
+        "top10_total": 69.38
+      }
+    }
+  ]
+}

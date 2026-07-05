@@ -1,0 +1,214 @@
+{
+  "secCode": "2919",
+  "issuerName": "株式会社　マルタイ",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "西部ガスホールディングス株式会社",
+      "shares": 641000,
+      "ratio": 33.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "サンヨー食品株式会社",
+      "shares": 404000,
+      "ratio": 21.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社福岡銀行",
+      "shares": 83000,
+      "ratio": 4.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "TOPPAN株式会社",
+      "shares": 61000,
+      "ratio": 3.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "丸東産業株式会社",
+      "shares": 51000,
+      "ratio": 2.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社シマ・クリエイティブハウス",
+      "shares": 43000,
+      "ratio": 2.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大陽製粉株式会社",
+      "shares": 41000,
+      "ratio": 2.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社福岡中央銀行",
+      "shares": 38000,
+      "ratio": 2.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本トーカンパッケージ株式会社",
+      "shares": 34000,
+      "ratio": 1.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 29000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 66.89,
+      "financial": 7.91
+    },
+    "individual_total": 0,
+    "top10_total": 74.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YG8L",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "西部ガスホールディングス株式会社",
+          "shares": 641000,
+          "ratio": 33.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "サンヨー食品株式会社",
+          "shares": 404000,
+          "ratio": 21.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社福岡銀行",
+          "shares": 83000,
+          "ratio": 4.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "TOPPAN株式会社",
+          "shares": 61000,
+          "ratio": 3.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "丸東産業株式会社",
+          "shares": 51000,
+          "ratio": 2.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社シマ・クリエイティブハウス",
+          "shares": 43000,
+          "ratio": 2.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大陽製粉株式会社",
+          "shares": 41000,
+          "ratio": 2.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社福岡中央銀行",
+          "shares": 38000,
+          "ratio": 2.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本トーカンパッケージ株式会社",
+          "shares": 34000,
+          "ratio": 1.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 29000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 66.89,
+          "financial": 7.91
+        },
+        "individual_total": 0,
+        "top10_total": 74.8
+      }
+    }
+  ]
+}

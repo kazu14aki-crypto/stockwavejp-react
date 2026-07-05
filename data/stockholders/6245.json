@@ -1,0 +1,224 @@
+{
+  "secCode": "6245",
+  "issuerName": "株式会社ヒラノテクシード",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "明治安田生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 1450000,
+      "ratio": 9.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤忠商事株式会社",
+      "shares": 1450000,
+      "ratio": 9.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ヒラノ会",
+      "shares": 1398000,
+      "ratio": 9.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 663000,
+      "ratio": 4.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 633000,
+      "ratio": 4.19,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社りそな銀行",
+      "shares": 584000,
+      "ratio": 3.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社南都銀行\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 450000,
+      "ratio": 2.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "立花証券株式会社",
+      "shares": 401000,
+      "ratio": 2.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ヒラノテクシード従業員持株会",
+      "shares": 372000,
+      "ratio": 2.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社紀陽銀行\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 225000,
+      "ratio": 1.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.04,
+      "corporate": 9.58,
+      "individual": 9.24,
+      "financial": 8.24,
+      "other": 4.19,
+      "securities": 2.65,
+      "employee": 2.46
+    },
+    "individual_total": 9.24,
+    "top10_total": 50.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第102期(2025/04/01－2026/03/31)",
+      "docID": "S100YIRK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "明治安田生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 1450000,
+          "ratio": 9.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤忠商事株式会社",
+          "shares": 1450000,
+          "ratio": 9.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ヒラノ会",
+          "shares": 1398000,
+          "ratio": 9.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 663000,
+          "ratio": 4.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 633000,
+          "ratio": 4.19,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社りそな銀行",
+          "shares": 584000,
+          "ratio": 3.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社南都銀行\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 450000,
+          "ratio": 2.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "立花証券株式会社",
+          "shares": 401000,
+          "ratio": 2.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ヒラノテクシード従業員持株会",
+          "shares": 372000,
+          "ratio": 2.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社紀陽銀行\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 225000,
+          "ratio": 1.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.04,
+          "corporate": 9.58,
+          "individual": 9.24,
+          "financial": 8.24,
+          "other": 4.19,
+          "securities": 2.65,
+          "employee": 2.46
+        },
+        "individual_total": 9.24,
+        "top10_total": 50.4
+      }
+    }
+  ]
+}

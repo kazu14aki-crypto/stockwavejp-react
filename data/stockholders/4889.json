@@ -1,0 +1,220 @@
+{
+  "secCode": "4889",
+  "issuerName": "株式会社レナサイエンス",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "特定有価証券信託受託者　株式会社SMBC信託銀行",
+      "shares": 4360600,
+      "ratio": 31.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "宮　田　敏　男",
+      "shares": 1470700,
+      "ratio": 10.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "上田八木短資株式会社",
+      "shares": 300000,
+      "ratio": 2.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BNYM SA／NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人株式会社三菱UFJ銀行）",
+      "shares": 276100,
+      "ratio": 2.0,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BOFAS INC SEGREGATION ACCOUNT（常任代理人BOFA証券株式会社）",
+      "shares": 263400,
+      "ratio": 1.91,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社共有口",
+      "shares": 189800,
+      "ratio": 1.38,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "林　田　広　明",
+      "shares": 173000,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一リアルター株式会社",
+      "shares": 156900,
+      "ratio": 1.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社SBI証券",
+      "shares": 150621,
+      "ratio": 1.09,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "飯　田　晋　一",
+      "shares": 64300,
+      "ratio": 0.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 31.65,
+      "individual": 12.41,
+      "corporate": 3.32,
+      "foreign": 3.91,
+      "securities": 2.47
+    },
+    "individual_total": 12.41,
+    "top10_total": 53.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/04/01－2026/03/31)",
+      "docID": "S100YGXR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "特定有価証券信託受託者　株式会社SMBC信託銀行",
+          "shares": 4360600,
+          "ratio": 31.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "宮　田　敏　男",
+          "shares": 1470700,
+          "ratio": 10.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "上田八木短資株式会社",
+          "shares": 300000,
+          "ratio": 2.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BNYM SA／NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人株式会社三菱UFJ銀行）",
+          "shares": 276100,
+          "ratio": 2.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BOFAS INC SEGREGATION ACCOUNT（常任代理人BOFA証券株式会社）",
+          "shares": 263400,
+          "ratio": 1.91,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社共有口",
+          "shares": 189800,
+          "ratio": 1.38,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "林　田　広　明",
+          "shares": 173000,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一リアルター株式会社",
+          "shares": 156900,
+          "ratio": 1.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社SBI証券",
+          "shares": 150621,
+          "ratio": 1.09,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "飯　田　晋　一",
+          "shares": 64300,
+          "ratio": 0.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 31.65,
+          "individual": 12.41,
+          "corporate": 3.32,
+          "foreign": 3.91,
+          "securities": 2.47
+        },
+        "individual_total": 12.41,
+        "top10_total": 53.76
+      }
+    }
+  ]
+}

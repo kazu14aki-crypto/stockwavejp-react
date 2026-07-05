@@ -1,0 +1,222 @@
+{
+  "secCode": "5194",
+  "issuerName": "相模ゴム工業株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "MSCO CUSTOMER SECURITIES（常任代理人　モルガン・スタンレーMUFG証券㈱）",
+      "shares": 1377000,
+      "ratio": 12.69,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大　跡　一　郎",
+      "shares": 1072000,
+      "ratio": 9.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大　跡　典　子",
+      "shares": 984000,
+      "ratio": 9.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱横浜銀行",
+      "shares": 536000,
+      "ratio": 4.95,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中　島　章　智",
+      "shares": 465000,
+      "ratio": 4.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三菱UFJ信託銀行㈱",
+      "shares": 410000,
+      "ratio": 3.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NOMURA SINGAPORE LIMITED CUSTOMER SEGREGATED A/C FJ-1309 （常任代理人　野村證券㈱）",
+      "shares": 373000,
+      "ratio": 3.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "相模産業㈱",
+      "shares": 324000,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "OASIS INVESTMENTS II MASTER FUND LTD. （常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 272000,
+      "ratio": 2.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券㈱）",
+      "shares": 261000,
+      "ratio": 2.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 12.69,
+      "individual": 26.22,
+      "financial": 8.73,
+      "other": 3.44,
+      "corporate": 2.51,
+      "securities": 2.4
+    },
+    "individual_total": 26.22,
+    "top10_total": 55.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第93期(2025/04/01－2026/03/31)",
+      "docID": "S100YL8G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "MSCO CUSTOMER SECURITIES（常任代理人　モルガン・スタンレーMUFG証券㈱）",
+          "shares": 1377000,
+          "ratio": 12.69,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大　跡　一　郎",
+          "shares": 1072000,
+          "ratio": 9.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大　跡　典　子",
+          "shares": 984000,
+          "ratio": 9.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱横浜銀行",
+          "shares": 536000,
+          "ratio": 4.95,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中　島　章　智",
+          "shares": 465000,
+          "ratio": 4.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三菱UFJ信託銀行㈱",
+          "shares": 410000,
+          "ratio": 3.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NOMURA SINGAPORE LIMITED CUSTOMER SEGREGATED A/C FJ-1309 （常任代理人　野村證券㈱）",
+          "shares": 373000,
+          "ratio": 3.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "相模産業㈱",
+          "shares": 324000,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "OASIS INVESTMENTS II MASTER FUND LTD. （常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 272000,
+          "ratio": 2.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券㈱）",
+          "shares": 261000,
+          "ratio": 2.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 12.69,
+          "individual": 26.22,
+          "financial": 8.73,
+          "other": 3.44,
+          "corporate": 2.51,
+          "securities": 2.4
+        },
+        "individual_total": 26.22,
+        "top10_total": 55.99
+      }
+    }
+  ]
+}

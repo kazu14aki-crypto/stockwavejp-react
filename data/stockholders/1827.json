@@ -1,0 +1,222 @@
+{
+  "secCode": "1827",
+  "issuerName": "株式会社ナカノフドー建設",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "公益財団法人大島育英会",
+      "shares": 7156000,
+      "ratio": 20.82,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "関東興業株式会社",
+      "shares": 4350000,
+      "ratio": 12.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大　島　義　和",
+      "shares": 2691000,
+      "ratio": 7.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社マリンドリーム",
+      "shares": 2100000,
+      "ratio": 6.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GOLDMAN SACHS INTERNATIONAL (常任代理人　ゴールドマン・サックス証券株式会社)",
+      "shares": 2040000,
+      "ratio": 5.93,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＭＢサービス",
+      "shares": 1750000,
+      "ratio": 5.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1647000,
+      "ratio": 4.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "LIM JAPAN EVENT MASTER FUND  (常任代理人　立花証券株式会社)",
+      "shares": 1035000,
+      "ratio": 3.01,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ナカノ友愛会投資会",
+      "shares": 903000,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 10,
+      "name": "立花証券株式会社",
+      "shares": 737000,
+      "ratio": 2.14,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 20.82,
+      "corporate": 23.85,
+      "individual": 10.46,
+      "foreign": 5.93,
+      "financial": 4.79,
+      "securities": 5.15
+    },
+    "individual_total": 10.46,
+    "top10_total": 71.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第84期(2025/04/01－2026/03/31)",
+      "docID": "S100YHMT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "公益財団法人大島育英会",
+          "shares": 7156000,
+          "ratio": 20.82,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "関東興業株式会社",
+          "shares": 4350000,
+          "ratio": 12.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大　島　義　和",
+          "shares": 2691000,
+          "ratio": 7.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社マリンドリーム",
+          "shares": 2100000,
+          "ratio": 6.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GOLDMAN SACHS INTERNATIONAL (常任代理人　ゴールドマン・サックス証券株式会社)",
+          "shares": 2040000,
+          "ratio": 5.93,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＭＢサービス",
+          "shares": 1750000,
+          "ratio": 5.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1647000,
+          "ratio": 4.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "LIM JAPAN EVENT MASTER FUND  (常任代理人　立花証券株式会社)",
+          "shares": 1035000,
+          "ratio": 3.01,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ナカノ友愛会投資会",
+          "shares": 903000,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 10,
+          "name": "立花証券株式会社",
+          "shares": 737000,
+          "ratio": 2.14,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 20.82,
+          "corporate": 23.85,
+          "individual": 10.46,
+          "foreign": 5.93,
+          "financial": 4.79,
+          "securities": 5.15
+        },
+        "individual_total": 10.46,
+        "top10_total": 71.0
+      }
+    }
+  ]
+}

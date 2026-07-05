@@ -1,0 +1,220 @@
+{
+  "secCode": "7628",
+  "issuerName": "株式会社オーハシテクニカ",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "オーハシテクニカ取引先持株会",
+      "shares": 2317600,
+      "ratio": 9.04,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2171900,
+      "ratio": 8.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社 (常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 1320000,
+      "ratio": 5.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "SINOPACSEC (常任代理人　日産証券株式会社)",
+      "shares": 1280700,
+      "ratio": 5.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行(常任代理人　株式会社日本カストディ銀行)",
+      "shares": 1234800,
+      "ratio": 4.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "いちごトラスト・ピーティーイー・リミテッド(常任代理人　香港上海銀行東京支店)",
+      "shares": 1107200,
+      "ratio": 4.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "明治安田生命保険相互会社(常任代理人　株式会社日本カストディ銀行)",
+      "shares": 680000,
+      "ratio": 2.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社佐賀鉄工所",
+      "shares": 631200,
+      "ratio": 2.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "阪村産業株式会社",
+      "shares": 620000,
+      "ratio": 2.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日新",
+      "shares": 540000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 9.04,
+      "trust": 21.1,
+      "securities": 5.0,
+      "financial": 4.32,
+      "corporate": 6.98
+    },
+    "individual_total": 0,
+    "top10_total": 46.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第74期(2025/04/01－2026/03/31)",
+      "docID": "S100YHS4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "オーハシテクニカ取引先持株会",
+          "shares": 2317600,
+          "ratio": 9.04,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2171900,
+          "ratio": 8.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社 (常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 1320000,
+          "ratio": 5.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "SINOPACSEC (常任代理人　日産証券株式会社)",
+          "shares": 1280700,
+          "ratio": 5.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行(常任代理人　株式会社日本カストディ銀行)",
+          "shares": 1234800,
+          "ratio": 4.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "いちごトラスト・ピーティーイー・リミテッド(常任代理人　香港上海銀行東京支店)",
+          "shares": 1107200,
+          "ratio": 4.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "明治安田生命保険相互会社(常任代理人　株式会社日本カストディ銀行)",
+          "shares": 680000,
+          "ratio": 2.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社佐賀鉄工所",
+          "shares": 631200,
+          "ratio": 2.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "阪村産業株式会社",
+          "shares": 620000,
+          "ratio": 2.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日新",
+          "shares": 540000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 9.04,
+          "trust": 21.1,
+          "securities": 5.0,
+          "financial": 4.32,
+          "corporate": 6.98
+        },
+        "individual_total": 0,
+        "top10_total": 46.44
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "6702",
+  "issuerName": "富士通株式会社",
+  "updated_at": "2026/07/04 17:54 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 281476000,
+      "ratio": 16.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 115888000,
+      "ratio": 6.68,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 48117000,
+      "ratio": 2.77,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 45287000,
+      "ratio": 2.61,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 33900000,
+      "ratio": 1.95,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "富士通株式会社従業員持株会",
+      "shares": 28006000,
+      "ratio": 1.61,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 27770000,
+      "ratio": 1.6,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "朝日生命保険相互会社",
+      "shares": 26380000,
+      "ratio": 1.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOVERNMENT OF NORWAY（常任代理人　シティバンク、エヌ・エイ東京支店カストディ業務部）",
+      "shares": 25582000,
+      "ratio": 1.47,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 25086000,
+      "ratio": 1.44,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.91,
+      "foreign": 10.37,
+      "employee": 1.61,
+      "financial": 1.52,
+      "other": 1.47
+    },
+    "individual_total": 0,
+    "top10_total": 37.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第126期(2025/04/01－2026/03/31)",
+      "docID": "S100YM3K",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 281476000,
+          "ratio": 16.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 115888000,
+          "ratio": 6.68,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 48117000,
+          "ratio": 2.77,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 45287000,
+          "ratio": 2.61,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 33900000,
+          "ratio": 1.95,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "富士通株式会社従業員持株会",
+          "shares": 28006000,
+          "ratio": 1.61,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 27770000,
+          "ratio": 1.6,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "朝日生命保険相互会社",
+          "shares": 26380000,
+          "ratio": 1.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOVERNMENT OF NORWAY（常任代理人　シティバンク、エヌ・エイ東京支店カストディ業務部）",
+          "shares": 25582000,
+          "ratio": 1.47,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 25086000,
+          "ratio": 1.44,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.91,
+          "foreign": 10.37,
+          "employee": 1.61,
+          "financial": 1.52,
+          "other": 1.47
+        },
+        "individual_total": 0,
+        "top10_total": 37.88
+      }
+    }
+  ]
+}

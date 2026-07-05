@@ -1,0 +1,216 @@
+{
+  "secCode": "7480",
+  "issuerName": "スズデン株式会社",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社トレンド",
+      "shares": 1446000,
+      "ratio": 11.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1055000,
+      "ratio": 8.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社タァーツ",
+      "shares": 512000,
+      "ratio": 3.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鈴　木　敏　雄",
+      "shares": 426000,
+      "ratio": 3.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岡　野　妙　子",
+      "shares": 399000,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "鈴　木　達　夫",
+      "shares": 351000,
+      "ratio": 2.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社サンセイテクノス",
+      "shares": 323000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 282000,
+      "ratio": 2.19,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 221000,
+      "ratio": 1.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岡　野　淳　志",
+      "shares": 192000,
+      "ratio": 1.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.68,
+      "trust": 12.09,
+      "individual": 10.61
+    },
+    "individual_total": 10.61,
+    "top10_total": 40.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第74期(2025/04/01－2026/03/31)",
+      "docID": "S100YG54",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社トレンド",
+          "shares": 1446000,
+          "ratio": 11.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1055000,
+          "ratio": 8.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社タァーツ",
+          "shares": 512000,
+          "ratio": 3.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鈴　木　敏　雄",
+          "shares": 426000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡　野　妙　子",
+          "shares": 399000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "鈴　木　達　夫",
+          "shares": 351000,
+          "ratio": 2.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社サンセイテクノス",
+          "shares": 323000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 282000,
+          "ratio": 2.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 221000,
+          "ratio": 1.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岡　野　淳　志",
+          "shares": 192000,
+          "ratio": 1.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.68,
+          "trust": 12.09,
+          "individual": 10.61
+        },
+        "individual_total": 10.61,
+        "top10_total": 40.38
+      }
+    }
+  ]
+}

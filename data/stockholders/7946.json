@@ -1,0 +1,214 @@
+{
+  "secCode": "7946",
+  "issuerName": "株式会社光陽社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "犬養　岬太",
+      "shares": 723000,
+      "ratio": 28.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "速見　嘉弘",
+      "shares": 470000,
+      "ratio": 18.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "新日本カレンダー株式会社",
+      "shares": 250000,
+      "ratio": 9.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＫＫ",
+      "shares": 250000,
+      "ratio": 9.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社石川商会",
+      "shares": 87000,
+      "ratio": 3.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "八木　浩志",
+      "shares": 57500,
+      "ratio": 2.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社研文社",
+      "shares": 44000,
+      "ratio": 1.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "村瀬　仁章",
+      "shares": 44000,
+      "ratio": 1.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社尾上紙店",
+      "shares": 43000,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "幸田　和典",
+      "shares": 22500,
+      "ratio": 0.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 51.25,
+      "corporate": 26.22
+    },
+    "individual_total": 51.25,
+    "top10_total": 77.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YLWX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "犬養　岬太",
+          "shares": 723000,
+          "ratio": 28.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "速見　嘉弘",
+          "shares": 470000,
+          "ratio": 18.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "新日本カレンダー株式会社",
+          "shares": 250000,
+          "ratio": 9.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＫＫ",
+          "shares": 250000,
+          "ratio": 9.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社石川商会",
+          "shares": 87000,
+          "ratio": 3.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "八木　浩志",
+          "shares": 57500,
+          "ratio": 2.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社研文社",
+          "shares": 44000,
+          "ratio": 1.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "村瀬　仁章",
+          "shares": 44000,
+          "ratio": 1.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社尾上紙店",
+          "shares": 43000,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "幸田　和典",
+          "shares": 22500,
+          "ratio": 0.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 51.25,
+          "corporate": 26.22
+        },
+        "individual_total": 51.25,
+        "top10_total": 77.47
+      }
+    }
+  ]
+}

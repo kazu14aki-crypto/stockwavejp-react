@@ -1,0 +1,220 @@
+{
+  "secCode": "8511",
+  "issuerName": "日本証券金融株式会社",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "THE SFP VALUE REALIZATION MASTER FUND LTD.\n（常任代理人　立花証券株式会社）",
+      "shares": 13622000,
+      "ratio": 16.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 8958000,
+      "ratio": 10.98,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人資本市場振興財団",
+      "shares": 4654000,
+      "ratio": 5.7,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "JP MORGAN CHASE BANK 385642\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 4596000,
+      "ratio": 5.63,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行",
+      "shares": 3536000,
+      "ratio": 4.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2636000,
+      "ratio": 3.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 1489000,
+      "ratio": 1.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1370000,
+      "ratio": 1.68,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "RBC IST 15 PCT LENDING ACCOUNT - CLIENT ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 1275000,
+      "ratio": 1.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1132000,
+      "ratio": 1.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 16.69,
+      "trust": 14.21,
+      "foundation": 5.7,
+      "foreign": 10.25,
+      "financial": 6.15
+    },
+    "individual_total": 0,
+    "top10_total": 53.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第116期(2025/04/01－2026/03/31)",
+      "docID": "S100YIQY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "THE SFP VALUE REALIZATION MASTER FUND LTD.\n（常任代理人　立花証券株式会社）",
+          "shares": 13622000,
+          "ratio": 16.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 8958000,
+          "ratio": 10.98,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人資本市場振興財団",
+          "shares": 4654000,
+          "ratio": 5.7,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "JP MORGAN CHASE BANK 385642\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 4596000,
+          "ratio": 5.63,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行",
+          "shares": 3536000,
+          "ratio": 4.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2636000,
+          "ratio": 3.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 1489000,
+          "ratio": 1.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1370000,
+          "ratio": 1.68,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "RBC IST 15 PCT LENDING ACCOUNT - CLIENT ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1275000,
+          "ratio": 1.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNYM AS AGT/CLTS 10 PERCENT\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1132000,
+          "ratio": 1.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 16.69,
+          "trust": 14.21,
+          "foundation": 5.7,
+          "foreign": 10.25,
+          "financial": 6.15
+        },
+        "individual_total": 0,
+        "top10_total": 53.0
+      }
+    }
+  ]
+}

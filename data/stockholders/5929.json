@@ -1,0 +1,216 @@
+{
+  "secCode": "5929",
+  "issuerName": "三和ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 29646000,
+      "ratio": 14.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 13821000,
+      "ratio": 6.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三井住友銀行",
+      "shares": 10038000,
+      "ratio": 4.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "第一生命保険株式会社",
+      "shares": 6784000,
+      "ratio": 3.23,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "CGML PB CLIENT ACCOUNT/COLLATERAL\n（常任代理人 シティバンク、エヌ・エイ東京支店）",
+      "shares": 6161000,
+      "ratio": 2.94,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505010\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 5756000,
+      "ratio": 2.74,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "あいおいニッセイ同和損害保険株式会社",
+      "shares": 5140000,
+      "ratio": 2.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 3758000,
+      "ratio": 1.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ゴールドマン・サックス証券株式会社 BNYM",
+      "shares": 3420000,
+      "ratio": 1.63,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 3348000,
+      "ratio": 1.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.72,
+      "financial": 12.06,
+      "foreign": 9.1
+    },
+    "individual_total": 0,
+    "top10_total": 41.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第91期(2025/04/01－2026/03/31)",
+      "docID": "S100YFHH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 29646000,
+          "ratio": 14.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 13821000,
+          "ratio": 6.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三井住友銀行",
+          "shares": 10038000,
+          "ratio": 4.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "第一生命保険株式会社",
+          "shares": 6784000,
+          "ratio": 3.23,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "CGML PB CLIENT ACCOUNT/COLLATERAL\n（常任代理人 シティバンク、エヌ・エイ東京支店）",
+          "shares": 6161000,
+          "ratio": 2.94,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505010\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 5756000,
+          "ratio": 2.74,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "shares": 5140000,
+          "ratio": 2.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 3758000,
+          "ratio": 1.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ゴールドマン・サックス証券株式会社 BNYM",
+          "shares": 3420000,
+          "ratio": 1.63,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 3348000,
+          "ratio": 1.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.72,
+          "financial": 12.06,
+          "foreign": 9.1
+        },
+        "individual_total": 0,
+        "top10_total": 41.88
+      }
+    }
+  ]
+}

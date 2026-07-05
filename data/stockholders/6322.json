@@ -1,0 +1,218 @@
+{
+  "secCode": "6322",
+  "issuerName": "株式会社タクミナ",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "タクミナ共栄持株会",
+      "shares": 948000,
+      "ratio": 13.73,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "合同会社Ｎ．Ｋ．Ｆｒｅｕｄｅｌ",
+      "shares": 540000,
+      "ratio": 7.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山田　義彦",
+      "shares": 521000,
+      "ratio": 7.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＣＨＡＲＯＮ　ＦＩＮＡＮＣＥ　ＧＭＢＨ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 335000,
+      "ratio": 4.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "タクミナ社員持株会",
+      "shares": 294000,
+      "ratio": 4.26,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山田　信彦",
+      "shares": 245000,
+      "ratio": 3.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "熊谷　景子",
+      "shares": 139000,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山田　幸子",
+      "shares": 139000,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山田　裕子",
+      "shares": 138000,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大西　久美子",
+      "shares": 129000,
+      "ratio": 1.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 17.99,
+      "corporate": 7.82,
+      "individual": 18.99,
+      "financial": 4.86
+    },
+    "individual_total": 18.99,
+    "top10_total": 49.66
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/04/01－2026/03/31)",
+      "docID": "S100YFBY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "タクミナ共栄持株会",
+          "shares": 948000,
+          "ratio": 13.73,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "合同会社Ｎ．Ｋ．Ｆｒｅｕｄｅｌ",
+          "shares": 540000,
+          "ratio": 7.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山田　義彦",
+          "shares": 521000,
+          "ratio": 7.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＣＨＡＲＯＮ　ＦＩＮＡＮＣＥ　ＧＭＢＨ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 335000,
+          "ratio": 4.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "タクミナ社員持株会",
+          "shares": 294000,
+          "ratio": 4.26,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山田　信彦",
+          "shares": 245000,
+          "ratio": 3.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "熊谷　景子",
+          "shares": 139000,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山田　幸子",
+          "shares": 139000,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山田　裕子",
+          "shares": 138000,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大西　久美子",
+          "shares": 129000,
+          "ratio": 1.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 17.99,
+          "corporate": 7.82,
+          "individual": 18.99,
+          "financial": 4.86
+        },
+        "individual_total": 18.99,
+        "top10_total": 49.66
+      }
+    }
+  ]
+}

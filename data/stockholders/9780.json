@@ -1,0 +1,218 @@
+{
+  "secCode": "9780",
+  "issuerName": "株式会社ハリマビステム",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社おおとり",
+      "shares": 1471000,
+      "ratio": 16.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "光通信株式会社KK投資事業有限責任組合",
+      "shares": 573000,
+      "ratio": 6.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ハリマビステム社員持株会",
+      "shares": 520000,
+      "ratio": 5.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 381000,
+      "ratio": 4.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中央日本土地建物株式会社",
+      "shares": 368000,
+      "ratio": 4.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "鴻      義  久",
+      "shares": 355000,
+      "ratio": 4.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ビステム役員持株会",
+      "shares": 282000,
+      "ratio": 3.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三菱ＵＦＪ信託銀行株式会社（常任代理人  日本マスタートラスト信託銀行㈱）",
+      "shares": 253000,
+      "ratio": 2.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社みずほ銀行（常任代理人  ㈱日本カストディ銀行）",
+      "shares": 252000,
+      "ratio": 2.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社横浜銀行（常任代理人  ㈱日本カストディ銀行）",
+      "shares": 247000,
+      "ratio": 2.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.0,
+      "employee": 9.0,
+      "trust": 12.7,
+      "individual": 4.0
+    },
+    "individual_total": 4.0,
+    "top10_total": 52.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100Y7GN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社おおとり",
+          "shares": 1471000,
+          "ratio": 16.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "光通信株式会社KK投資事業有限責任組合",
+          "shares": 573000,
+          "ratio": 6.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ハリマビステム社員持株会",
+          "shares": 520000,
+          "ratio": 5.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 381000,
+          "ratio": 4.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中央日本土地建物株式会社",
+          "shares": 368000,
+          "ratio": 4.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "鴻      義  久",
+          "shares": 355000,
+          "ratio": 4.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ビステム役員持株会",
+          "shares": 282000,
+          "ratio": 3.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三菱ＵＦＪ信託銀行株式会社（常任代理人  日本マスタートラスト信託銀行㈱）",
+          "shares": 253000,
+          "ratio": 2.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社みずほ銀行（常任代理人  ㈱日本カストディ銀行）",
+          "shares": 252000,
+          "ratio": 2.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社横浜銀行（常任代理人  ㈱日本カストディ銀行）",
+          "shares": 247000,
+          "ratio": 2.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.0,
+          "employee": 9.0,
+          "trust": 12.7,
+          "individual": 4.0
+        },
+        "individual_total": 4.0,
+        "top10_total": 52.7
+      }
+    }
+  ]
+}

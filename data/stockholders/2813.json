@@ -1,0 +1,220 @@
+{
+  "secCode": "2813",
+  "issuerName": "和弘食品株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社和山商店",
+      "shares": 622000,
+      "ratio": 24.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日清オイリオグループ株式会社",
+      "shares": 480000,
+      "ratio": 19.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "野村信託銀行株式会社",
+      "shares": 122000,
+      "ratio": 4.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "和山　明弘",
+      "shares": 71000,
+      "ratio": 2.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 42000,
+      "ratio": 1.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社北海道銀行",
+      "shares": 42000,
+      "ratio": 1.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東海東京証券株式会社",
+      "shares": 26000,
+      "ratio": 1.05,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "加世田　十七七",
+      "shares": 25000,
+      "ratio": 1.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "船山　益宏",
+      "shares": 24000,
+      "ratio": 0.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 24000,
+      "ratio": 0.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 44.18,
+      "financial": 7.59,
+      "individual": 4.88,
+      "trust": 1.72,
+      "securities": 1.05
+    },
+    "individual_total": 4.88,
+    "top10_total": 59.42
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YGOO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社和山商店",
+          "shares": 622000,
+          "ratio": 24.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日清オイリオグループ株式会社",
+          "shares": 480000,
+          "ratio": 19.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "野村信託銀行株式会社",
+          "shares": 122000,
+          "ratio": 4.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "和山　明弘",
+          "shares": 71000,
+          "ratio": 2.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 42000,
+          "ratio": 1.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社北海道銀行",
+          "shares": 42000,
+          "ratio": 1.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東海東京証券株式会社",
+          "shares": 26000,
+          "ratio": 1.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "加世田　十七七",
+          "shares": 25000,
+          "ratio": 1.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "船山　益宏",
+          "shares": 24000,
+          "ratio": 0.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 24000,
+          "ratio": 0.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 44.18,
+          "financial": 7.59,
+          "individual": 4.88,
+          "trust": 1.72,
+          "securities": 1.05
+        },
+        "individual_total": 4.88,
+        "top10_total": 59.42
+      }
+    }
+  ]
+}

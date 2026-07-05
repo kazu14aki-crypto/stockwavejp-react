@@ -1,0 +1,218 @@
+{
+  "secCode": "8793",
+  "issuerName": "ＮＥＣキャピタルソリューション株式会社",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＳＢＩ新生銀行",
+      "shares": 9367000,
+      "ratio": 43.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本電気株式会社",
+      "shares": 2544000,
+      "ratio": 11.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井住友ファイナンス＆リース株式会社",
+      "shares": 1685000,
+      "ratio": 7.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（投資信託組入株数分および年金信託組入分を除く）",
+      "shares": 693000,
+      "ratio": 3.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（投資信託組入株数分）",
+      "shares": 347000,
+      "ratio": 1.61,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（投資信託組入株数分）",
+      "shares": 189000,
+      "ratio": 0.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "DFA INTL SMALL CAP VALUE PORTFOLIO(常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 164000,
+      "ratio": 0.76,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY505223(常任代理人　株式会社みずほ銀行）",
+      "shares": 109000,
+      "ratio": 0.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（投資信託組入株数分および年金信託組入分を除く）",
+      "shares": 107000,
+      "ratio": 0.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行）",
+      "shares": 103000,
+      "ratio": 0.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 43.47,
+      "corporate": 19.62,
+      "trust": 6.18,
+      "foreign": 1.73
+    },
+    "individual_total": 0,
+    "top10_total": 71.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第56期(2025/04/01－2026/03/31)",
+      "docID": "S100YEUV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＳＢＩ新生銀行",
+          "shares": 9367000,
+          "ratio": 43.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本電気株式会社",
+          "shares": 2544000,
+          "ratio": 11.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井住友ファイナンス＆リース株式会社",
+          "shares": 1685000,
+          "ratio": 7.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（投資信託組入株数分および年金信託組入分を除く）",
+          "shares": 693000,
+          "ratio": 3.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（投資信託組入株数分）",
+          "shares": 347000,
+          "ratio": 1.61,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（投資信託組入株数分）",
+          "shares": 189000,
+          "ratio": 0.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "DFA INTL SMALL CAP VALUE PORTFOLIO(常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 164000,
+          "ratio": 0.76,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY505223(常任代理人　株式会社みずほ銀行）",
+          "shares": 109000,
+          "ratio": 0.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（投資信託組入株数分および年金信託組入分を除く）",
+          "shares": 107000,
+          "ratio": 0.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781 (常任代理人　株式会社みずほ銀行）",
+          "shares": 103000,
+          "ratio": 0.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 43.47,
+          "corporate": 19.62,
+          "trust": 6.18,
+          "foreign": 1.73
+        },
+        "individual_total": 0,
+        "top10_total": 71.0
+      }
+    }
+  ]
+}

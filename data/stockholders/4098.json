@@ -1,0 +1,218 @@
+{
+  "secCode": "4098",
+  "issuerName": "チタン工業株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社東芝",
+      "shares": 200000,
+      "ratio": 6.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "稲畑産業株式会社",
+      "shares": 147000,
+      "ratio": 4.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社山口銀行",
+      "shares": 128000,
+      "ratio": 4.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社山田事務所",
+      "shares": 96000,
+      "ratio": 3.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小西安株式会社",
+      "shares": 93000,
+      "ratio": 3.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "井　本　浩　二",
+      "shares": 88000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平　井　健　治",
+      "shares": 87000,
+      "ratio": 2.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 34000,
+      "ratio": 1.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "第一生命保険株式会社",
+      "shares": 29000,
+      "ratio": 0.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山口産業株式会社",
+      "shares": 28000,
+      "ratio": 0.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.0,
+      "financial": 5.28,
+      "individual": 5.9,
+      "securities": 1.17
+    },
+    "individual_total": 5.9,
+    "top10_total": 31.35
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第128期(2025/04/01－2026/03/31)",
+      "docID": "S100YGE8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社東芝",
+          "shares": 200000,
+          "ratio": 6.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "稲畑産業株式会社",
+          "shares": 147000,
+          "ratio": 4.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社山口銀行",
+          "shares": 128000,
+          "ratio": 4.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社山田事務所",
+          "shares": 96000,
+          "ratio": 3.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小西安株式会社",
+          "shares": 93000,
+          "ratio": 3.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "井　本　浩　二",
+          "shares": 88000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平　井　健　治",
+          "shares": 87000,
+          "ratio": 2.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 34000,
+          "ratio": 1.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "第一生命保険株式会社",
+          "shares": 29000,
+          "ratio": 0.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山口産業株式会社",
+          "shares": 28000,
+          "ratio": 0.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.0,
+          "financial": 5.28,
+          "individual": 5.9,
+          "securities": 1.17
+        },
+        "individual_total": 5.9,
+        "top10_total": 31.35
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "7506",
+  "issuerName": "株式会社　ハウス　オブ　ローゼ",
+  "updated_at": "2026/07/04 18:34 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ワコールホールディングス",
+      "shares": 1000000,
+      "ratio": 21.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ローズエージェンシー",
+      "shares": 463000,
+      "ratio": 9.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社アイスタイル",
+      "shares": 260000,
+      "ratio": 5.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "安原　淳子",
+      "shares": 50000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ハウスオブローゼ従業員持株会",
+      "shares": 48000,
+      "ratio": 1.03,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "永井　たき枝",
+      "shares": 39000,
+      "ratio": 0.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 39000,
+      "ratio": 0.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社デリシアスエーシー",
+      "shares": 26000,
+      "ratio": 0.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "神野　晴年",
+      "shares": 18000,
+      "ratio": 0.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "川上　慈弘",
+      "shares": 12000,
+      "ratio": 0.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 37.18,
+      "individual": 2.54,
+      "employee": 1.03,
+      "financial": 0.82
+    },
+    "individual_total": 2.54,
+    "top10_total": 41.57
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第45期(2025/04/01－2026/03/31)",
+      "docID": "S100YHK9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ワコールホールディングス",
+          "shares": 1000000,
+          "ratio": 21.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ローズエージェンシー",
+          "shares": 463000,
+          "ratio": 9.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社アイスタイル",
+          "shares": 260000,
+          "ratio": 5.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "安原　淳子",
+          "shares": 50000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ハウスオブローゼ従業員持株会",
+          "shares": 48000,
+          "ratio": 1.03,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "永井　たき枝",
+          "shares": 39000,
+          "ratio": 0.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 39000,
+          "ratio": 0.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社デリシアスエーシー",
+          "shares": 26000,
+          "ratio": 0.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "神野　晴年",
+          "shares": 18000,
+          "ratio": 0.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "川上　慈弘",
+          "shares": 12000,
+          "ratio": 0.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 37.18,
+          "individual": 2.54,
+          "employee": 1.03,
+          "financial": 0.82
+        },
+        "individual_total": 2.54,
+        "top10_total": 41.57
+      }
+    }
+  ]
+}

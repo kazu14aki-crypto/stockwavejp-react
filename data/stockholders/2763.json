@@ -1,0 +1,218 @@
+{
+  "secCode": "2763",
+  "issuerName": "株式会社エフティグループ",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社光通信代表取締役　重田　康光",
+      "shares": 17706100,
+      "ratio": 59.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＨＣＭＡアルファ代表取締役　和田　英明",
+      "shares": 3870200,
+      "ratio": 13.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 566900,
+      "ratio": 1.91,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "村田機械株式会社代表取締役　村田　大介",
+      "shares": 496200,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "根岸　欣司",
+      "shares": 407700,
+      "ratio": 1.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 360300,
+      "ratio": 1.21,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平﨑　敏之",
+      "shares": 338200,
+      "ratio": 1.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山本　博之",
+      "shares": 181900,
+      "ratio": 0.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＮＴＴ・ＴＣリース株式会社",
+      "shares": 156000,
+      "ratio": 0.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "エフティグループ取引先持株会",
+      "shares": 129500,
+      "ratio": 0.44,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 74.77,
+      "securities": 3.12,
+      "individual": 3.12,
+      "employee": 0.44
+    },
+    "individual_total": 3.12,
+    "top10_total": 81.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2025/04/01－2026/03/31)",
+      "docID": "S100YLMI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社光通信代表取締役　重田　康光",
+          "shares": 17706100,
+          "ratio": 59.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＨＣＭＡアルファ代表取締役　和田　英明",
+          "shares": 3870200,
+          "ratio": 13.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＭＳＩＰ ＣＬＩＥＮＴ ＳＥＣＵＲＩＴＩＥＳ（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 566900,
+          "ratio": 1.91,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "村田機械株式会社代表取締役　村田　大介",
+          "shares": 496200,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "根岸　欣司",
+          "shares": 407700,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 360300,
+          "ratio": 1.21,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平﨑　敏之",
+          "shares": 338200,
+          "ratio": 1.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　博之",
+          "shares": 181900,
+          "ratio": 0.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＮＴＴ・ＴＣリース株式会社",
+          "shares": 156000,
+          "ratio": 0.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "エフティグループ取引先持株会",
+          "shares": 129500,
+          "ratio": 0.44,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 74.77,
+          "securities": 3.12,
+          "individual": 3.12,
+          "employee": 0.44
+        },
+        "individual_total": 3.12,
+        "top10_total": 81.45
+      }
+    }
+  ]
+}

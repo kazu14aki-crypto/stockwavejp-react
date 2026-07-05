@@ -1,0 +1,220 @@
+{
+  "secCode": "5480",
+  "issuerName": "日本冶金工業株式会社",
+  "updated_at": "2026/07/04 18:15 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1413000,
+      "ratio": 10.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 681000,
+      "ratio": 4.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本冶金協力会社持株会",
+      "shares": 563000,
+      "ratio": 4.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人　株式会社みずほ銀行）",
+      "shares": 354000,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 311000,
+      "ratio": 2.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "河合　映治",
+      "shares": 300000,
+      "ratio": 2.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本冶金ナス持株会",
+      "shares": 295000,
+      "ratio": 2.13,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楢崎　潤",
+      "shares": 212000,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 197000,
+      "ratio": 1.43,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５７８１（常任代理人　株式会社みずほ銀行）",
+      "shares": 183000,
+      "ratio": 1.33,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 17.37,
+      "employee": 6.2,
+      "financial": 3.89,
+      "individual": 3.69,
+      "securities": 1.43
+    },
+    "individual_total": 3.69,
+    "top10_total": 32.58
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第144期(2025/04/01－2026/03/31)",
+      "docID": "S100YC9N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1413000,
+          "ratio": 10.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 681000,
+          "ratio": 4.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本冶金協力会社持株会",
+          "shares": 563000,
+          "ratio": 4.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５２２３（常任代理人　株式会社みずほ銀行）",
+          "shares": 354000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 311000,
+          "ratio": 2.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "河合　映治",
+          "shares": 300000,
+          "ratio": 2.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本冶金ナス持株会",
+          "shares": 295000,
+          "ratio": 2.13,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楢崎　潤",
+          "shares": 212000,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 197000,
+          "ratio": 1.43,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５７８１（常任代理人　株式会社みずほ銀行）",
+          "shares": 183000,
+          "ratio": 1.33,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 17.37,
+          "employee": 6.2,
+          "financial": 3.89,
+          "individual": 3.69,
+          "securities": 1.43
+        },
+        "individual_total": 3.69,
+        "top10_total": 32.58
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "7218",
+  "issuerName": "田中精密工業株式会社",
+  "updated_at": "2026/07/04 18:58 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "本田技研工業㈱",
+      "shares": 2376000,
+      "ratio": 24.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "田中共進会持株会",
+      "shares": 1270000,
+      "ratio": 13.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "名古屋中小企業投資育成㈱",
+      "shares": 527000,
+      "ratio": 5.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "田中 一郎",
+      "shares": 514000,
+      "ratio": 5.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "田中 龍郎",
+      "shares": 450000,
+      "ratio": 4.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "㈱商工組合中央金庫",
+      "shares": 350000,
+      "ratio": 3.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田中精密工業従業員持株会",
+      "shares": 323000,
+      "ratio": 3.31,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱北陸銀行",
+      "shares": 310000,
+      "ratio": 3.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱富山第一銀行",
+      "shares": 270000,
+      "ratio": 2.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 160000,
+      "ratio": 1.64,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 43.21,
+      "employee": 16.33,
+      "financial": 7.57
+    },
+    "individual_total": 43.21,
+    "top10_total": 67.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YH4P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "本田技研工業㈱",
+          "shares": 2376000,
+          "ratio": 24.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "田中共進会持株会",
+          "shares": 1270000,
+          "ratio": 13.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "名古屋中小企業投資育成㈱",
+          "shares": 527000,
+          "ratio": 5.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "田中 一郎",
+          "shares": 514000,
+          "ratio": 5.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "田中 龍郎",
+          "shares": 450000,
+          "ratio": 4.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "㈱商工組合中央金庫",
+          "shares": 350000,
+          "ratio": 3.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田中精密工業従業員持株会",
+          "shares": 323000,
+          "ratio": 3.31,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱北陸銀行",
+          "shares": 310000,
+          "ratio": 3.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱富山第一銀行",
+          "shares": 270000,
+          "ratio": 2.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 160000,
+          "ratio": 1.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 43.21,
+          "employee": 16.33,
+          "financial": 7.57
+        },
+        "individual_total": 43.21,
+        "top10_total": 67.11
+      }
+    }
+  ]
+}

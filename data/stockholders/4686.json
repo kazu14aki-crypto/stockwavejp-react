@@ -1,0 +1,220 @@
+{
+  "secCode": "4686",
+  "issuerName": "株式会社ジャストシステム",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社キーエンス",
+      "shares": 28234000,
+      "ratio": 43.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "重田　康光",
+      "shares": 4686000,
+      "ratio": 7.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+      "shares": 3712000,
+      "ratio": 5.78,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "DAIWA CM SINGAPORE LTD\n- NOMINEE HIKARI TSUSHIN\nINVESTMENTS ASIA PTE LTD\n（常任代理人　大和証券株式会社）",
+      "shares": 3182000,
+      "ratio": 4.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "UHPartners2投資事業有限責任組合",
+      "shares": 2543000,
+      "ratio": 3.96,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 1796000,
+      "ratio": 2.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 1180000,
+      "ratio": 1.84,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "光通信株式会社",
+      "shares": 844000,
+      "ratio": 1.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "渡辺　正博",
+      "shares": 712000,
+      "ratio": 1.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "福良　伴昭",
+      "shares": 705000,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.27,
+      "individual": 9.51,
+      "trust": 7.62,
+      "securities": 4.96,
+      "other": 6.76
+    },
+    "individual_total": 9.51,
+    "top10_total": 74.12
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第45期(2025/04/01－2026/03/31)",
+      "docID": "S100YHW4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社キーエンス",
+          "shares": 28234000,
+          "ratio": 43.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "重田　康光",
+          "shares": 4686000,
+          "ratio": 7.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行\n株式会社（信託口）",
+          "shares": 3712000,
+          "ratio": 5.78,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "DAIWA CM SINGAPORE LTD\n- NOMINEE HIKARI TSUSHIN\nINVESTMENTS ASIA PTE LTD\n（常任代理人　大和証券株式会社）",
+          "shares": 3182000,
+          "ratio": 4.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "UHPartners2投資事業有限責任組合",
+          "shares": 2543000,
+          "ratio": 3.96,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 1796000,
+          "ratio": 2.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 1180000,
+          "ratio": 1.84,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "光通信株式会社",
+          "shares": 844000,
+          "ratio": 1.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "渡辺　正博",
+          "shares": 712000,
+          "ratio": 1.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "福良　伴昭",
+          "shares": 705000,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.27,
+          "individual": 9.51,
+          "trust": 7.62,
+          "securities": 4.96,
+          "other": 6.76
+        },
+        "individual_total": 9.51,
+        "top10_total": 74.12
+      }
+    }
+  ]
+}

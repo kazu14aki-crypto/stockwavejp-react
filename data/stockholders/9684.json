@@ -1,0 +1,220 @@
+{
+  "secCode": "9684",
+  "issuerName": "株式会社スクウェア・エニックス・ホールディングス",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "福嶋　康博",
+      "shares": 70878000,
+      "ratio": 19.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 39936000,
+      "ratio": 11.07,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "JP MORGAN CHASE BANK 380752（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 35430000,
+      "ratio": 9.82,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社福嶋企画",
+      "shares": 20291000,
+      "ratio": 5.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505018（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 14167000,
+      "ratio": 3.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GOLDMAN, SACHS & CO. REG（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 12495000,
+      "ratio": 3.46,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 11531000,
+      "ratio": 3.19,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "3D WH OPPORTUNITY MASTER OFC - 3D WH OPPORTUNITY HOLDINGS（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 11000000,
+      "ratio": 3.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "THE CHASE MANHATTAN BANK, N. A. LONDON SPECIAL ACCOUNT NO.1（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 8490000,
+      "ratio": 2.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）（常任代理人　野村證券株式会社）",
+      "shares": 7080000,
+      "ratio": 1.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 19.65,
+      "trust": 14.26,
+      "foreign": 21.51,
+      "corporate": 5.62,
+      "financial": 3.05
+    },
+    "individual_total": 19.65,
+    "top10_total": 64.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/04/01－2026/03/31)",
+      "docID": "S100YHJ4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "福嶋　康博",
+          "shares": 70878000,
+          "ratio": 19.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 39936000,
+          "ratio": 11.07,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "JP MORGAN CHASE BANK 380752（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 35430000,
+          "ratio": 9.82,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社福嶋企画",
+          "shares": 20291000,
+          "ratio": 5.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505018（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 14167000,
+          "ratio": 3.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GOLDMAN, SACHS & CO. REG（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 12495000,
+          "ratio": 3.46,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 11531000,
+          "ratio": 3.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "3D WH OPPORTUNITY MASTER OFC - 3D WH OPPORTUNITY HOLDINGS（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 11000000,
+          "ratio": 3.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "THE CHASE MANHATTAN BANK, N. A. LONDON SPECIAL ACCOUNT NO.1（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 8490000,
+          "ratio": 2.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）（常任代理人　野村證券株式会社）",
+          "shares": 7080000,
+          "ratio": 1.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 19.65,
+          "trust": 14.26,
+          "foreign": 21.51,
+          "corporate": 5.62,
+          "financial": 3.05
+        },
+        "individual_total": 19.65,
+        "top10_total": 64.09
+      }
+    }
+  ]
+}

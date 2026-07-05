@@ -1,0 +1,218 @@
+{
+  "secCode": "3133",
+  "issuerName": "株式会社海帆",
+  "updated_at": "2026/07/04 17:52 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "吉川　元宏",
+      "shares": 10000000,
+      "ratio": 17.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "楽天証券株式会社",
+      "shares": 1332000,
+      "ratio": 2.28,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "水嶋　亨",
+      "shares": 400000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "水口　雅之",
+      "shares": 308000,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "高原　克弥",
+      "shares": 233000,
+      "ratio": 0.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "吉田　徹也",
+      "shares": 222000,
+      "ratio": 0.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村證券株式会社",
+      "shares": 191000,
+      "ratio": 0.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 184000,
+      "ratio": 0.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "亀井　信一郎",
+      "shares": 180000,
+      "ratio": 0.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山口　烈慶",
+      "shares": 166000,
+      "ratio": 0.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 19.72,
+      "securities": 2.28,
+      "corporate": 0.33,
+      "financial": 0.32
+    },
+    "individual_total": 19.72,
+    "top10_total": 22.65
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YLXQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "吉川　元宏",
+          "shares": 10000000,
+          "ratio": 17.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "楽天証券株式会社",
+          "shares": 1332000,
+          "ratio": 2.28,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "水嶋　亨",
+          "shares": 400000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "水口　雅之",
+          "shares": 308000,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "高原　克弥",
+          "shares": 233000,
+          "ratio": 0.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "吉田　徹也",
+          "shares": 222000,
+          "ratio": 0.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 191000,
+          "ratio": 0.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ\n(常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 184000,
+          "ratio": 0.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "亀井　信一郎",
+          "shares": 180000,
+          "ratio": 0.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山口　烈慶",
+          "shares": 166000,
+          "ratio": 0.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 19.72,
+          "securities": 2.28,
+          "corporate": 0.33,
+          "financial": 0.32
+        },
+        "individual_total": 19.72,
+        "top10_total": 22.65
+      }
+    }
+  ]
+}

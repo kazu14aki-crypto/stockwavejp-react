@@ -1,0 +1,220 @@
+{
+  "secCode": "3692",
+  "issuerName": "株式会社ＦＦＲＩセキュリティ",
+  "updated_at": "2026/07/04 18:06 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "鵜飼　裕司",
+      "shares": 1942000,
+      "ratio": 24.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "金居　良治",
+      "shares": 1441600,
+      "ratio": 18.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE BANK OF NEW YORK, TREATY JASDEC ACCOUNT\n（常任代理人名　株式会社三菱ＵＦＪ銀行）",
+      "shares": 225399,
+      "ratio": 2.85,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 187900,
+      "ratio": 2.38,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "楽天証券株式会社共有口",
+      "shares": 166603,
+      "ratio": 2.11,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "田中　重樹",
+      "shares": 140000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人名　株式会社三菱ＵＦＪ銀行）",
+      "shares": 74023,
+      "ratio": 0.94,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "源利株式会社",
+      "shares": 52500,
+      "ratio": 0.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "永田　哲也",
+      "shares": 49000,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "石山　智祥",
+      "shares": 47000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.76,
+      "foreign": 3.79,
+      "trust": 2.38,
+      "securities": 2.11,
+      "corporate": 0.66
+    },
+    "individual_total": 45.76,
+    "top10_total": 54.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/03/31)",
+      "docID": "S100YKWG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "鵜飼　裕司",
+          "shares": 1942000,
+          "ratio": 24.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "金居　良治",
+          "shares": 1441600,
+          "ratio": 18.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE BANK OF NEW YORK, TREATY JASDEC ACCOUNT\n（常任代理人名　株式会社三菱ＵＦＪ銀行）",
+          "shares": 225399,
+          "ratio": 2.85,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 187900,
+          "ratio": 2.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社共有口",
+          "shares": 166603,
+          "ratio": 2.11,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "田中　重樹",
+          "shares": 140000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（常任代理人名　株式会社三菱ＵＦＪ銀行）",
+          "shares": 74023,
+          "ratio": 0.94,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "源利株式会社",
+          "shares": 52500,
+          "ratio": 0.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "永田　哲也",
+          "shares": 49000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "石山　智祥",
+          "shares": 47000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.76,
+          "foreign": 3.79,
+          "trust": 2.38,
+          "securities": 2.11,
+          "corporate": 0.66
+        },
+        "individual_total": 45.76,
+        "top10_total": 54.7
+      }
+    }
+  ]
+}

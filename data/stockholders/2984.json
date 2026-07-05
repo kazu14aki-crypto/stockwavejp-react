@@ -1,0 +1,214 @@
+{
+  "secCode": "2984",
+  "issuerName": "ヤマイチエステート株式会社",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Ys' Assortment株式会社",
+      "shares": 4000000,
+      "ratio": 46.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ウィル・アセット株式会社",
+      "shares": 500000,
+      "ratio": 5.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山田　茂",
+      "shares": 303400,
+      "ratio": 3.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "堂村　眞由美",
+      "shares": 266200,
+      "ratio": 3.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鈴木　孝",
+      "shares": 127612,
+      "ratio": 1.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小川　由晃",
+      "shares": 100000,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田中　智弘",
+      "shares": 100000,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "後和　信英",
+      "shares": 60000,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "鳥毛　克義",
+      "shares": 55000,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大岩　徳成",
+      "shares": 51000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 51.9,
+      "individual": 12.25
+    },
+    "individual_total": 12.25,
+    "top10_total": 64.15
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第37期(2025/04/01－2026/03/31)",
+      "docID": "S100YH26",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Ys' Assortment株式会社",
+          "shares": 4000000,
+          "ratio": 46.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ウィル・アセット株式会社",
+          "shares": 500000,
+          "ratio": 5.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山田　茂",
+          "shares": 303400,
+          "ratio": 3.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "堂村　眞由美",
+          "shares": 266200,
+          "ratio": 3.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鈴木　孝",
+          "shares": 127612,
+          "ratio": 1.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小川　由晃",
+          "shares": 100000,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田中　智弘",
+          "shares": 100000,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "後和　信英",
+          "shares": 60000,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "鳥毛　克義",
+          "shares": 55000,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大岩　徳成",
+          "shares": 51000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 51.9,
+          "individual": 12.25
+        },
+        "individual_total": 12.25,
+        "top10_total": 64.15
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "5901",
+  "issuerName": "東洋製罐グループホールディングス株式会社",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "学校法人東洋食品工業短期大学",
+      "shares": 16767000,
+      "ratio": 11.12,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 15394000,
+      "ratio": 10.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人東洋食品研究所",
+      "shares": 12499000,
+      "ratio": 8.29,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ \n５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 8048000,
+      "ratio": 5.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 6593000,
+      "ratio": 4.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "富国生命保険相互会社",
+      "shares": 5600000,
+      "ratio": 3.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社群馬銀行",
+      "shares": 4219000,
+      "ratio": 2.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 3250000,
+      "ratio": 2.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "公益財団法人阪急文化財団",
+      "shares": 2940000,
+      "ratio": 1.95,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 2058000,
+      "ratio": 1.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 21.36,
+      "trust": 14.58,
+      "financial": 15.36
+    },
+    "individual_total": 0,
+    "top10_total": 51.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第113期(2025/04/01－2026/03/31)",
+      "docID": "S100YGR9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "学校法人東洋食品工業短期大学",
+          "shares": 16767000,
+          "ratio": 11.12,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 15394000,
+          "ratio": 10.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人東洋食品研究所",
+          "shares": 12499000,
+          "ratio": 8.29,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ \n５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 8048000,
+          "ratio": 5.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 6593000,
+          "ratio": 4.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "富国生命保険相互会社",
+          "shares": 5600000,
+          "ratio": 3.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社群馬銀行",
+          "shares": 4219000,
+          "ratio": 2.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 3250000,
+          "ratio": 2.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "公益財団法人阪急文化財団",
+          "shares": 2940000,
+          "ratio": 1.95,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 2058000,
+          "ratio": 1.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 21.36,
+          "trust": 14.58,
+          "financial": 15.36
+        },
+        "individual_total": 0,
+        "top10_total": 51.3
+      }
+    }
+  ]
+}

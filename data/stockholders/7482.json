@@ -1,0 +1,220 @@
+{
+  "secCode": "7482",
+  "issuerName": "株式会社シモジマ",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈲謙友",
+      "shares": 4175000,
+      "ratio": 17.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈲ケイエヌジェイ",
+      "shares": 2207000,
+      "ratio": 9.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1275000,
+      "ratio": 5.45,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈲和貴",
+      "shares": 888000,
+      "ratio": 3.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "下島　公明",
+      "shares": 624000,
+      "ratio": 2.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "シモジマ従業員持株会",
+      "shares": 607000,
+      "ratio": 2.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 560000,
+      "ratio": 2.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "シモジマ取引先持株会",
+      "shares": 542000,
+      "ratio": 2.31,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "下島　和光",
+      "shares": 501000,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "有限会社Ｋ＆Ｍ",
+      "shares": 492000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 35.86,
+      "trust": 5.45,
+      "employee": 4.9,
+      "financial": 2.39,
+      "corporate": 2.1
+    },
+    "individual_total": 35.86,
+    "top10_total": 50.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第65期(2025/04/01－2026/03/31)",
+      "docID": "S100YIAX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈲謙友",
+          "shares": 4175000,
+          "ratio": 17.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈲ケイエヌジェイ",
+          "shares": 2207000,
+          "ratio": 9.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1275000,
+          "ratio": 5.45,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈲和貴",
+          "shares": 888000,
+          "ratio": 3.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "下島　公明",
+          "shares": 624000,
+          "ratio": 2.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "シモジマ従業員持株会",
+          "shares": 607000,
+          "ratio": 2.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 560000,
+          "ratio": 2.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "シモジマ取引先持株会",
+          "shares": 542000,
+          "ratio": 2.31,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "下島　和光",
+          "shares": 501000,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "有限会社Ｋ＆Ｍ",
+          "shares": 492000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 35.86,
+          "trust": 5.45,
+          "employee": 4.9,
+          "financial": 2.39,
+          "corporate": 2.1
+        },
+        "individual_total": 35.86,
+        "top10_total": 50.7
+      }
+    }
+  ]
+}

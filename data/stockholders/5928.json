@@ -1,0 +1,220 @@
+{
+  "secCode": "5928",
+  "issuerName": "アルメタックス株式会社",
+  "updated_at": "2026/07/04 18:51 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "積水ハウス株式会社",
+      "shares": 3740000,
+      "ratio": 35.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "積水化学工業株式会社",
+      "shares": 703000,
+      "ratio": 6.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アルメタックス従業員持株会",
+      "shares": 446000,
+      "ratio": 4.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "吉野　友裕",
+      "shares": 298000,
+      "ratio": 2.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "酒井　一",
+      "shares": 173000,
+      "ratio": 1.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "遠山　和子",
+      "shares": 150000,
+      "ratio": 1.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "篠原　寛",
+      "shares": 122000,
+      "ratio": 1.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行",
+      "shares": 121000,
+      "ratio": 1.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 121000,
+      "ratio": 1.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 93000,
+      "ratio": 0.89,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.42,
+      "employee": 4.27,
+      "individual": 7.09,
+      "financial": 2.32,
+      "securities": 0.89
+    },
+    "individual_total": 7.09,
+    "top10_total": 56.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YF9N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "積水ハウス株式会社",
+          "shares": 3740000,
+          "ratio": 35.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "積水化学工業株式会社",
+          "shares": 703000,
+          "ratio": 6.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アルメタックス従業員持株会",
+          "shares": 446000,
+          "ratio": 4.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "吉野　友裕",
+          "shares": 298000,
+          "ratio": 2.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "酒井　一",
+          "shares": 173000,
+          "ratio": 1.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "遠山　和子",
+          "shares": 150000,
+          "ratio": 1.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "篠原　寛",
+          "shares": 122000,
+          "ratio": 1.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行",
+          "shares": 121000,
+          "ratio": 1.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 121000,
+          "ratio": 1.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 93000,
+          "ratio": 0.89,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.42,
+          "employee": 4.27,
+          "individual": 7.09,
+          "financial": 2.32,
+          "securities": 0.89
+        },
+        "individual_total": 7.09,
+        "top10_total": 56.99
+      }
+    }
+  ]
+}

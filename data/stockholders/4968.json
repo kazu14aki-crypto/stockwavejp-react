@@ -1,0 +1,220 @@
+{
+  "secCode": "4968",
+  "issuerName": "荒川化学工業株式会社",
+  "updated_at": "2026/07/04 18:33 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2000000,
+      "ratio": 10.08,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "荒川化学従業員持株会",
+      "shares": 1401000,
+      "ratio": 7.06,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 940000,
+      "ratio": 4.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 497000,
+      "ratio": 2.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "荒　川　壽　正",
+      "shares": 494000,
+      "ratio": 2.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "三菱ケミカル株式会社",
+      "shares": 406000,
+      "ratio": 2.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社三井住友銀行",
+      "shares": 396000,
+      "ratio": 2.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ａｒｔｉｅｎｃｅ株式会社",
+      "shares": 293000,
+      "ratio": 1.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＢＮＹＭ　ＡＳ　ＡＧＴ／ＣＬＴＳ　ＮＯＮ　ＴＲＥＡＴＹ　ＪＡＳＤＥＣ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 291000,
+      "ratio": 1.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "王子ホールディングス株式会社",
+      "shares": 288000,
+      "ratio": 1.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 12.59,
+      "employee": 7.06,
+      "financial": 8.21,
+      "individual": 2.49,
+      "corporate": 4.98
+    },
+    "individual_total": 2.49,
+    "top10_total": 35.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第96期(2025/04/01－2026/03/31)",
+      "docID": "S100YF3H",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2000000,
+          "ratio": 10.08,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "荒川化学従業員持株会",
+          "shares": 1401000,
+          "ratio": 7.06,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 940000,
+          "ratio": 4.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 497000,
+          "ratio": 2.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "荒　川　壽　正",
+          "shares": 494000,
+          "ratio": 2.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "三菱ケミカル株式会社",
+          "shares": 406000,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社三井住友銀行",
+          "shares": 396000,
+          "ratio": 2.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ａｒｔｉｅｎｃｅ株式会社",
+          "shares": 293000,
+          "ratio": 1.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＢＮＹＭ　ＡＳ　ＡＧＴ／ＣＬＴＳ　ＮＯＮ　ＴＲＥＡＴＹ　ＪＡＳＤＥＣ（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 291000,
+          "ratio": 1.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "王子ホールディングス株式会社",
+          "shares": 288000,
+          "ratio": 1.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 12.59,
+          "employee": 7.06,
+          "financial": 8.21,
+          "individual": 2.49,
+          "corporate": 4.98
+        },
+        "individual_total": 2.49,
+        "top10_total": 35.33
+      }
+    }
+  ]
+}

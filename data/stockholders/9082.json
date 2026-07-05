@@ -1,0 +1,218 @@
+{
+  "secCode": "9082",
+  "issuerName": "大和自動車交通株式会社",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "新倉　文明",
+      "shares": 424000,
+      "ratio": 9.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東都自動車株式会社",
+      "shares": 379000,
+      "ratio": 8.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "国際自動車株式会社",
+      "shares": 375000,
+      "ratio": 8.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "吉田　智子",
+      "shares": 297000,
+      "ratio": 6.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "newmo株式会社",
+      "shares": 245000,
+      "ratio": 5.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "宮園自動車株式会社",
+      "shares": 195000,
+      "ratio": 4.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "第一生命保険株式会社",
+      "shares": 192000,
+      "ratio": 4.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "安田　一",
+      "shares": 150000,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "新倉　眞由美",
+      "shares": 140000,
+      "ratio": 3.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大和自動車交通社員持株会",
+      "shares": 137000,
+      "ratio": 3.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 22.33,
+      "corporate": 26.37,
+      "financial": 4.25,
+      "employee": 3.02
+    },
+    "individual_total": 22.33,
+    "top10_total": 55.97
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第119期(2025/04/01－2026/03/31)",
+      "docID": "S100YHKH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "新倉　文明",
+          "shares": 424000,
+          "ratio": 9.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東都自動車株式会社",
+          "shares": 379000,
+          "ratio": 8.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "国際自動車株式会社",
+          "shares": 375000,
+          "ratio": 8.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "吉田　智子",
+          "shares": 297000,
+          "ratio": 6.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "newmo株式会社",
+          "shares": 245000,
+          "ratio": 5.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "宮園自動車株式会社",
+          "shares": 195000,
+          "ratio": 4.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "第一生命保険株式会社",
+          "shares": 192000,
+          "ratio": 4.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "安田　一",
+          "shares": 150000,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "新倉　眞由美",
+          "shares": 140000,
+          "ratio": 3.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大和自動車交通社員持株会",
+          "shares": 137000,
+          "ratio": 3.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 22.33,
+          "corporate": 26.37,
+          "financial": 4.25,
+          "employee": 3.02
+        },
+        "individual_total": 22.33,
+        "top10_total": 55.97
+      }
+    }
+  ]
+}

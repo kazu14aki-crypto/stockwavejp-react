@@ -1,0 +1,332 @@
+{
+  "secCode": "8554",
+  "issuerName": "株式会社南日本銀行",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "南日本銀行行員持株会",
+      "shares": 1079000,
+      "ratio": 12.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "一般財団法人岩崎育英文化財団",
+      "shares": 309000,
+      "ratio": 3.69,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 280000,
+      "ratio": 3.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社福岡銀行",
+      "shares": 280000,
+      "ratio": 3.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "西日本信用保証株式会社",
+      "shares": 217000,
+      "ratio": 2.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社宮崎太陽銀行",
+      "shares": 190000,
+      "ratio": 2.27,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社鹿児島銀行",
+      "shares": 180000,
+      "ratio": 2.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "南国殖産株式会社",
+      "shares": 179000,
+      "ratio": 2.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 173000,
+      "ratio": 2.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "長野　健一",
+      "shares": 164000,
+      "ratio": 1.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 12.85,
+      "foundation": 3.69,
+      "financial": 11.1,
+      "corporate": 4.72,
+      "trust": 2.06,
+      "individual": 1.96
+    },
+    "individual_total": 1.96,
+    "top10_total": 36.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第118期(2025/04/01－2026/03/31)",
+      "docID": "S100YMAO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "南日本銀行行員持株会",
+          "shares": 1079000,
+          "ratio": 12.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "一般財団法人岩崎育英文化財団",
+          "shares": 309000,
+          "ratio": 3.69,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 280000,
+          "ratio": 3.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社福岡銀行",
+          "shares": 280000,
+          "ratio": 3.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "西日本信用保証株式会社",
+          "shares": 217000,
+          "ratio": 2.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社宮崎太陽銀行",
+          "shares": 190000,
+          "ratio": 2.27,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社鹿児島銀行",
+          "shares": 180000,
+          "ratio": 2.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "南国殖産株式会社",
+          "shares": 179000,
+          "ratio": 2.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 173000,
+          "ratio": 2.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "長野　健一",
+          "shares": 164000,
+          "ratio": 1.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 12.85,
+          "foundation": 3.69,
+          "financial": 11.1,
+          "corporate": 4.72,
+          "trust": 2.06,
+          "individual": 1.96
+        },
+        "individual_total": 1.96,
+        "top10_total": 36.38
+      }
+    },
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第118期(2025/04/01－2026/03/31)",
+      "docID": "S100YGBN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "南日本銀行行員持株会",
+          "shares": 1079000,
+          "ratio": 12.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "一般財団法人岩崎育英文化財団",
+          "shares": 309000,
+          "ratio": 3.69,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 280000,
+          "ratio": 3.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社福岡銀行",
+          "shares": 280000,
+          "ratio": 3.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "西日本信用保証株式会社",
+          "shares": 217000,
+          "ratio": 2.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社宮崎太陽銀行",
+          "shares": 190000,
+          "ratio": 2.27,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "南国殖産株式会社",
+          "shares": 179000,
+          "ratio": 2.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 173000,
+          "ratio": 2.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "長野　健一",
+          "shares": 164000,
+          "ratio": 1.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 137000,
+          "ratio": 1.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 12.85,
+          "foundation": 3.69,
+          "financial": 10.59,
+          "corporate": 4.72,
+          "trust": 2.06,
+          "individual": 1.96
+        },
+        "individual_total": 1.96,
+        "top10_total": 35.87
+      }
+    }
+  ]
+}

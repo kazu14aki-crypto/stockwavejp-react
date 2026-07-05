@@ -1,0 +1,216 @@
+{
+  "secCode": "9322",
+  "issuerName": "川西倉庫株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大和製衡株式会社",
+      "shares": 1293000,
+      "ratio": 16.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "川西　多美",
+      "shares": 564000,
+      "ratio": 7.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "川西　央也",
+      "shares": 488000,
+      "ratio": 6.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "日本毛織株式会社",
+      "shares": 380000,
+      "ratio": 4.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "川西　康夫",
+      "shares": 324000,
+      "ratio": 4.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "川西　二郎",
+      "shares": 223000,
+      "ratio": 2.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "多島　晶子",
+      "shares": 215000,
+      "ratio": 2.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大嶽　敬子",
+      "shares": 206000,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社川西勝三商会",
+      "shares": 201000,
+      "ratio": 2.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社みずほ銀行",
+      "shares": 200000,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 24.0,
+      "individual": 25.85,
+      "financial": 2.56
+    },
+    "individual_total": 25.85,
+    "top10_total": 52.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第169期(2025/04/01－2026/03/31)",
+      "docID": "S100YF5T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大和製衡株式会社",
+          "shares": 1293000,
+          "ratio": 16.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "川西　多美",
+          "shares": 564000,
+          "ratio": 7.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "川西　央也",
+          "shares": 488000,
+          "ratio": 6.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "日本毛織株式会社",
+          "shares": 380000,
+          "ratio": 4.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "川西　康夫",
+          "shares": 324000,
+          "ratio": 4.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "川西　二郎",
+          "shares": 223000,
+          "ratio": 2.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "多島　晶子",
+          "shares": 215000,
+          "ratio": 2.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大嶽　敬子",
+          "shares": 206000,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社川西勝三商会",
+          "shares": 201000,
+          "ratio": 2.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社みずほ銀行",
+          "shares": 200000,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 24.0,
+          "individual": 25.85,
+          "financial": 2.56
+        },
+        "individual_total": 25.85,
+        "top10_total": 52.41
+      }
+    }
+  ]
+}

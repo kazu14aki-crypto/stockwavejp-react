@@ -1,0 +1,214 @@
+{
+  "secCode": "2483",
+  "issuerName": "株式会社翻訳センター",
+  "updated_at": "2026/07/04 18:17 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "エムスリー株式会社",
+      "shares": 663000,
+      "ratio": 19.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＵＨＰａｒｔｎｅｒｓ３投資事業有限責任組合\n無限責任組合員株式会社ＵＨＰａｒｔｎｅｒｓ３",
+      "shares": 257300,
+      "ratio": 7.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合\n無限責任組合員株式会社ＵＨＰａｒｔｎｅｒｓ２",
+      "shares": 250600,
+      "ratio": 7.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合\n無限責任組合員光通信株式会社",
+      "shares": 215400,
+      "ratio": 6.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "エスアイエル投資事業有限責任組合\n無限責任組合員株式会社エスアイエル",
+      "shares": 186200,
+      "ratio": 5.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "内藤　征吾",
+      "shares": 100000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東　郁男",
+      "shares": 99700,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "二宮　俊一郎",
+      "shares": 67900,
+      "ratio": 2.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "秋元　利規",
+      "shares": 60000,
+      "ratio": 1.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上田八木短資株式会社",
+      "shares": 59800,
+      "ratio": 1.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.6,
+      "individual": 9.74
+    },
+    "individual_total": 9.74,
+    "top10_total": 58.34
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/04/01－2026/03/31)",
+      "docID": "S100YILW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "エムスリー株式会社",
+          "shares": 663000,
+          "ratio": 19.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＵＨＰａｒｔｎｅｒｓ３投資事業有限責任組合\n無限責任組合員株式会社ＵＨＰａｒｔｎｅｒｓ３",
+          "shares": 257300,
+          "ratio": 7.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合\n無限責任組合員株式会社ＵＨＰａｒｔｎｅｒｓ２",
+          "shares": 250600,
+          "ratio": 7.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合\n無限責任組合員光通信株式会社",
+          "shares": 215400,
+          "ratio": 6.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "エスアイエル投資事業有限責任組合\n無限責任組合員株式会社エスアイエル",
+          "shares": 186200,
+          "ratio": 5.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "内藤　征吾",
+          "shares": 100000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東　郁男",
+          "shares": 99700,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "二宮　俊一郎",
+          "shares": 67900,
+          "ratio": 2.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "秋元　利規",
+          "shares": 60000,
+          "ratio": 1.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上田八木短資株式会社",
+          "shares": 59800,
+          "ratio": 1.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.6,
+          "individual": 9.74
+        },
+        "individual_total": 9.74,
+        "top10_total": 58.34
+      }
+    }
+  ]
+}

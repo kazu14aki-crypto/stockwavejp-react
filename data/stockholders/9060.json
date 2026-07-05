@@ -1,0 +1,218 @@
+{
+  "secCode": "9060",
+  "issuerName": "日本ロジテム株式会社",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日清製粉株式会社",
+      "shares": 281200,
+      "ratio": 20.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "一般社団法人富士桜の会",
+      "shares": 243200,
+      "ratio": 17.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社ジェイエフ企画",
+      "shares": 163900,
+      "ratio": 12.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日清製粉グループ本社",
+      "shares": 69200,
+      "ratio": 5.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本ロジテム従業員持株会",
+      "shares": 36400,
+      "ratio": 2.69,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "黒岩　千代",
+      "shares": 25700,
+      "ratio": 1.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "藤間　孝泰",
+      "shares": 12600,
+      "ratio": 0.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中西　弘毅",
+      "shares": 12300,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社商工組合中央金庫",
+      "shares": 11000,
+      "ratio": 0.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 10000,
+      "ratio": 0.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.8,
+      "individual": 21.7,
+      "employee": 2.69,
+      "financial": 0.74
+    },
+    "individual_total": 21.7,
+    "top10_total": 63.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第110期(2025/04/01－2026/03/31)",
+      "docID": "S100YNBV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日清製粉株式会社",
+          "shares": 281200,
+          "ratio": 20.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "一般社団法人富士桜の会",
+          "shares": 243200,
+          "ratio": 17.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社ジェイエフ企画",
+          "shares": 163900,
+          "ratio": 12.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日清製粉グループ本社",
+          "shares": 69200,
+          "ratio": 5.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本ロジテム従業員持株会",
+          "shares": 36400,
+          "ratio": 2.69,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "黒岩　千代",
+          "shares": 25700,
+          "ratio": 1.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "藤間　孝泰",
+          "shares": 12600,
+          "ratio": 0.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中西　弘毅",
+          "shares": 12300,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社商工組合中央金庫",
+          "shares": 11000,
+          "ratio": 0.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 10000,
+          "ratio": 0.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.8,
+          "individual": 21.7,
+          "employee": 2.69,
+          "financial": 0.74
+        },
+        "individual_total": 21.7,
+        "top10_total": 63.93
+      }
+    }
+  ]
+}

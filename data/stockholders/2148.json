@@ -1,0 +1,218 @@
+{
+  "secCode": "2148",
+  "issuerName": "アイティメディア株式会社",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＳＢメディアホールディングス株式会社",
+      "shares": 10457400,
+      "ratio": 53.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 851600,
+      "ratio": 4.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "新野　淳一",
+      "shares": 367500,
+      "ratio": 1.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 187026,
+      "ratio": 0.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小林　教至",
+      "shares": 148900,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アイティメディア従業員持株会",
+      "shares": 130800,
+      "ratio": 0.67,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 126800,
+      "ratio": 0.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大槻　利樹",
+      "shares": 104300,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "後藤　周子",
+      "shares": 93900,
+      "ratio": 0.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "加賀谷　昭大",
+      "shares": 85400,
+      "ratio": 0.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.18,
+      "trust": 5.92,
+      "individual": 4.07,
+      "employee": 0.67
+    },
+    "individual_total": 4.07,
+    "top10_total": 63.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/04/01－2026/03/31)",
+      "docID": "S100YHX3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＳＢメディアホールディングス株式会社",
+          "shares": 10457400,
+          "ratio": 53.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 851600,
+          "ratio": 4.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "新野　淳一",
+          "shares": 367500,
+          "ratio": 1.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 187026,
+          "ratio": 0.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小林　教至",
+          "shares": 148900,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アイティメディア従業員持株会",
+          "shares": 130800,
+          "ratio": 0.67,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 126800,
+          "ratio": 0.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大槻　利樹",
+          "shares": 104300,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "後藤　周子",
+          "shares": 93900,
+          "ratio": 0.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "加賀谷　昭大",
+          "shares": 85400,
+          "ratio": 0.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.18,
+          "trust": 5.92,
+          "individual": 4.07,
+          "employee": 0.67
+        },
+        "individual_total": 4.07,
+        "top10_total": 63.84
+      }
+    }
+  ]
+}

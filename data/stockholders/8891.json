@@ -1,0 +1,220 @@
+{
+  "secCode": "8891",
+  "issuerName": "ＡＭＧホールディングス株式会社",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "VTホールディングス㈱",
+      "shares": 1216948,
+      "ratio": 43.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱SBIネオトレード証券",
+      "shares": 130800,
+      "ratio": 4.67,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "いちい信用金庫",
+      "shares": 80000,
+      "ratio": 2.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE BROKERS LLC 常任代理人インタラクティブ・ブローカーズ証券㈱",
+      "shares": 55900,
+      "ratio": 2.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "宮川和利",
+      "shares": 47400,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "中野建設㈱",
+      "shares": 46300,
+      "ratio": 1.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "新原栄寿",
+      "shares": 45700,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "AMGホールディングス社員持株会",
+      "shares": 39200,
+      "ratio": 1.4,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "徳倉建設㈱",
+      "shares": 36600,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱SBI証券",
+      "shares": 32423,
+      "ratio": 1.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.44,
+      "securities": 7.83,
+      "financial": 2.86,
+      "individual": 6.28,
+      "employee": 1.4
+    },
+    "individual_total": 6.28,
+    "top10_total": 61.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2025/04/01－2026/03/31)",
+      "docID": "S100YF0Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "VTホールディングス㈱",
+          "shares": 1216948,
+          "ratio": 43.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱SBIネオトレード証券",
+          "shares": 130800,
+          "ratio": 4.67,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "いちい信用金庫",
+          "shares": 80000,
+          "ratio": 2.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC 常任代理人インタラクティブ・ブローカーズ証券㈱",
+          "shares": 55900,
+          "ratio": 2.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "宮川和利",
+          "shares": 47400,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "中野建設㈱",
+          "shares": 46300,
+          "ratio": 1.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "新原栄寿",
+          "shares": 45700,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "AMGホールディングス社員持株会",
+          "shares": 39200,
+          "ratio": 1.4,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "徳倉建設㈱",
+          "shares": 36600,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱SBI証券",
+          "shares": 32423,
+          "ratio": 1.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.44,
+          "securities": 7.83,
+          "financial": 2.86,
+          "individual": 6.28,
+          "employee": 1.4
+        },
+        "individual_total": 6.28,
+        "top10_total": 61.81
+      }
+    }
+  ]
+}

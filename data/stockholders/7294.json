@@ -1,0 +1,218 @@
+{
+  "secCode": "7294",
+  "issuerName": "株式会社ヨロズ",
+  "updated_at": "2026/07/04 18:56 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口)",
+      "shares": 1572000,
+      "ratio": 7.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社志藤ホールディングス",
+      "shares": 883000,
+      "ratio": 4.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＪＦＥスチール株式会社",
+      "shares": 843000,
+      "ratio": 4.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 842000,
+      "ratio": 4.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社横浜銀行",
+      "shares": 842000,
+      "ratio": 4.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "スズキ株式会社",
+      "shares": 800000,
+      "ratio": 3.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三菱ＵＦＪ信託銀行株式会社",
+      "shares": 682000,
+      "ratio": 3.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日産トレーデイング株式会社",
+      "shares": 533000,
+      "ratio": 2.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＦＥ商事株式会社",
+      "shares": 398000,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "志藤　公彦",
+      "shares": 395000,
+      "ratio": 1.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 7.63,
+      "corporate": 16.78,
+      "financial": 11.49,
+      "individual": 1.92
+    },
+    "individual_total": 1.92,
+    "top10_total": 37.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第81期(2025/04/01－2026/03/31)",
+      "docID": "S100YGY8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口)",
+          "shares": 1572000,
+          "ratio": 7.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社志藤ホールディングス",
+          "shares": 883000,
+          "ratio": 4.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＪＦＥスチール株式会社",
+          "shares": 843000,
+          "ratio": 4.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 842000,
+          "ratio": 4.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社横浜銀行",
+          "shares": 842000,
+          "ratio": 4.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "スズキ株式会社",
+          "shares": 800000,
+          "ratio": 3.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三菱ＵＦＪ信託銀行株式会社",
+          "shares": 682000,
+          "ratio": 3.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日産トレーデイング株式会社",
+          "shares": 533000,
+          "ratio": 2.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＦＥ商事株式会社",
+          "shares": 398000,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "志藤　公彦",
+          "shares": 395000,
+          "ratio": 1.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 7.63,
+          "corporate": 16.78,
+          "financial": 11.49,
+          "individual": 1.92
+        },
+        "individual_total": 1.92,
+        "top10_total": 37.82
+      }
+    }
+  ]
+}

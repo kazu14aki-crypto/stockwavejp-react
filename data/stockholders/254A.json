@@ -1,0 +1,216 @@
+{
+  "secCode": "254A",
+  "issuerName": "ＡＩフュージョンキャピタルグループ株式会社",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＤＳＧ１",
+      "shares": 1960200,
+      "ratio": 22.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "上原　俊彦",
+      "shares": 1348000,
+      "ratio": 15.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 238954,
+      "ratio": 2.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＧＭＯクリック証券株式会社",
+      "shares": 180700,
+      "ratio": 2.07,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松井証券株式会社",
+      "shares": 175800,
+      "ratio": 2.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＳＢＩネオトレード証券",
+      "shares": 139700,
+      "ratio": 1.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小林　励",
+      "shares": 120000,
+      "ratio": 1.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 119214,
+      "ratio": 1.36,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP Paribas Financial Markets\n（常任代理人　PNBパリバ証券株式会社）",
+      "shares": 109300,
+      "ratio": 1.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "柿沼　佑一",
+      "shares": 100000,
+      "ratio": 1.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 22.52,
+      "individual": 17.99,
+      "securities": 11.04
+    },
+    "individual_total": 17.99,
+    "top10_total": 51.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第2期(2025/04/01－2026/03/31)",
+      "docID": "S100YCG3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＤＳＧ１",
+          "shares": 1960200,
+          "ratio": 22.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "上原　俊彦",
+          "shares": 1348000,
+          "ratio": 15.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 238954,
+          "ratio": 2.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＧＭＯクリック証券株式会社",
+          "shares": 180700,
+          "ratio": 2.07,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松井証券株式会社",
+          "shares": 175800,
+          "ratio": 2.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＳＢＩネオトレード証券",
+          "shares": 139700,
+          "ratio": 1.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小林　励",
+          "shares": 120000,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 119214,
+          "ratio": 1.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP Paribas Financial Markets\n（常任代理人　PNBパリバ証券株式会社）",
+          "shares": 109300,
+          "ratio": 1.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "柿沼　佑一",
+          "shares": 100000,
+          "ratio": 1.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 22.52,
+          "individual": 17.99,
+          "securities": 11.04
+        },
+        "individual_total": 17.99,
+        "top10_total": 51.55
+      }
+    }
+  ]
+}

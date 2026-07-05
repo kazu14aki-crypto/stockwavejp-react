@@ -1,0 +1,222 @@
+{
+  "secCode": "6699",
+  "issuerName": "ダイヤモンドエレクトリックホールディングス株式会社",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 775400,
+      "ratio": 6.66,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ダイヤモンドエンジニアリング株式会社",
+      "shares": 642516,
+      "ratio": 5.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 610700,
+      "ratio": 5.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "All Diamond Shareholders",
+      "shares": 501300,
+      "ratio": 4.3,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大和証券株式会社",
+      "shares": 312970,
+      "ratio": 2.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社共有口",
+      "shares": 215500,
+      "ratio": 1.85,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "池永　辰朗",
+      "shares": 210500,
+      "ratio": 1.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY（常任代理人　香港上海銀行東京支店）",
+      "shares": 205200,
+      "ratio": 1.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "豊栄産業株式会社",
+      "shares": 140000,
+      "ratio": 1.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上田八木短資株式会社",
+      "shares": 131500,
+      "ratio": 1.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 11.9,
+      "corporate": 7.85,
+      "foreign": 4.3,
+      "securities": 4.54,
+      "individual": 1.81,
+      "financial": 1.76
+    },
+    "individual_total": 1.81,
+    "top10_total": 32.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YLYF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 775400,
+          "ratio": 6.66,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ダイヤモンドエンジニアリング株式会社",
+          "shares": 642516,
+          "ratio": 5.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 610700,
+          "ratio": 5.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "All Diamond Shareholders",
+          "shares": 501300,
+          "ratio": 4.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大和証券株式会社",
+          "shares": 312970,
+          "ratio": 2.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社共有口",
+          "shares": 215500,
+          "ratio": 1.85,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "池永　辰朗",
+          "shares": 210500,
+          "ratio": 1.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY（常任代理人　香港上海銀行東京支店）",
+          "shares": 205200,
+          "ratio": 1.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "豊栄産業株式会社",
+          "shares": 140000,
+          "ratio": 1.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上田八木短資株式会社",
+          "shares": 131500,
+          "ratio": 1.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 11.9,
+          "corporate": 7.85,
+          "foreign": 4.3,
+          "securities": 4.54,
+          "individual": 1.81,
+          "financial": 1.76
+        },
+        "individual_total": 1.81,
+        "top10_total": 32.16
+      }
+    }
+  ]
+}

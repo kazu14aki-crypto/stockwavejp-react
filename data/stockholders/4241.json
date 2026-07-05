@@ -1,0 +1,216 @@
+{
+  "secCode": "4241",
+  "issuerName": "株式会社アテクト",
+  "updated_at": "2026/07/04 18:31 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三甲株式会社",
+      "shares": 1469500,
+      "ratio": 33.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐藤　弘之",
+      "shares": 136600,
+      "ratio": 3.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "村岡　克彦",
+      "shares": 112020,
+      "ratio": 2.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "東ヶ崎　尚美",
+      "shares": 92180,
+      "ratio": 2.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "小髙　得央",
+      "shares": 81300,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JPモルガン証券株式会社",
+      "shares": 68600,
+      "ratio": 1.55,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡崎　興也",
+      "shares": 58900,
+      "ratio": 1.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "早川　満",
+      "shares": 57320,
+      "ratio": 1.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 55577,
+      "ratio": 1.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "原田　正剛",
+      "shares": 47300,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.24,
+      "individual": 13.2,
+      "securities": 2.8
+    },
+    "individual_total": 13.2,
+    "top10_total": 49.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第57期(2025/04/01－2026/03/31)",
+      "docID": "S100YDEW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三甲株式会社",
+          "shares": 1469500,
+          "ratio": 33.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐藤　弘之",
+          "shares": 136600,
+          "ratio": 3.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "村岡　克彦",
+          "shares": 112020,
+          "ratio": 2.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "東ヶ崎　尚美",
+          "shares": 92180,
+          "ratio": 2.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "小髙　得央",
+          "shares": 81300,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JPモルガン証券株式会社",
+          "shares": 68600,
+          "ratio": 1.55,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡崎　興也",
+          "shares": 58900,
+          "ratio": 1.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "早川　満",
+          "shares": 57320,
+          "ratio": 1.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 55577,
+          "ratio": 1.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "原田　正剛",
+          "shares": 47300,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.24,
+          "individual": 13.2,
+          "securities": 2.8
+        },
+        "individual_total": 13.2,
+        "top10_total": 49.24
+      }
+    }
+  ]
+}

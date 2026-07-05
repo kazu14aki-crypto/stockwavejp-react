@@ -1,0 +1,220 @@
+{
+  "secCode": "2332",
+  "issuerName": "株式会社クエスト",
+  "updated_at": "2026/07/04 17:45 JST",
+  "latestDate": "2026-07-03",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "内田　廣",
+      "shares": 837410,
+      "ratio": 16.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "クエスト従業員持株会",
+      "shares": 378844,
+      "ratio": 7.38,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "花輪　祐二",
+      "shares": 293415,
+      "ratio": 5.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＣＳＫ株式会社",
+      "shares": 268710,
+      "ratio": 5.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ユニリタ",
+      "shares": 265000,
+      "ratio": 5.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 246200,
+      "ratio": 4.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "内田　マサ子",
+      "shares": 150000,
+      "ratio": 2.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "内田　久恵",
+      "shares": 150000,
+      "ratio": 2.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐藤　和朗",
+      "shares": 56828,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 55700,
+      "ratio": 1.08,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 28.99,
+      "employee": 7.38,
+      "corporate": 10.4,
+      "other": 4.8,
+      "financial": 1.08
+    },
+    "individual_total": 28.99,
+    "top10_total": 52.65
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-03",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YOIU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "内田　廣",
+          "shares": 837410,
+          "ratio": 16.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "クエスト従業員持株会",
+          "shares": 378844,
+          "ratio": 7.38,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "花輪　祐二",
+          "shares": 293415,
+          "ratio": 5.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＣＳＫ株式会社",
+          "shares": 268710,
+          "ratio": 5.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ユニリタ",
+          "shares": 265000,
+          "ratio": 5.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 246200,
+          "ratio": 4.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "内田　マサ子",
+          "shares": 150000,
+          "ratio": 2.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "内田　久恵",
+          "shares": 150000,
+          "ratio": 2.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐藤　和朗",
+          "shares": 56828,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 55700,
+          "ratio": 1.08,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 28.99,
+          "employee": 7.38,
+          "corporate": 10.4,
+          "other": 4.8,
+          "financial": 1.08
+        },
+        "individual_total": 28.99,
+        "top10_total": 52.65
+      }
+    }
+  ]
+}

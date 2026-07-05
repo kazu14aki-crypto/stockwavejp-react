@@ -1,0 +1,216 @@
+{
+  "secCode": "3927",
+  "issuerName": "株式会社フーバーブレイン",
+  "updated_at": "2026/07/04 18:43 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ\n（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 449200,
+      "ratio": 8.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "五十畑　輝夫",
+      "shares": 268000,
+      "ratio": 5.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＭＣホールディングス",
+      "shares": 220000,
+      "ratio": 4.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "今泉　長男",
+      "shares": 200000,
+      "ratio": 3.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "永野　祐司",
+      "shares": 177000,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "蛭間　久季",
+      "shares": 153000,
+      "ratio": 2.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "上田八木短資株式会社",
+      "shares": 149000,
+      "ratio": 2.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鶴田　亮司",
+      "shares": 133000,
+      "ratio": 2.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉田　透",
+      "shares": 122900,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "奥秋　敦史",
+      "shares": 122700,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 8.41,
+      "individual": 22.01,
+      "corporate": 6.91
+    },
+    "individual_total": 22.01,
+    "top10_total": 37.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/04/01－2026/03/31)",
+      "docID": "S100YI0F",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ\n（常任代理人インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 449200,
+          "ratio": 8.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "五十畑　輝夫",
+          "shares": 268000,
+          "ratio": 5.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＭＣホールディングス",
+          "shares": 220000,
+          "ratio": 4.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "今泉　長男",
+          "shares": 200000,
+          "ratio": 3.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "永野　祐司",
+          "shares": 177000,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "蛭間　久季",
+          "shares": 153000,
+          "ratio": 2.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "上田八木短資株式会社",
+          "shares": 149000,
+          "ratio": 2.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鶴田　亮司",
+          "shares": 133000,
+          "ratio": 2.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉田　透",
+          "shares": 122900,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "奥秋　敦史",
+          "shares": 122700,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 8.41,
+          "individual": 22.01,
+          "corporate": 6.91
+        },
+        "individual_total": 22.01,
+        "top10_total": 37.33
+      }
+    }
+  ]
+}

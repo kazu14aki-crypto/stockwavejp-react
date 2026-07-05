@@ -1,0 +1,222 @@
+{
+  "secCode": "1822",
+  "issuerName": "大豊建設株式会社",
+  "updated_at": "2026/07/04 18:42 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱麻生",
+      "shares": 44530000,
+      "ratio": 50.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱ATRA",
+      "shares": 11717000,
+      "ratio": 13.18,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友不動産㈱",
+      "shares": 3000000,
+      "ratio": 3.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行㈱\n（信託口）",
+      "shares": 2791000,
+      "ratio": 3.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 1670000,
+      "ratio": 1.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "第一生命保険㈱",
+      "shares": 1644000,
+      "ratio": 1.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大豊建設自社株投資会",
+      "shares": 915000,
+      "ratio": 1.03,
+      "category": "treasury",
+      "category_label": "自己株式",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "あいおいニッセイ同和損害保険㈱",
+      "shares": 776000,
+      "ratio": 0.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大豊建設㈱安全協力会",
+      "shares": 575000,
+      "ratio": 0.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC \nISG（ＦＥ－ＡＣ）\n（常任代理人半沢淳一）",
+      "shares": 548000,
+      "ratio": 0.61,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 54.13,
+      "other": 13.18,
+      "trust": 5.02,
+      "financial": 2.72,
+      "treasury": 1.03,
+      "foreign": 0.61
+    },
+    "individual_total": 54.13,
+    "top10_total": 76.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YI2K",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱麻生",
+          "shares": 44530000,
+          "ratio": 50.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱ATRA",
+          "shares": 11717000,
+          "ratio": 13.18,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友不動産㈱",
+          "shares": 3000000,
+          "ratio": 3.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行㈱\n（信託口）",
+          "shares": 2791000,
+          "ratio": 3.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 1670000,
+          "ratio": 1.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "第一生命保険㈱",
+          "shares": 1644000,
+          "ratio": 1.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大豊建設自社株投資会",
+          "shares": 915000,
+          "ratio": 1.03,
+          "category": "treasury",
+          "category_label": "自己株式",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "あいおいニッセイ同和損害保険㈱",
+          "shares": 776000,
+          "ratio": 0.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大豊建設㈱安全協力会",
+          "shares": 575000,
+          "ratio": 0.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC \nISG（ＦＥ－ＡＣ）\n（常任代理人半沢淳一）",
+          "shares": 548000,
+          "ratio": 0.61,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 54.13,
+          "other": 13.18,
+          "trust": 5.02,
+          "financial": 2.72,
+          "treasury": 1.03,
+          "foreign": 0.61
+        },
+        "individual_total": 54.13,
+        "top10_total": 76.69
+      }
+    }
+  ]
+}

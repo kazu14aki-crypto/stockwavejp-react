@@ -1,0 +1,218 @@
+{
+  "secCode": "6976",
+  "issuerName": "太陽誘電株式会社",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 34073000,
+      "ratio": 27.24,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 21586000,
+      "ratio": 17.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 4213000,
+      "ratio": 3.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社伊予銀行\n(常任代理人　株式会社日本カストディ銀行)",
+      "shares": 2000000,
+      "ratio": 1.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人佐藤交通遺児福祉基金",
+      "shares": 1916000,
+      "ratio": 1.53,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 1849000,
+      "ratio": 1.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "JP MORGAN CHASE BANK 385781\n(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 1812000,
+      "ratio": 1.44,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "バークレイズ証券株式会社",
+      "shares": 1770000,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社\n(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 1666000,
+      "ratio": 1.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "HSBC HONG KONG - TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n(常任代理人　香港上海銀行\n東京支店)",
+      "shares": 1538000,
+      "ratio": 1.22,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 47.42,
+      "foreign": 7.49,
+      "foundation": 1.53,
+      "securities": 1.41
+    },
+    "individual_total": 0,
+    "top10_total": 57.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第85期(2025/04/01－2026/03/31)",
+      "docID": "S100YHU5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 34073000,
+          "ratio": 27.24,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 21586000,
+          "ratio": 17.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 4213000,
+          "ratio": 3.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社伊予銀行\n(常任代理人　株式会社日本カストディ銀行)",
+          "shares": 2000000,
+          "ratio": 1.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人佐藤交通遺児福祉基金",
+          "shares": 1916000,
+          "ratio": 1.53,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 1849000,
+          "ratio": 1.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "JP MORGAN CHASE BANK 385781\n(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 1812000,
+          "ratio": 1.44,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "バークレイズ証券株式会社",
+          "shares": 1770000,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社\n(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 1666000,
+          "ratio": 1.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "HSBC HONG KONG - TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n(常任代理人　香港上海銀行\n東京支店)",
+          "shares": 1538000,
+          "ratio": 1.22,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 47.42,
+          "foreign": 7.49,
+          "foundation": 1.53,
+          "securities": 1.41
+        },
+        "individual_total": 0,
+        "top10_total": 57.85
+      }
+    }
+  ]
+}

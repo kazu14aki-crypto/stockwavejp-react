@@ -1,0 +1,224 @@
+{
+  "secCode": "6364",
+  "issuerName": "株式会社ＡＩＲＭＡＮ",
+  "updated_at": "2026/07/04 18:12 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2586000,
+      "ratio": 9.38,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "バイオグリーン有限会社",
+      "shares": 2444000,
+      "ratio": 8.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GOLDMAN, SACHS&CO.REG\n(常任代理人　ゴールドマン・サックス証券株式会社)",
+      "shares": 2150000,
+      "ratio": 7.8,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "千代田産業株式会社",
+      "shares": 1748000,
+      "ratio": 6.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "佐藤美武",
+      "shares": 1442000,
+      "ratio": 5.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＡＩＲＭＡＮ持株会",
+      "shares": 1077000,
+      "ratio": 3.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "CITCO TRUSTEES (CAYMAN)LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF THE VPL1 TRUST\n(常任代理人　立花証券株式会社)",
+      "shares": 1000000,
+      "ratio": 3.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行",
+      "shares": 932000,
+      "ratio": 3.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社第四北越銀行",
+      "shares": 932000,
+      "ratio": 3.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "NORTHERN TRUST CO. (AVFC)RE NON\nTREATY CLIENTS ACCOUNT\n(常任代理人 香港上海銀行東京支店)",
+      "shares": 782000,
+      "ratio": 2.84,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 9.38,
+      "corporate": 15.21,
+      "foreign": 10.64,
+      "individual": 5.24,
+      "employee": 3.91,
+      "securities": 3.63,
+      "financial": 6.77
+    },
+    "individual_total": 5.24,
+    "top10_total": 54.78
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第95期(2025/04/01－2026/03/31)",
+      "docID": "S100YI16",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2586000,
+          "ratio": 9.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "バイオグリーン有限会社",
+          "shares": 2444000,
+          "ratio": 8.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GOLDMAN, SACHS&CO.REG\n(常任代理人　ゴールドマン・サックス証券株式会社)",
+          "shares": 2150000,
+          "ratio": 7.8,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "千代田産業株式会社",
+          "shares": 1748000,
+          "ratio": 6.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "佐藤美武",
+          "shares": 1442000,
+          "ratio": 5.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＡＩＲＭＡＮ持株会",
+          "shares": 1077000,
+          "ratio": 3.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "CITCO TRUSTEES (CAYMAN)LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF THE VPL1 TRUST\n(常任代理人　立花証券株式会社)",
+          "shares": 1000000,
+          "ratio": 3.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行",
+          "shares": 932000,
+          "ratio": 3.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社第四北越銀行",
+          "shares": 932000,
+          "ratio": 3.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "NORTHERN TRUST CO. (AVFC)RE NON\nTREATY CLIENTS ACCOUNT\n(常任代理人 香港上海銀行東京支店)",
+          "shares": 782000,
+          "ratio": 2.84,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 9.38,
+          "corporate": 15.21,
+          "foreign": 10.64,
+          "individual": 5.24,
+          "employee": 3.91,
+          "securities": 3.63,
+          "financial": 6.77
+        },
+        "individual_total": 5.24,
+        "top10_total": 54.78
+      }
+    }
+  ]
+}

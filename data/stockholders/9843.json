@@ -1,0 +1,222 @@
+{
+  "secCode": "9843",
+  "issuerName": "株式会社ニトリホールディングス",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ニトリ商事",
+      "shares": 103999000,
+      "ratio": 18.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト 信託銀行株式会社（信託口）",
+      "shares": 88426000,
+      "ratio": 15.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 40501000,
+      "ratio": 7.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "公益財団法人似鳥国際奨学財団",
+      "shares": 25000000,
+      "ratio": 4.4,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDON SECS LENDING OMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 21350000,
+      "ratio": 3.76,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "似鳥昭雄",
+      "shares": 17052000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "全国共済農業協同組合連合会",
+      "shares": 14756000,
+      "ratio": 2.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STASTE STREET BANK AND TRUST COMPANY 505223（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 14467000,
+      "ratio": 2.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社北洋銀行",
+      "shares": 12702000,
+      "ratio": 2.24,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 10281000,
+      "ratio": 1.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.34,
+      "trust": 22.73,
+      "foundation": 4.4,
+      "foreign": 3.76,
+      "individual": 3.0,
+      "financial": 9.2
+    },
+    "individual_total": 3.0,
+    "top10_total": 61.43
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YIMF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ニトリ商事",
+          "shares": 103999000,
+          "ratio": 18.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト 信託銀行株式会社（信託口）",
+          "shares": 88426000,
+          "ratio": 15.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 40501000,
+          "ratio": 7.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "公益財団法人似鳥国際奨学財団",
+          "shares": 25000000,
+          "ratio": 4.4,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDON SECS LENDING OMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 21350000,
+          "ratio": 3.76,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "似鳥昭雄",
+          "shares": 17052000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "全国共済農業協同組合連合会",
+          "shares": 14756000,
+          "ratio": 2.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STASTE STREET BANK AND TRUST COMPANY 505223（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 14467000,
+          "ratio": 2.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社北洋銀行",
+          "shares": 12702000,
+          "ratio": 2.24,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 10281000,
+          "ratio": 1.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.34,
+          "trust": 22.73,
+          "foundation": 4.4,
+          "foreign": 3.76,
+          "individual": 3.0,
+          "financial": 9.2
+        },
+        "individual_total": 3.0,
+        "top10_total": 61.43
+      }
+    }
+  ]
+}

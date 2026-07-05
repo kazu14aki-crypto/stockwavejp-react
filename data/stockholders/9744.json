@@ -1,0 +1,218 @@
+{
+  "secCode": "9744",
+  "issuerName": "株式会社メイテックグループホールディングス",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 15091000,
+      "ratio": 19.55,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 6959000,
+      "ratio": 9.01,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "明治安田生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 4696000,
+      "ratio": 6.08,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 3387000,
+      "ratio": 4.39,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 3341000,
+      "ratio": 4.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "CEP LUX-ORBIS SICAV\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 2402000,
+      "ratio": 3.11,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "メイテックグループホールディングス社員持株会",
+      "shares": 2225000,
+      "ratio": 2.88,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP MORGAN CHASE BANK 385781\n（株式会社みずほ銀行決済営業部）",
+      "shares": 1084000,
+      "ratio": 1.4,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP JPMSE LUX RE BARCLAYS CAPITAL SEC LTD EQ CO\n（株式会社三菱ＵＦＪ銀行）",
+      "shares": 1017000,
+      "ratio": 1.32,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON 140044\n（株式会社みずほ銀行決済営業部）",
+      "shares": 920000,
+      "ratio": 1.19,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 38.97,
+      "foreign": 8.3,
+      "other": 3.11,
+      "employee": 2.88
+    },
+    "individual_total": 0,
+    "top10_total": 53.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第53期(2025/04/01－2026/03/31)",
+      "docID": "S100YE6X",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 15091000,
+          "ratio": 19.55,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 6959000,
+          "ratio": 9.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "明治安田生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 4696000,
+          "ratio": 6.08,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 3387000,
+          "ratio": 4.39,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 3341000,
+          "ratio": 4.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "CEP LUX-ORBIS SICAV\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 2402000,
+          "ratio": 3.11,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "メイテックグループホールディングス社員持株会",
+          "shares": 2225000,
+          "ratio": 2.88,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP MORGAN CHASE BANK 385781\n（株式会社みずほ銀行決済営業部）",
+          "shares": 1084000,
+          "ratio": 1.4,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP JPMSE LUX RE BARCLAYS CAPITAL SEC LTD EQ CO\n（株式会社三菱ＵＦＪ銀行）",
+          "shares": 1017000,
+          "ratio": 1.32,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON 140044\n（株式会社みずほ銀行決済営業部）",
+          "shares": 920000,
+          "ratio": 1.19,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 38.97,
+          "foreign": 8.3,
+          "other": 3.11,
+          "employee": 2.88
+        },
+        "individual_total": 0,
+        "top10_total": 53.26
+      }
+    }
+  ]
+}

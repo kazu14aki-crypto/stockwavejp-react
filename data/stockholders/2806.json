@@ -1,0 +1,220 @@
+{
+  "secCode": "2806",
+  "issuerName": "ユタカフーズ株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東洋水産株式会社",
+      "shares": 3533000,
+      "ratio": 50.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＶＡＳＡＮＴＡ　ＭＡＳＴＥＲ　ＦＵＮＤ　ＰＴＥ.　ＬＴＤ.（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 339000,
+      "ratio": 4.89,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社榎本武平商店",
+      "shares": 210000,
+      "ratio": 3.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ユタカフーズ従業員持株会",
+      "shares": 203000,
+      "ratio": 2.92,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＭＳＩＰ　ＣＬＩＥＮＴ　ＳＥＣＵＲＩＴＩＥＳ（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 184000,
+      "ratio": 2.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社あいち銀行",
+      "shares": 85000,
+      "ratio": 1.22,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大樹生命保険株式会社",
+      "shares": 80000,
+      "ratio": 1.15,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "焼津水産化学工業株式会社",
+      "shares": 76000,
+      "ratio": 1.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "知多信用金庫",
+      "shares": 74000,
+      "ratio": 1.06,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "CACEIS　BANK/QUINTET　LUXEMBOURG　SUB　AC/AIF　CUSTOMER　ACOOUNT(常任代理人　香港上海銀行東京支店）",
+      "shares": 66000,
+      "ratio": 0.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 54.97,
+      "financial": 8.32,
+      "employee": 2.92,
+      "securities": 2.65,
+      "foreign": 0.96
+    },
+    "individual_total": 0,
+    "top10_total": 69.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第86期(2025/04/01－2026/03/31)",
+      "docID": "S100YHEX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東洋水産株式会社",
+          "shares": 3533000,
+          "ratio": 50.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＶＡＳＡＮＴＡ　ＭＡＳＴＥＲ　ＦＵＮＤ　ＰＴＥ.　ＬＴＤ.（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 339000,
+          "ratio": 4.89,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社榎本武平商店",
+          "shares": 210000,
+          "ratio": 3.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ユタカフーズ従業員持株会",
+          "shares": 203000,
+          "ratio": 2.92,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＭＳＩＰ　ＣＬＩＥＮＴ　ＳＥＣＵＲＩＴＩＥＳ（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 184000,
+          "ratio": 2.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社あいち銀行",
+          "shares": 85000,
+          "ratio": 1.22,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大樹生命保険株式会社",
+          "shares": 80000,
+          "ratio": 1.15,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "焼津水産化学工業株式会社",
+          "shares": 76000,
+          "ratio": 1.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "知多信用金庫",
+          "shares": 74000,
+          "ratio": 1.06,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "CACEIS　BANK/QUINTET　LUXEMBOURG　SUB　AC/AIF　CUSTOMER　ACOOUNT(常任代理人　香港上海銀行東京支店）",
+          "shares": 66000,
+          "ratio": 0.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 54.97,
+          "financial": 8.32,
+          "employee": 2.92,
+          "securities": 2.65,
+          "foreign": 0.96
+        },
+        "individual_total": 0,
+        "top10_total": 69.82
+      }
+    }
+  ]
+}

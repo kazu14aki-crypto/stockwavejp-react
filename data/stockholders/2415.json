@@ -1,0 +1,216 @@
+{
+  "secCode": "2415",
+  "issuerName": "ヒューマンホールディングス株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ペアレンツ",
+      "shares": 2311600,
+      "ratio": 22.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐藤新悟",
+      "shares": 1000000,
+      "ratio": 9.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "佐藤朋也",
+      "shares": 862000,
+      "ratio": 8.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "佐藤耕一",
+      "shares": 521100,
+      "ratio": 5.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "オフィスあぐり株式会社",
+      "shares": 424800,
+      "ratio": 4.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ヒューマンホールディングス\n従業員持株会",
+      "shares": 392400,
+      "ratio": 3.78,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村愛",
+      "shares": 327200,
+      "ratio": 3.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社ＪＰＳＫＮ",
+      "shares": 288500,
+      "ratio": 2.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社Ｋｏｂｅｅ",
+      "shares": 271500,
+      "ratio": 2.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "有限会社ハーヴェスト",
+      "shares": 266400,
+      "ratio": 2.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.33,
+      "individual": 26.12,
+      "employee": 3.78
+    },
+    "individual_total": 26.12,
+    "top10_total": 64.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第24期(2025/04/01－2026/03/31)",
+      "docID": "S100YIDK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ペアレンツ",
+          "shares": 2311600,
+          "ratio": 22.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐藤新悟",
+          "shares": 1000000,
+          "ratio": 9.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐藤朋也",
+          "shares": 862000,
+          "ratio": 8.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "佐藤耕一",
+          "shares": 521100,
+          "ratio": 5.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "オフィスあぐり株式会社",
+          "shares": 424800,
+          "ratio": 4.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ヒューマンホールディングス\n従業員持株会",
+          "shares": 392400,
+          "ratio": 3.78,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村愛",
+          "shares": 327200,
+          "ratio": 3.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社ＪＰＳＫＮ",
+          "shares": 288500,
+          "ratio": 2.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社Ｋｏｂｅｅ",
+          "shares": 271500,
+          "ratio": 2.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "有限会社ハーヴェスト",
+          "shares": 266400,
+          "ratio": 2.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.33,
+          "individual": 26.12,
+          "employee": 3.78
+        },
+        "individual_total": 26.12,
+        "top10_total": 64.23
+      }
+    }
+  ]
+}

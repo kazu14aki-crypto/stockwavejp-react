@@ -1,0 +1,218 @@
+{
+  "secCode": "6743",
+  "issuerName": "大同信号株式会社",
+  "updated_at": "2026/07/04 18:37 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本電設工業株式会社",
+      "shares": 2395000,
+      "ratio": 14.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大同信号取引先持株会",
+      "shares": 888000,
+      "ratio": 5.54,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "朝日生命保険相互会社",
+      "shares": 715000,
+      "ratio": 4.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 683000,
+      "ratio": 4.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本リーテック株式会社",
+      "shares": 655000,
+      "ratio": 4.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "有限会社光パワー",
+      "shares": 598000,
+      "ratio": 3.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大同信号従業員持株会",
+      "shares": 594000,
+      "ratio": 3.71,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三井住友銀行",
+      "shares": 588000,
+      "ratio": 3.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "重田　康光",
+      "shares": 531000,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大同信号共済会",
+      "shares": 503000,
+      "ratio": 3.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 22.75,
+      "employee": 9.25,
+      "financial": 15.53,
+      "individual": 3.31
+    },
+    "individual_total": 3.31,
+    "top10_total": 50.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YEMV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本電設工業株式会社",
+          "shares": 2395000,
+          "ratio": 14.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大同信号取引先持株会",
+          "shares": 888000,
+          "ratio": 5.54,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "朝日生命保険相互会社",
+          "shares": 715000,
+          "ratio": 4.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 683000,
+          "ratio": 4.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本リーテック株式会社",
+          "shares": 655000,
+          "ratio": 4.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "有限会社光パワー",
+          "shares": 598000,
+          "ratio": 3.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大同信号従業員持株会",
+          "shares": 594000,
+          "ratio": 3.71,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三井住友銀行",
+          "shares": 588000,
+          "ratio": 3.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "重田　康光",
+          "shares": 531000,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大同信号共済会",
+          "shares": 503000,
+          "ratio": 3.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 22.75,
+          "employee": 9.25,
+          "financial": 15.53,
+          "individual": 3.31
+        },
+        "individual_total": 3.31,
+        "top10_total": 50.84
+      }
+    }
+  ]
+}

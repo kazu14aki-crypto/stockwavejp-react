@@ -1,0 +1,218 @@
+{
+  "secCode": "9959",
+  "issuerName": "アシードホールディングス株式会社",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "サンコモト㈲",
+      "shares": 4701000,
+      "ratio": 38.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "河本 大輔",
+      "shares": 1016000,
+      "ratio": 8.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大戸 綾加",
+      "shares": 737000,
+      "ratio": 6.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "浅井 哲也",
+      "shares": 503000,
+      "ratio": 4.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アシードグループ社員持株会",
+      "shares": 397000,
+      "ratio": 3.22,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "河本 ハルエ",
+      "shares": 385000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱広島銀行\n（常任代理人　㈱日本カストディ銀行）",
+      "shares": 380000,
+      "ratio": 3.08,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "アシード・インベストメント・クラブ",
+      "shares": 281000,
+      "ratio": 2.28,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松本　典文",
+      "shares": 269000,
+      "ratio": 2.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "寺地　實",
+      "shares": 218000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 63.5,
+      "employee": 3.22,
+      "trust": 3.08,
+      "other": 2.28
+    },
+    "individual_total": 63.5,
+    "top10_total": 72.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YGUH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "サンコモト㈲",
+          "shares": 4701000,
+          "ratio": 38.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "河本 大輔",
+          "shares": 1016000,
+          "ratio": 8.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大戸 綾加",
+          "shares": 737000,
+          "ratio": 6.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "浅井 哲也",
+          "shares": 503000,
+          "ratio": 4.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アシードグループ社員持株会",
+          "shares": 397000,
+          "ratio": 3.22,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "河本 ハルエ",
+          "shares": 385000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱広島銀行\n（常任代理人　㈱日本カストディ銀行）",
+          "shares": 380000,
+          "ratio": 3.08,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "アシード・インベストメント・クラブ",
+          "shares": 281000,
+          "ratio": 2.28,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松本　典文",
+          "shares": 269000,
+          "ratio": 2.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "寺地　實",
+          "shares": 218000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 63.5,
+          "employee": 3.22,
+          "trust": 3.08,
+          "other": 2.28
+        },
+        "individual_total": 63.5,
+        "top10_total": 72.08
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "1904",
+  "issuerName": "大成温調株式会社",
+  "updated_at": "2026/07/04 18:26 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アクアウェッジ株式会社",
+      "shares": 993000,
+      "ratio": 15.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大成温調取引先持株会",
+      "shares": 528000,
+      "ratio": 8.42,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "一般財団法人大成温調奨学財団",
+      "shares": 350000,
+      "ratio": 5.57,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大成温調従業員持株会",
+      "shares": 156000,
+      "ratio": 2.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "水谷　日出夫",
+      "shares": 111000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "河村　和平",
+      "shares": 89000,
+      "ratio": 1.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東テク株式会社",
+      "shares": 70000,
+      "ratio": 1.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 64000,
+      "ratio": 1.03,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "河村　昌平",
+      "shares": 59000,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "和田　ふみ子",
+      "shares": 50000,
+      "ratio": 0.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 16.93,
+      "employee": 10.92,
+      "foundation": 5.57,
+      "individual": 4.93,
+      "trust": 1.03
+    },
+    "individual_total": 4.93,
+    "top10_total": 39.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YIC7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アクアウェッジ株式会社",
+          "shares": 993000,
+          "ratio": 15.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大成温調取引先持株会",
+          "shares": 528000,
+          "ratio": 8.42,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "一般財団法人大成温調奨学財団",
+          "shares": 350000,
+          "ratio": 5.57,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大成温調従業員持株会",
+          "shares": 156000,
+          "ratio": 2.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "水谷　日出夫",
+          "shares": 111000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "河村　和平",
+          "shares": 89000,
+          "ratio": 1.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東テク株式会社",
+          "shares": 70000,
+          "ratio": 1.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 64000,
+          "ratio": 1.03,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "河村　昌平",
+          "shares": 59000,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "和田　ふみ子",
+          "shares": 50000,
+          "ratio": 0.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 16.93,
+          "employee": 10.92,
+          "foundation": 5.57,
+          "individual": 4.93,
+          "trust": 1.03
+        },
+        "individual_total": 4.93,
+        "top10_total": 39.38
+      }
+    }
+  ]
+}

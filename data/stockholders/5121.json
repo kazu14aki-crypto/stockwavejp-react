@@ -1,0 +1,220 @@
+{
+  "secCode": "5121",
+  "issuerName": "藤倉コンポジット株式会社",
+  "updated_at": "2026/07/04 18:27 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1871000,
+      "ratio": 9.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "NOMURA PB NOMINESS LIMITED OBNIBUS-MARGIN (CASHPB)（常任代理人　野村證券株式会社）",
+      "shares": 1535100,
+      "ratio": 7.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社フジクラ",
+      "shares": 1000000,
+      "ratio": 5.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（株式付与ESOP信託口・80014口）",
+      "shares": 872172,
+      "ratio": 4.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ（常任代理人　三田証券株式会社）",
+      "shares": 762600,
+      "ratio": 3.87,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "藤倉化成株式会社",
+      "shares": 569840,
+      "ratio": 2.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "藤倉航装株式会社",
+      "shares": 515210,
+      "ratio": 2.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 500900,
+      "ratio": 2.54,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 493800,
+      "ratio": 2.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤倉コンポジット従業員持株会",
+      "shares": 484329,
+      "ratio": 2.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 16.41,
+      "corporate": 18.35,
+      "securities": 3.87,
+      "financial": 2.54,
+      "employee": 2.46
+    },
+    "individual_total": 0,
+    "top10_total": 43.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第147期(2025/04/01－2026/03/31)",
+      "docID": "S100YJDM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1871000,
+          "ratio": 9.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "NOMURA PB NOMINESS LIMITED OBNIBUS-MARGIN (CASHPB)（常任代理人　野村證券株式会社）",
+          "shares": 1535100,
+          "ratio": 7.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社フジクラ",
+          "shares": 1000000,
+          "ratio": 5.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（株式付与ESOP信託口・80014口）",
+          "shares": 872172,
+          "ratio": 4.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＭＵＲＡＫＡＭＩ　ＴＡＫＡＴＥＲＵ（常任代理人　三田証券株式会社）",
+          "shares": 762600,
+          "ratio": 3.87,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "藤倉化成株式会社",
+          "shares": 569840,
+          "ratio": 2.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "藤倉航装株式会社",
+          "shares": 515210,
+          "ratio": 2.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 500900,
+          "ratio": 2.54,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 493800,
+          "ratio": 2.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤倉コンポジット従業員持株会",
+          "shares": 484329,
+          "ratio": 2.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 16.41,
+          "corporate": 18.35,
+          "securities": 3.87,
+          "financial": 2.54,
+          "employee": 2.46
+        },
+        "individual_total": 0,
+        "top10_total": 43.63
+      }
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "secCode": "7119",
+  "issuerName": "株式会社ハルメクホールディングス",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "松島　陽介",
+      "shares": 1900000,
+      "ratio": 17.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "宮澤　孝夫",
+      "shares": 1620041,
+      "ratio": 14.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山元　雄太",
+      "shares": 1520000,
+      "ratio": 13.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＩＨドリーム株式会社（注）",
+      "shares": 1200000,
+      "ratio": 10.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "土屋　淳一",
+      "shares": 803050,
+      "ratio": 7.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "和田　朝子",
+      "shares": 274388,
+      "ratio": 2.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "林　南平",
+      "shares": 240000,
+      "ratio": 2.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大谷　貴志",
+      "shares": 160000,
+      "ratio": 1.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中村　大",
+      "shares": 50000,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 47900,
+      "ratio": 0.43,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 59.43,
+      "corporate": 10.86,
+      "trust": 0.43
+    },
+    "individual_total": 59.43,
+    "top10_total": 70.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第7期(2025/04/01－2026/03/31)",
+      "docID": "S100YLIQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "松島　陽介",
+          "shares": 1900000,
+          "ratio": 17.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "宮澤　孝夫",
+          "shares": 1620041,
+          "ratio": 14.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山元　雄太",
+          "shares": 1520000,
+          "ratio": 13.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＩＨドリーム株式会社（注）",
+          "shares": 1200000,
+          "ratio": 10.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "土屋　淳一",
+          "shares": 803050,
+          "ratio": 7.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "和田　朝子",
+          "shares": 274388,
+          "ratio": 2.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "林　南平",
+          "shares": 240000,
+          "ratio": 2.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大谷　貴志",
+          "shares": 160000,
+          "ratio": 1.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中村　大",
+          "shares": 50000,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 47900,
+          "ratio": 0.43,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 59.43,
+          "corporate": 10.86,
+          "trust": 0.43
+        },
+        "individual_total": 59.43,
+        "top10_total": 70.72
+      }
+    },
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第7期(2025/04/01－2026/03/31)",
+      "docID": "S100YF6O",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "松島　陽介",
+          "shares": 1900000,
+          "ratio": 17.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "宮澤　孝夫",
+          "shares": 1620041,
+          "ratio": 14.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山元　雄太",
+          "shares": 1520000,
+          "ratio": 13.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＩＨドリーム株式会社（注）",
+          "shares": 1200000,
+          "ratio": 10.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "土屋　淳一",
+          "shares": 803050,
+          "ratio": 7.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "和田　朝子",
+          "shares": 274388,
+          "ratio": 2.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "林　南平",
+          "shares": 240000,
+          "ratio": 2.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大谷　貴志",
+          "shares": 160000,
+          "ratio": 1.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中村　大",
+          "shares": 50000,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 47900,
+          "ratio": 0.43,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 59.43,
+          "corporate": 10.86,
+          "trust": 0.43
+        },
+        "individual_total": 59.43,
+        "top10_total": 70.72
+      }
+    }
+  ]
+}

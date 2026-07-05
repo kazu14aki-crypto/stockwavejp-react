@@ -1,0 +1,220 @@
+{
+  "secCode": "2469",
+  "issuerName": "ヒビノ株式会社",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社ハイビーノ",
+      "shares": 3520000,
+      "ratio": 35.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日比野　晃久",
+      "shares": 704000,
+      "ratio": 7.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ヒビノ従業員持株会",
+      "shares": 413000,
+      "ratio": 4.18,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 378000,
+      "ratio": 3.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日比野　宏明",
+      "shares": 270000,
+      "ratio": 2.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日比野　純子",
+      "shares": 234000,
+      "ratio": 2.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 208000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社みずほ銀行",
+      "shares": 200000,
+      "ratio": 2.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 200000,
+      "ratio": 2.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+      "shares": 179000,
+      "ratio": 1.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 35.51,
+      "individual": 12.2,
+      "employee": 4.18,
+      "trust": 5.63,
+      "financial": 6.14
+    },
+    "individual_total": 12.2,
+    "top10_total": 63.66
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YG1N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社ハイビーノ",
+          "shares": 3520000,
+          "ratio": 35.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日比野　晃久",
+          "shares": 704000,
+          "ratio": 7.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ヒビノ従業員持株会",
+          "shares": 413000,
+          "ratio": 4.18,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 378000,
+          "ratio": 3.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日比野　宏明",
+          "shares": 270000,
+          "ratio": 2.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日比野　純子",
+          "shares": 234000,
+          "ratio": 2.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 208000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社みずほ銀行",
+          "shares": 200000,
+          "ratio": 2.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 200000,
+          "ratio": 2.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+          "shares": 179000,
+          "ratio": 1.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 35.51,
+          "individual": 12.2,
+          "employee": 4.18,
+          "trust": 5.63,
+          "financial": 6.14
+        },
+        "individual_total": 12.2,
+        "top10_total": 63.66
+      }
+    }
+  ]
+}

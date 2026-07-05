@@ -1,0 +1,222 @@
+{
+  "secCode": "6750",
+  "issuerName": "エレコム株式会社",
+  "updated_at": "2026/07/04 18:03 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "葉田 順治",
+      "shares": 16735000,
+      "ratio": 20.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社サンズ",
+      "shares": 12600000,
+      "ratio": 15.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7499600,
+      "ratio": 9.31,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 3024000,
+      "ratio": 3.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 1872000,
+      "ratio": 2.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "公益財団法人葉田財団",
+      "shares": 1800000,
+      "ratio": 2.23,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "エレコム社員持株会",
+      "shares": 1281600,
+      "ratio": 1.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1174470,
+      "ratio": 1.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５０１９\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1059960,
+      "ratio": 1.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 1008000,
+      "ratio": 1.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 20.78,
+      "corporate": 15.64,
+      "trust": 13.06,
+      "financial": 6.35,
+      "foundation": 2.23,
+      "employee": 1.59
+    },
+    "individual_total": 20.78,
+    "top10_total": 59.65
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2025/04/01－2026/03/31)",
+      "docID": "S100YK25",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "葉田 順治",
+          "shares": 16735000,
+          "ratio": 20.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社サンズ",
+          "shares": 12600000,
+          "ratio": 15.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7499600,
+          "ratio": 9.31,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3024000,
+          "ratio": 3.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 1872000,
+          "ratio": 2.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人葉田財団",
+          "shares": 1800000,
+          "ratio": 2.23,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "エレコム社員持株会",
+          "shares": 1281600,
+          "ratio": 1.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1174470,
+          "ratio": 1.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５０１９\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1059960,
+          "ratio": 1.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 1008000,
+          "ratio": 1.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 20.78,
+          "corporate": 15.64,
+          "trust": 13.06,
+          "financial": 6.35,
+          "foundation": 2.23,
+          "employee": 1.59
+        },
+        "individual_total": 20.78,
+        "top10_total": 59.65
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "8560",
+  "issuerName": "株式会社　宮崎太陽銀行",
+  "updated_at": "2026/07/04 18:49 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社宮崎銀行",
+      "shares": 538000,
+      "ratio": 9.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "宮崎太陽銀行従業員持株会",
+      "shares": 285000,
+      "ratio": 5.03,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社大成住宅",
+      "shares": 167000,
+      "ratio": 2.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社福岡中央銀行",
+      "shares": 149000,
+      "ratio": 2.64,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "九州総合信用株式会社",
+      "shares": 132000,
+      "ratio": 2.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社南日本銀行",
+      "shares": 130000,
+      "ratio": 2.3,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社豊和銀行",
+      "shares": 127000,
+      "ratio": 2.24,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大和冷機工業株式会社",
+      "shares": 125000,
+      "ratio": 2.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社福岡銀行",
+      "shares": 122000,
+      "ratio": 2.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社西日本シティ銀行",
+      "shares": 98000,
+      "ratio": 1.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 20.58,
+      "employee": 5.03,
+      "corporate": 7.48
+    },
+    "individual_total": 0,
+    "top10_total": 33.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第125期(2025/04/01－2026/03/31)",
+      "docID": "S100YG72",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社宮崎銀行",
+          "shares": 538000,
+          "ratio": 9.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "宮崎太陽銀行従業員持株会",
+          "shares": 285000,
+          "ratio": 5.03,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社大成住宅",
+          "shares": 167000,
+          "ratio": 2.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社福岡中央銀行",
+          "shares": 149000,
+          "ratio": 2.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "九州総合信用株式会社",
+          "shares": 132000,
+          "ratio": 2.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社南日本銀行",
+          "shares": 130000,
+          "ratio": 2.3,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社豊和銀行",
+          "shares": 127000,
+          "ratio": 2.24,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大和冷機工業株式会社",
+          "shares": 125000,
+          "ratio": 2.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社福岡銀行",
+          "shares": 122000,
+          "ratio": 2.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社西日本シティ銀行",
+          "shares": 98000,
+          "ratio": 1.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 20.58,
+          "employee": 5.03,
+          "corporate": 7.48
+        },
+        "individual_total": 0,
+        "top10_total": 33.09
+      }
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "secCode": "2585",
+  "issuerName": "株式会社ライフドリンク　カンパニー",
+  "updated_at": "2026/07/04 18:30 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "アイリスオーヤマ株式会社",
+      "shares": 5261000,
+      "ratio": 10.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4748000,
+      "ratio": 9.1,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＣＥＰＬＵＸ－ ＴＨＥ \nＩＮＤＥＰＥＮＤＥＮＴ ＵＣＩＴＳ ＰＬＡＴＦＯＲＭ ２\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 3963000,
+      "ratio": 7.6,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "田中将雄",
+      "shares": 2730000,
+      "ratio": 5.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 2317000,
+      "ratio": 4.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＴＨＥ ＣＨＡＳＥ \nＭＡＮＨＡＴＴＡＮ ＢＡＮＫ，\nＮ．Ａ． ＬＯＮＤＯＮＳＥＣＳ \nＬＥＮＤＩＮＧ ＯＭＮＩＢＵＳ \nＡＣＣＯＵＮＴ\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1692000,
+      "ratio": 3.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田中利子",
+      "shares": 1523000,
+      "ratio": 2.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "田中頼成",
+      "shares": 1290000,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 1219000,
+      "ratio": 2.3,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田中頼広",
+      "shares": 1177000,
+      "ratio": 2.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 10.1,
+      "trust": 13.5,
+      "other": 7.6,
+      "individual": 12.7,
+      "financial": 3.2,
+      "securities": 2.3
+    },
+    "individual_total": 12.7,
+    "top10_total": 49.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YIP0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "アイリスオーヤマ株式会社",
+          "shares": 5261000,
+          "ratio": 10.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4748000,
+          "ratio": 9.1,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＣＥＰＬＵＸ－ ＴＨＥ \nＩＮＤＥＰＥＮＤＥＮＴ ＵＣＩＴＳ ＰＬＡＴＦＯＲＭ ２\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 3963000,
+          "ratio": 7.6,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "田中将雄",
+          "shares": 2730000,
+          "ratio": 5.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 2317000,
+          "ratio": 4.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＴＨＥ ＣＨＡＳＥ \nＭＡＮＨＡＴＴＡＮ ＢＡＮＫ，\nＮ．Ａ． ＬＯＮＤＯＮＳＥＣＳ \nＬＥＮＤＩＮＧ ＯＭＮＩＢＵＳ \nＡＣＣＯＵＮＴ\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1692000,
+          "ratio": 3.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田中利子",
+          "shares": 1523000,
+          "ratio": 2.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "田中頼成",
+          "shares": 1290000,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 1219000,
+          "ratio": 2.3,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田中頼広",
+          "shares": 1177000,
+          "ratio": 2.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 10.1,
+          "trust": 13.5,
+          "other": 7.6,
+          "individual": 12.7,
+          "financial": 3.2,
+          "securities": 2.3
+        },
+        "individual_total": 12.7,
+        "top10_total": 49.4
+      }
+    }
+  ]
+}

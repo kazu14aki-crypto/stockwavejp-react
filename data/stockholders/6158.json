@@ -1,0 +1,220 @@
+{
+  "secCode": "6158",
+  "issuerName": "株式会社和井田製作所",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "和井田　光生",
+      "shares": 436160,
+      "ratio": 6.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "和井田　俶生",
+      "shares": 326060,
+      "ratio": 4.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "株式会社十六銀行",
+      "shares": 321300,
+      "ratio": 4.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 256000,
+      "ratio": 3.92,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "合同会社センス",
+      "shares": 215300,
+      "ratio": 3.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "和井田製作所従業員持株会",
+      "shares": 214271,
+      "ratio": 3.28,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "和井田　叔子",
+      "shares": 172800,
+      "ratio": 2.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "CACEIS BK ES IICS CLIENTS（常任代理人　香港上海銀行東京支店）",
+      "shares": 166000,
+      "ratio": 2.54,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 126400,
+      "ratio": 1.93,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "和井田　克子",
+      "shares": 121200,
+      "ratio": 1.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 16.16,
+      "financial": 11.38,
+      "corporate": 3.3,
+      "employee": 3.28,
+      "trust": 1.93
+    },
+    "individual_total": 16.16,
+    "top10_total": 36.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第97期(2025/04/01－2026/03/31)",
+      "docID": "S100YI25",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "和井田　光生",
+          "shares": 436160,
+          "ratio": 6.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "和井田　俶生",
+          "shares": 326060,
+          "ratio": 4.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "株式会社十六銀行",
+          "shares": 321300,
+          "ratio": 4.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 256000,
+          "ratio": 3.92,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "合同会社センス",
+          "shares": 215300,
+          "ratio": 3.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "和井田製作所従業員持株会",
+          "shares": 214271,
+          "ratio": 3.28,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "和井田　叔子",
+          "shares": 172800,
+          "ratio": 2.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "CACEIS BK ES IICS CLIENTS（常任代理人　香港上海銀行東京支店）",
+          "shares": 166000,
+          "ratio": 2.54,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 126400,
+          "ratio": 1.93,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "和井田　克子",
+          "shares": 121200,
+          "ratio": 1.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 16.16,
+          "financial": 11.38,
+          "corporate": 3.3,
+          "employee": 3.28,
+          "trust": 1.93
+        },
+        "individual_total": 16.16,
+        "top10_total": 36.05
+      }
+    }
+  ]
+}

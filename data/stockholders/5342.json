@@ -1,0 +1,220 @@
+{
+  "secCode": "5342",
+  "issuerName": "ジャニス工業株式会社",
+  "updated_at": "2026/07/04 18:24 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "タカラスタンダード株式会社",
+      "shares": 621000,
+      "ratio": 16.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ジャニス工業取引先持株会",
+      "shares": 511000,
+      "ratio": 13.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ニッソウ",
+      "shares": 364000,
+      "ratio": 9.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 182000,
+      "ratio": 4.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＬＩＸＩＬ",
+      "shares": 180000,
+      "ratio": 4.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 117000,
+      "ratio": 3.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 100000,
+      "ratio": 2.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 98000,
+      "ratio": 2.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ジャニス工業取引先持株会",
+      "shares": 81000,
+      "ratio": 2.15,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "伊  奈  浩  一",
+      "shares": 81000,
+      "ratio": 2.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 30.66,
+      "employee": 15.61,
+      "financial": 10.48,
+      "trust": 2.59,
+      "individual": 2.13
+    },
+    "individual_total": 2.13,
+    "top10_total": 61.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/04/01－2026/03/31)",
+      "docID": "S100YJHR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "タカラスタンダード株式会社",
+          "shares": 621000,
+          "ratio": 16.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ジャニス工業取引先持株会",
+          "shares": 511000,
+          "ratio": 13.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ニッソウ",
+          "shares": 364000,
+          "ratio": 9.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 182000,
+          "ratio": 4.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＬＩＸＩＬ",
+          "shares": 180000,
+          "ratio": 4.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 117000,
+          "ratio": 3.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 100000,
+          "ratio": 2.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 98000,
+          "ratio": 2.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ジャニス工業取引先持株会",
+          "shares": 81000,
+          "ratio": 2.15,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "伊  奈  浩  一",
+          "shares": 81000,
+          "ratio": 2.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 30.66,
+          "employee": 15.61,
+          "financial": 10.48,
+          "trust": 2.59,
+          "individual": 2.13
+        },
+        "individual_total": 2.13,
+        "top10_total": 61.47
+      }
+    }
+  ]
+}

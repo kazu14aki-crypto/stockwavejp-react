@@ -1,0 +1,220 @@
+{
+  "secCode": "4650",
+  "issuerName": "ＳＤエンターテイメント株式会社",
+  "updated_at": "2026/07/04 17:46 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "RIZAPグループ株式会社",
+      "shares": 5340000,
+      "ratio": 59.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中道リース株式会社",
+      "shares": 74000,
+      "ratio": 0.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "金城政次",
+      "shares": 50000,
+      "ratio": 0.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社証券ジャパン",
+      "shares": 39000,
+      "ratio": 0.44,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本生命保険相互会社",
+      "shares": 24000,
+      "ratio": 0.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社サンリッチインターナショナル",
+      "shares": 20000,
+      "ratio": 0.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田添敬子",
+      "shares": 14000,
+      "ratio": 0.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＤエンタ－テイメント従業員持株会",
+      "shares": 12000,
+      "ratio": 0.14,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "乾敏明",
+      "shares": 11000,
+      "ratio": 0.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "GMOクリック証券株式会社",
+      "shares": 11000,
+      "ratio": 0.12,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 60.67,
+      "individual": 0.83,
+      "securities": 0.56,
+      "financial": 0.26,
+      "employee": 0.14
+    },
+    "individual_total": 0.83,
+    "top10_total": 62.46
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第72期(2025/04/01－2026/03/31)",
+      "docID": "S100YNJD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "RIZAPグループ株式会社",
+          "shares": 5340000,
+          "ratio": 59.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中道リース株式会社",
+          "shares": 74000,
+          "ratio": 0.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "金城政次",
+          "shares": 50000,
+          "ratio": 0.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社証券ジャパン",
+          "shares": 39000,
+          "ratio": 0.44,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本生命保険相互会社",
+          "shares": 24000,
+          "ratio": 0.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社サンリッチインターナショナル",
+          "shares": 20000,
+          "ratio": 0.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田添敬子",
+          "shares": 14000,
+          "ratio": 0.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＤエンタ－テイメント従業員持株会",
+          "shares": 12000,
+          "ratio": 0.14,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "乾敏明",
+          "shares": 11000,
+          "ratio": 0.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "GMOクリック証券株式会社",
+          "shares": 11000,
+          "ratio": 0.12,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 60.67,
+          "individual": 0.83,
+          "securities": 0.56,
+          "financial": 0.26,
+          "employee": 0.14
+        },
+        "individual_total": 0.83,
+        "top10_total": 62.46
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "8306",
+  "issuerName": "株式会社三菱ＵＦＪフィナンシャル・グループ",
+  "updated_at": "2026/07/04 18:28 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1762949700,
+      "ratio": 15.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 607676500,
+      "ratio": 5.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS(常任代理人 株式会社三菱ＵＦＪ銀行)",
+      "shares": 340637931,
+      "ratio": 3.01,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 310611029,
+      "ratio": 2.74,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社(明治安田生命保険相互会社・退職給付信託口)",
+      "shares": 175000000,
+      "ratio": 1.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JP MORGAN CHASE BANK 385781(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 164190844,
+      "ratio": 1.45,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "GOVERNMENT OF NORWAY(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 154245659,
+      "ratio": 1.36,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行株式会社)",
+      "shares": 142562953,
+      "ratio": 1.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385642(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 139175931,
+      "ratio": 1.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON140042(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 114025088,
+      "ratio": 1.0,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.75,
+      "foreign": 9.43,
+      "other": 1.36
+    },
+    "individual_total": 0,
+    "top10_total": 34.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YJQO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1762949700,
+          "ratio": 15.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 607676500,
+          "ratio": 5.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS(常任代理人 株式会社三菱ＵＦＪ銀行)",
+          "shares": 340637931,
+          "ratio": 3.01,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 310611029,
+          "ratio": 2.74,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社(明治安田生命保険相互会社・退職給付信託口)",
+          "shares": 175000000,
+          "ratio": 1.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JP MORGAN CHASE BANK 385781(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 164190844,
+          "ratio": 1.45,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "GOVERNMENT OF NORWAY(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 154245659,
+          "ratio": 1.36,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行株式会社)",
+          "shares": 142562953,
+          "ratio": 1.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385642(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 139175931,
+          "ratio": 1.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON140042(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 114025088,
+          "ratio": 1.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.75,
+          "foreign": 9.43,
+          "other": 1.36
+        },
+        "individual_total": 0,
+        "top10_total": 34.54
+      }
+    }
+  ]
+}

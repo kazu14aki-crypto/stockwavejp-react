@@ -1,0 +1,220 @@
+{
+  "secCode": "6960",
+  "issuerName": "フクダ電子株式会社",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "福田　孝太郎",
+      "shares": 5640000,
+      "ratio": 20.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険（相）",
+      "shares": 1505000,
+      "ratio": 5.5,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "みずほ信託銀行㈱　退職給付信託　きらぼし銀行口　再信託受託者　㈱日本カストディ銀行",
+      "shares": 1365000,
+      "ratio": 4.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 1355000,
+      "ratio": 4.95,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱みずほ銀行",
+      "shares": 1042000,
+      "ratio": 3.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱北陸銀行",
+      "shares": 1000000,
+      "ratio": 3.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "福田　百合子",
+      "shares": 734000,
+      "ratio": 2.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "フクダ電子従業員持株会",
+      "shares": 690000,
+      "ratio": 2.52,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "公益財団法人福田記念医療技術振興財団",
+      "shares": 600000,
+      "ratio": 2.19,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ザ　チェース　マンハッタン　バンク　エヌエイ　ロンドン　エス　エル　オムニバス　アカウント\n（常任代理人：㈱みずほ銀行決済営業部）",
+      "shares": 572000,
+      "ratio": 2.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.28,
+      "financial": 20.0,
+      "trust": 4.99,
+      "employee": 2.52,
+      "foundation": 2.19
+    },
+    "individual_total": 23.28,
+    "top10_total": 52.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YLF7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "福田　孝太郎",
+          "shares": 5640000,
+          "ratio": 20.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険（相）",
+          "shares": 1505000,
+          "ratio": 5.5,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "みずほ信託銀行㈱　退職給付信託　きらぼし銀行口　再信託受託者　㈱日本カストディ銀行",
+          "shares": 1365000,
+          "ratio": 4.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 1355000,
+          "ratio": 4.95,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱みずほ銀行",
+          "shares": 1042000,
+          "ratio": 3.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱北陸銀行",
+          "shares": 1000000,
+          "ratio": 3.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福田　百合子",
+          "shares": 734000,
+          "ratio": 2.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "フクダ電子従業員持株会",
+          "shares": 690000,
+          "ratio": 2.52,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "公益財団法人福田記念医療技術振興財団",
+          "shares": 600000,
+          "ratio": 2.19,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ザ　チェース　マンハッタン　バンク　エヌエイ　ロンドン　エス　エル　オムニバス　アカウント\n（常任代理人：㈱みずほ銀行決済営業部）",
+          "shares": 572000,
+          "ratio": 2.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.28,
+          "financial": 20.0,
+          "trust": 4.99,
+          "employee": 2.52,
+          "foundation": 2.19
+        },
+        "individual_total": 23.28,
+        "top10_total": 52.98
+      }
+    }
+  ]
+}

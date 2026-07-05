@@ -1,0 +1,218 @@
+{
+  "secCode": "7897",
+  "issuerName": "ホクシン株式会社",
+  "updated_at": "2026/07/04 18:34 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "兼松㈱",
+      "shares": 7522000,
+      "ratio": 26.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＤＡＩＫＥＮ㈱",
+      "shares": 4227000,
+      "ratio": 14.91,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "永大産業㈱",
+      "shares": 1000000,
+      "ratio": 3.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ホクシン取引先持株会",
+      "shares": 997000,
+      "ratio": 3.52,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "酒井佐知子",
+      "shares": 728000,
+      "ratio": 2.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "國分節子",
+      "shares": 710000,
+      "ratio": 2.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "中島和信",
+      "shares": 674000,
+      "ratio": 2.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱池田泉州銀行",
+      "shares": 430000,
+      "ratio": 1.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ホクシン従業員持株会",
+      "shares": 336000,
+      "ratio": 1.19,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "古谷洋作",
+      "shares": 305000,
+      "ratio": 1.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.6,
+      "other": 14.91,
+      "employee": 4.71,
+      "financial": 1.52
+    },
+    "individual_total": 38.6,
+    "top10_total": 59.74
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YGLJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "兼松㈱",
+          "shares": 7522000,
+          "ratio": 26.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＤＡＩＫＥＮ㈱",
+          "shares": 4227000,
+          "ratio": 14.91,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "永大産業㈱",
+          "shares": 1000000,
+          "ratio": 3.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ホクシン取引先持株会",
+          "shares": 997000,
+          "ratio": 3.52,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "酒井佐知子",
+          "shares": 728000,
+          "ratio": 2.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "國分節子",
+          "shares": 710000,
+          "ratio": 2.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "中島和信",
+          "shares": 674000,
+          "ratio": 2.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱池田泉州銀行",
+          "shares": 430000,
+          "ratio": 1.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ホクシン従業員持株会",
+          "shares": 336000,
+          "ratio": 1.19,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "古谷洋作",
+          "shares": 305000,
+          "ratio": 1.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.6,
+          "other": 14.91,
+          "employee": 4.71,
+          "financial": 1.52
+        },
+        "individual_total": 38.6,
+        "top10_total": 59.74
+      }
+    }
+  ]
+}

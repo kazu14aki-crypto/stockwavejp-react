@@ -1,0 +1,216 @@
+{
+  "secCode": "2656",
+  "issuerName": "株式会社ベクターホールディングス",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "QUETTA合同会社",
+      "shares": 6211900,
+      "ratio": 20.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社T's International",
+      "shares": 4100000,
+      "ratio": 13.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "中村　哲也",
+      "shares": 2633300,
+      "ratio": 8.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社エスポワール日本橋",
+      "shares": 2000000,
+      "ratio": 6.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GMOクリック証券株式会社",
+      "shares": 1923000,
+      "ratio": 6.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Blue Goats Capital株式会社",
+      "shares": 988200,
+      "ratio": 3.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三菱UFJeスマート証券株式会社",
+      "shares": 818700,
+      "ratio": 2.73,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "浅沼　博",
+      "shares": 669700,
+      "ratio": 2.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐野　敦彦",
+      "shares": 500000,
+      "ratio": 1.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "青柳　和洋",
+      "shares": 470000,
+      "ratio": 1.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 44.37,
+      "individual": 14.24,
+      "securities": 9.14
+    },
+    "individual_total": 14.24,
+    "top10_total": 67.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第38期(2025/04/01－2026/03/31)",
+      "docID": "S100YLWG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "QUETTA合同会社",
+          "shares": 6211900,
+          "ratio": 20.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社T's International",
+          "shares": 4100000,
+          "ratio": 13.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "中村　哲也",
+          "shares": 2633300,
+          "ratio": 8.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社エスポワール日本橋",
+          "shares": 2000000,
+          "ratio": 6.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GMOクリック証券株式会社",
+          "shares": 1923000,
+          "ratio": 6.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Blue Goats Capital株式会社",
+          "shares": 988200,
+          "ratio": 3.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三菱UFJeスマート証券株式会社",
+          "shares": 818700,
+          "ratio": 2.73,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "浅沼　博",
+          "shares": 669700,
+          "ratio": 2.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐野　敦彦",
+          "shares": 500000,
+          "ratio": 1.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "青柳　和洋",
+          "shares": 470000,
+          "ratio": 1.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 44.37,
+          "individual": 14.24,
+          "securities": 9.14
+        },
+        "individual_total": 14.24,
+        "top10_total": 67.75
+      }
+    }
+  ]
+}

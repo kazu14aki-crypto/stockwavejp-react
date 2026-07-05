@@ -1,0 +1,220 @@
+{
+  "secCode": "352A",
+  "issuerName": "株式会社ＬＯＩＶＥ",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "前川　彩香",
+      "shares": 4480219,
+      "ratio": 34.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社Ayaka",
+      "shares": 3211800,
+      "ratio": 24.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社アカツキ",
+      "shares": 875768,
+      "ratio": 6.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 664100,
+      "ratio": 5.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三菱UFJeスマート証券株式会社",
+      "shares": 624800,
+      "ratio": 4.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社LAVA International",
+      "shares": 427700,
+      "ratio": 3.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "XTech2号投資事業有限責任組合",
+      "shares": 400028,
+      "ratio": 3.1,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "佐藤　俊介",
+      "shares": 210000,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ロッテベンチャーズ・ジャパン投資事業有限責任組合",
+      "shares": 192998,
+      "ratio": 1.5,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "鷲見　貴彦",
+      "shares": 125000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 37.3,
+      "corporate": 35.0,
+      "trust": 5.2,
+      "securities": 4.8,
+      "other": 4.6
+    },
+    "individual_total": 37.3,
+    "top10_total": 86.9
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YGOP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "前川　彩香",
+          "shares": 4480219,
+          "ratio": 34.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社Ayaka",
+          "shares": 3211800,
+          "ratio": 24.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社アカツキ",
+          "shares": 875768,
+          "ratio": 6.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 664100,
+          "ratio": 5.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三菱UFJeスマート証券株式会社",
+          "shares": 624800,
+          "ratio": 4.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社LAVA International",
+          "shares": 427700,
+          "ratio": 3.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "XTech2号投資事業有限責任組合",
+          "shares": 400028,
+          "ratio": 3.1,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "佐藤　俊介",
+          "shares": 210000,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ロッテベンチャーズ・ジャパン投資事業有限責任組合",
+          "shares": 192998,
+          "ratio": 1.5,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鷲見　貴彦",
+          "shares": 125000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 37.3,
+          "corporate": 35.0,
+          "trust": 5.2,
+          "securities": 4.8,
+          "other": 4.6
+        },
+        "individual_total": 37.3,
+        "top10_total": 86.9
+      }
+    }
+  ]
+}

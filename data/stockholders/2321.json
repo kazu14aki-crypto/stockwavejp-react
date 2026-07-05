@@ -1,0 +1,218 @@
+{
+  "secCode": "2321",
+  "issuerName": "株式会社ソフトフロントホールディングス",
+  "updated_at": "2026/07/04 17:45 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "FUTU SECURITIES INTERNATIONAL（HONG KONG）LIMITED\n（常任代理人：moomoo証券株式会社）",
+      "shares": 10633600,
+      "ratio": 20.45,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "POTUS HELIOS FUND VCC-POTUS HELIOS FUND 7\n（常任代理人：東海東京証券株式会社）",
+      "shares": 6707300,
+      "ratio": 12.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "JHY Development LPF\n（常任代理人：リーディング証券株式会社）",
+      "shares": 5792700,
+      "ratio": 11.14,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社デジタルフォルン",
+      "shares": 4540110,
+      "ratio": 8.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GCL Nihon株式会社",
+      "shares": 2256100,
+      "ratio": 4.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Plunkett Capital Holdings Limited\n（常任代理人：リーディング証券株式会社）",
+      "shares": 1585400,
+      "ratio": 3.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "KGI ASIA LIMITED-CLIENT ACCOUNT\n（常任代理人：香港上海銀行東京支店）",
+      "shares": 1539700,
+      "ratio": 2.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社オセアグループ",
+      "shares": 1270000,
+      "ratio": 2.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "REGROWTH有限責任事業組合",
+      "shares": 947600,
+      "ratio": 1.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "PAN LIHUI\n（常任代理人：リーディング証券株式会社）",
+      "shares": 818200,
+      "ratio": 1.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 49.1,
+      "corporate": 15.5,
+      "foreign": 2.96,
+      "other": 1.82
+    },
+    "individual_total": 0,
+    "top10_total": 69.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YNI3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "FUTU SECURITIES INTERNATIONAL（HONG KONG）LIMITED\n（常任代理人：moomoo証券株式会社）",
+          "shares": 10633600,
+          "ratio": 20.45,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "POTUS HELIOS FUND VCC-POTUS HELIOS FUND 7\n（常任代理人：東海東京証券株式会社）",
+          "shares": 6707300,
+          "ratio": 12.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "JHY Development LPF\n（常任代理人：リーディング証券株式会社）",
+          "shares": 5792700,
+          "ratio": 11.14,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社デジタルフォルン",
+          "shares": 4540110,
+          "ratio": 8.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GCL Nihon株式会社",
+          "shares": 2256100,
+          "ratio": 4.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Plunkett Capital Holdings Limited\n（常任代理人：リーディング証券株式会社）",
+          "shares": 1585400,
+          "ratio": 3.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "KGI ASIA LIMITED-CLIENT ACCOUNT\n（常任代理人：香港上海銀行東京支店）",
+          "shares": 1539700,
+          "ratio": 2.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社オセアグループ",
+          "shares": 1270000,
+          "ratio": 2.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "REGROWTH有限責任事業組合",
+          "shares": 947600,
+          "ratio": 1.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "PAN LIHUI\n（常任代理人：リーディング証券株式会社）",
+          "shares": 818200,
+          "ratio": 1.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 49.1,
+          "corporate": 15.5,
+          "foreign": 2.96,
+          "other": 1.82
+        },
+        "individual_total": 0,
+        "top10_total": 69.38
+      }
+    }
+  ]
+}

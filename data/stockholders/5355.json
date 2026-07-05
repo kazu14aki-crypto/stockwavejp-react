@@ -1,0 +1,218 @@
+{
+  "secCode": "5355",
+  "issuerName": "日本坩堝株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "岡田民雄",
+      "shares": 328000,
+      "ratio": 4.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社みずほ銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 325000,
+      "ratio": 4.83,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "柏屋商事株式会社",
+      "shares": 275000,
+      "ratio": 4.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上田八木短資株式会社",
+      "shares": 251000,
+      "ratio": 3.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "美濃窯業株式会社",
+      "shares": 232000,
+      "ratio": 3.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村信託銀行株式会社（信託口）",
+      "shares": 216000,
+      "ratio": 3.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野間一",
+      "shares": 210000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本坩堝従業員持株会",
+      "shares": 207000,
+      "ratio": 3.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 178000,
+      "ratio": 2.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本精鉱株式会社",
+      "shares": 127000,
+      "ratio": 1.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 7.99,
+      "trust": 8.04,
+      "corporate": 15.77,
+      "employee": 3.07
+    },
+    "individual_total": 7.99,
+    "top10_total": 34.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第186期(2025/04/01－2026/03/31)",
+      "docID": "S100YINX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "岡田民雄",
+          "shares": 328000,
+          "ratio": 4.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社みずほ銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 325000,
+          "ratio": 4.83,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "柏屋商事株式会社",
+          "shares": 275000,
+          "ratio": 4.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上田八木短資株式会社",
+          "shares": 251000,
+          "ratio": 3.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "美濃窯業株式会社",
+          "shares": 232000,
+          "ratio": 3.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村信託銀行株式会社（信託口）",
+          "shares": 216000,
+          "ratio": 3.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野間一",
+          "shares": 210000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本坩堝従業員持株会",
+          "shares": 207000,
+          "ratio": 3.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 178000,
+          "ratio": 2.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本精鉱株式会社",
+          "shares": 127000,
+          "ratio": 1.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 7.99,
+          "trust": 8.04,
+          "corporate": 15.77,
+          "employee": 3.07
+        },
+        "individual_total": 7.99,
+        "top10_total": 34.87
+      }
+    }
+  ]
+}

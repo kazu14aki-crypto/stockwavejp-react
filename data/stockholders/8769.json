@@ -1,0 +1,220 @@
+{
+  "secCode": "8769",
+  "issuerName": "株式会社アドバンテッジリスクマネジメント",
+  "updated_at": "2026/07/04 18:09 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "鳥越　慎二",
+      "shares": 4115000,
+      "ratio": 25.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "笹沼　泰助",
+      "shares": 2685700,
+      "ratio": 16.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "SIX SIS LTD.\n(常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1346700,
+      "ratio": 8.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "フォルソム　夕起子",
+      "shares": 1040000,
+      "ratio": 6.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE CHASE MANHATTAN BANK,\nN.A. LONDON SPECIAL ACCOUNT\nNO.1\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 765000,
+      "ratio": 4.78,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社BIRDEX",
+      "shares": 394800,
+      "ratio": 2.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託E口）",
+      "shares": 307000,
+      "ratio": 1.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "前波　範彦",
+      "shares": 260700,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "CACEIS BANK / QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 251500,
+      "ratio": 1.57,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友生命保険相互会社",
+      "shares": 200000,
+      "ratio": 1.25,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 50.6,
+      "financial": 9.66,
+      "foreign": 6.35,
+      "corporate": 2.47,
+      "trust": 1.92
+    },
+    "individual_total": 50.6,
+    "top10_total": 71.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第28期(2025/04/01－2026/03/31)",
+      "docID": "S100YKPM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "鳥越　慎二",
+          "shares": 4115000,
+          "ratio": 25.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "笹沼　泰助",
+          "shares": 2685700,
+          "ratio": 16.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "SIX SIS LTD.\n(常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1346700,
+          "ratio": 8.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "フォルソム　夕起子",
+          "shares": 1040000,
+          "ratio": 6.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE CHASE MANHATTAN BANK,\nN.A. LONDON SPECIAL ACCOUNT\nNO.1\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 765000,
+          "ratio": 4.78,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社BIRDEX",
+          "shares": 394800,
+          "ratio": 2.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託E口）",
+          "shares": 307000,
+          "ratio": 1.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "前波　範彦",
+          "shares": 260700,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "CACEIS BANK / QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 251500,
+          "ratio": 1.57,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友生命保険相互会社",
+          "shares": 200000,
+          "ratio": 1.25,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 50.6,
+          "financial": 9.66,
+          "foreign": 6.35,
+          "corporate": 2.47,
+          "trust": 1.92
+        },
+        "individual_total": 50.6,
+        "top10_total": 71.0
+      }
+    }
+  ]
+}

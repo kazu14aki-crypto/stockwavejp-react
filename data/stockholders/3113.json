@@ -1,0 +1,218 @@
+{
+  "secCode": "3113",
+  "issuerName": "株式会社ＵＮＩＶＡ・Ｏａｋホールディングス",
+  "updated_at": "2026/07/04 18:16 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ユニヴァ・キャピタル・ファイ\nナンス",
+      "shares": 13140000,
+      "ratio": 16.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "NSL DTT CLIENT ACCOUNT 1\n(常任代理人　野村證券株式会社）",
+      "shares": 8489000,
+      "ratio": 10.53,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ユニヴァ・\nアセット・マネジメント",
+      "shares": 7019000,
+      "ratio": 8.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社",
+      "shares": 1865000,
+      "ratio": 2.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "西本　誠治",
+      "shares": 1860000,
+      "ratio": 2.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐野　敦彦",
+      "shares": 1780000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社シェフコ",
+      "shares": 1200000,
+      "ratio": 1.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山崎　宏",
+      "shares": 900000,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉澤　英和",
+      "shares": 810000,
+      "ratio": 1.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 739000,
+      "ratio": 0.92,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.5,
+      "foreign": 10.53,
+      "securities": 3.23,
+      "individual": 6.65
+    },
+    "individual_total": 6.65,
+    "top10_total": 46.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第165期(2025/04/01－2026/03/31)",
+      "docID": "S100YHET",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ユニヴァ・キャピタル・ファイ\nナンス",
+          "shares": 13140000,
+          "ratio": 16.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "NSL DTT CLIENT ACCOUNT 1\n(常任代理人　野村證券株式会社）",
+          "shares": 8489000,
+          "ratio": 10.53,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ユニヴァ・\nアセット・マネジメント",
+          "shares": 7019000,
+          "ratio": 8.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社",
+          "shares": 1865000,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "西本　誠治",
+          "shares": 1860000,
+          "ratio": 2.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐野　敦彦",
+          "shares": 1780000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社シェフコ",
+          "shares": 1200000,
+          "ratio": 1.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山崎　宏",
+          "shares": 900000,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉澤　英和",
+          "shares": 810000,
+          "ratio": 1.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 739000,
+          "ratio": 0.92,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.5,
+          "foreign": 10.53,
+          "securities": 3.23,
+          "individual": 6.65
+        },
+        "individual_total": 6.65,
+        "top10_total": 46.91
+      }
+    }
+  ]
+}

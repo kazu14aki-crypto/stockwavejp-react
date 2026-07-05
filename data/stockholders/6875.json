@@ -1,0 +1,218 @@
+{
+  "secCode": "6875",
+  "issuerName": "株式会社メガチップス",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1765000,
+      "ratio": 11.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社シンドウ・アンド・アソシエイツ",
+      "shares": 1260000,
+      "ratio": 8.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社シンドウ",
+      "shares": 1239000,
+      "ratio": 8.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "進藤晶弘",
+      "shares": 560000,
+      "ratio": 3.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "進藤律子",
+      "shares": 536000,
+      "ratio": 3.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松井典子",
+      "shares": 507000,
+      "ratio": 3.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "青木未佳",
+      "shares": 494000,
+      "ratio": 3.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 487000,
+      "ratio": 3.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 450000,
+      "ratio": 3.01,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友生命保険相互会社",
+      "shares": 400000,
+      "ratio": 2.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.81,
+      "corporate": 16.72,
+      "individual": 14.04,
+      "financial": 5.93
+    },
+    "individual_total": 14.04,
+    "top10_total": 51.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第36期(2025/04/01－2026/03/31)",
+      "docID": "S100YDEK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1765000,
+          "ratio": 11.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社シンドウ・アンド・アソシエイツ",
+          "shares": 1260000,
+          "ratio": 8.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社シンドウ",
+          "shares": 1239000,
+          "ratio": 8.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "進藤晶弘",
+          "shares": 560000,
+          "ratio": 3.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "進藤律子",
+          "shares": 536000,
+          "ratio": 3.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松井典子",
+          "shares": 507000,
+          "ratio": 3.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "青木未佳",
+          "shares": 494000,
+          "ratio": 3.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 487000,
+          "ratio": 3.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 450000,
+          "ratio": 3.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友生命保険相互会社",
+          "shares": 400000,
+          "ratio": 2.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.81,
+          "corporate": 16.72,
+          "individual": 14.04,
+          "financial": 5.93
+        },
+        "individual_total": 14.04,
+        "top10_total": 51.5
+      }
+    }
+  ]
+}

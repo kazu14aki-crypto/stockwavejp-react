@@ -1,0 +1,218 @@
+{
+  "secCode": "3058",
+  "issuerName": "株式会社三洋堂ホールディングス",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱トーハン",
+      "shares": 2658000,
+      "ratio": 36.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈲日和エステート",
+      "shares": 1706800,
+      "ratio": 23.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "加藤　和裕",
+      "shares": 701400,
+      "ratio": 9.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三洋堂ホールディングス取引先持株会",
+      "shares": 279700,
+      "ratio": 3.84,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "豊田信用金庫",
+      "shares": 203600,
+      "ratio": 2.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三洋堂ホールディングス従業員持株会",
+      "shares": 96232,
+      "ratio": 1.32,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "加藤憲ホールディングス㈱",
+      "shares": 70000,
+      "ratio": 0.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "朝倉　潤真",
+      "shares": 67000,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱ゲオホールディングス",
+      "shares": 60000,
+      "ratio": 0.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "加藤　正康",
+      "shares": 40200,
+      "ratio": 0.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 71.01,
+      "employee": 5.16,
+      "financial": 2.79,
+      "corporate": 1.78
+    },
+    "individual_total": 71.01,
+    "top10_total": 80.74
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第49期(2025/04/01－2026/03/31)",
+      "docID": "S100YFXN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱トーハン",
+          "shares": 2658000,
+          "ratio": 36.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈲日和エステート",
+          "shares": 1706800,
+          "ratio": 23.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "加藤　和裕",
+          "shares": 701400,
+          "ratio": 9.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三洋堂ホールディングス取引先持株会",
+          "shares": 279700,
+          "ratio": 3.84,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "豊田信用金庫",
+          "shares": 203600,
+          "ratio": 2.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三洋堂ホールディングス従業員持株会",
+          "shares": 96232,
+          "ratio": 1.32,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "加藤憲ホールディングス㈱",
+          "shares": 70000,
+          "ratio": 0.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "朝倉　潤真",
+          "shares": 67000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱ゲオホールディングス",
+          "shares": 60000,
+          "ratio": 0.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "加藤　正康",
+          "shares": 40200,
+          "ratio": 0.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 71.01,
+          "employee": 5.16,
+          "financial": 2.79,
+          "corporate": 1.78
+        },
+        "individual_total": 71.01,
+        "top10_total": 80.74
+      }
+    }
+  ]
+}

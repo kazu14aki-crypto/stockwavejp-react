@@ -1,0 +1,220 @@
+{
+  "secCode": "2814",
+  "issuerName": "佐藤食品工業株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "横浜冷凍株式会社",
+      "shares": 637000,
+      "ratio": 16.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ブルドックソース株式会社",
+      "shares": 429000,
+      "ratio": 11.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 340000,
+      "ratio": 8.77,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "湯原　善衛",
+      "shares": 172000,
+      "ratio": 4.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "湯原　幸子",
+      "shares": 167000,
+      "ratio": 4.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 166000,
+      "ratio": 4.28,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社名古屋銀行",
+      "shares": 156000,
+      "ratio": 4.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社あいち銀行",
+      "shares": 152000,
+      "ratio": 3.93,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社十六銀行",
+      "shares": 150000,
+      "ratio": 3.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 133000,
+      "ratio": 3.45,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.48,
+      "other": 8.77,
+      "individual": 8.74,
+      "trust": 7.73,
+      "financial": 11.82
+    },
+    "individual_total": 8.74,
+    "top10_total": 64.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第72期(2025/04/01－2026/03/31)",
+      "docID": "S100YGVL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "横浜冷凍株式会社",
+          "shares": 637000,
+          "ratio": 16.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ブルドックソース株式会社",
+          "shares": 429000,
+          "ratio": 11.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 340000,
+          "ratio": 8.77,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "湯原　善衛",
+          "shares": 172000,
+          "ratio": 4.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "湯原　幸子",
+          "shares": 167000,
+          "ratio": 4.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 166000,
+          "ratio": 4.28,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社名古屋銀行",
+          "shares": 156000,
+          "ratio": 4.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社あいち銀行",
+          "shares": 152000,
+          "ratio": 3.93,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社十六銀行",
+          "shares": 150000,
+          "ratio": 3.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 133000,
+          "ratio": 3.45,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.48,
+          "other": 8.77,
+          "individual": 8.74,
+          "trust": 7.73,
+          "financial": 11.82
+        },
+        "individual_total": 8.74,
+        "top10_total": 64.54
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "secCode": "543A",
+  "issuerName": "ＡＲＣＨＩＯＮ株式会社",
+  "updated_at": "2026/07/04 18:00 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日野自動車株式会社",
+      "shares": 1,
+      "ratio": 1.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 1.0
+    },
+    "individual_total": 0,
+    "top10_total": 1.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第1期(2025/06/02－2026/03/31)",
+      "docID": "S100YK16",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日野自動車株式会社",
+          "shares": 1,
+          "ratio": 1.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 1.0
+        },
+        "individual_total": 0,
+        "top10_total": 1.0
+      }
+    }
+  ]
+}

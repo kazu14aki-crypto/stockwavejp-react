@@ -1,0 +1,216 @@
+{
+  "secCode": "6325",
+  "issuerName": "株式会社タカキタ",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "タカキタ持株会",
+      "shares": 1949000,
+      "ratio": 17.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社クボタ",
+      "shares": 660000,
+      "ratio": 5.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "タナシン電機株式会社",
+      "shares": 630000,
+      "ratio": 5.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ヤンマーアグリ株式会社",
+      "shares": 580000,
+      "ratio": 5.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社南都銀行",
+      "shares": 554000,
+      "ratio": 4.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三十三銀行",
+      "shares": 500000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "タカキタ従業員持株会",
+      "shares": 446000,
+      "ratio": 3.95,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "井関農機株式会社",
+      "shares": 300000,
+      "ratio": 2.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ヤハタ",
+      "shares": 250000,
+      "ratio": 2.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "アグリテクノサーチ株式会社",
+      "shares": 200000,
+      "ratio": 1.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 21.22,
+      "corporate": 23.2,
+      "financial": 9.33
+    },
+    "individual_total": 0,
+    "top10_total": 53.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第82期(2025/04/01－2026/03/31)",
+      "docID": "S100YFLC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "タカキタ持株会",
+          "shares": 1949000,
+          "ratio": 17.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社クボタ",
+          "shares": 660000,
+          "ratio": 5.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "タナシン電機株式会社",
+          "shares": 630000,
+          "ratio": 5.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ヤンマーアグリ株式会社",
+          "shares": 580000,
+          "ratio": 5.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社南都銀行",
+          "shares": 554000,
+          "ratio": 4.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三十三銀行",
+          "shares": 500000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "タカキタ従業員持株会",
+          "shares": 446000,
+          "ratio": 3.95,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "井関農機株式会社",
+          "shares": 300000,
+          "ratio": 2.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ヤハタ",
+          "shares": 250000,
+          "ratio": 2.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "アグリテクノサーチ株式会社",
+          "shares": 200000,
+          "ratio": 1.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 21.22,
+          "corporate": 23.2,
+          "financial": 9.33
+        },
+        "individual_total": 0,
+        "top10_total": 53.75
+      }
+    }
+  ]
+}

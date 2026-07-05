@@ -1,0 +1,220 @@
+{
+  "secCode": "2588",
+  "issuerName": "株式会社プレミアムウォーターホールディングス",
+  "updated_at": "2026/07/04 18:36 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社HCMAアルファ",
+      "shares": 12352850,
+      "ratio": 40.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社光通信",
+      "shares": 9046070,
+      "ratio": 29.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2735100,
+      "ratio": 8.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "萩尾　陽平",
+      "shares": 1194000,
+      "ratio": 3.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "金本　彰彦",
+      "shares": 496450,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "今泉　貴広",
+      "shares": 353560,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "木下　政弘",
+      "shares": 328810,
+      "ratio": 1.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "プレミアムウォーターホールディングス従業員持株会",
+      "shares": 238190,
+      "ratio": 0.78,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本テクノロジーベンチャーパートナーズアイ六号投資事業有限責任組合",
+      "shares": 222100,
+      "ratio": 0.73,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三木谷　浩史",
+      "shares": 172700,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 70.06,
+      "trust": 8.96,
+      "individual": 8.35,
+      "employee": 0.78,
+      "other": 0.73
+    },
+    "individual_total": 8.35,
+    "top10_total": 88.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/04/01－2026/03/31)",
+      "docID": "S100YHDW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社HCMAアルファ",
+          "shares": 12352850,
+          "ratio": 40.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社光通信",
+          "shares": 9046070,
+          "ratio": 29.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2735100,
+          "ratio": 8.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "萩尾　陽平",
+          "shares": 1194000,
+          "ratio": 3.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "金本　彰彦",
+          "shares": 496450,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "今泉　貴広",
+          "shares": 353560,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "木下　政弘",
+          "shares": 328810,
+          "ratio": 1.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "プレミアムウォーターホールディングス従業員持株会",
+          "shares": 238190,
+          "ratio": 0.78,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本テクノロジーベンチャーパートナーズアイ六号投資事業有限責任組合",
+          "shares": 222100,
+          "ratio": 0.73,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三木谷　浩史",
+          "shares": 172700,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 70.06,
+          "trust": 8.96,
+          "individual": 8.35,
+          "employee": 0.78,
+          "other": 0.73
+        },
+        "individual_total": 8.35,
+        "top10_total": 88.88
+      }
+    }
+  ]
+}

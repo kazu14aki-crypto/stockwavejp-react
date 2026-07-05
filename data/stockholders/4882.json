@@ -1,0 +1,323 @@
+{
+  "secCode": "4882",
+  "issuerName": "株式会社ペルセウスプロテオミクス",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大和証券株式会社",
+      "shares": 498100,
+      "ratio": 2.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社SBI証券",
+      "shares": 411800,
+      "ratio": 2.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三菱UFJキャピタル株式会社",
+      "shares": 284910,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "富士フイルム株式会社",
+      "shares": 236610,
+      "ratio": 1.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "楽天証券株式会社共有口",
+      "shares": 224200,
+      "ratio": 1.32,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松井証券株式会社",
+      "shares": 218400,
+      "ratio": 1.28,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村證券株式会社",
+      "shares": 162696,
+      "ratio": 0.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社キースジャパン",
+      "shares": 151500,
+      "ratio": 0.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山口　晴輝",
+      "shares": 140500,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山田　敏行",
+      "shares": 100000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 7.95,
+      "corporate": 4.92,
+      "individual": 1.42
+    },
+    "individual_total": 1.42,
+    "top10_total": 14.29
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YNJJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大和証券株式会社",
+          "shares": 498100,
+          "ratio": 2.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社SBI証券",
+          "shares": 411800,
+          "ratio": 2.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三菱UFJキャピタル株式会社",
+          "shares": 284910,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "富士フイルム株式会社",
+          "shares": 236610,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社共有口",
+          "shares": 224200,
+          "ratio": 1.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松井証券株式会社",
+          "shares": 218400,
+          "ratio": 1.28,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 162696,
+          "ratio": 0.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社キースジャパン",
+          "shares": 151500,
+          "ratio": 0.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山口　晴輝",
+          "shares": 140500,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山田　敏行",
+          "shares": 100000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 7.95,
+          "corporate": 4.92,
+          "individual": 1.42
+        },
+        "individual_total": 1.42,
+        "top10_total": 14.29
+      }
+    },
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YE8V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大和証券株式会社",
+          "shares": 498100,
+          "ratio": 2.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社SBI証券",
+          "shares": 411800,
+          "ratio": 2.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三菱UFJキャピタル株式会社",
+          "shares": 284910,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "富士フイルム株式会社",
+          "shares": 236610,
+          "ratio": 1.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "楽天証券株式会社共有口",
+          "shares": 224200,
+          "ratio": 1.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松井証券株式会社",
+          "shares": 218400,
+          "ratio": 1.28,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村證券株式会社",
+          "shares": 162696,
+          "ratio": 0.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社キースジャパン",
+          "shares": 151500,
+          "ratio": 0.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山口　晴輝",
+          "shares": 140500,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山田　敏行",
+          "shares": 100000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 7.95,
+          "corporate": 4.92,
+          "individual": 1.42
+        },
+        "individual_total": 1.42,
+        "top10_total": 14.29
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4966",
+  "issuerName": "上村工業株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "浪花殖産株式会社",
+      "shares": 4552000,
+      "ratio": 28.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 710000,
+      "ratio": 4.41,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 695000,
+      "ratio": 4.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 691000,
+      "ratio": 4.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 681000,
+      "ratio": 4.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上村共栄会",
+      "shares": 505000,
+      "ratio": 3.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "上村　茉一子",
+      "shares": 362000,
+      "ratio": 2.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 282000,
+      "ratio": 1.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 266000,
+      "ratio": 1.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 264000,
+      "ratio": 1.64,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.29,
+      "foreign": 7.81,
+      "financial": 4.32,
+      "trust": 10.17,
+      "individual": 5.39
+    },
+    "individual_total": 5.39,
+    "top10_total": 55.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第98期(2025/04/01－2026/03/31)",
+      "docID": "S100YIOW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "浪花殖産株式会社",
+          "shares": 4552000,
+          "ratio": 28.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 710000,
+          "ratio": 4.41,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 695000,
+          "ratio": 4.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 691000,
+          "ratio": 4.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 681000,
+          "ratio": 4.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上村共栄会",
+          "shares": 505000,
+          "ratio": 3.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "上村　茉一子",
+          "shares": 362000,
+          "ratio": 2.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 282000,
+          "ratio": 1.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 266000,
+          "ratio": 1.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 264000,
+          "ratio": 1.64,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.29,
+          "foreign": 7.81,
+          "financial": 4.32,
+          "trust": 10.17,
+          "individual": 5.39
+        },
+        "individual_total": 5.39,
+        "top10_total": 55.98
+      }
+    }
+  ]
+}

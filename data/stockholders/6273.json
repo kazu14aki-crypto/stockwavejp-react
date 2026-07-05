@@ -1,0 +1,216 @@
+{
+  "secCode": "6273",
+  "issuerName": "ＳＭＣ株式会社",
+  "updated_at": "2026/07/04 17:53 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 9647000,
+      "ratio": 15.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 4066800,
+      "ratio": 6.43,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "合同会社高田インターナショナル",
+      "shares": 3793000,
+      "ratio": 6.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "トン ファイナンス ビーブイ(常任代理人 株式会社りそな銀行)",
+      "shares": 3443500,
+      "ratio": 5.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ジェーピー モルガン チェース バンク 380055(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 2750400,
+      "ratio": 4.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ザ バンク オブ ニューヨーク メロン アズ デポジタリー バンク フォー デポジタリー レシート ホルダーズ(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 2148400,
+      "ratio": 3.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ステート ストリート バンク アンド トラスト カンパニー 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 1996200,
+      "ratio": 3.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ザ バンク オブ ニューヨーク メロン　140040(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 1504000,
+      "ratio": 2.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行株式会社(信託口2052208)",
+      "shares": 1239400,
+      "ratio": 1.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ステート ストリート バンク アンド トラスト カンパニー 505103(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 1145500,
+      "ratio": 1.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 23.66,
+      "corporate": 6.0,
+      "financial": 20.55
+    },
+    "individual_total": 0,
+    "top10_total": 50.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第67期(2025/04/01－2026/03/31)",
+      "docID": "S100YLC6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 9647000,
+          "ratio": 15.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 4066800,
+          "ratio": 6.43,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "合同会社高田インターナショナル",
+          "shares": 3793000,
+          "ratio": 6.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "トン ファイナンス ビーブイ(常任代理人 株式会社りそな銀行)",
+          "shares": 3443500,
+          "ratio": 5.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ジェーピー モルガン チェース バンク 380055(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 2750400,
+          "ratio": 4.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ザ バンク オブ ニューヨーク メロン アズ デポジタリー バンク フォー デポジタリー レシート ホルダーズ(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 2148400,
+          "ratio": 3.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ステート ストリート バンク アンド トラスト カンパニー 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 1996200,
+          "ratio": 3.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ザ バンク オブ ニューヨーク メロン　140040(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 1504000,
+          "ratio": 2.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行株式会社(信託口2052208)",
+          "shares": 1239400,
+          "ratio": 1.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ステート ストリート バンク アンド トラスト カンパニー 505103(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 1145500,
+          "ratio": 1.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 23.66,
+          "corporate": 6.0,
+          "financial": 20.55
+        },
+        "individual_total": 0,
+        "top10_total": 50.21
+      }
+    }
+  ]
+}

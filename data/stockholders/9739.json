@@ -1,0 +1,218 @@
+{
+  "secCode": "9739",
+  "issuerName": "ＮＳＷ株式会社",
+  "updated_at": "2026/07/04 17:50 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社タダ・コーポレーション",
+      "shares": 5000000,
+      "ratio": 33.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "多田　修人",
+      "shares": 1537000,
+      "ratio": 10.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行 株式会社（信託口）",
+      "shares": 1049000,
+      "ratio": 7.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST CLIENT OMNIBUS ACCOUNT OM02 505002 （常任代理人　株式会社みずほ銀行）",
+      "shares": 473000,
+      "ratio": 3.17,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信ＫＫ投資事業有限責任組合無限責任組合員光通信株式会社",
+      "shares": 460000,
+      "ratio": 3.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 418000,
+      "ratio": 2.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 403000,
+      "ratio": 2.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人　香港上海銀行東京支店）",
+      "shares": 355000,
+      "ratio": 2.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "多田　尚二",
+      "shares": 318000,
+      "ratio": 2.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "多田　直樹",
+      "shares": 300000,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.63,
+      "individual": 14.45,
+      "trust": 12.55,
+      "foreign": 5.55
+    },
+    "individual_total": 14.45,
+    "top10_total": 69.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ3Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社タダ・コーポレーション",
+          "shares": 5000000,
+          "ratio": 33.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "多田　修人",
+          "shares": 1537000,
+          "ratio": 10.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行 株式会社（信託口）",
+          "shares": 1049000,
+          "ratio": 7.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST CLIENT OMNIBUS ACCOUNT OM02 505002 （常任代理人　株式会社みずほ銀行）",
+          "shares": 473000,
+          "ratio": 3.17,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信ＫＫ投資事業有限責任組合無限責任組合員光通信株式会社",
+          "shares": 460000,
+          "ratio": 3.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 418000,
+          "ratio": 2.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 403000,
+          "ratio": 2.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人　香港上海銀行東京支店）",
+          "shares": 355000,
+          "ratio": 2.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "多田　尚二",
+          "shares": 318000,
+          "ratio": 2.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "多田　直樹",
+          "shares": 300000,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.63,
+          "individual": 14.45,
+          "trust": 12.55,
+          "foreign": 5.55
+        },
+        "individual_total": 14.45,
+        "top10_total": 69.18
+      }
+    }
+  ]
+}

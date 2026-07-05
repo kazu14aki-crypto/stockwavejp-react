@@ -1,0 +1,220 @@
+{
+  "secCode": "6644",
+  "issuerName": "大崎電気工業株式会社",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5766000,
+      "ratio": 12.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "THE HONGKONG AND SHANGHAI　BANKING CORPORATION LTD －　SINGAPORE BRANCH PRIVATE　BANKING　DIVISION　CLIENTS　A/C　8221－623793（常任代理人　香港上海銀行東京支店）",
+      "shares": 3933000,
+      "ratio": 8.85,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2096000,
+      "ratio": 4.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "MM Investments株式会社",
+      "shares": 1684000,
+      "ratio": 3.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大崎電気工業取引先持株会",
+      "shares": 1597000,
+      "ratio": 3.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 1552000,
+      "ratio": 3.49,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "九電テクノシステムズ株式会社",
+      "shares": 1389000,
+      "ratio": 3.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "渡辺佳英",
+      "shares": 1293000,
+      "ratio": 2.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "富国生命保険相互会社（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 1104000,
+      "ratio": 2.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "関西電力株式会社",
+      "shares": 1000000,
+      "ratio": 2.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.16,
+      "financial": 12.34,
+      "corporate": 9.14,
+      "employee": 3.59,
+      "individual": 2.9
+    },
+    "individual_total": 2.9,
+    "top10_total": 48.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第112期(2025/04/01－2026/03/31)",
+      "docID": "S100YGJ0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5766000,
+          "ratio": 12.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "THE HONGKONG AND SHANGHAI　BANKING CORPORATION LTD －　SINGAPORE BRANCH PRIVATE　BANKING　DIVISION　CLIENTS　A/C　8221－623793（常任代理人　香港上海銀行東京支店）",
+          "shares": 3933000,
+          "ratio": 8.85,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2096000,
+          "ratio": 4.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "MM Investments株式会社",
+          "shares": 1684000,
+          "ratio": 3.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大崎電気工業取引先持株会",
+          "shares": 1597000,
+          "ratio": 3.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 1552000,
+          "ratio": 3.49,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "九電テクノシステムズ株式会社",
+          "shares": 1389000,
+          "ratio": 3.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "渡辺佳英",
+          "shares": 1293000,
+          "ratio": 2.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "富国生命保険相互会社（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 1104000,
+          "ratio": 2.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "関西電力株式会社",
+          "shares": 1000000,
+          "ratio": 2.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.16,
+          "financial": 12.34,
+          "corporate": 9.14,
+          "employee": 3.59,
+          "individual": 2.9
+        },
+        "individual_total": 2.9,
+        "top10_total": 48.13
+      }
+    }
+  ]
+}

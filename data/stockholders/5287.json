@@ -1,0 +1,218 @@
+{
+  "secCode": "5287",
+  "issuerName": "株式会社イトーヨーギョー",
+  "updated_at": "2026/07/04 17:51 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "畑　中　千　弘",
+      "shares": 600000,
+      "ratio": 18.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "畑　中　浩太郎",
+      "shares": 370000,
+      "ratio": 11.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "畑　中　雄　介",
+      "shares": 360000,
+      "ratio": 11.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 241000,
+      "ratio": 7.57,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "畑　中　浩",
+      "shares": 63000,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "勝　見　憲一郎",
+      "shares": 44000,
+      "ratio": 1.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "畑　中　真",
+      "shares": 32000,
+      "ratio": 1.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村證券株式会社",
+      "shares": 30000,
+      "ratio": 0.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "外　池　榮一郎",
+      "shares": 30000,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 30000,
+      "ratio": 0.94,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 47.03,
+      "trust": 7.57,
+      "corporate": 0.96,
+      "securities": 0.94
+    },
+    "individual_total": 47.03,
+    "top10_total": 56.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/04/01－2026/03/31)",
+      "docID": "S100YJYN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "畑　中　千　弘",
+          "shares": 600000,
+          "ratio": 18.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "畑　中　浩太郎",
+          "shares": 370000,
+          "ratio": 11.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "畑　中　雄　介",
+          "shares": 360000,
+          "ratio": 11.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 241000,
+          "ratio": 7.57,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "畑　中　浩",
+          "shares": 63000,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "勝　見　憲一郎",
+          "shares": 44000,
+          "ratio": 1.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "畑　中　真",
+          "shares": 32000,
+          "ratio": 1.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村證券株式会社",
+          "shares": 30000,
+          "ratio": 0.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "外　池　榮一郎",
+          "shares": 30000,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 30000,
+          "ratio": 0.94,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 47.03,
+          "trust": 7.57,
+          "corporate": 0.96,
+          "securities": 0.94
+        },
+        "individual_total": 47.03,
+        "top10_total": 56.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "3845",
+  "issuerName": "株式会社アイフリークモバイル",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券㈱）",
+      "shares": 5080400,
+      "ratio": 22.84,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "辛　澤",
+      "shares": 4381200,
+      "ratio": 19.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ランニング",
+      "shares": 2700000,
+      "ratio": 12.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SBI証券",
+      "shares": 650732,
+      "ratio": 2.92,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "永田　浩一",
+      "shares": 633235,
+      "ratio": 2.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "梁　振豪",
+      "shares": 592000,
+      "ratio": 2.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "みずほ証券株式会社",
+      "shares": 409300,
+      "ratio": 1.84,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+      "shares": 365000,
+      "ratio": 1.64,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松井証券株式会社",
+      "shares": 287200,
+      "ratio": 1.29,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松本　真也",
+      "shares": 260500,
+      "ratio": 1.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 30.53,
+      "individual": 26.36,
+      "corporate": 12.14
+    },
+    "individual_total": 26.36,
+    "top10_total": 69.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YJ02",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券㈱）",
+          "shares": 5080400,
+          "ratio": 22.84,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "辛　澤",
+          "shares": 4381200,
+          "ratio": 19.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ランニング",
+          "shares": 2700000,
+          "ratio": 12.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SBI証券",
+          "shares": 650732,
+          "ratio": 2.92,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "永田　浩一",
+          "shares": 633235,
+          "ratio": 2.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "梁　振豪",
+          "shares": 592000,
+          "ratio": 2.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "みずほ証券株式会社",
+          "shares": 409300,
+          "ratio": 1.84,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+          "shares": 365000,
+          "ratio": 1.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松井証券株式会社",
+          "shares": 287200,
+          "ratio": 1.29,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松本　真也",
+          "shares": 260500,
+          "ratio": 1.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 30.53,
+          "individual": 26.36,
+          "corporate": 12.14
+        },
+        "individual_total": 26.36,
+        "top10_total": 69.03
+      }
+    }
+  ]
+}

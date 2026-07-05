@@ -1,0 +1,220 @@
+{
+  "secCode": "7745",
+  "issuerName": "株式会社Ａ＆Ｄホロンホールディングス",
+  "updated_at": "2026/07/04 18:45 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 3997000,
+      "ratio": 14.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERTRUST TRUSTEES(CAYMAN) LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF JAPAN－UP（常任代理人 ㈱みずほ銀行決済営業部）",
+      "shares": 2173000,
+      "ratio": 7.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NORTHERN TRUST CO. (AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT（常任代理人 香港上海銀行東京支店 カストディ業務部）",
+      "shares": 1128000,
+      "ratio": 4.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 1113000,
+      "ratio": 4.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "INTERTRUST TRUSTEES CAYMAN LIMITED AS TRUSTEE OF JAPAN－UP UNIT TRUST（常任代理人 立花証券㈱）",
+      "shares": 701000,
+      "ratio": 2.53,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Ａ＆Ｄホロンホールディングス従業員持株会",
+      "shares": 679000,
+      "ratio": 2.45,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 ㈱みずほ銀行決済営業部）",
+      "shares": 652000,
+      "ratio": 2.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱埼玉りそな銀行",
+      "shares": 606000,
+      "ratio": 2.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "MSIP CLIENT SECURITIES（常任代理人 モルガン・スタンレーMUFG証券㈱）",
+      "shares": 595000,
+      "ratio": 2.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人 ㈱みずほ銀行決済営業部）",
+      "shares": 564000,
+      "ratio": 2.04,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.44,
+      "financial": 10.03,
+      "foreign": 8.46,
+      "securities": 4.68,
+      "employee": 2.45
+    },
+    "individual_total": 0,
+    "top10_total": 44.06
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第49期(2025/04/01－2026/03/31)",
+      "docID": "S100YHHI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 3997000,
+          "ratio": 14.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERTRUST TRUSTEES(CAYMAN) LIMITED SOLELY IN ITS CAPACITY AS TRUSTEE OF JAPAN－UP（常任代理人 ㈱みずほ銀行決済営業部）",
+          "shares": 2173000,
+          "ratio": 7.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NORTHERN TRUST CO. (AVFC) RE IEDP AIF CLIENTS NON TREATY ACCOUNT（常任代理人 香港上海銀行東京支店 カストディ業務部）",
+          "shares": 1128000,
+          "ratio": 4.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 1113000,
+          "ratio": 4.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "INTERTRUST TRUSTEES CAYMAN LIMITED AS TRUSTEE OF JAPAN－UP UNIT TRUST（常任代理人 立花証券㈱）",
+          "shares": 701000,
+          "ratio": 2.53,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Ａ＆Ｄホロンホールディングス従業員持株会",
+          "shares": 679000,
+          "ratio": 2.45,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人 ㈱みずほ銀行決済営業部）",
+          "shares": 652000,
+          "ratio": 2.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱埼玉りそな銀行",
+          "shares": 606000,
+          "ratio": 2.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "MSIP CLIENT SECURITIES（常任代理人 モルガン・スタンレーMUFG証券㈱）",
+          "shares": 595000,
+          "ratio": 2.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON 140044（常任代理人 ㈱みずほ銀行決済営業部）",
+          "shares": 564000,
+          "ratio": 2.04,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.44,
+          "financial": 10.03,
+          "foreign": 8.46,
+          "securities": 4.68,
+          "employee": 2.45
+        },
+        "individual_total": 0,
+        "top10_total": 44.06
+      }
+    }
+  ]
+}

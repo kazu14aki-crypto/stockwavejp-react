@@ -1,0 +1,218 @@
+{
+  "secCode": "7273",
+  "issuerName": "株式会社イクヨ",
+  "updated_at": "2026/07/04 17:55 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日東株式会社",
+      "shares": 12516000,
+      "ratio": 42.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２ＳＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２ＳＶＡＴＥ　ＬＩＭＩＴＥＤ（常任代理人　香港上海銀行東京支店）",
+      "shares": 6601000,
+      "ratio": 22.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ．７００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1001000,
+      "ratio": 3.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "水野　弘",
+      "shares": 684000,
+      "ratio": 2.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "酒井　宏修",
+      "shares": 630000,
+      "ratio": 2.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ヤイズボデー工業株式会社",
+      "shares": 570000,
+      "ratio": 1.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "黄　小雄",
+      "shares": 376000,
+      "ratio": 1.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社紀文食品",
+      "shares": 306000,
+      "ratio": 1.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松井証券株式会社",
+      "shares": 260000,
+      "ratio": 0.89,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 258000,
+      "ratio": 0.88,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.77,
+      "financial": 26.86,
+      "individual": 5.78,
+      "securities": 0.89
+    },
+    "individual_total": 5.78,
+    "top10_total": 79.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第87期(2025/04/01－2026/03/31)",
+      "docID": "S100YLTN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日東株式会社",
+          "shares": 12516000,
+          "ratio": 42.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２ＳＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２ＳＶＡＴＥ　ＬＩＭＩＴＥＤ（常任代理人　香港上海銀行東京支店）",
+          "shares": 6601000,
+          "ratio": 22.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＤＢＳ　ＢＡＮＫ　ＬＴＤ．７００１\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1001000,
+          "ratio": 3.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "水野　弘",
+          "shares": 684000,
+          "ratio": 2.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "酒井　宏修",
+          "shares": 630000,
+          "ratio": 2.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ヤイズボデー工業株式会社",
+          "shares": 570000,
+          "ratio": 1.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "黄　小雄",
+          "shares": 376000,
+          "ratio": 1.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社紀文食品",
+          "shares": 306000,
+          "ratio": 1.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松井証券株式会社",
+          "shares": 260000,
+          "ratio": 0.89,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 258000,
+          "ratio": 0.88,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.77,
+          "financial": 26.86,
+          "individual": 5.78,
+          "securities": 0.89
+        },
+        "individual_total": 5.78,
+        "top10_total": 79.3
+      }
+    }
+  ]
+}

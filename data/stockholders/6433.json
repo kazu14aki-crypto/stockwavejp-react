@@ -1,0 +1,218 @@
+{
+  "secCode": "6433",
+  "issuerName": "ヒーハイスト株式会社",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "尾崎浩太",
+      "shares": 1249000,
+      "ratio": 20.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "尾崎文彦",
+      "shares": 1173000,
+      "ratio": 18.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 94000,
+      "ratio": 1.51,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社共有口",
+      "shares": 70000,
+      "ratio": 1.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "南  秀嗣",
+      "shares": 57000,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村證券株式会社",
+      "shares": 53000,
+      "ratio": 0.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＴＨＫ株式会社",
+      "shares": 50000,
+      "ratio": 0.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本証券金融株式会社",
+      "shares": 40000,
+      "ratio": 0.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "高水永夫",
+      "shares": 37000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 34000,
+      "ratio": 0.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 40.34,
+      "securities": 3.29,
+      "corporate": 1.67,
+      "financial": 0.55
+    },
+    "individual_total": 40.34,
+    "top10_total": 45.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/04/01－2026/03/31)",
+      "docID": "S100YGSS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "尾崎浩太",
+          "shares": 1249000,
+          "ratio": 20.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "尾崎文彦",
+          "shares": 1173000,
+          "ratio": 18.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 94000,
+          "ratio": 1.51,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社共有口",
+          "shares": 70000,
+          "ratio": 1.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "南  秀嗣",
+          "shares": 57000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村證券株式会社",
+          "shares": 53000,
+          "ratio": 0.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＴＨＫ株式会社",
+          "shares": 50000,
+          "ratio": 0.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本証券金融株式会社",
+          "shares": 40000,
+          "ratio": 0.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "高水永夫",
+          "shares": 37000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 34000,
+          "ratio": 0.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 40.34,
+          "securities": 3.29,
+          "corporate": 1.67,
+          "financial": 0.55
+        },
+        "individual_total": 40.34,
+        "top10_total": 45.85
+      }
+    }
+  ]
+}

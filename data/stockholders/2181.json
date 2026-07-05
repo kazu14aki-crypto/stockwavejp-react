@@ -1,0 +1,224 @@
+{
+  "secCode": "2181",
+  "issuerName": "パーソルホールディングス株式会社",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 312350700,
+      "ratio": 13.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "篠原　欣子",
+      "shares": 263316000,
+      "ratio": 11.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "一般財団法人篠原欣子記念財団",
+      "shares": 158000000,
+      "ratio": 7.02,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 107951000,
+      "ratio": 4.79,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１\n常任代理人　株式会社みずほ銀行決済営業部",
+      "shares": 77956891,
+      "ratio": 3.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５６４２\n常任代理人　株式会社みずほ銀行決済営業部",
+      "shares": 63012400,
+      "ratio": 2.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＣＥＰ　ＬＵＸ－ＯＲＢＩＳ　ＳＩＣＡＶ\n常任代理人 シティバンク、エヌ・エイ東京支店",
+      "shares": 47956200,
+      "ratio": 2.13,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 44835659,
+      "ratio": 1.99,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４４\n常任代理人　株式会社みずほ銀行決済営業部",
+      "shares": 35503718,
+      "ratio": 1.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "パーソルホールディングス従業員持株会",
+      "shares": 32338010,
+      "ratio": 1.44,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 18.66,
+      "individual": 11.69,
+      "foundation": 7.02,
+      "financial": 7.84,
+      "other": 2.13,
+      "securities": 1.99,
+      "employee": 1.44
+    },
+    "individual_total": 11.69,
+    "top10_total": 50.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YGCS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 312350700,
+          "ratio": 13.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "篠原　欣子",
+          "shares": 263316000,
+          "ratio": 11.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "一般財団法人篠原欣子記念財団",
+          "shares": 158000000,
+          "ratio": 7.02,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 107951000,
+          "ratio": 4.79,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５００１\n常任代理人　株式会社みずほ銀行決済営業部",
+          "shares": 77956891,
+          "ratio": 3.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＰ　ＭＯＲＧＡＮ　ＣＨＡＳＥ　ＢＡＮＫ　３８５６４２\n常任代理人　株式会社みずほ銀行決済営業部",
+          "shares": 63012400,
+          "ratio": 2.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＣＥＰ　ＬＵＸ－ＯＲＢＩＳ　ＳＩＣＡＶ\n常任代理人 シティバンク、エヌ・エイ東京支店",
+          "shares": 47956200,
+          "ratio": 2.13,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 44835659,
+          "ratio": 1.99,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　ＭＥＬＬＯＮ　１４００４４\n常任代理人　株式会社みずほ銀行決済営業部",
+          "shares": 35503718,
+          "ratio": 1.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "パーソルホールディングス従業員持株会",
+          "shares": 32338010,
+          "ratio": 1.44,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 18.66,
+          "individual": 11.69,
+          "foundation": 7.02,
+          "financial": 7.84,
+          "other": 2.13,
+          "securities": 1.99,
+          "employee": 1.44
+        },
+        "individual_total": 11.69,
+        "top10_total": 50.77
+      }
+    }
+  ]
+}

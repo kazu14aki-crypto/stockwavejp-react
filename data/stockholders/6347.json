@@ -1,0 +1,218 @@
+{
+  "secCode": "6347",
+  "issuerName": "株式会社プラコー",
+  "updated_at": "2026/07/04 18:20 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社フクジュコーポレーション",
+      "shares": 911100,
+      "ratio": 9.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "FUBON SECURITIES CO.,LTD A/C GLOBAL　(常任代理人シティバンク、エヌ・エイ東京支店)",
+      "shares": 605700,
+      "ratio": 6.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社杉山製作所",
+      "shares": 420000,
+      "ratio": 4.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "GMOクリック証券株式会社",
+      "shares": 415400,
+      "ratio": 4.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本証券金融株式会社",
+      "shares": 370700,
+      "ratio": 3.85,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "プラコー共栄会",
+      "shares": 349800,
+      "ratio": 3.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "海容JAPAN株式会社",
+      "shares": 310800,
+      "ratio": 3.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "古野　孝志",
+      "shares": 309900,
+      "ratio": 3.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "スイス・プランツ有限責任事業組合",
+      "shares": 292700,
+      "ratio": 3.04,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "沙　莎",
+      "shares": 259300,
+      "ratio": 2.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 23.33,
+      "securities": 8.16,
+      "individual": 9.54,
+      "other": 3.04
+    },
+    "individual_total": 9.54,
+    "top10_total": 44.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第66期(2025/04/01－2026/03/31)",
+      "docID": "S100YFZB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社フクジュコーポレーション",
+          "shares": 911100,
+          "ratio": 9.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "FUBON SECURITIES CO.,LTD A/C GLOBAL　(常任代理人シティバンク、エヌ・エイ東京支店)",
+          "shares": 605700,
+          "ratio": 6.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社杉山製作所",
+          "shares": 420000,
+          "ratio": 4.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "GMOクリック証券株式会社",
+          "shares": 415400,
+          "ratio": 4.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本証券金融株式会社",
+          "shares": 370700,
+          "ratio": 3.85,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "プラコー共栄会",
+          "shares": 349800,
+          "ratio": 3.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "海容JAPAN株式会社",
+          "shares": 310800,
+          "ratio": 3.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "古野　孝志",
+          "shares": 309900,
+          "ratio": 3.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "スイス・プランツ有限責任事業組合",
+          "shares": 292700,
+          "ratio": 3.04,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "沙　莎",
+          "shares": 259300,
+          "ratio": 2.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 23.33,
+          "securities": 8.16,
+          "individual": 9.54,
+          "other": 3.04
+        },
+        "individual_total": 9.54,
+        "top10_total": 44.07
+      }
+    }
+  ]
+}

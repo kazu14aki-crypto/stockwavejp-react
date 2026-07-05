@@ -1,0 +1,216 @@
+{
+  "secCode": "7698",
+  "issuerName": "株式会社アイスコ",
+  "updated_at": "2026/07/04 18:43 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社KANコーポレーション",
+      "shares": 1350000,
+      "ratio": 34.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "相原　敏貴",
+      "shares": 225000,
+      "ratio": 5.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "相原　貴久",
+      "shares": 195000,
+      "ratio": 4.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "江崎グリコ株式会社",
+      "shares": 150000,
+      "ratio": 3.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アイスコ従業員持株会",
+      "shares": 142776,
+      "ratio": 3.63,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大洋建設株式会社",
+      "shares": 60400,
+      "ratio": 1.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "相原　久子",
+      "shares": 60000,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "青木　哲也",
+      "shares": 60000,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山本　宗男",
+      "shares": 33600,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "浅井　功",
+      "shares": 30000,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.71,
+      "individual": 15.35,
+      "employee": 3.63
+    },
+    "individual_total": 15.35,
+    "top10_total": 58.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第74期(2025/04/01－2026/03/31)",
+      "docID": "S100YHLL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社KANコーポレーション",
+          "shares": 1350000,
+          "ratio": 34.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "相原　敏貴",
+          "shares": 225000,
+          "ratio": 5.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "相原　貴久",
+          "shares": 195000,
+          "ratio": 4.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "江崎グリコ株式会社",
+          "shares": 150000,
+          "ratio": 3.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アイスコ従業員持株会",
+          "shares": 142776,
+          "ratio": 3.63,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大洋建設株式会社",
+          "shares": 60400,
+          "ratio": 1.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "相原　久子",
+          "shares": 60000,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "青木　哲也",
+          "shares": 60000,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山本　宗男",
+          "shares": 33600,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "浅井　功",
+          "shares": 30000,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.71,
+          "individual": 15.35,
+          "employee": 3.63
+        },
+        "individual_total": 15.35,
+        "top10_total": 58.69
+      }
+    }
+  ]
+}

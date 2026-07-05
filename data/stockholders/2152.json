@@ -1,0 +1,220 @@
+{
+  "secCode": "2152",
+  "issuerName": "幼児活動研究会株式会社",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社山善",
+      "shares": 3962000,
+      "ratio": 36.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＵＨ Ｐａｒｔｎｅｒｓ２投資事業有限責任組合",
+      "shares": 1085300,
+      "ratio": 10.05,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山　下　明　子",
+      "shares": 1020160,
+      "ratio": 9.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 691000,
+      "ratio": 6.4,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "コスモ従業員持株会",
+      "shares": 543208,
+      "ratio": 5.03,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＵＨ Ｐａｒｔｎｅｒｓ３投資事業有限責任組合",
+      "shares": 375000,
+      "ratio": 3.47,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山　下　孝　一",
+      "shares": 304560,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "エスアイエル投資事業有限責任組合",
+      "shares": 263700,
+      "ratio": 2.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "アイザワ証券グループ株式会社",
+      "shares": 208000,
+      "ratio": 1.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 200000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.53,
+      "other": 22.36,
+      "individual": 12.26,
+      "employee": 5.03,
+      "securities": 1.93
+    },
+    "individual_total": 12.26,
+    "top10_total": 80.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YMXV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社山善",
+          "shares": 3962000,
+          "ratio": 36.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＵＨ Ｐａｒｔｎｅｒｓ２投資事業有限責任組合",
+          "shares": 1085300,
+          "ratio": 10.05,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山　下　明　子",
+          "shares": 1020160,
+          "ratio": 9.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 691000,
+          "ratio": 6.4,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "コスモ従業員持株会",
+          "shares": 543208,
+          "ratio": 5.03,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＵＨ Ｐａｒｔｎｅｒｓ３投資事業有限責任組合",
+          "shares": 375000,
+          "ratio": 3.47,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山　下　孝　一",
+          "shares": 304560,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "エスアイエル投資事業有限責任組合",
+          "shares": 263700,
+          "ratio": 2.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "アイザワ証券グループ株式会社",
+          "shares": 208000,
+          "ratio": 1.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 200000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.53,
+          "other": 22.36,
+          "individual": 12.26,
+          "employee": 5.03,
+          "securities": 1.93
+        },
+        "individual_total": 12.26,
+        "top10_total": 80.11
+      }
+    }
+  ]
+}

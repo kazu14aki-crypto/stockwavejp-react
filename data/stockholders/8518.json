@@ -1,0 +1,220 @@
+{
+  "secCode": "8518",
+  "issuerName": "日本アジア投資株式会社",
+  "updated_at": "2026/07/04 17:49 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ジーエヌアイグループ",
+      "shares": 4173800,
+      "ratio": 16.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンド",
+      "shares": 3747000,
+      "ratio": 14.45,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "First　Eastern　Asia　Holdings　Limited",
+      "shares": 2334045,
+      "ratio": 9.0,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンドNK",
+      "shares": 1375000,
+      "ratio": 5.3,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社SBI証券",
+      "shares": 594304,
+      "ratio": 2.29,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ガバナンス・パートナーズ投資事業有限責任組合",
+      "shares": 540000,
+      "ratio": 2.08,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "Ｂｏｏｍ　Ｓｅｃｕｒｉｔｉｅｓ　（Ｈ．Ｋ．）　Ｌｉｍｉｔｅｄ　－　Ｃｌｉｅｎｔｓ’　Ａｃｃｏｕｎｔ\n(常任代理人マネックス証券株式会社)",
+      "shares": 486800,
+      "ratio": 1.88,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ダイナミックソリューショングループ株式会社",
+      "shares": 440000,
+      "ratio": 1.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "鈴木　智博",
+      "shares": 375000,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松井証券株式会社",
+      "shares": 362500,
+      "ratio": 1.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.8,
+      "other": 21.83,
+      "foreign": 9.0,
+      "securities": 5.57,
+      "individual": 1.45
+    },
+    "individual_total": 1.45,
+    "top10_total": 55.65
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第45期(2025/04/01－2026/03/31)",
+      "docID": "S100YMG4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ジーエヌアイグループ",
+          "shares": 4173800,
+          "ratio": 16.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンド",
+          "shares": 3747000,
+          "ratio": 14.45,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "First　Eastern　Asia　Holdings　Limited",
+          "shares": 2334045,
+          "ratio": 9.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "投資事業有限責任組合ガバナンス・パートナーズ経営者ファンドNK",
+          "shares": 1375000,
+          "ratio": 5.3,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社SBI証券",
+          "shares": 594304,
+          "ratio": 2.29,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ガバナンス・パートナーズ投資事業有限責任組合",
+          "shares": 540000,
+          "ratio": 2.08,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "Ｂｏｏｍ　Ｓｅｃｕｒｉｔｉｅｓ　（Ｈ．Ｋ．）　Ｌｉｍｉｔｅｄ　－　Ｃｌｉｅｎｔｓ’　Ａｃｃｏｕｎｔ\n(常任代理人マネックス証券株式会社)",
+          "shares": 486800,
+          "ratio": 1.88,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ダイナミックソリューショングループ株式会社",
+          "shares": 440000,
+          "ratio": 1.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "鈴木　智博",
+          "shares": 375000,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松井証券株式会社",
+          "shares": 362500,
+          "ratio": 1.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.8,
+          "other": 21.83,
+          "foreign": 9.0,
+          "securities": 5.57,
+          "individual": 1.45
+        },
+        "individual_total": 1.45,
+        "top10_total": 55.65
+      }
+    }
+  ]
+}

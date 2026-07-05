@@ -1,0 +1,218 @@
+{
+  "secCode": "3106",
+  "issuerName": "倉敷紡績株式会社",
+  "updated_at": "2026/07/04 18:03 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1664000,
+      "ratio": 10.28,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 920000,
+      "ratio": 5.68,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "AVI JAPAN OPPORTUNITY TRUST PLC（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 735000,
+      "ratio": 4.54,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社中国銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 726000,
+      "ratio": 4.49,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 559000,
+      "ratio": 3.45,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 559000,
+      "ratio": 3.45,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 519000,
+      "ratio": 3.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "テイ・エス テック株式会社",
+      "shares": 308000,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社クラレ",
+      "shares": 270000,
+      "ratio": 1.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "クラボウ共栄会",
+      "shares": 269000,
+      "ratio": 1.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 27.11,
+      "financial": 7.99,
+      "corporate": 3.56,
+      "individual": 1.66
+    },
+    "individual_total": 1.66,
+    "top10_total": 40.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第218期(2025/04/01－2026/03/31)",
+      "docID": "S100YIYE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1664000,
+          "ratio": 10.28,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 920000,
+          "ratio": 5.68,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "AVI JAPAN OPPORTUNITY TRUST PLC（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 735000,
+          "ratio": 4.54,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社中国銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 726000,
+          "ratio": 4.49,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社みずほ銀行（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 559000,
+          "ratio": 3.45,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 559000,
+          "ratio": 3.45,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 519000,
+          "ratio": 3.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "テイ・エス テック株式会社",
+          "shares": 308000,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社クラレ",
+          "shares": 270000,
+          "ratio": 1.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "クラボウ共栄会",
+          "shares": 269000,
+          "ratio": 1.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 27.11,
+          "financial": 7.99,
+          "corporate": 3.56,
+          "individual": 1.66
+        },
+        "individual_total": 1.66,
+        "top10_total": 40.32
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "9220",
+  "issuerName": "エフビー介護サービス株式会社",
+  "updated_at": "2026/07/04 17:58 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "栁澤　秀樹",
+      "shares": 365000,
+      "ratio": 14.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱カントリビューション",
+      "shares": 300000,
+      "ratio": 12.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "SUN㈱",
+      "shares": 200000,
+      "ratio": 8.2,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "栁澤　美穂",
+      "shares": 165000,
+      "ratio": 6.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "栁澤　瞬",
+      "shares": 100000,
+      "ratio": 4.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "栁澤　翔",
+      "shares": 100000,
+      "ratio": 4.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱日本カストディ銀行\n（信託口）",
+      "shares": 81000,
+      "ratio": 3.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "栁澤　陽子",
+      "shares": 62900,
+      "ratio": 2.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "エフビーグループ従業員持株会",
+      "shares": 56844,
+      "ratio": 2.33,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "フランスベッドホールディングス㈱",
+      "shares": 55000,
+      "ratio": 2.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.83,
+      "other": 8.2,
+      "trust": 3.32,
+      "employee": 2.33,
+      "corporate": 2.25
+    },
+    "individual_total": 44.83,
+    "top10_total": 60.93
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第39期(2025/04/01－2026/03/31)",
+      "docID": "S100YK1M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "栁澤　秀樹",
+          "shares": 365000,
+          "ratio": 14.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱カントリビューション",
+          "shares": 300000,
+          "ratio": 12.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "SUN㈱",
+          "shares": 200000,
+          "ratio": 8.2,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "栁澤　美穂",
+          "shares": 165000,
+          "ratio": 6.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "栁澤　瞬",
+          "shares": 100000,
+          "ratio": 4.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "栁澤　翔",
+          "shares": 100000,
+          "ratio": 4.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱日本カストディ銀行\n（信託口）",
+          "shares": 81000,
+          "ratio": 3.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "栁澤　陽子",
+          "shares": 62900,
+          "ratio": 2.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "エフビーグループ従業員持株会",
+          "shares": 56844,
+          "ratio": 2.33,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "フランスベッドホールディングス㈱",
+          "shares": 55000,
+          "ratio": 2.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.83,
+          "other": 8.2,
+          "trust": 3.32,
+          "employee": 2.33,
+          "corporate": 2.25
+        },
+        "individual_total": 44.83,
+        "top10_total": 60.93
+      }
+    }
+  ]
+}

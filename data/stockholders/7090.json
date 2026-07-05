@@ -1,0 +1,216 @@
+{
+  "secCode": "7090",
+  "issuerName": "株式会社リグア",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "川瀨　紀彦",
+      "shares": 471500,
+      "ratio": 29.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社BRIDGE",
+      "shares": 193200,
+      "ratio": 12.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社TBM",
+      "shares": 100000,
+      "ratio": 6.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "藤原　俊也",
+      "shares": 79800,
+      "ratio": 5.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "石本　導彦",
+      "shares": 62400,
+      "ratio": 3.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "藤本　幸弘",
+      "shares": 43500,
+      "ratio": 2.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ケイズグループ",
+      "shares": 42300,
+      "ratio": 2.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "K&Pパートナーズ２号投資事業有限責任組合",
+      "shares": 39000,
+      "ratio": 2.45,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "城守　和幸",
+      "shares": 31800,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "粂野　聡史",
+      "shares": 24300,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.84,
+      "corporate": 21.1,
+      "other": 2.45
+    },
+    "individual_total": 44.84,
+    "top10_total": 68.39
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YJLO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "川瀨　紀彦",
+          "shares": 471500,
+          "ratio": 29.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社BRIDGE",
+          "shares": 193200,
+          "ratio": 12.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社TBM",
+          "shares": 100000,
+          "ratio": 6.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "藤原　俊也",
+          "shares": 79800,
+          "ratio": 5.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "石本　導彦",
+          "shares": 62400,
+          "ratio": 3.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "藤本　幸弘",
+          "shares": 43500,
+          "ratio": 2.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ケイズグループ",
+          "shares": 42300,
+          "ratio": 2.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "K&Pパートナーズ２号投資事業有限責任組合",
+          "shares": 39000,
+          "ratio": 2.45,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "城守　和幸",
+          "shares": 31800,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "粂野　聡史",
+          "shares": 24300,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.84,
+          "corporate": 21.1,
+          "other": 2.45
+        },
+        "individual_total": 44.84,
+        "top10_total": 68.39
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6912",
+  "issuerName": "菊水ホールディングス株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "菊水取引先持株会",
+      "shares": 972000,
+      "ratio": 11.68,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ケーティーエム",
+      "shares": 909000,
+      "ratio": 10.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社みずほ銀行",
+      "shares": 360000,
+      "ratio": 4.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小  林  寛  子",
+      "shares": 346000,
+      "ratio": 4.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "菊水従業員持株会",
+      "shares": 338000,
+      "ratio": 4.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本生命保険相互会社",
+      "shares": 301000,
+      "ratio": 3.61,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "アジア電子工業株式会社",
+      "shares": 290000,
+      "ratio": 3.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ケル株式会社",
+      "shares": 220000,
+      "ratio": 2.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 214000,
+      "ratio": 2.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "橋  本  幸  雄",
+      "shares": 188000,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 15.75,
+      "corporate": 17.05,
+      "financial": 10.51,
+      "individual": 6.42
+    },
+    "individual_total": 6.42,
+    "top10_total": 49.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第75期(2025/04/01－2026/03/31)",
+      "docID": "S100YIEI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "菊水取引先持株会",
+          "shares": 972000,
+          "ratio": 11.68,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ケーティーエム",
+          "shares": 909000,
+          "ratio": 10.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社みずほ銀行",
+          "shares": 360000,
+          "ratio": 4.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小  林  寛  子",
+          "shares": 346000,
+          "ratio": 4.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "菊水従業員持株会",
+          "shares": 338000,
+          "ratio": 4.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本生命保険相互会社",
+          "shares": 301000,
+          "ratio": 3.61,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "アジア電子工業株式会社",
+          "shares": 290000,
+          "ratio": 3.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ケル株式会社",
+          "shares": 220000,
+          "ratio": 2.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 214000,
+          "ratio": 2.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "橋  本  幸  雄",
+          "shares": 188000,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 15.75,
+          "corporate": 17.05,
+          "financial": 10.51,
+          "individual": 6.42
+        },
+        "individual_total": 6.42,
+        "top10_total": 49.73
+      }
+    }
+  ]
+}

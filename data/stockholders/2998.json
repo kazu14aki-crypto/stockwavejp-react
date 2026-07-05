@@ -1,0 +1,220 @@
+{
+  "secCode": "2998",
+  "issuerName": "クリアル株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "SBIホールディングス株式会社",
+      "shares": 7442400,
+      "ratio": 20.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "徳山　明成(常任代理人 みずほ証券株式会社)",
+      "shares": 7241500,
+      "ratio": 20.08,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＪＩＣＶＧＩオポチュニティファンド１号投資事業有限責任組合",
+      "shares": 2677400,
+      "ratio": 7.42,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "横田　大造",
+      "shares": 1983000,
+      "ratio": 5.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "金子　好宏",
+      "shares": 1593000,
+      "ratio": 4.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "櫻井　聖仁",
+      "shares": 1548000,
+      "ratio": 4.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1119900,
+      "ratio": 3.11,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 997900,
+      "ratio": 2.77,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本証券金融株式会社",
+      "shares": 775100,
+      "ratio": 2.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "中央日本土地建物株式会社",
+      "shares": 669300,
+      "ratio": 1.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 22.5,
+      "securities": 22.23,
+      "other": 7.42,
+      "individual": 14.21,
+      "trust": 5.88
+    },
+    "individual_total": 14.21,
+    "top10_total": 72.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第15期(2025/04/01－2026/03/31)",
+      "docID": "S100YIOE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "SBIホールディングス株式会社",
+          "shares": 7442400,
+          "ratio": 20.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "徳山　明成(常任代理人 みずほ証券株式会社)",
+          "shares": 7241500,
+          "ratio": 20.08,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＪＩＣＶＧＩオポチュニティファンド１号投資事業有限責任組合",
+          "shares": 2677400,
+          "ratio": 7.42,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "横田　大造",
+          "shares": 1983000,
+          "ratio": 5.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "金子　好宏",
+          "shares": 1593000,
+          "ratio": 4.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "櫻井　聖仁",
+          "shares": 1548000,
+          "ratio": 4.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1119900,
+          "ratio": 3.11,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 997900,
+          "ratio": 2.77,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本証券金融株式会社",
+          "shares": 775100,
+          "ratio": 2.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "中央日本土地建物株式会社",
+          "shares": 669300,
+          "ratio": 1.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 22.5,
+          "securities": 22.23,
+          "other": 7.42,
+          "individual": 14.21,
+          "trust": 5.88
+        },
+        "individual_total": 14.21,
+        "top10_total": 72.24
+      }
+    }
+  ]
+}

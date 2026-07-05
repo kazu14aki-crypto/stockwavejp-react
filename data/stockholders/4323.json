@@ -1,0 +1,332 @@
+{
+  "secCode": "4323",
+  "issuerName": "日本システム技術株式会社",
+  "updated_at": "2026/07/04 18:14 JST",
+  "latestDate": "2026-07-03",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 5868800,
+      "ratio": 23.64,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ジャスト",
+      "shares": 5800400,
+      "ratio": 23.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 1886300,
+      "ratio": 7.6,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE BROKERS LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 1629700,
+      "ratio": 6.56,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本システム技術従業員持株会",
+      "shares": 1439760,
+      "ratio": 5.8,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平林 卓",
+      "shares": 561280,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平林 武昭",
+      "shares": 492100,
+      "ratio": 1.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 257600,
+      "ratio": 1.04,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "平林　大",
+      "shares": 240700,
+      "ratio": 0.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社テラスカイ",
+      "shares": 229508,
+      "ratio": 0.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 23.64,
+      "corporate": 24.28,
+      "trust": 8.64,
+      "securities": 6.56,
+      "employee": 5.8,
+      "individual": 5.21
+    },
+    "individual_total": 5.21,
+    "top10_total": 74.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-03",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YOCW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 5868800,
+          "ratio": 23.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ジャスト",
+          "shares": 5800400,
+          "ratio": 23.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1886300,
+          "ratio": 7.6,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 1629700,
+          "ratio": 6.56,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本システム技術従業員持株会",
+          "shares": 1439760,
+          "ratio": 5.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平林 卓",
+          "shares": 561280,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平林 武昭",
+          "shares": 492100,
+          "ratio": 1.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 257600,
+          "ratio": 1.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "平林　大",
+          "shares": 240700,
+          "ratio": 0.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社テラスカイ",
+          "shares": 229508,
+          "ratio": 0.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 23.64,
+          "corporate": 24.28,
+          "trust": 8.64,
+          "securities": 6.56,
+          "employee": 5.8,
+          "individual": 5.21
+        },
+        "individual_total": 5.21,
+        "top10_total": 74.13
+      }
+    },
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/04/01－2026/03/31)",
+      "docID": "S100YI5H",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 5868800,
+          "ratio": 23.64,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ジャスト",
+          "shares": 5800400,
+          "ratio": 23.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 1886300,
+          "ratio": 7.6,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC(常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 1629700,
+          "ratio": 6.56,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本システム技術従業員持株会",
+          "shares": 1439760,
+          "ratio": 5.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平林 卓",
+          "shares": 561280,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平林 武昭",
+          "shares": 492100,
+          "ratio": 1.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 257600,
+          "ratio": 1.04,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "平林　大",
+          "shares": 240700,
+          "ratio": 0.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社テラスカイ",
+          "shares": 229508,
+          "ratio": 0.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 23.64,
+          "corporate": 24.28,
+          "trust": 8.64,
+          "securities": 6.56,
+          "employee": 5.8,
+          "individual": 5.21
+        },
+        "individual_total": 5.21,
+        "top10_total": 74.13
+      }
+    }
+  ]
+}

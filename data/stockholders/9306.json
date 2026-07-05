@@ -1,0 +1,218 @@
+{
+  "secCode": "9306",
+  "issuerName": "東陽倉庫株式会社",
+  "updated_at": "2026/07/04 18:52 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社あいち銀行",
+      "shares": 373000,
+      "ratio": 4.95,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ダイセー倉庫運輸株式会社",
+      "shares": 360000,
+      "ratio": 4.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "伏見興産株式会社",
+      "shares": 258000,
+      "ratio": 3.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 254000,
+      "ratio": 3.37,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東陽倉庫従業員持株会",
+      "shares": 230000,
+      "ratio": 3.05,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "第一生命保険株式会社",
+      "shares": 200000,
+      "ratio": 2.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本証券金融株式会社",
+      "shares": 200000,
+      "ratio": 2.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中京テレビ放送株式会社",
+      "shares": 200000,
+      "ratio": 2.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "明治安田生命保険相互会社",
+      "shares": 195000,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "あいおいニッセイ同和損害保険株式会社",
+      "shares": 152000,
+      "ratio": 2.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 15.59,
+      "corporate": 10.84,
+      "employee": 3.05,
+      "securities": 2.65
+    },
+    "individual_total": 0,
+    "top10_total": 32.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第147期(2025/04/01－2026/03/31)",
+      "docID": "S100Y9SP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社あいち銀行",
+          "shares": 373000,
+          "ratio": 4.95,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ダイセー倉庫運輸株式会社",
+          "shares": 360000,
+          "ratio": 4.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "伏見興産株式会社",
+          "shares": 258000,
+          "ratio": 3.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 254000,
+          "ratio": 3.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東陽倉庫従業員持株会",
+          "shares": 230000,
+          "ratio": 3.05,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "第一生命保険株式会社",
+          "shares": 200000,
+          "ratio": 2.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本証券金融株式会社",
+          "shares": 200000,
+          "ratio": 2.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中京テレビ放送株式会社",
+          "shares": 200000,
+          "ratio": 2.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "明治安田生命保険相互会社",
+          "shares": 195000,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "shares": 152000,
+          "ratio": 2.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 15.59,
+          "corporate": 10.84,
+          "employee": 3.05,
+          "securities": 2.65
+        },
+        "individual_total": 0,
+        "top10_total": 32.13
+      }
+    }
+  ]
+}

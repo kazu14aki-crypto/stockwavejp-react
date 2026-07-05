@@ -1,0 +1,216 @@
+{
+  "secCode": "5571",
+  "issuerName": "エキサイトホールディングス株式会社",
+  "updated_at": "2026/07/04 17:56 JST",
+  "latestDate": "2026-06-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "CASK㈱",
+      "shares": 2100000,
+      "ratio": 43.72,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "西條　晋一",
+      "shares": 800000,
+      "ratio": 16.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ユナイテッド㈱",
+      "shares": 477720,
+      "ratio": 9.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "上田八木短資㈱",
+      "shares": 168200,
+      "ratio": 3.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "八代　武史",
+      "shares": 134800,
+      "ratio": 2.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "浜本　憲至",
+      "shares": 102000,
+      "ratio": 2.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "猪俣　崇",
+      "shares": 71300,
+      "ratio": 1.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "XTech１号投資事業有限責任組合",
+      "shares": 68960,
+      "ratio": 1.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "岡田　浩明",
+      "shares": 68600,
+      "ratio": 1.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券㈱",
+      "shares": 65400,
+      "ratio": 1.36,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 45.16,
+      "individual": 37.93,
+      "securities": 1.36
+    },
+    "individual_total": 37.93,
+    "top10_total": 84.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/04/01－2026/03/31)",
+      "docID": "S100YMC7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "CASK㈱",
+          "shares": 2100000,
+          "ratio": 43.72,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "西條　晋一",
+          "shares": 800000,
+          "ratio": 16.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ユナイテッド㈱",
+          "shares": 477720,
+          "ratio": 9.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "上田八木短資㈱",
+          "shares": 168200,
+          "ratio": 3.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "八代　武史",
+          "shares": 134800,
+          "ratio": 2.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "浜本　憲至",
+          "shares": 102000,
+          "ratio": 2.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "猪俣　崇",
+          "shares": 71300,
+          "ratio": 1.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "XTech１号投資事業有限責任組合",
+          "shares": 68960,
+          "ratio": 1.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "岡田　浩明",
+          "shares": 68600,
+          "ratio": 1.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券㈱",
+          "shares": 65400,
+          "ratio": 1.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 45.16,
+          "individual": 37.93,
+          "securities": 1.36
+        },
+        "individual_total": 37.93,
+        "top10_total": 84.45
+      }
+    }
+  ]
+}

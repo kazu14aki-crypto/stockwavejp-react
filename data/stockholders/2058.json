@@ -1,0 +1,218 @@
+{
+  "secCode": "2058",
+  "issuerName": "株式会社ヒガシマル",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東      勤",
+      "shares": 597000,
+      "ratio": 15.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東      実",
+      "shares": 557000,
+      "ratio": 14.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "有限会社ヒガシマル開発",
+      "shares": 427000,
+      "ratio": 10.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ヒガシマル共栄会",
+      "shares": 402000,
+      "ratio": 10.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "株式会社鹿児島銀行",
+      "shares": 165000,
+      "ratio": 4.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "東  　紘一郎",
+      "shares": 160000,
+      "ratio": 4.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東    吉太郎",
+      "shares": 158000,
+      "ratio": 3.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鹿児島ビル不動産株式会社",
+      "shares": 91000,
+      "ratio": 2.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ヒガシマル従業員持株会",
+      "shares": 82000,
+      "ratio": 2.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 57000,
+      "ratio": 1.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 47.29,
+      "corporate": 13.06,
+      "financial": 5.59,
+      "employee": 2.09
+    },
+    "individual_total": 47.29,
+    "top10_total": 68.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第47期(2025/04/01－2026/03/31)",
+      "docID": "S100YI3U",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東      勤",
+          "shares": 597000,
+          "ratio": 15.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東      実",
+          "shares": 557000,
+          "ratio": 14.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "有限会社ヒガシマル開発",
+          "shares": 427000,
+          "ratio": 10.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ヒガシマル共栄会",
+          "shares": 402000,
+          "ratio": 10.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "株式会社鹿児島銀行",
+          "shares": 165000,
+          "ratio": 4.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "東  　紘一郎",
+          "shares": 160000,
+          "ratio": 4.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東    吉太郎",
+          "shares": 158000,
+          "ratio": 3.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鹿児島ビル不動産株式会社",
+          "shares": 91000,
+          "ratio": 2.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ヒガシマル従業員持株会",
+          "shares": 82000,
+          "ratio": 2.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 57000,
+          "ratio": 1.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 47.29,
+          "corporate": 13.06,
+          "financial": 5.59,
+          "employee": 2.09
+        },
+        "individual_total": 47.29,
+        "top10_total": 68.03
+      }
+    }
+  ]
+}

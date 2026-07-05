@@ -1,0 +1,218 @@
+{
+  "secCode": "3409",
+  "issuerName": "株式会社北紡",
+  "updated_at": "2026/07/04 17:48 JST",
+  "latestDate": "2026-06-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "PT ASIA PLASTIK VICTORI (常任代理人横山雅明)",
+      "shares": 6558000,
+      "ratio": 20.78,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ミツワ樹脂工業株式会社",
+      "shares": 4865000,
+      "ratio": 15.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社スカイサルーントラベル",
+      "shares": 1942000,
+      "ratio": 6.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "証券金融株式会社",
+      "shares": 956000,
+      "ratio": 3.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "本多　敏行",
+      "shares": 893000,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "中原証券株式会社",
+      "shares": 730000,
+      "ratio": 2.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "松井証券株式会社",
+      "shares": 679000,
+      "ratio": 2.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "直山　秀人",
+      "shares": 653000,
+      "ratio": 2.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ",
+      "shares": 529000,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社LULインターナショナル",
+      "shares": 479000,
+      "ratio": 1.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 20.78,
+      "corporate": 24.75,
+      "securities": 7.49,
+      "individual": 4.9
+    },
+    "individual_total": 4.9,
+    "top10_total": 57.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第103期(2025/04/01－2026/03/31)",
+      "docID": "S100YKBG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "PT ASIA PLASTIK VICTORI (常任代理人横山雅明)",
+          "shares": 6558000,
+          "ratio": 20.78,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ミツワ樹脂工業株式会社",
+          "shares": 4865000,
+          "ratio": 15.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社スカイサルーントラベル",
+          "shares": 1942000,
+          "ratio": 6.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "証券金融株式会社",
+          "shares": 956000,
+          "ratio": 3.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "本多　敏行",
+          "shares": 893000,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "中原証券株式会社",
+          "shares": 730000,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "松井証券株式会社",
+          "shares": 679000,
+          "ratio": 2.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "直山　秀人",
+          "shares": 653000,
+          "ratio": 2.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ",
+          "shares": 529000,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社LULインターナショナル",
+          "shares": 479000,
+          "ratio": 1.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 20.78,
+          "corporate": 24.75,
+          "securities": 7.49,
+          "individual": 4.9
+        },
+        "individual_total": 4.9,
+        "top10_total": 57.92
+      }
+    }
+  ]
+}

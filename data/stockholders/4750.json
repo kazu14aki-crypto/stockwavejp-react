@@ -1,0 +1,216 @@
+{
+  "secCode": "4750",
+  "issuerName": "株式会社ダイサン",
+  "updated_at": "2026/07/04 17:45 JST",
+  "latestDate": "2026-07-02",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社和顔",
+      "shares": 1411000,
+      "ratio": 22.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ダイサン取引先持株会",
+      "shares": 535000,
+      "ratio": 8.36,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ダイサン従業員持株会",
+      "shares": 317000,
+      "ratio": 4.95,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "三浦　民子",
+      "shares": 228000,
+      "ratio": 3.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三浦　基和",
+      "shares": 228000,
+      "ratio": 3.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 200000,
+      "ratio": 3.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "金沢　昭枝",
+      "shares": 188000,
+      "ratio": 2.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大原　春子",
+      "shares": 162000,
+      "ratio": 2.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三浦　宣子",
+      "shares": 128000,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社麻生",
+      "shares": 114000,
+      "ratio": 1.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.9,
+      "employee": 13.31,
+      "individual": 14.6
+    },
+    "individual_total": 14.6,
+    "top10_total": 54.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-02",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第52期(2025/04/21－2026/04/20)",
+      "docID": "S100YNWZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社和顔",
+          "shares": 1411000,
+          "ratio": 22.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ダイサン取引先持株会",
+          "shares": 535000,
+          "ratio": 8.36,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ダイサン従業員持株会",
+          "shares": 317000,
+          "ratio": 4.95,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "三浦　民子",
+          "shares": 228000,
+          "ratio": 3.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三浦　基和",
+          "shares": 228000,
+          "ratio": 3.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 200000,
+          "ratio": 3.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "金沢　昭枝",
+          "shares": 188000,
+          "ratio": 2.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大原　春子",
+          "shares": 162000,
+          "ratio": 2.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三浦　宣子",
+          "shares": 128000,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社麻生",
+          "shares": 114000,
+          "ratio": 1.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.9,
+          "employee": 13.31,
+          "individual": 14.6
+        },
+        "individual_total": 14.6,
+        "top10_total": 54.81
+      }
+    }
+  ]
+}

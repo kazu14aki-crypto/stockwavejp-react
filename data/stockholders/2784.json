@@ -1,0 +1,218 @@
+{
+  "secCode": "2784",
+  "issuerName": "アルフレッサホールディングス株式会社",
+  "updated_at": "2026/07/04 18:38 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 24986000,
+      "ratio": 13.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "NORTHERN TRUST CO.(AVFC)RE SILCHESTER INTERNATIONALINVESTORS INTERNATIONALVALUE EQUITY TRUST(常任代理人　香港上海銀行東京支店)",
+      "shares": 9808000,
+      "ratio": 5.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 8338000,
+      "ratio": 4.58,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "NORTHERN TRUST CO.(AVFC) RE U.S. TAX EXEMPTED PENSION FUNDS(常任代理人　香港上海銀行東京支店)",
+      "shares": 5843000,
+      "ratio": 3.21,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY505051(常任代理人　株式会社みずほ銀行)",
+      "shares": 5291000,
+      "ratio": 2.9,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アルフレッサ ホールディングス社員持株会",
+      "shares": 5188000,
+      "ratio": 2.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NORTHERN TRUST CO.(AVFC)RE NON TREATY CLIENTS ACCOUNT(常任代理人　香港上海銀行東京支店)",
+      "shares": 4141000,
+      "ratio": 2.27,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "みずほ信託銀行株式会社　退職給付信託第一三共口　再信託受託者株式会社日本カストディ銀行",
+      "shares": 3555000,
+      "ratio": 1.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15PCT TREATY ACCOUNT (常任代理人　香港上海銀行東京支店)",
+      "shares": 3386000,
+      "ratio": 1.86,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "福神　雄介",
+      "shares": 3012000,
+      "ratio": 1.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.24,
+      "foreign": 15.62,
+      "employee": 2.85,
+      "individual": 1.65
+    },
+    "individual_total": 1.65,
+    "top10_total": 40.36
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YH29",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 24986000,
+          "ratio": 13.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "NORTHERN TRUST CO.(AVFC)RE SILCHESTER INTERNATIONALINVESTORS INTERNATIONALVALUE EQUITY TRUST(常任代理人　香港上海銀行東京支店)",
+          "shares": 9808000,
+          "ratio": 5.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 8338000,
+          "ratio": 4.58,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "NORTHERN TRUST CO.(AVFC) RE U.S. TAX EXEMPTED PENSION FUNDS(常任代理人　香港上海銀行東京支店)",
+          "shares": 5843000,
+          "ratio": 3.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY505051(常任代理人　株式会社みずほ銀行)",
+          "shares": 5291000,
+          "ratio": 2.9,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アルフレッサ ホールディングス社員持株会",
+          "shares": 5188000,
+          "ratio": 2.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NORTHERN TRUST CO.(AVFC)RE NON TREATY CLIENTS ACCOUNT(常任代理人　香港上海銀行東京支店)",
+          "shares": 4141000,
+          "ratio": 2.27,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "みずほ信託銀行株式会社　退職給付信託第一三共口　再信託受託者株式会社日本カストディ銀行",
+          "shares": 3555000,
+          "ratio": 1.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15PCT TREATY ACCOUNT (常任代理人　香港上海銀行東京支店)",
+          "shares": 3386000,
+          "ratio": 1.86,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "福神　雄介",
+          "shares": 3012000,
+          "ratio": 1.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.24,
+          "foreign": 15.62,
+          "employee": 2.85,
+          "individual": 1.65
+        },
+        "individual_total": 1.65,
+        "top10_total": 40.36
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "secCode": "4386",
+  "issuerName": "株式会社ＳＩＧグループ",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＩＧカンパニー",
+      "shares": 1624700,
+      "ratio": 28.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "八田　英伸",
+      "shares": 289040,
+      "ratio": 5.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社バリューＨＲ",
+      "shares": 267000,
+      "ratio": 4.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ぬ利彦",
+      "shares": 216000,
+      "ratio": 3.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "迫田　敏子",
+      "shares": 176400,
+      "ratio": 3.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社テプコシステムズ",
+      "shares": 156000,
+      "ratio": 2.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "石川　純生",
+      "shares": 129500,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社オフィスエムエスイー",
+      "shares": 120000,
+      "ratio": 2.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "木村　倉男",
+      "shares": 99600,
+      "ratio": 1.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "新堀　哲之",
+      "shares": 81300,
+      "ratio": 1.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.61,
+      "individual": 13.53
+    },
+    "individual_total": 13.53,
+    "top10_total": 55.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/04/01－2026/03/31)",
+      "docID": "S100YH0Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＩＧカンパニー",
+          "shares": 1624700,
+          "ratio": 28.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "八田　英伸",
+          "shares": 289040,
+          "ratio": 5.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社バリューＨＲ",
+          "shares": 267000,
+          "ratio": 4.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ぬ利彦",
+          "shares": 216000,
+          "ratio": 3.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "迫田　敏子",
+          "shares": 176400,
+          "ratio": 3.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社テプコシステムズ",
+          "shares": 156000,
+          "ratio": 2.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "石川　純生",
+          "shares": 129500,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社オフィスエムエスイー",
+          "shares": 120000,
+          "ratio": 2.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "木村　倉男",
+          "shares": 99600,
+          "ratio": 1.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "新堀　哲之",
+          "shares": 81300,
+          "ratio": 1.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.61,
+          "individual": 13.53
+        },
+        "individual_total": 13.53,
+        "top10_total": 55.14
+      }
+    }
+  ]
+}

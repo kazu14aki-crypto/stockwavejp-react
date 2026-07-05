@@ -1,0 +1,216 @@
+{
+  "secCode": "6753",
+  "issuerName": "シャープ株式会社",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "HON HAI PRECISION INDUSTRY CO., LTD.\n(常任代理人 ㈱みずほ銀行)",
+      "shares": 144900000,
+      "ratio": 22.32,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "FOXCONN (FAR EAST) LIMITED\n(常任代理人 ㈱みずほ銀行)",
+      "shares": 76655000,
+      "ratio": 11.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "SIO INTERNATIONAL HOLDINGS LIMITED\n(常任代理人 ㈱みずほ銀行)",
+      "shares": 65373000,
+      "ratio": 10.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "FOXCONN TECHNOLOGY PTE. LTD.\n(常任代理人 ㈱みずほ銀行)",
+      "shares": 64640000,
+      "ratio": 9.96,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "CLEARSTREAM BANKING S.A.\n(常任代理人 香港上海銀行)",
+      "shares": 37599000,
+      "ratio": 5.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト\n信託銀行㈱（信託口）",
+      "shares": 27249000,
+      "ratio": 4.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "LGT BANK LTD\n(常任代理人 ㈱三菱UFJ銀行)",
+      "shares": 26083000,
+      "ratio": 4.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "VIGOR WEALTH GLOBAL LIMITED\n(常任代理人 ㈱みずほ銀行)",
+      "shares": 20511000,
+      "ratio": 3.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 7773000,
+      "ratio": 1.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCT E PSMPJ\n(常任代理人 ㈱三菱UFJ銀行)",
+      "shares": 5016000,
+      "ratio": 0.77,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 61.34,
+      "foreign": 6.56,
+      "trust": 5.4
+    },
+    "individual_total": 0,
+    "top10_total": 73.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第132期(2025/04/01－2026/03/31)",
+      "docID": "S100YHZV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "HON HAI PRECISION INDUSTRY CO., LTD.\n(常任代理人 ㈱みずほ銀行)",
+          "shares": 144900000,
+          "ratio": 22.32,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "FOXCONN (FAR EAST) LIMITED\n(常任代理人 ㈱みずほ銀行)",
+          "shares": 76655000,
+          "ratio": 11.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "SIO INTERNATIONAL HOLDINGS LIMITED\n(常任代理人 ㈱みずほ銀行)",
+          "shares": 65373000,
+          "ratio": 10.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "FOXCONN TECHNOLOGY PTE. LTD.\n(常任代理人 ㈱みずほ銀行)",
+          "shares": 64640000,
+          "ratio": 9.96,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "CLEARSTREAM BANKING S.A.\n(常任代理人 香港上海銀行)",
+          "shares": 37599000,
+          "ratio": 5.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト\n信託銀行㈱（信託口）",
+          "shares": 27249000,
+          "ratio": 4.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "LGT BANK LTD\n(常任代理人 ㈱三菱UFJ銀行)",
+          "shares": 26083000,
+          "ratio": 4.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "VIGOR WEALTH GLOBAL LIMITED\n(常任代理人 ㈱みずほ銀行)",
+          "shares": 20511000,
+          "ratio": 3.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 7773000,
+          "ratio": 1.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCT E PSMPJ\n(常任代理人 ㈱三菱UFJ銀行)",
+          "shares": 5016000,
+          "ratio": 0.77,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 61.34,
+          "foreign": 6.56,
+          "trust": 5.4
+        },
+        "individual_total": 0,
+        "top10_total": 73.3
+      }
+    }
+  ]
+}

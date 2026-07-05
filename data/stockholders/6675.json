@@ -1,0 +1,218 @@
+{
+  "secCode": "6675",
+  "issuerName": "サクサ株式会社",
+  "updated_at": "2026/07/04 18:25 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "沖電気工業株式会社",
+      "shares": 814000,
+      "ratio": 14.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＧＬＯＢＡＬ　ＭＡＮＡＧＥＭＥＮＴ　ＰＡＲＴＮＥＲＳ　ＬＩＭＩＴＥＤ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 713000,
+      "ratio": 12.29,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＡＶＩ　ＪＡＰＡＮ　ＯＰＰＯＲＴＵＮＩＴＹ　ＴＲＵＳＴ　　 ＰＬＣ（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 399000,
+      "ratio": 6.88,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 233000,
+      "ratio": 4.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三菱地所株式会社",
+      "shares": 230000,
+      "ratio": 3.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三井住友銀行",
+      "shares": 176000,
+      "ratio": 3.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 174000,
+      "ratio": 3.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 95000,
+      "ratio": 1.65,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＧ／ＵＣＩＴＳ　Ｖ／ＩＮＶ（常任代理人　香港上海銀行東京支店）",
+      "shares": 92000,
+      "ratio": 1.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "みずほ信託銀行株式会社",
+      "shares": 90000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.98,
+      "other": 12.29,
+      "financial": 18.75,
+      "securities": 3.0
+    },
+    "individual_total": 0,
+    "top10_total": 52.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/04/01－2026/03/31)",
+      "docID": "S100YJLC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "沖電気工業株式会社",
+          "shares": 814000,
+          "ratio": 14.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＧＬＯＢＡＬ　ＭＡＮＡＧＥＭＥＮＴ　ＰＡＲＴＮＥＲＳ　ＬＩＭＩＴＥＤ（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 713000,
+          "ratio": 12.29,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＡＶＩ　ＪＡＰＡＮ　ＯＰＰＯＲＴＵＮＩＴＹ　ＴＲＵＳＴ　　 ＰＬＣ（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 399000,
+          "ratio": 6.88,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 233000,
+          "ratio": 4.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三菱地所株式会社",
+          "shares": 230000,
+          "ratio": 3.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三井住友銀行",
+          "shares": 176000,
+          "ratio": 3.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ　ＢＲＯＫＥＲＳ　ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 174000,
+          "ratio": 3.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 95000,
+          "ratio": 1.65,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＧ／ＵＣＩＴＳ　Ｖ／ＩＮＶ（常任代理人　香港上海銀行東京支店）",
+          "shares": 92000,
+          "ratio": 1.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "みずほ信託銀行株式会社",
+          "shares": 90000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.98,
+          "other": 12.29,
+          "financial": 18.75,
+          "securities": 3.0
+        },
+        "individual_total": 0,
+        "top10_total": 52.02
+      }
+    }
+  ]
+}

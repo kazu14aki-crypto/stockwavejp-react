@@ -1,0 +1,212 @@
+{
+  "secCode": "4531",
+  "issuerName": "有機合成薬品工業株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ニプロ株式会社",
+      "shares": 3296000,
+      "ratio": 15.25,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "長瀬産業株式会社",
+      "shares": 1098000,
+      "ratio": 5.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "保土谷化学工業株式会社",
+      "shares": 1098000,
+      "ratio": 5.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大鵬薬品工業株式会社",
+      "shares": 671000,
+      "ratio": 3.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "住友商事ケミカル株式会社",
+      "shares": 535000,
+      "ratio": 2.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ゼリア新薬工業株式会社",
+      "shares": 483000,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "あすか製薬株式会社",
+      "shares": 366000,
+      "ratio": 1.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "サンヨーファイン株式会社",
+      "shares": 306000,
+      "ratio": 1.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "喜美運送株式会社",
+      "shares": 304000,
+      "ratio": 1.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社山口薬品商会",
+      "shares": 303000,
+      "ratio": 1.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.15
+    },
+    "individual_total": 0,
+    "top10_total": 39.15
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第106期(2025/04/01－2026/03/31)",
+      "docID": "S100YHPD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ニプロ株式会社",
+          "shares": 3296000,
+          "ratio": 15.25,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "長瀬産業株式会社",
+          "shares": 1098000,
+          "ratio": 5.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "保土谷化学工業株式会社",
+          "shares": 1098000,
+          "ratio": 5.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大鵬薬品工業株式会社",
+          "shares": 671000,
+          "ratio": 3.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "住友商事ケミカル株式会社",
+          "shares": 535000,
+          "ratio": 2.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ゼリア新薬工業株式会社",
+          "shares": 483000,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "あすか製薬株式会社",
+          "shares": 366000,
+          "ratio": 1.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "サンヨーファイン株式会社",
+          "shares": 306000,
+          "ratio": 1.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "喜美運送株式会社",
+          "shares": 304000,
+          "ratio": 1.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社山口薬品商会",
+          "shares": 303000,
+          "ratio": 1.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.15
+        },
+        "individual_total": 0,
+        "top10_total": 39.15
+      }
+    }
+  ]
+}

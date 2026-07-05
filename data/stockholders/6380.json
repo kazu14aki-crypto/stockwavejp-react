@@ -1,0 +1,323 @@
+{
+  "secCode": "6380",
+  "issuerName": "オリエンタルチエン工業株式会社",
+  "updated_at": "2026/07/04 18:29 JST",
+  "latestDate": "2026-07-03",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社シーディーワン",
+      "shares": 165000,
+      "ratio": 10.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "片山チエン株式会社",
+      "shares": 138000,
+      "ratio": 9.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ORCHID PLUS PTE.LTD.\n（常任代理人　福和明子）",
+      "shares": 90000,
+      "ratio": 5.91,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社共有口",
+      "shares": 78000,
+      "ratio": 5.15,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "樋口尚子",
+      "shares": 73000,
+      "ratio": 4.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "加賀ホールディングス合同会社",
+      "shares": 70000,
+      "ratio": 4.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東海東京証券株式会社",
+      "shares": 65000,
+      "ratio": 4.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小松周平",
+      "shares": 45000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社Ｕｃａｐｉ",
+      "shares": 43000,
+      "ratio": 2.86,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 42000,
+      "ratio": 2.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.35,
+      "securities": 12.24,
+      "individual": 7.79
+    },
+    "individual_total": 7.79,
+    "top10_total": 53.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-03",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第107期(2025/04/01－2026/03/31)",
+      "docID": "S100YOOV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社シーディーワン",
+          "shares": 165000,
+          "ratio": 10.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "片山チエン株式会社",
+          "shares": 138000,
+          "ratio": 9.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ORCHID PLUS PTE.LTD.\n（常任代理人　福和明子）",
+          "shares": 90000,
+          "ratio": 5.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社共有口",
+          "shares": 78000,
+          "ratio": 5.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "樋口尚子",
+          "shares": 73000,
+          "ratio": 4.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "加賀ホールディングス合同会社",
+          "shares": 70000,
+          "ratio": 4.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東海東京証券株式会社",
+          "shares": 65000,
+          "ratio": 4.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小松周平",
+          "shares": 45000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社Ｕｃａｐｉ",
+          "shares": 43000,
+          "ratio": 2.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 42000,
+          "ratio": 2.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.35,
+          "securities": 12.24,
+          "individual": 7.79
+        },
+        "individual_total": 7.79,
+        "top10_total": 53.38
+      }
+    },
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第107期(2025/04/01－2026/03/31)",
+      "docID": "S100YHXB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社シーディーワン",
+          "shares": 165000,
+          "ratio": 10.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "片山チエン株式会社",
+          "shares": 138000,
+          "ratio": 9.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ORCHID PLUS PTE.LTD.\n（常任代理人　福和明子）",
+          "shares": 90000,
+          "ratio": 5.91,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社共有口",
+          "shares": 78000,
+          "ratio": 5.15,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "樋口尚子",
+          "shares": 73000,
+          "ratio": 4.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "加賀ホールディングス合同会社",
+          "shares": 70000,
+          "ratio": 4.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東海東京証券株式会社",
+          "shares": 65000,
+          "ratio": 4.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小松周平",
+          "shares": 45000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社Ｕｃａｐｉ",
+          "shares": 43000,
+          "ratio": 2.86,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 42000,
+          "ratio": 2.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.35,
+          "securities": 12.24,
+          "individual": 7.79
+        },
+        "individual_total": 7.79,
+        "top10_total": 53.38
+      }
+    }
+  ]
+}

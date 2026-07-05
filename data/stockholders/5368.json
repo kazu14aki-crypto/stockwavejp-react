@@ -1,0 +1,218 @@
+{
+  "secCode": "5368",
+  "issuerName": "日本インシュレーション株式会社",
+  "updated_at": "2026/07/04 18:55 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 872400,
+      "ratio": 10.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大橋　ゆふみ",
+      "shares": 680759,
+      "ratio": 7.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本政策投資銀行",
+      "shares": 500000,
+      "ratio": 5.77,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大橋　健一",
+      "shares": 457831,
+      "ratio": 5.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社大垣共立銀行",
+      "shares": 349000,
+      "ratio": 4.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 349000,
+      "ratio": 4.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大橋　睦",
+      "shares": 170000,
+      "ratio": 1.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鈴木　可奈子",
+      "shares": 170000,
+      "ratio": 1.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱ＵＦＪキャピタル株式会社",
+      "shares": 155100,
+      "ratio": 1.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "共友リース株式会社",
+      "shares": 151000,
+      "ratio": 1.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 13.6,
+      "individual": 17.05,
+      "government": 5.77,
+      "financial": 8.06
+    },
+    "individual_total": 17.05,
+    "top10_total": 44.48
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第81期(2025/04/01－2026/03/31)",
+      "docID": "S100YG71",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 872400,
+          "ratio": 10.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大橋　ゆふみ",
+          "shares": 680759,
+          "ratio": 7.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本政策投資銀行",
+          "shares": 500000,
+          "ratio": 5.77,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大橋　健一",
+          "shares": 457831,
+          "ratio": 5.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社大垣共立銀行",
+          "shares": 349000,
+          "ratio": 4.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 349000,
+          "ratio": 4.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大橋　睦",
+          "shares": 170000,
+          "ratio": 1.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鈴木　可奈子",
+          "shares": 170000,
+          "ratio": 1.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱ＵＦＪキャピタル株式会社",
+          "shares": 155100,
+          "ratio": 1.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "共友リース株式会社",
+          "shares": 151000,
+          "ratio": 1.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 13.6,
+          "individual": 17.05,
+          "government": 5.77,
+          "financial": 8.06
+        },
+        "individual_total": 17.05,
+        "top10_total": 44.48
+      }
+    }
+  ]
+}

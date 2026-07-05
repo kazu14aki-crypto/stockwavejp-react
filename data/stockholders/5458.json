@@ -1,0 +1,220 @@
+{
+  "secCode": "5458",
+  "issuerName": "高砂鐵工株式会社",
+  "updated_at": "2026/07/04 18:35 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本製鉄株式会社",
+      "shares": 922000,
+      "ratio": 30.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三井物産株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 500000,
+      "ratio": 16.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD - SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221-623793\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 164000,
+      "ratio": 5.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社大谷製作所",
+      "shares": 155000,
+      "ratio": 5.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "窪田正史",
+      "shares": 78000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "新海秀治",
+      "shares": 70000,
+      "ratio": 2.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "杉山登己",
+      "shares": 59000,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中央日本土地建物株式会社",
+      "shares": 50000,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "豊証券株式会社",
+      "shares": 33000,
+      "ratio": 1.1,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "有限会社サイトー商店",
+      "shares": 31000,
+      "ratio": 1.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.6,
+      "trust": 16.65,
+      "financial": 5.48,
+      "individual": 6.9,
+      "securities": 1.1
+    },
+    "individual_total": 6.9,
+    "top10_total": 68.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第154期(2025/04/01－2026/03/31)",
+      "docID": "S100YH3H",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本製鉄株式会社",
+          "shares": 922000,
+          "ratio": 30.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三井物産株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 500000,
+          "ratio": 16.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "THE HONGKONG AND SHANGHAI BANKING CORPORATION LTD - SINGAPORE BRANCH PRIVATE BANKING DIVISION CLIENTS A/C 8221-623793\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 164000,
+          "ratio": 5.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社大谷製作所",
+          "shares": 155000,
+          "ratio": 5.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "窪田正史",
+          "shares": 78000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "新海秀治",
+          "shares": 70000,
+          "ratio": 2.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "杉山登己",
+          "shares": 59000,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中央日本土地建物株式会社",
+          "shares": 50000,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "豊証券株式会社",
+          "shares": 33000,
+          "ratio": 1.1,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "有限会社サイトー商店",
+          "shares": 31000,
+          "ratio": 1.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.6,
+          "trust": 16.65,
+          "financial": 5.48,
+          "individual": 6.9,
+          "securities": 1.1
+        },
+        "individual_total": 6.9,
+        "top10_total": 68.73
+      }
+    }
+  ]
+}

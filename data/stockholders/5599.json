@@ -1,0 +1,220 @@
+{
+  "secCode": "5599",
+  "issuerName": "Ｓ＆Ｊ株式会社",
+  "updated_at": "2026/07/04 18:38 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社マクニカ",
+      "shares": 2100000,
+      "ratio": 37.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三輪　信雄",
+      "shares": 1020000,
+      "ratio": 18.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＢＮＰ",
+      "shares": 600000,
+      "ratio": 10.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "石川　剛",
+      "shares": 250000,
+      "ratio": 4.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "木下　圭一郎",
+      "shares": 139100,
+      "ratio": 2.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 65000,
+      "ratio": 1.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 64727,
+      "ratio": 1.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n(常任代理人　野村證券株式会社)",
+      "shares": 62100,
+      "ratio": 1.11,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 62000,
+      "ratio": 1.11,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "神田　隆生",
+      "shares": 35200,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 48.46,
+      "individual": 25.93,
+      "trust": 2.28,
+      "securities": 1.16,
+      "foreign": 1.11
+    },
+    "individual_total": 25.93,
+    "top10_total": 78.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/04/01－2026/03/31)",
+      "docID": "S100YHZO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社マクニカ",
+          "shares": 2100000,
+          "ratio": 37.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三輪　信雄",
+          "shares": 1020000,
+          "ratio": 18.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＢＮＰ",
+          "shares": 600000,
+          "ratio": 10.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "石川　剛",
+          "shares": 250000,
+          "ratio": 4.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "木下　圭一郎",
+          "shares": 139100,
+          "ratio": 2.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 65000,
+          "ratio": 1.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 64727,
+          "ratio": 1.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n(常任代理人　野村證券株式会社)",
+          "shares": 62100,
+          "ratio": 1.11,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 62000,
+          "ratio": 1.11,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "神田　隆生",
+          "shares": 35200,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 48.46,
+          "individual": 25.93,
+          "trust": 2.28,
+          "securities": 1.16,
+          "foreign": 1.11
+        },
+        "individual_total": 25.93,
+        "top10_total": 78.94
+      }
+    }
+  ]
+}

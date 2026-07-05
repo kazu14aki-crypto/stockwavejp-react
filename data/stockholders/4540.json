@@ -1,0 +1,218 @@
+{
+  "secCode": "4540",
+  "issuerName": "株式会社ツムラ",
+  "updated_at": "2026/07/04 18:44 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱信託口",
+      "shares": 11780000,
+      "ratio": 15.65,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＢＯＣＨＫ　ＦＯＲ　ＰＩＮＧ　ＡＮ　ＬＩＦＥ　ＩＮＳＵＲＡＮＣＥ　ＣＯＭＰＡＮＹ　ＯＦ　ＣＨＩＮＡ　ＬＴＤ (㈱三菱ＵＦＪ銀行)",
+      "shares": 7675000,
+      "ratio": 10.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＳＴＡＴＥ  ＳＴＲＥＥＴ  ＢＡＮＫ  ＡＮ Ｄ  ＴＲＵＳＴ  ＣＯＭＰＡＮＹ  ５０５００１(常任代理人　㈱みずほ銀行決済営業部)",
+      "shares": 4605000,
+      "ratio": 6.12,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱日本カストディ銀行信託口",
+      "shares": 4109000,
+      "ratio": 5.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＢＲＩＧＨＴ ＲＩＤＥ ＬＩＭＩＴＥＤ (常任代理人　三田証券㈱)",
+      "shares": 1692000,
+      "ratio": 2.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ツムラグループ従業員持株会",
+      "shares": 1511000,
+      "ratio": 2.01,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 1348000,
+      "ratio": 1.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＢＮＹＭ ＡＳ ＡＧＴ／ＣＬＴＳ １０ＰＥＲＣＥＮＴ(常任代理人㈱三菱ＵＦＪ銀行)",
+      "shares": 1315000,
+      "ratio": 1.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行㈱（投信口）",
+      "shares": 1277000,
+      "ratio": 1.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ　３８５７８１(常任代理人　㈱みずほ銀行決済営業部)",
+      "shares": 983000,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 22.81,
+      "financial": 21.17,
+      "securities": 2.25,
+      "employee": 2.01
+    },
+    "individual_total": 0,
+    "top10_total": 48.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第90期(2025/04/01－2026/03/31)",
+      "docID": "S100YFC1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱信託口",
+          "shares": 11780000,
+          "ratio": 15.65,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＢＯＣＨＫ　ＦＯＲ　ＰＩＮＧ　ＡＮ　ＬＩＦＥ　ＩＮＳＵＲＡＮＣＥ　ＣＯＭＰＡＮＹ　ＯＦ　ＣＨＩＮＡ　ＬＴＤ (㈱三菱ＵＦＪ銀行)",
+          "shares": 7675000,
+          "ratio": 10.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＳＴＡＴＥ  ＳＴＲＥＥＴ  ＢＡＮＫ  ＡＮ Ｄ  ＴＲＵＳＴ  ＣＯＭＰＡＮＹ  ５０５００１(常任代理人　㈱みずほ銀行決済営業部)",
+          "shares": 4605000,
+          "ratio": 6.12,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱日本カストディ銀行信託口",
+          "shares": 4109000,
+          "ratio": 5.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＢＲＩＧＨＴ ＲＩＤＥ ＬＩＭＩＴＥＤ (常任代理人　三田証券㈱)",
+          "shares": 1692000,
+          "ratio": 2.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ツムラグループ従業員持株会",
+          "shares": 1511000,
+          "ratio": 2.01,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 1348000,
+          "ratio": 1.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＢＮＹＭ ＡＳ ＡＧＴ／ＣＬＴＳ １０ＰＥＲＣＥＮＴ(常任代理人㈱三菱ＵＦＪ銀行)",
+          "shares": 1315000,
+          "ratio": 1.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行㈱（投信口）",
+          "shares": 1277000,
+          "ratio": 1.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰ ＭＯＲＧＡＮ ＣＨＡＳＥ ＢＡＮＫ　３８５７８１(常任代理人　㈱みずほ銀行決済営業部)",
+          "shares": 983000,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 22.81,
+          "financial": 21.17,
+          "securities": 2.25,
+          "employee": 2.01
+        },
+        "individual_total": 0,
+        "top10_total": 48.24
+      }
+    }
+  ]
+}

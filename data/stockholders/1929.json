@@ -1,0 +1,220 @@
+{
+  "secCode": "1929",
+  "issuerName": "日特建設株式会社",
+  "updated_at": "2026/07/04 18:46 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社エーエヌホールディングス",
+      "shares": 24155000,
+      "ratio": 57.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2403000,
+      "ratio": 5.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日特建設社員持株会",
+      "shares": 1448000,
+      "ratio": 3.46,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 610000,
+      "ratio": 1.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日特建設持株協力会",
+      "shares": 527000,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "BNYM RE BNYMLB RE GPP CLIENT MONEY AND ASSETS AC\n（常任代理人\n株式会社三菱UFJ銀行）",
+      "shares": 411000,
+      "ratio": 0.98,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "竹内理人",
+      "shares": 185000,
+      "ratio": 0.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（株式会社三菱UFJ銀行）",
+      "shares": 152000,
+      "ratio": 0.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS NEW YORK BRANCH － PRIME BROKERAGE CLEARANCE ACCOUNT\n（香港上海銀行東京支店）",
+      "shares": 140000,
+      "ratio": 0.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT\n（シティバンク、エヌ・エイ東京支店）",
+      "shares": 133000,
+      "ratio": 0.31,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 57.83,
+      "trust": 7.21,
+      "employee": 3.46,
+      "individual": 1.7,
+      "foreign": 1.98
+    },
+    "individual_total": 1.7,
+    "top10_total": 72.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/04/01－2026/03/31)",
+      "docID": "S100YIDU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社エーエヌホールディングス",
+          "shares": 24155000,
+          "ratio": 57.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2403000,
+          "ratio": 5.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日特建設社員持株会",
+          "shares": 1448000,
+          "ratio": 3.46,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 610000,
+          "ratio": 1.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日特建設持株協力会",
+          "shares": 527000,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "BNYM RE BNYMLB RE GPP CLIENT MONEY AND ASSETS AC\n（常任代理人\n株式会社三菱UFJ銀行）",
+          "shares": 411000,
+          "ratio": 0.98,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "竹内理人",
+          "shares": 185000,
+          "ratio": 0.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNYM AS AGT/CLTS NON TREATY JASDEC\n（株式会社三菱UFJ銀行）",
+          "shares": 152000,
+          "ratio": 0.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS NEW YORK BRANCH － PRIME BROKERAGE CLEARANCE ACCOUNT\n（香港上海銀行東京支店）",
+          "shares": 140000,
+          "ratio": 0.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT\n（シティバンク、エヌ・エイ東京支店）",
+          "shares": 133000,
+          "ratio": 0.31,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 57.83,
+          "trust": 7.21,
+          "employee": 3.46,
+          "individual": 1.7,
+          "foreign": 1.98
+        },
+        "individual_total": 1.7,
+        "top10_total": 72.18
+      }
+    }
+  ]
+}

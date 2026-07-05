@@ -1,0 +1,216 @@
+{
+  "secCode": "3779",
+  "issuerName": "ジェイ・エスコムホールディングス株式会社",
+  "updated_at": "2026/07/04 18:23 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＫＪＣインター",
+      "shares": 3530000,
+      "ratio": 30.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ベータグリッド",
+      "shares": 1126000,
+      "ratio": 9.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 577000,
+      "ratio": 4.99,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ジャック",
+      "shares": 570000,
+      "ratio": 4.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "佐藤　公彦",
+      "shares": 500000,
+      "ratio": 4.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大木　塁",
+      "shares": 330000,
+      "ratio": 2.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "菅　智茂",
+      "shares": 215000,
+      "ratio": 1.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "辻　貴滋",
+      "shares": 160000,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 159000,
+      "ratio": 1.38,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "宗田　こずえ",
+      "shares": 120000,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.18,
+      "securities": 6.37,
+      "individual": 11.46
+    },
+    "individual_total": 11.46,
+    "top10_total": 63.01
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YHI1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＫＪＣインター",
+          "shares": 3530000,
+          "ratio": 30.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ベータグリッド",
+          "shares": 1126000,
+          "ratio": 9.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 577000,
+          "ratio": 4.99,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ジャック",
+          "shares": 570000,
+          "ratio": 4.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "佐藤　公彦",
+          "shares": 500000,
+          "ratio": 4.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大木　塁",
+          "shares": 330000,
+          "ratio": 2.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "菅　智茂",
+          "shares": 215000,
+          "ratio": 1.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "辻　貴滋",
+          "shares": 160000,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 159000,
+          "ratio": 1.38,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "宗田　こずえ",
+          "shares": 120000,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.18,
+          "securities": 6.37,
+          "individual": 11.46
+        },
+        "individual_total": 11.46,
+        "top10_total": 63.01
+      }
+    }
+  ]
+}

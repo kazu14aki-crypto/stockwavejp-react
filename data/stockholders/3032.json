@@ -1,0 +1,214 @@
+{
+  "secCode": "3032",
+  "issuerName": "株式会社ゴルフ・ドゥ",
+  "updated_at": "2026/07/04 18:18 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "松　田　芳　久",
+      "shares": 1284800,
+      "ratio": 26.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "楠　木　哲　也",
+      "shares": 243400,
+      "ratio": 5.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "伊　東　龍　也",
+      "shares": 117500,
+      "ratio": 2.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "竹　田　慎",
+      "shares": 80000,
+      "ratio": 1.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "若　杉　精　三　郎",
+      "shares": 54000,
+      "ratio": 1.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "フォーク株式会社",
+      "shares": 52800,
+      "ratio": 1.08,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "今　井　み　き",
+      "shares": 52000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "谷　口　政　人",
+      "shares": 50600,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上　遠　野　俊　一",
+      "shares": 45000,
+      "ratio": 0.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "佐　久　間　功",
+      "shares": 26000,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 40.13,
+      "corporate": 1.08
+    },
+    "individual_total": 40.13,
+    "top10_total": 41.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第39期(2025/04/01－2026/03/31)",
+      "docID": "S100YHOE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "松　田　芳　久",
+          "shares": 1284800,
+          "ratio": 26.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "楠　木　哲　也",
+          "shares": 243400,
+          "ratio": 5.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "伊　東　龍　也",
+          "shares": 117500,
+          "ratio": 2.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "竹　田　慎",
+          "shares": 80000,
+          "ratio": 1.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "若　杉　精　三　郎",
+          "shares": 54000,
+          "ratio": 1.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "フォーク株式会社",
+          "shares": 52800,
+          "ratio": 1.08,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "今　井　み　き",
+          "shares": 52000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "谷　口　政　人",
+          "shares": 50600,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上　遠　野　俊　一",
+          "shares": 45000,
+          "ratio": 0.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "佐　久　間　功",
+          "shares": 26000,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 40.13,
+          "corporate": 1.08
+        },
+        "individual_total": 40.13,
+        "top10_total": 41.21
+      }
+    }
+  ]
+}

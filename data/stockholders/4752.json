@@ -1,0 +1,220 @@
+{
+  "secCode": "4752",
+  "issuerName": "株式会社　昭和システムエンジニアリング",
+  "updated_at": "2026/07/04 18:47 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "尾崎　裕一",
+      "shares": 1019900,
+      "ratio": 23.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社オーエム商事",
+      "shares": 370000,
+      "ratio": 8.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "古殿　恭子",
+      "shares": 304000,
+      "ratio": 7.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社愛媛銀行",
+      "shares": 180000,
+      "ratio": 4.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "昭和システムエンジニアリング\n従業員持株会",
+      "shares": 167100,
+      "ratio": 3.9,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＩＰＲＯＧＹ株式会社",
+      "shares": 150000,
+      "ratio": 3.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山口　勝彦",
+      "shares": 125100,
+      "ratio": 2.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 107900,
+      "ratio": 2.52,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "戸堀　淳子",
+      "shares": 100000,
+      "ratio": 2.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山口　岳彦",
+      "shares": 96000,
+      "ratio": 2.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.41,
+      "corporate": 12.14,
+      "financial": 4.2,
+      "employee": 3.9,
+      "other": 2.52
+    },
+    "individual_total": 38.41,
+    "top10_total": 61.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100YE2I",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "尾崎　裕一",
+          "shares": 1019900,
+          "ratio": 23.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社オーエム商事",
+          "shares": 370000,
+          "ratio": 8.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "古殿　恭子",
+          "shares": 304000,
+          "ratio": 7.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社愛媛銀行",
+          "shares": 180000,
+          "ratio": 4.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "昭和システムエンジニアリング\n従業員持株会",
+          "shares": 167100,
+          "ratio": 3.9,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＩＰＲＯＧＹ株式会社",
+          "shares": 150000,
+          "ratio": 3.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山口　勝彦",
+          "shares": 125100,
+          "ratio": 2.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 107900,
+          "ratio": 2.52,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "戸堀　淳子",
+          "shares": 100000,
+          "ratio": 2.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山口　岳彦",
+          "shares": 96000,
+          "ratio": 2.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.41,
+          "corporate": 12.14,
+          "financial": 4.2,
+          "employee": 3.9,
+          "other": 2.52
+        },
+        "individual_total": 38.41,
+        "top10_total": 61.17
+      }
+    }
+  ]
+}

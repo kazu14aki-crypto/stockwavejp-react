@@ -1,0 +1,326 @@
+{
+  "secCode": "9818",
+  "issuerName": "大丸エナウィン株式会社",
+  "updated_at": "2026/07/04 18:21 JST",
+  "latestDate": "2026-06-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大丸エナウィン共栄会",
+      "shares": 920000,
+      "ratio": 11.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "ＥＮＥＯＳグローブ株式会社",
+      "shares": 498000,
+      "ratio": 6.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信ＫＫ投資事業有限責任\n組合　無限責任組合員光通信\n株式会社",
+      "shares": 369000,
+      "ratio": 4.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社パロマ",
+      "shares": 354000,
+      "ratio": 4.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大丸エナウィン社員持株会",
+      "shares": 300000,
+      "ratio": 3.91,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "青　木　尚　史",
+      "shares": 239000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "堀川産業株式会社",
+      "shares": 225000,
+      "ratio": 2.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大　道　薫",
+      "shares": 206000,
+      "ratio": 2.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "伊　藤　吉　朝",
+      "shares": 193000,
+      "ratio": 2.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 182000,
+      "ratio": 2.37,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 20.32,
+      "corporate": 18.87,
+      "employee": 3.91,
+      "financial": 2.37
+    },
+    "individual_total": 20.32,
+    "top10_total": 45.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-30",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YNGJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大丸エナウィン共栄会",
+          "shares": 920000,
+          "ratio": 11.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "ＥＮＥＯＳグローブ株式会社",
+          "shares": 498000,
+          "ratio": 6.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任\n組合　無限責任組合員光通信\n株式会社",
+          "shares": 369000,
+          "ratio": 4.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社パロマ",
+          "shares": 354000,
+          "ratio": 4.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大丸エナウィン社員持株会",
+          "shares": 300000,
+          "ratio": 3.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "青　木　尚　史",
+          "shares": 239000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "堀川産業株式会社",
+          "shares": 225000,
+          "ratio": 2.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大　道　薫",
+          "shares": 206000,
+          "ratio": 2.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊　藤　吉　朝",
+          "shares": 193000,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 182000,
+          "ratio": 2.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 20.32,
+          "corporate": 18.87,
+          "employee": 3.91,
+          "financial": 2.37
+        },
+        "individual_total": 20.32,
+        "top10_total": 45.47
+      }
+    },
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/04/01－2026/03/31)",
+      "docID": "S100YII7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大丸エナウィン共栄会",
+          "shares": 920000,
+          "ratio": 11.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "ＥＮＥＯＳグローブ株式会社",
+          "shares": 498000,
+          "ratio": 6.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信ＫＫ投資事業有限責任\n組合　無限責任組合員光通信\n株式会社",
+          "shares": 369000,
+          "ratio": 4.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社パロマ",
+          "shares": 354000,
+          "ratio": 4.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大丸エナウィン社員持株会",
+          "shares": 300000,
+          "ratio": 3.91,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "青　木　尚　史",
+          "shares": 239000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "堀川産業株式会社",
+          "shares": 225000,
+          "ratio": 2.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大　道　薫",
+          "shares": 206000,
+          "ratio": 2.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊　藤　吉　朝",
+          "shares": 193000,
+          "ratio": 2.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 182000,
+          "ratio": 2.37,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 20.32,
+          "corporate": 18.87,
+          "employee": 3.91,
+          "financial": 2.37
+        },
+        "individual_total": 20.32,
+        "top10_total": 45.47
+      }
+    }
+  ]
+}

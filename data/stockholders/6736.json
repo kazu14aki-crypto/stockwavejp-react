@@ -1,0 +1,218 @@
+{
+  "secCode": "6736",
+  "issuerName": "サン電子株式会社",
+  "updated_at": "2026/07/04 18:11 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東海エンジニアリング株式会社",
+      "shares": 4267600,
+      "ratio": 19.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "Hebara Holdco II, L.P.(常任代理人 三田証券株式会社)",
+      "shares": 4239600,
+      "ratio": 19.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "OASIS INVESTMENTS II MASTER FUND LTD.(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 2031672,
+      "ratio": 9.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505010(株式会社みずほ銀行決済営業部)",
+      "shares": 1700000,
+      "ratio": 7.9,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "OASIS JAPAN STRATEGIC FUND LTD.(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 1167428,
+      "ratio": 5.4,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GOLDMAN SACHS INTERNATIONAL(常任代理人 ゴールドマン・サックス証券株式会社)",
+      "shares": 1112103,
+      "ratio": 5.2,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社藤商事",
+      "shares": 740000,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "内海 倫江",
+      "shares": 680000,
+      "ratio": 3.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "CGML PB CLIENT ACCOUNT/COLLATERAL(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 550471,
+      "ratio": 2.6,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES(常任代理人 モルガン・スタンレーMUFG証券株式会社)",
+      "shares": 398681,
+      "ratio": 1.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.6,
+      "securities": 21.6,
+      "foreign": 21.1,
+      "individual": 3.2
+    },
+    "individual_total": 3.2,
+    "top10_total": 78.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/04/01－2026/03/31)",
+      "docID": "S100YKGG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東海エンジニアリング株式会社",
+          "shares": 4267600,
+          "ratio": 19.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "Hebara Holdco II, L.P.(常任代理人 三田証券株式会社)",
+          "shares": 4239600,
+          "ratio": 19.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "OASIS INVESTMENTS II MASTER FUND LTD.(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 2031672,
+          "ratio": 9.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505010(株式会社みずほ銀行決済営業部)",
+          "shares": 1700000,
+          "ratio": 7.9,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "OASIS JAPAN STRATEGIC FUND LTD.(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 1167428,
+          "ratio": 5.4,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GOLDMAN SACHS INTERNATIONAL(常任代理人 ゴールドマン・サックス証券株式会社)",
+          "shares": 1112103,
+          "ratio": 5.2,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社藤商事",
+          "shares": 740000,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "内海 倫江",
+          "shares": 680000,
+          "ratio": 3.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "CGML PB CLIENT ACCOUNT/COLLATERAL(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 550471,
+          "ratio": 2.6,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES(常任代理人 モルガン・スタンレーMUFG証券株式会社)",
+          "shares": 398681,
+          "ratio": 1.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.6,
+          "securities": 21.6,
+          "foreign": 21.1,
+          "individual": 3.2
+        },
+        "individual_total": 3.2,
+        "top10_total": 78.5
+      }
+    }
+  ]
+}

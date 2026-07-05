@@ -1,0 +1,218 @@
+{
+  "secCode": "7762",
+  "issuerName": "シチズン時計株式会社",
+  "updated_at": "2026/07/04 18:32 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 33713546,
+      "ratio": 13.78,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 22395418,
+      "ratio": 9.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 11948346,
+      "ratio": 4.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "BBH (LUX) FOR FIDELITY FUNDS -JAPAN ADVANTAGE POOL(常任代理人　株式会社三菱ＵＦＪ銀行)",
+      "shares": 10350200,
+      "ratio": 4.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日亜化学工業株式会社",
+      "shares": 10000000,
+      "ratio": 4.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三菱ＵＦＪ信託銀行株式会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 4568982,
+      "ratio": 1.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社みずほ銀行 (常任代理人　株式会社日本カストディ銀行)",
+      "shares": 4309200,
+      "ratio": 1.76,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "シチズングループ従業員持株会",
+      "shares": 4294961,
+      "ratio": 1.76,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "清水建設株式会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+      "shares": 4128000,
+      "ratio": 1.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUSTCOMPANY 505223(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 3250481,
+      "ratio": 1.33,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 33.13,
+      "foreign": 5.56,
+      "corporate": 4.09,
+      "employee": 1.76
+    },
+    "individual_total": 0,
+    "top10_total": 44.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第141期(2025/04/01－2026/03/31)",
+      "docID": "S100YGYK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 33713546,
+          "ratio": 13.78,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 22395418,
+          "ratio": 9.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 11948346,
+          "ratio": 4.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BBH (LUX) FOR FIDELITY FUNDS -JAPAN ADVANTAGE POOL(常任代理人　株式会社三菱ＵＦＪ銀行)",
+          "shares": 10350200,
+          "ratio": 4.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日亜化学工業株式会社",
+          "shares": 10000000,
+          "ratio": 4.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三菱ＵＦＪ信託銀行株式会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 4568982,
+          "ratio": 1.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社みずほ銀行 (常任代理人　株式会社日本カストディ銀行)",
+          "shares": 4309200,
+          "ratio": 1.76,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "シチズングループ従業員持株会",
+          "shares": 4294961,
+          "ratio": 1.76,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "清水建設株式会社(常任代理人　日本マスタートラスト信託銀行株式会社)",
+          "shares": 4128000,
+          "ratio": 1.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUSTCOMPANY 505223(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 3250481,
+          "ratio": 1.33,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 33.13,
+          "foreign": 5.56,
+          "corporate": 4.09,
+          "employee": 1.76
+        },
+        "individual_total": 0,
+        "top10_total": 44.54
+      }
+    }
+  ]
+}

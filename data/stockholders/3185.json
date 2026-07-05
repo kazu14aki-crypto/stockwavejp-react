@@ -1,0 +1,216 @@
+{
+  "secCode": "3185",
+  "issuerName": "夢展望株式会社",
+  "updated_at": "2026/07/04 18:48 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＲＩＺＡＰグループ株式会社",
+      "shares": 8330400,
+      "ratio": 45.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 696426,
+      "ratio": 3.79,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩネオトレード証券",
+      "shares": 355900,
+      "ratio": 1.94,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "荒井　三ノ進",
+      "shares": 301000,
+      "ratio": 1.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岡　隆宏",
+      "shares": 298800,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "鶴田　広美",
+      "shares": 215100,
+      "ratio": 1.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＧＭＯクリック証券株式会社",
+      "shares": 214600,
+      "ratio": 1.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "徳山　貴彦",
+      "shares": 176900,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社共有口",
+      "shares": 170300,
+      "ratio": 0.93,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松井証券株式会社",
+      "shares": 163200,
+      "ratio": 0.89,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.36,
+      "securities": 8.72,
+      "individual": 5.4
+    },
+    "individual_total": 5.4,
+    "top10_total": 59.48
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/04/01－2026/03/31)",
+      "docID": "S100YG5J",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＲＩＺＡＰグループ株式会社",
+          "shares": 8330400,
+          "ratio": 45.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 696426,
+          "ratio": 3.79,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩネオトレード証券",
+          "shares": 355900,
+          "ratio": 1.94,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "荒井　三ノ進",
+          "shares": 301000,
+          "ratio": 1.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡　隆宏",
+          "shares": 298800,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "鶴田　広美",
+          "shares": 215100,
+          "ratio": 1.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＧＭＯクリック証券株式会社",
+          "shares": 214600,
+          "ratio": 1.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "徳山　貴彦",
+          "shares": 176900,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 170300,
+          "ratio": 0.93,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松井証券株式会社",
+          "shares": 163200,
+          "ratio": 0.89,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.36,
+          "securities": 8.72,
+          "individual": 5.4
+        },
+        "individual_total": 5.4,
+        "top10_total": 59.48
+      }
+    }
+  ]
+}

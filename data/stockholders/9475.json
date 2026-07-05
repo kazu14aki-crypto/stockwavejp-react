@@ -1,0 +1,220 @@
+{
+  "secCode": "9475",
+  "issuerName": "株式会社昭文社ホールディングス",
+  "updated_at": "2026/07/04 18:39 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社エムティーアイ",
+      "shares": 5389000,
+      "ratio": 29.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＭＳＥ",
+      "shares": 3428000,
+      "ratio": 19.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "黒田　茂夫",
+      "shares": 1879000,
+      "ratio": 10.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 921000,
+      "ratio": 5.11,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "昭文社ホールディングス社員持株会",
+      "shares": 210000,
+      "ratio": 1.16,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ファウンダー・マップル",
+      "shares": 180000,
+      "ratio": 0.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+      "shares": 126000,
+      "ratio": 0.7,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 123000,
+      "ratio": 0.68,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱UFJ信託銀行株式会社",
+      "shares": 73000,
+      "ratio": 0.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "河村　政一",
+      "shares": 65000,
+      "ratio": 0.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.91,
+      "individual": 10.79,
+      "other": 5.81,
+      "employee": 1.16,
+      "financial": 1.08
+    },
+    "individual_total": 10.79,
+    "top10_total": 68.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第67期(2025/04/01－2026/03/31)",
+      "docID": "S100YH2P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社エムティーアイ",
+          "shares": 5389000,
+          "ratio": 29.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＭＳＥ",
+          "shares": 3428000,
+          "ratio": 19.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "黒田　茂夫",
+          "shares": 1879000,
+          "ratio": 10.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 921000,
+          "ratio": 5.11,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "昭文社ホールディングス社員持株会",
+          "shares": 210000,
+          "ratio": 1.16,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ファウンダー・マップル",
+          "shares": 180000,
+          "ratio": 0.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+          "shares": 126000,
+          "ratio": 0.7,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 123000,
+          "ratio": 0.68,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱UFJ信託銀行株式会社",
+          "shares": 73000,
+          "ratio": 0.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "河村　政一",
+          "shares": 65000,
+          "ratio": 0.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.91,
+          "individual": 10.79,
+          "other": 5.81,
+          "employee": 1.16,
+          "financial": 1.08
+        },
+        "individual_total": 10.79,
+        "top10_total": 68.75
+      }
+    }
+  ]
+}

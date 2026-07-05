@@ -1,0 +1,222 @@
+{
+  "secCode": "3598",
+  "issuerName": "山喜株式会社",
+  "updated_at": "2026/07/04 18:22 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "宮本　惠史",
+      "shares": 1504000,
+      "ratio": 10.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日清紡ホールディングス株式会社",
+      "shares": 703000,
+      "ratio": 4.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "山喜共伸会",
+      "shares": 648000,
+      "ratio": 4.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "丸紅株式会社",
+      "shares": 385000,
+      "ratio": 2.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東海東京証券株式会社",
+      "shares": 240000,
+      "ratio": 1.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社オフィスサポート",
+      "shares": 203000,
+      "ratio": 1.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "カンダコーポレーション株式会社",
+      "shares": 149000,
+      "ratio": 1.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山喜従業員持株会",
+      "shares": 116000,
+      "ratio": 0.82,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三井住友銀行",
+      "shares": 109000,
+      "ratio": 0.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 100000,
+      "ratio": 0.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 15.18,
+      "corporate": 10.18,
+      "securities": 1.69,
+      "employee": 0.82,
+      "financial": 0.77,
+      "trust": 0.71
+    },
+    "individual_total": 15.18,
+    "top10_total": 29.35
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第74期(2025/04/01－2026/03/31)",
+      "docID": "S100YI4G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "宮本　惠史",
+          "shares": 1504000,
+          "ratio": 10.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日清紡ホールディングス株式会社",
+          "shares": 703000,
+          "ratio": 4.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "山喜共伸会",
+          "shares": 648000,
+          "ratio": 4.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "丸紅株式会社",
+          "shares": 385000,
+          "ratio": 2.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東海東京証券株式会社",
+          "shares": 240000,
+          "ratio": 1.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社オフィスサポート",
+          "shares": 203000,
+          "ratio": 1.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "カンダコーポレーション株式会社",
+          "shares": 149000,
+          "ratio": 1.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山喜従業員持株会",
+          "shares": 116000,
+          "ratio": 0.82,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三井住友銀行",
+          "shares": 109000,
+          "ratio": 0.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 100000,
+          "ratio": 0.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 15.18,
+          "corporate": 10.18,
+          "securities": 1.69,
+          "employee": 0.82,
+          "financial": 0.77,
+          "trust": 0.71
+        },
+        "individual_total": 15.18,
+        "top10_total": 29.35
+      }
+    }
+  ]
+}

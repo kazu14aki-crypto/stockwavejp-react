@@ -1,0 +1,220 @@
+{
+  "secCode": "6517",
+  "issuerName": "デンヨー株式会社",
+  "updated_at": "2026/07/04 18:01 JST",
+  "latestDate": "2026-06-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ザ　エスエフピー　バリュー　\nリアライゼーション　マスター　\nファンド　エルティーディー\n（常任代理人 立花証券株式会社）",
+      "shares": 2165000,
+      "ratio": 10.32,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1831000,
+      "ratio": 8.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社久栄",
+      "shares": 1417000,
+      "ratio": 6.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "みずほ信託銀行株式会社　退職給付信託　みずほ銀行口　再信託受託者　株式会社日本カストディ銀行",
+      "shares": 1024000,
+      "ratio": 4.88,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行\n（信託Ｅ口）",
+      "shares": 737000,
+      "ratio": 3.51,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "デンヨー親栄会",
+      "shares": 659000,
+      "ratio": 3.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 7,
+      "name": "ジェーピー　モルガン　チェース　バンク\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 634000,
+      "ratio": 3.02,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "第一生命保険株式会社",
+      "shares": 610000,
+      "ratio": 2.91,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社鶴見製作所",
+      "shares": 543000,
+      "ratio": 2.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 540000,
+      "ratio": 2.57,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 10.32,
+      "trust": 17.12,
+      "corporate": 9.34,
+      "individual": 3.14,
+      "financial": 8.5
+    },
+    "individual_total": 3.14,
+    "top10_total": 48.42
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第78期(2025/04/01－2026/03/31)",
+      "docID": "S100YHXJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ザ　エスエフピー　バリュー　\nリアライゼーション　マスター　\nファンド　エルティーディー\n（常任代理人 立花証券株式会社）",
+          "shares": 2165000,
+          "ratio": 10.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1831000,
+          "ratio": 8.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社久栄",
+          "shares": 1417000,
+          "ratio": 6.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "みずほ信託銀行株式会社　退職給付信託　みずほ銀行口　再信託受託者　株式会社日本カストディ銀行",
+          "shares": 1024000,
+          "ratio": 4.88,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行\n（信託Ｅ口）",
+          "shares": 737000,
+          "ratio": 3.51,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "デンヨー親栄会",
+          "shares": 659000,
+          "ratio": 3.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 7,
+          "name": "ジェーピー　モルガン　チェース　バンク\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 634000,
+          "ratio": 3.02,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "第一生命保険株式会社",
+          "shares": 610000,
+          "ratio": 2.91,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社鶴見製作所",
+          "shares": 543000,
+          "ratio": 2.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 540000,
+          "ratio": 2.57,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 10.32,
+          "trust": 17.12,
+          "corporate": 9.34,
+          "individual": 3.14,
+          "financial": 8.5
+        },
+        "individual_total": 3.14,
+        "top10_total": 48.42
+      }
+    }
+  ]
+}

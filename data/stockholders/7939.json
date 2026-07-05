@@ -1,0 +1,216 @@
+{
+  "secCode": "7939",
+  "issuerName": "株式会社研創",
+  "updated_at": "2026/07/04 18:50 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社研創エンタープライズ",
+      "shares": 780000,
+      "ratio": 20.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "研創親和会",
+      "shares": 232000,
+      "ratio": 6.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "研創社員持株会",
+      "shares": 196000,
+      "ratio": 5.1,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "肥田　亘",
+      "shares": 150000,
+      "ratio": 3.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ゲイビ",
+      "shares": 100000,
+      "ratio": 2.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "林　航司",
+      "shares": 92000,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "林　大一郎",
+      "shares": 91000,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "林　誠二",
+      "shares": 79000,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中島産業株式会社",
+      "shares": 64000,
+      "ratio": 1.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社明智",
+      "shares": 41000,
+      "ratio": 1.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.7,
+      "individual": 16.8,
+      "employee": 5.1
+    },
+    "individual_total": 16.8,
+    "top10_total": 47.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/04/01－2026/03/31)",
+      "docID": "S100YEUJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社研創エンタープライズ",
+          "shares": 780000,
+          "ratio": 20.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "研創親和会",
+          "shares": 232000,
+          "ratio": 6.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "研創社員持株会",
+          "shares": 196000,
+          "ratio": 5.1,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "肥田　亘",
+          "shares": 150000,
+          "ratio": 3.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ゲイビ",
+          "shares": 100000,
+          "ratio": 2.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "林　航司",
+          "shares": 92000,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "林　大一郎",
+          "shares": 91000,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "林　誠二",
+          "shares": 79000,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中島産業株式会社",
+          "shares": 64000,
+          "ratio": 1.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社明智",
+          "shares": 41000,
+          "ratio": 1.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.7,
+          "individual": 16.8,
+          "employee": 5.1
+        },
+        "individual_total": 16.8,
+        "top10_total": 47.6
+      }
+    }
+  ]
+}

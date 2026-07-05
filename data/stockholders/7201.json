@@ -1,0 +1,216 @@
+{
+  "secCode": "7201",
+  "issuerName": "日産自動車株式会社",
+  "updated_at": "2026/07/04 18:57 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ナティクシス　エスエイ　アズ　トラスティー　フォー　フィデューシー　ニュートン　701910(常任代理人 株式会社みずほ銀行決済営業部) 　　　　　　(注)",
+      "shares": 693124000,
+      "ratio": 18.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ルノー　エスエイ(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 633107000,
+      "ratio": 17.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 391490000,
+      "ratio": 10.6,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ザ　バンク　オブ　ニユーヨーク　トリーテイー　ジヤスデツク　アカウント(常任代理人 株式会社三菱UFJ銀行決済事業部)",
+      "shares": 89186000,
+      "ratio": 2.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 71569000,
+      "ratio": 1.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "マン　インターナショナル　アイシーブイシー　マン　ジャパン　コアアルファ　ファンド(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 69503000,
+      "ratio": 1.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 61347000,
+      "ratio": 1.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "CGML PB CLIENT ACCOUNT/COLLATERAL(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 39722000,
+      "ratio": 1.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 37820000,
+      "ratio": 1.0,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ジェーピー　モルガン　チェース　バンク　385781(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 31684000,
+      "ratio": 0.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 43.7,
+      "trust": 12.5,
+      "foreign": 1.1
+    },
+    "individual_total": 0,
+    "top10_total": 57.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第127期(2025/04/01－2026/03/31)",
+      "docID": "S100YH2B",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ナティクシス　エスエイ　アズ　トラスティー　フォー　フィデューシー　ニュートン　701910(常任代理人 株式会社みずほ銀行決済営業部) 　　　　　　(注)",
+          "shares": 693124000,
+          "ratio": 18.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ルノー　エスエイ(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 633107000,
+          "ratio": 17.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 391490000,
+          "ratio": 10.6,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ザ　バンク　オブ　ニユーヨーク　トリーテイー　ジヤスデツク　アカウント(常任代理人 株式会社三菱UFJ銀行決済事業部)",
+          "shares": 89186000,
+          "ratio": 2.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 71569000,
+          "ratio": 1.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "マン　インターナショナル　アイシーブイシー　マン　ジャパン　コアアルファ　ファンド(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 69503000,
+          "ratio": 1.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　505001(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 61347000,
+          "ratio": 1.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "CGML PB CLIENT ACCOUNT/COLLATERAL(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 39722000,
+          "ratio": 1.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 37820000,
+          "ratio": 1.0,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ジェーピー　モルガン　チェース　バンク　385781(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 31684000,
+          "ratio": 0.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 43.7,
+          "trust": 12.5,
+          "foreign": 1.1
+        },
+        "individual_total": 0,
+        "top10_total": 57.3
+      }
+    }
+  ]
+}

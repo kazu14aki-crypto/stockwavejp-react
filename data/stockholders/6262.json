@@ -1,0 +1,222 @@
+{
+  "secCode": "6262",
+  "issuerName": "株式会社ＰＥＧＡＳＵＳ",
+  "updated_at": "2026/07/04 18:53 JST",
+  "latestDate": "2026-06-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "立花証券株式会社",
+      "shares": 3728000,
+      "ratio": 15.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1738000,
+      "ratio": 7.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社美馬",
+      "shares": 1553000,
+      "ratio": 6.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "板　東　敬　三",
+      "shares": 741000,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "吉　田　隆　子",
+      "shares": 709000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "美　馬　成　望",
+      "shares": 649000,
+      "ratio": 2.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "美　馬　正　道",
+      "shares": 478000,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "トリリオン投資事業有限責任組合",
+      "shares": 460000,
+      "ratio": 1.92,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＳＭＢＣ日興証券株式会社",
+      "shares": 416000,
+      "ratio": 1.74,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ）ＲＥＵ．Ｓ． ＴＡＸ ＥＸＥＭＰＴＥＤ ＰＥＮＳＩＯＮ ＦＵＮＤＳＳＥＣ ＬＥＮＤＩＮＧ （常任代理人　香港上海銀行東京支店)）",
+      "shares": 408000,
+      "ratio": 1.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 17.31,
+      "trust": 7.26,
+      "corporate": 6.49,
+      "individual": 10.78,
+      "other": 1.92,
+      "financial": 1.71
+    },
+    "individual_total": 10.78,
+    "top10_total": 45.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第80期(2025/04/01－2026/03/31)",
+      "docID": "S100YGO3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "立花証券株式会社",
+          "shares": 3728000,
+          "ratio": 15.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1738000,
+          "ratio": 7.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社美馬",
+          "shares": 1553000,
+          "ratio": 6.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "板　東　敬　三",
+          "shares": 741000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "吉　田　隆　子",
+          "shares": 709000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "美　馬　成　望",
+          "shares": 649000,
+          "ratio": 2.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "美　馬　正　道",
+          "shares": 478000,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "トリリオン投資事業有限責任組合",
+          "shares": 460000,
+          "ratio": 1.92,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＳＭＢＣ日興証券株式会社",
+          "shares": 416000,
+          "ratio": 1.74,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ）ＲＥＵ．Ｓ． ＴＡＸ ＥＸＥＭＰＴＥＤ ＰＥＮＳＩＯＮ ＦＵＮＤＳＳＥＣ ＬＥＮＤＩＮＧ （常任代理人　香港上海銀行東京支店)）",
+          "shares": 408000,
+          "ratio": 1.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 17.31,
+          "trust": 7.26,
+          "corporate": 6.49,
+          "individual": 10.78,
+          "other": 1.92,
+          "financial": 1.71
+        },
+        "individual_total": 10.78,
+        "top10_total": 45.47
+      }
+    }
+  ]
+}

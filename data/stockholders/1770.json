@@ -1,0 +1,220 @@
+{
+  "secCode": "1770",
+  "issuerName": "藤田エンジニアリング株式会社",
+  "updated_at": "2026/07/04 18:41 JST",
+  "latestDate": "2026-06-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "藤田　実",
+      "shares": 2306000,
+      "ratio": 25.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 2,
+      "name": "藤田エンジ取引先持株会",
+      "shares": 1105000,
+      "ratio": 12.04,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日東興産株式会社",
+      "shares": 699000,
+      "ratio": 7.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "藤田社員持株会",
+      "shares": 486000,
+      "ratio": 5.3,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社群馬銀行",
+      "shares": 400000,
+      "ratio": 4.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上田八木短資株式会社",
+      "shares": 264000,
+      "ratio": 2.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "群馬土地株式会社",
+      "shares": 240000,
+      "ratio": 2.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+      "shares": 237000,
+      "ratio": 2.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 221000,
+      "ratio": 2.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "住友生命保険相互会社",
+      "shares": 150000,
+      "ratio": 1.63,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 25.12,
+      "employee": 17.34,
+      "corporate": 15.69,
+      "financial": 5.99,
+      "securities": 2.41
+    },
+    "individual_total": 25.12,
+    "top10_total": 66.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/04/01－2026/03/31)",
+      "docID": "S100YGU7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "藤田　実",
+          "shares": 2306000,
+          "ratio": 25.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 2,
+          "name": "藤田エンジ取引先持株会",
+          "shares": 1105000,
+          "ratio": 12.04,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日東興産株式会社",
+          "shares": 699000,
+          "ratio": 7.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "藤田社員持株会",
+          "shares": 486000,
+          "ratio": 5.3,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社群馬銀行",
+          "shares": 400000,
+          "ratio": 4.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上田八木短資株式会社",
+          "shares": 264000,
+          "ratio": 2.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "群馬土地株式会社",
+          "shares": 240000,
+          "ratio": 2.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "光通信KK投資事業有限責任組合無限責任組合員光通信株式会社",
+          "shares": 237000,
+          "ratio": 2.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 221000,
+          "ratio": 2.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友生命保険相互会社",
+          "shares": 150000,
+          "ratio": 1.63,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 25.12,
+          "employee": 17.34,
+          "corporate": 15.69,
+          "financial": 5.99,
+          "securities": 2.41
+        },
+        "individual_total": 25.12,
+        "top10_total": 66.55
+      }
+    }
+  ]
+}

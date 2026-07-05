@@ -1,0 +1,222 @@
+{
+  "secCode": "8163",
+  "issuerName": "ＳＲＳホールディングス株式会社",
+  "updated_at": "2026/07/04 18:19 JST",
+  "latestDate": "2026-06-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト\n信託銀行株式会社（信託口）",
+      "shares": 2904000,
+      "ratio": 7.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "エイチ・ツー・オー リテイリング株式会社",
+      "shares": 2557000,
+      "ratio": 6.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "重里　欣孝",
+      "shares": 1400000,
+      "ratio": 3.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱UFJ銀行",
+      "shares": 1199000,
+      "ratio": 2.89,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "重里　百合子",
+      "shares": 769000,
+      "ratio": 1.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "麒麟麦酒株式会社",
+      "shares": 600000,
+      "ratio": 1.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 385000,
+      "ratio": 0.93,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "アサヒビール株式会社",
+      "shares": 300000,
+      "ratio": 0.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "SRSホールディングス従業員持株会",
+      "shares": 220000,
+      "ratio": 0.53,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 139000,
+      "ratio": 0.34,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 7.93,
+      "corporate": 8.34,
+      "individual": 5.24,
+      "financial": 2.89,
+      "employee": 0.53,
+      "foreign": 0.34
+    },
+    "individual_total": 5.24,
+    "top10_total": 25.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-06-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第58期(2025/04/01－2026/03/31)",
+      "docID": "S100YIH4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト\n信託銀行株式会社（信託口）",
+          "shares": 2904000,
+          "ratio": 7.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "エイチ・ツー・オー リテイリング株式会社",
+          "shares": 2557000,
+          "ratio": 6.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "重里　欣孝",
+          "shares": 1400000,
+          "ratio": 3.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱UFJ銀行",
+          "shares": 1199000,
+          "ratio": 2.89,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "重里　百合子",
+          "shares": 769000,
+          "ratio": 1.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "麒麟麦酒株式会社",
+          "shares": 600000,
+          "ratio": 1.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 385000,
+          "ratio": 0.93,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "アサヒビール株式会社",
+          "shares": 300000,
+          "ratio": 0.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "SRSホールディングス従業員持株会",
+          "shares": 220000,
+          "ratio": 0.53,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 139000,
+          "ratio": 0.34,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 7.93,
+          "corporate": 8.34,
+          "individual": 5.24,
+          "financial": 2.89,
+          "employee": 0.53,
+          "foreign": 0.34
+        },
+        "individual_total": 5.24,
+        "top10_total": 25.27
+      }
+    }
+  ]
+}
