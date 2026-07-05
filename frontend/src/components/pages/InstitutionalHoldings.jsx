@@ -261,11 +261,18 @@ export default function InstitutionalHoldings() {
   const [shLoading, setShLoading] = useState(false)
   const [selectedIssuer, setSelectedIssuer] = useState(null)
 
+  const [siteStocks, setSiteStocks] = useState(null)  // サイト収録銘柄（検索の受け皿）
+
   useEffect(() => {
-    // 大株主データを取得
+    // 大株主データ（EDINET取得済み分）を取得
     fetch('/data/stockholders/index.json?t=' + Date.now())
       .then(r => r.json())
       .then(d => setShData(d))
+      .catch(() => {})
+    // サイト収録の全銘柄インデックス（EDINET未取得でも検索ヒットさせる）
+    fetch('/data/stock_index.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(d => setSiteStocks(d))
       .catch(() => {})
   }, [])
 
@@ -409,15 +416,22 @@ export default function InstitutionalHoldings() {
           {shData.items ? (
             (() => {
               const q = shSearchQ.trim().toLowerCase()
-              const filtered = q ? (shData.items||[]).filter(i =>
-                (i.issuerName||'').toLowerCase().includes(q) || (i.secCode||'').includes(q)
-              ) : shData.items||[]
+              // EDINET取得済みリストと、サイト収録銘柄インデックスをマージ（取得済みを優先）
+              const edinetItems = (shData.items||[]).map(i => ({ ...i, hasData: true }))
+              const edinetCodes = new Set(edinetItems.map(i => i.secCode))
+              const siteItems = siteStocks ? Object.values(siteStocks)
+                .map(s => ({ secCode: String(s.ticker||'').replace('.T',''), issuerName: s.name, hasData: false }))
+                .filter(s => s.secCode && !edinetCodes.has(s.secCode)) : []
+              const merged = [...edinetItems, ...siteItems]
+              const filtered = q ? merged.filter(i =>
+                (i.issuerName||'').toLowerCase().includes(q) || (i.secCode||'').toLowerCase().includes(q)
+              ) : edinetItems
               return filtered.length === 0 ? (
                 <div style={{ padding:'40px 20px', textAlign:'center', color:'var(--text3)', fontSize:'13px' }}>
                   <div style={{ fontSize:'32px', marginBottom:'10px' }}>🔍</div>
                   {shSearchQ ? (
                     <>
-                      <div>「{shSearchQ}」はインデックス未収載です</div>
+                      <div>「{shSearchQ}」はサイト収録銘柄にも見つかりません（コード・社名表記をご確認ください）</div>
                       {/^\d{4}[A-Z]?$/.test(shSearchQ.trim()) && (
                         <button onClick={async () => {
                           try {
@@ -436,9 +450,14 @@ export default function InstitutionalHoldings() {
                   {filtered.slice(0,30).map((item,i) => (
                     <div key={i} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px', cursor:'pointer' }}
                       onClick={async () => {
-                        const r = await fetch(`/data/stockholders/${item.secCode}.json?t=${Date.now()}`)
-                        const d = await r.json()
-                        setShData(prev => ({...prev, selected: d}))
+                        try {
+                          const r = await fetch(`/data/stockholders/${item.secCode}.json?t=${Date.now()}`)
+                          if (!r.ok) throw new Error()
+                          const d = await r.json()
+                          setShData(prev => ({...prev, selected: d}))
+                        } catch {
+                          alert(`${item.issuerName}（${item.secCode}）の有価証券報告書データは未取得です。\nEDINETバッチ（週次自動 / 手動はActionsからdays=370）の巡回後に表示されます。`)
+                        }
                       }}
                       onMouseEnter={e=>e.currentTarget.style.borderColor='rgba(74,158,255,0.4)'}
                       onMouseLeave={e=>e.currentTarget.style.borderColor='var(--border)'}
@@ -450,7 +469,9 @@ export default function InstitutionalHoldings() {
                             <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', background:'var(--bg3)', padding:'2px 6px', borderRadius:'3px' }}>{item.secCode}</span>
                           </div>
                           <div style={{ fontSize:'12px', color:'var(--text3)' }}>
-                            大株主 {item.holderCount}名　最終: {item.latestDate}
+                            {item.hasData
+                              ? <>大株主 {item.holderCount}名　最終: {item.latestDate}</>
+                              : <span style={{ color:'#ff8c42' }}>有報データ未取得（バッチ巡回待ち）</span>}
                           </div>
                         </div>
                         <span style={{ color:'var(--text3)', fontSize:'16px' }}>›</span>

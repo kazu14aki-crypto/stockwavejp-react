@@ -16,6 +16,7 @@ from data import (
     fetch_market_segments, fetch_segment_detail, fetch_theme_detail,
     MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache_extended,
     get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
+    get_valuation,
 )
 
 # ── サブスクリプションプラン判定（バリュエーション列のアクセス制御用）──
@@ -254,6 +255,64 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo"), uid: s
         "data":   fetch_theme_detail(theme_name, DEFAULT_THEMES.get(theme_name, {}), period),
     }
     return _strip_valuation_if_locked(payload, uid)
+
+
+@app.get("/api/stock-universe")
+def get_stock_universe(period: str = Query(default="5d"), uid: str = Query(default=None)):
+    """Dev Edgeスキャナ用: 全テーマ＋市場区分を横断した銘柄ユニバースを1コールで返す。
+    テーマの増減・将来の全銘柄収録に自動追随する（DEFAULT_THEMES/MARKET_SEGMENTSを走査）。"""
+    rows: dict = {}
+    theme_pct: dict = {}
+    for name, stocks in DEFAULT_THEMES.items():
+        try:
+            d = fetch_theme_detail(name, stocks, period)
+        except Exception:
+            continue
+        theme_pct[name] = d.get("avg")
+        for s in d.get("stocks", []):
+            code = s.get("ticker")
+            if not code:
+                continue
+            r = rows.get(code)
+            if r is None:
+                r = dict(s)
+                r.pop("spark", None)  # 転送量削減
+                r["themes"] = []
+                rows[code] = r
+            r["themes"].append(name)
+    # 市場区分（テーマ未収載銘柄の受け皿。将来の全銘柄収録時もここが拾う）
+    for seg, v in MARKET_SEGMENTS.items():
+        seg_stocks = v.get("stocks") if isinstance(v, dict) else None
+        if not seg_stocks:
+            continue
+        try:
+            d = fetch_theme_detail(seg, seg_stocks, period)
+        except Exception:
+            continue
+        for s in d.get("stocks", []):
+            code = s.get("ticker")
+            if code and code not in rows:
+                r = dict(s)
+                r.pop("spark", None)
+                r["themes"] = []
+                rows[code] = r
+    payload = {"period": period, "count": len(rows),
+               "theme_pct": theme_pct, "data": list(rows.values())}
+    return _strip_valuation_if_locked(payload, uid)
+
+
+@app.get("/api/stock-valuation/{ticker}")
+def get_stock_valuation(ticker: str, uid: str = Query(default=None)):
+    """個別銘柄詳細ページ用: PER/PBR/PEG等（サブスク未加入はロック）"""
+    subscribed = _is_subscribed(uid)
+    val = {}
+    try:
+        val = get_valuation(ticker) or {}
+    except Exception:
+        val = {}
+    keys = ("per", "per_fwd", "pbr", "pbr_fwd", "peg", "peg_fwd")
+    out = {k: (val.get(k) if subscribed else None) for k in keys}
+    return {"ticker": ticker, "valuation_locked": not subscribed, **out}
 
 
 @app.get("/api/stock-info/{ticker}")

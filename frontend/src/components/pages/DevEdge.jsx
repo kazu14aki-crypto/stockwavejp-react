@@ -23,6 +23,50 @@ const EVENTS = [
   { date: '9/11(金)', label: 'メジャーSQ',                 type: 'sell',  note: '' },
 ]
 
+// ── 需給イベントの自動生成（SQ=毎月第2金曜など日付が確定的なものはコードで算出） ──
+function autoEvents(now = new Date()) {
+  const ev = []
+  const fmt = (d) => `${d.getMonth() + 1}/${d.getDate()}(${'日月火水木金土'[d.getDay()]})`
+  for (let k = 0; k < 3; k++) {
+    const y = now.getFullYear(), m = now.getMonth() + k
+    // 第2金曜
+    const first = new Date(y, m, 1)
+    const firstFri = 1 + ((5 - first.getDay() + 7) % 7)
+    const sq = new Date(y, m, firstFri + 7)
+    if (sq >= now) {
+      const major = [2, 5, 8, 11].includes(sq.getMonth())
+      ev.push({ date: fmt(sq), label: major ? 'メジャーSQ' : 'オプションSQ', type: 'sell', note: 'SQ週は仕掛け的な値動きに注意', _d: sq })
+    }
+    // ETF分配金捻出売り（毎年7月上旬）
+    if (new Date(y, m, 1).getMonth() === 6) {
+      const etf = new Date(y, 6, 8)
+      if (etf >= now) ev.push({ date: `7/8前後`, label: 'ETF分配金 捻出売り', type: 'sell', note: '例年計1兆円規模。売り一巡後は押し目候補', _d: etf })
+    }
+    // 決算シーズン（1・4・7・10月下旬〜）
+    if ([0, 3, 6, 9].includes(new Date(y, m, 1).getMonth())) {
+      const kessan = new Date(y, new Date(y, m, 1).getMonth(), 25)
+      if (kessan >= now) ev.push({ date: `${kessan.getMonth() + 1}月下旬〜`, label: '決算発表ピーク', type: 'event', note: '持ち越しはサイズ管理を', _d: kessan })
+    }
+  }
+  return ev.sort((a, b) => a._d - b._d)
+}
+
+// ── 月別アノマリー（日本株の季節性の目安。過信せず「逆らっていないか」の確認用） ──
+const MONTH_ANOMALY = {
+  1: '1月効果（小型株優位）・新年資金流入。後半は米決算待ちで停滞しやすい',
+  2: '節分天井の警戒月。中旬以降は3月期末に向けた配当取りが始まる',
+  3: '期末対策・配当権利取りで堅調→権利落ち後は需給悪化。月末リバランス売りに注意',
+  4: '新年度資金流入で年間有数の強い月（4月効果）。機関の新年度ポジション構築',
+  5: 'セルインメイ。GW明けの決算出尽くしと海外勢の利益確定が重なりやすい',
+  6: 'メジャーSQ・配当再投資（下旬）で需給イベント多め。株主総会シーズン',
+  7: '前半はETF分配金売りで需給悪化→通過後はサマーラリーに転じやすい',
+  8: 'お盆の薄商いで急変しやすい月。夏枯れ相場・8月円高アノマリー',
+  9: '年間で最も弱い月の一つ。中間配当権利取りと期末リバランスが交錯',
+  10: '10月効果（安値をつけて反転しやすい）。米国も年間底打ちの統計月',
+  11: '年末ラリーの起点。米感謝祭以降は例年堅調',
+  12: '掉尾の一振・年末ラリー。前半は節税の損出し売りで個別に歪みが出る',
+}
+
 // ── キートリガー（相場の分岐点。達成/破断で戦略を切り替える） ──
 const DEFAULT_TRIGGERS =
 `キオクシア(285A) 25日線 → 奪還ならAI半導体押し目買い再開 / 割れ定着なら調整長期化
@@ -39,6 +83,7 @@ const DEFAULT_RULES = [
   'このテーマは「初動〜継続」局面か（過熱局面の高値掴みでないか）',
   '需給イベント（SQ・分配金売り・決算）をまたぐ場合、サイズを半分にした',
   '「上がりそう」ではなく「下がったらどこで逃げるか」から考えた',
+  '投資アノマリーを確認した（月の癖・SQ週・月初資金流入・セルインメイ等に逆らっていないか）',
 ]
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
@@ -185,27 +230,43 @@ export default function DevEdge({ isMobile, onNavigate }) {
     try {
       let uid = null
       try { uid = (await supabase.auth.getSession())?.data?.session?.user?.id || null } catch {}
-      const namesRes = await fetch(`${API_BASE}/api/theme-names`).then(r => r.json())
-      const names = namesRes?.themes || []
-      const themePct = {}
+      let themePct = {}
       for (const t of (themeData?.themes || [])) themePct[t.theme] = t.pct
-      const tasks = names.map(n => () =>
-        fetch(`${API_BASE}/api/theme-detail/${encodeURIComponent(n)}?period=5d${uid ? `&uid=${uid}` : ''}`)
-          .then(r => r.ok ? r.json() : null).then(d => ({ theme: n, stocks: d?.data?.stocks || d?.data || [] })))
-      const results = await runPool(tasks, 6, (d, t) => setScanProg([d, t]))
-
       const map = {}
-      for (const res of results) {
-        if (!res) continue
-        for (const s of res.stocks) {
+      // 優先: サーバー側集約API（テーマ増減・将来の全銘柄収録に自動追随、1コールで完結）
+      const uni = await fetch(`${API_BASE}/api/stock-universe?period=5d${uid ? `&uid=${uid}` : ''}`)
+        .then(r => r.ok ? r.json() : null).catch(() => null)
+      if (uni?.data?.length) {
+        setScanProg([1, 1])
+        if (uni.theme_pct) themePct = { ...themePct, ...uni.theme_pct }
+        for (const s of uni.data) {
           const code = String(s.ticker || '').replace('.T', '')
           if (!code) continue
-          if (!map[code]) map[code] = { code, name: s.name, price: s.price, pct: s.pct,
+          map[code] = { code, name: s.name, price: s.price, pct: s.pct,
             volume_chg: s.volume_chg, trade_value: s.trade_value, mcap: s.market_cap ?? null,
-            per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null, themes: [] }
-          const m = map[code]
-          m.themes.push(res.theme)
-          if (m.per == null && s.per != null) { m.per = s.per; m.pbr = s.pbr; m.peg = s.peg }
+            per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null,
+            themes: s.themes || [] }
+        }
+      } else {
+        // フォールバック: クライアント側でテーマ巡回（旧方式・バックエンド未デプロイ時）
+        const namesRes = await fetch(`${API_BASE}/api/theme-names`).then(r => r.json())
+        const names = namesRes?.themes || []
+        const tasks = names.map(n => () =>
+          fetch(`${API_BASE}/api/theme-detail/${encodeURIComponent(n)}?period=5d${uid ? `&uid=${uid}` : ''}`)
+            .then(r => r.ok ? r.json() : null).then(d => ({ theme: n, stocks: d?.data?.stocks || d?.data || [] })))
+        const results = await runPool(tasks, 6, (d, t) => setScanProg([d, t]))
+        for (const res of results) {
+          if (!res) continue
+          for (const s of res.stocks) {
+            const code = String(s.ticker || '').replace('.T', '')
+            if (!code) continue
+            if (!map[code]) map[code] = { code, name: s.name, price: s.price, pct: s.pct,
+              volume_chg: s.volume_chg, trade_value: s.trade_value, mcap: s.market_cap ?? null,
+              per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null, themes: [] }
+            const m = map[code]
+            m.themes.push(res.theme)
+            if (m.per == null && s.per != null) { m.per = s.per; m.pbr = s.pbr; m.peg = s.peg }
+          }
         }
       }
       let rows = Object.values(map).filter(r => Number.isFinite(r.pct))
@@ -432,7 +493,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead><tr><th style={S.th}>テーマ</th><th style={S.th}>1週</th><th style={S.th}>出来高Δ</th><th style={S.th}>状態</th><th style={S.th}>シグナル</th></tr></thead>
                 <tbody>{signals.top.map(t => (
-                  <tr key={t.theme} style={{ cursor: 'pointer' }} onClick={() => onNavigate?.('テーマ別詳細', null, t.theme)}>
+                  <tr key={t.theme} style={{ cursor: 'pointer' }} onClick={() => onNavigate?.('テーマ別詳細', t.theme)}>
                     <td style={{ ...S.td, color: 'var(--text)' }}>{t.theme}</td>
                     <td style={{ ...S.td, ...S.mono, color: t.pct >= 0 ? '#ff5370' : '#00c48c' }}>{t.pct >= 0 ? '+' : ''}{t.pct?.toFixed(1)}%</td>
                     <td style={{ ...S.td, ...S.mono, color: 'var(--text2)' }}>{Number.isFinite(t.volume_chg) ? `${t.volume_chg >= 0 ? '+' : ''}${t.volume_chg.toFixed(0)}%` : '—'}</td>
@@ -445,14 +506,14 @@ export default function DevEdge({ isMobile, onNavigate }) {
             <div>
               <div style={{ fontSize: '11px', color: '#7ed321', fontWeight: 700, marginBottom: '4px' }}>🌱 初動候補（最重要ゾーン）</div>
               {signals.early.length ? signals.early.map(t => (
-                <div key={t.theme} onClick={() => onNavigate?.('テーマ別詳細', null, t.theme)} style={{ display: 'flex', justifyContent: 'space-between', padding: '7px 8px', borderBottom: '1px solid var(--border)', cursor: 'pointer', fontSize: '12px' }}>
+                <div key={t.theme} onClick={() => onNavigate?.('テーマ別詳細', t.theme)} style={{ display: 'flex', justifyContent: 'space-between', padding: '7px 8px', borderBottom: '1px solid var(--border)', cursor: 'pointer', fontSize: '12px' }}>
                   <span style={{ color: 'var(--text)' }}>{t.theme}</span>
                   <span style={{ ...S.mono, color: 'var(--text2)' }}>+{t.pct?.toFixed(1)}% / 出来高{t.volume_chg >= 0 ? '+' : ''}{t.volume_chg?.toFixed(0)}%</span>
                 </div>
               )) : <div style={S.small}>現在、初動条件を満たすテーマはありません（＝無理に建てない日）</div>}
               <div style={{ fontSize: '11px', color: '#ff5370', fontWeight: 700, margin: '12px 0 4px' }}>🩸 セリクラ候補（逆張りは指値・打診のみ）</div>
               {signals.capit.length ? signals.capit.map(t => (
-                <div key={t.theme} onClick={() => onNavigate?.('テーマ別詳細', null, t.theme)} style={{ display: 'flex', justifyContent: 'space-between', padding: '7px 8px', borderBottom: '1px solid var(--border)', cursor: 'pointer', fontSize: '12px' }}>
+                <div key={t.theme} onClick={() => onNavigate?.('テーマ別詳細', t.theme)} style={{ display: 'flex', justifyContent: 'space-between', padding: '7px 8px', borderBottom: '1px solid var(--border)', cursor: 'pointer', fontSize: '12px' }}>
                   <span style={{ color: 'var(--text)' }}>{t.theme}</span>
                   <span style={{ ...S.mono, color: '#00c48c' }}>{t.pct?.toFixed(1)}% / 出来高+{t.volume_chg?.toFixed(0)}%</span>
                 </div>
@@ -593,7 +654,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
                 {sel.themes.map(t => {
                   const tp = themeData?.themes?.find(x => x.theme === t)?.pct
                   return (
-                    <span key={t} onClick={() => onNavigate?.('テーマ別詳細', null, t)} style={{ fontSize: '10.5px', padding: '3px 9px', borderRadius: '99px', border: '1px solid var(--border)', color: 'var(--text2)', cursor: 'pointer', background: 'var(--bg2)' }}>
+                    <span key={t} onClick={() => onNavigate?.('テーマ別詳細', t)} style={{ fontSize: '10.5px', padding: '3px 9px', borderRadius: '99px', border: '1px solid var(--border)', color: 'var(--text2)', cursor: 'pointer', background: 'var(--bg2)' }}>
                       {t}{Number.isFinite(tp) && <b style={{ ...S.mono, color: tp >= 0 ? '#ff5370' : '#00c48c', marginLeft: '4px' }}>{tp >= 0 ? '+' : ''}{tp.toFixed(1)}%</b>}
                     </span>)
                 })}
@@ -622,8 +683,15 @@ export default function DevEdge({ isMobile, onNavigate }) {
 
       {/* ── C. 需給・イベントカレンダー ── */}
       <div style={S.card}>
-        <div style={S.h2}>📅 需給・イベントカレンダー<span style={{ ...S.small, fontWeight: 400 }}>（DevEdge.jsx冒頭のEVENTSで手動更新）</span></div>
-        {EVENTS.map((e, i) => (
+        <div style={S.h2}>📅 需給・イベントカレンダー<span style={{ ...S.small, fontWeight: 400 }}>SQ・分配金・決算期は自動算出／マクロ日程はEVENTSで手動更新</span></div>
+        <div style={{ padding: '8px 12px', marginBottom: '10px', background: 'rgba(255,215,0,0.06)', border: '1px solid rgba(255,215,0,0.2)', borderRadius: '8px', fontSize: '11.5px', color: 'var(--text2)', lineHeight: 1.7 }}>
+          🗓️ <b style={{ color: '#ffd700' }}>{new Date().getMonth() + 1}月のアノマリー</b>：{MONTH_ANOMALY[new Date().getMonth() + 1]}
+        </div>
+        {(() => {
+          const auto = autoEvents()
+          const manual = EVENTS.filter(e => !auto.some(a => a.label === e.label))
+          return [...auto, ...manual]
+        })().map((e, i) => (
           <div key={i} style={{ display: 'flex', gap: '10px', padding: '6px 0', borderBottom: '1px solid var(--border)', fontSize: '12px', alignItems: 'baseline', flexWrap: 'wrap' }}>
             <span style={{ ...S.mono, color: 'var(--text3)', minWidth: '72px' }}>{e.date}</span>
             <span style={{ fontSize: '10px', fontWeight: 700, padding: '1px 6px', borderRadius: '4px',
@@ -697,7 +765,22 @@ export default function DevEdge({ isMobile, onNavigate }) {
       {/* ── F. キートリガー & マイルール ── */}
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '16px' }}>
         <div style={{ ...S.card, marginBottom: 0 }}>
-          <div style={S.h2}>🚨 キートリガー監視<span style={{ ...S.small, fontWeight: 400 }}>（自動保存）</span></div>
+          <div style={S.h2}>🚨 キートリガー監視<span style={{ ...S.small, fontWeight: 400 }}>（手動リスト＝自動保存／下段はデータから自動検知）</span></div>
+          {signals && (() => {
+            const alerts = []
+            for (const t of (themeData?.themes || [])) {
+              if (t.pct >= 5) alerts.push(`▲ ${t.theme} が週間+${t.pct.toFixed(1)}%（資金集中）`)
+              if (t.pct <= -5) alerts.push(`▼ ${t.theme} が週間${t.pct.toFixed(1)}%（資金流出）`)
+            }
+            if (signals.early.length) alerts.push(`🌱 初動シグナル: ${signals.early.map(x => x.theme).join('・')}`)
+            if (signals.capit.length) alerts.push(`🩸 セリクラ候補: ${signals.capit.map(x => x.theme).join('・')}`)
+            return alerts.length ? (
+              <div style={{ marginBottom: '8px', padding: '8px 10px', background: 'rgba(74,158,255,0.06)', border: '1px solid rgba(74,158,255,0.2)', borderRadius: '8px' }}>
+                <div style={{ fontSize: '10px', fontWeight: 700, color: '#4a9eff', marginBottom: '4px' }}>本日の自動検知（データ更新のたびに変化）</div>
+                {alerts.slice(0, 6).map((a, i) => <div key={i} style={{ fontSize: '11px', color: 'var(--text2)', lineHeight: 1.8 }}>{a}</div>)}
+              </div>
+            ) : null
+          })()}
           <textarea value={triggers} onChange={e => setTriggers(e.target.value)} rows={9}
             style={{ ...S.input, resize: 'vertical', lineHeight: 1.8, fontSize: '11.5px' }} />
         </div>

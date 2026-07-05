@@ -328,6 +328,8 @@ def main():
     parser.add_argument("--days", type=int, default=7, help="過去N日分の提出書類を処理")
     parser.add_argument("--backfill", type=int, default=0, help="初回フルビルド用: 過去N日を走査（例: 370）")
     parser.add_argument("--tickers", type=str, default="", help="対象銘柄コードをカンマ区切りで限定")
+    parser.add_argument("--site", action="store_true",
+                        help="サイト収録銘柄（frontend/public/data/stock_index.json）のみに限定して取得")
     args = parser.parse_args()
 
     if not EDINET_API_KEY:
@@ -336,6 +338,15 @@ def main():
 
     days = args.backfill if args.backfill > 0 else args.days
     ticker_filter = set(t.strip() for t in args.tickers.split(",") if t.strip()) or None
+    if args.site:
+        idx_path = Path(__file__).parent / ".." / "frontend" / "public" / "data" / "stock_index.json"
+        try:
+            idx = json.load(open(idx_path, encoding="utf-8"))
+            site_codes = {str(k).replace(".T", "") for k in idx.keys()}
+            ticker_filter = site_codes if ticker_filter is None else (ticker_filter & site_codes)
+            print(f"--site: サイト収録{len(site_codes)}銘柄に限定")
+        except Exception as e:
+            print(f"⚠️ stock_index.json読込失敗（--site無効）: {e}")
 
     total = 0
     for i in range(days):

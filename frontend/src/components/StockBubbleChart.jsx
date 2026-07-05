@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 // ── 銘柄版バブルチャート（テーマ詳細・カスタムテーマ共通） ──────────────────
 // ── 銘柄版バブルチャート（テーマ詳細用） ─────────────────────────────
-function StockBubbleChart({ stocks, themeName, onNavigate }) {
+function StockBubbleChart({ stocks, themeName, onNavigate, onStockClick }) {
   const [hovered, setHovered] = useState(null)
 
   const filtered = (stocks || []).filter(s =>
@@ -136,7 +136,7 @@ function StockBubbleChart({ stocks, themeName, onNavigate }) {
             const tx = Math.min(cx, W - 155)
             const ty = Math.max(PT + 4, cy - r - 68)
             return (
-              <g key="hov" style={{ cursor:'pointer' }} onMouseEnter={() => setHovered(s)}>
+              <g key="hov" style={{ cursor:'pointer' }} onMouseEnter={() => setHovered(s)} onClick={() => onStockClick?.(s.ticker)}>
                 <circle cx={cx} cy={cy} r={r+3} fill="none" stroke="white" strokeWidth="2" strokeOpacity="0.8" />
                 <circle cx={cx} cy={cy} r={r} fill={col} fillOpacity="0.9" stroke={col} strokeWidth="1.5" />
                 <text x={cx} y={cy+4} textAnchor="middle" fontSize="9" fill="white" fontWeight="700"

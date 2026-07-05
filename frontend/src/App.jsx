@@ -24,6 +24,7 @@ import StockSearch  from './components/pages/StockSearch'
 import LegalNotice  from './components/pages/LegalNotice'
 import Plan         from './components/pages/Plan'
 import DevEdge      from './components/pages/DevEdge'
+import StockDetail  from './components/pages/StockDetail'
 import PlanGate     from './components/PlanGate'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
@@ -57,7 +58,8 @@ const PAGES_FOOTER = [
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const DEV_PAGE = { icon:'🎯', label:'Dev Edge', component:DevEdge }  // plan==='dev'のみサイドバー表示
-const ALL_PAGES     = [...PAGES, DEV_PAGE, ...PAGES_OTHER, ...PAGES_FOOTER]
+const STOCK_PAGE = { icon:'📈', label:'銘柄詳細', component:StockDetail }  // サイドバー非表示（クリック遷移専用）
+const ALL_PAGES     = [...PAGES, DEV_PAGE, STOCK_PAGE, ...PAGES_OTHER, ...PAGES_FOOTER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 const COLOR_DIR_KEY   = 'sw_color_dir'
 
@@ -140,6 +142,8 @@ function AppInner() {
 
   const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component
+  const [targetStock, setTargetStock] = useState(null)
+
   const handlePageChange = (label, articleId = null) => {
     setCurrentPage(label)
     setSidebarOpen(false)
@@ -151,6 +155,10 @@ function AppInner() {
       setTargetTheme(articleId || null)
     } else {
       setTargetTheme(null)
+    }
+    // 銘柄詳細の場合はティッカーを保存
+    if (label === '銘柄詳細') {
+      setTargetStock(articleId || null)
     }
     // URLハッシュを更新（SEO・直接リンク対応）
     if (label === 'コラム・解説' && articleId) {
@@ -178,6 +186,7 @@ function AppInner() {
     if (currentPage === '週次レポート') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === '市場別詳細') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'Dev Edge') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === '銘柄詳細') return { ticker: targetStock, onNavigate: handlePageChange, isMobile }
     return { isMobile }
   })()
 

@@ -6,7 +6,7 @@ import { useSegmentDetail, useMarketRankList } from '../../hooks/useMarketData'
 
 // 出来高・売買代金 棒グラフ（MarketRank用）
 // ── 注目銘柄ピックアップ ──────────────────────────────
-function PickupStocks({ stocks, period }) {
+function PickupStocks({ stocks, period, onNavigate }) {
   if (!stocks || stocks.length === 0) return null
 
   const fmtL = (v) => {
@@ -91,7 +91,7 @@ function PickupStocks({ stocks, period }) {
           const scoreNum  = Math.min(100, Math.round(s._score))
           const scoreColor = scoreNum >= 60 ? '#ff5370' : scoreNum >= 35 ? '#ff8c42' : '#ffd166'
           return (
-            <div key={s.ticker} style={{
+            <div key={s.ticker} onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{ cursor:'pointer',
               background:'var(--bg2)', borderRadius:'8px', padding:'12px 14px',
               border:'1px solid var(--border)',
               borderTop:'3px solid ' + medalColors[i],
@@ -168,7 +168,7 @@ function PickupStocks({ stocks, period }) {
   )
 }
 
-function MrVolTvChart({ stocks }) {
+function MrVolTvChart({ stocks, onNavigate }) {
   const [mode, setMode] = useState('tv') // 'tv' | 'vol'
   const [expanded, setExpanded] = useState(false)
   if (!stocks || stocks.length === 0) return (
@@ -206,7 +206,7 @@ function MrVolTvChart({ stocks }) {
           const pc = s.pct>=0?'var(--red)':'var(--green)'
           return (
             <div key={s.ticker} style={{ display:'grid', gridTemplateColumns:'110px 1fr 70px 56px', gap:'6px', alignItems:'center' }}>
-              <span style={{ fontSize:'11px', color:'var(--text2)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
+              <span onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{ fontSize:'11px', color:'var(--text2)', cursor:'pointer', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', textAlign:'right' }}>{s.name}</span>
               <div style={{ height:'12px', background:'rgba(255,255,255,0.04)', borderRadius:'3px', overflow:'hidden' }}>
                 <div style={{ height:'100%', width:`${w}%`, background:mode==='tv'?'#ff8c42':'#378ADD', borderRadius:'3px', opacity:0.85 }}/>
               </div>
@@ -252,7 +252,7 @@ function MrVolTvChart({ stocks }) {
 }
 
 // 銘柄別ヒートマップ（MarketRank用・拡大機能付き）
-function MrBubbleChart({ stocks }) {
+function MrBubbleChart({ stocks, onNavigate }) {
   const [expanded, setExpanded] = useState(false)
   if (!stocks || !stocks.length) return (
     <div style={{ textAlign:'center', padding:'24px', color:'var(--text3)', fontSize:'12px',
@@ -260,7 +260,7 @@ function MrBubbleChart({ stocks }) {
       データ取得中...
     </div>
   )
-  const chart = <StockBubbleChart stocks={stocks} themeName="" onNavigate={null} />
+  const chart = <StockBubbleChart stocks={stocks} themeName="" onNavigate={null} onStockClick={(t)=>onNavigate?.('銘柄詳細', t)} />
   return (
     <div>
       {chart}
@@ -388,7 +388,7 @@ const tdC = { padding:'8px 10px', textAlign:'center', whiteSpace:'nowrap', color
 const tdR = { padding:'8px 10px', textAlign:'right', whiteSpace:'nowrap' }
 const tdL = { padding:'8px 12px', textAlign:'left' }
 
-function StockTable({ stocks: rawStocks, onAddToTheme }) {
+function StockTable({ stocks: rawStocks, onAddToTheme, onNavigate }) {
   const { plan } = useSubscription()
   const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
   if (!rawStocks||!rawStocks.length) return null
@@ -505,7 +505,7 @@ function StockTable({ stocks: rawStocks, onAddToTheme }) {
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px' }}>
                     {i+1}
                   </td>
-                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
+                  <td onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{ ...tdL, fontWeight:600, color:'var(--text)', cursor:'pointer', minWidth:'120px', background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:'32px', zIndex:2 }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
                     <span style={{ fontSize:'13px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', display:'block' }}>{s.name}</span>
                   </td>
@@ -833,7 +833,7 @@ export default function MarketRank() {
                 </div>
 
                 {/* ③ 注目銘柄ピックアップ */}
-                <PickupStocks stocks={stocks} period={period} />
+                <PickupStocks stocks={stocks} period={period} onNavigate={onNavigate} />
 
                 {/* ① テーマ別詳細と同じレイアウト: 左=グラフ群 / 右=銘柄表 */}
                 <div className="mr-bottom-grid">
@@ -842,11 +842,11 @@ export default function MarketRank() {
                     <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>
                       📊 出来高・売買代金ランキング（上位15銘柄）
                     </div>
-                    <MrVolTvChart stocks={stocks} />
+                    <MrVolTvChart stocks={stocks} onNavigate={onNavigate} />
                     <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'20px 0 10px' }}>
                       🔥 銘柄別ヒートマップ
                     </div>
-                    <MrBubbleChart stocks={stocks} />
+                    <MrBubbleChart stocks={stocks} onNavigate={onNavigate} />
                   </div>
                   {/* 右: 銘柄詳細表 */}
                   <div style={{ minWidth: 0 }}>
@@ -854,7 +854,7 @@ export default function MarketRank() {
                       構成銘柄一覧 <span style={{ color:'var(--text3)', fontSize:'10px', fontWeight:400 }}>← 横にスワイプで詳細確認</span>
                     </div>
                     <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
-                      <StockTable stocks={stocks} onAddToTheme={setModalStock} />
+                      <StockTable stocks={stocks} onAddToTheme={setModalStock} onNavigate={onNavigate} />
                     </div>
                   </div>
                 </div>

@@ -312,7 +312,7 @@ function VolTvChart({ selTheme, period = '1mo' }) {
 
 
 // ── 注目銘柄ピックアップ ──────────────────────────────
-function PickupStocks({ stocks, period }) {
+function PickupStocks({ stocks, period, onNavigate }) {
   if (!stocks || stocks.length === 0) return null
 
   const fmtL = (v) => {
@@ -397,9 +397,9 @@ function PickupStocks({ stocks, period }) {
           const scoreNum  = Math.min(100, Math.round(s._score))
           const scoreColor = scoreNum >= 60 ? '#ff5370' : scoreNum >= 35 ? '#ff8c42' : '#ffd166'
           return (
-            <div key={s.ticker} style={{
+            <div key={s.ticker} onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{
               background:'var(--bg2)', borderRadius:'8px', padding:'12px 14px',
-              border:'1px solid var(--border)',
+              border:'1px solid var(--border)', cursor:'pointer',
               borderTop:'3px solid ' + medalColors[i],
               display:'flex', flexDirection:'column', gap:'6px',
             }}>
@@ -476,7 +476,7 @@ function PickupStocks({ stocks, period }) {
 
 
 // ── 銘柄テーブル ──
-function StockTable({ stocks: rawStocks }) {
+function StockTable({ stocks: rawStocks, onNavigate }) {
   if (!rawStocks || !rawStocks.length) return null
   const [modalStock, setModalStock] = useState(null)
   // ⑤ ソート状態
@@ -620,7 +620,8 @@ function StockTable({ stocks: rawStocks }) {
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky', left:0, zIndex:2, minWidth:'32px', width:'32px', maxWidth:'32px', padding:'8px 4px' }}>
                     {i+1}
                   </td>
-                  <td style={{ ...tdL, fontWeight:600, color:'var(--text)',
+                  <td onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ"
+                    style={{ ...tdL, fontWeight:600, color:'var(--text)', cursor:'pointer',
                     background: i%2===0?'var(--bg2)':'var(--bg3)', position:'sticky',
                     left:'32px', zIndex:2, minWidth:'160px', maxWidth:'220px' }}>
                     <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', marginBottom:'1px' }}>{s.ticker.replace('.T','')}</div>
@@ -1056,7 +1057,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
             </div>
 
             {/* 注目銘柄ピックアップ - 全幅 */}
-            <PickupStocks stocks={stocks} period={period} />
+            <PickupStocks stocks={stocks} period={period} onNavigate={onNavigate} />
 
             {/* ── ④ 下部2カラム: 左=グラフ群 / 右=銘柄表 ── */}
             <div className="td-bottom-grid">
@@ -1139,7 +1140,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 {/* ③ 銘柄別ヒートマップ（散布図）を先に */}
                 {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
                   <TdExpandable title="🔥 銘柄別ヒートマップ">
-                    <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} />
+                    <StockBubbleChart stocks={stocks} themeName={selTheme} onNavigate={onNavigate} onStockClick={(t)=>onNavigate?.('銘柄詳細', t)} />
                   </TdExpandable>
                 )}
 
@@ -1178,7 +1179,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                   構成銘柄一覧 <span style={{ fontSize:'10px', fontWeight:400 }}>← 横にスワイプ</span>
                 </div>
                 <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'var(--radius)', overflow:'hidden' }}>
-                  <StockTable stocks={stocks}/>
+                  <StockTable stocks={stocks} onNavigate={onNavigate}/>
                 </div>
               </div>
             </div>
