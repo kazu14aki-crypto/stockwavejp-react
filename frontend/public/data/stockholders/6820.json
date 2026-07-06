@@ -1,8 +1,8 @@
 {
   "secCode": "6820",
   "issuerName": "アイコム株式会社",
-  "updated_at": "2026/07/04 18:32 JST",
-  "latestDate": "2026-06-23",
+  "updated_at": "2026/07/06 23:11 JST",
+  "latestDate": "2026-07-06",
   "latest": [
     {
       "rank": 1,
@@ -107,6 +107,115 @@
     "top10_total": 57.67
   },
   "history": [
+    {
+      "submitDate": "2026-07-06",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YP1U",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "井上　徳造",
+          "shares": 2049000,
+          "ratio": 14.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ギガパレス㈱",
+          "shares": 1472000,
+          "ratio": 10.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人アイコム電子通信工学振興財団",
+          "shares": 1000000,
+          "ratio": 6.97,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱UH Partners 2",
+          "shares": 891000,
+          "ratio": 6.21,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信㈱",
+          "shares": 685000,
+          "ratio": 4.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 632000,
+          "ratio": 4.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱ＪＶＣケンウッド",
+          "shares": 445000,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "アイビー投資事業有限責任組合",
+          "shares": 374000,
+          "ratio": 2.61,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本証券金融㈱",
+          "shares": 369000,
+          "ratio": 2.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "住友不動産㈱",
+          "shares": 357000,
+          "ratio": 2.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 34.9,
+          "foundation": 6.97,
+          "other": 8.82,
+          "trust": 4.4,
+          "securities": 2.58
+        },
+        "individual_total": 34.9,
+        "top10_total": 57.67
+      }
+    },
     {
       "submitDate": "2026-06-23",
       "docType": "120",
