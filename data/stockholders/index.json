@@ -1,7 +1,34 @@
 {
-  "updated_at": "2026/07/04",
-  "count": 1600,
+  "updated_at": "2026/07/06",
+  "count": 1601,
   "items": [
+    {
+      "secCode": "6820",
+      "issuerName": "アイコム株式会社",
+      "latestDate": "2026-07-06",
+      "holderCount": 10,
+      "topHolder": "井上　徳造",
+      "topHolderCategory": "individual",
+      "individualTotal": 34.9
+    },
+    {
+      "secCode": "8015",
+      "issuerName": "豊田通商株式会社",
+      "latestDate": "2026-07-06",
+      "holderCount": 10,
+      "topHolder": "トヨタ自動車㈱",
+      "topHolderCategory": "individual",
+      "individualTotal": 32.87
+    },
+    {
+      "secCode": "3433",
+      "issuerName": "トーカロ株式会社",
+      "latestDate": "2026-07-06",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社",
+      "topHolderCategory": "trust",
+      "individualTotal": 2.89
+    },
     {
       "secCode": "7042",
       "issuerName": "株式会社アクセスグループ・ホールディングス",
@@ -9570,15 +9597,6 @@
       "individualTotal": 2.35
     },
     {
-      "secCode": "6820",
-      "issuerName": "アイコム株式会社",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "井上　徳造",
-      "topHolderCategory": "individual",
-      "individualTotal": 34.9
-    },
-    {
       "secCode": "2004",
       "issuerName": "昭和産業株式会社",
       "latestDate": "2026-06-23",
@@ -12880,15 +12898,6 @@
       "topHolder": "鳥取銀行従業員持株会",
       "topHolderCategory": "employee",
       "individualTotal": 0
-    },
-    {
-      "secCode": "3433",
-      "issuerName": "トーカロ株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社",
-      "topHolderCategory": "trust",
-      "individualTotal": 2.89
     },
     {
       "secCode": "6165",
