@@ -16,7 +16,6 @@ from data import (
     fetch_market_segments, fetch_segment_detail, fetch_theme_detail,
     MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache_extended,
     get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
-    get_valuation,
 )
 
 # ── サブスクリプションプラン判定（バリュエーション列のアクセス制御用）──
@@ -257,62 +256,120 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo"), uid: s
     return _strip_valuation_if_locked(payload, uid)
 
 
-@app.get("/api/stock-universe")
-def get_stock_universe(period: str = Query(default="5d"), uid: str = Query(default=None)):
-    """Dev Edgeスキャナ用: 全テーマ＋市場区分を横断した銘柄ユニバースを1コールで返す。
-    テーマの増減・将来の全銘柄収録に自動追随する（DEFAULT_THEMES/MARKET_SEGMENTSを走査）。"""
-    rows: dict = {}
-    theme_pct: dict = {}
-    for name, stocks in DEFAULT_THEMES.items():
-        try:
-            d = fetch_theme_detail(name, stocks, period)
-        except Exception:
-            continue
-        theme_pct[name] = d.get("avg")
-        for s in d.get("stocks", []):
-            code = s.get("ticker")
-            if not code:
-                continue
-            r = rows.get(code)
-            if r is None:
-                r = dict(s)
-                r.pop("spark", None)  # 転送量削減
-                r["themes"] = []
-                rows[code] = r
-            r["themes"].append(name)
-    # 市場区分（テーマ未収載銘柄の受け皿。将来の全銘柄収録時もここが拾う）
-    for seg, v in MARKET_SEGMENTS.items():
-        seg_stocks = v.get("stocks") if isinstance(v, dict) else None
-        if not seg_stocks:
-            continue
-        try:
-            d = fetch_theme_detail(seg, seg_stocks, period)
-        except Exception:
-            continue
-        for s in d.get("stocks", []):
-            code = s.get("ticker")
-            if code and code not in rows:
-                r = dict(s)
-                r.pop("spark", None)
-                r["themes"] = []
-                rows[code] = r
-    payload = {"period": period, "count": len(rows),
-               "theme_pct": theme_pct, "data": list(rows.values())}
-    return _strip_valuation_if_locked(payload, uid)
+# ═══ 大量保有報告書（投資家軸） ═══
+import json as _json_lh
+from pathlib import Path as _Path_lh
 
+_LH_DIR = _Path_lh(__file__).parent / ".." / "frontend" / "public" / "data" / "large_holdings"
 
-@app.get("/api/stock-valuation/{ticker}")
-def get_stock_valuation(ticker: str, uid: str = Query(default=None)):
-    """個別銘柄詳細ページ用: PER/PBR/PEG等（サブスク未加入はロック）"""
-    subscribed = _is_subscribed(uid)
-    val = {}
+def _load_lh(name):
+    fp = (_LH_DIR / name).resolve()
     try:
-        val = get_valuation(ticker) or {}
+        return _json_lh.load(open(fp, encoding="utf-8"))
     except Exception:
-        val = {}
-    keys = ("per", "per_fwd", "pbr", "pbr_fwd", "peg", "peg_fwd")
-    out = {k: (val.get(k) if subscribed else None) for k in keys}
-    return {"ticker": ticker, "valuation_locked": not subscribed, **out}
+        return None
+
+
+@app.get("/api/large-holdings/investor/{name}")
+def get_investor_positions(name: str):
+    """特定の機関投資家の保有銘柄と各々の保有割合推移を返す（例: 光通信）"""
+    data = _load_lh("by_investor.json") or {}
+    # 完全一致 → 部分一致の順で解決
+    if name in data:
+        return data[name]
+    for k in data:
+        if name in k or k in name:
+            return data[k]
+    return {"investor": name, "positionCount": 0, "positions": [], "notFound": True}
+
+
+@app.get("/api/large-holdings/issuer/{ticker}")
+def get_issuer_holders(ticker: str):
+    """特定銘柄の大量保有者一覧と各々の推移を返す"""
+    code = str(ticker).replace(".T", "")
+    data = _load_lh("by_issuer.json") or {}
+    return data.get(code, {"secCode": code, "issuerName": "", "holders": [], "notFound": True})
+
+
+@app.get("/api/large-holdings/index")
+def get_lh_index():
+    """投資家・銘柄の検索索引"""
+    return _load_lh("index.json") or {"investors": [], "issuers": []}
+
+
+@app.get("/api/tob-radar")
+def get_tob_radar(uid: str = Query(default=None)):
+    """
+    TOBオプション・スコア: 大量保有×資本構成×低バリュエーションを掛け合わせ、
+    「配当をもらいながらTOBを待てる」候補を発掘する。
+    構成要素:
+      A. 大量保有者の存在と積み増し（by_issuerから）
+      B. 筆頭株主の固定化（有報大株主の事業法人/個人の高比率＝親会社・創業家支配）
+      C. 低PBR（上場維持メリットが薄い＝完全子会社化の合理性）
+    """
+    subscribed = _is_subscribed(uid)
+    by_issuer = _load_lh("by_issuer.json") or {}
+    candidates = []
+
+    # 有報大株主データ（資本構成の判定に使用）
+    sh_dir = _Path_lh(__file__).parent / ".." / "frontend" / "public" / "data" / "stockholders"
+
+    for sec, info in by_issuer.items():
+        holders = info.get("holders", [])
+        if not holders:
+            continue
+        # A. 最大の大量保有者（自己株・信託口は除外したい所だが、by_issuerは提出者ベースなので実質全て外部投資家）
+        top = holders[0]
+        top_ratio = top.get("latestRatio") or 0
+        if top_ratio < 5:
+            continue
+        # 積み増しトレンド（報告回数が多く、初回→最新で増加）
+        trend = top.get("trend", [])
+        accumulating = len(trend) >= 2 and (trend[-1]["ratio"] or 0) > (trend[0]["ratio"] or 0)
+
+        # B/C. 有報大株主・バリュエーション
+        founder_or_parent = 0.0
+        pbr = None
+        try:
+            sh = _json_lh.load(open((sh_dir / f"{sec}.json").resolve(), encoding="utf-8"))
+            summ = sh.get("latestSummary", {})
+            bycat = summ.get("by_category", {})
+            # 事業法人（親会社）＋個人（創業家）の合計＝支配的安定株主
+            founder_or_parent = (bycat.get("corporate", 0) + bycat.get("individual", 0))
+        except Exception:
+            pass
+        try:
+            val = get_valuation(f"{sec}.T") or {}
+            pbr = val.get("pbr")
+        except Exception:
+            pbr = None
+
+        # スコアリング（各0-100 → 加重）
+        s_holder = min(100, top_ratio / 25 * 100)                       # 大量保有の厚み
+        s_accum = 100 if accumulating else 40                           # 積み増し継続
+        s_capital = min(100, founder_or_parent / 40 * 100)              # 支配株主の固定度
+        s_value = (min(100, (1.5 - pbr) / 1.0 * 100) if isinstance(pbr, (int, float)) and pbr > 0 else 50)
+        s_value = max(0, s_value)
+        score = round(0.30 * s_holder + 0.20 * s_accum + 0.30 * s_capital + 0.20 * s_value, 1)
+
+        candidates.append({
+            "secCode": sec,
+            "issuerName": info.get("issuerName", ""),
+            "topHolder": top.get("filerKey", ""),
+            "topRatio": top_ratio,
+            "accumulating": accumulating,
+            "reportCount": top.get("reportCount", 0),
+            "stableOwnerPct": round(founder_or_parent, 1),
+            "pbr": pbr if subscribed else None,
+            "score": score,
+            "factors": {
+                "holder": round(s_holder), "accum": round(s_accum),
+                "capital": round(s_capital), "value": round(s_value) if subscribed else None,
+            },
+        })
+
+    candidates.sort(key=lambda x: x["score"], reverse=True)
+    return {"count": len(candidates), "subscribed": subscribed, "candidates": candidates[:50]}
 
 
 @app.get("/api/stock-info/{ticker}")
