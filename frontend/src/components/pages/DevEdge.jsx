@@ -164,6 +164,81 @@ const stockSignal = (pct, pctZ, volZ) => {
   if (pctZ < -1.0)                          return '❄️弱勢'
   return '→中立'
 }
+// ── 長期ファクター評価 ──────────────────────────────
+// 過去30年超・世界の市場データで検証されてきたクロスセクション・リターン因子を、
+// 現在取得可能なデータ（1年日足・バリュエーション・時価総額）から計算する。
+// 各因子の根拠: 12-1モメンタム(Jegadeesh&Titman 1993)、52週高値(George&Hwang 2004)、
+// 低ボラティリティ(Haugen系/Baker et al.)、バリュー(Fama&French 1992)、
+// 収益性=質(Novy-Marx 2013; ROE近似=PBR/PER)
+function pct01(v, lo, hi) {  // vをlo→0点, hi→100点に線形写像（クリップ）
+  if (!Number.isFinite(v)) return null
+  return Math.max(0, Math.min(100, ((v - lo) / (hi - lo)) * 100))
+}
+function percentileIn(arr, v, lowerIsBetter = false) {
+  const xs = arr.filter(Number.isFinite)
+  if (!Number.isFinite(v) || xs.length < 20) return null
+  const below = xs.filter(x => x < v).length / xs.length * 100
+  return lowerIsBetter ? 100 - below : below
+}
+function computeLongFactors(hist, sel, scanRows) {
+  const out = { factors: [], score: null, note: null }
+  const r = (hist || []).map(d => 1 + d.pct / 100)
+  const enough = r.length >= 230
+  // ① 12-1ヶ月モメンタム（直近1ヶ月≒21営業日を除外した年間リターン）
+  let mom = null
+  if (enough) mom = (r[r.length - 22] / r[0] - 1) * 100
+  out.factors.push({ key: 'mom', name: '12-1ヶ月モメンタム', w: 0.30,
+    raw: mom == null ? null : `${mom >= 0 ? '+' : ''}${mom.toFixed(1)}%`,
+    pts: mom == null ? null : pct01(mom, -40, 80),
+    ev: '直近1ヶ月を除く過去1年の上昇率。最も頑健な因子で、勝者は勝ち続けやすい（世界の市場で確認）' })
+  // ② 52週高値近接（高値付近＝アンカリングによる過小反応）
+  let near52 = null
+  if (r.length >= 60) near52 = (r[r.length - 1] / Math.max(...r) - 1) * 100  // 0に近いほど高値圏
+  out.factors.push({ key: 'hi52', name: '52週高値への近さ', w: 0.15,
+    raw: near52 == null ? null : `高値から${near52.toFixed(1)}%`,
+    pts: near52 == null ? null : pct01(near52, -50, 0),
+    ev: '高値更新圏の銘柄はその後も優位という実証（心理的アンカーへの過小反応）' })
+  // ③ 低ボラティリティ（年率σが低いほど質の高いリターン）
+  let annVol = null
+  if (r.length >= 60) {
+    const rets = []
+    for (let i = 1; i < r.length; i++) rets.push(r[i] / r[i - 1] - 1)
+    const m = rets.reduce((a, b) => a + b, 0) / rets.length
+    annVol = Math.sqrt(rets.reduce((a, b) => a + (b - m) ** 2, 0) / rets.length) * Math.sqrt(250) * 100
+  }
+  out.factors.push({ key: 'vol', name: '低ボラティリティ', w: 0.15,
+    raw: annVol == null ? null : `年率σ ${annVol.toFixed(0)}%`,
+    pts: annVol == null ? null : pct01(-annVol, -80, -18),
+    ev: '値動きの穏やかな銘柄はリスク調整後リターンが高い（低ボラ・アノマリー）' })
+  // ④ バリュー（PER/PBR/PEGのユニバース内百分位。低いほど高スコア）
+  const rows = scanRows || []
+  const pPer = percentileIn(rows.map(x => x.per), sel?.per, true)
+  const pPbr = percentileIn(rows.map(x => x.pbr), sel?.pbr, true)
+  const pPeg = percentileIn(rows.map(x => x.peg), sel?.peg, true)
+  const valParts = [pPer, pPbr, pPeg].filter(Number.isFinite)
+  const valPts = valParts.length ? valParts.reduce((a, b) => a + b, 0) / valParts.length : null
+  out.factors.push({ key: 'val', name: 'バリュー（割安度）', w: 0.25,
+    raw: sel?.per != null ? `PER ${sel.per} / PBR ${sel.pbr ?? '—'} / PEG ${sel.peg ?? '—'}` : null,
+    pts: valPts,
+    ev: '割安株の長期超過リターン（PBR・PER等）。ユニバース内百分位で評価。2010年代のような長い逆風期もある点に注意' })
+  // ⑤ 質（疑似ROE = PBR ÷ PER。高収益企業ほど優位）
+  let roe = null
+  if (Number.isFinite(sel?.per) && Number.isFinite(sel?.pbr) && sel.per > 0) roe = (sel.pbr / sel.per) * 100
+  out.factors.push({ key: 'q', name: '収益性（疑似ROE）', w: 0.15,
+    raw: roe == null ? null : `ROE≈${roe.toFixed(1)}%`,
+    pts: roe == null ? null : pct01(roe, 2, 25),
+    ev: '高収益（質）の企業は割高でも長期に優位。ROEはPBR÷PERで近似' })
+  // 合成（データ欠損因子はウェイト再配分）
+  const avail = out.factors.filter(f => Number.isFinite(f.pts))
+  if (avail.length >= 2) {
+    const wsum = avail.reduce((a, f) => a + f.w, 0)
+    out.score = Math.round(avail.reduce((a, f) => a + f.pts * (f.w / wsum), 0))
+  }
+  if (!enough) out.note = '上場からの日数が短く、12-1モメンタムは計算対象外です（他因子のみで合成）'
+  if (valPts == null) out.note = (out.note ? out.note + '。' : '') + 'バリュー・質はデータ提供元との連携後に自動反映されます'
+  return out
+}
+
 const fmtOku = (v) => !Number.isFinite(v) ? '—' : v >= 1e12 ? (v / 1e12).toFixed(1) + '兆' : v >= 1e8 ? (v / 1e8).toFixed(0) + '億' : Math.round(v).toLocaleString()
 
 export default function DevEdge({ isMobile, onNavigate }) {
@@ -214,6 +289,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [q, setQ] = useState('')
   const [sel, setSel] = useState(null)                     // 選択銘柄（評価カード）
   const [selTech, setSelTech] = useState(null)
+  const [selHist, setSelHist] = useState(null)   // 長期ファクター計算用の生系列
   const [selHolders, setSelHolders] = useState(null)
   const [selLoading, setSelLoading] = useState(false)
 
@@ -301,7 +377,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
     const fromScan = scan?.rows?.find(r => r.code === code)
     const fromIdx = stockIndex?.[`${code}.T`]
     let base = fromScan || (fromIdx ? { code, name: fromIdx.name, price: fromIdx.price, pct1mo: fromIdx.pct, themes: fromIdx.themes || [], mcap: fromIdx.market_cap } : { code, name: fallbackName || code, themes: [] })
-    setSel(base); setSelTech(null); setSelHolders(null); setSelLoading(true); setQ('')
+    setSel(base); setSelTech(null); setSelHist(null); setSelHolders(null); setSelLoading(true); setQ('')
     try {
       const [hist, hold, info] = await Promise.all([
         fetch(`${API_BASE}/api/stock-history/${code}.T?period=1y`).then(r => r.ok ? r.json() : null).catch(() => null),
@@ -309,10 +385,17 @@ export default function DevEdge({ isMobile, onNavigate }) {
         (!fromScan && !fromIdx) ? fetch(`${API_BASE}/api/stock-info/${code}.T`).then(r => r.ok ? r.json() : null).catch(() => null) : Promise.resolve(null),
       ])
       setSelTech(computeTech(hist?.data))
+      setSelHist(hist?.data || null)
       setSelHolders(hold)
       if (info?.name) setSel(s => ({ ...s, name: info.name, price: info.price, pct1mo: info.pct }))
     } finally { setSelLoading(false) }
   }
+
+  // 長期ファクター評価（30年の実証研究に基づく因子群）
+  const longFactors = useMemo(() => {
+    if (!sel) return null
+    return computeLongFactors(selHist, sel, scan?.rows)
+  }, [sel, selHist, scan])
 
   // 検索候補
   const matches = useMemo(() => {
@@ -344,6 +427,10 @@ export default function DevEdge({ isMobile, onNavigate }) {
       if (selTech.vol20 > 4) parts.push(`日次ボラ${selTech.vol20.toFixed(1)}%と値動きが荒いため、通常の半分のサイズを推奨（下の計算機で損切り幅を広めに）。`)
     }
     if (Number.isFinite(sel.themeTail)) parts.push(sel.themeTail > 1.5 ? '所属テーマに追い風あり。' : sel.themeTail < -1.5 ? '所属テーマ全体が逆風で、個別好材料が出ても上値は重くなりがちです。' : '')
+    if (sel.rank && selTech) {
+      // 短期×長期のホライズン整理
+      parts.push('【時間軸の整理】上記スコアはスイング（数日〜数週）の相対評価です。中長期（6ヶ月〜）の保有候補としての評価は「長期ファクター評価」を参照し、両方が高い銘柄が最有力、短期のみ高い銘柄は利食い前提、長期のみ高い銘柄は押し目待ちが定石です。')
+    }
     const ind = selHolders?.latestSummary?.individual_total
     if (Number.isFinite(ind) && ind >= 30) parts.push(`個人（創業家系）保有${ind.toFixed(0)}%のオーナー系。浮動株が少なく値が軽い一方、MBO・承継イベントの候補でもあります。`)
     else if (selHolders?.latest?.[0]?.category === 'corporate') parts.push(`筆頭株主が事業法人（${selHolders.latest[0].name}）。親子上場・再編思惑の監視対象です。`)
@@ -647,6 +734,38 @@ export default function DevEdge({ isMobile, onNavigate }) {
               バリュエーション：PER <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.per ?? '—'}</b>　PBR <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.pbr ?? '—'}</b>　PEG <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.peg ?? '—'}</b>
               {sel.per == null && '（Infoway契約後に自動表示）'}
             </div>
+
+            {/* 長期ファクター評価 */}
+            {longFactors && (
+              <div style={{ marginBottom: '12px', padding: '12px 14px', background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '8px' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text)' }}>🧭 長期ファクター評価</span>
+                  <span style={{ ...S.small }}>過去30年超・世界の市場で検証された因子に基づく中長期（6ヶ月〜）の期待値評価</span>
+                  {longFactors.score != null && (
+                    <span style={{ marginLeft: 'auto', fontSize: '16px', fontWeight: 800, fontFamily: 'var(--mono)',
+                      color: longFactors.score >= 70 ? '#ffd700' : longFactors.score >= 50 ? '#ff8c42' : '#8b949e' }}>
+                      {longFactors.score}<span style={{ fontSize: '10px', color: 'var(--text3)' }}> /100</span></span>
+                  )}
+                </div>
+                {longFactors.factors.map(f => (
+                  <div key={f.key} style={{ padding: '5px 0', borderBottom: '1px solid var(--border)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '11.5px', color: 'var(--text2)', width: '150px', flexShrink: 0 }}>{f.name} <span style={{ opacity: .55 }}>×{f.w}</span></span>
+                      <div style={{ flex: 1, height: '7px', background: 'var(--bg)', borderRadius: '4px', overflow: 'hidden' }}>
+                        {Number.isFinite(f.pts) && <div style={{ width: `${f.pts}%`, height: '100%', borderRadius: '4px',
+                          background: f.pts >= 70 ? '#ffd700' : f.pts >= 45 ? '#ff8c42' : '#4a9eff' }} />}
+                      </div>
+                      <span style={{ ...S.mono, fontSize: '10.5px', color: 'var(--text2)', width: '150px', textAlign: 'right' }}>{f.raw ?? 'データ待ち'}{Number.isFinite(f.pts) && ` ・ ${Math.round(f.pts)}点`}</span>
+                    </div>
+                    <div style={{ fontSize: '10px', color: 'var(--text3)', lineHeight: 1.6, marginLeft: '158px' }}>{f.ev}</div>
+                  </div>
+                ))}
+                {longFactors.note && <div style={{ ...S.small, marginTop: '6px', color: '#ff8c42' }}>※ {longFactors.note}</div>}
+                <div style={{ ...S.small, marginTop: '6px' }}>
+                  ※ 各因子の「プレミアム」は長期・多数銘柄の平均であり、毎年・全銘柄で成立するものではありません（例：バリューは2010年代に約10年の逆風）。短期シグナル（上のスコア）はスイング用、本評価は中長期の保有候補選別用と使い分けてください。
+                </div>
+              </div>
+            )}
 
             {/* 所属テーマ */}
             {sel.themes?.length > 0 && (
