@@ -1,28 +1,75 @@
 name: Fetch Market Data
 
+# ══════════════════════════════════════════════════════════════════
+# 現在の状態：自動実行は停止中です（scheduleトリガーなし）
+#   理由：Infoway未契約のため、市場データ取得バッチを動かす必要がない
+#   再開方法：契約後、下の「本番運用時はここを有効化」ブロックの
+#            コメント（#）を外すだけで、休場日を自動スキップしながら
+#            平日9:05〜15:40（JST）に自動実行されるようになります
+#   手動実行：Actionsタブ → Fetch Market Data → Run workflow はいつでも可能
+# ══════════════════════════════════════════════════════════════════
+
 on:
-  schedule:
-    # ── 平日の市場時間中：1時間おき（JST 9時〜16時） ──
-    # JST 9:05  = UTC 0:05
-    - cron: '5 0 * * 1-5'
-    # JST 10:05 = UTC 1:05
-    - cron: '5 1 * * 1-5'
-    # JST 11:05 = UTC 2:05
-    - cron: '5 2 * * 1-5'
-    # JST 12:05 = UTC 3:05
-    - cron: '5 3 * * 1-5'
-    # JST 13:05 = UTC 4:05
-    - cron: '5 4 * * 1-5'
-    # JST 14:05 = UTC 5:05
-    - cron: '5 5 * * 1-5'
-    # JST 15:05 = UTC 6:05
-    - cron: '5 6 * * 1-5'
-    # JST 15:40 = UTC 6:40（後場引け後・最終データ）
-    - cron: '40 6 * * 1-5'
-  workflow_dispatch:  # 手動実行も可能
+  # ─── 本番運用時はここを有効化（各行頭の # を削除） ───────────────
+  # schedule:
+  #   - cron: '5 0 * * 1-5'   # JST  9:05
+  #   - cron: '5 1 * * 1-5'   # JST 10:05
+  #   - cron: '5 2 * * 1-5'   # JST 11:05
+  #   - cron: '5 3 * * 1-5'   # JST 12:05
+  #   - cron: '5 4 * * 1-5'   # JST 13:05
+  #   - cron: '5 5 * * 1-5'   # JST 14:05
+  #   - cron: '5 6 * * 1-5'   # JST 15:05
+  #   - cron: '40 6 * * 1-5'  # JST 15:40（後場引け後・最終データ）
+  # ─────────────────────────────────────────────────────
+
+  workflow_dispatch:  # 手動実行のみ現在は有効
 
 jobs:
+  check-trading-day:
+    runs-on: ubuntu-latest
+    outputs:
+      is_open: ${{ steps.judge.outputs.is_open }}
+    steps:
+      - name: 東証の休場日かどうかを判定（土日・年末年始・国民の祝日）
+        id: judge
+        shell: bash
+        run: |
+          # JSTの「今日」を計算
+          today=$(TZ='Asia/Tokyo' date +%F)
+          dow=$(TZ='Asia/Tokyo' date +%u)   # 1=月 … 7=日
+
+          # 東証の休場日（土日）を除外
+          if [ "$dow" -ge 6 ]; then
+            echo "土日のため休場: $today"
+            echo "is_open=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # 年末年始（12/31〜1/3固定・毎年）
+          md=$(TZ='Asia/Tokyo' date +%m-%d)
+          case "$md" in
+            12-31|01-01|01-02|01-03)
+              echo "年末年始のため休場: $today"
+              echo "is_open=false" >> "$GITHUB_OUTPUT"
+              exit 0
+              ;;
+          esac
+
+          # 国民の祝日（内閣府公表の祝日CSVを取得して照合。取得失敗時は平日として続行）
+          holidays=$(curl -fsSL --max-time 10 \
+            "https://holidays-jp.github.io/api/v1/date.json" || echo "")
+          if [ -n "$holidays" ] && echo "$holidays" | grep -q "\"$today\""; then
+            echo "国民の祝日のため休場: $today"
+            echo "is_open=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "取引日: $today"
+          echo "is_open=true" >> "$GITHUB_OUTPUT"
+
   fetch:
+    needs: check-trading-day
+    if: needs.check-trading-day.outputs.is_open == 'true'
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -68,4 +115,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add frontend/public/data/market.json
           git commit -m "chore: update market data $(date +'%Y/%m/%d %H:%M JST' -d '+9 hours')"
+          git pull origin main --rebase
           git push
