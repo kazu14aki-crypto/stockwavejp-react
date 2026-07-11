@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/generate-static-columns.mjs prebuild",
+    "prebuild": "node scripts/rebuild_weekly_index.mjs && node scripts/generate-static-columns.mjs prebuild",
     "build": "vite build",
     "postbuild": "node scripts/generate-static-columns.mjs postbuild",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "rebuild:weekly": "node scripts/rebuild_weekly_index.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

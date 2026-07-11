@@ -40,6 +40,16 @@ jobs:
         run: |
           python scripts/generate_weekly_report.py
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild weekly report index (self-healing — always scans actual files on disk)
+        run: |
+          cd frontend
+          node scripts/rebuild_weekly_index.mjs
+
       - name: Commit and push report
         run: |
           git config --local user.email "action@github.com"
