@@ -1,95 +1,95 @@
 {
-  "secCode": "4240",
-  "issuerName": "クラスターテクノロジー株式会社",
-  "updated_at": "2026/07/13 22:03 JST",
-  "latestDate": "2026-06-30",
+  "secCode": "7488",
+  "issuerName": "株式会社ヤガミ",
+  "updated_at": "2026/07/13 22:01 JST",
+  "latestDate": "2026-07-07",
   "latest": [
     {
       "rank": 1,
-      "name": "河野　信夫",
-      "shares": 274000,
-      "ratio": 4.81,
+      "name": "㈱やがみビル",
+      "shares": 3498000,
+      "ratio": 66.7,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 2,
-      "name": "大熊　崇",
-      "shares": 270000,
-      "ratio": 4.74,
+      "name": "㈱八神製作所",
+      "shares": 310000,
+      "ratio": 5.9,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 3,
-      "name": "安達　良紀",
-      "shares": 235800,
-      "ratio": 4.14,
+      "name": "八　神　昌　裕",
+      "shares": 121000,
+      "ratio": 2.3,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 4,
-      "name": "関　誠",
-      "shares": 230000,
-      "ratio": 4.04,
+      "name": "八　神　　　基",
+      "shares": 104000,
+      "ratio": 2.0,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 5,
-      "name": "小西　恭彦",
-      "shares": 202000,
-      "ratio": 3.54,
+      "name": "㈱京町",
+      "shares": 76000,
+      "ratio": 1.4,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 6,
-      "name": "安達　俊彦",
-      "shares": 165000,
-      "ratio": 2.89,
+      "name": "小　林　知佳代",
+      "shares": 75000,
+      "ratio": 1.4,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 7,
-      "name": "株式会社ＳＢＩ証券",
-      "shares": 151897,
-      "ratio": 2.66,
-      "category": "securities",
-      "category_label": "証券会社",
+      "name": "ヤガミ従業員持株会",
+      "shares": 62000,
+      "ratio": 1.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
       "is_founder_family": false
     },
     {
       "rank": 8,
-      "name": "長瀬産業株式会社",
-      "shares": 80000,
-      "ratio": 1.4,
-      "category": "corporate",
-      "category_label": "事業法人",
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 53000,
+      "ratio": 1.0,
+      "category": "other",
+      "category_label": "その他",
       "is_founder_family": false
     },
     {
       "rank": 9,
-      "name": "上田八木短資株式会社",
-      "shares": 77400,
-      "ratio": 1.35,
+      "name": "VTホールディングス㈱",
+      "shares": 25000,
+      "ratio": 0.5,
       "category": "corporate",
       "category_label": "事業法人",
       "is_founder_family": false
     },
     {
       "rank": 10,
-      "name": "土屋　定正",
-      "shares": 70200,
-      "ratio": 1.23,
+      "name": "三　輪　君　子",
+      "shares": 17000,
+      "ratio": 0.3,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
@@ -97,106 +97,107 @@
   ],
   "latestSummary": {
     "by_category": {
-      "individual": 25.39,
-      "securities": 2.66,
-      "corporate": 2.75
+      "individual": 80.0,
+      "employee": 1.2,
+      "other": 1.0,
+      "corporate": 0.5
     },
-    "individual_total": 25.39,
-    "top10_total": 30.8
+    "individual_total": 80.0,
+    "top10_total": 82.7
   },
   "history": [
     {
-      "submitDate": "2026-06-30",
+      "submitDate": "2026-07-07",
       "docType": "120",
-      "docTypeName": "有価証券報告書－第35期(2025/04/01－2026/03/31)",
-      "docID": "S100YNDU",
+      "docTypeName": "有価証券報告書－第61期(2025/04/21－2026/04/20)",
+      "docID": "S100YP3N",
       "shareholders": [
         {
           "rank": 1,
-          "name": "河野　信夫",
-          "shares": 274000,
-          "ratio": 4.81,
+          "name": "㈱やがみビル",
+          "shares": 3498000,
+          "ratio": 66.7,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 2,
-          "name": "大熊　崇",
-          "shares": 270000,
-          "ratio": 4.74,
+          "name": "㈱八神製作所",
+          "shares": 310000,
+          "ratio": 5.9,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 3,
-          "name": "安達　良紀",
-          "shares": 235800,
-          "ratio": 4.14,
+          "name": "八　神　昌　裕",
+          "shares": 121000,
+          "ratio": 2.3,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 4,
-          "name": "関　誠",
-          "shares": 230000,
-          "ratio": 4.04,
+          "name": "八　神　　　基",
+          "shares": 104000,
+          "ratio": 2.0,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 5,
-          "name": "小西　恭彦",
-          "shares": 202000,
-          "ratio": 3.54,
+          "name": "㈱京町",
+          "shares": 76000,
+          "ratio": 1.4,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 6,
-          "name": "安達　俊彦",
-          "shares": 165000,
-          "ratio": 2.89,
+          "name": "小　林　知佳代",
+          "shares": 75000,
+          "ratio": 1.4,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 7,
-          "name": "株式会社ＳＢＩ証券",
-          "shares": 151897,
-          "ratio": 2.66,
-          "category": "securities",
-          "category_label": "証券会社",
+          "name": "ヤガミ従業員持株会",
+          "shares": 62000,
+          "ratio": 1.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
           "is_founder_family": false
         },
         {
           "rank": 8,
-          "name": "長瀬産業株式会社",
-          "shares": 80000,
-          "ratio": 1.4,
-          "category": "corporate",
-          "category_label": "事業法人",
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 53000,
+          "ratio": 1.0,
+          "category": "other",
+          "category_label": "その他",
           "is_founder_family": false
         },
         {
           "rank": 9,
-          "name": "上田八木短資株式会社",
-          "shares": 77400,
-          "ratio": 1.35,
+          "name": "VTホールディングス㈱",
+          "shares": 25000,
+          "ratio": 0.5,
           "category": "corporate",
           "category_label": "事業法人",
           "is_founder_family": false
         },
         {
           "rank": 10,
-          "name": "土屋　定正",
-          "shares": 70200,
-          "ratio": 1.23,
+          "name": "三　輪　君　子",
+          "shares": 17000,
+          "ratio": 0.3,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
@@ -204,12 +205,13 @@
       ],
       "summary": {
         "by_category": {
-          "individual": 25.39,
-          "securities": 2.66,
-          "corporate": 2.75
+          "individual": 80.0,
+          "employee": 1.2,
+          "other": 1.0,
+          "corporate": 0.5
         },
-        "individual_total": 25.39,
-        "top10_total": 30.8
+        "individual_total": 80.0,
+        "top10_total": 82.7
       }
     }
   ]

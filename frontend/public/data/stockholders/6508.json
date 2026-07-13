@@ -1,8 +1,8 @@
 {
   "secCode": "6508",
   "issuerName": "株式会社明電舎",
-  "updated_at": "2026/07/06 22:57 JST",
-  "latestDate": "2026-06-24",
+  "updated_at": "2026/07/13 22:01 JST",
+  "latestDate": "2026-07-13",
   "latest": [
     {
       "rank": 1,
@@ -107,6 +107,115 @@
     "top10_total": 41.52
   },
   "history": [
+    {
+      "submitDate": "2026-07-13",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第162期(2025/04/01－2026/03/31)",
+      "docID": "S100YQ5Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5511900,
+          "ratio": 12.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001　（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2343008,
+          "ratio": 5.16,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2224700,
+          "ratio": 4.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "住友電気工業株式会社",
+          "shares": 2177785,
+          "ratio": 4.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 1800000,
+          "ratio": 3.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 1100000,
+          "ratio": 2.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "明電舎従業員持株会",
+          "shares": 1075233,
+          "ratio": 2.37,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "住友生命保険相互会社",
+          "shares": 1061400,
+          "ratio": 2.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG　FUNDS/UCITS　ASSETS（常任代理人　香港上海銀行東京支店）",
+          "shares": 799200,
+          "ratio": 1.76,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "HSBC-FUND SERVICES HSBC - 006 MF EFM（常任代理人　香港上海銀行東京支店）",
+          "shares": 749100,
+          "ratio": 1.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 17.05,
+          "foreign": 8.57,
+          "corporate": 4.8,
+          "financial": 8.73,
+          "employee": 2.37
+        },
+        "individual_total": 0,
+        "top10_total": 41.52
+      }
+    },
     {
       "submitDate": "2026-06-24",
       "docType": "120",

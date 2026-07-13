@@ -1,8 +1,8 @@
 {
   "secCode": "7864",
   "issuerName": "株式会社フジシールインターナショナル",
-  "updated_at": "2026/07/06 23:13 JST",
-  "latestDate": "2026-06-23",
+  "updated_at": "2026/07/13 22:01 JST",
+  "latestDate": "2026-07-08",
   "latest": [
     {
       "rank": 1,
@@ -108,6 +108,116 @@
     "top10_total": 57.9
   },
   "history": [
+    {
+      "submitDate": "2026-07-08",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第68期(2025/04/01－2026/03/31)",
+      "docID": "S100YPHI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社創包",
+          "shares": 7803000,
+          "ratio": 14.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 6431000,
+          "ratio": 12.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人フジシール財団",
+          "shares": 4800000,
+          "ratio": 8.9,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3051000,
+          "ratio": 5.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "藤尾　弘子",
+          "shares": 1784000,
+          "ratio": 3.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人Innovation of FUJI",
+          "shares": 1780000,
+          "ratio": 3.3,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "CEPLUX- THE INDEPENDENT UCITS PLATFORM 2（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1745000,
+          "ratio": 3.2,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "THE CHASE MANHATTAN BANK,N.A. LONDONSECS LENDING OMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1603000,
+          "ratio": 3.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "RBC IST 15 PCT NON LENDING ACCOUNT - CLIENT ACCOUNT（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 1242000,
+          "ratio": 2.3,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 938000,
+          "ratio": 1.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 14.5,
+          "trust": 17.7,
+          "foundation": 12.2,
+          "individual": 3.3,
+          "other": 3.2,
+          "foreign": 7.0
+        },
+        "individual_total": 3.3,
+        "top10_total": 57.9
+      }
+    },
     {
       "submitDate": "2026-06-23",
       "docType": "120",
