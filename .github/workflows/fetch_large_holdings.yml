@@ -18,26 +18,52 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install httpx requests
+
       - name: Fetch large holdings from EDINET
         env:
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
         run: |
           cd backend
           python fetch_large_holdings.py --days ${{ github.event.inputs.days || '90' }}
-      - name: Commit and push if changed
+
+      - name: Commit and push (with retry on race conditions)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add frontend/public/data/large_holdings
+
           if git diff --staged --quiet; then
-            echo "No changes"
-          else
-            git commit -m "chore: update large holdings data $(date +'%Y/%m/%d' -d '+9 hours') JST"
-            git pull origin main --rebase
-            git push
+            echo "変更なし。終了します。"
+            exit 0
           fi
+
+          git commit -m "chore: update large holdings data $(date +'%Y/%m/%d' -d '+9 hours') JST"
+
+          # 他のワークフロー（Fetch Market Data等）と同時にpushして
+          # 「! [rejected] (fetch first)」となった場合に備え、
+          # pull --rebase → push を最大5回まで自動リトライする。
+          # 失敗のたびに1〜10秒のランダム待機を挟み、複数ワークフローが
+          # 同時に再試行して再度ぶつかる事態（thundering herd）を避ける。
+          max_attempts=5
+          for attempt in $(seq 1 $max_attempts); do
+            if git push; then
+              echo "✅ push成功（試行 $attempt 回目）"
+              exit 0
+            fi
+            echo "⚠ push失敗（試行 $attempt / $max_attempts）。pull --rebase して再試行します..."
+            if ! git pull origin main --rebase; then
+              echo "❌ pull --rebase に失敗しました（コンフリクトの可能性）。手動確認が必要です。"
+              exit 1
+            fi
+            sleep $(( (RANDOM % 10) + 1 ))
+          done
+
+          echo "❌ ${max_attempts}回試行しましたがpushに失敗しました。"
+          exit 1
