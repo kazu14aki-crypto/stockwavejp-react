@@ -1,0 +1,222 @@
+{
+  "secCode": "6233",
+  "issuerName": "ＫＬＡＳＳ株式会社",
+  "updated_at": "2026/07/13 22:02 JST",
+  "latestDate": "2026-07-07",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "頃安　憲司",
+      "shares": 1403000,
+      "ratio": 26.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "頃安　英毅",
+      "shares": 500000,
+      "ratio": 9.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 350000,
+      "ratio": 6.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "頃安　雅樹",
+      "shares": 272000,
+      "ratio": 5.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "KLASS従業員持株会",
+      "shares": 271000,
+      "ratio": 5.04,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "安積　美奈子",
+      "shares": 210000,
+      "ratio": 3.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 201000,
+      "ratio": 3.74,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "特定有価証券信託受託者\n株式会社SMBC信託銀行",
+      "shares": 168000,
+      "ratio": 3.13,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社SBI証券",
+      "shares": 44000,
+      "ratio": 0.83,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山岡　亮一",
+      "shares": 42000,
+      "ratio": 0.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.03,
+      "corporate": 6.49,
+      "employee": 5.04,
+      "trust": 3.74,
+      "financial": 3.13,
+      "securities": 0.83
+    },
+    "individual_total": 45.03,
+    "top10_total": 64.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-07",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第77期(2024/10/01－2025/09/30)",
+      "docID": "S100YO1C",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "頃安　憲司",
+          "shares": 1403000,
+          "ratio": 26.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "頃安　英毅",
+          "shares": 500000,
+          "ratio": 9.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 350000,
+          "ratio": 6.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "頃安　雅樹",
+          "shares": 272000,
+          "ratio": 5.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "KLASS従業員持株会",
+          "shares": 271000,
+          "ratio": 5.04,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "安積　美奈子",
+          "shares": 210000,
+          "ratio": 3.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 201000,
+          "ratio": 3.74,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "特定有価証券信託受託者\n株式会社SMBC信託銀行",
+          "shares": 168000,
+          "ratio": 3.13,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社SBI証券",
+          "shares": 44000,
+          "ratio": 0.83,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山岡　亮一",
+          "shares": 42000,
+          "ratio": 0.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.03,
+          "corporate": 6.49,
+          "employee": 5.04,
+          "trust": 3.74,
+          "financial": 3.13,
+          "securities": 0.83
+        },
+        "individual_total": 45.03,
+        "top10_total": 64.26
+      }
+    }
+  ]
+}
