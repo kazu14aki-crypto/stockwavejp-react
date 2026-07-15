@@ -91,9 +91,9 @@ function PickupStocks({ stocks, period, onNavigate }) {
           const scoreNum  = Math.min(100, Math.round(s._score))
           const scoreColor = scoreNum >= 60 ? '#ff5370' : scoreNum >= 35 ? '#ff8c42' : '#ffd166'
           return (
-            <div key={s.ticker} onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{ cursor:'pointer',
+            <div key={s.ticker} onClick={() => onNavigate?.('銘柄詳細', s.ticker)} title="クリックで銘柄詳細へ" style={{
               background:'var(--bg2)', borderRadius:'8px', padding:'12px 14px',
-              border:'1px solid var(--border)',
+              border:'1px solid var(--border)', cursor:'pointer',
               borderTop:'3px solid ' + medalColors[i],
               display:'flex', flexDirection:'column', gap:'6px',
             }}>
@@ -633,7 +633,7 @@ const ETF_GROUPS = {
   },
 }
 
-export default function MarketRank() {
+export default function MarketRank({ onNavigate, isMobile } = {}) {
   const [modalStock,  setModalStock]  = useState(null)
   const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)

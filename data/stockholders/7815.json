@@ -1,0 +1,220 @@
+{
+  "secCode": "7815",
+  "issuerName": "東京ボード工業株式会社",
+  "updated_at": "2026/07/13 22:01 JST",
+  "latestDate": "2026-07-13",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "井上　弘之",
+      "shares": 744543,
+      "ratio": 27.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "セイホク株式会社",
+      "shares": 266000,
+      "ratio": 9.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "Ｔ・Ｂ・Ｈ株式会社",
+      "shares": 235535,
+      "ratio": 8.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 81968,
+      "ratio": 3.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＪＫホールディングス株式会社",
+      "shares": 77070,
+      "ratio": 2.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＧＭＯクリック証券株式会社",
+      "shares": 69300,
+      "ratio": 2.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三勇床工事株式会社",
+      "shares": 64200,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "吉野石膏株式会社",
+      "shares": 58900,
+      "ratio": 2.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 50000,
+      "ratio": 1.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "吉岡　裕之",
+      "shares": 49000,
+      "ratio": 1.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 29.67,
+      "corporate": 26.22,
+      "trust": 3.06,
+      "securities": 2.59,
+      "financial": 1.86
+    },
+    "individual_total": 29.67,
+    "top10_total": 63.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-13",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第81期(2025/04/01－2026/02/28)",
+      "docID": "S100YQAW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "井上　弘之",
+          "shares": 744543,
+          "ratio": 27.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "セイホク株式会社",
+          "shares": 266000,
+          "ratio": 9.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "Ｔ・Ｂ・Ｈ株式会社",
+          "shares": 235535,
+          "ratio": 8.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 81968,
+          "ratio": 3.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＪＫホールディングス株式会社",
+          "shares": 77070,
+          "ratio": 2.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＧＭＯクリック証券株式会社",
+          "shares": 69300,
+          "ratio": 2.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三勇床工事株式会社",
+          "shares": 64200,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "吉野石膏株式会社",
+          "shares": 58900,
+          "ratio": 2.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 50000,
+          "ratio": 1.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "吉岡　裕之",
+          "shares": 49000,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 29.67,
+          "corporate": 26.22,
+          "trust": 3.06,
+          "securities": 2.59,
+          "financial": 1.86
+        },
+        "individual_total": 29.67,
+        "top10_total": 63.4
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "7611",
+  "issuerName": "株式会社ハイデイ日高",
+  "updated_at": "2026/07/13 22:01 JST",
+  "latestDate": "2026-07-13",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "神田　正",
+      "shares": 3621000,
+      "ratio": 10.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "神田　賢一",
+      "shares": 3018000,
+      "ratio": 8.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2745000,
+      "ratio": 7.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "USBK　NA　JP　I&W　TS\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 2712000,
+      "ratio": 7.53,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "麒麟麦酒株式会社",
+      "shares": 1104000,
+      "ratio": 3.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "町田　功",
+      "shares": 1019000,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "昭和産業株式会社",
+      "shares": 658000,
+      "ratio": 1.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社武蔵野銀行",
+      "shares": 647000,
+      "ratio": 1.79,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社みずほ銀行",
+      "shares": 643000,
+      "ratio": 1.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本生命保険相互会社",
+      "shares": 567000,
+      "ratio": 1.57,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 21.26,
+      "trust": 7.62,
+      "financial": 12.67,
+      "corporate": 4.89
+    },
+    "individual_total": 21.26,
+    "top10_total": 46.44
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-13",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第48期(2025/03/01－2026/02/28)",
+      "docID": "S100YQ0A",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "神田　正",
+          "shares": 3621000,
+          "ratio": 10.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "神田　賢一",
+          "shares": 3018000,
+          "ratio": 8.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2745000,
+          "ratio": 7.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "USBK　NA　JP　I&W　TS\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 2712000,
+          "ratio": 7.53,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "麒麟麦酒株式会社",
+          "shares": 1104000,
+          "ratio": 3.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "町田　功",
+          "shares": 1019000,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "昭和産業株式会社",
+          "shares": 658000,
+          "ratio": 1.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社武蔵野銀行",
+          "shares": 647000,
+          "ratio": 1.79,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社みずほ銀行",
+          "shares": 643000,
+          "ratio": 1.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本生命保険相互会社",
+          "shares": 567000,
+          "ratio": 1.57,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 21.26,
+          "trust": 7.62,
+          "financial": 12.67,
+          "corporate": 4.89
+        },
+        "individual_total": 21.26,
+        "top10_total": 46.44
+      }
+    }
+  ]
+}
