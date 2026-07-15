@@ -4,6 +4,58 @@
   "positionCount": 6,
   "positions": [
    {
+    "secCode": "6197",
+    "issuerName": "株式会社ソラスト",
+    "latestRatio": 34.0,
+    "firstRatio": 4.78,
+    "firstDate": "2026-04-21",
+    "latestDate": "2026-05-22",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 4.78,
+      "type": "新規",
+      "purpose": "証券業務等にかかる保有"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 4.83,
+      "type": "新規",
+      "purpose": "証券業務等にかかる保有"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 34.0,
+      "type": "新規",
+      "purpose": "証券業務等にかかる保有"
+     }
+    ]
+   },
+   {
+    "secCode": "7220",
+    "issuerName": "武蔵精密工業株式会社",
+    "latestRatio": 25.0,
+    "firstRatio": -18.0,
+    "firstDate": "2026-06-04",
+    "latestDate": "2026-06-22",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-04",
+      "ratio": -18.0,
+      "type": "新規",
+      "purpose": "証券業務等にかかる保有"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 25.0,
+      "type": "新規",
+      "purpose": "証券業務等にかかる保有"
+     }
+    ]
+   },
+   {
     "secCode": "6927",
     "issuerName": "ヘリオス　テクノ　ホールディング株式会社",
     "latestRatio": 5.72,
@@ -79,69 +131,17 @@
     ]
    },
    {
-    "secCode": "6197",
-    "issuerName": "株式会社ソラスト",
-    "latestRatio": 0.34,
-    "firstRatio": 4.78,
-    "firstDate": "2026-04-21",
-    "latestDate": "2026-05-22",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 4.78,
-      "type": "新規",
-      "purpose": "証券業務等にかかる保有"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 4.83,
-      "type": "新規",
-      "purpose": "証券業務等にかかる保有"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 0.34,
-      "type": "新規",
-      "purpose": "証券業務等にかかる保有"
-     }
-    ]
-   },
-   {
-    "secCode": "7220",
-    "issuerName": "武蔵精密工業株式会社",
-    "latestRatio": 0.25,
-    "firstRatio": -0.18,
-    "firstDate": "2026-06-04",
-    "latestDate": "2026-06-22",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-04",
-      "ratio": -0.18,
-      "type": "新規",
-      "purpose": "証券業務等にかかる保有"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 0.25,
-      "type": "新規",
-      "purpose": "証券業務等にかかる保有"
-     }
-    ]
-   },
-   {
     "secCode": "6588",
     "issuerName": "東芝テック株式会社",
-    "latestRatio": -0.68,
-    "firstRatio": -0.68,
+    "latestRatio": -68.0,
+    "firstRatio": -68.0,
     "firstDate": "2026-04-21",
     "latestDate": "2026-04-21",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-04-21",
-      "ratio": -0.68,
+      "ratio": -68.0,
       "type": "新規",
       "purpose": "証券業務等にかかる保有"
      }
@@ -154,6 +154,659 @@
   "positionCount": 80,
   "positions": [
    {
+    "secCode": "5985",
+    "issuerName": "サンコール株式会社",
+    "latestRatio": 96.0,
+    "firstRatio": 96.0,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 96.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "8395",
+    "issuerName": "株式会社佐賀銀行",
+    "latestRatio": 89.0,
+    "firstRatio": 2.24,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-07-07",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 2.24,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-03",
+      "ratio": 1.05,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 1.03,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 89.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6862",
+    "issuerName": "ミナトホールディングス株式会社",
+    "latestRatio": 81.0,
+    "firstRatio": 1.33,
+    "firstDate": "2026-05-19",
+    "latestDate": "2026-06-05",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-19",
+      "ratio": 1.33,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 81.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9513",
+    "issuerName": "電源開発株式会社",
+    "latestRatio": 78.0,
+    "firstRatio": 78.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 78.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "336A",
+    "issuerName": "ダイナミックマッププラットフォーム株式会社",
+    "latestRatio": 70.0,
+    "firstRatio": 70.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 70.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6941",
+    "issuerName": "山一電機株式会社",
+    "latestRatio": 65.0,
+    "firstRatio": 12.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-06-22",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 12.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 65.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9008",
+    "issuerName": "京王電鉄株式会社",
+    "latestRatio": 59.0,
+    "firstRatio": 59.0,
+    "firstDate": "2026-06-03",
+    "latestDate": "2026-06-03",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-03",
+      "ratio": 59.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6855",
+    "issuerName": "日本電子材料株式会社",
+    "latestRatio": 56.0,
+    "firstRatio": 55.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-07-06",
+    "reportCount": 5,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 55.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-05-19",
+      "ratio": 54.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 55.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 1.3,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 56.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6754",
+    "issuerName": "アンリツ株式会社",
+    "latestRatio": 56.0,
+    "firstRatio": 56.0,
+    "firstDate": "2026-05-07",
+    "latestDate": "2026-05-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-07",
+      "ratio": 56.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4182",
+    "issuerName": "三菱瓦斯化学株式会社",
+    "latestRatio": 54.0,
+    "firstRatio": 54.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 54.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "7224",
+    "issuerName": "新明和工業株式会社",
+    "latestRatio": 52.0,
+    "firstRatio": 52.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 52.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9005",
+    "issuerName": "東急リアル・エステート投資法人　投資証券",
+    "latestRatio": 51.0,
+    "firstRatio": 1.43,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 1.43,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 51.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "3774",
+    "issuerName": "株式会社インターネットイニシアティブ",
+    "latestRatio": 48.0,
+    "firstRatio": 48.0,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 48.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "2432",
+    "issuerName": "株式会社ディー・エヌ・エー",
+    "latestRatio": 48.0,
+    "firstRatio": 48.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 48.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "5706",
+    "issuerName": "三井金属株式会社",
+    "latestRatio": 47.0,
+    "firstRatio": 0.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-06-04",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 0.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-04",
+      "ratio": 47.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "5233",
+    "issuerName": "太平洋セメント株式会社",
+    "latestRatio": 46.0,
+    "firstRatio": 49.0,
+    "firstDate": "2026-04-20",
+    "latestDate": "2026-05-21",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 49.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-05-21",
+      "ratio": 46.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6779",
+    "issuerName": "日本電波工業株式会社",
+    "latestRatio": 35.0,
+    "firstRatio": 42.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 42.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 35.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4543",
+    "issuerName": "テルモ株式会社",
+    "latestRatio": 28.0,
+    "firstRatio": 28.0,
+    "firstDate": "2026-05-21",
+    "latestDate": "2026-05-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 28.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "368A",
+    "issuerName": "株式会社北里コーポレーション",
+    "latestRatio": 28.0,
+    "firstRatio": 28.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 28.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4980",
+    "issuerName": "デクセリアルズ株式会社",
+    "latestRatio": 27.0,
+    "firstRatio": 75.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-07-09",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 75.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-07-09",
+      "ratio": 27.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "3434",
+    "issuerName": "株式会社プラスアルファ・コンサルティング",
+    "latestRatio": 27.0,
+    "firstRatio": 27.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 27.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "7974",
+    "issuerName": "任天堂株式会社",
+    "latestRatio": 27.0,
+    "firstRatio": 27.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 27.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6584",
+    "issuerName": "三櫻工業株式会社",
+    "latestRatio": 26.0,
+    "firstRatio": 60.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 60.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 26.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6471",
+    "issuerName": "日本精工株式会社",
+    "latestRatio": 26.0,
+    "firstRatio": 26.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 26.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4112",
+    "issuerName": "保土谷化学工業株式会社",
+    "latestRatio": 25.0,
+    "firstRatio": 25.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 25.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "1909",
+    "issuerName": "日本ドライケミカル株式会社",
+    "latestRatio": 24.0,
+    "firstRatio": 1.76,
+    "firstDate": "2026-06-04",
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-04",
+      "ratio": 1.76,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 24.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "5801",
+    "issuerName": "古河電気工業株式会社",
+    "latestRatio": 20.0,
+    "firstRatio": 25.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 25.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 20.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9072",
+    "issuerName": "ニッコンホールディングス株式会社",
+    "latestRatio": 15.0,
+    "firstRatio": 5.17,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-07-07",
+    "reportCount": 5,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 5.17,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 5.18,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-06-03",
+      "ratio": 4.45,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 3.8,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 15.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "7715",
+    "issuerName": "長野計器株式会社",
+    "latestRatio": 14.0,
+    "firstRatio": 14.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 14.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9201",
+    "issuerName": "日本航空株式会社",
+    "latestRatio": 14.0,
+    "firstRatio": 14.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 14.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6954",
+    "issuerName": "ファナック株式会社",
+    "latestRatio": 11.0,
+    "firstRatio": 11.0,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-05-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 11.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
     "secCode": "7840",
     "issuerName": "フランスベッドホールディングス株式会社",
     "latestRatio": 9.16,
@@ -165,6 +818,80 @@
      {
       "date": "2026-05-13",
       "ratio": 9.16,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4078",
+    "issuerName": "堺化学工業株式会社",
+    "latestRatio": 9.0,
+    "firstRatio": 9.0,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 9.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9104",
+    "issuerName": "株式会社商船三井",
+    "latestRatio": 9.0,
+    "firstRatio": 9.0,
+    "firstDate": "2026-06-03",
+    "latestDate": "2026-06-03",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-03",
+      "ratio": 9.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6367",
+    "issuerName": "ダイキン工業株式会社",
+    "latestRatio": 9.0,
+    "firstRatio": 9.0,
+    "firstDate": "2026-05-21",
+    "latestDate": "2026-05-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 9.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "7220",
+    "issuerName": "武蔵精密工業株式会社",
+    "latestRatio": 8.0,
+    "firstRatio": 1.3,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 1.3,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 8.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -298,6 +1025,63 @@
     ]
    },
    {
+    "secCode": "7701",
+    "issuerName": "株式会社　島津製作所",
+    "latestRatio": 4.0,
+    "firstRatio": 4.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 4.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "7383",
+    "issuerName": "株式会社ネットプロテクションズホールディングス",
+    "latestRatio": 3.0,
+    "firstRatio": 0.0,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 0.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 3.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6958",
+    "issuerName": "日本シイエムケイ株式会社",
+    "latestRatio": 3.0,
+    "firstRatio": 3.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 3.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
     "secCode": "4613",
     "issuerName": "関西ペイント株式会社",
     "latestRatio": 2.87,
@@ -318,26 +1102,26 @@
     "secCode": "6997",
     "issuerName": "日本ケミコン株式会社",
     "latestRatio": 2.55,
-    "firstRatio": 0.34,
+    "firstRatio": 34.0,
     "firstDate": "2026-04-22",
     "latestDate": "2026-07-07",
     "reportCount": 5,
     "trend": [
      {
       "date": "2026-04-22",
-      "ratio": 0.34,
+      "ratio": 34.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
      {
       "date": "2026-05-12",
-      "ratio": 0.3,
+      "ratio": 30.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
      {
       "date": "2026-06-05",
-      "ratio": 0.67,
+      "ratio": 67.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
@@ -693,14 +1477,14 @@
     "secCode": "5726",
     "issuerName": "株式会社大阪チタニウムテクノロジーズ",
     "latestRatio": 1.27,
-    "firstRatio": 0.93,
+    "firstRatio": 93.0,
     "firstDate": "2026-04-20",
     "latestDate": "2026-06-04",
     "reportCount": 3,
     "trend": [
      {
       "date": "2026-04-20",
-      "ratio": 0.93,
+      "ratio": 93.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
@@ -823,13 +1607,13 @@
      },
      {
       "date": "2026-06-23",
-      "ratio": 0.58,
+      "ratio": 58.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
      {
       "date": "2026-07-09",
-      "ratio": 0.68,
+      "ratio": 68.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
@@ -862,14 +1646,14 @@
     "secCode": "7988",
     "issuerName": "株式会社ニフコ",
     "latestRatio": 1.12,
-    "firstRatio": 0.26,
+    "firstRatio": 26.0,
     "firstDate": "2026-05-12",
     "latestDate": "2026-05-22",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-12",
-      "ratio": 0.26,
+      "ratio": 26.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
@@ -885,14 +1669,14 @@
     "secCode": "6103",
     "issuerName": "オークマ株式会社",
     "latestRatio": 1.11,
-    "firstRatio": 0.26,
+    "firstRatio": 26.0,
     "firstDate": "2026-04-20",
     "latestDate": "2026-06-19",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-04-20",
-      "ratio": 0.26,
+      "ratio": 26.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
@@ -962,801 +1746,17 @@
     ]
    },
    {
-    "secCode": "5985",
-    "issuerName": "サンコール株式会社",
-    "latestRatio": 0.96,
-    "firstRatio": 0.96,
-    "firstDate": "2026-06-19",
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.96,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "8395",
-    "issuerName": "株式会社佐賀銀行",
-    "latestRatio": 0.89,
-    "firstRatio": 2.24,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-07-07",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 2.24,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-03",
-      "ratio": 1.05,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 1.03,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.89,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6862",
-    "issuerName": "ミナトホールディングス株式会社",
-    "latestRatio": 0.81,
-    "firstRatio": 1.33,
-    "firstDate": "2026-05-19",
-    "latestDate": "2026-06-05",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-19",
-      "ratio": 1.33,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 0.81,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9513",
-    "issuerName": "電源開発株式会社",
-    "latestRatio": 0.78,
-    "firstRatio": 0.78,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.78,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "336A",
-    "issuerName": "ダイナミックマッププラットフォーム株式会社",
-    "latestRatio": 0.7,
-    "firstRatio": 0.7,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.7,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6941",
-    "issuerName": "山一電機株式会社",
-    "latestRatio": 0.65,
-    "firstRatio": 0.12,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-06-22",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.12,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 0.65,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9008",
-    "issuerName": "京王電鉄株式会社",
-    "latestRatio": 0.59,
-    "firstRatio": 0.59,
-    "firstDate": "2026-06-03",
-    "latestDate": "2026-06-03",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-03",
-      "ratio": 0.59,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6855",
-    "issuerName": "日本電子材料株式会社",
-    "latestRatio": 0.56,
-    "firstRatio": 0.55,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-07-06",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.55,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-05-19",
-      "ratio": 0.54,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 0.55,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 1.3,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 0.56,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6754",
-    "issuerName": "アンリツ株式会社",
-    "latestRatio": 0.56,
-    "firstRatio": 0.56,
-    "firstDate": "2026-05-07",
-    "latestDate": "2026-05-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-07",
-      "ratio": 0.56,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4182",
-    "issuerName": "三菱瓦斯化学株式会社",
-    "latestRatio": 0.54,
-    "firstRatio": 0.54,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.54,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7224",
-    "issuerName": "新明和工業株式会社",
-    "latestRatio": 0.52,
-    "firstRatio": 0.52,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.52,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9005",
-    "issuerName": "東急リアル・エステート投資法人　投資証券",
-    "latestRatio": 0.51,
-    "firstRatio": 1.43,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 1.43,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.51,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "3774",
-    "issuerName": "株式会社インターネットイニシアティブ",
-    "latestRatio": 0.48,
-    "firstRatio": 0.48,
-    "firstDate": "2026-06-19",
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.48,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "2432",
-    "issuerName": "株式会社ディー・エヌ・エー",
-    "latestRatio": 0.48,
-    "firstRatio": 0.48,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.48,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "5706",
-    "issuerName": "三井金属株式会社",
-    "latestRatio": 0.47,
-    "firstRatio": 0.0,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-06-04",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.0,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-04",
-      "ratio": 0.47,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "5233",
-    "issuerName": "太平洋セメント株式会社",
-    "latestRatio": 0.46,
-    "firstRatio": 0.49,
-    "firstDate": "2026-04-20",
-    "latestDate": "2026-05-21",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-20",
-      "ratio": 0.49,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-05-21",
-      "ratio": 0.46,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6779",
-    "issuerName": "日本電波工業株式会社",
-    "latestRatio": 0.35,
-    "firstRatio": 0.42,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-07-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.42,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 0.35,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4543",
-    "issuerName": "テルモ株式会社",
-    "latestRatio": 0.28,
-    "firstRatio": 0.28,
-    "firstDate": "2026-05-21",
-    "latestDate": "2026-05-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 0.28,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "368A",
-    "issuerName": "株式会社北里コーポレーション",
-    "latestRatio": 0.28,
-    "firstRatio": 0.28,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.28,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4980",
-    "issuerName": "デクセリアルズ株式会社",
-    "latestRatio": 0.27,
-    "firstRatio": 0.75,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-07-09",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.75,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-07-09",
-      "ratio": 0.27,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "3434",
-    "issuerName": "株式会社プラスアルファ・コンサルティング",
-    "latestRatio": 0.27,
-    "firstRatio": 0.27,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.27,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7974",
-    "issuerName": "任天堂株式会社",
-    "latestRatio": 0.27,
-    "firstRatio": 0.27,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.27,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6584",
-    "issuerName": "三櫻工業株式会社",
-    "latestRatio": 0.26,
-    "firstRatio": 0.6,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.6,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 0.26,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6471",
-    "issuerName": "日本精工株式会社",
-    "latestRatio": 0.26,
-    "firstRatio": 0.26,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.26,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4112",
-    "issuerName": "保土谷化学工業株式会社",
-    "latestRatio": 0.25,
-    "firstRatio": 0.25,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.25,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "1909",
-    "issuerName": "日本ドライケミカル株式会社",
-    "latestRatio": 0.24,
-    "firstRatio": 1.76,
-    "firstDate": "2026-06-04",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-04",
-      "ratio": 1.76,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.24,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "5801",
-    "issuerName": "古河電気工業株式会社",
-    "latestRatio": 0.2,
-    "firstRatio": 0.25,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.25,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.2,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9072",
-    "issuerName": "ニッコンホールディングス株式会社",
-    "latestRatio": 0.15,
-    "firstRatio": 5.17,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-07-07",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 5.17,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 5.18,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-06-03",
-      "ratio": 4.45,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 3.8,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.15,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7715",
-    "issuerName": "長野計器株式会社",
-    "latestRatio": 0.14,
-    "firstRatio": 0.14,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.14,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9201",
-    "issuerName": "日本航空株式会社",
-    "latestRatio": 0.14,
-    "firstRatio": 0.14,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.14,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6954",
-    "issuerName": "ファナック株式会社",
-    "latestRatio": 0.11,
-    "firstRatio": 0.11,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-05-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 0.11,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4078",
-    "issuerName": "堺化学工業株式会社",
-    "latestRatio": 0.09,
-    "firstRatio": 0.09,
-    "firstDate": "2026-06-19",
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.09,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9104",
-    "issuerName": "株式会社商船三井",
-    "latestRatio": 0.09,
-    "firstRatio": 0.09,
-    "firstDate": "2026-06-03",
-    "latestDate": "2026-06-03",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-03",
-      "ratio": 0.09,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6367",
-    "issuerName": "ダイキン工業株式会社",
-    "latestRatio": 0.09,
-    "firstRatio": 0.09,
-    "firstDate": "2026-05-21",
-    "latestDate": "2026-05-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 0.09,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7220",
-    "issuerName": "武蔵精密工業株式会社",
-    "latestRatio": 0.08,
-    "firstRatio": 1.3,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 1.3,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.08,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7701",
-    "issuerName": "株式会社　島津製作所",
-    "latestRatio": 0.04,
-    "firstRatio": 0.04,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.04,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "7383",
-    "issuerName": "株式会社ネットプロテクションズホールディングス",
-    "latestRatio": 0.03,
-    "firstRatio": 0.0,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 0.0,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 0.03,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6958",
-    "issuerName": "日本シイエムケイ株式会社",
-    "latestRatio": 0.03,
-    "firstRatio": 0.03,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.03,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
     "secCode": "6961",
     "issuerName": "株式会社エンプラス",
-    "latestRatio": 0.01,
-    "firstRatio": 0.01,
+    "latestRatio": 1.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-06-22",
     "latestDate": "2026-06-22",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-06-22",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫保有している。"
      }
@@ -1765,7 +1765,7 @@
    {
     "secCode": "6699",
     "issuerName": "ダイヤモンドエレクトリックホールディングス株式会社",
-    "latestRatio": 0.01,
+    "latestRatio": 1.0,
     "firstRatio": 2.77,
     "firstDate": "2026-06-05",
     "latestDate": "2026-06-22",
@@ -1779,7 +1779,7 @@
      },
      {
       "date": "2026-06-22",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -1788,15 +1788,15 @@
    {
     "secCode": "1332",
     "issuerName": "株式会社ニッスイ",
-    "latestRatio": 0.01,
-    "firstRatio": 0.01,
+    "latestRatio": 1.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-06-03",
     "latestDate": "2026-06-03",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-06-03",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -1805,21 +1805,21 @@
    {
     "secCode": "6197",
     "issuerName": "株式会社ソラスト",
-    "latestRatio": 0.01,
-    "firstRatio": 0.22,
+    "latestRatio": 1.0,
+    "firstRatio": 22.0,
     "firstDate": "2026-05-11",
     "latestDate": "2026-05-21",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-11",
-      "ratio": 0.22,
+      "ratio": 22.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
      {
       "date": "2026-05-21",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      }
@@ -1828,15 +1828,15 @@
    {
     "secCode": "9001",
     "issuerName": "東武鉄道株式会社",
-    "latestRatio": 0.01,
-    "firstRatio": 0.01,
+    "latestRatio": 1.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-05-12",
     "latestDate": "2026-05-12",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-12",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -1845,15 +1845,15 @@
    {
     "secCode": "2413",
     "issuerName": "エムスリー株式会社",
-    "latestRatio": 0.01,
-    "firstRatio": 0.01,
+    "latestRatio": 1.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-05-11",
     "latestDate": "2026-05-11",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-11",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -1902,27 +1902,27 @@
    {
     "secCode": "4092",
     "issuerName": "日本化学工業株式会社",
-    "latestRatio": -0.01,
-    "firstRatio": 0.54,
+    "latestRatio": -1.0,
+    "firstRatio": 54.0,
     "firstDate": "2026-06-04",
     "latestDate": "2026-07-06",
     "reportCount": 3,
     "trend": [
      {
       "date": "2026-06-04",
-      "ratio": 0.54,
+      "ratio": 54.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
      {
       "date": "2026-06-19",
-      "ratio": -0.01,
+      "ratio": -1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      },
      {
       "date": "2026-07-06",
-      "ratio": -0.01,
+      "ratio": -1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      }
@@ -1931,15 +1931,15 @@
    {
     "secCode": "549A",
     "issuerName": "ヒトトヒトホールディングス株式会社",
-    "latestRatio": -0.18,
-    "firstRatio": -0.18,
+    "latestRatio": -18.0,
+    "firstRatio": -18.0,
     "firstDate": "2026-07-06",
     "latestDate": "2026-07-06",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-07-06",
-      "ratio": -0.18,
+      "ratio": -18.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫として保有している。"
      }
@@ -2186,35 +2186,17 @@
  },
  "日本アジア投資": {
   "investor": "日本アジア投資",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "8518",
-    "issuerName": "ｎｍｓホールディングス株式会社",
-    "latestRatio": 0.0,
-    "firstRatio": 3.53,
-    "firstDate": "2026-06-04",
-    "latestDate": "2026-07-14",
-    "reportCount": 8,
+    "secCode": "2334",
+    "issuerName": "株式会社イオレ",
+    "latestRatio": 19.28,
+    "firstRatio": 22.47,
+    "firstDate": "2026-06-10",
+    "latestDate": "2026-06-30",
+    "reportCount": 4,
     "trend": [
-     {
-      "date": "2026-06-04",
-      "ratio": 3.53,
-      "type": "新規",
-      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
-     },
-     {
-      "date": "2026-06-04",
-      "ratio": 3.53,
-      "type": "変更",
-      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 3.53,
-      "type": "新規",
-      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
-     },
      {
       "date": "2026-06-10",
       "ratio": 22.47,
@@ -2238,6 +2220,35 @@
       "ratio": 19.28,
       "type": "新規",
       "purpose": "純投資及び状況に応じて全てのステークホルダーとの間で、発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財務状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
+     }
+    ]
+   },
+   {
+    "secCode": "2162",
+    "issuerName": "ｎｍｓホールディングス株式会社",
+    "latestRatio": 0.0,
+    "firstRatio": 3.53,
+    "firstDate": "2026-06-04",
+    "latestDate": "2026-07-14",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-06-04",
+      "ratio": 3.53,
+      "type": "新規",
+      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
+     },
+     {
+      "date": "2026-06-04",
+      "ratio": 3.53,
+      "type": "変更",
+      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 3.53,
+      "type": "新規",
+      "purpose": "純投資及び発行者のコーポレートガバナンス、取締役会の構成、経営・事業・財政状況及び戦略、資本政策、株主対策等について対話を行うことがある。"
      },
      {
       "date": "2026-07-14",
@@ -2449,20 +2460,20 @@
     "secCode": "4620",
     "issuerName": "藤倉化成株式会社",
     "latestRatio": 3.8,
-    "firstRatio": 0.74,
+    "firstRatio": 74.0,
     "firstDate": "2026-04-17",
     "latestDate": "2026-06-18",
     "reportCount": 5,
     "trend": [
      {
       "date": "2026-04-17",
-      "ratio": 0.74,
+      "ratio": 74.0,
       "type": "新規",
       "purpose": "投資及び建設的な対話（エンゲージメント）を通じた中長期的な企業価値の向上（状況に応じて重要提案行為等を行うことを含む）"
      },
      {
       "date": "2026-05-12",
-      "ratio": 0.74,
+      "ratio": 74.0,
       "type": "新規",
       "purpose": "投資及び建設的な対話（エンゲージメント）を通じた中長期的な企業価値の向上（状況に応じて重要提案行為等を行うことを含む）"
      },
@@ -2490,14 +2501,14 @@
     "secCode": "3512",
     "issuerName": "日本フエルト株式会社",
     "latestRatio": 2.89,
-    "firstRatio": 0.31,
+    "firstRatio": 31.0,
     "firstDate": "2026-05-15",
     "latestDate": "2026-07-02",
     "reportCount": 5,
     "trend": [
      {
       "date": "2026-05-15",
-      "ratio": 0.31,
+      "ratio": 31.0,
       "type": "新規",
       "purpose": "投資及び建設的な対話（エンゲージメント）を通じた中長期的な企業価値の向上（状況に応じて重要提案行為等を行うことを含む）"
      },
@@ -2531,14 +2542,14 @@
     "secCode": "4027",
     "issuerName": "テイカ株式会社",
     "latestRatio": 1.69,
-    "firstRatio": 0.35,
+    "firstRatio": 35.0,
     "firstDate": "2026-04-24",
     "latestDate": "2026-07-14",
     "reportCount": 3,
     "trend": [
      {
       "date": "2026-04-24",
-      "ratio": 0.35,
+      "ratio": 35.0,
       "type": "新規",
       "purpose": "投資及び建設的な対話（エンゲージメント）を通じた中長期的な企業価値の向上（状況に応じて重要提案行為等を行うことを含む）"
      },
@@ -2737,7 +2748,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "3923",
+    "secCode": "3434",
     "issuerName": "株式会社プラスアルファ・コンサルティング",
     "latestRatio": 22.2,
     "firstRatio": 5.03,
@@ -2871,7 +2882,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "4376",
+    "secCode": "3926",
     "issuerName": "株式会社オープンドア",
     "latestRatio": 8.33,
     "firstRatio": 7.33,
@@ -3066,28 +3077,62 @@
  },
  "光通信": {
   "investor": "光通信",
-  "positionCount": 32,
+  "positionCount": 33,
   "positions": [
    {
-    "secCode": "9435",
+    "secCode": "6788",
+    "issuerName": "株式会社日本トリム",
+    "latestRatio": 81.0,
+    "firstRatio": 81.0,
+    "firstDate": "2026-05-01",
+    "latestDate": "2026-06-11",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-01",
+      "ratio": 81.0,
+      "type": "新規",
+      "purpose": "純投資"
+     },
+     {
+      "date": "2026-06-11",
+      "ratio": 81.0,
+      "type": "新規",
+      "purpose": "純投資"
+     }
+    ]
+   },
+   {
+    "secCode": "2763",
     "issuerName": "株式会社エフティグループ",
     "latestRatio": 71.11,
+    "firstRatio": 71.11,
+    "firstDate": "2026-07-07",
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 71.11,
+      "type": "新規",
+      "purpose": "安定株主として長期保有を目的としております"
+     }
+    ]
+   },
+   {
+    "secCode": "2588",
+    "issuerName": "株式会社プレミアムウォーターホールディングス",
+    "latestRatio": 29.31,
     "firstRatio": 29.31,
     "firstDate": "2026-05-13",
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
+    "latestDate": "2026-05-13",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-13",
       "ratio": 29.31,
       "type": "新規",
       "purpose": "長期保有を目的とした純投資"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 71.11,
-      "type": "新規",
-      "purpose": "安定株主として長期保有を目的としております"
      }
     ]
    },
@@ -3642,29 +3687,6 @@
       "purpose": "純投資"
      }
     ]
-   },
-   {
-    "secCode": "6788",
-    "issuerName": "株式会社日本トリム",
-    "latestRatio": 0.81,
-    "firstRatio": 0.81,
-    "firstDate": "2026-05-01",
-    "latestDate": "2026-06-11",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-01",
-      "ratio": 0.81,
-      "type": "新規",
-      "purpose": "純投資"
-     },
-     {
-      "date": "2026-06-11",
-      "ratio": 0.81,
-      "type": "新規",
-      "purpose": "純投資"
-     }
-    ]
    }
   ]
  },
@@ -3704,15 +3726,15 @@
    {
     "secCode": "6165",
     "issuerName": "パンチ工業株式会社",
-    "latestRatio": 0.11,
-    "firstRatio": 0.11,
+    "latestRatio": 11.0,
+    "firstRatio": 11.0,
     "firstDate": "2026-07-13",
     "latestDate": "2026-07-13",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-07-13",
-      "ratio": 0.11,
+      "ratio": 11.0,
       "type": "新規",
       "purpose": "純投資として保有いたします。"
      }
@@ -3842,7 +3864,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "1944",
+    "secCode": "1948",
     "issuerName": "株式会社弘電社",
     "latestRatio": 41.41,
     "firstRatio": 41.41,
@@ -3891,16 +3913,16 @@
  },
  "大同特殊鋼": {
   "investor": "大同特殊鋼",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "5471",
-    "issuerName": "東京窯業株式会社",
-    "latestRatio": 11.49,
+    "secCode": "5484",
+    "issuerName": "東北特殊鋼株式会社",
+    "latestRatio": 56.99,
     "firstRatio": 33.77,
     "firstDate": "2026-05-22",
-    "latestDate": "2026-07-10",
-    "reportCount": 3,
+    "latestDate": "2026-07-03",
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-22",
@@ -3913,7 +3935,18 @@
       "ratio": 56.99,
       "type": "新規",
       "purpose": "発行者との連携を推進するための政策投資として保有しています。提出者は、発行者の普通株式（以下「発行者株式」といいます。）の全て（ただし、提出者が所有する発行者株式、発行者が所有する自己株式、共同保有者１、共同保有者２、光通信ＫＫ投資事業有限"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "5363",
+    "issuerName": "東京窯業株式会社",
+    "latestRatio": 11.49,
+    "firstRatio": 11.49,
+    "firstDate": "2026-07-10",
+    "latestDate": "2026-07-10",
+    "reportCount": 1,
+    "trend": [
      {
       "date": "2026-07-10",
       "ratio": 11.49,
@@ -3949,16 +3982,39 @@
  },
  "三菱電機": {
   "investor": "三菱電機",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "6503",
+    "secCode": "1948",
     "issuerName": "株式会社弘電社",
     "latestRatio": 50.01,
+    "firstRatio": 50.01,
+    "firstDate": "2026-05-29",
+    "latestDate": "2026-07-10",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-29",
+      "ratio": 50.01,
+      "type": "新規",
+      "purpose": "政策投資。但し、（６）「当該株券等に関する担保契約等重要な契約」に記載のとおり、提出者は、2026年５月25日付で、株式会社きんでん（以下「公開買付者」といいます。）との間で、①公開買付者が実施する発行者の普通株式（以下「発行者株式」といい"
+     },
+     {
+      "date": "2026-07-10",
+      "ratio": 50.01,
+      "type": "新規",
+      "purpose": "政策投資。但し、（６）「当該株券等に関する担保契約等重要な契約」に記載のとおり、提出者は、2026年５月25日付で、株式会社きんでん（以下「公開買付者」といいます。）との間で、①公開買付者が実施する発行者の普通株式（以下「発行者株式」といい"
+     }
+    ]
+   },
+   {
+    "secCode": "6994",
+    "issuerName": "株式会社指月電機製作所",
+    "latestRatio": 15.67,
     "firstRatio": 16.76,
     "firstDate": "2026-05-25",
-    "latestDate": "2026-07-10",
-    "reportCount": 4,
+    "latestDate": "2026-06-03",
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-25",
@@ -3967,22 +4023,10 @@
       "purpose": "政策投資"
      },
      {
-      "date": "2026-05-29",
-      "ratio": 50.01,
-      "type": "新規",
-      "purpose": "政策投資。但し、（６）「当該株券等に関する担保契約等重要な契約」に記載のとおり、提出者は、2026年５月25日付で、株式会社きんでん（以下「公開買付者」といいます。）との間で、①公開買付者が実施する発行者の普通株式（以下「発行者株式」といい"
-     },
-     {
       "date": "2026-06-03",
       "ratio": 15.67,
       "type": "新規",
       "purpose": "政策投資"
-     },
-     {
-      "date": "2026-07-10",
-      "ratio": 50.01,
-      "type": "新規",
-      "purpose": "政策投資。但し、（６）「当該株券等に関する担保契約等重要な契約」に記載のとおり、提出者は、2026年５月25日付で、株式会社きんでん（以下「公開買付者」といいます。）との間で、①公開買付者が実施する発行者の普通株式（以下「発行者株式」といい"
      }
     ]
    }
@@ -4046,7 +4090,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7267",
+    "secCode": "7218",
     "issuerName": "田中精密工業株式会社",
     "latestRatio": 13.38,
     "firstRatio": 24.34,
@@ -4621,7 +4665,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7280",
+    "secCode": "9691",
     "issuerName": "株式会社両毛システムズ",
     "latestRatio": 79.74,
     "firstRatio": 51.14,
@@ -4665,23 +4709,51 @@
  },
  "トヨタ自動車": {
   "investor": "トヨタ自動車",
-  "positionCount": 1,
+  "positionCount": 3,
   "positions": [
    {
-    "secCode": "7203",
-    "issuerName": "KDDI株式会社",
-    "latestRatio": 7.73,
+    "secCode": "5482",
+    "issuerName": "愛知製鋼株式会社",
+    "latestRatio": 24.59,
     "firstRatio": 24.59,
     "firstDate": "2026-05-13",
-    "latestDate": "2026-07-08",
-    "reportCount": 9,
+    "latestDate": "2026-05-13",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-13",
       "ratio": 24.59,
       "type": "新規",
       "purpose": "政策投資"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "143A",
+    "issuerName": "株式会社アイシン",
+    "latestRatio": 21.32,
+    "firstRatio": 21.32,
+    "firstDate": "2026-05-13",
+    "latestDate": "2026-05-13",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-13",
+      "ratio": 21.32,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "7203",
+    "issuerName": "KDDI株式会社",
+    "latestRatio": 7.73,
+    "firstRatio": 21.65,
+    "firstDate": "2026-05-13",
+    "latestDate": "2026-07-08",
+    "reportCount": 7,
+    "trend": [
      {
       "date": "2026-05-13",
       "ratio": 21.65,
@@ -4697,12 +4769,6 @@
      {
       "date": "2026-05-13",
       "ratio": 24.24,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-13",
-      "ratio": 21.32,
       "type": "新規",
       "purpose": "政策投資"
      },
@@ -6812,28 +6878,39 @@
  },
  "ＲＩＺＡＰグループ": {
   "investor": "ＲＩＺＡＰグループ",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "2928",
+    "secCode": "9980",
     "issuerName": "ＭＲＫホールディングス株式会社",
     "latestRatio": 54.3,
+    "firstRatio": 54.3,
+    "firstDate": "2026-07-07",
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 54.3,
+      "type": "新規",
+      "purpose": "発行者の連結子会社化を目的とした保有（提出者と発行者との間の平成28年４月28日付資本業務提携契約に基づく発行者への役員の派遣その他重要提案行為等を含みます。）"
+     }
+    ]
+   },
+   {
+    "secCode": "2928",
+    "issuerName": "BRUNO株式会社",
+    "latestRatio": 52.51,
     "firstRatio": 52.51,
     "firstDate": "2026-07-07",
     "latestDate": "2026-07-07",
-    "reportCount": 2,
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-07-07",
       "ratio": 52.51,
       "type": "新規",
       "purpose": "政策保有"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 54.3,
-      "type": "新規",
-      "purpose": "発行者の連結子会社化を目的とした保有（提出者と発行者との間の平成28年４月28日付資本業務提携契約に基づく発行者への役員の派遣その他重要提案行為等を含みます。）"
      }
     ]
    }
@@ -7284,7 +7361,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "9405",
+    "secCode": "3686",
     "issuerName": "株式会社ディー・エル・イー",
     "latestRatio": 40.16,
     "firstRatio": 40.16,
@@ -7427,6 +7504,81 @@
   "positionCount": 10,
   "positions": [
    {
+    "secCode": "6976",
+    "issuerName": "太陽誘電（株）",
+    "latestRatio": 55.0,
+    "firstRatio": 79.0,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 79.0,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 1.1,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 55.0,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・レンディングその他取引に基づく一時的保有"
+     }
+    ]
+   },
+   {
+    "secCode": "9788",
+    "issuerName": "（株）レゾナック・ホールディングス",
+    "latestRatio": 40.0,
+    "firstRatio": 1.45,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-06-05",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 1.45,
+      "type": "新規",
+      "purpose": "ディーリング(短期売買)目的で保有するもの。デリバティブ取引に関連して保有するもの。レンディングその他取引に基づく一時的保有。"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 1.47,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 40.0,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
+     }
+    ]
+   },
+   {
+    "secCode": "7004",
+    "issuerName": "カナデビア（株）",
+    "latestRatio": 25.0,
+    "firstRatio": 25.0,
+    "firstDate": "2026-07-07",
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 25.0,
+      "type": "新規",
+      "purpose": "・ディーリング(短期売買)目的で保有するもの・レンディングその他取引に基づく一時的保有"
+     }
+    ]
+   },
+   {
     "secCode": "3934",
     "issuerName": "（株）ベネフィットジャパン",
     "latestRatio": 7.46,
@@ -7438,6 +7590,35 @@
      {
       "date": "2026-04-22",
       "ratio": 7.46,
+      "type": "新規",
+      "purpose": "ディーリング(短期売買)目的で保有するもの。レンディングその他取引に基づく一時的保有。"
+     }
+    ]
+   },
+   {
+    "secCode": "6997",
+    "issuerName": "日本ケミコン（株）",
+    "latestRatio": 7.0,
+    "firstRatio": 6.97,
+    "firstDate": "2026-04-15",
+    "latestDate": "2026-05-12",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-15",
+      "ratio": 6.97,
+      "type": "新規",
+      "purpose": "ディーリング(短期売買)目的で保有するもの。顧客との売買取引等に基づき保有するもの。レンディングその他取引に基づく一時的保有。"
+     },
+     {
+      "date": "2026-04-22",
+      "ratio": 5.52,
+      "type": "新規",
+      "purpose": "ディーリング(短期売買)目的で保有するもの。顧客との売買取引等に基づき保有するもの。レンディングその他取引に基づく一時的保有。"
+     },
+     {
+      "date": "2026-05-12",
+      "ratio": 7.0,
       "type": "新規",
       "purpose": "ディーリング(短期売買)目的で保有するもの。レンディングその他取引に基づく一時的保有。"
      }
@@ -7543,110 +7724,6 @@
       "ratio": 1.51,
       "type": "新規",
       "purpose": "・ディーリング(短期売買)目的で保有するもの・レンディングその他取引に基づく一時的保有"
-     }
-    ]
-   },
-   {
-    "secCode": "6976",
-    "issuerName": "太陽誘電（株）",
-    "latestRatio": 0.55,
-    "firstRatio": 0.79,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 0.79,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 1.1,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 0.55,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・レンディングその他取引に基づく一時的保有"
-     }
-    ]
-   },
-   {
-    "secCode": "9788",
-    "issuerName": "（株）レゾナック・ホールディングス",
-    "latestRatio": 0.4,
-    "firstRatio": 1.45,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-06-05",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 1.45,
-      "type": "新規",
-      "purpose": "ディーリング(短期売買)目的で保有するもの。デリバティブ取引に関連して保有するもの。レンディングその他取引に基づく一時的保有。"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 1.47,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 0.4,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・デリバティブ取引に関連して保有するもの・レンディングその他取引に基づく一時的保有"
-     }
-    ]
-   },
-   {
-    "secCode": "7004",
-    "issuerName": "カナデビア（株）",
-    "latestRatio": 0.25,
-    "firstRatio": 0.25,
-    "firstDate": "2026-07-07",
-    "latestDate": "2026-07-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 0.25,
-      "type": "新規",
-      "purpose": "・ディーリング(短期売買)目的で保有するもの・レンディングその他取引に基づく一時的保有"
-     }
-    ]
-   },
-   {
-    "secCode": "6997",
-    "issuerName": "日本ケミコン（株）",
-    "latestRatio": 0.07,
-    "firstRatio": 6.97,
-    "firstDate": "2026-04-15",
-    "latestDate": "2026-05-12",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-04-15",
-      "ratio": 6.97,
-      "type": "新規",
-      "purpose": "ディーリング(短期売買)目的で保有するもの。顧客との売買取引等に基づき保有するもの。レンディングその他取引に基づく一時的保有。"
-     },
-     {
-      "date": "2026-04-22",
-      "ratio": 5.52,
-      "type": "新規",
-      "purpose": "ディーリング(短期売買)目的で保有するもの。顧客との売買取引等に基づき保有するもの。レンディングその他取引に基づく一時的保有。"
-     },
-     {
-      "date": "2026-05-12",
-      "ratio": 0.07,
-      "type": "新規",
-      "purpose": "ディーリング(短期売買)目的で保有するもの。レンディングその他取引に基づく一時的保有。"
      }
     ]
    }
@@ -7760,6 +7837,69 @@
   "positionCount": 21,
   "positions": [
    {
+    "secCode": "9509",
+    "issuerName": "北海道電力（株）",
+    "latestRatio": 87.0,
+    "firstRatio": 83.0,
+    "firstDate": "2026-04-15",
+    "latestDate": "2026-07-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-15",
+      "ratio": 83.0,
+      "type": "新規",
+      "purpose": "発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの。"
+     },
+     {
+      "date": "2026-05-13",
+      "ratio": 88.0,
+      "type": "新規",
+      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
+     },
+     {
+      "date": "2026-07-02",
+      "ratio": 87.0,
+      "type": "新規",
+      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
+     }
+    ]
+   },
+   {
+    "secCode": "3107",
+    "issuerName": "ダイワボウホールディングス（株）",
+    "latestRatio": 85.0,
+    "firstRatio": 85.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 85.0,
+      "type": "新規",
+      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
+     }
+    ]
+   },
+   {
+    "secCode": "6787",
+    "issuerName": "（株）メイコー",
+    "latestRatio": 78.0,
+    "firstRatio": 78.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 78.0,
+      "type": "新規",
+      "purpose": "発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの。"
+     }
+    ]
+   },
+   {
     "secCode": "6615",
     "issuerName": "ユー・エム・シー・エレクトロニクス（株）",
     "latestRatio": 44.32,
@@ -7796,6 +7936,23 @@
       "ratio": 33.7,
       "type": "新規",
       "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの・グループ戦略の一環として保有するもの"
+     }
+    ]
+   },
+   {
+    "secCode": "8086",
+    "issuerName": "ニプロ（株）",
+    "latestRatio": 28.0,
+    "firstRatio": 28.0,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-05-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 28.0,
+      "type": "新規",
+      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
      }
     ]
    },
@@ -8053,86 +8210,6 @@
       "purpose": "発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの。"
      }
     ]
-   },
-   {
-    "secCode": "9509",
-    "issuerName": "北海道電力（株）",
-    "latestRatio": 0.87,
-    "firstRatio": 0.83,
-    "firstDate": "2026-04-15",
-    "latestDate": "2026-07-02",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-04-15",
-      "ratio": 0.83,
-      "type": "新規",
-      "purpose": "発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの。"
-     },
-     {
-      "date": "2026-05-13",
-      "ratio": 0.88,
-      "type": "新規",
-      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
-     },
-     {
-      "date": "2026-07-02",
-      "ratio": 0.87,
-      "type": "新規",
-      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
-     }
-    ]
-   },
-   {
-    "secCode": "3107",
-    "issuerName": "ダイワボウホールディングス（株）",
-    "latestRatio": 0.85,
-    "firstRatio": 0.85,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.85,
-      "type": "新規",
-      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
-     }
-    ]
-   },
-   {
-    "secCode": "6787",
-    "issuerName": "（株）メイコー",
-    "latestRatio": 0.78,
-    "firstRatio": 0.78,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.78,
-      "type": "新規",
-      "purpose": "発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "8086",
-    "issuerName": "ニプロ（株）",
-    "latestRatio": 0.28,
-    "firstRatio": 0.28,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-05-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 0.28,
-      "type": "新規",
-      "purpose": "・発行会社の要請に応え、かつ発行会社との取引関係の強化を図るもの"
-     }
-    ]
    }
   ]
  },
@@ -8282,21 +8359,21 @@
    {
     "secCode": "8604",
     "issuerName": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳホールディングス株式会社",
-    "latestRatio": 0.07,
-    "firstRatio": 0.01,
+    "latestRatio": 7.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-06-03",
     "latestDate": "2026-07-07",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-06-03",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
      {
       "date": "2026-07-07",
-      "ratio": 0.07,
+      "ratio": 7.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -8331,6 +8408,125 @@
   "investor": "ＳＭＢＣ日興証券",
   "positionCount": 9,
   "positions": [
+   {
+    "secCode": "6787",
+    "issuerName": "株式会社メイコー",
+    "latestRatio": 95.0,
+    "firstRatio": 95.0,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 95.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため"
+     }
+    ]
+   },
+   {
+    "secCode": "9788",
+    "issuerName": "株式会社ナック",
+    "latestRatio": 90.0,
+    "firstRatio": 90.0,
+    "firstDate": "2026-05-22",
+    "latestDate": "2026-05-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 90.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため"
+     }
+    ]
+   },
+   {
+    "secCode": "2055",
+    "issuerName": "日和産業株式会社",
+    "latestRatio": 85.0,
+    "firstRatio": 85.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 85.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため"
+     }
+    ]
+   },
+   {
+    "secCode": "8059",
+    "issuerName": "第一実業株式会社",
+    "latestRatio": 36.0,
+    "firstRatio": 36.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 36.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため"
+     }
+    ]
+   },
+   {
+    "secCode": "4409",
+    "issuerName": "東邦化学工業株式会社",
+    "latestRatio": 14.0,
+    "firstRatio": 14.0,
+    "firstDate": "2026-07-07",
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 14.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため"
+     }
+    ]
+   },
+   {
+    "secCode": "7990",
+    "issuerName": "グローブライド株式会社",
+    "latestRatio": 5.0,
+    "firstRatio": 5.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 5.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため（共同保有者から除外）"
+     }
+    ]
+   },
+   {
+    "secCode": "9990",
+    "issuerName": "株式会社サックスバー　ホールディングス",
+    "latestRatio": 4.0,
+    "firstRatio": 4.0,
+    "firstDate": "2026-05-18",
+    "latestDate": "2026-05-18",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-18",
+      "ratio": 4.0,
+      "type": "新規",
+      "purpose": "証券業務に係る一時保有のため（共同保有者から除外）"
+     }
+    ]
+   },
    {
     "secCode": "4506",
     "issuerName": "住友ファーマ株式会社",
@@ -8370,125 +8566,6 @@
       "purpose": "証券業務に係る一時保有のため"
      }
     ]
-   },
-   {
-    "secCode": "6787",
-    "issuerName": "株式会社メイコー",
-    "latestRatio": 0.95,
-    "firstRatio": 0.95,
-    "firstDate": "2026-04-22",
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 0.95,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため"
-     }
-    ]
-   },
-   {
-    "secCode": "9788",
-    "issuerName": "株式会社ナック",
-    "latestRatio": 0.9,
-    "firstRatio": 0.9,
-    "firstDate": "2026-05-22",
-    "latestDate": "2026-05-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 0.9,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため"
-     }
-    ]
-   },
-   {
-    "secCode": "2055",
-    "issuerName": "日和産業株式会社",
-    "latestRatio": 0.85,
-    "firstRatio": 0.85,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.85,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため"
-     }
-    ]
-   },
-   {
-    "secCode": "8059",
-    "issuerName": "第一実業株式会社",
-    "latestRatio": 0.36,
-    "firstRatio": 0.36,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.36,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため"
-     }
-    ]
-   },
-   {
-    "secCode": "4409",
-    "issuerName": "東邦化学工業株式会社",
-    "latestRatio": 0.14,
-    "firstRatio": 0.14,
-    "firstDate": "2026-07-07",
-    "latestDate": "2026-07-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 0.14,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため"
-     }
-    ]
-   },
-   {
-    "secCode": "7990",
-    "issuerName": "グローブライド株式会社",
-    "latestRatio": 0.05,
-    "firstRatio": 0.05,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.05,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため（共同保有者から除外）"
-     }
-    ]
-   },
-   {
-    "secCode": "9990",
-    "issuerName": "株式会社サックスバー　ホールディングス",
-    "latestRatio": 0.04,
-    "firstRatio": 0.04,
-    "firstDate": "2026-05-18",
-    "latestDate": "2026-05-18",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-18",
-      "ratio": 0.04,
-      "type": "新規",
-      "purpose": "証券業務に係る一時保有のため（共同保有者から除外）"
-     }
-    ]
    }
   ]
  },
@@ -8496,6 +8573,23 @@
   "investor": "三井住友ＤＳアセットマネジメント",
   "positionCount": 17,
   "positions": [
+   {
+    "secCode": "438A",
+    "issuerName": "株式会社インフキュリオン",
+    "latestRatio": 39.0,
+    "firstRatio": 39.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 39.0,
+      "type": "新規",
+      "purpose": "純投資（投資収益性を重視して行う投資）"
+     }
+    ]
+   },
    {
     "secCode": "8056",
     "issuerName": "ＢＩＰＲＯＧＹ株式会社",
@@ -8601,6 +8695,23 @@
       "ratio": 4.52,
       "type": "新規",
       "purpose": "純投資（投資収益性を重視して行う投資）"
+     }
+    ]
+   },
+   {
+    "secCode": "5603",
+    "issuerName": "虹技株式会社",
+    "latestRatio": 4.0,
+    "firstRatio": 4.0,
+    "firstDate": "2026-05-20",
+    "latestDate": "2026-05-20",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-20",
+      "ratio": 4.0,
+      "type": "新規",
+      "purpose": "純投資（投資収益性を重視して行う投資）（共同保有者から除外）"
      }
     ]
    },
@@ -8768,40 +8879,6 @@
       "purpose": "純投資（投資収益性を重視して行う投資）"
      }
     ]
-   },
-   {
-    "secCode": "438A",
-    "issuerName": "株式会社インフキュリオン",
-    "latestRatio": 0.39,
-    "firstRatio": 0.39,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.39,
-      "type": "新規",
-      "purpose": "純投資（投資収益性を重視して行う投資）"
-     }
-    ]
-   },
-   {
-    "secCode": "5603",
-    "issuerName": "虹技株式会社",
-    "latestRatio": 0.04,
-    "firstRatio": 0.04,
-    "firstDate": "2026-05-20",
-    "latestDate": "2026-05-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-20",
-      "ratio": 0.04,
-      "type": "新規",
-      "purpose": "純投資（投資収益性を重視して行う投資）（共同保有者から除外）"
-     }
-    ]
    }
   ]
  },
@@ -8833,6 +8910,165 @@
   "positionCount": 15,
   "positions": [
    {
+    "secCode": "3861",
+    "issuerName": "王子ホールディングス株式会社",
+    "latestRatio": 57.0,
+    "firstRatio": 57.0,
+    "firstDate": "2026-05-11",
+    "latestDate": "2026-05-11",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 57.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6768",
+    "issuerName": "株式会社タムラ製作所",
+    "latestRatio": 43.0,
+    "firstRatio": 43.0,
+    "firstDate": "2026-06-05",
+    "latestDate": "2026-06-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-05",
+      "ratio": 43.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "5233",
+    "issuerName": "太平洋セメント株式会社",
+    "latestRatio": 34.0,
+    "firstRatio": 34.0,
+    "firstDate": "2026-06-22",
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 34.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "368A",
+    "issuerName": "株式会社北里コーポレーション",
+    "latestRatio": 28.0,
+    "firstRatio": 28.0,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 28.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "6103",
+    "issuerName": "オークマ株式会社",
+    "latestRatio": 19.0,
+    "firstRatio": 1.0,
+    "firstDate": "2026-05-21",
+    "latestDate": "2026-06-04",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 1.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     },
+     {
+      "date": "2026-06-04",
+      "ratio": 19.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "4064",
+    "issuerName": "日本カーバイド工業株式会社",
+    "latestRatio": 17.0,
+    "firstRatio": 17.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 17.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "8015",
+    "issuerName": "豊田通商株式会社",
+    "latestRatio": 12.0,
+    "firstRatio": 12.0,
+    "firstDate": "2026-07-07",
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 12.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "9843",
+    "issuerName": "株式会社ニトリホールディングス",
+    "latestRatio": 11.0,
+    "firstRatio": 11.0,
+    "firstDate": "2026-04-21",
+    "latestDate": "2026-04-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 11.0,
+      "type": "新規",
+      "purpose": "証券業務に係わる商品在庫として保有している。"
+     }
+    ]
+   },
+   {
+    "secCode": "2540",
+    "issuerName": "養命酒製造株式会社",
+    "latestRatio": 8.0,
+    "firstRatio": 8.0,
+    "firstDate": "2026-04-21",
+    "latestDate": "2026-04-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 8.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫として保有している。"
+     }
+    ]
+   },
+   {
     "secCode": "7270",
     "issuerName": "株式会社ＳＵＢＡＲＵ",
     "latestRatio": 5.31,
@@ -8850,17 +9086,34 @@
     ]
    },
    {
+    "secCode": "1802",
+    "issuerName": "株式会社大林組",
+    "latestRatio": 3.0,
+    "firstRatio": 3.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 3.0,
+      "type": "新規",
+      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
+     }
+    ]
+   },
+   {
     "secCode": "5288",
     "issuerName": "アジアパイルホールディングス株式会社",
     "latestRatio": 2.43,
-    "firstRatio": 0.11,
+    "firstRatio": 11.0,
     "firstDate": "2026-05-21",
     "latestDate": "2026-06-12",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-21",
-      "ratio": 0.11,
+      "ratio": 11.0,
       "type": "新規",
       "purpose": "証券業務に係わる商品在庫として保有している。"
      },
@@ -8876,14 +9129,14 @@
     "secCode": "6367",
     "issuerName": "ダイキン工業株式会社",
     "latestRatio": 1.73,
-    "firstRatio": 0.09,
+    "firstRatio": 9.0,
     "firstDate": "2026-06-05",
     "latestDate": "2026-07-06",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-06-05",
-      "ratio": 0.09,
+      "ratio": 9.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      },
@@ -8913,193 +9166,17 @@
     ]
    },
    {
-    "secCode": "3861",
-    "issuerName": "王子ホールディングス株式会社",
-    "latestRatio": 0.57,
-    "firstRatio": 0.57,
-    "firstDate": "2026-05-11",
-    "latestDate": "2026-05-11",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 0.57,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6768",
-    "issuerName": "株式会社タムラ製作所",
-    "latestRatio": 0.43,
-    "firstRatio": 0.43,
-    "firstDate": "2026-06-05",
-    "latestDate": "2026-06-05",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-05",
-      "ratio": 0.43,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "5233",
-    "issuerName": "太平洋セメント株式会社",
-    "latestRatio": 0.34,
-    "firstRatio": 0.34,
-    "firstDate": "2026-06-22",
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 0.34,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "368A",
-    "issuerName": "株式会社北里コーポレーション",
-    "latestRatio": 0.28,
-    "firstRatio": 0.28,
-    "firstDate": "2026-06-19",
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.28,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "6103",
-    "issuerName": "オークマ株式会社",
-    "latestRatio": 0.19,
-    "firstRatio": 0.01,
-    "firstDate": "2026-05-21",
-    "latestDate": "2026-06-04",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 0.01,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     },
-     {
-      "date": "2026-06-04",
-      "ratio": 0.19,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "4064",
-    "issuerName": "日本カーバイド工業株式会社",
-    "latestRatio": 0.17,
-    "firstRatio": 0.17,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.17,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "8015",
-    "issuerName": "豊田通商株式会社",
-    "latestRatio": 0.12,
-    "firstRatio": 0.12,
-    "firstDate": "2026-07-07",
-    "latestDate": "2026-07-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 0.12,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "9843",
-    "issuerName": "株式会社ニトリホールディングス",
-    "latestRatio": 0.11,
-    "firstRatio": 0.11,
-    "firstDate": "2026-04-21",
-    "latestDate": "2026-04-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 0.11,
-      "type": "新規",
-      "purpose": "証券業務に係わる商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "2540",
-    "issuerName": "養命酒製造株式会社",
-    "latestRatio": 0.08,
-    "firstRatio": 0.08,
-    "firstDate": "2026-04-21",
-    "latestDate": "2026-04-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 0.08,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫として保有している。"
-     }
-    ]
-   },
-   {
-    "secCode": "1802",
-    "issuerName": "株式会社大林組",
-    "latestRatio": 0.03,
-    "firstRatio": 0.03,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.03,
-      "type": "新規",
-      "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
-     }
-    ]
-   },
-   {
     "secCode": "2002",
     "issuerName": "株式会社日清製粉グループ本社",
-    "latestRatio": 0.01,
-    "firstRatio": 0.01,
+    "latestRatio": 1.0,
+    "firstRatio": 1.0,
     "firstDate": "2026-04-21",
     "latestDate": "2026-04-21",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-04-21",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "証券業務に係る商品在庫、及び累積投資業務の運営目的として保有している。"
      }
@@ -9451,29 +9528,17 @@
  },
  "ＳＢＩホールディングス": {
   "investor": "ＳＢＩホールディングス",
-  "positionCount": 1,
+  "positionCount": 3,
   "positions": [
    {
     "secCode": "8473",
     "issuerName": "モイ株式会社",
     "latestRatio": 20.41,
-    "firstRatio": 2.37,
-    "firstDate": "2026-04-17",
+    "firstRatio": 51.95,
+    "firstDate": "2026-05-29",
     "latestDate": "2026-07-07",
-    "reportCount": 6,
+    "reportCount": 4,
     "trend": [
-     {
-      "date": "2026-04-17",
-      "ratio": 2.37,
-      "type": "新規",
-      "purpose": "戦略投資"
-     },
-     {
-      "date": "2026-05-25",
-      "ratio": 5.15,
-      "type": "新規",
-      "purpose": "発行者との資本業務提携、純投資"
-     },
      {
       "date": "2026-05-29",
       "ratio": 51.95,
@@ -9497,6 +9562,40 @@
       "ratio": 20.41,
       "type": "新規",
       "purpose": "発行者との資本業務提携、純投資。提出者と発行者との間の令和8年5月19日付資本業務提携契約（以下「本契約」といいます。）に基づく資本提携及び業務提携を目的とする株式の保有です。なお、提出者は、本契約に基づき、発行者の取締役1名を指名する予定"
+     }
+    ]
+   },
+   {
+    "secCode": "3156",
+    "issuerName": "株式会社レスター",
+    "latestRatio": 5.15,
+    "firstRatio": 5.15,
+    "firstDate": "2026-05-25",
+    "latestDate": "2026-05-25",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-25",
+      "ratio": 5.15,
+      "type": "新規",
+      "purpose": "発行者との資本業務提携、純投資"
+     }
+    ]
+   },
+   {
+    "secCode": "4676",
+    "issuerName": "株式会社フジ・メディア・ホールディングス",
+    "latestRatio": 2.37,
+    "firstRatio": 2.37,
+    "firstDate": "2026-04-17",
+    "latestDate": "2026-04-17",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-17",
+      "ratio": 2.37,
+      "type": "新規",
+      "purpose": "戦略投資"
      }
     ]
    }
@@ -9760,7 +9859,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7938",
+    "secCode": "7932",
     "issuerName": "株式会社ニッピ",
     "latestRatio": 12.31,
     "firstRatio": 12.31,
@@ -10240,6 +10339,148 @@
   "positionCount": 15,
   "positions": [
    {
+    "secCode": "4021",
+    "issuerName": "日産化学株式会社",
+    "latestRatio": 85.0,
+    "firstRatio": 85.0,
+    "firstDate": "2026-04-21",
+    "latestDate": "2026-04-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 85.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "9048",
+    "issuerName": "名古屋鉄道株式会社",
+    "latestRatio": 73.0,
+    "firstRatio": 73.0,
+    "firstDate": "2026-04-21",
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 73.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 73.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "8830",
+    "issuerName": "住友不動産株式会社",
+    "latestRatio": 62.0,
+    "firstRatio": 62.0,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 62.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "6367",
+    "issuerName": "ダイキン工業株式会社",
+    "latestRatio": 60.0,
+    "firstRatio": 60.0,
+    "firstDate": "2026-05-21",
+    "latestDate": "2026-05-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 60.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "8015",
+    "issuerName": "豊田通商株式会社",
+    "latestRatio": 39.0,
+    "firstRatio": 39.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 39.0,
+      "type": "新規",
+      "purpose": "退職給付信託の信託財産として取得、保有しているもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "9065",
+    "issuerName": "山九株式会社",
+    "latestRatio": 39.0,
+    "firstRatio": 39.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 39.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "4062",
+    "issuerName": "イビデン株式会社",
+    "latestRatio": 21.0,
+    "firstRatio": 21.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 21.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
+    "secCode": "7951",
+    "issuerName": "ヤマハ発動機株式会社",
+    "latestRatio": 20.0,
+    "firstRatio": 20.0,
+    "firstDate": "2026-07-06",
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 20.0,
+      "type": "新規",
+      "purpose": "政策投資として保有するもの。"
+     }
+    ]
+   },
+   {
     "secCode": "6479",
     "issuerName": "ミネベアミツミ株式会社",
     "latestRatio": 3.61,
@@ -10350,148 +10591,6 @@
       "ratio": 1.26,
       "type": "新規",
       "purpose": "退職給付信託の信託財産として取得、保有しているもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "4021",
-    "issuerName": "日産化学株式会社",
-    "latestRatio": 0.85,
-    "firstRatio": 0.85,
-    "firstDate": "2026-04-21",
-    "latestDate": "2026-04-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 0.85,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "9048",
-    "issuerName": "名古屋鉄道株式会社",
-    "latestRatio": 0.73,
-    "firstRatio": 0.73,
-    "firstDate": "2026-04-21",
-    "latestDate": "2026-07-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 0.73,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 0.73,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "8830",
-    "issuerName": "住友不動産株式会社",
-    "latestRatio": 0.62,
-    "firstRatio": 0.62,
-    "firstDate": "2026-06-19",
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.62,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "6367",
-    "issuerName": "ダイキン工業株式会社",
-    "latestRatio": 0.6,
-    "firstRatio": 0.6,
-    "firstDate": "2026-05-21",
-    "latestDate": "2026-05-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 0.6,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "8015",
-    "issuerName": "豊田通商株式会社",
-    "latestRatio": 0.39,
-    "firstRatio": 0.39,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.39,
-      "type": "新規",
-      "purpose": "退職給付信託の信託財産として取得、保有しているもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "9065",
-    "issuerName": "山九株式会社",
-    "latestRatio": 0.39,
-    "firstRatio": 0.39,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.39,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "4062",
-    "issuerName": "イビデン株式会社",
-    "latestRatio": 0.21,
-    "firstRatio": 0.21,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.21,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
-     }
-    ]
-   },
-   {
-    "secCode": "7951",
-    "issuerName": "ヤマハ発動機株式会社",
-    "latestRatio": 0.2,
-    "firstRatio": 0.2,
-    "firstDate": "2026-07-06",
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 0.2,
-      "type": "新規",
-      "purpose": "政策投資として保有するもの。"
      }
     ]
    },
@@ -10660,16 +10759,255 @@
  },
  "三菱ＵＦＪフィナンシャル・グループ": {
   "investor": "三菱ＵＦＪフィナンシャル・グループ",
-  "positionCount": 1,
+  "positionCount": 19,
   "positions": [
    {
-    "secCode": "8306",
-    "issuerName": "フロンティア不動産投資法人",
-    "latestRatio": 1.08,
+    "secCode": "2264",
+    "issuerName": "森永乳業株式会社",
+    "latestRatio": 78.0,
+    "firstRatio": 78.0,
+    "firstDate": "2026-06-01",
+    "latestDate": "2026-06-01",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-01",
+      "ratio": 78.0,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "2540",
+    "issuerName": "養命酒製造株式会社",
+    "latestRatio": 54.0,
+    "firstRatio": 54.0,
+    "firstDate": "2026-04-20",
+    "latestDate": "2026-04-28",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 54.0,
+      "type": "新規",
+      "purpose": "純投資"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 54.0,
+      "type": "変更",
+      "purpose": "純投資"
+     }
+    ]
+   },
+   {
+    "secCode": "5929",
+    "issuerName": "三和ホールディングス株式会社",
+    "latestRatio": 38.0,
+    "firstRatio": 38.0,
+    "firstDate": "2026-05-08",
+    "latestDate": "2026-05-08",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-08",
+      "ratio": 38.0,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "3591",
+    "issuerName": "株式会社ワコールホールディングス",
+    "latestRatio": 4.35,
+    "firstRatio": 4.35,
+    "firstDate": "2026-06-05",
+    "latestDate": "2026-06-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-05",
+      "ratio": 4.35,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "5998",
+    "issuerName": "株式会社アドバネクス",
+    "latestRatio": 3.99,
+    "firstRatio": 3.99,
+    "firstDate": "2026-05-08",
+    "latestDate": "2026-05-08",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-08",
+      "ratio": 3.99,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "6794",
+    "issuerName": "フォスター電機株式会社",
+    "latestRatio": 3.78,
+    "firstRatio": 3.78,
+    "firstDate": "2026-05-18",
+    "latestDate": "2026-05-18",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-18",
+      "ratio": 3.78,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "7994",
+    "issuerName": "株式会社オカムラ",
+    "latestRatio": 3.65,
+    "firstRatio": 3.65,
+    "firstDate": "2026-06-01",
+    "latestDate": "2026-06-01",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-01",
+      "ratio": 3.65,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "6417",
+    "issuerName": "三共生興株式会社",
+    "latestRatio": 3.02,
+    "firstRatio": 3.02,
+    "firstDate": "2026-06-01",
+    "latestDate": "2026-06-01",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-01",
+      "ratio": 3.02,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "7239",
+    "issuerName": "株式会社タチエス",
+    "latestRatio": 3.0,
+    "firstRatio": 3.0,
+    "firstDate": "2026-06-01",
+    "latestDate": "2026-06-01",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-01",
+      "ratio": 3.0,
+      "type": "新規",
+      "purpose": "政策投資・純投資"
+     }
+    ]
+   },
+   {
+    "secCode": "8163",
+    "issuerName": "ＳＲＳホールディングス株式会社",
+    "latestRatio": 2.89,
+    "firstRatio": 2.89,
+    "firstDate": "2026-04-20",
+    "latestDate": "2026-04-28",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 2.89,
+      "type": "新規",
+      "purpose": "政策投資"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 2.89,
+      "type": "変更",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "7701",
+    "issuerName": "株式会社島津製作所",
+    "latestRatio": 2.59,
+    "firstRatio": 2.59,
+    "firstDate": "2026-06-15",
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-15",
+      "ratio": 2.59,
+      "type": "新規",
+      "purpose": "政策投資"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 2.59,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "6103",
+    "issuerName": "オークマ株式会社",
+    "latestRatio": 1.99,
+    "firstRatio": 1.99,
+    "firstDate": "2026-06-29",
+    "latestDate": "2026-06-29",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-29",
+      "ratio": 1.99,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "4116",
+    "issuerName": "大日精化工業株式会社",
+    "latestRatio": 1.99,
+    "firstRatio": 1.99,
+    "firstDate": "2026-06-15",
+    "latestDate": "2026-06-15",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-15",
+      "ratio": 1.99,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "1721",
+    "issuerName": "コムシスホールディングス株式会社",
+    "latestRatio": 1.88,
     "firstRatio": 1.88,
     "firstDate": "2026-04-20",
-    "latestDate": "2026-07-06",
-    "reportCount": 68,
+    "latestDate": "2026-04-28",
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-04-20",
@@ -10678,11 +11016,90 @@
       "purpose": "純投資"
      },
      {
-      "date": "2026-04-20",
-      "ratio": 0.54,
-      "type": "新規",
+      "date": "2026-04-28",
+      "ratio": 1.88,
+      "type": "変更",
       "purpose": "純投資"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "6209",
+    "issuerName": "リケンＮＰＲ株式会社",
+    "latestRatio": 1.81,
+    "firstRatio": 1.81,
+    "firstDate": "2026-05-08",
+    "latestDate": "2026-05-08",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-08",
+      "ratio": 1.81,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "6849",
+    "issuerName": "日本光電工業株式会社",
+    "latestRatio": 1.55,
+    "firstRatio": 1.55,
+    "firstDate": "2026-06-15",
+    "latestDate": "2026-06-15",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-15",
+      "ratio": 1.55,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "9068",
+    "issuerName": "丸全昭和運輸株式会社",
+    "latestRatio": 1.42,
+    "firstRatio": 1.42,
+    "firstDate": "2026-06-15",
+    "latestDate": "2026-06-15",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-15",
+      "ratio": 1.42,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "4182",
+    "issuerName": "三菱瓦斯化学株式会社",
+    "latestRatio": 1.28,
+    "firstRatio": 1.28,
+    "firstDate": "2026-05-08",
+    "latestDate": "2026-05-08",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-08",
+      "ratio": 1.28,
+      "type": "新規",
+      "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "8306",
+    "issuerName": "フロンティア不動産投資法人",
+    "latestRatio": 1.08,
+    "firstRatio": 1.06,
+    "firstDate": "2026-04-20",
+    "latestDate": "2026-07-06",
+    "reportCount": 46,
+    "trend": [
      {
       "date": "2026-04-20",
       "ratio": 1.06,
@@ -10716,12 +11133,6 @@
      {
       "date": "2026-04-20",
       "ratio": 1.65,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 2.89,
       "type": "新規",
       "purpose": "政策投資"
      },
@@ -10745,18 +11156,6 @@
      },
      {
       "date": "2026-04-28",
-      "ratio": 1.88,
-      "type": "変更",
-      "purpose": "純投資"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 0.54,
-      "type": "変更",
-      "purpose": "純投資"
-     },
-     {
-      "date": "2026-04-28",
       "ratio": 1.06,
       "type": "変更",
       "purpose": "純投資"
@@ -10788,12 +11187,6 @@
      {
       "date": "2026-04-28",
       "ratio": 1.65,
-      "type": "変更",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 2.89,
       "type": "変更",
       "purpose": "政策投資"
      },
@@ -10823,12 +11216,6 @@
      },
      {
       "date": "2026-05-08",
-      "ratio": 1.28,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-08",
       "ratio": 2.24,
       "type": "新規",
       "purpose": "純投資"
@@ -10841,7 +11228,7 @@
      },
      {
       "date": "2026-05-08",
-      "ratio": 0.31,
+      "ratio": 31.0,
       "type": "新規",
       "purpose": "政策投資"
      },
@@ -10865,25 +11252,7 @@
      },
      {
       "date": "2026-05-08",
-      "ratio": 0.38,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 3.99,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 1.81,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 0.91,
+      "ratio": 91.0,
       "type": "新規",
       "purpose": "純投資"
      },
@@ -10907,43 +11276,13 @@
      },
      {
       "date": "2026-05-18",
-      "ratio": 3.78,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-05-18",
       "ratio": 1.47,
       "type": "新規",
       "purpose": "政策投資・純投資"
      },
      {
       "date": "2026-06-01",
-      "ratio": 0.78,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-01",
       "ratio": 1.64,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 3.0,
-      "type": "新規",
-      "purpose": "政策投資・純投資"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 3.65,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 3.02,
       "type": "新規",
       "purpose": "政策投資"
      },
@@ -10955,7 +11294,7 @@
      },
      {
       "date": "2026-06-01",
-      "ratio": 0.96,
+      "ratio": 96.0,
       "type": "新規",
       "purpose": "純投資"
      },
@@ -10972,12 +11311,6 @@
       "purpose": "政策投資・純投資"
      },
      {
-      "date": "2026-06-05",
-      "ratio": 4.35,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
       "date": "2026-06-15",
       "ratio": 0.0,
       "type": "新規",
@@ -10991,13 +11324,7 @@
      },
      {
       "date": "2026-06-15",
-      "ratio": 1.99,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 0.83,
+      "ratio": 83.0,
       "type": "新規",
       "purpose": "政策投資"
      },
@@ -11008,34 +11335,10 @@
       "purpose": "政策投資"
      },
      {
-      "date": "2026-06-15",
-      "ratio": 1.55,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 2.59,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 1.42,
-      "type": "新規",
-      "purpose": "政策投資"
-     },
-     {
       "date": "2026-06-29",
       "ratio": 1.26,
       "type": "新規",
       "purpose": "政策投資・純投資"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 1.99,
-      "type": "新規",
-      "purpose": "政策投資"
      },
      {
       "date": "2026-06-29",
@@ -11057,15 +11360,9 @@
      },
      {
       "date": "2026-06-29",
-      "ratio": 0.99,
+      "ratio": 99.0,
       "type": "新規",
       "purpose": "純投資"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 2.59,
-      "type": "新規",
-      "purpose": "政策投資"
      },
      {
       "date": "2026-07-06",
@@ -11085,16 +11382,16 @@
  },
  "エスクリプトエナジー": {
   "investor": "エスクリプトエナジー",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "5721",
-    "issuerName": "株式会社環境フレンドリーホールディングス",
-    "latestRatio": 8.81,
+    "secCode": "1711",
+    "issuerName": "株式会社ＳＤＳホールディングス",
+    "latestRatio": 34.93,
     "firstRatio": 34.93,
     "firstDate": "2026-05-11",
-    "latestDate": "2026-07-06",
-    "reportCount": 6,
+    "latestDate": "2026-05-12",
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-11",
@@ -11107,7 +11404,18 @@
       "ratio": 34.93,
       "type": "変更",
       "purpose": "純投資"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "5721",
+    "issuerName": "株式会社環境フレンドリーホールディングス",
+    "latestRatio": 8.81,
+    "firstRatio": 8.56,
+    "firstDate": "2026-06-09",
+    "latestDate": "2026-07-06",
+    "reportCount": 4,
+    "trend": [
      {
       "date": "2026-06-09",
       "ratio": 8.56,
@@ -12524,7 +12832,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "5363",
+    "secCode": "5484",
     "issuerName": "東北特殊鋼株式会社",
     "latestRatio": 8.36,
     "firstRatio": 8.36,
@@ -12576,6 +12884,23 @@
   "positionCount": 3,
   "positions": [
    {
+    "secCode": "4882",
+    "issuerName": "株式会社ペルセウスプロテオミクス",
+    "latestRatio": 63.0,
+    "firstRatio": 63.0,
+    "firstDate": "2026-07-03",
+    "latestDate": "2026-07-03",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-03",
+      "ratio": 63.0,
+      "type": "新規",
+      "purpose": "純投資"
+     }
+    ]
+   },
+   {
     "secCode": "1420",
     "issuerName": "サンヨーホームズ株式会社",
     "latestRatio": 12.26,
@@ -12626,23 +12951,6 @@
       "purpose": "純投資"
      }
     ]
-   },
-   {
-    "secCode": "4882",
-    "issuerName": "株式会社ペルセウスプロテオミクス",
-    "latestRatio": 0.63,
-    "firstRatio": 0.63,
-    "firstDate": "2026-07-03",
-    "latestDate": "2026-07-03",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-03",
-      "ratio": 0.63,
-      "type": "新規",
-      "purpose": "純投資"
-     }
-    ]
    }
   ]
  },
@@ -12651,7 +12959,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7485",
+    "secCode": "5484",
     "issuerName": "東北特殊鋼株式会社",
     "latestRatio": 9.96,
     "firstRatio": 9.96,
@@ -12863,23 +13171,17 @@
  },
  "住友化学": {
   "investor": "住友化学",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "4005",
+    "secCode": "4367",
     "issuerName": "広栄化学株式会社",
     "latestRatio": 55.74,
-    "firstRatio": 51.68,
-    "firstDate": "2026-04-23",
+    "firstRatio": 55.74,
+    "firstDate": "2026-05-14",
     "latestDate": "2026-07-03",
-    "reportCount": 3,
+    "reportCount": 2,
     "trend": [
-     {
-      "date": "2026-04-23",
-      "ratio": 51.68,
-      "type": "新規",
-      "purpose": "業務提携および資本提携のための保有"
-     },
      {
       "date": "2026-05-14",
       "ratio": 55.74,
@@ -12891,6 +13193,23 @@
       "ratio": 55.74,
       "type": "新規",
       "purpose": "提出者は、2026年５月13日、発行者を完全子会社化することを目的として、提出者を株式交換完全親会社、発行者を株式交換完全子会社とし、2026年8月1日を効力発生日とする株式交換（以下「本株式交換」といいます。）を実施することを決定しました"
+     }
+    ]
+   },
+   {
+    "secCode": "4506",
+    "issuerName": "住友ファーマ株式会社",
+    "latestRatio": 51.68,
+    "firstRatio": 51.68,
+    "firstDate": "2026-04-23",
+    "latestDate": "2026-04-23",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-23",
+      "ratio": 51.68,
+      "type": "新規",
+      "purpose": "業務提携および資本提携のための保有"
      }
     ]
    }
@@ -12982,7 +13301,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6971",
+    "secCode": "9433",
     "issuerName": "ＫＤＤＩ株式会社",
     "latestRatio": 12.69,
     "firstRatio": 14.03,
@@ -13039,6 +13358,29 @@
   "investor": "ＮＩＰＰＯＮ ＡＣＴＩＶＥ ＶＡＬＵＥ ＦＵＮＤ ＰＬＣ",
   "positionCount": 6,
   "positions": [
+   {
+    "secCode": "9069",
+    "issuerName": "センコーグループホールディングス株式会社",
+    "latestRatio": 57.0,
+    "firstRatio": 57.0,
+    "firstDate": "2026-05-13",
+    "latestDate": "2026-07-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-13",
+      "ratio": 57.0,
+      "type": "新規",
+      "purpose": "投資及び経営陣に対する経営の助言並びに状況に応じて重要提案行為等を行うこと。特に、ニッポン・アクティブ・バリュー・ファンドは、発行会社の財務的健全性及び市場での地位が株価に反映されていないと考えており、全ての株主のために株式価値を高めるため"
+     },
+     {
+      "date": "2026-07-02",
+      "ratio": 57.0,
+      "type": "新規",
+      "purpose": "投資及び経営陣に対する経営の助言並びに状況に応じて重要提案行為等を行うこと。特に、ニッポン・アクティブ・バリュー・ファンドは、発行会社の財務的健全性及び市場での地位が株価に反映されていないと考えており、全ての株主のために株式価値を高めるため"
+     }
+    ]
+   },
    {
     "secCode": "4549",
     "issuerName": "栄研化学株式会社",
@@ -13137,29 +13479,6 @@
      {
       "date": "2026-05-18",
       "ratio": 4.8,
-      "type": "新規",
-      "purpose": "投資及び経営陣に対する経営の助言並びに状況に応じて重要提案行為等を行うこと。特に、ニッポン・アクティブ・バリュー・ファンドは、発行会社の財務的健全性及び市場での地位が株価に反映されていないと考えており、全ての株主のために株式価値を高めるため"
-     }
-    ]
-   },
-   {
-    "secCode": "9069",
-    "issuerName": "センコーグループホールディングス株式会社",
-    "latestRatio": 0.57,
-    "firstRatio": 0.57,
-    "firstDate": "2026-05-13",
-    "latestDate": "2026-07-02",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-13",
-      "ratio": 0.57,
-      "type": "新規",
-      "purpose": "投資及び経営陣に対する経営の助言並びに状況に応じて重要提案行為等を行うこと。特に、ニッポン・アクティブ・バリュー・ファンドは、発行会社の財務的健全性及び市場での地位が株価に反映されていないと考えており、全ての株主のために株式価値を高めるため"
-     },
-     {
-      "date": "2026-07-02",
-      "ratio": 0.57,
       "type": "新規",
       "purpose": "投資及び経営陣に対する経営の助言並びに状況に応じて重要提案行為等を行うこと。特に、ニッポン・アクティブ・バリュー・ファンドは、発行会社の財務的健全性及び市場での地位が株価に反映されていないと考えており、全ての株主のために株式価値を高めるため"
      }
@@ -13441,28 +13760,39 @@
  },
  "テンポスホールディングス": {
   "investor": "テンポスホールディングス",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
     "secCode": "2751",
+    "issuerName": "株式会社あさくま",
+    "latestRatio": 60.11,
+    "firstRatio": 60.11,
+    "firstDate": "2026-06-16",
+    "latestDate": "2026-06-16",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-16",
+      "ratio": 60.11,
+      "type": "新規",
+      "purpose": "経営参加を目的とした安定株主として保有しております。"
+     }
+    ]
+   },
+   {
+    "secCode": "7524",
     "issuerName": "マルシェ株式会社",
     "latestRatio": 48.98,
     "firstRatio": 19.97,
     "firstDate": "2026-05-29",
     "latestDate": "2026-07-01",
-    "reportCount": 3,
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-29",
       "ratio": 19.97,
       "type": "新規",
       "purpose": "投資先企業の第三者割当増資を引受け、当該会社の事業拡大を支援し、中長期的なリターンを得るとともに、今後の当該企業と当社グループ企業との協業や提携を通じて当社グループの成長に資することを目的とする"
-     },
-     {
-      "date": "2026-06-16",
-      "ratio": 60.11,
-      "type": "新規",
-      "purpose": "経営参加を目的とした安定株主として保有しております。"
      },
      {
       "date": "2026-07-01",
@@ -15357,26 +15687,20 @@
  },
  "ＥＮＥＯＳホールディングス": {
   "investor": "ＥＮＥＯＳホールディングス",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "5020",
-    "issuerName": "日新商事株式会社",
-    "latestRatio": 15.0,
+    "secCode": "5016",
+    "issuerName": "ＪＸ金属株式会社",
+    "latestRatio": 42.38,
     "firstRatio": 42.38,
     "firstDate": "2026-05-15",
-    "latestDate": "2026-06-29",
-    "reportCount": 5,
+    "latestDate": "2026-06-22",
+    "reportCount": 3,
     "trend": [
      {
       "date": "2026-05-15",
       "ratio": 42.38,
-      "type": "新規",
-      "purpose": "関係継続のため"
-     },
-     {
-      "date": "2026-05-15",
-      "ratio": 15.0,
       "type": "新規",
       "purpose": "関係継続のため"
      },
@@ -15389,6 +15713,23 @@
      {
       "date": "2026-06-22",
       "ratio": 42.38,
+      "type": "新規",
+      "purpose": "関係継続のため"
+     }
+    ]
+   },
+   {
+    "secCode": "7490",
+    "issuerName": "日新商事株式会社",
+    "latestRatio": 15.0,
+    "firstRatio": 15.0,
+    "firstDate": "2026-05-15",
+    "latestDate": "2026-06-29",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-15",
+      "ratio": 15.0,
       "type": "新規",
       "purpose": "関係継続のため"
      },
@@ -15634,7 +15975,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "3863",
+    "secCode": "9171",
     "issuerName": "栗林商船株式会社",
     "latestRatio": 3.21,
     "firstRatio": 3.21,
@@ -16028,16 +16369,33 @@
  },
  "豊田自動織機": {
   "investor": "豊田自動織機",
-  "positionCount": 3,
+  "positionCount": 4,
   "positions": [
+   {
+    "secCode": "5482",
+    "issuerName": "愛知製鋼株式会社",
+    "latestRatio": 8.43,
+    "firstRatio": 8.43,
+    "firstDate": "2026-05-20",
+    "latestDate": "2026-05-20",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-20",
+      "ratio": 8.43,
+      "type": "新規",
+      "purpose": "政策投資（取引関係の維持・発展）"
+     }
+    ]
+   },
    {
     "secCode": "6201",
     "issuerName": "トヨタ自動車株式会社",
-    "latestRatio": 0.01,
+    "latestRatio": 1.0,
     "firstRatio": 7.55,
     "firstDate": "2026-05-08",
     "latestDate": "2026-05-27",
-    "reportCount": 7,
+    "reportCount": 5,
     "trend": [
      {
       "date": "2026-05-08",
@@ -16058,26 +16416,14 @@
       "purpose": "主に自動車関連事業におけるコンプレッサーに関する海外合弁会社の共同運営をはじめとした取引関係や協業関係の構築、維持、強化"
      },
      {
-      "date": "2026-05-15",
-      "ratio": 3.06,
-      "type": "新規",
-      "purpose": "主に自動車関連事業におけるエンジンの販売等、取引関係や協業関係の構築、維持、強化"
-     },
-     {
       "date": "2026-05-20",
       "ratio": 4.13,
       "type": "新規",
       "purpose": "政策投資（取引関係の維持・発展）"
      },
      {
-      "date": "2026-05-20",
-      "ratio": 8.43,
-      "type": "新規",
-      "purpose": "政策投資（取引関係の維持・発展）"
-     },
-     {
       "date": "2026-05-27",
-      "ratio": 0.01,
+      "ratio": 1.0,
       "type": "新規",
       "purpose": "政策投資（取引関係の維持・強化）"
      }
@@ -16088,10 +16434,16 @@
     "issuerName": "株式会社アイシン",
     "latestRatio": 0.0,
     "firstRatio": 3.06,
-    "firstDate": "2026-06-05",
+    "firstDate": "2026-05-15",
     "latestDate": "2026-06-25",
-    "reportCount": 2,
+    "reportCount": 3,
     "trend": [
+     {
+      "date": "2026-05-15",
+      "ratio": 3.06,
+      "type": "新規",
+      "purpose": "主に自動車関連事業におけるエンジンの販売等、取引関係や協業関係の構築、維持、強化"
+     },
      {
       "date": "2026-06-05",
       "ratio": 3.06,
@@ -16281,7 +16633,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "9503",
+    "secCode": "1944",
     "issuerName": "株式会社きんでん",
     "latestRatio": 16.02,
     "firstRatio": 29.46,
@@ -16339,7 +16691,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "2874",
+    "secCode": "2814",
     "issuerName": "佐藤食品工業株式会社",
     "latestRatio": 7.89,
     "firstRatio": 6.21,
@@ -16371,14 +16723,14 @@
     "secCode": "4970",
     "issuerName": "東洋合成工業株式会社",
     "latestRatio": 1.05,
-    "firstRatio": 0.91,
+    "firstRatio": 91.0,
     "firstDate": "2026-06-09",
     "latestDate": "2026-06-23",
     "reportCount": 3,
     "trend": [
      {
       "date": "2026-06-09",
-      "ratio": 0.91,
+      "ratio": 91.0,
       "type": "新規",
       "purpose": "当社は自己の投資目的で有価証券を保有していません。記録上の有価証券は関連会社の事務・運営目的のためであり、投資目的ではありません。"
      },
@@ -16400,28 +16752,39 @@
  },
  "オリックス": {
   "investor": "オリックス",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
     "secCode": "8591",
     "issuerName": "株式会社バロックジャパンリミテッド",
     "latestRatio": 14.15,
+    "firstRatio": 14.15,
+    "firstDate": "2026-06-23",
+    "latestDate": "2026-06-23",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-23",
+      "ratio": 14.15,
+      "type": "新規",
+      "purpose": "純投資"
+     }
+    ]
+   },
+   {
+    "secCode": "1420",
+    "issuerName": "サンヨーホームズ株式会社",
+    "latestRatio": 6.43,
     "firstRatio": 6.43,
     "firstDate": "2026-05-18",
-    "latestDate": "2026-06-23",
-    "reportCount": 2,
+    "latestDate": "2026-05-18",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-18",
       "ratio": 6.43,
       "type": "新規",
       "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-23",
-      "ratio": 14.15,
-      "type": "新規",
-      "purpose": "純投資"
      }
     ]
    }
@@ -16463,15 +16826,15 @@
    {
     "secCode": "4437",
     "issuerName": "ＧＯ株式会社",
-    "latestRatio": 0.48,
-    "firstRatio": 0.48,
+    "latestRatio": 48.0,
+    "firstRatio": 48.0,
     "firstDate": "2026-06-23",
     "latestDate": "2026-06-23",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-06-23",
-      "ratio": 0.48,
+      "ratio": 48.0,
       "type": "新規",
       "purpose": "純投資"
      }
@@ -16481,34 +16844,39 @@
  },
  "伊藤忠商事": {
   "investor": "伊藤忠商事",
-  "positionCount": 1,
+  "positionCount": 3,
   "positions": [
+   {
+    "secCode": "1786",
+    "issuerName": "オリエンタル白石株式会社",
+    "latestRatio": 18.15,
+    "firstRatio": 18.15,
+    "firstDate": "2026-06-19",
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 18.15,
+      "type": "新規",
+      "purpose": "取引関係強化の為"
+     }
+    ]
+   },
    {
     "secCode": "8001",
     "issuerName": "株式会社フリークアウト・ホールディングス",
     "latestRatio": 13.79,
-    "firstRatio": 9.58,
+    "firstRatio": 52.33,
     "firstDate": "2026-04-16",
     "latestDate": "2026-06-23",
-    "reportCount": 8,
+    "reportCount": 5,
     "trend": [
-     {
-      "date": "2026-04-16",
-      "ratio": 9.58,
-      "type": "新規",
-      "purpose": "発行者との資本業務提携"
-     },
      {
       "date": "2026-04-16",
       "ratio": 52.33,
       "type": "新規",
       "purpose": "政策投資。但し、提出者１は、提出者１の完全子会社であり共同保有者である提出者２（以下、提出者１と総称して「提出者ら」と総称します。）とともに、発行者の非公開化を目的とした重要提案行為等を行うことを予定しております。具体的には、提出者１は、会"
-     },
-     {
-      "date": "2026-04-17",
-      "ratio": 9.58,
-      "type": "新規",
-      "purpose": "発行者との資本業務提携"
      },
      {
       "date": "2026-05-11",
@@ -16518,13 +16886,7 @@
      },
      {
       "date": "2026-06-11",
-      "ratio": 0.32,
-      "type": "新規",
-      "purpose": "取引関係強化の為"
-     },
-     {
-      "date": "2026-06-19",
-      "ratio": 18.15,
+      "ratio": 32.0,
       "type": "新規",
       "purpose": "取引関係強化の為"
      },
@@ -16539,6 +16901,29 @@
       "ratio": 13.79,
       "type": "新規",
       "purpose": "政策投資"
+     }
+    ]
+   },
+   {
+    "secCode": "8934",
+    "issuerName": "サンフロンティア不動産株式会社",
+    "latestRatio": 9.58,
+    "firstRatio": 9.58,
+    "firstDate": "2026-04-16",
+    "latestDate": "2026-04-17",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-16",
+      "ratio": 9.58,
+      "type": "新規",
+      "purpose": "発行者との資本業務提携"
+     },
+     {
+      "date": "2026-04-17",
+      "ratio": 9.58,
+      "type": "新規",
+      "purpose": "発行者との資本業務提携"
      }
     ]
    }
@@ -16826,7 +17211,7 @@
      },
      {
       "date": "2026-06-09",
-      "ratio": 0.99,
+      "ratio": 99.0,
       "type": "新規",
       "purpose": "顧客の財産を投資信託約款および投資一任契約等に基づき運用するために保有。しかしながら、当該保有証券の名義人は弊社ではなく、顧客の選択した銀行等（カストディアンバンク又は信託銀行等）になります。"
      },
@@ -17393,23 +17778,34 @@
  },
  "学研ホールディングス": {
   "investor": "学研ホールディングス",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "9470",
-    "issuerName": "株式会社　進学会ホールディングス",
-    "latestRatio": 3.15,
+    "secCode": "6096",
+    "issuerName": "株式会社レアジョブ",
+    "latestRatio": 19.33,
     "firstRatio": 19.33,
     "firstDate": "2026-05-20",
-    "latestDate": "2026-06-19",
-    "reportCount": 3,
+    "latestDate": "2026-05-20",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-20",
       "ratio": 19.33,
       "type": "新規",
       "purpose": "提出者は、発行者との間で締結した2026年５月15日付の株式交換契約（以下「本株式交換契約」といいます。）に基づく株式交換（以下「本株式交換」といいます。）により、発行者の発行済株式（ただし、提出者が保有する発行者の普通株式（以下「発行者株"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "9760",
+    "issuerName": "株式会社　進学会ホールディングス",
+    "latestRatio": 3.15,
+    "firstRatio": 5.58,
+    "firstDate": "2026-05-29",
+    "latestDate": "2026-06-19",
+    "reportCount": 2,
+    "trend": [
      {
       "date": "2026-05-29",
       "ratio": 5.58,
@@ -17454,7 +17850,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "9434",
+    "secCode": "7502",
     "issuerName": "株式会社プラザホールディングス",
     "latestRatio": 5.56,
     "firstRatio": 5.56,
@@ -18089,15 +18485,15 @@
    {
     "secCode": "7122",
     "issuerName": "近畿車輛株式会社",
-    "latestRatio": 0.04,
-    "firstRatio": 0.04,
+    "latestRatio": 4.0,
+    "firstRatio": 4.0,
     "firstDate": "2026-06-17",
     "latestDate": "2026-06-17",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-06-17",
-      "ratio": 0.04,
+      "ratio": 4.0,
       "type": "新規",
       "purpose": "投資及び状況に応じて経営陣への助言、重要提案行為等を行うこと"
      }
@@ -18175,7 +18571,7 @@
    {
     "secCode": "9733",
     "issuerName": "株式会社ナガセ",
-    "latestRatio": 0.49,
+    "latestRatio": 49.0,
     "firstRatio": 0.0,
     "firstDate": "2026-06-05",
     "latestDate": "2026-06-17",
@@ -18195,13 +18591,13 @@
      },
      {
       "date": "2026-06-15",
-      "ratio": 0.49,
+      "ratio": 49.0,
       "type": "新規",
       "purpose": "経営者一族としての会社経営の安定を図るため。"
      },
      {
       "date": "2026-06-17",
-      "ratio": 0.49,
+      "ratio": 49.0,
       "type": "変更",
       "purpose": "経営者一族としての会社経営の安定を図るため。"
      }
@@ -18314,7 +18710,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7273",
+    "secCode": "7256",
     "issuerName": "河西工業株式会社",
     "latestRatio": 11.61,
     "firstRatio": 6.77,
@@ -18462,28 +18858,22 @@
  },
  "日本製鉄": {
   "investor": "日本製鉄",
-  "positionCount": 1,
+  "positionCount": 3,
   "positions": [
    {
-    "secCode": "5401",
-    "issuerName": "日本金属株式会社",
-    "latestRatio": 0.0,
+    "secCode": "5981",
+    "issuerName": "東京製綱株式会社",
+    "latestRatio": 10.29,
     "firstRatio": 13.98,
     "firstDate": "2026-04-16",
-    "latestDate": "2026-06-16",
-    "reportCount": 6,
+    "latestDate": "2026-06-09",
+    "reportCount": 4,
     "trend": [
      {
       "date": "2026-04-16",
       "ratio": 13.98,
       "type": "変更",
       "purpose": "政策投資及び状況に応じて重要提案行為等を行うこと"
-     },
-     {
-      "date": "2026-04-22",
-      "ratio": 3.97,
-      "type": "新規",
-      "purpose": "政策投資(営業活動等の円滑な推進)"
      },
      {
       "date": "2026-04-24",
@@ -18502,7 +18892,35 @@
       "ratio": 10.29,
       "type": "新規",
       "purpose": "政策投資（事業活動の円滑な推進）"
-     },
+     }
+    ]
+   },
+   {
+    "secCode": "5401",
+    "issuerName": "株式会社名村造船所",
+    "latestRatio": 3.97,
+    "firstRatio": 3.97,
+    "firstDate": "2026-04-22",
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 3.97,
+      "type": "新規",
+      "purpose": "政策投資(営業活動等の円滑な推進)"
+     }
+    ]
+   },
+   {
+    "secCode": "5491",
+    "issuerName": "日本金属株式会社",
+    "latestRatio": 0.0,
+    "firstRatio": 0.0,
+    "firstDate": "2026-06-16",
+    "latestDate": "2026-06-16",
+    "reportCount": 1,
+    "trend": [
      {
       "date": "2026-06-16",
       "ratio": 0.0,
@@ -18622,7 +19040,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "2804",
+    "secCode": "2814",
     "issuerName": "佐藤食品工業株式会社",
     "latestRatio": 5.31,
     "firstRatio": 5.31,
@@ -18801,7 +19219,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "547A",
+    "secCode": "4849",
     "issuerName": "株式会社オリエントコーポレーション",
     "latestRatio": 14.96,
     "firstRatio": 14.96,
@@ -19270,28 +19688,39 @@
  },
  "前澤工業": {
   "investor": "前澤工業",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
     "secCode": "6489",
+    "issuerName": "前澤ホールディングス株式会社",
+    "latestRatio": 9.61,
+    "firstRatio": 9.61,
+    "firstDate": "2026-06-05",
+    "latestDate": "2026-06-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-05",
+      "ratio": 9.61,
+      "type": "新規",
+      "purpose": "前澤工業株式会社及び前澤化成工業株式会社を株式移転完全子会社、発行者を株式移転設立完全親会社とする、2026年６月１日の共同株式移転に伴い、提出者が保有する自己株式及び前澤化成工業株式会社の普通株式に発行者の普通株式が割当交付されたことによ"
+     }
+    ]
+   },
+   {
+    "secCode": "6485",
     "issuerName": "前澤給装工業株式会社",
     "latestRatio": 5.81,
     "firstRatio": 5.81,
     "firstDate": "2026-06-05",
     "latestDate": "2026-06-09",
-    "reportCount": 3,
+    "reportCount": 2,
     "trend": [
      {
       "date": "2026-06-05",
       "ratio": 5.81,
       "type": "新規",
       "purpose": "政策投資"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 9.61,
-      "type": "新規",
-      "purpose": "前澤工業株式会社及び前澤化成工業株式会社を株式移転完全子会社、発行者を株式移転設立完全親会社とする、2026年６月１日の共同株式移転に伴い、提出者が保有する自己株式及び前澤化成工業株式会社の普通株式に発行者の普通株式が割当交付されたことによ"
      },
      {
       "date": "2026-06-09",
@@ -19379,15 +19808,15 @@
    {
     "secCode": "8015",
     "issuerName": "豊田通商株式会社",
-    "latestRatio": 0.91,
-    "firstRatio": 0.91,
+    "latestRatio": 91.0,
+    "firstRatio": 91.0,
     "firstDate": "2026-06-08",
     "latestDate": "2026-06-08",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-06-08",
-      "ratio": 0.91,
+      "ratio": 91.0,
       "type": "新規",
       "purpose": "政策投資"
      }
@@ -19558,7 +19987,7 @@
    {
     "secCode": "6197",
     "issuerName": "株式会社ソラスト",
-    "latestRatio": 0.53,
+    "latestRatio": 53.0,
     "firstRatio": 4.05,
     "firstDate": "2026-04-22",
     "latestDate": "2026-06-05",
@@ -19572,7 +20001,7 @@
      },
      {
       "date": "2026-06-05",
-      "ratio": 0.53,
+      "ratio": 53.0,
       "type": "新規",
       "purpose": "当行における中長期的なディーリング目的による保有。"
      }
@@ -19643,6 +20072,23 @@
   "positionCount": 2,
   "positions": [
    {
+    "secCode": "2127",
+    "issuerName": "株式会社日本Ｍ＆Ａセンターホールディングス",
+    "latestRatio": 74.0,
+    "firstRatio": 74.0,
+    "firstDate": "2026-06-05",
+    "latestDate": "2026-06-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-05",
+      "ratio": 74.0,
+      "type": "新規",
+      "purpose": "投資一任契約に基づき、顧客資産で本件株式を保有している。"
+     }
+    ]
+   },
+   {
     "secCode": "9996",
     "issuerName": "株式会社サトー",
     "latestRatio": 4.94,
@@ -19658,23 +20104,6 @@
       "purpose": "投資一任契約に基づき、顧客資産で本件株式を保有している。"
      }
     ]
-   },
-   {
-    "secCode": "2127",
-    "issuerName": "株式会社日本Ｍ＆Ａセンターホールディングス",
-    "latestRatio": 0.74,
-    "firstRatio": 0.74,
-    "firstDate": "2026-06-05",
-    "latestDate": "2026-06-05",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-05",
-      "ratio": 0.74,
-      "type": "新規",
-      "purpose": "投資一任契約に基づき、顧客資産で本件株式を保有している。"
-     }
-    ]
    }
   ]
  },
@@ -19683,7 +20112,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "2429",
+    "secCode": "2162",
     "issuerName": "ｎｍｓホールディングス株式会社",
     "latestRatio": 29.24,
     "firstRatio": 29.24,
@@ -19834,15 +20263,15 @@
    {
     "secCode": "5233",
     "issuerName": "太平洋セメント株式会社",
-    "latestRatio": 0.54,
-    "firstRatio": 0.54,
+    "latestRatio": 54.0,
+    "firstRatio": 54.0,
     "firstDate": "2026-04-22",
     "latestDate": "2026-04-22",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-04-22",
-      "ratio": 0.54,
+      "ratio": 54.0,
       "type": "新規",
       "purpose": "有価証券関連業務の一部としてのトレーディング・有価証券の借入等"
      }
@@ -19851,21 +20280,21 @@
    {
     "secCode": "5232",
     "issuerName": "住友大阪セメント株式会社",
-    "latestRatio": 0.38,
-    "firstRatio": 0.52,
+    "latestRatio": 38.0,
+    "firstRatio": 52.0,
     "firstDate": "2026-04-22",
     "latestDate": "2026-05-22",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-04-22",
-      "ratio": 0.52,
+      "ratio": 52.0,
       "type": "新規",
       "purpose": "有価証券関連業務の一部としてのトレーディング・有価証券の借入等"
      },
      {
       "date": "2026-05-22",
-      "ratio": 0.38,
+      "ratio": 38.0,
       "type": "新規",
       "purpose": "有価証券関連業務の一部としてのトレーディング・有価証券の借入等"
      }
@@ -19874,21 +20303,21 @@
    {
     "secCode": "8086",
     "issuerName": "ニプロ株式会社",
-    "latestRatio": 0.24,
-    "firstRatio": 0.26,
+    "latestRatio": 24.0,
+    "firstRatio": 26.0,
     "firstDate": "2026-05-22",
     "latestDate": "2026-06-05",
     "reportCount": 2,
     "trend": [
      {
       "date": "2026-05-22",
-      "ratio": 0.26,
+      "ratio": 26.0,
       "type": "新規",
       "purpose": "有価証券関連業務の一部としてのトレーディング・有価証券の借入等"
      },
      {
       "date": "2026-06-05",
-      "ratio": 0.24,
+      "ratio": 24.0,
       "type": "新規",
       "purpose": "有価証券関連業務の一部としてのトレーディング・有価証券の借入等"
      }
@@ -20071,28 +20500,39 @@
  },
  "住友商事": {
   "investor": "住友商事",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
-    "secCode": "8053",
+    "secCode": "8135",
     "issuerName": "株式会社エアークローゼット",
     "latestRatio": 4.83,
+    "firstRatio": 4.83,
+    "firstDate": "2026-06-04",
+    "latestDate": "2026-06-04",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-04",
+      "ratio": 4.83,
+      "type": "新規",
+      "purpose": "ライフスタイル分野における業務提携・連携強化を目的とした投資"
+     }
+    ]
+   },
+   {
+    "secCode": "8053",
+    "issuerName": "株式会社ＵＥＸ",
+    "latestRatio": 0.0,
     "firstRatio": 0.0,
     "firstDate": "2026-05-19",
-    "latestDate": "2026-06-04",
-    "reportCount": 2,
+    "latestDate": "2026-05-19",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-19",
       "ratio": 0.0,
       "type": "新規",
       "purpose": ""
-     },
-     {
-      "date": "2026-06-04",
-      "ratio": 4.83,
-      "type": "新規",
-      "purpose": "ライフスタイル分野における業務提携・連携強化を目的とした投資"
      }
     ]
    }
@@ -20185,7 +20625,7 @@
    {
     "secCode": "6890",
     "issuerName": "株式会社フェローテック",
-    "latestRatio": -0.09,
+    "latestRatio": -9.0,
     "firstRatio": 4.15,
     "firstDate": "2026-04-20",
     "latestDate": "2026-06-03",
@@ -20211,7 +20651,7 @@
      },
      {
       "date": "2026-06-03",
-      "ratio": -0.09,
+      "ratio": -9.0,
       "type": "新規",
       "purpose": "金融商品取引業務にかかる保有"
      }
@@ -20265,7 +20705,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6762",
+    "secCode": "5343",
     "issuerName": "ニッコー株式会社",
     "latestRatio": 5.86,
     "firstRatio": 5.86,
@@ -20845,7 +21285,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "1332",
+    "secCode": "7538",
     "issuerName": "株式会社大水",
     "latestRatio": 23.98,
     "firstRatio": 23.98,
@@ -20897,7 +21337,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "1301",
+    "secCode": "7538",
     "issuerName": "株式会社大水",
     "latestRatio": 6.57,
     "firstRatio": 6.57,
@@ -21143,15 +21583,15 @@
    {
     "secCode": "3941",
     "issuerName": "レンゴー株式会社",
-    "latestRatio": 0.09,
-    "firstRatio": 0.09,
+    "latestRatio": 9.0,
+    "firstRatio": 9.0,
     "firstDate": "2026-05-14",
     "latestDate": "2026-05-14",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-14",
-      "ratio": 0.09,
+      "ratio": 9.0,
       "type": "新規",
       "purpose": "株式の追加取得または売却の可能性について：提出者として発行会社の株価が割安であると判断した場合、今後3ヶ月以内で5%超保有割合を増加する株式取得を行う可能性がある。当該増加は市場内外における取引を通じた取得を想定しており、買付時期・価格・数"
      }
@@ -21204,7 +21644,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "5273",
+    "secCode": "8066",
     "issuerName": "三谷商事株式会社",
     "latestRatio": 14.69,
     "firstRatio": 14.69,
@@ -21311,28 +21751,39 @@
  },
  "大東建託": {
   "investor": "大東建託",
-  "positionCount": 1,
+  "positionCount": 2,
   "positions": [
    {
     "secCode": "1878",
     "issuerName": "株式会社THEグローバル社",
     "latestRatio": 44.92,
+    "firstRatio": 44.92,
+    "firstDate": "2026-05-27",
+    "latestDate": "2026-05-27",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-27",
+      "ratio": 44.92,
+      "type": "新規",
+      "purpose": "提出者は、発行者の非公開化を目的とした重要提案行為等を行うことを予定しております。具体的には、提出者は、会社法（平成17年法律第86号。その後の改正を含みます。以下同じです。）第180条に基づき、発行者の普通株式（以下「発行者株式」といいま"
+     }
+    ]
+   },
+   {
+    "secCode": "6197",
+    "issuerName": "株式会社ソラスト",
+    "latestRatio": 33.57,
     "firstRatio": 33.57,
     "firstDate": "2026-05-18",
-    "latestDate": "2026-05-27",
-    "reportCount": 2,
+    "latestDate": "2026-05-18",
+    "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-18",
       "ratio": 33.57,
       "type": "新規",
       "purpose": "取引関係強化のため。但し、（６）「当該株券等に関する担保契約等重要な契約」に記載の通り、提出者は、2026年３月24日付で、MBKパートナーズ又はその関係会社がサービスを提供するファンドが発行済株式（自己株式を除きます。）50,000株のう"
-     },
-     {
-      "date": "2026-05-27",
-      "ratio": 44.92,
-      "type": "新規",
-      "purpose": "提出者は、発行者の非公開化を目的とした重要提案行為等を行うことを予定しております。具体的には、提出者は、会社法（平成17年法律第86号。その後の改正を含みます。以下同じです。）第180条に基づき、発行者の普通株式（以下「発行者株式」といいま"
      }
     ]
    }
@@ -21967,7 +22418,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6504",
+    "secCode": "6424",
     "issuerName": "株式会社高見沢サイバネティックス",
     "latestRatio": 13.4,
     "firstRatio": 13.4,
@@ -22186,7 +22637,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7744",
+    "secCode": "4584",
     "issuerName": "キッズウェル・バイオ株式会社",
     "latestRatio": 19.08,
     "firstRatio": 19.08,
@@ -22238,7 +22689,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6702",
+    "secCode": "6424",
     "issuerName": "株式会社高見沢サイバネティックス",
     "latestRatio": 4.93,
     "firstRatio": 4.93,
@@ -22284,6 +22735,23 @@
   "positionCount": 2,
   "positions": [
    {
+    "secCode": "9360",
+    "issuerName": "鈴与シンワート株式会社",
+    "latestRatio": 60.0,
+    "firstRatio": 60.0,
+    "firstDate": "2026-05-12",
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 60.0,
+      "type": "新規",
+      "purpose": "政策保有"
+     }
+    ]
+   },
+   {
     "secCode": "9204",
     "issuerName": "スカイマーク株式会社",
     "latestRatio": 18.96,
@@ -22303,23 +22771,6 @@
       "ratio": 18.96,
       "type": "変更",
       "purpose": "純投資"
-     }
-    ]
-   },
-   {
-    "secCode": "9360",
-    "issuerName": "鈴与シンワート株式会社",
-    "latestRatio": 0.6,
-    "firstRatio": 0.6,
-    "firstDate": "2026-05-12",
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 0.6,
-      "type": "新規",
-      "purpose": "政策保有"
      }
     ]
    }
@@ -22411,7 +22862,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6752",
+    "secCode": "6523",
     "issuerName": "ＰＨＣホールディングス株式会社",
     "latestRatio": 4.55,
     "firstRatio": 4.55,
@@ -22463,17 +22914,17 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6758",
+    "secCode": "3932",
     "issuerName": "株式会社アカツキ",
-    "latestRatio": 0.96,
-    "firstRatio": 0.96,
+    "latestRatio": 96.0,
+    "firstRatio": 96.0,
     "firstDate": "2026-05-19",
     "latestDate": "2026-05-19",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-19",
-      "ratio": 0.96,
+      "ratio": 96.0,
       "type": "新規",
       "purpose": "発行者との資本業務提携を目的とした保有"
      }
@@ -22515,7 +22966,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6501",
+    "secCode": "6305",
     "issuerName": "日立建機株式会社",
     "latestRatio": 9.98,
     "firstRatio": 9.98,
@@ -22603,7 +23054,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "3635",
+    "secCode": "3932",
     "issuerName": "株式会社アカツキ",
     "latestRatio": 0.0,
     "firstRatio": 0.0,
@@ -22846,7 +23297,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "2331",
+    "secCode": "1909",
     "issuerName": "日本ドライケミカル株式会社",
     "latestRatio": 15.32,
     "firstRatio": 15.32,
@@ -23083,7 +23534,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "5406",
+    "secCode": "5660",
     "issuerName": "神鋼鋼線工業株式会社",
     "latestRatio": 43.46,
     "firstRatio": 43.46,
@@ -23379,15 +23830,15 @@
    {
     "secCode": "8218",
     "issuerName": "株式会社コメリ",
-    "latestRatio": 0.18,
-    "firstRatio": 0.18,
+    "latestRatio": 18.0,
+    "firstRatio": 18.0,
     "firstDate": "2026-05-13",
     "latestDate": "2026-05-13",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-13",
-      "ratio": 0.18,
+      "ratio": 18.0,
       "type": "新規",
       "purpose": "発行会社の創業家の一族であり、安定株主として保有しております。"
      }
@@ -24002,15 +24453,15 @@
    {
     "secCode": "6637",
     "issuerName": "寺崎電気産業株式会社",
-    "latestRatio": 0.78,
-    "firstRatio": 0.78,
+    "latestRatio": 78.0,
+    "firstRatio": 78.0,
     "firstDate": "2026-05-12",
     "latestDate": "2026-05-12",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-05-12",
-      "ratio": 0.78,
+      "ratio": 78.0,
       "type": "新規",
       "purpose": "政策投資(安定株主として長期保有することを目的としております。)"
      }
@@ -24109,7 +24560,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "6494",
+    "secCode": "6695",
     "issuerName": "株式会社キャストリコ",
     "latestRatio": 54.98,
     "firstRatio": 54.98,
@@ -24232,7 +24683,7 @@
    {
     "secCode": "8511",
     "issuerName": "マイポックス株式会社",
-    "latestRatio": 0.19,
+    "latestRatio": 19.0,
     "firstRatio": 5.19,
     "firstDate": "2026-04-20",
     "latestDate": "2026-05-11",
@@ -24246,7 +24697,7 @@
      },
      {
       "date": "2026-05-07",
-      "ratio": 0.19,
+      "ratio": 19.0,
       "type": "新規",
       "purpose": "・有価証券等清算取次に関する貸借取引業務にかかる一時的な保有"
      },
@@ -24258,7 +24709,7 @@
      },
      {
       "date": "2026-05-11",
-      "ratio": 0.19,
+      "ratio": 19.0,
       "type": "新規",
       "purpose": "・有価証券等清算取次に関する貸借取引業務にかかる一時的な保有"
      }
@@ -24605,7 +25056,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "2127",
+    "secCode": "554A",
     "issuerName": "株式会社バトンズ",
     "latestRatio": 27.04,
     "firstRatio": 27.04,
@@ -24778,7 +25229,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7610",
+    "secCode": "7138",
     "issuerName": "株式会社ＴＯＲＩＣＯ",
     "latestRatio": 4.3,
     "firstRatio": 4.3,
@@ -24945,7 +25396,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "8316",
+    "secCode": "4259",
     "issuerName": "株式会社エクサウィザーズ",
     "latestRatio": 9.87,
     "firstRatio": 9.87,
@@ -25218,15 +25669,15 @@
    {
     "secCode": "3132",
     "issuerName": "マクニカホールディングス株式会社",
-    "latestRatio": 0.21,
-    "firstRatio": 0.21,
+    "latestRatio": 21.0,
+    "firstRatio": 21.0,
     "firstDate": "2026-04-21",
     "latestDate": "2026-04-21",
     "reportCount": 1,
     "trend": [
      {
       "date": "2026-04-21",
-      "ratio": 0.21,
+      "ratio": 21.0,
       "type": "新規",
       "purpose": "投資一任契約に基づく純投資"
      }
@@ -25274,7 +25725,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "1444",
+    "secCode": "6134",
     "issuerName": "株式会社ＦＵＪＩジャパン",
     "latestRatio": 8.77,
     "firstRatio": 8.77,
@@ -25297,7 +25748,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "5232",
+    "secCode": "5357",
     "issuerName": "株式会社ヨータイ",
     "latestRatio": 11.98,
     "firstRatio": 11.98,
@@ -25412,7 +25863,7 @@
   "positionCount": 1,
   "positions": [
    {
-    "secCode": "7932",
+    "secCode": "7938",
     "issuerName": "株式会社リーガルコーポレーション",
     "latestRatio": 13.69,
     "firstRatio": 13.69,
