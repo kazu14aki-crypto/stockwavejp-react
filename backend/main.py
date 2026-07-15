@@ -333,13 +333,21 @@ def _load_lh(name):
 def get_investor_positions(name: str):
     """特定の機関投資家の保有銘柄と各々の保有割合推移を返す（例: 光通信）"""
     data = _load_lh("by_investor.json") or {}
-    # 完全一致 → 部分一致の順で解決
-    if name in data:
-        return data[name]
-    for k in data:
-        if name in k or k in name:
-            return data[k]
-    return {"investor": name, "positionCount": 0, "positions": [], "notFound": True}
+    # 完全一致を優先。部分一致は最初の1件ではなく全候補を統合する。
+    matches = [name] if name in data else [k for k in data if name.lower() in k.lower() or k.lower() in name.lower()]
+    if not matches:
+        return {"investor": name, "positionCount": 0, "positions": [], "notFound": True}
+    merged = {}
+    for key in matches:
+        for pos in data[key].get("positions", []):
+            sec = str(pos.get("secCode") or "")
+            if not sec:
+                continue
+            current = merged.get(sec)
+            if current is None or str(pos.get("latestDate") or "") > str(current.get("latestDate") or ""):
+                merged[sec] = pos
+    positions = sorted(merged.values(), key=lambda x: (x.get("latestRatio") or 0), reverse=True)
+    return {"investor": name, "matchedNames": matches, "positionCount": len(positions), "positions": positions}
 
 
 @app.get("/api/large-holdings/issuer/{ticker}")
@@ -354,6 +362,14 @@ def get_issuer_holders(ticker: str):
 def get_lh_index():
     """投資家・銘柄の検索索引"""
     return _load_lh("index.json") or {"investors": [], "issuers": []}
+
+
+def _lh_ratio_pct(value):
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return 0.0
+    return v * 100 if 0 <= abs(v) <= 1 else v
 
 
 @app.get("/api/tob-radar")
@@ -372,12 +388,13 @@ def get_tob_radar(uid: str = Query(default=None)):
         holders = info.get("holders", [])
         if not holders:
             continue
+        holders = sorted(holders, key=lambda h: _lh_ratio_pct(h.get("latestRatio")), reverse=True)
         top = holders[0]
-        top_ratio = top.get("latestRatio") or 0
+        top_ratio = _lh_ratio_pct(top.get("latestRatio"))
         if top_ratio < 5:
             continue
         trend = top.get("trend", [])
-        accumulating = len(trend) >= 2 and (trend[-1]["ratio"] or 0) > (trend[0]["ratio"] or 0)
+        accumulating = len(trend) >= 2 and _lh_ratio_pct(trend[-1].get("ratio")) > _lh_ratio_pct(trend[0].get("ratio"))
 
         founder_or_parent = 0.0
         pbr = None

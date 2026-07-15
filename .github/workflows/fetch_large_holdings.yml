@@ -8,7 +8,7 @@ on:
       days:
         description: '過去N日分を処理（初回フルビルドは400を指定）'
         required: false
-        default: '90'
+        default: '3650'
 
 permissions:
   contents: write
@@ -31,7 +31,7 @@ jobs:
           EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
         run: |
           cd backend
-          python fetch_large_holdings.py --days ${{ github.event.inputs.days || '90' }}
+          python fetch_large_holdings.py --days ${{ github.event.inputs.days || '120' }}
 
       - name: Commit and push (with retry on race conditions)
         run: |

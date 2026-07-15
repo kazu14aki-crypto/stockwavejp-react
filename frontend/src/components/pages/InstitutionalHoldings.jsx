@@ -163,7 +163,7 @@ function RatioTrend({ trend, height = 40 }) {
 }
 
 // ═══ 投資家軸ビュー（例: 光通信を検索→保有全銘柄の推移） ═══
-function InvestorView({ query }) {
+function InvestorView({ query, onNavigate }) {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [suggest, setSuggest] = useState([])
@@ -216,7 +216,7 @@ function InvestorView({ query }) {
       {data.positions.map(pos => {
         const delta = (pos.latestRatio != null && pos.firstRatio != null) ? +(pos.latestRatio - pos.firstRatio).toFixed(2) : null
         return (
-          <div key={pos.secCode} style={{ display: 'flex', gap: '14px', alignItems: 'center', padding: '12px 0', borderBottom: '1px solid var(--border)', flexWrap: 'wrap' }}>
+          <div key={pos.secCode} onClick={() => pos.secCode && onNavigate?.('銘柄詳細', pos.secCode)} style={{ display: 'flex', gap: '14px', alignItems: 'center', padding: '12px 0', borderBottom: '1px solid var(--border)', flexWrap: 'wrap', cursor: pos.secCode ? 'pointer' : 'default' }}>
             <div style={{ flex: '1 1 200px', minWidth: 0 }}>
               <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text)' }}>
                 <span style={{ fontFamily: 'var(--mono)', fontSize: '11px', color: 'var(--text3)' }}>{pos.secCode}</span> {pos.issuerName}
@@ -256,7 +256,7 @@ function TobRadar({ isSubscribed, onNavigate }) {
   }, [])
   if (loading) return <div style={{ color: 'var(--text3)', padding: '20px' }}>スキャン中…</div>
   if (!data || !data.candidates?.length) {
-    return <div style={{ color: 'var(--text3)', padding: '20px' }}>候補データが未生成です。大量保有バッチ（fetch_large_holdings.py）と有報バッチ（fetch_edinet_holders.py）の実行後に表示されます。</div>
+    return <div style={{ color: 'var(--text3)', padding: '20px' }}>現在の取得範囲ではスコア条件を満たす候補がありません。大量保有データの初回バックフィル完了後に候補数が増えます。</div>
   }
   return (
     <div>
@@ -307,19 +307,8 @@ export default function InstitutionalHoldings({ onNavigate, isMobile } = {}) {
   const [loading, setLoading] = useState(true)
   const [updatedAt, setUpdatedAt] = useState('')
   const [tab, setTab] = useState('issuer')
-  const [shData, setShData] = useState({})
-  const [shQuery, setShQuery] = useState('')
-  const [shSearchQ, setShSearchQ] = useState('')
-  const [shLoading, setShLoading] = useState(false)
   const [selectedIssuer, setSelectedIssuer] = useState(null)
 
-  useEffect(() => {
-    // 大株主データを取得
-    fetch('/data/stockholders/index.json?t=' + Date.now())
-      .then(r => r.json())
-      .then(d => setShData(d))
-      .catch(() => {})
-  }, [])
 
   useEffect(() => {
     setLoading(true)
@@ -370,7 +359,7 @@ export default function InstitutionalHoldings({ onNavigate, isMobile } = {}) {
 
   if (selectedIssuer) return <IssuerDetailPage {...selectedIssuer} allData={allData} onBack={() => setSelectedIssuer(null)}/>
 
-  const tabs = [['investor','🎯 投資家で探す'],['tobradar','📡 TOBレーダー'],['issuer','🏢 銘柄で探す（5%超）'],['shareholder','📋 大株主（有報）'],['guide','💡 ガイド']]
+  const tabs = [['investor','🎯 投資家で探す'],['tobradar','📡 TOBレーダー'],['issuer','🏢 銘柄で探す（5%超）'],['guide','💡 ガイド']]
 
   return (
     <div style={{ padding:'24px 20px 60px', maxWidth:'900px', margin:'0 auto' }}>
@@ -383,7 +372,7 @@ export default function InstitutionalHoldings({ onNavigate, isMobile } = {}) {
         ))}
       </div>
 
-      {(tab === 'issuer' || tab === 'shareholder' || tab === 'investor') && (
+      {(tab === 'issuer' || tab === 'investor') && (
         <div style={{ display:'flex', gap:'10px', marginBottom:'16px', flexWrap:'wrap' }}>
           <input type="text" placeholder={tab==='investor'?'機関投資家名を入力（例: 光通信）':tab==='issuer'?'銘柄名または証券コードを入力':'機関投資家名を入力'} value={query} onChange={e=>setQuery(e.target.value)} onKeyDown={e=>e.key==='Enter'&&doSearch()} style={{ flex:'1', minWidth:'260px', padding:'10px 14px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', color:'var(--text)', fontSize:'13px', fontFamily:'var(--font)', outline:'none' }}/>
           <button onClick={doSearch} style={{ padding:'10px 20px', background:'var(--accent)', color:'#fff', border:'none', borderRadius:'8px', cursor:'pointer', fontFamily:'var(--font)', fontSize:'13px', fontWeight:600, flexShrink:0 }}>🔍 検索</button>
@@ -394,7 +383,7 @@ export default function InstitutionalHoldings({ onNavigate, isMobile } = {}) {
       {tab==='investor' && (
         <>
           <div onClick={(e) => { const chip = e.target.closest('.inv-chip'); if (chip) { const v = chip.getAttribute('data-inv'); setQuery(v); setSearchQ(v) } }}>
-            <InvestorView query={searchQ}/>
+            <InvestorView query={searchQ} onNavigate={onNavigate}/>
           </div>
         </>
       )}
@@ -457,91 +446,6 @@ export default function InstitutionalHoldings({ onNavigate, isMobile } = {}) {
         </div>
       )}
 
-      {tab==='shareholder' && (
-        <div>
-          <div style={{ marginBottom:'12px' }}>
-            <div style={{ display:'flex', gap:'10px', flexWrap:'wrap', marginBottom:'10px' }}>
-              <input type="text" placeholder="銘柄名または証券コードを入力" value={shQuery}
-                onChange={e=>setShQuery(e.target.value)} onKeyDown={e=>e.key==='Enter'&&setShSearchQ(shQuery)}
-                style={{ flex:'1', minWidth:'260px', padding:'10px 14px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', color:'var(--text)', fontSize:'13px', fontFamily:'var(--font)', outline:'none' }}/>
-              <button onClick={()=>setShSearchQ(shQuery)} style={{ padding:'10px 20px', background:'var(--accent)', color:'#fff', border:'none', borderRadius:'8px', cursor:'pointer', fontFamily:'var(--font)', fontSize:'13px', fontWeight:600, flexShrink:0 }}>🔍 検索</button>
-            </div>
-            <div style={{ fontSize:'11px', color:'var(--text3)' }}>
-              ※ 有価証券報告書に記載の大株主上位10名（5%未満の保有者も含む）。年1〜4回更新。
-            </div>
-          </div>
-          {shData.items ? (
-            (() => {
-              const q = shSearchQ.trim().toLowerCase()
-              const filtered = q ? (shData.items||[]).filter(i =>
-                (i.issuerName||'').toLowerCase().includes(q) || (i.secCode||'').includes(q)
-              ) : shData.items||[]
-              return filtered.length === 0 ? (
-                <div style={{ padding:'40px 20px', textAlign:'center', color:'var(--text3)', fontSize:'13px' }}>
-                  <div style={{ fontSize:'32px', marginBottom:'10px' }}>🔍</div>
-                  {shSearchQ ? `「${shSearchQ}」に該当する銘柄が見つかりません` : '銘柄名または証券コードを入力して検索してください'}
-                </div>
-              ) : (
-                <div style={{ display:'flex', flexDirection:'column', gap:'8px' }}>
-                  {filtered.slice(0,30).map((item,i) => (
-                    <div key={i} style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px', padding:'14px 18px', cursor:'pointer' }}
-                      onClick={async () => {
-                        const r = await fetch(`/data/stockholders/${item.secCode}.json?t=${Date.now()}`)
-                        const d = await r.json()
-                        setShData(prev => ({...prev, selected: d}))
-                      }}
-                      onMouseEnter={e=>e.currentTarget.style.borderColor='rgba(74,158,255,0.4)'}
-                      onMouseLeave={e=>e.currentTarget.style.borderColor='var(--border)'}
-                    >
-                      <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:'8px' }}>
-                        <div>
-                          <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'4px' }}>
-                            <span style={{ fontSize:'15px', fontWeight:700, color:'var(--text)' }}>{item.issuerName}</span>
-                            <span style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', background:'var(--bg3)', padding:'2px 6px', borderRadius:'3px' }}>{item.secCode}</span>
-                          </div>
-                          <div style={{ fontSize:'12px', color:'var(--text3)' }}>
-                            大株主 {item.holderCount}名　最終: {item.latestDate}
-                          </div>
-                        </div>
-                        <span style={{ color:'var(--text3)', fontSize:'16px' }}>›</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )
-            })()
-          ) : (
-            <div style={{ padding:'18px', background:'rgba(74,158,255,0.08)', borderRadius:'8px', fontSize:'13px', color:'var(--text2)' }}>
-              📋 有価証券報告書のデータはGitHub Actionsで定期取得されます。初回取得まで表示されません。
-            </div>
-          )}
-          {shData.selected && (
-            <div style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:1000, display:'flex', alignItems:'center', justifyContent:'center' }}
-              onClick={()=>setShData(p=>({...p,selected:null}))}>
-              <div style={{ background:'var(--bg2)', borderRadius:'12px', padding:'24px', maxWidth:'600px', width:'90%', maxHeight:'80vh', overflowY:'auto' }}
-                onClick={e=>e.stopPropagation()}>
-                <div style={{ display:'flex', justifyContent:'space-between', marginBottom:'16px' }}>
-                  <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', margin:0 }}>{shData.selected.issuerName} 大株主</h2>
-                  <button onClick={()=>setShData(p=>({...p,selected:null}))} style={{ background:'none', border:'none', color:'var(--text3)', cursor:'pointer', fontSize:'18px' }}>✕</button>
-                </div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'12px' }}>最終更新: {shData.selected.latestDate}</div>
-                {shData.selected.latest?.map((sh,i) => (
-                  <div key={i} style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 0', borderBottom:'1px solid var(--border)' }}>
-                    <div style={{ display:'flex', alignItems:'center', gap:'10px', flex:1, minWidth:0 }}>
-                      <span style={{ fontSize:'11px', color:'var(--text3)', width:'20px', flexShrink:0 }}>{sh.rank}.</span>
-                      <span style={{ fontSize:'13px', color:'var(--text)', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' }}>{sh.name}</span>
-                    </div>
-                    <div style={{ display:'flex', gap:'12px', flexShrink:0, marginLeft:'10px' }}>
-                      {sh.shares && <span style={{ fontSize:'12px', color:'var(--text3)', fontFamily:'var(--mono)' }}>{(sh.shares/1000).toFixed(0)}千株</span>}
-                      {sh.ratio && <span style={{ fontSize:'13px', fontWeight:700, color:'#4a9eff', fontFamily:'var(--mono)' }}>{sh.ratio.toFixed(2)}%</span>}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
 
       {tab==='guide' && (
         <div style={{ display:'flex', flexDirection:'column', gap:'14px' }}>

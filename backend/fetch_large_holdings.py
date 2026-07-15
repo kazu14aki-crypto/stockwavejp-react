@@ -113,6 +113,36 @@ def _num(s):
         return None
 
 
+def _ratio_pct(value):
+    """EDINET XBRLの割合は0.0736（=7.36%）と7.36が混在するため百分率へ統一。"""
+    v = _num(value)
+    if v is None:
+        return None
+    if 0 <= abs(v) <= 1:
+        v *= 100
+    return round(v, 4)
+
+
+def _norm_name(value):
+    return re.sub(r"[\s　・･,，.。()（）\[\]【】'\"]", "", str(value or "")).replace("株式会社", "").replace("有限会社", "").lower()
+
+
+def load_issuer_code_map():
+    """有報大株主索引を使い、EDINET側でsecCodeが空の書類も銘柄コードへ補完。"""
+    index_path = OUT_DIR.parent / "stockholders" / "index.json"
+    out = {}
+    try:
+        items = json.load(open(index_path, encoding="utf-8")).get("items", [])
+        for item in items:
+            code = str(item.get("secCode") or "").strip()
+            name = _norm_name(item.get("issuerName"))
+            if code and name:
+                out[name] = code
+    except Exception:
+        pass
+    return out
+
+
 def parse_large_holding_xbrl(xbrl: str) -> dict:
     """
     大量保有報告書XBRLから中核フィールドを抽出。
@@ -128,13 +158,13 @@ def parse_large_holding_xbrl(xbrl: str) -> dict:
     issuer = pick("NameOfIssuer", "IssuerName", "NameOfIssuerOfShares")
     filer = pick("NameOfSubmitter", "SubmitterName", "NameOfPersonRequiredToSubmit")
     # 保有割合（今回）と前回
-    ratio_now = _num(pick("HoldingRatioOfShareCertificatesEtc",
-                          "HoldingRatioOfShareCertificates",
-                          "RatioOfHoldingShareCertificatesEtc",
-                          "HoldingRatio"))
-    ratio_prev = _num(pick("HoldingRatioOfShareCertificatesEtcInLastReport",
-                          "HoldingRatioInLastReport",
-                          "RatioOfHoldingShareCertificatesEtcInLastReport"))
+    ratio_now = _ratio_pct(pick("HoldingRatioOfShareCertificatesEtc",
+                                "HoldingRatioOfShareCertificates",
+                                "RatioOfHoldingShareCertificatesEtc",
+                                "HoldingRatio"))
+    ratio_prev = _ratio_pct(pick("HoldingRatioOfShareCertificatesEtcInLastReport",
+                                 "HoldingRatioInLastReport",
+                                 "RatioOfHoldingShareCertificatesEtcInLastReport"))
     # 保有目的（純投資 / 政策 / 経営参画 等）— 出口イベント予測の重要シグナル
     purpose = pick("PurposeOfHolding", "PurposeOfHoldingShareCertificatesEtc",
                    "Purpose")
@@ -175,6 +205,7 @@ def process(days: int, ticker_filter=None):
     today = date.today()
     filings = []
     seen_docs = set()
+    issuer_code_map = load_issuer_code_map()
 
     for i in range(days):
         target = today - timedelta(days=i)
@@ -210,11 +241,20 @@ def process(days: int, ticker_filter=None):
             time.sleep(0.25)
 
             filer_raw = parsed.get("filer") or doc.get("filerName") or ""
+            issuer_name = parsed.get("issuer") or doc.get("issuerName") or ""
+            if not sec and issuer_name:
+                norm = _norm_name(issuer_name)
+                sec = issuer_code_map.get(norm, "")
+                if not sec:
+                    # 表記揺れに備え、包含一致は一意の場合だけ採用
+                    matches = [code for name, code in issuer_code_map.items() if norm and (norm in name or name in norm)]
+                    if len(set(matches)) == 1:
+                        sec = matches[0]
             rec = {
                 "docID": doc_id,
                 "submitDate": (doc.get("submitDateTime") or target.isoformat())[:10],
                 "secCode": sec,
-                "issuerName": parsed.get("issuer") or doc.get("issuerName") or "",
+                "issuerName": issuer_name,
                 "filerName": filer_raw,
                 "filerKey": normalize_filer(filer_raw),
                 "docType": doc.get("docTypeCode"),
@@ -244,15 +284,28 @@ def merge_and_build(new_filings):
             existing = json.load(open(fp, encoding="utf-8")).get("filings", [])
         except Exception:
             existing = []
-    by_id = {f["docID"]: f for f in existing}
+    by_id = {f["docID"]: f for f in existing if f.get("docID")}
     for f in new_filings:
         by_id[f["docID"]] = f
     all_filings = sorted(by_id.values(), key=lambda x: x.get("submitDate", ""), reverse=True)
+    issuer_code_map = load_issuer_code_map()
+    for f in all_filings:
+        f["ratio"] = _ratio_pct(f.get("ratio"))
+        f["ratioPrev"] = _ratio_pct(f.get("ratioPrev"))
+        if f.get("ratio") is not None and f.get("ratioPrev") is not None:
+            f["ratioDelta"] = round(f["ratio"] - f["ratioPrev"], 2)
+        if not f.get("secCode") and f.get("issuerName"):
+            norm = _norm_name(f["issuerName"])
+            f["secCode"] = issuer_code_map.get(norm, "")
+            if not f["secCode"]:
+                matches = [code for name, code in issuer_code_map.items() if norm and (norm in name or name in norm)]
+                if len(set(matches)) == 1:
+                    f["secCode"] = matches[0]
 
     # 投資家軸: filerKey → 銘柄ごとの時系列
     by_investor = defaultdict(lambda: defaultdict(list))
     for f in all_filings:
-        if not f.get("filerKey"):
+        if not f.get("filerKey") or not f.get("secCode"):
             continue
         by_investor[f["filerKey"]][f["secCode"]].append(f)
     investor_out = {}
