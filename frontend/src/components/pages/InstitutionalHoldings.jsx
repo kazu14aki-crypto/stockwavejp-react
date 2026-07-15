@@ -167,6 +167,7 @@ function InvestorView({ query, onNavigate }) {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
   const [suggest, setSuggest] = useState([])
+  const [sortOrder, setSortOrder] = useState('desc')
 
   useEffect(() => {
     fetch(`/data/large_holdings/index.json?t=${Date.now()}`)
@@ -181,6 +182,15 @@ function InvestorView({ query, onNavigate }) {
       .then(r => r.ok ? r.json() : null)
       .then(d => setData(d)).catch(() => setData(null)).finally(() => setLoading(false))
   }, [query])
+
+  const sortedPositions = useMemo(() => {
+    const positions = [...(data?.positions || [])]
+    return positions.sort((a, b) => {
+      const av = Number(a.latestRatio) || 0
+      const bv = Number(b.latestRatio) || 0
+      return sortOrder === 'asc' ? av - bv : bv - av
+    })
+  }, [data, sortOrder])
 
   if (!query) {
     return (
@@ -210,10 +220,20 @@ function InvestorView({ query, onNavigate }) {
   }
   return (
     <div>
-      <div style={{ marginBottom: '14px', fontSize: '13px', color: 'var(--text)' }}>
-        <b>{data.investor}</b> が5%超保有する <b style={{ color: 'var(--accent)' }}>{data.positionCount}</b> 銘柄
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '10px', flexWrap: 'wrap', marginBottom: '14px' }}>
+        <div style={{ fontSize: '13px', color: 'var(--text)' }}>
+          <b>{data.investor}</b> が5%超保有する <b style={{ color: 'var(--accent)' }}>{data.positionCount}</b> 銘柄
+        </div>
+        <label style={{ display: 'flex', alignItems: 'center', gap: '7px', fontSize: '11px', color: 'var(--text3)' }}>
+          保有率順
+          <select value={sortOrder} onChange={e => setSortOrder(e.target.value)}
+            style={{ padding: '6px 9px', borderRadius: '7px', border: '1px solid var(--border)', background: 'var(--bg2)', color: 'var(--text)', fontFamily: 'var(--font)', fontSize: '11px', cursor: 'pointer' }}>
+            <option value="desc">高い順（降順）</option>
+            <option value="asc">低い順（昇順）</option>
+          </select>
+        </label>
       </div>
-      {data.positions.map(pos => {
+      {sortedPositions.map(pos => {
         const delta = (pos.latestRatio != null && pos.firstRatio != null) ? +(pos.latestRatio - pos.firstRatio).toFixed(2) : null
         return (
           <div key={pos.secCode} onClick={() => pos.secCode && onNavigate?.('銘柄詳細', pos.secCode)} style={{ display: 'flex', gap: '14px', alignItems: 'center', padding: '12px 0', borderBottom: '1px solid var(--border)', flexWrap: 'wrap', cursor: pos.secCode ? 'pointer' : 'default' }}>

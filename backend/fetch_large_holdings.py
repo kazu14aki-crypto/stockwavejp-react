@@ -143,6 +143,27 @@ def load_issuer_code_map():
     return out
 
 
+def resolve_issuer_code(issuer_name, current_code, issuer_code_map):
+    """発行会社名を正として証券コードを検証・補正する。
+
+    EDINETのdocuments.jsonに入るsecCodeは、提出者側のコードや別会社のコードが
+    混入する書類があるため、空欄時だけでなく既存値も検証する。完全一致を最優先し、
+    包含一致は候補が一意の場合だけ採用する。
+    """
+    current = str(current_code or "").strip()
+    norm = _norm_name(issuer_name)
+    if not norm:
+        return current
+    exact = issuer_code_map.get(norm)
+    if exact:
+        return exact
+    matches = {code for name, code in issuer_code_map.items()
+               if norm and (norm in name or name in norm)}
+    if len(matches) == 1:
+        return next(iter(matches))
+    return current
+
+
 def parse_large_holding_xbrl(xbrl: str) -> dict:
     """
     大量保有報告書XBRLから中核フィールドを抽出。
@@ -242,14 +263,7 @@ def process(days: int, ticker_filter=None):
 
             filer_raw = parsed.get("filer") or doc.get("filerName") or ""
             issuer_name = parsed.get("issuer") or doc.get("issuerName") or ""
-            if not sec and issuer_name:
-                norm = _norm_name(issuer_name)
-                sec = issuer_code_map.get(norm, "")
-                if not sec:
-                    # 表記揺れに備え、包含一致は一意の場合だけ採用
-                    matches = [code for name, code in issuer_code_map.items() if norm and (norm in name or name in norm)]
-                    if len(set(matches)) == 1:
-                        sec = matches[0]
+            sec = resolve_issuer_code(issuer_name, sec, issuer_code_map)
             rec = {
                 "docID": doc_id,
                 "submitDate": (doc.get("submitDateTime") or target.isoformat())[:10],
@@ -294,13 +308,10 @@ def merge_and_build(new_filings):
         f["ratioPrev"] = _ratio_pct(f.get("ratioPrev"))
         if f.get("ratio") is not None and f.get("ratioPrev") is not None:
             f["ratioDelta"] = round(f["ratio"] - f["ratioPrev"], 2)
-        if not f.get("secCode") and f.get("issuerName"):
-            norm = _norm_name(f["issuerName"])
-            f["secCode"] = issuer_code_map.get(norm, "")
-            if not f["secCode"]:
-                matches = [code for name, code in issuer_code_map.items() if norm and (norm in name or name in norm)]
-                if len(set(matches)) == 1:
-                    f["secCode"] = matches[0]
+        if f.get("issuerName"):
+            f["secCode"] = resolve_issuer_code(
+                f.get("issuerName"), f.get("secCode"), issuer_code_map
+            )
 
     # 投資家軸: filerKey → 銘柄ごとの時系列
     by_investor = defaultdict(lambda: defaultdict(list))
