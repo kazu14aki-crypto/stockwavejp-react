@@ -122,25 +122,60 @@ export default function StockSearch({ onNavigate }) {
   const [query,      setQuery]      = useState('')
   const [searchQ,    setSearchQ]    = useState('')
   const [stockIndex, setStockIndex] = useState({})
+  const [listedStocks, setListedStocks] = useState([])
+  const [masterMeta, setMasterMeta] = useState(null)
   const [loading,    setLoading]    = useState(true)
   const [selected,   setSelected]   = useState(null)
+  const [liveInfo,   setLiveInfo]   = useState(null)
   const [period,     setPeriod]     = useState('1mo')
   const [modalStock, setModalStock] = useState(null)
 
   useEffect(() => {
-    fetch('/data/stock_index.json?t=' + Date.now())
-      .then(r => r.json())
-      .then(d => { setStockIndex(d); setLoading(false) })
-      .catch(() => setLoading(false))
+    let cancelled = false
+    Promise.all([
+      fetch('/data/stock_index.json?t=' + Date.now()).then(r => r.ok ? r.json() : {}),
+      fetch('/data/listed_stock_master.json?t=' + Date.now()).then(r => r.ok ? r.json() : null),
+    ])
+      .then(([curated, master]) => {
+        if (cancelled) return
+        setStockIndex(curated || {})
+        setListedStocks(master?.stocks || Object.values(curated || {}))
+        setMasterMeta(master)
+        setLoading(false)
+      })
+      .catch(() => { if (!cancelled) setLoading(false) })
+    return () => { cancelled = true }
   }, [])
 
+  useEffect(() => {
+    if (!selected?.ticker) { setLiveInfo(null); return }
+    let cancelled = false
+    setLiveInfo(null)
+    fetch(`${API}/api/stock-info/${encodeURIComponent(selected.ticker)}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (!cancelled) setLiveInfo(d) })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [selected?.ticker])
+
   const results = useMemo(() => {
-    const q = searchQ.trim().toLowerCase()
+    const normalize = value => String(value || '').normalize('NFKC').toLowerCase().replace(/[株式会社㈱\s]/g, '')
+    const q = normalize(searchQ)
     if (!q) return []
-    return Object.values(stockIndex).filter(s =>
-      s.name?.toLowerCase().includes(q) || s.ticker?.replace('.T','').includes(q)
-    ).slice(0, 20)
-  }, [stockIndex, searchQ])
+    const enriched = listedStocks.map(base => ({
+      ...base,
+      ...(stockIndex[base.ticker] || {}),
+      curated: Boolean(stockIndex[base.ticker] || base.curated),
+    }))
+    return enriched
+      .filter(s => normalize(s.name).includes(q) || normalize(s.code || s.ticker?.replace('.T','')).includes(q))
+      .sort((a, b) => {
+        const ac = String(a.code || '').startsWith(searchQ.trim()) ? 0 : 1
+        const bc = String(b.code || '').startsWith(searchQ.trim()) ? 0 : 1
+        return ac - bc || Number(b.curated) - Number(a.curated) || String(a.code).localeCompare(String(b.code))
+      })
+      .slice(0, 50)
+  }, [listedStocks, stockIndex, searchQ])
 
   const pColor = v => v == null ? 'var(--text3)' : v >= 0 ? 'var(--red)' : 'var(--green)'
   const fmt = v => v==null?'-': v>=1e12?(v/1e12).toFixed(1)+'兆円': v>=1e8?(v/1e8).toFixed(0)+'億円': v.toLocaleString()
@@ -192,7 +227,7 @@ export default function StockSearch({ onNavigate }) {
         <div style={{ padding:'40px 20px', textAlign:'center', color:'var(--text3)' }}>
           <div style={{ fontSize:'40px', marginBottom:'12px' }}>🔎</div>
           <div style={{ fontSize:'13px' }}>
-            {loading ? '読み込み中...' : `${Object.keys(stockIndex).length}銘柄のデータが利用可能`}
+            {loading ? '読み込み中...' : `${masterMeta?.count || listedStocks.length}銘柄を検索可能（テーマ選定銘柄は${Object.keys(stockIndex).length}銘柄）`}
           </div>
         </div>
       )}
@@ -201,7 +236,7 @@ export default function StockSearch({ onNavigate }) {
       {!selected && searchQ && (
         <>
           <div style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'10px' }}>
-            「{searchQ}」: {results.length}件
+            「{searchQ}」: {results.length}件（最大50件）
           </div>
           {results.length === 0 ? (
             <div style={{ padding:'24px', textAlign:'center', color:'var(--text3)', fontSize:'13px' }}>
@@ -223,6 +258,17 @@ export default function StockSearch({ onNavigate }) {
                         background:'var(--bg3)', padding:'1px 6px', borderRadius:'4px' }}>
                         {s.ticker.replace('.T','')}
                       </span>
+                      {s.curated ? (
+                        <span style={{ fontSize:'10px', padding:'2px 7px', borderRadius:'10px',
+                          background:'rgba(74,158,255,0.1)', color:'var(--accent)', border:'1px solid rgba(74,158,255,0.25)' }}>
+                          テーマ選定
+                        </span>
+                      ) : (
+                        <span style={{ fontSize:'10px', padding:'2px 7px', borderRadius:'10px',
+                          background:'var(--bg3)', color:'var(--text3)', border:'1px solid var(--border)' }}>
+                          全上場銘柄
+                        </span>
+                      )}
                     </div>
                     <div style={{ display:'flex', gap:'6px', flexWrap:'wrap' }}>
                       {s.themes?.slice(0,3).map(t => (
@@ -231,6 +277,11 @@ export default function StockSearch({ onNavigate }) {
                           border:'1px solid rgba(74,158,255,0.2)', borderRadius:'10px' }}>{t}</span>
                       ))}
                       {s.themes?.length > 3 && <span style={{ fontSize:'10px', color:'var(--text3)' }}>+{s.themes.length-3}</span>}
+                      {!s.themes?.length && (s.market || s.industry) && (
+                        <span style={{ fontSize:'10px', color:'var(--text3)' }}>
+                          {[s.market, s.industry].filter(Boolean).join(' / ')}
+                        </span>
+                      )}
                     </div>
                   </div>
                   <div style={{ textAlign:'right', flexShrink:0 }}>
@@ -269,7 +320,7 @@ export default function StockSearch({ onNavigate }) {
 
       {/* 銘柄詳細 */}
       {selected && (() => {
-        const s = selected
+        const s = { ...selected, ...(liveInfo || {}), themes: selected.themes || [] }
         const code = s.ticker.replace('.T','')
         // ④ 重複除去して全コラムIDを取得
         const colIds = [...new Set(
@@ -302,6 +353,15 @@ export default function StockSearch({ onNavigate }) {
                 </div>
               </div>
             </div>
+
+            {!s.curated && (
+              <div style={{ padding:'10px 12px', marginBottom:'14px', borderRadius:'8px',
+                background:'rgba(74,158,255,0.06)', border:'1px solid rgba(74,158,255,0.18)',
+                color:'var(--text2)', fontSize:'12px', lineHeight:1.7 }}>
+                この銘柄は全上場銘柄マスターから検索されています。既存テーマには自動追加されませんが、カスタムテーマへ追加して独自に追跡できます。
+                {(s.market || s.industry) && <div style={{ color:'var(--text3)', marginTop:'3px' }}>{[s.market, s.industry].filter(Boolean).join(' / ')}</div>}
+              </div>
+            )}
 
             {/* ⑥ アクションボタン */}
             <div style={{ display:'flex', gap:'10px', flexWrap:'wrap', marginBottom:'14px' }}>

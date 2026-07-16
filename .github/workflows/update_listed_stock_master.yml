@@ -1,0 +1,48 @@
+name: Update Listed Stock Master
+
+on:
+  schedule:
+    - cron: '20 20 * * 0' # Monday 05:20 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: listed-stock-master
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Build official listed-stock master
+        run: python scripts/build_listed_stock_master.py
+      - name: Validate generated JSON
+        run: python -c "import json; d=json.load(open('frontend/public/data/listed_stock_master.json',encoding='utf-8')); assert d['count'] == len(d['stocks']) and d['count'] > 1000"
+      - name: Commit and push with retry
+        shell: bash
+        run: |
+          if git diff --quiet -- frontend/public/data/listed_stock_master.json; then
+            echo "No listed-stock changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/listed_stock_master.json
+          git commit -m "chore: update all-listed stock search master"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull origin main --rebase
+            sleep $((1 + RANDOM % 10))
+          done
+          echo "Push failed after 5 attempts" >&2
+          exit 1

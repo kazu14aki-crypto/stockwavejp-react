@@ -1,4 +1,8 @@
 import numpy as np
+import json
+import re
+import unicodedata
+from pathlib import Path
 """
 main.py — FastAPI メインサーバー v2.1
 """
@@ -445,7 +449,8 @@ def get_stock_info(ticker: str):
         import yfinance as yf
         from data import _fetch_df, _period_df
         # 日本語名を優先（main.py内のJP_STOCK_NAMESを参照）
-        jp_name = JP_STOCK_NAMES.get(ticker)
+        master_entry = LISTED_STOCK_MASTER.get(ticker, {})
+        jp_name = JP_STOCK_NAMES.get(ticker) or master_entry.get("name")
         # 1ヶ月のデータを取得して騰落率・出来高・売買代金を計算
         df = _fetch_df(ticker)
         df_1mo = _period_df(df, "1mo")
@@ -546,6 +551,18 @@ async def get_custom_theme_stats(request: Request):
     except Exception as e:
         return {"pct": 0, "volume": 0, "trade_value": 0, "stocks": [], "error": str(e)}
 
+def _load_listed_stock_master():
+    """Load the static all-listed issuer master without coupling it to themes."""
+    path = Path(__file__).resolve().parent.parent / "frontend" / "public" / "data" / "listed_stock_master.json"
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return {row.get("ticker"): row for row in payload.get("stocks", []) if row.get("ticker")}
+    except Exception:
+        return {}
+
+
+LISTED_STOCK_MASTER = _load_listed_stock_master()
+
 # 日本株名称マスター（銘柄名検索の日本語化に使用）
 JP_STOCK_NAMES = {
     "7203.T":"トヨタ自動車","6758.T":"ソニーグループ","8306.T":"三菱UFJ FG",
@@ -579,105 +596,37 @@ JP_STOCK_NAMES = {
 
 @app.get("/api/stock-search")
 def search_stocks(q: str = Query(default="")):
-    """銘柄名または証券コードで検索（カスタムテーマ用・日本株のみ）"""
-    if not q.strip():
+    """Search the official all-listed issuer master. Market data is loaded only after selection."""
+    raw = unicodedata.normalize("NFKC", q or "").strip()
+    if not raw:
         return {"results": []}
-    try:
-        import yfinance as yf
-        q = q.strip()
-        results = []
 
-        # 4桁数字 → 日本株ティッカー
-        if q.isdigit() and len(q) == 4:
-            ticker = q + ".T"
-            try:
-                t    = yf.Ticker(ticker)
-                info = t.info
-                hist = t.history(period="5d", interval="1d", auto_adjust=True)
-                price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-                # 日本語名を優先
-                jp_name = JP_STOCK_NAMES.get(ticker)
-                en_name = info.get("longName") or info.get("shortName") or ""
-                name = jp_name or en_name or ticker
-                if name and name != ticker:
-                    results.append({"ticker": ticker, "name": name, "price": price})
-                else:
-                    results.append({"ticker": ticker, "name": ticker, "price": price})
-            except Exception:
-                pass
+    def key(value):
+        return re.sub(r"[\s株式会社㈱]", "", unicodedata.normalize("NFKC", str(value or "")).lower())
 
-        else:
-            # 銘柄名検索：まず日本語名マスターから前方一致・部分一致で検索
-            q_lower = q.lower()
-            for ticker, jp_name in JP_STOCK_NAMES.items():
-                if q_lower in jp_name.lower() or q in jp_name:
-                    try:
-                        hist = yf.Ticker(ticker).history(period="5d", auto_adjust=True)
-                        price = round(float(hist["Close"].iloc[-1]), 0) if len(hist) > 0 else None
-                    except Exception:
-                        price = None
-                    results.append({
-                        "ticker": ticker,
-                        "name": jp_name,
-                        "price": price,
-                    })
-                    if len(results) >= 8:
-                        break
+    needle = key(raw)
+    matches = []
+    for ticker, row in LISTED_STOCK_MASTER.items():
+        code = row.get("code") or ticker.replace(".T", "")
+        if needle in key(row.get("name")) or needle in key(code):
+            curated = ticker in JP_STOCK_NAMES
+            matches.append({
+                "ticker": ticker,
+                "code": code,
+                "name": row.get("name") or JP_STOCK_NAMES.get(ticker) or ticker,
+                "market": row.get("market", ""),
+                "industry": row.get("industry", ""),
+                "curated": curated,
+                "price": None,
+            })
+    matches.sort(key=lambda row: (
+        0 if str(row.get("code", "")).startswith(raw) else 1,
+        0 if row.get("curated") else 1,
+        str(row.get("code", "")),
+    ))
+    return {"results": matches[:50], "total": len(matches)}
 
-            # マスターにない場合はyfinance Searchで補完（日本株のみ）
-            if not results:
-                try:
-                    search = yf.Search(q + " japan stock", max_results=15)
-                    for item in (search.quotes or []):
-                        sym = item.get("symbol", "")
-                        if not sym.endswith(".T"):
-                            continue
-                        jp_name = JP_STOCK_NAMES.get(sym)
-                        en_name = item.get("longname") or item.get("shortname") or sym
-                        name = jp_name or en_name
-                        if sym and name:
-                            results.append({
-                                "ticker": sym,
-                                "name": name,
-                                "price": None,
-                            })
-                            if len(results) >= 8:
-                                break
-                except Exception:
-                    pass
 
-        # 日本株（4桁数字.T形式）のみに厳密に絞る
-        import re as _re
-        results = [r for r in results
-                   if _re.match(r'^\d{4}\.T$', r["ticker"])
-                   and r.get("name") and r["name"] != r["ticker"]]
-        return {"results": results[:8]}
-    except Exception as e:
-        return {"results": [], "error": str(e)}
-
-# ── Stripe Checkout ────────────────────────────────────────────
-import os
-import stripe as _stripe
-from supabase import create_client as _sb_client
-import datetime as _dt
-
-_stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
-_WEBHOOK_SECRET  = os.environ.get("STRIPE_WEBHOOK_SECRET", "")
-_PRICE_IDS = {
-    "standard_monthly": os.environ.get("STRIPE_PRICE_STD_MONTHLY"),
-    "standard_yearly":  os.environ.get("STRIPE_PRICE_STD_YEARLY"),
-    "pro_monthly":      os.environ.get("STRIPE_PRICE_PRO_MONTHLY"),
-    "pro_yearly":       os.environ.get("STRIPE_PRICE_PRO_YEARLY"),
-}
-
-class CheckoutReq(BaseModel):
-    price_key:      str
-    user_id:        str
-    email:          str
-    success_url:    str
-    cancel_url:     str
-    billing_timing: str = 'period_end'  # 'immediate' or 'period_end'
-# ── Stripe サブスクリプション解約 ──────────────────────────────────────
 @app.post("/api/stripe/cancel-subscription")
 async def cancel_subscription(req: Request):
     body = await req.json()

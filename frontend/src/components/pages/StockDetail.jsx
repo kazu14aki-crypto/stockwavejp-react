@@ -61,16 +61,19 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
     ;(async () => {
       let uid = null
       try { uid = (await supabase.auth.getSession())?.data?.session?.user?.id || null } catch {}
-      const [i, h, v, ho, sx] = await Promise.all([
+      const [i, h, v, ho, sx, master] = await Promise.all([
         fetch(`${API_BASE}/api/stock-info/${code}.T`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-history/${code}.T?period=1y`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-valuation/${code}.T${uid ? `?uid=${uid}` : ''}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stockholders/${code}.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stock_index.json`).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch(`/data/listed_stock_master.json`).then(r => r.ok ? r.json() : null).catch(() => null),
       ])
       if (cancelled) return
       setInfo(i); setHist(h?.data || null); setVal(v); setHolders(ho)
-      setIdxEntry(sx?.[`${code}.T`] || null)
+      const curated = sx?.[`${code}.T`] || null
+      const listed = master?.stocks?.find(row => row.ticker === `${code}.T`) || null
+      setIdxEntry(curated ? { ...listed, ...curated, curated:true } : listed)
       setLoading(false)
     })()
     return () => { cancelled = true }
