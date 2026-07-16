@@ -46,11 +46,13 @@ def security_code(raw: str) -> str | None:
 
 
 def read_edinet_csv(payload: bytes) -> list[dict[str, str]]:
+    """Read EDINET CSV even when title rows precede the real header."""
     with zipfile.ZipFile(io.BytesIO(payload)) as zf:
         names = [n for n in zf.namelist() if n.lower().endswith(".csv")]
         if not names:
             raise ValueError("EDINET code-list ZIP does not contain a CSV file")
         raw = zf.read(names[0])
+
     text = None
     for encoding in ("cp932", "shift_jis", "utf-8-sig", "utf-8"):
         try:
@@ -60,7 +62,27 @@ def read_edinet_csv(payload: bytes) -> list[dict[str, str]]:
             continue
     if text is None:
         raise ValueError("Unable to decode EDINET code-list CSV")
-    return list(csv.DictReader(io.StringIO(text)))
+
+    physical_rows = list(csv.reader(io.StringIO(text)))
+    header_index = None
+    for index, row in enumerate(physical_rows[:20]):
+        normalized = {norm(cell).replace(" ", "") for cell in row}
+        has_code = any(key in normalized for key in ("証券コード", "Securitiescode"))
+        has_name = any(key in normalized for key in ("提出者名", "会社名", "Filername"))
+        if has_code and has_name:
+            header_index = index
+            break
+    if header_index is None:
+        raise ValueError(f"Unable to locate EDINET CSV header: {physical_rows[:3]!r}")
+
+    header = [norm(cell) for cell in physical_rows[header_index]]
+    rows = []
+    for values in physical_rows[header_index + 1:]:
+        if not any(norm(value) for value in values):
+            continue
+        padded = values + [""] * max(0, len(header) - len(values))
+        rows.append(dict(zip(header, padded[:len(header)])))
+    return rows
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -148,9 +170,13 @@ def main() -> None:
             response = requests.get(EDINET_CODELIST_URL, timeout=60, headers={"User-Agent": "StockWaveJP/1.0"})
             response.raise_for_status()
             payload = response.content
-        result = build(read_edinet_csv(payload), curated)
-        if result["count"] < 1000:
-            raise ValueError(f"Unexpectedly small listed universe: {result['count']}")
+        rows = read_edinet_csv(payload)
+        result = build(rows, curated)
+        if result["count"] < 2500:
+            raise ValueError(
+                f"Unexpectedly small listed universe: {result['count']} "
+                f"from {len(rows)} EDINET rows"
+            )
     except Exception:
         if not args.fallback:
             raise

@@ -258,17 +258,6 @@ export default function StockSearch({ onNavigate }) {
                         background:'var(--bg3)', padding:'1px 6px', borderRadius:'4px' }}>
                         {s.ticker.replace('.T','')}
                       </span>
-                      {s.curated ? (
-                        <span style={{ fontSize:'10px', padding:'2px 7px', borderRadius:'10px',
-                          background:'rgba(74,158,255,0.1)', color:'var(--accent)', border:'1px solid rgba(74,158,255,0.25)' }}>
-                          テーマ選定
-                        </span>
-                      ) : (
-                        <span style={{ fontSize:'10px', padding:'2px 7px', borderRadius:'10px',
-                          background:'var(--bg3)', color:'var(--text3)', border:'1px solid var(--border)' }}>
-                          全上場銘柄
-                        </span>
-                      )}
                     </div>
                     <div style={{ display:'flex', gap:'6px', flexWrap:'wrap' }}>
                       {s.themes?.slice(0,3).map(t => (
@@ -277,9 +266,10 @@ export default function StockSearch({ onNavigate }) {
                           border:'1px solid rgba(74,158,255,0.2)', borderRadius:'10px' }}>{t}</span>
                       ))}
                       {s.themes?.length > 3 && <span style={{ fontSize:'10px', color:'var(--text3)' }}>+{s.themes.length-3}</span>}
-                      {!s.themes?.length && (s.market || s.industry) && (
-                        <span style={{ fontSize:'10px', color:'var(--text3)' }}>
-                          {[s.market, s.industry].filter(Boolean).join(' / ')}
+                      {!s.themes?.length && (
+                        <span style={{ fontSize:'10px', padding:'2px 7px', borderRadius:'10px',
+                          background:'var(--bg3)', color:'var(--text3)', border:'1px solid var(--border)' }}>
+                          該当テーマなし
                         </span>
                       )}
                     </div>
@@ -354,15 +344,6 @@ export default function StockSearch({ onNavigate }) {
               </div>
             </div>
 
-            {!s.curated && (
-              <div style={{ padding:'10px 12px', marginBottom:'14px', borderRadius:'8px',
-                background:'rgba(74,158,255,0.06)', border:'1px solid rgba(74,158,255,0.18)',
-                color:'var(--text2)', fontSize:'12px', lineHeight:1.7 }}>
-                この銘柄は全上場銘柄マスターから検索されています。既存テーマには自動追加されませんが、カスタムテーマへ追加して独自に追跡できます。
-                {(s.market || s.industry) && <div style={{ color:'var(--text3)', marginTop:'3px' }}>{[s.market, s.industry].filter(Boolean).join(' / ')}</div>}
-              </div>
-            )}
-
             {/* ⑥ アクションボタン */}
             <div style={{ display:'flex', gap:'10px', flexWrap:'wrap', marginBottom:'14px' }}>
               <button onClick={() => setModalStock({ ticker:s.ticker, name:s.name, price:s.price, pct:s.pct })}
@@ -412,14 +393,14 @@ export default function StockSearch({ onNavigate }) {
                 📊 所属テーマ
               </div>
               <div style={{ display:'flex', flexWrap:'wrap', gap:'8px' }}>
-                {s.themes?.map(t => (
+                {s.themes?.length ? s.themes.map(t => (
                   <button key={t} onClick={() => onNavigate?.('テーマ別詳細', t)}
                     style={{ padding:'6px 14px', borderRadius:'20px', cursor:'pointer',
                       background:'rgba(74,158,255,0.08)', border:'1px solid rgba(74,158,255,0.25)',
                       color:'var(--accent)', fontFamily:'var(--font)', fontSize:'12px', fontWeight:600 }}>
                     {t} →
                   </button>
-                ))}
+                )) : <span style={{ fontSize:'12px', color:'var(--text3)' }}>該当テーマなし</span>}
               </div>
             </div>
 

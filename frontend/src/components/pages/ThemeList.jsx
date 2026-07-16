@@ -1183,6 +1183,8 @@ function MonthlyTVChart({ volTrendData, allThemeNames, months }) {
 
 export default function ThemeList({ onNavigate }) {
   const [period, setPeriod] = useState('1mo')
+  const [rankingMetric, setRankingMetric] = useState('pct')
+  const [rankingOrder, setRankingOrder] = useState('desc')
   const { data: monthlyRaw } = useMonthlyHeatmap()
   const monthlyData = monthlyRaw?.data || null
   const months = monthlyRaw?.months || []
@@ -1227,6 +1229,11 @@ export default function ThemeList({ onNavigate }) {
   const byPctAsc = [...themes].sort((a, b) => a.pct - b.pct)
   const byVol    = [...themes].sort((a, b) => (b.volume || 0) - (a.volume || 0))
   const byTV     = [...themes].sort((a, b) => (b.trade_value || 0) - (a.trade_value || 0))
+  const rankingConfig = { pct:{label:'騰落率'}, volume:{label:'出来高',color:'#378ADD'}, trade_value:{label:'売買代金',color:'#ff8c42'} }[rankingMetric]
+  const rankingItems = [...themes].sort((a,b) => {
+    const av = Number(a?.[rankingMetric]) || 0, bv = Number(b?.[rankingMetric]) || 0
+    return rankingOrder === 'asc' ? av - bv : bv - av
+  })
   // ランクマップ（テーマ名→順位）
   const pctRankMap = new Map(themes.map((t, i) => [t.theme, i + 1]))
   const volRankMap = new Map(byVol.map((t, i) => [t.theme, i + 1]))
@@ -1348,10 +1355,20 @@ export default function ThemeList({ onNavigate }) {
               </div>
             )}
 
-            {/* 全テーマ 騰落率ランキング（カードグリッド） */}
-            <SectionHead title="📊 全テーマ 騰落率ランキング" />
-            <ThemeCardGrid items={themes} pctColor={pctColor} valueKey="pct" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={momentumMap} />
-
+            {/* 全テーマ統合ランキング */}
+            <SectionHead title="📊 全テーマランキング" />
+            <div style={{ display:'flex', gap:'8px', alignItems:'center', flexWrap:'wrap', marginBottom:'12px', padding:'10px 12px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
+              <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>表示指標</span>
+              <select value={rankingMetric} onChange={e => setRankingMetric(e.target.value)} style={selStyle}>
+                <option value="pct">騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option>
+              </select>
+              <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>並び順</span>
+              <select value={rankingOrder} onChange={e => setRankingOrder(e.target.value)} style={selStyle}>
+                <option value="desc">降順（高い順）</option><option value="asc">昇順（低い順）</option>
+              </select>
+              <span style={{ marginLeft:'auto', fontSize:'11px', color:'var(--text3)' }}>{rankingConfig.label}・{rankingOrder==='desc'?'高い順':'低い順'}</span>
+            </div>
+            <ThemeCardGrid items={rankingItems} pctColor={pctColor} valueKey={rankingMetric} barColor={rankingConfig.color} pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={rankingMetric==='pct'?momentumMap:undefined} />
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
@@ -1360,14 +1377,6 @@ export default function ThemeList({ onNavigate }) {
                 <CustomThemeRows themes={customThemes} period={period} pctColor={pctColor} />
               </>
             )}
-
-            {/* 全テーマ 出来高ランキング（カードグリッド） */}
-            <SectionHead title="🔢 全テーマ 出来高ランキング" />
-            <ThemeCardGrid items={byVol} pctColor={pctColor} valueKey="volume" barColor="#378ADD" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
-
-            {/* 全テーマ 売買代金ランキング（カードグリッド） */}
-            <SectionHead title="💴 全テーマ 売買代金ランキング" />
-            <ThemeCardGrid items={byTV} pctColor={pctColor} valueKey="trade_value" barColor="#ff8c42" pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} />
 
             {/* 📅 月次グラフ ＋ ヒートマップ: PC版2×2グリッド */}
             {Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
