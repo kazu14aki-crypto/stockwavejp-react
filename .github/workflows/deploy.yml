@@ -15,6 +15,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Reject unresolved merge markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE '^(<<<<<<<|=======|>>>>>>>)' \
+            frontend/index.html \
+            frontend/src \
+            frontend/scripts \
+            backend \
+            --exclude-dir=node_modules \
+            --exclude-dir=dist; then
+            echo "Unresolved Git merge markers were found. Deployment stopped."
+            exit 1
+          fi
+          echo "No unresolved merge markers found."
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,10 +45,21 @@ jobs:
       - name: Build (includes postbuild SSG)
         working-directory: frontend
         run: npm run build
-        # npm run build が完了すると自動的に
-        # postbuild: node scripts/generate-static-columns.mjs が実行され
-        # dist/column/<id>/index.html (51ファイル) と
-        # dist/sitemap.xml と dist/robots.txt が生成される
+
+      - name: Verify generated root HTML
+        working-directory: frontend
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          if grep -nE '^(<<<<<<<|=======|>>>>>>>)' dist/index.html; then
+            echo "Merge markers remain in dist/index.html. Deployment stopped."
+            exit 1
+          fi
+          grep -q '<title>StockWaveJP' dist/index.html
+          grep -q 'name="description"' dist/index.html
+          grep -q 'application/ld+json' dist/index.html
+          echo "Root HTML SEO verification passed."
 
       - name: Verify SSG output
         working-directory: frontend
