@@ -247,6 +247,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [momentum, setMomentum]   = useState(null)   // /api/momentum
   const [holders, setHolders]     = useState(null)   // /data/stockholders/index.json
   const [loading, setLoading]     = useState(true)
+  const [validation, setValidation] = useState(null)
   const [rulesChecked, setRulesChecked] = useState(() => {
     try { return JSON.parse(localStorage.getItem('swjp_dev_rules') || '[]') } catch { return [] }
   })
@@ -270,6 +271,16 @@ export default function DevEdge({ isMobile, onNavigate }) {
         if (!cancelled) setLoading(false)
       }
     })()
+    return () => { cancelled = true }
+  }, [isDev])
+
+  useEffect(() => {
+    if (!isDev) return
+    let cancelled = false
+    fetch(`/data/dev_edge_signal_validation.json?t=${Date.now()}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (!cancelled) setValidation(data) })
+      .catch(() => { if (!cancelled) setValidation(null) })
     return () => { cancelled = true }
   }, [isDev])
 

@@ -1039,6 +1039,23 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                   color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
                   平均 {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
                 </span>
+                {periodMarketPct != null && Number.isFinite(Number(detail?.avg)) && (
+                  <span style={{ fontSize:'12px', fontFamily:'var(--mono)', fontWeight:600,
+                    color: (Number(detail.avg) - periodMarketPct) >= 0 ? 'var(--red)' : 'var(--green)',
+                    padding:'3px 9px', borderRadius:'20px',
+                    background:(Number(detail.avg) - periodMarketPct) >= 0
+                      ? 'rgba(255,83,112,0.08)' : 'rgba(0,196,140,0.08)',
+                    border:(Number(detail.avg) - periodMarketPct) >= 0
+                      ? '1px solid rgba(255,83,112,0.22)' : '1px solid rgba(0,196,140,0.22)' }}>
+                    市場超過 {(Number(detail.avg) - periodMarketPct) >= 0 ? '+' : ''}
+                    {(Number(detail.avg) - periodMarketPct).toFixed(1)}pt
+                  </span>
+                )}
+                {periodMarketPct != null && (
+                  <span style={{ fontSize:'11px', color:'var(--text3)', fontFamily:'var(--mono)' }}>
+                    市場 {periodMarketPct >= 0 ? '+' : ''}{periodMarketPct.toFixed(1)}%
+                  </span>
+                )}
                 {momentum && (<>
                   <div style={{ width:'1px', height:'20px', background:'var(--border)' }} />
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>先月比</span>
@@ -1082,7 +1099,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                     {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
                   </span>
                   {periodMarketPct != null && <span style={{fontSize:'10px',color:'var(--text3)',fontFamily:'var(--mono)',flexShrink:0}}>
-                    市場 {periodMarketPct>=0?'+':''}{periodMarketPct.toFixed(1)}% ／ 超過 {(detail.avg-periodMarketPct)>=0?'+':''}{(detail.avg-periodMarketPct).toFixed(1)}pt
+                    市場 {periodMarketPct>=0?'+':''}{periodMarketPct.toFixed(1)}% ／ 超過 {(Number(detail?.avg)-periodMarketPct)>=0?'+':''}{(Number(detail?.avg)-periodMarketPct).toFixed(1)}pt
                   </span>}
                 </div>
                 <div style={{ display:'flex', alignItems:'center', gap:'6px', flexWrap:'wrap' }}>
