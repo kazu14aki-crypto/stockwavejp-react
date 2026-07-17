@@ -177,7 +177,7 @@ function ReportCard({ entry, isActive, onClick, isLocked, onUpgrade }) {
       </div>
       <div style={{ display:'flex', alignItems:'center', gap:'10px', flexWrap:'wrap' }}>
         <span style={{ fontSize:'18px', fontWeight:800, fontFamily:'var(--mono)', color:col }}>
-          {avg >= 0 ? '+' : ''}{avg?.toFixed(2)}%
+          {Number.isFinite(avg) ? `${avg >= 0 ? '+' : ''}${avg.toFixed(2)}%` : '未集計'}
         </span>
         <span style={{ fontSize:'10px', color:'var(--text3)' }}>週間テーマ平均</span>
         {entry.generated_at && (
@@ -287,17 +287,25 @@ export default function WeeklyReport({ onNavigate }) {
                 <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'3px' }}>週間平均</div>
                 <div style={{ fontSize:'17px', fontWeight:700, fontFamily:'var(--mono)',
                   color: summary.avg_pct_1w >= 0 ? 'var(--red)' : 'var(--green)' }}>
-                  {summary.avg_pct_1w >= 0 ? '+' : ''}{summary.avg_pct_1w}%
+                  {Number.isFinite(summary.avg_pct_1w) ? `${summary.avg_pct_1w >= 0 ? '+' : ''}${summary.avg_pct_1w}%` : '未集計'}
                 </div>
               </div>
               <div style={{ background:'var(--bg2)', borderRadius:'8px', padding:'8px 12px', textAlign:'center' }}>
                 <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'3px' }}>上昇テーマ</div>
-                <div style={{ fontSize:'17px', fontWeight:700, color:'var(--red)' }}>{summary.rise_count}</div>
+                <div style={{ fontSize:'17px', fontWeight:700, color:'var(--red)' }}>{Number.isFinite(summary.rise_count) ? summary.rise_count : '未集計'}</div>
               </div>
               <div style={{ background:'var(--bg2)', borderRadius:'8px', padding:'8px 12px', textAlign:'center' }}>
                 <div style={{ fontSize:'10px', color:'var(--text3)', marginBottom:'3px' }}>下落テーマ</div>
-                <div style={{ fontSize:'17px', fontWeight:700, color:'var(--green)' }}>{summary.fall_count}</div>
+                <div style={{ fontSize:'17px', fontWeight:700, color:'var(--green)' }}>{Number.isFinite(summary.fall_count) ? summary.fall_count : '未集計'}</div>
               </div>
+            </div>
+          )}
+
+          {summary?.data_status && (
+            <div style={{ marginTop:'10px', padding:'7px 10px', borderRadius:'6px',
+              background:'rgba(255,184,77,0.08)', border:'1px solid rgba(255,184,77,0.22)',
+              color:'var(--text2)', fontSize:'10px', lineHeight:1.6 }}>
+              ⚠️ {summary.data_status}
             </div>
           )}
 
@@ -312,7 +320,7 @@ export default function WeeklyReport({ onNavigate }) {
                     onClick={() => onNavigate?.('テーマ別詳細', t.theme)}>
                     <span style={{ color:'var(--text2)' }}>{i+1}. {t.theme}</span>
                     <span style={{ color:'var(--red)', fontFamily:'var(--mono)', fontWeight:700, marginLeft:'6px', flexShrink:0 }}>
-                      {t.pct >= 0 ? '+' : ''}{t.pct?.toFixed(1)}%
+                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '定性'}
                     </span>
                   </div>
                 ))}
@@ -326,7 +334,7 @@ export default function WeeklyReport({ onNavigate }) {
                     onClick={() => onNavigate?.('テーマ別詳細', t.theme)}>
                     <span style={{ color:'var(--text2)' }}>{i+1}. {t.theme}</span>
                     <span style={{ color:'var(--green)', fontFamily:'var(--mono)', fontWeight:700, marginLeft:'6px', flexShrink:0 }}>
-                      {t.pct >= 0 ? '+' : ''}{t.pct?.toFixed(1)}%
+                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '定性'}
                     </span>
                   </div>
                 ))}
