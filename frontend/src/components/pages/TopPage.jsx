@@ -288,9 +288,25 @@ export default function TopPage({ onNavigate }) {
           <span style={{ color:'var(--logo-red)', fontSize:'13px' }}>JP</span>
         </h1>
         {/* PC:1行 / SP:折り返し */}
-        <p style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.7 }} className="hero-desc">
+        <p style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.7, marginBottom:'12px' }} className="hero-desc">
           日本株テーマの騰落率・出来高・売買代金を定期取得し、資金の流れをテーマ別に可視化。期間別テーマヒートマップや市場別詳細、解説コラムを組み合わせ、より実践的な投資分析をサポートします。
         </p>
+        <button
+          type="button"
+          onClick={() => onNavigate?.('使い方')}
+          style={{
+            display:'inline-flex', alignItems:'center', gap:'7px', padding:'8px 13px',
+            borderRadius:'7px', border:'1px solid rgba(74,158,255,0.3)',
+            background:'rgba(74,158,255,0.08)', color:'var(--accent)', cursor:'pointer',
+            fontFamily:'var(--font)', fontSize:'11px', fontWeight:700,
+          }}
+          onMouseEnter={e => { e.currentTarget.style.background='rgba(74,158,255,0.14)' }}
+          onMouseLeave={e => { e.currentTarget.style.background='rgba(74,158,255,0.08)' }}
+        >
+          <span>初めての方へ</span>
+          <span style={{ color:'var(--text2)', fontWeight:600 }}>StockWaveJPの詳しい使い方を見る</span>
+          <span aria-hidden="true">→</span>
+        </button>
       </div>
 
       {/* お知らせ（小見出しのみ・コンパクト） */}
@@ -403,7 +419,7 @@ export default function TopPage({ onNavigate }) {
                     </div>
                   ))}
                 </div>
-                <button onClick={() => onNavigate('週次レポート')}
+                <button onClick={() => onNavigate('レポート')}
                   style={{ padding:'6px 14px', borderRadius:'6px', fontSize:'11px',
                     background:'rgba(255,140,66,0.1)', border:'1px solid rgba(255,140,66,0.3)',
                     color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>

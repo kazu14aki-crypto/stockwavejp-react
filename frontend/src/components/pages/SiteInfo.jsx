@@ -51,7 +51,7 @@ export default function SiteInfo() {
             { icon:'📊', title:'三指標同時表示', desc:'騰落率・出来高・売買代金を72テーマ分まとめてランキング表示' },
             { icon:'⚙️', title:'カスタムテーマ', desc:'自分だけのテーマを作成して独自の銘柄群を追跡できる' },
             { icon:'📈', title:'マクロ連動表示', desc:'日経平均・ドル円・VIX等のマクロ指標とテーマ動向を同時確認' },
-            { icon:'📰', title:'週次レポート', desc:'毎週の相場振り返りと来週の注目ポイントを編集部が解説' },
+            { icon:'📰', title:'レポート', desc:'週次・月次・四半期でテーマ循環と過去ランキングの事後成績を検証' },
           ].map(({ icon, title, desc }) => (
             <div key={title} style={{ background:'rgba(74,158,255,0.04)',
               border:'1px solid rgba(74,158,255,0.15)', borderRadius:'8px',

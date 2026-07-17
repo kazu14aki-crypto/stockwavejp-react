@@ -293,7 +293,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [selHolders, setSelHolders] = useState(null)
   const [selLoading, setSelLoading] = useState(false)
   // cis式・本源的価値チェッカー（再構築コスト法）
-  const [ic, setIc] = useState({ q: '', code: '', name: '', mcap: '', profit: '', peMin: '10', peMax: '20', moat: '3', supply: '3' })
+  const [ic, setIc] = useState({ q: '', code: '', name: '', mcap: '', cost: '', ops: '0', premMin: '2', premMax: '5' })
 
   useEffect(() => {
     if (!isDev) return
@@ -427,24 +427,21 @@ export default function DevEdge({ isMobile, onNavigate }) {
       mcap: Number.isFinite(mcapYen) ? (mcapYen / 1e12).toFixed(2) : c.mcap }))
   }
 
-  // cis氏の考え方を、公開決算から使える「利益逆算」に置き換える。
+  // 本源的価値の判定（cis式: 再構築コスト×プレミアム倍率 vs 時価総額）
   const icResult = useMemo(() => {
-    const mcap = parseFloat(ic.mcap), profit = parseFloat(ic.profit)
-    const peMin = parseFloat(ic.peMin), peMax = parseFloat(ic.peMax)
-    const moat = parseFloat(ic.moat), supply = parseFloat(ic.supply)
-    if (!(mcap > 0 && profit > 0 && peMin > 0 && peMax >= peMin)) return null
-    const fairLo = profit * peMin, fairHi = profit * peMax
-    const currentPe = mcap / profit
-    const requiredProfitLo = mcap / peMax
-    const requiredProfitHi = mcap / peMin
-    const durability = Math.max(0, Math.min(100, ((moat || 0) + (6 - (supply || 0))) / 10 * 100))
-    const adjustedHi = fairHi * (0.75 + durability / 200)
+    const mcap = parseFloat(ic.mcap), cost = parseFloat(ic.cost), ops = parseFloat(ic.ops || '0')
+    const pMin = parseFloat(ic.premMin), pMax = parseFloat(ic.premMax)
+    if (!(mcap > 0 && cost > 0 && pMin > 0 && pMax >= pMin)) return null
+    const build = cost + (ops > 0 ? ops : 0)          // 再構築総コスト
+    const valLo = build * pMin, valHi = build * pMax  // 本源的価値レンジ
+    const ratioLo = mcap / valHi, ratioHi = mcap / valLo  // 過大評価倍率（楽観〜悲観）
     let judge, color
-    if (mcap <= fairLo) { judge = '現在利益だけでも保守的な評価レンジ以下。利益の再現性を確認できれば割安候補です'; color = '#00c48c' }
-    else if (mcap <= adjustedHi) { judge = '現在利益と競争優位を前提に説明可能な範囲です。成長率と需給を確認してください'; color = '#4a9eff' }
-    else if (currentPe <= peMax * 1.5) { judge = '成長期待を相当織り込んでいます。期待利益に届くまでの年数と新規参入を点検してください'; color = '#ffd700' }
-    else { judge = '高利益の長期継続と競争不在を強く織り込む水準です。cis氏のキオクシア判断に近い「供給反応リスク」を重点監視してください'; color = '#ff8c42' }
-    return { fairLo, fairHi: adjustedHi, currentPe, requiredProfitLo, requiredProfitHi, durability, judge, color }
+    if (mcap <= valLo) { judge = '本源的価値レンジ未満（再構築コスト割れ圏）。長期買いの土俵で、下値は「作るより買う方が安い」買収価値が支えます'; color = '#00c48c' }
+    else if (mcap <= valHi) { judge = '価値レンジ内。ブランド・販売網・先行者収益のプレミアムを織り込んだ妥当圏です'; color = '#4a9eff' }
+    else if (ratioLo < 2) { judge = 'やや割高。将来の成長がプレミアム倍率をさらに正当化できるかが焦点'; color = '#ffd700' }
+    else if (ratioLo < 3) { judge = '割高ゾーン。この時価総額は「高利益率が長期継続し、かつ新規参入が起きない」ことを前提にしています。供給反応チェックへ'; color = '#ff8c42' }
+    else { judge = '過大評価シグナル。価値上限の' + ratioLo.toFixed(1) + '倍。高利益率は必ず参入を招く——ただし乖離はタイミングを教えないため、需給イベント×売買代金急増を待って行動（乖離だけのエスパー売りは禁止）'; color = '#ff5370' }
+    return { build, valLo, valHi, ratioLo, ratioHi, judge, color }
   }, [ic])
 
   // 総合評価文（ルールベース生成）
@@ -648,6 +645,12 @@ export default function DevEdge({ isMobile, onNavigate }) {
             </div>
           </div>
         ) : <div style={S.small}>{loading ? '読み込み中…' : 'テーマデータの取得に失敗しました'}</div>}
+      </div>
+
+      {/* ── B1. シグナル事後検証 ── */}
+      <div style={S.card}>
+        <div style={S.h2}>🧪 シグナル事後検証 <span style={{...S.small,fontWeight:400}}>Dev Edge専用。公開サイトの機能を増やさず、判断ルールだけ検証</span></div>
+        {validation?.rows?.length ? <div style={{overflowX:'auto'}}><table style={{width:'100%',borderCollapse:'collapse',minWidth:'620px'}}><thead><tr>{['条件','発生回数','5日平均','20日平均','勝率','最大DD','判定'].map(h=><th key={h} style={S.th}>{h}</th>)}</tr></thead><tbody>{validation.rows.map(r=><tr key={r.signal}><td style={{...S.td,color:'var(--text)'}}>{r.signal}</td><td style={{...S.td,...S.mono}}>{r.count}</td><td style={{...S.td,...S.mono,color:r.avg_5d>=0?'#ff5370':'#00c48c'}}>{r.avg_5d>=0?'+':''}{r.avg_5d?.toFixed(2)}%</td><td style={{...S.td,...S.mono,color:r.avg_20d>=0?'#ff5370':'#00c48c'}}>{r.avg_20d>=0?'+':''}{r.avg_20d?.toFixed(2)}%</td><td style={{...S.td,...S.mono}}>{r.win_rate?.toFixed(1)}%</td><td style={{...S.td,...S.mono,color:'#00c48c'}}>{r.max_drawdown?.toFixed(1)}%</td><td style={{...S.td,fontWeight:700,color:r.edge?'#7ed321':'var(--text3)'}}>{r.edge?'継続検証':'優位性未確認'}</td></tr>)}</tbody></table></div> : <div style={S.small}>日次スナップショットを30件以上蓄積後に表示します。検証対象は「🌱初動」「🔥継続」「⚠️過熱」「🩸セリクラ」です。</div>}
       </div>
 
       {/* ── B2. 銘柄スコア・スキャナ ── */}
@@ -921,36 +924,67 @@ export default function DevEdge({ isMobile, onNavigate }) {
         ) : <div style={S.small}>4項目を入力すると、リスク許容額から株数を逆算します。損切り価格＞エントリーなら空売りとして計算します。</div>}
       </div>
 
-      {/* ── E2. 利益逆算・供給反応チェッカー ── */}
+      {/* ── E2. 本源的価値チェッカー（cis式・再構築コスト法） ── */}
       <div style={S.card}>
-        <div style={S.h2}>💰 利益逆算・供給反応チェッカー<span style={{ ...S.small, fontWeight: 400 }}>cis氏の発想を、決算資料だけで使える形に簡略化</span></div>
-        <div style={{ ...S.small, marginBottom: '12px' }}>
-          再構築コストを自分で積算する代わりに、現在の時価総額が「どれほどの利益を、どれほど長く維持する前提か」を逆算します。必要なのは直近12か月の純利益だけです。
+        <div style={S.h2}>💰 本源的価値チェッカー<span style={{ ...S.small, fontWeight: 400 }}>再構築コスト法 — 「その会社をゼロから作るといくらか」と時価総額を比べる</span></div>
+        <div style={{ ...S.small, marginBottom: '12px', lineHeight: 1.9 }}>
+          手法：①工場・設備・建屋の<b style={{ color: 'var(--text2)' }}>再構築コスト</b>（インフレ考慮後）と立ち上げ・操業コストを積算 → ②ブランド・販売網・先行者の超過収益期間を<b style={{ color: 'var(--text2)' }}>プレミアム倍率</b>（目安2〜5倍）として掛け、本源的価値レンジを推定 → ③時価総額と比較。
+          価値上限の3倍を超える時価総額は「高利益率の長期継続＋新規参入ゼロ」を前提にした価格であり、<b style={{ color: 'var(--text2)' }}>高利益率そのものが参入を招く</b>ため構造的に不安定です。
         </div>
-        <div style={{ position: 'relative', marginBottom: '10px' }}>
-          <input style={{ ...S.input, width: '100%' }} value={ic.q} onChange={e => setIc(c => ({ ...c, q: e.target.value }))} placeholder="銘柄コード・会社名で検索" />
-          {icMatches.length > 0 && <div style={{ position:'absolute', zIndex:20, top:'100%', left:0, right:0, background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'8px', overflow:'hidden' }}>
-            {icMatches.map(m => <div key={m.ticker} onClick={() => selectIcStock(m)} style={{ padding:'8px 10px', cursor:'pointer', fontSize:'12px', borderBottom:'1px solid var(--border)' }}>{String(m.ticker).replace('.T','')} {m.name}</div>)}
-          </div>}
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(6, 1fr)', gap: '10px', marginBottom: '12px' }}>
+          <label style={{ ...S.small, position: 'relative' }}>銘柄（任意・時価総額自動入力）
+            <input style={S.input} value={ic.q || ic.name} placeholder="例: 285A"
+              onChange={e => setIc(c => ({ ...c, q: e.target.value, name: '' }))} />
+            {icMatches.length > 0 && (
+              <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '8px', zIndex: 10, overflow: 'hidden' }}>
+                {icMatches.map(m => (
+                  <div key={m.ticker} onClick={() => selectIcStock(m)}
+                    style={{ padding: '7px 10px', fontSize: '11.5px', cursor: 'pointer', borderBottom: '1px solid var(--border)', color: 'var(--text)' }}>
+                    <span style={{ ...S.mono, color: 'var(--text3)', fontSize: '10px' }}>{String(m.ticker).replace('.T', '')}</span> {m.name}
+                  </div>))}
+              </div>
+            )}
+          </label>
+          <label style={S.small}>時価総額（兆円）<input style={S.input} value={ic.mcap} onChange={e => setIc(c => ({ ...c, mcap: e.target.value }))} inputMode="decimal" placeholder="60" /></label>
+          <label style={S.small}>再構築コスト（兆円）<input style={S.input} value={ic.cost} onChange={e => setIc(c => ({ ...c, cost: e.target.value }))} inputMode="decimal" placeholder="設備・建屋 例: 2.5" /></label>
+          <label style={S.small}>操業・立ち上げ（兆円）<input style={S.input} value={ic.ops} onChange={e => setIc(c => ({ ...c, ops: e.target.value }))} inputMode="decimal" placeholder="例: 1.5" /></label>
+          <label style={S.small}>プレミアム下限×<input style={S.input} value={ic.premMin} onChange={e => setIc(c => ({ ...c, premMin: e.target.value }))} inputMode="decimal" /></label>
+          <label style={S.small}>プレミアム上限×<input style={S.input} value={ic.premMax} onChange={e => setIc(c => ({ ...c, premMax: e.target.value }))} inputMode="decimal" /></label>
         </div>
-        {ic.name && <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'10px' }}>{ic.code} {ic.name}</div>}
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))', gap:'8px', marginBottom:'12px' }}>
-          <label style={S.small}>時価総額（兆円）<input style={S.input} value={ic.mcap} onChange={e=>setIc(c=>({...c,mcap:e.target.value}))} inputMode="decimal" placeholder="自動取得または入力" /></label>
-          <label style={S.small}>直近12か月純利益（兆円）<input style={S.input} value={ic.profit} onChange={e=>setIc(c=>({...c,profit:e.target.value}))} inputMode="decimal" placeholder="例: 0.25" /></label>
-          <label style={S.small}>妥当PER 下限<input style={S.input} value={ic.peMin} onChange={e=>setIc(c=>({...c,peMin:e.target.value}))} inputMode="decimal" /></label>
-          <label style={S.small}>妥当PER 上限<input style={S.input} value={ic.peMax} onChange={e=>setIc(c=>({...c,peMax:e.target.value}))} inputMode="decimal" /></label>
-          <label style={S.small}>参入障壁 1〜5<input style={S.input} type="number" min="1" max="5" value={ic.moat} onChange={e=>setIc(c=>({...c,moat:e.target.value}))} /></label>
-          <label style={S.small}>供給増加リスク 1〜5<input style={S.input} type="number" min="1" max="5" value={ic.supply} onChange={e=>setIc(c=>({...c,supply:e.target.value}))} /></label>
-        </div>
-        {icResult ? <>
-          <div style={{ padding:'12px', background:'var(--bg)', border:'1px solid var(--border)', borderRadius:'8px', marginBottom:'10px' }}>
-            <div style={{ fontSize:'12px', color:'var(--text2)' }}>現在PER相当 <b style={{...S.mono,color:'var(--text)'}}>{icResult.currentPe.toFixed(1)}倍</b></div>
-            <div style={{ fontSize:'12px', color:'var(--text2)' }}>利益基準の価値レンジ <b style={{...S.mono,color:'#4a9eff'}}>{icResult.fairLo.toFixed(2)}〜{icResult.fairHi.toFixed(2)}兆円</b></div>
-            <div style={{ fontSize:'12px', color:'var(--text2)' }}>現在時価総額を正当化する純利益 <b style={{...S.mono,color:'#ffd700'}}>{icResult.requiredProfitLo.toFixed(2)}〜{icResult.requiredProfitHi.toFixed(2)}兆円</b></div>
+        {icResult ? (
+          <div>
+            <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap', alignItems: 'baseline', marginBottom: '8px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--text2)' }}>再構築総コスト <b style={{ ...S.mono, color: 'var(--text)' }}>{icResult.build.toFixed(1)}兆円</b></div>
+              <div style={{ fontSize: '12px', color: 'var(--text2)' }}>本源的価値レンジ <b style={{ ...S.mono, color: '#4a9eff' }}>{icResult.valLo.toFixed(1)}〜{icResult.valHi.toFixed(1)}兆円</b></div>
+              <div style={{ fontSize: '12px', color: 'var(--text2)' }}>時価総額 <b style={{ ...S.mono, color: 'var(--text)' }}>{parseFloat(ic.mcap).toFixed(1)}兆円</b></div>
+              <div style={{ fontSize: '15px', fontWeight: 800, fontFamily: 'var(--mono)', color: icResult.color }}>
+                価値の {icResult.ratioLo.toFixed(1)}〜{icResult.ratioHi.toFixed(1)}倍
+              </div>
+            </div>
+            {/* 価値レンジと時価総額の位置関係バー */}
+            {(() => {
+              const maxV = Math.max(icResult.valHi, parseFloat(ic.mcap)) * 1.15
+              const x = (v) => `${(v / maxV * 100).toFixed(1)}%`
+              return (
+                <div style={{ position: 'relative', height: '26px', background: 'var(--bg)', borderRadius: '6px', marginBottom: '10px', overflow: 'hidden' }}>
+                  <div style={{ position: 'absolute', left: x(icResult.valLo), width: `${((icResult.valHi - icResult.valLo) / maxV * 100).toFixed(1)}%`, top: 0, bottom: 0, background: 'rgba(74,158,255,0.25)', borderLeft: '1px solid #4a9eff', borderRight: '1px solid #4a9eff' }} />
+                  <div style={{ position: 'absolute', left: x(parseFloat(ic.mcap)), top: 0, bottom: 0, width: '2px', background: icResult.color }} />
+                  <span style={{ position: 'absolute', left: x(icResult.valLo), top: '4px', fontSize: '9px', color: '#4a9eff', paddingLeft: '3px' }}>価値レンジ</span>
+                  <span style={{ position: 'absolute', left: x(parseFloat(ic.mcap)), top: '4px', fontSize: '9px', color: icResult.color, paddingLeft: '4px' }}>時価総額</span>
+                </div>
+              )
+            })()}
+            <div style={{ padding: '9px 13px', background: `${icResult.color}10`, border: `1px solid ${icResult.color}40`, borderRadius: '8px', fontSize: '12px', color: 'var(--text2)', lineHeight: 1.9, marginBottom: '10px' }}>
+              <b style={{ color: icResult.color }}>判定</b>：{ic.name && <b style={{ color: 'var(--text)' }}>{ic.name}　</b>}{icResult.judge}
+            </div>
+            <div style={{ ...S.small, lineHeight: 2 }}>
+              <b style={{ color: 'var(--text2)' }}>supply response（供給反応）チェック</b> — 過大評価と判定した場合に確認：<br/>
+              ① この利益率が2〜3年続いたとき、中国・韓国・台湾・米国のどこかが再構築コストを払って参入する動機は十分か（十分なら中期で利益率は必ず低下）<br/>
+              ② 参入のリードタイム（工場建設2〜3年）の間に、需給スパークで株価がさらに2〜3倍になる余地はないか — <b style={{ color: '#ff8c42' }}>あるなら乖離だけを理由にした空売り（エスパー売り）は禁止</b><br/>
+              ③ 行動のタイミングは価値乖離ではなく<b style={{ color: 'var(--text2)' }}>需給イベント</b>で計る：指数組入れ・リバランス日／SQ／大口の投げを、売買代金の急増と併せて確認（上の需給カレンダー・キートリガーと連動）
+            </div>
           </div>
-          <div style={{ padding:'12px', border:`1px solid ${icResult.color}55`, borderLeft:`3px solid ${icResult.color}`, borderRadius:'8px', color:icResult.color, fontSize:'12px', lineHeight:1.8, marginBottom:'10px' }}>{icResult.judge}</div>
-          <div style={S.small}>確認事項：①その利益は市況ピークではないか ②競合が増産・参入できるか ③設備投資後に供給過剰にならないか ④指数組入れ・個人信用買いなど需給が過熱していないか ⑤売却判断は価値だけでなく売買代金と需給反転を待つ。</div>
-        </> : <div style={S.small}>時価総額と直近12か月純利益を入力すると、現在価格が要求する利益水準と競争リスクを表示します。</div>}
+        ) : <div style={S.small}>時価総額・再構築コスト・プレミアム倍率を入力すると、本源的価値レンジと時価総額の乖離を判定します。試算イメージ：再構築2.5兆＋操業1.5兆＝4兆円、プレミアム2〜5倍→価値8〜20兆円。これに対し時価総額60兆円なら「価値の3〜7.5倍」の過大評価ゾーンです。</div>}
       </div>
 
       {/* ── F. キートリガー & マイルール ── */}

@@ -195,6 +195,17 @@ function ReportCard({ entry, isActive, onClick, isLocked, onUpgrade }) {
   )
 }
 
+
+function RankingFollowup({ data, onNavigate }) {
+  if (!data) return null
+  const rows = data.rows || []
+  return <div style={{background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'12px',padding:'16px 18px',marginBottom:'16px'}}>
+    <div style={{fontSize:'13px',fontWeight:700,color:'var(--text)',marginBottom:'5px'}}>🔍 前回ランキングの事後成績</div>
+    <div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.6,marginBottom:'10px'}}>{data.note || '前回上位テーマが、その後どの程度市場平均を上回ったかを追跡します。'}</div>
+    {rows.length ? <div style={{overflowX:'auto'}}><table style={{width:'100%',borderCollapse:'collapse',minWidth:'520px'}}><thead><tr>{['前回順位','テーマ','その後騰落率','市場平均','超過','判定'].map(h=><th key={h} style={{fontSize:'10px',color:'var(--text3)',textAlign:'right',padding:'6px',borderBottom:'1px solid var(--border)'}}>{h}</th>)}</tr></thead><tbody>{rows.map(r=><tr key={r.theme} onClick={()=>onNavigate?.('テーマ別詳細',r.theme)} style={{cursor:'pointer'}}><td style={{padding:'7px',fontSize:'11px',textAlign:'right',color:'var(--text3)'}}>{r.rank}</td><td style={{padding:'7px',fontSize:'11px',color:'var(--text)',fontWeight:600}}>{r.theme}</td>{['return_pct','market_pct','excess_pct'].map(k=><td key={k} style={{padding:'7px',fontSize:'11px',textAlign:'right',fontFamily:'var(--mono)',color:Number(r[k])>=0?'var(--red)':'var(--green)'}}>{Number.isFinite(Number(r[k]))?`${Number(r[k])>=0?'+':''}${Number(r[k]).toFixed(2)}%`:'未集計'}</td>)}<td style={{padding:'7px',fontSize:'11px',textAlign:'right',color:r.hit?'var(--red)':'var(--text3)'}}>{r.hit?'市場超過':'未達'}</td></tr>)}</tbody></table></div> : <div style={{fontSize:'11px',color:'var(--text3)',padding:'12px 0'}}>履歴データの蓄積後に自動集計します。</div>}
+  </div>
+}
+
 export default function WeeklyReport({ onNavigate }) {
   const { isStandard, isDev } = useSubscription()
   const canViewRecent = isStandard || isDev  // Freeは1ヶ月以上前のみ閲覧可
@@ -356,6 +367,8 @@ export default function WeeklyReport({ onNavigate }) {
             </div>
           )}
         </div>
+
+        <RankingFollowup data={report?.ranking_followup} onNavigate={onNavigate} />
 
         {loading ? <Loading /> : (
           <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'12px', padding:'24px 28px' }}>

@@ -769,6 +769,48 @@ const THEME_ARTICLE_MAP = {
   '人材派遣':          'education-hr-theme',
 }
 
+
+function ThemeReturnDistribution({ series, themeName }) {
+  const rows = Array.isArray(series) ? series : (series?.data || [])
+  const values = (() => {
+    if (!rows.length) return []
+    const direct = rows.map(r => Number(r?.daily_pct ?? r?.pct_change ?? r?.return_pct)).filter(Number.isFinite)
+    if (direct.length >= 5) return direct
+    const levels = rows.map(r => Number(r?.close ?? r?.value ?? r?.price)).filter(Number.isFinite)
+    if (levels.length >= 6) return levels.slice(1).map((v,i) => levels[i] ? (v / levels[i] - 1) * 100 : null).filter(Number.isFinite)
+    const pct = rows.map(r => Number(r?.pct)).filter(Number.isFinite)
+    return pct.length >= 5 ? pct : []
+  })()
+  if (values.length < 5) return (
+    <div style={{ padding:'28px 16px', textAlign:'center', color:'var(--text3)', fontSize:'12px' }}>
+      分布を作成できる履歴が不足しています。Infoway接続後、日次履歴の蓄積に応じて表示されます。
+    </div>
+  )
+  const sorted=[...values].sort((a,b)=>a-b)
+  const mean=values.reduce((a,b)=>a+b,0)/values.length
+  const median=sorted[Math.floor(sorted.length/2)]
+  const variance=values.reduce((a,b)=>a+(b-mean)**2,0)/values.length
+  const sd=Math.sqrt(variance)
+  const win=values.filter(v=>v>0).length/values.length*100
+  const min=Math.min(...values), max=Math.max(...values)
+  const bins=9, width=(max-min)||1
+  const counts=Array.from({length:bins},()=>0)
+  values.forEach(v=>counts[Math.min(bins-1,Math.floor((v-min)/width*bins))]++)
+  const W=560,H=210,PL=42,PR=12,PT=16,PB=38,GW=W-PL-PR,GH=H-PT-PB
+  const maxC=Math.max(...counts,1), bw=GW/bins-5
+  return <div>
+    <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(105px,1fr))', gap:'8px', marginBottom:'10px' }}>
+      {[['平均',mean],['中央値',median],['標準偏差',sd],['上昇確率',win]].map(([l,v],i)=><div key={l} style={{background:'var(--bg3)',border:'1px solid var(--border)',borderRadius:'7px',padding:'7px 10px'}}><div style={{fontSize:'9px',color:'var(--text3)'}}>{l}</div><div style={{fontSize:'14px',fontWeight:700,fontFamily:'var(--mono)',color:i===3?'var(--accent)':v>=0?'var(--red)':'var(--green)'}}>{v.toFixed(2)}{i===3?'%':'%'}</div></div>)}
+    </div>
+    <div style={{overflowX:'auto'}}><svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{display:'block',minWidth:'320px'}}>
+      <line x1={PL} y1={PT+GH} x2={W-PR} y2={PT+GH} stroke="var(--border)" />
+      {counts.map((c,i)=>{const h=c/maxC*GH,x=PL+i*GW/bins+2,y=PT+GH-h;const lo=min+i*width/bins,hi=min+(i+1)*width/bins;return <g key={i}><rect x={x} y={y} width={bw} height={h} rx="2" fill={lo>=0?'var(--red)':'var(--green)'} opacity="0.72"/><text x={x+bw/2} y={y-4} textAnchor="middle" fontSize="9" fill="var(--text3)">{c}</text><text x={x+bw/2} y={H-18} textAnchor="middle" fontSize="8" fill="var(--text3)">{lo.toFixed(1)}</text></g>})}
+      <text x={W/2} y={H-3} textAnchor="middle" fontSize="9" fill="var(--text3)">期間リターン分布（%）</text>
+    </svg></div>
+    <div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.6}}>過去{values.length}観測の分布です。平均だけでなく中央値・ばらつき・上昇確率を併せて確認してください。</div>
+  </div>
+}
+
 export default function ThemeDetail({ onNavigate, initialTheme }) {
   const { canAccessPeriod, canAccess } = useSubscription()
   const [period,      setPeriod]      = useState('1mo')
@@ -777,6 +819,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
   const [detail,      setDetail]      = useState(null)
   const [loading,     setLoading]     = useState(false)
   const [momentum,    setMomentum]    = useState(null)
+  const [periodMarketPct, setPeriodMarketPct] = useState(null)
 
   // テーマ別詳細比較（Compare移植）
   const [selThemes,    setSelThemes]    = useState([])
@@ -921,6 +964,16 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
       .finally(() => setLoadingM(false))
   }, [comparePeriod])
 
+  useEffect(() => {
+    fetch('/data/market.json?t=' + Date.now())
+      .then(r => r.json())
+      .then(mj => {
+        const arr = mj[`macro_${period}`]?.data?.['TOPIX連動型上場投信(1306)'] || []
+        const last = arr[arr.length - 1]
+        setPeriodMarketPct(Number.isFinite(Number(last?.pct)) ? Number(last.pct) : null)
+      }).catch(() => setPeriodMarketPct(null))
+  }, [period])
+
   const toggleTheme = (t) =>
     setSelThemes(s => s.includes(t) ? s.filter(x => x !== t) : [...s, t])
   // ⑥ 選択テーマのヒートマップデータ取得
@@ -1028,6 +1081,9 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                     color: (detail?.avg ?? 0) >= 0 ? 'var(--red)' : 'var(--green)' }}>
                     {(detail?.avg ?? 0) >= 0 ? '+' : ''}{detail?.avg?.toFixed(1)}%
                   </span>
+                  {periodMarketPct != null && <span style={{fontSize:'10px',color:'var(--text3)',fontFamily:'var(--mono)',flexShrink:0}}>
+                    市場 {periodMarketPct>=0?'+':''}{periodMarketPct.toFixed(1)}% ／ 超過 {(detail.avg-periodMarketPct)>=0?'+':''}{(detail.avg-periodMarketPct).toFixed(1)}pt
+                  </span>}
                 </div>
                 <div style={{ display:'flex', alignItems:'center', gap:'6px', flexWrap:'wrap' }}>
                   {momentum && (<>
@@ -1137,6 +1193,10 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                   )}
                 </TdExpandable>
 
+                <TdExpandable title={`📊 ${selTheme} 成績分布`}>
+                  <ThemeReturnDistribution series={themeTrends[selTheme]} themeName={selTheme} />
+                </TdExpandable>
+
                 {/* ③ 銘柄別ヒートマップ（散布図）を先に */}
                 {themeHeatmap && typeof themeHeatmap === 'object' && themeHeatmap['1W'] != null && (
                   <TdExpandable title="🔥 銘柄別ヒートマップ">
@@ -1162,7 +1222,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                         📖 {selTheme}のコラム記事
                       </button>
                     )}
-                    <button onClick={() => onNavigate('週次レポート')}
+                    <button onClick={() => onNavigate('レポート')}
                       style={{ padding:'7px 16px', borderRadius:'6px', fontSize:'12px',
                         background:'rgba(255,140,66,0.08)', border:'1px solid rgba(255,140,66,0.3)',
                         color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>

@@ -1,0 +1,22 @@
+name: Build Report Follow-up
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * 5' # Saturday 08:30 JST
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/build_report_followup.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add frontend/public/data/weekly_report.json frontend/public/data/weekly_reports
+          git diff --cached --quiet || git commit -m "data: update report ranking follow-up"
+          git push

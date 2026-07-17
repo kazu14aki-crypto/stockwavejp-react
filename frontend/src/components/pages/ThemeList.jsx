@@ -536,7 +536,7 @@ function CustomThemeRow({ ct, period, pctColor, rank, volRankMap, tvRankMap }) {
               {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
             </div>
             <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
-              <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
+              <div style={{ width:`${Math.min(Math.abs(displayReturn)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
             </div>
             <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.7 }}>
               <span style={{ display:'flex', justifyContent:'space-between' }}>
@@ -592,10 +592,11 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
   const pct  = item.pct ?? 0
   const val  = item[valueKey] ?? 0
   const barW = maxAbs ? Math.min(Math.abs(val) / maxAbs * 100, 100) : Math.min(Math.abs(pct) / 25 * 100, 100)
-  const col  = pctColor(pct)
+  const displayReturn = valueKey === 'relative_pct' ? val : pct
+  const col  = pctColor(displayReturn)
   const badgeOpacity = Math.max(1 - (rank - 1) * 0.028, 0.25)
-  const isUp = pct >= 0
-  const badgeColor = valueKey === 'pct'
+  const isUp = displayReturn >= 0
+  const badgeColor = (valueKey === 'pct' || valueKey === 'relative_pct')
     ? (isUp ? `rgba(226,75,74,${badgeOpacity})` : `rgba(29,158,117,${badgeOpacity})`)
     : barColor || '#378ADD'
   const isTopBadge = rank <= 3
@@ -634,10 +635,10 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
           })()}
         </div>
 
-        {valueKey === 'pct' ? (
+        {(valueKey === 'pct' || valueKey === 'relative_pct') ? (
           <>
             <div style={{ fontSize:'15px', fontWeight:700, color:col, fontFamily:'var(--mono)', lineHeight:1.2 }}>
-              {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
+              {displayReturn >= 0 ? '+' : ''}{displayReturn.toFixed(2)}{valueKey === 'relative_pct' ? 'pt' : '%'}
             </div>
             <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
               <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
@@ -651,6 +652,12 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
                 <span>売買代金 {fmt(item.trade_value)}</span>
                 {rankTag(tvRank, '#ff8c42')}
               </span>
+              {valueKey === 'relative_pct' && (
+                <span style={{ display:'flex', justifyContent:'space-between', color:'var(--text2)' }}>
+                  <span>テーマ {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%</span>
+                  <span>市場 {item.market_pct >= 0 ? '+' : ''}{(item.market_pct ?? 0).toFixed(2)}%</span>
+                </span>
+              )}
             </div>
             {/* テーマ詳細ボタン + 関連コラムリンク */}
             {onNavigate && (
@@ -729,7 +736,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
   const displayed = displayMode === 'all' ? items
     : displayMode === 'top10' ? items.slice(0, TOP10_LIMIT)
     : items.slice(0, DEFAULT_LIMIT)
-  const maxVal = valueKey === 'pct' ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)), 0)
+  const maxVal = (valueKey === 'pct' || valueKey === 'relative_pct') ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)), 0)
   return (
     <>
     <div className="theme-card-grid">
@@ -1202,7 +1209,7 @@ export default function ThemeList({ onNavigate }) {
       .catch(() => {})
   }, [])
   const { themes: customThemes } = useCustomThemes()
-  const { data: macroRaw } = useMacro('1mo')  // 指数参照は1mo固定
+  const { data: macroRaw } = useMacro(period)  // 選択期間と同じ市場平均を参照
   const { data: momentumData } = useMomentum(period)
   const macro = macroRaw?.data || {}
   // 1321・1306の直近騰落率を取得
@@ -1224,12 +1231,14 @@ export default function ThemeList({ onNavigate }) {
   const lastUpdate = updatedAt ? new Date(updatedAt.replace(/\//g, '-').replace(' JST','')) : null
   const error = null
 
-  const themes   = data?.themes  ?? []
+  const themeRows = data?.themes ?? []
+  const marketPct = pct1306 ?? pct1321 ?? 0
+  const themes = themeRows.map(t => ({ ...t, market_pct: marketPct, relative_pct: (Number(t.pct) || 0) - marketPct }))
   const summary  = data?.summary ?? {}
   const byPctAsc = [...themes].sort((a, b) => a.pct - b.pct)
   const byVol    = [...themes].sort((a, b) => (b.volume || 0) - (a.volume || 0))
   const byTV     = [...themes].sort((a, b) => (b.trade_value || 0) - (a.trade_value || 0))
-  const rankingConfig = { pct:{label:'騰落率'}, volume:{label:'出来高',color:'#378ADD'}, trade_value:{label:'売買代金',color:'#ff8c42'} }[rankingMetric]
+  const rankingConfig = { pct:{label:'騰落率'}, relative_pct:{label:'市場超過騰落率',color:'#aa77ff'}, volume:{label:'出来高',color:'#378ADD'}, trade_value:{label:'売買代金',color:'#ff8c42'} }[rankingMetric]
   const rankingItems = [...themes].sort((a,b) => {
     const av = Number(a?.[rankingMetric]) || 0, bv = Number(b?.[rankingMetric]) || 0
     return rankingOrder === 'asc' ? av - bv : bv - av
@@ -1300,7 +1309,7 @@ export default function ThemeList({ onNavigate }) {
                 value={`${summary.avg >= 0 ? '+' : ''}${summary.avg?.toFixed(2)}%`}
                 valueColor={summary.avg >= 0 ? 'var(--red)' : 'var(--green)'}
                 arrow={summary.avg >= 0 ? 'up' : 'down'}
-                sub={`期間: ${periodLabel}`} />
+                sub={`市場平均 ${marketPct >= 0 ? '+' : ''}${marketPct.toFixed(2)}% ／ 超過 ${(summary.avg-marketPct) >= 0 ? '+' : ''}${(summary.avg-marketPct).toFixed(2)}pt`} />
               <KpiCard delay={0.15}
                 label="資金流入 TOP"
                 value={<span style={{ fontSize: '17px', color: 'var(--red)', fontWeight: 700 }}>{summary.top?.theme}</span>}
@@ -1346,7 +1355,7 @@ export default function ThemeList({ onNavigate }) {
             <AutoComment lines={themeComment} />
             {onNavigate && (
               <div style={{ textAlign:'right', marginTop:'-4px', marginBottom:'8px' }}>
-                <button onClick={() => onNavigate('週次レポート')}
+                <button onClick={() => onNavigate('レポート')}
                   style={{ padding:'5px 14px', borderRadius:'6px', fontSize:'11px',
                     background:'rgba(255,140,66,0.1)', border:'1px solid rgba(255,140,66,0.3)',
                     color:'#ff8c42', cursor:'pointer', fontFamily:'var(--font)', fontWeight:600 }}>
@@ -1360,7 +1369,7 @@ export default function ThemeList({ onNavigate }) {
             <div style={{ display:'flex', gap:'8px', alignItems:'center', flexWrap:'wrap', marginBottom:'12px', padding:'10px 12px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
               <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>表示指標</span>
               <select value={rankingMetric} onChange={e => setRankingMetric(e.target.value)} style={selStyle}>
-                <option value="pct">騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option>
+                <option value="pct">騰落率</option><option value="relative_pct">市場超過騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option>
               </select>
               <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>並び順</span>
               <select value={rankingOrder} onChange={e => setRankingOrder(e.target.value)} style={selStyle}>

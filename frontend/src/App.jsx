@@ -18,7 +18,7 @@ import Column      from './components/pages/Column'
 import PrivacyPolicy from './components/pages/PrivacyPolicy'
 import TermsOfService from './components/pages/TermsOfService'
 import SiteInfo    from './components/pages/SiteInfo'
-import WeeklyReport from './components/pages/WeeklyReport'
+import ReportHub from './components/pages/ReportHub'
 import InstitutionalHoldings from './components/pages/InstitutionalHoldings'
 import StockSearch  from './components/pages/StockSearch'
 import LegalNotice  from './components/pages/LegalNotice'
@@ -37,7 +37,7 @@ const PAGES = [
   { icon:'🔎', label:'銘柄検索',           component:StockSearch          },
   { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme          },
   { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
-  { icon:'📰', label:'週次レポート',        component:WeeklyReport         },
+  { icon:'📰', label:'レポート',            component:ReportHub            },
   { icon:'📝', label:'コラム・解説',       component:Column               },
 ]
 const PAGES_OTHER = [
@@ -183,7 +183,7 @@ function AppInner() {
     if (currentPage === 'テーマ一覧') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'テーマ別詳細') return { onNavigate: handlePageChange, initialTheme: targetTheme, isMobile }
     if (currentPage === 'テーマヒートマップ') return { onNavigate: handlePageChange, isMobile }
-    if (currentPage === '週次レポート') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === 'レポート') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === '市場別詳細') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'Dev Edge') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === '銘柄詳細') return { ticker: targetStock, onNavigate: handlePageChange, isMobile }
