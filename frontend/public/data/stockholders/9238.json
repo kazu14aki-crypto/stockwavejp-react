@@ -1,0 +1,216 @@
+{
+  "secCode": "9238",
+  "issuerName": "バリュークリエーション株式会社",
+  "updated_at": "2026/07/18 13:10 JST",
+  "latestDate": "2026-07-17",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社ひまわり",
+      "shares": 1300000,
+      "ratio": 56.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "新谷　晃人",
+      "shares": 114800,
+      "ratio": 4.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "西田憲司",
+      "shares": 34160,
+      "ratio": 1.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大坂谷　優介",
+      "shares": 27320,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "かっこ株式会社",
+      "shares": 22800,
+      "ratio": 0.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社共有口",
+      "shares": 22600,
+      "ratio": 0.98,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "豊野　桂太",
+      "shares": 18240,
+      "ratio": 0.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "乗冨　健矢",
+      "shares": 17280,
+      "ratio": 0.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 15900,
+      "ratio": 0.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社アンビション・ベンチャーズ",
+      "shares": 12700,
+      "ratio": 0.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 58.04,
+      "individual": 9.18,
+      "securities": 1.67
+    },
+    "individual_total": 9.18,
+    "top10_total": 68.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-17",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第18期(2025/03/01－2026/02/28)",
+      "docID": "S100YRA4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社ひまわり",
+          "shares": 1300000,
+          "ratio": 56.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "新谷　晃人",
+          "shares": 114800,
+          "ratio": 4.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "西田憲司",
+          "shares": 34160,
+          "ratio": 1.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大坂谷　優介",
+          "shares": 27320,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "かっこ株式会社",
+          "shares": 22800,
+          "ratio": 0.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社共有口",
+          "shares": 22600,
+          "ratio": 0.98,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "豊野　桂太",
+          "shares": 18240,
+          "ratio": 0.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "乗冨　健矢",
+          "shares": 17280,
+          "ratio": 0.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 15900,
+          "ratio": 0.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社アンビション・ベンチャーズ",
+          "shares": 12700,
+          "ratio": 0.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 58.04,
+          "individual": 9.18,
+          "securities": 1.67
+        },
+        "individual_total": 9.18,
+        "top10_total": 68.89
+      }
+    }
+  ]
+}

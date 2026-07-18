@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026/07/15",
-  "count": 1610,
+  "updated_at": "2026/07/18",
+  "count": 1613,
   "items": [
+    {
+      "secCode": "9238",
+      "issuerName": "バリュークリエーション株式会社",
+      "latestDate": "2026-07-17",
+      "holderCount": 10,
+      "topHolder": "合同会社ひまわり",
+      "topHolderCategory": "corporate",
+      "individualTotal": 9.18
+    },
+    {
+      "secCode": "6656",
+      "issuerName": "インスペック株式会社",
+      "latestDate": "2026-07-17",
+      "holderCount": 10,
+      "topHolder": "緒方　顯吉",
+      "topHolderCategory": "individual",
+      "individualTotal": 20.24
+    },
+    {
+      "secCode": "8399",
+      "issuerName": "株式会社琉球銀行",
+      "latestDate": "2026-07-17",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 2.6
+    },
+    {
+      "secCode": "4403",
+      "issuerName": "日油株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 3.85
+    },
+    {
+      "secCode": "1982",
+      "issuerName": "日比谷総合設備株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト\n信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "6470",
+      "issuerName": "大豊工業株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "トヨタ自動車株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0.99
+    },
     {
       "secCode": "3763",
       "issuerName": "株式会社プロシップ",
@@ -4224,15 +4278,6 @@
       "individualTotal": 12.87
     },
     {
-      "secCode": "4403",
-      "issuerName": "日油株式会社",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 3.85
-    },
-    {
       "secCode": "7621",
       "issuerName": "株式会社うかい",
       "latestDate": "2026-06-25",
@@ -8452,15 +8497,6 @@
       "topHolder": "大成建設株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 4.06
-    },
-    {
-      "secCode": "1982",
-      "issuerName": "日比谷総合設備株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト\n信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
     },
     {
       "secCode": "6229",
@@ -14158,15 +14194,6 @@
       "topHolder": "積水樹脂株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 11.21
-    },
-    {
-      "secCode": "6470",
-      "issuerName": "大豊工業株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "トヨタ自動車株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 0.99
     },
     {
       "secCode": "5284",
