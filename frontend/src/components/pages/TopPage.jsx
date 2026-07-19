@@ -75,6 +75,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/19', tag:'UPDATE', title:'料金プラン・更新頻度を更新／テーマ選定基準を公開' },
   { date:'2026/05/29', tag:'NEW',    title:'MLCCテーマ追加・村田製作所＆MLCC解説コラム公開' },
   { date:'2026/05/29', tag:'NEW',    title:'週次レポート（5/25〜5/29）公開' },
   { date:'2026/05/22', tag:'NEW',    title:'週次レポート（5/18〜5/22）公開' },
