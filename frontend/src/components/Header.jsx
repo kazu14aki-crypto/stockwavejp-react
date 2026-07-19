@@ -1,3 +1,5 @@
+import AuthButton from './AuthButton'
+
 const LogoSvg = () => (
   <svg width="28" height="28" viewBox="0 0 56 56" fill="none">
     <line x1="28" y1="4"  x2="28" y2="10" stroke="#e63030" strokeWidth="2.2" strokeLinecap="round"/>
@@ -14,96 +16,93 @@ const LogoSvg = () => (
   </svg>
 )
 
-import AuthButton from './AuthButton'
+function formatDateTime(value, short = false) {
+  if (!value) return '--:--'
+  const d = new Date(value)
+  if (!Number.isNaN(d.getTime())) {
+    return d.toLocaleString('ja-JP', short
+      ? { hour:'2-digit', minute:'2-digit' }
+      : { month:'numeric', day:'numeric', hour:'2-digit', minute:'2-digit' })
+  }
+  const text = String(value)
+  const full = text.match(/(?:\d{4}[/-])?(\d{1,2})[/-](\d{1,2})\s+(\d{1,2}):(\d{2})/)
+  if (full) return short ? `${full[3].padStart(2,'0')}:${full[4]}` : `${full[1]}/${full[2]} ${full[3].padStart(2,'0')}:${full[4]}`
+  const time = text.match(/(\d{1,2}):(\d{2})/)
+  return time ? `${time[1].padStart(2,'0')}:${time[2]}` : text.slice(0, short ? 8 : 16)
+}
 
-export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onViewModeChange, onLogoClick }) {
+export default function Header({ status = {}, onMenuClick, sidebarOpen, viewMode, onViewModeChange, onLogoClick }) {
+  const updatedAt = status.updatedAt || status.updated_at || status.fetchedAt
+  const dataAsOf  = status.dataAsOf || status.data_as_of || status.updatedAt || status.updated_at
+  const errorColor = status.dataState === 'failed' ? '#ff647c' : 'var(--text3)'
+
   return (
     <>
       <header style={{
-        position: 'fixed', top: 0, left: 0, right: 0,
-        height: 'var(--header)',
-        background: 'var(--bg2)',
-        borderBottom: '1px solid var(--border)',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '0 12px', zIndex: 1000,
-        minWidth: 0,  /* 見切れ防止 */
+        position:'fixed', top:0, left:0, right:0, height:'var(--header)',
+        background:'var(--bg2)', borderBottom:'1px solid var(--border)',
+        display:'flex', alignItems:'center', justifyContent:'space-between',
+        padding:'0 12px', zIndex:1000, minWidth:0,
       }}>
-        {/* 左側 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-          {/* スマホ用ハンバーガー（左上） */}
-          <button onClick={onMenuClick} className="hamburger-btn" style={{
-            display: 'none',
-            background: 'var(--bg3)', border: '1px solid var(--border)',
-            borderRadius: '6px', color: 'var(--text)', fontSize: '16px',
-            width: '34px', height: '34px',
-            padding: '0', cursor: 'pointer', fontFamily: 'var(--font)',
-            flexShrink: 0, alignItems: 'center', justifyContent: 'center',
-            lineHeight: 1,
-          }}>
-            {sidebarOpen ? '✕' : '☰'}
-          </button>
+        <div style={{ display:'flex', alignItems:'center', gap:'8px', flexShrink:0, minWidth:0 }}>
+          <button onClick={onMenuClick} className="hamburger-btn" aria-label="メニューを開く" style={{
+            display:'none', background:'var(--bg3)', border:'1px solid var(--border)',
+            borderRadius:'6px', color:'var(--text)', fontSize:'16px', width:'34px', height:'34px',
+            padding:0, cursor:'pointer', fontFamily:'var(--font)', flexShrink:0,
+            alignItems:'center', justifyContent:'center', lineHeight:1,
+          }}>{sidebarOpen ? '✕' : '☰'}</button>
 
-          {/* ロゴ */}
           <button onClick={onLogoClick} style={{
-            display: 'flex', alignItems: 'center', gap: '8px',
-            background: 'none', border: 'none', cursor: 'pointer', padding: 0,
-            flexShrink: 0,
+            display:'flex', alignItems:'center', gap:'8px', background:'none', border:'none',
+            cursor:'pointer', padding:0, flexShrink:0,
           }}>
             <LogoSvg />
-            <div style={{ textAlign: 'left' }} className="logo-text">
-              <div className="logo-main" style={{ fontSize: '16px', fontWeight: 700, letterSpacing: '-0.01em', lineHeight: 1.1, color: 'var(--text)' }}>
-                <span style={{ color: '#e63030' }}>Stock</span>Wave
-                <span style={{ color: '#e63030', fontSize: '10px', marginLeft: '2px' }}>JP</span>
+            <div style={{ textAlign:'left' }} className="logo-text">
+              <div className="logo-main" style={{ fontSize:'16px', fontWeight:700, letterSpacing:'-0.01em', lineHeight:1.1, color:'var(--text)' }}>
+                <span style={{ color:'#e63030' }}>Stock</span>Wave
+                <span style={{ color:'#e63030', fontSize:'10px', marginLeft:'2px' }}>JP</span>
               </div>
-              <div className="logo-sub" style={{ fontSize: '7px', letterSpacing: '0.3em', color: 'var(--text3)', fontWeight: 600, marginTop: '1px' }}>
+              <div className="logo-sub" style={{ fontSize:'7px', letterSpacing:'0.3em', color:'var(--text3)', fontWeight:600, marginTop:'1px' }}>
                 株　式　波　動
               </div>
             </div>
           </button>
         </div>
 
-        {/* 右側 */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-          {/* 市場ステータス */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }} className="status-area">
+        <div style={{ display:'flex', alignItems:'center', gap:'8px', flexShrink:0, minWidth:0 }}>
+          <div className="market-status" style={{ display:'flex', alignItems:'center', gap:'6px', minWidth:0 }}>
             <span style={{
-              width: '7px', height: '7px', borderRadius: '50%', display: 'inline-block', flexShrink: 0,
-              background: status.is_open ? 'var(--green)' : 'var(--text3)',
-              boxShadow: status.is_open ? '0 0 7px var(--green)' : 'none',
-            }} />
-            <span className="status-label" style={{ fontSize: '11px', color: 'var(--text2)', whiteSpace: 'nowrap' }}>
-              {status.label}
+              width:'7px', height:'7px', borderRadius:'50%', display:'inline-block', flexShrink:0,
+              background:status.is_open ? 'var(--green)' : 'var(--text3)',
+              boxShadow:status.is_open ? '0 0 7px var(--green)' : 'none',
+            }}/>
+            <span className="status-label" style={{ fontSize:'11px', color:'var(--text2)', whiteSpace:'nowrap' }}>
+              {status.label || '市場情報確認中'}
             </span>
-            {(status.dataAsOf || status.updatedAt) && (
-              <span className="status-updated" title={`取得時刻：${status.fetchedAt || '不明'}`} style={{ fontSize: '10px', color: status.dataState==='failed' ? '#ff647c' : 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
-                {(() => {
-                  const value=status.dataAsOf || status.updatedAt
-                  const d=new Date(value)
-                  if(!Number.isNaN(d.getTime())) return 'データ基準：'+d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})
-                  const m=String(value).match(/(\d{2}\/\d{2} \d{2}:\d{2})/)
-                  return 'データ基準：'+(m?m[1]:String(value).slice(0,16))
-                })()}
+            <div className="data-time-desktop" title="更新時刻はStockWaveJP側の更新時刻、データ基準時刻は株価データが示す時点です" style={{ display:'flex', alignItems:'center', gap:'5px', whiteSpace:'nowrap' }}>
+              <span style={{ fontSize:'9px', color:errorColor, padding:'2px 5px', borderRadius:'4px', background:'var(--bg3)', border:'1px solid var(--border)' }}>
+                更新 {formatDateTime(updatedAt)}
               </span>
-            )}
+              <span style={{ fontSize:'9px', color:errorColor, padding:'2px 5px', borderRadius:'4px', background:'var(--bg3)', border:'1px solid var(--border)' }}>
+                データ基準 {formatDateTime(dataAsOf)}
+              </span>
+            </div>
+            <div className="data-time-mobile" title={`更新時刻：${formatDateTime(updatedAt)}／データ基準時刻：${formatDateTime(dataAsOf)}`} style={{ display:'none', flexDirection:'column', lineHeight:1.2, whiteSpace:'nowrap' }}>
+              <span style={{ fontSize:'8px', color:errorColor }}>更 {formatDateTime(updatedAt, true)}</span>
+              <span style={{ fontSize:'8px', color:errorColor }}>基 {formatDateTime(dataAsOf, true)}</span>
+            </div>
           </div>
 
-
-          {/* PC/SP切替（常時表示・見切れなし） */}
-          <div style={{
-            display: 'flex', gap: '2px', flexShrink: 0,
-            background: 'var(--bg3)', border: '1px solid var(--border)',
-            borderRadius: '6px', padding: '2px',
+          <div className="view-switcher" style={{
+            display:'flex', gap:'2px', flexShrink:0, background:'var(--bg3)',
+            border:'1px solid var(--border)', borderRadius:'6px', padding:'2px',
           }}>
-            {[{ key: 'pc', label: '🖥' }, { key: 'mobile', label: '📱' }].map(({ key, label }) => (
+            {[{ key:'pc', label:'🖥' }, { key:'mobile', label:'📱' }].map(({ key, label }) => (
               <button key={key} onClick={() => onViewModeChange(key)} style={{
-                padding: '3px 9px', borderRadius: '4px', fontSize: '12px',
-                border: 'none', cursor: 'pointer', fontFamily: 'var(--font)',
-                background: viewMode === key ? 'var(--accent)' : 'transparent',
-                color: viewMode === key ? '#fff' : 'var(--text3)',
-                transition: 'all 0.15s', flexShrink: 0,
-              }}>
-                {label}
-              </button>
+                padding:'3px 9px', borderRadius:'4px', fontSize:'12px', border:'none', cursor:'pointer',
+                fontFamily:'var(--font)', background:viewMode===key ? 'var(--accent)' : 'transparent',
+                color:viewMode===key ? '#fff' : 'var(--text3)', transition:'all 0.15s', flexShrink:0,
+              }}>{label}</button>
             ))}
           </div>
           <AuthButton />
@@ -111,23 +110,25 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
       </header>
 
       <style>{`
-        /* タブレット・スマホ（〜1280px）でハンバーガー表示 */
         @media (max-width: 1280px) {
-        @media (max-width: 900px) {
-          .hamburger-btn  { display: flex !important; }
-          .status-label   { display: none !important; }
-          .status-updated { display: none !important; }
-          .logo-text .logo-sub  { display: none !important; }
-          .auth-btn-label { display: none !important; }
+          .hamburger-btn { display:flex !important; }
         }
-        @media (max-width: 640px) {
-          .logo-text .logo-main { font-size: 13px !important; }
-        /* ② タブレット横向き（901px〜1200px）でもハンバーガー維持 */
-        @media (min-width: 901px) and (max-width: 1200px) {
-          .hamburger-btn { display: flex !important; }
+        @media (max-width: 980px) {
+          .status-label { display:none !important; }
+          .logo-sub { display:none !important; }
         }
-        @media (max-width: 400px) {
-          .status-area { display: none !important; }
+        @media (max-width: 720px) {
+          .data-time-desktop { display:none !important; }
+          .data-time-mobile { display:flex !important; }
+          .auth-btn-label { display:none !important; }
+        }
+        @media (max-width: 540px) {
+          .view-switcher { display:none !important; }
+          .logo-main { font-size:13px !important; }
+          .logo-text { display:none !important; }
+        }
+        @media (max-width: 360px) {
+          .market-status { gap:3px !important; }
         }
       `}</style>
     </>

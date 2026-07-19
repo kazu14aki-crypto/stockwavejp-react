@@ -5,7 +5,7 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 
 export default function Plan({ onNavigate }) {
   const [isMobile, setIsMobile] = useState(false)
-  const { isLoggedIn, signIn }  = useAuth()
+  const { isLoggedIn, signIn, user } = useAuth()
   const { plan: currentPlan, planLabel, isPro } = useSubscription()
 
   useEffect(() => {
@@ -15,7 +15,21 @@ export default function Plan({ onNavigate }) {
     return () => window.removeEventListener('resize', check)
   }, [])
 
+  const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
   const perDay = (monthly) => Math.ceil(monthly / 30)
+
+  const openPortal = async () => {
+    const { supabase } = await import('../../lib/supabase')
+    const { data:{ session } } = await supabase.auth.getSession()
+    const res = await fetch(`${API}/api/stripe/create-portal`, {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json', 'Authorization':`Bearer ${session?.access_token || ''}` },
+      body:JSON.stringify({ user_id:user?.id }),
+    })
+    const d = await res.json()
+    if (!res.ok || !d.url) throw new Error(d.detail || '支払い管理ポータルを開けませんでした')
+    window.open(d.url, '_blank', 'noopener,noreferrer')
+  }
 
   const PLANS = [
     {
@@ -204,6 +218,55 @@ export default function Plan({ onNavigate }) {
           解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。
         </div>
       </div>
+
+      {/* 契約・支払い・ログインに関するサポート */}
+      <div style={{ ...card, marginTop:'18px' }}>
+        <h2 style={{ fontSize:'15px', fontWeight:800, color:'var(--text)', marginBottom:'5px' }}>🧾 契約・支払いに関するサポート</h2>
+        <p style={{ fontSize:'11px', color:'var(--text3)', lineHeight:1.7, marginBottom:'14px' }}>
+          プラン変更、解約、決済エラーなど、有料プランに関する確認事項をまとめています。
+        </p>
+        <div style={{ display:'grid', gridTemplateColumns:isMobile?'1fr':'repeat(2,minmax(0,1fr))', gap:'10px' }}>
+          {[
+            ['プラン変更・解約','支払い管理ポータルから変更できます。解約後も契約期間終了までは利用でき、終了後にFreeへ移行します。'],
+            ['支払失敗','支払い管理ポータルでカード情報を更新してください。Stripeの再請求後、ログアウト・再ログインすると契約状態が反映されます。'],
+            ['二重課金','請求履歴を確認し、請求日・金額・登録メールアドレスを添えてお問い合わせください。調査前に重複契約をすべて解約しないでください。'],
+            ['体験期間終了','14日間の体験終了後は自動課金せずFreeへ移行します。体験中に有料契約した場合は、契約した時点から有料期間が始まります。'],
+            ['有料機能が反映されない','決済完了後にログアウト・再ログインしてください。改善しない場合は決済完了メールと登録メールアドレスを添えてお問い合わせください。'],
+            ['アカウント削除','設定ページの最下部にあります。削除時は誤操作防止の確認画面が2回表示されます。'],
+          ].map(([title,body]) => (
+            <div key={title} style={{ padding:'12px 13px', border:'1px solid var(--border)', borderRadius:'9px', background:'var(--bg3)' }}>
+              <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'5px' }}>{title}</div>
+              <div style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.75 }}>{body}</div>
+            </div>
+          ))}
+        </div>
+        {(currentPlan==='standard' || currentPlan==='pro') && (
+          <button onClick={() => openPortal().catch(e => window.alert(e.message))} style={{
+            marginTop:'14px', padding:'9px 15px', borderRadius:'8px', cursor:'pointer',
+            background:'rgba(74,158,255,.1)', color:'var(--accent)',
+            border:'1px solid rgba(74,158,255,.35)', fontFamily:'var(--font)', fontWeight:700,
+          }}>支払い管理ポータルを開く</button>
+        )}
+      </div>
+
+      <div style={card}>
+        <h2 style={{ fontSize:'15px', fontWeight:800, color:'var(--text)', marginBottom:'5px' }}>🔐 ログイン・データ更新のトラブル</h2>
+        <div style={{ display:'flex', flexDirection:'column', gap:'12px', marginTop:'13px' }}>
+          <div>
+            <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>Googleログインできない</div>
+            <div style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.8 }}>
+              ポップアップとCookieを許可し、シークレットモードまたは別ブラウザで再試行してください。拡張機能や広告ブロッカーを一時停止すると改善する場合があります。エラーが続く場合は、端末・ブラウザ・発生時刻・エラー画面を添えてお問い合わせください。
+            </div>
+          </div>
+          <div>
+            <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>データ更新が遅れている</div>
+            <div style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.8 }}>
+              全ページ共通でサイト最上部に表示される「更新時刻」と「データ基準時刻」を確認してください。更新失敗時は0%として扱わず、「未取得」「更新失敗」「更新遅延」「市場休場」を区別して表示します。
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }

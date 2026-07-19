@@ -75,11 +75,30 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
     const d=await res.json(); if(!res.ok||!d.url) throw new Error(d.detail||'支払い管理ポータルを開けませんでした'); window.open(d.url,'_blank','noopener,noreferrer')
   }
   const deleteAccount = async () => {
-    const word=window.prompt('アカウントを削除すると、保存テーマと設定は復元できません。続行する場合は「削除」と入力してください。')
-    if(word!=='削除') return
-    setAccountBusy(true);setAccountError(null)
-    try { const { supabase }=await import('../../lib/supabase'); const {data:{session}}=await supabase.auth.getSession(); const res=await fetch(`${API}/api/account/delete`,{method:'POST',headers:{'Content-Type':'application/json','Authorization':`Bearer ${session?.access_token||''}`}}); const d=await res.json(); if(!res.ok)throw new Error(d.detail||'削除に失敗しました'); await signOut(); localStorage.clear(); alert('アカウントを削除しました'); window.location.reload() }
-    catch(e){setAccountError(e.message)} finally{setAccountBusy(false)}
+    const first = window.confirm('本当にアカウントを削除しますか？\n保存したテーマ、設定、ログイン情報は復元できません。')
+    if (!first) return
+    const second = window.confirm('最終確認です。本当に削除しますか？\nこの操作は取り消せません。')
+    if (!second) return
+    setAccountBusy(true)
+    setAccountError(null)
+    try {
+      const { supabase } = await import('../../lib/supabase')
+      const { data:{ session } } = await supabase.auth.getSession()
+      const res = await fetch(`${API}/api/account/delete`, {
+        method:'POST',
+        headers:{ 'Content-Type':'application/json', 'Authorization':`Bearer ${session?.access_token || ''}` },
+      })
+      const d = await res.json()
+      if (!res.ok) throw new Error(d.detail || '削除に失敗しました')
+      await signOut()
+      localStorage.clear()
+      window.alert('アカウントを削除しました')
+      window.location.reload()
+    } catch (e) {
+      setAccountError(e.message)
+    } finally {
+      setAccountBusy(false)
+    }
   }
 
   const btnBase = {
@@ -190,32 +209,6 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
         </Card>
       )}
 
-      <Card>
-        <SLabel>🧾 契約・支払いのトラブル</SLabel>
-        <div style={{fontSize:'12px',color:'var(--text2)',lineHeight:1.85}}>
-          <strong>プラン変更・解約：</strong>支払い管理ポータルから変更できます。解約後も契約期間終了までは利用可能です。<br/>
-          <strong>支払失敗：</strong>カード情報を更新するとStripeが再請求します。有料機能が停止した場合は再ログインしてください。<br/>
-          <strong>二重課金：</strong>請求履歴を確認し、請求日・金額・登録メールを添えてお問い合わせください。重複契約を自己判断で両方解約しないでください。<br/>
-          <strong>体験期間終了：</strong>自動課金は行わずFreeへ移行します。有料契約済みの場合は契約プランが優先されます。<br/>
-          <strong>有料機能が反映されない：</strong>ログアウト・再ログイン後も直らない場合は、決済完了メールと登録メールを添えてお問い合わせください。
-        </div>
-        {(plan==='standard'||plan==='pro')&&<button onClick={()=>openPortal().catch(e=>alert(e.message))} style={{...btnBase,marginTop:'12px',background:'rgba(74,158,255,.1)',color:'var(--accent)',border:'1px solid rgba(74,158,255,.3)'}}>支払い管理ポータルを開く</button>}
-      </Card>
-
-      <Card>
-        <SLabel>🔐 ログイン・アカウント</SLabel>
-        <div style={{fontSize:'12px',color:'var(--text2)',lineHeight:1.85,marginBottom:'12px'}}>
-          <strong>Googleログインできない：</strong>ポップアップ・Cookie制限を解除し、シークレットモードまたは別ブラウザで再試行してください。GoogleアカウントのメールとStockWaveJP登録メールは同一である必要があります。<br/>
-          <strong>データ更新遅延：</strong>各ページの「取得時刻」と「データ基準時刻」を確認してください。更新失敗時はゼロではなく、未取得・遅延として表示します。
-        </div>
-        {isLoggedIn&&<div style={{padding:'13px',border:'1px solid rgba(255,100,100,.25)',background:'rgba(255,100,100,.06)',borderRadius:'9px'}}>
-          <div style={{fontSize:'12px',fontWeight:700,color:'#ff647c'}}>アカウント削除</div>
-          <div style={{fontSize:'11px',color:'var(--text3)',lineHeight:1.7,margin:'6px 0 10px'}}>ログイン情報、クラウド保存データ、サブスクリプション情報を削除します。有効な有料契約がある場合は、先に解約してください。</div>
-          {accountError&&<div style={{fontSize:'11px',color:'#ff647c',marginBottom:'8px'}}>⚠ {accountError}</div>}
-          <button disabled={accountBusy} onClick={deleteAccount} style={{...btnBase,background:'transparent',color:'#ff647c',border:'1px solid rgba(255,100,100,.4)',opacity:accountBusy?.6:1}}>{accountBusy?'削除処理中...':'アカウントを削除する'}</button>
-        </div>}
-      </Card>
-
       {/* ── カラーテーマ ── */}
       <Card>
         <SLabel>🎨 カラーテーマ</SLabel>
@@ -292,6 +285,28 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
           ))}
         </div>
       </Card>
+
+      {/* ── アカウント削除（誤操作防止のため最下部） ── */}
+      {isLoggedIn && (
+        <Card style={{ marginTop:'34px', border:'1px solid rgba(255,100,100,.3)', background:'rgba(255,100,100,.045)' }}>
+          <SLabel>⚠️ 危険な操作</SLabel>
+          <div style={{ fontSize:'13px', fontWeight:700, color:'#ff647c', marginBottom:'7px' }}>アカウント削除</div>
+          <div style={{ fontSize:'11px', color:'var(--text3)', lineHeight:1.8, marginBottom:'12px' }}>
+            ログイン情報、クラウド保存したカスタムテーマ、お気に入り、ユーザー設定を削除します。削除後は復元できません。<br/>
+            有効な有料契約がある場合は、削除前に契約状況をご確認ください。
+          </div>
+          {accountError && <div style={{ fontSize:'11px', color:'#ff647c', marginBottom:'8px' }}>⚠ {accountError}</div>}
+          <button disabled={accountBusy} onClick={deleteAccount} style={{
+            ...btnBase, background:'transparent', color:'#ff647c',
+            border:'1px solid rgba(255,100,100,.45)', opacity:accountBusy ? .6 : 1,
+          }}>
+            {accountBusy ? '削除処理中...' : 'アカウントを削除する'}
+          </button>
+          <div style={{ fontSize:'10px', color:'var(--text3)', marginTop:'9px' }}>
+            ※ ボタンを押した後、確認画面が2回表示されます。
+          </div>
+        </Card>
+      )}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import FirstVisitTutorial from '../FirstVisitTutorial'
-import { DataStateBanner, DataFreshness } from '../DataStateBanner'
+import { DataStateBanner } from '../DataStateBanner'
 import { useThemes, useMacro } from '../../hooks/useMarketData'
 import MacroLineChart, { MacroCard, SHead } from '../MacroLineChart'
 
@@ -77,6 +77,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/20', tag:'COLUMN', title:'世界株安とKOSPI急落を分析した新コラムを公開' },
   { date:'2026/07/20', tag:'UPDATE', title:'障害耐性と初回ガイドを改善／データ状態表示を追加' },
   { date:'2026/07/19', tag:'UPDATE', title:'料金プラン・更新頻度を更新／テーマ選定基準を公開' },
   { date:'2026/05/29', tag:'NEW',    title:'MLCCテーマ追加・村田製作所＆MLCC解説コラム公開' },
@@ -315,9 +316,7 @@ export default function TopPage({ onNavigate }) {
       </div>
 
       <DataStateBanner state={dataState} reason={reason} onRetry={refresh} />
-      <div style={{ margin:'-6px 0 16px' }}><DataFreshness fetchedAt={fetchedAt} dataAsOf={dataAsOf} nextUpdate={nextUpdate} planLabel="契約プラン別更新" compact /></div>
-
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(190px,1fr))', gap:'8px', marginBottom:'18px' }}>
+<div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(190px,1fr))', gap:'8px', marginBottom:'18px' }}>
         {[['1','市場超過ランキング','地合いだけで上がったテーマを除き、TOPIXを上回るテーマを探す'],['2','出来高と分布を確認','資金流入の強さと、過去に比べた過熱度・ばらつきを確認する'],['3','構成銘柄を比較','テーマ内の上昇銘柄、業績、開示資料を確認して候補を絞る'],['4','レポートで追跡','前回ランキングの事後成績から、継続か失速かを確認する']].map(([n,t,d])=>(
           <div key={n} style={{padding:'12px 13px',border:'1px solid var(--border)',borderRadius:'9px',background:'var(--bg2)'}}><div style={{fontSize:'10px',fontWeight:800,color:'var(--accent)'}}>STEP {n}</div><div style={{fontSize:'12px',fontWeight:700,color:'var(--text)',margin:'5px 0'}}>{t}</div><div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.65}}>{d}</div></div>
         ))}
