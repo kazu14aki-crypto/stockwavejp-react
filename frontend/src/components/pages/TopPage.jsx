@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import FirstVisitTutorial from '../FirstVisitTutorial'
+import { DataStateBanner, DataFreshness } from '../DataStateBanner'
 import { useThemes, useMacro } from '../../hooks/useMarketData'
 import MacroLineChart, { MacroCard, SHead } from '../MacroLineChart'
 
@@ -75,6 +77,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/20', tag:'UPDATE', title:'障害耐性と初回ガイドを改善／データ状態表示を追加' },
   { date:'2026/07/19', tag:'UPDATE', title:'料金プラン・更新頻度を更新／テーマ選定基準を公開' },
   { date:'2026/05/29', tag:'NEW',    title:'MLCCテーマ追加・村田製作所＆MLCC解説コラム公開' },
   { date:'2026/05/29', tag:'NEW',    title:'週次レポート（5/25〜5/29）公開' },
@@ -268,7 +271,7 @@ function KpiCard({ label, value, valueColor, sub, delay=0, loading=false, arrow=
 }
 
 export default function TopPage({ onNavigate }) {
-  const { data: themes,  loading: loadingT } = useThemes('1mo')
+  const { data: themes, loading: loadingT, dataState, reason, fetchedAt, dataAsOf, nextUpdate, refresh } = useThemes('1mo')
   const { data: macroRaw, loading: loadingM } = useMacro('1mo')
   const macro   = macroRaw?.data || {}
   const loading = loadingT || loadingM
@@ -277,6 +280,7 @@ export default function TopPage({ onNavigate }) {
 
   return (
     <div style={{ padding:'20px 24px 48px', maxWidth:'100%', overflowX:'hidden' }}>
+      <FirstVisitTutorial onNavigate={onNavigate} />
 
       {/* ヒーロー */}
       <div style={{
@@ -290,7 +294,7 @@ export default function TopPage({ onNavigate }) {
         </h1>
         {/* PC:1行 / SP:折り返し */}
         <p style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.7, marginBottom:'12px' }} className="hero-desc">
-          日本株テーマの騰落率・出来高・売買代金を定期取得し、資金の流れをテーマ別に可視化。期間別テーマヒートマップや市場別詳細、解説コラムを組み合わせ、より実践的な投資分析をサポートします。
+          日本株の資金が、今どのテーマへ向かっているかを可視化する。テーマの強さを市場平均、出来高、構成銘柄、過去分布から確認し、個別銘柄を調べる起点を提供します。
         </p>
         <button
           type="button"
@@ -308,6 +312,15 @@ export default function TopPage({ onNavigate }) {
           <span style={{ color:'var(--text2)', fontWeight:600 }}>StockWaveJPの詳しい使い方を見る</span>
           <span aria-hidden="true">→</span>
         </button>
+      </div>
+
+      <DataStateBanner state={dataState} reason={reason} onRetry={refresh} />
+      <div style={{ margin:'-6px 0 16px' }}><DataFreshness fetchedAt={fetchedAt} dataAsOf={dataAsOf} nextUpdate={nextUpdate} planLabel="契約プラン別更新" compact /></div>
+
+      <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(190px,1fr))', gap:'8px', marginBottom:'18px' }}>
+        {[['1','市場超過ランキング','地合いだけで上がったテーマを除き、TOPIXを上回るテーマを探す'],['2','出来高と分布を確認','資金流入の強さと、過去に比べた過熱度・ばらつきを確認する'],['3','構成銘柄を比較','テーマ内の上昇銘柄、業績、開示資料を確認して候補を絞る'],['4','レポートで追跡','前回ランキングの事後成績から、継続か失速かを確認する']].map(([n,t,d])=>(
+          <div key={n} style={{padding:'12px 13px',border:'1px solid var(--border)',borderRadius:'9px',background:'var(--bg2)'}}><div style={{fontSize:'10px',fontWeight:800,color:'var(--accent)'}}>STEP {n}</div><div style={{fontSize:'12px',fontWeight:700,color:'var(--text)',margin:'5px 0'}}>{t}</div><div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.65}}>{d}</div></div>
+        ))}
       </div>
 
       {/* お知らせ（小見出しのみ・コンパクト） */}

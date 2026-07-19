@@ -10,7 +10,7 @@ export default function About() {
             ['サイト名', 'StockWaveJP'],
             ['URL', 'https://stockwavejp.com'],
             ['運営開始', '2026年3月'],
-            ['目的', '日本株テーマ別の騰落率・出来高・売買代金をリアルタイムで可視化し、投資判断の参考情報を提供すること'],
+            ['目的', '日本株テーマ別の騰落率・出来高・売買代金をプラン別の更新頻度で可視化し、投資判断の参考情報を提供すること'],
               ['対象ユーザー', '日本株に興味を持つ個人投資家・投資初心者'],
           ].map(([label, value], i) => (
             <div key={i} style={{ display:'contents' }}>
@@ -26,7 +26,7 @@ export default function About() {
         <p style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, marginBottom:'12px' }}>
           StockWaveJPは、日本株のテーマ別動向を視覚的に把握するためのダッシュボードです。
           半導体・AI・防衛・インバウンドなど72テーマの騰落率・出来高・売買代金を自動集計し、
-          どのテーマに資金が集まっているかをリアルタイムで確認できます。
+          どのテーマに資金が集まっているかを更新データで確認できます。
         </p>
         <p style={{ fontSize:'13px', color:'var(--text2)', lineHeight:1.9, marginBottom:'0' }}>
           個別銘柄の推奨や投資助言は行っておらず、あくまで「市場全体のテーマの流れを把握する」ための

@@ -57,40 +57,53 @@ async function fetchMarketJson() {
   return _fetchingPromise
 }
 
+
+function detectDataState(result) {
+  if (!result) return { state:'unavailable', reason:'対象データが生成されていません。' }
+  if (result.status && result.status !== 'ok') return { state:result.status, reason:result.reason || result.message }
+  const rows = result.themes || result.data
+  if (Array.isArray(rows) && rows.length) {
+    const numeric = rows.flatMap(x => [x?.pct, x?.volume, x?.trade_value]).filter(Number.isFinite)
+    if (numeric.length && numeric.every(v => v === 0)) return { state:'unavailable', reason:'データ提供元が未設定、または更新前のため集計値を表示できません。' }
+  }
+  return { state:'ok', reason:null }
+}
+function freshnessMeta(result, fetchedAt=new Date().toISOString()) {
+  return {
+    fetchedAt,
+    dataAsOf: result?.data_as_of || result?.as_of || result?.updated_at || null,
+    nextUpdate: result?.next_update_at || null,
+  }
+}
+
 // ── 汎用フック：market.json → LocalStorage → Render の順で取得 ──
 function useMarketJsonKey(jsonKey, apiFallback, deps = []) {
-  const [data,    setData]    = useState(() => readCache(jsonKey))
-  const [loading, setLoading] = useState(!readCache(jsonKey))
+  const cachedInitial = readCache(jsonKey)
+  const [data,setData]=useState(cachedInitial)
+  const [loading,setLoading]=useState(!cachedInitial)
+  const [dataState,setDataState]=useState(cachedInitial ? detectDataState(cachedInitial).state : 'loading')
+  const [reason,setReason]=useState(null)
+  const [meta,setMeta]=useState(freshnessMeta(cachedInitial, null))
 
   useEffect(() => {
-    let cancelled = false
-    const cached = readCache(jsonKey)
-    if (cached) { setData(cached); setLoading(false) }
-
-    ;(async () => {
+    let cancelled=false
+    const cached=readCache(jsonKey)
+    if(cached){ const ds=detectDataState(cached); setData(cached);setLoading(false);setDataState(ds.state);setReason(ds.reason);setMeta(freshnessMeta(cached,null)) }
+    ;(async()=>{
+      let lastError=null
       try {
-        const json   = await fetchMarketJson()
-        const result = json[jsonKey]
-        if (result && !cancelled) {
-          setData(result); writeCache(jsonKey, result); setLoading(false)
-          return
-        }
-      } catch {}
-      // フォールバック
-      if (apiFallback) {
-        try {
-          const r    = await fetch(apiFallback)
-          const json = await r.json()
-          if (!cancelled) { setData(json); writeCache(jsonKey, json) }
-        } catch {}
-      }
-      if (!cancelled) setLoading(false)
+        const json=await fetchMarketJson(); const result=json[jsonKey]
+        if(result && !cancelled){ const ds=detectDataState(result);setData(result);writeCache(jsonKey,result);setDataState(ds.state);setReason(ds.reason);setMeta(freshnessMeta(result));setLoading(false);return }
+      } catch(e){ lastError=e }
+      if(apiFallback){
+        try { const r=await fetch(apiFallback); if(!r.ok) throw new Error(`HTTP ${r.status}`); const result=await r.json(); if(!cancelled){const ds=detectDataState(result);setData(result);writeCache(jsonKey,result);setDataState(ds.state);setReason(ds.reason);setMeta(freshnessMeta(result));} }
+        catch(e){ lastError=e; if(!cancelled){setDataState(cached?'stale':'failed');setReason(cached?'最新データの取得に失敗したため、前回取得値を表示しています。':`データ取得に失敗しました（${e.message}）`) } }
+      } else if(!cancelled){setDataState(cached?'stale':'unavailable');setReason(cached?'前回取得値を表示しています。':'対象データが見つかりません。')}
+      if(!cancelled)setLoading(false)
     })()
-
-    return () => { cancelled = true }
-  }, deps)
-
-  return { data, loading }
+    return()=>{cancelled=true}
+  },deps)
+  return {data,loading,dataState,reason,...meta}
 }
 
 
@@ -102,40 +115,18 @@ function useMarketJsonKey(jsonKey, apiFallback, deps = []) {
  * useThemes — テーマ一覧
  */
 export function useThemes(period = '1mo') {
-  const cacheKey = `themes_${period}`
-  const [data,       setData]       = useState(() => readCache(cacheKey))
-  const [loading,    setLoading]    = useState(!readCache(cacheKey))
-  const [refreshing, setRefreshing] = useState(false)
-  const [updatedAt,  setUpdatedAt]  = useState(null)
-
-  const load = useCallback(async (isBackground = false) => {
-    if (isBackground) setRefreshing(true); else setLoading(true)
-    try {
-      const json   = await fetchMarketJson()
-      const result = json[cacheKey]
-      if (result) {
-        setData(result); writeCache(cacheKey, result)
-        setUpdatedAt(result.updated_at || null); return
-      }
-    } catch {}
-    try {
-      const res  = await fetch(`${API}/api/themes?period=${period}`)
-      const json = await res.json()
-      setData(json); writeCache(cacheKey, json)
-    } catch {
-      if (!isBackground) setData(readCache(cacheKey))
-    } finally {
-      setLoading(false); setRefreshing(false)
-    }
-  }, [period, cacheKey])
-
-  useEffect(() => {
-    const cached = readCache(cacheKey)
-    if (cached) { setData(cached); setLoading(false); load(true) }
-    else        { load(false) }
-  }, [period])
-
-  return { data, loading, refreshing, updatedAt, refresh: () => load(false) }
+  const cacheKey=`themes_${period}`; const initial=readCache(cacheKey)
+  const [data,setData]=useState(initial); const [loading,setLoading]=useState(!initial); const [refreshing,setRefreshing]=useState(false)
+  const initialState=detectDataState(initial); const [dataState,setDataState]=useState(initial?initialState.state:'loading'); const [reason,setReason]=useState(initialState.reason)
+  const [meta,setMeta]=useState(freshnessMeta(initial,null))
+  const load=useCallback(async(bg=false)=>{ bg?setRefreshing(true):setLoading(true); let cached=readCache(cacheKey)
+    try { const all=await fetchMarketJson(); const result=all[cacheKey]; if(!result) throw new Error('market.jsonに対象期間がありません'); const ds=detectDataState(result);setData(result);writeCache(cacheKey,result);setDataState(ds.state);setReason(ds.reason);setMeta(freshnessMeta(result));return }
+    catch(first){ try { const r=await fetch(`${API}/api/themes?period=${period}`);if(!r.ok)throw new Error(`HTTP ${r.status}`);const result=await r.json();const ds=detectDataState(result);setData(result);writeCache(cacheKey,result);setDataState(ds.state);setReason(ds.reason);setMeta(freshnessMeta(result)); }
+      catch(e){setData(cached||null);setDataState(cached?'stale':'failed');setReason(cached?'最新データの取得に失敗したため、前回取得値を表示しています。':`データ取得に失敗しました（${e.message}）`)} }
+    finally{setLoading(false);setRefreshing(false)}
+  },[period,cacheKey])
+  useEffect(()=>{load(!!initial)},[period])
+  return {data,loading,refreshing,dataState,reason,...meta,updatedAt:meta.dataAsOf,refresh:()=>load(false)}
 }
 
 
@@ -162,20 +153,20 @@ export function useStatus() {
       try {
         const json = await fetchMarketJson()
         if (json.status) {
-          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中', updatedAt: json.status.updated_at || null })
+          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中', updatedAt: json.status.updated_at || null, fetchedAt:new Date().toISOString(), dataAsOf:json.status.data_as_of || json.status.updated_at || null, dataState:json.status.data_state || 'ok' })
           return
         }
       } catch {}
       try {
         const res  = await fetch(`${API}/api/status`)
         const data = await res.json()
-        setStatus({ ...data, label: data.is_open ? '市場オープン中' : '市場クローズ中' })
+        setStatus({ ...data, label: data.is_open ? '市場オープン中' : '市場クローズ中', fetchedAt:new Date().toISOString(), dataAsOf:data.data_as_of || data.updated_at || null, dataState:'ok' })
       } catch {
         const now = new Date()
         const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000)
         setStatus({
           time: `${String(jst.getHours()).padStart(2,'0')}:${String(jst.getMinutes()).padStart(2,'0')} JST`,
-          is_open: false, label: '接続エラー',
+          is_open: false, label: '接続エラー', dataState:'failed', fetchedAt:new Date().toISOString(), dataAsOf:null,
         })
       }
     }

@@ -26,6 +26,7 @@ import Plan         from './components/pages/Plan'
 import DevEdge      from './components/pages/DevEdge'
 import StockDetail  from './components/pages/StockDetail'
 import PlanGate     from './components/PlanGate'
+import ErrorBoundary from './components/ErrorBoundary'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
 const PAGES = [
@@ -226,15 +227,17 @@ function AppInner() {
       }}>
         {PageComponent ? (
           currentPage === '機関投資家保有' ? (
-            <PlanGate feature="institutional" onNavigate={handlePageChange}>
+            <ErrorBoundary resetKey={currentPage} pageName={currentPage}><PlanGate feature="institutional" onNavigate={handlePageChange}>
               <PageComponent {...pageProps} />
-            </PlanGate>
+            </PlanGate></ErrorBoundary>
           ) : currentPage === '市場別詳細' ? (
-            <PlanGate feature="market_detail" onNavigate={handlePageChange}>
+            <ErrorBoundary resetKey={currentPage} pageName={currentPage}><PlanGate feature="market_detail" onNavigate={handlePageChange}>
               <PageComponent {...pageProps} />
-            </PlanGate>
+            </PlanGate></ErrorBoundary>
           ) : (
-            <PageComponent {...pageProps} />
+            <ErrorBoundary resetKey={currentPage} pageName={currentPage}>
+              <PageComponent {...pageProps} />
+            </ErrorBoundary>
           )
         ) : (
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center',

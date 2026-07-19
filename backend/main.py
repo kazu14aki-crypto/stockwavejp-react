@@ -627,6 +627,47 @@ def search_stocks(q: str = Query(default="")):
     return {"results": matches[:50], "total": len(matches)}
 
 
+
+@app.post("/api/account/delete")
+async def delete_account(request: Request):
+    """Delete the authenticated user's account and related application data."""
+    auth_header = request.headers.get("authorization", "")
+    if not auth_header.lower().startswith("bearer "):
+        raise HTTPException(status_code=401, detail="再ログインしてからお試しください")
+    token = auth_header.split(" ", 1)[1].strip()
+    try:
+        from supabase import create_client
+        sb_url = os.environ.get("SUPABASE_URL", "")
+        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+        if not sb_url or not sb_key:
+            raise HTTPException(status_code=503, detail="アカウント削除機能が設定されていません")
+        sb = create_client(sb_url, sb_key)
+        user_response = sb.auth.get_user(token)
+        auth_user = getattr(user_response, "user", None)
+        if not auth_user:
+            raise HTTPException(status_code=401, detail="認証情報を確認できませんでした")
+        user_id = auth_user.id
+        # Cancel active subscriptions first to prevent future billing.
+        try:
+            result = sb.table("subscriptions").select("stripe_subscription_id,status").eq("user_id", user_id).execute()
+            for row in (result.data or []):
+                sub_id = row.get("stripe_subscription_id")
+                if sub_id and row.get("status") in ("active", "canceling", "past_due"):
+                    try: stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
+                    except Exception: pass
+            sb.table("subscriptions").delete().eq("user_id", user_id).execute()
+        except Exception:
+            pass
+        for table in ("custom_themes", "favorites", "user_settings"):
+            try: sb.table(table).delete().eq("user_id", user_id).execute()
+            except Exception: pass
+        sb.auth.admin.delete_user(user_id)
+        return {"ok": True}
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"アカウント削除に失敗しました: {e}")
+
 @app.post("/api/stripe/cancel-subscription")
 async def cancel_subscription(req: Request):
     body = await req.json()

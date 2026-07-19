@@ -9,7 +9,7 @@ export default function SiteInfo() {
     <div style={s}>
       <h1 style={h1}>StockWaveJPについて</h1>
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px' }}>
-        StockWaveJPは日本株72テーマの騰落率・出来高・売買代金をリアルタイムで可視化し、
+        StockWaveJPは日本株72テーマの騰落率・出来高・売買代金をプラン別の更新頻度で可視化し、
         機関投資家レベルの資金フロー分析を個人投資家に提供するサービスです。
       </p>
 
@@ -86,7 +86,7 @@ export default function SiteInfo() {
             ['URL', 'https://stockwavejp.com'],
             ['お問い合わせ', 'stockwavejp26@gmail.com'],
             ['開始時期', '2025年3月'],
-            ['目的', '日本株テーマ別の騰落率・出来高・売買代金のリアルタイム可視化（投資参考情報の提供）'],
+            ['目的', '日本株テーマ別の騰落率・出来高・売買代金の定期更新での可視化（投資参考情報の提供）'],
             ['対象ユーザー', '日本株に関心を持つ個人投資家・初心者'],
           ].map(([l, v]) => (
             <div key={l} style={{ display:'contents' }}>
@@ -101,7 +101,7 @@ export default function SiteInfo() {
         <h2 style={h2}><span>✨</span> 主な機能</h2>
         <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'6px' }}>
           {[
-            '📊 72テーマのリアルタイム騰落率・出来高・売買代金',
+            '📊 72テーマの定期更新の騰落率・出来高・売買代金',
             '🔥 テーマヒートマップ（騰落率×出来高の散布図）',
             '📈 市場別ランキング（セグメント別・ETF別）',
             '🎯 注目銘柄ピックアップ（複合スコア）',

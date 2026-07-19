@@ -464,7 +464,7 @@ function PickupStocks({ stocks, period, onNavigate }) {
         color:'var(--text3)', lineHeight:1.8 }}>
         ⚠️ <strong style={{ color:'var(--text2)' }}>注意：</strong>
         上記ピックアップは騰落率・出来高・価格推移・売買代金を独自スコアで機械的に集計したものです。
-        <strong style={{ color:'var(--text2)' }}>リアルタイムデータではなく</strong>、
+        <strong style={{ color:'var(--text2)' }}>秒単位のリアルタイム配信ではなく</strong>、
         データ取得タイミング（1日数回更新）に依存するため、
         最新の市場状況と乖離する場合があります。
         特定銘柄の購入・売却を推奨するものではなく、

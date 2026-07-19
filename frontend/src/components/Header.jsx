@@ -74,11 +74,14 @@ export default function Header({ status, onMenuClick, sidebarOpen, viewMode, onV
             <span className="status-label" style={{ fontSize: '11px', color: 'var(--text2)', whiteSpace: 'nowrap' }}>
               {status.label}
             </span>
-            {status.updatedAt && (
-              <span className="status-updated" style={{ fontSize: '10px', color: 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
+            {(status.dataAsOf || status.updatedAt) && (
+              <span className="status-updated" title={`取得時刻：${status.fetchedAt || '不明'}`} style={{ fontSize: '10px', color: status.dataState==='failed' ? '#ff647c' : 'var(--text3)', whiteSpace: 'nowrap', marginLeft: '4px' }}>
                 {(() => {
-                  const m = (status.updatedAt || '').match(/(\d{2}\/\d{2} \d{2}:\d{2})/)
-                  return '最終更新：' + (m ? m[1] : status.updatedAt.slice(0,16))
+                  const value=status.dataAsOf || status.updatedAt
+                  const d=new Date(value)
+                  if(!Number.isNaN(d.getTime())) return 'データ基準：'+d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})
+                  const m=String(value).match(/(\d{2}\/\d{2} \d{2}:\d{2})/)
+                  return 'データ基準：'+(m?m[1]:String(value).slice(0,16))
                 })()}
               </span>
             )}

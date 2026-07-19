@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useThemes, useCustomThemeStats, useMacro, useMomentum, useMonthlyHeatmap } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import RefreshIndicator from '../RefreshIndicator'
+import { DataStateBanner, DataFreshness } from '../DataStateBanner'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 const PERIODS = [
@@ -1227,7 +1228,7 @@ export default function ThemeList({ onNavigate }) {
   }
   const pct1321 = get1321pct()
   const pct1306 = get1306pct()
-  const { data, loading, refreshing, updatedAt, refresh } = useThemes(period)
+  const { data, loading, refreshing, updatedAt, refresh, dataState, reason, fetchedAt, dataAsOf, nextUpdate } = useThemes(period)
   const lastUpdate = updatedAt ? new Date(updatedAt.replace(/\//g, '-').replace(' JST','')) : null
   const error = null
 
@@ -1261,6 +1262,8 @@ export default function ThemeList({ onNavigate }) {
 
   return (
     <div>
+      <DataStateBanner state={dataState} reason={reason} onRetry={refresh} />
+      <div style={{marginBottom:'10px'}}><DataFreshness fetchedAt={fetchedAt} dataAsOf={dataAsOf} nextUpdate={nextUpdate} compact /></div>
       {/* 固定ヘッダー */}
       <div className="page-header-sticky">
         <h1 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', whiteSpace: 'nowrap' }}>テーマ一覧</h1>
