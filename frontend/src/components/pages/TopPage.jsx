@@ -77,6 +77,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/21', tag:'UPDATE', title:'固定ナビ・モバイル2列ランキング・時価総額順ページを改善' },
   { date:'2026/07/20', tag:'UPDATE', title:'開発中ページの公開範囲とページ間ナビを改善' },
   { date:'2026/07/20', tag:'UPDATE', title:'開発中機能の公開範囲を調整' },
   { date:'2026/07/20', tag:'UPDATE', title:'初回ガイド・利用ステップ・契約管理を改善' },

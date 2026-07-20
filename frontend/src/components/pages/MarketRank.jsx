@@ -638,7 +638,7 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
   const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
-  const [activeGroup, setActiveGroup] = useState('StockWaveJP独自分類')
+  const [activeGroup, setActiveGroup] = useState('時価総額順')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
   // ETF専用状態
@@ -652,16 +652,20 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
     setSummary(marketData.data)
     // ①「ETF」グループをmarket.jsonの外でフロント側に追加
     const baseGroups = marketData.groups || {}
+    const marketCapSegments = baseGroups['時価総額順']
+      || (marketData.data?.['StockWaveJP｜時価総額上位150'] ? ['StockWaveJP｜時価総額上位150'] : [])
     const swjpSegments = baseGroups['StockWaveJP独自分類']
-      || Object.keys(marketData.data || {}).filter(k => k.startsWith('StockWaveJP｜'))
+      || Object.keys(marketData.data || {}).filter(k => k.startsWith('StockWaveJP｜') && k !== 'StockWaveJP｜時価総額上位150')
       || []
     const allGroups = {
+      '時価総額順': marketCapSegments,
       'StockWaveJP独自分類': swjpSegments,
       'ETF': Object.keys(ETF_GROUPS),
     }
     setGroups(allGroups)
-    const firstSeg = swjpSegments[0]
-    if (firstSeg && (!activeSeg || !swjpSegments.includes(activeSeg))) setActiveSeg(firstSeg)
+    const allSegments = Object.values(allGroups).flat()
+    const firstSeg = marketCapSegments[0] || swjpSegments[0]
+    if (firstSeg && (!activeSeg || !allSegments.includes(activeSeg))) setActiveSeg(firstSeg)
   },[marketData])
 
   // activeSeg変更時は即detailをリセット（古いデータ残存防止）
@@ -737,13 +741,15 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
   const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
   const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
   const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
-  // 独自分類・ETFともに選択期間の騰落率順で表示
+  // 時価総額順ページは時価総額降順、独自分類・ETFは騰落率降順。
   const mappedStocks = rawStocks.map(s => ({
     ...s,
     vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
     tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
   }))
-  const stocks = [...mappedStocks].sort((a,b) => b.pct - a.pct)
+  const stocks = activeGroup === '時価総額順'
+    ? [...mappedStocks].sort((a,b) => (b.market_cap || 0) - (a.market_cap || 0))
+    : [...mappedStocks].sort((a,b) => (b.pct || 0) - (a.pct || 0))
   const detailAvg = currentDetail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -766,15 +772,15 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
           color:'var(--text)', lineHeight:1.8 }}>
           <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
-          StockWaveJPが代表的な大型・中大型株150銘柄を主力事業に基づいて10分類した独自分類と、ETFカテゴリを比較します。
-          公式指数・取引所市場区分・公式業種分類ではなく、分類ごとの平均騰落率もStockWaveJP独自の単純平均です。
+          StockWaveJPが独自に選定した代表150銘柄を時価総額順で確認できるページと、主力事業に基づく10分類、ETFカテゴリを比較します。
+          公式指数・取引所市場区分・公式業種分類ではありません。時価総額順は独自150銘柄の並び替えで、分類別騰落率はStockWaveJP独自の単純平均です。
           <br/>
           <span style={{ fontSize:'11px', color:'var(--text3)' }}>
             💡 活用例：「デジタル・半導体」が強い場合は、テーマ一覧の半導体・AI関連テーマへ移動し、より細かな資金流入と構成銘柄を確認します。
           </span>
         </div>
 
-        <div style={{ display:'flex', gap:'4px', borderBottom:'1px solid var(--border)', marginBottom:'0' }}>
+        <div style={{ display:'flex', gap:'4px', borderBottom:'1px solid var(--border)', marginBottom:'0', overflowX:'auto', WebkitOverflowScrolling:'touch' }}>
           {Object.keys(groups).map(g=>(
             <button key={g} onClick={()=>{ setActiveGroup(g); setActiveSeg(groups[g][0]) }} style={{
               padding:'8px 16px', fontSize:'13px', cursor:'pointer', border:'none', background:'transparent',
@@ -824,6 +830,11 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
                     平均 {detailAvg>=0?'+':''}{detailAvg.toFixed(1)}%
                   </span>
                   <span style={{ fontSize:'12px', color:'var(--text3)' }}>{stocks.length}銘柄</span>
+                  {activeGroup === '時価総額順' && (
+                    <span style={{ fontSize:'10px', color:'var(--accent)', padding:'2px 7px', border:'1px solid rgba(74,158,255,0.3)', borderRadius:'999px', background:'rgba(74,158,255,0.08)' }}>
+                      時価総額の高い順
+                    </span>
+                  )}
                 </div>
 
                 <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', marginBottom:'20px' }} className="top5g">

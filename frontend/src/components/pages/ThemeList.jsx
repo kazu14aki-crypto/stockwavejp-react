@@ -1368,16 +1368,16 @@ export default function ThemeList({ onNavigate }) {
 
             {/* 全テーマ統合ランキング */}
             <SectionHead title="📊 全テーマランキング" />
-            <div style={{ display:'flex', gap:'8px', alignItems:'center', flexWrap:'wrap', marginBottom:'12px', padding:'10px 12px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
-              <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>表示指標</span>
-              <select value={rankingMetric} onChange={e => setRankingMetric(e.target.value)} style={selStyle}>
+            <div className="ranking-controls" style={{ display:'flex', gap:'8px', alignItems:'center', flexWrap:'wrap', marginBottom:'12px', padding:'10px 12px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
+              <span className="ranking-metric-label" style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>表示指標</span>
+              <select className="ranking-select" aria-label="ランキング表示指標" value={rankingMetric} onChange={e => setRankingMetric(e.target.value)} style={selStyle}>
                 <option value="pct">騰落率</option><option value="relative_pct">市場超過騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option>
               </select>
-              <span style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>並び順</span>
-              <select value={rankingOrder} onChange={e => setRankingOrder(e.target.value)} style={selStyle}>
+              <span className="ranking-order-label" style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>並び順</span>
+              <select className="ranking-select" aria-label="ランキング並び順" value={rankingOrder} onChange={e => setRankingOrder(e.target.value)} style={selStyle}>
                 <option value="desc">降順（高い順）</option><option value="asc">昇順（低い順）</option>
               </select>
-              <span style={{ marginLeft:'auto', fontSize:'11px', color:'var(--text3)' }}>{rankingConfig.label}・{rankingOrder==='desc'?'高い順':'低い順'}</span>
+              <span className="ranking-summary" style={{ marginLeft:'auto', fontSize:'11px', color:'var(--text3)' }}>{rankingConfig.label}・{rankingOrder==='desc'?'高い順':'低い順'}</span>
             </div>
             <ThemeCardGrid items={rankingItems} pctColor={pctColor} valueKey={rankingMetric} barColor={rankingConfig.color} pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={rankingMetric==='pct'?momentumMap:undefined} />
 
@@ -1495,7 +1495,30 @@ export default function ThemeList({ onNavigate }) {
         @media (max-width:1024px) { .theme-card-grid { grid-template-columns:repeat(3,1fr); } }
         @media (max-width:640px)  { .theme-card-grid { grid-template-columns:repeat(2,1fr); } }
         .theme-card-grid > * { min-width:0; overflow:hidden; }
-        @media (max-width:480px) { .theme-card-grid { grid-template-columns:1fr !important; } }
+        @media (max-width: 640px) {
+          .ranking-controls {
+            flex-wrap:nowrap !important;
+            gap:6px !important;
+            padding:8px !important;
+            overflow:hidden;
+          }
+          .ranking-order-label,
+          .ranking-summary {
+            display:none !important;
+          }
+          .ranking-metric-label {
+            flex:0 0 auto;
+            font-size:10px !important;
+            white-space:nowrap;
+          }
+          .ranking-select {
+            flex:1 1 0 !important;
+            min-width:0 !important;
+            width:auto !important;
+            padding:6px 22px 6px 7px !important;
+            font-size:11px !important;
+          }
+        }
         .top5-grid { grid-template-columns: 1fr 1fr !important; }
         @media (max-width: 640px) {
           .top5-grid { grid-template-columns: 1fr !important; }

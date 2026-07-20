@@ -309,10 +309,21 @@ STOCKWAVE_CLASSIFICATION_DESCRIPTIONS = {
     '建設・不動産・住環境': '建設、住宅、不動産、住宅設備など都市・住環境を支える企業群。',
 }
 
+# 独自分類の全銘柄を一意にまとめた「時価総額順」表示用ユニバース。
+# 取引所の市場区分や公式指数の構成ではなく、上記の独自150銘柄を再利用します。
+STOCKWAVE_MARKET_UNIVERSE = {
+    name: ticker
+    for stocks in STOCKWAVE_MARKET_CLASSIFICATION.values()
+    for name, ticker in stocks.items()
+}
+
 # セグメント名をAPI・フロントで識別しやすいよう接頭辞を付ける。
 MARKET_SEGMENTS = {
-    f"StockWaveJP｜{category}": stocks
-    for category, stocks in STOCKWAVE_MARKET_CLASSIFICATION.items()
+    "StockWaveJP｜時価総額上位150": STOCKWAVE_MARKET_UNIVERSE,
+    **{
+        f"StockWaveJP｜{category}": stocks
+        for category, stocks in STOCKWAVE_MARKET_CLASSIFICATION.items()
+    },
 }
 
 # 銘柄→独自分類のマッピング
@@ -390,7 +401,11 @@ MARKET_SEGMENTS["ETF｜レバレッジ・インバース"] = {
 }
 
 SEGMENT_GROUPS = {
-    "StockWaveJP独自分類": [k for k in MARKET_SEGMENTS if k.startswith("StockWaveJP｜")],
+    "時価総額順": ["StockWaveJP｜時価総額上位150"],
+    "StockWaveJP独自分類": [
+        k for k in MARKET_SEGMENTS
+        if k.startswith("StockWaveJP｜") and k != "StockWaveJP｜時価総額上位150"
+    ],
     "ETF": [k for k in MARKET_SEGMENTS if k.startswith("ETF｜")],
 }
 

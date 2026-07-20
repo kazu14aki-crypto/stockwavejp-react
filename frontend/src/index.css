@@ -273,12 +273,18 @@ body {
 }
 .sticky-table th:first-child { background:var(--bg3); z-index:3; }
 
-/* ページヘッダー固定 */
+/* 関連ページナビとページヘッダー固定 */
+:root { --related-nav-height: 51px; }
+
 .page-header-sticky {
   position:sticky; top:var(--header); z-index:100;
   background:var(--bg); border-bottom:1px solid var(--border);
   padding:10px 20px; display:flex; align-items:center;
   gap:12px; flex-wrap:wrap;
+}
+
+.has-related-page-nav .page-header-sticky {
+  top:calc(var(--header) + var(--related-nav-height));
 }
 
 /* レスポンシブ共通 */
@@ -315,7 +321,15 @@ body {
   .pickup-grid       { grid-template-columns: 1fr !important; }
 }
 @media (max-width: 480px) {
-  .theme-card-grid { grid-template-columns: 1fr 1fr !important; gap: 6px !important; }
+  .theme-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+  .theme-card-grid > div {
+    min-width: 0 !important;
+    padding: 7px 7px !important;
+    gap: 5px !important;
+  }
 }
 
 

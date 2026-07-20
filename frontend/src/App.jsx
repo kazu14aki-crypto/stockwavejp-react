@@ -26,7 +26,7 @@ import Plan         from './components/pages/Plan'
 import DevEdge      from './components/pages/DevEdge'
 import StockDetail  from './components/pages/StockDetail'
 import ErrorBoundary from './components/ErrorBoundary'
-import RelatedPageNav from './components/RelatedPageNav'
+import RelatedPageNav, { hasRelatedPageNav } from './components/RelatedPageNav'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
 const PAGES = [
@@ -233,7 +233,7 @@ function AppInner() {
         contactUrl={CONTACT_FORM_URL}
       />
 
-      <main style={{
+      <main className={hasRelatedPageNav(currentPage) ? 'has-related-page-nav' : ''} style={{
         marginLeft: isMobile ? '0' : 'var(--sidebar)',
         paddingTop: 'var(--header)',
         minHeight: '100vh',

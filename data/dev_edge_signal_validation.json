@@ -1,4 +1,41 @@
 {
-  "updated_at": null,
-  "rows": []
+  "updated_at": "2026-07-20T21:32:39+09:00",
+  "rows": [
+    {
+      "signal": "🌱初動",
+      "count": 0,
+      "avg_5d": 0,
+      "avg_20d": 0,
+      "win_rate": 0,
+      "max_drawdown": 0,
+      "edge": false
+    },
+    {
+      "signal": "🔥継続",
+      "count": 0,
+      "avg_5d": 0,
+      "avg_20d": 0,
+      "win_rate": 0,
+      "max_drawdown": 0,
+      "edge": false
+    },
+    {
+      "signal": "⚠️過熱",
+      "count": 0,
+      "avg_5d": 0,
+      "avg_20d": 0,
+      "win_rate": 0,
+      "max_drawdown": 0,
+      "edge": false
+    },
+    {
+      "signal": "🩸セリクラ",
+      "count": 0,
+      "avg_5d": 0,
+      "avg_20d": 0,
+      "win_rate": 0,
+      "max_drawdown": 0,
+      "edge": false
+    }
+  ]
 }
