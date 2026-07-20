@@ -8,7 +8,7 @@
  *   'dev'      → 開発者（全機能解放）
  *
  * 機能制限:
- *   機関投資家保有 → pro のみ
+ *   機関投資家保有 → 開発者のみ（開発中）
  *   週次レポートアーカイブ → standard以上
  *   カスタムテーマ分析（AI） → pro のみ
  */
@@ -39,7 +39,7 @@ export function SubscriptionProvider({ children }) {
           return
         }
 
-        const email = session.user.email
+        const email = (session.user.email || '').toLowerCase()
 
         // 開発者チェック（常に全機能解放）
         if (DEV_EMAILS.includes(email)) {
@@ -126,8 +126,8 @@ export function SubscriptionProvider({ children }) {
         'portfolio_analysis':  ['pro', 'pro_trial', 'dev'],
         // ① 短期期間（1日・1週・1ヶ月・2ヶ月）はStandard以上のみ
         'short_period':        ['standard', 'pro', 'pro_trial', 'dev'],
-        // ① 市場別詳細はStandard以上のみ
-        'market_detail':       ['standard', 'pro', 'pro_trial', 'dev'],
+        // 市場別詳細は開発者限定（リリース検証中）
+        'market_detail':       ['dev'],  // 開発者限定（リリース検証中）
       }
       return rules[feature]?.includes(plan) ?? true
     },

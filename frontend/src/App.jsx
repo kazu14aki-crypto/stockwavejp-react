@@ -25,8 +25,8 @@ import LegalNotice  from './components/pages/LegalNotice'
 import Plan         from './components/pages/Plan'
 import DevEdge      from './components/pages/DevEdge'
 import StockDetail  from './components/pages/StockDetail'
-import PlanGate     from './components/PlanGate'
 import ErrorBoundary from './components/ErrorBoundary'
+import RelatedPageNav from './components/RelatedPageNav'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
 const PAGES = [
@@ -34,10 +34,8 @@ const PAGES = [
   { icon:'📊', label:'テーマ一覧',         component:ThemeList            },
   { icon:'🔥', label:'テーマヒートマップ',   component:Heatmap              },
   { icon:'🔍', label:'テーマ別詳細',       component:ThemeDetail          },
-  { icon:'📋', label:'市場別詳細',         component:MarketRank           },
   { icon:'🔎', label:'銘柄検索',           component:StockSearch          },
   { icon:'🎨', label:'カスタムテーマ',      component:CustomTheme          },
-  { icon:'🏦', label:'機関投資家保有',     component:InstitutionalHoldings },
   { icon:'📰', label:'レポート',            component:ReportHub            },
   { icon:'📝', label:'コラム・解説',       component:Column               },
 ]
@@ -58,9 +56,13 @@ const PAGES_FOOTER = [
 
 // お問い合わせGoogleフォームURL（実際のURLに変更してください）
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
-const DEV_PAGE = { icon:'🎯', label:'Dev Edge', component:DevEdge }  // plan==='dev'のみサイドバー表示
+const DEV_PAGE = { icon:'🎯', label:'Dev Edge', component:DevEdge }
+const MARKET_DEV_PAGE = { icon:'📋', label:'市場別詳細', component:MarketRank }
+const INSTITUTIONAL_DEV_PAGE = { icon:'🏦', label:'機関投資家保有', component:InstitutionalHoldings }
+const DEV_PAGES = [DEV_PAGE, MARKET_DEV_PAGE, INSTITUTIONAL_DEV_PAGE]
+const DEV_ONLY_LABELS = new Set(DEV_PAGES.map(p => p.label))
 const STOCK_PAGE = { icon:'📈', label:'銘柄詳細', component:StockDetail }  // サイドバー非表示（クリック遷移専用）
-const ALL_PAGES     = [...PAGES, DEV_PAGE, STOCK_PAGE, ...PAGES_OTHER, ...PAGES_FOOTER]
+const STATIC_PAGES = [STOCK_PAGE, ...PAGES_OTHER, ...PAGES_FOOTER]
 const COLOR_THEME_KEY = 'swjp_color_theme'
 const COLOR_DIR_KEY   = 'sw_color_dir'
 
@@ -141,11 +143,26 @@ function AppInner() {
     }
   }, [viewMode])
 
-  const currentPageObj = ALL_PAGES.find(p => p.label === currentPage)
+  const { isDev, loading: subscriptionLoading } = useSubscription()
+  const visibleMainPages = isDev ? [...PAGES, ...DEV_PAGES] : PAGES
+  const availablePages = [...visibleMainPages, ...STATIC_PAGES]
+  const currentPageObj = availablePages.find(p => p.label === currentPage)
   const PageComponent  = currentPageObj?.component
   const [targetStock, setTargetStock] = useState(null)
 
+  useEffect(() => {
+    if (!subscriptionLoading && DEV_ONLY_LABELS.has(currentPage) && !isDev) {
+      setCurrentPage('ホーム')
+      setSidebarOpen(false)
+      window.history.replaceState(null, '', window.location.pathname)
+    }
+  }, [currentPage, isDev, subscriptionLoading])
+
   const handlePageChange = (label, articleId = null) => {
+    if (DEV_ONLY_LABELS.has(label) && !isDev) {
+      label = 'ホーム'
+      articleId = null
+    }
     setCurrentPage(label)
     setSidebarOpen(false)
     setTargetArticleId(articleId)
@@ -174,8 +191,6 @@ function AppInner() {
   }
 
   const handleLogoClick  = () => { setCurrentPage('ホーム'); setSidebarOpen(false) }
-
-  const { isDev } = useSubscription()
 
   const pageProps = (() => {
     if (currentPage === '設定') return { viewMode, onViewModeChange:setViewMode, colorTheme, onColorThemeChange:setColorTheme, colorDir, onColorDirChange:setColorDir, isMobile, onNavigate: handlePageChange }
@@ -210,7 +225,7 @@ function AppInner() {
       )}
 
       <Sidebar
-        pages={isDev ? [...PAGES, DEV_PAGE] : PAGES} pagesOther={PAGES_OTHER}
+        pages={visibleMainPages} pagesOther={PAGES_OTHER}
         currentPage={currentPage} onPageChange={handlePageChange}
         isOpen={sidebarOpen} isMobile={isMobile}
         onOpen={() => setSidebarOpen(true)}
@@ -225,26 +240,17 @@ function AppInner() {
         transition: 'margin-left 0.25s',
         background: 'var(--bg)',
       }}>
+        <RelatedPageNav currentPage={currentPage} onNavigate={handlePageChange} />
         {PageComponent ? (
-          currentPage === '機関投資家保有' ? (
-            <ErrorBoundary resetKey={currentPage} pageName={currentPage}><PlanGate feature="institutional" onNavigate={handlePageChange}>
-              <PageComponent {...pageProps} />
-            </PlanGate></ErrorBoundary>
-          ) : currentPage === '市場別詳細' ? (
-            <ErrorBoundary resetKey={currentPage} pageName={currentPage}><PlanGate feature="market_detail" onNavigate={handlePageChange}>
-              <PageComponent {...pageProps} />
-            </PlanGate></ErrorBoundary>
-          ) : (
-            <ErrorBoundary resetKey={currentPage} pageName={currentPage}>
-              <PageComponent {...pageProps} />
-            </ErrorBoundary>
-          )
+          <ErrorBoundary resetKey={currentPage} pageName={currentPage}>
+            <PageComponent {...pageProps} />
+          </ErrorBoundary>
         ) : (
           <div style={{ display:'flex', alignItems:'center', justifyContent:'center',
             height:'calc(100vh - var(--header))', flexDirection:'column', gap:'16px', color:'var(--text3)' }}>
-            <div style={{ fontSize:'48px' }}>{currentPageObj?.icon}</div>
-            <div style={{ fontSize:'18px', fontWeight:600, color:'var(--text2)' }}>{currentPage}</div>
-            <div style={{ fontSize:'13px' }}>このページは準備中です</div>
+            <div style={{ fontSize:'48px' }}>🔒</div>
+            <div style={{ fontSize:'18px', fontWeight:600, color:'var(--text2)' }}>このページは利用できません</div>
+            <button onClick={() => handlePageChange('ホーム')} style={{ padding:'8px 14px', borderRadius:'8px', border:'1px solid var(--border)', background:'var(--bg2)', color:'var(--accent)', cursor:'pointer', fontFamily:'var(--font)' }}>ホームへ戻る</button>
           </div>
         )}
 

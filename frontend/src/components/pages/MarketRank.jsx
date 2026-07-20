@@ -638,7 +638,7 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
   const [period,      setPeriod]      = useState('1mo')
   const [summary,     setSummary]     = useState(null)
   const [groups,      setGroups]      = useState({})
-  const [activeGroup, setActiveGroup] = useState('国内主要株')
+  const [activeGroup, setActiveGroup] = useState('StockWaveJP独自分類')
   const [activeSeg,   setActiveSeg]   = useState(null)
   const [detail,      setDetail]      = useState(null)
   // ETF専用状態
@@ -652,19 +652,22 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
     setSummary(marketData.data)
     // ①「ETF」グループをmarket.jsonの外でフロント側に追加
     const baseGroups = marketData.groups || {}
+    const swjpSegments = baseGroups['StockWaveJP独自分類']
+      || Object.keys(marketData.data || {}).filter(k => k.startsWith('StockWaveJP｜'))
+      || []
     const allGroups = {
-      ...baseGroups,
+      'StockWaveJP独自分類': swjpSegments,
       'ETF': Object.keys(ETF_GROUPS),
     }
     setGroups(allGroups)
-    const firstSeg = (baseGroups['国内主要株'] || Object.values(baseGroups)[0] || [])[0]
-    if (firstSeg && !activeSeg) setActiveSeg(firstSeg)
+    const firstSeg = swjpSegments[0]
+    if (firstSeg && (!activeSeg || !swjpSegments.includes(activeSeg))) setActiveSeg(firstSeg)
   },[marketData])
 
   // activeSeg変更時は即detailをリセット（古いデータ残存防止）
   useEffect(()=>{ setDetail(null); setEtfDetail(null) }, [activeSeg, period])
 
-  // ETFグループ選択時はyfinanceからリアルタイム取得
+  // ETFグループ選択時は保存済みデータまたはAPIから取得
   // ① ETFグループ選択時 → market.json → Render API → プレースホルダーの順でフォールバック
   useEffect(() => {
     if (activeGroup !== 'ETF' || !activeSeg) return
@@ -734,15 +737,13 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
   const tvSorted  = [...rawStocks].sort((a,b) => (b.trade_value||0)-(a.trade_value||0))
   const volRankMap = new Map(volSorted.map((s,i) => [s.ticker, i+1]))
   const tvRankMap  = new Map(tvSorted.map((s,i) => [s.ticker, i+1]))
-  // ①国内全般は時価総額降順、ETFは騰落率降順、その他は騰落率降順
+  // 独自分類・ETFともに選択期間の騰落率順で表示
   const mappedStocks = rawStocks.map(s => ({
     ...s,
     vol_rank: volRankMap.get(s.ticker) ?? s.vol_rank,
     tv_rank:  tvRankMap.get(s.ticker)  ?? s.tv_rank,
   }))
-  const stocks = activeGroup === '国内全般'
-    ? [...mappedStocks].sort((a,b) => (b.market_cap||0) - (a.market_cap||0))
-    : [...mappedStocks].sort((a,b) => b.pct - a.pct)
+  const stocks = [...mappedStocks].sort((a,b) => b.pct - a.pct)
   const detailAvg = currentDetail?.avg ?? 0
   const top5      = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5      = [...stocks].sort((a,b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
@@ -754,7 +755,7 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
       )}
 
       <div className="page-header-sticky">
-        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別詳細</h1>
+        <h1 style={{ fontSize:'18px', fontWeight:700, color:'var(--text)', whiteSpace:'nowrap' }}>市場別詳細 <span style={{fontSize:'10px',color:'var(--text3)'}}>開発者限定</span></h1>
         <select value={period} onChange={e=>setPeriod(e.target.value)} style={selStyle}>
           {PERIODS.map(p=><option key={p.value} value={p.value}>{p.label}</option>)}
         </select>
@@ -765,13 +766,11 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
           borderRadius:'8px', padding:'12px 16px', marginBottom:'16px', fontSize:'12px',
           color:'var(--text)', lineHeight:1.8 }}>
           <span style={{ fontWeight:700, color:'#06d6a0' }}>📋 このページについて：</span>
-          時価総額上位150銘柄・市場区分（プライム・スタンダード・グロース）・ETF（6カテゴリ）ごとに、
-          構成銘柄の騰落率ランキングと詳細データを確認できます。
-          上部のタブで「国内主要株」「国内全般」「市場区分」「ETF」を切り替え、各グループ内のセグメントを選択してください。
+          StockWaveJPが代表的な大型・中大型株150銘柄を主力事業に基づいて10分類した独自分類と、ETFカテゴリを比較します。
+          公式指数・取引所市場区分・公式業種分類ではなく、分類ごとの平均騰落率もStockWaveJP独自の単純平均です。
           <br/>
           <span style={{ fontSize:'11px', color:'var(--text3)' }}>
-            💡 活用ポイント：「テクノロジー」セグメントが強い時はテーマ一覧の「半導体」「AI・クラウド」も
-            チェックしましょう。セグメントとテーマの同時確認で資金の流れをより精度高く把握できます。
+            💡 活用例：「デジタル・半導体」が強い場合は、テーマ一覧の半導体・AI関連テーマへ移動し、より細かな資金流入と構成銘柄を確認します。
           </span>
         </div>
 

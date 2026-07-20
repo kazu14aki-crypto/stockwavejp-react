@@ -4,7 +4,7 @@ import { supabase } from '../../lib/supabase'
 
 // ═══════════════════════════════════════════════════════════════
 // StockDetail.jsx — 個別銘柄詳細ページ
-// テーマ別詳細・市場別詳細の銘柄クリックから遷移（サイドバー非表示）
+// テーマ別詳細・銘柄検索などから遷移（サイドバー非表示）
 //   ・株価情報＋1年チャート＋テクニカル（全ユーザー）
 //   ・PER/PBR/PEG等バリュエーション（サブスク限定・無料は🔒）
 //   ・大株主情報（無料は上位3名まで、4位以下は🔒）
@@ -45,7 +45,7 @@ function computeTech(hist) {
 const fmtLarge = (v) => !Number.isFinite(v) ? '—' : v >= 1e12 ? (v / 1e12).toFixed(2) + '兆' : v >= 1e8 ? (v / 1e8).toFixed(0) + '億' : Math.round(v).toLocaleString()
 
 export default function StockDetail({ ticker, onNavigate, isMobile }) {
-  const { isStandard } = useSubscription()
+  const { isStandard, isDev } = useSubscription()
   const code = String(ticker || '').replace('.T', '')
   const [info, setInfo] = useState(null)
   const [hist, setHist] = useState(null)
@@ -61,19 +61,16 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
     ;(async () => {
       let uid = null
       try { uid = (await supabase.auth.getSession())?.data?.session?.user?.id || null } catch {}
-      const [i, h, v, ho, sx, master] = await Promise.all([
+      const [i, h, v, ho, sx] = await Promise.all([
         fetch(`${API_BASE}/api/stock-info/${code}.T`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-history/${code}.T?period=1y`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-valuation/${code}.T${uid ? `?uid=${uid}` : ''}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stockholders/${code}.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stock_index.json`).then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch(`/data/listed_stock_master.json`).then(r => r.ok ? r.json() : null).catch(() => null),
       ])
       if (cancelled) return
       setInfo(i); setHist(h?.data || null); setVal(v); setHolders(ho)
-      const curated = sx?.[`${code}.T`] || null
-      const listed = master?.stocks?.find(row => row.ticker === `${code}.T`) || null
-      setIdxEntry(curated ? { ...listed, ...curated, curated:true } : listed)
+      setIdxEntry(sx?.[`${code}.T`] || null)
       setLoading(false)
     })()
     return () => { cancelled = true }
@@ -105,7 +102,7 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
   }
 
   if (!code) {
-    return <div style={{ padding: '60px', textAlign: 'center', color: 'var(--text3)' }}>銘柄が指定されていません。テーマ別詳細・市場別詳細の銘柄名から遷移してください。</div>
+    return <div style={{ padding: '60px', textAlign: 'center', color: 'var(--text3)' }}>銘柄が指定されていません。銘柄検索またはテーマ別詳細から銘柄を選択してください。</div>
   }
 
   const name = info?.name || idxEntry?.name || code
@@ -219,7 +216,7 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
               <div style={{ ...S.small, marginTop: '10px' }}>
                 個人系合計 <b style={{ color: '#ffd700' }}>{holders.latestSummary.individual_total?.toFixed(1)}%</b>
                 　上位10名計 <b style={{ color: 'var(--text2)' }}>{holders.latestSummary.top10_total?.toFixed(1)}%</b>
-                　詳細分析は <span onClick={() => onNavigate?.('機関投資家保有')} style={{ color: 'var(--accent)', cursor: 'pointer' }}>機関投資家保有ページ</span> へ
+                {isDev && <>　詳細分析は <span onClick={() => onNavigate?.('機関投資家保有')} style={{ color: 'var(--accent)', cursor: 'pointer' }}>機関投資家保有ページ</span> へ</>}
               </div>
             )}
           </>

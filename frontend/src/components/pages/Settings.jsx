@@ -106,7 +106,7 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
             <div style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'14px' }}>
               {plan === 'free' && 'Freeプラン：基本機能をご利用いただけます。'}
               {plan === 'standard' && 'スタンダードプラン：月額980円。全期間・全アーカイブにアクセスできます。'}
-              {plan === 'pro' && 'プロプラン：月額1,980円。全機能・機関投資家情報にアクセスできます。'}
+              {plan === 'pro' && 'プロプラン：月額1,980円。プロ向け機能をご利用いただけます。'}
               {plan === 'trial_expired' && '14日間の無料体験期間が終了しました。引き続きご利用いただくには有料プランへのお申し込みをお願いします。'}
             {plan === 'pro_trial' && 'プロプラン14日無料体験中。期間終了後はFreeプランに自動移行します。'}
               {plan === 'dev' && '開発者アカウント：全機能利用可能。'}

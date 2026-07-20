@@ -35,7 +35,7 @@ from data import (
     fetch_heatmap_data, fetch_heatmap_monthly, fetch_macro_data,
     fetch_market_segments, fetch_segment_detail, fetch_theme_detail,
     MARKET_SEGMENTS, SEGMENT_GROUPS, warmup_cache_extended,
-    get_nikkei_classification_info, NIKKEI225_CLASSIFICATION,
+    get_market_classification_info, STOCKWAVE_MARKET_CLASSIFICATION,
     get_valuation,
 )
 
@@ -262,10 +262,10 @@ def get_segment_detail(seg_name: str, period: str = Query(default="1mo"), uid: s
     return _strip_valuation_if_locked(payload, uid)
 
 
-@app.get("/api/nikkei-classification/{seg_name}")
-def get_nikkei_classification(seg_name: str):
-    """日経225セグメントの大分類・小分類情報を返す"""
-    return get_nikkei_classification_info(seg_name)
+@app.get("/api/market-classification/{seg_name}")
+def get_market_classification(seg_name: str):
+    """StockWaveJP独自の市場分類情報を返す。"""
+    return get_market_classification_info(seg_name)
 
 
 @app.get("/api/theme-detail/{theme_name}")
@@ -279,7 +279,7 @@ def get_theme_detail(theme_name: str, period: str = Query(default="1mo"), uid: s
 
 @app.get("/api/stock-universe")
 def get_stock_universe(period: str = Query(default="5d"), uid: str = Query(default=None)):
-    """Dev Edgeスキャナ用: 全テーマ＋市場区分を横断した銘柄ユニバースを1コールで返す。
+    """Dev Edgeスキャナ用: 全テーマ＋独自市場分類を横断した銘柄ユニバースを1コールで返す。
     テーマの増減・将来の全銘柄収録に自動追随する（DEFAULT_THEMES/MARKET_SEGMENTSを走査）。"""
     rows: dict = {}
     theme_pct: dict = {}
@@ -300,7 +300,7 @@ def get_stock_universe(period: str = Query(default="5d"), uid: str = Query(defau
                 r["themes"] = []
                 rows[code] = r
             r["themes"].append(name)
-    # 市場区分（テーマ未収載銘柄の受け皿。将来の全銘柄収録時もここが拾う）
+    # 独自市場分類（テーマ未収載銘柄の受け皿）
     for seg, v in MARKET_SEGMENTS.items():
         seg_stocks = v.get("stocks") if isinstance(v, dict) else None
         if not seg_stocks:
