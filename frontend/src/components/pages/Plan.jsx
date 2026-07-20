@@ -1,12 +1,14 @@
-import UpgradePlanButton, { warmupBackend } from '../UpgradePlanButton'
+import UpgradePlanButton from '../UpgradePlanButton'
 import { useState, useEffect } from 'react'
 import { useAuth }         from '../../hooks/useAuth.jsx'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
 
 export default function Plan({ onNavigate }) {
   const [isMobile, setIsMobile] = useState(false)
-  const { isLoggedIn, signIn, user } = useAuth()
-  const { plan: currentPlan, planLabel, isPro } = useSubscription()
+  const { isLoggedIn, signIn } = useAuth()
+  const { plan: currentPlan, planLabel } = useSubscription()
+  const [portalBusy, setPortalBusy] = useState(false)
+  const [portalError, setPortalError] = useState(null)
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 640)
@@ -19,16 +21,22 @@ export default function Plan({ onNavigate }) {
   const perDay = (monthly) => Math.ceil(monthly / 30)
 
   const openPortal = async () => {
-    const { supabase } = await import('../../lib/supabase')
-    const { data:{ session } } = await supabase.auth.getSession()
-    const res = await fetch(`${API}/api/stripe/create-portal`, {
-      method:'POST',
-      headers:{ 'Content-Type':'application/json', 'Authorization':`Bearer ${session?.access_token || ''}` },
-      body:JSON.stringify({ user_id:user?.id }),
-    })
-    const d = await res.json()
-    if (!res.ok || !d.url) throw new Error(d.detail || '支払い管理ポータルを開けませんでした')
-    window.open(d.url, '_blank', 'noopener,noreferrer')
+    setPortalBusy(true)
+    setPortalError(null)
+    try {
+      const { supabase } = await import('../../lib/supabase')
+      const { data:{ session } } = await supabase.auth.getSession()
+      const res = await fetch(`${API}/api/stripe/create-portal`, {
+        method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${session?.access_token || ''}`}, body:JSON.stringify({})
+      })
+      const data = await res.json()
+      if (!res.ok || !data.url) throw new Error(data.detail || '支払い管理ポータルを開けませんでした')
+      window.location.assign(data.url)
+    } catch (error) {
+      setPortalError(error.message)
+    } finally {
+      setPortalBusy(false)
+    }
   }
 
   const PLANS = [
@@ -214,10 +222,23 @@ export default function Plan({ onNavigate }) {
         <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.8 }}>
           無料体験期間中（初回ログインから14日間）にサブスクリプションへ加入された場合、
           <strong>加入した時点で無料体験期間が終了し、有料契約期間が開始</strong>となります。<br/>
-          設定ページの「現在のプラン」には加入したプランが表示され、解約ボタンから解約できます。<br/>
+          料金プランページの「支払い管理ポータル」から、プラン変更・支払い方法変更・解約を行えます。<br/>
           解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。
         </div>
       </div>
+
+      {(currentPlan==='standard' || currentPlan==='pro') && (
+        <div style={{...card,border:'1px solid rgba(74,158,255,.28)'}}>
+          <h2 style={{fontSize:'14px',fontWeight:800,color:'var(--text)',marginBottom:'7px'}}>契約中プランの管理</h2>
+          <div style={{fontSize:'11px',color:'var(--text2)',lineHeight:1.8,marginBottom:'12px'}}>
+            既存契約のプラン変更・解約はStripe Customer Portalで行います。別のCheckoutを作らないため、重複契約を防げます。解約は現在の契約期間終了時に有効となり、それまでは有料機能を利用できます。
+          </div>
+          <button onClick={openPortal} disabled={portalBusy} style={{padding:'10px 15px',borderRadius:'8px',cursor:portalBusy?'wait':'pointer',background:'var(--accent)',color:'#fff',border:'none',fontFamily:'var(--font)',fontWeight:700,opacity:portalBusy ? .65 : 1}}>
+            {portalBusy ? '読み込み中...' : 'Stripeで契約を管理する'}
+          </button>
+          {portalError && <div style={{fontSize:'11px',color:'#ff647c',marginTop:'8px'}}>⚠️ {portalError}</div>}
+        </div>
+      )}
 
       {/* 契約・支払い・ログインに関するサポート */}
       <div style={{ ...card, marginTop:'18px' }}>
@@ -227,7 +248,7 @@ export default function Plan({ onNavigate }) {
         </p>
         <div style={{ display:'grid', gridTemplateColumns:isMobile?'1fr':'repeat(2,minmax(0,1fr))', gap:'10px' }}>
           {[
-            ['プラン変更・解約','支払い管理ポータルから変更できます。解約後も契約期間終了までは利用でき、終了後にFreeへ移行します。'],
+            ['プラン変更・解約','既存の有料契約はStripeの支払い管理ポータルで変更します。プラン変更はポータル設定に基づき日割り処理され、解約は契約期間終了時に行う設定です。'],
             ['支払失敗','支払い管理ポータルでカード情報を更新してください。Stripeの再請求後、ログアウト・再ログインすると契約状態が反映されます。'],
             ['二重課金','請求履歴を確認し、請求日・金額・登録メールアドレスを添えてお問い合わせください。調査前に重複契約をすべて解約しないでください。'],
             ['体験期間終了','14日間の体験終了後は自動課金せずFreeへ移行します。体験中に有料契約した場合は、契約した時点から有料期間が始まります。'],
@@ -240,13 +261,6 @@ export default function Plan({ onNavigate }) {
             </div>
           ))}
         </div>
-        {(currentPlan==='standard' || currentPlan==='pro') && (
-          <button onClick={() => openPortal().catch(e => window.alert(e.message))} style={{
-            marginTop:'14px', padding:'9px 15px', borderRadius:'8px', cursor:'pointer',
-            background:'rgba(74,158,255,.1)', color:'var(--accent)',
-            border:'1px solid rgba(74,158,255,.35)', fontFamily:'var(--font)', fontWeight:700,
-          }}>支払い管理ポータルを開く</button>
-        )}
       </div>
 
       <div style={card}>
@@ -261,7 +275,7 @@ export default function Plan({ onNavigate }) {
           <div>
             <div style={{ fontSize:'12px', fontWeight:700, color:'var(--text)', marginBottom:'4px' }}>データ更新が遅れている</div>
             <div style={{ fontSize:'11px', color:'var(--text2)', lineHeight:1.8 }}>
-              全ページ共通でサイト最上部に表示される「更新時刻」と「データ基準時刻」を確認してください。更新失敗時は0%として扱わず、「未取得」「更新失敗」「更新遅延」「市場休場」を区別して表示します。
+              全ページ共通でサイト最上部に表示される「更新時間」「基準時間」「次回更新予定」を確認してください。更新失敗時は0%として扱わず、「未取得」「更新失敗」「更新遅延」「市場休場」を区別して表示します。
             </div>
           </div>
         </div>

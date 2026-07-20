@@ -153,20 +153,20 @@ export function useStatus() {
       try {
         const json = await fetchMarketJson()
         if (json.status) {
-          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中', updatedAt: json.status.updated_at || null, fetchedAt:new Date().toISOString(), dataAsOf:json.status.data_as_of || json.status.updated_at || null, dataState:json.status.data_state || 'ok' })
+          setStatus({ ...json.status, label: json.status.is_open ? '市場オープン中' : '市場クローズ中', updatedAt: json.status.updated_at || null, fetchedAt:new Date().toISOString(), dataAsOf:json.status.data_as_of || json.status.updated_at || null, nextUpdate:json.status.next_update_at || json.next_update_at || null, dataState:json.status.data_state || 'ok' })
           return
         }
       } catch {}
       try {
         const res  = await fetch(`${API}/api/status`)
         const data = await res.json()
-        setStatus({ ...data, label: data.is_open ? '市場オープン中' : '市場クローズ中', fetchedAt:new Date().toISOString(), dataAsOf:data.data_as_of || data.updated_at || null, dataState:'ok' })
+        setStatus({ ...data, label: data.is_open ? '市場オープン中' : '市場クローズ中', fetchedAt:new Date().toISOString(), dataAsOf:data.data_as_of || data.updated_at || null, nextUpdate:data.next_update_at || null, dataState:'ok' })
       } catch {
         const now = new Date()
         const jst = new Date(now.getTime() + (now.getTimezoneOffset() + 540) * 60000)
         setStatus({
           time: `${String(jst.getHours()).padStart(2,'0')}:${String(jst.getMinutes()).padStart(2,'0')} JST`,
-          is_open: false, label: '接続エラー', dataState:'failed', fetchedAt:new Date().toISOString(), dataAsOf:null,
+          is_open: false, label: '接続エラー', dataState:'failed', fetchedAt:new Date().toISOString(), dataAsOf:null, nextUpdate:null,
         })
       }
     }

@@ -77,6 +77,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/20', tag:'UPDATE', title:'初回ガイド・利用ステップ・契約管理を改善' },
   { date:'2026/07/20', tag:'COLUMN', title:'世界株安とKOSPI急落を分析した新コラムを公開' },
   { date:'2026/07/20', tag:'UPDATE', title:'障害耐性と初回ガイドを改善／データ状態表示を追加' },
   { date:'2026/07/19', tag:'UPDATE', title:'料金プラン・更新頻度を更新／テーマ選定基準を公開' },
@@ -316,9 +317,25 @@ export default function TopPage({ onNavigate }) {
       </div>
 
       <DataStateBanner state={dataState} reason={reason} onRetry={refresh} />
-<div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(190px,1fr))', gap:'8px', marginBottom:'18px' }}>
-        {[['1','市場超過ランキング','地合いだけで上がったテーマを除き、TOPIXを上回るテーマを探す'],['2','出来高と分布を確認','資金流入の強さと、過去に比べた過熱度・ばらつきを確認する'],['3','構成銘柄を比較','テーマ内の上昇銘柄、業績、開示資料を確認して候補を絞る'],['4','レポートで追跡','前回ランキングの事後成績から、継続か失速かを確認する']].map(([n,t,d])=>(
-          <div key={n} style={{padding:'12px 13px',border:'1px solid var(--border)',borderRadius:'9px',background:'var(--bg2)'}}><div style={{fontSize:'10px',fontWeight:800,color:'var(--accent)'}}>STEP {n}</div><div style={{fontSize:'12px',fontWeight:700,color:'var(--text)',margin:'5px 0'}}>{t}</div><div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.65}}>{d}</div></div>
+<div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(215px,1fr))', gap:'8px', marginBottom:'18px' }}>
+        {[
+          { n:'1', title:'強いテーマを探す', page:'テーマ一覧', detail:'期間を「1週間」、表示指標を「市場超過騰落率」に切り替え、TOPIXを上回るテーマを確認します。', example:'例：テーマ騰落率 +3.2%／市場 +1.0%なら、市場超過は +2.2pt' },
+          { n:'2', title:'資金流入と過熱度を見る', page:'テーマ別詳細', detail:'候補テーマを開き、出来高グラフと成績分布を確認します。構成銘柄の一部だけが急騰していないかも見ます。', example:'例：出来高増加と上昇銘柄比率がともに高ければ、広い資金流入の可能性' },
+          { n:'3', title:'投資候補を絞る', page:'テーマ別詳細・銘柄検索', detail:'構成銘柄表から業績、流動性、開示資料を比較し、テーマが強いという理由だけで購入しないようにします。', example:'例：同じテーマでも受注残、利益率、割高感を銘柄ごとに比較' },
+          { n:'4', title:'継続か失速か追う', page:'レポート', detail:'週次レポートの「前回ランキングの事後成績」で、前週上位テーマが翌週も市場を上回ったか確認します。', example:'例：順位上位でも翌週の市場超過がマイナスなら、短期過熱の可能性' },
+        ].map(step => (
+          <button key={step.n} type="button" onClick={() => onNavigate?.(step.n==='1' ? 'テーマ一覧' : step.n==='4' ? 'レポート' : 'テーマ別詳細')}
+            style={{padding:'13px 14px',border:'1px solid var(--border)',borderRadius:'9px',background:'var(--bg2)',textAlign:'left',cursor:'pointer',fontFamily:'var(--font)'}}
+            onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(74,158,255,.45)' }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor='var(--border)' }}>
+            <div style={{display:'flex',justifyContent:'space-between',gap:'8px',alignItems:'center'}}>
+              <div style={{fontSize:'10px',fontWeight:800,color:'var(--accent)'}}>STEP {step.n}</div>
+              <div style={{fontSize:'9px',fontWeight:700,color:'var(--accent)',background:'rgba(74,158,255,.08)',border:'1px solid rgba(74,158,255,.22)',borderRadius:'12px',padding:'2px 7px'}}>{step.page}</div>
+            </div>
+            <div style={{fontSize:'12px',fontWeight:700,color:'var(--text)',margin:'7px 0 5px'}}>{step.title}</div>
+            <div style={{fontSize:'10px',color:'var(--text2)',lineHeight:1.7}}>{step.detail}</div>
+            <div style={{fontSize:'9px',color:'var(--text3)',lineHeight:1.65,marginTop:'7px',paddingTop:'7px',borderTop:'1px dashed var(--border)'}}>{step.example}</div>
+          </button>
         ))}
       </div>
 

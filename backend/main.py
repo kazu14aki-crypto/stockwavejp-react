@@ -10,6 +10,22 @@ from fastapi import FastAPI, Query, Request, HTTPException
 from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import os
+import stripe as _stripe
+
+_stripe.api_key = os.environ.get('STRIPE_SECRET_KEY', '')
+_PRICE_IDS = {
+    'standard_monthly': os.environ.get('STRIPE_PRICE_STD_MONTHLY', ''),
+    'pro_monthly': os.environ.get('STRIPE_PRICE_PRO_MONTHLY', ''),
+}
+
+class CheckoutReq(BaseModel):
+    price_key: str
+    user_id: str | None = None
+    email: str | None = None
+    success_url: str
+    cancel_url: str
+    billing_timing: str | None = None
 from datetime import datetime
 import pytz
 
@@ -628,140 +644,134 @@ def search_stocks(q: str = Query(default="")):
 
 
 
+def _authenticated_supabase_user(request: Request):
+    auth_header = request.headers.get('authorization', '')
+    if not auth_header.lower().startswith('bearer '):
+        raise HTTPException(status_code=401, detail='再ログインしてからお試しください')
+    token = auth_header.split(' ', 1)[1].strip()
+    sb_url = os.environ.get('SUPABASE_URL', '')
+    sb_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '')
+    if not sb_url or not sb_key:
+        raise HTTPException(status_code=503, detail='認証連携が設定されていません')
+    from supabase import create_client
+    sb = create_client(sb_url, sb_key)
+    response = sb.auth.get_user(token)
+    user = getattr(response, 'user', None)
+    if not user:
+        raise HTTPException(status_code=401, detail='認証情報を確認できませんでした')
+    return sb, user
+
+
+def _subscription_rows(sb, user_id: str):
+    result = sb.table('subscriptions').select('stripe_subscription_id,stripe_customer_id,status,plan,current_period_end').eq('user_id', user_id).execute()
+    return result.data or []
+
+
 @app.post("/api/account/delete")
 async def delete_account(request: Request):
     """Delete the authenticated user's account and related application data."""
-    auth_header = request.headers.get("authorization", "")
-    if not auth_header.lower().startswith("bearer "):
-        raise HTTPException(status_code=401, detail="再ログインしてからお試しください")
-    token = auth_header.split(" ", 1)[1].strip()
     try:
-        from supabase import create_client
-        sb_url = os.environ.get("SUPABASE_URL", "")
-        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-        if not sb_url or not sb_key:
-            raise HTTPException(status_code=503, detail="アカウント削除機能が設定されていません")
-        sb = create_client(sb_url, sb_key)
-        user_response = sb.auth.get_user(token)
-        auth_user = getattr(user_response, "user", None)
-        if not auth_user:
-            raise HTTPException(status_code=401, detail="認証情報を確認できませんでした")
+        sb, auth_user = _authenticated_supabase_user(request)
         user_id = auth_user.id
-        # Cancel active subscriptions first to prevent future billing.
-        try:
-            result = sb.table("subscriptions").select("stripe_subscription_id,status").eq("user_id", user_id).execute()
-            for row in (result.data or []):
-                sub_id = row.get("stripe_subscription_id")
-                if sub_id and row.get("status") in ("active", "canceling", "past_due"):
-                    try: stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
-                    except Exception: pass
-            sb.table("subscriptions").delete().eq("user_id", user_id).execute()
-        except Exception:
-            pass
-        for table in ("custom_themes", "favorites", "user_settings"):
-            try: sb.table(table).delete().eq("user_id", user_id).execute()
-            except Exception: pass
+        rows = _subscription_rows(sb, user_id)
+        for row in rows:
+            sub_id = row.get('stripe_subscription_id')
+            if sub_id and row.get('status') in ('active', 'canceling', 'past_due', 'trialing'):
+                try:
+                    _stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
+                except Exception as exc:
+                    raise HTTPException(status_code=502, detail=f'契約の解約予約に失敗したため、アカウントは削除していません: {exc}')
+        sb.table('subscriptions').delete().eq('user_id', user_id).execute()
+        for table in ('custom_themes', 'favorites', 'user_settings'):
+            try:
+                sb.table(table).delete().eq('user_id', user_id).execute()
+            except Exception:
+                pass
         sb.auth.admin.delete_user(user_id)
-        return {"ok": True}
+        return {'ok': True}
     except HTTPException:
         raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"アカウント削除に失敗しました: {e}")
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f'アカウント削除に失敗しました: {exc}')
 
 @app.post("/api/stripe/cancel-subscription")
-async def cancel_subscription(req: Request):
-    body = await req.json()
-    user_id = body.get("user_id")
-    if not user_id:
-        raise HTTPException(status_code=400, detail="user_id required")
+async def cancel_subscription(request: Request):
+    """Authenticated fallback cancellation endpoint. UI normally uses Customer Portal."""
     try:
-        # Supabaseからstripe_subscription_idを取得
-        from supabase import create_client
-        sb_url = os.environ.get("SUPABASE_URL", "")
-        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-        sb = create_client(sb_url, sb_key)
-        result = sb.table("subscriptions") \
-            .select("stripe_subscription_id") \
-            .eq("user_id", user_id) \
-            .eq("status", "active") \
-            .limit(1) \
-            .execute()
-        if not result.data:
-            raise HTTPException(status_code=404, detail="有効なサブスクリプションが見つかりません")
-        sub_id = result.data[0]["stripe_subscription_id"]
-
-        # Stripeでキャンセル（期間終了時に自動解約）
-        stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
-
-        # Supabaseのステータスを更新
-        sb.table("subscriptions") \
-            .update({"status": "canceling"}) \
-            .eq("stripe_subscription_id", sub_id) \
-            .execute()
-
-        return {"ok": True, "message": "解約予約を受け付けました。契約期間終了日まで引き続きご利用いただけます。"}
+        sb, auth_user = _authenticated_supabase_user(request)
+        rows = _subscription_rows(sb, auth_user.id)
+        row = next((r for r in rows if r.get('status') in ('active', 'past_due', 'trialing', 'canceling') and r.get('stripe_subscription_id')), None)
+        if not row:
+            raise HTTPException(status_code=404, detail='有効なサブスクリプションが見つかりません')
+        if row.get('status') == 'canceling':
+            return {'ok': True, 'message': 'すでに契約期間終了時の解約が予約されています。', 'current_period_end': row.get('current_period_end')}
+        sub_id = row['stripe_subscription_id']
+        subscription = _stripe.Subscription.modify(sub_id, cancel_at_period_end=True)
+        period_end = getattr(subscription, 'current_period_end', None)
+        sb.table('subscriptions').update({'status':'canceling'}).eq('stripe_subscription_id', sub_id).execute()
+        return {'ok': True, 'message':'解約予約を受け付けました。契約期間終了日まで引き続き利用できます。', 'current_period_end':period_end}
     except HTTPException:
         raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
-# ── Stripe Customer Portal ─────────────────────────────────────────────
 @app.post("/api/stripe/create-portal")
-async def create_portal(req: Request):
-    body = await req.json()
-    user_id = body.get("user_id")
-    if not user_id:
-        raise HTTPException(status_code=400, detail="user_id required")
+async def create_portal(request: Request):
     try:
-        from supabase import create_client
-        sb_url = os.environ.get("SUPABASE_URL", "")
-        sb_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-        sb = create_client(sb_url, sb_key)
-        result = sb.table("subscriptions") \
-            .select("stripe_customer_id") \
-            .eq("user_id", user_id) \
-            .limit(1) \
-            .execute()
-        if not result.data or not result.data[0].get("stripe_customer_id"):
-            raise HTTPException(status_code=404, detail="Stripe顧客情報が見つかりません")
-        customer_id = result.data[0]["stripe_customer_id"]
-        session = stripe.billing_portal.Session.create(
-            customer=customer_id,
-            return_url="https://stockwavejp.com",
-        )
-        return {"url": session.url}
+        sb, auth_user = _authenticated_supabase_user(request)
+        rows = _subscription_rows(sb, auth_user.id)
+        customer_id = next((r.get('stripe_customer_id') for r in rows if r.get('stripe_customer_id')), None)
+        if not customer_id:
+            raise HTTPException(status_code=404, detail='Stripe顧客情報が見つかりません')
+        session = _stripe.billing_portal.Session.create(customer=customer_id, return_url='https://stockwavejp.com')
+        return {'url': session.url}
     except HTTPException:
         raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.post("/api/stripe/create-checkout")
-async def create_checkout(req: CheckoutReq):
+async def create_checkout(req: CheckoutReq, request: Request):
     pid = _PRICE_IDS.get(req.price_key)
     if not pid:
-        missing = "STRIPE_PRICE_STD_MONTHLY" if "standard" in req.price_key else "STRIPE_PRICE_PRO_MONTHLY"
-        return {"error": f"価格IDが設定されていません。Renderの環境変数 {missing} を確認してください。"}
+        missing = 'STRIPE_PRICE_STD_MONTHLY' if 'standard' in req.price_key else 'STRIPE_PRICE_PRO_MONTHLY'
+        raise HTTPException(status_code=503, detail=f'価格IDが設定されていません。Renderの環境変数 {missing} を確認してください。')
     try:
-        plan = "standard" if "standard" in req.price_key else "pro"
-        session = _stripe.checkout.Session.create(
-            payment_method_types=["card"],
-            mode="subscription",
-            line_items=[{"price": pid, "quantity": 1}],
-            customer_email=req.email,
-            client_reference_id=req.user_id,
-            success_url=req.success_url + "?checkout=success",
-            cancel_url=req.cancel_url + "?checkout=cancel",
-            subscription_data={"metadata": {"user_id": req.user_id, "plan": plan}},
-            locale="ja",
-        )
-        return {"url": session.url}
-    except _stripe.error.StripeError as e:
-        return {"error": f"Stripe エラー: {str(e)}"}
-    except Exception as e:
-        return {"error": f"サーバーエラー: {str(e)}"}
+        sb, auth_user = _authenticated_supabase_user(request)
+        user_id = auth_user.id
+        if req.user_id and req.user_id != user_id:
+            raise HTTPException(status_code=403, detail='認証ユーザーが一致しません')
+        rows = _subscription_rows(sb, user_id)
+        active = next((r for r in rows if r.get('status') in ('active', 'canceling', 'past_due', 'trialing') and r.get('stripe_subscription_id')), None)
+        if active:
+            raise HTTPException(status_code=409, detail='既存の有料契約があります。プラン変更は支払い管理ポータルから行ってください。')
+        plan = 'standard' if 'standard' in req.price_key else 'pro'
+        customer_id = next((r.get('stripe_customer_id') for r in rows if r.get('stripe_customer_id')), None)
+        params = {
+            'payment_method_types':['card'],
+            'mode':'subscription',
+            'line_items':[{'price':pid,'quantity':1}],
+            'client_reference_id':user_id,
+            'success_url':req.success_url + '?checkout=success',
+            'cancel_url':req.cancel_url + '?checkout=cancel',
+            'subscription_data':{'metadata':{'user_id':user_id,'plan':plan}},
+            'metadata':{'user_id':user_id,'plan':plan},
+            'locale':'ja',
+        }
+        if customer_id:
+            params['customer'] = customer_id
+        else:
+            params['customer_email'] = getattr(auth_user, 'email', None) or req.email
+        session = _stripe.checkout.Session.create(**params)
+        return {'url':session.url}
+    except HTTPException:
+        raise
+    except _stripe.error.StripeError as exc:
+        raise HTTPException(status_code=502, detail=f'Stripe エラー: {exc}')
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f'サーバーエラー: {exc}')
 
 @app.post("/api/stripe/webhook")
 async def stripe_webhook(request: Request):

@@ -285,19 +285,18 @@ function AppInner() {
   )
 }
 
-// 旧バージョンのLocalStorageキャッシュを自動削除
-;(function cleanOldCache() {
-  const CURRENT = 'swjp_v3_'
-  const OLD_PREFIXES = ['swjp_', 'swjp_v1_', 'swjp_v2_']
+// 旧バージョンの市場データキャッシュだけを一度削除する。
+// 設定・お気に入り・初回ガイドなど、現在利用中のswjp_*キーは削除しない。
+;(function cleanOldMarketCacheOnce() {
+  const MIGRATION_KEY = 'swjp_v3_cache_migration_done'
   try {
-    const keys = Object.keys(localStorage)
-    keys.forEach(k => {
-      const isOld = OLD_PREFIXES.some(p => k.startsWith(p))
-      const isCurrent = k.startsWith(CURRENT)
-      if (isOld && !isCurrent) {
+    if (localStorage.getItem(MIGRATION_KEY) === '1') return
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith('swjp_v1_') || k.startsWith('swjp_v2_') || k.startsWith('swjp_cache_')) {
         localStorage.removeItem(k)
       }
     })
+    localStorage.setItem(MIGRATION_KEY, '1')
   } catch {}
 })()
 

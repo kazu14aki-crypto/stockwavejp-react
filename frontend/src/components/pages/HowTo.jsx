@@ -110,7 +110,7 @@ const SECTIONS = [
 const QA = [
   {
     q: 'データはリアルタイムですか？',
-    a: '秒単位のリアルタイム配信ではありません。Freeは前営業日または当日確定終値、スタンダードは約60分間隔、プロは約15分間隔で更新します。市場状況、データ提供元、システム処理により反映時刻が前後する場合があります。サイト最上部の「更新時刻」と「データ基準時刻」を確認してください。',
+    a: '秒単位のリアルタイム配信ではありません。Freeは前営業日または当日確定終値、スタンダードは約60分間隔、プロは約15分間隔で更新します。市場状況、データ提供元、システム処理により反映時刻が前後する場合があります。サイト最上部の「更新時間」「基準時間」「次回更新予定」を確認してください。',
   },
   {
     q: '注目銘柄ピックアップはどのように選ばれていますか？',
@@ -182,6 +182,33 @@ export default function HowTo() {
         </div>
         <div style={{ marginTop:'10px', fontSize:'10px', color:'var(--text3)', lineHeight:1.7 }}>
           ※ 秒単位のリアルタイム配信ではありません。市場休場日やデータ提供元の状況により反映時刻が前後します。
+        </div>
+      </div>
+
+
+      <div style={{ marginBottom:'30px' }}>
+        <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'12px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
+          🧭 StockWaveJPの基本的な使い方
+        </h2>
+        <p style={{fontSize:'12px',color:'var(--text3)',lineHeight:1.8,marginBottom:'12px'}}>
+          ランキングを見て終わるのではなく、「テーマ発見 → 資金流入の確認 → 銘柄比較 → 事後追跡」の順で使います。
+        </p>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(230px,1fr))',gap:'10px'}}>
+          {[
+            ['1','テーマ一覧','期間を「1週間」、表示指標を「市場超過騰落率」にします。テーマ騰落率から同期間のTOPIX騰落率を引いた値で並べ、地合い以上に買われているテーマを探します。','確認例：テーマ +3.2%、市場 +1.0% → 市場超過 +2.2pt'],
+            ['2','テーマ別詳細','候補テーマを選び、出来高、売買代金、上昇銘柄比率、成績分布を確認します。特定1社だけの急騰か、複数銘柄へ資金が広がっているかを区別します。','確認例：平均は高いが中央値が低い場合、一部の急騰銘柄に偏っている可能性'],
+            ['3','テーマ別詳細・銘柄検索','構成銘柄表から候補を絞り、決算短信、受注、利益率、PER・PBR、流動性、直近の適時開示を確認します。テーマ順位は個別銘柄の購入理由そのものではありません。','確認例：同じ半導体テーマでも装置、材料、メモリで業績サイクルは異なる'],
+            ['4','レポート','週次レポートで前回ランキングの事後成績を確認します。翌週も市場超過が続いたテーマは継続候補、順位急落や超過マイナスは失速候補として見直します。','確認例：前週1位でも翌週-2.0ptなら、追いかけ買いより再確認を優先'],
+          ].map(([n,page,body,example]) => (
+            <div key={n} style={{padding:'14px',background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'10px'}}>
+              <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:'8px'}}>
+                <span style={{fontSize:'10px',fontWeight:800,color:'var(--accent)'}}>STEP {n}</span>
+                <span style={{fontSize:'9px',fontWeight:700,color:'var(--accent)',padding:'2px 7px',borderRadius:'12px',background:'rgba(74,158,255,.08)',border:'1px solid rgba(74,158,255,.22)'}}>{page}</span>
+              </div>
+              <div style={{fontSize:'11px',color:'var(--text2)',lineHeight:1.8,marginTop:'8px'}}>{body}</div>
+              <div style={{fontSize:'10px',color:'var(--text3)',lineHeight:1.7,marginTop:'8px',paddingTop:'8px',borderTop:'1px dashed var(--border)'}}>{example}</div>
+            </div>
+          ))}
         </div>
       </div>
 
