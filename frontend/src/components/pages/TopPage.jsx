@@ -77,24 +77,15 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
-  { date:'2026/07/21', tag:'UPDATE', title:'固定ナビ・モバイル2列ランキング・時価総額順ページを改善' },
-  { date:'2026/07/20', tag:'UPDATE', title:'開発中ページの公開範囲とページ間ナビを改善' },
-  { date:'2026/07/20', tag:'UPDATE', title:'開発中機能の公開範囲を調整' },
-  { date:'2026/07/20', tag:'UPDATE', title:'初回ガイド・利用ステップ・契約管理を改善' },
-  { date:'2026/07/20', tag:'COLUMN', title:'世界株安とKOSPI急落を分析した新コラムを公開' },
-  { date:'2026/07/20', tag:'UPDATE', title:'障害耐性と初回ガイドを改善／データ状態表示を追加' },
-  { date:'2026/07/19', tag:'UPDATE', title:'料金プラン・更新頻度を更新／テーマ選定基準を公開' },
-  { date:'2026/05/29', tag:'NEW',    title:'MLCCテーマ追加・村田製作所＆MLCC解説コラム公開' },
-  { date:'2026/05/29', tag:'NEW',    title:'週次レポート（5/25〜5/29）公開' },
-  { date:'2026/05/22', tag:'NEW',    title:'週次レポート（5/18〜5/22）公開' },
-  { date:'2026/05/18', tag:'UPDATE', title:'カスタムテーマに取得価格・損益管理機能を追加' },
-  { date:'2026/05/15', tag:'NEW',    title:'週次レポート（5/11〜5/15）公開' },
-  { date:'2026/05/08', tag:'NEW',    title:'週次レポート（5/4〜5/8）公開' },
-  { date:'2026/03/14', tag:'NEW',    title:'StockWaveJP React版リリース' },
+  { date:'2026/07/22', tag:'COLUMN', title:'11テーマの過去・現在・未来を解説するコラムを公開' },
+  { date:'2026/07/20', tag:'COLUMN', title:'世界株安とKOSPI急落を分析したコラムを公開' },
+  { date:'2026/07/19', tag:'COLUMN', title:'StockWaveJPのテーマ選定基準を公開' },
+  { date:'2026/05/29', tag:'NEW', title:'MLCCテーマ追加・週次レポートを公開' },
 ]
 // 降順ソート・最新3件
 const NEWS_LIST = [...ALL_NEWS].sort((a,b) => b.date.localeCompare(a.date)).slice(0,3)
 const TAG_COLORS = {
+  'COLUMN': { bg:'rgba(170,119,255,.13)', color:'#aa77ff', border:'rgba(170,119,255,.28)' },
   'NEW':    { bg:'rgba(255,83,112,0.15)', color:'var(--red)',    border:'rgba(255,83,112,0.3)' },
   'UPDATE': { bg:'rgba(91,156,246,0.12)', color:'var(--accent)', border:'rgba(91,156,246,0.25)' },
   'INFO':   { bg:'rgba(76,175,130,0.12)', color:'var(--green)',  border:'rgba(76,175,130,0.25)' },
