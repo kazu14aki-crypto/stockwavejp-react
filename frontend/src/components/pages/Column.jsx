@@ -310,16 +310,22 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         }}>
           ← コラム一覧に戻る
         </button>
-        <span style={{ fontSize:'11px', fontWeight:600, padding:'3px 10px', borderRadius:'20px',
-          background:cat.bg, color:cat.color, border:`1px solid ${cat.border}`,
-          display:'inline-block', marginBottom:'12px' }}>
-          {col.category}
-        </span>
-        <h1 style={{ fontSize:'20px', fontWeight:700, color:'#e8f0ff', lineHeight:1.5, marginBottom:'8px' }}>
-          {col.title}
-        </h1>
-        <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'24px' }}>
-          {col.date}
+        <div className="column-article-heading">
+          <h1 style={{ fontSize:'20px', fontWeight:700, color:'#e8f0ff', lineHeight:1.5, margin:'0' }}>
+            {col.title}
+          </h1>
+          <div className="column-article-meta">
+            <span className="column-category-badge" style={{
+              fontSize:'10px', fontWeight:700, padding:'3px 9px', borderRadius:'20px',
+              background:cat.bg, color:cat.color, border:`1px solid ${cat.border}`,
+            }}>
+              {col.category}
+            </span>
+            <span className="column-article-date">{col.date}</span>
+            {col.themes?.slice(0, 2).map(theme => (
+              <span key={theme} className="column-theme-label">#{theme}</span>
+            ))}
+          </div>
         </div>
         <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px',
           padding:'6px 20px 20px', marginBottom:'28px' }}>
@@ -533,15 +539,14 @@ export default function Column({ initialArticleId = null, onNavigate }) {
               onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(74,158,255,0.3)'; e.currentTarget.style.transform='translateY(-2px)' }}
               onMouseLeave={e => { e.currentTarget.style.borderColor='var(--border)'; e.currentTarget.style.transform='translateY(0)' }}
             >
-              <div style={{ display:'flex', alignItems:'center', gap:'8px', marginBottom:'10px' }}>
-                <span style={{ fontSize:'20px' }}>{col.icon}</span>
-                <span style={{ fontSize:'11px', fontWeight:600, padding:'2px 8px', borderRadius:'12px',
-                  background:cat.bg, color:cat.color, border:`1px solid ${cat.border}` }}>
+              <div className="column-card-meta">
+                <span className="column-card-icon">{col.icon}</span>
+                <span className="column-card-category" style={{
+                  background:cat.bg, color:cat.color, border:`1px solid ${cat.border}`
+                }}>
                   {col.category}
                 </span>
-                <span style={{ fontSize:'10px', color:'var(--text3)', marginLeft:'auto', fontFamily:'var(--mono)' }}>
-                  {col.date}
-                </span>
+                <span className="column-card-date">{col.date}</span>
               </div>
               <h2 style={{ fontSize:'13px', fontWeight:700, color:'#e8f0ff', lineHeight:1.5, marginBottom:'8px' }}>
                 {col.title}
@@ -597,6 +602,90 @@ export default function Column({ initialArticleId = null, onNavigate }) {
       <style>{`
         @media (max-width:640px) { .col-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; } }
         @media (max-width:640px) { .col-grid > div { padding: 12px 12px !important; } }
+      `}</style>
+
+      <style>{`
+        .column-article-heading {
+          margin-bottom:22px;
+        }
+        .column-article-meta {
+          display:flex;
+          align-items:center;
+          flex-wrap:wrap;
+          gap:7px;
+          margin-top:10px;
+        }
+        .column-article-date {
+          font-size:10px;
+          color:var(--text3);
+          font-family:var(--mono);
+        }
+        .column-theme-label {
+          font-size:9px;
+          color:var(--text3);
+          padding:2px 7px;
+          border-radius:999px;
+          background:rgba(255,255,255,.035);
+          border:1px solid rgba(255,255,255,.06);
+        }
+        .column-card-meta {
+          display:grid;
+          grid-template-columns:auto minmax(0,1fr) auto;
+          align-items:center;
+          gap:8px;
+          margin-bottom:10px;
+        }
+        .column-card-icon {
+          font-size:20px;
+          line-height:1;
+        }
+        .column-card-category {
+          justify-self:start;
+          min-width:0;
+          max-width:100%;
+          padding:2px 8px;
+          border-radius:12px;
+          font-size:10px;
+          font-weight:700;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+        .column-card-date {
+          font-size:9px;
+          color:var(--text3);
+          font-family:var(--mono);
+          white-space:nowrap;
+        }
+        @media (max-width:640px) {
+          .column-article-heading h1 {
+            font-size:18px !important;
+            line-height:1.55 !important;
+          }
+          .column-article-meta {
+            gap:6px;
+            margin-top:9px;
+          }
+          .column-category-badge {
+            order:1;
+          }
+          .column-article-date {
+            order:2;
+          }
+          .column-theme-label {
+            order:3;
+          }
+          .column-card-meta {
+            grid-template-columns:auto minmax(0,1fr);
+            grid-template-areas:
+              "icon category"
+              "icon date";
+            gap:3px 8px;
+          }
+          .column-card-icon { grid-area:icon; align-self:start; }
+          .column-card-category { grid-area:category; }
+          .column-card-date { grid-area:date; justify-self:start; }
+        }
       `}</style>
     </div>
   )
