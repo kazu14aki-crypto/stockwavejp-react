@@ -189,8 +189,7 @@ export default function HowTo() {
       </div>
 
 
-      <div style={{ marginBottom:'26px', padding:'16px 18px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
-              {/* 機能ガイド（アコーディオン形式） */}
+      {/* 機能ガイド（アコーディオン形式） */}
       <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'14px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
         🗺️ 機能ガイド
       </h2>

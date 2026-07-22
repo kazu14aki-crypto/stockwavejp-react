@@ -1,0 +1,17 @@
+SUBSCRIPTION LOGIC TEST
+
+Result: SUBSCRIPTION_LOGIC_TESTS=OK
+
+Verified with mocked Stripe/Supabase services:
+1. Existing paid subscription cannot create another Checkout session: HTTP 409
+2. Request user_id mismatch is rejected: HTTP 403
+3. New Checkout uses authenticated Supabase user ID and email
+4. Customer Portal resolves the authenticated user's Stripe customer
+5. Cancellation uses cancel_at_period_end=True
+
+Not verified:
+- Live Stripe Checkout payment
+- Live Stripe Customer Portal plan switch
+- Live Stripe cancellation
+These require the project's Stripe credentials, products, prices, portal configuration,
+and test customer/subscription.

@@ -11,16 +11,11 @@ on:
         required: false
         default: '7'
 
-permissions:
-  contents: write
-
 jobs:
   update-holders:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -41,31 +36,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add frontend/public/data/stockholders
-
-          if git diff --staged --quiet; then
-            echo "変更なし。終了します。"
-            exit 0
-          fi
-
-          git commit -m "chore: update EDINET major shareholders data"
-
-          # 複数ワークフローがmainへ同時にpushした場合に備えて、
-          # pull --rebaseとpushを最大5回まで再試行する。
-          max_attempts=5
-          for attempt in $(seq 1 $max_attempts); do
-            if git push origin HEAD:main; then
-              echo "push成功（試行 ${attempt} 回目）"
-              exit 0
-            fi
-
-            echo "push失敗（試行 ${attempt}/${max_attempts}）。mainを取り込み再試行します。"
-            if ! git pull origin main --rebase; then
-              echo "pull --rebaseに失敗しました。競合を確認してください。"
-              exit 1
-            fi
-
-            sleep $(( (RANDOM % 10) + 1 ))
-          done
-
-          echo "${max_attempts}回試行しましたがpushに失敗しました。"
-          exit 1
+          git diff --cached --quiet || (git commit -m "chore: update EDINET major shareholders data" && git push)
