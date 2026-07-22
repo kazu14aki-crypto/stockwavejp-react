@@ -77,6 +77,7 @@ const THEME_ARTICLE_MAP = {
 }
 
 const ALL_NEWS = [
+  { date:'2026/07/22', tag:'COLUMN', title:'日本の成長戦略・積極財政・17分野を分析' },
   { date:'2026/07/22', tag:'COLUMN', title:'NVIDIAと日本企業のフィジカルAI協業を分析' },
   { date:'2026/07/22', tag:'COLUMN', title:'11テーマの過去・現在・未来を解説するコラムを公開' },
   { date:'2026/07/20', tag:'COLUMN', title:'世界株安とKOSPI急落を分析したコラムを公開' },

@@ -190,17 +190,7 @@ export default function HowTo() {
 
 
       <div style={{ marginBottom:'26px', padding:'16px 18px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
-        <div style={{ fontSize:'14px', fontWeight:700, color:'var(--text)', marginBottom:'8px' }}>🔗 ページ間を移動する</div>
-        <p style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.9, margin:'0 0 10px' }}>
-          分析ページの上部には「関連ページ」バーがあります。メニューへ戻らず、現在の作業の次に見るページへ直接移動できます。
-        </p>
-        <div style={{ fontSize:'11px', color:'var(--text3)', lineHeight:1.9 }}>
-          例：テーマ一覧 → テーマ別詳細 → 銘柄検索 → カスタムテーマ<br/>
-          例：レポート → テーマ一覧 → ヒートマップ → 銘柄検索
-        </div>
-      </div>
-
-      {/* 機能ガイド（アコーディオン形式） */}
+              {/* 機能ガイド（アコーディオン形式） */}
       <h2 style={{ fontSize:'16px', fontWeight:700, color:'var(--text)', marginBottom:'14px', borderBottom:'1px solid var(--border)', paddingBottom:'6px' }}>
         🗺️ 機能ガイド
       </h2>
