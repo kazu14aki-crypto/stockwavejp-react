@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useThemes, useCustomThemeStats, useMacro, useMomentum, useMonthlyHeatmap } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
+import { useSubscription } from '../../hooks/useSubscription.jsx'
+import { calculateStockWaveScore } from '../../utils/stockWaveScore'
 import RefreshIndicator from '../RefreshIndicator'
 import { DataStateBanner } from '../DataStateBanner'
 
@@ -20,6 +22,12 @@ function formatLarge(n) {
   if (n >= 1e8)  return (n / 1e8).toFixed(1) + '億'
   if (n >= 1e4)  return (n / 1e4).toFixed(1) + '万'
   return n.toLocaleString()
+}
+
+function LockedFeaturePanel({ title, description, onNavigate }) {
+  return <div style={{minHeight:'190px',display:'grid',placeItems:'center',background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'10px',margin:'8px 0 18px',textAlign:'center',padding:'24px'}}>
+    <div><div style={{fontSize:'32px',marginBottom:'8px'}}>🔒</div><div style={{fontSize:'15px',fontWeight:700,color:'var(--text)',marginBottom:'6px'}}>{title}</div><div style={{fontSize:'11px',color:'var(--text3)',lineHeight:1.75,marginBottom:'14px'}}>{description}</div><button onClick={()=>onNavigate?.('プラン・料金')} style={{padding:'8px 16px',borderRadius:'7px',border:'1px solid var(--accent)',background:'rgba(74,158,255,.12)',color:'var(--accent)',cursor:'pointer',fontFamily:'var(--font)',fontSize:'11px',fontWeight:700}}>プランを確認</button></div>
+  </div>
 }
 
 function Loading() {
@@ -593,11 +601,12 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
   const pct  = item.pct ?? 0
   const val  = item[valueKey] ?? 0
   const barW = maxAbs ? Math.min(Math.abs(val) / maxAbs * 100, 100) : Math.min(Math.abs(pct) / 25 * 100, 100)
-  const displayReturn = valueKey === 'relative_pct' ? val : pct
-  const col  = pctColor(displayReturn)
+  const isScore=valueKey==='stockwave_score'
+  const displayReturn=valueKey==='relative_pct'?val:pct
+  const col=isScore?(val>=65?'#ff5370':val>=50?'#ffb84d':'#4caf82'):pctColor(displayReturn)
   const badgeOpacity = Math.max(1 - (rank - 1) * 0.028, 0.25)
   const isUp = displayReturn >= 0
-  const badgeColor = (valueKey === 'pct' || valueKey === 'relative_pct')
+  const badgeColor = isScore ? '#aa77ff' : (valueKey === 'pct' || valueKey === 'relative_pct')
     ? (isUp ? `rgba(226,75,74,${badgeOpacity})` : `rgba(29,158,117,${badgeOpacity})`)
     : barColor || '#378ADD'
   const isTopBadge = rank <= 3
@@ -636,7 +645,13 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
           })()}
         </div>
 
-        {(valueKey === 'pct' || valueKey === 'relative_pct') ? (
+        {valueKey === 'stockwave_score' ? (
+          <>
+            <div style={{fontSize:'17px',fontWeight:800,color:col,fontFamily:'var(--mono)'}}>{val==null?'—':`${Math.round(val)} / 100`}</div>
+            <div style={{height:'4px',background:'rgba(128,128,128,.15)',borderRadius:'3px',margin:'5px 0'}}><div style={{width:`${Math.max(0,Math.min(Number(val)||0,100))}%`,height:'100%',background:col,borderRadius:'3px'}}/></div>
+            <div style={{fontSize:'10px',color:'var(--text3)'}}>上昇比率 {item.stockwave_breadth==null?'—':`${Math.round(item.stockwave_breadth*100)}%`} · 中央値 {item.stockwave_median==null?'—':`${item.stockwave_median>=0?'+':''}${item.stockwave_median.toFixed(2)}%`}</div>
+          </>
+        ) : (valueKey === 'pct' || valueKey === 'relative_pct') ? (
           <>
             <div style={{ fontSize:'15px', fontWeight:700, color:col, fontFamily:'var(--mono)', lineHeight:1.2 }}>
               {displayReturn >= 0 ? '+' : ''}{displayReturn.toFixed(2)}{valueKey === 'relative_pct' ? 'pt' : '%'}
@@ -729,20 +744,19 @@ function ThemeCard({ item, rank, maxAbs, valueKey='pct', barColor, pctColor, pct
 }
 
 
-function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap }) {
+function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, volRankMap, tvRankMap, onNavigate, momentumMap, freeLimited=false }) {
   // ② デフォルト4件、TOP10・全件ボタン横並び
   const [displayMode, setDisplayMode] = useState('top4') // 'top4' | 'top10' | 'all'
   const DEFAULT_LIMIT = 4
   const TOP10_LIMIT = 10
-  const displayed = displayMode === 'all' ? items
-    : displayMode === 'top10' ? items.slice(0, TOP10_LIMIT)
-    : items.slice(0, DEFAULT_LIMIT)
+  const edgeItems=freeLimited?[...items.slice(0,5),...items.slice(-5)].filter((x,i,a)=>a.findIndex(y=>y.theme===x.theme)===i).map(x=>({...x,_displayRank:items.findIndex(y=>y.theme===x.theme)+1})):null
+  const displayed=freeLimited?edgeItems:displayMode==='all'?items:displayMode==='top10'?items.slice(0,TOP10_LIMIT):items.slice(0,DEFAULT_LIMIT)
   const maxVal = (valueKey === 'pct' || valueKey === 'relative_pct') ? 0 : Math.max(...displayed.map(t => Math.abs(t[valueKey] || 0)), 0)
   return (
     <>
     <div className="theme-card-grid">
       {displayed.map((item, idx) => (
-        <ThemeCard key={item.theme} item={item} rank={idx+1}
+        <ThemeCard key={item.theme} item={item} rank={item._displayRank || idx+1}
           maxAbs={maxVal} valueKey={valueKey}
           barColor={barColor} pctColor={pctColor}
           pctRank={pctRankMap?.get(item.theme)}
@@ -753,6 +767,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
           momentumPct={momentumMap?.get(item.theme)?.pct} />
       ))}
     </div>
+    {!freeLimited && <>
     {/* ② 展開ボタン横並び */}
     <div style={{ display:'flex', gap:'8px', marginTop:'12px', marginBottom:'4px', justifyContent:'center', flexWrap:'wrap' }}>
       {displayMode !== 'top4' && (
@@ -777,6 +792,7 @@ function ThemeCardGrid({ items, pctColor, valueKey='pct', barColor, pctRankMap, 
         }}>全{items.length}テーマを表示</button>
       )}
     </div>
+    </>}
     </>
   )
 }
@@ -1193,6 +1209,8 @@ export default function ThemeList({ onNavigate }) {
   const [period, setPeriod] = useState('1mo')
   const [rankingMetric, setRankingMetric] = useState('pct')
   const [rankingOrder, setRankingOrder] = useState('desc')
+  const [marketJson, setMarketJson] = useState({})
+  const { plan, isFree, loading: subscriptionLoading, canAccessPeriod, canAccess } = useSubscription()
   const { data: monthlyRaw } = useMonthlyHeatmap()
   const monthlyData = monthlyRaw?.data || null
   const months = monthlyRaw?.months || []
@@ -1206,9 +1224,13 @@ export default function ThemeList({ onNavigate }) {
         const vtData = {}
         vtKeys.forEach(k => { vtData[k] = mj[k] })
         setVolTrendData(vtData)
+        setMarketJson(mj)
       })
       .catch(() => {})
   }, [])
+  useEffect(() => {
+    if (!subscriptionLoading && !canAccessPeriod(period)) setPeriod('3mo')
+  }, [plan, subscriptionLoading, period])
   const { themes: customThemes } = useCustomThemes()
   const { data: macroRaw } = useMacro(period)  // 選択期間と同じ市場平均を参照
   const { data: momentumData } = useMomentum(period)
@@ -1234,12 +1256,16 @@ export default function ThemeList({ onNavigate }) {
 
   const themeRows = data?.themes ?? []
   const marketPct = pct1306 ?? pct1321 ?? 0
-  const themes = themeRows.map(t => ({ ...t, market_pct: marketPct, relative_pct: (Number(t.pct) || 0) - marketPct }))
+  const themes = themeRows.map(t => {
+    const detail=marketJson[`theme_detail_${t.theme}_${period}`]||{}
+    const result=calculateStockWaveScore(detail.stocks||[],t.pct)
+    return {...t,market_pct:marketPct,relative_pct:(Number(t.pct)||0)-marketPct,stockwave_score:result.score,stockwave_breadth:result.breadth,stockwave_median:result.median}
+  })
   const summary  = data?.summary ?? {}
   const byPctAsc = [...themes].sort((a, b) => a.pct - b.pct)
   const byVol    = [...themes].sort((a, b) => (b.volume || 0) - (a.volume || 0))
   const byTV     = [...themes].sort((a, b) => (b.trade_value || 0) - (a.trade_value || 0))
-  const rankingConfig = { pct:{label:'騰落率'}, relative_pct:{label:'市場超過騰落率',color:'#aa77ff'}, volume:{label:'出来高',color:'#378ADD'}, trade_value:{label:'売買代金',color:'#ff8c42'} }[rankingMetric]
+  const rankingConfig = { pct:{label:'騰落率'}, relative_pct:{label:'市場超過騰落率',color:'#aa77ff'}, volume:{label:'出来高',color:'#378ADD'}, trade_value:{label:'売買代金',color:'#ff8c42'}, stockwave_score:{label:'StockWaveスコア',color:'#aa77ff'} }[rankingMetric]
   const rankingItems = [...themes].sort((a,b) => {
     const av = Number(a?.[rankingMetric]) || 0, bv = Number(b?.[rankingMetric]) || 0
     return rankingOrder === 'asc' ? av - bv : bv - av
@@ -1267,7 +1293,7 @@ export default function ThemeList({ onNavigate }) {
       <div className="page-header-sticky">
         <h1 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', whiteSpace: 'nowrap' }}>テーマ一覧</h1>
         <select value={period} onChange={e => setPeriod(e.target.value)} style={selStyle}>
-          {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
+          {PERIODS.map(p => <option key={p.value} value={p.value} disabled={!canAccessPeriod(p.value)}>{p.label}{!canAccessPeriod(p.value) ? ' 🔒' : ''}</option>)}
         </select>
         <div style={{ marginLeft: 'auto' }}>
           <RefreshIndicator refreshing={refreshing} lastUpdate={lastUpdate} onRefresh={refresh} />
@@ -1368,10 +1394,11 @@ export default function ThemeList({ onNavigate }) {
 
             {/* 全テーマ統合ランキング */}
             <SectionHead title="📊 全テーマランキング" />
+            <div style={{fontSize:'10px',color:'var(--text3)',margin:'-4px 0 10px'}}>{isFree?'Freeプランではランキング上位5・下位5テーマのみ表示します。':'スタンダード・プロでは全テーマと全期間を利用できます。'}</div>
             <div className="ranking-controls" style={{ display:'flex', gap:'8px', alignItems:'center', flexWrap:'wrap', marginBottom:'12px', padding:'10px 12px', background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px' }}>
               <span className="ranking-metric-label" style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>表示指標</span>
               <select className="ranking-select" aria-label="ランキング表示指標" value={rankingMetric} onChange={e => setRankingMetric(e.target.value)} style={selStyle}>
-                <option value="pct">騰落率</option><option value="relative_pct">市場超過騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option>
+                <option value="pct">騰落率</option><option value="relative_pct">市場超過騰落率</option><option value="volume">出来高</option><option value="trade_value">売買代金</option><option value="stockwave_score">StockWaveスコア{isFree ? ' 🔒' : ''}</option>
               </select>
               <span className="ranking-order-label" style={{ fontSize:'11px', color:'var(--text3)', fontWeight:600 }}>並び順</span>
               <select className="ranking-select" aria-label="ランキング並び順" value={rankingOrder} onChange={e => setRankingOrder(e.target.value)} style={selStyle}>
@@ -1379,7 +1406,11 @@ export default function ThemeList({ onNavigate }) {
               </select>
               <span className="ranking-summary" style={{ marginLeft:'auto', fontSize:'11px', color:'var(--text3)' }}>{rankingConfig.label}・{rankingOrder==='desc'?'高い順':'低い順'}</span>
             </div>
-            <ThemeCardGrid items={rankingItems} pctColor={pctColor} valueKey={rankingMetric} barColor={rankingConfig.color} pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={rankingMetric==='pct'?momentumMap:undefined} />
+            {rankingMetric==='stockwave_score'&&!canAccess('stockwave_score')?(
+              <LockedFeaturePanel title='StockWaveスコア' description='StockWaveスコアはスタンダード・プロプランで利用できます。' onNavigate={onNavigate} />
+            ):(
+              <ThemeCardGrid items={rankingItems} pctColor={pctColor} valueKey={rankingMetric} barColor={rankingConfig.color} pctRankMap={pctRankMap} volRankMap={volRankMap} tvRankMap={tvRankMap} onNavigate={onNavigate} momentumMap={rankingMetric==='pct'?momentumMap:undefined}  freeLimited={isFree} />
+            )}
 
             {/* マイカスタムテーマ（騰落率つき） */}
             {customThemes.length > 0 && (
@@ -1390,7 +1421,9 @@ export default function ThemeList({ onNavigate }) {
             )}
 
             {/* 📅 月次グラフ ＋ ヒートマップ: PC版2×2グリッド */}
-            {Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
+            {!canAccess('theme_trend_charts')?(
+              <LockedFeaturePanel title='テーマ推移グラフ' description='月次騰落率・出来高・売買代金・ヒートマップはスタンダード・プロプランで利用できます。' onNavigate={onNavigate} />
+            ):Object.keys(volTrendData).length > 0 && months.length > 0 && (() => {
               const allThemeNames = Object.keys(volTrendData).map(k => k.replace('vol_trend_', ''))
               return (
                 <div className="monthly-chart-grid">

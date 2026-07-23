@@ -1,11 +1,30 @@
 import { stockWaveScoreLabel } from '../utils/stockWaveScore'
+import { useSubscription } from '../hooks/useSubscription.jsx'
 
 export default function StockWaveScoreCard({ result, locale='en', compact=false }) {
+  const { canAccess } = useSubscription()
   const isJa=locale==='ja'
   const score=result?.score
   const label=stockWaveScoreLabel(score,locale)
   const pct=value=>value==null?'—':`${Math.round(value*100)}%`
   const num=value=>value==null?'—':`${value>=0?'+':''}${value.toFixed(2)}%`
+
+  if (!canAccess('stockwave_score')) {
+    return (
+      <section className={compact?'stockwave-score compact':'stockwave-score'} style={{
+        minHeight:compact?'72px':'104px',display:'grid',placeItems:'center',textAlign:'center',
+        background:'linear-gradient(135deg,rgba(74,158,255,.055),rgba(170,119,255,.04))',
+        border:'1px solid rgba(74,158,255,.2)',borderRadius:'10px',padding:compact?'10px 12px':'14px 16px',
+        marginBottom:compact?0:'12px',
+      }}>
+        <div>
+          <div style={{fontSize:'18px',marginBottom:'4px'}}>🔒</div>
+          <div style={{fontSize:'11px',fontWeight:800,color:'var(--text)'}}>{isJa?'StockWaveスコア':'StockWave Score'}</div>
+          <div style={{fontSize:'9px',color:'var(--text3)',marginTop:'3px'}}>{isJa?'スタンダード・プロで利用できます':'Available on Standard and Pro plans'}</div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section className={compact?'stockwave-score compact':'stockwave-score'} style={{

@@ -1,0 +1,23 @@
+{
+  "project": "JP",
+  "changed_files": [
+    "frontend/src/components/pages/ThemeList.jsx",
+    "frontend/src/components/pages/ThemeDetail.jsx",
+    "frontend/src/components/pages/MarketRank.jsx",
+    "frontend/src/components/StockWaveScoreCard.jsx",
+    "frontend/src/hooks/useSubscription.jsx",
+    "frontend/src/utils/stockWaveScore.js"
+  ],
+  "checks": {
+    "stockwave_score_ranking": true,
+    "free_top_bottom_five": true,
+    "trend_charts_locked_for_free": true,
+    "score_locked_for_free": true,
+    "paid_all_periods": true,
+    "theme_detail_header_sort": true,
+    "market_detail_header_sort": true,
+    "jsx_parse": true
+  },
+  "vite_build": "not run in this packaging environment",
+  "validation_performed": "TypeScript JSX parser and source behavior checks"
+}

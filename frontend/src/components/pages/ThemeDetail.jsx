@@ -491,12 +491,17 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
   const startX = useRef(0)
   const scrollLeft = useRef(0)
 
-  // ⑤ ソート処理
-  const stocks = [...rawStocks].sort((a, b) => {
-    const va = a[sortKey] ?? 0
-    const vb = b[sortKey] ?? 0
-    return sortAsc ? va - vb : vb - va
-  })
+  const getSortValue=(row,key)=>{
+    if(key==='_originalIndex')return row._originalIndex
+    if(key==='name')return String(row.name||'')
+    if(key==='spark_last'){const a=Array.isArray(row.spark)?row.spark:[];return a.length?Number(a[a.length-1]):null}
+    if(key==='usd_price')return Number(row.price||0)/Number(usdJpy||1)
+    return row[key]
+  }
+  const handleSort=key=>{if(!key)return;if(sortKey===key)setSortAsc(v=>!v);else{setSortKey(key);setSortAsc(false)}}
+  const sortIndicator=key=>sortKey===key?(sortAsc?' ↑':' ↓'):''
+  const stocks=[...rawStocks].map((stock,index)=>({...stock,_originalIndex:index}))
+    .sort((a,b)=>{const va=getSortValue(a,sortKey),vb=getSortValue(b,sortKey);const am=va==null||va==='',bm=vb==null||vb=='';if(am||bm)return am===bm?0:am?1:-1;const r=(typeof va==='string'||typeof vb==='string')?String(va).localeCompare(String(vb),undefined,{numeric:true,sensitivity:'base'}):Number(va)-Number(vb);return sortAsc?r:-r})
 
   // ② 上部スクロールバーと表を同期
   useEffect(() => {
@@ -541,6 +546,7 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
   }
 
   const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
+  const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','時価総額':'market_cap','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd'}
   const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
   const { plan } = useSubscription()
   const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
@@ -598,15 +604,9 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
         <table style={{ borderCollapse:'collapse', fontSize:'12px', fontFamily:'var(--font)', width:'100%' }}>
           <thead>
             <tr style={{ borderBottom:'1px solid var(--border)' }}>
-              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }}>順</th>
-              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }}>銘柄名</th>
-              {headers.map(h => (
-                <th key={h} style={{ ...thStyle, minWidth: h === 'ミニチャート' ? '72px' : '80px',
-                  width: h === 'ミニチャート' ? '72px' : undefined,
-                  color: VALUATION_HEADERS.includes(h) && !isSubscribed ? 'var(--text3)' : undefined }}>
-                  {VALUATION_HEADERS.includes(h) && !isSubscribed ? '🔒 ' : ''}{h}
-                </th>
-              ))}
+              <th className="sticky-col1" style={{ ...thStyle, textAlign:'center', width:'32px', minWidth:'32px', maxWidth:'32px', padding:'8px 4px', background:'var(--bg3)', position:'sticky', left:0, zIndex:3 }} onClick={()=>handleSort('_originalIndex')}>順{sortIndicator('_originalIndex')}</th>
+              <th className="sticky-col2" style={{ ...thStyle, textAlign:'left', minWidth:'120px', background:'var(--bg3)', position:'sticky', left:'32px', zIndex:3 }} onClick={()=>handleSort('name')}>銘柄名{sortIndicator('name')}</th>
+              {headers.map(h=>{const key=HEADER_SORT_KEYS[h];const locked=VALUATION_HEADERS.includes(h)&&!isSubscribed;const sortable=Boolean(key)&&!locked;return <th key={h} onClick={()=>sortable&&handleSort(key)} style={{...thStyle,minWidth:(h==='ミニチャート'||h==='Chart')?'72px':'80px',width:(h==='ミニチャート'||h==='Chart')?'72px':undefined,color:locked?'var(--text3)':undefined,cursor:sortable?'pointer':'default'}}>{locked?'🔒 ':''}{h}{sortable?sortIndicator(key):''}</th>})}
               <th style={{ ...thStyle, minWidth:'60px', background:'var(--bg3)' }}>追加</th>
             </tr>
           </thead>
