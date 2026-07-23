@@ -1,72 +1,17 @@
 import { useState } from 'react'
 import { useAuth } from '../hooks/useAuth.jsx'
 import { useSubscription } from '../hooks/useSubscription.jsx'
-
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
-let backendWarmed = false
-export function warmupBackend() {
-  if (backendWarmed) return
-  backendWarmed = true
-  fetch(`${API}/api/ping`, { method:'GET' }).catch(() => {})
-}
-
-async function getAccessToken() {
-  const { supabase } = await import('../lib/supabase')
-  const { data:{ session } } = await supabase.auth.getSession()
-  return session?.access_token || ''
-}
-
-export default function UpgradePlanButton({ priceKey, label, color, disabled }) {
-  const { user, isLoggedIn, signIn } = useAuth()
-  const { plan: currentPlan } = useSubscription()
-  const [loading, setLoading] = useState(false)
-  const targetPlan = priceKey.includes('pro') ? 'pro' : 'standard'
-  const isActive = currentPlan === targetPlan
-  const hasPaidSubscription = currentPlan === 'standard' || currentPlan === 'pro'
-
-  if (disabled) return <div style={{marginTop:'14px',padding:'12px',textAlign:'center',background:'var(--bg3)',borderRadius:'8px',fontSize:'12px',color:'var(--text3)',fontFamily:'var(--font)'}}>近日公開予定</div>
-  if (isActive) return <div style={{marginTop:'14px',padding:'10px',textAlign:'center',background:`${color}20`,border:`1px solid ${color}50`,borderRadius:'8px',fontSize:'12px',color,fontFamily:'var(--font)',fontWeight:700}}>✅ 現在のプラン</div>
-
-  const openPortal = async () => {
-    const token = await getAccessToken()
-    const res = await fetch(`${API}/api/stripe/create-portal`, { method:'POST', headers:{'Content-Type':'application/json','Authorization':`Bearer ${token}`}, body:JSON.stringify({}) })
-    const data = await res.json()
-    if (!res.ok || !data.url) throw new Error(data.detail || '支払い管理ポータルを開けませんでした')
-    window.location.assign(data.url)
-  }
-
-  const startCheckout = async () => {
-    const token = await getAccessToken()
-    const res = await fetch(`${API}/api/stripe/create-checkout`, {
-      method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':`Bearer ${token}`},
-      body:JSON.stringify({price_key:priceKey,user_id:user.id,email:user.email,success_url:window.location.origin,cancel_url:window.location.origin})
-    })
-    const data = await res.json()
-    if (!res.ok || !data.url) throw new Error(data.detail || data.error || '決済ページを開けませんでした')
-    window.location.assign(data.url)
-  }
-
-  const handleClick = async () => {
-    if (!isLoggedIn) { signIn(); return }
-    setLoading(true)
-    try {
-      if (hasPaidSubscription) await openPortal()
-      else await startCheckout()
-    } catch (error) {
-      window.alert(error.message || '処理に失敗しました。時間をおいて再試行してください。')
-      setLoading(false)
-    }
-  }
-
-  const actionLabel = hasPaidSubscription
-    ? `支払い管理で${label}へ変更 →`
-    : `${label}に申し込む →`
-
-  return <div>
-    <button onClick={handleClick} onMouseEnter={warmupBackend} disabled={loading} style={{width:'100%',padding:'12px',marginTop:'14px',background:loading?'var(--bg3)':color,color:'#fff',border:'none',borderRadius:'8px',fontFamily:'var(--font)',fontSize:'13px',fontWeight:700,cursor:loading?'wait':'pointer',opacity:loading ? .7 : 1,transition:'opacity .15s'}}>
-      {loading ? '読み込み中...' : isLoggedIn ? actionLabel : '🔑 ログインして申し込む'}
-    </button>
-    {hasPaidSubscription && <div style={{fontSize:'10px',color:'var(--text3)',marginTop:'6px',lineHeight:1.6}}>※ 既存契約の変更はStripeの支払い管理画面で行います。新しい契約を重複作成しません。</div>}
-  </div>
+import { LEGAL_VERSIONS } from './LegalConsentGate.jsx'
+const API=import.meta.env.VITE_API_URL||'http://127.0.0.1:8000'
+async function token(){const {supabase}=await import('../lib/supabase');const {data:{session}}=await supabase.auth.getSession();return session?.access_token||''}
+export function warmupBackend(){fetch(`${API}/api/ping`).catch(()=>{})}
+export default function UpgradePlanButton({priceKey,label,color,disabled}){
+ const {user,isLoggedIn,signIn}=useAuth();const {plan,status}=useSubscription();const [loading,setLoading]=useState(false);const [show,setShow]=useState(false);const [agreed,setAgreed]=useState(false)
+ const target=priceKey.includes('pro')?'pro':'standard';const isActive=plan===target;const paid=['standard','pro'].includes(plan)
+ if(disabled)return <div style={{marginTop:'14px',padding:'12px',textAlign:'center',background:'var(--bg3)',borderRadius:'8px',fontSize:'12px',color:'var(--text3)'}}>近日公開予定</div>
+ const call=async(path,body={})=>{const r=await fetch(`${API}${path}`,{method:'POST',headers:{'Content-Type':'application/json','Authorization':`Bearer ${await token()}`},body:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw new Error(d.detail||d.error||'処理に失敗しました。');return d}
+ const checkout=async()=>{setLoading(true);try{const d=await call('/api/stripe/create-checkout',{price_key:priceKey,user_id:user.id,email:user.email,success_url:location.origin,cancel_url:location.origin,legal_consent:true,terms_version:LEGAL_VERSIONS.terms,privacy_version:LEGAL_VERSIONS.privacy,disclaimer_version:LEGAL_VERSIONS.disclaimer});if(d.resumed){location.reload();return};location.assign(d.url)}catch(e){alert(e.message)}finally{setLoading(false)}}
+ const click=async()=>{if(!isLoggedIn){signIn();return};if(isActive&&status==='canceling'){setLoading(true);try{await call('/api/stripe/resume-subscription');location.reload()}catch(e){alert(e.message)}finally{setLoading(false)};return};if(paid){setLoading(true);try{const d=await call('/api/stripe/create-portal');location.assign(d.url)}catch(e){alert(e.message)}finally{setLoading(false)};return};setShow(true)}
+ if(isActive&&status!=='canceling')return <div style={{marginTop:'14px',padding:'10px',textAlign:'center',background:`${color}20`,border:`1px solid ${color}50`,borderRadius:'8px',fontSize:'12px',color,fontWeight:700}}>✅ 現在のプラン</div>
+ return <div>{show&&<div style={{position:'fixed',inset:0,zIndex:6000,display:'grid',placeItems:'center',padding:'18px',background:'rgba(3,7,15,.84)'}}><div style={{width:'min(520px,100%)',background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'13px',padding:'20px'}}><h3 style={{margin:'0 0 8px',color:'var(--text)'}}>有料プラン申込みの確認</h3><p style={{fontSize:'12px',lineHeight:1.8,color:'var(--text2)'}}>料金、自動更新、解約条件と3つの法的文書を確認してからStripeへ進みます。</p><label style={{display:'flex',gap:'8px',fontSize:'12px',color:'var(--text2)',padding:'11px',border:'1px solid var(--border)',borderRadius:'8px'}}><input type="checkbox" checked={agreed} onChange={e=>setAgreed(e.target.checked)}/><span>利用規約・プライバシーポリシー・免責事項、および定期課金・自動更新・解約条件に同意します。</span></label><div style={{display:'flex',gap:'8px',marginTop:'13px'}}><button onClick={()=>setShow(false)} style={{flex:1,padding:'9px',borderRadius:'7px',border:'1px solid var(--border)',background:'var(--bg3)',color:'var(--text2)'}}>戻る</button><button disabled={!agreed} onClick={()=>{setShow(false);checkout()}} style={{flex:1,padding:'9px',borderRadius:'7px',border:0,background:agreed?color:'var(--bg3)',color:'#fff'}}>Stripeへ進む</button></div></div></div>}<button onClick={click} onMouseEnter={warmupBackend} disabled={loading} style={{width:'100%',padding:'12px',marginTop:'14px',background:loading?'var(--bg3)':color,color:'#fff',border:'none',borderRadius:'8px',fontSize:'13px',fontWeight:700,cursor:loading?'wait':'pointer'}}>{loading?'読み込み中…':!isLoggedIn?'🔑 ログインして申し込む':isActive&&status==='canceling'?'解約予約を取り消して継続':paid?'支払い管理で変更 →':`${label} に申し込む →`}</button></div>
 }

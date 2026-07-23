@@ -26,6 +26,10 @@ class CheckoutReq(BaseModel):
     success_url: str
     cancel_url: str
     billing_timing: str | None = None
+    legal_consent: bool = False
+    terms_version: str | None = None
+    privacy_version: str | None = None
+    disclaimer_version: str | None = None
 from datetime import datetime
 import pytz
 
@@ -716,6 +720,22 @@ async def cancel_subscription(request: Request):
         raise HTTPException(status_code=500, detail=str(exc))
 
 
+@app.post("/api/stripe/resume-subscription")
+async def resume_subscription(request: Request):
+    try:
+        sb, auth_user = _authenticated_supabase_user(request)
+        rows = _subscription_rows(sb, auth_user.id)
+        row = next((r for r in rows if r.get('status') == 'canceling' and r.get('stripe_subscription_id')), None)
+        if not row:
+            raise HTTPException(status_code=404, detail='解約予約中の契約が見つかりません')
+        _stripe.Subscription.modify(row['stripe_subscription_id'], cancel_at_period_end=False)
+        sb.table('subscriptions').update({'status':'active'}).eq('stripe_subscription_id', row['stripe_subscription_id']).execute()
+        return {'ok':True,'message':'解約予約を取り消し、契約を継続しました。'}
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
 @app.post("/api/stripe/create-portal")
 async def create_portal(request: Request):
     try:
@@ -734,6 +754,8 @@ async def create_portal(request: Request):
 
 @app.post("/api/stripe/create-checkout")
 async def create_checkout(req: CheckoutReq, request: Request):
+    if not req.legal_consent:
+        raise HTTPException(status_code=400, detail='利用規約・プライバシーポリシー・免責事項への同意が必要です。')
     pid = _PRICE_IDS.get(req.price_key)
     if not pid:
         missing = 'STRIPE_PRICE_STD_MONTHLY' if 'standard' in req.price_key else 'STRIPE_PRICE_PRO_MONTHLY'
@@ -743,11 +765,27 @@ async def create_checkout(req: CheckoutReq, request: Request):
         user_id = auth_user.id
         if req.user_id and req.user_id != user_id:
             raise HTTPException(status_code=403, detail='認証ユーザーが一致しません')
+        try:
+            sb.table('legal_consents').insert({
+                'user_id': user_id,
+                'terms_version': req.terms_version or '',
+                'privacy_version': req.privacy_version or '',
+                'disclaimer_version': req.disclaimer_version or '',
+                'locale': 'ja',
+                'source': 'subscription_checkout',
+                'user_agent': request.headers.get('user-agent', ''),
+            }).execute()
+        except Exception as exc:
+            raise HTTPException(status_code=500, detail=f'同意記録を保存できませんでした: {exc}')
         rows = _subscription_rows(sb, user_id)
         active = next((r for r in rows if r.get('status') in ('active', 'canceling', 'past_due', 'trialing') and r.get('stripe_subscription_id')), None)
-        if active:
-            raise HTTPException(status_code=409, detail='既存の有料契約があります。プラン変更は支払い管理ポータルから行ってください。')
         plan = 'standard' if 'standard' in req.price_key else 'pro'
+        if active:
+            if active.get('status') == 'canceling' and active.get('plan') == plan:
+                _stripe.Subscription.modify(active['stripe_subscription_id'], cancel_at_period_end=False)
+                sb.table('subscriptions').update({'status':'active'}).eq('stripe_subscription_id', active['stripe_subscription_id']).execute()
+                return {'resumed':True,'message':'解約予約を取り消し、現在の契約を継続しました。新しい契約や即時請求は作成していません。'}
+            raise HTTPException(status_code=409, detail='有効な契約があります。プラン変更は支払い管理ポータルから行ってください。')
         customer_id = next((r.get('stripe_customer_id') for r in rows if r.get('stripe_customer_id')), None)
         params = {
             'payment_method_types':['card'],
@@ -756,8 +794,8 @@ async def create_checkout(req: CheckoutReq, request: Request):
             'client_reference_id':user_id,
             'success_url':req.success_url + '?checkout=success',
             'cancel_url':req.cancel_url + '?checkout=cancel',
-            'subscription_data':{'metadata':{'user_id':user_id,'plan':plan}},
-            'metadata':{'user_id':user_id,'plan':plan},
+            'subscription_data':{'metadata':{'user_id':user_id,'plan':plan,'legal_consent':'true','terms_version':req.terms_version or '','privacy_version':req.privacy_version or '','disclaimer_version':req.disclaimer_version or ''}},
+            'metadata':{'user_id':user_id,'plan':plan,'legal_consent':'true','terms_version':req.terms_version or '','privacy_version':req.privacy_version or '','disclaimer_version':req.disclaimer_version or ''},
             'locale':'ja',
         }
         if customer_id:

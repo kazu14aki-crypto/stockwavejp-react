@@ -26,6 +26,7 @@ export function SubscriptionProvider({ children }) {
   const [plan,      setPlan]      = useState('free')   // 'free' | 'standard' | 'pro' | 'trial_expired' | 'dev'
   const [loading,   setLoading]   = useState(true)
   const [expiresAt, setExpiresAt] = useState(null)
+  const [status, setStatus] = useState(null)
 
   useEffect(() => {
     let cancelled = false
@@ -65,6 +66,7 @@ export function SubscriptionProvider({ children }) {
           if (isValid) {
             if (!cancelled) {
               setPlan(subData.plan || 'free')
+              setStatus(subData.status || null)
               setExpiresAt(expiry)
               setLoading(false)
             }
@@ -111,6 +113,7 @@ export function SubscriptionProvider({ children }) {
     plan,
     loading,
     expiresAt,
+    status,
     // 便利なbooleanヘルパー
     isFree:     plan === 'free',
     isStandard: ['standard','pro','pro_trial','dev'].includes(plan),

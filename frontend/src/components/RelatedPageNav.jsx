@@ -86,6 +86,7 @@ export default function RelatedPageNav({ currentPage, onNavigate }) {
         ))}
       </div>
       <style>{`
+        @media(min-width:769px){.related-page-nav{display:none!important}}
         @media (max-width: 640px) {
           .related-page-nav { padding:6px 8px !important; }
           .related-page-nav-title { display:none !important; }

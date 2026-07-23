@@ -26,6 +26,7 @@ import Plan         from './components/pages/Plan'
 import DevEdge      from './components/pages/DevEdge'
 import StockDetail  from './components/pages/StockDetail'
 import ErrorBoundary from './components/ErrorBoundary'
+import LegalConsentGate from './components/LegalConsentGate'
 import RelatedPageNav, { hasRelatedPageNav } from './components/RelatedPageNav'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
@@ -80,6 +81,8 @@ function AppInner() {
       setTargetArticleId(articleId)
     } else if (hash === 'terms') {
       setCurrentPage('利用規約')
+    } else if (hash === 'disclaimer') {
+      setCurrentPage('免責事項')
     } else if (hash === 'privacy') {
       setCurrentPage('プライバシーポリシー')
     }
@@ -217,6 +220,7 @@ function AppInner() {
         onViewModeChange={setViewMode}
         onLogoClick={handleLogoClick}
       />
+      <LegalConsentGate onNavigate={handlePageChange} />
 
       {sidebarOpen && isMobile && (
         <div onClick={() => setSidebarOpen(false)} style={{

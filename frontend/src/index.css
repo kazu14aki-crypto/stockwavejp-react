@@ -350,3 +350,5 @@ body {
 [data-theme="light"] table * { cursor: default; }
 /* ③ ライトテーマ: 上昇赤をlogo-redと揃え、緑を明るく */
 [data-theme="light"] { --red: #e63030; --green: #1a9a50; }
+
+@media(min-width:769px){.has-related-page-nav .page-header-sticky{top:var(--header)!important}}

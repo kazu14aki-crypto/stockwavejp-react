@@ -499,7 +499,7 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
     return row[key]
   }
   const handleSort=key=>{if(!key)return;if(sortKey===key)setSortAsc(v=>!v);else{setSortKey(key);setSortAsc(false)}}
-  const sortIndicator=key=>sortKey===key?(sortAsc?' ↑':' ↓'):''
+  const sortIndicator=key=>sortKey===key?(sortAsc?' ↑':' ↓'):' ↕'
   const stocks=[...rawStocks].map((stock,index)=>({...stock,_originalIndex:index}))
     .sort((a,b)=>{const va=getSortValue(a,sortKey),vb=getSortValue(b,sortKey);const am=va==null||va==='',bm=vb==null||vb=='';if(am||bm)return am===bm?0:am?1:-1;const r=(typeof va==='string'||typeof vb==='string')?String(va).localeCompare(String(vb),undefined,{numeric:true,sensitivity:'base'}):Number(va)-Number(vb);return sortAsc?r:-r})
 
@@ -548,45 +548,12 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
   const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
   const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','時価総額':'market_cap','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd'}
   const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
-  const { plan } = useSubscription()
+  const { plan, canAccessPeriod } = useSubscription()
   const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
-
-  // ⑤ ソートボタン定義
-  const sortBtns = [
-    { key:'pct', label:'騰落率' },
-    { key:'volume', label:'出来高' },
-    { key:'trade_value', label:'売買代金' },
-  ]
 
   return (
     <>
       {modalStock && <AddToThemeModal stock={modalStock} onClose={() => setModalStock(null)} />}
-
-      {/* ⑤ ソートボタン */}
-      <div style={{ display:'flex', gap:'6px', alignItems:'center', marginBottom:'8px', flexWrap:'wrap' }}>
-        <span style={{ fontSize:'10px', color:'var(--text3)', fontWeight:600, whiteSpace:'nowrap' }}>並び替え:</span>
-        {sortBtns.map(b => (
-          <button key={b.key} onClick={() => {
-            if (sortKey === b.key) setSortAsc(a => !a)
-            else { setSortKey(b.key); setSortAsc(false) }
-          }} style={{
-            padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600,
-            cursor:'pointer', fontFamily:'var(--font)',
-            background: sortKey === b.key ? 'rgba(74,158,255,0.15)' : 'transparent',
-            border: sortKey === b.key ? '1px solid rgba(74,158,255,0.4)' : '1px solid var(--border)',
-            color: sortKey === b.key ? 'var(--accent)' : 'var(--text3)',
-          }}>
-            {b.label} {sortKey === b.key ? (sortAsc ? '↑' : '↓') : ''}
-          </button>
-        ))}
-        <button onClick={() => setSortAsc(a => !a)} style={{
-          padding:'3px 10px', borderRadius:'5px', fontSize:'11px', fontWeight:600,
-          cursor:'pointer', fontFamily:'var(--font)',
-          background:'transparent', border:'1px solid var(--border)', color:'var(--text3)',
-        }}>
-          {sortAsc ? '↑ 昇順' : '↓ 降順'}
-        </button>
-      </div>
 
       {/* ② 上部スクロールバー */}
       <div ref={topScrollRef} style={{ overflowX:'auto', overflowY:'hidden', height:'12px', marginBottom:'2px',
@@ -814,8 +781,9 @@ function ThemeReturnDistribution({ series, themeName }) {
 }
 
 export default function ThemeDetail({ onNavigate, initialTheme }) {
-  const { canAccessPeriod, canAccess } = useSubscription()
+  const { canAccessPeriod, canAccess, loading: subscriptionLoading } = useSubscription()
   const [period,      setPeriod]      = useState('1mo')
+  useEffect(() => { if (!subscriptionLoading && !canAccessPeriod(period)) setPeriod('3mo') }, [period, subscriptionLoading, canAccessPeriod])
   const [themeNames,  setThemeNames]  = useState([])
   const [selTheme,    setSelTheme]    = useState(initialTheme || '')
   const [detail,      setDetail]      = useState(null)
@@ -1024,7 +992,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
           {themeNames.map(t => <option key={t} value={t}>{t}</option>)}
         </select>
         <select value={period} onChange={e => setPeriod(e.target.value)} style={{ ...selStyle, flexShrink:0 }}>
-          {PERIODS.map(p => <option key={p.value} value={p.value}>{p.label}</option>)}
+          {PERIODS.map(p => <option key={p.value} value={p.value} disabled={!canAccessPeriod(p.value)}>{p.label}{!canAccessPeriod(p.value)?' 🔒':''}</option>)}
         </select>
       </div>
 
