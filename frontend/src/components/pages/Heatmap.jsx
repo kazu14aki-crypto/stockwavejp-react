@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useMomentum } from '../../hooks/useMarketData'
+import StockWaveScoreCard from '../StockWaveScoreCard'
+import { calculateStockWaveScore } from '../../utils/stockWaveScore'
 
 const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
 
@@ -429,6 +431,7 @@ function SelectedThemePanel({ theme, period, bubble, onNavigate }) {
   const upCount = pctValues.filter(v => v > 0).length
   const totalTrade = stocks.reduce((sum, stock) => sum + Number(stock.trade_value || 0), 0)
   const totalVolume = stocks.reduce((sum, stock) => sum + Number(stock.volume || 0), 0)
+  const stockWaveScore = calculateStockWaveScore(stocks, bubble?.pct)
 
   return (
     <section className="heatmap-selected-panel" aria-live="polite">
@@ -445,6 +448,8 @@ function SelectedThemePanel({ theme, period, bubble, onNavigate }) {
           )}
         </div>
       </div>
+
+      <StockWaveScoreCard result={stockWaveScore} locale="ja" compact />
 
       <div className="heatmap-kpi-grid">
         <div><span>テーマ騰落率</span><strong style={{color:pctColor(bubble?.pct)}}>{Number(bubble?.pct)>=0?'+':''}{Number(bubble?.pct || 0).toFixed(2)}%</strong></div>

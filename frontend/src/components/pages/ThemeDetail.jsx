@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
+import StockWaveScoreCard from '../StockWaveScoreCard'
+import { calculateStockWaveScore } from '../../utils/stockWaveScore'
 
 // テーマ別詳細用：グラフ全体＋下部ボタンクリックで拡大
 function TdExpandable({ title, children, style }) {
@@ -1010,6 +1012,7 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
   // 上昇のみ・下落のみでフィルタリング
   const top5   = stocks.filter(s => s.pct > 0).slice(0, 5)
   const bot5   = [...stocks].sort((a, b) => a.pct - b.pct).filter(s => s.pct < 0).slice(0, 5)
+  const stockWaveScore = calculateStockWaveScore(stocks, detail?.avg)
   const macroNames = Object.keys(macroData)
 
   return (
@@ -1122,6 +1125,8 @@ export default function ThemeDetail({ onNavigate, initialTheme }) {
                 </div>
               </div>
             </div>
+
+            <StockWaveScoreCard result={stockWaveScore} locale="ja" />
 
             {/* TOP5グラフ - 全幅 */}
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px', marginBottom:'12px' }} className="top5g">
