@@ -8,9 +8,44 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import Disclaimer from './pages/Disclaimer.jsx'
 import LegalNotice from './pages/LegalNotice.jsx'
 import { supabase } from '../lib/supabase'
-const API=import.meta.env.VITE_API_URL||'http://127.0.0.1:8000'
-async function token(){const {data:{session}}=await supabase.auth.getSession();return session?.access_token||''}
-export function warmupBackend(){fetch(`${API}/api/ping`).catch(()=>{})}
+const API = import.meta.env.VITE_API_URL || (
+  typeof window !== 'undefined' && window.location.hostname.includes('stockwavejp')
+    ? 'https://stockwavejp-api.onrender.com'
+    : 'http://127.0.0.1:8000'
+)
+
+async function freshToken() {
+  const refreshed = await supabase.auth.refreshSession()
+  if (!refreshed.error && refreshed.data?.session?.access_token) {
+    return refreshed.data.session.access_token
+  }
+  const current = await supabase.auth.getSession()
+  if (current.error) throw current.error
+  const accessToken = current.data?.session?.access_token
+  if (!accessToken) throw new Error(ログイン情報を確認できませんでした。再度ログインしてください。)
+  return accessToken
+}
+
+async function warmupRequest() {
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), 15000)
+  try {
+    await fetch(`${API}/api/ping`, {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-store',
+      signal: controller.signal,
+    })
+  } catch {
+    // Render may still be waking up. The checkout request retries once below.
+  } finally {
+    clearTimeout(timeout)
+  }
+}
+
+export function warmupBackend() {
+  warmupRequest()
+}
 export default function UpgradePlanButton({priceKey,label,color,disabled}){
  const {user,isLoggedIn,signIn}=useAuth();const {plan,status}=useSubscription();const [loading,setLoading]=useState(false);const [show,setShow]=useState(false);const [error,setError]=useState('')
  const documents=useMemo(()=>[
@@ -21,12 +56,54 @@ export default function UpgradePlanButton({priceKey,label,color,disabled}){
  ],[])
  const target=priceKey.includes('pro')?'pro':'standard';const isActive=plan===target;const paid=['standard','pro'].includes(plan)
  if(disabled)return <div style={{marginTop:'14px',padding:'12px',textAlign:'center',background:'var(--bg3)',borderRadius:'8px',fontSize:'12px',color:'var(--text3)'}}>近日公開予定</div>
- const call=async(path,body={})=>{const r=await fetch(`${API}${path}`,{method:'POST',headers:{'Content-Type':'application/json','Authorization':`Bearer ${await token()}`},body:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw new Error(d.detail||d.error||'処理に失敗しました。');return d}
+ const call=async(path,body={})=>{
+  const requestOnce=async()=>{
+   const controller=new AbortController()
+   const timeout=setTimeout(()=>controller.abort(),45000)
+   try{
+    const accessToken=await freshToken()
+    const response=await fetch(`${API}${path}`,{
+     method:'POST',
+     mode:'cors',
+     cache:'no-store',
+     headers:{
+      'Content-Type':'application/json',
+      'Authorization':`Bearer ${accessToken}`,
+     },
+     body:JSON.stringify(body),
+     signal:controller.signal,
+    })
+    const raw=await response.text()
+    let data={}
+    try{data=raw?JSON.parse(raw):{}}catch{data={detail:raw}}
+    if(!response.ok)throw new Error(data.detail||data.error||`処理に失敗しました（${response.status}）。`)
+    return data
+   }finally{
+    clearTimeout(timeout)
+   }
+  }
+  try{
+   return await requestOnce()
+  }catch(firstError){
+   const retryable=firstError?.name==='AbortError'||firstError instanceof TypeError||/Failed to fetch|NetworkError|Load failed/i.test(firstError?.message||'')
+   if(!retryable)throw firstError
+   await warmupRequest()
+   await new Promise(resolve=>setTimeout(resolve,1200))
+   try{
+    return await requestOnce()
+   }catch(secondError){
+    if(secondError?.name==='AbortError')throw new Error(バックエンドへの接続がタイムアウトしました。少し待って再度お試しください。)
+    if(secondError instanceof TypeError||/Failed to fetch|NetworkError|Load failed/i.test(secondError?.message||'')){
+     throw new Error(Stripe接続用APIに到達できませんでした。通信状態を確認し、少し待って再度お試しください。)
+    }
+    throw secondError
+   }
+  }
+ }
  const checkout=async()=>{
   setLoading(true);setError('')
   try{
-   const {error:consentError}=await supabase.from('legal_consents').insert({user_id:user.id,terms_version:LEGAL_VERSIONS.terms,privacy_version:LEGAL_VERSIONS.privacy,disclaimer_version:LEGAL_VERSIONS.disclaimer,locale:'ja',source:'subscription_checkout',user_agent:navigator.userAgent})
-   if(consentError)throw new Error('同意記録を保存できませんでした。')
+   await warmupRequest()
    const d=await call('/api/stripe/create-checkout',{price_key:priceKey,user_id:user.id,email:user.email,success_url:location.origin,cancel_url:location.origin,legal_consent:true,terms_version:LEGAL_VERSIONS.terms,privacy_version:LEGAL_VERSIONS.privacy,disclaimer_version:LEGAL_VERSIONS.disclaimer})
    if(d.resumed){location.reload();return}
    location.assign(d.url)
