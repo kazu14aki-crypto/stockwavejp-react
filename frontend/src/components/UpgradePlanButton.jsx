@@ -15,14 +15,26 @@ const API = import.meta.env.VITE_API_URL || (
 )
 
 async function freshToken() {
-  const refreshed = await supabase.auth.refreshSession()
+  const current = await supabase.auth.getSession()
+  if (current.error) throw current.error
+
+  const session = current.data?.session
+  const accessToken = session?.access_token
+  if (!accessToken) throw new Error('ログインセッションの有効期限が切れています。いったんログアウトして再度ログインしてください。')
+
+  // Use the current access token while it remains valid. Supabase refreshes sessions
+  // automatically; forcing refreshSession here can fail when the refresh token has
+  // already been rotated or removed from local storage.
+  const expiresAtMs = Number(session.expires_at || 0) * 1000
+  if (!expiresAtMs || expiresAtMs - Date.now() > 60_000) return accessToken
+
+  const refreshed = await supabase.auth.refreshSession({ refresh_token: session.refresh_token })
   if (!refreshed.error && refreshed.data?.session?.access_token) {
     return refreshed.data.session.access_token
   }
-  const current = await supabase.auth.getSession()
-  if (current.error) throw current.error
-  const accessToken = current.data?.session?.access_token
-  if (!accessToken) throw new Error('ログイン情報を確認できませんでした。再度ログインしてください。')
+
+  // The existing JWT may still be accepted during the final seconds; let the API
+  // return a proper 401 rather than failing checkout with an opaque refresh error.
   return accessToken
 }
 
