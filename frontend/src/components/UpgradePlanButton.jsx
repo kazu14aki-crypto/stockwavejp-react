@@ -22,7 +22,7 @@ async function freshToken() {
   const current = await supabase.auth.getSession()
   if (current.error) throw current.error
   const accessToken = current.data?.session?.access_token
-  if (!accessToken) throw new Error(ログイン情報を確認できませんでした。再度ログインしてください。)
+  if (!accessToken) throw new Error('ログイン情報を確認できませんでした。再度ログインしてください。')
   return accessToken
 }
 
@@ -92,9 +92,9 @@ export default function UpgradePlanButton({priceKey,label,color,disabled}){
    try{
     return await requestOnce()
    }catch(secondError){
-    if(secondError?.name==='AbortError')throw new Error(バックエンドへの接続がタイムアウトしました。少し待って再度お試しください。)
+    if(secondError?.name==='AbortError')throw new Error('バックエンドへの接続がタイムアウトしました。少し待って再度お試しください。')
     if(secondError instanceof TypeError||/Failed to fetch|NetworkError|Load failed/i.test(secondError?.message||'')){
-     throw new Error(Stripe接続用APIに到達できませんでした。通信状態を確認し、少し待って再度お試しください。)
+     throw new Error('Stripe接続用APIに到達できませんでした。通信状態を確認し、少し待って再度お試しください。')
     }
     throw secondError
    }
