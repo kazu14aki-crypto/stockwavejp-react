@@ -1,0 +1,216 @@
+{
+  "secCode": "7777",
+  "issuerName": "株式会社スリー・ディー・マトリックス",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "JPモルガン証券株式会社",
+      "shares": 2579591,
+      "ratio": 2.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG",
+      "shares": 2248119,
+      "ratio": 1.76,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "永野　恵嗣",
+      "shares": 1858100,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社",
+      "shares": 1609900,
+      "ratio": 1.26,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松本　松二",
+      "shares": 1400000,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山田　祥美",
+      "shares": 1040000,
+      "ratio": 0.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村証券株式会社",
+      "shares": 1011827,
+      "ratio": 0.79,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "石井　良明",
+      "shares": 876500,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小林　達雄",
+      "shares": 850100,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "寺西　雅行",
+      "shares": 830000,
+      "ratio": 0.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "securities": 4.07,
+      "foreign": 1.76,
+      "individual": 5.34
+    },
+    "individual_total": 5.34,
+    "top10_total": 11.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/05/01－2026/04/30)",
+      "docID": "S100YR3G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "JPモルガン証券株式会社",
+          "shares": 2579591,
+          "ratio": 2.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG",
+          "shares": 2248119,
+          "ratio": 1.76,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "永野　恵嗣",
+          "shares": 1858100,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社",
+          "shares": 1609900,
+          "ratio": 1.26,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松本　松二",
+          "shares": 1400000,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山田　祥美",
+          "shares": 1040000,
+          "ratio": 0.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村証券株式会社",
+          "shares": 1011827,
+          "ratio": 0.79,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "石井　良明",
+          "shares": 876500,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小林　達雄",
+          "shares": 850100,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "寺西　雅行",
+          "shares": 830000,
+          "ratio": 0.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 4.07,
+          "foreign": 1.76,
+          "individual": 5.34
+        },
+        "individual_total": 5.34,
+        "top10_total": 11.17
+      }
+    }
+  ]
+}

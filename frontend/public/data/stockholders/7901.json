@@ -1,0 +1,216 @@
+{
+  "secCode": "7901",
+  "issuerName": "株式会社マツモト",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Brand New Retail Initiative Fund",
+      "shares": 112400,
+      "ratio": 9.93,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中村　規",
+      "shares": 100000,
+      "ratio": 8.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "松本　敬三郎",
+      "shares": 86300,
+      "ratio": 7.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社大分銀行",
+      "shares": 43200,
+      "ratio": 3.82,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "森原　智明",
+      "shares": 38000,
+      "ratio": 3.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社福岡銀行",
+      "shares": 28500,
+      "ratio": 2.52,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "中尾　祐子",
+      "shares": 15900,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "松本　大輝",
+      "shares": 15300,
+      "ratio": 1.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "梶川　雄一",
+      "shares": 12000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "朴　弘心",
+      "shares": 11900,
+      "ratio": 1.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 9.93,
+      "individual": 24.67,
+      "financial": 6.34
+    },
+    "individual_total": 24.67,
+    "top10_total": 40.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第38期(2025/05/01－2026/04/30)",
+      "docID": "S100YRR3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Brand New Retail Initiative Fund",
+          "shares": 112400,
+          "ratio": 9.93,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中村　規",
+          "shares": 100000,
+          "ratio": 8.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "松本　敬三郎",
+          "shares": 86300,
+          "ratio": 7.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社大分銀行",
+          "shares": 43200,
+          "ratio": 3.82,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "森原　智明",
+          "shares": 38000,
+          "ratio": 3.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社福岡銀行",
+          "shares": 28500,
+          "ratio": 2.52,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "中尾　祐子",
+          "shares": 15900,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "松本　大輝",
+          "shares": 15300,
+          "ratio": 1.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "梶川　雄一",
+          "shares": 12000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "朴　弘心",
+          "shares": 11900,
+          "ratio": 1.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 9.93,
+          "individual": 24.67,
+          "financial": 6.34
+        },
+        "individual_total": 24.67,
+        "top10_total": 40.94
+      }
+    }
+  ]
+}

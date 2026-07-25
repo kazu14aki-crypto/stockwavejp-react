@@ -1,8 +1,8 @@
 {
   "secCode": "9204",
   "issuerName": "スカイマーク株式会社",
-  "updated_at": "2026/07/06 23:06 JST",
-  "latestDate": "2026-06-24",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-22",
   "latest": [
     {
       "rank": 1,
@@ -105,6 +105,113 @@
     "top10_total": 54.54
   },
   "history": [
+    {
+      "submitDate": "2026-07-22",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第30期(2025/04/01－2026/03/31)",
+      "docID": "S100YRPF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "鈴与スカイ・パートナーズ投資事業有限責任組合",
+          "shares": 7850000,
+          "ratio": 13.05,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＡＮＡホールディングス株式会社",
+          "shares": 7802100,
+          "ratio": 12.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "鈴与ホールディングス株式会社",
+          "shares": 3730300,
+          "ratio": 6.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鈴与スカイ・パートナーズ２号投資事業有限責任組合",
+          "shares": 3586000,
+          "ratio": 5.96,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社エアトリ",
+          "shares": 3027000,
+          "ratio": 5.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "双日株式会社",
+          "shares": 3009900,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "アドヴェンチャーホールディングス株式会社",
+          "shares": 1008700,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　知宏",
+          "shares": 1000200,
+          "ratio": 1.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "夏秋　克好",
+          "shares": 913500,
+          "ratio": 1.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 886900,
+          "ratio": 1.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 19.01,
+          "corporate": 32.35,
+          "individual": 3.18
+        },
+        "individual_total": 3.18,
+        "top10_total": 54.54
+      }
+    },
     {
       "submitDate": "2026-06-24",
       "docType": "120",

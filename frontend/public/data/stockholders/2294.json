@@ -1,0 +1,218 @@
+{
+  "secCode": "2294",
+  "issuerName": "株式会社柿安本店",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 569000,
+      "ratio": 5.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社百五銀行",
+      "shares": 373000,
+      "ratio": 3.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "赤塚　保正",
+      "shares": 337000,
+      "ratio": 3.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "赤塚　和隆",
+      "shares": 267000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "赤塚　美雪",
+      "shares": 265000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "赤塚　勝子",
+      "shares": 247000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "柿安取引先持株会",
+      "shares": 206000,
+      "ratio": 2.2,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "柿安社員持株会",
+      "shares": 192000,
+      "ratio": 2.0,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "赤塚　元康",
+      "shares": 165000,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 85000,
+      "ratio": 0.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 6.8,
+      "financial": 3.9,
+      "individual": 13.4,
+      "employee": 4.2
+    },
+    "individual_total": 13.4,
+    "top10_total": 28.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第58期(2025/05/01－2026/04/30)",
+      "docID": "S100YRG8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 569000,
+          "ratio": 5.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社百五銀行",
+          "shares": 373000,
+          "ratio": 3.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "赤塚　保正",
+          "shares": 337000,
+          "ratio": 3.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "赤塚　和隆",
+          "shares": 267000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "赤塚　美雪",
+          "shares": 265000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "赤塚　勝子",
+          "shares": 247000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "柿安取引先持株会",
+          "shares": 206000,
+          "ratio": 2.2,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "柿安社員持株会",
+          "shares": 192000,
+          "ratio": 2.0,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "赤塚　元康",
+          "shares": 165000,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 85000,
+          "ratio": 0.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 6.8,
+          "financial": 3.9,
+          "individual": 13.4,
+          "employee": 4.2
+        },
+        "individual_total": 13.4,
+        "top10_total": 28.3
+      }
+    }
+  ]
+}
