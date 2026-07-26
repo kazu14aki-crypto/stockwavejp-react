@@ -1,0 +1,220 @@
+{
+  "secCode": "3444",
+  "issuerName": "株式会社菊池製作所",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社 KIM",
+      "shares": 3285000,
+      "ratio": 27.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "菊池　昭夫",
+      "shares": 1117000,
+      "ratio": 9.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "齋藤　恵美子",
+      "shares": 1110000,
+      "ratio": 9.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SC",
+      "shares": 865000,
+      "ratio": 7.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "AMT株式会社",
+      "shares": 433000,
+      "ratio": 3.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社共有口",
+      "shares": 166000,
+      "ratio": 1.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "菊池製作所従業員持株会",
+      "shares": 164000,
+      "ratio": 1.4,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 119000,
+      "ratio": 1.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP JPMSE LUX RE BARCLAYS CAPITAL SEC LTD EQ CO (常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 83000,
+      "ratio": 0.7,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本証券金融株式会社",
+      "shares": 82000,
+      "ratio": 0.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.0,
+      "individual": 18.5,
+      "securities": 3.1,
+      "employee": 1.4,
+      "foreign": 0.7
+    },
+    "individual_total": 18.5,
+    "top10_total": 61.7
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/05/01－2026/04/30)",
+      "docID": "S100YROC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社 KIM",
+          "shares": 3285000,
+          "ratio": 27.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "菊池　昭夫",
+          "shares": 1117000,
+          "ratio": 9.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "齋藤　恵美子",
+          "shares": 1110000,
+          "ratio": 9.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SC",
+          "shares": 865000,
+          "ratio": 7.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "AMT株式会社",
+          "shares": 433000,
+          "ratio": 3.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社共有口",
+          "shares": 166000,
+          "ratio": 1.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "菊池製作所従業員持株会",
+          "shares": 164000,
+          "ratio": 1.4,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 119000,
+          "ratio": 1.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP JPMSE LUX RE BARCLAYS CAPITAL SEC LTD EQ CO (常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 83000,
+          "ratio": 0.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本証券金融株式会社",
+          "shares": 82000,
+          "ratio": 0.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.0,
+          "individual": 18.5,
+          "securities": 3.1,
+          "employee": 1.4,
+          "foreign": 0.7
+        },
+        "individual_total": 18.5,
+        "top10_total": 61.7
+      }
+    }
+  ]
+}

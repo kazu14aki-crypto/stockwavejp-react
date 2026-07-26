@@ -1,0 +1,218 @@
+{
+  "secCode": "3180",
+  "issuerName": "株式会社ビューティガレージ",
+  "updated_at": "2026/07/25 13:21 JST",
+  "latestDate": "2026-07-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "野村　秀輝",
+      "shares": 2927462,
+      "ratio": 23.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "供田　修一",
+      "shares": 1029602,
+      "ratio": 8.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 866300,
+      "ratio": 6.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＩＸ ＳＩＳ ＬＴＤ．（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 651300,
+      "ratio": 5.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "TAKUMI CAPITAL MANAGEMENT MASTER FUND LP（常任代理人　香港上海銀行東京支店カストディ業務部）",
+      "shares": 599300,
+      "ratio": 4.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村　貴久",
+      "shares": 519690,
+      "ratio": 4.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "樺島　義明",
+      "shares": 431004,
+      "ratio": 3.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本カストディ銀行（信託口）",
+      "shares": 408600,
+      "ratio": 3.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN,SACHS & CO.REG（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 343153,
+      "ratio": 2.74,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "高橋　慧",
+      "shares": 280100,
+      "ratio": 2.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 41.36,
+      "trust": 10.17,
+      "financial": 9.97,
+      "foreign": 2.74
+    },
+    "individual_total": 41.36,
+    "top10_total": 64.24
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第24期(2025/05/01－2026/04/30)",
+      "docID": "S100YS74",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "野村　秀輝",
+          "shares": 2927462,
+          "ratio": 23.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "供田　修一",
+          "shares": 1029602,
+          "ratio": 8.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 866300,
+          "ratio": 6.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＩＸ ＳＩＳ ＬＴＤ．（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 651300,
+          "ratio": 5.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "TAKUMI CAPITAL MANAGEMENT MASTER FUND LP（常任代理人　香港上海銀行東京支店カストディ業務部）",
+          "shares": 599300,
+          "ratio": 4.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村　貴久",
+          "shares": 519690,
+          "ratio": 4.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "樺島　義明",
+          "shares": 431004,
+          "ratio": 3.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本カストディ銀行（信託口）",
+          "shares": 408600,
+          "ratio": 3.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN,SACHS & CO.REG（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 343153,
+          "ratio": 2.74,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "高橋　慧",
+          "shares": 280100,
+          "ratio": 2.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 41.36,
+          "trust": 10.17,
+          "financial": 9.97,
+          "foreign": 2.74
+        },
+        "individual_total": 41.36,
+        "top10_total": 64.24
+      }
+    }
+  ]
+}

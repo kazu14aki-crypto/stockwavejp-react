@@ -1,0 +1,222 @@
+{
+  "secCode": "1873",
+  "issuerName": "株式会社日本ハウスホールディングス",
+  "updated_at": "2026/07/25 13:22 JST",
+  "latestDate": "2026-07-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本ハウスホールディングス社員持株会",
+      "shares": 3657000,
+      "ratio": 9.14,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口)(注)",
+      "shares": 3187100,
+      "ratio": 7.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱みずほ銀行",
+      "shares": 1323600,
+      "ratio": 3.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱シーラホールディングス",
+      "shares": 1293400,
+      "ratio": 3.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日盛会持株会",
+      "shares": 1207300,
+      "ratio": 3.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "みずほ証券㈱",
+      "shares": 958000,
+      "ratio": 2.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本駐車場開発㈱",
+      "shares": 820500,
+      "ratio": 2.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "成田　和幸",
+      "shares": 806900,
+      "ratio": 2.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 420000,
+      "ratio": 1.05,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱日本カストディ銀行 （信託口)(注）",
+      "shares": 397400,
+      "ratio": 0.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 12.16,
+      "trust": 8.96,
+      "financial": 4.36,
+      "corporate": 3.23,
+      "securities": 2.4,
+      "individual": 4.07
+    },
+    "individual_total": 4.07,
+    "top10_total": 35.18
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第58期(2025/05/01－2026/04/30)",
+      "docID": "S100YR5P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本ハウスホールディングス社員持株会",
+          "shares": 3657000,
+          "ratio": 9.14,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行㈱（信託口)(注)",
+          "shares": 3187100,
+          "ratio": 7.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱みずほ銀行",
+          "shares": 1323600,
+          "ratio": 3.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱シーラホールディングス",
+          "shares": 1293400,
+          "ratio": 3.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日盛会持株会",
+          "shares": 1207300,
+          "ratio": 3.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "みずほ証券㈱",
+          "shares": 958000,
+          "ratio": 2.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本駐車場開発㈱",
+          "shares": 820500,
+          "ratio": 2.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "成田　和幸",
+          "shares": 806900,
+          "ratio": 2.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 420000,
+          "ratio": 1.05,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱日本カストディ銀行 （信託口)(注）",
+          "shares": 397400,
+          "ratio": 0.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 12.16,
+          "trust": 8.96,
+          "financial": 4.36,
+          "corporate": 3.23,
+          "securities": 2.4,
+          "individual": 4.07
+        },
+        "individual_total": 4.07,
+        "top10_total": 35.18
+      }
+    }
+  ]
+}

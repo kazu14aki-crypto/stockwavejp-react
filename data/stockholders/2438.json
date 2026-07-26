@@ -1,0 +1,220 @@
+{
+  "secCode": "2438",
+  "issuerName": "株式会社アスカネット",
+  "updated_at": "2026/07/25 13:21 JST",
+  "latestDate": "2026-07-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "福田　幸雄",
+      "shares": 1582000,
+      "ratio": 10.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "アスカネット従業員持株会",
+      "shares": 461200,
+      "ratio": 3.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社広島銀行 （常任代理人　株式会社日本カストディ銀行）",
+      "shares": 380000,
+      "ratio": 2.53,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "功野　顕也",
+      "shares": 326200,
+      "ratio": 2.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "木原　伸二",
+      "shares": 324000,
+      "ratio": 2.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "有限会社武田建工",
+      "shares": 250300,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "佐橋　英紀",
+      "shares": 192000,
+      "ratio": 1.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社",
+      "shares": 184700,
+      "ratio": 1.23,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "戸田　良一",
+      "shares": 168000,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "松尾　雄司",
+      "shares": 158700,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 18.34,
+      "employee": 3.07,
+      "trust": 2.53,
+      "corporate": 1.67,
+      "securities": 1.23
+    },
+    "individual_total": 18.34,
+    "top10_total": 26.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/05/01－2026/04/30)",
+      "docID": "S100YRYL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "福田　幸雄",
+          "shares": 1582000,
+          "ratio": 10.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "アスカネット従業員持株会",
+          "shares": 461200,
+          "ratio": 3.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社広島銀行 （常任代理人　株式会社日本カストディ銀行）",
+          "shares": 380000,
+          "ratio": 2.53,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "功野　顕也",
+          "shares": 326200,
+          "ratio": 2.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "木原　伸二",
+          "shares": 324000,
+          "ratio": 2.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "有限会社武田建工",
+          "shares": 250300,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "佐橋　英紀",
+          "shares": 192000,
+          "ratio": 1.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社",
+          "shares": 184700,
+          "ratio": 1.23,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "戸田　良一",
+          "shares": 168000,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "松尾　雄司",
+          "shares": 158700,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.34,
+          "employee": 3.07,
+          "trust": 2.53,
+          "corporate": 1.67,
+          "securities": 1.23
+        },
+        "individual_total": 18.34,
+        "top10_total": 26.84
+      }
+    }
+  ]
+}
