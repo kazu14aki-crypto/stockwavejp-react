@@ -1,7 +1,97 @@
 {
-  "updated_at": "2026/07/25",
-  "count": 1635,
+  "updated_at": "2026/07/27",
+  "count": 1643,
   "items": [
+    {
+      "secCode": "2910",
+      "issuerName": "株式会社ロック・フィールド",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "株式会社岩田",
+      "topHolderCategory": "corporate",
+      "individualTotal": 3.0
+    },
+    {
+      "secCode": "6699",
+      "issuerName": "ダイヤモンドエレクトリックホールディングス株式会社",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "株式会社日本カストディ銀行（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 1.81
+    },
+    {
+      "secCode": "5032",
+      "issuerName": "ＡＮＹＣＯＬＯＲ株式会社",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "田角　陸",
+      "topHolderCategory": "individual",
+      "individualTotal": 43.53
+    },
+    {
+      "secCode": "7435",
+      "issuerName": "株式会社ナ・デックス",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "株式会社アート・ギャラリー富士見",
+      "topHolderCategory": "corporate",
+      "individualTotal": 7.15
+    },
+    {
+      "secCode": "500A",
+      "issuerName": "株式会社ＴＯブックス",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "株式会社ＭＴＳ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 3.54
+    },
+    {
+      "secCode": "272A",
+      "issuerName": "株式会社グリーンクロスホールディングス",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "グリーンクロスホールディングス社員持株会",
+      "topHolderCategory": "employee",
+      "individualTotal": 29.89
+    },
+    {
+      "secCode": "7095",
+      "issuerName": "株式会社Ｍａｃｂｅｅ　Ｐｌａｎｅｔ",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "ＭＧ合同会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 11.04
+    },
+    {
+      "secCode": "8282",
+      "issuerName": "株式会社ケーズホールディングス",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 5.2
+    },
+    {
+      "secCode": "215A",
+      "issuerName": "株式会社タイミー",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "小川　嶺",
+      "topHolderCategory": "individual",
+      "individualTotal": 21.05
+    },
+    {
+      "secCode": "2502",
+      "issuerName": "アサヒグループホールディングス株式会社",
+      "latestDate": "2026-07-27",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
     {
       "secCode": "7180",
       "issuerName": "株式会社九州フィナンシャルグループ",
@@ -336,6 +426,33 @@
       "individualTotal": 2.6
     },
     {
+      "secCode": "4403",
+      "issuerName": "日油株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 3.85
+    },
+    {
+      "secCode": "6470",
+      "issuerName": "大豊工業株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "トヨタ自動車株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0.99
+    },
+    {
+      "secCode": "1982",
+      "issuerName": "日比谷総合設備株式会社",
+      "latestDate": "2026-07-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト\n信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
       "secCode": "3763",
       "issuerName": "株式会社プロシップ",
       "latestDate": "2026-07-15",
@@ -343,6 +460,15 @@
       "topHolder": "鈴木　勝喜",
       "topHolderCategory": "individual",
       "individualTotal": 23.01
+    },
+    {
+      "secCode": "9001",
+      "issuerName": "東武鉄道株式会社",
+      "latestDate": "2026-07-15",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
     },
     {
       "secCode": "3168",
@@ -1171,15 +1297,6 @@
       "topHolder": "QUETTA合同会社",
       "topHolderCategory": "corporate",
       "individualTotal": 14.24
-    },
-    {
-      "secCode": "6699",
-      "issuerName": "ダイヤモンドエレクトリックホールディングス株式会社",
-      "latestDate": "2026-06-29",
-      "holderCount": 10,
-      "topHolder": "株式会社日本カストディ銀行（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 1.81
     },
     {
       "secCode": "7031",
@@ -2800,15 +2917,6 @@
       "topHolder": "伊藤忠丸紅鉄鋼株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 11.19
-    },
-    {
-      "secCode": "4403",
-      "issuerName": "日油株式会社",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 3.85
     },
     {
       "secCode": "5233",
@@ -9417,15 +9525,6 @@
       "individualTotal": 0
     },
     {
-      "secCode": "1982",
-      "issuerName": "日比谷総合設備株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト\n信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
-    },
-    {
       "secCode": "9502",
       "issuerName": "中部電力株式会社",
       "latestDate": "2026-06-24",
@@ -11874,15 +11973,6 @@
       "individualTotal": 0
     },
     {
-      "secCode": "8282",
-      "issuerName": "株式会社ケーズホールディングス",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 5.2
-    },
-    {
       "secCode": "3238",
       "issuerName": "セントラル総合開発株式会社",
       "latestDate": "2026-06-23",
@@ -13485,15 +13575,6 @@
       "individualTotal": 13.2
     },
     {
-      "secCode": "6470",
-      "issuerName": "大豊工業株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "トヨタ自動車株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 0.99
-    },
-    {
       "secCode": "8591",
       "issuerName": "オリックス株式会社",
       "latestDate": "2026-06-22",
@@ -14626,15 +14707,6 @@
       "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
       "topHolderCategory": "trust",
       "individualTotal": 1.76
-    },
-    {
-      "secCode": "9001",
-      "issuerName": "東武鉄道株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
     },
     {
       "secCode": "9471",
