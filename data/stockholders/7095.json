@@ -1,0 +1,218 @@
+{
+  "secCode": "7095",
+  "issuerName": "株式会社Ｍａｃｂｅｅ　Ｐｌａｎｅｔ",
+  "updated_at": "2026/07/27 22:12 JST",
+  "latestDate": "2026-07-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＭＧ合同会社",
+      "shares": 3790293,
+      "ratio": 30.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "小嶋　雄介",
+      "shares": 1108543,
+      "ratio": 8.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 586100,
+      "ratio": 4.71,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＢＢＨ　ＣＯ　ＦＯＲ　ＡＲＣＵＳ　ＪＡＰＡＮ　ＶＡＬＵＥ　ＦＵＮＤ（常任代理人：株式会社三菱ＵＦＪ銀行）",
+      "shares": 444500,
+      "ratio": 3.57,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 227500,
+      "ratio": 1.83,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＴＭＡＣ",
+      "shares": 207600,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 184100,
+      "ratio": 1.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人：株式会社三菱ＵＦＪ銀行）",
+      "shares": 169295,
+      "ratio": 1.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "加藤　誠悟",
+      "shares": 136500,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "南角　光彦",
+      "shares": 130000,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.1,
+      "individual": 11.04,
+      "trust": 8.02,
+      "financial": 4.93
+    },
+    "individual_total": 11.04,
+    "top10_total": 56.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/05/01－2026/04/30)",
+      "docID": "S100YSEQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＭＧ合同会社",
+          "shares": 3790293,
+          "ratio": 30.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "小嶋　雄介",
+          "shares": 1108543,
+          "ratio": 8.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 586100,
+          "ratio": 4.71,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＢＨ　ＣＯ　ＦＯＲ　ＡＲＣＵＳ　ＪＡＰＡＮ　ＶＡＬＵＥ　ＦＵＮＤ（常任代理人：株式会社三菱ＵＦＪ銀行）",
+          "shares": 444500,
+          "ratio": 3.57,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 227500,
+          "ratio": 1.83,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＴＭＡＣ",
+          "shares": 207600,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 184100,
+          "ratio": 1.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人：株式会社三菱ＵＦＪ銀行）",
+          "shares": 169295,
+          "ratio": 1.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "加藤　誠悟",
+          "shares": 136500,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "南角　光彦",
+          "shares": 130000,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.1,
+          "individual": 11.04,
+          "trust": 8.02,
+          "financial": 4.93
+        },
+        "individual_total": 11.04,
+        "top10_total": 56.09
+      }
+    }
+  ]
+}

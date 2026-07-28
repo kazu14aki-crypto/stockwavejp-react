@@ -1,0 +1,218 @@
+{
+  "secCode": "5032",
+  "issuerName": "ＡＮＹＣＯＬＯＲ株式会社",
+  "updated_at": "2026/07/27 22:12 JST",
+  "latestDate": "2026-07-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "田角　陸",
+      "shares": 26094626,
+      "ratio": 43.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4707300,
+      "ratio": 7.85,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ソニー・ミュージックエンタテインメント",
+      "shares": 3348210,
+      "ratio": 5.58,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2682800,
+      "ratio": 4.47,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BROWN BROTHERS HARRIMAN (LUXEMBOURG) SCA CUSTODIAN FOR ARCUS FUND SICAV - ARCUS JAPAN FUND\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 1149400,
+      "ratio": 1.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 1142522,
+      "ratio": 1.91,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE - AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 937772,
+      "ratio": 1.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JP MORGAN CHASE BANK 380055\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 873622,
+      "ratio": 1.46,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社アイライツポート",
+      "shares": 669630,
+      "ratio": 1.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 575603,
+      "ratio": 0.96,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 43.53,
+      "trust": 12.32,
+      "corporate": 6.7,
+      "foreign": 7.81
+    },
+    "individual_total": 43.53,
+    "top10_total": 70.36
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第9期(2025/05/01－2026/04/30)",
+      "docID": "S100YSEA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "田角　陸",
+          "shares": 26094626,
+          "ratio": 43.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4707300,
+          "ratio": 7.85,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ソニー・ミュージックエンタテインメント",
+          "shares": 3348210,
+          "ratio": 5.58,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2682800,
+          "ratio": 4.47,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BROWN BROTHERS HARRIMAN (LUXEMBOURG) SCA CUSTODIAN FOR ARCUS FUND SICAV - ARCUS JAPAN FUND\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 1149400,
+          "ratio": 1.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 1142522,
+          "ratio": 1.91,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE - AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 937772,
+          "ratio": 1.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JP MORGAN CHASE BANK 380055\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 873622,
+          "ratio": 1.46,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社アイライツポート",
+          "shares": 669630,
+          "ratio": 1.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 575603,
+          "ratio": 0.96,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 43.53,
+          "trust": 12.32,
+          "corporate": 6.7,
+          "foreign": 7.81
+        },
+        "individual_total": 43.53,
+        "top10_total": 70.36
+      }
+    }
+  ]
+}
