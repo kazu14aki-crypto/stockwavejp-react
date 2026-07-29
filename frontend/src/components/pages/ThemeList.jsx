@@ -392,14 +392,49 @@ function BubbleScatterMini({ onNavigate }) {
   )
 }
 
-function StockWaveScoreComparisonChart({ themes }) {
-  const names=(themes||[]).filter(t=>Number.isFinite(Number(t.stockwave_score))).map(t=>t.theme)
+function StockWaveScoreComparisonChart({ themes, scoreHistory }) {
+  const historyThemes=Object.keys(scoreHistory?.themes || {})
+  const currentNames=(themes||[]).filter(t=>Number.isFinite(Number(t.stockwave_score))).map(t=>t.theme)
+  const names=[...new Set([...historyThemes,...currentNames])]
   const [selected,setSelected]=useState(()=>names.slice(0,3))
   useEffect(()=>{if(names.length&&selected.length===0)setSelected(names.slice(0,3))},[names.length])
-  const items=selected.map(name=>(themes||[]).find(t=>t.theme===name)).filter(Boolean).slice(0,5)
+
+  const dates=Array.isArray(scoreHistory?.dates)?scoreHistory.dates:[]
+  const currentDate=new Date().toISOString().slice(0,10)
+  const displayDates=dates.length ? dates.slice(-60) : [currentDate]
+  const W=900,H=400,PL=52,PR=20,PT=32,PB=56,GW=W-PL-PR,GH=H-PT-PB
+  const xS=i=>PL+(i/Math.max(displayDates.length-1,1))*GW
+  const yS=v=>PT+GH-((Math.max(0,Math.min(100,Number(v)||0)))/100)*GH
+  const yTicks=[0,20,40,60,80,100]
+  const shortDate=d=>{const parts=String(d).split('-');return parts.length===3?`${parts[1]}/${parts[2]}`:d}
+
+  const series=selected.map((name,si)=>{
+    const historical=scoreHistory?.themes?.[name] || []
+    let points=displayDates.map((date,i)=>{
+      const originalIndex=dates.indexOf(date)
+      const value=originalIndex>=0?historical[originalIndex]:null
+      return {i,value}
+    }).filter(p=>Number.isFinite(Number(p.value)))
+    if(!points.length){
+      const current=(themes||[]).find(t=>t.theme===name)
+      if(Number.isFinite(Number(current?.stockwave_score))) points=[{i:displayDates.length-1,value:Number(current.stockwave_score)}]
+    }
+    return {name,si,points}
+  })
+
   return <div>
     <MonthlyThemePicker allThemes={names} selected={selected} setSelected={setSelected}/>
-    <div style={{display:'grid',gap:'8px'}}>{items.map(item=>{const score=Math.max(0,Math.min(100,Number(item.stockwave_score)||0));return <div key={item.theme} style={{display:'grid',gridTemplateColumns:'minmax(120px,220px) 1fr 44px',gap:'8px',alignItems:'center'}}><span style={{fontSize:'11px',color:'var(--text2)',overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>{item.theme}</span><div style={{height:'22px',background:'rgba(255,255,255,.06)',borderRadius:'6px',overflow:'hidden'}}><div style={{height:'100%',width:score+'%',background:'#4a9eff',opacity:.78}}/></div><b style={{fontFamily:'var(--mono)',fontSize:'12px',color:'var(--text)'}}>{score.toFixed(0)}</b></div>})}</div>
+    {selected.length ? <div>
+      <div style={{width:'100%',overflowX:'auto',WebkitOverflowScrolling:'touch'}}>
+        <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',minWidth:'0',display:'block',background:'var(--bg2)',borderRadius:'10px',border:'1px solid var(--border)'}}>
+          {yTicks.map(y=><g key={y}><line x1={PL} y1={yS(y)} x2={PL+GW} y2={yS(y)} stroke="rgba(255,255,255,.07)" strokeWidth=".8"/><text x={PL-7} y={yS(y)+4} textAnchor="end" fontSize="10" fill="rgba(255,255,255,.45)">{y}</text></g>)}
+          {displayDates.map((date,i)=>i===0||i===displayDates.length-1||i%Math.max(1,Math.ceil(displayDates.length/6))===0?<text key={date+i} x={xS(i)} y={PT+GH+18} textAnchor="middle" fontSize="9" fill="rgba(255,255,255,.4)">{shortDate(date)}</text>:null)}
+          {series.map((s)=>{const col=MONTHLY_COLORS[s.si%MONTHLY_COLORS.length];const path=s.points.map((p,pi)=>(pi?'L':'M')+xS(p.i).toFixed(1)+','+yS(p.value).toFixed(1)).join(' ');return <g key={s.name}>{s.points.length>1&&<path d={path} fill="none" stroke={col} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/>}{s.points.map(p=><circle key={p.i} cx={xS(p.i)} cy={yS(p.value)} r="3" fill={col} stroke="var(--bg2)" strokeWidth="1.5"/>)}</g>})}
+          {selected.map((name,si)=>{const col=MONTHLY_COLORS[si%MONTHLY_COLORS.length];return <g key={name}><rect x={PL+si*160} y={PT-22} width="12" height="12" rx="2" fill={col}/><text x={PL+si*160+16} y={PT-12} fontSize="10" fill="rgba(255,255,255,.75)">{name.length>12?name.slice(0,12)+'…':name}</text></g>})}
+        </svg>
+      </div>
+      {dates.length<2&&<div style={{fontSize:'10px',color:'var(--text3)',marginTop:'8px'}}>履歴は導入日以降に日次で蓄積されます。現在値だけを表示しています。</div>}
+    </div>:<div style={{textAlign:'center',padding:'40px',color:'var(--text3)'}}>上のボタンでテーマを選択してください</div>}
   </div>
 }
 
@@ -1229,6 +1264,13 @@ export default function ThemeList({ onNavigate }) {
   const { data: monthlyRaw } = useMonthlyHeatmap()
   const monthlyData = monthlyRaw?.data || null
   const months = monthlyRaw?.months || []
+  const [scoreHistory,setScoreHistory]=useState({dates:[],themes:{}})
+  useEffect(()=>{
+    fetch('/data/stockwave_score_history.json?t='+Date.now())
+      .then(response=>response.ok?response.json():{dates:[],themes:{}})
+      .then(data=>setScoreHistory(data&&typeof data==='object'?data:{dates:[],themes:{}}))
+      .catch(()=>setScoreHistory({dates:[],themes:{}}))
+  },[])
   // ③ vol_trendデータをmarket.jsonから取得
   const [volTrendData, setVolTrendData] = useState({})
   useEffect(() => {
@@ -1438,7 +1480,7 @@ export default function ThemeList({ onNavigate }) {
             {/* テーマ比較：指標切替グラフ＋ヒートマップの2つ */}
             {!canAccess('theme_trend_charts') ? (
               <LockedFeaturePanel title="テーマ比較" description="テーマ比較グラフはスタンダード・プロプランで利用できます。" onNavigate={onNavigate}/>
-            ) : Object.keys(volTrendData).length>0 && months.length>0 && (()=>{const allThemeNames=Object.keys(volTrendData).map(k=>k.replace('vol_trend_',''));return <div style={{marginTop:'24px'}}><SectionHead title="テーマ分析"/><div style={{fontSize:'11px',color:'var(--text3)',margin:'-8px 0 12px'}}>左の比較グラフと右のヒートマップは独立した分析です。</div><div className="monthly-chart-grid"><div className="monthly-chart-cell"><div style={{display:'flex',alignItems:'center',justifyContent:'space-between',gap:'8px',flexWrap:'wrap',marginBottom:'8px'}}><div><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)'}}>📈 テーマ比較グラフ</div><div style={{fontSize:'10px',color:'var(--text3)',marginTop:'3px'}}>下の指標ボタンは、この比較グラフだけに適用されます。</div></div><span style={{fontSize:'9px',fontWeight:700,color:'var(--accent)',border:'1px solid rgba(74,158,255,.35)',background:'rgba(74,158,255,.08)',padding:'3px 7px',borderRadius:'999px'}}>比較グラフ専用</span></div><div style={{display:'grid',gridTemplateColumns:'repeat(4,minmax(0,1fr))',gap:'6px',marginBottom:'10px',padding:'8px',border:'1px solid var(--border)',background:'var(--bg3)',borderRadius:'8px'}}>{[['return','騰落率'],['volume','出来高'],['trade_value','売買代金'],['score','StockWaveスコア']].map(([key,label])=><button key={key} onClick={()=>setComparisonMetric(key)} style={{padding:'8px 5px',borderRadius:'7px',border:comparisonMetric===key?'1px solid var(--accent)':'1px solid var(--border)',background:comparisonMetric===key?'rgba(74,158,255,.12)':'var(--bg2)',color:comparisonMetric===key?'var(--accent)':'var(--text3)',fontFamily:'var(--font)',fontSize:'11px',fontWeight:700,cursor:'pointer'}}>{label}</button>)}</div><ExpandableChart title="テーマ比較">{comparisonMetric==='return'&&<MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate}/>} {comparisonMetric==='volume'&&<MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months}/>} {comparisonMetric==='trade_value'&&<MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months}/>} {comparisonMetric==='score'&&<StockWaveScoreComparisonChart themes={themes}/>}</ExpandableChart></div><div className="monthly-chart-cell"><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)',marginBottom:'3px'}}>🔥 テーマヒートマップ</div><div style={{fontSize:'10px',color:'var(--text3)',marginBottom:'8px'}}>比較グラフの指標ボタンとは連動しません。ヒートマップ固有の軸で表示します。</div><ExpandableChart title="テーマヒートマップ" showZoneDesc><BubbleScatterMini onNavigate={onNavigate}/></ExpandableChart></div></div></div>})()}
+            ) : Object.keys(volTrendData).length>0 && months.length>0 && (()=>{const allThemeNames=Object.keys(volTrendData).map(k=>k.replace('vol_trend_',''));return <div style={{marginTop:'24px'}}><SectionHead title="テーマ分析"/><div style={{fontSize:'11px',color:'var(--text3)',margin:'-8px 0 12px'}}>左の比較グラフと右のヒートマップは独立した分析です。</div><div className="monthly-chart-grid"><div className="monthly-chart-cell"><div style={{display:'flex',alignItems:'center',justifyContent:'space-between',gap:'8px',flexWrap:'wrap',marginBottom:'8px'}}><div><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)'}}>📈 テーマ比較グラフ</div><div style={{fontSize:'10px',color:'var(--text3)',marginTop:'3px'}}>下の指標ボタンは、この比較グラフだけに適用されます。</div></div><span style={{fontSize:'9px',fontWeight:700,color:'var(--accent)',border:'1px solid rgba(74,158,255,.35)',background:'rgba(74,158,255,.08)',padding:'3px 7px',borderRadius:'999px'}}>比較グラフ専用</span></div><div style={{display:'grid',gridTemplateColumns:'repeat(4,minmax(0,1fr))',gap:'6px',marginBottom:'10px',padding:'8px',border:'1px solid var(--border)',background:'var(--bg3)',borderRadius:'8px'}}>{[['return','騰落率'],['volume','出来高'],['trade_value','売買代金'],['score','StockWaveスコア']].map(([key,label])=><button key={key} onClick={()=>setComparisonMetric(key)} style={{padding:'8px 5px',borderRadius:'7px',border:comparisonMetric===key?'1px solid var(--accent)':'1px solid var(--border)',background:comparisonMetric===key?'rgba(74,158,255,.12)':'var(--bg2)',color:comparisonMetric===key?'var(--accent)':'var(--text3)',fontFamily:'var(--font)',fontSize:'11px',fontWeight:700,cursor:'pointer'}}>{label}</button>)}</div><ExpandableChart title="テーマ比較">{comparisonMetric==='return'&&<MonthlyLineChart data={monthlyData} months={months} onNavigate={onNavigate}/>} {comparisonMetric==='volume'&&<MonthlyVolChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months}/>} {comparisonMetric==='trade_value'&&<MonthlyTVChart volTrendData={volTrendData} allThemeNames={allThemeNames} months={months}/>} {comparisonMetric==='score'&&<StockWaveScoreComparisonChart themes={themes} scoreHistory={scoreHistory}/>}</ExpandableChart></div><div className="monthly-chart-cell"><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)',marginBottom:'3px'}}>🔥 テーマヒートマップ</div><div style={{fontSize:'10px',color:'var(--text3)',marginBottom:'8px'}}>比較グラフの指標ボタンとは連動しません。ヒートマップ固有の軸で表示します。</div><ExpandableChart title="テーマヒートマップ" showZoneDesc><BubbleScatterMini onNavigate={onNavigate}/></ExpandableChart></div></div></div>})()}
 
 
           </>

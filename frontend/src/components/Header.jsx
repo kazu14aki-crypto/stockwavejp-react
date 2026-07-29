@@ -34,6 +34,7 @@ function formatDateTime(value, short = false) {
 export default function Header({ status = {}, onMenuClick, sidebarOpen, viewMode, onViewModeChange, onLogoClick }) {
   const updatedAt = status.updatedAt || status.updated_at || status.fetchedAt
   const dataAsOf  = status.dataAsOf || status.data_as_of || status.updatedAt || status.updated_at
+  const nextUpdate = status.nextUpdate || status.next_update || status.next_update_at
   const errorColor = status.dataState === 'failed' ? '#ff647c' : 'var(--text3)'
 
   return (
@@ -84,12 +85,16 @@ export default function Header({ status = {}, onMenuClick, sidebarOpen, viewMode
                 更新 {formatDateTime(updatedAt)}
               </span>
               <span style={{ fontSize:'9px', color:errorColor, padding:'2px 5px', borderRadius:'4px', background:'var(--bg3)', border:'1px solid var(--border)' }}>
-                データ基準 {formatDateTime(dataAsOf)}
+                基準時間 {formatDateTime(dataAsOf)}
+              </span>
+              <span style={{ fontSize:'9px', color:'var(--text3)', padding:'2px 5px', borderRadius:'4px', background:'var(--bg3)', border:'1px solid var(--border)' }}>
+                次回更新予定 {formatDateTime(nextUpdate)}
               </span>
             </div>
-            <div className="data-time-mobile" title={`更新時刻：${formatDateTime(updatedAt)}／データ基準時刻：${formatDateTime(dataAsOf)}`} style={{ display:'none', flexDirection:'column', lineHeight:1.2, whiteSpace:'nowrap' }}>
-              <span style={{ fontSize:'8px', color:errorColor }}>更 {formatDateTime(updatedAt, true)}</span>
-              <span style={{ fontSize:'8px', color:errorColor }}>基 {formatDateTime(dataAsOf, true)}</span>
+            <div className="data-time-mobile" title={`更新時間：${formatDateTime(updatedAt)}／基準時間：${formatDateTime(dataAsOf)}／次回更新予定時間：${formatDateTime(nextUpdate)}`} style={{ display:'none', flexDirection:'column', gap:'1px', lineHeight:1.18, whiteSpace:'nowrap' }}>
+              <span style={{ fontSize:'8px', color:errorColor }}>更新時間 {formatDateTime(updatedAt, true)}</span>
+              <span style={{ fontSize:'8px', color:errorColor }}>基準時間 {formatDateTime(dataAsOf, true)}</span>
+              <span style={{ fontSize:'8px', color:'var(--text3)' }}>次回更新予定 {formatDateTime(nextUpdate, true)}</span>
             </div>
           </div>
 

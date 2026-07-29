@@ -1,0 +1,26 @@
+name: Update StockWave Score history
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 10 * * 1-5'
+
+permissions:
+  contents: write
+
+jobs:
+  update-history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/update_stockwave_score_history.py
+      - name: Commit history
+        run: |
+          git config user.name "stockwavejp-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add frontend/public/data/stockwave_score_history.json
+          git diff --cached --quiet || git commit -m "data: update StockWave Score history"
+          git push
