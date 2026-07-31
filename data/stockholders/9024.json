@@ -1,0 +1,220 @@
+{
+  "secCode": "9024",
+  "issuerName": "株式会社西武ホールディングス",
+  "updated_at": "2026/07/27 22:12 JST",
+  "latestDate": "2026-07-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＮＷコーポレーション\n(注２)",
+      "shares": 51158000,
+      "ratio": 16.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 25202000,
+      "ratio": 8.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 12685000,
+      "ratio": 4.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 10008000,
+      "ratio": 3.28,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本政策投資銀行",
+      "shares": 9906000,
+      "ratio": 3.24,
+      "category": "government",
+      "category_label": "政府系・公的",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 8333000,
+      "ratio": 2.73,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 7482000,
+      "ratio": 2.45,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "京浜急行電鉄株式会社",
+      "shares": 6655000,
+      "ratio": 2.18,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "みずほ信託銀行株式会社　退職給付信託　Ｋ口　再信託受託者　株式会社日本カストディ銀行",
+      "shares": 5871000,
+      "ratio": 1.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社みずほ銀行",
+      "shares": 5704000,
+      "ratio": 1.87,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.92,
+      "trust": 13.45,
+      "foreign": 9.33,
+      "government": 3.24,
+      "financial": 1.87
+    },
+    "individual_total": 0,
+    "top10_total": 46.81
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-24",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第21期(2025/04/01－2026/03/31)",
+      "docID": "S100YS3Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＮＷコーポレーション\n(注２)",
+          "shares": 51158000,
+          "ratio": 16.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 25202000,
+          "ratio": 8.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 12685000,
+          "ratio": 4.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 10008000,
+          "ratio": 3.28,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本政策投資銀行",
+          "shares": 9906000,
+          "ratio": 3.24,
+          "category": "government",
+          "category_label": "政府系・公的",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GOLDMAN SACHS INTERNATIONAL\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 8333000,
+          "ratio": 2.73,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n（常任代理人　香港上海銀行東京支店　セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 7482000,
+          "ratio": 2.45,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "京浜急行電鉄株式会社",
+          "shares": 6655000,
+          "ratio": 2.18,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "みずほ信託銀行株式会社　退職給付信託　Ｋ口　再信託受託者　株式会社日本カストディ銀行",
+          "shares": 5871000,
+          "ratio": 1.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社みずほ銀行",
+          "shares": 5704000,
+          "ratio": 1.87,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.92,
+          "trust": 13.45,
+          "foreign": 9.33,
+          "government": 3.24,
+          "financial": 1.87
+        },
+        "individual_total": 0,
+        "top10_total": 46.81
+      }
+    }
+  ]
+}

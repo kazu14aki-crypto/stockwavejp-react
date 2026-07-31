@@ -86,35 +86,10 @@ def _strip_valuation_if_locked(payload: dict, uid: str | None) -> dict:
 
 
 app = FastAPI(title="StockWaveJP API", version="2.2.0")  # 67テーマ対応
-ALLOWED_ORIGINS = [
-    "https://stockwavejp.com",
-    "https://www.stockwavejp.com",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173"
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allow_headers=["Authorization", "Content-Type", "Accept", "Origin", "X-Requested-With"],
-    expose_headers=["Content-Type", "Content-Length"],
-    max_age=86400,
-
+    allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
 )
-
-@app.options("/{path:path}", include_in_schema=False)
-async def cors_preflight(path: str):
-    return Response(status_code=204)
-
-@app.get("/api/cors-check", include_in_schema=False)
-def cors_check(request: Request):
-    return {
-        "ok": True,
-        "origin": request.headers.get("origin"),
-        "allowed_origins": ALLOWED_ORIGINS,
-    }
 
 
 @app.on_event("startup")
@@ -424,26 +399,79 @@ def _lh_ratio_pct(value):
 @app.get("/api/tob-radar")
 def get_tob_radar(uid: str = Query(default=None)):
     """
-    TOBオプション・スコア: 大量保有×資本構成×低バリュエーションを掛け合わせ、
-    「配当をもらいながらTOBを待てる」候補を発掘する。
+    TOBレーダー:
+    大量保有・積み増し・資本構成・バリュエーションに加え、
+    過去の資本再編案件で見られやすい特徴への「パターン適合度」を返す。
+
+    patternFit はTOB確率ではなく、説明可能なルールベース指標。
     """
     subscribed = _is_subscribed(uid)
     by_issuer = _load_lh("by_issuer.json") or {}
     candidates = []
-
     sh_dir = _Path_lh(__file__).parent / ".." / "frontend" / "public" / "data" / "stockholders"
 
+    def valid_ratio(value):
+        ratio = _lh_ratio_pct(value)
+        # EDINET解析異常（55, 68, 79等の桁ずれを含む）を候補計算から除外。
+        return ratio if 0 < ratio <= 50 else None
+
+    def clean_trend(raw):
+        result = []
+        for row in raw or []:
+            ratio = valid_ratio(row.get("ratio"))
+            date = str(row.get("date") or "")
+            if ratio is None or not date:
+                continue
+            result.append({"date": date, "ratio": ratio, "type": row.get("type")})
+        result.sort(key=lambda row: row["date"])
+        # 同日・同率の重複を除く。
+        deduped = []
+        for row in result:
+            if deduped and row["date"] == deduped[-1]["date"] and abs(row["ratio"] - deduped[-1]["ratio"]) < 0.001:
+                continue
+            deduped.append(row)
+        return deduped
+
     for sec, info in by_issuer.items():
-        holders = info.get("holders", [])
+        raw_holders = info.get("holders", [])
+        holders = []
+        rejected = 0
+        for holder in raw_holders:
+            ratio = valid_ratio(holder.get("latestRatio"))
+            trend = clean_trend(holder.get("trend"))
+            if ratio is None:
+                rejected += 1
+                continue
+            copy = dict(holder)
+            copy["_ratio"] = ratio
+            copy["_trend"] = trend
+            holders.append(copy)
         if not holders:
             continue
-        holders = sorted(holders, key=lambda h: _lh_ratio_pct(h.get("latestRatio")), reverse=True)
+
+        holders.sort(key=lambda h: h["_ratio"], reverse=True)
         top = holders[0]
-        top_ratio = _lh_ratio_pct(top.get("latestRatio"))
+        top_ratio = top["_ratio"]
         if top_ratio < 5:
             continue
-        trend = top.get("trend", [])
-        accumulating = len(trend) >= 2 and _lh_ratio_pct(trend[-1].get("ratio")) > _lh_ratio_pct(trend[0].get("ratio"))
+
+        trend = top["_trend"]
+        first_ratio = trend[0]["ratio"] if trend else top_ratio
+        last_ratio = trend[-1]["ratio"] if trend else top_ratio
+        delta_ratio = round(last_ratio - first_ratio, 2)
+        positive_steps = sum(
+            1 for prev, cur in zip(trend, trend[1:])
+            if cur["ratio"] > prev["ratio"] + 0.05
+        )
+        negative_steps = sum(
+            1 for prev, cur in zip(trend, trend[1:])
+            if cur["ratio"] < prev["ratio"] - 0.05
+        )
+        accumulating = len(trend) >= 2 and delta_ratio >= 1.0
+        consistency = (
+            positive_steps / max(positive_steps + negative_steps, 1)
+            if len(trend) >= 2 else 0
+        )
 
         founder_or_parent = 0.0
         pbr = None
@@ -451,29 +479,55 @@ def get_tob_radar(uid: str = Query(default=None)):
             sh = _json_lh.load(open((sh_dir / f"{sec}.json").resolve(), encoding="utf-8"))
             summ = sh.get("latestSummary", {})
             bycat = summ.get("by_category", {})
-            founder_or_parent = (bycat.get("corporate", 0) + bycat.get("individual", 0))
+            founder_or_parent = float(bycat.get("corporate", 0) or 0) + float(bycat.get("individual", 0) or 0)
+            if founder_or_parent > 100:
+                founder_or_parent = 0.0
         except Exception:
             pass
         try:
             val = get_valuation(f"{sec}.T") or {}
             pbr = val.get("pbr")
+            if not isinstance(pbr, (int, float)) or pbr <= 0 or pbr > 20:
+                pbr = None
         except Exception:
             pbr = None
 
         s_holder = min(100, top_ratio / 25 * 100)
-        s_accum = 100 if accumulating else 40
+        s_accum = min(100, max(0, delta_ratio) / 5 * 70 + consistency * 30) if len(trend) >= 2 else 20
         s_capital = min(100, founder_or_parent / 40 * 100)
-        s_value = (min(100, (1.5 - pbr) / 1.0 * 100) if isinstance(pbr, (int, float)) and pbr > 0 else 50)
-        s_value = max(0, s_value)
+        s_value = max(0, min(100, (1.5 - pbr) / 1.0 * 100)) if pbr is not None else 50
         score = round(0.30 * s_holder + 0.20 * s_accum + 0.30 * s_capital + 0.20 * s_value, 1)
+
+        # 過去の資本再編でよく見られる特徴への適合度。確率ではない。
+        p_block = min(100, top_ratio / 20 * 100)
+        p_accum = min(100, max(0, delta_ratio) / 5 * 70 + consistency * 30) if len(trend) >= 2 else 10
+        p_filings = min(100, len(trend) / 5 * 100)
+        p_structure = min(100, founder_or_parent / 50 * 100)
+        p_value = max(0, min(100, (1.3 - pbr) / 0.8 * 100)) if pbr is not None else 50
+        pattern_fit = round(
+            0.25 * p_block +
+            0.25 * p_accum +
+            0.15 * p_filings +
+            0.20 * p_structure +
+            0.15 * p_value,
+            1,
+        )
+        pattern_label = (
+            "高適合" if pattern_fit >= 75 else
+            "中高適合" if pattern_fit >= 60 else
+            "中適合" if pattern_fit >= 45 else
+            "低適合"
+        )
 
         candidates.append({
             "secCode": sec,
             "issuerName": info.get("issuerName", ""),
             "topHolder": top.get("filerKey", ""),
-            "topRatio": top_ratio,
+            "topRatio": round(top_ratio, 2),
             "accumulating": accumulating,
-            "reportCount": top.get("reportCount", 0),
+            "accumulationDelta": delta_ratio,
+            "accumulationConsistency": round(consistency * 100),
+            "reportCount": len(trend) or top.get("reportCount", 0),
             "stableOwnerPct": round(founder_or_parent, 1),
             "pbr": pbr if subscribed else None,
             "score": score,
@@ -481,10 +535,35 @@ def get_tob_radar(uid: str = Query(default=None)):
                 "holder": round(s_holder), "accum": round(s_accum),
                 "capital": round(s_capital), "value": round(s_value) if subscribed else None,
             },
+            "patternFit": pattern_fit,
+            "patternLabel": pattern_label,
+            "patternModelVersion": "rule-v1",
+            "patternFactors": {
+                "block": round(p_block),
+                "accumulation": round(p_accum),
+                "filingContinuity": round(p_filings),
+                "capitalStructure": round(p_structure),
+                "valuation": round(p_value) if subscribed else None,
+            },
+            "dataQuality": {
+                "validTrendPoints": len(trend),
+                "rejectedHolderRecords": rejected,
+                "status": "要確認" if rejected else "正常",
+            },
         })
 
-    candidates.sort(key=lambda x: x["score"], reverse=True)
-    return {"count": len(candidates), "subscribed": subscribed, "candidates": candidates[:50]}
+    candidates.sort(key=lambda x: (x["patternFit"], x["score"]), reverse=True)
+    return {
+        "count": len(candidates),
+        "subscribed": subscribed,
+        "patternModel": {
+            "version": "rule-v1",
+            "type": "explainable-rule-score",
+            "isProbability": False,
+            "description": "過去の資本再編で見られやすい特徴への適合度。TOBの発生確率ではありません。",
+        },
+        "candidates": candidates[:50],
+    }
 
 
 @app.get("/api/stock-info/{ticker}")

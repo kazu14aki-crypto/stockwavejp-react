@@ -1,0 +1,220 @@
+{
+  "secCode": "4382",
+  "issuerName": "ＨＥＲＯＺ株式会社",
+  "updated_at": "2026/07/27 22:13 JST",
+  "latestDate": "2026-07-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "林　隆弘",
+      "shares": 4341994,
+      "ratio": 28.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高橋　知裕",
+      "shares": 4341994,
+      "ratio": 28.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 596700,
+      "ratio": 3.92,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ビッグローブ株式会社",
+      "shares": 400000,
+      "ratio": 2.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社竹中工務店",
+      "shares": 163132,
+      "ratio": 1.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社コーエーテクモコーポレートファイナンス",
+      "shares": 161676,
+      "ratio": 1.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山下　雅之",
+      "shares": 95000,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "池田　立野",
+      "shares": 78721,
+      "ratio": 0.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP JPMSE LUX RE NOMURA INT PLC 1 EQ CO\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 67322,
+      "ratio": 0.44,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大和証券株式会社",
+      "shares": 52800,
+      "ratio": 0.34,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 58.23,
+      "trust": 3.92,
+      "corporate": 4.76,
+      "financial": 0.44,
+      "securities": 0.34
+    },
+    "individual_total": 58.23,
+    "top10_total": 67.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/05/01－2026/04/30)",
+      "docID": "S100YS1Z",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "林　隆弘",
+          "shares": 4341994,
+          "ratio": 28.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高橋　知裕",
+          "shares": 4341994,
+          "ratio": 28.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 596700,
+          "ratio": 3.92,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ビッグローブ株式会社",
+          "shares": 400000,
+          "ratio": 2.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社竹中工務店",
+          "shares": 163132,
+          "ratio": 1.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社コーエーテクモコーポレートファイナンス",
+          "shares": 161676,
+          "ratio": 1.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山下　雅之",
+          "shares": 95000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "池田　立野",
+          "shares": 78721,
+          "ratio": 0.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP JPMSE LUX RE NOMURA INT PLC 1 EQ CO\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 67322,
+          "ratio": 0.44,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大和証券株式会社",
+          "shares": 52800,
+          "ratio": 0.34,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 58.23,
+          "trust": 3.92,
+          "corporate": 4.76,
+          "financial": 0.44,
+          "securities": 0.34
+        },
+        "individual_total": 58.23,
+        "top10_total": 67.69
+      }
+    }
+  ]
+}

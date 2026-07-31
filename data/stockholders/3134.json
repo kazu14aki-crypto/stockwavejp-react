@@ -1,0 +1,218 @@
+{
+  "secCode": "3134",
+  "issuerName": "Ｈａｍｅｅ株式会社",
+  "updated_at": "2026/07/27 22:12 JST",
+  "latestDate": "2026-07-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＡＯＩ株式会社",
+      "shares": 5359000,
+      "ratio": 33.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "樋口　敦士",
+      "shares": 2415100,
+      "ratio": 15.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 560000,
+      "ratio": 3.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "北村　和順",
+      "shares": 474100,
+      "ratio": 2.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鈴木　淳也",
+      "shares": 141400,
+      "ratio": 0.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 127800,
+      "ratio": 0.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "水島　育大",
+      "shares": 121700,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 111300,
+      "ratio": 0.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "和田　孝行",
+      "shares": 104600,
+      "ratio": 0.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Ｂｏｏｍ　Ｓｅｃｕｒｉｔｉｅｓ　（Ｈ．Ｋ．）　Ｌｉｍｉｔｅｄ　－　Ｃｌｉｅｎｔｓ’　Ａｃｃｏｕｎｔ（常任代理人　マネックス証券株式会社）",
+      "shares": 92000,
+      "ratio": 0.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.49,
+      "individual": 20.34,
+      "trust": 5.0,
+      "securities": 0.57
+    },
+    "individual_total": 20.34,
+    "top10_total": 59.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第28期(2025/05/01－2026/04/30)",
+      "docID": "S100YS4J",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＡＯＩ株式会社",
+          "shares": 5359000,
+          "ratio": 33.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "樋口　敦士",
+          "shares": 2415100,
+          "ratio": 15.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 560000,
+          "ratio": 3.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "北村　和順",
+          "shares": 474100,
+          "ratio": 2.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鈴木　淳也",
+          "shares": 141400,
+          "ratio": 0.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 127800,
+          "ratio": 0.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "水島　育大",
+          "shares": 121700,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 111300,
+          "ratio": 0.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "和田　孝行",
+          "shares": 104600,
+          "ratio": 0.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Ｂｏｏｍ　Ｓｅｃｕｒｉｔｉｅｓ　（Ｈ．Ｋ．）　Ｌｉｍｉｔｅｄ　－　Ｃｌｉｅｎｔｓ’　Ａｃｃｏｕｎｔ（常任代理人　マネックス証券株式会社）",
+          "shares": 92000,
+          "ratio": 0.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.49,
+          "individual": 20.34,
+          "trust": 5.0,
+          "securities": 0.57
+        },
+        "individual_total": 20.34,
+        "top10_total": 59.4
+      }
+    }
+  ]
+}

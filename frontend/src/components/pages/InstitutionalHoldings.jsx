@@ -281,7 +281,7 @@ function TobRadar({ isSubscribed, onNavigate }) {
   return (
     <div>
       <div style={{ fontSize: '13px', color: 'var(--text2)', lineHeight: 1.9, marginBottom: '16px' }}>
-        「配当をもらいながらTOBを待てる」候補を、①大量保有者の厚みと積み増し ②筆頭株主の固定度（親会社・創業家の高比率＝資本再編が読みやすい）③低PBR（上場維持メリットが薄い）の3軸で複合スコア化しています。
+        大量保有・積み増し・資本構成・低PBRに加え、過去の資本再編で見られやすい特徴への「パターン適合度」を表示します。これはTOB発生確率ではなく、現在の開示データが典型的特徴にどれだけ近いかを示す説明可能なルール指標です。
       </div>
       {data.candidates.map((c, i) => (
         <div key={c.secCode} onClick={() => onNavigate?.('銘柄詳細', c.secCode)}
@@ -295,13 +295,19 @@ function TobRadar({ isSubscribed, onNavigate }) {
               {c.score}<span style={{ fontSize: '10px', color: 'var(--text3)' }}> /100</span>
             </span>
           </div>
+          <div style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'8px',padding:'8px 10px',borderRadius:'8px',background:'rgba(74,158,255,.07)',border:'1px solid rgba(74,158,255,.20)'}}>
+            <span style={{fontSize:'10px',fontWeight:700,color:'var(--text3)'}}>過去パターン適合度</span>
+            <b style={{fontFamily:'var(--mono)',fontSize:'15px',color:c.patternFit>=75?'#ffd700':c.patternFit>=60?'#ff8c42':'var(--accent)'}}>{c.patternFit ?? 0}</b>
+            <span style={{fontSize:'10px',color:'var(--text3)'}}>/100・{c.patternLabel}</span>
+            {c.dataQuality?.status!=='正常'&&<span style={{marginLeft:'auto',fontSize:'9px',color:'#ffd700'}}>データ要確認</span>}
+          </div>
           <div style={{ fontSize: '11.5px', color: 'var(--text2)', lineHeight: 1.8 }}>
             大量保有: <b>{c.topHolder}</b> {c.topRatio}%{c.accumulating && <span style={{ color: '#ff5370' }}> ▲積み増し中</span>}（報告{c.reportCount}回）
             ／ 支配的安定株主 <b>{c.stableOwnerPct}%</b>
             {c.pbr != null ? <> ／ PBR <b>{c.pbr}</b></> : <> ／ PBR <span style={{ color: '#ffd700' }}>🔒</span></>}
           </div>
           <div style={{ display: 'flex', gap: '4px', marginTop: '8px' }}>
-            {[['保有', c.factors.holder], ['積増', c.factors.accum], ['資本', c.factors.capital], ['割安', c.factors.value]].map(([l, v]) => (
+            {[['大口保有', c.patternFactors?.block], ['継続積増', c.patternFactors?.accumulation], ['報告継続', c.patternFactors?.filingContinuity], ['資本構造', c.patternFactors?.capitalStructure], ['割安性', c.patternFactors?.valuation]].map(([l, v]) => (
               <div key={l} style={{ flex: 1, textAlign: 'center' }}>
                 <div style={{ height: '4px', background: 'var(--bg3)', borderRadius: '2px', overflow: 'hidden' }}>
                   <div style={{ width: `${v ?? 0}%`, height: '100%', background: v == null ? '#8b949e' : '#4a9eff' }}/>
@@ -313,7 +319,7 @@ function TobRadar({ isSubscribed, onNavigate }) {
         </div>
       ))}
       <div style={{ fontSize: '10.5px', color: 'var(--text3)', marginTop: '12px', lineHeight: 1.7 }}>
-        ※ 統計的な構造の類似性を示すもので、TOBを予測・保証するものではありません。クリックで銘柄詳細へ。{!isSubscribed && 'PBR等はサブスク加入で表示されます。'}
+        ※ 過去パターン適合度は未校正のルールベース指標であり、統計的なTOB確率ではありません。大量保有報告には証券会社のヘッジ・貸借等も含まれるため、原報告書の保有目的と共同保有者を必ず確認してください。クリックで銘柄詳細へ。{!isSubscribed && 'PBR等はサブスク加入で表示されます。'}
       </div>
     </div>
   )

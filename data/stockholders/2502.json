@@ -1,0 +1,216 @@
+{
+  "secCode": "2502",
+  "issuerName": "アサヒグループホールディングス株式会社",
+  "updated_at": "2026/07/27 22:12 JST",
+  "latestDate": "2026-07-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 269739000,
+      "ratio": 18.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 109719000,
+      "ratio": 7.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 35388000,
+      "ratio": 2.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 34520000,
+      "ratio": 2.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 31629000,
+      "ratio": 2.16,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "NORTHERN TRUST CO.(AVFC) RE NON TREATY CLIENTS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 28766000,
+      "ratio": 1.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 25544000,
+      "ratio": 1.75,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＭＢＣ日興証券株式会社",
+      "shares": 24068000,
+      "ratio": 1.65,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "JP MORGAN CHASE BANK 385864\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 23040000,
+      "ratio": 1.57,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE NOMURA TRUST AND BANKING CO., LTD. AS THE TRUSTEE OF REPURCHASE AGREEMENT MOTHER FUND\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 22143000,
+      "ratio": 1.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 25.94,
+      "securities": 4.07,
+      "foreign": 11.32
+    },
+    "individual_total": 0,
+    "top10_total": 41.33
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第102期(2025/01/01－2025/12/31)",
+      "docID": "S100YSGA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 269739000,
+          "ratio": 18.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 109719000,
+          "ratio": 7.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 35388000,
+          "ratio": 2.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 34520000,
+          "ratio": 2.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 31629000,
+          "ratio": 2.16,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "NORTHERN TRUST CO.(AVFC) RE NON TREATY CLIENTS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 28766000,
+          "ratio": 1.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 25544000,
+          "ratio": 1.75,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＭＢＣ日興証券株式会社",
+          "shares": 24068000,
+          "ratio": 1.65,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "JP MORGAN CHASE BANK 385864\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 23040000,
+          "ratio": 1.57,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE NOMURA TRUST AND BANKING CO., LTD. AS THE TRUSTEE OF REPURCHASE AGREEMENT MOTHER FUND\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 22143000,
+          "ratio": 1.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 25.94,
+          "securities": 4.07,
+          "foreign": 11.32
+        },
+        "individual_total": 0,
+        "top10_total": 41.33
+      }
+    }
+  ]
+}
