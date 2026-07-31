@@ -41,7 +41,6 @@ const PAGES = [
   { icon:'📝', label:'コラム・解説',       component:Column               },
 ]
 const PAGES_OTHER = [
-  { icon:'🏢', label:'当サイトについて',  component:SiteInfo   },
   { icon:'📣', label:'お知らせ',          component:News       },
   { icon:'📖', label:'使い方',            component:HowTo      },
   { icon:'💰', label:'プラン・料金',      component:Plan       },
@@ -49,6 +48,7 @@ const PAGES_OTHER = [
 ]
 
 const PAGES_FOOTER = [
+  { icon:'🏢', label:'当サイトについて', component:SiteInfo },
   { icon:'⚖️', label:'免責事項',               component:Disclaimer    },
   { icon:'🔒', label:'プライバシーポリシー',     component:PrivacyPolicy },
   { icon:'📋', label:'利用規約',                component:TermsOfService},
@@ -59,7 +59,7 @@ const PAGES_FOOTER = [
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const DEV_PAGE = { icon:'🎯', label:'Dev Edge', component:DevEdge }
 const MARKET_DEV_PAGE = { icon:'📋', label:'市場別詳細', component:MarketRank }
-const INSTITUTIONAL_DEV_PAGE = { icon:'🏦', label:'機関投資家保有', component:InstitutionalHoldings }
+const INSTITUTIONAL_DEV_PAGE = { icon:'🏦', label:'機関情報', component:InstitutionalHoldings }
 const DEV_PAGES = [DEV_PAGE, MARKET_DEV_PAGE, INSTITUTIONAL_DEV_PAGE]
 const DEV_ONLY_LABELS = new Set(DEV_PAGES.map(p => p.label))
 const STOCK_PAGE = { icon:'📈', label:'銘柄詳細', component:StockDetail }  // サイドバー非表示（クリック遷移専用）
@@ -206,7 +206,7 @@ function AppInner() {
     if (currentPage === '市場別詳細') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'Dev Edge') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === '銘柄詳細') return { ticker: targetStock, onNavigate: handlePageChange, isMobile }
-    if (currentPage === '機関投資家保有') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === '機関情報') return { onNavigate: handlePageChange, isMobile }
     return { isMobile }
   })()
 
@@ -261,6 +261,11 @@ function AppInner() {
         <footer style={{ borderTop:'1px solid var(--border)', padding:'16px 24px',
           textAlign:'center', color:'var(--text3)', fontSize:'11px' }}>
           <div style={{ marginBottom:'8px', display:'flex', justifyContent:'center', gap:'20px', flexWrap:'wrap' }}>
+            <button onClick={() => handlePageChange('当サイトについて')} style={{
+              background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
+              fontSize:'11px', fontFamily:'var(--font)', padding:0,
+              textDecoration:'underline', textUnderlineOffset:'2px',
+            }}>当サイトについて</button>
             <button onClick={() => handlePageChange('免責事項')} style={{
               background:'none', border:'none', color:'var(--text3)', cursor:'pointer',
               fontSize:'11px', fontFamily:'var(--font)', padding:0,

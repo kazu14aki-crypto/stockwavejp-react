@@ -216,7 +216,7 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
               <div style={{ ...S.small, marginTop: '10px' }}>
                 個人系合計 <b style={{ color: '#ffd700' }}>{holders.latestSummary.individual_total?.toFixed(1)}%</b>
                 　上位10名計 <b style={{ color: 'var(--text2)' }}>{holders.latestSummary.top10_total?.toFixed(1)}%</b>
-                {isDev && <>　詳細分析は <span onClick={() => onNavigate?.('機関投資家保有')} style={{ color: 'var(--accent)', cursor: 'pointer' }}>機関投資家保有ページ</span> へ</>}
+                {isDev && <>　詳細分析は <span onClick={() => onNavigate?.('機関情報')} style={{ color: 'var(--accent)', cursor: 'pointer' }}>機関情報ページ</span> へ</>}
               </div>
             )}
           </>
