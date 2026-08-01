@@ -1,0 +1,216 @@
+{
+  "secCode": "2751",
+  "issuerName": "株式会社テンポスホールディングス",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社あさしお",
+      "shares": 2081897,
+      "ratio": 17.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "森下篤史",
+      "shares": 1850500,
+      "ratio": 15.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ガリレイ株式会社",
+      "shares": 962100,
+      "ratio": 7.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社マルゼン",
+      "shares": 480000,
+      "ratio": 3.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "森下潔子",
+      "shares": 418300,
+      "ratio": 3.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "森下和光",
+      "shares": 370800,
+      "ratio": 3.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "長谷川朋子",
+      "shares": 369500,
+      "ratio": 3.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "森下壮人",
+      "shares": 369300,
+      "ratio": 3.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山田暁子",
+      "shares": 351500,
+      "ratio": 2.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "テンポスホールディングス従業員持株会",
+      "shares": 136053,
+      "ratio": 1.13,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.16,
+      "individual": 30.88,
+      "employee": 1.13
+    },
+    "individual_total": 30.88,
+    "top10_total": 61.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第34期(2025/05/01－2026/04/30)",
+      "docID": "S100YS8T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社あさしお",
+          "shares": 2081897,
+          "ratio": 17.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "森下篤史",
+          "shares": 1850500,
+          "ratio": 15.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ガリレイ株式会社",
+          "shares": 962100,
+          "ratio": 7.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社マルゼン",
+          "shares": 480000,
+          "ratio": 3.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "森下潔子",
+          "shares": 418300,
+          "ratio": 3.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "森下和光",
+          "shares": 370800,
+          "ratio": 3.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "長谷川朋子",
+          "shares": 369500,
+          "ratio": 3.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "森下壮人",
+          "shares": 369300,
+          "ratio": 3.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山田暁子",
+          "shares": 351500,
+          "ratio": 2.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "テンポスホールディングス従業員持株会",
+          "shares": 136053,
+          "ratio": 1.13,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.16,
+          "individual": 30.88,
+          "employee": 1.13
+        },
+        "individual_total": 30.88,
+        "top10_total": 61.17
+      }
+    }
+  ]
+}

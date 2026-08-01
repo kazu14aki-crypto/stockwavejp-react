@@ -1,0 +1,220 @@
+{
+  "secCode": "8303",
+  "issuerName": "株式会社ＳＢＩ新生銀行",
+  "updated_at": "2026/08/01 13:16 JST",
+  "latestDate": "2026-07-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "SBIホールディングス株式会社",
+      "shares": 631700000,
+      "ratio": 71.21,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 23373000,
+      "ratio": 2.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "QATAR HOLDING LLC\n（常任代理人　みずほ銀行決済営業部）",
+      "shares": 17000000,
+      "ratio": 1.91,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本証券金融株式会社",
+      "shares": 5373000,
+      "ratio": 0.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "JPモルガン証券株式会社",
+      "shares": 3917000,
+      "ratio": 0.44,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 3786000,
+      "ratio": 0.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "JP MORGAN CHASE BANK 385167\n（常任代理人　みずほ銀行決済営業部）",
+      "shares": 3675000,
+      "ratio": 0.41,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 3564000,
+      "ratio": 0.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "農林中央金庫",
+      "shares": 3448000,
+      "ratio": 0.38,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券株式会社",
+      "shares": 3405000,
+      "ratio": 0.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 71.59,
+      "trust": 3.05,
+      "financial": 2.29,
+      "securities": 1.44,
+      "foreign": 0.41
+    },
+    "individual_total": 0,
+    "top10_total": 78.78
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-30",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YT5Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "SBIホールディングス株式会社",
+          "shares": 631700000,
+          "ratio": 71.21,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 23373000,
+          "ratio": 2.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "QATAR HOLDING LLC\n（常任代理人　みずほ銀行決済営業部）",
+          "shares": 17000000,
+          "ratio": 1.91,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融株式会社",
+          "shares": 5373000,
+          "ratio": 0.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "JPモルガン証券株式会社",
+          "shares": 3917000,
+          "ratio": 0.44,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3786000,
+          "ratio": 0.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "JP MORGAN CHASE BANK 385167\n（常任代理人　みずほ銀行決済営業部）",
+          "shares": 3675000,
+          "ratio": 0.41,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 3564000,
+          "ratio": 0.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "農林中央金庫",
+          "shares": 3448000,
+          "ratio": 0.38,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 3405000,
+          "ratio": 0.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 71.59,
+          "trust": 3.05,
+          "financial": 2.29,
+          "securities": 1.44,
+          "foreign": 0.41
+        },
+        "individual_total": 0,
+        "top10_total": 78.78
+      }
+    }
+  ]
+}

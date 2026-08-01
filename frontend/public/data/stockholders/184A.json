@@ -1,0 +1,218 @@
+{
+  "secCode": "184A",
+  "issuerName": "株式会社学びエイド",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "いなよしキャピタルパートナーズ株式会社",
+      "shares": 1138300,
+      "ratio": 33.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "廣政　愁一",
+      "shares": 809200,
+      "ratio": 23.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "Ｋ＆Ｐパートナーズ２号投資事業有限責任組合",
+      "shares": 407400,
+      "ratio": 11.93,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "Ｋ＆Ｐパートナーズ３号投資事業有限責任組合",
+      "shares": 136900,
+      "ratio": 4.01,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 89900,
+      "ratio": 2.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＨＲ",
+      "shares": 74000,
+      "ratio": 2.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "共同印刷株式会社",
+      "shares": 70000,
+      "ratio": 2.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "J.P.MORGAN SECURITIES PLC(ＪＰモルガン証券株式会社)",
+      "shares": 60339,
+      "ratio": 1.77,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社",
+      "shares": 56800,
+      "ratio": 1.66,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "星野　惠美子",
+      "shares": 46500,
+      "ratio": 1.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 37.57,
+      "individual": 25.07,
+      "other": 15.94,
+      "securities": 6.06
+    },
+    "individual_total": 25.07,
+    "top10_total": 84.64
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/05/01－2026/04/30)",
+      "docID": "S100YSR5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "いなよしキャピタルパートナーズ株式会社",
+          "shares": 1138300,
+          "ratio": 33.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "廣政　愁一",
+          "shares": 809200,
+          "ratio": 23.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "Ｋ＆Ｐパートナーズ２号投資事業有限責任組合",
+          "shares": 407400,
+          "ratio": 11.93,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "Ｋ＆Ｐパートナーズ３号投資事業有限責任組合",
+          "shares": 136900,
+          "ratio": 4.01,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 89900,
+          "ratio": 2.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＨＲ",
+          "shares": 74000,
+          "ratio": 2.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "共同印刷株式会社",
+          "shares": 70000,
+          "ratio": 2.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "J.P.MORGAN SECURITIES PLC(ＪＰモルガン証券株式会社)",
+          "shares": 60339,
+          "ratio": 1.77,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社",
+          "shares": 56800,
+          "ratio": 1.66,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "星野　惠美子",
+          "shares": 46500,
+          "ratio": 1.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 37.57,
+          "individual": 25.07,
+          "other": 15.94,
+          "securities": 6.06
+        },
+        "individual_total": 25.07,
+        "top10_total": 84.64
+      }
+    }
+  ]
+}

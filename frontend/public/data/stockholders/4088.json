@@ -1,0 +1,222 @@
+{
+  "secCode": "4088",
+  "issuerName": "エア・ウォーター株式会社",
+  "updated_at": "2026/08/01 13:16 JST",
+  "latestDate": "2026-07-31",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 26508000,
+      "ratio": 11.56,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 8305000,
+      "ratio": 3.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 7936000,
+      "ratio": 3.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本製鉄株式会社",
+      "shares": 6900000,
+      "ratio": 3.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三井住友銀行",
+      "shares": 6259000,
+      "ratio": 2.73,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "STATE STREET BANK AND TRUSTCOMPANY 505001（常任代理人株式会社みずほ銀行決済営業部）",
+      "shares": 6079000,
+      "ratio": 2.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "エア・ウォーター取引先持株会",
+      "shares": 6058000,
+      "ratio": 2.64,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JPモルガン証券株式会社",
+      "shares": 5920000,
+      "ratio": 2.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "全国共済農業協同組合連合会",
+      "shares": 4951000,
+      "ratio": 2.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "エア・ウォーターグループ持株会",
+      "shares": 4936000,
+      "ratio": 2.15,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 15.18,
+      "financial": 8.35,
+      "corporate": 3.01,
+      "foreign": 2.65,
+      "employee": 4.79,
+      "securities": 2.58
+    },
+    "individual_total": 0,
+    "top10_total": 36.56
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-31",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/04/01－2026/03/31)",
+      "docID": "S100YTII",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 26508000,
+          "ratio": 11.56,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 8305000,
+          "ratio": 3.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 7936000,
+          "ratio": 3.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本製鉄株式会社",
+          "shares": 6900000,
+          "ratio": 3.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 6259000,
+          "ratio": 2.73,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "STATE STREET BANK AND TRUSTCOMPANY 505001（常任代理人株式会社みずほ銀行決済営業部）",
+          "shares": 6079000,
+          "ratio": 2.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "エア・ウォーター取引先持株会",
+          "shares": 6058000,
+          "ratio": 2.64,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JPモルガン証券株式会社",
+          "shares": 5920000,
+          "ratio": 2.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "全国共済農業協同組合連合会",
+          "shares": 4951000,
+          "ratio": 2.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "エア・ウォーターグループ持株会",
+          "shares": 4936000,
+          "ratio": 2.15,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 15.18,
+          "financial": 8.35,
+          "corporate": 3.01,
+          "foreign": 2.65,
+          "employee": 4.79,
+          "securities": 2.58
+        },
+        "individual_total": 0,
+        "top10_total": 36.56
+      }
+    }
+  ]
+}

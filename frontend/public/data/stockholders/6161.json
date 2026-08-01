@@ -1,0 +1,222 @@
+{
+  "secCode": "6161",
+  "issuerName": "株式会社エスティック",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "鈴木　弘",
+      "shares": 1299200,
+      "ratio": 13.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日伝",
+      "shares": 1120000,
+      "ratio": 11.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "弘鈴興産株式会社",
+      "shares": 800000,
+      "ratio": 8.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "長沼商事株式会社",
+      "shares": 560000,
+      "ratio": 5.61,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "エスティック従業員持株会",
+      "shares": 548900,
+      "ratio": 5.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 462200,
+      "ratio": 4.63,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鈴木　弘英",
+      "shares": 392800,
+      "ratio": 3.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND (常任代理人株式会社三菱ＵＦＪ銀行",
+      "shares": 354575,
+      "ratio": 3.55,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東海東京証券株式会社",
+      "shares": 312200,
+      "ratio": 3.13,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "池田　康廣",
+      "shares": 298000,
+      "ratio": 2.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 19.95,
+      "corporate": 24.86,
+      "employee": 5.5,
+      "trust": 4.63,
+      "foreign": 3.55,
+      "securities": 3.13
+    },
+    "individual_total": 19.95,
+    "top10_total": 61.62
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-28",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第33期(2025/03/21－2026/03/20)",
+      "docID": "S100YSNM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "鈴木　弘",
+          "shares": 1299200,
+          "ratio": 13.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日伝",
+          "shares": 1120000,
+          "ratio": 11.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "弘鈴興産株式会社",
+          "shares": 800000,
+          "ratio": 8.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "長沼商事株式会社",
+          "shares": 560000,
+          "ratio": 5.61,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "エスティック従業員持株会",
+          "shares": 548900,
+          "ratio": 5.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 462200,
+          "ratio": 4.63,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鈴木　弘英",
+          "shares": 392800,
+          "ratio": 3.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BBH FOR FIDELITY LOW-PRICED STOCK FUND (常任代理人株式会社三菱ＵＦＪ銀行",
+          "shares": 354575,
+          "ratio": 3.55,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東海東京証券株式会社",
+          "shares": 312200,
+          "ratio": 3.13,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "池田　康廣",
+          "shares": 298000,
+          "ratio": 2.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 19.95,
+          "corporate": 24.86,
+          "employee": 5.5,
+          "trust": 4.63,
+          "foreign": 3.55,
+          "securities": 3.13
+        },
+        "individual_total": 19.95,
+        "top10_total": 61.62
+      }
+    }
+  ]
+}

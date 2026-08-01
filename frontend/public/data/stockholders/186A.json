@@ -1,0 +1,218 @@
+{
+  "secCode": "186A",
+  "issuerName": "株式会社アストロスケールホールディングス",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "岡田 光信",
+      "shares": 24836900,
+      "ratio": 18.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 4727500,
+      "ratio": 3.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）",
+      "shares": 4482989,
+      "ratio": 3.3,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4467500,
+      "ratio": 3.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社グーニーズ",
+      "shares": 3827933,
+      "ratio": 2.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＣＥＰＬＵＸ－　ＴＨＥ　ＩＮＤＥＰＥＮＤＥＮＴ　ＵＣＩＴＳ　ＰＬＡＴＦＯＲＭ　２",
+      "shares": 3800000,
+      "ratio": 2.8,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ヒューリック株式会社",
+      "shares": 3671400,
+      "ratio": 2.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５０１９",
+      "shares": 3405200,
+      "ratio": 2.51,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ",
+      "shares": 3324935,
+      "ratio": 2.45,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ",
+      "shares": 3196752,
+      "ratio": 2.35,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 18.28,
+      "trust": 6.77,
+      "other": 13.41,
+      "corporate": 5.52
+    },
+    "individual_total": 18.28,
+    "top10_total": 43.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/05/01－2026/04/30)",
+      "docID": "S100YSZC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "岡田 光信",
+          "shares": 24836900,
+          "ratio": 18.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 4727500,
+          "ratio": 3.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）",
+          "shares": 4482989,
+          "ratio": 3.3,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4467500,
+          "ratio": 3.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社グーニーズ",
+          "shares": 3827933,
+          "ratio": 2.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＣＥＰＬＵＸ－　ＴＨＥ　ＩＮＤＥＰＥＮＤＥＮＴ　ＵＣＩＴＳ　ＰＬＡＴＦＯＲＭ　２",
+          "shares": 3800000,
+          "ratio": 2.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ヒューリック株式会社",
+          "shares": 3671400,
+          "ratio": 2.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ　ＳＴＲＥＥＴ　ＢＡＮＫ　ＡＮＤ　ＴＲＵＳＴ　ＣＯＭＰＡＮＹ　５０５０１９",
+          "shares": 3405200,
+          "ratio": 2.51,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ",
+          "shares": 3324935,
+          "ratio": 2.45,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ　ＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ",
+          "shares": 3196752,
+          "ratio": 2.35,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.28,
+          "trust": 6.77,
+          "other": 13.41,
+          "corporate": 5.52
+        },
+        "individual_total": 18.28,
+        "top10_total": 43.98
+      }
+    }
+  ]
+}

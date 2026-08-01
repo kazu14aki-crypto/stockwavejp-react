@@ -1,0 +1,216 @@
+{
+  "secCode": "6662",
+  "issuerName": "株式会社ユビテック",
+  "updated_at": "2026/08/01 13:16 JST",
+  "latestDate": "2026-07-31",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "オリックス株式会社",
+      "shares": 8527200,
+      "ratio": 57.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "糸谷　輝夫",
+      "shares": 580800,
+      "ratio": 3.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "GMOクリック証券株式会社",
+      "shares": 503400,
+      "ratio": 3.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "東海東京証券株式会社",
+      "shares": 435500,
+      "ratio": 2.94,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+      "shares": 416600,
+      "ratio": 2.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 416063,
+      "ratio": 2.81,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "後和　信英",
+      "shares": 252200,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "綾部　利華",
+      "shares": 214100,
+      "ratio": 1.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "叶　毓菁",
+      "shares": 194500,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "市嶋 朋子",
+      "shares": 150000,
+      "ratio": 1.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 57.64,
+      "individual": 9.38,
+      "securities": 11.96
+    },
+    "individual_total": 9.38,
+    "top10_total": 78.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-31",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第49期(2024/07/01－2025/06/30)",
+      "docID": "S100YTAR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "オリックス株式会社",
+          "shares": 8527200,
+          "ratio": 57.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "糸谷　輝夫",
+          "shares": 580800,
+          "ratio": 3.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "GMOクリック証券株式会社",
+          "shares": 503400,
+          "ratio": 3.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "東海東京証券株式会社",
+          "shares": 435500,
+          "ratio": 2.94,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＤＭＭ．ｃｏｍ証券",
+          "shares": 416600,
+          "ratio": 2.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 416063,
+          "ratio": 2.81,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "後和　信英",
+          "shares": 252200,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "綾部　利華",
+          "shares": 214100,
+          "ratio": 1.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "叶　毓菁",
+          "shares": 194500,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "市嶋 朋子",
+          "shares": 150000,
+          "ratio": 1.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 57.64,
+          "individual": 9.38,
+          "securities": 11.96
+        },
+        "individual_total": 9.38,
+        "top10_total": 78.98
+      }
+    }
+  ]
+}

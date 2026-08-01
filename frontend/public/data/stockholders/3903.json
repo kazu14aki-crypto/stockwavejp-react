@@ -1,0 +1,222 @@
+{
+  "secCode": "3903",
+  "issuerName": "株式会社ｇｕｍｉ",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "SBIホールディングス株式会社",
+      "shares": 16460000,
+      "ratio": 30.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "SUPER STATE HOLDINGS株式会社",
+      "shares": 3387500,
+      "ratio": 6.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 3136400,
+      "ratio": 5.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本証券金融株式会社",
+      "shares": 1642000,
+      "ratio": 3.05,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社スクウェア・エニックス・ホールディングス",
+      "shares": 1180000,
+      "ratio": 2.19,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "モルガン・スタンレーMUFG 証券株式会社",
+      "shares": 791138,
+      "ratio": 1.47,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 789200,
+      "ratio": 1.46,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG",
+      "shares": 396685,
+      "ratio": 0.74,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "石橋拓朗",
+      "shares": 387000,
+      "ratio": 0.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行株式会社( 投信口)",
+      "shares": 325900,
+      "ratio": 0.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.02,
+      "trust": 5.82,
+      "securities": 5.98,
+      "foreign": 0.74,
+      "individual": 0.72,
+      "financial": 0.6
+    },
+    "individual_total": 0.72,
+    "top10_total": 52.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/05/01－2026/04/30)",
+      "docID": "S100YSP4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "SBIホールディングス株式会社",
+          "shares": 16460000,
+          "ratio": 30.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "SUPER STATE HOLDINGS株式会社",
+          "shares": 3387500,
+          "ratio": 6.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 3136400,
+          "ratio": 5.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本証券金融株式会社",
+          "shares": 1642000,
+          "ratio": 3.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社スクウェア・エニックス・ホールディングス",
+          "shares": 1180000,
+          "ratio": 2.19,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "モルガン・スタンレーMUFG 証券株式会社",
+          "shares": 791138,
+          "ratio": 1.47,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 789200,
+          "ratio": 1.46,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG",
+          "shares": 396685,
+          "ratio": 0.74,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "石橋拓朗",
+          "shares": 387000,
+          "ratio": 0.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村信託銀行株式会社( 投信口)",
+          "shares": 325900,
+          "ratio": 0.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.02,
+          "trust": 5.82,
+          "securities": 5.98,
+          "foreign": 0.74,
+          "individual": 0.72,
+          "financial": 0.6
+        },
+        "individual_total": 0.72,
+        "top10_total": 52.88
+      }
+    }
+  ]
+}
