@@ -1,0 +1,216 @@
+{
+  "secCode": "3823",
+  "issuerName": "ＴＨＥ　ＷＨＹ　ＨＯＷ　ＤＯ　ＣＯＭＰＡＮＹ株式会社",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "田邊　勝己",
+      "shares": 25083400,
+      "ratio": 17.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2869800,
+      "ratio": 1.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2154200,
+      "ratio": 1.48,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社共有口",
+      "shares": 1929700,
+      "ratio": 1.32,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "佐藤　重樹",
+      "shares": 1555500,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "江藤　重光",
+      "shares": 1400000,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW\n（常任代理人　野村證券株式会社）",
+      "shares": 926600,
+      "ratio": 0.63,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 861586,
+      "ratio": 0.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 729500,
+      "ratio": 0.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "三菱ＵＦＪｅスマート証券株式会社",
+      "shares": 709439,
+      "ratio": 0.48,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 19.26,
+      "foreign": 4.08,
+      "securities": 2.89
+    },
+    "individual_total": 19.26,
+    "top10_total": 26.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/09/01－2026/04/30)",
+      "docID": "S100YTBE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "田邊　勝己",
+          "shares": 25083400,
+          "ratio": 17.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2869800,
+          "ratio": 1.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2154200,
+          "ratio": 1.48,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社共有口",
+          "shares": 1929700,
+          "ratio": 1.32,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "佐藤　重樹",
+          "shares": 1555500,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "江藤　重光",
+          "shares": 1400000,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW\n（常任代理人　野村證券株式会社）",
+          "shares": 926600,
+          "ratio": 0.63,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 861586,
+          "ratio": 0.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 729500,
+          "ratio": 0.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "三菱ＵＦＪｅスマート証券株式会社",
+          "shares": 709439,
+          "ratio": 0.48,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 19.26,
+          "foreign": 4.08,
+          "securities": 2.89
+        },
+        "individual_total": 19.26,
+        "top10_total": 26.23
+      }
+    }
+  ]
+}

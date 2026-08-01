@@ -1,0 +1,216 @@
+{
+  "secCode": "3070",
+  "issuerName": "株式会社ジェリービーンズグループ",
+  "updated_at": "2026/08/01 13:17 JST",
+  "latestDate": "2026-07-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "須田　忠雄",
+      "shares": 17226300,
+      "ratio": 21.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本証券金融株式会社",
+      "shares": 4631300,
+      "ratio": 5.83,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 4242698,
+      "ratio": 5.34,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社共有口",
+      "shares": 2383400,
+      "ratio": 3.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "尹　炯植",
+      "shares": 1120000,
+      "ratio": 1.41,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社りんたん",
+      "shares": 1052600,
+      "ratio": 1.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高村　健司",
+      "shares": 914200,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "朝倉　未来",
+      "shares": 612500,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "天笠　悦藏",
+      "shares": 549100,
+      "ratio": 0.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社Ｐｕｎｉｃａ＆Ｃｏ．",
+      "shares": 526300,
+      "ratio": 0.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 25.72,
+      "securities": 14.17,
+      "corporate": 1.99
+    },
+    "individual_total": 25.72,
+    "top10_total": 41.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-28",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第36期(2025/02/01－2026/01/31)",
+      "docID": "S100YSM1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "須田　忠雄",
+          "shares": 17226300,
+          "ratio": 21.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本証券金融株式会社",
+          "shares": 4631300,
+          "ratio": 5.83,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 4242698,
+          "ratio": 5.34,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社共有口",
+          "shares": 2383400,
+          "ratio": 3.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "尹　炯植",
+          "shares": 1120000,
+          "ratio": 1.41,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社りんたん",
+          "shares": 1052600,
+          "ratio": 1.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高村　健司",
+          "shares": 914200,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "朝倉　未来",
+          "shares": 612500,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "天笠　悦藏",
+          "shares": 549100,
+          "ratio": 0.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社Ｐｕｎｉｃａ＆Ｃｏ．",
+          "shares": 526300,
+          "ratio": 0.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 25.72,
+          "securities": 14.17,
+          "corporate": 1.99
+        },
+        "individual_total": 25.72,
+        "top10_total": 41.88
+      }
+    }
+  ]
+}

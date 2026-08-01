@@ -1,0 +1,220 @@
+{
+  "secCode": "2678",
+  "issuerName": "アスクル株式会社",
+  "updated_at": "2026/08/01 13:16 JST",
+  "latestDate": "2026-07-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "LINEヤフー株式会社",
+      "shares": 41980000,
+      "ratio": 46.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "プラス株式会社",
+      "shares": 10331000,
+      "ratio": 11.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3812000,
+      "ratio": 4.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１（常任代理人　株式会社みずほ銀行）",
+      "shares": 1250000,
+      "ratio": 1.4,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岩田 彰一郎",
+      "shares": 1249000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "今泉 英久",
+      "shares": 1233000,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "今泉 忠久",
+      "shares": 1232000,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５０４４（常任代理人　株式会社みずほ銀行）",
+      "shares": 649000,
+      "ratio": 0.72,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ（ＦＥ－ＡＣ）（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 590000,
+      "ratio": 0.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＵＢＳ ＡＧ ＬＯＮＤＯＮ Ａ／Ｃ ＩＰＢ ＳＥＧＲＥＧＡＴＥＤ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ （常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 566000,
+      "ratio": 0.63,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 58.43,
+      "trust": 4.26,
+      "financial": 2.78,
+      "individual": 4.16,
+      "other": 0.63
+    },
+    "individual_total": 4.16,
+    "top10_total": 70.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-07-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/05/21－2026/05/20)",
+      "docID": "S100YSYE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "LINEヤフー株式会社",
+          "shares": 41980000,
+          "ratio": 46.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "プラス株式会社",
+          "shares": 10331000,
+          "ratio": 11.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3812000,
+          "ratio": 4.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５００１（常任代理人　株式会社みずほ銀行）",
+          "shares": 1250000,
+          "ratio": 1.4,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岩田 彰一郎",
+          "shares": 1249000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "今泉 英久",
+          "shares": 1233000,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "今泉 忠久",
+          "shares": 1232000,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＳＴＡＴＥ ＳＴＲＥＥＴ ＢＡＮＫ ＡＮＤ ＴＲＵＳＴ ＣＯＭＰＡＮＹ ５０５０４４（常任代理人　株式会社みずほ銀行）",
+          "shares": 649000,
+          "ratio": 0.72,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＢＮＹ ＧＣＭ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ ＪＰＲＤ ＡＣ ＩＳＧ（ＦＥ－ＡＣ）（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 590000,
+          "ratio": 0.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＵＢＳ ＡＧ ＬＯＮＤＯＮ Ａ／Ｃ ＩＰＢ ＳＥＧＲＥＧＡＴＥＤ ＣＬＩＥＮＴ ＡＣＣＯＵＮＴ （常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 566000,
+          "ratio": 0.63,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 58.43,
+          "trust": 4.26,
+          "financial": 2.78,
+          "individual": 4.16,
+          "other": 0.63
+        },
+        "individual_total": 4.16,
+        "top10_total": 70.26
+      }
+    }
+  ]
+}

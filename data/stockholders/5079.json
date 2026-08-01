@@ -1,217 +1,213 @@
 {
-  "secCode": "272A",
-  "issuerName": "株式会社グリーンクロスホールディングス",
+  "secCode": "5079",
+  "issuerName": "株式会社ノバック",
   "updated_at": "2026/08/01 13:17 JST",
-  "latestDate": "2026-07-27",
+  "latestDate": "2026-07-29",
   "latest": [
     {
       "rank": 1,
-      "name": "グリーンクロスホールディングス社員持株会",
-      "shares": 1237000,
-      "ratio": 14.87,
+      "name": "ノバック従業員持株会",
+      "shares": 862900,
+      "ratio": 16.74,
       "category": "employee",
       "category_label": "従業員持株会",
       "is_founder_family": false
     },
     {
       "rank": 2,
-      "name": "柴田　泰三",
-      "shares": 512000,
-      "ratio": 6.15,
+      "name": "立花　充",
+      "shares": 302500,
+      "ratio": 5.87,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 3,
-      "name": "青山　悦子",
-      "shares": 408000,
-      "ratio": 4.9,
+      "name": "大谷　敏博",
+      "shares": 211597,
+      "ratio": 4.11,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 4,
-      "name": "東條　優",
-      "shares": 366000,
-      "ratio": 4.4,
+      "name": "東山　正人",
+      "shares": 151900,
+      "ratio": 2.95,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 5,
-      "name": "井上　愛",
-      "shares": 366000,
-      "ratio": 4.4,
+      "name": "山本　博和",
+      "shares": 148000,
+      "ratio": 2.87,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 6,
-      "name": "中野　淑",
-      "shares": 366000,
-      "ratio": 4.4,
+      "name": "大谷　博三",
+      "shares": 130116,
+      "ratio": 2.52,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 7,
-      "name": "新海　秀治",
-      "shares": 270000,
-      "ratio": 3.24,
+      "name": "大谷　敏彦",
+      "shares": 120117,
+      "ratio": 2.33,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 8,
-      "name": "株式会社西日本シティ銀行",
-      "shares": 256000,
-      "ratio": 3.07,
-      "category": "financial",
-      "category_label": "銀行・保険",
+      "name": "牧野　久",
+      "shares": 120000,
+      "ratio": 2.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 9,
-      "name": "椛田　法義",
-      "shares": 200000,
-      "ratio": 2.4,
+      "name": "中末　浩一",
+      "shares": 105800,
+      "ratio": 2.05,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 10,
-      "name": "リックス株式会社",
-      "shares": 194000,
-      "ratio": 2.33,
-      "category": "corporate",
-      "category_label": "事業法人",
+      "name": "齋木　純一郎",
+      "shares": 90000,
+      "ratio": 1.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     }
   ],
   "latestSummary": {
     "by_category": {
-      "employee": 14.87,
-      "individual": 29.89,
-      "financial": 3.07,
-      "corporate": 2.33
+      "employee": 16.74,
+      "individual": 26.78
     },
-    "individual_total": 29.89,
-    "top10_total": 50.16
+    "individual_total": 26.78,
+    "top10_total": 43.52
   },
   "history": [
     {
-      "submitDate": "2026-07-27",
+      "submitDate": "2026-07-29",
       "docType": "120",
-      "docTypeName": "有価証券報告書－第2期(2025/05/01－2026/04/30)",
-      "docID": "S100YSCR",
+      "docTypeName": "有価証券報告書－第62期(2025/05/01－2026/04/30)",
+      "docID": "S100YSTZ",
       "shareholders": [
         {
           "rank": 1,
-          "name": "グリーンクロスホールディングス社員持株会",
-          "shares": 1237000,
-          "ratio": 14.87,
+          "name": "ノバック従業員持株会",
+          "shares": 862900,
+          "ratio": 16.74,
           "category": "employee",
           "category_label": "従業員持株会",
           "is_founder_family": false
         },
         {
           "rank": 2,
-          "name": "柴田　泰三",
-          "shares": 512000,
-          "ratio": 6.15,
+          "name": "立花　充",
+          "shares": 302500,
+          "ratio": 5.87,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 3,
-          "name": "青山　悦子",
-          "shares": 408000,
-          "ratio": 4.9,
+          "name": "大谷　敏博",
+          "shares": 211597,
+          "ratio": 4.11,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 4,
-          "name": "東條　優",
-          "shares": 366000,
-          "ratio": 4.4,
+          "name": "東山　正人",
+          "shares": 151900,
+          "ratio": 2.95,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 5,
-          "name": "井上　愛",
-          "shares": 366000,
-          "ratio": 4.4,
+          "name": "山本　博和",
+          "shares": 148000,
+          "ratio": 2.87,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 6,
-          "name": "中野　淑",
-          "shares": 366000,
-          "ratio": 4.4,
+          "name": "大谷　博三",
+          "shares": 130116,
+          "ratio": 2.52,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 7,
-          "name": "新海　秀治",
-          "shares": 270000,
-          "ratio": 3.24,
+          "name": "大谷　敏彦",
+          "shares": 120117,
+          "ratio": 2.33,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 8,
-          "name": "株式会社西日本シティ銀行",
-          "shares": 256000,
-          "ratio": 3.07,
-          "category": "financial",
-          "category_label": "銀行・保険",
+          "name": "牧野　久",
+          "shares": 120000,
+          "ratio": 2.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 9,
-          "name": "椛田　法義",
-          "shares": 200000,
-          "ratio": 2.4,
+          "name": "中末　浩一",
+          "shares": 105800,
+          "ratio": 2.05,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 10,
-          "name": "リックス株式会社",
-          "shares": 194000,
-          "ratio": 2.33,
-          "category": "corporate",
-          "category_label": "事業法人",
+          "name": "齋木　純一郎",
+          "shares": 90000,
+          "ratio": 1.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         }
       ],
       "summary": {
         "by_category": {
-          "employee": 14.87,
-          "individual": 29.89,
-          "financial": 3.07,
-          "corporate": 2.33
+          "employee": 16.74,
+          "individual": 26.78
         },
-        "individual_total": 29.89,
-        "top10_total": 50.16
+        "individual_total": 26.78,
+        "top10_total": 43.52
       }
     }
   ]
