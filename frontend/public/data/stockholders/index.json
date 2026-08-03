@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026/08/01",
-  "count": 1667,
+  "updated_at": "2026/08/03",
+  "count": 1669,
   "items": [
+    {
+      "secCode": "2503",
+      "issuerName": "キリンホールディングス株式会社",
+      "latestDate": "2026-08-03",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "4689",
+      "issuerName": "ＬＩＮＥヤフー株式会社",
+      "latestDate": "2026-08-03",
+      "holderCount": 10,
+      "topHolder": "Aホールディングス㈱",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0
+    },
     {
       "secCode": "7133",
       "issuerName": "ＨＹＵＧＡ　ＰＲＩＭＡＲＹ　ＣＡＲＥ株式会社",
