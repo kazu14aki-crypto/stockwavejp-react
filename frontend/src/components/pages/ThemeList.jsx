@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+﻿import React, { useState, useEffect } from 'react'
 import { useThemes, useCustomThemeStats, useMacro, useMomentum, useMonthlyHeatmap } from '../../hooks/useMarketData'
 import { useCustomThemes } from '../../hooks/useCustomThemes'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
@@ -592,7 +592,7 @@ function CustomThemeRow({ ct, period, pctColor, rank, volRankMap, tvRankMap }) {
               {pct >= 0 ? '+' : ''}{pct.toFixed(2)}%
             </div>
             <div style={{ height:'3px', background:'rgba(128,128,128,0.15)', borderRadius:'2px', margin:'4px 0' }}>
-              <div style={{ width:`${Math.min(Math.abs(displayReturn)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
+              <div style={{ width:`${Math.min(Math.abs(pct)/25*100,100)}%`, height:'100%', background:col, borderRadius:'2px' }}/>
             </div>
             <div style={{ fontSize:'10px', color:'var(--text3)', fontFamily:'var(--mono)', lineHeight:1.7 }}>
               <span style={{ display:'flex', justifyContent:'space-between' }}>
@@ -1602,3 +1602,4 @@ const selStyle = {
   fontFamily: 'var(--font)', fontSize: '13px',
   padding: '6px 12px', cursor: 'pointer', outline: 'none',
 }
+
