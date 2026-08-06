@@ -59,7 +59,7 @@ const PAGES_FOOTER = [
 const CONTACT_FORM_URL = 'https://forms.gle/XjNypTdmZt265Kib6'
 const DEV_PAGE = { icon:'🎯', label:'Dev Edge', component:DevEdge }
 const MARKET_DEV_PAGE = { icon:'📋', label:'市場別詳細', component:MarketRank }
-const INSTITUTIONAL_DEV_PAGE = { icon:'🏦', label:'機関情報', component:InstitutionalHoldings }
+const INSTITUTIONAL_DEV_PAGE = { icon:'🏦', label:'機関投資家情報', component:InstitutionalHoldings }
 const DEV_PAGES = [DEV_PAGE, MARKET_DEV_PAGE, INSTITUTIONAL_DEV_PAGE]
 const DEV_ONLY_LABELS = new Set(DEV_PAGES.map(p => p.label))
 const STOCK_PAGE = { icon:'📈', label:'銘柄詳細', component:StockDetail }  // サイドバー非表示（クリック遷移専用）
@@ -206,7 +206,7 @@ function AppInner() {
     if (currentPage === '市場別詳細') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === 'Dev Edge') return { onNavigate: handlePageChange, isMobile }
     if (currentPage === '銘柄詳細') return { ticker: targetStock, onNavigate: handlePageChange, isMobile }
-    if (currentPage === '機関情報') return { onNavigate: handlePageChange, isMobile }
+    if (currentPage === '機関投資家情報') return { onNavigate: handlePageChange, isMobile }
     return { isMobile }
   })()
 

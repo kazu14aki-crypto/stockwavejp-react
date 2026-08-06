@@ -5,7 +5,7 @@ import { useAuth }         from '../hooks/useAuth.jsx'
 import { useSubscription } from '../hooks/useSubscription.jsx'
 
 const FEATURE_LABELS = {
-  institutional:   { name:'機関情報', status:'developer_only' },
+  institutional:   { name:'機関投資家情報', status:'developer_only' },
   weekly_archive:  { name:'週次レポートアーカイブ', requiredPlan:'スタンダード以上', requiredKey:'standard' },
   custom_theme_ai: { name:'カスタムテーマAI分析', requiredPlan:'プロ', requiredKey:'pro' },
   market_detail:   { name:'市場別詳細', status:'developer_only' },

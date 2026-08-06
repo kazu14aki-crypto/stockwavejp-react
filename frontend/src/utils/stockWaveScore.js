@@ -1,5 +1,31 @@
 const clamp = (value, min=0, max=1) => Math.min(max, Math.max(min, value))
 
+/**
+ * Individual-stock attention score (0–100).
+ * Uses the same factors as the "注目銘柄ピックアップ": return, volume change,
+ * recent price acceleration, and trading value. This is a relative attention
+ * indicator, not an investment recommendation.
+ */
+export function calculateStockAttentionScore(stock={}) {
+  const pct=Number(stock?.pct) || 0
+  const volumeChange=Number(stock?.volume_chg) || 0
+  const tradingValue=Number(stock?.trade_value) || 0
+  const pctPoints=Math.min(40,Math.max(0,pct*2))
+  const volumePoints=Math.min(25,Math.max(0,volumeChange*0.5))
+  const tradingValuePoints=tradingValue>0 ? Math.min(15,Math.log10(tradingValue)*1.5) : 0
+  const spark=Array.isArray(stock?.spark) ? stock.spark.map(Number).filter(Number.isFinite) : []
+  let accelerationPoints=0
+
+  if (spark.length>=6) {
+    const midpoint=Math.floor(spark.length/2)
+    const firstAverage=spark.slice(0,midpoint).reduce((sum,value)=>sum+value,0)/midpoint
+    const lastAverage=spark.slice(midpoint).reduce((sum,value)=>sum+value,0)/(spark.length-midpoint)
+    accelerationPoints=Math.min(20,Math.max(0,(lastAverage-firstAverage)*3))
+  }
+
+  return Math.min(100,Math.max(0,pctPoints+volumePoints+tradingValuePoints+accelerationPoints))
+}
+
 const medianOf = values => {
   if (!values.length) return null
   const sorted=[...values].sort((a,b)=>a-b)

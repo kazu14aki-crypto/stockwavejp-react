@@ -3,7 +3,7 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 import StockBubbleChart from '../StockBubbleChart'
 import AddToThemeModal from '../AddToThemeModal'
 import StockWaveScoreCard from '../StockWaveScoreCard'
-import { calculateStockWaveScore } from '../../utils/stockWaveScore'
+import { calculateStockAttentionScore, calculateStockWaveScore } from '../../utils/stockWaveScore'
 
 // テーマ別詳細用：グラフ全体＋下部ボタンクリックで拡大
 function TdExpandable({ title, children, style }) {
@@ -330,11 +330,6 @@ function PickupStocks({ stocks, period, onNavigate }) {
     const volChg = s.volume_chg ?? 0
     const tv     = s.trade_value ?? 0
 
-    const pctScore = Math.min(40, Math.max(0, pct * 2))
-    const volScore = Math.min(25, Math.max(0, volChg * 0.5))
-    const tvScore  = tv > 0 ? Math.min(15, Math.log10(tv) * 1.5) : 0
-
-    let sparkScore = 0
     let sparkAccel = 0
     if (s.spark && s.spark.length >= 6) {
       const sp = s.spark, n = sp.length
@@ -342,10 +337,9 @@ function PickupStocks({ stocks, period, onNavigate }) {
       const avgFirst = sp.slice(0, h).reduce((a, b) => a + b, 0) / h
       const avgLast  = sp.slice(h).reduce((a, b) => a + b, 0) / (n - h)
       sparkAccel = avgLast - avgFirst
-      sparkScore = Math.min(20, Math.max(0, sparkAccel * 3))
     }
 
-    const totalScore = pctScore + volScore + sparkScore + tvScore
+    const totalScore = calculateStockAttentionScore(s)
 
     const buildReason = () => {
       const parts = []
@@ -500,7 +494,7 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
   }
   const handleSort=key=>{if(!key)return;if(sortKey===key)setSortAsc(v=>!v);else{setSortKey(key);setSortAsc(false)}}
   const sortIndicator=key=>sortKey===key?(sortAsc?' ↑':' ↓'):' ↕'
-  const stocks=[...rawStocks].map((stock,index)=>({...stock,_originalIndex:index}))
+  const stocks=[...rawStocks].map((stock,index)=>({...stock,_originalIndex:index,attention_score:calculateStockAttentionScore(stock)}))
     .sort((a,b)=>{const va=getSortValue(a,sortKey),vb=getSortValue(b,sortKey);const am=va==null||va==='',bm=vb==null||vb=='';if(am||bm)return am===bm?0:am?1:-1;const r=(typeof va==='string'||typeof vb==='string')?String(va).localeCompare(String(vb),undefined,{numeric:true,sensitivity:'base'}):Number(va)-Number(vb);return sortAsc?r:-r})
 
   // ② 上部スクロールバーと表を同期
@@ -545,8 +539,8 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
     if (tableRef.current) tableRef.current.style.cursor = 'grab'
   }
 
-  const headers = ['ミニチャート','株価','騰落率','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
-  const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','時価総額':'market_cap','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd'}
+  const headers = ['ミニチャート','株価','騰落率','スコア','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
+  const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','スコア':'attention_score','時価総額':'market_cap','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd'}
   const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
   const { plan, canAccessPeriod } = useSubscription()
   const isSubscribed = ['standard','pro','pro_trial','dev'].includes(plan)
@@ -606,6 +600,7 @@ function StockTable({ stocks: rawStocks, onNavigate }) {
                   </td>
                   <td style={tdR}><span style={{ fontFamily:'var(--mono)', color:'var(--text2)' }}>¥{s.price?.toLocaleString()}</span></td>
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
+                  <td style={{ ...tdC, fontFamily:'var(--mono)', fontWeight:700, color:s.attention_score>=60?'#ff5370':s.attention_score>=35?'#ff8c42':'var(--text2)' }} title="騰落率・出来高変化・勢い・売買代金をもとにした注目度（0〜100）">{Math.round(s.attention_score)}</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:
                     (s.contribution ?? 0) >= 70 ? '#ff5370' :
