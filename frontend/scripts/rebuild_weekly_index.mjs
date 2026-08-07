@@ -83,13 +83,16 @@ function main() {
     process.exit(1)
   }
 
-  // week（例: "2026-W28"）の文字列降順 = 新しい週が先頭。同一年内は正しく並ぶ。
-  // 年をまたぐ場合（例 2025-W52 と 2026-W01）は date（ISO日付）で最終補正する。
+  // 日付表記が "2026/04/24" と "2026-08-07" のように混在しても、
+  // 実際の日付として降順に並べる。文字列比較では "/" が "-" より大きく、
+  // 古いレポートが最新として表示されてしまうため正規化する。
+  const sortableDate = (date) => String(date || '').replaceAll('/', '-')
   entries.sort((a, b) => {
-    if (a.week !== b.week) return a.week < b.week ? 1 : -1
-    return a.date < b.date ? 1 : -1
+    const aDate = sortableDate(a.date)
+    const bDate = sortableDate(b.date)
+    if (aDate !== bDate) return aDate < bDate ? 1 : -1
+    return a.week < b.week ? 1 : a.week > b.week ? -1 : 0
   })
-  entries.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
 
   const before = existsSync(INDEX_PATH)
     ? (() => {
