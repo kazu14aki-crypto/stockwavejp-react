@@ -323,7 +323,7 @@ export default function WeeklyReport({ onNavigate }) {
           {summary && (
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'10px', marginTop:'14px' }}>
               <div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'5px', fontWeight:600 }}>🔥 週間TOP5テーマ</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'5px', fontWeight:600 }}>🔥 週間上昇トップ5テーマ</div>
                 {summary.top5_themes?.map((t,i) => (
                   <div key={t.theme} style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
                     fontSize:'11px', marginBottom:'3px', padding:'3px 8px',
@@ -331,13 +331,13 @@ export default function WeeklyReport({ onNavigate }) {
                     onClick={() => onNavigate?.('テーマ別詳細', t.theme)}>
                     <span style={{ color:'var(--text2)' }}>{i+1}. {t.theme}</span>
                     <span style={{ color:'var(--red)', fontFamily:'var(--mono)', fontWeight:700, marginLeft:'6px', flexShrink:0 }}>
-                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '定性'}
+                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '未集計'}
                     </span>
                   </div>
                 ))}
               </div>
               <div>
-                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'5px', fontWeight:600 }}>❄️ 週間BOT5テーマ</div>
+                <div style={{ fontSize:'11px', color:'var(--text3)', marginBottom:'5px', fontWeight:600 }}>❄️ 週間下落トップ5テーマ</div>
                 {summary.bot5_themes?.map((t,i) => (
                   <div key={t.theme} style={{ display:'flex', justifyContent:'space-between', alignItems:'center',
                     fontSize:'11px', marginBottom:'3px', padding:'3px 8px',
@@ -345,7 +345,7 @@ export default function WeeklyReport({ onNavigate }) {
                     onClick={() => onNavigate?.('テーマ別詳細', t.theme)}>
                     <span style={{ color:'var(--text2)' }}>{i+1}. {t.theme}</span>
                     <span style={{ color:'var(--green)', fontFamily:'var(--mono)', fontWeight:700, marginLeft:'6px', flexShrink:0 }}>
-                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '定性'}
+                      {Number.isFinite(t.pct) ? `${t.pct >= 0 ? '+' : ''}${t.pct.toFixed(1)}%` : '未集計'}
                     </span>
                   </div>
                 ))}
