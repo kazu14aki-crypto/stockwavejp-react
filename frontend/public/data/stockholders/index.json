@@ -1,7 +1,79 @@
 {
-  "updated_at": "2026/08/03",
-  "count": 1669,
+  "updated_at": "2026/08/08",
+  "count": 1673,
   "items": [
+    {
+      "secCode": "7012",
+      "issuerName": "川崎重工業株式会社",
+      "latestDate": "2026-08-07",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 2.12
+    },
+    {
+      "secCode": "6493",
+      "issuerName": "株式会社ＮＩＴＴＡＮ",
+      "latestDate": "2026-08-07",
+      "holderCount": 10,
+      "topHolder": "イートンコーポレーション（常任代理人　株式会社みずほ銀行決済営業部）",
+      "topHolderCategory": "financial",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "9072",
+      "issuerName": "ニッコンホールディングス株式会社",
+      "latestDate": "2026-08-07",
+      "holderCount": 10,
+      "topHolder": "GOLDMAN, SACHS & CO.REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "topHolderCategory": "foreign",
+      "individualTotal": 4.38
+    },
+    {
+      "secCode": "4224",
+      "issuerName": "ロンシール工業株式会社",
+      "latestDate": "2026-08-06",
+      "holderCount": 10,
+      "topHolder": "東ソー株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 1.0
+    },
+    {
+      "secCode": "3544",
+      "issuerName": "サツドラホールディングス株式会社",
+      "latestDate": "2026-08-06",
+      "holderCount": 10,
+      "topHolder": "株式会社トミーコーポレーション",
+      "topHolderCategory": "corporate",
+      "individualTotal": 8.82
+    },
+    {
+      "secCode": "8558",
+      "issuerName": "株式会社東和銀行",
+      "latestDate": "2026-08-06",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト\n信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 1.21
+    },
+    {
+      "secCode": "7794",
+      "issuerName": "株式会社イーディーピー",
+      "latestDate": "2026-08-05",
+      "holderCount": 10,
+      "topHolder": "藤森直治",
+      "topHolderCategory": "individual",
+      "individualTotal": 10.56
+    },
+    {
+      "secCode": "7272",
+      "issuerName": "ヤマハ発動機株式会社",
+      "latestDate": "2026-08-05",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
     {
       "secCode": "2503",
       "issuerName": "キリンホールディングス株式会社",
@@ -2836,15 +2908,6 @@
       "topHolder": "太田事務所株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 2.22
-    },
-    {
-      "secCode": "9072",
-      "issuerName": "ニッコンホールディングス株式会社",
-      "latestDate": "2026-06-26",
-      "holderCount": 10,
-      "topHolder": "GOLDMAN, SACHS & CO.REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
-      "topHolderCategory": "foreign",
-      "individualTotal": 4.38
     },
     {
       "secCode": "6273",
@@ -6717,15 +6780,6 @@
       "individualTotal": 0
     },
     {
-      "secCode": "7794",
-      "issuerName": "株式会社イーディーピー",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "藤森直治",
-      "topHolderCategory": "individual",
-      "individualTotal": 10.56
-    },
-    {
       "secCode": "7537",
       "issuerName": "丸文株式会社",
       "latestDate": "2026-06-24",
@@ -10101,15 +10155,6 @@
       "individualTotal": 37.74
     },
     {
-      "secCode": "4224",
-      "issuerName": "ロンシール工業株式会社",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "東ソー株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 1.0
-    },
-    {
       "secCode": "3611",
       "issuerName": "株式会社マツオカコーポレーション",
       "latestDate": "2026-06-23",
@@ -11980,15 +12025,6 @@
       "topHolder": "有限会社藤和興産",
       "topHolderCategory": "corporate",
       "individualTotal": 2.59
-    },
-    {
-      "secCode": "6493",
-      "issuerName": "株式会社ＮＩＴＴＡＮ",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "イートンコーポレーション（常任代理人　株式会社みずほ銀行決済営業部）",
-      "topHolderCategory": "financial",
-      "individualTotal": 0
     },
     {
       "secCode": "3839",
