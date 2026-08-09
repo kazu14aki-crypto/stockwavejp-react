@@ -243,13 +243,25 @@ function ThemeContextVisual({ col }) {
   return (
     <section className="column-context-visual" aria-label={`${theme || 'コラム'}の注目点`}>
       <div className="column-context-heading"><span aria-hidden="true">{visual.icon}</span><strong>{visual.label}</strong><small>本文を読む前の整理</small></div>
-      <div className="column-context-flow">
-        {visual.points.map((point, index) => (
-          <div key={point} className="column-context-point">
-            <span className="column-context-number">{index + 1}</span>
-            <span>{point}</span>
-          </div>
-        ))}
+      <div className="column-context-diagram" role="img" aria-label={`${visual.label}を三段階で示す図解`}>
+        <svg viewBox="0 0 720 176" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs>
+            <linearGradient id="column-flow-gradient" x1="0" x2="1"><stop offset="0%" stopColor="#49a8ff" /><stop offset="100%" stopColor="#a87cff" /></linearGradient>
+            <filter id="column-flow-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" floodColor="#07162e" floodOpacity=".32" /></filter>
+          </defs>
+          <path d="M204 90H260M460 90H516" stroke="url(#column-flow-gradient)" strokeWidth="4" strokeLinecap="round" />
+          <path d="M252 78l14 12-14 12M508 78l14 12-14 12" fill="none" stroke="#9bcaff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          {visual.points.map((point, index) => {
+            const x = 12 + index * 252
+            return <g key={point} transform={`translate(${x} 33)`} filter="url(#column-flow-shadow)">
+              <rect width="192" height="114" rx="16" fill="rgba(13,35,68,.92)" stroke="#5d9ee8" strokeWidth="1.5" />
+              <circle cx="96" cy="29" r="16" fill="url(#column-flow-gradient)" />
+              <text x="96" y="34" textAnchor="middle" fill="#fff" fontSize="16" fontWeight="700">{index + 1}</text>
+              <text x="96" y="77" textAnchor="middle" fill="#edf6ff" fontSize="16" fontWeight="700">{point}</text>
+              <text x="96" y="101" textAnchor="middle" fill="#9fc5ee" fontSize="11">投資判断の確認ポイント</text>
+            </g>
+          })}
+        </svg>
       </div>
     </section>
   )
@@ -660,11 +672,12 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           border:1px solid rgba(255,255,255,.06);
         }
         .column-context-visual {
-          margin:0 0 20px;
-          padding:15px 16px;
-          border:1px solid rgba(91,156,246,.28);
-          border-radius:10px;
-          background:linear-gradient(135deg, rgba(74,158,255,.13), rgba(170,119,255,.07));
+          margin:0 0 24px;
+          padding:18px;
+          border:1px solid rgba(91,156,246,.48);
+          border-radius:14px;
+          background:linear-gradient(135deg, rgba(50,137,235,.22), rgba(158,99,255,.13));
+          box-shadow:0 12px 30px rgba(0,0,0,.14);
         }
         .column-context-heading {
           display:flex;
@@ -675,35 +688,8 @@ export default function Column({ initialArticleId = null, onNavigate }) {
         }
         .column-context-heading strong { font-weight:700; }
         .column-context-heading small { margin-left:auto; color:var(--text3); font-size:10px; }
-        .column-context-flow {
-          display:grid;
-          grid-template-columns:repeat(3, minmax(0, 1fr));
-          gap:8px;
-          margin-top:12px;
-        }
-        .column-context-point {
-          display:flex;
-          align-items:center;
-          gap:7px;
-          min-width:0;
-          padding:8px;
-          border-radius:7px;
-          background:rgba(8,20,42,.26);
-          color:var(--text2);
-          font-size:11px;
-        }
-        .column-context-number {
-          display:grid;
-          flex:0 0 auto;
-          place-items:center;
-          width:18px;
-          height:18px;
-          border-radius:50%;
-          background:rgba(74,158,255,.24);
-          color:#a9ceff;
-          font-size:10px;
-          font-family:var(--mono);
-        }
+        .column-context-diagram { margin-top:14px; overflow:hidden; }
+        .column-context-diagram svg { display:block; width:100%; min-width:540px; height:auto; }
         .column-card-meta {
           display:grid;
           grid-template-columns:auto minmax(0,1fr) auto;
@@ -751,9 +737,9 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           .column-theme-label {
             order:3;
           }
-          .column-context-visual { padding:13px; }
+          .column-context-visual { padding:14px; }
           .column-context-heading small { display:none; }
-          .column-context-flow { grid-template-columns:1fr; gap:6px; }
+          .column-context-diagram { overflow-x:auto; padding-bottom:4px; }
           .column-card-meta {
             grid-template-columns:auto minmax(0,1fr);
             grid-template-areas:

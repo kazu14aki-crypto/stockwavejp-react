@@ -70,9 +70,13 @@ const CONTEXT_VISUALS = {
 function contextVisualHtml(a) {
   const visual = CONTEXT_VISUALS[a.id]
   if (!visual) return ''
+  const nodes = visual.points.map((point, index) => {
+    const x = 12 + index * 252
+    return `<g transform="translate(${x} 33)" filter="url(#column-flow-shadow)"><rect width="192" height="114" rx="16" fill="#12365f" stroke="#5d9ee8" stroke-width="1.5"/><circle cx="96" cy="29" r="16" fill="url(#column-flow-gradient)"/><text x="96" y="34" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">${index + 1}</text><text x="96" y="77" text-anchor="middle" fill="#edf6ff" font-size="16" font-weight="700">${esc(point)}</text><text x="96" y="101" text-anchor="middle" fill="#b8d8f5" font-size="11">投資判断の確認ポイント</text></g>`
+  }).join('')
   return `<aside class="context-visual" aria-label="${esc(a.themes?.[0] || 'テーマ')}の注目ポイント">
       <div class="context-heading"><span aria-hidden="true">${visual.icon}</span><strong>${esc(visual.label)}</strong><small>本文を読む前の整理</small></div>
-      <div class="context-flow">${visual.points.map((point, index) => `<div class="context-point"><span>${index + 1}</span><b>${esc(point)}</b></div>`).join('')}</div>
+      <div class="context-diagram" role="img" aria-label="${esc(visual.label)}を三段階で示す図解"><svg viewBox="0 0 720 176" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><defs><linearGradient id="column-flow-gradient" x1="0" x2="1"><stop offset="0%" stop-color="#49a8ff"/><stop offset="100%" stop-color="#a87cff"/></linearGradient><filter id="column-flow-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#07162e" flood-opacity=".32"/></filter></defs><path d="M204 90H260M460 90H516" stroke="url(#column-flow-gradient)" stroke-width="4" stroke-linecap="round"/><path d="M252 78l14 12-14 12M508 78l14 12-14 12" fill="none" stroke="#9bcaff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>${nodes}</svg></div>
     </aside>`
 }
 
@@ -103,13 +107,10 @@ function buildArticleHtml(a) {
   const bodyHtml = bodyToHtml(a.body)
   const contextHtml = contextVisualHtml(a)
   const contextStyles = contextHtml ? `
-    .context-visual{margin:18px 0;padding:15px 16px;border:1px solid #b8d5f5;border-radius:10px;background:linear-gradient(135deg,#eef7ff,#f8f4ff)}
+    .context-visual{margin:18px 0;padding:18px;border:1px solid #8ec3f7;border-radius:14px;background:linear-gradient(135deg,#e3f2ff,#f2eaff);box-shadow:0 10px 24px rgba(28,82,133,.12)}
     .context-heading{display:flex;align-items:center;gap:8px;color:#183b67;font-size:.9rem}
     .context-heading strong{font-size:.95rem}.context-heading small{margin-left:auto;color:#60758d;font-size:.75rem}
-    .context-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-    .context-point{display:flex;align-items:center;gap:7px;padding:8px;border-radius:6px;background:#fff;color:#36516f;font-size:.78rem}
-    .context-point span{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#ddebfb;color:#2864a0;font-size:.7rem;font-weight:700}
-    .context-point b{font-weight:600}@media(max-width:560px){.context-flow{grid-template-columns:1fr}.context-heading small{display:none}}
+    .context-diagram{margin-top:14px;overflow:hidden}.context-diagram svg{display:block;width:100%;min-width:540px;height:auto}@media(max-width:560px){.context-diagram{overflow-x:auto;padding-bottom:4px}.context-heading small{display:none}}
 ` : ''
   const contextMarkup = contextHtml ? `\n    ${contextHtml}` : ''
   const schema = JSON.stringify({
