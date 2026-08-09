@@ -23,22 +23,22 @@ const THEME_ARTICLE_MAP = {
   '太陽光発電':        'renewable-energy-theme',
   '核融合発電':        'renewable-energy-theme',
   '原子力発電':        'renewable-energy-theme',
-  '電力会社':          'renewable-energy-theme',
+  '電力会社':          'electric-utilities-theme-2026',
   'LNG':               'inpex-analysis',
   '石油':              'inpex-analysis',
   '蓄電池':            'ev-green-theme',
-  '資源（水素・ヘリウム・水）': 'rare-earth-resources-theme',
+  '資源（水素・ヘリウム・水）': 'hydrogen-helium-water-resources-theme-2026',
   'IOWN':              'optical-communication',
   '光ファイバー・光部品':            'optical-communication',
   '通信':              'telecom-theme',
   '量子コンピューター':'ai-cloud-theme',
-  'SaaS':              'fintech-theme',
+  'SaaS':              'saas-theme-2026',
   'ウェアラブル端末':  'game-entertainment-theme',
   '仮想通貨':          'fintech-theme',
   'ネット銀行':        'banking-finance-theme',
   '鉄鋼・素材':        'steel-materials-theme',
   '化学':              'chemical-theme',
-  '建築資材':          'construction-infra-theme',
+  '建築資材':          'building-materials-theme-2026',
   '塗料':              'chemical-theme',
   '医薬品・バイオ':    'pharma-bio-theme',
   'ヘルスケア・介護':  'healthcare-nursing-theme',
@@ -56,7 +56,9 @@ const THEME_ARTICLE_MAP = {
   '小売・EC':          'retail-ec-theme',
   '観光・ホテル・レジャー': 'tourism-hotel-theme',
   'インバウンド':      'inbound-theme',
-  'リユース・中古品':  'retail-ec-theme',
+  'リユース・中古品':  'reuse-secondhand-theme-2026',
+  '内需・ディフェンシブ': 'domestic-demand-defensive-theme-2026',
+  '円安メリット':      'weak-yen-benefit-theme-2026',
   '防衛・航空':        'defense-theme',
   '宇宙・衛星':        'space-satellite-theme',
   'ロボット・自動化':  'robot-automation-theme',
@@ -225,6 +227,34 @@ function RenderBody({ text }) {
   return <div>{elements}</div>
 }
 
+const THEME_VISUALS = {
+  '内需・ディフェンシブ': { icon:'🏠', label:'需要・価格・コスト', points:['生活者の支出', '価格転嫁', '人件費・金利'] },
+  '円安メリット': { icon:'💱', label:'売上・調達・ヘッジ', points:['海外売上', '輸入コスト', '為替ヘッジ'] },
+  '電力会社': { icon:'⚡', label:'需要・供給・投資', points:['電力需要', '脱炭素電源', '送配電投資'] },
+  '資源（水素・ヘリウム・水）': { icon:'💧', label:'供給網・品質・契約', points:['製造・精製', '輸送・保安', '長期契約'] },
+  'SaaS': { icon:'☁️', label:'継続率・単価・コスト', points:['顧客定着', 'アップセル', '獲得コスト'] },
+  '建築資材': { icon:'🏗️', label:'数量・単価・原価', points:['着工・改修', '価格転嫁', '原材料・物流'] },
+  'リユース・中古品': { icon:'♻️', label:'買取・在庫・信頼', points:['査定', '在庫回転', '真贋・保証'] },
+}
+
+function ThemeContextVisual({ col }) {
+  const theme = col.themes?.[0]
+  const visual = THEME_VISUALS[theme] || { icon:col.icon || '📊', label:'テーマを読む三つの視点', points:['事業構造', '注目材料', 'リスク'] }
+  return (
+    <section className="column-context-visual" aria-label={`${theme || 'コラム'}の注目点`}>
+      <div className="column-context-heading"><span aria-hidden="true">{visual.icon}</span><strong>{visual.label}</strong><small>本文を読む前の整理</small></div>
+      <div className="column-context-flow">
+        {visual.points.map((point, index) => (
+          <div key={point} className="column-context-point">
+            <span className="column-context-number">{index + 1}</span>
+            <span>{point}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
 export default function Column({ initialArticleId = null, onNavigate }) {
   const [activeCat,  setActiveCat]  = useState('すべて')
   const [activeCol,  setActiveCol]  = useState(initialArticleId)
@@ -327,6 +357,7 @@ export default function Column({ initialArticleId = null, onNavigate }) {
             ))}
           </div>
         </div>
+        <ThemeContextVisual col={col} />
         <div style={{ background:'var(--bg2)', border:'1px solid var(--border)', borderRadius:'10px',
           padding:'6px 20px 20px', marginBottom:'28px' }}>
           <RenderBody text={col.body} />
@@ -628,6 +659,51 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           background:rgba(255,255,255,.035);
           border:1px solid rgba(255,255,255,.06);
         }
+        .column-context-visual {
+          margin:0 0 20px;
+          padding:15px 16px;
+          border:1px solid rgba(91,156,246,.28);
+          border-radius:10px;
+          background:linear-gradient(135deg, rgba(74,158,255,.13), rgba(170,119,255,.07));
+        }
+        .column-context-heading {
+          display:flex;
+          align-items:center;
+          gap:8px;
+          color:#e8f0ff;
+          font-size:13px;
+        }
+        .column-context-heading strong { font-weight:700; }
+        .column-context-heading small { margin-left:auto; color:var(--text3); font-size:10px; }
+        .column-context-flow {
+          display:grid;
+          grid-template-columns:repeat(3, minmax(0, 1fr));
+          gap:8px;
+          margin-top:12px;
+        }
+        .column-context-point {
+          display:flex;
+          align-items:center;
+          gap:7px;
+          min-width:0;
+          padding:8px;
+          border-radius:7px;
+          background:rgba(8,20,42,.26);
+          color:var(--text2);
+          font-size:11px;
+        }
+        .column-context-number {
+          display:grid;
+          flex:0 0 auto;
+          place-items:center;
+          width:18px;
+          height:18px;
+          border-radius:50%;
+          background:rgba(74,158,255,.24);
+          color:#a9ceff;
+          font-size:10px;
+          font-family:var(--mono);
+        }
         .column-card-meta {
           display:grid;
           grid-template-columns:auto minmax(0,1fr) auto;
@@ -675,6 +751,9 @@ export default function Column({ initialArticleId = null, onNavigate }) {
           .column-theme-label {
             order:3;
           }
+          .column-context-visual { padding:13px; }
+          .column-context-heading small { display:none; }
+          .column-context-flow { grid-template-columns:1fr; gap:6px; }
           .column-card-meta {
             grid-template-columns:auto minmax(0,1fr);
             grid-template-areas:
