@@ -27,6 +27,7 @@ import DevEdge      from './components/pages/DevEdge'
 import StockDetail  from './components/pages/StockDetail'
 import ErrorBoundary from './components/ErrorBoundary'
 import LegalConsentGate from './components/LegalConsentGate'
+import FreeTrialPrompt from './components/FreeTrialPrompt'
 import RelatedPageNav, { hasRelatedPageNav } from './components/RelatedPageNav'
 import { useSubscription } from './hooks/useSubscription.jsx'
 
@@ -221,6 +222,7 @@ function AppInner() {
         onLogoClick={handleLogoClick}
       />
       <LegalConsentGate onNavigate={handlePageChange} />
+      <FreeTrialPrompt />
 
       {sidebarOpen && isMobile && (
         <div onClick={() => setSidebarOpen(false)} style={{

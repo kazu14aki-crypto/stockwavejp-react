@@ -1,4 +1,5 @@
 import UpgradePlanButton from '../UpgradePlanButton'
+import { PENDING_TRIAL_START_KEY } from '../FreeTrialPrompt'
 import { useState, useEffect } from 'react'
 import { useAuth }         from '../../hooks/useAuth.jsx'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
@@ -43,6 +44,7 @@ export default function Plan({ onNavigate }) {
 
   const startFreeTrial = async () => {
     if (!isLoggedIn) {
+      sessionStorage.setItem(PENDING_TRIAL_START_KEY, '1')
       signIn()
       return
     }
@@ -208,7 +210,7 @@ export default function Plan({ onNavigate }) {
               <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'auto' }}>
                 {p.key === 'pro' && (
                   <button onClick={startFreeTrial} disabled={trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired'} style={{ width:'100%', padding:'10px 12px', borderRadius:'8px', border:'1px solid rgba(170,119,255,.62)', background:'rgba(170,119,255,.14)', color:'#d5bdff', fontWeight:700, fontSize:'12px', cursor:(trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired') ? 'not-allowed' : 'pointer', opacity:(trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired') ? .58 : 1 }}>
-                    {!isLoggedIn ? 'ログインして無料体験を開始' : trialBusy ? '無料体験を開始しています…' : currentPlan === 'pro_trial' ? '無料体験をご利用中' : currentPlan === 'trial_expired' ? '無料体験は利用済みです' : '14日間無料体験を開始'}
+                    {!isLoggedIn ? 'ログインしてプロプラン無料体験する' : trialBusy ? '無料体験を開始しています…' : currentPlan === 'pro_trial' ? '無料体験をご利用中' : currentPlan === 'trial_expired' ? '無料体験は利用済みです' : 'プロプラン無料体験を開始する（14日間）'}
                   </button>
                 )}
                 <UpgradePlanButton priceKey={`${p.key}_monthly`} label={p.name} color={p.color} disabled={false}/>

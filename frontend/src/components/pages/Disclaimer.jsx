@@ -56,7 +56,7 @@ export default function Disclaimer() {
   return (
     <div style={{ padding:'28px 32px 60px', maxWidth:'760px', margin:'0 auto' }}>
       <h1 style={{ fontSize:'24px', fontWeight:700, color:'#e8f0ff', marginBottom:'4px' }}>免責事項</h1>
-      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'32px' }}>最終更新：2026年8月4日 · バージョン：2026-08-04</p>
+      <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'32px' }}>最終更新：2026年8月9日 · バージョン：2026-08-09</p>
       {sections.map((s, i) => (
         <div key={i} style={{ marginBottom:'28px' }}>
           <h2 style={{ fontSize:'15px', fontWeight:700, color:'#e8f0ff', marginBottom:'10px',

@@ -1,10 +1,10 @@
 {
   "policy": "法務文書は改定時に既存の版を削除せず、この履歴へ新しい版を追記します。",
-  "current_version": "2026-08-04",
+  "current_version": "2026-08-09",
   "documents": {
-    "terms_of_service": [{ "version": "2026-08-04", "effective_date": "2026-08-04", "status": "current", "summary": "版管理を開始" }],
-    "privacy_policy": [{ "version": "2026-08-04", "effective_date": "2026-08-04", "status": "current", "summary": "版管理を開始" }],
-    "disclaimer": [{ "version": "2026-08-04", "effective_date": "2026-08-04", "status": "current", "summary": "版管理を開始" }],
-    "legal_notice": [{ "version": "2026-08-04", "effective_date": "2026-08-04", "status": "current", "summary": "版管理を開始" }]
+    "terms_of_service": [{ "version": "2026-08-09", "effective_date": "2026-08-09", "status": "current", "summary": "プロプラン無料体験が料金プランページでの明示操作後にのみ始まることを明確化" }, { "version": "2026-08-04", "effective_date": "2026-08-04", "status": "archived", "summary": "版管理を開始" }],
+    "privacy_policy": [{ "version": "2026-08-09", "effective_date": "2026-08-09", "status": "current", "summary": "バージョン統一" }, { "version": "2026-08-04", "effective_date": "2026-08-04", "status": "archived", "summary": "版管理を開始" }],
+    "disclaimer": [{ "version": "2026-08-09", "effective_date": "2026-08-09", "status": "current", "summary": "バージョン統一" }, { "version": "2026-08-04", "effective_date": "2026-08-04", "status": "archived", "summary": "版管理を開始" }],
+    "legal_notice": [{ "version": "2026-08-09", "effective_date": "2026-08-09", "status": "current", "summary": "無料体験の明示開始を明確化" }, { "version": "2026-08-04", "effective_date": "2026-08-04", "status": "archived", "summary": "版管理を開始" }]
   }
 }
