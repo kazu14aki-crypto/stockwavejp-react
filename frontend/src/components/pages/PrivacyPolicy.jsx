@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
   ]
   return <div style={{padding:'28px 32px 60px',maxWidth:'820px',margin:'0 auto'}}>
     <h1 style={{fontSize:'24px',fontWeight:700,color:'#e8f0ff',marginBottom:'4px'}}>プライバシーポリシー</h1>
-    <p style={{fontSize:'12px',color:'var(--text3)',marginBottom:'12px'}}>最終更新：2026年7月22日</p>
+    <p style={{fontSize:'12px',color:'var(--text3)',marginBottom:'12px'}}>最終更新：2026年8月4日 · バージョン：2026-08-04</p>
     <div style={{padding:'12px 14px',marginBottom:'28px',border:'1px solid rgba(74,158,255,.25)',borderRadius:'8px',background:'rgba(74,158,255,.06)',fontSize:'11px',color:'var(--text2)',lineHeight:1.8}}>実際に取得する情報と利用中の外部サービスに合わせて記載しています。</div>
     {sections.map(([title,body],i)=><section key={i} style={{marginBottom:'28px'}}>
       <h2 style={{fontSize:'15px',fontWeight:700,color:'#e8f0ff',marginBottom:'10px',borderLeft:'3px solid var(--accent)',paddingLeft:'12px'}}>{title}</h2>

@@ -94,9 +94,9 @@ export default function Settings({ viewMode, onViewModeChange, colorTheme, onCol
                 <span style={{ fontSize:'11px', padding:'3px 10px', borderRadius:'20px',
                   background:'rgba(170,119,255,0.15)', color:'#aa77ff', border:'1px solid rgba(170,119,255,0.3)' }}>
                   初回14日間無料体験中{(() => {
-                    const fl = user?.user_metadata?.first_login_at
-                    if (!fl) return ''
-                    const end = new Date(new Date(fl).getTime() + 14*24*60*60*1000)
+                    const startedAt = user?.user_metadata?.pro_trial_started_at
+                    if (!startedAt) return ''
+                    const end = new Date(new Date(startedAt).getTime() + 14*24*60*60*1000)
                     const rem = Math.max(0, Math.ceil((end - new Date()) / 86400000))
                     return '　終了日：' + end.toLocaleDateString('ja-JP', {year:'numeric',month:'long',day:'numeric'}) + '　（残り' + rem + '日）'
                   })()}

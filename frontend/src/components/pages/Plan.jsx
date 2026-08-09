@@ -6,9 +6,11 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 export default function Plan({ onNavigate }) {
   const [isMobile, setIsMobile] = useState(false)
   const { isLoggedIn, signIn } = useAuth()
-  const { plan: currentPlan, planLabel } = useSubscription()
+  const { plan: currentPlan, planLabel, refreshSubscription } = useSubscription()
   const [portalBusy, setPortalBusy] = useState(false)
   const [portalError, setPortalError] = useState(null)
+  const [trialBusy, setTrialBusy] = useState(false)
+  const [trialMessage, setTrialMessage] = useState(null)
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 640)
@@ -36,6 +38,33 @@ export default function Plan({ onNavigate }) {
       setPortalError(error.message)
     } finally {
       setPortalBusy(false)
+    }
+  }
+
+  const startFreeTrial = async () => {
+    if (!isLoggedIn) {
+      signIn()
+      return
+    }
+    setTrialBusy(true)
+    setTrialMessage(null)
+    try {
+      const { supabase } = await import('../../lib/supabase')
+      const { data: { session } } = await supabase.auth.getSession()
+      if (!session?.user) throw new Error('ログイン情報を確認できませんでした。もう一度ログインしてください。')
+      if (session.user.user_metadata?.pro_trial_started_at) {
+        throw new Error('無料体験はすでに開始済み、または利用済みです。')
+      }
+      const { error } = await supabase.auth.updateUser({
+        data: { pro_trial_started_at: new Date().toISOString() }
+      })
+      if (error) throw error
+      refreshSubscription()
+      setTrialMessage('無料体験を開始しました。開始日から14日間、プロプランの全機能をご利用いただけます。')
+    } catch (error) {
+      setTrialMessage(error.message || '無料体験を開始できませんでした。時間をおいて再度お試しください。')
+    } finally {
+      setTrialBusy(false)
     }
   }
 
@@ -110,7 +139,12 @@ export default function Plan({ onNavigate }) {
           border:'1px solid rgba(170,119,255,0.3)', borderRadius:'10px',
           fontSize:'13px', color:'#aa77ff', marginBottom:'16px', lineHeight:1.7 }}>
           🎉 <strong>プロプラン体験版（無料）</strong>をご利用中です。<br/>
-          <span style={{ fontSize:'11px', color:'var(--text2)' }}>初回ログインから14日間、全機能を無料でお試しいただけます。期間終了後は自動的にFreeプランになります。</span>
+          <span style={{ fontSize:'11px', color:'var(--text2)' }}>無料体験を開始した日から14日間、全機能を無料でお試しいただけます。期間終了後は自動的にFreeプランになります。</span>
+        </div>
+      )}
+      {trialMessage && (
+        <div role="status" style={{ padding:'12px 16px', background:currentPlan === 'pro_trial' ? 'rgba(70,190,130,0.12)' : 'rgba(255,180,80,0.12)', border:`1px solid ${currentPlan === 'pro_trial' ? 'rgba(70,190,130,0.36)' : 'rgba(255,180,80,0.36)'}`, borderRadius:'10px', fontSize:'12px', color:'var(--text2)', marginBottom:'16px', lineHeight:1.7 }}>
+          {trialMessage}
         </div>
       )}
       <p style={{ fontSize:'12px', color:'var(--text3)', marginBottom:'24px', lineHeight:1.7 }}>
@@ -172,6 +206,11 @@ export default function Plan({ onNavigate }) {
             {/* 申し込みボタン */}
             {p.key !== 'free' && (
               <div style={{ display:'flex', flexDirection:'column', gap:'6px', marginTop:'auto' }}>
+                {p.key === 'pro' && (
+                  <button onClick={startFreeTrial} disabled={trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired'} style={{ width:'100%', padding:'10px 12px', borderRadius:'8px', border:'1px solid rgba(170,119,255,.62)', background:'rgba(170,119,255,.14)', color:'#d5bdff', fontWeight:700, fontSize:'12px', cursor:(trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired') ? 'not-allowed' : 'pointer', opacity:(trialBusy || currentPlan === 'pro_trial' || currentPlan === 'trial_expired') ? .58 : 1 }}>
+                    {!isLoggedIn ? 'ログインして無料体験を開始' : trialBusy ? '無料体験を開始しています…' : currentPlan === 'pro_trial' ? '無料体験をご利用中' : currentPlan === 'trial_expired' ? '無料体験は利用済みです' : '14日間無料体験を開始'}
+                  </button>
+                )}
                 <UpgradePlanButton priceKey={`${p.key}_monthly`} label={p.name} color={p.color} disabled={false}/>
               </div>
             )}
@@ -205,7 +244,7 @@ export default function Plan({ onNavigate }) {
           </table>
         </div>
         <p style={{ fontSize:'11px', color:'var(--text3)', marginTop:'12px' }}>
-          ※ 料金は消費税込み。有料プランは近日公開予定。
+          ※ 料金は消費税込み。
         </p>
       </div>
       {/* 無料体験期間中の契約に関する注意事項 */}
@@ -215,7 +254,7 @@ export default function Plan({ onNavigate }) {
           ⚠️ 無料体験期間中のサブスク加入について
         </div>
         <div style={{ fontSize:'12px', color:'var(--text2)', lineHeight:1.8 }}>
-          無料体験期間中（初回ログインから14日間）にサブスクリプションへ加入された場合、
+          無料体験期間中（無料体験を開始した日から14日間）にサブスクリプションへ加入された場合、
           <strong>加入した時点で無料体験期間が終了し、有料契約期間が開始</strong>となります。<br/>
           料金プランページの「支払い管理ポータル」から、プラン変更・支払い方法変更・解約を行えます。<br/>
           解約後も<strong>契約期間の終了日まで</strong>引き続きご利用いただけます。
@@ -246,7 +285,7 @@ export default function Plan({ onNavigate }) {
             ['プラン変更・解約','既存の有料契約はStripeの支払い管理ポータルで変更します。プラン変更はポータル設定に基づき日割り処理され、解約は契約期間終了時に行う設定です。'],
             ['支払失敗','支払い管理ポータルでカード情報を更新してください。Stripeの再請求後、ログアウト・再ログインすると契約状態が反映されます。'],
             ['二重課金','請求履歴を確認し、請求日・金額・登録メールアドレスを添えてお問い合わせください。調査前に重複契約をすべて解約しないでください。'],
-            ['体験期間終了','14日間の体験終了後は自動課金せずFreeへ移行します。体験中に有料契約した場合は、契約した時点から有料期間が始まります。'],
+            ['体験期間終了','料金プランページで無料体験を開始した日から14日間ご利用いただけます。終了後は自動課金せずFreeへ移行します。体験中に有料契約した場合は、契約した時点から有料期間が始まります。'],
             ['有料機能が反映されない','決済完了後にログアウト・再ログインしてください。改善しない場合は決済完了メールと登録メールアドレスを添えてお問い合わせください。'],
             ['アカウント削除','設定ページの最下部にあります。削除時は誤操作防止の確認画面が2回表示されます。'],
           ].map(([title,body]) => (

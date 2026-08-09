@@ -27,6 +27,7 @@ export function SubscriptionProvider({ children }) {
   const [loading,   setLoading]   = useState(true)
   const [expiresAt, setExpiresAt] = useState(null)
   const [status, setStatus] = useState(null)
+  const [refreshToken, setRefreshToken] = useState(0)
 
   useEffect(() => {
     let cancelled = false
@@ -74,25 +75,19 @@ export function SubscriptionProvider({ children }) {
           }
         }
 
-        // サブスクなし → 初回ログイン14日間はProプラン体験版
+        // サブスクなし → 料金プランページで明示的に開始した14日間のみPro体験版
         const userMeta = session.user.user_metadata || {}
-        const firstLoginAt = userMeta.first_login_at
-        if (!firstLoginAt) {
-          // 初回ログイン日時を記録
-          await supabase.auth.updateUser({
-            data: { first_login_at: new Date().toISOString() }
-          }).catch(() => {})
-          if (!cancelled) { setPlan('pro_trial'); setLoading(false) }
-          return
-        }
-        const daysSinceFirst = (Date.now() - new Date(firstLoginAt).getTime()) / (1000 * 60 * 60 * 24)
-        if (daysSinceFirst < 14) {
+        const trialStartedAt = userMeta.pro_trial_started_at
+        const daysSinceStart = trialStartedAt
+          ? (Date.now() - new Date(trialStartedAt).getTime()) / (1000 * 60 * 60 * 24)
+          : null
+        if (trialStartedAt && Number.isFinite(daysSinceStart) && daysSinceStart < 14) {
           if (!cancelled) { setPlan('pro_trial'); setLoading(false) }
           return
         }
 
         // 14日経過・サブスクなし → Free
-        if (!cancelled) { setPlan('free'); setLoading(false) }
+        if (!cancelled) { setPlan(trialStartedAt ? 'trial_expired' : 'free'); setLoading(false) }
       } catch {
         if (!cancelled) { setPlan('free'); setLoading(false) }
       }
@@ -107,13 +102,17 @@ export function SubscriptionProvider({ children }) {
     })
 
     return () => { cancelled = true; subscription.unsubscribe() }
-  }, [])
+  }, [refreshToken])
 
   const value = {
     plan,
     loading,
     expiresAt,
     status,
+    refreshSubscription: () => {
+      setLoading(true)
+      setRefreshToken(value => value + 1)
+    },
     // 便利なbooleanヘルパー
     isFree:     plan === 'free',
     isStandard: ['standard','pro','pro_trial','dev'].includes(plan),

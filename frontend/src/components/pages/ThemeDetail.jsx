@@ -348,7 +348,7 @@ function PickupStocks({ stocks, period, onNavigate }) {
       else if (pct >= 2)   parts.push('+' + pct.toFixed(1) + '%の上昇でテーマ平均を上回っています')
       else if (pct > 0)    parts.push('+' + pct.toFixed(1) + '%と小幅ながらプラスを維持しています')
 
-      if (volChg >= 50)      parts.push('出来高が+' + volChg.toFixed(0) + '%と急増しており、機関投資家・外国人投資家の大口資金の流入が強く示唆されます')
+      if (volChg >= 50)      parts.push('出来高が+' + volChg.toFixed(0) + '%と大きく増加しており、市場参加者の関心が高まっている可能性があります')
       else if (volChg >= 20) parts.push('出来高が+' + volChg.toFixed(0) + '%増加しており、市場参加者の注目が高まっています')
 
       if (sparkAccel > 3)    parts.push('直近の価格推移が後半にかけて加速（後半平均+' + sparkAccel.toFixed(1) + '%）しており、モメンタムが強まっています')
