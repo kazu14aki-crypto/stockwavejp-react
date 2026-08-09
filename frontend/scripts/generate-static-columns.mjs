@@ -40,6 +40,8 @@ function extractArticles(src) {
     const nextPos = i+1 < idMatches.length ? idMatches[i+1].index : src.length
     const chunk = src.slice(pos, nextPos)
     const g = (pat) => { const r = chunk.match(pat); return r ? r[1] : '' }
+    const themesMatch = chunk.match(/themes:\s*\[([^\]]*)\]/)
+    const themes = themesMatch ? [...themesMatch[1].matchAll(/'([^']+)'/g)].map(x => x[1]) : []
     const bodyStart = chunk.indexOf('body: `')
     const bodyEnd   = bodyStart >= 0 ? chunk.indexOf('`', bodyStart+7) : -1
     const body = bodyStart >= 0 && bodyEnd >= 0 ? chunk.slice(bodyStart+7, bodyEnd).trim() : ''
@@ -50,10 +52,28 @@ function extractArticles(src) {
       category: g(/category:\s*'([^']+)'/),
       date:     g(/date:\s*'([^']+)'/),
       icon:     g(/icon:\s*'([^']+)'/),
+      themes,
       body,
     })
   })
   return articles
+}
+
+const CONTEXT_VISUALS = {
+  'electric-utilities-theme-2026': { icon:'⚡', label:'需要・供給・投資', points:['電力需要', '脱炭素電源', '送配電投資'] },
+  'hydrogen-helium-water-resources-theme-2026': { icon:'💧', label:'供給網・品質・契約', points:['製造・精製', '輸送・保安', '長期契約'] },
+  'saas-theme-2026': { icon:'☁️', label:'継続率・単価・コスト', points:['顧客定着', 'アップセル', '獲得コスト'] },
+  'building-materials-theme-2026': { icon:'🏗️', label:'数量・単価・原価', points:['着工・改修', '価格転嫁', '原材料・物流'] },
+  'reuse-secondhand-theme-2026': { icon:'♻️', label:'買取・在庫・信頼', points:['査定', '在庫回転', '真贋・保証'] },
+}
+
+function contextVisualHtml(a) {
+  const visual = CONTEXT_VISUALS[a.id]
+  if (!visual) return ''
+  return `<aside class="context-visual" aria-label="${esc(a.themes?.[0] || 'テーマ')}の注目ポイント">
+      <div class="context-heading"><span aria-hidden="true">${visual.icon}</span><strong>${esc(visual.label)}</strong><small>本文を読む前の整理</small></div>
+      <div class="context-flow">${visual.points.map((point, index) => `<div class="context-point"><span>${index + 1}</span><b>${esc(point)}</b></div>`).join('')}</div>
+    </aside>`
 }
 
 function bodyToHtml(body) {
@@ -81,6 +101,17 @@ function bodyToHtml(body) {
 
 function buildArticleHtml(a) {
   const bodyHtml = bodyToHtml(a.body)
+  const contextHtml = contextVisualHtml(a)
+  const contextStyles = contextHtml ? `
+    .context-visual{margin:18px 0;padding:15px 16px;border:1px solid #b8d5f5;border-radius:10px;background:linear-gradient(135deg,#eef7ff,#f8f4ff)}
+    .context-heading{display:flex;align-items:center;gap:8px;color:#183b67;font-size:.9rem}
+    .context-heading strong{font-size:.95rem}.context-heading small{margin-left:auto;color:#60758d;font-size:.75rem}
+    .context-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .context-point{display:flex;align-items:center;gap:7px;padding:8px;border-radius:6px;background:#fff;color:#36516f;font-size:.78rem}
+    .context-point span{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:#ddebfb;color:#2864a0;font-size:.7rem;font-weight:700}
+    .context-point b{font-weight:600}@media(max-width:560px){.context-flow{grid-template-columns:1fr}.context-heading small{display:none}}
+` : ''
+  const contextMarkup = contextHtml ? `\n    ${contextHtml}` : ''
   const schema = JSON.stringify({
     "@context":"https://schema.org","@type":"Article",
     "headline":a.title,"description":a.summary,"datePublished":a.date,
@@ -110,7 +141,7 @@ function buildArticleHtml(a) {
     nav{font-size:0.85rem;margin-bottom:20px;color:#666}
     nav a{color:#4a9eff;text-decoration:none}
     .meta{color:#888;font-size:0.85rem;margin-bottom:12px}
-    .summary{background:#f0f7ff;border-left:4px solid #4a9eff;padding:12px 16px;margin:16px 0;border-radius:0 6px 6px 0;font-size:0.95rem}
+    .summary{background:#f0f7ff;border-left:4px solid #4a9eff;padding:12px 16px;margin:16px 0;border-radius:0 6px 6px 0;font-size:0.95rem}${contextStyles}
     .cta{display:inline-block;background:#4a9eff;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;margin:12px 0;font-weight:600}
     .disclaimer{background:#fff8e1;border:1px solid #ffd54f;padding:12px 16px;border-radius:6px;font-size:0.85rem;margin-top:2rem;color:#555}
     ul{padding-left:1.5rem;margin:8px 0}
@@ -133,7 +164,7 @@ function buildArticleHtml(a) {
   <article itemscope itemtype="https://schema.org/Article">
     <p class="meta">&#128194; ${esc(a.category)}&ensp;|&ensp;&#128197; ${esc(a.date)}</p>
     <h1 itemprop="headline">${esc(a.icon)} ${esc(a.title)}</h1>
-    <div class="summary" itemprop="description">${esc(a.summary)}</div>
+    <div class="summary" itemprop="description">${esc(a.summary)}</div>${contextMarkup}
     <a href="${BASE_URL}/#column/${a.id}" class="cta">&#128202; StockWaveJPで読む（データ・チャート付き）</a>
     <section itemprop="articleBody">
       ${bodyHtml}
