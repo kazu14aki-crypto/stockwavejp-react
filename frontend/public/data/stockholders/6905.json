@@ -1,0 +1,220 @@
+{
+  "secCode": "6905",
+  "issuerName": "コーセル株式会社",
+  "updated_at": "2026/08/10 21:49 JST",
+  "latestDate": "2026-08-10",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "LITE-ON TECHNOLOGY CORPORATION\n（光寶科技股份有限公司）\n（受信場所　日本ライトン株式会社）",
+      "shares": 8221000,
+      "ratio": 19.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "飴　　久晴",
+      "shares": 3971000,
+      "ratio": 9.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2931000,
+      "ratio": 7.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "買場　清",
+      "shares": 2741000,
+      "ratio": 6.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2398000,
+      "ratio": 5.83,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "若土　征男",
+      "shares": 1465000,
+      "ratio": 3.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "みずほ信託銀行株式会社　退職給付信託　北陸銀行口　再信託受託者　株式会社日本カストディ銀行",
+      "shares": 1117000,
+      "ratio": 2.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE　STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1023000,
+      "ratio": 2.49,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "コーセル取引先持株会",
+      "shares": 788000,
+      "ratio": 1.92,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "コーセル従業員持株会",
+      "shares": 631000,
+      "ratio": 1.54,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.99,
+      "individual": 19.88,
+      "trust": 15.68,
+      "foreign": 2.49,
+      "employee": 3.46
+    },
+    "individual_total": 19.88,
+    "top10_total": 61.5
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-10",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第57期(2025/05/21－2026/05/20)",
+      "docID": "S100YUI9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "LITE-ON TECHNOLOGY CORPORATION\n（光寶科技股份有限公司）\n（受信場所　日本ライトン株式会社）",
+          "shares": 8221000,
+          "ratio": 19.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "飴　　久晴",
+          "shares": 3971000,
+          "ratio": 9.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2931000,
+          "ratio": 7.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "買場　清",
+          "shares": 2741000,
+          "ratio": 6.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2398000,
+          "ratio": 5.83,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "若土　征男",
+          "shares": 1465000,
+          "ratio": 3.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "みずほ信託銀行株式会社　退職給付信託　北陸銀行口　再信託受託者　株式会社日本カストディ銀行",
+          "shares": 1117000,
+          "ratio": 2.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE　STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1023000,
+          "ratio": 2.49,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "コーセル取引先持株会",
+          "shares": 788000,
+          "ratio": 1.92,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "コーセル従業員持株会",
+          "shares": 631000,
+          "ratio": 1.54,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.99,
+          "individual": 19.88,
+          "trust": 15.68,
+          "foreign": 2.49,
+          "employee": 3.46
+        },
+        "individual_total": 19.88,
+        "top10_total": 61.5
+      }
+    }
+  ]
+}
