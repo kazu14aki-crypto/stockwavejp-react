@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-03T06:12:39+09:00",
+  "updated_at": "2026-08-10T05:54:50+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3781,
+  "count": 3778,
   "stocks": [
     {
       "ticker": "1300.T",
@@ -4622,16 +4622,6 @@
       "name": "株式会社SANKO MARKETING FOODS",
       "market": "上場",
       "industry": "小売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "2763.T",
-      "code": "2763",
-      "name": "株式会社エフティグループ",
-      "market": "上場",
-      "industry": "卸売業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -15930,16 +15920,6 @@
       "curated": false
     },
     {
-      "ticker": "4834.T",
-      "code": "4834",
-      "name": "キャリアバンク株式会社",
-      "market": "上場",
-      "industry": "サービス業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "4838.T",
       "code": "4838",
       "name": "スペースシャワーSKIYAKIホールディングス株式会社",
@@ -19470,16 +19450,6 @@
       "curated": false
     },
     {
-      "ticker": "5903.T",
-      "code": "5903",
-      "name": "シンポ株式会社",
-      "market": "上場",
-      "industry": "金属製品",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "5905.T",
       "code": "5905",
       "name": "日本製罐株式会社",
@@ -20436,9 +20406,9 @@
     {
       "ticker": "6070.T",
       "code": "6070",
-      "name": "キャリアリンク株式会社",
+      "name": "株式会社エブリー",
       "market": "上場",
-      "industry": "サービス業",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
