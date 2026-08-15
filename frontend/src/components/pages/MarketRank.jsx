@@ -454,8 +454,8 @@ function StockTable({ stocks: rawStocks, onAddToTheme, onNavigate }) {
   }
   const onMouseUp = () => { isDragging.current = false; if (tableRef.current) tableRef.current.style.cursor = 'grab' }
 
-  const headers = ['ミニチャート','株価','騰落率','スコア','時価総額','ネットキャッシュ','NC比率','営業CF','FCF','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ','追加']
-  const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','スコア':'attention_score','時価総額':'market_cap','ネットキャッシュ':'net_cash','NC比率':'net_cash_ratio','営業CF':'operating_cf','FCF':'free_cf','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd'}
+  const headers = ['ミニチャート','株価','騰落率','スコア','時価総額','寄与度%','出来高増減','出来高','出来高順位','売買代金','売買代金順位','PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ','ネットキャッシュ','NC比率','営業CF','FCF','追加']
+  const HEADER_SORT_KEYS={'ミニチャート':'spark_last','株価':'price','騰落率':'pct','スコア':'attention_score','時価総額':'market_cap','寄与度%':'contribution','出来高増減':'volume_chg','出来高':'volume','出来高順位':'vol_rank','売買代金':'trade_value','売買代金順位':'tv_rank','PER':'per','来期PER':'per_fwd','PBR':'pbr','来期PBR':'pbr_fwd','PEGレシオ':'peg','来期PEGレシオ':'peg_fwd','ネットキャッシュ':'net_cash','NC比率':'net_cash_ratio','営業CF':'operating_cf','FCF':'free_cf'}
   const VALUATION_HEADERS = ['PER','来期PER','PBR','来期PBR','PEGレシオ','来期PEGレシオ']
 
   return (
@@ -499,10 +499,6 @@ function StockTable({ stocks: rawStocks, onAddToTheme, onNavigate }) {
                   <td style={{ ...tdR, color:pColor, fontWeight:700, fontFamily:'var(--mono)' }}>{s.pct>=0?'+':''}{s.pct?.toFixed(1)}%</td>
                   <td style={{ ...tdC, fontFamily:'var(--mono)', fontWeight:700, color:s.attention_score>=60?'#ff5370':s.attention_score>=35?'#ff8c42':'var(--text2)' }} title="騰落率・出来高変化・勢い・売買代金をもとにした注目度（0〜100）">{Math.round(s.attention_score)}</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.market_cap > 0 ? formatLarge(s.market_cap) : '-'}</td>
-                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title={s.financial_disclosed_at ? `TDnet XBRL・${s.financial_disclosed_at}` : 'TDnet XBRL'}>{s.net_cash != null ? formatLarge(s.net_cash) : '-'}</td>
-                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.net_cash_ratio != null ? `${s.net_cash_ratio.toFixed(1)}%` : '-'}</td>
-                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title={s.financial_period_type || '当期累計'}>{s.operating_cf != null ? formatLarge(s.operating_cf) : '-'}</td>
-                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title="営業CF−有形固定資産取得支出（当期累計）">{s.free_cf != null ? formatLarge(s.free_cf) : '-'}</td>
                   <td style={{ ...tdR, fontFamily:'var(--mono)', color:(s.contribution??0)>=0.5?'#ff5370':(s.contribution??0)>=0.1?'#ff8c42':(s.contribution??0)>-0.1?'var(--text2)':'#4a9eff' }}
                     title="寄与度">
                     {s.contribution != null ? (s.contribution>=0?'+':'')+s.contribution.toFixed(2)+'%' : '-'}
@@ -524,6 +520,10 @@ function StockTable({ stocks: rawStocks, onAddToTheme, onNavigate }) {
                   ) : (
                     <td colSpan={6} style={{ ...tdC, color:'var(--text3)', fontSize:'11px' }}>🔒 サブスク限定</td>
                   )}
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title={s.financial_disclosed_at ? `TDnet XBRL・${s.financial_disclosed_at}` : 'TDnet XBRL'}>{s.net_cash != null ? formatLarge(s.net_cash) : '-'}</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }}>{s.net_cash_ratio != null ? `${s.net_cash_ratio.toFixed(1)}%` : '-'}</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title={s.financial_period_type || '当期累計'}>{s.operating_cf != null ? formatLarge(s.operating_cf) : '-'}</td>
+                  <td style={{ ...tdR, fontFamily:'var(--mono)', color:'var(--text2)' }} title="営業CF−有形固定資産取得支出（当期累計）">{s.free_cf != null ? formatLarge(s.free_cf) : '-'}</td>
                   <td style={tdC}>
                     <button onClick={() => onAddToTheme && onAddToTheme({ ticker:s.ticker, name:s.name, price:s.price })}
                       title="カスタムテーマに追加"
@@ -839,7 +839,9 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
                       📊 出来高・売買代金ランキング（上位15銘柄）
                     </div>
                     <MrVolTvChart stocks={stocks} onNavigate={onNavigate} />
-                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'20px 0 10px' }}>
+                  </div>
+                  <div>
+                    <div style={{ fontSize:'13px', fontWeight:700, color:'var(--text)', margin:'0 0 10px' }}>
                       🔥 銘柄別ヒートマップ
                     </div>
                     <MrBubbleChart stocks={stocks} onNavigate={onNavigate} />
@@ -879,6 +881,9 @@ export default function MarketRank({ onNavigate, isMobile } = {}) {
           }
           .mr-bottom-grid > div {
             min-width: 0;
+          }
+          .mr-bottom-grid > div:last-child {
+            grid-column: 1 / -1;
           }
         }
         /* ② スマホ版: 右端をTOP5に揃える */
