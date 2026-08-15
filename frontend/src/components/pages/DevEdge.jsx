@@ -241,6 +241,46 @@ function computeLongFactors(hist, sel, scanRows) {
 
 const fmtOku = (v) => !Number.isFinite(v) ? '—' : v >= 1e12 ? (v / 1e12).toFixed(1) + '兆' : v >= 1e8 ? (v / 1e8).toFixed(0) + '億' : Math.round(v).toLocaleString()
 
+// ── 資産バリュー（シケモク＋カタリスト）評価 ───────────────────────────
+// 有報・決算短信で確認した数値を入力し、将来リターンの予測ではなく
+// 「追加調査の優先度」として比較する。非事業資産は帳簿額をそのまま
+// 信じず、投資有価証券・賃貸不動産に30%の安全余裕を置く。
+const VALUE_CATALYSTS = [
+  ['buyback', '自己株買い・消却'], ['dividend', '増配・DOE導入'],
+  ['crossShare', '政策保有株の縮減'], ['assetSale', '不動産・非事業資産の売却'],
+  ['tsePlan', '資本コスト・株価を意識した方針'], ['reorg', '再編・親子上場解消の可能性'],
+]
+const VALUE_RISKS = [
+  ['fcfBurn', '営業CF・FCFの恒常的な赤字'], ['dilution', '増資・CB等の希薄化懸念'],
+  ['goingConcern', '継続企業の重要な不確実性'], ['cyclical', '景気循環・在庫の急悪化'],
+]
+const blankAssetValue = () => ({ cash: '', debt: '', securities: '', realEstate: '', ocf: '', fcf: '', ...Object.fromEntries([...VALUE_CATALYSTS, ...VALUE_RISKS].map(([k]) => [k, false])) })
+const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n))
+function computeAssetValue(input, sel) {
+  const n = (key) => Number(input?.[key]) || 0
+  const mcap = Number(sel?.mcap) / 1e8
+  if (!(mcap > 0)) return null
+  const cash = n('cash'), debt = n('debt'), securities = n('securities'), realEstate = n('realEstate')
+  const netCash = cash - debt
+  const adjustedAssets = netCash + securities * 0.7 + realEstate * 0.7
+  const netCashRatio = netCash / mcap
+  const adjustedRatio = adjustedAssets / mcap
+  const pbr = Number(sel?.pbr)
+  const netCashPts = clamp(netCashRatio * 30, 0, 30)
+  const assetPts = clamp(adjustedRatio / 1.5 * 20, 0, 20)
+  const pbrPts = Number.isFinite(pbr) && pbr > 0 ? clamp((1 - pbr) / 0.8 * 15, 0, 15) : null
+  const cfPts = (n('ocf') > 0 ? 7.5 : 0) + (n('fcf') > 0 ? 7.5 : 0)
+  const shareholderPts = (input?.buyback ? 3 : 0) + (input?.dividend ? 2 : 0) + (input?.crossShare ? 3 : 0) + (input?.assetSale ? 2 : 0)
+  const catalystCount = VALUE_CATALYSTS.filter(([k]) => input?.[k]).length
+  const catalystPts = clamp(catalystCount / 3 * 10, 0, 10)
+  const riskPenalty = (input?.fcfBurn ? 12 : 0) + (input?.dilution ? 8 : 0) + (input?.goingConcern ? 20 : 0) + (input?.cyclical ? 4 : 0)
+  const rawScore = netCashPts + assetPts + (pbrPts ?? 0) + cfPts + shareholderPts + catalystPts
+  // PBR未取得は減点ではなく未確定として、確認できた因子だけで暫定的に換算する。
+  const score = Math.round(clamp(rawScore / (pbrPts == null ? 85 : 100) * 100 - riskPenalty, 0, 100))
+  const label = score >= 75 ? '重点調査' : score >= 55 ? '調査候補' : score >= 35 ? '要精査' : '見送り寄り'
+  return { mcap, netCash, adjustedAssets, netCashRatio, adjustedRatio, netCashPts, assetPts, pbrPts, cfPts, shareholderPts, catalystPts, catalystCount, riskPenalty, score, label }
+}
+
 export default function DevEdge({ isMobile, onNavigate }) {
   const { isDev } = useSubscription()
   const [themeData, setThemeData] = useState(null)   // /api/themes (1w相当)
@@ -254,6 +294,10 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [triggers, setTriggers] = useState(() => localStorage.getItem('swjp_dev_triggers') || DEFAULT_TRIGGERS)
   // ポジションサイズ計算機
   const [calc, setCalc] = useState({ capital: '3000000', riskPct: '1', entry: '', stop: '', market: 'JP' })
+  // 資産バリュー評価の入力値は端末内にだけ保存する（外部送信なし）。
+  const [assetValues, setAssetValues] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('swjp_dev_asset_value_v1') || '{}') } catch { return {} }
+  })
 
   useEffect(() => {
     if (!isDev) return
@@ -286,6 +330,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
 
   useEffect(() => { localStorage.setItem('swjp_dev_rules', JSON.stringify(rulesChecked)) }, [rulesChecked])
   useEffect(() => { localStorage.setItem('swjp_dev_triggers', triggers) }, [triggers])
+  useEffect(() => { localStorage.setItem('swjp_dev_asset_value_v1', JSON.stringify(assetValues)) }, [assetValues])
 
   // ═══ 銘柄スコアリング（スキャン＋照会） ═══
   const [stockIndex, setStockIndex] = useState(null)      // 静的インデックス（検索用）
@@ -409,6 +454,13 @@ export default function DevEdge({ isMobile, onNavigate }) {
     if (!sel) return null
     return computeLongFactors(selHist, sel, scan?.rows)
   }, [sel, selHist, scan])
+
+  const selectedAssetInput = sel ? (assetValues[sel.code] || blankAssetValue()) : blankAssetValue()
+  const assetValue = useMemo(() => computeAssetValue(selectedAssetInput, sel), [selectedAssetInput, sel])
+  const updateAssetValue = (key, value) => {
+    if (!sel?.code) return
+    setAssetValues(prev => ({ ...prev, [sel.code]: { ...blankAssetValue(), ...(prev[sel.code] || {}), [key]: value } }))
+  }
 
   // 検索候補
   const matches = useMemo(() => {
@@ -787,6 +839,38 @@ export default function DevEdge({ isMobile, onNavigate }) {
             <div style={{ ...S.small, marginBottom: '10px' }}>
               バリュエーション：PER <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.per ?? '—'}</b>　PBR <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.pbr ?? '—'}</b>　PEG <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.peg ?? '—'}</b>
               {sel.per == null && '（Infoway契約後に自動表示）'}
+            </div>
+
+            {/* 資産バリュー + カタリスト。決算・有報を読んだ後の実戦用評価 */}
+            <div style={{ marginBottom: '12px', padding: '12px 14px', background: 'rgba(126,211,33,0.045)', border: '1px solid rgba(126,211,33,0.26)', borderRadius: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '6px' }}>
+                <span style={{ fontSize: '12px', fontWeight: 700, color: '#7ed321' }}>🏦 資産バリュー・カタリスト評価</span>
+                <span style={S.small}>有報・決算短信で確認した数値を入力する追加調査優先度。将来リターンの予測・売買推奨ではありません。</span>
+                {assetValue && <span style={{ marginLeft: 'auto', fontSize: '16px', fontWeight: 800, fontFamily: 'var(--mono)', color: assetValue.score >= 75 ? '#7ed321' : assetValue.score >= 55 ? '#ffd700' : '#8b949e' }}>{assetValue.score}<span style={{ fontSize: '10px', color: 'var(--text3)' }}> /100　{assetValue.label}</span></span>}
+              </div>
+              <div style={{ ...S.small, marginBottom: '9px' }}>単位はすべて<b style={{ color: 'var(--text2)' }}>億円</b>。修正資産価値＝現預金−有利子負債＋投資有価証券×70％＋賃貸不動産等×70％。入力内容はこのブラウザ内だけに保存されます。</div>
+              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(6, 1fr)', gap: '8px', marginBottom: '10px' }}>
+                {[['cash', '現預金'], ['debt', '有利子負債'], ['securities', '投資有価証券'], ['realEstate', '賃貸不動産等'], ['ocf', '営業CF（直近年度）'], ['fcf', 'FCF（直近年度）']].map(([key, label]) => (
+                  <label key={key} style={{ ...S.small, color: 'var(--text2)' }}>{label}
+                    <input style={{ ...S.input, marginTop: '3px' }} value={selectedAssetInput[key] ?? ''} onChange={e => updateAssetValue(key, e.target.value)} inputMode="decimal" placeholder="有報から入力" />
+                  </label>
+                ))}
+              </div>
+              {assetValue && <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(5, 1fr)', gap: '7px', marginBottom: '10px' }}>
+                {[
+                  ['時価総額', `${assetValue.mcap.toFixed(1)}億`], ['ネットキャッシュ', `${assetValue.netCash.toFixed(1)}億`],
+                  ['修正資産価値', `${assetValue.adjustedAssets.toFixed(1)}億`], ['修正資産/時価総額', `${(assetValue.adjustedRatio * 100).toFixed(0)}%`], ['リスク控除', `-${assetValue.riskPenalty}点`],
+                ].map(([label, value]) => <div key={label} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '6px', padding: '6px 8px' }}><div style={{ fontSize: '9px', color: 'var(--text3)' }}>{label}</div><div style={{ ...S.mono, fontSize: '12px', fontWeight: 700, color: 'var(--text)' }}>{value}</div></div>)}
+              </div>}
+              <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '10px' }}>
+                <div><div style={{ ...S.small, fontWeight: 700, marginBottom: '4px' }}>評価修正カタリスト（確認済みのものだけ）</div>
+                  {VALUE_CATALYSTS.map(([key, label]) => <label key={key} style={{ display: 'block', fontSize: '11px', color: 'var(--text2)', padding: '2px 0', cursor: 'pointer' }}><input type="checkbox" checked={!!selectedAssetInput[key]} onChange={e => updateAssetValue(key, e.target.checked)} style={{ marginRight: '6px' }} />{label}</label>)}
+                </div>
+                <div><div style={{ ...S.small, fontWeight: 700, marginBottom: '4px', color: '#ff8c42' }}>バリュートラップの警戒項目（該当時は控除）</div>
+                  {VALUE_RISKS.map(([key, label]) => <label key={key} style={{ display: 'block', fontSize: '11px', color: 'var(--text2)', padding: '2px 0', cursor: 'pointer' }}><input type="checkbox" checked={!!selectedAssetInput[key]} onChange={e => updateAssetValue(key, e.target.checked)} style={{ marginRight: '6px' }} />{label}</label>)}
+                </div>
+              </div>
+              {assetValue && <div style={{ ...S.small, marginTop: '9px', color: 'var(--text2)' }}>内訳：ネットキャッシュ {assetValue.netCashPts.toFixed(0)}/30・修正資産 {assetValue.assetPts.toFixed(0)}/20・PBR {assetValue.pbrPts == null ? '要確認' : `${assetValue.pbrPts.toFixed(0)}/15`}・CF健全性 {assetValue.cfPts.toFixed(0)}/15・株主還元 {assetValue.shareholderPts.toFixed(0)}/10・カタリスト {assetValue.catalystPts.toFixed(0)}/10。PBR未取得時の総合点は、取得済み因子で換算した暫定値です。</div>}
             </div>
 
             {/* 長期ファクター評価 */}
