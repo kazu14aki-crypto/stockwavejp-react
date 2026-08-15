@@ -50,6 +50,7 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
   const [info, setInfo] = useState(null)
   const [hist, setHist] = useState(null)
   const [val, setVal] = useState(null)
+  const [financial, setFinancial] = useState(null)
   const [holders, setHolders] = useState(null)
   const [idxEntry, setIdxEntry] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -57,20 +58,22 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
   useEffect(() => {
     if (!code) return
     let cancelled = false
-    setLoading(true); setInfo(null); setHist(null); setVal(null); setHolders(null); setIdxEntry(null)
+    setLoading(true); setInfo(null); setHist(null); setVal(null); setFinancial(null); setHolders(null); setIdxEntry(null)
     ;(async () => {
       let uid = null
       try { uid = (await supabase.auth.getSession())?.data?.session?.user?.id || null } catch {}
-      const [i, h, v, ho, sx] = await Promise.all([
+      const [i, h, v, ho, sx, fm] = await Promise.all([
         fetch(`${API_BASE}/api/stock-info/${code}.T`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-history/${code}.T?period=1y`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`${API_BASE}/api/stock-valuation/${code}.T${uid ? `?uid=${uid}` : ''}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stockholders/${code}.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stock_index.json`).then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch(`/data/financial_metrics.json`).then(r => r.ok ? r.json() : null).catch(() => null),
       ])
       if (cancelled) return
       setInfo(i); setHist(h?.data || null); setVal(v); setHolders(ho)
       setIdxEntry(sx?.[`${code}.T`] || null)
+      setFinancial(fm?.metrics?.[`${code}.T`] || fm?.[`${code}.T`] || null)
       setLoading(false)
     })()
     return () => { cancelled = true }
@@ -181,6 +184,24 @@ export default function StockDetail({ ticker, onNavigate, isMobile }) {
       {/* 大株主（無料: 上位3名 / サブスク: 全員） */}
       <div style={S.card}>
         <div style={S.h2}>🏛️ 大株主の状況{holders && <span style={{ ...S.small, fontWeight: 400, marginLeft: '8px' }}>有価証券報告書（{holders.latestDate}提出）より</span>}</div>
+        <div style={{ ...S.h2, marginTop: '16px' }}>🏦 財務キャッシュフロー</div>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2,1fr)' : 'repeat(4,1fr)', gap: '8px', marginBottom: '12px' }}>
+          {[
+            ['ネットキャッシュ', financial?.net_cash != null ? fmtLarge(financial.net_cash) : '—'],
+            ['NC比率', financial?.net_cash_ratio != null ? `${financial.net_cash_ratio.toFixed(1)}%` : '—'],
+            ['営業CF', financial?.operating_cf != null ? fmtLarge(financial.operating_cf) : '—'],
+            ['FCF', financial?.free_cf != null ? fmtLarge(financial.free_cf) : '—'],
+          ].map(([label, value]) => (
+            <div key={label} style={{ background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '6px', padding: '9px 11px' }}>
+              <div style={{ fontSize: '9px', color: 'var(--text3)' }}>{label}</div>
+              <div style={{ ...S.mono, fontSize: '15px', fontWeight: 700, color: 'var(--text)' }}>{value}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ ...S.small, marginBottom: '12px' }}>
+          {financial?.disclosed_at ? `TDnet XBRL（開示 ${financial.disclosed_at}）・${financial.period_type || '当期累計'}。` : 'TDnet XBRLの最新決算短信を取得後に表示します。'}
+          {' '}ネットキャッシュ＝現金及び預金−有利子負債、FCF＝営業CF−有形固定資産取得支出。
+        </div>
         {holders ? (
           <>
             {(holders.latest || []).map((sh, i) => {

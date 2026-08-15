@@ -45,6 +45,35 @@ function writeCache(key, data) {
 let _marketJson      = null
 let _marketJsonTs    = 0
 let _fetchingPromise = null
+let _financialMetrics = null
+let _financialMetricsPromise = null
+
+async function fetchFinancialMetrics() {
+  if (_financialMetrics) return _financialMetrics
+  if (_financialMetricsPromise) return _financialMetricsPromise
+  _financialMetricsPromise = fetch('/data/financial_metrics.json')
+    .then(r => r.ok ? r.json() : {})
+    .then(data => { _financialMetrics = data.metrics || data || {}; _financialMetricsPromise = null; return _financialMetrics })
+    .catch(() => { _financialMetricsPromise = null; return {} })
+  return _financialMetricsPromise
+}
+
+function withFinancialMetrics(result, metrics) {
+  if (!result?.stocks || !metrics) return result
+  return {
+    ...result,
+    stocks: result.stocks.map(stock => {
+      const metric = metrics[stock.ticker]
+      return metric ? {
+        ...stock,
+        ...metric,
+        financial_period_type: metric.period_type,
+        financial_disclosed_at: metric.disclosed_at,
+        financial_source: metric.source,
+      } : stock
+    }),
+  }
+}
 const MARKET_JSON_TTL = 90 * 60 * 1000  // 90分
 
 async function fetchMarketJson() {
@@ -345,14 +374,14 @@ export function useSegmentDetail(segName, period) {
         const json   = await fetchMarketJson()
         const result = json[jsonKey]
         if (result && !cancelled) {
-          setData(result); setLoading(false); return
+          setData(withFinancialMetrics(result, await fetchFinancialMetrics())); setLoading(false); return
         }
       } catch {}
       // フォールバック: Render API
       try {
         const r    = await fetch(`${API}/api/market-rank/${encodeURIComponent(segName)}?period=${period}`)
         const json = await r.json()
-        if (!cancelled) { setData(json) }
+        if (!cancelled) { setData(withFinancialMetrics(json, await fetchFinancialMetrics())) }
       } catch {}
       if (!cancelled) setLoading(false)
     })()
@@ -381,14 +410,14 @@ export function useThemeDetail(themeName, period) {
         const json   = await fetchMarketJson()
         const result = json[jsonKey]
         if (result && !cancelled) {
-          setData(result); writeCache(jsonKey, result); setLoading(false); return
+          setData(withFinancialMetrics(result, await fetchFinancialMetrics())); writeCache(jsonKey, result); setLoading(false); return
         }
       } catch {}
       // フォールバック: Render API
       try {
         const r    = await fetch(`${API}/api/theme-detail/${encodeURIComponent(themeName)}?period=${period}`)
         const json = await r.json()
-        if (!cancelled) { setData(json); writeCache(jsonKey, json) }
+        if (!cancelled) { setData(withFinancialMetrics(json, await fetchFinancialMetrics())); writeCache(jsonKey, json) }
       } catch {}
       if (!cancelled) setLoading(false)
     })()

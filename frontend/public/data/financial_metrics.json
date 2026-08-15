@@ -1,0 +1,40 @@
+{
+  "updated_at": "2026-08-15T21:29:55+09:00",
+  "source": "TDnet XBRL",
+  "definitions": {
+    "net_cash": "現金及び預金−有利子負債（リース負債・仕入債務を除く）",
+    "net_cash_ratio": "ネットキャッシュ÷時価総額×100",
+    "operating_cf": "キャッシュ・フロー計算書の営業活動によるキャッシュ・フロー（当期累計）",
+    "free_cf": "営業CF−有形固定資産取得支出（当期累計）"
+  },
+  "metrics": {
+    "7203.T": {
+      "net_cash": null,
+      "net_cash_ratio": null,
+      "operating_cf": 536551000000,
+      "free_cf": null,
+      "cash_and_deposits": 10343085000000,
+      "interest_bearing_debt": null,
+      "period_type": "当期累計",
+      "fcf_definition": "営業CF−有形固定資産取得支出",
+      "disclosed_at": "2026-08-04 14:00:00",
+      "filing_title": "2027年3月期 第1四半期決算短信〔IFRS〕（連結)",
+      "source": "TDnet XBRL",
+      "source_url": "https://www.release.tdnet.info/inbs/081220260730503849.zip"
+    },
+    "6857.T": {
+      "net_cash": 324194000000,
+      "net_cash_ratio": 0.5,
+      "operating_cf": 137155000000,
+      "free_cf": 127303000000,
+      "cash_and_deposits": 413124000000,
+      "interest_bearing_debt": 88930000000,
+      "period_type": "当期累計",
+      "fcf_definition": "営業CF−有形固定資産取得支出",
+      "disclosed_at": "2026-07-29 15:30:00",
+      "filing_title": "2027年3月期 第1四半期決算短信〔IFRS〕(連結)",
+      "source": "TDnet XBRL",
+      "source_url": "https://www.release.tdnet.info/inbs/081220260728500866.zip"
+    }
+  }
+}

@@ -45,6 +45,31 @@ MACRO_TICKERS = {
 PERIODS = ["1d", "5d", "1mo", "3mo", "6mo", "1y"]
 
 
+def load_financial_metrics():
+    """TDnet XBRLから別途生成した財務指標を銘柄表へ付与する。"""
+    path = os.path.join("frontend", "public", "data", "financial_metrics.json")
+    try:
+        with open(path, encoding="utf-8") as file:
+            data = json.load(file)
+        return data.get("metrics", data) if isinstance(data, dict) else {}
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def financial_fields(metrics, ticker, market_cap):
+    metric = metrics.get(ticker, {})
+    net_cash = metric.get("net_cash")
+    return {
+        "net_cash": net_cash,
+        "net_cash_ratio": round(net_cash / market_cap * 100, 2) if net_cash is not None and market_cap else metric.get("net_cash_ratio"),
+        "operating_cf": metric.get("operating_cf"),
+        "free_cf": metric.get("free_cf"),
+        "financial_period_type": metric.get("period_type"),
+        "financial_disclosed_at": metric.get("disclosed_at"),
+        "financial_source": metric.get("source"),
+    }
+
+
 def robust_avg(pcts):
     if not pcts: return 0.0
     if len(pcts) <= 3: return round(float(np.mean(pcts)), 2)
@@ -497,6 +522,7 @@ def main():
     print(f"取得成功: {len(ticker_data)}/{len(all_tickers)}")
 
     output = {}
+    financial_metrics = load_financial_metrics()
 
     # テーマ集計（全期間）
     for period in PERIODS:
@@ -686,6 +712,7 @@ def main():
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
                     "spark": spark,
+                    **financial_fields(financial_metrics, ticker, mkt_cap),
                 })
             # 出来高・売買代金順位を付与してから騰落率順にソート
             for i, s in enumerate(sorted(detail_stocks, key=lambda x: x["volume"], reverse=True)):
@@ -789,6 +816,7 @@ def main():
                     "volume": d["volume"], "volume_chg": d["volume_chg"],
                     "trade_value": d["trade_value"], "vol_rank": 0, "tv_rank": 0,
                     "spark": spark,
+                    **financial_fields(financial_metrics, ticker, seg_mkt_cap),
                 })
             for i, s in enumerate(sorted(seg_detail, key=lambda x: x["volume"], reverse=True)):
                 s["vol_rank"] = i + 1
