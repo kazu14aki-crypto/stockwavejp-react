@@ -1,0 +1,220 @@
+{
+  "secCode": "2168",
+  "issuerName": "株式会社パソナグループ",
+  "updated_at": "2026/08/15 12:33 JST",
+  "latestDate": "2026-08-14",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "南部 靖之",
+      "shares": 14897337,
+      "ratio": 38.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社南部エンタープライズ",
+      "shares": 3364600,
+      "ratio": 8.79,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2790500,
+      "ratio": 7.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 1016900,
+      "ratio": 2.66,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行(信託E口)",
+      "shares": 918967,
+      "ratio": 2.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社メディカル・コンシェルジュ",
+      "shares": 650000,
+      "ratio": 1.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社グラティツード",
+      "shares": 596600,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "パソナグループ従業員持株会",
+      "shares": 544368,
+      "ratio": 1.42,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 432376,
+      "ratio": 1.13,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行(信託口４)",
+      "shares": 382500,
+      "ratio": 1.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 38.93,
+      "corporate": 12.05,
+      "trust": 13.35,
+      "employee": 1.42,
+      "foreign": 1.13
+    },
+    "individual_total": 38.93,
+    "top10_total": 66.88
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-14",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/06/01－2026/05/31)",
+      "docID": "S100YW7F",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "南部 靖之",
+          "shares": 14897337,
+          "ratio": 38.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社南部エンタープライズ",
+          "shares": 3364600,
+          "ratio": 8.79,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2790500,
+          "ratio": 7.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 1016900,
+          "ratio": 2.66,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行(信託E口)",
+          "shares": 918967,
+          "ratio": 2.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社メディカル・コンシェルジュ",
+          "shares": 650000,
+          "ratio": 1.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社グラティツード",
+          "shares": 596600,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "パソナグループ従業員持株会",
+          "shares": 544368,
+          "ratio": 1.42,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 432376,
+          "ratio": 1.13,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行(信託口４)",
+          "shares": 382500,
+          "ratio": 1.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 38.93,
+          "corporate": 12.05,
+          "trust": 13.35,
+          "employee": 1.42,
+          "foreign": 1.13
+        },
+        "individual_total": 38.93,
+        "top10_total": 66.88
+      }
+    }
+  ]
+}
