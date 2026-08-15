@@ -1,0 +1,218 @@
+{
+  "secCode": "8252",
+  "issuerName": "株式会社　丸井グループ",
+  "updated_at": "2026/08/15 12:33 JST",
+  "latestDate": "2026-08-13",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行㈱(信託口)",
+      "shares": 42514000,
+      "ratio": 23.61,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 27549000,
+      "ratio": 15.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "青井不動産㈱",
+      "shares": 6019000,
+      "ratio": 3.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱日本カストディ銀行(信託口４)",
+      "shares": 4215000,
+      "ratio": 2.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人青井奨学会",
+      "shares": 3318000,
+      "ratio": 1.84,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＰモルガン証券㈱",
+      "shares": 3049000,
+      "ratio": 1.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "青井　忠雄",
+      "shares": 2784000,
+      "ratio": 1.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+      "shares": 2546000,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "㈱烏山",
+      "shares": 2454000,
+      "ratio": 1.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "永和不動産㈱",
+      "shares": 2382000,
+      "ratio": 1.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 41.24,
+      "individual": 7.57,
+      "foundation": 1.84,
+      "securities": 3.1
+    },
+    "individual_total": 7.57,
+    "top10_total": 53.75
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-13",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第90期(2025/04/01－2026/03/31)",
+      "docID": "S100YWE4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行㈱(信託口)",
+          "shares": 42514000,
+          "ratio": 23.61,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 27549000,
+          "ratio": 15.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "青井不動産㈱",
+          "shares": 6019000,
+          "ratio": 3.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱日本カストディ銀行(信託口４)",
+          "shares": 4215000,
+          "ratio": 2.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人青井奨学会",
+          "shares": 3318000,
+          "ratio": 1.84,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＰモルガン証券㈱",
+          "shares": 3049000,
+          "ratio": 1.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "青井　忠雄",
+          "shares": 2784000,
+          "ratio": 1.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "モルガン・スタンレーＭＵＦＧ証券㈱",
+          "shares": 2546000,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "㈱烏山",
+          "shares": 2454000,
+          "ratio": 1.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "永和不動産㈱",
+          "shares": 2382000,
+          "ratio": 1.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 41.24,
+          "individual": 7.57,
+          "foundation": 1.84,
+          "securities": 3.1
+        },
+        "individual_total": 7.57,
+        "top10_total": 53.75
+      }
+    }
+  ]
+}
