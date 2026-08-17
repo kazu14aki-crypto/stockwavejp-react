@@ -1,7 +1,16 @@
 {
-  "updated_at": "2026/08/15",
+  "updated_at": "2026/08/17",
   "count": 1678,
   "items": [
+    {
+      "secCode": "7363",
+      "issuerName": "株式会社ベビーカレンダー",
+      "latestDate": "2026-08-17",
+      "holderCount": 10,
+      "topHolder": "安田　啓司",
+      "topHolderCategory": "individual",
+      "individualTotal": 47.53
+    },
     {
       "secCode": "2168",
       "issuerName": "株式会社パソナグループ",
@@ -1378,15 +1387,6 @@
       "topHolder": "株式会社NT",
       "topHolderCategory": "corporate",
       "individualTotal": 12.49
-    },
-    {
-      "secCode": "7363",
-      "issuerName": "株式会社ベビーカレンダー",
-      "latestDate": "2026-06-30",
-      "holderCount": 10,
-      "topHolder": "安田　啓司",
-      "topHolderCategory": "individual",
-      "individualTotal": 47.53
     },
     {
       "secCode": "9610",
