@@ -241,6 +241,63 @@ function computeLongFactors(hist, sel, scanRows) {
 
 const fmtOku = (v) => !Number.isFinite(v) ? '—' : v >= 1e12 ? (v / 1e12).toFixed(1) + '兆' : v >= 1e8 ? (v / 1e8).toFixed(0) + '億' : Math.round(v).toLocaleString()
 
+const median = (values) => {
+  const xs = values.filter(Number.isFinite).sort((a, b) => a - b)
+  if (!xs.length) return null
+  const mid = Math.floor(xs.length / 2)
+  return xs.length % 2 ? xs[mid] : (xs[mid - 1] + xs[mid]) / 2
+}
+const percentile = (values, p) => {
+  const xs = values.filter(Number.isFinite).sort((a, b) => a - b)
+  if (!xs.length) return null
+  const index = (xs.length - 1) * p
+  const lo = Math.floor(index), hi = Math.ceil(index)
+  return xs[lo] + (xs[hi] - xs[lo]) * (index - lo)
+}
+
+function computeValueReference(hist, sel, scanRows) {
+  const price = Number(sel?.price)
+  if (!(price > 0)) return null
+  const themes = new Set(sel?.themes || [])
+  const peers = (scanRows || []).filter(row => row.code !== sel?.code && row.themes?.some(theme => themes.has(theme)))
+  const peerPer = median(peers.map(row => Number(row.per)).filter(value => value > 0 && value < 100))
+  const peerPbr = median(peers.map(row => Number(row.pbr)).filter(value => value > 0 && value < 20))
+  const perLine = Number(sel?.per) > 0 && peerPer ? price * peerPer / Number(sel.per) : null
+  const pbrLine = Number(sel?.pbr) > 0 && peerPbr ? price * peerPbr / Number(sel.pbr) : null
+  const comparable = [perLine, pbrLine].filter(Number.isFinite)
+  const r = (hist || []).map(row => 1 + Number(row.pct) / 100).filter(value => value > 0)
+  const last = r[r.length - 1]
+  const prices = last ? r.map(value => price * value / last) : []
+  const low52 = prices.length >= 20 ? Math.min(...prices) : null
+  const high52 = prices.length >= 20 ? Math.max(...prices) : null
+  const ma = (days) => prices.length >= days ? prices.slice(-days).reduce((sum, value) => sum + value, 0) / days : null
+  const anchor = median(comparable)
+  const lowerInputs = [low52, ma(75), anchor].filter(Number.isFinite)
+  const upperInputs = [high52, ma(25), anchor].filter(Number.isFinite)
+  const rawUndervalued = lowerInputs.length ? percentile(lowerInputs, 0.35) : null
+  const rawFair = anchor || median([ma(25), ma(75)].filter(Number.isFinite))
+  const rawOvervalued = upperInputs.length ? percentile(upperInputs, 0.65) : null
+  const ordered = [rawUndervalued, rawFair, rawOvervalued].filter(Number.isFinite).sort((a, b) => a - b)
+  if (!ordered.length) return null
+  const undervalued = ordered[0]
+  const fair = ordered[Math.floor(ordered.length / 2)]
+  const overvalued = ordered[ordered.length - 1]
+  return {
+    peers: peers.length,
+    peerPer,
+    peerPbr,
+    perLine,
+    pbrLine,
+    low52,
+    high52,
+    ma25: ma(25),
+    ma75: ma(75),
+    undervalued,
+    fair,
+    overvalued,
+  }
+}
+
 // ── 資産バリュー（シケモク＋カタリスト）評価 ───────────────────────────
 // 有報・決算短信で確認した数値を入力し、将来リターンの予測ではなく
 // 「追加調査の優先度」として比較する。非事業資産は帳簿額をそのまま
@@ -453,6 +510,11 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const longFactors = useMemo(() => {
     if (!sel) return null
     return computeLongFactors(selHist, sel, scan?.rows)
+  }, [sel, selHist, scan])
+
+  const valueReference = useMemo(() => {
+    if (!sel) return null
+    return computeValueReference(selHist, sel, scan?.rows)
   }, [sel, selHist, scan])
 
   const selectedAssetInput = sel ? (assetValues[sel.code] || blankAssetValue()) : blankAssetValue()
@@ -839,6 +901,40 @@ export default function DevEdge({ isMobile, onNavigate }) {
             <div style={{ ...S.small, marginBottom: '10px' }}>
               バリュエーション：PER <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.per ?? '—'}</b>　PBR <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.pbr ?? '—'}</b>　PEG <b style={{ ...S.mono, color: 'var(--text2)' }}>{sel.peg ?? '—'}</b>
               {sel.per == null && '（Infoway契約後に自動表示）'}
+            </div>
+
+            <div style={{ marginBottom: '12px', padding: '12px 14px', background: 'rgba(74,158,255,0.05)', border: '1px solid rgba(74,158,255,0.28)', borderRadius: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', flexWrap: 'wrap', marginBottom: '8px' }}>
+                <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--accent)' }}>📏 参考価格ライン</span>
+                <span style={S.small}>同一テーマの比較対象と過去1年の価格帯を使った参考レンジ。売買判断や目標株価ではありません。</span>
+              </div>
+              {valueReference ? (() => {
+                const values = [valueReference.undervalued, valueReference.fair, valueReference.overvalued, sel.price].filter(Number.isFinite)
+                const min = Math.min(...values) * 0.94
+                const max = Math.max(...values) * 1.06
+                const pos = (value) => `${Math.max(0, Math.min(100, (value - min) / Math.max(max - min, 1) * 100))}%`
+                const lines = [
+                  ['割安ライン', valueReference.undervalued, '#00c48c'],
+                  ['適正ライン', valueReference.fair, '#4a9eff'],
+                  ['割高ライン', valueReference.overvalued, '#ff8c42'],
+                ].filter(([, value]) => Number.isFinite(value))
+                return <>
+                  <div style={{ position: 'relative', height: '38px', margin: '2px 8px 8px', borderBottom: '2px solid var(--border)' }}>
+                    {lines.map(([label, value, color]) => <div key={label} title={`${label}: ¥${Math.round(value).toLocaleString()}`} style={{ position: 'absolute', left: pos(value), bottom: 0, transform: 'translateX(-50%)', textAlign: 'center', color }}>
+                      <div style={{ fontSize: '9px', whiteSpace: 'nowrap' }}>{label}</div><div style={{ height: '13px', borderLeft: `2px solid ${color}`, margin: '2px auto 0', width: 0 }} />
+                    </div>)}
+                    <div title={`現在値: ¥${Number(sel.price).toLocaleString()}`} style={{ position: 'absolute', left: pos(Number(sel.price)), bottom: 0, transform: 'translateX(-50%)', textAlign: 'center', color: '#ffd700' }}>
+                      <div style={{ fontSize: '9px', whiteSpace: 'nowrap' }}>現在値</div><div style={{ height: '19px', borderLeft: '2px solid #ffd700', margin: '2px auto 0', width: 0 }} />
+                    </div>
+                  </div>
+                  <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(4, 1fr)', gap: '7px' }}>
+                    {[...lines, ['現在値', Number(sel.price), '#ffd700']].map(([label, value, color]) => <div key={label} style={{ background: 'var(--bg2)', border: `1px solid ${color}44`, borderRadius: '6px', padding: '6px 8px' }}><div style={{ fontSize: '9px', color }}>{label}</div><div style={{ ...S.mono, fontSize: '13px', fontWeight: 700, color: 'var(--text)' }}>¥{Math.round(value).toLocaleString()}</div></div>)}
+                  </div>
+                  <div style={{ ...S.small, marginTop: '8px' }}>
+                    比較対象 {valueReference.peers}社{valueReference.peerPer ? `・同テーマPER中央値 ${valueReference.peerPer.toFixed(1)}倍` : ''}{valueReference.peerPbr ? `・PBR中央値 ${valueReference.peerPbr.toFixed(2)}倍` : ''}。過去1年：安値 {valueReference.low52 ? `¥${Math.round(valueReference.low52).toLocaleString()}` : '—'}／高値 {valueReference.high52 ? `¥${Math.round(valueReference.high52).toLocaleString()}` : '—'}。
+                  </div>
+                </>
+              })() : <div style={S.small}>PER・PBR、または1年価格履歴がそろうと参考ラインを表示します。</div>}
             </div>
 
             {/* 資産バリュー + カタリスト。決算・有報を読んだ後の実戦用評価 */}
