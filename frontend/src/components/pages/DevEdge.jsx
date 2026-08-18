@@ -12,7 +12,8 @@ import { useSubscription } from '../../hooks/useSubscription.jsx'
 // ═══════════════════════════════════════════════════════════════
 
 // ── 需給・マクロイベント（手動更新。SQは第2金曜で確定、他は発表後に更新） ──
-const EVENTS = [
+// 2026年7月までの表示履歴。画面には下の最新EVENTSのみを表示する。
+const LEGACY_EVENTS = [
   { date: '7/8前後',  label: 'ETF分配金 捻出売り①',       type: 'sell',  note: '例年計1兆円規模。下げは押し目候補' },
   { date: '7/10(金)', label: 'オプションSQ + ETF分配金②', type: 'sell',  note: 'SQ通過後の切り返しに注目' },
   { date: '7/14前後', label: '米CPI（6月分）',             type: 'macro', note: '利上げ観測の再点火リスク。日付要確認' },
@@ -23,6 +24,22 @@ const EVENTS = [
 ]
 
 // ── 需給イベントの自動生成（SQ=毎月第2金曜など日付が確定的なものはコードで算出） ──
+// 2026年8月19日時点で確認した公表予定。日程変更時は公式発表に合わせて更新する。
+const EVENTS = [
+  { date: '8/19(水)', label: 'FOMC議事要旨（7月会合分）', type: 'macro', note: '金利見通しと委員の議論を確認。日本時間の翌朝以降に織り込みが進む場合があります。', _d: new Date(2026, 7, 19) },
+  { date: '8/21(金)', label: '日本・7月全国CPI（2025年基準）', type: 'macro', note: '基準改定後の全国CPI。日銀の物価判断、長期金利、内需株への影響を確認。', _d: new Date(2026, 7, 21) },
+  { date: '9/4(金)', label: '米国雇用統計（8月分）', type: 'macro', note: '雇用者数・失業率・平均時給が金利、ドル円、グロース株の変動要因になり得ます。', _d: new Date(2026, 8, 4) },
+  { date: '9/15(火)–16(水)', label: 'FOMC（経済見通し・記者会見）', type: 'macro', note: '政策金利、経済見通し、ドットチャートを確認。結果公表は米国時間16日です。', _d: new Date(2026, 8, 15) },
+  { date: '9/17(木)–18(金)', label: '日銀金融政策決定会合', type: 'macro', note: '政策金利、声明と総裁会見の為替・金利への反応を確認。', _d: new Date(2026, 8, 17) },
+  { date: '10/2(金)', label: '米国雇用統計（9月分）', type: 'macro', note: '雇用の減速・賃金の粘着性が利下げ観測を左右する可能性があります。', _d: new Date(2026, 9, 2) },
+  { date: '10/7(水)', label: 'FOMC議事要旨（9月会合分）', type: 'macro', note: '9月会合時点の政策判断とインフレ・雇用リスクの評価を確認。', _d: new Date(2026, 9, 7) },
+  { date: '10/27(火)–28(水)', label: 'FOMC', type: 'macro', note: '政策判断と記者会見。利下げ・据え置きの織り込み差に注意。', _d: new Date(2026, 9, 27) },
+  { date: '10/29(木)–30(金)', label: '日銀金融政策決定会合・展望レポート', type: 'macro', note: '展望レポートを伴う会合。物価・成長見通しと政策スタンスを確認。', _d: new Date(2026, 9, 29) },
+  { date: '11/6(金)', label: '米国雇用統計（10月分）', type: 'macro', note: '米金利・ドル円・世界株の短期変動要因。数値だけでなく過去分の改定も確認。', _d: new Date(2026, 10, 6) },
+  { date: '12/8(火)–9(水)', label: 'FOMC（経済見通し・記者会見）', type: 'macro', note: '年内最後のFOMC。翌年の金利見通しと市場の織り込みとの差を確認。', _d: new Date(2026, 11, 8) },
+  { date: '12/17(木)–18(金)', label: '日銀金融政策決定会合', type: 'macro', note: '年末の薄商い前に政策判断と円相場への反応を確認。', _d: new Date(2026, 11, 17) },
+]
+
 function autoEvents(now = new Date()) {
   const ev = []
   const fmt = (d) => `${d.getMonth() + 1}/${d.getDate()}(${'日月火水木金土'[d.getDay()]})`
@@ -1059,7 +1076,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
         {(() => {
           const auto = autoEvents()
           const manual = EVENTS.filter(e => !auto.some(a => a.label === e.label))
-          return [...auto, ...manual]
+          return [...auto, ...manual].sort((a, b) => a._d - b._d)
         })().map((e, i) => (
           <div key={i} style={{ display: 'flex', gap: '10px', padding: '6px 0', borderBottom: '1px solid var(--border)', fontSize: '12px', alignItems: 'baseline', flexWrap: 'wrap' }}>
             <span style={{ ...S.mono, color: 'var(--text3)', minWidth: '72px' }}>{e.date}</span>
