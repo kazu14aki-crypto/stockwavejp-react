@@ -1,6 +1,5 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useSubscription } from '../../hooks/useSubscription.jsx'
-import { supabase } from '../../lib/supabase'
 
 // ═══════════════════════════════════════════════════════════════
 // DevEdge.jsx — 開発者専用エッジ・ダッシュボード（plan==='dev'のみ表示）
@@ -106,21 +105,6 @@ const zscores = (arr) => {
   return arr.map(v => Number.isFinite(v) ? (v - mean) / sd : 0)
 }
 
-
-// ── 並列実行プール（Render無料枠に配慮しつつ72テーマを取得） ──
-async function runPool(tasks, limit = 6, onProgress) {
-  const results = new Array(tasks.length)
-  let idx = 0, done = 0
-  async function worker() {
-    while (idx < tasks.length) {
-      const i = idx++
-      try { results[i] = await tasks[i]() } catch { results[i] = null }
-      done++; onProgress?.(done, tasks.length)
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(limit, tasks.length) }, worker))
-  return results
-}
 
 // ── テクニカル指標計算（/api/stock-history の累積騰落率系列から） ──
 function computeTech(hist) {
@@ -406,6 +390,8 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [loading, setLoading]     = useState(true)
   const [validation, setValidation] = useState(null)
   const [financialMetrics, setFinancialMetrics] = useState({})
+  const [staticDataAt, setStaticDataAt] = useState(null)
+  const [liveRefreshing, setLiveRefreshing] = useState(false)
   const [rulesChecked, setRulesChecked] = useState(() => {
     try { return JSON.parse(localStorage.getItem('swjp_dev_rules') || '[]') } catch { return [] }
   })
@@ -415,24 +401,38 @@ export default function DevEdge({ isMobile, onNavigate }) {
     try { return JSON.parse(localStorage.getItem('swjp_dev_asset_value_v1') || '{}') } catch { return {} }
   })
 
+  const loadStaticData = useCallback(async () => {
+    const [market, holders, financial] = await Promise.all([
+      fetch(`/data/market.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
+      fetch(`/data/stockholders/index.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
+      fetch(`/data/financial_metrics.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
+    ])
+    if (market) {
+      setThemeData(market.themes_5d || null)
+      setMomentum(market.momentum_1mo || null)
+      setStaticDataAt(market.themes_5d?.updated_at || market.momentum_1mo?.updated_at || null)
+    }
+    if (holders) setHolders(holders)
+    if (financial) setFinancialMetrics(financial.metrics || financial || {})
+  }, [])
+
   useEffect(() => {
     if (!isDev) return
-    let cancelled = false
-    ;(async () => {
-      try {
-        const [tRes, mRes] = await Promise.all([
-          fetch(`${API_BASE}/api/themes?period=5d`).then(r => r.ok ? r.json() : null).catch(() => null),
-          fetch(`${API_BASE}/api/momentum?period=1mo`).then(r => r.ok ? r.json() : null).catch(() => null),
-        ])
-        if (!cancelled) { setThemeData(tRes); setMomentum(mRes) }
-        const hRes = await fetch(`/data/stockholders/index.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null).catch(() => null)
-        if (!cancelled) setHolders(hRes)
-      } finally {
-        if (!cancelled) setLoading(false)
-      }
-    })()
-    return () => { cancelled = true }
-  }, [isDev])
+    loadStaticData().catch(() => {}).finally(() => setLoading(false))
+  }, [isDev, loadStaticData])
+
+  const refreshLiveMarket = async () => {
+    if (liveRefreshing) return
+    setLiveRefreshing(true)
+    try {
+      const [themes, momentumData] = await Promise.all([
+        fetch(`${API_BASE}/api/themes?period=5d`).then(r => r.ok ? r.json() : null),
+        fetch(`${API_BASE}/api/momentum?period=1mo`).then(r => r.ok ? r.json() : null),
+      ])
+      if (themes) setThemeData(themes)
+      if (momentumData) setMomentum(momentumData)
+    } finally { setLiveRefreshing(false) }
+  }
 
   useEffect(() => {
     if (!isDev) return
@@ -472,13 +472,8 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [selLoading, setSelLoading] = useState(false)
   useEffect(() => {
     if (!isDev) return
-    Promise.all([
-      fetch(`/data/stock_index.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
-      fetch(`/data/financial_metrics.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
-    ]).then(([index, financial]) => {
-      if (index) setStockIndex(index)
-      if (financial) setFinancialMetrics(financial.metrics || financial || {})
-    }).catch(() => {})
+    fetch(`/data/stock_index.json?t=${Date.now()}`)
+      .then(r => r.ok ? r.json() : null).then(index => { if (index) setStockIndex(index) }).catch(() => {})
   }, [isDev])
 
   // ── 全テーマ横断スキャン：サイトで確認できる全銘柄を複合スコア化 ──
@@ -486,13 +481,11 @@ export default function DevEdge({ isMobile, onNavigate }) {
     if (scanning) return
     setScanning(true); setScanProg([0, 0])
     try {
-      let uid = null
-      try { uid = (await supabase.auth.getSession())?.data?.session?.user?.id || null } catch {}
       let themePct = {}
       for (const t of (themeData?.themes || [])) themePct[t.theme] = t.pct
       const map = {}
-      // 優先: サーバー側集約API（テーマ増減・将来の全銘柄収録に自動追随、1コールで完結）
-      const uni = await fetch(`${API_BASE}/api/stock-universe?period=5d${uid ? `&uid=${uid}` : ''}`)
+      // GitHub Actionsで生成・配信する静的ユニバースだけを使う。通常スキャンでRenderを起動しない。
+      const uni = await fetch(`/data/dev_edge_universe.json?t=${Date.now()}`)
         .then(r => r.ok ? r.json() : null).catch(() => null)
       if (uni?.data?.length) {
         setScanProg([1, 1])
@@ -506,26 +499,9 @@ export default function DevEdge({ isMobile, onNavigate }) {
             themes: s.themes || [] }
         }
       } else {
-        // フォールバック: クライアント側でテーマ巡回（旧方式・バックエンド未デプロイ時）
-        const namesRes = await fetch(`${API_BASE}/api/theme-names`).then(r => r.json())
-        const names = namesRes?.themes || []
-        const tasks = names.map(n => () =>
-          fetch(`${API_BASE}/api/theme-detail/${encodeURIComponent(n)}?period=5d${uid ? `&uid=${uid}` : ''}`)
-            .then(r => r.ok ? r.json() : null).then(d => ({ theme: n, stocks: d?.data?.stocks || d?.data || [] })))
-        const results = await runPool(tasks, 6, (d, t) => setScanProg([d, t]))
-        for (const res of results) {
-          if (!res) continue
-          for (const s of res.stocks) {
-            const code = String(s.ticker || '').replace('.T', '')
-            if (!code) continue
-            if (!map[code]) map[code] = { code, name: s.name, price: s.price, pct: s.pct,
-              volume_chg: s.volume_chg, trade_value: s.trade_value, mcap: s.market_cap ?? null,
-              per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null, themes: [] }
-            const m = map[code]
-            m.themes.push(res.theme)
-            if (m.per == null && s.per != null) { m.per = s.per; m.pbr = s.pbr; m.peg = s.peg }
-          }
-        }
+        // 静的ユニバース未生成時もRenderにはフォールバックしない。次の市場データ更新後に利用可能になる。
+        setScan(null)
+        return
       }
       let rows = Object.values(map).filter(r => Number.isFinite(r.pct))
       // 所属テーマの追い風（テーマ1週騰落の平均）と1ヶ月モメンタム（静的インデックスから）
@@ -561,15 +537,13 @@ export default function DevEdge({ isMobile, onNavigate }) {
     let base = fromScan || (fromIdx ? { code, name: fromIdx.name, price: fromIdx.price, pct1mo: fromIdx.pct, themes: fromIdx.themes || [], mcap: fromIdx.market_cap } : { code, name: fallbackName || code, themes: [] })
     setSel(base); setSelTech(null); setSelHist(null); setSelHolders(null); setSelLoading(true); setQ('')
     try {
-      const [hist, hold, info] = await Promise.all([
+      const [hist, hold] = await Promise.all([
         fetch(`${API_BASE}/api/stock-history/${code}.T?period=1y`).then(r => r.ok ? r.json() : null).catch(() => null),
         fetch(`/data/stockholders/${code}.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null).catch(() => null),
-        (!fromScan && !fromIdx) ? fetch(`${API_BASE}/api/stock-info/${code}.T`).then(r => r.ok ? r.json() : null).catch(() => null) : Promise.resolve(null),
       ])
       setSelTech(computeTech(hist?.data))
       setSelHist(hist?.data || null)
       setSelHolders(hold)
-      if (info?.name) setSel(s => ({ ...s, name: info.name, price: info.price, pct1mo: info.pct }))
     } finally { setSelLoading(false) }
   }
 
@@ -597,6 +571,10 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const updateAssetValue = (key, value) => {
     if (!sel?.code) return
     setAssetValues(prev => ({ ...prev, [sel.code]: { ...blankAssetValue(), ...(prev[sel.code] || {}), [key]: value } }))
+  }
+  const applyTdnetFinancials = () => {
+    if (!sel?.code || !selectedFinancial) return
+    setAssetValues(prev => ({ ...prev, [sel.code]: { ...blankAssetValue(), ...(prev[sel.code] || {}), ...tdnetAssetInput } }))
   }
 
   // 検索候補
@@ -731,7 +709,13 @@ export default function DevEdge({ isMobile, onNavigate }) {
 
       {/* ── A. 地合い判定 ── */}
       <div style={S.card}>
-        <div style={S.h2}>🌡️ 今日の地合い（直近1週・全{themeData?.summary?.total ?? '—'}テーマ）</div>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '8px' }}>
+          <div style={{ ...S.h2, marginBottom: 0 }}>🌡️ 今日の地合い（直近1週・全{themeData?.summary?.total ?? '—'}テーマ）</div>
+          <span style={S.small}>通常は静的データ{staticDataAt ? `（${staticDataAt}）` : ''}</span>
+          <button onClick={refreshLiveMarket} disabled={liveRefreshing} style={{ marginLeft: 'auto', padding: '5px 10px', background: 'transparent', color: liveRefreshing ? 'var(--text3)' : 'var(--accent)', border: '1px solid var(--border)', borderRadius: '6px', cursor: liveRefreshing ? 'default' : 'pointer', fontSize: '11px', fontWeight: 700 }}>
+            {liveRefreshing ? '最新データ取得中…' : '↻ 最新データを取得'}
+          </button>
+        </div>
         {loading && !regime ? <div style={S.small}>読み込み中…</div> : regime ? (
           <div style={{ display: 'flex', gap: isMobile ? '12px' : '24px', flexWrap: 'wrap', alignItems: 'center' }}>
             <div style={{ fontSize: '22px', fontWeight: 800, color: regime.color }}>{regime.label}</div>
@@ -805,7 +789,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
             {scanning ? `スキャン中… ${scanProg[0]}/${scanProg[1]}テーマ` : scan ? '🔄 再スキャン' : '▶ 全銘柄スキャン実行'}
           </button>
           {scan && <span style={S.small}>対象 <b style={{ color: 'var(--text2)' }}>{scan.total}</b>銘柄　取得 {new Date(scan.ts).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' })}（60分キャッシュ）</span>}
-          {!scan && !scanning && <span style={S.small}>初回は72テーマ分のAPI取得で1〜2分かかります（サーバー側キャッシュ後は高速）</span>}
+          {!scan && !scanning && <span style={S.small}>GitHub Actions生成の静的ユニバースを使用します。Render APIは呼び出しません。</span>}
         </div>
         {scan && (
           <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1.4fr 1fr', gap: '14px' }}>
@@ -971,6 +955,9 @@ export default function DevEdge({ isMobile, onNavigate }) {
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <span style={{ fontSize: '12px', fontWeight: 700, color: '#7ed321' }}>🏦 資産バリュー・カタリスト評価</span>
                 <span style={S.small}>TDnet XBRLの取得値を初期表示し、必要な非事業資産・イベントだけを追加入力する調査優先度です。将来リターンの予測・売買推奨ではありません。</span>
+                <button onClick={applyTdnetFinancials} disabled={!selectedFinancial} title={selectedFinancial ? 'TDnet XBRLの現預金・有利子負債・営業CF・FCFを反映' : 'この銘柄のTDnet XBRL財務データは未取得です'} style={{ padding: '4px 8px', background: 'transparent', color: selectedFinancial ? '#7ed321' : 'var(--text3)', border: '1px solid var(--border)', borderRadius: '6px', cursor: selectedFinancial ? 'pointer' : 'default', fontSize: '10.5px', fontWeight: 700 }}>
+                  TDnet財務を反映
+                </button>
                 {assetValue && <span style={{ marginLeft: 'auto', fontSize: '16px', fontWeight: 800, fontFamily: 'var(--mono)', color: assetValue.score >= 75 ? '#7ed321' : assetValue.score >= 55 ? '#ffd700' : '#8b949e' }}>{assetValue.score}<span style={{ fontSize: '10px', color: 'var(--text3)' }}> /100　{assetValue.label}</span></span>}
               </div>
               <div style={{ ...S.small, marginBottom: '9px' }}>単位はすべて<b style={{ color: 'var(--text2)' }}>億円</b>。現預金・有利子負債・営業CF・FCFはTDnet XBRLから自動反映します（取得できない項目は空欄）。修正資産価値＝現預金−有利子負債＋投資有価証券×70％＋賃貸不動産等×70％。</div>

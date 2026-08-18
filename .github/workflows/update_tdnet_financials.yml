@@ -3,8 +3,10 @@ name: Update TDnet Financial Metrics
 on:
   workflow_dispatch:
   schedule:
-    # 平日18:20 JST。決算短信のXBRL公開後に前回取得分を更新する。
-    - cron: '20 9 * * 1-5'
+    # 決算集中期（1・4・7・10月）は平日18:20 JST。
+    - cron: '20 9 * 1,4,7,10 1-5'
+    # それ以外は火・金18:20 JST。最新XBRLを保ちつつ不要な全銘柄走査を減らす。
+    - cron: '20 9 * 2,3,5,6,8,9,11,12 2,5'
 
 permissions:
   contents: write
