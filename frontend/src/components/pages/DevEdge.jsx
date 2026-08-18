@@ -69,21 +69,30 @@ const MONTH_ANOMALY = {
 
 // ── キートリガー（相場の分岐点。達成/破断で戦略を切り替える） ──
 const DEFAULT_TRIGGERS =
-`キオクシア(285A) 25日線 → 奪還ならAI半導体押し目買い再開 / 割れ定着なら調整長期化
-日経平均 6週線(≒68,000円) → 割れたら新規買い停止・現金比率UP
-ドル円 160円 → 円高加速なら自動車・輸出のバリュー買いを縮小
-サイバーセキュリティ・テーマ 週間+5%超の継続 → 国策物色の持続確認
-米SOX指数 前日比±4%超 → 翌日の東京半導体は同方向に寄り付く前提で指値`
+`【市場全体】上昇テーマ比率 65%未満 → 新規エントリーは見送り、既存銘柄の損切り水準を再確認
+【需給】テーマ騰落率が週間+6%超かつ出来高鈍化 → 利確優先。追いかけ買いはしない
+【テクニカル】日足MACDがシグナルを下抜け、かつRSI 50未満 → 短期の新規買いを停止
+【テクニカル】ボリンジャー+2σ超えでRSI 70超 → 利確・押し目待ち。ブレイク継続は終値と出来高で確認
+【テクニカル】ボリンジャー-2σ割れでRSI 30未満 → 反発狙いはMACDヒストグラム改善まで待つ
+【イベント】決算5営業日前〜発表翌営業日 → 予想外リスクを許容できない建玉は持ち越さない
+【マクロ】米CPI・雇用統計・FOMC・日銀会合前 → 金利敏感・輸出株は為替変動を前提に再評価
+【財務】FCF赤字またはTDnet開示が古い → バリュー判定を保留し、原本の決算短信を再確認`
 
 // ── マイルール（エントリー前チェックリスト） ──
 const DEFAULT_RULES = [
-  '損切りラインを注文前に決めた（値幅でなく「シナリオ破綻点」で）',
-  '1トレードの想定損失は口座の1%以内に収めた',
-  '信用建玉の合計は自己資金の2倍以内',
-  'このテーマは「初動〜継続」局面か（過熱局面の高値掴みでないか）',
-  '需給イベント（SQ・分配金売り・決算）をまたぐ場合、サイズを半分にした',
-  '「上がりそう」ではなく「下がったらどこで逃げるか」から考えた',
-  '投資アノマリーを確認した（月の癖・SQ週・月初資金流入・セルインメイ等に逆らっていないか）',
+  'エントリー根拠と撤回条件を一文で書ける（価格・終値・出来高のいずれで撤回するか）',
+  '日足の25日線・75日線との位置、直近高値・安値、出来高の方向を確認した',
+  'RSI・MACD・ボリンジャーバンドが示す局面を確認し、逆張りなら反転根拠を別途持っている',
+  'RSIが70超かつ+2σ超えなら、順張りの根拠が出来高増加・材料継続・終値維持のいずれかにある',
+  'RSIが30未満かつ-2σ割れなら、単なる下落途中ではないことをMACD改善・下ヒゲ・出来高で確認した',
+  'MACDのクロスだけで判断せず、ゼロライン位置とヒストグラムの拡大・縮小を確認した',
+  'テーマが初動・継続・過熱・失速のどこにあるかを、週間騰落率と出来高変化で確認した',
+  '信用残・貸借倍率・空売り比率のうち、取得可能な少なくとも2項目を確認した',
+  '決算、SQ、ETF分配金、配当権利落ち、指数リバランスをまたぐ場合の持ち越し理由を書いた',
+  '月末・四半期末のリバランス、GW・お盆・年末の薄商いなど季節的な需給要因を確認した',
+  '米CPI・雇用統計・FOMC・日銀会合の前後かを確認し、金利・為替感応度を見直した',
+  'TDnetの最新決算短信の開示日・CF累計期間を確認し、古い数値や四半期CFの年換算で判断していない',
+  '「上がりそう」ではなく、想定と逆行した時に何を根拠に撤退・様子見へ切り替えるかを決めた',
 ]
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
@@ -140,11 +149,35 @@ function computeTech(hist) {
   const mean = rets.reduce((a, b) => a + b, 0) / (rets.length || 1)
   const vol20 = Math.sqrt(rets.reduce((a, b) => a + (b - mean) ** 2, 0) / (rets.length || 1))
   const ma25 = ma(25), ma75 = ma(75)
+  // ボリンジャーバンド（20日・2σ）：相対価格でも現在値からの乖離率と%Bは同様に解釈できる。
+  const bTail = r.slice(-20)
+  const bbMid = bTail.reduce((a, b) => a + b, 0) / bTail.length
+  const bbStd = Math.sqrt(bTail.reduce((a, b) => a + (b - bbMid) ** 2, 0) / bTail.length)
+  const bbUpper = bbMid + 2 * bbStd, bbLower = bbMid - 2 * bbStd
+  const bbPctB = bbUpper === bbLower ? 0.5 : (last - bbLower) / (bbUpper - bbLower)
+  const bbDeviation = (last / bbMid - 1) * 100
+  // MACD（12, 26, 9）。EMAは系列全体から算出し、終値ベースの方向性を確認する。
+  const ema = (values, span) => {
+    const alpha = 2 / (span + 1)
+    return values.reduce((acc, value, index) => {
+      acc.push(index ? value * alpha + acc[index - 1] * (1 - alpha) : value)
+      return acc
+    }, [])
+  }
+  const fast = ema(r, 12), slow = ema(r, 26)
+  const macdSeries = r.map((_, i) => fast[i] - slow[i])
+  const macdSignalSeries = ema(macdSeries, 9)
+  const macd = macdSeries.at(-1), macdSignal = macdSignalSeries.at(-1)
+  const macdHist = macd - macdSignal
+  const prevMacdHist = macdSeries.at(-2) - macdSignalSeries.at(-2)
+  const macdState = macd > macdSignal
+    ? (macdHist > prevMacdHist ? '上向き・拡大' : '上向き・鈍化')
+    : (macdHist < prevMacdHist ? '下向き・拡大' : '下向き・縮小')
   let trend
   if (ma25 !== null && ma25 > 0 && (ma75 === null || ma75 > 0)) trend = off52w > -3 ? '上昇トレンド・高値圏' : '上昇トレンド'
   else if (ma25 !== null && ma25 < 0 && ma75 !== null && ma75 < 0) trend = '下落トレンド'
   else trend = 'もみ合い・トレンド転換点'
-  return { ma25, ma75, off52w, rsi, vol20, trend }
+  return { ma25, ma75, off52w, rsi, vol20, trend, bbPctB, bbDeviation, macd, macdSignal, macdHist, macdState }
 }
 
 const GRADES = [
@@ -338,6 +371,33 @@ function computeAssetValue(input, sel) {
   return { mcap, netCash, adjustedAssets, netCashRatio, adjustedRatio, netCashPts, assetPts, pbrPts, cfPts, shareholderPts, catalystPts, catalystCount, riskPenalty, score, label }
 }
 
+function computeIntrinsicCheck(metric, sel) {
+  const mcap = Number(sel?.mcap)
+  if (!metric || !(mcap > 0)) return null
+  const numberOrNull = (value) => typeof value === 'number' && Number.isFinite(value) ? value : null
+  const cash = numberOrNull(metric.cash_and_deposits)
+  const debt = numberOrNull(metric.interest_bearing_debt)
+  const netCash = numberOrNull(metric.net_cash) ?? (cash != null && debt != null ? cash - debt : null)
+  const ocf = numberOrNull(metric.operating_cf)
+  const fcf = numberOrNull(metric.free_cf)
+  const ev = Number.isFinite(netCash) ? mcap - netCash : null
+  const netCashRatio = Number.isFinite(netCash) ? netCash / mcap * 100 : null
+  const ocfYield = Number.isFinite(ocf) ? ocf / mcap * 100 : null
+  const fcfYield = Number.isFinite(fcf) ? fcf / mcap * 100 : null
+  const evFcf = Number.isFinite(ev) && ev > 0 && Number.isFinite(fcf) && fcf > 0 ? ev / fcf : null
+  const scoreParts = []
+  if (Number.isFinite(netCashRatio)) scoreParts.push(netCashRatio >= 50 ? 30 : netCashRatio >= 20 ? 22 : netCashRatio >= 0 ? 12 : 0)
+  if (Number.isFinite(fcfYield)) scoreParts.push(fcfYield >= 8 ? 30 : fcfYield >= 4 ? 22 : fcfYield > 0 ? 12 : 0)
+  if (Number.isFinite(ocfYield)) scoreParts.push(ocfYield >= 10 ? 20 : ocfYield > 0 ? 12 : 0)
+  const score = scoreParts.length ? Math.round(scoreParts.reduce((a, b) => a + b, 0) / (scoreParts.length * 30) * 100) : null
+  let label = '要確認', color = '#8b949e', note = '評価に必要なTDnet XBRLの財務項目が不足しています。原本の決算短信を確認してください。'
+  if (Number.isFinite(fcf) && fcf < 0) { label = 'CFを優先して警戒'; color = '#ff8c42'; note = 'FCFがマイナスです。ネットキャッシュがあっても、赤字CFの継続・運転資金・設備投資の内容を確認してください。' }
+  else if (Number.isFinite(netCashRatio) && netCashRatio >= 50 && Number.isFinite(fcf) && fcf > 0) { label = '財務余力を要調査'; color = '#7ed321'; note = 'ネットキャッシュと正のFCFが確認できます。余剰資金の使途、還元方針、事業の収益力を原本で確認してください。' }
+  else if (Number.isFinite(fcfYield) && fcfYield >= 6) { label = 'CF利回りを要調査'; color = '#4a9eff'; note = '累計FCFが時価総額に対して相対的に大きい状態です。季節性を除くため、通期見通しと前年同期も確認してください。' }
+  else if (score != null) { label = '中立・追加確認'; color = '#ffd700'; note = '単一の財務比率で本源的価値は決まりません。利益の再現性、資本効率、事業リスクと併せて判断してください。' }
+  return { cash, debt, netCash, ocf, fcf, ev, netCashRatio, ocfYield, fcfYield, evFcf, score, label, color, note }
+}
+
 export default function DevEdge({ isMobile, onNavigate }) {
   const { isDev } = useSubscription()
   const [themeData, setThemeData] = useState(null)   // /api/themes (1w相当)
@@ -345,12 +405,11 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [holders, setHolders]     = useState(null)   // /data/stockholders/index.json
   const [loading, setLoading]     = useState(true)
   const [validation, setValidation] = useState(null)
+  const [financialMetrics, setFinancialMetrics] = useState({})
   const [rulesChecked, setRulesChecked] = useState(() => {
     try { return JSON.parse(localStorage.getItem('swjp_dev_rules') || '[]') } catch { return [] }
   })
   const [triggers, setTriggers] = useState(() => localStorage.getItem('swjp_dev_triggers') || DEFAULT_TRIGGERS)
-  // ポジションサイズ計算機
-  const [calc, setCalc] = useState({ capital: '3000000', riskPct: '1', entry: '', stop: '', market: 'JP' })
   // 資産バリュー評価の入力値は端末内にだけ保存する（外部送信なし）。
   const [assetValues, setAssetValues] = useState(() => {
     try { return JSON.parse(localStorage.getItem('swjp_dev_asset_value_v1') || '{}') } catch { return {} }
@@ -400,18 +459,26 @@ export default function DevEdge({ isMobile, onNavigate }) {
   const [scanning, setScanning] = useState(false)
   const [scanProg, setScanProg] = useState([0, 0])
   const [q, setQ] = useState('')
+  // 旧再構築コストUIは非表示。TDnet財務チェックへ移行済み。
+  const legacyIc = { q: '', name: '', mcap: '', cost: '', ops: '', premMin: '', premMax: '' }
+  const legacyIcMatches = []
+  const legacyIcResult = null
+  const ic = legacyIc, icMatches = legacyIcMatches, icResult = legacyIcResult
+  const setIc = () => {}, selectIcStock = () => {}
   const [sel, setSel] = useState(null)                     // 選択銘柄（評価カード）
   const [selTech, setSelTech] = useState(null)
   const [selHist, setSelHist] = useState(null)   // 長期ファクター計算用の生系列
   const [selHolders, setSelHolders] = useState(null)
   const [selLoading, setSelLoading] = useState(false)
-  // cis式・本源的価値チェッカー（再構築コスト法）
-  const [ic, setIc] = useState({ q: '', code: '', name: '', mcap: '', cost: '', ops: '0', premMin: '2', premMax: '5' })
-
   useEffect(() => {
     if (!isDev) return
-    fetch(`/data/stock_index.json?t=${Date.now()}`)
-      .then(r => r.ok ? r.json() : null).then(d => setStockIndex(d)).catch(() => {})
+    Promise.all([
+      fetch(`/data/stock_index.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
+      fetch(`/data/financial_metrics.json?t=${Date.now()}`).then(r => r.ok ? r.json() : null),
+    ]).then(([index, financial]) => {
+      if (index) setStockIndex(index)
+      if (financial) setFinancialMetrics(financial.metrics || financial || {})
+    }).catch(() => {})
   }, [isDev])
 
   // ── 全テーマ横断スキャン：サイトで確認できる全銘柄を複合スコア化 ──
@@ -517,8 +584,16 @@ export default function DevEdge({ isMobile, onNavigate }) {
     return computeValueReference(selHist, sel, scan?.rows)
   }, [sel, selHist, scan])
 
-  const selectedAssetInput = sel ? (assetValues[sel.code] || blankAssetValue()) : blankAssetValue()
+  const selectedFinancial = sel ? financialMetrics[`${sel.code}.T`] : null
+  const tdnetAssetInput = selectedFinancial ? {
+    cash: Number.isFinite(selectedFinancial.cash_and_deposits) ? String(Math.round(selectedFinancial.cash_and_deposits / 1e8 * 10) / 10) : '',
+    debt: Number.isFinite(selectedFinancial.interest_bearing_debt) ? String(Math.round(selectedFinancial.interest_bearing_debt / 1e8 * 10) / 10) : '',
+    ocf: Number.isFinite(selectedFinancial.operating_cf) ? String(Math.round(selectedFinancial.operating_cf / 1e8 * 10) / 10) : '',
+    fcf: Number.isFinite(selectedFinancial.free_cf) ? String(Math.round(selectedFinancial.free_cf / 1e8 * 10) / 10) : '',
+  } : {}
+  const selectedAssetInput = sel ? { ...blankAssetValue(), ...tdnetAssetInput, ...(assetValues[sel.code] || {}) } : blankAssetValue()
   const assetValue = useMemo(() => computeAssetValue(selectedAssetInput, sel), [selectedAssetInput, sel])
+  const intrinsicCheck = useMemo(() => computeIntrinsicCheck(selectedFinancial, sel), [selectedFinancial, sel])
   const updateAssetValue = (key, value) => {
     if (!sel?.code) return
     setAssetValues(prev => ({ ...prev, [sel.code]: { ...blankAssetValue(), ...(prev[sel.code] || {}), [key]: value } }))
@@ -533,41 +608,6 @@ export default function DevEdge({ isMobile, onNavigate }) {
       .filter(s => String(s.ticker).replace('.T', '').startsWith(qU) || (s.name || '').includes(query))
       .slice(0, 8)
   }, [q, stockIndex])
-
-  // 本源的価値チェッカー: 検索候補と時価総額の自動取得
-  const icMatches = useMemo(() => {
-    const query = ic.q.trim()
-    if (!query || !stockIndex) return []
-    const qU = query.toUpperCase()
-    return Object.values(stockIndex)
-      .filter(s => String(s.ticker).replace('.T', '').startsWith(qU) || (s.name || '').includes(query))
-      .slice(0, 6)
-  }, [ic.q, stockIndex])
-
-  const selectIcStock = (m) => {
-    const code = String(m.ticker).replace('.T', '')
-    const fromScan = scan?.rows?.find(r => r.code === code)
-    const mcapYen = fromScan?.mcap ?? m.market_cap ?? null
-    setIc(c => ({ ...c, q: '', code, name: m.name,
-      mcap: Number.isFinite(mcapYen) ? (mcapYen / 1e12).toFixed(2) : c.mcap }))
-  }
-
-  // 本源的価値の判定（cis式: 再構築コスト×プレミアム倍率 vs 時価総額）
-  const icResult = useMemo(() => {
-    const mcap = parseFloat(ic.mcap), cost = parseFloat(ic.cost), ops = parseFloat(ic.ops || '0')
-    const pMin = parseFloat(ic.premMin), pMax = parseFloat(ic.premMax)
-    if (!(mcap > 0 && cost > 0 && pMin > 0 && pMax >= pMin)) return null
-    const build = cost + (ops > 0 ? ops : 0)          // 再構築総コスト
-    const valLo = build * pMin, valHi = build * pMax  // 本源的価値レンジ
-    const ratioLo = mcap / valHi, ratioHi = mcap / valLo  // 過大評価倍率（楽観〜悲観）
-    let judge, color
-    if (mcap <= valLo) { judge = '本源的価値レンジ未満（再構築コスト割れ圏）。長期買いの土俵で、下値は「作るより買う方が安い」買収価値が支えます'; color = '#00c48c' }
-    else if (mcap <= valHi) { judge = '価値レンジ内。ブランド・販売網・先行者収益のプレミアムを織り込んだ妥当圏です'; color = '#4a9eff' }
-    else if (ratioLo < 2) { judge = 'やや割高。将来の成長がプレミアム倍率をさらに正当化できるかが焦点'; color = '#ffd700' }
-    else if (ratioLo < 3) { judge = '割高ゾーン。この時価総額は「高利益率が長期継続し、かつ新規参入が起きない」ことを前提にしています。供給反応チェックへ'; color = '#ff8c42' }
-    else { judge = '過大評価シグナル。価値上限の' + ratioLo.toFixed(1) + '倍。高利益率は必ず参入を招く——ただし乖離はタイミングを教えないため、需給イベント×売買代金急増を待って行動（乖離だけのエスパー売りは禁止）'; color = '#ff5370' }
-    return { build, valLo, valHi, ratioLo, ratioHi, judge, color }
-  }, [ic])
 
   // 総合評価文（ルールベース生成）
   const verdict = useMemo(() => {
@@ -657,29 +697,6 @@ export default function DevEdge({ isMobile, onNavigate }) {
       total: items.length,
     }
   }, [holders])
-
-  // ── E. ポジションサイズ計算 ──
-  const position = useMemo(() => {
-    const cap = parseFloat(calc.capital), risk = parseFloat(calc.riskPct)
-    const entry = parseFloat(calc.entry), stop = parseFloat(calc.stop)
-    if (!(cap > 0 && risk > 0 && entry > 0 && stop > 0) || entry === stop) return null
-    const riskAmount = cap * risk / 100
-    const perShare = Math.abs(entry - stop)
-    const unit = calc.market === 'JP' ? 100 : 1
-    const rawShares = riskAmount / perShare
-    const shares = Math.floor(rawShares / unit) * unit
-    if (shares <= 0) return { error: `この損切り幅では最小単位（${unit}株）でもリスク${risk}%を超えます。損切り幅を狭めるか見送りを。` }
-    const exposure = shares * entry
-    const leverage = exposure / cap
-    const isShort = stop > entry
-    return {
-      shares, exposure, leverage, isShort,
-      actualRisk: shares * perShare,
-      actualRiskPct: (shares * perShare / cap) * 100,
-      warn: leverage > 2 ? '⚠️ 建玉が自己資金の2倍超。信用の追証リスク領域です' :
-            leverage > 1 ? '△ 建玉が自己資金超（信用利用）。イベント前はサイズ半減を' : null,
-    }
-  }, [calc])
 
   // ── ガード ──
   if (!isDev) {
@@ -883,19 +900,31 @@ export default function DevEdge({ isMobile, onNavigate }) {
             )}
 
             {/* テクニカル＋基礎データ */}
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(6, 1fr)', gap: '8px', marginBottom: '12px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(5, 1fr)', gap: '8px', marginBottom: '10px' }}>
               {[['25日線乖離', selTech?.ma25 == null ? '—' : `${selTech.ma25 >= 0 ? '+' : ''}${selTech.ma25.toFixed(1)}%`],
                 ['75日線乖離', selTech?.ma75 == null ? '—' : `${selTech.ma75 >= 0 ? '+' : ''}${selTech.ma75.toFixed(1)}%`],
                 ['1年高値から', selTech ? `${selTech.off52w.toFixed(1)}%` : '—'],
                 ['RSI(14)', selTech ? selTech.rsi.toFixed(0) : '—'],
+                ['BB %B (20日,2σ)', selTech ? selTech.bbPctB.toFixed(2) : '—'],
+                ['BB中心線乖離', selTech ? `${selTech.bbDeviation >= 0 ? '+' : ''}${selTech.bbDeviation.toFixed(1)}%` : '—'],
+                ['MACD', selTech ? selTech.macd.toFixed(4) : '—'],
+                ['MACDシグナル', selTech ? selTech.macdSignal.toFixed(4) : '—'],
+                ['MACDヒストグラム', selTech ? `${selTech.macdHist >= 0 ? '+' : ''}${selTech.macdHist.toFixed(4)}` : '—'],
                 ['日次ボラ(20d)', selTech ? `${selTech.vol20.toFixed(1)}%` : '—'],
                 ['時価総額', fmtOku(sel.mcap)],
               ].map(([l, v]) => (
                 <div key={l} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '6px', padding: '7px 9px' }}>
                   <div style={{ fontSize: '9px', color: 'var(--text3)' }}>{l}</div>
                   <div style={{ ...S.mono, fontSize: '13px', fontWeight: 700, color: 'var(--text)' }}>{v}</div>
-                </div>))}
+              </div>))}
             </div>
+
+            {selTech && <div style={{ marginBottom: '12px', padding: '10px 12px', borderRadius: '8px', background: 'rgba(74,158,255,0.05)', border: '1px solid rgba(74,158,255,0.24)', fontSize: '11.5px', lineHeight: 1.8, color: 'var(--text2)' }}>
+              <b style={{ color: 'var(--accent)' }}>✅ エントリー前テクニカル確認</b><br />
+              RSI：{selTech.rsi >= 70 ? '過熱圏。新規は終値維持と出来高増加を確認。' : selTech.rsi <= 30 ? '売られ過ぎ圏。MACD改善など反転確認まで待つ。' : '中立圏。単独では方向を決めない。'}　
+              ボリンジャー：{selTech.bbPctB > 1 ? '+2σ超え。順張りは過熱・ブレイク継続を区別。' : selTech.bbPctB < 0 ? '-2σ割れ。逆張りは下落速度の鈍化を確認。' : 'バンド内。中心線を支持・抵抗として確認。'}　
+              MACD：{selTech.macdState}（ヒストグラム {selTech.macdHist >= 0 ? '+' : ''}{selTech.macdHist.toFixed(4)}）。クロスだけでなくゼロライン位置と価格・出来高の整合を確認。
+            </div>}
 
             {/* バリュエーション */}
             <div style={{ ...S.small, marginBottom: '10px' }}>
@@ -941,14 +970,14 @@ export default function DevEdge({ isMobile, onNavigate }) {
             <div style={{ marginBottom: '12px', padding: '12px 14px', background: 'rgba(126,211,33,0.045)', border: '1px solid rgba(126,211,33,0.26)', borderRadius: '8px' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', marginBottom: '6px' }}>
                 <span style={{ fontSize: '12px', fontWeight: 700, color: '#7ed321' }}>🏦 資産バリュー・カタリスト評価</span>
-                <span style={S.small}>有報・決算短信で確認した数値を入力する追加調査優先度。将来リターンの予測・売買推奨ではありません。</span>
+                <span style={S.small}>TDnet XBRLの取得値を初期表示し、必要な非事業資産・イベントだけを追加入力する調査優先度です。将来リターンの予測・売買推奨ではありません。</span>
                 {assetValue && <span style={{ marginLeft: 'auto', fontSize: '16px', fontWeight: 800, fontFamily: 'var(--mono)', color: assetValue.score >= 75 ? '#7ed321' : assetValue.score >= 55 ? '#ffd700' : '#8b949e' }}>{assetValue.score}<span style={{ fontSize: '10px', color: 'var(--text3)' }}> /100　{assetValue.label}</span></span>}
               </div>
-              <div style={{ ...S.small, marginBottom: '9px' }}>単位はすべて<b style={{ color: 'var(--text2)' }}>億円</b>。修正資産価値＝現預金−有利子負債＋投資有価証券×70％＋賃貸不動産等×70％。入力内容はこのブラウザ内だけに保存されます。</div>
+              <div style={{ ...S.small, marginBottom: '9px' }}>単位はすべて<b style={{ color: 'var(--text2)' }}>億円</b>。現預金・有利子負債・営業CF・FCFはTDnet XBRLから自動反映します（取得できない項目は空欄）。修正資産価値＝現預金−有利子負債＋投資有価証券×70％＋賃貸不動産等×70％。</div>
               <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(6, 1fr)', gap: '8px', marginBottom: '10px' }}>
                 {[['cash', '現預金'], ['debt', '有利子負債'], ['securities', '投資有価証券'], ['realEstate', '賃貸不動産等'], ['ocf', '営業CF（直近年度）'], ['fcf', 'FCF（直近年度）']].map(([key, label]) => (
                   <label key={key} style={{ ...S.small, color: 'var(--text2)' }}>{label}
-                    <input style={{ ...S.input, marginTop: '3px' }} value={selectedAssetInput[key] ?? ''} onChange={e => updateAssetValue(key, e.target.value)} inputMode="decimal" placeholder="有報から入力" />
+                    <input style={{ ...S.input, marginTop: '3px' }} value={selectedAssetInput[key] ?? ''} onChange={e => updateAssetValue(key, e.target.value)} inputMode="decimal" placeholder={['cash', 'debt', 'ocf', 'fcf'].includes(key) ? 'TDnet XBRL / 手動補正' : '有報から入力'} />
                   </label>
                 ))}
               </div>
@@ -1089,33 +1118,33 @@ export default function DevEdge({ isMobile, onNavigate }) {
         )}
       </div>
 
-      {/* ── E. ポジションサイズ計算機 ── */}
+      {/* ── E. 本源的価値・財務余力チェック ── */}
       <div style={S.card}>
-        <div style={S.h2}>🧮 ポジションサイズ計算機<span style={{ ...S.small, fontWeight: 400 }}>「何株買うか」は感覚でなくリスクから逆算する</span></div>
-        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(5, 1fr)', gap: '10px', marginBottom: '12px' }}>
-          <label style={S.small}>口座資金（円/ドル）<input style={S.input} value={calc.capital} onChange={e => setCalc(c => ({ ...c, capital: e.target.value }))} inputMode="decimal" /></label>
-          <label style={S.small}>許容リスク %<input style={S.input} value={calc.riskPct} onChange={e => setCalc(c => ({ ...c, riskPct: e.target.value }))} inputMode="decimal" /></label>
-          <label style={S.small}>エントリー価格<input style={S.input} value={calc.entry} onChange={e => setCalc(c => ({ ...c, entry: e.target.value }))} inputMode="decimal" /></label>
-          <label style={S.small}>損切り価格<input style={S.input} value={calc.stop} onChange={e => setCalc(c => ({ ...c, stop: e.target.value }))} inputMode="decimal" /></label>
-          <label style={S.small}>市場
-            <select style={S.input} value={calc.market} onChange={e => setCalc(c => ({ ...c, market: e.target.value }))}>
-              <option value="JP">日本株（100株単位）</option>
-              <option value="US">米国株（1株単位）</option>
-            </select>
-          </label>
+        <div style={S.h2}>💰 本源的価値・財務余力チェック<span style={{ ...S.small, fontWeight: 400 }}>TDnet XBRLの実績値から、資産余力とCFを確認</span></div>
+        <div style={{ ...S.small, marginBottom: '12px', lineHeight: 1.8 }}>
+          再構築コストの推計は使いません。銘柄照会で選択した銘柄の<b style={{ color: 'var(--text2)' }}>現預金・有利子負債・営業CF・FCF</b>を、時価総額と比較します。これは価値の確定や目標株価ではなく、決算短信を読む優先順位を付けるためのチェックです。
         </div>
-        {position ? position.error ? (
-          <div style={{ fontSize: '12px', color: '#ff8c42' }}>{position.error}</div>
-        ) : (
-          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', alignItems: 'baseline' }}>
-            <div style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text)' }}><span style={S.mono}>{position.shares.toLocaleString()}</span> 株{position.isShort ? '（売り建て）' : ''}</div>
-            <div style={{ ...S.mono, fontSize: '12px', color: 'var(--text2)' }}>建玉 {Math.round(position.exposure).toLocaleString()}　実リスク {Math.round(position.actualRisk).toLocaleString()}（{position.actualRiskPct.toFixed(2)}%）　レバレッジ {position.leverage.toFixed(2)}x</div>
-            {position.warn && <div style={{ fontSize: '12px', color: '#ff8c42', fontWeight: 600 }}>{position.warn}</div>}
+        {intrinsicCheck ? <>
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(7, 1fr)', gap: '8px', marginBottom: '10px' }}>
+            {[
+              ['時価総額', fmtOku(sel?.mcap)], ['ネットキャッシュ', fmtOku(intrinsicCheck.netCash)], ['ネットC比率', intrinsicCheck.netCashRatio == null ? '—' : `${intrinsicCheck.netCashRatio.toFixed(1)}%`],
+              ['企業価値（概算）', fmtOku(intrinsicCheck.ev)], ['営業CF利回り', intrinsicCheck.ocfYield == null ? '—' : `${intrinsicCheck.ocfYield.toFixed(1)}%`],
+              ['FCF利回り', intrinsicCheck.fcfYield == null ? '—' : `${intrinsicCheck.fcfYield.toFixed(1)}%`], ['EV/FCF', intrinsicCheck.evFcf == null ? '—' : `${intrinsicCheck.evFcf.toFixed(1)}倍`],
+            ].map(([label, value]) => <div key={label} style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '6px', padding: '7px 8px' }}><div style={{ fontSize: '9px', color: 'var(--text3)' }}>{label}</div><div style={{ ...S.mono, fontSize: '12px', fontWeight: 700, color: 'var(--text)' }}>{value}</div></div>)}
           </div>
-        ) : <div style={S.small}>4項目を入力すると、リスク許容額から株数を逆算します。損切り価格＞エントリーなら空売りとして計算します。</div>}
+          <div style={{ padding: '9px 12px', borderRadius: '8px', background: `${intrinsicCheck.color}10`, border: `1px solid ${intrinsicCheck.color}45`, fontSize: '12px', color: 'var(--text2)', lineHeight: 1.8 }}>
+            <b style={{ color: intrinsicCheck.color }}>{intrinsicCheck.label}{intrinsicCheck.score != null ? `　${intrinsicCheck.score}/100` : ''}</b>：{intrinsicCheck.note}
+          </div>
+          <div style={{ ...S.small, marginTop: '9px', lineHeight: 1.8 }}>
+            TDnet開示：{selectedFinancial?.disclosed_at || '—'}　／　{selectedFinancial?.filing_title || '—'}<br />
+            ※ 営業CF・FCFは当期累計であり、年換算していません。季節性、運転資金、設備投資、リース債務、優先株・希薄化、通期見通しを原本で確認してください。
+            {selectedFinancial?.source_url && <>　<a href={selectedFinancial.source_url} target="_blank" rel="noreferrer" style={{ color: 'var(--accent)' }}>TDnet XBRL原本</a></>}
+          </div>
+        </> : <div style={S.small}>銘柄照会で銘柄を選択すると、TDnet XBRLの財務実績が取得済みの場合に表示します。未取得・負債項目を認識できない場合は、推定値を表示せず「—」とします。</div>}
       </div>
 
-      {/* ── E2. 本源的価値チェッカー（cis式・再構築コスト法） ── */}
+      {/* 旧再構築コスト方式は、客観的な入力データを自動取得できないため非表示にしています。 */}
+      {false && <>
       <div style={S.card}>
         <div style={S.h2}>💰 本源的価値チェッカー<span style={{ ...S.small, fontWeight: 400 }}>再構築コスト法 — 「その会社をゼロから作るといくらか」と時価総額を比べる</span></div>
         <div style={{ ...S.small, marginBottom: '12px', lineHeight: 1.9 }}>
@@ -1178,6 +1207,8 @@ export default function DevEdge({ isMobile, onNavigate }) {
         ) : <div style={S.small}>時価総額・再構築コスト・プレミアム倍率を入力すると、本源的価値レンジと時価総額の乖離を判定します。試算イメージ：再構築2.5兆＋操業1.5兆＝4兆円、プレミアム2〜5倍→価値8〜20兆円。これに対し時価総額60兆円なら「価値の3〜7.5倍」の過大評価ゾーンです。</div>}
       </div>
 
+      </>}
+
       {/* ── F. キートリガー & マイルール ── */}
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '16px' }}>
         <div style={{ ...S.card, marginBottom: 0 }}>
@@ -1190,6 +1221,13 @@ export default function DevEdge({ isMobile, onNavigate }) {
             }
             if (signals.early.length) alerts.push(`🌱 初動シグナル: ${signals.early.map(x => x.theme).join('・')}`)
             if (signals.capit.length) alerts.push(`🩸 セリクラ候補: ${signals.capit.map(x => x.theme).join('・')}`)
+            if (regime) alerts.push(`📊 市場の広がり: 上昇テーマ ${(regime.breadth * 100).toFixed(0)}%／${regime.label}`)
+            if (selTech && sel) {
+              if (selTech.rsi >= 70 && selTech.bbPctB > 1) alerts.push(`⚠️ ${sel.name}: RSI ${selTech.rsi.toFixed(0)}・+2σ超え。追随買いは終値と出来高を確認`)
+              else if (selTech.rsi <= 30 && selTech.bbPctB < 0) alerts.push(`⚠️ ${sel.name}: RSI ${selTech.rsi.toFixed(0)}・-2σ割れ。反発確認前の逆張りに注意`)
+              if (selTech.macd < selTech.macdSignal && selTech.macdHist < 0) alerts.push(`▼ ${sel.name}: MACD下向き（${selTech.macdState}）。短期の買い根拠を再点検`)
+              else if (selTech.macd > selTech.macdSignal && selTech.macdHist > 0) alerts.push(`▲ ${sel.name}: MACD上向き（${selTech.macdState}）。価格・出来高の追認を確認`)
+            }
             return alerts.length ? (
               <div style={{ marginBottom: '8px', padding: '8px 10px', background: 'rgba(74,158,255,0.06)', border: '1px solid rgba(74,158,255,0.2)', borderRadius: '8px' }}>
                 <div style={{ fontSize: '10px', fontWeight: 700, color: '#4a9eff', marginBottom: '4px' }}>本日の自動検知（データ更新のたびに変化）</div>
@@ -1197,7 +1235,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
               </div>
             ) : null
           })()}
-          <textarea value={triggers} onChange={e => setTriggers(e.target.value)} rows={9}
+          <textarea value={triggers} onChange={e => setTriggers(e.target.value)} rows={11}
             style={{ ...S.input, resize: 'vertical', lineHeight: 1.8, fontSize: '11.5px' }} />
         </div>
         <div style={{ ...S.card, marginBottom: 0 }}>
