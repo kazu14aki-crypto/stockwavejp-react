@@ -1,59 +1,97 @@
 #!/usr/bin/env python3
-import json, math
+"""Validate static DevEdge indicator conditions without look-ahead bias.
+
+Each observation is evaluated only against returns in subsequent snapshots.
+This is a descriptive check, not a prediction model or trading recommendation.
+"""
+import json
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from datetime import datetime, timezone, timedelta
 
-ROOT=Path(__file__).resolve().parents[1]
-DATA=ROOT/'frontend/public/data'
-JST=timezone(timedelta(hours=9))
-HIST=DATA/'dev_edge_signal_history.json'
-OUT=DATA/'dev_edge_signal_validation.json'
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "frontend" / "public" / "data"
+HISTORY = DATA / "dev_edge_technical_history.json"
+OUT = DATA / "dev_edge_signal_validation.json"
+JST = timezone(timedelta(hours=9))
 
-def load(p,d):
-    try:return json.loads(p.read_text(encoding='utf-8'))
-    except Exception:return d
 
-def classify(pct,vol,state):
-    if pct>=1 and vol>=30 and '加速' not in state:return '🌱初動'
-    if pct>0 and ('加速' in state or vol>=10):return '🔥継続'
-    if pct>=3 and vol<0:return '⚠️過熱'
-    if pct<=-3 and vol>=30:return '🩸セリクラ'
-    return None
+def load(path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return default
 
-def compound(vals):
-    x=1.0
-    for v in vals:x*=1+v/100
-    return (x-1)*100
+
+def compound(values):
+    result = 1.0
+    for value in values:
+        result *= 1 + value / 100
+    return (result - 1) * 100
+
+
+def conditions(technical):
+    rsi = technical.get("rsi14")
+    bb = technical.get("bb_pct_b")
+    trend = bool(technical.get("above_ma25") and technical.get("above_ma75"))
+    macd = bool(technical.get("macd_bullish") and technical.get("macd_hist_rising"))
+    rsi_ready = isinstance(rsi, (int, float)) and 45 <= rsi <= 68
+    bb_ready = isinstance(bb, (int, float)) and 0.45 <= bb <= 1.0
+    return {
+        "トレンド（25日・75日線上）": trend,
+        "RSI（45〜68）": rsi_ready,
+        "MACD（上向き・拡大）": macd,
+        "ボリンジャー（中心〜+2σ内）": bb_ready,
+        "複合買い場候補": trend and rsi_ready and macd and bb_ready,
+    }
+
+
+def summarize(name, outcomes):
+    five = [item[0] for item in outcomes]
+    twenty = [item[1] for item in outcomes if item[1] is not None]
+    count = len(five)
+    avg5 = sum(five) / count if count else 0.0
+    avg20 = sum(twenty) / len(twenty) if twenty else 0.0
+    win_rate = sum(value > 0 for value in five) / count * 100 if count else 0.0
+    return {
+        "signal": name,
+        "count": count,
+        "avg_5d": round(avg5, 3),
+        "avg_20d": round(avg20, 3),
+        "win_rate": round(win_rate, 1),
+        "max_drawdown": round(min(five), 3) if five else 0.0,
+        "edge": count >= 30 and avg5 > 0 and win_rate >= 52,
+    }
+
 
 def main():
-    market=load(DATA/'market.json',{})
-    day={x['theme']:x for x in market.get('themes_1d',{}).get('themes',[])}
-    week={x['theme']:x for x in market.get('themes_5d',{}).get('themes',[])}
-    mom={x['theme']:x for x in market.get('momentum_1mo',{}).get('data',[])}
-    date=datetime.now(JST).date().isoformat()
-    history=load(HIST,[])
-    snapshot={'date':date,'themes':{}}
-    for theme,d in day.items():
-        w=week.get(theme,{});m=mom.get(theme,{})
-        pct=float(w.get('pct') or 0);vol=float(w.get('volume_chg') or 0);state=str(m.get('state') or '')
-        snapshot['themes'][theme]={'daily_pct':float(d.get('pct') or 0),'signal':classify(pct,vol,state)}
-    history=[h for h in history if h.get('date')!=date]+[snapshot]
-    history=sorted(history,key=lambda x:x['date'])[-260:]
-    HIST.write_text(json.dumps(history,ensure_ascii=False,indent=2),encoding='utf-8')
-    rows=[]
-    for sig in ['🌱初動','🔥継続','⚠️過熱','🩸セリクラ']:
-        outcomes=[]
-        for i,h in enumerate(history):
-            for theme,v in h.get('themes',{}).items():
-                if v.get('signal')!=sig:continue
-                future=[history[j].get('themes',{}).get(theme,{}).get('daily_pct') for j in range(i+1,min(len(history),i+21))]
-                future=[float(x) for x in future if x is not None]
-                if len(future)>=5:outcomes.append((compound(future[:5]),compound(future[:20]) if len(future)>=20 else None))
-        five=[x[0] for x in outcomes];twenty=[x[1] for x in outcomes if x[1] is not None]
-        avg5=sum(five)/len(five) if five else 0;avg20=sum(twenty)/len(twenty) if twenty else 0
-        win=sum(x>0 for x in five)/len(five)*100 if five else 0
-        dd=min(five) if five else 0
-        rows.append({'signal':sig,'count':len(five),'avg_5d':avg5,'avg_20d':avg20,'win_rate':win,'max_drawdown':dd,'edge':len(five)>=30 and avg5>0 and win>=52})
-    OUT.write_text(json.dumps({'updated_at':datetime.now(JST).isoformat(timespec='seconds'),'rows':rows},ensure_ascii=False,indent=2),encoding='utf-8')
-    print('snapshots',len(history))
-if __name__=='__main__':main()
+    history = sorted(load(HISTORY, []), key=lambda item: item.get("date", ""))[-260:]
+    names = [
+        "トレンド（25日・75日線上）", "RSI（45〜68）", "MACD（上向き・拡大）",
+        "ボリンジャー（中心〜+2σ内）", "複合買い場候補",
+    ]
+    results = {name: [] for name in names}
+    for index, snapshot in enumerate(history):
+        future = history[index + 1:index + 21]
+        for ticker, technical in snapshot.get("stocks", {}).items():
+            returns = []
+            for later in future:
+                item = later.get("stocks", {}).get(ticker, {})
+                value = item.get("daily_pct")
+                if isinstance(value, (int, float)):
+                    returns.append(float(value))
+            if len(returns) < 5:
+                continue
+            for name, matched in conditions(technical).items():
+                if matched:
+                    results[name].append((compound(returns[:5]), compound(returns[:20]) if len(returns) >= 20 else None))
+    rows = [summarize(name, results[name]) for name in names]
+    OUT.write_text(json.dumps({
+        "updated_at": datetime.now(JST).isoformat(timespec="seconds"),
+        "method": "日次スナップショットの条件成立後、次の5・20営業日相当を集計。未来データは条件判定に使用しない。",
+        "rows": rows,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"technical snapshots={len(history)}")
+
+
+if __name__ == "__main__":
+    main()

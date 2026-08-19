@@ -261,6 +261,7 @@ def calc_dev_edge_technical(df):
         return {
             "rsi14": round(rsi, 1),
             "bb_pct_b": round(float(bb_pct_b), 3),
+            "daily_pct": round((latest / float(close.iloc[-2]) - 1) * 100, 3),
             "above_ma25": latest > ma25,
             "above_ma75": ma75 is not None and latest > ma75,
             "macd_bullish": bool(macd_series.iloc[-1] > macd_signal.iloc[-1]),
@@ -1080,6 +1081,17 @@ def main():
             "data": dev_edge_technicals,
         }, f, ensure_ascii=False, separators=(",", ":"))
     print(f"DevEdge technicals: {len(dev_edge_technicals)} stocks")
+    technical_history_path = "frontend/public/data/dev_edge_technical_history.json"
+    try:
+        technical_history = json.loads(open(technical_history_path, encoding="utf-8").read())
+    except (OSError, json.JSONDecodeError):
+        technical_history = []
+    snapshot_date = now_jst.date().isoformat()
+    technical_history = [x for x in technical_history if x.get("date") != snapshot_date]
+    technical_history.append({"date": snapshot_date, "stocks": dev_edge_technicals})
+    technical_history = sorted(technical_history, key=lambda x: x.get("date", ""))[-260:]
+    with open(technical_history_path, "w", encoding="utf-8") as f:
+        json.dump(technical_history, f, ensure_ascii=False, separators=(",", ":"))
     # trendsデータを別ファイルに分割（market.jsonの肥大化防止）
     trends_output = {}
     main_output   = {}

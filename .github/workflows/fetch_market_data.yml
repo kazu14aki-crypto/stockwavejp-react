@@ -100,11 +100,12 @@ jobs:
         run: |
           python scripts/fetch_data.py
           python scripts/build_dev_edge_universe.py
+          python scripts/update_dev_edge_validation.py
 
       - name: Check if data changed
         id: check
         run: |
-          if [ -z "$(git status --porcelain -- frontend/public/data/market.json frontend/public/data/dev_edge_technicals.json frontend/public/data/dev_edge_universe.json)" ]; then
+          if [ -z "$(git status --porcelain -- frontend/public/data/market.json frontend/public/data/dev_edge_technicals.json frontend/public/data/dev_edge_technical_history.json frontend/public/data/dev_edge_signal_validation.json frontend/public/data/dev_edge_universe.json)" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -115,7 +116,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/data/market.json frontend/public/data/dev_edge_technicals.json frontend/public/data/dev_edge_universe.json
+          git add frontend/public/data/market.json frontend/public/data/dev_edge_technicals.json frontend/public/data/dev_edge_technical_history.json frontend/public/data/dev_edge_signal_validation.json frontend/public/data/dev_edge_universe.json
           git commit -m "chore: update market data $(date +'%Y/%m/%d %H:%M JST' -d '+9 hours')"
           git pull origin main --rebase
           git push
