@@ -226,6 +226,51 @@ def calc_metrics(df):
     except: return None
 
 
+def calc_dev_edge_technical(df):
+    """Return daily technical values used by the static DevEdge scanner.
+
+    Values are calculated during the GitHub Actions market-data run, so a full
+    universe scan never needs to wake the Render API.
+    """
+    try:
+        close = pd.to_numeric(df["Close"], errors="coerce").dropna()
+        close = close[close > 0].tail(130)
+        if len(close) < 35:
+            return None
+
+        change = close.diff().tail(14).dropna()
+        gain = float(change.clip(lower=0).sum())
+        loss = float((-change.clip(upper=0)).sum())
+        rsi = 50.0 if gain + loss == 0 else 100.0 * gain / (gain + loss)
+
+        ma25 = float(close.tail(25).mean())
+        ma75 = float(close.tail(75).mean()) if len(close) >= 75 else None
+        latest = float(close.iloc[-1])
+        tail20 = close.tail(20)
+        bb_mid = float(tail20.mean())
+        bb_std = float(tail20.std(ddof=0))
+        bb_upper, bb_lower = bb_mid + 2 * bb_std, bb_mid - 2 * bb_std
+        bb_pct_b = 0.5 if bb_upper == bb_lower else (latest - bb_lower) / (bb_upper - bb_lower)
+
+        fast = close.ewm(span=12, adjust=False).mean()
+        slow = close.ewm(span=26, adjust=False).mean()
+        macd_series = fast - slow
+        macd_signal = macd_series.ewm(span=9, adjust=False).mean()
+        macd_hist = float(macd_series.iloc[-1] - macd_signal.iloc[-1])
+        prev_hist = float(macd_series.iloc[-2] - macd_signal.iloc[-2])
+        return {
+            "rsi14": round(rsi, 1),
+            "bb_pct_b": round(float(bb_pct_b), 3),
+            "above_ma25": latest > ma25,
+            "above_ma75": ma75 is not None and latest > ma75,
+            "macd_bullish": bool(macd_series.iloc[-1] > macd_signal.iloc[-1]),
+            "macd_hist": round(macd_hist, 6),
+            "macd_hist_rising": macd_hist > prev_hist,
+        }
+    except Exception:
+        return None
+
+
 def build_market_segments():
     """market_segmentsを構築（data.pyと同じ定義）"""
     nikkei = {
@@ -1020,6 +1065,21 @@ def main():
         }
 
     os.makedirs("frontend/public/data", exist_ok=True)
+    # DevEdge technical values are a compact static artifact; raw OHLC history
+    # remains off the public bundle and is still fetched only for a selected stock.
+    dev_edge_technicals = {}
+    for ticker, df in ticker_data.items():
+        technical = calc_dev_edge_technical(df)
+        if technical:
+            dev_edge_technicals[ticker] = technical
+    technical_path = "frontend/public/data/dev_edge_technicals.json"
+    with open(technical_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "updated_at": now_jst.strftime("%Y/%m/%d %H:%M JST"),
+            "source": "GitHub Actions market-data daily OHLCV",
+            "data": dev_edge_technicals,
+        }, f, ensure_ascii=False, separators=(",", ":"))
+    print(f"DevEdge technicals: {len(dev_edge_technicals)} stocks")
     # trendsデータを別ファイルに分割（market.jsonの肥大化防止）
     trends_output = {}
     main_output   = {}

@@ -25,6 +25,7 @@ def load(name: str, default):
 def main() -> None:
     market = load("market.json", {})
     index = load("stock_index.json", {})
+    technicals = load("dev_edge_technicals.json", {}).get("data", {})
     themes = market.get("themes_5d", {}).get("themes", [])
     theme_pct = {row.get("theme"): row.get("pct") for row in themes if row.get("theme")}
     rows: dict[str, dict] = {}
@@ -44,6 +45,7 @@ def main() -> None:
                 "trade_value": stock.get("trade_value"),
                 "market_cap": stock.get("market_cap"),
                 "per": stock.get("per"), "pbr": stock.get("pbr"), "peg": stock.get("peg"),
+                "technical": technicals.get(ticker),
                 "themes": [],
             })
             if theme not in row["themes"]:
@@ -58,6 +60,7 @@ def main() -> None:
         row["market_cap"] = row.get("market_cap") or fallback.get("market_cap")
         row["name"] = row.get("name") or fallback.get("name")
         row["price"] = row.get("price") or fallback.get("price")
+        row["technical"] = row.get("technical") or technicals.get(ticker)
 
     # 古いmarket.jsonではテーマ別明細が空のことがある。その場合も、配信済み
     # stock_indexのテーマ・価格・時価総額・騰落率だけで静的スキャンを可能にする。
@@ -76,6 +79,7 @@ def main() -> None:
                 "trade_value": None,
                 "market_cap": stock.get("market_cap"),
                 "per": None, "pbr": None, "peg": None,
+                "technical": technicals.get(ticker),
                 "themes": stock.get("themes", []),
             }
 

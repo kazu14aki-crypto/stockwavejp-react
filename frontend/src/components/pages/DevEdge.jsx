@@ -181,6 +181,32 @@ function computeTech(hist) {
   return { ma25, ma75, off52w, rsi, vol20, trend, bbPctB, bbDeviation, macd, macdSignal, macdHist, macdState }
 }
 
+const entrySetup = (row, volumeZ) => {
+  const t = row.technical
+  if (!t) return { score: null, eligible: false, label: 'テクニカル未取得', reasons: ['日足データ未更新'] }
+  let score = 0
+  const reasons = []
+  const blockers = []
+  if (t.above_ma25 && t.above_ma75) { score += 20; reasons.push('25日・75日線の上') }
+  else if (t.above_ma25) { score += 10; reasons.push('25日線の上') }
+  else blockers.push('移動平均線の下')
+  if (t.rsi14 >= 45 && t.rsi14 <= 68) { score += 20; reasons.push(`RSI ${t.rsi14}`) }
+  else if (t.rsi14 > 68) blockers.push(`RSI ${t.rsi14}で過熱圏`)
+  else if (t.rsi14 < 35) blockers.push(`RSI ${t.rsi14}で反転未確認`)
+  else { score += 8; reasons.push(`RSI ${t.rsi14}`) }
+  if (t.macd_bullish && t.macd_hist_rising) { score += 25; reasons.push('MACD上向き・拡大') }
+  else if (t.macd_bullish) { score += 12; reasons.push('MACD上向き') }
+  else blockers.push('MACD下向き')
+  if (t.bb_pct_b >= 0.45 && t.bb_pct_b <= 1.0) { score += 15; reasons.push('ボリンジャー内で上向き') }
+  else if (t.bb_pct_b > 1.0) blockers.push('+2σ超え')
+  else if (t.bb_pct_b < 0) blockers.push('-2σ割れ')
+  if (row.pct > 0) score += 10
+  if (row.themeTail >= 0) score += 5
+  if (volumeZ > 0) score += 5
+  const eligible = score >= 65 && blockers.length === 0
+  return { score, eligible, label: eligible ? '買い場候補' : blockers[0] || '条件不足', reasons, blockers }
+}
+
 const GRADES = [
   { g: 'S', pct: 0.03, color: '#ffd700' }, { g: 'A', pct: 0.10, color: '#ff5370' },
   { g: 'B', pct: 0.30, color: '#ff8c42' }, { g: 'C', pct: 0.70, color: '#4a9eff' },
@@ -512,7 +538,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
           if (!code) continue
           map[code] = { code, name: s.name, price: s.price, pct: s.pct,
             volume_chg: s.volume_chg, trade_value: s.trade_value, mcap: s.market_cap ?? null,
-            per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null,
+            per: s.per ?? null, pbr: s.pbr ?? null, peg: s.peg ?? null, technical: s.technical ?? null,
             themes: s.themes || [] }
         }
       } else {
@@ -533,12 +559,18 @@ export default function DevEdge({ isMobile, onNavigate }) {
       const z3 = zscores(rows.map(r => r.themeTail))
       const z4 = zscores(rows.map(r => Number.isFinite(r.trade_value) && r.trade_value > 0 ? Math.log10(r.trade_value) : 6))
       const z5 = zscores(rows.map(r => Number.isFinite(r.pct1mo) ? r.pct1mo : 0))
-      rows = rows.map((r, i) => ({ ...r,
-        z: { mom: z1[i], vol: z2[i], theme: z3[i], liq: z4[i], mom1m: z5[i] },
-        score: 0.30 * z1[i] + 0.20 * z2[i] + 0.25 * z3[i] + 0.10 * z4[i] + 0.15 * z5[i],
-        sig: stockSignal(r.pct, z1[i], z2[i]),
-      }))
-      rows.sort((a, b) => b.score - a.score)
+      rows = rows.map((r, i) => {
+        const entry = entrySetup(r, z2[i])
+        return { ...r,
+          z: { mom: z1[i], vol: z2[i], theme: z3[i], liq: z4[i], mom1m: z5[i] },
+          momentumScore: 0.30 * z1[i] + 0.20 * z2[i] + 0.25 * z3[i] + 0.10 * z4[i] + 0.15 * z5[i],
+          score: entry.score ?? -999,
+          entry,
+          sig: entry.label,
+          momentumSignal: stockSignal(r.pct, z1[i], z2[i]),
+        }
+      })
+      rows.sort((a, b) => b.score - a.score || b.momentumScore - a.momentumScore)
       rows.forEach((r, i) => { r.rank = i + 1 })
       const payload = { ts: Date.now(), total: rows.length, rows }
       setScan(payload)
@@ -821,7 +853,7 @@ export default function DevEdge({ isMobile, onNavigate }) {
                       <tr key={r.code} style={{ cursor: 'pointer' }} onClick={() => selectStock(r.code)}>
                         <td style={{ ...S.td, ...S.mono, color: 'var(--text3)' }}>{r.rank}</td>
                         <td style={{ ...S.td, color: 'var(--text)' }}><span style={{ ...S.mono, fontSize: '10px', color: 'var(--text3)' }}>{r.code}</span> {r.name}</td>
-                        <td style={S.td}><span style={{ fontSize: '11px', fontWeight: 800, color: g.color }}>{g.g}</span> <span style={{ ...S.mono, fontSize: '10px', color: 'var(--text3)' }}>{r.score.toFixed(2)}</span></td>
+                        <td style={S.td}><span style={{ fontSize: '11px', fontWeight: 800, color: r.entry?.eligible ? '#7ed321' : g.color }}>{r.entry?.eligible ? '買い場' : r.entry?.score == null ? '—' : r.entry.score}</span> <span style={{ ...S.mono, fontSize: '10px', color: 'var(--text3)' }}>{r.entry?.label || '—'}</span></td>
                         <td style={{ ...S.td, ...S.mono, color: r.pct >= 0 ? '#ff5370' : '#00c48c' }}>{r.pct >= 0 ? '+' : ''}{r.pct?.toFixed(1)}%</td>
                         <td style={{ ...S.td, ...S.mono, color: 'var(--text2)' }}>{Number.isFinite(r.volume_chg) ? `${r.volume_chg >= 0 ? '+' : ''}${r.volume_chg.toFixed(0)}%` : '—'}</td>
                         <td style={{ ...S.td, fontSize: '11px' }}>{r.sig}</td>
