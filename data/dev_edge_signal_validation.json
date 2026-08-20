@@ -1,40 +1,50 @@
 {
-  "updated_at": "2026-08-19T19:55:41+09:00",
+  "updated_at": "2026-08-20T19:58:04+09:00",
+  "method": "日次スナップショットの条件成立後、次の5・20営業日相当を集計。未来データは条件判定に使用しない。",
   "rows": [
     {
-      "signal": "🌱初動",
+      "signal": "トレンド（25日・75日線上）",
       "count": 0,
-      "avg_5d": 0,
-      "avg_20d": 0,
-      "win_rate": 0,
-      "max_drawdown": 0,
+      "avg_5d": 0.0,
+      "avg_20d": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
       "edge": false
     },
     {
-      "signal": "🔥継続",
+      "signal": "RSI（45〜68）",
       "count": 0,
-      "avg_5d": 0,
-      "avg_20d": 0,
-      "win_rate": 0,
-      "max_drawdown": 0,
+      "avg_5d": 0.0,
+      "avg_20d": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
       "edge": false
     },
     {
-      "signal": "⚠️過熱",
+      "signal": "MACD（上向き・拡大）",
       "count": 0,
-      "avg_5d": 0,
-      "avg_20d": 0,
-      "win_rate": 0,
-      "max_drawdown": 0,
+      "avg_5d": 0.0,
+      "avg_20d": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
       "edge": false
     },
     {
-      "signal": "🩸セリクラ",
+      "signal": "ボリンジャー（中心〜+2σ内）",
       "count": 0,
-      "avg_5d": 0,
-      "avg_20d": 0,
-      "win_rate": 0,
-      "max_drawdown": 0,
+      "avg_5d": 0.0,
+      "avg_20d": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "edge": false
+    },
+    {
+      "signal": "複合買い場候補",
+      "count": 0,
+      "avg_5d": 0.0,
+      "avg_20d": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
       "edge": false
     }
   ]
