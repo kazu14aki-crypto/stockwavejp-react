@@ -1,0 +1,224 @@
+{
+  "secCode": "4443",
+  "issuerName": "Ｓａｎｓａｎ株式会社",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-19",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社CNK",
+      "shares": 32809100,
+      "ratio": 26.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "いちごトラスト・ピーティーイー・リミテッド（常任代理人　香港上海銀行東京支店）",
+      "shares": 13746500,
+      "ratio": 10.9,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "寺田　親弘",
+      "shares": 8201800,
+      "ratio": 6.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 7971200,
+      "ratio": 6.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "富岡　圭",
+      "shares": 4215428,
+      "ratio": 3.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 2993451,
+      "ratio": 2.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2560387,
+      "ratio": 2.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "PERSHING-DIV. OF DLJ SECS. CORP.（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 2500000,
+      "ratio": 1.98,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "塩見　賢治",
+      "shares": 2218800,
+      "ratio": 1.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUSTCLIENT OMNIBUS ACCOUNT OM02 505002（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2091918,
+      "ratio": 1.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.01,
+      "financial": 10.9,
+      "individual": 11.6,
+      "trust": 6.32,
+      "securities": 2.37,
+      "foreign": 3.69,
+      "other": 1.98
+    },
+    "individual_total": 11.6,
+    "top10_total": 62.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-19",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/06/01－2026/05/31)",
+      "docID": "S100YXFQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社CNK",
+          "shares": 32809100,
+          "ratio": 26.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "いちごトラスト・ピーティーイー・リミテッド（常任代理人　香港上海銀行東京支店）",
+          "shares": 13746500,
+          "ratio": 10.9,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "寺田　親弘",
+          "shares": 8201800,
+          "ratio": 6.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 7971200,
+          "ratio": 6.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "富岡　圭",
+          "shares": 4215428,
+          "ratio": 3.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 2993451,
+          "ratio": 2.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2560387,
+          "ratio": 2.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "PERSHING-DIV. OF DLJ SECS. CORP.（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 2500000,
+          "ratio": 1.98,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "塩見　賢治",
+          "shares": 2218800,
+          "ratio": 1.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUSTCLIENT OMNIBUS ACCOUNT OM02 505002（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2091918,
+          "ratio": 1.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.01,
+          "financial": 10.9,
+          "individual": 11.6,
+          "trust": 6.32,
+          "securities": 2.37,
+          "foreign": 3.69,
+          "other": 1.98
+        },
+        "individual_total": 11.6,
+        "top10_total": 62.87
+      }
+    }
+  ]
+}

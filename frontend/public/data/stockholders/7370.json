@@ -1,0 +1,216 @@
+{
+  "secCode": "7370",
+  "issuerName": "株式会社Ｅｎｊｉｎ",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-21",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｓ＆Ｓホールディングス",
+      "shares": 3000000,
+      "ratio": 43.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "本田　幸大",
+      "shares": 1123980,
+      "ratio": 16.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＷｉｓｅＷｅａｌｔｈ",
+      "shares": 152800,
+      "ratio": 2.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "平田　佑司",
+      "shares": 100000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "金室　貴久",
+      "shares": 60900,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社Ｗ",
+      "shares": 59900,
+      "ratio": 0.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 40010,
+      "ratio": 0.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "鉢嶺　登",
+      "shares": 31900,
+      "ratio": 0.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "細郷　和幸",
+      "shares": 31000,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "豊田　秋雄",
+      "shares": 30700,
+      "ratio": 0.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 47.09,
+      "individual": 20.18,
+      "securities": 0.58
+    },
+    "individual_total": 20.18,
+    "top10_total": 67.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-21",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/06/01－2026/05/31)",
+      "docID": "S100YXYC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｓ＆Ｓホールディングス",
+          "shares": 3000000,
+          "ratio": 43.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "本田　幸大",
+          "shares": 1123980,
+          "ratio": 16.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＷｉｓｅＷｅａｌｔｈ",
+          "shares": 152800,
+          "ratio": 2.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "平田　佑司",
+          "shares": 100000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "金室　貴久",
+          "shares": 60900,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社Ｗ",
+          "shares": 59900,
+          "ratio": 0.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 40010,
+          "ratio": 0.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "鉢嶺　登",
+          "shares": 31900,
+          "ratio": 0.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "細郷　和幸",
+          "shares": 31000,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "豊田　秋雄",
+          "shares": 30700,
+          "ratio": 0.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 47.09,
+          "individual": 20.18,
+          "securities": 0.58
+        },
+        "individual_total": 20.18,
+        "top10_total": 67.85
+      }
+    }
+  ]
+}
