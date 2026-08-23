@@ -1,0 +1,218 @@
+{
+  "secCode": "2303",
+  "issuerName": "株式会社ドーン",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-21",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "宮　崎　正　伸",
+      "shares": 230300,
+      "ratio": 7.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ディキャピタル",
+      "shares": 219800,
+      "ratio": 7.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "近　藤　浩　代",
+      "shares": 203500,
+      "ratio": 6.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 194200,
+      "ratio": 6.53,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社サンセイエンジニアリング",
+      "shares": 139000,
+      "ratio": 4.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "UHPartners2投資事業有限責任組合",
+      "shares": 72400,
+      "ratio": 2.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "徳　永　道　太",
+      "shares": 44400,
+      "ratio": 1.49,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "成　沢　政　明",
+      "shares": 38900,
+      "ratio": 1.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 34900,
+      "ratio": 1.17,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "枝　松　禄",
+      "shares": 34200,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 18.55,
+      "corporate": 12.07,
+      "other": 8.97,
+      "securities": 1.17
+    },
+    "individual_total": 18.55,
+    "top10_total": 40.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-21",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/06/01－2026/05/31)",
+      "docID": "S100YXLE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "宮　崎　正　伸",
+          "shares": 230300,
+          "ratio": 7.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ディキャピタル",
+          "shares": 219800,
+          "ratio": 7.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "近　藤　浩　代",
+          "shares": 203500,
+          "ratio": 6.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 194200,
+          "ratio": 6.53,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社サンセイエンジニアリング",
+          "shares": 139000,
+          "ratio": 4.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "UHPartners2投資事業有限責任組合",
+          "shares": 72400,
+          "ratio": 2.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "徳　永　道　太",
+          "shares": 44400,
+          "ratio": 1.49,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "成　沢　政　明",
+          "shares": 38900,
+          "ratio": 1.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 34900,
+          "ratio": 1.17,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "枝　松　禄",
+          "shares": 34200,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 18.55,
+          "corporate": 12.07,
+          "other": 8.97,
+          "securities": 1.17
+        },
+        "individual_total": 18.55,
+        "top10_total": 40.76
+      }
+    }
+  ]
+}

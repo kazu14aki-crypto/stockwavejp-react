@@ -1,0 +1,218 @@
+{
+  "secCode": "9686",
+  "issuerName": "東洋テック株式会社",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "セコム株式会社",
+      "shares": 2914000,
+      "ratio": 27.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "関西電力株式会社",
+      "shares": 1535000,
+      "ratio": 14.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ディー・ケイ",
+      "shares": 500000,
+      "ratio": 4.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（りそな銀行再信託分・株式会社関西みらい銀行退職給付信託口）",
+      "shares": 451000,
+      "ratio": 4.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社りそな銀行",
+      "shares": 400000,
+      "ratio": 3.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "東洋テック従業員持株会",
+      "shares": 349000,
+      "ratio": 3.26,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ユニテックス",
+      "shares": 257000,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "セントラル警備保障株式会社",
+      "shares": 241000,
+      "ratio": 2.26,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＡＩＧ損害保険株式会社",
+      "shares": 215000,
+      "ratio": 2.01,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 204000,
+      "ratio": 1.91,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 50.89,
+      "trust": 4.21,
+      "financial": 7.66,
+      "employee": 3.26
+    },
+    "individual_total": 0,
+    "top10_total": 66.02
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-18",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第62期(2025/04/01－2026/03/31)",
+      "docID": "S100YXF2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "セコム株式会社",
+          "shares": 2914000,
+          "ratio": 27.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "関西電力株式会社",
+          "shares": 1535000,
+          "ratio": 14.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ディー・ケイ",
+          "shares": 500000,
+          "ratio": 4.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（りそな銀行再信託分・株式会社関西みらい銀行退職給付信託口）",
+          "shares": 451000,
+          "ratio": 4.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社りそな銀行",
+          "shares": 400000,
+          "ratio": 3.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "東洋テック従業員持株会",
+          "shares": 349000,
+          "ratio": 3.26,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ユニテックス",
+          "shares": 257000,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "セントラル警備保障株式会社",
+          "shares": 241000,
+          "ratio": 2.26,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＡＩＧ損害保険株式会社",
+          "shares": 215000,
+          "ratio": 2.01,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 204000,
+          "ratio": 1.91,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 50.89,
+          "trust": 4.21,
+          "financial": 7.66,
+          "employee": 3.26
+        },
+        "individual_total": 0,
+        "top10_total": 66.02
+      }
+    }
+  ]
+}

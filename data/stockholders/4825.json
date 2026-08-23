@@ -1,0 +1,224 @@
+{
+  "secCode": "4825",
+  "issuerName": "株式会社ウェザーニューズ",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-20",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一般財団法人WNI気象文化創造センター",
+      "shares": 6800000,
+      "ratio": 15.31,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ダブリュー・エヌ・アイ・インスティテュート",
+      "shares": 6800000,
+      "ratio": 15.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+      "shares": 2780600,
+      "ratio": 6.26,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505025（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 1741400,
+      "ratio": 3.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ウェザーニューズ社員サポーター持株会",
+      "shares": 1704608,
+      "ratio": 3.84,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 1577700,
+      "ratio": 3.55,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "石橋　忍子",
+      "shares": 1415200,
+      "ratio": 3.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 800000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "石橋　知博",
+      "shares": 691800,
+      "ratio": 1.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "石橋　伸一",
+      "shares": 518800,
+      "ratio": 1.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 15.31,
+      "corporate": 15.31,
+      "trust": 9.81,
+      "foreign": 3.92,
+      "employee": 3.84,
+      "individual": 5.92,
+      "financial": 1.8
+    },
+    "individual_total": 5.92,
+    "top10_total": 55.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-20",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/06/01－2026/05/31)",
+      "docID": "S100YXMM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一般財団法人WNI気象文化創造センター",
+          "shares": 6800000,
+          "ratio": 15.31,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ダブリュー・エヌ・アイ・インスティテュート",
+          "shares": 6800000,
+          "ratio": 15.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社\n（信託口）",
+          "shares": 2780600,
+          "ratio": 6.26,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505025（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 1741400,
+          "ratio": 3.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ウェザーニューズ社員サポーター持株会",
+          "shares": 1704608,
+          "ratio": 3.84,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 1577700,
+          "ratio": 3.55,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "石橋　忍子",
+          "shares": 1415200,
+          "ratio": 3.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 800000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "石橋　知博",
+          "shares": 691800,
+          "ratio": 1.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "石橋　伸一",
+          "shares": 518800,
+          "ratio": 1.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 15.31,
+          "corporate": 15.31,
+          "trust": 9.81,
+          "foreign": 3.92,
+          "employee": 3.84,
+          "individual": 5.92,
+          "financial": 1.8
+        },
+        "individual_total": 5.92,
+        "top10_total": 55.91
+      }
+    }
+  ]
+}

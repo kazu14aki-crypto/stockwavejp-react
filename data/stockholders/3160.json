@@ -1,0 +1,218 @@
+{
+  "secCode": "3160",
+  "issuerName": "株式会社大光",
+  "updated_at": "2026/08/22 12:34 JST",
+  "latestDate": "2026-08-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＫＹＲ",
+      "shares": 1650000,
+      "ratio": 11.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大光従業員持株会",
+      "shares": 798100,
+      "ratio": 5.59,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社Ｈ２Ａ",
+      "shares": 768000,
+      "ratio": 5.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社大垣共立銀行\n（常任代理人　\n　株式会社日本カストディ銀行）",
+      "shares": 640000,
+      "ratio": 4.48,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "金森　智",
+      "shares": 570000,
+      "ratio": 3.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "金森　久",
+      "shares": 400000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "倭　雅美",
+      "shares": 257000,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社トーカン",
+      "shares": 240000,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "大光取引先持株会",
+      "shares": 236700,
+      "ratio": 1.65,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "金森　武",
+      "shares": 235200,
+      "ratio": 1.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 18.6,
+      "employee": 7.24,
+      "trust": 4.48,
+      "individual": 10.23
+    },
+    "individual_total": 10.23,
+    "top10_total": 40.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第76期(2025/06/01－2026/05/31)",
+      "docID": "S100YX88",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＫＹＲ",
+          "shares": 1650000,
+          "ratio": 11.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大光従業員持株会",
+          "shares": 798100,
+          "ratio": 5.59,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社Ｈ２Ａ",
+          "shares": 768000,
+          "ratio": 5.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社大垣共立銀行\n（常任代理人　\n　株式会社日本カストディ銀行）",
+          "shares": 640000,
+          "ratio": 4.48,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "金森　智",
+          "shares": 570000,
+          "ratio": 3.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "金森　久",
+          "shares": 400000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "倭　雅美",
+          "shares": 257000,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社トーカン",
+          "shares": 240000,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "大光取引先持株会",
+          "shares": 236700,
+          "ratio": 1.65,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "金森　武",
+          "shares": 235200,
+          "ratio": 1.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 18.6,
+          "employee": 7.24,
+          "trust": 4.48,
+          "individual": 10.23
+        },
+        "individual_total": 10.23,
+        "top10_total": 40.55
+      }
+    }
+  ]
+}
