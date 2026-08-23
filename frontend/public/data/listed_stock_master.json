@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-17T05:41:09+09:00",
+  "updated_at": "2026-08-24T05:42:24+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3774,
+  "count": 3772,
   "stocks": [
     {
       "ticker": "1300.T",
@@ -9512,7 +9512,7 @@
     {
       "ticker": "3750.T",
       "code": "3750",
-      "name": "株式会社ADR120S",
+      "name": "ADRバイオメディカルホールディングス株式会社",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -27590,16 +27590,6 @@
       "curated": false
     },
     {
-      "ticker": "7317.T",
-      "code": "7317",
-      "name": "株式会社松屋アールアンドディ",
-      "market": "上場",
-      "industry": "機械",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "7318.T",
       "code": "7318",
       "name": "セレンディップ・ホールディングス株式会社",
@@ -32696,16 +32686,6 @@
       "name": "株式会社ケーズホールディングス",
       "market": "上場",
       "industry": "小売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "8283.T",
-      "code": "8283",
-      "name": "株式会社PALTAC",
-      "market": "上場",
-      "industry": "卸売業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
