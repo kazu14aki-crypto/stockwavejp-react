@@ -1,0 +1,220 @@
+{
+  "secCode": "8908",
+  "issuerName": "株式会社毎日コムネット",
+  "updated_at": "2026/08/24 21:35 JST",
+  "latestDate": "2026-08-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＫＪホールディングス",
+      "shares": 4310374,
+      "ratio": 25.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤　守",
+      "shares": 2280000,
+      "ratio": 13.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "原　利典",
+      "shares": 2280000,
+      "ratio": 13.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+      "shares": 696000,
+      "ratio": 4.06,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人ＭＡＩＣＯＭミライを応援学生奨学財団",
+      "shares": 650000,
+      "ratio": 3.8,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "公益財団法人ＭＡＩＣＯＭひとり暮らし学生奨学財団",
+      "shares": 650000,
+      "ratio": 3.8,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 241900,
+      "ratio": 1.41,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "遠藤　司",
+      "shares": 212000,
+      "ratio": 1.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "小野田　博幸",
+      "shares": 164600,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 157200,
+      "ratio": 0.92,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.17,
+      "individual": 28.84,
+      "other": 4.98,
+      "foundation": 7.6,
+      "trust": 1.41
+    },
+    "individual_total": 28.84,
+    "top10_total": 68.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/06/01－2026/05/31)",
+      "docID": "S100YY3A",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＫＪホールディングス",
+          "shares": 4310374,
+          "ratio": 25.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤　守",
+          "shares": 2280000,
+          "ratio": 13.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "原　利典",
+          "shares": 2280000,
+          "ratio": 13.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＵＨＰａｒｔｎｅｒｓ２投資事業有限責任組合",
+          "shares": 696000,
+          "ratio": 4.06,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人ＭＡＩＣＯＭミライを応援学生奨学財団",
+          "shares": 650000,
+          "ratio": 3.8,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "公益財団法人ＭＡＩＣＯＭひとり暮らし学生奨学財団",
+          "shares": 650000,
+          "ratio": 3.8,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 241900,
+          "ratio": 1.41,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "遠藤　司",
+          "shares": 212000,
+          "ratio": 1.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "小野田　博幸",
+          "shares": 164600,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 157200,
+          "ratio": 0.92,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.17,
+          "individual": 28.84,
+          "other": 4.98,
+          "foundation": 7.6,
+          "trust": 1.41
+        },
+        "individual_total": 28.84,
+        "top10_total": 68.0
+      }
+    }
+  ]
+}

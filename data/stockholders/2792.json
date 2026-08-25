@@ -1,0 +1,220 @@
+{
+  "secCode": "2792",
+  "issuerName": "株式会社ハニーズホールディングス",
+  "updated_at": "2026/08/24 21:35 JST",
+  "latestDate": "2026-08-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社E・E・Y",
+      "shares": 9320000,
+      "ratio": 33.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1457000,
+      "ratio": 5.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人ハニーズ財団",
+      "shares": 1000000,
+      "ratio": 3.59,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "江尻　義久",
+      "shares": 830000,
+      "ratio": 2.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "江尻　英介",
+      "shares": 826000,
+      "ratio": 2.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "江尻　あい子",
+      "shares": 636000,
+      "ratio": 2.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "福山通運株式会社",
+      "shares": 421000,
+      "ratio": 1.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNP PARIBAS NEW YORK BRANCH – PRIME BROKERAGE SEGREGATION　ACCOUNT（常任代理人　香港上海銀行東京支店）",
+      "shares": 381000,
+      "ratio": 1.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "江尻　あゆみ",
+      "shares": 158000,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 148000,
+      "ratio": 0.53,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.94,
+      "trust": 5.76,
+      "foundation": 3.59,
+      "individual": 8.79,
+      "foreign": 1.37
+    },
+    "individual_total": 8.79,
+    "top10_total": 54.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/06/01－2026/05/31)",
+      "docID": "S100YY3Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社E・E・Y",
+          "shares": 9320000,
+          "ratio": 33.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1457000,
+          "ratio": 5.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人ハニーズ財団",
+          "shares": 1000000,
+          "ratio": 3.59,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "江尻　義久",
+          "shares": 830000,
+          "ratio": 2.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "江尻　英介",
+          "shares": 826000,
+          "ratio": 2.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "江尻　あい子",
+          "shares": 636000,
+          "ratio": 2.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "福山通運株式会社",
+          "shares": 421000,
+          "ratio": 1.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNP PARIBAS NEW YORK BRANCH – PRIME BROKERAGE SEGREGATION　ACCOUNT（常任代理人　香港上海銀行東京支店）",
+          "shares": 381000,
+          "ratio": 1.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "江尻　あゆみ",
+          "shares": 158000,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 148000,
+          "ratio": 0.53,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.94,
+          "trust": 5.76,
+          "foundation": 3.59,
+          "individual": 8.79,
+          "foreign": 1.37
+        },
+        "individual_total": 8.79,
+        "top10_total": 54.45
+      }
+    }
+  ]
+}

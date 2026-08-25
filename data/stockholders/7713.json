@@ -1,0 +1,222 @@
+{
+  "secCode": "7713",
+  "issuerName": "シグマ光機株式会社",
+  "updated_at": "2026/08/24 21:35 JST",
+  "latestDate": "2026-08-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "浜松ホトニクス株式会社",
+      "shares": 1000000,
+      "ratio": 14.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "シグマ光機取引先持株会",
+      "shares": 507000,
+      "ratio": 7.16,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 408000,
+      "ratio": 5.76,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ツシマ",
+      "shares": 228000,
+      "ratio": 3.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "シグマ光機従業員持株会",
+      "shares": 212000,
+      "ratio": 3.0,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "富国生命保険相互会社\n(常任代理人　株式会社日本カストディ銀行）",
+      "shares": 200000,
+      "ratio": 2.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社サンライズクリエート",
+      "shares": 148000,
+      "ratio": 2.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社埼玉りそな銀行",
+      "shares": 128000,
+      "ratio": 1.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "杉山　大樹",
+      "shares": 110000,
+      "ratio": 1.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社三井住友銀行",
+      "shares": 110000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.43,
+      "employee": 10.16,
+      "other": 5.76,
+      "trust": 2.82,
+      "financial": 3.35,
+      "individual": 1.56
+    },
+    "individual_total": 1.56,
+    "top10_total": 43.08
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/06/01－2026/05/31)",
+      "docID": "S100YXKH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "浜松ホトニクス株式会社",
+          "shares": 1000000,
+          "ratio": 14.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "シグマ光機取引先持株会",
+          "shares": 507000,
+          "ratio": 7.16,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 408000,
+          "ratio": 5.76,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ツシマ",
+          "shares": 228000,
+          "ratio": 3.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "シグマ光機従業員持株会",
+          "shares": 212000,
+          "ratio": 3.0,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "富国生命保険相互会社\n(常任代理人　株式会社日本カストディ銀行）",
+          "shares": 200000,
+          "ratio": 2.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社サンライズクリエート",
+          "shares": 148000,
+          "ratio": 2.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社埼玉りそな銀行",
+          "shares": 128000,
+          "ratio": 1.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "杉山　大樹",
+          "shares": 110000,
+          "ratio": 1.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社三井住友銀行",
+          "shares": 110000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.43,
+          "employee": 10.16,
+          "other": 5.76,
+          "trust": 2.82,
+          "financial": 3.35,
+          "individual": 1.56
+        },
+        "individual_total": 1.56,
+        "top10_total": 43.08
+      }
+    }
+  ]
+}

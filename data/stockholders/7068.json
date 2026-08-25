@@ -1,0 +1,218 @@
+{
+  "secCode": "7068",
+  "issuerName": "フィードフォースグループ株式会社",
+  "updated_at": "2026/08/24 21:35 JST",
+  "latestDate": "2026-08-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社理力",
+      "shares": 8700000,
+      "ratio": 36.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "塚田　耕司",
+      "shares": 4802800,
+      "ratio": 20.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1187000,
+      "ratio": 4.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社マイナビ",
+      "shares": 870400,
+      "ratio": 3.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 716900,
+      "ratio": 2.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "阿部　圭司",
+      "shares": 371200,
+      "ratio": 1.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "西山　真吾",
+      "shares": 300100,
+      "ratio": 1.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "CACEIS BANK／QUINTET LUXEMBOURG SUB AC／UCITS CUSTOMERS ACCOUNT（常任代理人　香港上海銀行東京支店）",
+      "shares": 298600,
+      "ratio": 1.24,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "岡田　吉弘",
+      "shares": 280000,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "喜多　宏介",
+      "shares": 250800,
+      "ratio": 1.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.96,
+      "individual": 25.06,
+      "trust": 7.94,
+      "foreign": 1.24
+    },
+    "individual_total": 25.06,
+    "top10_total": 74.2
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/06/01－2026/05/31)",
+      "docID": "S100YYE5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社理力",
+          "shares": 8700000,
+          "ratio": 36.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "塚田　耕司",
+          "shares": 4802800,
+          "ratio": 20.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1187000,
+          "ratio": 4.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社マイナビ",
+          "shares": 870400,
+          "ratio": 3.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 716900,
+          "ratio": 2.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "阿部　圭司",
+          "shares": 371200,
+          "ratio": 1.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "西山　真吾",
+          "shares": 300100,
+          "ratio": 1.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "CACEIS BANK／QUINTET LUXEMBOURG SUB AC／UCITS CUSTOMERS ACCOUNT（常任代理人　香港上海銀行東京支店）",
+          "shares": 298600,
+          "ratio": 1.24,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "岡田　吉弘",
+          "shares": 280000,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "喜多　宏介",
+          "shares": 250800,
+          "ratio": 1.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.96,
+          "individual": 25.06,
+          "trust": 7.94,
+          "foreign": 1.24
+        },
+        "individual_total": 25.06,
+        "top10_total": 74.2
+      }
+    }
+  ]
+}
