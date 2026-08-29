@@ -1,0 +1,218 @@
+{
+  "secCode": "353A",
+  "issuerName": "エレベーターコミュニケーションズ株式会社",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "そらしづ株式会社",
+      "shares": 500000,
+      "ratio": 46.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "薄田　章博",
+      "shares": 128000,
+      "ratio": 11.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "村石　誠司",
+      "shares": 48400,
+      "ratio": 4.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "こたろう株式会社",
+      "shares": 34000,
+      "ratio": 3.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大久保　圭太",
+      "shares": 26600,
+      "ratio": 2.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "杉山　央",
+      "shares": 24200,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "六日市　拓也",
+      "shares": 20000,
+      "ratio": 1.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "PERSHING-DIV.OF DLJSECS.CORP.",
+      "shares": 17500,
+      "ratio": 1.63,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "エレベーターコミュニケーションズ従業員持株会",
+      "shares": 12600,
+      "ratio": 1.17,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤井　周",
+      "shares": 11500,
+      "ratio": 1.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.91,
+      "individual": 24.15,
+      "foreign": 1.63,
+      "employee": 1.17
+    },
+    "individual_total": 24.15,
+    "top10_total": 76.86
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/06/01－2026/05/31)",
+      "docID": "S100YZBZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "そらしづ株式会社",
+          "shares": 500000,
+          "ratio": 46.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "薄田　章博",
+          "shares": 128000,
+          "ratio": 11.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "村石　誠司",
+          "shares": 48400,
+          "ratio": 4.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "こたろう株式会社",
+          "shares": 34000,
+          "ratio": 3.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大久保　圭太",
+          "shares": 26600,
+          "ratio": 2.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "杉山　央",
+          "shares": 24200,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "六日市　拓也",
+          "shares": 20000,
+          "ratio": 1.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "PERSHING-DIV.OF DLJSECS.CORP.",
+          "shares": 17500,
+          "ratio": 1.63,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "エレベーターコミュニケーションズ従業員持株会",
+          "shares": 12600,
+          "ratio": 1.17,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤井　周",
+          "shares": 11500,
+          "ratio": 1.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.91,
+          "individual": 24.15,
+          "foreign": 1.63,
+          "employee": 1.17
+        },
+        "individual_total": 24.15,
+        "top10_total": 76.86
+      }
+    }
+  ]
+}

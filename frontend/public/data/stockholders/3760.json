@@ -1,0 +1,218 @@
+{
+  "secCode": "3760",
+  "issuerName": "株式会社ケイブ",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "吉　成　夏　子",
+      "shares": 1245000,
+      "ratio": 20.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社376",
+      "shares": 332400,
+      "ratio": 5.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＳＢI証券",
+      "shares": 318346,
+      "ratio": 5.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "岡　本　吉　起",
+      "shares": 300000,
+      "ratio": 4.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＢＢＨ／ＤＢＳ ＢＡＮＫ （ＨＯＮＧ ＫＯＮＧ） ＬＩＭＩＴＥＤ Ａ／Ｃ ００５ ＮＯＮ ＵＳ（常任代理人 株式会社三井住友銀行 デットファイナンス営業部長 山田　光）",
+      "shares": 217900,
+      "ratio": 3.53,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "加　藤　誠　悟",
+      "shares": 123400,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高　野　健　一",
+      "shares": 90000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "河　合　謙　一 郎",
+      "shares": 72700,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "岡　田　修",
+      "shares": 62000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 61500,
+      "ratio": 1.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 30.68,
+      "corporate": 5.39,
+      "securities": 6.16,
+      "financial": 3.53
+    },
+    "individual_total": 30.68,
+    "top10_total": 45.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/06/01－2026/05/31)",
+      "docID": "S100YXXZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "吉　成　夏　子",
+          "shares": 1245000,
+          "ratio": 20.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社376",
+          "shares": 332400,
+          "ratio": 5.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＳＢI証券",
+          "shares": 318346,
+          "ratio": 5.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "岡　本　吉　起",
+          "shares": 300000,
+          "ratio": 4.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＢＢＨ／ＤＢＳ ＢＡＮＫ （ＨＯＮＧ ＫＯＮＧ） ＬＩＭＩＴＥＤ Ａ／Ｃ ００５ ＮＯＮ ＵＳ（常任代理人 株式会社三井住友銀行 デットファイナンス営業部長 山田　光）",
+          "shares": 217900,
+          "ratio": 3.53,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "加　藤　誠　悟",
+          "shares": 123400,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高　野　健　一",
+          "shares": 90000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "河　合　謙　一 郎",
+          "shares": 72700,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "岡　田　修",
+          "shares": 62000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 61500,
+          "ratio": 1.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 30.68,
+          "corporate": 5.39,
+          "securities": 6.16,
+          "financial": 3.53
+        },
+        "individual_total": 30.68,
+        "top10_total": 45.76
+      }
+    }
+  ]
+}

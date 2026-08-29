@@ -1,0 +1,218 @@
+{
+  "secCode": "6496",
+  "issuerName": "株式会社中北製作所",
+  "updated_at": "2026/08/29 16:14 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱ミヤキタコーポレーション",
+      "shares": 442000,
+      "ratio": 12.67,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中北　健一",
+      "shares": 264000,
+      "ratio": 7.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "宮田　彰久",
+      "shares": 114000,
+      "ratio": 3.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "黒田　知子",
+      "shares": 114000,
+      "ratio": 3.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中北　仁子",
+      "shares": 114000,
+      "ratio": 3.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "渡部　育子",
+      "shares": 114000,
+      "ratio": 3.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "宮田　和子",
+      "shares": 109000,
+      "ratio": 3.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "宮田　宏章",
+      "shares": 106000,
+      "ratio": 3.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本マスタートラスト信託銀行㈱",
+      "shares": 97000,
+      "ratio": 2.78,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱三井住友銀行",
+      "shares": 86000,
+      "ratio": 2.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 12.67,
+      "individual": 26.83,
+      "trust": 2.78,
+      "financial": 2.48
+    },
+    "individual_total": 26.83,
+    "top10_total": 44.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第100期(2025/06/01－2026/05/31)",
+      "docID": "S100YYFP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱ミヤキタコーポレーション",
+          "shares": 442000,
+          "ratio": 12.67,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中北　健一",
+          "shares": 264000,
+          "ratio": 7.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "宮田　彰久",
+          "shares": 114000,
+          "ratio": 3.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "黒田　知子",
+          "shares": 114000,
+          "ratio": 3.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中北　仁子",
+          "shares": 114000,
+          "ratio": 3.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "渡部　育子",
+          "shares": 114000,
+          "ratio": 3.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "宮田　和子",
+          "shares": 109000,
+          "ratio": 3.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "宮田　宏章",
+          "shares": 106000,
+          "ratio": 3.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本マスタートラスト信託銀行㈱",
+          "shares": 97000,
+          "ratio": 2.78,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱三井住友銀行",
+          "shares": 86000,
+          "ratio": 2.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 12.67,
+          "individual": 26.83,
+          "trust": 2.78,
+          "financial": 2.48
+        },
+        "individual_total": 26.83,
+        "top10_total": 44.76
+      }
+    }
+  ]
+}

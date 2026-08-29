@@ -1,0 +1,220 @@
+{
+  "secCode": "1401",
+  "issuerName": "株式会社エムビーエス",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "山本　貴士",
+      "shares": 2098600,
+      "ratio": 30.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "極東ホールディングス株式会社",
+      "shares": 1100000,
+      "ratio": 15.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "鳴本　聡一郎",
+      "shares": 360000,
+      "ratio": 5.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "エムビーエス従業員持株会",
+      "shares": 299900,
+      "ratio": 4.33,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松岡　弘晃",
+      "shares": 139300,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山本　朋子",
+      "shares": 130000,
+      "ratio": 1.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "原　真也",
+      "shares": 120000,
+      "ratio": 1.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "井野口　房雄",
+      "shares": 117000,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BBH (LUX)FOR MUFG GLOBAL　FUND SICAV － MUFG JAPAN  EQUITY SMALL CAP FUND(常任代理人 株式会社三菱ＵＦＪ銀行)",
+      "shares": 108200,
+      "ratio": 1.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 79300,
+      "ratio": 1.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 42.77,
+      "corporate": 15.87,
+      "employee": 4.33,
+      "foreign": 1.56,
+      "trust": 1.14
+    },
+    "individual_total": 42.77,
+    "top10_total": 65.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/06/01－2026/05/31)",
+      "docID": "S100YYQB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "山本　貴士",
+          "shares": 2098600,
+          "ratio": 30.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "極東ホールディングス株式会社",
+          "shares": 1100000,
+          "ratio": 15.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "鳴本　聡一郎",
+          "shares": 360000,
+          "ratio": 5.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "エムビーエス従業員持株会",
+          "shares": 299900,
+          "ratio": 4.33,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松岡　弘晃",
+          "shares": 139300,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山本　朋子",
+          "shares": 130000,
+          "ratio": 1.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "原　真也",
+          "shares": 120000,
+          "ratio": 1.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "井野口　房雄",
+          "shares": 117000,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BBH (LUX)FOR MUFG GLOBAL　FUND SICAV － MUFG JAPAN  EQUITY SMALL CAP FUND(常任代理人 株式会社三菱ＵＦＪ銀行)",
+          "shares": 108200,
+          "ratio": 1.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 79300,
+          "ratio": 1.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 42.77,
+          "corporate": 15.87,
+          "employee": 4.33,
+          "foreign": 1.56,
+          "trust": 1.14
+        },
+        "individual_total": 42.77,
+        "top10_total": 65.67
+      }
+    }
+  ]
+}

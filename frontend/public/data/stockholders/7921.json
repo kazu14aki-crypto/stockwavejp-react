@@ -1,0 +1,220 @@
+{
+  "secCode": "7921",
+  "issuerName": "株式会社ＴＡＫＡＲＡ　＆　ＣＯＭＰＡＮＹ",
+  "updated_at": "2026/08/29 16:14 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS （常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2100000,
+      "ratio": 16.26,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1536000,
+      "ratio": 11.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社野村",
+      "shares": 632000,
+      "ratio": 4.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社みずほ銀行",
+      "shares": 544000,
+      "ratio": 4.21,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三井住友銀行",
+      "shares": 476000,
+      "ratio": 3.69,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口)",
+      "shares": 298000,
+      "ratio": 2.31,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "TAKARA ＆ COグループ社員持株会",
+      "shares": 239000,
+      "ratio": 1.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野  村  朱  実",
+      "shares": 173000,
+      "ratio": 1.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 169000,
+      "ratio": 1.31,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "明治安田生命保険相互会社",
+      "shares": 168000,
+      "ratio": 1.3,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 26.77,
+      "trust": 14.21,
+      "corporate": 4.9,
+      "employee": 1.85,
+      "individual": 1.34
+    },
+    "individual_total": 1.34,
+    "top10_total": 49.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第89期(2025/06/01－2026/05/31)",
+      "docID": "S100YYNO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS （常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2100000,
+          "ratio": 16.26,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1536000,
+          "ratio": 11.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社野村",
+          "shares": 632000,
+          "ratio": 4.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社みずほ銀行",
+          "shares": 544000,
+          "ratio": 4.21,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三井住友銀行",
+          "shares": 476000,
+          "ratio": 3.69,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口)",
+          "shares": 298000,
+          "ratio": 2.31,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "TAKARA ＆ COグループ社員持株会",
+          "shares": 239000,
+          "ratio": 1.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野  村  朱  実",
+          "shares": 173000,
+          "ratio": 1.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 169000,
+          "ratio": 1.31,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "明治安田生命保険相互会社",
+          "shares": 168000,
+          "ratio": 1.3,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 26.77,
+          "trust": 14.21,
+          "corporate": 4.9,
+          "employee": 1.85,
+          "individual": 1.34
+        },
+        "individual_total": 1.34,
+        "top10_total": 49.07
+      }
+    }
+  ]
+}

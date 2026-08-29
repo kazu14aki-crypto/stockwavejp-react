@@ -1,0 +1,218 @@
+{
+  "secCode": "3297",
+  "issuerName": "株式会社東武住販",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "荻野利浩",
+      "shares": 1047700,
+      "ratio": 38.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社Ｏ Ｔ Ｃ",
+      "shares": 138400,
+      "ratio": 5.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "東武住販社員持株会",
+      "shares": 50300,
+      "ratio": 1.85,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大阪中小企業投資育成株式会社",
+      "shares": 45400,
+      "ratio": 1.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "若杉精三郎",
+      "shares": 37800,
+      "ratio": 1.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "荻野しとみ",
+      "shares": 33600,
+      "ratio": 1.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社西京銀行",
+      "shares": 30000,
+      "ratio": 1.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "顧　曄",
+      "shares": 21100,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "張　亜南",
+      "shares": 19000,
+      "ratio": 0.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "米谷敏昭",
+      "shares": 18500,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 43.42,
+      "corporate": 6.77,
+      "employee": 1.85,
+      "financial": 1.1
+    },
+    "individual_total": 43.42,
+    "top10_total": 53.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/06/01－2026/05/31)",
+      "docID": "S100YYGF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "荻野利浩",
+          "shares": 1047700,
+          "ratio": 38.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社Ｏ Ｔ Ｃ",
+          "shares": 138400,
+          "ratio": 5.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "東武住販社員持株会",
+          "shares": 50300,
+          "ratio": 1.85,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大阪中小企業投資育成株式会社",
+          "shares": 45400,
+          "ratio": 1.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "若杉精三郎",
+          "shares": 37800,
+          "ratio": 1.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "荻野しとみ",
+          "shares": 33600,
+          "ratio": 1.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社西京銀行",
+          "shares": 30000,
+          "ratio": 1.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "顧　曄",
+          "shares": 21100,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "張　亜南",
+          "shares": 19000,
+          "ratio": 0.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "米谷敏昭",
+          "shares": 18500,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 43.42,
+          "corporate": 6.77,
+          "employee": 1.85,
+          "financial": 1.1
+        },
+        "individual_total": 43.42,
+        "top10_total": 53.14
+      }
+    }
+  ]
+}

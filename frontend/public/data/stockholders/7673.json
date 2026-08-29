@@ -1,0 +1,220 @@
+{
+  "secCode": "7673",
+  "issuerName": "ダイコー通産株式会社",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ディー・ケー・コーポレーション",
+      "shares": 1780400,
+      "ratio": 33.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "UHPartners２投資事業有限責任組合",
+      "shares": 372300,
+      "ratio": 6.98,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 350500,
+      "ratio": 6.57,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "河田　晃",
+      "shares": 332460,
+      "ratio": 6.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "河田　充",
+      "shares": 259900,
+      "ratio": 4.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ダイコー従業員持株会",
+      "shares": 243216,
+      "ratio": 4.56,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "西村　晃",
+      "shares": 240080,
+      "ratio": 4.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "河田　すみ子",
+      "shares": 144021,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "河田　正春",
+      "shares": 140080,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 78900,
+      "ratio": 1.48,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.39,
+      "other": 13.55,
+      "individual": 20.93,
+      "employee": 4.56,
+      "securities": 1.48
+    },
+    "individual_total": 20.93,
+    "top10_total": 73.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/06/01－2026/05/31)",
+      "docID": "S100YYF5",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ディー・ケー・コーポレーション",
+          "shares": 1780400,
+          "ratio": 33.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "UHPartners２投資事業有限責任組合",
+          "shares": 372300,
+          "ratio": 6.98,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 350500,
+          "ratio": 6.57,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "河田　晃",
+          "shares": 332460,
+          "ratio": 6.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "河田　充",
+          "shares": 259900,
+          "ratio": 4.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ダイコー従業員持株会",
+          "shares": 243216,
+          "ratio": 4.56,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "西村　晃",
+          "shares": 240080,
+          "ratio": 4.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "河田　すみ子",
+          "shares": 144021,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "河田　正春",
+          "shares": 140080,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 78900,
+          "ratio": 1.48,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.39,
+          "other": 13.55,
+          "individual": 20.93,
+          "employee": 4.56,
+          "securities": 1.48
+        },
+        "individual_total": 20.93,
+        "top10_total": 73.91
+      }
+    }
+  ]
+}

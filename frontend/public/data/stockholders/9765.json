@@ -1,0 +1,218 @@
+{
+  "secCode": "9765",
+  "issuerName": "株式会社オオバ",
+  "updated_at": "2026/08/29 16:16 JST",
+  "latestDate": "2026-08-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "三井不動産株式会社",
+      "shares": 727050,
+      "ratio": 4.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 662000,
+      "ratio": 4.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "パシフィックコンサルタンツ株式会社",
+      "shares": 628000,
+      "ratio": 3.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "オオバ取引先持株会",
+      "shares": 489325,
+      "ratio": 3.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大塲　明憲",
+      "shares": 452600,
+      "ratio": 2.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大塲　重憲",
+      "shares": 406500,
+      "ratio": 2.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本生命保険相互会社",
+      "shares": 315444,
+      "ratio": 1.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "辻本　茂",
+      "shares": 286139,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社みずほ銀行",
+      "shares": 282162,
+      "ratio": 1.78,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社デベロツパー三信",
+      "shares": 239000,
+      "ratio": 1.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 10.06,
+      "financial": 7.95,
+      "employee": 3.09,
+      "individual": 7.22
+    },
+    "individual_total": 7.22,
+    "top10_total": 28.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第92期(2025/06/01－2026/05/31)",
+      "docID": "S100YY0T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "三井不動産株式会社",
+          "shares": 727050,
+          "ratio": 4.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 662000,
+          "ratio": 4.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "パシフィックコンサルタンツ株式会社",
+          "shares": 628000,
+          "ratio": 3.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "オオバ取引先持株会",
+          "shares": 489325,
+          "ratio": 3.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大塲　明憲",
+          "shares": 452600,
+          "ratio": 2.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大塲　重憲",
+          "shares": 406500,
+          "ratio": 2.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本生命保険相互会社",
+          "shares": 315444,
+          "ratio": 1.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "辻本　茂",
+          "shares": 286139,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社みずほ銀行",
+          "shares": 282162,
+          "ratio": 1.78,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社デベロツパー三信",
+          "shares": 239000,
+          "ratio": 1.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 10.06,
+          "financial": 7.95,
+          "employee": 3.09,
+          "individual": 7.22
+        },
+        "individual_total": 7.22,
+        "top10_total": 28.32
+      }
+    }
+  ]
+}
