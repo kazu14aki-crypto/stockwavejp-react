@@ -1,0 +1,216 @@
+{
+  "secCode": "3824",
+  "issuerName": "メディアファイブ株式会社",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "上野　英理也",
+      "shares": 230300,
+      "ratio": 24.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "メディアファイブ社員持株会",
+      "shares": 125800,
+      "ratio": 13.38,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社開心社",
+      "shares": 58900,
+      "ratio": 6.27,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "秀島　正博",
+      "shares": 46100,
+      "ratio": 4.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山本　大助",
+      "shares": 45000,
+      "ratio": 4.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "稲田　清崇",
+      "shares": 42600,
+      "ratio": 4.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "村山　孝",
+      "shares": 38200,
+      "ratio": 4.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "篠田　明男",
+      "shares": 29900,
+      "ratio": 3.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "山崎　俊",
+      "shares": 18300,
+      "ratio": 1.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "中須　龍二",
+      "shares": 15000,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 49.51,
+      "employee": 13.38,
+      "corporate": 6.27
+    },
+    "individual_total": 49.51,
+    "top10_total": 69.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/06/01－2026/05/31)",
+      "docID": "S100YYIA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "上野　英理也",
+          "shares": 230300,
+          "ratio": 24.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "メディアファイブ社員持株会",
+          "shares": 125800,
+          "ratio": 13.38,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社開心社",
+          "shares": 58900,
+          "ratio": 6.27,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "秀島　正博",
+          "shares": 46100,
+          "ratio": 4.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山本　大助",
+          "shares": 45000,
+          "ratio": 4.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "稲田　清崇",
+          "shares": 42600,
+          "ratio": 4.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "村山　孝",
+          "shares": 38200,
+          "ratio": 4.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "篠田　明男",
+          "shares": 29900,
+          "ratio": 3.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "山崎　俊",
+          "shares": 18300,
+          "ratio": 1.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "中須　龍二",
+          "shares": 15000,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 49.51,
+          "employee": 13.38,
+          "corporate": 6.27
+        },
+        "individual_total": 49.51,
+        "top10_total": 69.16
+      }
+    }
+  ]
+}

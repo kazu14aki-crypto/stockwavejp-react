@@ -1,0 +1,220 @@
+{
+  "secCode": "523A",
+  "issuerName": "株式会社セイワホールディングス",
+  "updated_at": "2026/08/29 16:16 JST",
+  "latestDate": "2026-08-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "野見山　勇大",
+      "shares": 10435500,
+      "ratio": 54.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "石田　克史",
+      "shares": 1365800,
+      "ratio": 7.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1129900,
+      "ratio": 5.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 758000,
+      "ratio": 3.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "DBC1号投資事業有限責任組合",
+      "shares": 479500,
+      "ratio": 2.5,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 460400,
+      "ratio": 2.4,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 364600,
+      "ratio": 1.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+      "shares": 281960,
+      "ratio": 1.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社共有口",
+      "shares": 167000,
+      "ratio": 0.87,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNP PARIBAS FINANCIAL MARKETS\n（常任代理人　BNPパリバ証券株式会社）",
+      "shares": 150000,
+      "ratio": 0.78,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 61.75,
+      "trust": 9.87,
+      "other": 2.5,
+      "securities": 5.95,
+      "foreign": 1.47
+    },
+    "individual_total": 61.75,
+    "top10_total": 81.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第6期(2025/06/01－2026/05/31)",
+      "docID": "S100YYKB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "野見山　勇大",
+          "shares": 10435500,
+          "ratio": 54.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "石田　克史",
+          "shares": 1365800,
+          "ratio": 7.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1129900,
+          "ratio": 5.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 758000,
+          "ratio": 3.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "DBC1号投資事業有限責任組合",
+          "shares": 479500,
+          "ratio": 2.5,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 460400,
+          "ratio": 2.4,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 364600,
+          "ratio": 1.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+          "shares": 281960,
+          "ratio": 1.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 167000,
+          "ratio": 0.87,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNP PARIBAS FINANCIAL MARKETS\n（常任代理人　BNPパリバ証券株式会社）",
+          "shares": 150000,
+          "ratio": 0.78,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 61.75,
+          "trust": 9.87,
+          "other": 2.5,
+          "securities": 5.95,
+          "foreign": 1.47
+        },
+        "individual_total": 61.75,
+        "top10_total": 81.54
+      }
+    }
+  ]
+}

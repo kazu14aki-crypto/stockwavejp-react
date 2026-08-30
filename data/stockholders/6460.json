@@ -1,0 +1,218 @@
+{
+  "secCode": "6460",
+  "issuerName": "セガサミーホールディングス株式会社",
+  "updated_at": "2026/08/29 16:14 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社HS Company",
+      "shares": 41168000,
+      "ratio": 20.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 23626000,
+      "ratio": 11.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001 常任代理人株式会社みずほ銀行決済営業部",
+      "shares": 14681000,
+      "ratio": 7.17,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "合同会社エフエスシー",
+      "shares": 13682000,
+      "ratio": 6.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 9469000,
+      "ratio": 4.62,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "里見　治",
+      "shares": 4178000,
+      "ratio": 2.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "里見　治紀",
+      "shares": 3921000,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505103 常任代理人株式会社みずほ銀行決済営業部",
+      "shares": 3716000,
+      "ratio": 1.81,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "THE BANK OF NEW YORK MELLON 140044常任代理人株式会社みずほ銀行決済営業部",
+      "shares": 3093000,
+      "ratio": 1.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "RBC IST 15 PCT NON LENDING ACCONT - CLIENT ACCOUNT 常任代理人シティバンク、エヌ・エイ東京支店",
+      "shares": 2820000,
+      "ratio": 1.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.79,
+      "trust": 16.16,
+      "foreign": 11.86,
+      "individual": 3.95
+    },
+    "individual_total": 3.95,
+    "top10_total": 58.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第22期(2025/04/01－2026/03/31)",
+      "docID": "S100YYNN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社HS Company",
+          "shares": 41168000,
+          "ratio": 20.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 23626000,
+          "ratio": 11.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001 常任代理人株式会社みずほ銀行決済営業部",
+          "shares": 14681000,
+          "ratio": 7.17,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "合同会社エフエスシー",
+          "shares": 13682000,
+          "ratio": 6.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 9469000,
+          "ratio": 4.62,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "里見　治",
+          "shares": 4178000,
+          "ratio": 2.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "里見　治紀",
+          "shares": 3921000,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505103 常任代理人株式会社みずほ銀行決済営業部",
+          "shares": 3716000,
+          "ratio": 1.81,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "THE BANK OF NEW YORK MELLON 140044常任代理人株式会社みずほ銀行決済営業部",
+          "shares": 3093000,
+          "ratio": 1.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "RBC IST 15 PCT NON LENDING ACCONT - CLIENT ACCOUNT 常任代理人シティバンク、エヌ・エイ東京支店",
+          "shares": 2820000,
+          "ratio": 1.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.79,
+          "trust": 16.16,
+          "foreign": 11.86,
+          "individual": 3.95
+        },
+        "individual_total": 3.95,
+        "top10_total": 58.76
+      }
+    }
+  ]
+}

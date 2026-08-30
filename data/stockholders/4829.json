@@ -1,0 +1,214 @@
+{
+  "secCode": "4829",
+  "issuerName": "日本エンタープライズ株式会社",
+  "updated_at": "2026/08/29 16:14 JST",
+  "latestDate": "2026-08-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "植田　勝典",
+      "shares": 11095400,
+      "ratio": 28.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "プラントフィル株式会社",
+      "shares": 9650000,
+      "ratio": 25.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "小松　秀輝",
+      "shares": 520000,
+      "ratio": 1.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "西本　誠治",
+      "shares": 430000,
+      "ratio": 1.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "多々良　師孝",
+      "shares": 315400,
+      "ratio": 0.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "増田　明彦",
+      "shares": 265300,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "飯島　功市郎",
+      "shares": 246100,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "酒井　一",
+      "shares": 220000,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐伯　高史",
+      "shares": 210400,
+      "ratio": 0.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "今津　基茂",
+      "shares": 210000,
+      "ratio": 0.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 35.01,
+      "corporate": 25.04
+    },
+    "individual_total": 35.01,
+    "top10_total": 60.05
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第38期(2025/06/01－2026/05/31)",
+      "docID": "S100YZ0T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "植田　勝典",
+          "shares": 11095400,
+          "ratio": 28.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "プラントフィル株式会社",
+          "shares": 9650000,
+          "ratio": 25.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "小松　秀輝",
+          "shares": 520000,
+          "ratio": 1.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "西本　誠治",
+          "shares": 430000,
+          "ratio": 1.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "多々良　師孝",
+          "shares": 315400,
+          "ratio": 0.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "増田　明彦",
+          "shares": 265300,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "飯島　功市郎",
+          "shares": 246100,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "酒井　一",
+          "shares": 220000,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐伯　高史",
+          "shares": 210400,
+          "ratio": 0.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "今津　基茂",
+          "shares": 210000,
+          "ratio": 0.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 35.01,
+          "corporate": 25.04
+        },
+        "individual_total": 35.01,
+        "top10_total": 60.05
+      }
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "secCode": "3349",
+  "issuerName": "株式会社コスモス薬品",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社萬緑",
+      "shares": 30636000,
+      "ratio": 38.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 6286000,
+      "ratio": 7.93,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 3269000,
+      "ratio": 4.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "公益財団法人余慶会",
+      "shares": 3000000,
+      "ratio": 3.79,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "管理信託（A036）受託者　株式会社SMBC信託銀行",
+      "shares": 2400000,
+      "ratio": 3.03,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "管理信託（A037）受託者　株式会社SMBC信託銀行",
+      "shares": 2052000,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "管理信託（A038）受託者　株式会社SMBC信託銀行",
+      "shares": 2051000,
+      "ratio": 2.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "コスモス薬品従業員持株会",
+      "shares": 1569000,
+      "ratio": 1.98,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "CEP LUX-ORBIS SICAV(常任代理人 シティバンク、エヌ・エイ)",
+      "shares": 1498000,
+      "ratio": 1.89,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行）",
+      "shares": 937000,
+      "ratio": 1.18,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.65,
+      "trust": 12.06,
+      "foundation": 3.79,
+      "financial": 8.21,
+      "employee": 1.98,
+      "other": 1.89,
+      "foreign": 1.18
+    },
+    "individual_total": 0,
+    "top10_total": 67.76
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第44期(2025/06/01－2026/05/31)",
+      "docID": "S100YYDI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社萬緑",
+          "shares": 30636000,
+          "ratio": 38.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 6286000,
+          "ratio": 7.93,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 3269000,
+          "ratio": 4.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "公益財団法人余慶会",
+          "shares": 3000000,
+          "ratio": 3.79,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "管理信託（A036）受託者　株式会社SMBC信託銀行",
+          "shares": 2400000,
+          "ratio": 3.03,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "管理信託（A037）受託者　株式会社SMBC信託銀行",
+          "shares": 2052000,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "管理信託（A038）受託者　株式会社SMBC信託銀行",
+          "shares": 2051000,
+          "ratio": 2.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "コスモス薬品従業員持株会",
+          "shares": 1569000,
+          "ratio": 1.98,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "CEP LUX-ORBIS SICAV(常任代理人 シティバンク、エヌ・エイ)",
+          "shares": 1498000,
+          "ratio": 1.89,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　株式会社みずほ銀行）",
+          "shares": 937000,
+          "ratio": 1.18,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.65,
+          "trust": 12.06,
+          "foundation": 3.79,
+          "financial": 8.21,
+          "employee": 1.98,
+          "other": 1.89,
+          "foreign": 1.18
+        },
+        "individual_total": 0,
+        "top10_total": 67.76
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6083",
+  "issuerName": "ＥＲＩホールディングス株式会社",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＥＲＩホールディングス従業員持株会",
+      "shares": 615200,
+      "ratio": 8.22,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "ＵＨ　Ｐａｒｔｎｅｒｓ　２投資事業有限責任組合",
+      "shares": 584600,
+      "ratio": 7.81,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＵＨ　Ｐａｒｔｎｅｒｓ　３投資事業有限責任組合",
+      "shares": 565400,
+      "ratio": 7.55,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 515400,
+      "ratio": 6.88,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鈴　木　崇　英",
+      "shares": 420000,
+      "ratio": 5.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ミサワホーム株式会社",
+      "shares": 351000,
+      "ratio": 4.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大和ハウス工業株式会社",
+      "shares": 351000,
+      "ratio": 4.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三井ホーム株式会社",
+      "shares": 351000,
+      "ratio": 4.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "積水化学工業株式会社",
+      "shares": 351000,
+      "ratio": 4.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "中　澤　芳　樹",
+      "shares": 224400,
+      "ratio": 2.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 8.22,
+      "other": 22.24,
+      "individual": 8.6,
+      "corporate": 18.76
+    },
+    "individual_total": 8.6,
+    "top10_total": 57.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/06/01－2026/05/31)",
+      "docID": "S100YYGU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＥＲＩホールディングス従業員持株会",
+          "shares": 615200,
+          "ratio": 8.22,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "ＵＨ　Ｐａｒｔｎｅｒｓ　２投資事業有限責任組合",
+          "shares": 584600,
+          "ratio": 7.81,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＵＨ　Ｐａｒｔｎｅｒｓ　３投資事業有限責任組合",
+          "shares": 565400,
+          "ratio": 7.55,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 515400,
+          "ratio": 6.88,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鈴　木　崇　英",
+          "shares": 420000,
+          "ratio": 5.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ミサワホーム株式会社",
+          "shares": 351000,
+          "ratio": 4.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和ハウス工業株式会社",
+          "shares": 351000,
+          "ratio": 4.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三井ホーム株式会社",
+          "shares": 351000,
+          "ratio": 4.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "積水化学工業株式会社",
+          "shares": 351000,
+          "ratio": 4.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "中　澤　芳　樹",
+          "shares": 224400,
+          "ratio": 2.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 8.22,
+          "other": 22.24,
+          "individual": 8.6,
+          "corporate": 18.76
+        },
+        "individual_total": 8.6,
+        "top10_total": 57.82
+      }
+    }
+  ]
+}

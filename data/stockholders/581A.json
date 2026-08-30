@@ -1,0 +1,220 @@
+{
+  "secCode": "581A",
+  "issuerName": "ＧＯ株式会社",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本交通ホールディングス㈱",
+      "shares": 20000000,
+      "ratio": 25.75,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱ディー・エヌ・エー",
+      "shares": 20000000,
+      "ratio": 25.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "㈱NTTドコモ",
+      "shares": 14198400,
+      "ratio": 18.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "トヨタ自動車㈱",
+      "shares": 5000000,
+      "ratio": 6.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "グローバルグロースホールディング\nスツー(同)",
+      "shares": 4935200,
+      "ratio": 6.35,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "あいおいニッセイ同和損害保険㈱",
+      "shares": 4798500,
+      "ratio": 6.18,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "㈱SMBC信託銀行",
+      "shares": 1700000,
+      "ratio": 2.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "KDDI㈱",
+      "shares": 1500000,
+      "ratio": 1.93,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "Kakao Mobility Corp.",
+      "shares": 1000000,
+      "ratio": 1.29,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "東京センチュリー㈱",
+      "shares": 1000000,
+      "ratio": 1.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 25.75,
+      "individual": 51.76,
+      "other": 8.28,
+      "financial": 8.37,
+      "foreign": 1.29
+    },
+    "individual_total": 51.76,
+    "top10_total": 95.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/06/01－2026/05/31)",
+      "docID": "S100YZFU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本交通ホールディングス㈱",
+          "shares": 20000000,
+          "ratio": 25.75,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱ディー・エヌ・エー",
+          "shares": 20000000,
+          "ratio": 25.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱NTTドコモ",
+          "shares": 14198400,
+          "ratio": 18.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "トヨタ自動車㈱",
+          "shares": 5000000,
+          "ratio": 6.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "グローバルグロースホールディング\nスツー(同)",
+          "shares": 4935200,
+          "ratio": 6.35,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "あいおいニッセイ同和損害保険㈱",
+          "shares": 4798500,
+          "ratio": 6.18,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "㈱SMBC信託銀行",
+          "shares": 1700000,
+          "ratio": 2.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "KDDI㈱",
+          "shares": 1500000,
+          "ratio": 1.93,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "Kakao Mobility Corp.",
+          "shares": 1000000,
+          "ratio": 1.29,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "東京センチュリー㈱",
+          "shares": 1000000,
+          "ratio": 1.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 25.75,
+          "individual": 51.76,
+          "other": 8.28,
+          "financial": 8.37,
+          "foreign": 1.29
+        },
+        "individual_total": 51.76,
+        "top10_total": 95.45
+      }
+    }
+  ]
+}

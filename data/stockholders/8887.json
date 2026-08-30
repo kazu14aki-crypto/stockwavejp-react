@@ -1,0 +1,216 @@
+{
+  "secCode": "8887",
+  "issuerName": "株式会社シーラホールディングス",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社杉本",
+      "shares": 6726005,
+      "ratio": 17.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社SY",
+      "shares": 5772195,
+      "ratio": 15.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "杉本　宏之",
+      "shares": 3130850,
+      "ratio": 8.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "湯藤　善行",
+      "shares": 2930070,
+      "ratio": 7.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ベクトル",
+      "shares": 704000,
+      "ratio": 1.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "伊藤　功一",
+      "shares": 587400,
+      "ratio": 1.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "野村信託銀行株式会社",
+      "shares": 492000,
+      "ratio": 1.29,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "島袋　完渓",
+      "shares": 475900,
+      "ratio": 1.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "上田八木短資株式会社",
+      "shares": 289100,
+      "ratio": 0.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Future design Capital株式会社",
+      "shares": 275440,
+      "ratio": 0.72,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.24,
+      "individual": 18.74,
+      "financial": 1.29
+    },
+    "individual_total": 18.74,
+    "top10_total": 56.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/06/01－2026/05/31)",
+      "docID": "S100YZFP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社杉本",
+          "shares": 6726005,
+          "ratio": 17.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社SY",
+          "shares": 5772195,
+          "ratio": 15.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "杉本　宏之",
+          "shares": 3130850,
+          "ratio": 8.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "湯藤　善行",
+          "shares": 2930070,
+          "ratio": 7.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ベクトル",
+          "shares": 704000,
+          "ratio": 1.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "伊藤　功一",
+          "shares": 587400,
+          "ratio": 1.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "野村信託銀行株式会社",
+          "shares": 492000,
+          "ratio": 1.29,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "島袋　完渓",
+          "shares": 475900,
+          "ratio": 1.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "上田八木短資株式会社",
+          "shares": 289100,
+          "ratio": 0.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Future design Capital株式会社",
+          "shares": 275440,
+          "ratio": 0.72,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.24,
+          "individual": 18.74,
+          "financial": 1.29
+        },
+        "individual_total": 18.74,
+        "top10_total": 56.27
+      }
+    }
+  ]
+}

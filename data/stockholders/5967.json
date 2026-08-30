@@ -1,0 +1,218 @@
+{
+  "secCode": "5967",
+  "issuerName": "ＴＯＮＥ株式会社",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "スパイラルキャピタルパートナーズ\n株式会社",
+      "shares": 3104000,
+      "ratio": 13.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中央自動車工業株式会社",
+      "shares": 2000000,
+      "ratio": 8.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本生命保険相互会社",
+      "shares": 1133000,
+      "ratio": 4.99,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1002000,
+      "ratio": 4.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社山善",
+      "shares": 954000,
+      "ratio": 4.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＴＯＮＥ株式会社従業員持株会",
+      "shares": 850000,
+      "ratio": 3.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "アスカ株式会社",
+      "shares": 800000,
+      "ratio": 3.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社北陸銀行",
+      "shares": 760000,
+      "ratio": 3.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社関西みらい銀行",
+      "shares": 760000,
+      "ratio": 3.35,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上田八木短資株式会社",
+      "shares": 562000,
+      "ratio": 2.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.7,
+      "financial": 11.69,
+      "trust": 4.42,
+      "employee": 3.74
+    },
+    "individual_total": 0,
+    "top10_total": 52.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第91期(2025/06/01－2026/05/31)",
+      "docID": "S100YZDE",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "スパイラルキャピタルパートナーズ\n株式会社",
+          "shares": 3104000,
+          "ratio": 13.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中央自動車工業株式会社",
+          "shares": 2000000,
+          "ratio": 8.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本生命保険相互会社",
+          "shares": 1133000,
+          "ratio": 4.99,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1002000,
+          "ratio": 4.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社山善",
+          "shares": 954000,
+          "ratio": 4.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＴＯＮＥ株式会社従業員持株会",
+          "shares": 850000,
+          "ratio": 3.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "アスカ株式会社",
+          "shares": 800000,
+          "ratio": 3.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社北陸銀行",
+          "shares": 760000,
+          "ratio": 3.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社関西みらい銀行",
+          "shares": 760000,
+          "ratio": 3.35,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上田八木短資株式会社",
+          "shares": 562000,
+          "ratio": 2.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.7,
+          "financial": 11.69,
+          "trust": 4.42,
+          "employee": 3.74
+        },
+        "individual_total": 0,
+        "top10_total": 52.55
+      }
+    }
+  ]
+}

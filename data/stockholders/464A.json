@@ -1,0 +1,220 @@
+{
+  "secCode": "464A",
+  "issuerName": "株式会社ＱＰＳホールディングス",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "スカパーＪＳＡＴ株式会社",
+      "shares": 7357000,
+      "ratio": 13.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大西　俊輔",
+      "shares": 4000000,
+      "ratio": 7.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2425160,
+      "ratio": 4.34,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "八坂　哲雄",
+      "shares": 2131200,
+      "ratio": 3.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 1634000,
+      "ratio": 2.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JP JPMSE LUX RE UBSAG LONDON BRANCH EQCO\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 1480400,
+      "ratio": 2.65,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三井住友海上火災保険株式会社",
+      "shares": 1400000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ミツウロコグループホールディングス",
+      "shares": 1400000,
+      "ratio": 2.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1320000,
+      "ratio": 2.36,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本工営株式会社",
+      "shares": 1142900,
+      "ratio": 2.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 20.21,
+      "individual": 10.97,
+      "financial": 4.34,
+      "foreign": 5.57,
+      "trust": 2.36
+    },
+    "individual_total": 10.97,
+    "top10_total": 43.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第1期(2025/12/01－2026/05/31)",
+      "docID": "S100YYOW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "スカパーＪＳＡＴ株式会社",
+          "shares": 7357000,
+          "ratio": 13.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大西　俊輔",
+          "shares": 4000000,
+          "ratio": 7.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2425160,
+          "ratio": 4.34,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "八坂　哲雄",
+          "shares": 2131200,
+          "ratio": 3.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 1634000,
+          "ratio": 2.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JP JPMSE LUX RE UBSAG LONDON BRANCH EQCO\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 1480400,
+          "ratio": 2.65,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三井住友海上火災保険株式会社",
+          "shares": 1400000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ミツウロコグループホールディングス",
+          "shares": 1400000,
+          "ratio": 2.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1320000,
+          "ratio": 2.36,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本工営株式会社",
+          "shares": 1142900,
+          "ratio": 2.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 20.21,
+          "individual": 10.97,
+          "financial": 4.34,
+          "foreign": 5.57,
+          "trust": 2.36
+        },
+        "individual_total": 10.97,
+        "top10_total": 43.45
+      }
+    }
+  ]
+}

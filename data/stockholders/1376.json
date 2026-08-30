@@ -1,0 +1,222 @@
+{
+  "secCode": "1376",
+  "issuerName": "カネコ種苗株式会社",
+  "updated_at": "2026/08/29 16:14 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株\n式会社（信託口）",
+      "shares": 724000,
+      "ratio": 6.55,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社あかぎ興業",
+      "shares": 593000,
+      "ratio": 5.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社群馬銀行",
+      "shares": 490000,
+      "ratio": 4.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "カネコ種苗従業員持株会",
+      "shares": 475000,
+      "ratio": 4.29,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社東和銀行",
+      "shares": 310000,
+      "ratio": 2.81,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 255000,
+      "ratio": 2.3,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "カネコ種苗みどり会",
+      "shares": 251000,
+      "ratio": 2.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "金子　和代",
+      "shares": 220000,
+      "ratio": 1.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "金子　教子",
+      "shares": 211000,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "金子　美哉子",
+      "shares": 186000,
+      "ratio": 1.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 6.55,
+      "corporate": 5.36,
+      "financial": 7.24,
+      "employee": 4.29,
+      "securities": 2.3,
+      "individual": 7.85
+    },
+    "individual_total": 7.85,
+    "top10_total": 33.59
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/06/01－2026/05/31)",
+      "docID": "S100YYEO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株\n式会社（信託口）",
+          "shares": 724000,
+          "ratio": 6.55,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社あかぎ興業",
+          "shares": 593000,
+          "ratio": 5.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社群馬銀行",
+          "shares": 490000,
+          "ratio": 4.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "カネコ種苗従業員持株会",
+          "shares": 475000,
+          "ratio": 4.29,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社東和銀行",
+          "shares": 310000,
+          "ratio": 2.81,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 255000,
+          "ratio": 2.3,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "カネコ種苗みどり会",
+          "shares": 251000,
+          "ratio": 2.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "金子　和代",
+          "shares": 220000,
+          "ratio": 1.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "金子　教子",
+          "shares": 211000,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "金子　美哉子",
+          "shares": 186000,
+          "ratio": 1.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 6.55,
+          "corporate": 5.36,
+          "financial": 7.24,
+          "employee": 4.29,
+          "securities": 2.3,
+          "individual": 7.85
+        },
+        "individual_total": 7.85,
+        "top10_total": 33.59
+      }
+    }
+  ]
+}

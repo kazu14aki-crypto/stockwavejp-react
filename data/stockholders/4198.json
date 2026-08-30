@@ -1,0 +1,216 @@
+{
+  "secCode": "4198",
+  "issuerName": "株式会社テンダ",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＫＦＣ",
+      "shares": 3498000,
+      "ratio": 52.7,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中村　繁貴",
+      "shares": 450000,
+      "ratio": 6.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "小林　謙",
+      "shares": 432000,
+      "ratio": 6.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "加藤　善久",
+      "shares": 420000,
+      "ratio": 6.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社　博報堂プロダクツ",
+      "shares": 231000,
+      "ratio": 3.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小林　まり子",
+      "shares": 126900,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鈴木　章",
+      "shares": 75800,
+      "ratio": 1.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "須永　政美",
+      "shares": 55600,
+      "ratio": 0.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "テンダ従業員持株会",
+      "shares": 49503,
+      "ratio": 0.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "池本　栄二",
+      "shares": 49500,
+      "ratio": 0.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 56.18,
+      "individual": 24.21,
+      "employee": 0.74
+    },
+    "individual_total": 24.21,
+    "top10_total": 81.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/06/01－2026/05/31)",
+      "docID": "S100YXP8",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＫＦＣ",
+          "shares": 3498000,
+          "ratio": 52.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中村　繁貴",
+          "shares": 450000,
+          "ratio": 6.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "小林　謙",
+          "shares": 432000,
+          "ratio": 6.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "加藤　善久",
+          "shares": 420000,
+          "ratio": 6.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社　博報堂プロダクツ",
+          "shares": 231000,
+          "ratio": 3.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小林　まり子",
+          "shares": 126900,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鈴木　章",
+          "shares": 75800,
+          "ratio": 1.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "須永　政美",
+          "shares": 55600,
+          "ratio": 0.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "テンダ従業員持株会",
+          "shares": 49503,
+          "ratio": 0.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "池本　栄二",
+          "shares": 49500,
+          "ratio": 0.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 56.18,
+          "individual": 24.21,
+          "employee": 0.74
+        },
+        "individual_total": 24.21,
+        "top10_total": 81.13
+      }
+    }
+  ]
+}

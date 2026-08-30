@@ -1,0 +1,220 @@
+{
+  "secCode": "3501",
+  "issuerName": "ＳＵＭＩＮＯＥ株式会社",
+  "updated_at": "2026/08/29 16:13 JST",
+  "latestDate": "2026-08-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社髙島屋",
+      "shares": 1849000,
+      "ratio": 13.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本生命保険相互会社",
+      "shares": 953000,
+      "ratio": 7.19,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "丸紅株式会社",
+      "shares": 733000,
+      "ratio": 5.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "林テレンプホールディングス株式会社",
+      "shares": 466000,
+      "ratio": 3.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "SUMINOE共栄会",
+      "shares": 324000,
+      "ratio": 2.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "SUMINOE従業員持株会",
+      "shares": 274000,
+      "ratio": 2.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本マスタートラスト信託銀行株式会社(退職給付信託ユニチカ口)",
+      "shares": 232000,
+      "ratio": 1.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "明治安田生命保険相互会社",
+      "shares": 231000,
+      "ratio": 1.74,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ヒューリック株式会社",
+      "shares": 150000,
+      "ratio": 1.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社池田泉州銀行",
+      "shares": 147000,
+      "ratio": 1.11,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 24.11,
+      "financial": 10.04,
+      "individual": 2.44,
+      "employee": 2.07,
+      "trust": 1.75
+    },
+    "individual_total": 2.44,
+    "top10_total": 40.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第137期(2025/06/01－2026/05/31)",
+      "docID": "S100YYVN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社髙島屋",
+          "shares": 1849000,
+          "ratio": 13.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本生命保険相互会社",
+          "shares": 953000,
+          "ratio": 7.19,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "丸紅株式会社",
+          "shares": 733000,
+          "ratio": 5.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "林テレンプホールディングス株式会社",
+          "shares": 466000,
+          "ratio": 3.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "SUMINOE共栄会",
+          "shares": 324000,
+          "ratio": 2.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "SUMINOE従業員持株会",
+          "shares": 274000,
+          "ratio": 2.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本マスタートラスト信託銀行株式会社(退職給付信託ユニチカ口)",
+          "shares": 232000,
+          "ratio": 1.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "明治安田生命保険相互会社",
+          "shares": 231000,
+          "ratio": 1.74,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ヒューリック株式会社",
+          "shares": 150000,
+          "ratio": 1.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社池田泉州銀行",
+          "shares": 147000,
+          "ratio": 1.11,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 24.11,
+          "financial": 10.04,
+          "individual": 2.44,
+          "employee": 2.07,
+          "trust": 1.75
+        },
+        "individual_total": 2.44,
+        "top10_total": 40.41
+      }
+    }
+  ]
+}

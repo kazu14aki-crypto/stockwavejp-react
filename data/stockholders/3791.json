@@ -1,0 +1,218 @@
+{
+  "secCode": "3791",
+  "issuerName": "株式会社ＩＧポート",
+  "updated_at": "2026/08/29 16:15 JST",
+  "latestDate": "2026-08-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "石川　光久",
+      "shares": 3822200,
+      "ratio": 18.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社電通グループ",
+      "shares": 1992000,
+      "ratio": 9.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本テレビ放送網株式会社",
+      "shares": 1992000,
+      "ratio": 9.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ＮＴＴドコモ",
+      "shares": 1008000,
+      "ratio": 5.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社サンリオ",
+      "shares": 1008000,
+      "ratio": 5.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人 野村證券株式会社）",
+      "shares": 686615,
+      "ratio": 3.4,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "柳澤　安慶",
+      "shares": 606000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS\n（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 567968,
+      "ratio": 2.8,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "保坂　嘉弘",
+      "shares": 530400,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "佐藤　徹",
+      "shares": 431100,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 26.6,
+      "corporate": 29.8,
+      "foreign": 3.4,
+      "financial": 2.8
+    },
+    "individual_total": 26.6,
+    "top10_total": 62.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-08-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第37期(2025/06/01－2026/05/31)",
+      "docID": "S100YYRV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "石川　光久",
+          "shares": 3822200,
+          "ratio": 18.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社電通グループ",
+          "shares": 1992000,
+          "ratio": 9.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本テレビ放送網株式会社",
+          "shares": 1992000,
+          "ratio": 9.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ＮＴＴドコモ",
+          "shares": 1008000,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社サンリオ",
+          "shares": 1008000,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS-MARGIN (CASHPB)\n（常任代理人 野村證券株式会社）",
+          "shares": 686615,
+          "ratio": 3.4,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "柳澤　安慶",
+          "shares": 606000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "US BANK NATIONAL ASSOCIATION JP ACCTS TS\n（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 567968,
+          "ratio": 2.8,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "保坂　嘉弘",
+          "shares": 530400,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "佐藤　徹",
+          "shares": 431100,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 26.6,
+          "corporate": 29.8,
+          "foreign": 3.4,
+          "financial": 2.8
+        },
+        "individual_total": 26.6,
+        "top10_total": 62.6
+      }
+    }
+  ]
+}
