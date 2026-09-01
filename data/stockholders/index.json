@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026/08/29",
-  "count": 1770,
+  "updated_at": "2026/09/01",
+  "count": 1772,
   "items": [
+    {
+      "secCode": "4088",
+      "issuerName": "エア・ウォーター株式会社",
+      "latestDate": "2026-08-31",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "192A",
+      "issuerName": "インテグループ株式会社",
+      "latestDate": "2026-08-31",
+      "holderCount": 10,
+      "topHolder": "藤井　一郎",
+      "topHolderCategory": "individual",
+      "individualTotal": 71.86
+    },
+    {
+      "secCode": "288A",
+      "issuerName": "ラクサス・テクノロジーズ株式会社",
+      "latestDate": "2026-08-31",
+      "holderCount": 10,
+      "topHolder": "株式会社ワールド",
+      "topHolderCategory": "corporate",
+      "individualTotal": 27.72
+    },
+    {
+      "secCode": "4923",
+      "issuerName": "コタ株式会社",
+      "latestDate": "2026-08-31",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 14.99
+    },
     {
       "secCode": "581A",
       "issuerName": "ＧＯ株式会社",
@@ -1090,15 +1126,6 @@
       "topHolder": "オリックス株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 9.38
-    },
-    {
-      "secCode": "4088",
-      "issuerName": "エア・ウォーター株式会社",
-      "latestDate": "2026-07-31",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
     },
     {
       "secCode": "2998",
@@ -11908,15 +11935,6 @@
       "topHolder": "日本生命保険相互会社",
       "topHolderCategory": "financial",
       "individualTotal": 0
-    },
-    {
-      "secCode": "288A",
-      "issuerName": "ラクサス・テクノロジーズ株式会社",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "株式会社ワールド",
-      "topHolderCategory": "corporate",
-      "individualTotal": 27.72
     },
     {
       "secCode": "3772",
