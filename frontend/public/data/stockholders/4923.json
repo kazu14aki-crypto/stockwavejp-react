@@ -1,215 +1,215 @@
 {
-  "secCode": "6047",
-  "issuerName": "株式会社Ｇｕｎｏｓｙ",
-  "updated_at": "2026/09/01 00:34 JST",
-  "latestDate": "2026-08-25",
+  "secCode": "4923",
+  "issuerName": "コタ株式会社",
+  "updated_at": "2026/09/01 00:30 JST",
+  "latestDate": "2026-08-31",
   "latest": [
     {
       "rank": 1,
-      "name": "木村　新司",
-      "shares": 6061000,
-      "ratio": 25.25,
-      "category": "individual",
-      "category_label": "個人（創業者一族の可能性）",
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1760500,
+      "ratio": 6.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
       "is_founder_family": false
     },
     {
       "rank": 2,
-      "name": "KDDI株式会社",
-      "shares": 3550000,
-      "ratio": 14.78,
+      "name": "株式会社英和商事",
+      "shares": 1708977,
+      "ratio": 6.15,
       "category": "corporate",
       "category_label": "事業法人",
       "is_founder_family": false
     },
     {
       "rank": 3,
-      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "shares": 1156000,
-      "ratio": 4.81,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 874000,
+      "ratio": 3.14,
       "category": "trust",
       "category_label": "信託口（国内機関・年金/投信）",
       "is_founder_family": false
     },
     {
       "rank": 4,
-      "name": "株式会社ホクエツ",
-      "shares": 580000,
-      "ratio": 2.41,
-      "category": "corporate",
-      "category_label": "事業法人",
+      "name": "小田　博英",
+      "shares": 862033,
+      "ratio": 3.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 5,
-      "name": "治部　達夫",
-      "shares": 506000,
-      "ratio": 2.11,
+      "name": "斎藤　三映子",
+      "shares": 705910,
+      "ratio": 2.54,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 6,
-      "name": "吉田　宏司",
-      "shares": 403000,
-      "ratio": 1.67,
+      "name": "片山　正規",
+      "shares": 686403,
+      "ratio": 2.47,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 7,
-      "name": "福島　良典",
-      "shares": 390000,
-      "ratio": 1.62,
+      "name": "小田　将博",
+      "shares": 644558,
+      "ratio": 2.32,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 8,
-      "name": "関　喜史",
-      "shares": 363000,
-      "ratio": 1.51,
+      "name": "西角　亜沙美",
+      "shares": 644558,
+      "ratio": 2.32,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 9,
-      "name": "古川　良太",
-      "shares": 307000,
-      "ratio": 1.27,
+      "name": "加藤　賢二",
+      "shares": 624239,
+      "ratio": 2.24,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 10,
-      "name": "溝呂木　雄太",
-      "shares": 270000,
-      "ratio": 1.12,
-      "category": "individual",
-      "category_label": "個人（創業者一族の可能性）",
+      "name": "大成化工株式会社",
+      "shares": 621403,
+      "ratio": 2.23,
+      "category": "corporate",
+      "category_label": "事業法人",
       "is_founder_family": false
     }
   ],
   "latestSummary": {
     "by_category": {
-      "individual": 34.55,
-      "corporate": 17.19,
-      "trust": 4.81
+      "trust": 9.48,
+      "corporate": 8.38,
+      "individual": 14.99
     },
-    "individual_total": 34.55,
-    "top10_total": 56.55
+    "individual_total": 14.99,
+    "top10_total": 32.85
   },
   "history": [
     {
-      "submitDate": "2026-08-25",
+      "submitDate": "2026-08-31",
       "docType": "120",
-      "docTypeName": "有価証券報告書－第14期(2025/06/01－2026/05/31)",
-      "docID": "S100YYKZ",
+      "docTypeName": "有価証券報告書－第47期(2025/04/01－2026/03/31)",
+      "docID": "S100YYQN",
       "shareholders": [
         {
           "rank": 1,
-          "name": "木村　新司",
-          "shares": 6061000,
-          "ratio": 25.25,
-          "category": "individual",
-          "category_label": "個人（創業者一族の可能性）",
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1760500,
+          "ratio": 6.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
           "is_founder_family": false
         },
         {
           "rank": 2,
-          "name": "KDDI株式会社",
-          "shares": 3550000,
-          "ratio": 14.78,
+          "name": "株式会社英和商事",
+          "shares": 1708977,
+          "ratio": 6.15,
           "category": "corporate",
           "category_label": "事業法人",
           "is_founder_family": false
         },
         {
           "rank": 3,
-          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
-          "shares": 1156000,
-          "ratio": 4.81,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 874000,
+          "ratio": 3.14,
           "category": "trust",
           "category_label": "信託口（国内機関・年金/投信）",
           "is_founder_family": false
         },
         {
           "rank": 4,
-          "name": "株式会社ホクエツ",
-          "shares": 580000,
-          "ratio": 2.41,
-          "category": "corporate",
-          "category_label": "事業法人",
+          "name": "小田　博英",
+          "shares": 862033,
+          "ratio": 3.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 5,
-          "name": "治部　達夫",
-          "shares": 506000,
-          "ratio": 2.11,
+          "name": "斎藤　三映子",
+          "shares": 705910,
+          "ratio": 2.54,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 6,
-          "name": "吉田　宏司",
-          "shares": 403000,
-          "ratio": 1.67,
+          "name": "片山　正規",
+          "shares": 686403,
+          "ratio": 2.47,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 7,
-          "name": "福島　良典",
-          "shares": 390000,
-          "ratio": 1.62,
+          "name": "小田　将博",
+          "shares": 644558,
+          "ratio": 2.32,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 8,
-          "name": "関　喜史",
-          "shares": 363000,
-          "ratio": 1.51,
+          "name": "西角　亜沙美",
+          "shares": 644558,
+          "ratio": 2.32,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 9,
-          "name": "古川　良太",
-          "shares": 307000,
-          "ratio": 1.27,
+          "name": "加藤　賢二",
+          "shares": 624239,
+          "ratio": 2.24,
           "category": "individual",
           "category_label": "個人（創業者一族の可能性）",
           "is_founder_family": false
         },
         {
           "rank": 10,
-          "name": "溝呂木　雄太",
-          "shares": 270000,
-          "ratio": 1.12,
-          "category": "individual",
-          "category_label": "個人（創業者一族の可能性）",
+          "name": "大成化工株式会社",
+          "shares": 621403,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
           "is_founder_family": false
         }
       ],
       "summary": {
         "by_category": {
-          "individual": 34.55,
-          "corporate": 17.19,
-          "trust": 4.81
+          "trust": 9.48,
+          "corporate": 8.38,
+          "individual": 14.99
         },
-        "individual_total": 34.55,
-        "top10_total": 56.55
+        "individual_total": 14.99,
+        "top10_total": 32.85
       }
     }
   ]
