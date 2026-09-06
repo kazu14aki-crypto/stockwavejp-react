@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-31T07:48:47+09:00",
+  "updated_at": "2026-09-07T07:09:06+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3772,
+  "count": 3770,
   "stocks": [
     {
       "ticker": "1300.T",
@@ -2295,16 +2295,6 @@
       "name": "株式会社ジーエヌアイグループ",
       "market": "上場",
       "industry": "医薬品",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "2162.T",
-      "code": "2162",
-      "name": "nmsホールディングス株式会社",
-      "market": "上場",
-      "industry": "サービス業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -9993,7 +9983,7 @@
     {
       "ticker": "3840.T",
       "code": "3840",
-      "name": "パス株式会社",
+      "name": "株式会社ヴィクトン",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -16953,16 +16943,6 @@
       "ticker": "5101.T",
       "code": "5101",
       "name": "横浜ゴム株式会社",
-      "market": "上場",
-      "industry": "ゴム製品",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "5103.T",
-      "code": "5103",
-      "name": "昭和ホールディングス株式会社",
       "market": "上場",
       "industry": "ゴム製品",
       "filer_type": "内国法人・組合",
