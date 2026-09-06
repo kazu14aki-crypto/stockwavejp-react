@@ -1,0 +1,220 @@
+{
+  "secCode": "208A",
+  "issuerName": "株式会社構造計画研究所ホールディングス",
+  "updated_at": "2026/09/05 14:36 JST",
+  "latestDate": "2026-09-04",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社南悠商社",
+      "shares": 980000,
+      "ratio": 9.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "服部　正太",
+      "shares": 814000,
+      "ratio": 7.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 434000,
+      "ratio": 3.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社りそな銀行",
+      "shares": 400000,
+      "ratio": 3.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "構研所員持株会",
+      "shares": 343000,
+      "ratio": 3.15,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "有限会社構研コンサルタント",
+      "shares": 200000,
+      "ratio": 1.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "外池　榮一郎",
+      "shares": 126000,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "木村　香代子",
+      "shares": 102000,
+      "ratio": 0.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "阿部　誠允",
+      "shares": 100000,
+      "ratio": 0.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大堀　三樹",
+      "shares": 74000,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 10.84,
+      "individual": 11.18,
+      "trust": 3.99,
+      "financial": 3.67,
+      "employee": 3.15
+    },
+    "individual_total": 11.18,
+    "top10_total": 32.83
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-04",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第2期(2025/07/01－2026/06/30)",
+      "docID": "S100Z0JO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社南悠商社",
+          "shares": 980000,
+          "ratio": 9.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "服部　正太",
+          "shares": 814000,
+          "ratio": 7.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 434000,
+          "ratio": 3.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社りそな銀行",
+          "shares": 400000,
+          "ratio": 3.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "構研所員持株会",
+          "shares": 343000,
+          "ratio": 3.15,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "有限会社構研コンサルタント",
+          "shares": 200000,
+          "ratio": 1.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "外池　榮一郎",
+          "shares": 126000,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "木村　香代子",
+          "shares": 102000,
+          "ratio": 0.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "阿部　誠允",
+          "shares": 100000,
+          "ratio": 0.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大堀　三樹",
+          "shares": 74000,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 10.84,
+          "individual": 11.18,
+          "trust": 3.99,
+          "financial": 3.67,
+          "employee": 3.15
+        },
+        "individual_total": 11.18,
+        "top10_total": 32.83
+      }
+    }
+  ]
+}
