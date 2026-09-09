@@ -1,11 +1,135 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-09-09T17:17:19Z",
   "source": "EDINET API v2",
   "storage": "filings/{doc_id}.json.gz",
-  "document_count": 0,
-  "security_count": 0,
-  "last_run": null,
-  "by_security_code": {},
-  "documents": []
+  "document_count": 5,
+  "security_count": 5,
+  "last_run": {
+    "started_for_date": "2026-09-09",
+    "range_start": "2026-08-27",
+    "range_end": "2026-09-09",
+    "days": 14,
+    "site_only": true,
+    "ticker_filter_count": 400,
+    "candidates": 6,
+    "processed": 5,
+    "skipped_existing": 0,
+    "error_count": 0,
+    "errors": []
+  },
+  "by_security_code": {
+    "2270": [
+      "S100Z0XY"
+    ],
+    "2269": [
+      "S100Z189"
+    ],
+    "5411": [
+      "S100Z13N"
+    ],
+    "1812": [
+      "S100Z0TY"
+    ],
+    "3549": [
+      "S100Z10Y"
+    ]
+  },
+  "documents": [
+    {
+      "doc_id": "S100Z0XY",
+      "security_code": "2270",
+      "filer_name": "雪印メグミルク株式会社",
+      "edinet_code": "E23202",
+      "doc_type_code": "220",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submit_date_time": "2026-09-09 14:00",
+      "period_start": null,
+      "period_end": null,
+      "withdrawal_status": "0",
+      "disclosure_status": "0",
+      "path": "filings/S100Z0XY.json.gz",
+      "source_zip_path": null,
+      "fact_count": 47,
+      "context_count": 1,
+      "unit_count": 1,
+      "saved_at": "2026-09-09T17:17:19Z"
+    },
+    {
+      "doc_id": "S100Z189",
+      "security_code": "2269",
+      "filer_name": "明治ホールディングス株式会社",
+      "edinet_code": "E21902",
+      "doc_type_code": "180",
+      "description": "臨時報告書",
+      "submit_date_time": "2026-09-09 13:38",
+      "period_start": null,
+      "period_end": null,
+      "withdrawal_status": "0",
+      "disclosure_status": "0",
+      "path": "filings/S100Z189.json.gz",
+      "source_zip_path": null,
+      "fact_count": 42,
+      "context_count": 1,
+      "unit_count": 1,
+      "saved_at": "2026-09-09T17:17:19Z"
+    },
+    {
+      "doc_id": "S100Z13N",
+      "security_code": "5411",
+      "filer_name": "ＪＦＥホールディングス株式会社",
+      "edinet_code": "E01264",
+      "doc_type_code": "100",
+      "description": "発行登録追補書類（株券､社債券等）",
+      "submit_date_time": "2026-09-09 11:10",
+      "period_start": null,
+      "period_end": null,
+      "withdrawal_status": "0",
+      "disclosure_status": "0",
+      "path": "filings/S100Z13N.json.gz",
+      "source_zip_path": null,
+      "fact_count": 67,
+      "context_count": 1,
+      "unit_count": 1,
+      "saved_at": "2026-09-09T17:17:18Z"
+    },
+    {
+      "doc_id": "S100Z0TY",
+      "security_code": "1812",
+      "filer_name": "鹿島建設株式会社",
+      "edinet_code": "E00058",
+      "doc_type_code": "220",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submit_date_time": "2026-09-09 11:03",
+      "period_start": null,
+      "period_end": null,
+      "withdrawal_status": "0",
+      "disclosure_status": "0",
+      "path": "filings/S100Z0TY.json.gz",
+      "source_zip_path": null,
+      "fact_count": 47,
+      "context_count": 1,
+      "unit_count": 1,
+      "saved_at": "2026-09-09T17:17:18Z"
+    },
+    {
+      "doc_id": "S100Z10Y",
+      "security_code": "3549",
+      "filer_name": "株式会社クスリのアオキホールディングス",
+      "edinet_code": "E10737",
+      "doc_type_code": "220",
+      "description": "自己株券買付状況報告書（法２４条の６第１項に基づくもの）",
+      "submit_date_time": "2026-09-09 09:05",
+      "period_start": null,
+      "period_end": null,
+      "withdrawal_status": "0",
+      "disclosure_status": "0",
+      "path": "filings/S100Z10Y.json.gz",
+      "source_zip_path": null,
+      "fact_count": 47,
+      "context_count": 1,
+      "unit_count": 1,
+      "saved_at": "2026-09-09T17:17:17Z"
+    }
+  ]
 }
