@@ -18,7 +18,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          # tdnet 0.3系は Python 3.12 以上が必須。3.11では依存関係の解決前に停止する。
+          python-version: '3.12'
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
       - name: Extract latest TDnet XBRL metrics

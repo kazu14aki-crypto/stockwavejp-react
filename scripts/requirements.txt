@@ -3,4 +3,5 @@ numpy>=1.24
 pandas>=2.0
 pytz>=2024.1
 scipy>=1.11
-tdnet>=0.1.0
+# TDnet XBRL抽出は0.3系のAPIで検証する。Python 3.12以上が必要。
+tdnet==0.3.2

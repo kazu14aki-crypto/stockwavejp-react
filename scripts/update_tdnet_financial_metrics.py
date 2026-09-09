@@ -174,10 +174,18 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--codes", nargs="*", help="4桁の証券コードだけを更新")
     parser.add_argument("--limit", type=int, help="検証用の最大件数")
+    parser.add_argument("--offset", type=int, default=0, help="更新対象の開始位置（分割実行用）")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="検証用の出力先。未指定時は公開用 financial_metrics.json を更新",
+    )
     args = parser.parse_args()
 
     stock_index = load_json(INDEX_PATH, {})
-    existing = load_json(OUTPUT_PATH, {})
+    output_path = args.output or OUTPUT_PATH
+    # 検証出力は公開済みデータを継承せず、指定銘柄の抽出結果だけを確認できるようにする。
+    existing = load_json(output_path, {}) if args.output else load_json(OUTPUT_PATH, {})
     metrics = dict(existing.get("metrics", {}))
     requested = {str(code).zfill(4) for code in args.codes} if args.codes else None
     entries = []
@@ -186,6 +194,8 @@ def main() -> int:
         if len(code) != 4 or not code.isdigit() or (requested and code not in requested):
             continue
         entries.append((ticker, code, stock.get("market_cap")))
+    if args.offset:
+        entries = entries[args.offset:]
     if args.limit:
         entries = entries[: args.limit]
     if not entries:
@@ -221,8 +231,9 @@ def main() -> int:
         },
         "metrics": metrics,
     }
-    OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"完了: {updated}件更新、{errors}件エラー、保存先: {OUTPUT_PATH}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"完了: {updated}件更新、{errors}件エラー、保存先: {output_path}")
     return 0
 
 
