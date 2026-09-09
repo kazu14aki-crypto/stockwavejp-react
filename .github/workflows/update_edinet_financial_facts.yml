@@ -1,0 +1,90 @@
+name: Update EDINET Financial Facts
+
+on:
+  schedule:
+    # 平日 JST 20:45（UTC 11:45）。既存docIDは再ダウンロードしない。
+    - cron: '45 11 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: '走査する過去日数（初回バックフィルは370）'
+        required: true
+        default: '14'
+      site_only:
+        description: 'StockWaveJP収録銘柄のみに限定'
+        required: true
+        type: boolean
+        default: true
+      keep_source_zip:
+        description: 'EDINET原本ZIPもGit保存（容量が非常に増えるため通常はfalse）'
+        required: true
+        type: boolean
+        default: false
+      max_documents:
+        description: '検証用上限（0は無制限）'
+        required: true
+        default: '0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-edinet-financial-facts
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download and archive EDINET XBRL facts
+        env:
+          EDINET_API_KEY: ${{ secrets.EDINET_API_KEY }}
+          DAYS: ${{ github.event.inputs.days || '14' }}
+          SITE_ONLY: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.site_only }}
+          KEEP_SOURCE_ZIP: ${{ github.event.inputs.keep_source_zip || 'false' }}
+          MAX_DOCUMENTS: ${{ github.event.inputs.max_documents || '0' }}
+        run: |
+          args=(--days "$DAYS" --max-documents "$MAX_DOCUMENTS")
+          if [ "$SITE_ONLY" = "true" ]; then args+=(--site); fi
+          if [ "$KEEP_SOURCE_ZIP" = "true" ]; then args+=(--keep-source-zip); fi
+          python backend/fetch_edinet_financial_facts.py "${args[@]}"
+
+      - name: Validate archive index and gzip files
+        run: |
+          python - <<'PY'
+          import gzip, json
+          from pathlib import Path
+          root = Path('frontend/public/data/edinet_financial_facts')
+          index = json.loads((root / 'index.json').read_text(encoding='utf-8'))
+          for item in index['documents']:
+              with gzip.open(root / item['path'], 'rt', encoding='utf-8') as handle:
+                  payload = json.load(handle)
+              assert payload['source_document']['docID'] == item['doc_id']
+              assert payload['counts']['facts'] == item['fact_count']
+          print(f"documents={index['document_count']} securities={index['security_count']}")
+          PY
+
+      - name: Commit saved data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/edinet_financial_facts/
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: archive EDINET financial facts"
+            git pull --rebase origin main
+            git push origin main
+          fi
