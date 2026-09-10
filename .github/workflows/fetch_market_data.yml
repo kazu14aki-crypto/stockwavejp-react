@@ -83,7 +83,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          # scripts/requirements.txt の tdnet 0.3系は Python 3.12 以上が必須。
+          python-version: '3.12'
 
       - name: Cache pip packages
         uses: actions/cache@v4
