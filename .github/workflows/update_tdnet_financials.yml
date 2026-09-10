@@ -40,14 +40,15 @@ jobs:
           if [ -n "$CODES" ]; then read -ra code_list <<< "$CODES"; args+=(--codes "${code_list[@]}"); fi
           if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
           python scripts/update_tdnet_financial_metrics.py "${args[@]}"
+          python scripts/merge_financial_metrics_into_market.py
       - name: Commit data when changed
         run: |
-          if git diff --quiet frontend/public/data/financial_metrics.json; then
+          if git diff --quiet frontend/public/data/financial_metrics.json frontend/public/data/market.json; then
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/data/financial_metrics.json
+          git add frontend/public/data/financial_metrics.json frontend/public/data/market.json
           git commit -m "chore: update TDnet financial metrics"
           git pull --rebase origin main
           git push

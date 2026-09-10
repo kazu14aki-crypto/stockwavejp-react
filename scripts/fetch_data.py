@@ -83,15 +83,15 @@ def financial_fields(metrics, ticker, market_cap):
         "forecast_net_income_parent": metric.get("forecast_net_income_parent"),
         "forecast_eps": metric.get("forecast_eps"),
         "forecast_dps": metric.get("forecast_dps"),
-        "guidance": metric.get("guidance"),
-        "guidance_field_sources": metric.get("guidance_field_sources"),
         "guidance_status": metric.get("guidance_status"),
         "guidance_disclosed_at": metric.get("guidance_disclosed_at"),
         "guidance_filing_title": metric.get("guidance_filing_title"),
-        "metric_details": metric.get("metric_details"),
+        "guidance_source_url": metric.get("guidance_source_url"),
         "financial_period_type": metric.get("period_type"),
         "financial_disclosed_at": metric.get("disclosed_at"),
+        "financial_filing_title": metric.get("filing_title"),
         "financial_source": metric.get("source"),
+        "financial_source_url": metric.get("source_url"),
     }
 
 
@@ -591,6 +591,12 @@ def main():
                 print(f"  進捗: {done}/{len(all_tickers)}")
 
     print(f"取得成功: {len(ticker_data)}/{len(all_tickers)}")
+    minimum_success = max(1, len(all_tickers) // 2)
+    if len(ticker_data) < minimum_success:
+        raise RuntimeError(
+            "市場データの取得成功数が50%未満のため、既存JSONの上書きを中止します: "
+            f"{len(ticker_data)}/{len(all_tickers)}"
+        )
 
     output = {}
     financial_metrics = load_financial_metrics()
