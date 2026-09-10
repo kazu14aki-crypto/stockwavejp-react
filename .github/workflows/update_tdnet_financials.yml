@@ -2,6 +2,15 @@ name: Update TDnet Financial Metrics
 
 on:
   workflow_dispatch:
+    inputs:
+      codes:
+        description: '検証・限定更新用の4桁銘柄コード（空白区切り、空なら全銘柄）'
+        required: false
+        default: ''
+      limit:
+        description: '検証用の最大件数（空なら制限なし）'
+        required: false
+        default: ''
   schedule:
     # 決算集中期（1・4・7・10月）は平日18:20 JST。
     - cron: '20 9 * 1,4,7,10 1-5'
@@ -23,7 +32,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
       - name: Extract latest TDnet XBRL metrics
-        run: python scripts/update_tdnet_financial_metrics.py
+        env:
+          CODES: ${{ github.event.inputs.codes || '' }}
+          LIMIT: ${{ github.event.inputs.limit || '' }}
+        run: |
+          args=()
+          if [ -n "$CODES" ]; then read -ra code_list <<< "$CODES"; args+=(--codes "${code_list[@]}"); fi
+          if [ -n "$LIMIT" ]; then args+=(--limit "$LIMIT"); fi
+          python scripts/update_tdnet_financial_metrics.py "${args[@]}"
       - name: Commit data when changed
         run: |
           if git diff --quiet frontend/public/data/financial_metrics.json; then
