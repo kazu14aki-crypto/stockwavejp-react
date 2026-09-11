@@ -76,11 +76,14 @@ jobs:
           print(f"documents={index['document_count']} securities={index['security_count']}")
           PY
 
+      - name: Build compact FCF metrics for StocksSearch
+        run: python scripts/build_edinet_fcf_metrics.py
+
       - name: Commit saved data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/data/edinet_financial_facts/
+          git add frontend/public/data/edinet_financial_facts/ frontend/public/data/edinet_fcf_metrics.json
           if git diff --staged --quiet; then
             echo "No changes"
           else
