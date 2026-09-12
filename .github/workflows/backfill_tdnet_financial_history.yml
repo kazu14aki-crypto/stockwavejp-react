@@ -1,0 +1,57 @@
+name: Backfill TDnet Financial History
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: '取得開始日（YYYY-MM-DD）'
+        required: true
+        default: '2024-09-11'
+      end:
+        description: '取得終了日（YYYY-MM-DD）'
+        required: true
+        default: '2026-09-11'
+      codes:
+        description: '検証用4桁銘柄コード（空白区切り、空なら採用全銘柄）'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Fetch and archive TDnet earnings XBRL
+        env:
+          START: ${{ github.event.inputs.start }}
+          END: ${{ github.event.inputs.end }}
+          CODES: ${{ github.event.inputs.codes || '' }}
+        run: |
+          args=(--start "$START" --end "$END" --workers 6)
+          if [ -n "$CODES" ]; then
+            read -ra code_list <<< "$CODES"
+            args+=(--codes "${code_list[@]}")
+          else
+            args+=(--prune)
+          fi
+          python scripts/fetch_tdnet_financial_history.py "${args[@]}"
+      - name: Validate archive
+        run: python scripts/validate_tdnet_financial_history.py
+      - name: Commit data when changed
+        run: |
+          if git diff --quiet frontend/public/data/tdnet_financial_history; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/tdnet_financial_history
+          git commit -m "data: archive TDnet financial history"
+          git pull --rebase origin main
+          git push
