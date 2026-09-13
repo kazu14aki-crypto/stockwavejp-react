@@ -1,7 +1,52 @@
 {
-  "updated_at": "2026/09/07",
-  "count": 1777,
+  "updated_at": "2026/09/12",
+  "count": 1780,
   "items": [
+    {
+      "secCode": "8383",
+      "issuerName": "株式会社　鳥取銀行",
+      "latestDate": "2026-09-11",
+      "holderCount": 10,
+      "topHolder": "鳥取銀行従業員持株会",
+      "topHolderCategory": "employee",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "7196",
+      "issuerName": "株式会社Ｃａｓａ",
+      "latestDate": "2026-09-10",
+      "holderCount": 10,
+      "topHolder": "リコーリース株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 11.57
+    },
+    {
+      "secCode": "7509",
+      "issuerName": "アイエーグループ株式会社",
+      "latestDate": "2026-09-10",
+      "holderCount": 10,
+      "topHolder": "有限会社草創",
+      "topHolderCategory": "corporate",
+      "individualTotal": 17.8
+    },
+    {
+      "secCode": "1764",
+      "issuerName": "工藤建設株式会社",
+      "latestDate": "2026-09-09",
+      "holderCount": 10,
+      "topHolder": "株式会社トップ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 9.38
+    },
+    {
+      "secCode": "9267",
+      "issuerName": "Ｇｅｎｋｙ　ＤｒｕｇＳｔｏｒｅｓ株式会社",
+      "latestDate": "2026-09-09",
+      "holderCount": 10,
+      "topHolder": "フジナガインターナショナルキャピタルズ有限会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 2.97
+    },
     {
       "secCode": "278A",
       "issuerName": "Ｔｅｒｒａ　Ｄｒｏｎｅ株式会社",
@@ -12810,15 +12855,6 @@
       "individualTotal": 4.08
     },
     {
-      "secCode": "7509",
-      "issuerName": "アイエーグループ株式会社",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "有限会社草創",
-      "topHolderCategory": "corporate",
-      "individualTotal": 17.8
-    },
-    {
       "secCode": "1961",
       "issuerName": "三機工業株式会社",
       "latestDate": "2026-06-23",
@@ -14581,15 +14617,6 @@
       "topHolder": "有限会社清林溪声会",
       "topHolderCategory": "corporate",
       "individualTotal": 10.2
-    },
-    {
-      "secCode": "8383",
-      "issuerName": "株式会社　鳥取銀行",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "鳥取銀行従業員持株会",
-      "topHolderCategory": "employee",
-      "individualTotal": 0
     },
     {
       "secCode": "6869",

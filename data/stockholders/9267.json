@@ -1,0 +1,222 @@
+{
+  "secCode": "9267",
+  "issuerName": "Ｇｅｎｋｙ　ＤｒｕｇＳｔｏｒｅｓ株式会社",
+  "updated_at": "2026/09/12 14:59 JST",
+  "latestDate": "2026-09-09",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "フジナガインターナショナルキャピタルズ有限会社",
+      "shares": 11587600,
+      "ratio": 37.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2538300,
+      "ratio": 8.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 1740860,
+      "ratio": 5.71,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1439200,
+      "ratio": 4.72,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社エル・ローズ",
+      "shares": 1400000,
+      "ratio": 4.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＣＥＰ　ＬＵＸ－ＯＲＢＩＳ　ＳＩＣＡＶ（常任代理人シティバンク、エヌ・エイ東京支店）",
+      "shares": 963182,
+      "ratio": 3.16,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "藤永賢一",
+      "shares": 489824,
+      "ratio": 1.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "藤永ひとみ",
+      "shares": 416300,
+      "ratio": 1.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ゲンキー従業員持株会",
+      "shares": 386572,
+      "ratio": 1.27,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＴＲＵＳＴ　ＥＭＰＬＯＹＥＥ　ＢＥＮＥＦＩＴ　ＰＬＡＮＳ　ＬＯＷ　ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＰＯＯＬ（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 357500,
+      "ratio": 1.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.57,
+      "trust": 13.04,
+      "financial": 6.88,
+      "other": 3.16,
+      "individual": 2.97,
+      "employee": 1.27
+    },
+    "individual_total": 2.97,
+    "top10_total": 69.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-09",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第9期(2025/06/21－2026/06/20)",
+      "docID": "S100Z0OS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "フジナガインターナショナルキャピタルズ有限会社",
+          "shares": 11587600,
+          "ratio": 37.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2538300,
+          "ratio": 8.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＬＯＷ－ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 1740860,
+          "ratio": 5.71,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1439200,
+          "ratio": 4.72,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社エル・ローズ",
+          "shares": 1400000,
+          "ratio": 4.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＣＥＰ　ＬＵＸ－ＯＲＢＩＳ　ＳＩＣＡＶ（常任代理人シティバンク、エヌ・エイ東京支店）",
+          "shares": 963182,
+          "ratio": 3.16,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "藤永賢一",
+          "shares": 489824,
+          "ratio": 1.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "藤永ひとみ",
+          "shares": 416300,
+          "ratio": 1.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ゲンキー従業員持株会",
+          "shares": 386572,
+          "ratio": 1.27,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＢＢＨ　ＦＯＲ　ＦＩＤＥＬＩＴＹ　ＴＲＵＳＴ　ＥＭＰＬＯＹＥＥ　ＢＥＮＥＦＩＴ　ＰＬＡＮＳ　ＬＯＷ　ＰＲＩＣＥＤ　ＳＴＯＣＫ　ＰＯＯＬ（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 357500,
+          "ratio": 1.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.57,
+          "trust": 13.04,
+          "financial": 6.88,
+          "other": 3.16,
+          "individual": 2.97,
+          "employee": 1.27
+        },
+        "individual_total": 2.97,
+        "top10_total": 69.89
+      }
+    }
+  ]
+}
