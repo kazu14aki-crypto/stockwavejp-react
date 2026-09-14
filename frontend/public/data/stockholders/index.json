@@ -1,7 +1,34 @@
 {
-  "updated_at": "2026/09/12",
-  "count": 1780,
+  "updated_at": "2026/09/14",
+  "count": 1782,
   "items": [
+    {
+      "secCode": "6497",
+      "issuerName": "株式会社ハマイ",
+      "latestDate": "2026-09-14",
+      "holderCount": 10,
+      "topHolder": "ミスヂ持株会",
+      "topHolderCategory": "employee",
+      "individualTotal": 13.02
+    },
+    {
+      "secCode": "9942",
+      "issuerName": "株式会社ジョイフル",
+      "latestDate": "2026-09-14",
+      "holderCount": 10,
+      "topHolder": "ジョイ開発有限会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 3.4
+    },
+    {
+      "secCode": "9517",
+      "issuerName": "イーレックス株式会社",
+      "latestDate": "2026-09-14",
+      "holderCount": 10,
+      "topHolder": "UH Partners ３投資事業有限責任組合",
+      "topHolderCategory": "other",
+      "individualTotal": 0
+    },
     {
       "secCode": "8383",
       "issuerName": "株式会社　鳥取銀行",
@@ -73,15 +100,6 @@
       "topHolder": "株式会社南悠商社",
       "topHolderCategory": "corporate",
       "individualTotal": 11.18
-    },
-    {
-      "secCode": "9517",
-      "issuerName": "イーレックス株式会社",
-      "latestDate": "2026-09-04",
-      "holderCount": 10,
-      "topHolder": "UH Partners ３投資事業有限責任組合",
-      "topHolderCategory": "other",
-      "individualTotal": 0
     },
     {
       "secCode": "9816",
