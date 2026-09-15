@@ -1,21 +1,21 @@
 {
- "updated_at": "2026-09-08",
+ "updated_at": "2026-09-15",
  "investors": [
   {
    "key": "野村證券",
    "positions": 113
   },
   {
+   "key": "光通信",
+   "positions": 61
+  },
+  {
    "key": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
-   "positions": 56
+   "positions": 57
   },
   {
    "key": "ＦＭＲ ＬＬＣ",
-   "positions": 56
-  },
-  {
-   "key": "光通信",
-   "positions": 52
+   "positions": 57
   },
   {
    "key": "みずほ銀行",
@@ -66,16 +66,16 @@
    "positions": 12
   },
   {
-   "key": "アセットマネジメントＯｎｅ",
-   "positions": 10
-  },
-  {
    "key": "モルガン・スタンレーＭＵＦＧ証券",
    "positions": 10
   },
   {
    "key": "シルチェスター・インターナショナル・インベスターズ・エルエルピー",
-   "positions": 9
+   "positions": 10
+  },
+  {
+   "key": "アセットマネジメントＯｎｅ",
+   "positions": 10
   },
   {
    "key": "ＪＰモルガン・アセット・マネジメント",
@@ -96,6 +96,10 @@
   {
    "key": "みずほ信託銀行",
    "positions": 7
+  },
+  {
+   "key": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
+   "positions": 6
   },
   {
    "key": "楽天証券",
@@ -126,15 +130,15 @@
    "positions": 5
   },
   {
+   "key": "ヴァレックス・パートナーズ",
+   "positions": 5
+  },
+  {
    "key": "Ｅｖｏ Ｆｕｎｄ",
    "positions": 5
   },
   {
    "key": "ＤＯＥ５パーセント",
-   "positions": 5
-  },
-  {
-   "key": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
    "positions": 5
   },
   {
@@ -150,14 +154,6 @@
    "positions": 5
   },
   {
-   "key": "りそな銀行",
-   "positions": 4
-  },
-  {
-   "key": "ＣＡＮＴＯＲ ＦＩＴＺＧＥＲＡＬＤ ＥＵＲＯＰＥ",
-   "positions": 4
-  },
-  {
    "key": "ハイツ・キャピタル・マネジメント・インク",
    "positions": 4
   },
@@ -166,7 +162,11 @@
    "positions": 4
   },
   {
-   "key": "ヴァレックス・パートナーズ",
+   "key": "りそな銀行",
+   "positions": 4
+  },
+  {
+   "key": "ＣＡＮＴＯＲ ＦＩＴＺＧＥＲＡＬＤ ＥＵＲＯＰＥ",
    "positions": 4
   },
   {
@@ -202,6 +202,10 @@
    "positions": 4
   },
   {
+   "key": "グロース・キャピタル",
+   "positions": 3
+  },
+  {
    "key": "伊藤忠商事",
    "positions": 3
   },
@@ -227,10 +231,6 @@
   },
   {
    "key": "日本アジア投資",
-   "positions": 3
-  },
-  {
-   "key": "グロース・キャピタル",
    "positions": 3
   },
   {
@@ -326,6 +326,22 @@
    "positions": 3
   },
   {
+   "key": "エンデバー・ユナイテッド",
+   "positions": 2
+  },
+  {
+   "key": "ブランデス・インベストメント・パートナーズ・エル・ピー",
+   "positions": 2
+  },
+  {
+   "key": "ＧＭＯインターネットグループ",
+   "positions": 2
+  },
+  {
+   "key": "スプラウスグローブインベストメントマネジメントリミテッド",
+   "positions": 2
+  },
+  {
    "key": "オリックス",
    "positions": 2
   },
@@ -346,14 +362,6 @@
    "positions": 2
   },
   {
-   "key": "エンデバー・ユナイテッド",
-   "positions": 2
-  },
-  {
-   "key": "ＧＭＯインターネットグループ",
-   "positions": 2
-  },
-  {
    "key": "エスクリプトエナジー",
    "positions": 2
   },
@@ -367,10 +375,6 @@
   },
   {
    "key": "西松屋チェーン",
-   "positions": 2
-  },
-  {
-   "key": "ブランデス・インベストメント・パートナーズ・エル・ピー",
    "positions": 2
   },
   {
@@ -522,6 +526,134 @@
    "positions": 2
   },
   {
+   "key": "後藤 清孝",
+   "positions": 1
+  },
+  {
+   "key": "合同会社みやびマネージメント",
+   "positions": 1
+  },
+  {
+   "key": "ジャパン・アクティベーション・キャピタル",
+   "positions": 1
+  },
+  {
+   "key": "梅野 久美恵",
+   "positions": 1
+  },
+  {
+   "key": "合同会社みやしろ",
+   "positions": 1
+  },
+  {
+   "key": "大星ビル管理",
+   "positions": 1
+  },
+  {
+   "key": "ＫＷＯＮ ＫＹＯＵＮＧＨＯＯＮ",
+   "positions": 1
+  },
+  {
+   "key": "シェアレコ",
+   "positions": 1
+  },
+  {
+   "key": "藤森 直治",
+   "positions": 1
+  },
+  {
+   "key": "三菱商事",
+   "positions": 1
+  },
+  {
+   "key": "デジタルガレージ",
+   "positions": 1
+  },
+  {
+   "key": "西華産業",
+   "positions": 1
+  },
+  {
+   "key": "東芝",
+   "positions": 1
+  },
+  {
+   "key": "若山 陽一",
+   "positions": 1
+  },
+  {
+   "key": "ニッスイ",
+   "positions": 1
+  },
+  {
+   "key": "ＱＵＥＴＴＡ合同会社",
+   "positions": 1
+  },
+  {
+   "key": "ワイエムシィ",
+   "positions": 1
+  },
+  {
+   "key": "東海東京証券",
+   "positions": 1
+  },
+  {
+   "key": "Ａｂａｌａｎｃｅ",
+   "positions": 1
+  },
+  {
+   "key": "三原色",
+   "positions": 1
+  },
+  {
+   "key": "桃の木",
+   "positions": 1
+  },
+  {
+   "key": "中村 祐輔",
+   "positions": 1
+  },
+  {
+   "key": "ＵＬＴＩＭＡＴＥ ＣＬＡＳＳＩＣ ＩＮＶＥＳＴＭＥＮＴ ＬＬＣ",
+   "positions": 1
+  },
+  {
+   "key": "山本裕治",
+   "positions": 1
+  },
+  {
+   "key": "Ａｐｒｉｃｕｓ Ｐａｒｔｎｅｒｓ合同会社",
+   "positions": 1
+  },
+  {
+   "key": "ＮＴ",
+   "positions": 1
+  },
+  {
+   "key": "日産東京販売ホールディングス",
+   "positions": 1
+  },
+  {
+   "key": "有限会社井内盛英堂",
+   "positions": 1
+  },
+  {
+   "key": "池浦 捷行",
+   "positions": 1
+  },
+  {
+   "key": "京浜急行電鉄",
+   "positions": 1
+  },
+  {
+   "key": "三木 富士彦",
+   "positions": 1
+  },
+  {
+   "key": "フューチャーエステート",
+   "positions": 1
+  },
+  {
    "key": "サンワ電化阿久比",
    "positions": 1
   },
@@ -542,14 +674,6 @@
    "positions": 1
   },
   {
-   "key": "ＫＷＯＮ ＫＹＯＵＮＧＨＯＯＮ",
-   "positions": 1
-  },
-  {
-   "key": "後藤 清孝",
-   "positions": 1
-  },
-  {
    "key": "久保 哲夫",
    "positions": 1
   },
@@ -567,10 +691,6 @@
   },
   {
    "key": "フィデリティ・マネジメント・アンド・リサーチ・ジャパン",
-   "positions": 1
-  },
-  {
-   "key": "シェアレコ",
    "positions": 1
   },
   {
@@ -678,10 +798,6 @@
    "positions": 1
   },
   {
-   "key": "ＵＬＴＩＭＡＴＥ ＣＬＡＳＳＩＣ ＩＮＶＥＳＴＭＥＮＴ ＬＬＣ",
-   "positions": 1
-  },
-  {
    "key": "ＳＴＭ ＨＥＲＩＴＡＧＥ ＰＴＥ． ＬＴＤ．",
    "positions": 1
   },
@@ -699,10 +815,6 @@
   },
   {
    "key": "新井 隆二",
-   "positions": 1
-  },
-  {
-   "key": "東海東京証券",
    "positions": 1
   },
   {
@@ -762,10 +874,6 @@
    "positions": 1
   },
   {
-   "key": "若山 陽一",
-   "positions": 1
-  },
-  {
    "key": "タマス",
    "positions": 1
   },
@@ -798,10 +906,6 @@
    "positions": 1
   },
   {
-   "key": "デジタルガレージ",
-   "positions": 1
-  },
-  {
    "key": "峯村 竜太",
    "positions": 1
   },
@@ -826,14 +930,6 @@
    "positions": 1
   },
   {
-   "key": "西華産業",
-   "positions": 1
-  },
-  {
-   "key": "Ａｐｒｉｃｕｓ Ｐａｒｔｎｅｒｓ合同会社",
-   "positions": 1
-  },
-  {
    "key": "楢﨑 十紀",
    "positions": 1
   },
@@ -855,10 +951,6 @@
   },
   {
    "key": "近藤 健介",
-   "positions": 1
-  },
-  {
-   "key": "有限会社井内盛英堂",
    "positions": 1
   },
   {
@@ -974,10 +1066,6 @@
    "positions": 1
   },
   {
-   "key": "三木 富士彦",
-   "positions": 1
-  },
-  {
    "key": "ディメンショナル",
    "positions": 1
   },
@@ -1046,10 +1134,6 @@
    "positions": 1
   },
   {
-   "key": "三菱商事",
-   "positions": 1
-  },
-  {
    "key": "五味 大輔",
    "positions": 1
   },
@@ -1067,10 +1151,6 @@
   },
   {
    "key": "Ｓａｎｄ Ｇｒｏｖｅ Ｃａｐｉｔａｌ Ｍａｎａｇｅｍｅｎｔ ＬＬＰ",
-   "positions": 1
-  },
-  {
-   "key": "山本裕治",
    "positions": 1
   },
   {
@@ -1118,10 +1198,6 @@
    "positions": 1
   },
   {
-   "key": "スプラウスグローブインベストメントマネジメントリミテッド",
-   "positions": 1
-  },
-  {
    "key": "木村 勇也",
    "positions": 1
   },
@@ -1143,10 +1219,6 @@
   },
   {
    "key": "大西 俊輔",
-   "positions": 1
-  },
-  {
-   "key": "東芝",
    "positions": 1
   },
   {
@@ -1498,10 +1570,6 @@
    "positions": 1
   },
   {
-   "key": "三原色",
-   "positions": 1
-  },
-  {
    "key": "シグマクシス・ホールディングス",
    "positions": 1
   },
@@ -1842,10 +1910,6 @@
    "positions": 1
   },
   {
-   "key": "藤森 直治",
-   "positions": 1
-  },
-  {
    "key": "ソフトバンク",
    "positions": 1
   },
@@ -1987,10 +2051,6 @@
   },
   {
    "key": "いなよしキャピタルパートナーズ",
-   "positions": 1
-  },
-  {
-   "key": "合同会社みやしろ",
    "positions": 1
   },
   {
@@ -2179,10 +2239,6 @@
   },
   {
    "key": "洋大",
-   "positions": 1
-  },
-  {
-   "key": "ニッスイ",
    "positions": 1
   },
   {
@@ -2762,10 +2818,6 @@
    "positions": 1
   },
   {
-   "key": "ワイエムシィ",
-   "positions": 1
-  },
-  {
    "key": "グリーンコア",
    "positions": 1
   },
@@ -2864,8 +2916,323 @@
  ],
  "issuers": [
   {
+   "secCode": "4849",
+   "name": "カルナバイオサイエンス株式会社",
+   "holders": 17
+  },
+  {
+   "secCode": "548A",
+   "name": "株式会社システムエグゼ",
+   "holders": 1
+  },
+  {
+   "secCode": "9254",
+   "name": "株式会社ラバブルマーケティンググループ",
+   "holders": 1
+  },
+  {
+   "secCode": "5726",
+   "name": "株式会社大阪チタニウムテクノロジーズ",
+   "holders": 3
+  },
+  {
+   "secCode": "6849",
+   "name": "日本光電工業株式会社",
+   "holders": 4
+  },
+  {
+   "secCode": "7604",
+   "name": "株式会社梅の花グループ",
+   "holders": 1
+  },
+  {
+   "secCode": "1736",
+   "name": "株式会社オーテック",
+   "holders": 1
+  },
+  {
+   "secCode": "1810",
+   "name": "松井建設株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "2814",
+   "name": "佐藤食品工業株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "5461",
+   "name": "中部鋼鈑株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "7634",
+   "name": "株式会社星医療酸器",
+   "holders": 1
+  },
+  {
+   "secCode": "9408",
+   "name": "株式会社ＢＳＮメディアホールディングス",
+   "holders": 1
+  },
+  {
+   "secCode": "9537",
+   "name": "北陸瓦斯株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "5258",
+   "name": "株式会社トランザクション",
+   "holders": 6
+  },
+  {
+   "secCode": "1721",
+   "name": "コムシスホールディングス株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "6882",
+   "name": "株式会社三社電機製作所",
+   "holders": 1
+  },
+  {
+   "secCode": "7874",
+   "name": "株式会社テクノフレックス",
+   "holders": 12
+  },
+  {
+   "secCode": "6566",
+   "name": "株式会社要興業",
+   "holders": 1
+  },
+  {
+   "secCode": "3185",
+   "name": "夢展望株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "6706",
+   "name": "電気興業株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "2413",
+   "name": "エムスリー株式会社",
+   "holders": 4
+  },
+  {
+   "secCode": "7771",
+   "name": "日本精密株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "8135",
+   "name": "株式会社エアークローゼット",
+   "holders": 4
+  },
+  {
+   "secCode": "7794",
+   "name": "株式会社イーディーピー",
+   "holders": 2
+  },
+  {
+   "secCode": "2001",
+   "name": "株式会社ニップン",
+   "holders": 1
+  },
+  {
+   "secCode": "4222",
+   "name": "児玉化学工業株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "8058",
+   "name": "アルビス株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "4350",
+   "name": "株式会社メディカルシステムネットワーク",
+   "holders": 1
+  },
+  {
+   "secCode": "4978",
+   "name": "株式会社リプロセル",
+   "holders": 2
+  },
+  {
+   "secCode": "4819",
+   "name": "株式会社デジタルガレージ",
+   "holders": 2
+  },
+  {
+   "secCode": "8070",
+   "name": "東京産業株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "285A",
+   "name": "キオクシアホールディングス株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "3034",
+   "name": "クオールホールディングス株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "2146",
+   "name": "ＵＴグループ株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "7538",
+   "name": "株式会社大水",
+   "holders": 3
+  },
+  {
+   "secCode": "2656",
+   "name": "株式会社ベクターホールディングス",
+   "holders": 3
+  },
+  {
    "secCode": "1882",
    "name": "東亜道路工業株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "4406",
+   "name": "新日本理化株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "6495",
+   "name": "株式会社宮入バルブ製作所",
+   "holders": 1
+  },
+  {
+   "secCode": "6334",
+   "name": "明治機械株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "3544",
+   "name": "サツドラホールディングス株式会社",
+   "holders": 4
+  },
+  {
+   "secCode": "7462",
+   "name": "株式会社ＣＡＰＩＴＡ",
+   "holders": 1
+  },
+  {
+   "secCode": "6349",
+   "name": "株式会社小森コーポレーション",
+   "holders": 1
+  },
+  {
+   "secCode": "7284",
+   "name": "盟和産業株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "4564",
+   "name": "オンコセラピー・サイエンス株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "7504",
+   "name": "株式会社高速",
+   "holders": 3
+  },
+  {
+   "secCode": "7749",
+   "name": "メディキット株式会社",
+   "holders": 4
+  },
+  {
+   "secCode": "205A",
+   "name": "株式会社ロゴスホールディングス",
+   "holders": 2
+  },
+  {
+   "secCode": "3692",
+   "name": "株式会社ＦＦＲＩセキュリティ",
+   "holders": 2
+  },
+  {
+   "secCode": "3306",
+   "name": "日本製麻株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "9627",
+   "name": "株式会社アインホールディングス",
+   "holders": 3
+  },
+  {
+   "secCode": "7426",
+   "name": "株式会社山大",
+   "holders": 4
+  },
+  {
+   "secCode": "5707",
+   "name": "東邦亜鉛株式会社",
+   "holders": 5
+  },
+  {
+   "secCode": "6574",
+   "name": "アクセルマーク株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "8117",
+   "name": "中央自動車工業株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "9831",
+   "name": "株式会社ヤマダホールディングス",
+   "holders": 1
+  },
+  {
+   "secCode": "7476",
+   "name": "アズワン株式会社",
+   "holders": 3
+  },
+  {
+   "secCode": "6218",
+   "name": "エンシュウ株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "9987",
+   "name": "株式会社スズケン",
+   "holders": 1
+  },
+  {
+   "secCode": "4888",
+   "name": "ステラファーマ株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "9706",
+   "name": "日本空港ビルデング株式会社",
+   "holders": 2
+  },
+  {
+   "secCode": "1802",
+   "name": "株式会社大林組",
+   "holders": 2
+  },
+  {
+   "secCode": "3896",
+   "name": "阿波製紙株式会社",
+   "holders": 1
+  },
+  {
+   "secCode": "7525",
+   "name": "株式会社アプリックス",
    "holders": 2
   },
   {
@@ -2979,11 +3346,6 @@
    "holders": 4
   },
   {
-   "secCode": "7771",
-   "name": "日本精密株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "1808",
    "name": "株式会社長谷工コーポレーション",
    "holders": 2
@@ -2992,16 +3354,6 @@
    "secCode": "6699",
    "name": "ダイヤモンドエレクトリックホールディングス株式会社",
    "holders": 5
-  },
-  {
-   "secCode": "4978",
-   "name": "株式会社リプロセル",
-   "holders": 2
-  },
-  {
-   "secCode": "548A",
-   "name": "株式会社システムエグゼ",
-   "holders": 1
   },
   {
    "secCode": "7709",
@@ -3134,16 +3486,6 @@
    "holders": 5
   },
   {
-   "secCode": "4849",
-   "name": "カルナバイオサイエンス株式会社",
-   "holders": 17
-  },
-  {
-   "secCode": "2656",
-   "name": "株式会社ベクターホールディングス",
-   "holders": 2
-  },
-  {
    "secCode": "3433",
    "name": "トーカロ株式会社",
    "holders": 2
@@ -3194,11 +3536,6 @@
    "holders": 5
   },
   {
-   "secCode": "8135",
-   "name": "株式会社エアークローゼット",
-   "holders": 4
-  },
-  {
    "secCode": "4960",
    "name": "ケミプロ化成株式会社",
    "holders": 3
@@ -3239,11 +3576,6 @@
    "holders": 1
   },
   {
-   "secCode": "4888",
-   "name": "ステラファーマ株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "3856",
    "name": "Ａｂａｌａｎｃｅ株式会社",
    "holders": 2
@@ -3267,11 +3599,6 @@
    "secCode": "5941",
    "name": "株式会社中西製作所",
    "holders": 1
-  },
-  {
-   "secCode": "7794",
-   "name": "株式会社イーディーピー",
-   "holders": 2
   },
   {
    "secCode": "9507",
@@ -3389,16 +3716,6 @@
    "holders": 3
   },
   {
-   "secCode": "4222",
-   "name": "児玉化学工業株式会社",
-   "holders": 1
-  },
-  {
-   "secCode": "3692",
-   "name": "株式会社ＦＦＲＩセキュリティ",
-   "holders": 2
-  },
-  {
    "secCode": "9854",
    "name": "愛眼株式会社",
    "holders": 1
@@ -3469,11 +3786,6 @@
    "holders": 4
   },
   {
-   "secCode": "3306",
-   "name": "日本製麻株式会社",
-   "holders": 2
-  },
-  {
    "secCode": "3851",
    "name": "株式会社日本一ソフトウェア",
    "holders": 1
@@ -3529,29 +3841,9 @@
    "holders": 2
   },
   {
-   "secCode": "5726",
-   "name": "株式会社大阪チタニウムテクノロジーズ",
-   "holders": 3
-  },
-  {
-   "secCode": "6495",
-   "name": "株式会社宮入バルブ製作所",
-   "holders": 1
-  },
-  {
    "secCode": "5571",
    "name": "エキサイトホールディングス株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "3034",
-   "name": "クオールホールディングス株式会社",
-   "holders": 3
-  },
-  {
-   "secCode": "7874",
-   "name": "株式会社テクノフレックス",
-   "holders": 12
   },
   {
    "secCode": "2462",
@@ -3569,23 +3861,8 @@
    "holders": 2
   },
   {
-   "secCode": "4819",
-   "name": "株式会社カカクコム",
-   "holders": 2
-  },
-  {
-   "secCode": "5258",
-   "name": "株式会社トランザクション",
-   "holders": 6
-  },
-  {
    "secCode": "5982",
    "name": "日本調理機株式会社",
-   "holders": 1
-  },
-  {
-   "secCode": "7525",
-   "name": "株式会社アプリックス",
    "holders": 1
   },
   {
@@ -3616,11 +3893,6 @@
   {
    "secCode": "8742",
    "name": "株式会社小林洋行",
-   "holders": 1
-  },
-  {
-   "secCode": "2146",
-   "name": "ＵＴグループ株式会社",
    "holders": 1
   },
   {
@@ -3674,11 +3946,6 @@
    "holders": 1
   },
   {
-   "secCode": "7426",
-   "name": "株式会社山大",
-   "holders": 4
-  },
-  {
    "secCode": "7460",
    "name": "（株）ヤギ",
    "holders": 3
@@ -3704,11 +3971,6 @@
    "holders": 1
   },
   {
-   "secCode": "8070",
-   "name": "東京産業株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "6342",
    "name": "株式会社太平製作所",
    "holders": 1
@@ -3717,11 +3979,6 @@
    "secCode": "6788",
    "name": "株式会社日本トリム",
    "holders": 1
-  },
-  {
-   "secCode": "5707",
-   "name": "東邦亜鉛株式会社",
-   "holders": 5
   },
   {
    "secCode": "9644",
@@ -3757,11 +4014,6 @@
    "secCode": "4694",
    "name": "株式会社ビー・エム・エル",
    "holders": 1
-  },
-  {
-   "secCode": "7476",
-   "name": "アズワン株式会社",
-   "holders": 3
   },
   {
    "secCode": "3993",
@@ -3804,11 +4056,6 @@
    "holders": 1
   },
   {
-   "secCode": "1721",
-   "name": "コムシスホールディングス株式会社",
-   "holders": 3
-  },
-  {
    "secCode": "3388",
    "name": "明治電機工業株式会社",
    "holders": 1
@@ -3817,11 +4064,6 @@
    "secCode": "7444",
    "name": "ハリマ共和物産株式会社",
    "holders": 3
-  },
-  {
-   "secCode": "6349",
-   "name": "株式会社小森コーポレーション",
-   "holders": 1
   },
   {
    "secCode": "6822",
@@ -3894,8 +4136,8 @@
    "holders": 1
   },
   {
-   "secCode": "4350",
-   "name": "株式会社メディカルシステムネットワーク",
+   "secCode": "6497",
+   "name": "株式会社ハマイ",
    "holders": 1
   },
   {
@@ -4069,11 +4311,6 @@
    "holders": 2
   },
   {
-   "secCode": "9831",
-   "name": "株式会社ヤマダホールディングス",
-   "holders": 1
-  },
-  {
    "secCode": "5983",
    "name": "イワブチ株式会社",
    "holders": 1
@@ -4107,11 +4344,6 @@
    "secCode": "6113",
    "name": "株式会社アマダ",
    "holders": 2
-  },
-  {
-   "secCode": "2413",
-   "name": "エムスリー株式会社",
-   "holders": 4
   },
   {
    "secCode": "8802",
@@ -4189,24 +4421,9 @@
    "holders": 2
   },
   {
-   "secCode": "3896",
-   "name": "阿波製紙株式会社",
-   "holders": 1
-  },
-  {
-   "secCode": "6574",
-   "name": "アクセルマーク株式会社",
-   "holders": 2
-  },
-  {
    "secCode": "9351",
    "name": "東洋埠頭株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "9627",
-   "name": "株式会社アインホールディングス",
-   "holders": 2
   },
   {
    "secCode": "9780",
@@ -4314,11 +4531,6 @@
    "holders": 1
   },
   {
-   "secCode": "8058",
-   "name": "TOYO TIRE株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "368A",
    "name": "株式会社北里コーポレーション",
    "holders": 3
@@ -4337,11 +4549,6 @@
    "secCode": "7368",
    "name": "表示灯株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "6706",
-   "name": "電気興業株式会社",
-   "holders": 2
   },
   {
    "secCode": "3926",
@@ -4389,11 +4596,6 @@
    "holders": 2
   },
   {
-   "secCode": "3544",
-   "name": "サツドラホールディングス株式会社",
-   "holders": 4
-  },
-  {
    "secCode": "7021",
    "name": "（株）ニッチツ",
    "holders": 1
@@ -4417,11 +4619,6 @@
    "secCode": "6557",
    "name": "ＡＩＡＩグループ株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "205A",
-   "name": "株式会社ロゴスホールディングス",
-   "holders": 2
   },
   {
    "secCode": "8783",
@@ -4452,11 +4649,6 @@
    "secCode": "4043",
    "name": "株式会社トクヤマ",
    "holders": 1
-  },
-  {
-   "secCode": "6849",
-   "name": "日本光電工業株式会社",
-   "holders": 3
   },
   {
    "secCode": "7042",
@@ -4502,11 +4694,6 @@
    "secCode": "195A",
    "name": "ＳＣＡＴ株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "285A",
-   "name": "キオクシアホールディングス株式会社",
-   "holders": 3
   },
   {
    "secCode": "2326",
@@ -4999,11 +5186,6 @@
    "holders": 1
   },
   {
-   "secCode": "2001",
-   "name": "株式会社ニップン",
-   "holders": 1
-  },
-  {
    "secCode": "2750",
    "name": "石光商事株式会社",
    "holders": 1
@@ -5042,11 +5224,6 @@
    "secCode": "4040",
    "name": "南海化学株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "8117",
-   "name": "中央自動車工業株式会社",
-   "holders": 2
   },
   {
    "secCode": "9843",
@@ -5097,11 +5274,6 @@
    "secCode": "9302",
    "name": "三井倉庫ホールディングス（株）",
    "holders": 1
-  },
-  {
-   "secCode": "7749",
-   "name": "メディキット株式会社",
-   "holders": 3
   },
   {
    "secCode": "3694",
@@ -5604,11 +5776,6 @@
    "holders": 2
   },
   {
-   "secCode": "1802",
-   "name": "株式会社大林組",
-   "holders": 2
-  },
-  {
    "secCode": "4064",
    "name": "日本カーバイド工業株式会社",
    "holders": 1
@@ -5834,11 +6001,6 @@
    "holders": 1
   },
   {
-   "secCode": "7504",
-   "name": "株式会社高速",
-   "holders": 2
-  },
-  {
    "secCode": "9687",
    "name": "株式会社ＫＳＫ",
    "holders": 3
@@ -5847,11 +6009,6 @@
    "secCode": "2153",
    "name": "Ｅ・Ｊホールディングス株式会社",
    "holders": 1
-  },
-  {
-   "secCode": "2814",
-   "name": "佐藤食品工業株式会社",
-   "holders": 2
   },
   {
    "secCode": "3360",
@@ -5881,6 +6038,11 @@
   {
    "secCode": "7508",
    "name": "株式会社Ｇ‐７ホールディングス",
+   "holders": 2
+  },
+  {
+   "secCode": "9267",
+   "name": "Ｇｅｎｋｙ　ＤｒｕｇＳｔｏｒｅｓ株式会社",
    "holders": 2
   },
   {
@@ -6034,11 +6196,6 @@
    "holders": 1
   },
   {
-   "secCode": "9706",
-   "name": "日本空港ビルデング株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "9265",
    "name": "ヤマシタヘルスケアホールディングス株式会社",
    "holders": 1
@@ -6119,11 +6276,6 @@
    "holders": 1
   },
   {
-   "secCode": "7284",
-   "name": "盟和産業株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "8107",
    "name": "株式会社キムラタン",
    "holders": 1
@@ -6159,11 +6311,6 @@
    "holders": 1
   },
   {
-   "secCode": "4564",
-   "name": "オンコセラピー・サイエンス株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "3934",
    "name": "（株）ベネフィットジャパン",
    "holders": 2
@@ -6192,11 +6339,6 @@
    "secCode": "4388",
    "name": "株式会社エーアイテイー",
    "holders": 2
-  },
-  {
-   "secCode": "6882",
-   "name": "株式会社三社電機製作所",
-   "holders": 1
   },
   {
    "secCode": "8935",
@@ -6282,11 +6424,6 @@
    "secCode": "9256",
    "name": "株式会社サクシード",
    "holders": 1
-  },
-  {
-   "secCode": "7538",
-   "name": "株式会社大水",
-   "holders": 3
   },
   {
    "secCode": "6197",
@@ -6529,11 +6666,6 @@
    "holders": 1
   },
   {
-   "secCode": "6334",
-   "name": "明治機械株式会社",
-   "holders": 1
-  },
-  {
    "secCode": "8803",
    "name": "平和不動産リート投資法人",
    "holders": 1
@@ -6671,11 +6803,6 @@
   {
    "secCode": "7777",
    "name": "株式会社スリー・ディー・マトリックス",
-   "holders": 2
-  },
-  {
-   "secCode": "9537",
-   "name": "北陸瓦斯株式会社",
    "holders": 2
   },
   {
@@ -7116,11 +7243,6 @@
   {
    "secCode": "2395",
    "name": "株式会社新日本科学",
-   "holders": 1
-  },
-  {
-   "secCode": "4406",
-   "name": "新日本理化株式会社",
    "holders": 1
   },
   {
