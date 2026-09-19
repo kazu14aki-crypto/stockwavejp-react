@@ -1,0 +1,218 @@
+{
+  "secCode": "6090",
+  "issuerName": "ヒューマン・メタボローム・テクノロジーズ株式会社",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-17",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "冨田　勝",
+      "shares": 390000,
+      "ratio": 7.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 219100,
+      "ratio": 4.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "エムスリー株式会社",
+      "shares": 217100,
+      "ratio": 4.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "曽我　朋義",
+      "shares": 208000,
+      "ratio": 3.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "第一生命保険株式会社",
+      "shares": 186100,
+      "ratio": 3.43,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "西岡　孝明",
+      "shares": 150000,
+      "ratio": 2.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社山形銀行",
+      "shares": 150000,
+      "ratio": 2.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社荘内銀行",
+      "shares": 150000,
+      "ratio": 2.77,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 139500,
+      "ratio": 2.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楢崎　勝己",
+      "shares": 100000,
+      "ratio": 1.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 15.66,
+      "securities": 4.04,
+      "corporate": 6.58,
+      "financial": 8.97
+    },
+    "individual_total": 15.66,
+    "top10_total": 35.25
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-17",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/07/01－2026/06/30)",
+      "docID": "S100Z2EI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "冨田　勝",
+          "shares": 390000,
+          "ratio": 7.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MSIP CLIENT SECURITIES\n（常任代理人　モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 219100,
+          "ratio": 4.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "エムスリー株式会社",
+          "shares": 217100,
+          "ratio": 4.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "曽我　朋義",
+          "shares": 208000,
+          "ratio": 3.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "第一生命保険株式会社",
+          "shares": 186100,
+          "ratio": 3.43,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "西岡　孝明",
+          "shares": 150000,
+          "ratio": 2.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社山形銀行",
+          "shares": 150000,
+          "ratio": 2.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社荘内銀行",
+          "shares": 150000,
+          "ratio": 2.77,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 139500,
+          "ratio": 2.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楢崎　勝己",
+          "shares": 100000,
+          "ratio": 1.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 15.66,
+          "securities": 4.04,
+          "corporate": 6.58,
+          "financial": 8.97
+        },
+        "individual_total": 15.66,
+        "top10_total": 35.25
+      }
+    }
+  ]
+}

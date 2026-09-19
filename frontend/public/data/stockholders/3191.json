@@ -1,0 +1,220 @@
+{
+  "secCode": "3191",
+  "issuerName": "株式会社ジョイフル本田",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-15",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "野村信託銀行株式会社（本田創業家信託口）",
+      "shares": 5800000,
+      "ratio": 9.57,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5375000,
+      "ratio": 8.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社C&I Holdings",
+      "shares": 2723000,
+      "ratio": 4.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "本田　理",
+      "shares": 1847000,
+      "ratio": 3.04,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "公益財団法人本田記念財団",
+      "shares": 1259000,
+      "ratio": 2.07,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社カストディ銀行（信託口）",
+      "shares": 1250000,
+      "ratio": 2.06,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "本田　勇",
+      "shares": 1074000,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "青木　真弓",
+      "shares": 935000,
+      "ratio": 1.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ジョイフル本田グループ従業員持株会",
+      "shares": 910000,
+      "ratio": 1.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行株式会社（信託口2052151）",
+      "shares": 800000,
+      "ratio": 1.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 21.82,
+      "corporate": 4.49,
+      "individual": 6.35,
+      "foundation": 2.07,
+      "employee": 1.5
+    },
+    "individual_total": 6.35,
+    "top10_total": 36.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-15",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第51期(2025/06/21－2026/06/20)",
+      "docID": "S100Z1T7",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "野村信託銀行株式会社（本田創業家信託口）",
+          "shares": 5800000,
+          "ratio": 9.57,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5375000,
+          "ratio": 8.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社C&I Holdings",
+          "shares": 2723000,
+          "ratio": 4.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "本田　理",
+          "shares": 1847000,
+          "ratio": 3.04,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "公益財団法人本田記念財団",
+          "shares": 1259000,
+          "ratio": 2.07,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社カストディ銀行（信託口）",
+          "shares": 1250000,
+          "ratio": 2.06,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "本田　勇",
+          "shares": 1074000,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "青木　真弓",
+          "shares": 935000,
+          "ratio": 1.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ジョイフル本田グループ従業員持株会",
+          "shares": 910000,
+          "ratio": 1.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村信託銀行株式会社（信託口2052151）",
+          "shares": 800000,
+          "ratio": 1.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 21.82,
+          "corporate": 4.49,
+          "individual": 6.35,
+          "foundation": 2.07,
+          "employee": 1.5
+        },
+        "individual_total": 6.35,
+        "top10_total": 36.23
+      }
+    }
+  ]
+}

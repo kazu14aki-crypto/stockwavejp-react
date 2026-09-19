@@ -1,0 +1,216 @@
+{
+  "secCode": "9159",
+  "issuerName": "株式会社Ｗ　ＴＯＫＹＯ",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "村上範義",
+      "shares": 750200,
+      "ratio": 28.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "SBIホールディングス株式会社",
+      "shares": 276200,
+      "ratio": 10.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社SBI証券",
+      "shares": 235147,
+      "ratio": 9.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社マイナビ",
+      "shares": 184000,
+      "ratio": 7.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松井秀紀",
+      "shares": 101000,
+      "ratio": 3.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "柴崎富士男",
+      "shares": 86800,
+      "ratio": 3.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ストームレーベルズ",
+      "shares": 81600,
+      "ratio": 3.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "寺岡聖剛",
+      "shares": 57800,
+      "ratio": 2.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社トランザクション",
+      "shares": 55500,
+      "ratio": 2.13,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "原谷隆史",
+      "shares": 44100,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 39.87,
+      "corporate": 22.9,
+      "securities": 9.02
+    },
+    "individual_total": 39.87,
+    "top10_total": 71.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/07/01－2026/06/30)",
+      "docID": "S100Z2G0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "村上範義",
+          "shares": 750200,
+          "ratio": 28.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "SBIホールディングス株式会社",
+          "shares": 276200,
+          "ratio": 10.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社SBI証券",
+          "shares": 235147,
+          "ratio": 9.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社マイナビ",
+          "shares": 184000,
+          "ratio": 7.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松井秀紀",
+          "shares": 101000,
+          "ratio": 3.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "柴崎富士男",
+          "shares": 86800,
+          "ratio": 3.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ストームレーベルズ",
+          "shares": 81600,
+          "ratio": 3.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "寺岡聖剛",
+          "shares": 57800,
+          "ratio": 2.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社トランザクション",
+          "shares": 55500,
+          "ratio": 2.13,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "原谷隆史",
+          "shares": 44100,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 39.87,
+          "corporate": 22.9,
+          "securities": 9.02
+        },
+        "individual_total": 39.87,
+        "top10_total": 71.79
+      }
+    }
+  ]
+}

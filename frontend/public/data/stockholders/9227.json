@@ -1,0 +1,216 @@
+{
+  "secCode": "9227",
+  "issuerName": "マイクロ波化学株式会社",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-17",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "吉野　巌",
+      "shares": 1259000,
+      "ratio": 7.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "塚原　保徳",
+      "shares": 1096000,
+      "ratio": 6.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井化学㈱",
+      "shares": 771000,
+      "ratio": 4.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "モルガン・スタンレーMUFG証券㈱",
+      "shares": 298000,
+      "ratio": 1.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "大和証券㈱",
+      "shares": 246000,
+      "ratio": 1.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "Mitsui Kinzoku－SBI Material\nInnovation Fund",
+      "shares": 206000,
+      "ratio": 1.3,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "千島土地㈱",
+      "shares": 199000,
+      "ratio": 1.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "富永　道男",
+      "shares": 117000,
+      "ratio": 0.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "下條　智也",
+      "shares": 100000,
+      "ratio": 0.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "佐伯　裕昭",
+      "shares": 98000,
+      "ratio": 0.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 22.9,
+      "securities": 3.4,
+      "other": 1.3
+    },
+    "individual_total": 22.9,
+    "top10_total": 27.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-17",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/04/01－2026/06/30)",
+      "docID": "S100Z32B",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "吉野　巌",
+          "shares": 1259000,
+          "ratio": 7.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "塚原　保徳",
+          "shares": 1096000,
+          "ratio": 6.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井化学㈱",
+          "shares": 771000,
+          "ratio": 4.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "モルガン・スタンレーMUFG証券㈱",
+          "shares": 298000,
+          "ratio": 1.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "大和証券㈱",
+          "shares": 246000,
+          "ratio": 1.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "Mitsui Kinzoku－SBI Material\nInnovation Fund",
+          "shares": 206000,
+          "ratio": 1.3,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "千島土地㈱",
+          "shares": 199000,
+          "ratio": 1.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "富永　道男",
+          "shares": 117000,
+          "ratio": 0.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "下條　智也",
+          "shares": 100000,
+          "ratio": 0.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "佐伯　裕昭",
+          "shares": 98000,
+          "ratio": 0.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 22.9,
+          "securities": 3.4,
+          "other": 1.3
+        },
+        "individual_total": 22.9,
+        "top10_total": 27.6
+      }
+    }
+  ]
+}

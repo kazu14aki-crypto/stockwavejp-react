@@ -1,0 +1,216 @@
+{
+  "secCode": "6548",
+  "issuerName": "株式会社旅工房",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社アドベンチャー",
+      "shares": 10477000,
+      "ratio": 53.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高山　泰仁",
+      "shares": 1410000,
+      "ratio": 7.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社証券ジャパン",
+      "shares": 246000,
+      "ratio": 1.24,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "楽天証券株式会社",
+      "shares": 201000,
+      "ratio": 1.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "松井証券株式会社",
+      "shares": 187000,
+      "ratio": 0.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "坂井　直樹",
+      "shares": 175000,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 125000,
+      "ratio": 0.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "杉山　昌樹",
+      "shares": 111000,
+      "ratio": 0.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "松本　典文",
+      "shares": 110000,
+      "ratio": 0.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "巻幡　俊",
+      "shares": 101000,
+      "ratio": 0.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 53.0,
+      "individual": 9.65,
+      "securities": 3.84
+    },
+    "individual_total": 9.65,
+    "top10_total": 66.49
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/07/01－2026/06/30)",
+      "docID": "S100Z35T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社アドベンチャー",
+          "shares": 10477000,
+          "ratio": 53.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高山　泰仁",
+          "shares": 1410000,
+          "ratio": 7.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社証券ジャパン",
+          "shares": 246000,
+          "ratio": 1.24,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "楽天証券株式会社",
+          "shares": 201000,
+          "ratio": 1.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "松井証券株式会社",
+          "shares": 187000,
+          "ratio": 0.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "坂井　直樹",
+          "shares": 175000,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 125000,
+          "ratio": 0.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "杉山　昌樹",
+          "shares": 111000,
+          "ratio": 0.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "松本　典文",
+          "shares": 110000,
+          "ratio": 0.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "巻幡　俊",
+          "shares": 101000,
+          "ratio": 0.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 53.0,
+          "individual": 9.65,
+          "securities": 3.84
+        },
+        "individual_total": 9.65,
+        "top10_total": 66.49
+      }
+    }
+  ]
+}

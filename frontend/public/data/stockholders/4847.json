@@ -1,0 +1,220 @@
+{
+  "secCode": "4847",
+  "issuerName": "株式会社インテリジェント　ウェイブ",
+  "updated_at": "2026/09/19 15:22 JST",
+  "latestDate": "2026-09-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大日本印刷㈱",
+      "shares": 13330700,
+      "ratio": 50.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "安　達　一　彦",
+      "shares": 2249900,
+      "ratio": 8.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "インテリジェントウェイブ従業員持株会",
+      "shares": 526600,
+      "ratio": 2.0,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "伊　集　院　敏",
+      "shares": 418100,
+      "ratio": 1.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "溝　田　久　子",
+      "shares": 314300,
+      "ratio": 1.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱日本カストディ銀行(信託口)",
+      "shares": 308200,
+      "ratio": 1.17,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券㈱共有口",
+      "shares": 268200,
+      "ratio": 1.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村證券㈱",
+      "shares": 224439,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "西　野　秀　樹",
+      "shares": 221900,
+      "ratio": 0.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱三菱ＵＦＪ銀行",
+      "shares": 200000,
+      "ratio": 0.76,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 63.77,
+      "employee": 2.0,
+      "trust": 1.17,
+      "securities": 1.02,
+      "financial": 0.76
+    },
+    "individual_total": 63.77,
+    "top10_total": 68.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/07/01－2026/06/30)",
+      "docID": "S100Z2KC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大日本印刷㈱",
+          "shares": 13330700,
+          "ratio": 50.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "安　達　一　彦",
+          "shares": 2249900,
+          "ratio": 8.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "インテリジェントウェイブ従業員持株会",
+          "shares": 526600,
+          "ratio": 2.0,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "伊　集　院　敏",
+          "shares": 418100,
+          "ratio": 1.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "溝　田　久　子",
+          "shares": 314300,
+          "ratio": 1.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱日本カストディ銀行(信託口)",
+          "shares": 308200,
+          "ratio": 1.17,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券㈱共有口",
+          "shares": 268200,
+          "ratio": 1.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村證券㈱",
+          "shares": 224439,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "西　野　秀　樹",
+          "shares": 221900,
+          "ratio": 0.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱三菱ＵＦＪ銀行",
+          "shares": 200000,
+          "ratio": 0.76,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 63.77,
+          "employee": 2.0,
+          "trust": 1.17,
+          "securities": 1.02,
+          "financial": 0.76
+        },
+        "individual_total": 63.77,
+        "top10_total": 68.72
+      }
+    }
+  ]
+}
