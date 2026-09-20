@@ -1,0 +1,220 @@
+{
+  "secCode": "2154",
+  "issuerName": "株式会社オープンアップグループ",
+  "updated_at": "2026/09/19 15:23 JST",
+  "latestDate": "2026-09-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 10560100,
+      "ratio": 12.4,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中山　隼雄",
+      "shares": 8378000,
+      "ratio": 9.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 7195805,
+      "ratio": 8.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社アミューズキャピタル",
+      "shares": 6240000,
+      "ratio": 7.3,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 4401600,
+      "ratio": 5.2,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 2694232,
+      "ratio": 3.2,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社アミューズキャピタルインベストメント",
+      "shares": 2380000,
+      "ratio": 2.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社志",
+      "shares": 1785256,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "HSCB HONG KONG-TREASURYSERVICES A/C ASIAN EQUITIES DERIVATIVES\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 1766342,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）\n（常任代理人　株式会社三菱UFJ銀行決済事業部）",
+      "shares": 1543053,
+      "ratio": 1.8,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.9,
+      "individual": 9.8,
+      "corporate": 12.2,
+      "foreign": 7.0,
+      "financial": 5.3
+    },
+    "individual_total": 9.8,
+    "top10_total": 55.2
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/07/01－2026/06/30)",
+      "docID": "S100Z35K",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 10560100,
+          "ratio": 12.4,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中山　隼雄",
+          "shares": 8378000,
+          "ratio": 9.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 7195805,
+          "ratio": 8.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社アミューズキャピタル",
+          "shares": 6240000,
+          "ratio": 7.3,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505301\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 4401600,
+          "ratio": 5.2,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 2694232,
+          "ratio": 3.2,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社アミューズキャピタルインベストメント",
+          "shares": 2380000,
+          "ratio": 2.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社志",
+          "shares": 1785256,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "HSCB HONG KONG-TREASURYSERVICES A/C ASIAN EQUITIES DERIVATIVES\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 1766342,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）\n（常任代理人　株式会社三菱UFJ銀行決済事業部）",
+          "shares": 1543053,
+          "ratio": 1.8,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.9,
+          "individual": 9.8,
+          "corporate": 12.2,
+          "foreign": 7.0,
+          "financial": 5.3
+        },
+        "individual_total": 9.8,
+        "top10_total": 55.2
+      }
+    }
+  ]
+}

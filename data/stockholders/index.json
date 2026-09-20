@@ -1,7 +1,268 @@
 {
-  "updated_at": "2026/09/14",
-  "count": 1782,
+  "updated_at": "2026/09/19",
+  "count": 1808,
   "items": [
+    {
+      "secCode": "6995",
+      "issuerName": "株式会社東海理化電機製作所",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "トヨタ自動車株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "7821",
+      "issuerName": "前田工繊株式会社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト\n信託銀行株式会社",
+      "topHolderCategory": "trust",
+      "individualTotal": 22.91
+    },
+    {
+      "secCode": "9159",
+      "issuerName": "株式会社Ｗ　ＴＯＫＹＯ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "村上範義",
+      "topHolderCategory": "individual",
+      "individualTotal": 39.87
+    },
+    {
+      "secCode": "6548",
+      "issuerName": "株式会社旅工房",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社アドベンチャー",
+      "topHolderCategory": "corporate",
+      "individualTotal": 9.65
+    },
+    {
+      "secCode": "7707",
+      "issuerName": "プレシジョン・システム・サイエンス株式会社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "田島 秀二",
+      "topHolderCategory": "individual",
+      "individualTotal": 21.98
+    },
+    {
+      "secCode": "2154",
+      "issuerName": "株式会社オープンアップグループ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 9.8
+    },
+    {
+      "secCode": "464A",
+      "issuerName": "株式会社ＱＰＳホールディングス",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "スカパーＪＳＡＴ株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 10.97
+    },
+    {
+      "secCode": "9421",
+      "issuerName": "株式会社エヌジェイホールディングス",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "(有)リーコム",
+      "topHolderCategory": "individual",
+      "individualTotal": 73.38
+    },
+    {
+      "secCode": "4398",
+      "issuerName": "株式会社ブロードバンドセキュリティ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "グローバルセキュリティエキスパート株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 2.04
+    },
+    {
+      "secCode": "2481",
+      "issuerName": "株式会社タウンニュース社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社カネマス",
+      "topHolderCategory": "corporate",
+      "individualTotal": 25.65
+    },
+    {
+      "secCode": "9346",
+      "issuerName": "株式会社ココルポート",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社Ａ＆Ｃコーポレーション",
+      "topHolderCategory": "corporate",
+      "individualTotal": 13.66
+    },
+    {
+      "secCode": "603A",
+      "issuerName": "株式会社アイ・グリッド・ソリューションズ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "伊藤忠商事株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 4.68
+    },
+    {
+      "secCode": "1788",
+      "issuerName": "株式会社三東工業社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "有限会社東物産",
+      "topHolderCategory": "corporate",
+      "individualTotal": 16.75
+    },
+    {
+      "secCode": "4847",
+      "issuerName": "株式会社インテリジェント　ウェイブ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "大日本印刷㈱",
+      "topHolderCategory": "individual",
+      "individualTotal": 63.77
+    },
+    {
+      "secCode": "3836",
+      "issuerName": "株式会社アバントグループ",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "森川　徹治",
+      "topHolderCategory": "individual",
+      "individualTotal": 38.11
+    },
+    {
+      "secCode": "4073",
+      "issuerName": "株式会社ジィ・シィ企画",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社トランザクション・メディア・ネットワークス",
+      "topHolderCategory": "corporate",
+      "individualTotal": 14.53
+    },
+    {
+      "secCode": "2904",
+      "issuerName": "一正蒲鉾株式会社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "有限会社ノザキ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 4.59
+    },
+    {
+      "secCode": "9273",
+      "issuerName": "コーア商事ホールディングス株式会社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社土師",
+      "topHolderCategory": "corporate",
+      "individualTotal": 14.01
+    },
+    {
+      "secCode": "5698",
+      "issuerName": "株式会社エンビプロ・ホールディングス",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "株式会社ウィンデライト",
+      "topHolderCategory": "corporate",
+      "individualTotal": 6.34
+    },
+    {
+      "secCode": "4923",
+      "issuerName": "コタ株式会社",
+      "latestDate": "2026-09-18",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 14.99
+    },
+    {
+      "secCode": "9227",
+      "issuerName": "マイクロ波化学株式会社",
+      "latestDate": "2026-09-17",
+      "holderCount": 10,
+      "topHolder": "吉野　巌",
+      "topHolderCategory": "individual",
+      "individualTotal": 22.9
+    },
+    {
+      "secCode": "4385",
+      "issuerName": "株式会社メルカリ",
+      "latestDate": "2026-09-17",
+      "holderCount": 10,
+      "topHolder": "山田 進太郎",
+      "topHolderCategory": "individual",
+      "individualTotal": 24.84
+    },
+    {
+      "secCode": "1980",
+      "issuerName": "ダイダン株式会社",
+      "latestDate": "2026-09-17",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "6090",
+      "issuerName": "ヒューマン・メタボローム・テクノロジーズ株式会社",
+      "latestDate": "2026-09-17",
+      "holderCount": 10,
+      "topHolder": "冨田　勝",
+      "topHolderCategory": "individual",
+      "individualTotal": 15.66
+    },
+    {
+      "secCode": "7832",
+      "issuerName": "株式会社バンダイナムコホールディングス",
+      "latestDate": "2026-09-17",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 2.21
+    },
+    {
+      "secCode": "3984",
+      "issuerName": "株式会社ユーザーローカル",
+      "latestDate": "2026-09-16",
+      "holderCount": 10,
+      "topHolder": "伊藤　将雄",
+      "topHolderCategory": "individual",
+      "individualTotal": 47.58
+    },
+    {
+      "secCode": "7962",
+      "issuerName": "株式会社キングジム",
+      "latestDate": "2026-09-16",
+      "holderCount": 10,
+      "topHolder": "東京中小企業投資育成株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 2.98
+    },
+    {
+      "secCode": "4826",
+      "issuerName": "株式会社ＣＩＪ",
+      "latestDate": "2026-09-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 5.32
+    },
+    {
+      "secCode": "3191",
+      "issuerName": "株式会社ジョイフル本田",
+      "latestDate": "2026-09-15",
+      "holderCount": 10,
+      "topHolder": "野村信託銀行株式会社（本田創業家信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 6.35
+    },
     {
       "secCode": "6497",
       "issuerName": "株式会社ハマイ",
@@ -154,15 +415,6 @@
       "topHolder": "株式会社ワールド",
       "topHolderCategory": "corporate",
       "individualTotal": 27.72
-    },
-    {
-      "secCode": "4923",
-      "issuerName": "コタ株式会社",
-      "latestDate": "2026-08-31",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 14.99
     },
     {
       "secCode": "2437",
@@ -505,15 +757,6 @@
       "topHolder": "株式会社八雲",
       "topHolderCategory": "corporate",
       "individualTotal": 4.39
-    },
-    {
-      "secCode": "464A",
-      "issuerName": "株式会社ＱＰＳホールディングス",
-      "latestDate": "2026-08-26",
-      "holderCount": 10,
-      "topHolder": "スカパーＪＳＡＴ株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 10.97
     },
     {
       "secCode": "5932",
@@ -11890,15 +12133,6 @@
       "topHolder": "サンホーム共栄会",
       "topHolderCategory": "individual",
       "individualTotal": 19.74
-    },
-    {
-      "secCode": "1980",
-      "issuerName": "ダイダン株式会社",
-      "latestDate": "2026-06-23",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
     },
     {
       "secCode": "7441",
