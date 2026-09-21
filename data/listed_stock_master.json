@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-14T07:27:44+09:00",
+  "updated_at": "2026-09-21T07:30:51+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3771,
+  "count": 3766,
   "stocks": [
     {
       "ticker": "0000.T",
@@ -6122,16 +6122,6 @@
       "curated": false
     },
     {
-      "ticker": "3079.T",
-      "code": "3079",
-      "name": "ディーブイエックス株式会社",
-      "market": "上場",
-      "industry": "卸売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "3080.T",
       "code": "3080",
       "name": "株式会社ジェーソン",
@@ -7161,16 +7151,6 @@
       "curated": false
     },
     {
-      "ticker": "3271.T",
-      "code": "3271",
-      "name": "株式会社 THEグローバル社",
-      "market": "上場",
-      "industry": "不動産業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "3276.T",
       "code": "3276",
       "name": "株式会社JPMC",
@@ -7268,16 +7248,6 @@
       "ticker": "3293.T",
       "code": "3293",
       "name": "アズマハウス株式会社",
-      "market": "上場",
-      "industry": "不動産業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "3294.T",
-      "code": "3294",
-      "name": "株式会社イーグランド",
       "market": "上場",
       "industry": "不動産業",
       "filer_type": "内国法人・組合",
@@ -9233,16 +9203,6 @@
       "name": "株式会社北里",
       "market": "上場",
       "industry": "精密機器",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "3681.T",
-      "code": "3681",
-      "name": "株式会社ブイキューブ",
-      "market": "上場",
-      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -11948,16 +11908,6 @@
       "name": "株式会社ブルーゾーンホールディングス",
       "market": "上場",
       "industry": "小売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "4171.T",
-      "code": "4171",
-      "name": "株式会社グローバルインフォメーション",
-      "market": "上場",
-      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -17278,9 +17228,9 @@
       "ticker": "5202.T",
       "code": "5202",
       "name": "日本板硝子",
-      "market": "上場",
-      "industry": "ガラス・土石製品",
-      "filer_type": "内国法人・組合",
+      "market": "",
+      "industry": "",
+      "filer_type": "",
       "themes": [
         "建築資材"
       ],
@@ -20584,16 +20534,6 @@
       "curated": false
     },
     {
-      "ticker": "6096.T",
-      "code": "6096",
-      "name": "株式会社レアジョブ",
-      "market": "上場",
-      "industry": "サービス業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "6098.T",
       "code": "6098",
       "name": "リクルートHD",
@@ -21068,7 +21008,7 @@
     {
       "ticker": "6190.T",
       "code": "6190",
-      "name": "株式会社フェニックスバイオ",
+      "name": "株式会社オリバー",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -21129,9 +21069,9 @@
       "ticker": "6197.T",
       "code": "6197",
       "name": "ソラスト",
-      "market": "上場",
-      "industry": "サービス業",
-      "filer_type": "内国法人・組合",
+      "market": "",
+      "industry": "",
+      "filer_type": "",
       "themes": [
         "ヘルスケア・介護"
       ],
@@ -21207,6 +21147,16 @@
       "name": "リケンNPR株式会社",
       "market": "上場",
       "industry": "機械",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
+      "ticker": "6210.T",
+      "code": "6210",
+      "name": "株式会社オーディオストック",
+      "market": "上場",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -21314,9 +21264,9 @@
     {
       "ticker": "6230.T",
       "code": "6230",
-      "name": "SANEI株式会社",
+      "name": "株式会社ベルテックス",
       "market": "上場",
-      "industry": "機械",
+      "industry": "不動産業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -21396,9 +21346,9 @@
     {
       "ticker": "6240.T",
       "code": "6240",
-      "name": "ヤマシンフィルタ株式会社",
+      "name": "かがやきホールディングス株式会社",
       "market": "上場",
-      "industry": "機械",
+      "industry": "サービス業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -21456,9 +21406,9 @@
     {
       "ticker": "6250.T",
       "code": "6250",
-      "name": "株式会社やまびこ",
+      "name": "株式会社Skyfall",
       "market": "上場",
-      "industry": "機械",
+      "industry": "サービス業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -25984,7 +25934,7 @@
     {
       "ticker": "7039.T",
       "code": "7039",
-      "name": "ブリッジインターナショナル株式会社",
+      "name": "ブリッジインターナショナルグループ株式会社",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -38101,7 +38051,7 @@
       "code": "9812",
       "name": "株式会社テーオーホールディングス",
       "market": "上場",
-      "industry": "卸売業",
+      "industry": "小売業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
