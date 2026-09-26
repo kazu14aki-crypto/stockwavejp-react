@@ -1,0 +1,218 @@
+{
+  "secCode": "4326",
+  "issuerName": "株式会社インテージホールディングス",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社NTTドコモ",
+      "shares": 19622000,
+      "ratio": 50.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "インテージグループ従業員持株会",
+      "shares": 1556000,
+      "ratio": 4.04,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1547000,
+      "ratio": 4.02,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行株式会社)",
+      "shares": 1120000,
+      "ratio": 2.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社埼玉りそな銀行",
+      "shares": 757000,
+      "ratio": 1.97,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　－　ＪＡＳＤＥＣＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 662000,
+      "ratio": 1.72,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "豊栄実業株式会社",
+      "shares": 601000,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．（ＡＶＦＣ）　ＲＥ　ＩＥＤＵ　ＵＣＩＴＳ　ＣＬＩＥＮＴＳ　ＮＯＮ　ＬＥＮＤＩＮＧ　１５　ＰＣＴ　ＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ(常任代理人 香港上海銀行東京支店)",
+      "shares": 563000,
+      "ratio": 1.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＮＡＶＦ　ＳＥＬＥＣＴ　ＬＬＣ(常任代理人 香港上海銀行東京支店)",
+      "shares": 563000,
+      "ratio": 1.46,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＮＩＰＰＯＮ　ＡＣＴＩＶＥ　ＶＡＬＵＥ　ＦＵＮＤ　ＰＬＣ(常任代理人 香港上海銀行東京支店)",
+      "shares": 554000,
+      "ratio": 1.44,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.51,
+      "employee": 4.04,
+      "trust": 6.93,
+      "financial": 8.05
+    },
+    "individual_total": 0,
+    "top10_total": 71.53
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/07/01－2026/06/30)",
+      "docID": "S100Z39P",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社NTTドコモ",
+          "shares": 19622000,
+          "ratio": 50.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "インテージグループ従業員持株会",
+          "shares": 1556000,
+          "ratio": 4.04,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1547000,
+          "ratio": 4.02,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行株式会社)",
+          "shares": 1120000,
+          "ratio": 2.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社埼玉りそな銀行",
+          "shares": 757000,
+          "ratio": 1.97,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＴＨＥ　ＢＡＮＫ　ＯＦ　ＮＥＷ　ＹＯＲＫ　－　ＪＡＳＤＥＣＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 662000,
+          "ratio": 1.72,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "豊栄実業株式会社",
+          "shares": 601000,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＮＯＲＴＨＥＲＮ　ＴＲＵＳＴ　ＣＯ．（ＡＶＦＣ）　ＲＥ　ＩＥＤＵ　ＵＣＩＴＳ　ＣＬＩＥＮＴＳ　ＮＯＮ　ＬＥＮＤＩＮＧ　１５　ＰＣＴ　ＴＲＥＡＴＹ　ＡＣＣＯＵＮＴ(常任代理人 香港上海銀行東京支店)",
+          "shares": 563000,
+          "ratio": 1.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＮＡＶＦ　ＳＥＬＥＣＴ　ＬＬＣ(常任代理人 香港上海銀行東京支店)",
+          "shares": 563000,
+          "ratio": 1.46,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＮＩＰＰＯＮ　ＡＣＴＩＶＥ　ＶＡＬＵＥ　ＦＵＮＤ　ＰＬＣ(常任代理人 香港上海銀行東京支店)",
+          "shares": 554000,
+          "ratio": 1.44,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.51,
+          "employee": 4.04,
+          "trust": 6.93,
+          "financial": 8.05
+        },
+        "individual_total": 0,
+        "top10_total": 71.53
+      }
+    }
+  ]
+}

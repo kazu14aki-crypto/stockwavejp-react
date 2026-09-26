@@ -1,0 +1,218 @@
+{
+  "secCode": "7369",
+  "issuerName": "株式会社メイホーホールディングス",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "尾松　豪紀",
+      "shares": 2204500,
+      "ratio": 46.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "河合　清明",
+      "shares": 468000,
+      "ratio": 9.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社SBI証券",
+      "shares": 230816,
+      "ratio": 4.9,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "山本　恭司",
+      "shares": 198000,
+      "ratio": 4.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "藤原　巧",
+      "shares": 163800,
+      "ratio": 3.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "尾松　恵子",
+      "shares": 138000,
+      "ratio": 2.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 107200,
+      "ratio": 2.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "メイホーホールディングス従業員持株会",
+      "shares": 95600,
+      "ratio": 2.03,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社マルエイ",
+      "shares": 75000,
+      "ratio": 1.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "宮下　真理",
+      "shares": 35400,
+      "ratio": 0.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 68.16,
+      "securities": 7.17,
+      "employee": 2.03,
+      "corporate": 1.59
+    },
+    "individual_total": 68.16,
+    "top10_total": 78.95
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第10期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3L9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "尾松　豪紀",
+          "shares": 2204500,
+          "ratio": 46.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "河合　清明",
+          "shares": 468000,
+          "ratio": 9.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社SBI証券",
+          "shares": 230816,
+          "ratio": 4.9,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "山本　恭司",
+          "shares": 198000,
+          "ratio": 4.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "藤原　巧",
+          "shares": 163800,
+          "ratio": 3.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "尾松　恵子",
+          "shares": 138000,
+          "ratio": 2.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 107200,
+          "ratio": 2.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "メイホーホールディングス従業員持株会",
+          "shares": 95600,
+          "ratio": 2.03,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社マルエイ",
+          "shares": 75000,
+          "ratio": 1.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "宮下　真理",
+          "shares": 35400,
+          "ratio": 0.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 68.16,
+          "securities": 7.17,
+          "employee": 2.03,
+          "corporate": 1.59
+        },
+        "individual_total": 68.16,
+        "top10_total": 78.95
+      }
+    }
+  ]
+}

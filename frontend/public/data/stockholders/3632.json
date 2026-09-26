@@ -1,0 +1,218 @@
+{
+  "secCode": "3632",
+  "issuerName": "グリーホールディングス株式会社",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社セコイア",
+      "shares": 110961000,
+      "ratio": 61.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 8568000,
+      "ratio": 4.77,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（株式付与ＥＳＯＰ信託口・76166口）",
+      "shares": 5091000,
+      "ratio": 2.84,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（役員報酬ＢＩＰ信託口・76759口）",
+      "shares": 2624000,
+      "ratio": 1.46,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1893000,
+      "ratio": 1.05,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "藤本　真樹",
+      "shares": 1886000,
+      "ratio": 1.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "内藤　征吾",
+      "shares": 1851000,
+      "ratio": 1.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "セントラル短資株式会社",
+      "shares": 1187000,
+      "ratio": 0.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２Ｓ／ＪＡＳＤＥＣ／ＴＤ　ＳＥＣＵＲＩＴＩＥＳ　（ＵＳＡ）　ＬＬＣ／ＢＯＯＫ－ＥＮＴＲＹ　ＪＧＢＳ＋ＣＯＲＰＯＲＡＴＥ　ＢＯＮＤＳ／ＴＡＸＡＢＬＥ（常任代理人　香港上海銀行東京支店）",
+      "shares": 1180000,
+      "ratio": 0.66,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "山岸　広太郎",
+      "shares": 939000,
+      "ratio": 0.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 62.46,
+      "trust": 10.12,
+      "individual": 2.6,
+      "financial": 0.66
+    },
+    "individual_total": 2.6,
+    "top10_total": 75.84
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第22期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3F1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社セコイア",
+          "shares": 110961000,
+          "ratio": 61.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 8568000,
+          "ratio": 4.77,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（株式付与ＥＳＯＰ信託口・76166口）",
+          "shares": 5091000,
+          "ratio": 2.84,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（役員報酬ＢＩＰ信託口・76759口）",
+          "shares": 2624000,
+          "ratio": 1.46,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1893000,
+          "ratio": 1.05,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "藤本　真樹",
+          "shares": 1886000,
+          "ratio": 1.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "内藤　征吾",
+          "shares": 1851000,
+          "ratio": 1.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "セントラル短資株式会社",
+          "shares": 1187000,
+          "ratio": 0.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＢＮＰ　ＰＡＲＩＢＡＳ　ＳＩＮＧＡＰＯＲＥ／２Ｓ／ＪＡＳＤＥＣ／ＴＤ　ＳＥＣＵＲＩＴＩＥＳ　（ＵＳＡ）　ＬＬＣ／ＢＯＯＫ－ＥＮＴＲＹ　ＪＧＢＳ＋ＣＯＲＰＯＲＡＴＥ　ＢＯＮＤＳ／ＴＡＸＡＢＬＥ（常任代理人　香港上海銀行東京支店）",
+          "shares": 1180000,
+          "ratio": 0.66,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "山岸　広太郎",
+          "shares": 939000,
+          "ratio": 0.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 62.46,
+          "trust": 10.12,
+          "individual": 2.6,
+          "financial": 0.66
+        },
+        "individual_total": 2.6,
+        "top10_total": 75.84
+      }
+    }
+  ]
+}

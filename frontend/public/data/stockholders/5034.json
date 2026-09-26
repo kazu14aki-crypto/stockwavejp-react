@@ -1,0 +1,218 @@
+{
+  "secCode": "5034",
+  "issuerName": "株式会社ｕｎｅｒｒｙ",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "内山　英俊",
+      "shares": 1064720,
+      "ratio": 28.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社UC AIR",
+      "shares": 528000,
+      "ratio": 14.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三菱商事株式会社",
+      "shares": 303200,
+      "ratio": 8.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 207800,
+      "ratio": 5.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "鈴木　茂二郎",
+      "shares": 165690,
+      "ratio": 4.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 118500,
+      "ratio": 3.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 98793,
+      "ratio": 2.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "三菱食品株式会社",
+      "shares": 90000,
+      "ratio": 2.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社電通グループ",
+      "shares": 80000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "楽天証券株式会社共有口",
+      "shares": 58600,
+      "ratio": 1.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 32.8,
+      "corporate": 26.7,
+      "trust": 8.7,
+      "securities": 4.2
+    },
+    "individual_total": 32.8,
+    "top10_total": 72.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/07/01－2026/06/30)",
+      "docID": "S100Z46V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "内山　英俊",
+          "shares": 1064720,
+          "ratio": 28.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社UC AIR",
+          "shares": 528000,
+          "ratio": 14.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三菱商事株式会社",
+          "shares": 303200,
+          "ratio": 8.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 207800,
+          "ratio": 5.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "鈴木　茂二郎",
+          "shares": 165690,
+          "ratio": 4.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 118500,
+          "ratio": 3.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 98793,
+          "ratio": 2.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "三菱食品株式会社",
+          "shares": 90000,
+          "ratio": 2.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社電通グループ",
+          "shares": 80000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "楽天証券株式会社共有口",
+          "shares": 58600,
+          "ratio": 1.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 32.8,
+          "corporate": 26.7,
+          "trust": 8.7,
+          "securities": 4.2
+        },
+        "individual_total": 32.8,
+        "top10_total": 72.4
+      }
+    }
+  ]
+}

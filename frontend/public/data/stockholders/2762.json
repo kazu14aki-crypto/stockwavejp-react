@@ -1,0 +1,216 @@
+{
+  "secCode": "2762",
+  "issuerName": "株式会社ＳＡＮＫＯ　ＭＡＲＫＥＴＩＮＧ　ＦＯＯＤＳ",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "平林　隆広",
+      "shares": 4298800,
+      "ratio": 10.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社TLF",
+      "shares": 2519700,
+      "ratio": 6.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＥＶＯ ＦＵＮＤ （常任代理人　ＥＶＯＬＵＴＩＯＮ ＪＡＰＡＮ証券株式会社）",
+      "shares": 1980000,
+      "ratio": 4.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "有限会社神田コンサルティング",
+      "shares": 1401900,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "二神　英治",
+      "shares": 1160000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平林　実人",
+      "shares": 1048000,
+      "ratio": 2.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ICON STRATEGIES A LTD（常任代理人　フィリップ証券株式会社）",
+      "shares": 700000,
+      "ratio": 1.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 666279,
+      "ratio": 1.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "アサヒビール株式会社",
+      "shares": 623500,
+      "ratio": 1.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社証券ジャパン",
+      "shares": 420700,
+      "ratio": 1.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 15.7,
+      "corporate": 11.0,
+      "securities": 9.1
+    },
+    "individual_total": 15.7,
+    "top10_total": 35.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3DU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "平林　隆広",
+          "shares": 4298800,
+          "ratio": 10.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社TLF",
+          "shares": 2519700,
+          "ratio": 6.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＥＶＯ ＦＵＮＤ （常任代理人　ＥＶＯＬＵＴＩＯＮ ＪＡＰＡＮ証券株式会社）",
+          "shares": 1980000,
+          "ratio": 4.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "有限会社神田コンサルティング",
+          "shares": 1401900,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "二神　英治",
+          "shares": 1160000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平林　実人",
+          "shares": 1048000,
+          "ratio": 2.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ICON STRATEGIES A LTD（常任代理人　フィリップ証券株式会社）",
+          "shares": 700000,
+          "ratio": 1.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 666279,
+          "ratio": 1.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "アサヒビール株式会社",
+          "shares": 623500,
+          "ratio": 1.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社証券ジャパン",
+          "shares": 420700,
+          "ratio": 1.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 15.7,
+          "corporate": 11.0,
+          "securities": 9.1
+        },
+        "individual_total": 15.7,
+        "top10_total": 35.8
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4391",
+  "issuerName": "ロジザード株式会社",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "フューチャー株式会社",
+      "shares": 894500,
+      "ratio": 27.43,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "金澤　茂則",
+      "shares": 364500,
+      "ratio": 11.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "創歩人ホールディングス株式会社",
+      "shares": 133700,
+      "ratio": 4.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "加藤　智康",
+      "shares": 117000,
+      "ratio": 3.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＣＡＬＬＯＮ ＳＡＭ ＡＮＤＥＲＢＥＲＧ",
+      "shares": 115100,
+      "ratio": 3.53,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 96000,
+      "ratio": 2.94,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "吉田　伸行",
+      "shares": 68500,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ） ＲＥ ＮＯＮ ＴＲＥＡＴＹ ＣＬＩＥＮＴＳ ＡＣＣＯＵＮＴ（常任代理人　香港上海銀行東京支店）",
+      "shares": 61400,
+      "ratio": 1.88,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 59100,
+      "ratio": 1.81,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 55699,
+      "ratio": 1.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 31.53,
+      "individual": 16.87,
+      "other": 5.34,
+      "securities": 4.65,
+      "financial": 1.88
+    },
+    "individual_total": 16.87,
+    "top10_total": 60.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/07/01－2026/06/30)",
+      "docID": "S100Z2RN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "フューチャー株式会社",
+          "shares": 894500,
+          "ratio": 27.43,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "金澤　茂則",
+          "shares": 364500,
+          "ratio": 11.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "創歩人ホールディングス株式会社",
+          "shares": 133700,
+          "ratio": 4.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "加藤　智康",
+          "shares": 117000,
+          "ratio": 3.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＣＡＬＬＯＮ ＳＡＭ ＡＮＤＥＲＢＥＲＧ",
+          "shares": 115100,
+          "ratio": 3.53,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＩＮＴＥＲＡＣＴＩＶＥ ＢＲＯＫＥＲＳ ＬＬＣ（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 96000,
+          "ratio": 2.94,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "吉田　伸行",
+          "shares": 68500,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＮＯＲＴＨＥＲＮ ＴＲＵＳＴ ＣＯ．（ＡＶＦＣ） ＲＥ ＮＯＮ ＴＲＥＡＴＹ ＣＬＩＥＮＴＳ ＡＣＣＯＵＮＴ（常任代理人　香港上海銀行東京支店）",
+          "shares": 61400,
+          "ratio": 1.88,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 59100,
+          "ratio": 1.81,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 55699,
+          "ratio": 1.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 31.53,
+          "individual": 16.87,
+          "other": 5.34,
+          "securities": 4.65,
+          "financial": 1.88
+        },
+        "individual_total": 16.87,
+        "top10_total": 60.27
+      }
+    }
+  ]
+}

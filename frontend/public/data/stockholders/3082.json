@@ -1,0 +1,214 @@
+{
+  "secCode": "3082",
+  "issuerName": "株式会社きちりホールディングス",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社エムティアンドアソシエイツ",
+      "shares": 3938400,
+      "ratio": 34.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "葛原　昭",
+      "shares": 340800,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "平川　勝基",
+      "shares": 259500,
+      "ratio": 2.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "平川　昌紀",
+      "shares": 242300,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "平田　哲士",
+      "shares": 198200,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "平川住宅株式会社",
+      "shares": 136800,
+      "ratio": 1.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "清原　康孝",
+      "shares": 124700,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "榎　卓生",
+      "shares": 102000,
+      "ratio": 0.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社マルゼン",
+      "shares": 96000,
+      "ratio": 0.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "平川　朋子",
+      "shares": 79300,
+      "ratio": 0.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.9,
+      "individual": 11.9
+    },
+    "individual_total": 11.9,
+    "top10_total": 48.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第28期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3VX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社エムティアンドアソシエイツ",
+          "shares": 3938400,
+          "ratio": 34.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "葛原　昭",
+          "shares": 340800,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "平川　勝基",
+          "shares": 259500,
+          "ratio": 2.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "平川　昌紀",
+          "shares": 242300,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "平田　哲士",
+          "shares": 198200,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "平川住宅株式会社",
+          "shares": 136800,
+          "ratio": 1.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "清原　康孝",
+          "shares": 124700,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "榎　卓生",
+          "shares": 102000,
+          "ratio": 0.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社マルゼン",
+          "shares": 96000,
+          "ratio": 0.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "平川　朋子",
+          "shares": 79300,
+          "ratio": 0.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.9,
+          "individual": 11.9
+        },
+        "individual_total": 11.9,
+        "top10_total": 48.8
+      }
+    }
+  ]
+}

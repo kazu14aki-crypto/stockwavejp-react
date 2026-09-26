@@ -1,0 +1,220 @@
+{
+  "secCode": "5380",
+  "issuerName": "新東株式会社",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "新東役員持株会",
+      "shares": 99900,
+      "ratio": 14.12,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社マルイシ",
+      "shares": 39000,
+      "ratio": 5.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "石川　大輔",
+      "shares": 38100,
+      "ratio": 5.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "石川　達也",
+      "shares": 36900,
+      "ratio": 5.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岡崎信用金庫",
+      "shares": 36600,
+      "ratio": 5.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "三浦　重剛",
+      "shares": 30900,
+      "ratio": 4.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社あいち銀行",
+      "shares": 28800,
+      "ratio": 4.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "石岡　真千子",
+      "shares": 27120,
+      "ratio": 3.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "三菱ＵＦＪ信託銀行株式会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 26174,
+      "ratio": 3.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "石川　富子",
+      "shares": 24264,
+      "ratio": 3.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 14.12,
+      "corporate": 5.51,
+      "individual": 22.23,
+      "financial": 9.24,
+      "trust": 3.7
+    },
+    "individual_total": 22.23,
+    "top10_total": 54.8
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3I1",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "新東役員持株会",
+          "shares": 99900,
+          "ratio": 14.12,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社マルイシ",
+          "shares": 39000,
+          "ratio": 5.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "石川　大輔",
+          "shares": 38100,
+          "ratio": 5.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "石川　達也",
+          "shares": 36900,
+          "ratio": 5.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡崎信用金庫",
+          "shares": 36600,
+          "ratio": 5.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "三浦　重剛",
+          "shares": 30900,
+          "ratio": 4.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社あいち銀行",
+          "shares": 28800,
+          "ratio": 4.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "石岡　真千子",
+          "shares": 27120,
+          "ratio": 3.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "三菱ＵＦＪ信託銀行株式会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 26174,
+          "ratio": 3.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "石川　富子",
+          "shares": 24264,
+          "ratio": 3.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 14.12,
+          "corporate": 5.51,
+          "individual": 22.23,
+          "financial": 9.24,
+          "trust": 3.7
+        },
+        "individual_total": 22.23,
+        "top10_total": 54.8
+      }
+    }
+  ]
+}

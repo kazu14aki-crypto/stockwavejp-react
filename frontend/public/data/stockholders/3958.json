@@ -1,0 +1,216 @@
+{
+  "secCode": "3958",
+  "issuerName": "笹徳印刷株式会社",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "王子マテリア株式会社",
+      "shares": 1000000,
+      "ratio": 18.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "すぐるラボ株式会社",
+      "shares": 620000,
+      "ratio": 11.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "笹徳印刷グループ従業員持株会",
+      "shares": 326889,
+      "ratio": 6.0,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "国際紙パルプ商事株式会社",
+      "shares": 244000,
+      "ratio": 4.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社GOLDEN BIRD",
+      "shares": 207200,
+      "ratio": 3.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "杉山卓繁",
+      "shares": 201416,
+      "ratio": 3.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "杉山昌樹",
+      "shares": 193842,
+      "ratio": 3.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "有限会社聡明",
+      "shares": 157400,
+      "ratio": 2.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "合同会社センス",
+      "shares": 131400,
+      "ratio": 2.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "杉山翔太",
+      "shares": 112700,
+      "ratio": 2.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.35,
+      "employee": 6.0,
+      "individual": 9.33
+    },
+    "individual_total": 9.33,
+    "top10_total": 58.68
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/07/01－2026/06/30)",
+      "docID": "S100Z33V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "王子マテリア株式会社",
+          "shares": 1000000,
+          "ratio": 18.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "すぐるラボ株式会社",
+          "shares": 620000,
+          "ratio": 11.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "笹徳印刷グループ従業員持株会",
+          "shares": 326889,
+          "ratio": 6.0,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "国際紙パルプ商事株式会社",
+          "shares": 244000,
+          "ratio": 4.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社GOLDEN BIRD",
+          "shares": 207200,
+          "ratio": 3.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "杉山卓繁",
+          "shares": 201416,
+          "ratio": 3.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "杉山昌樹",
+          "shares": 193842,
+          "ratio": 3.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "有限会社聡明",
+          "shares": 157400,
+          "ratio": 2.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "合同会社センス",
+          "shares": 131400,
+          "ratio": 2.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "杉山翔太",
+          "shares": 112700,
+          "ratio": 2.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.35,
+          "employee": 6.0,
+          "individual": 9.33
+        },
+        "individual_total": 9.33,
+        "top10_total": 58.68
+      }
+    }
+  ]
+}

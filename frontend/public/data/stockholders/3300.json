@@ -1,0 +1,218 @@
+{
+  "secCode": "3300",
+  "issuerName": "株式会社アンビションＤＸホールディングス",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＴＳコーポレーション",
+      "shares": 2843636,
+      "ratio": 38.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "清水　剛",
+      "shares": 769364,
+      "ratio": 10.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "川田　秀樹",
+      "shares": 213000,
+      "ratio": 2.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ヨシダ　トモヒロ",
+      "shares": 209400,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "加藤　誠悟",
+      "shares": 207100,
+      "ratio": 2.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＡＧキャピタル株式会社",
+      "shares": 111800,
+      "ratio": 1.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大和証券株式会社",
+      "shares": 87700,
+      "ratio": 1.18,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 84700,
+      "ratio": 1.14,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "東京短資株式会社",
+      "shares": 62700,
+      "ratio": 0.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 60300,
+      "ratio": 0.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.66,
+      "individual": 18.84,
+      "securities": 2.32,
+      "trust": 0.81
+    },
+    "individual_total": 18.84,
+    "top10_total": 62.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3CP",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＴＳコーポレーション",
+          "shares": 2843636,
+          "ratio": 38.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "清水　剛",
+          "shares": 769364,
+          "ratio": 10.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "川田　秀樹",
+          "shares": 213000,
+          "ratio": 2.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ヨシダ　トモヒロ",
+          "shares": 209400,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "加藤　誠悟",
+          "shares": 207100,
+          "ratio": 2.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＡＧキャピタル株式会社",
+          "shares": 111800,
+          "ratio": 1.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和証券株式会社",
+          "shares": 87700,
+          "ratio": 1.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 84700,
+          "ratio": 1.14,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "東京短資株式会社",
+          "shares": 62700,
+          "ratio": 0.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 60300,
+          "ratio": 0.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.66,
+          "individual": 18.84,
+          "securities": 2.32,
+          "trust": 0.81
+        },
+        "individual_total": 18.84,
+        "top10_total": 62.63
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "secCode": "4068",
+  "issuerName": "ベイシス株式会社",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ワイズマネージメント株式会社",
+      "shares": 850000,
+      "ratio": 46.16,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "吉村　公孝",
+      "shares": 326000,
+      "ratio": 17.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ベイシスグループ従業員持株会",
+      "shares": 102000,
+      "ratio": 5.55,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ミヤザキ　ヒロユキ",
+      "shares": 16000,
+      "ratio": 0.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山下　淳史",
+      "shares": 14000,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（証券投資信託口）",
+      "shares": 11000,
+      "ratio": 0.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山森　正雄",
+      "shares": 10000,
+      "ratio": 0.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "石原　広高",
+      "shares": 7000,
+      "ratio": 0.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "白木　崇志",
+      "shares": 7000,
+      "ratio": 0.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "J．Ｐ．ＭＯＲＧＡＮ　ＳＥＣＵＲＩＴＩＥＳ　ＰＬＣ\n（常任代理人\n　ＪＰモルガン証券株式会社）",
+      "shares": 6000,
+      "ratio": 0.33,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 46.16,
+      "individual": 20.58,
+      "employee": 5.55,
+      "trust": 0.59,
+      "securities": 0.33
+    },
+    "individual_total": 20.58,
+    "top10_total": 73.21
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第26期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3RZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ワイズマネージメント株式会社",
+          "shares": 850000,
+          "ratio": 46.16,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "吉村　公孝",
+          "shares": 326000,
+          "ratio": 17.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ベイシスグループ従業員持株会",
+          "shares": 102000,
+          "ratio": 5.55,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ミヤザキ　ヒロユキ",
+          "shares": 16000,
+          "ratio": 0.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山下　淳史",
+          "shares": 14000,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（証券投資信託口）",
+          "shares": 11000,
+          "ratio": 0.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山森　正雄",
+          "shares": 10000,
+          "ratio": 0.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "石原　広高",
+          "shares": 7000,
+          "ratio": 0.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "白木　崇志",
+          "shares": 7000,
+          "ratio": 0.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "J．Ｐ．ＭＯＲＧＡＮ　ＳＥＣＵＲＩＴＩＥＳ　ＰＬＣ\n（常任代理人\n　ＪＰモルガン証券株式会社）",
+          "shares": 6000,
+          "ratio": 0.33,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 46.16,
+          "individual": 20.58,
+          "employee": 5.55,
+          "trust": 0.59,
+          "securities": 0.33
+        },
+        "individual_total": 20.58,
+        "top10_total": 73.21
+      }
+    }
+  ]
+}

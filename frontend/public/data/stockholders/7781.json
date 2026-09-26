@@ -1,0 +1,218 @@
+{
+  "secCode": "7781",
+  "issuerName": "株式会社平山ホールディングス",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＳＵＮＢＡＳＥ",
+      "shares": 1500000,
+      "ratio": 19.57,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "平山　惠一",
+      "shares": 954080,
+      "ratio": 12.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "平山　善一",
+      "shares": 909040,
+      "ratio": 11.86,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "合同会社スリーアローズ",
+      "shares": 754000,
+      "ratio": 9.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ハクトコーポレーション株式会社",
+      "shares": 482000,
+      "ratio": 6.28,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社平寛堂",
+      "shares": 260600,
+      "ratio": 3.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "谷口　久志",
+      "shares": 225900,
+      "ratio": 2.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "平山従業員持株会",
+      "shares": 133300,
+      "ratio": 1.73,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "殿岡　賢治",
+      "shares": 110200,
+      "ratio": 1.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 82530,
+      "ratio": 1.07,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 39.08,
+      "individual": 28.67,
+      "employee": 1.73,
+      "securities": 1.07
+    },
+    "individual_total": 28.67,
+    "top10_total": 70.55
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/07/01－2026/06/30)",
+      "docID": "S100Z44N",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＳＵＮＢＡＳＥ",
+          "shares": 1500000,
+          "ratio": 19.57,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "平山　惠一",
+          "shares": 954080,
+          "ratio": 12.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "平山　善一",
+          "shares": 909040,
+          "ratio": 11.86,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "合同会社スリーアローズ",
+          "shares": 754000,
+          "ratio": 9.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ハクトコーポレーション株式会社",
+          "shares": 482000,
+          "ratio": 6.28,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社平寛堂",
+          "shares": 260600,
+          "ratio": 3.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "谷口　久志",
+          "shares": 225900,
+          "ratio": 2.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "平山従業員持株会",
+          "shares": 133300,
+          "ratio": 1.73,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "殿岡　賢治",
+          "shares": 110200,
+          "ratio": 1.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 82530,
+          "ratio": 1.07,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 39.08,
+          "individual": 28.67,
+          "employee": 1.73,
+          "securities": 1.07
+        },
+        "individual_total": 28.67,
+        "top10_total": 70.55
+      }
+    }
+  ]
+}

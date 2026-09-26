@@ -1,0 +1,220 @@
+{
+  "secCode": "6571",
+  "issuerName": "キュービーネットホールディングス株式会社",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "TVC MATSU FUND\n（常任代理人　香港上海銀行）",
+      "shares": 1498700,
+      "ratio": 11.07,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1246500,
+      "ratio": 9.21,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 988800,
+      "ratio": 7.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "TRIVISTA MASTER FUND\n（常任代理人　香港上海銀行）",
+      "shares": 896200,
+      "ratio": 6.62,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "インテグラル株式会社",
+      "shares": 592200,
+      "ratio": 4.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社Kzグループ",
+      "shares": 551600,
+      "ratio": 4.07,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "北野　泰男",
+      "shares": 335200,
+      "ratio": 2.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BRIDGESTREAM LIMITED\n（常任代理人　立花証券株式会社）",
+      "shares": 222300,
+      "ratio": 1.64,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 206400,
+      "ratio": 1.52,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 170200,
+      "ratio": 1.26,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 17.69,
+      "trust": 18.03,
+      "corporate": 8.44,
+      "individual": 2.48,
+      "securities": 2.9
+    },
+    "individual_total": 2.48,
+    "top10_total": 49.54
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/07/01－2026/06/30)",
+      "docID": "S100Z383",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "TVC MATSU FUND\n（常任代理人　香港上海銀行）",
+          "shares": 1498700,
+          "ratio": 11.07,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1246500,
+          "ratio": 9.21,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 988800,
+          "ratio": 7.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "TRIVISTA MASTER FUND\n（常任代理人　香港上海銀行）",
+          "shares": 896200,
+          "ratio": 6.62,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "インテグラル株式会社",
+          "shares": 592200,
+          "ratio": 4.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社Kzグループ",
+          "shares": 551600,
+          "ratio": 4.07,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "北野　泰男",
+          "shares": 335200,
+          "ratio": 2.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BRIDGESTREAM LIMITED\n（常任代理人　立花証券株式会社）",
+          "shares": 222300,
+          "ratio": 1.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 206400,
+          "ratio": 1.52,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 170200,
+          "ratio": 1.26,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 17.69,
+          "trust": 18.03,
+          "corporate": 8.44,
+          "individual": 2.48,
+          "securities": 2.9
+        },
+        "individual_total": 2.48,
+        "top10_total": 49.54
+      }
+    }
+  ]
+}

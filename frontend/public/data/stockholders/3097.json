@@ -1,0 +1,218 @@
+{
+  "secCode": "3097",
+  "issuerName": "株式会社物語コーポレーション",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3897300,
+      "ratio": 10.14,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "小林　雄祐",
+      "shares": 1588800,
+      "ratio": 4.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1136200,
+      "ratio": 2.95,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小林　佳雄",
+      "shares": 1109942,
+      "ratio": 2.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NORTHERN TRUST CO.（AVFC） RE FIDELITY FUNDS（常任代理人 香港上海銀行東京支店）",
+      "shares": 1005688,
+      "ratio": 2.61,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小林　早苗",
+      "shares": 778440,
+      "ratio": 2.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小林　耕太",
+      "shares": 624610,
+      "ratio": 1.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小林　洋平",
+      "shares": 624610,
+      "ratio": 1.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "兼松株式会社",
+      "shares": 600000,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "上遠野　俊一",
+      "shares": 541400,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 13.09,
+      "individual": 13.68,
+      "foreign": 2.61,
+      "corporate": 1.56
+    },
+    "individual_total": 13.68,
+    "top10_total": 30.94
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第57期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3ME",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3897300,
+          "ratio": 10.14,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "小林　雄祐",
+          "shares": 1588800,
+          "ratio": 4.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1136200,
+          "ratio": 2.95,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小林　佳雄",
+          "shares": 1109942,
+          "ratio": 2.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NORTHERN TRUST CO.（AVFC） RE FIDELITY FUNDS（常任代理人 香港上海銀行東京支店）",
+          "shares": 1005688,
+          "ratio": 2.61,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小林　早苗",
+          "shares": 778440,
+          "ratio": 2.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小林　耕太",
+          "shares": 624610,
+          "ratio": 1.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小林　洋平",
+          "shares": 624610,
+          "ratio": 1.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "兼松株式会社",
+          "shares": 600000,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "上遠野　俊一",
+          "shares": 541400,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 13.09,
+          "individual": 13.68,
+          "foreign": 2.61,
+          "corporate": 1.56
+        },
+        "individual_total": 13.68,
+        "top10_total": 30.94
+      }
+    }
+  ]
+}
