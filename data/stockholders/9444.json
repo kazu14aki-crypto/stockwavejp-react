@@ -1,8 +1,8 @@
 {
   "secCode": "9444",
   "issuerName": "株式会社トーシンホールディングス",
-  "updated_at": "2026/08/10 21:50 JST",
-  "latestDate": "2026-07-31",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
   "latest": [
     {
       "rank": 1,
@@ -34,19 +34,19 @@
     {
       "rank": 4,
       "name": "石　田　ゆ　か　り",
-      "shares": 305200,
-      "ratio": 4.72,
+      "shares": 311500,
+      "ratio": 4.82,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 5,
-      "name": "トーシングループ従業員持株会",
-      "shares": 150789,
-      "ratio": 2.33,
-      "category": "employee",
-      "category_label": "従業員持株会",
+      "name": "株式会社CNCエンタープライズ",
+      "shares": 289400,
+      "ratio": 4.48,
+      "category": "corporate",
+      "category_label": "事業法人",
       "is_founder_family": false
     },
     {
@@ -60,36 +60,36 @@
     },
     {
       "rank": 7,
-      "name": "株式会社CNCエンタープライズ",
-      "shares": 139400,
-      "ratio": 2.16,
+      "name": "GMO Optical Investment株式会社",
+      "shares": 131400,
+      "ratio": 2.03,
       "category": "corporate",
       "category_label": "事業法人",
       "is_founder_family": false
     },
     {
       "rank": 8,
-      "name": "光通信株式会社",
-      "shares": 65300,
-      "ratio": 1.01,
-      "category": "corporate",
-      "category_label": "事業法人",
+      "name": "トーシングループ従業員持株会",
+      "shares": 118189,
+      "ratio": 1.83,
+      "category": "employee",
+      "category_label": "従業員持株会",
       "is_founder_family": false
     },
     {
       "rank": 9,
-      "name": "株式会社オーレンジ",
-      "shares": 50050,
-      "ratio": 0.77,
-      "category": "corporate",
-      "category_label": "事業法人",
+      "name": "モルガン・スタンレーMUFG証券株式会社",
+      "shares": 87900,
+      "ratio": 1.36,
+      "category": "securities",
+      "category_label": "証券会社",
       "is_founder_family": false
     },
     {
       "rank": 10,
-      "name": "JPモルガン証券株式会社",
-      "shares": 49600,
-      "ratio": 0.77,
+      "name": "株式会社SBI証券",
+      "shares": 67632,
+      "ratio": 1.05,
       "category": "securities",
       "category_label": "証券会社",
       "is_founder_family": false
@@ -97,16 +97,125 @@
   ],
   "latestSummary": {
     "by_category": {
-      "corporate": 39.77,
-      "individual": 10.97,
+      "corporate": 42.34,
+      "individual": 11.07,
       "other": 5.85,
-      "employee": 2.33,
-      "securities": 0.77
+      "employee": 1.83,
+      "securities": 2.41
     },
-    "individual_total": 10.97,
-    "top10_total": 59.69
+    "individual_total": 11.07,
+    "top10_total": 63.5
   },
   "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2026/05/01－2026/05/08)",
+      "docID": "S100Z3JM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ジェット",
+          "shares": 2172400,
+          "ratio": 33.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "石　田　信　文",
+          "shares": 404000,
+          "ratio": 6.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 378200,
+          "ratio": 5.85,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "石　田　ゆ　か　り",
+          "shares": 311500,
+          "ratio": 4.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社CNCエンタープライズ",
+          "shares": 289400,
+          "ratio": 4.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ソフトバンク株式会社",
+          "shares": 144000,
+          "ratio": 2.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "GMO Optical Investment株式会社",
+          "shares": 131400,
+          "ratio": 2.03,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "トーシングループ従業員持株会",
+          "shares": 118189,
+          "ratio": 1.83,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "モルガン・スタンレーMUFG証券株式会社",
+          "shares": 87900,
+          "ratio": 1.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社SBI証券",
+          "shares": 67632,
+          "ratio": 1.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.34,
+          "individual": 11.07,
+          "other": 5.85,
+          "employee": 1.83,
+          "securities": 2.41
+        },
+        "individual_total": 11.07,
+        "top10_total": 63.5
+      }
+    },
     {
       "submitDate": "2026-07-31",
       "docType": "120",

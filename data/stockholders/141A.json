@@ -1,0 +1,218 @@
+{
+  "secCode": "141A",
+  "issuerName": "株式会社トライアルホールディングス",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ティー・エイチ・シー",
+      "shares": 66000000,
+      "ratio": 53.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社Heroic investment",
+      "shares": 9374200,
+      "ratio": 7.64,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 2260586,
+      "ratio": 1.84,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "永田 久男",
+      "shares": 1963800,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1652200,
+      "ratio": 1.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GIC PRIVATE LIMITED - C\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 1413960,
+      "ratio": 1.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NOMURA PB NOMINEES LIMITED OMNIBUS - MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+      "shares": 1406681,
+      "ratio": 1.15,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社PALTAC",
+      "shares": 1200000,
+      "ratio": 0.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "MSCO CUSTOMER SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 1114430,
+      "ratio": 0.91,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村證券株式会社",
+      "shares": 1094664,
+      "ratio": 0.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 63.27,
+      "foreign": 5.05,
+      "individual": 1.6,
+      "trust": 1.35
+    },
+    "individual_total": 1.6,
+    "top10_total": 71.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第12期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3TN",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ティー・エイチ・シー",
+          "shares": 66000000,
+          "ratio": 53.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社Heroic investment",
+          "shares": 9374200,
+          "ratio": 7.64,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 2260586,
+          "ratio": 1.84,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "永田 久男",
+          "shares": 1963800,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1652200,
+          "ratio": 1.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GIC PRIVATE LIMITED - C\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 1413960,
+          "ratio": 1.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NOMURA PB NOMINEES LIMITED OMNIBUS - MARGIN（CASHPB）\n（常任代理人　野村證券株式会社）",
+          "shares": 1406681,
+          "ratio": 1.15,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社PALTAC",
+          "shares": 1200000,
+          "ratio": 0.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "MSCO CUSTOMER SECURITIES\n（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 1114430,
+          "ratio": 0.91,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村證券株式会社",
+          "shares": 1094664,
+          "ratio": 0.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 63.27,
+          "foreign": 5.05,
+          "individual": 1.6,
+          "trust": 1.35
+        },
+        "individual_total": 1.6,
+        "top10_total": 71.27
+      }
+    }
+  ]
+}

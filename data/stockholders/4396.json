@@ -1,0 +1,220 @@
+{
+  "secCode": "4396",
+  "issuerName": "株式会社システムサポートホールディングス",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "一般社団法人小清水基金",
+      "shares": 2800000,
+      "ratio": 13.58,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 1800200,
+      "ratio": 8.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "システムサポート従業員持株会",
+      "shares": 1216080,
+      "ratio": 5.9,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505044\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 900000,
+      "ratio": 4.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "CACEIS BANK/QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 764700,
+      "ratio": 3.71,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 610600,
+      "ratio": 2.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "上岸　弘和",
+      "shares": 580000,
+      "ratio": 2.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小清水　良次",
+      "shares": 556000,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 500000,
+      "ratio": 2.43,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小清水　明子",
+      "shares": 370600,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foundation": 13.58,
+      "trust": 11.69,
+      "employee": 5.9,
+      "foreign": 10.51,
+      "individual": 7.31
+    },
+    "individual_total": 7.31,
+    "top10_total": 48.99
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第47期(2025/07/01－2026/06/30)",
+      "docID": "S100Z429",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "一般社団法人小清水基金",
+          "shares": 2800000,
+          "ratio": 13.58,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 1800200,
+          "ratio": 8.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "システムサポート従業員持株会",
+          "shares": 1216080,
+          "ratio": 5.9,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505044\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 900000,
+          "ratio": 4.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "CACEIS BANK/QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 764700,
+          "ratio": 3.71,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 610600,
+          "ratio": 2.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "上岸　弘和",
+          "shares": 580000,
+          "ratio": 2.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小清水　良次",
+          "shares": 556000,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN, SACHS & CO. REG\n（常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 500000,
+          "ratio": 2.43,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小清水　明子",
+          "shares": 370600,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foundation": 13.58,
+          "trust": 11.69,
+          "employee": 5.9,
+          "foreign": 10.51,
+          "individual": 7.31
+        },
+        "individual_total": 7.31,
+        "top10_total": 48.99
+      }
+    }
+  ]
+}

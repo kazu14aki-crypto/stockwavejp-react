@@ -1,0 +1,220 @@
+{
+  "secCode": "7532",
+  "issuerName": "株式会社パン・パシフィック・インターナショナルホールディングス",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "DQ WINDMOLEN B. V.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 670140000,
+      "ratio": 22.41,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 323226200,
+      "ratio": 10.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社安隆商事",
+      "shares": 165600000,
+      "ratio": 5.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社ファミリーマート",
+      "shares": 165286900,
+      "ratio": 5.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 159993500,
+      "ratio": 5.35,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "GOVERNMENT OF NORWAY\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 82383800,
+      "ratio": 2.75,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "公益財団法人安田奨学財団",
+      "shares": 72000000,
+      "ratio": 2.41,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 61912900,
+      "ratio": 2.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 58844700,
+      "ratio": 1.97,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+      "shares": 45957100,
+      "ratio": 1.54,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 25.16,
+      "trust": 16.16,
+      "corporate": 11.07,
+      "foundation": 2.41,
+      "foreign": 5.58
+    },
+    "individual_total": 0,
+    "top10_total": 60.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/07/01－2026/06/30)",
+      "docID": "S100Z42G",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "DQ WINDMOLEN B. V.\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 670140000,
+          "ratio": 22.41,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 323226200,
+          "ratio": 10.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社安隆商事",
+          "shares": 165600000,
+          "ratio": 5.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社ファミリーマート",
+          "shares": 165286900,
+          "ratio": 5.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 159993500,
+          "ratio": 5.35,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "GOVERNMENT OF NORWAY\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 82383800,
+          "ratio": 2.75,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "公益財団法人安田奨学財団",
+          "shares": 72000000,
+          "ratio": 2.41,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 61912900,
+          "ratio": 2.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 58844700,
+          "ratio": 1.97,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781\n（常任代理人 株式会社みずほ銀行決済営業部）",
+          "shares": 45957100,
+          "ratio": 1.54,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 25.16,
+          "trust": 16.16,
+          "corporate": 11.07,
+          "foundation": 2.41,
+          "foreign": 5.58
+        },
+        "individual_total": 0,
+        "top10_total": 60.38
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "3041",
+  "issuerName": "株式会社ビューティカダンホールディングス",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＭＭＣ",
+      "shares": 649100,
+      "ratio": 15.83,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "三　島　　美　佐　夫",
+      "shares": 521200,
+      "ratio": 12.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "謝　花　　斉",
+      "shares": 81900,
+      "ratio": 2.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社河野メリクロン",
+      "shares": 68800,
+      "ratio": 1.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "畑　　美　智　子",
+      "shares": 56600,
+      "ratio": 1.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "河　野　　恵　美　子",
+      "shares": 46200,
+      "ratio": 1.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "医療法人仁泉会",
+      "shares": 45100,
+      "ratio": 1.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＬＵ ＣＡＩＳＨＥＮ",
+      "shares": 40600,
+      "ratio": 0.99,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "西　島　　麗　奈",
+      "shares": 31600,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "池　田　　孝　人",
+      "shares": 29200,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 17.51,
+      "individual": 19.8,
+      "other": 0.99
+    },
+    "individual_total": 19.8,
+    "top10_total": 38.3
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第30期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3BY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＭＭＣ",
+          "shares": 649100,
+          "ratio": 15.83,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "三　島　　美　佐　夫",
+          "shares": 521200,
+          "ratio": 12.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "謝　花　　斉",
+          "shares": 81900,
+          "ratio": 2.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社河野メリクロン",
+          "shares": 68800,
+          "ratio": 1.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "畑　　美　智　子",
+          "shares": 56600,
+          "ratio": 1.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "河　野　　恵　美　子",
+          "shares": 46200,
+          "ratio": 1.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "医療法人仁泉会",
+          "shares": 45100,
+          "ratio": 1.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＬＵ ＣＡＩＳＨＥＮ",
+          "shares": 40600,
+          "ratio": 0.99,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "西　島　　麗　奈",
+          "shares": 31600,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "池　田　　孝　人",
+          "shares": 29200,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 17.51,
+          "individual": 19.8,
+          "other": 0.99
+        },
+        "individual_total": 19.8,
+        "top10_total": 38.3
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6547",
+  "issuerName": "株式会社グリーンズ",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社新緑",
+      "shares": 2500000,
+      "ratio": 18.2,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＴＭ",
+      "shares": 2150000,
+      "ratio": 15.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "村木　雄哉",
+      "shares": 699000,
+      "ratio": 5.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 377000,
+      "ratio": 2.75,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＭＳＩＰ　ＣＬＩＥＮＴ　ＳＥＣＵＲＩＴＩＥＳ（常任代理人モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 317000,
+      "ratio": 2.31,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＢＢＨ　ＣＯ　ＦＯＲ　ＡＲＣＵＳ　ＪＡＰＡＮ　ＶＡＬＵＥ　ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 288000,
+      "ratio": 2.1,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "雨澤　佳世",
+      "shares": 287000,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "黒田　知佳",
+      "shares": 287000,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "鈴木　麻祐",
+      "shares": 287000,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ（常任代理人ゴールドマン・サックス証券株式会社）",
+      "shares": 232000,
+      "ratio": 1.69,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 33.85,
+      "individual": 11.37,
+      "financial": 4.85,
+      "securities": 4.0
+    },
+    "individual_total": 11.37,
+    "top10_total": 54.07
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3CG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社新緑",
+          "shares": 2500000,
+          "ratio": 18.2,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＴＭ",
+          "shares": 2150000,
+          "ratio": 15.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "村木　雄哉",
+          "shares": 699000,
+          "ratio": 5.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴ　ＪＰＲＤ　ＡＣ　ＩＳＧ　（ＦＥ－ＡＣ）（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 377000,
+          "ratio": 2.75,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＭＳＩＰ　ＣＬＩＥＮＴ　ＳＥＣＵＲＩＴＩＥＳ（常任代理人モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 317000,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＢＢＨ　ＣＯ　ＦＯＲ　ＡＲＣＵＳ　ＪＡＰＡＮ　ＶＡＬＵＥ　ＦＵＮＤ（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 288000,
+          "ratio": 2.1,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "雨澤　佳世",
+          "shares": 287000,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "黒田　知佳",
+          "shares": 287000,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "鈴木　麻祐",
+          "shares": 287000,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＧＯＬＤＭＡＮ　ＳＡＣＨＳ　ＩＮＴＥＲＮＡＴＩＯＮＡＬ（常任代理人ゴールドマン・サックス証券株式会社）",
+          "shares": 232000,
+          "ratio": 1.69,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 33.85,
+          "individual": 11.37,
+          "financial": 4.85,
+          "securities": 4.0
+        },
+        "individual_total": 11.37,
+        "top10_total": 54.07
+      }
+    }
+  ]
+}

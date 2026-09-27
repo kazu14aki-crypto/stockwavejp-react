@@ -1,0 +1,222 @@
+{
+  "secCode": "3028",
+  "issuerName": "株式会社アルペン",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱ミズノ・ホールディングス",
+      "shares": 13582960,
+      "ratio": 35.23,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "水野泰三",
+      "shares": 4436020,
+      "ratio": 11.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "水野敦之",
+      "shares": 3326280,
+      "ratio": 8.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行㈱\n(信託口)",
+      "shares": 1610200,
+      "ratio": 4.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アルペン社員持株会",
+      "shares": 481314,
+      "ratio": 1.25,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE\n（常任代理人　大澤正和）",
+      "shares": 292554,
+      "ratio": 0.76,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "モルガン・スタンレーMUFG証券㈱",
+      "shares": 201909,
+      "ratio": 0.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JPモルガン証券㈱",
+      "shares": 199685,
+      "ratio": 0.52,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 510499\n（常任代理人　日置貴史）",
+      "shares": 137000,
+      "ratio": 0.36,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 128600,
+      "ratio": 0.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 35.23,
+      "individual": 20.13,
+      "trust": 4.51,
+      "employee": 1.25,
+      "foreign": 1.12,
+      "securities": 1.04
+    },
+    "individual_total": 20.13,
+    "top10_total": 63.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第54期(2025/07/01－2026/06/30)",
+      "docID": "S100Z2YO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱ミズノ・ホールディングス",
+          "shares": 13582960,
+          "ratio": 35.23,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "水野泰三",
+          "shares": 4436020,
+          "ratio": 11.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "水野敦之",
+          "shares": 3326280,
+          "ratio": 8.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行㈱\n(信託口)",
+          "shares": 1610200,
+          "ratio": 4.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アルペン社員持株会",
+          "shares": 481314,
+          "ratio": 1.25,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE\n（常任代理人　大澤正和）",
+          "shares": 292554,
+          "ratio": 0.76,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "モルガン・スタンレーMUFG証券㈱",
+          "shares": 201909,
+          "ratio": 0.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JPモルガン証券㈱",
+          "shares": 199685,
+          "ratio": 0.52,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "STATE STREET BANK AND TRUST COMPANY 510499\n（常任代理人　日置貴史）",
+          "shares": 137000,
+          "ratio": 0.36,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 128600,
+          "ratio": 0.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 35.23,
+          "individual": 20.13,
+          "trust": 4.51,
+          "employee": 1.25,
+          "foreign": 1.12,
+          "securities": 1.04
+        },
+        "individual_total": 20.13,
+        "top10_total": 63.28
+      }
+    }
+  ]
+}

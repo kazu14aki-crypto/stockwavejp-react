@@ -1,0 +1,220 @@
+{
+  "secCode": "1431",
+  "issuerName": "株式会社Ｌｉｂ　Ｗｏｒｋ",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＣＳホールディングス",
+      "shares": 8086040,
+      "ratio": 34.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "瀬口　力",
+      "shares": 2560100,
+      "ratio": 10.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "瀬口　悦子",
+      "shares": 1959407,
+      "ratio": 8.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "瀬口　瑞恵",
+      "shares": 640000,
+      "ratio": 2.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "井手尾　環",
+      "shares": 400200,
+      "ratio": 1.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 364900,
+      "ratio": 1.54,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "Ｌｉｂ Ｗｏｒｋ従業員持株会",
+      "shares": 295600,
+      "ratio": 1.25,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "酒巻　英雄",
+      "shares": 170000,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社肥後銀行",
+      "shares": 139600,
+      "ratio": 0.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "Ｌｉｂ Ｗｏｒｋ取引先持株会",
+      "shares": 138400,
+      "ratio": 0.58,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.22,
+      "individual": 24.22,
+      "trust": 1.54,
+      "employee": 1.83,
+      "financial": 0.59
+    },
+    "individual_total": 24.22,
+    "top10_total": 62.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第29期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3WK",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＣＳホールディングス",
+          "shares": 8086040,
+          "ratio": 34.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "瀬口　力",
+          "shares": 2560100,
+          "ratio": 10.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "瀬口　悦子",
+          "shares": 1959407,
+          "ratio": 8.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "瀬口　瑞恵",
+          "shares": 640000,
+          "ratio": 2.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "井手尾　環",
+          "shares": 400200,
+          "ratio": 1.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 364900,
+          "ratio": 1.54,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "Ｌｉｂ Ｗｏｒｋ従業員持株会",
+          "shares": 295600,
+          "ratio": 1.25,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "酒巻　英雄",
+          "shares": 170000,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社肥後銀行",
+          "shares": 139600,
+          "ratio": 0.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "Ｌｉｂ Ｗｏｒｋ取引先持株会",
+          "shares": 138400,
+          "ratio": 0.58,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.22,
+          "individual": 24.22,
+          "trust": 1.54,
+          "employee": 1.83,
+          "financial": 0.59
+        },
+        "individual_total": 24.22,
+        "top10_total": 62.4
+      }
+    }
+  ]
+}

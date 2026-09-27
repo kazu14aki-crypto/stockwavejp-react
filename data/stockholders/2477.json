@@ -1,0 +1,220 @@
+{
+  "secCode": "2477",
+  "issuerName": "手間いらず株式会社",
+  "updated_at": "2026/09/26 15:49 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "68k株式会社",
+      "shares": 3290000,
+      "ratio": 55.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "渡邉　哲男",
+      "shares": 589500,
+      "ratio": 9.94,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ＵＨ６",
+      "shares": 390700,
+      "ratio": 6.59,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 316700,
+      "ratio": 5.34,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDINGOMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 139500,
+      "ratio": 2.35,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "光通信株式会社",
+      "shares": 64800,
+      "ratio": 1.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "THE BANK OF NEW YORK MELLON 140040\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 64300,
+      "ratio": 1.08,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 41700,
+      "ratio": 0.7,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託口４）",
+      "shares": 41100,
+      "ratio": 0.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 34425,
+      "ratio": 0.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 63.17,
+      "individual": 9.94,
+      "trust": 6.73,
+      "foreign": 3.43,
+      "securities": 0.58
+    },
+    "individual_total": 9.94,
+    "top10_total": 83.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第23期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3MW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "68k株式会社",
+          "shares": 3290000,
+          "ratio": 55.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "渡邉　哲男",
+          "shares": 589500,
+          "ratio": 9.94,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ＵＨ６",
+          "shares": 390700,
+          "ratio": 6.59,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 316700,
+          "ratio": 5.34,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "THE CHASE MANHATTAN BANK, N.A. LONDONSECS LENDINGOMNIBUS ACCOUNT（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 139500,
+          "ratio": 2.35,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "光通信株式会社",
+          "shares": 64800,
+          "ratio": 1.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "THE BANK OF NEW YORK MELLON 140040\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 64300,
+          "ratio": 1.08,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 41700,
+          "ratio": 0.7,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 41100,
+          "ratio": 0.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 34425,
+          "ratio": 0.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 63.17,
+          "individual": 9.94,
+          "trust": 6.73,
+          "foreign": 3.43,
+          "securities": 0.58
+        },
+        "individual_total": 9.94,
+        "top10_total": 83.85
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "9219",
+  "issuerName": "株式会社ギックス",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "網野知博",
+      "shares": 1983000,
+      "ratio": 35.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "花谷慎太郎",
+      "shares": 777000,
+      "ratio": 13.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "田中耕比古",
+      "shares": 677000,
+      "ratio": 12.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈱JR西日本イノベーションズ",
+      "shares": 311000,
+      "ratio": 5.56,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BIPROGY㈱",
+      "shares": 261000,
+      "ratio": 4.67,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "shares": 229000,
+      "ratio": 4.1,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "鴨居達哉",
+      "shares": 100000,
+      "ratio": 1.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 70000,
+      "ratio": 1.27,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ギックス従業員持株会",
+      "shares": 57000,
+      "ratio": 1.02,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "高澤一輝",
+      "shares": 36000,
+      "ratio": 0.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 63.89,
+      "other": 10.23,
+      "trust": 5.37,
+      "employee": 1.02
+    },
+    "individual_total": 63.89,
+    "top10_total": 80.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/07/01－2026/06/30)",
+      "docID": "S100Z45E",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "網野知博",
+          "shares": 1983000,
+          "ratio": 35.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "花谷慎太郎",
+          "shares": 777000,
+          "ratio": 13.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "田中耕比古",
+          "shares": 677000,
+          "ratio": 12.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈱JR西日本イノベーションズ",
+          "shares": 311000,
+          "ratio": 5.56,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BIPROGY㈱",
+          "shares": 261000,
+          "ratio": 4.67,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱日本カストディ銀行（信託口）",
+          "shares": 229000,
+          "ratio": 4.1,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "鴨居達哉",
+          "shares": 100000,
+          "ratio": 1.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 70000,
+          "ratio": 1.27,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ギックス従業員持株会",
+          "shares": 57000,
+          "ratio": 1.02,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "高澤一輝",
+          "shares": 36000,
+          "ratio": 0.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 63.89,
+          "other": 10.23,
+          "trust": 5.37,
+          "employee": 1.02
+        },
+        "individual_total": 63.89,
+        "top10_total": 80.51
+      }
+    }
+  ]
+}

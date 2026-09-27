@@ -1,0 +1,218 @@
+{
+  "secCode": "5074",
+  "issuerName": "テスホールディングス株式会社",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社ストーンサイド",
+      "shares": 5200000,
+      "ratio": 7.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "石脇　秀夫",
+      "shares": 4800100,
+      "ratio": 6.79,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "合同会社たかおか屋",
+      "shares": 4731000,
+      "ratio": 6.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 4048700,
+      "ratio": 5.73,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社瑛",
+      "shares": 3857600,
+      "ratio": 5.46,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社Y",
+      "shares": 3551650,
+      "ratio": 5.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "東京センチュリー株式会社",
+      "shares": 3532200,
+      "ratio": 5.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山本　一樹",
+      "shares": 1555300,
+      "ratio": 2.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＢＡＲＣＬＡＹＳ　ＣＡＰＩＴＡＬ　ＳＥＣ　ＬＴＤ　ＥＱ　ＣＯ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 1477524,
+      "ratio": 2.09,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "石田　智也",
+      "shares": 1396500,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.53,
+      "individual": 10.96,
+      "trust": 5.73,
+      "financial": 2.09
+    },
+    "individual_total": 10.96,
+    "top10_total": 48.31
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/07/01－2026/06/30)",
+      "docID": "S100Z42D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社ストーンサイド",
+          "shares": 5200000,
+          "ratio": 7.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "石脇　秀夫",
+          "shares": 4800100,
+          "ratio": 6.79,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "合同会社たかおか屋",
+          "shares": 4731000,
+          "ratio": 6.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 4048700,
+          "ratio": 5.73,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社瑛",
+          "shares": 3857600,
+          "ratio": 5.46,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社Y",
+          "shares": 3551650,
+          "ratio": 5.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "東京センチュリー株式会社",
+          "shares": 3532200,
+          "ratio": 5.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　一樹",
+          "shares": 1555300,
+          "ratio": 2.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＢＡＲＣＬＡＹＳ　ＣＡＰＩＴＡＬ　ＳＥＣ　ＬＴＤ　ＥＱ　ＣＯ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 1477524,
+          "ratio": 2.09,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "石田　智也",
+          "shares": 1396500,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.53,
+          "individual": 10.96,
+          "trust": 5.73,
+          "financial": 2.09
+        },
+        "individual_total": 10.96,
+        "top10_total": 48.31
+      }
+    }
+  ]
+}

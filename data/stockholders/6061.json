@@ -1,0 +1,218 @@
+{
+  "secCode": "6061",
+  "issuerName": "株式会社ユニバーサル園芸社",
+  "updated_at": "2026/09/26 15:48 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "カーン園子",
+      "shares": 1457000,
+      "ratio": 15.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "森坂拓実",
+      "shares": 1124072,
+      "ratio": 12.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "森坂優子",
+      "shares": 1064160,
+      "ratio": 11.55,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ユニバーサル園芸社社員持株会",
+      "shares": 884600,
+      "ratio": 9.6,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ユニバーサル商事有限会社",
+      "shares": 489200,
+      "ratio": 5.31,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大和リース株式会社",
+      "shares": 400000,
+      "ratio": 4.34,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日泰サービス株式会社",
+      "shares": 292000,
+      "ratio": 3.17,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社東邦レオホールディングス",
+      "shares": 280000,
+      "ratio": 3.04,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 156800,
+      "ratio": 1.7,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "岡山フードサービス株式会社",
+      "shares": 139800,
+      "ratio": 1.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 39.56,
+      "employee": 9.6,
+      "corporate": 17.37,
+      "other": 1.7
+    },
+    "individual_total": 39.56,
+    "top10_total": 68.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第53期(2025/07/01－2026/06/30)",
+      "docID": "S100Z404",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "カーン園子",
+          "shares": 1457000,
+          "ratio": 15.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "森坂拓実",
+          "shares": 1124072,
+          "ratio": 12.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "森坂優子",
+          "shares": 1064160,
+          "ratio": 11.55,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ユニバーサル園芸社社員持株会",
+          "shares": 884600,
+          "ratio": 9.6,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ユニバーサル商事有限会社",
+          "shares": 489200,
+          "ratio": 5.31,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大和リース株式会社",
+          "shares": 400000,
+          "ratio": 4.34,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日泰サービス株式会社",
+          "shares": 292000,
+          "ratio": 3.17,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社東邦レオホールディングス",
+          "shares": 280000,
+          "ratio": 3.04,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 156800,
+          "ratio": 1.7,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "岡山フードサービス株式会社",
+          "shares": 139800,
+          "ratio": 1.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 39.56,
+          "employee": 9.6,
+          "corporate": 17.37,
+          "other": 1.7
+        },
+        "individual_total": 39.56,
+        "top10_total": 68.23
+      }
+    }
+  ]
+}

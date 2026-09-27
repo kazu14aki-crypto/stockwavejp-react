@@ -1,0 +1,218 @@
+{
+  "secCode": "3597",
+  "issuerName": "株式会社自重堂",
+  "updated_at": "2026/09/26 15:47 JST",
+  "latestDate": "2026-09-25",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "出原正博",
+      "shares": 507000,
+      "ratio": 17.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MASANOBUINVESTMENTCAPITAL株式会社",
+      "shares": 245000,
+      "ratio": 8.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "出原ホールディングス株式会社",
+      "shares": 245000,
+      "ratio": 8.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社広島銀行\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 119000,
+      "ratio": 4.13,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 119000,
+      "ratio": 4.13,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 103000,
+      "ratio": 3.59,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "有限会社ユーエルディー",
+      "shares": 96000,
+      "ratio": 3.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社オカムラ",
+      "shares": 79000,
+      "ratio": 2.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野口市子",
+      "shares": 60000,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "出原幸恵",
+      "shares": 60000,
+      "ratio": 2.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 21.81,
+      "corporate": 23.16,
+      "trust": 7.72,
+      "financial": 4.13
+    },
+    "individual_total": 21.81,
+    "top10_total": 56.82
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-25",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第66期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3WJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "出原正博",
+          "shares": 507000,
+          "ratio": 17.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MASANOBUINVESTMENTCAPITAL株式会社",
+          "shares": 245000,
+          "ratio": 8.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "出原ホールディングス株式会社",
+          "shares": 245000,
+          "ratio": 8.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社広島銀行\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 119000,
+          "ratio": 4.13,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 119000,
+          "ratio": 4.13,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 103000,
+          "ratio": 3.59,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "有限会社ユーエルディー",
+          "shares": 96000,
+          "ratio": 3.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社オカムラ",
+          "shares": 79000,
+          "ratio": 2.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野口市子",
+          "shares": 60000,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "出原幸恵",
+          "shares": 60000,
+          "ratio": 2.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 21.81,
+          "corporate": 23.16,
+          "trust": 7.72,
+          "financial": 4.13
+        },
+        "individual_total": 21.81,
+        "top10_total": 56.82
+      }
+    }
+  ]
+}

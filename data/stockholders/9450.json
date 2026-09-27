@@ -1,0 +1,220 @@
+{
+  "secCode": "9450",
+  "issuerName": "株式会社ファイバーゲート",
+  "updated_at": "2026/09/26 15:50 JST",
+  "latestDate": "2026-09-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社MIコーポレーション",
+      "shares": 4749000,
+      "ratio": 23.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "猪又　將哲",
+      "shares": 2794000,
+      "ratio": 13.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "三井住友信託銀行株式会社（信託口　甲23号）",
+      "shares": 1700000,
+      "ratio": 8.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "松本　泰三",
+      "shares": 1097000,
+      "ratio": 5.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信KK投資事業有限責任組合",
+      "shares": 1069000,
+      "ratio": 5.31,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1003000,
+      "ratio": 4.98,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社UH5",
+      "shares": 977000,
+      "ratio": 4.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 555000,
+      "ratio": 2.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブブローカーズ証券株式会社）",
+      "shares": 272000,
+      "ratio": 1.35,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "光通信株式会社",
+      "shares": 205000,
+      "ratio": 1.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.47,
+      "individual": 19.33,
+      "trust": 16.17,
+      "other": 5.31,
+      "securities": 1.35
+    },
+    "individual_total": 19.33,
+    "top10_total": 71.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3AD",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社MIコーポレーション",
+          "shares": 4749000,
+          "ratio": 23.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "猪又　將哲",
+          "shares": 2794000,
+          "ratio": 13.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "三井住友信託銀行株式会社（信託口　甲23号）",
+          "shares": 1700000,
+          "ratio": 8.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "松本　泰三",
+          "shares": 1097000,
+          "ratio": 5.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信KK投資事業有限責任組合",
+          "shares": 1069000,
+          "ratio": 5.31,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1003000,
+          "ratio": 4.98,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社UH5",
+          "shares": 977000,
+          "ratio": 4.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 555000,
+          "ratio": 2.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "INTERACTIVE BROKERS LLC\n（常任代理人　インタラクティブブローカーズ証券株式会社）",
+          "shares": 272000,
+          "ratio": 1.35,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "光通信株式会社",
+          "shares": 205000,
+          "ratio": 1.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.47,
+          "individual": 19.33,
+          "trust": 16.17,
+          "other": 5.31,
+          "securities": 1.35
+        },
+        "individual_total": 19.33,
+        "top10_total": 71.63
+      }
+    }
+  ]
+}
