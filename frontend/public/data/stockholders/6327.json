@@ -1,0 +1,224 @@
+{
+  "secCode": "6327",
+  "issuerName": "北川精機株式会社",
+  "updated_at": "2026/09/29 00:54 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "北川精機取引先持株会",
+      "shares": 778000,
+      "ratio": 9.54,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "Futu Securities International (Hong Kong) Limited\n(常任代理人moomoo証券株式会社)",
+      "shares": 673000,
+      "ratio": 8.25,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "内田　雅敏",
+      "shares": 642000,
+      "ratio": 7.87,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "INTERACTIVE BROKERS LLC\n(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+      "shares": 503000,
+      "ratio": 6.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社北川興産",
+      "shares": 486000,
+      "ratio": 5.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社広島銀行\n(常任代理人　株式会社日本カストディ銀行)",
+      "shares": 347000,
+      "ratio": 4.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "トウカイトウキョウセキュリティーズアジアリミテッド\n(常任代理人　東海東京証券株式会社)",
+      "shares": 237000,
+      "ratio": 2.91,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "内田　由美",
+      "shares": 230000,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "SCBHK AC-CHINA GALAXY INTERNATIONAL SECURITIES (HONG KONG) CO., LIMITED-CLIENT ACCOUNT\n(常任代理人　株式会社三菱UFJ銀行)",
+      "shares": 227000,
+      "ratio": 2.79,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPMSPLC CLIENT ASSETS SK JPY\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+      "shares": 208000,
+      "ratio": 2.56,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "employee": 9.54,
+      "securities": 17.32,
+      "individual": 10.69,
+      "corporate": 5.96,
+      "trust": 4.25,
+      "foreign": 2.79,
+      "other": 2.56
+    },
+    "individual_total": 10.69,
+    "top10_total": 53.11
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第70期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4C6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "北川精機取引先持株会",
+          "shares": 778000,
+          "ratio": 9.54,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "Futu Securities International (Hong Kong) Limited\n(常任代理人moomoo証券株式会社)",
+          "shares": 673000,
+          "ratio": 8.25,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "内田　雅敏",
+          "shares": 642000,
+          "ratio": 7.87,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "INTERACTIVE BROKERS LLC\n(常任代理人　インタラクティブ・ブローカーズ証券株式会社)",
+          "shares": 503000,
+          "ratio": 6.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社北川興産",
+          "shares": 486000,
+          "ratio": 5.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社広島銀行\n(常任代理人　株式会社日本カストディ銀行)",
+          "shares": 347000,
+          "ratio": 4.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "トウカイトウキョウセキュリティーズアジアリミテッド\n(常任代理人　東海東京証券株式会社)",
+          "shares": 237000,
+          "ratio": 2.91,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "内田　由美",
+          "shares": 230000,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "SCBHK AC-CHINA GALAXY INTERNATIONAL SECURITIES (HONG KONG) CO., LIMITED-CLIENT ACCOUNT\n(常任代理人　株式会社三菱UFJ銀行)",
+          "shares": 227000,
+          "ratio": 2.79,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPMSPLC CLIENT ASSETS SK JPY\n(常任代理人　シティバンク、エヌ・エイ東京支店)",
+          "shares": 208000,
+          "ratio": 2.56,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "employee": 9.54,
+          "securities": 17.32,
+          "individual": 10.69,
+          "corporate": 5.96,
+          "trust": 4.25,
+          "foreign": 2.79,
+          "other": 2.56
+        },
+        "individual_total": 10.69,
+        "top10_total": 53.11
+      }
+    }
+  ]
+}

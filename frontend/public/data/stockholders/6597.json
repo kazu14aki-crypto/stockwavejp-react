@@ -1,0 +1,220 @@
+{
+  "secCode": "6597",
+  "issuerName": "ＨＰＣシステムズ株式会社",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "FUBON SECURITIES CO.,LTD. CLIENT 30(常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 428700,
+      "ratio": 10.39,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 377500,
+      "ratio": 9.15,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "リョーサン菱洋株式会社",
+      "shares": 304800,
+      "ratio": 7.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ナラサキ産業株式会社",
+      "shares": 279000,
+      "ratio": 6.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "アズワン株式会社",
+      "shares": 145800,
+      "ratio": 3.53,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）(常任代理人 株式会社三菱UFJ銀行)",
+      "shares": 100978,
+      "ratio": 2.45,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小野　鉄平",
+      "shares": 100000,
+      "ratio": 2.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 77400,
+      "ratio": 1.88,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "野村證券株式会社",
+      "shares": 60516,
+      "ratio": 1.47,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "日本証券金融株式会社",
+      "shares": 56200,
+      "ratio": 1.36,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 29.53,
+      "trust": 9.15,
+      "foreign": 2.45,
+      "individual": 2.42,
+      "securities": 3.24
+    },
+    "individual_total": 2.42,
+    "top10_total": 46.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4KT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "FUBON SECURITIES CO.,LTD. CLIENT 30(常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 428700,
+          "ratio": 10.39,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 377500,
+          "ratio": 9.15,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "リョーサン菱洋株式会社",
+          "shares": 304800,
+          "ratio": 7.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ナラサキ産業株式会社",
+          "shares": 279000,
+          "ratio": 6.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "アズワン株式会社",
+          "shares": 145800,
+          "ratio": 3.53,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）(常任代理人 株式会社三菱UFJ銀行)",
+          "shares": 100978,
+          "ratio": 2.45,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小野　鉄平",
+          "shares": 100000,
+          "ratio": 2.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 77400,
+          "ratio": 1.88,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "野村證券株式会社",
+          "shares": 60516,
+          "ratio": 1.47,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "日本証券金融株式会社",
+          "shares": 56200,
+          "ratio": 1.36,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 29.53,
+          "trust": 9.15,
+          "foreign": 2.45,
+          "individual": 2.42,
+          "securities": 3.24
+        },
+        "individual_total": 2.42,
+        "top10_total": 46.79
+      }
+    }
+  ]
+}

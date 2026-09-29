@@ -1,0 +1,218 @@
+{
+  "secCode": "3446",
+  "issuerName": "株式会社ジェイテックコーポレーション",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "津村　尚史",
+      "shares": 2490000,
+      "ratio": 42.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大阪コンピュータ工業株式会社",
+      "shares": 360000,
+      "ratio": 6.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 179000,
+      "ratio": 3.04,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ＧＭＯクリック証券株式会社",
+      "shares": 126000,
+      "ratio": 2.14,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有馬　誠",
+      "shares": 50000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "内山　孝教",
+      "shares": 40000,
+      "ratio": 0.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "細羽　強",
+      "shares": 36000,
+      "ratio": 0.62,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "大西　隆幸",
+      "shares": 35000,
+      "ratio": 0.59,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＪＰモルガン証券株式会社",
+      "shares": 33000,
+      "ratio": 0.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ\nＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 28000,
+      "ratio": 0.48,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.93,
+      "corporate": 6.1,
+      "securities": 5.75,
+      "financial": 0.48
+    },
+    "individual_total": 44.93,
+    "top10_total": 57.26
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第33期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4HT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "津村　尚史",
+          "shares": 2490000,
+          "ratio": 42.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大阪コンピュータ工業株式会社",
+          "shares": 360000,
+          "ratio": 6.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 179000,
+          "ratio": 3.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ＧＭＯクリック証券株式会社",
+          "shares": 126000,
+          "ratio": 2.14,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有馬　誠",
+          "shares": 50000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "内山　孝教",
+          "shares": 40000,
+          "ratio": 0.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "細羽　強",
+          "shares": 36000,
+          "ratio": 0.62,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "大西　隆幸",
+          "shares": 35000,
+          "ratio": 0.59,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＪＰモルガン証券株式会社",
+          "shares": 33000,
+          "ratio": 0.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "ＪＰ　ＪＰＭＳＥ　ＬＵＸ　ＲＥ　ＵＢＳ　ＡＧ\nＬＯＮＤＯＮ　ＢＲＡＮＣＨ　ＥＱ　ＣＯ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 28000,
+          "ratio": 0.48,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.93,
+          "corporate": 6.1,
+          "securities": 5.75,
+          "financial": 0.48
+        },
+        "individual_total": 44.93,
+        "top10_total": 57.26
+      }
+    }
+  ]
+}

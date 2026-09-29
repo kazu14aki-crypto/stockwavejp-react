@@ -1,0 +1,214 @@
+{
+  "secCode": "7371",
+  "issuerName": "Ｚｅｎｋｅｎ株式会社",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "吉　澤　信　男",
+      "shares": 5290000,
+      "ratio": 43.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株 式 会 社ＩＣ",
+      "shares": 700000,
+      "ratio": 5.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "林　　順 之 亮",
+      "shares": 688900,
+      "ratio": 5.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社フルキャストホールディングス",
+      "shares": 439100,
+      "ratio": 3.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "内　藤　征　吾",
+      "shares": 333152,
+      "ratio": 2.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松　島　征　吾",
+      "shares": 328300,
+      "ratio": 2.69,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "水　元　公　仁",
+      "shares": 325900,
+      "ratio": 2.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "本 村　丹 努 琉",
+      "shares": 161100,
+      "ratio": 1.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社アームフィールド",
+      "shares": 139700,
+      "ratio": 1.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "鷲　谷　将　樹",
+      "shares": 129600,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 65.29,
+      "corporate": 4.74
+    },
+    "individual_total": 65.29,
+    "top10_total": 70.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/07/01－2026/06/30)",
+      "docID": "S100Z3YQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "吉　澤　信　男",
+          "shares": 5290000,
+          "ratio": 43.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株 式 会 社ＩＣ",
+          "shares": 700000,
+          "ratio": 5.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "林　　順 之 亮",
+          "shares": 688900,
+          "ratio": 5.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社フルキャストホールディングス",
+          "shares": 439100,
+          "ratio": 3.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "内　藤　征　吾",
+          "shares": 333152,
+          "ratio": 2.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松　島　征　吾",
+          "shares": 328300,
+          "ratio": 2.69,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "水　元　公　仁",
+          "shares": 325900,
+          "ratio": 2.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "本 村　丹 努 琉",
+          "shares": 161100,
+          "ratio": 1.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社アームフィールド",
+          "shares": 139700,
+          "ratio": 1.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鷲　谷　将　樹",
+          "shares": 129600,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 65.29,
+          "corporate": 4.74
+        },
+        "individual_total": 65.29,
+        "top10_total": 70.03
+      }
+    }
+  ]
+}

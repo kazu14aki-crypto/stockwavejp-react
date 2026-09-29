@@ -1,0 +1,220 @@
+{
+  "secCode": "3286",
+  "issuerName": "トラストホールディングス株式会社",
+  "updated_at": "2026/09/29 00:56 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "九州応援ファンド第１号組合",
+      "shares": 407800,
+      "ratio": 9.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "九州応援ファンド第２号組合",
+      "shares": 350700,
+      "ratio": 8.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（株式付与ＥＳＯＰ信託口・75551口）",
+      "shares": 282320,
+      "ratio": 6.8,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "トラストホールディングス従業員持株会",
+      "shares": 169700,
+      "ratio": 4.09,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "九州応援ファンド第３号組合",
+      "shares": 120700,
+      "ratio": 2.91,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山川　修",
+      "shares": 93830,
+      "ratio": 2.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "矢羽田　弘",
+      "shares": 88834,
+      "ratio": 2.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "藤原　香代子",
+      "shares": 75800,
+      "ratio": 1.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社竹田商会",
+      "shares": 63000,
+      "ratio": 1.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大津　忠芳",
+      "shares": 42946,
+      "ratio": 1.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 21.17,
+      "trust": 6.8,
+      "employee": 4.09,
+      "individual": 7.25,
+      "corporate": 1.52
+    },
+    "individual_total": 7.25,
+    "top10_total": 40.83
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第13期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4N9",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "九州応援ファンド第１号組合",
+          "shares": 407800,
+          "ratio": 9.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "九州応援ファンド第２号組合",
+          "shares": 350700,
+          "ratio": 8.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（株式付与ＥＳＯＰ信託口・75551口）",
+          "shares": 282320,
+          "ratio": 6.8,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "トラストホールディングス従業員持株会",
+          "shares": 169700,
+          "ratio": 4.09,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "九州応援ファンド第３号組合",
+          "shares": 120700,
+          "ratio": 2.91,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山川　修",
+          "shares": 93830,
+          "ratio": 2.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "矢羽田　弘",
+          "shares": 88834,
+          "ratio": 2.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "藤原　香代子",
+          "shares": 75800,
+          "ratio": 1.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社竹田商会",
+          "shares": 63000,
+          "ratio": 1.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大津　忠芳",
+          "shares": 42946,
+          "ratio": 1.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 21.17,
+          "trust": 6.8,
+          "employee": 4.09,
+          "individual": 7.25,
+          "corporate": 1.52
+        },
+        "individual_total": 7.25,
+        "top10_total": 40.83
+      }
+    }
+  ]
+}

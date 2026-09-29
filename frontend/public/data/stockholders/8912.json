@@ -1,0 +1,216 @@
+{
+  "secCode": "8912",
+  "issuerName": "株式会社エリアクエスト",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "謙雅産業株式会社",
+      "shares": 7100000,
+      "ratio": 45.85,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "鈴木　 洋",
+      "shares": 1146200,
+      "ratio": 7.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "清原　雅人",
+      "shares": 556800,
+      "ratio": 3.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "関口　さつき",
+      "shares": 143200,
+      "ratio": 0.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "エリアクエストグループ従業員持株会",
+      "shares": 129414,
+      "ratio": 0.84,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "エリアクエストグループ役員持株会",
+      "shares": 121700,
+      "ratio": 0.79,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "丸山　秀治",
+      "shares": 119500,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "甚目　裕史",
+      "shares": 80000,
+      "ratio": 0.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "荻野　美知子",
+      "shares": 37500,
+      "ratio": 0.24,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "金子　高久",
+      "shares": 36300,
+      "ratio": 0.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.85,
+      "individual": 13.68,
+      "employee": 1.63
+    },
+    "individual_total": 13.68,
+    "top10_total": 61.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/07/01－2026/06/30)",
+      "docID": "S100Z42V",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "謙雅産業株式会社",
+          "shares": 7100000,
+          "ratio": 45.85,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "鈴木　 洋",
+          "shares": 1146200,
+          "ratio": 7.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "清原　雅人",
+          "shares": 556800,
+          "ratio": 3.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "関口　さつき",
+          "shares": 143200,
+          "ratio": 0.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "エリアクエストグループ従業員持株会",
+          "shares": 129414,
+          "ratio": 0.84,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "エリアクエストグループ役員持株会",
+          "shares": 121700,
+          "ratio": 0.79,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "丸山　秀治",
+          "shares": 119500,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "甚目　裕史",
+          "shares": 80000,
+          "ratio": 0.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "荻野　美知子",
+          "shares": 37500,
+          "ratio": 0.24,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "金子　高久",
+          "shares": 36300,
+          "ratio": 0.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.85,
+          "individual": 13.68,
+          "employee": 1.63
+        },
+        "individual_total": 13.68,
+        "top10_total": 61.16
+      }
+    }
+  ]
+}
