@@ -1,0 +1,216 @@
+{
+  "secCode": "3625",
+  "issuerName": "テックファームホールディングス株式会社",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社TOKAIコミュニケーションズ",
+      "shares": 638000,
+      "ratio": 8.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "筒井　雄一朗",
+      "shares": 468500,
+      "ratio": 6.58,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "小林　正興",
+      "shares": 278000,
+      "ratio": 3.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社読売新聞東京本社",
+      "shares": 264000,
+      "ratio": 3.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 254521,
+      "ratio": 3.58,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "中村　臣敏",
+      "shares": 243900,
+      "ratio": 3.43,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山村　慶子",
+      "shares": 202000,
+      "ratio": 2.84,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ミライト・ワン",
+      "shares": 200000,
+      "ratio": 2.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "志村　貴子",
+      "shares": 170800,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "荒井　三ノ進",
+      "shares": 137500,
+      "ratio": 1.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 15.49,
+      "individual": 21.09,
+      "securities": 3.58
+    },
+    "individual_total": 21.09,
+    "top10_total": 40.16
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/07/01－2026/06/30)",
+      "docID": "S100Z468",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社TOKAIコミュニケーションズ",
+          "shares": 638000,
+          "ratio": 8.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "筒井　雄一朗",
+          "shares": 468500,
+          "ratio": 6.58,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "小林　正興",
+          "shares": 278000,
+          "ratio": 3.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社読売新聞東京本社",
+          "shares": 264000,
+          "ratio": 3.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 254521,
+          "ratio": 3.58,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "中村　臣敏",
+          "shares": 243900,
+          "ratio": 3.43,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山村　慶子",
+          "shares": 202000,
+          "ratio": 2.84,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ミライト・ワン",
+          "shares": 200000,
+          "ratio": 2.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "志村　貴子",
+          "shares": 170800,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "荒井　三ノ進",
+          "shares": 137500,
+          "ratio": 1.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 15.49,
+          "individual": 21.09,
+          "securities": 3.58
+        },
+        "individual_total": 21.09,
+        "top10_total": 40.16
+      }
+    }
+  ]
+}

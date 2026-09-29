@@ -1,0 +1,220 @@
+{
+  "secCode": "3916",
+  "issuerName": "デジタル・インフォメーション・テクノロジー株式会社",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ＮＩインベストメント株式会社",
+      "shares": 4000000,
+      "ratio": 13.36,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505044（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 2375000,
+      "ratio": 7.93,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2255100,
+      "ratio": 7.53,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "市川　聡",
+      "shares": 2188000,
+      "ratio": 7.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＹＩインベストメント株式会社",
+      "shares": 2000000,
+      "ratio": 6.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＦＩインベストメント株式会社",
+      "shares": 1901600,
+      "ratio": 6.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＤＩＴ社員持株会",
+      "shares": 948880,
+      "ratio": 3.17,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 778300,
+      "ratio": 2.6,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人　香港上海銀行東京支店）",
+      "shares": 720000,
+      "ratio": 2.41,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 469800,
+      "ratio": 1.57,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 26.39,
+      "foreign": 10.34,
+      "trust": 11.7,
+      "individual": 7.31,
+      "employee": 3.17
+    },
+    "individual_total": 7.31,
+    "top10_total": 58.91
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第25期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4HZ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ＮＩインベストメント株式会社",
+          "shares": 4000000,
+          "ratio": 13.36,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505044（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 2375000,
+          "ratio": 7.93,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2255100,
+          "ratio": 7.53,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "市川　聡",
+          "shares": 2188000,
+          "ratio": 7.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＹＩインベストメント株式会社",
+          "shares": 2000000,
+          "ratio": 6.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＦＩインベストメント株式会社",
+          "shares": 1901600,
+          "ratio": 6.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＤＩＴ社員持株会",
+          "shares": 948880,
+          "ratio": 3.17,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 778300,
+          "ratio": 2.6,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNP PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS（常任代理人　香港上海銀行東京支店）",
+          "shares": 720000,
+          "ratio": 2.41,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 469800,
+          "ratio": 1.57,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 26.39,
+          "foreign": 10.34,
+          "trust": 11.7,
+          "individual": 7.31,
+          "employee": 3.17
+        },
+        "individual_total": 7.31,
+        "top10_total": 58.91
+      }
+    }
+  ]
+}

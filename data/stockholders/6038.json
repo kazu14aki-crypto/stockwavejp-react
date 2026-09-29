@@ -1,0 +1,216 @@
+{
+  "secCode": "6038",
+  "issuerName": "株式会社イード",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "エキサイト株式会社",
+      "shares": 706900,
+      "ratio": 14.4,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社博報堂",
+      "shares": 517700,
+      "ratio": 10.54,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社マイナビ",
+      "shares": 400000,
+      "ratio": 8.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "宮川　洋",
+      "shares": 309450,
+      "ratio": 6.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社ティーガイア",
+      "shares": 250000,
+      "ratio": 5.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "永井　詳二",
+      "shares": 151500,
+      "ratio": 3.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "内藤　征吾",
+      "shares": 150000,
+      "ratio": 3.05,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社ポプラ社",
+      "shares": 120000,
+      "ratio": 2.44,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "吉野　弘彦",
+      "shares": 90900,
+      "ratio": 1.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 88400,
+      "ratio": 1.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 40.61,
+      "individual": 14.28,
+      "securities": 1.8
+    },
+    "individual_total": 14.28,
+    "top10_total": 56.69
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4I4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "エキサイト株式会社",
+          "shares": 706900,
+          "ratio": 14.4,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社博報堂",
+          "shares": 517700,
+          "ratio": 10.54,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社マイナビ",
+          "shares": 400000,
+          "ratio": 8.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "宮川　洋",
+          "shares": 309450,
+          "ratio": 6.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社ティーガイア",
+          "shares": 250000,
+          "ratio": 5.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "永井　詳二",
+          "shares": 151500,
+          "ratio": 3.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "内藤　征吾",
+          "shares": 150000,
+          "ratio": 3.05,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ポプラ社",
+          "shares": 120000,
+          "ratio": 2.44,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "吉野　弘彦",
+          "shares": 90900,
+          "ratio": 1.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES（常任代理人　モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 88400,
+          "ratio": 1.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 40.61,
+          "individual": 14.28,
+          "securities": 1.8
+        },
+        "individual_total": 14.28,
+        "top10_total": 56.69
+      }
+    }
+  ]
+}

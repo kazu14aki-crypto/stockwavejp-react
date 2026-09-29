@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-25T14:44:22+00:00",
+  "updated_at": "2026-09-29T16:04:44+00:00",
   "source": "TDnet XBRL",
   "definitions": {
     "net_cash": "現金及び預金−有利子負債（リース負債・仕入債務を除く）",
@@ -127190,38 +127190,38 @@
         "revenue": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         },
         "operating_income": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         },
         "ordinary_income": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         },
         "net_income_parent": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         },
         "eps": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         },
         "dps": {
           "disclosed_at": "2026-08-18 15:30:00",
           "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+          "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
         }
       },
       "guidance_status": "company_forecast",
       "guidance_disclosed_at": "2026-08-18 15:30:00",
       "guidance_filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip",
+      "guidance_source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
@@ -127621,7 +127621,7 @@
       "disclosed_at": "2026-08-18 15:30:00",
       "filing_title": "2026年6月期決算短信〔日本基準〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www.release.tdnet.info/inbs/081220260809515913.zip"
+      "source_url": "https://www2.jpx.co.jp/disc/75320/081220260809515913.zip"
     },
     "3382.T": {
       "net_cash": -599974000000,
@@ -143284,14 +143284,14 @@
       "treasury_stock_shares": 7909078,
       "shares_outstanding": 171840622,
       "average_shares": 171672770,
-      "forecast_revenue": 51000000000,
+      "forecast_revenue": 57000000000,
       "forecast_operating_income": 3900000000,
       "forecast_ordinary_income": null,
       "forecast_net_income_parent": null,
       "forecast_eps": null,
       "forecast_dps": 11,
       "guidance": {
-        "revenue": 51000000000,
+        "revenue": 57000000000,
         "operating_income": 3900000000,
         "ordinary_income": null,
         "net_income_parent": null,
@@ -143300,14 +143300,14 @@
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-08-07 15:30:00",
-          "filing_title": "2026年6月期 決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/36320/081220260807513812.zip"
+          "disclosed_at": "2026-09-28 18:30:00",
+          "filing_title": "通期連結業績予想の修正（上方修正）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220260925540553.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-08-07 15:30:00",
-          "filing_title": "2026年6月期 決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/36320/081220260807513812.zip"
+          "disclosed_at": "2026-09-28 18:30:00",
+          "filing_title": "通期連結業績予想の修正（上方修正）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220260925540553.zip"
         },
         "dps": {
           "disclosed_at": "2026-08-07 15:30:00",
@@ -143315,10 +143315,10 @@
           "source_url": "https://www2.jpx.co.jp/disc/36320/081220260807513812.zip"
         }
       },
-      "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-08-07 15:30:00",
-      "guidance_filing_title": "2026年6月期 決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/36320/081220260807513812.zip",
+      "guidance_status": "revised_company_forecast",
+      "guidance_disclosed_at": "2026-09-28 18:30:00",
+      "guidance_filing_title": "通期連結業績予想の修正（上方修正）に関するお知らせ",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/091220260925540553.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
@@ -143565,7 +143565,7 @@
           ]
         },
         "forecast_revenue": {
-          "value": 51000000000,
+          "value": 57000000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "NetSales",
@@ -143581,6 +143581,10 @@
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
@@ -143605,6 +143609,10 @@
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",

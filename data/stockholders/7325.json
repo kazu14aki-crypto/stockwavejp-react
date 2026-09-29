@@ -1,0 +1,218 @@
+{
+  "secCode": "7325",
+  "issuerName": "株式会社アイリックコーポレーション",
+  "updated_at": "2026/09/29 00:56 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "Nihon IFA Partners Ltd．\n（常任代理人　マローン・インベストメント・ホールディングス・リミテッド）",
+      "shares": 2423040,
+      "ratio": 29.63,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "勝本　竜二",
+      "shares": 1164000,
+      "ratio": 14.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 566960,
+      "ratio": 6.93,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社第一ライフグループ",
+      "shares": 566800,
+      "ratio": 6.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "式会社トラッドジャパン",
+      "shares": 430000,
+      "ratio": 5.25,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "ＦＷＤ生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+      "shares": 220000,
+      "ratio": 2.69,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "勝本　伸弘",
+      "shares": 215400,
+      "ratio": 2.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "半澤　勝広",
+      "shares": 209400,
+      "ratio": 2.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "水元　公仁",
+      "shares": 140300,
+      "ratio": 1.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "CACEIS BANK/QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+      "shares": 137200,
+      "ratio": 1.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 36.56,
+      "individual": 26.38,
+      "trust": 9.62,
+      "foreign": 1.67
+    },
+    "individual_total": 26.38,
+    "top10_total": 74.23
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第31期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4GS",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "Nihon IFA Partners Ltd．\n（常任代理人　マローン・インベストメント・ホールディングス・リミテッド）",
+          "shares": 2423040,
+          "ratio": 29.63,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "勝本　竜二",
+          "shares": 1164000,
+          "ratio": 14.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "住友生命保険相互会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 566960,
+          "ratio": 6.93,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社第一ライフグループ",
+          "shares": 566800,
+          "ratio": 6.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "式会社トラッドジャパン",
+          "shares": 430000,
+          "ratio": 5.25,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "ＦＷＤ生命保険株式会社\n（常任代理人　株式会社日本カストディ銀行）",
+          "shares": 220000,
+          "ratio": 2.69,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "勝本　伸弘",
+          "shares": 215400,
+          "ratio": 2.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "半澤　勝広",
+          "shares": 209400,
+          "ratio": 2.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "水元　公仁",
+          "shares": 140300,
+          "ratio": 1.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "CACEIS BANK/QUINTET LUXEMBOURG SUB AC / UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店セキュリティーズ・サービシズ・オペレーションズ）",
+          "shares": 137200,
+          "ratio": 1.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 36.56,
+          "individual": 26.38,
+          "trust": 9.62,
+          "foreign": 1.67
+        },
+        "individual_total": 26.38,
+        "top10_total": 74.23
+      }
+    }
+  ]
+}

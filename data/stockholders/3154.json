@@ -1,8 +1,8 @@
 {
   "secCode": "3154",
   "issuerName": "メディアスホールディングス株式会社",
-  "updated_at": "2026/09/14 23:50 JST",
-  "latestDate": "2026-09-03",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
   "latest": [
     {
       "rank": 1,
@@ -25,35 +25,35 @@
     {
       "rank": 3,
       "name": "㈱イケヤ",
-      "shares": 1739800,
-      "ratio": 7.8,
+      "shares": 1661900,
+      "ratio": 7.5,
       "category": "individual",
       "category_label": "個人（創業者一族の可能性）",
       "is_founder_family": false
     },
     {
       "rank": 4,
-      "name": "日本マスタートラスト信託銀行㈱(信託口)",
-      "shares": 1104400,
-      "ratio": 5.0,
-      "category": "trust",
-      "category_label": "信託口（国内機関・年金/投信）",
-      "is_founder_family": false
-    },
-    {
-      "rank": 5,
       "name": "メディアスホールディングス従業員持株会",
-      "shares": 1086304,
-      "ratio": 4.9,
+      "shares": 1074304,
+      "ratio": 4.8,
       "category": "employee",
       "category_label": "従業員持株会",
       "is_founder_family": false
     },
     {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行㈱(信託口)",
+      "shares": 942200,
+      "ratio": 4.2,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
       "rank": 6,
       "name": "栗原医療従業員持株会",
-      "shares": 596400,
-      "ratio": 2.7,
+      "shares": 579300,
+      "ratio": 2.6,
       "category": "employee",
       "category_label": "従業員持株会",
       "is_founder_family": false
@@ -97,16 +97,125 @@
   ],
   "latestSummary": {
     "by_category": {
-      "individual": 23.3,
+      "individual": 23.0,
       "other": 9.8,
-      "trust": 5.0,
-      "employee": 7.6,
+      "employee": 7.4,
+      "trust": 4.2,
       "corporate": 1.7
     },
-    "individual_total": 23.3,
-    "top10_total": 47.4
+    "individual_total": 23.0,
+    "top10_total": 46.1
   },
   "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/07/01－2026/06/30)",
+      "docID": "S100Z48T",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱エム・ケー",
+          "shares": 2190000,
+          "ratio": 9.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱Ｍ’ｓ",
+          "shares": 2188722,
+          "ratio": 9.8,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "㈱イケヤ",
+          "shares": 1661900,
+          "ratio": 7.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "メディアスホールディングス従業員持株会",
+          "shares": 1074304,
+          "ratio": 4.8,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行㈱(信託口)",
+          "shares": 942200,
+          "ratio": 4.2,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "栗原医療従業員持株会",
+          "shares": 579300,
+          "ratio": 2.6,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "池谷　保彦",
+          "shares": 482084,
+          "ratio": 2.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野田　了子",
+          "shares": 396900,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "アルフレッサホールディングス㈱",
+          "shares": 382800,
+          "ratio": 1.7,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "宮地　修平",
+          "shares": 373180,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.0,
+          "other": 9.8,
+          "employee": 7.4,
+          "trust": 4.2,
+          "corporate": 1.7
+        },
+        "individual_total": 23.0,
+        "top10_total": 46.1
+      }
+    },
     {
       "submitDate": "2026-09-03",
       "docType": "130",

@@ -1,0 +1,216 @@
+{
+  "secCode": "4052",
+  "issuerName": "フィーチャ株式会社",
+  "updated_at": "2026/09/29 00:56 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "曹　暉",
+      "shares": 1246532,
+      "ratio": 21.32,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "王　潞",
+      "shares": 898700,
+      "ratio": 15.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ボッシュ株式会社",
+      "shares": 587873,
+      "ratio": 10.05,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "脇　健一郎",
+      "shares": 548632,
+      "ratio": 9.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＨＵＩＺＨＯＵ ＤＥＳＡＹ ＳＶ ＡＵＴＯＭＯＴＩＶＥ ＣＯ．，ＬＴＤ．（常任代理人　ＳＭＢＣ日興証券株式会社）",
+      "shares": 528000,
+      "ratio": 9.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "楽天証券株式会社共有口",
+      "shares": 101400,
+      "ratio": 1.73,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 56235,
+      "ratio": 0.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "岩田　えみり",
+      "shares": 45100,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "寺田　康雄",
+      "shares": 42000,
+      "ratio": 0.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "飯島　功市郎",
+      "shares": 38300,
+      "ratio": 0.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 48.21,
+      "corporate": 10.05,
+      "securities": 11.72
+    },
+    "individual_total": 48.21,
+    "top10_total": 69.98
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/07/01－2026/06/30)",
+      "docID": "S100Z1RU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "曹　暉",
+          "shares": 1246532,
+          "ratio": 21.32,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "王　潞",
+          "shares": 898700,
+          "ratio": 15.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ボッシュ株式会社",
+          "shares": 587873,
+          "ratio": 10.05,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "脇　健一郎",
+          "shares": 548632,
+          "ratio": 9.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＨＵＩＺＨＯＵ ＤＥＳＡＹ ＳＶ ＡＵＴＯＭＯＴＩＶＥ ＣＯ．，ＬＴＤ．（常任代理人　ＳＭＢＣ日興証券株式会社）",
+          "shares": 528000,
+          "ratio": 9.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社共有口",
+          "shares": 101400,
+          "ratio": 1.73,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 56235,
+          "ratio": 0.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "岩田　えみり",
+          "shares": 45100,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "寺田　康雄",
+          "shares": 42000,
+          "ratio": 0.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "飯島　功市郎",
+          "shares": 38300,
+          "ratio": 0.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 48.21,
+          "corporate": 10.05,
+          "securities": 11.72
+        },
+        "individual_total": 48.21,
+        "top10_total": 69.98
+      }
+    }
+  ]
+}

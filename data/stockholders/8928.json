@@ -1,0 +1,218 @@
+{
+  "secCode": "8928",
+  "issuerName": "穴吹興産株式会社",
+  "updated_at": "2026/09/29 00:55 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱穴吹ハウジングサービス",
+      "shares": 5095000,
+      "ratio": 47.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "穴吹　忠嗣",
+      "shares": 878000,
+      "ratio": 8.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 3,
+      "name": "公益財団法人穴吹キヌヱ忠嗣教育基金",
+      "shares": 700000,
+      "ratio": 6.56,
+      "category": "foundation",
+      "category_label": "財団・学校法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "あなぶき興産従業員持株会",
+      "shares": 160000,
+      "ratio": 1.5,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "穴吹　薫",
+      "shares": 155000,
+      "ratio": 1.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 6,
+      "name": "㈱ワカタケ",
+      "shares": 102000,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "田中　日登美",
+      "shares": 83000,
+      "ratio": 0.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱中国銀行",
+      "shares": 72000,
+      "ratio": 0.67,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "穴吹　忠裕",
+      "shares": 57000,
+      "ratio": 0.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 10,
+      "name": "柴田　登",
+      "shares": 45000,
+      "ratio": 0.42,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 60.16,
+      "foundation": 6.56,
+      "employee": 1.5,
+      "financial": 0.67
+    },
+    "individual_total": 60.16,
+    "top10_total": 68.89
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第63期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4HA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱穴吹ハウジングサービス",
+          "shares": 5095000,
+          "ratio": 47.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "穴吹　忠嗣",
+          "shares": 878000,
+          "ratio": 8.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 3,
+          "name": "公益財団法人穴吹キヌヱ忠嗣教育基金",
+          "shares": 700000,
+          "ratio": 6.56,
+          "category": "foundation",
+          "category_label": "財団・学校法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "あなぶき興産従業員持株会",
+          "shares": 160000,
+          "ratio": 1.5,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "穴吹　薫",
+          "shares": 155000,
+          "ratio": 1.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 6,
+          "name": "㈱ワカタケ",
+          "shares": 102000,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "田中　日登美",
+          "shares": 83000,
+          "ratio": 0.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱中国銀行",
+          "shares": 72000,
+          "ratio": 0.67,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "穴吹　忠裕",
+          "shares": 57000,
+          "ratio": 0.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 10,
+          "name": "柴田　登",
+          "shares": 45000,
+          "ratio": 0.42,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 60.16,
+          "foundation": 6.56,
+          "employee": 1.5,
+          "financial": 0.67
+        },
+        "individual_total": 60.16,
+        "top10_total": 68.89
+      }
+    }
+  ]
+}

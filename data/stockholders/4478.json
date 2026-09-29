@@ -1,0 +1,218 @@
+{
+  "secCode": "4478",
+  "issuerName": "フリー株式会社",
+  "updated_at": "2026/09/29 00:56 JST",
+  "latestDate": "2026-09-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "佐々木 大輔",
+      "shares": 10925035,
+      "ratio": 18.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "MSIP CLIENT SECURITIES（常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 5668800,
+      "ratio": 9.49,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "MSCO CUSTOMER SECURITIES （常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+      "shares": 4457959,
+      "ratio": 7.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "GOLDMAN SACHS & CO.REG（常任代理人 ゴールドマン・サックス証券株式会社）",
+      "shares": 3044549,
+      "ratio": 5.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "INTERACTIVE　BROKERS　LLC（常任代理人 インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 3001738,
+      "ratio": 5.03,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社ラクス",
+      "shares": 2950000,
+      "ratio": 4.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社リクルート",
+      "shares": 2277267,
+      "ratio": 3.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 2098055,
+      "ratio": 3.51,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "横路 隆",
+      "shares": 2058035,
+      "ratio": 3.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE−AC)（常任代理人 株式会社三菱ＵＦＪ銀行）",
+      "shares": 1526664,
+      "ratio": 2.56,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 21.75,
+      "securities": 14.52,
+      "foreign": 18.64,
+      "corporate": 8.75
+    },
+    "individual_total": 21.75,
+    "top10_total": 63.66
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4LO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "佐々木 大輔",
+          "shares": 10925035,
+          "ratio": 18.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "MSIP CLIENT SECURITIES（常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 5668800,
+          "ratio": 9.49,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "MSCO CUSTOMER SECURITIES （常任代理人 モルガン・スタンレーＭＵＦＧ証券株式会社）",
+          "shares": 4457959,
+          "ratio": 7.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "GOLDMAN SACHS & CO.REG（常任代理人 ゴールドマン・サックス証券株式会社）",
+          "shares": 3044549,
+          "ratio": 5.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "INTERACTIVE　BROKERS　LLC（常任代理人 インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 3001738,
+          "ratio": 5.03,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社ラクス",
+          "shares": 2950000,
+          "ratio": 4.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社リクルート",
+          "shares": 2277267,
+          "ratio": 3.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BNYM SA/NV FOR BNYM FOR BNYM GCM CLIENT ACCTS M ILM FE（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 2098055,
+          "ratio": 3.51,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "横路 隆",
+          "shares": 2058035,
+          "ratio": 3.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG (FE−AC)（常任代理人 株式会社三菱ＵＦＪ銀行）",
+          "shares": 1526664,
+          "ratio": 2.56,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 21.75,
+          "securities": 14.52,
+          "foreign": 18.64,
+          "corporate": 8.75
+        },
+        "individual_total": 21.75,
+        "top10_total": 63.66
+      }
+    }
+  ]
+}
