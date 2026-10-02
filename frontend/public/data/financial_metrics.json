@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-01T16:36:20+00:00",
+  "updated_at": "2026-10-02T15:57:43+00:00",
   "source": "TDnet XBRL",
   "definitions": {
     "net_cash": "現金及び預金−有利子負債（リース負債・仕入債務を除く）",
@@ -54301,40 +54301,40 @@
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         },
         "eps": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         },
         "dps": {
-          "disclosed_at": "2026-08-07 10:00:00",
-          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+          "disclosed_at": "2026-10-02 16:00:00",
+          "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-08-07 10:00:00",
-      "guidance_filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip",
+      "guidance_disclosed_at": "2026-10-02 16:00:00",
+      "guidance_filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
@@ -54725,10 +54725,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-08-07 10:00:00",
-      "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）",
+      "disclosed_at": "2026-10-02 16:00:00",
+      "filing_title": "2027年３月期第１四半期決算短信〔ＩＦＲＳ〕（連結）（公認会計士等による期中レビューの完了）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/50760/081220260804509076.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220260903531293.zip"
     },
     "8001.T": {
       "net_cash": null,
