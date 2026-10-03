@@ -1,0 +1,222 @@
+{
+  "secCode": "3350",
+  "issuerName": "株式会社メタプラネット",
+  "updated_at": "2026/10/03 15:43 JST",
+  "latestDate": "2026-10-02",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+      "shares": 152369293,
+      "ratio": 13.07,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "CLEARSTREAM BANKING S.A.\n（常任代理人　香港上海銀行　東京支店）",
+      "shares": 100973990,
+      "ratio": 8.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NATIONAL FINANCIAL SERVICES LLC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 97706094,
+      "ratio": 8.38,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "CHARLES SCHWAB FBO CUSTOMER\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 83328977,
+      "ratio": 7.15,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 43706915,
+      "ratio": 3.75,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "MMXX VENTURES LIMITED（常任代理人　EVOLUTION JAPAN証券株式会社）",
+      "shares": 42474750,
+      "ratio": 3.64,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY\n（常任代理人　香港上海銀行　東京支店）",
+      "shares": 29823950,
+      "ratio": 2.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "MORGAN STANLEY SMITH BARNEY LLC CLIENTS FULLY PAID SEG ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 20184874,
+      "ratio": 1.73,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "EUROCLEAR Bank S.A./N.V.（常任代理人　株式会社三菱ＵＦＪ銀行\n）",
+      "shares": 19632432,
+      "ratio": 1.68,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 16516216,
+      "ratio": 1.42,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 25.14,
+      "corporate": 8.38,
+      "other": 7.15,
+      "securities": 7.39,
+      "financial": 2.56,
+      "trust": 1.42
+    },
+    "individual_total": 0,
+    "top10_total": 52.04
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-02",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第27期(2025/01/01－2025/12/31)",
+      "docID": "S100Z5LW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人　株式会社みずほ銀行）",
+          "shares": 152369293,
+          "ratio": 13.07,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "CLEARSTREAM BANKING S.A.\n（常任代理人　香港上海銀行　東京支店）",
+          "shares": 100973990,
+          "ratio": 8.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NATIONAL FINANCIAL SERVICES LLC\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 97706094,
+          "ratio": 8.38,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "CHARLES SCHWAB FBO CUSTOMER\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 83328977,
+          "ratio": 7.15,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 43706915,
+          "ratio": 3.75,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "MMXX VENTURES LIMITED（常任代理人　EVOLUTION JAPAN証券株式会社）",
+          "shares": 42474750,
+          "ratio": 3.64,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "BNP PARIBAS LONDON BRANCH FOR PRIME BROKERAGE CLEARANCE ACC FOR THIRD PARTY\n（常任代理人　香港上海銀行　東京支店）",
+          "shares": 29823950,
+          "ratio": 2.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "MORGAN STANLEY SMITH BARNEY LLC CLIENTS FULLY PAID SEG ACCOUNT\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 20184874,
+          "ratio": 1.73,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "EUROCLEAR Bank S.A./N.V.（常任代理人　株式会社三菱ＵＦＪ銀行\n）",
+          "shares": 19632432,
+          "ratio": 1.68,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 16516216,
+          "ratio": 1.42,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 25.14,
+          "corporate": 8.38,
+          "other": 7.15,
+          "securities": 7.39,
+          "financial": 2.56,
+          "trust": 1.42
+        },
+        "individual_total": 0,
+        "top10_total": 52.04
+      }
+    }
+  ]
+}

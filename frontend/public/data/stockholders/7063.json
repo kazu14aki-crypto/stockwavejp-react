@@ -1,0 +1,218 @@
+{
+  "secCode": "7063",
+  "issuerName": "株式会社Ｂｉｒｄｍａｎ",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "KANDB INVESTMENT L.L.C\n（常任代理人　弁護士法人　C-LiA）",
+      "shares": 7999000,
+      "ratio": 23.72,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "伊藤　繁三",
+      "shares": 3773000,
+      "ratio": 11.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ネクスタ（匿名組合口）",
+      "shares": 2981000,
+      "ratio": 8.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "小林　亜佐美",
+      "shares": 2270000,
+      "ratio": 6.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岡三証券株式会社",
+      "shares": 578000,
+      "ratio": 1.71,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社YourTurn",
+      "shares": 560000,
+      "ratio": 1.66,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "矢口　達也",
+      "shares": 500000,
+      "ratio": 1.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社共有口",
+      "shares": 499000,
+      "ratio": 1.48,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "藤原　彬晃",
+      "shares": 463000,
+      "ratio": 1.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 321000,
+      "ratio": 0.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "other": 23.72,
+      "individual": 20.77,
+      "corporate": 10.5,
+      "securities": 4.14
+    },
+    "individual_total": 20.77,
+    "top10_total": 59.13
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第14期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4LC",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "KANDB INVESTMENT L.L.C\n（常任代理人　弁護士法人　C-LiA）",
+          "shares": 7999000,
+          "ratio": 23.72,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "伊藤　繁三",
+          "shares": 3773000,
+          "ratio": 11.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ネクスタ（匿名組合口）",
+          "shares": 2981000,
+          "ratio": 8.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "小林　亜佐美",
+          "shares": 2270000,
+          "ratio": 6.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡三証券株式会社",
+          "shares": 578000,
+          "ratio": 1.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社YourTurn",
+          "shares": 560000,
+          "ratio": 1.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "矢口　達也",
+          "shares": 500000,
+          "ratio": 1.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社共有口",
+          "shares": 499000,
+          "ratio": 1.48,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "藤原　彬晃",
+          "shares": 463000,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 321000,
+          "ratio": 0.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "other": 23.72,
+          "individual": 20.77,
+          "corporate": 10.5,
+          "securities": 4.14
+        },
+        "individual_total": 20.77,
+        "top10_total": 59.13
+      }
+    }
+  ]
+}

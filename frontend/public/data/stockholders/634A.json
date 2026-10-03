@@ -1,0 +1,216 @@
+{
+  "secCode": "634A",
+  "issuerName": "株式会社レイヤード",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社nanos",
+      "shares": 680000,
+      "ratio": 30.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "毛塚　牧人",
+      "shares": 600000,
+      "ratio": 26.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "田澤　悟郎",
+      "shares": 600000,
+      "ratio": 26.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "MEDIPAL Innovation投資事業有限責任組合",
+      "shares": 100000,
+      "ratio": 4.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "FFGストラテジー投資事業有限責任組合第１号",
+      "shares": 100000,
+      "ratio": 4.44,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "メディカル・データ・ビジョン株式会社",
+      "shares": 50000,
+      "ratio": 2.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "三角　健二郎",
+      "shares": 44000,
+      "ratio": 1.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "二階　義元",
+      "shares": 34000,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "伊藤　愛",
+      "shares": 34000,
+      "ratio": 1.51,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小倉　佳浩",
+      "shares": 5000,
+      "ratio": 0.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.44,
+      "individual": 58.51,
+      "other": 8.88
+    },
+    "individual_total": 58.51,
+    "top10_total": 99.83
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第28期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4Z3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社nanos",
+          "shares": 680000,
+          "ratio": 30.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "毛塚　牧人",
+          "shares": 600000,
+          "ratio": 26.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "田澤　悟郎",
+          "shares": 600000,
+          "ratio": 26.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "MEDIPAL Innovation投資事業有限責任組合",
+          "shares": 100000,
+          "ratio": 4.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "FFGストラテジー投資事業有限責任組合第１号",
+          "shares": 100000,
+          "ratio": 4.44,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "メディカル・データ・ビジョン株式会社",
+          "shares": 50000,
+          "ratio": 2.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "三角　健二郎",
+          "shares": 44000,
+          "ratio": 1.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "二階　義元",
+          "shares": 34000,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "伊藤　愛",
+          "shares": 34000,
+          "ratio": 1.51,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小倉　佳浩",
+          "shares": 5000,
+          "ratio": 0.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.44,
+          "individual": 58.51,
+          "other": 8.88
+        },
+        "individual_total": 58.51,
+        "top10_total": 99.83
+      }
+    }
+  ]
+}

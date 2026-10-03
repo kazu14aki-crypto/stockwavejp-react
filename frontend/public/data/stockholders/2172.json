@@ -1,0 +1,216 @@
+{
+  "secCode": "2172",
+  "issuerName": "株式会社インサイト",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社パートナーズ",
+      "shares": 471100,
+      "ratio": 29.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "浅井　一",
+      "shares": 203000,
+      "ratio": 12.65,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "浅井　亮介",
+      "shares": 90000,
+      "ratio": 5.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "浅井　昇平",
+      "shares": 90000,
+      "ratio": 5.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "本間　広則",
+      "shares": 55700,
+      "ratio": 3.47,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "古瀬　博",
+      "shares": 47500,
+      "ratio": 2.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社北海道銀行",
+      "shares": 42000,
+      "ratio": 2.61,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "アライドアーキテクツ株式会社",
+      "shares": 40000,
+      "ratio": 2.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "田中　温人",
+      "shares": 33200,
+      "ratio": 2.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "小松　修蔵",
+      "shares": 30300,
+      "ratio": 1.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 31.84,
+      "individual": 34.26,
+      "financial": 2.61
+    },
+    "individual_total": 34.26,
+    "top10_total": 68.71
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第52期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4PA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社パートナーズ",
+          "shares": 471100,
+          "ratio": 29.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "浅井　一",
+          "shares": 203000,
+          "ratio": 12.65,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "浅井　亮介",
+          "shares": 90000,
+          "ratio": 5.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "浅井　昇平",
+          "shares": 90000,
+          "ratio": 5.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "本間　広則",
+          "shares": 55700,
+          "ratio": 3.47,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "古瀬　博",
+          "shares": 47500,
+          "ratio": 2.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社北海道銀行",
+          "shares": 42000,
+          "ratio": 2.61,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "アライドアーキテクツ株式会社",
+          "shares": 40000,
+          "ratio": 2.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "田中　温人",
+          "shares": 33200,
+          "ratio": 2.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "小松　修蔵",
+          "shares": 30300,
+          "ratio": 1.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 31.84,
+          "individual": 34.26,
+          "financial": 2.61
+        },
+        "individual_total": 34.26,
+        "top10_total": 68.71
+      }
+    }
+  ]
+}

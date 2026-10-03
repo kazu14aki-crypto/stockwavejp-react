@@ -1,0 +1,326 @@
+{
+  "secCode": "6908",
+  "issuerName": "イリソ電子工業株式会社",
+  "updated_at": "2026/10/03 15:45 JST",
+  "latestDate": "2026-10-01",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 2428000,
+      "ratio": 11.38,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社エス・エフ・シー",
+      "shares": 2379000,
+      "ratio": 11.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "佐藤　定雄",
+      "shares": 1787000,
+      "ratio": 8.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 1542000,
+      "ratio": 7.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505019（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 432000,
+      "ratio": 2.02,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口４）",
+      "shares": 430000,
+      "ratio": 2.01,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15 PCT TREATY ACCOUNT(常任代理人 香港上海銀行東京支店)",
+      "shares": 410000,
+      "ratio": 1.92,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505223（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 367000,
+      "ratio": 1.72,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人 株式会社みずほ銀行決済営業部)",
+      "shares": 362000,
+      "ratio": 1.7,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JP MORGAN CHASE BANK 385781（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 259000,
+      "ratio": 1.21,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 20.62,
+      "corporate": 11.15,
+      "individual": 8.38,
+      "foreign": 8.57
+    },
+    "individual_total": 8.38,
+    "top10_total": 48.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-01",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100Z5N2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2428000,
+          "ratio": 11.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社エス・エフ・シー",
+          "shares": 2379000,
+          "ratio": 11.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐藤　定雄",
+          "shares": 1787000,
+          "ratio": 8.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1542000,
+          "ratio": 7.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 432000,
+          "ratio": 2.02,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 430000,
+          "ratio": 2.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15 PCT TREATY ACCOUNT(常任代理人 香港上海銀行東京支店)",
+          "shares": 410000,
+          "ratio": 1.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 367000,
+          "ratio": 1.72,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 362000,
+          "ratio": 1.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 259000,
+          "ratio": 1.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.62,
+          "corporate": 11.15,
+          "individual": 8.38,
+          "foreign": 8.57
+        },
+        "individual_total": 8.38,
+        "top10_total": 48.72
+      }
+    },
+    {
+      "submitDate": "2026-09-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/04/01－2026/03/31)",
+      "docID": "S100Z57M",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 2428000,
+          "ratio": 11.38,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社エス・エフ・シー",
+          "shares": 2379000,
+          "ratio": 11.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "佐藤　定雄",
+          "shares": 1787000,
+          "ratio": 8.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 1542000,
+          "ratio": 7.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 432000,
+          "ratio": 2.02,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口４）",
+          "shares": 430000,
+          "ratio": 2.01,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON LENDING 15 PCT TREATY ACCOUNT(常任代理人 香港上海銀行東京支店)",
+          "shares": 410000,
+          "ratio": 1.92,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505223（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 367000,
+          "ratio": 1.72,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人 株式会社みずほ銀行決済営業部)",
+          "shares": 362000,
+          "ratio": 1.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JP MORGAN CHASE BANK 385781（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 259000,
+          "ratio": 1.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 20.62,
+          "corporate": 11.15,
+          "individual": 8.38,
+          "foreign": 8.57
+        },
+        "individual_total": 8.38,
+        "top10_total": 48.72
+      }
+    }
+  ]
+}
