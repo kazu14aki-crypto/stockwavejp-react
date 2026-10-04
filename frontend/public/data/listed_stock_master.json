@@ -1,19 +1,9 @@
 {
-  "updated_at": "2026-09-28T08:07:14+09:00",
+  "updated_at": "2026-10-05T08:16:11+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3766,
+  "count": 3762,
   "stocks": [
-    {
-      "ticker": "0000.T",
-      "code": "0000",
-      "name": "クラサスケミカル株式会社",
-      "market": "上場",
-      "industry": "化学",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
     {
       "ticker": "1300.T",
       "code": "1300",
@@ -2034,7 +2024,7 @@
     {
       "ticker": "2108.T",
       "code": "2108",
-      "name": "日本甜菜製糖株式会社",
+      "name": "株式会社ニッテン",
       "market": "上場",
       "industry": "食料品",
       "filer_type": "内国法人・組合",
@@ -5974,7 +5964,7 @@
     {
       "ticker": "3055.T",
       "code": "3055",
-      "name": "株式会社ほくやく・竹山ホールディングス",
+      "name": "株式会社TSUMUGU HOLDINGS",
       "market": "上場",
       "industry": "卸売業",
       "filer_type": "内国法人・組合",
@@ -10064,16 +10054,6 @@
       "ticker": "3854.T",
       "code": "3854",
       "name": "株式会社アイル",
-      "market": "上場",
-      "industry": "情報・通信業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "3856.T",
-      "code": "3856",
-      "name": "Abalance株式会社",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -19132,7 +19112,7 @@
     {
       "ticker": "5842.T",
       "code": "5842",
-      "name": "インテグラル株式会社",
+      "name": "インテグラル・グループ株式会社",
       "market": "上場",
       "industry": "その他金融業",
       "filer_type": "内国法人・組合",
@@ -19352,7 +19332,7 @@
     {
       "ticker": "5902.T",
       "code": "5902",
-      "name": "ホッカンホールディングス株式会社",
+      "name": "ホッカン株式会社",
       "market": "上場",
       "industry": "金属製品",
       "filer_type": "内国法人・組合",
@@ -20346,7 +20326,7 @@
     {
       "ticker": "6072.T",
       "code": "6072",
-      "name": "地盤ネットホールディングス株式会社",
+      "name": "株式会社ERTH Group",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -20928,7 +20908,7 @@
     {
       "ticker": "6180.T",
       "code": "6180",
-      "name": "GMOメディア株式会社",
+      "name": "株式会社KOMPEITO",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -21970,9 +21950,9 @@
     {
       "ticker": "6340.T",
       "code": "6340",
-      "name": "澁谷工業株式会社",
+      "name": "株式会社レイヤード",
       "market": "上場",
-      "industry": "機械",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -22344,9 +22324,9 @@
     {
       "ticker": "6400.T",
       "code": "6400",
-      "name": "不二精機株式会社",
+      "name": "株式会社ASNOVA Companies",
       "market": "上場",
-      "industry": "機械",
+      "industry": "サービス業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -22394,7 +22374,7 @@
     {
       "ticker": "6412.T",
       "code": "6412",
-      "name": "株式会社平和",
+      "name": "株式会社平和ホールディングス",
       "market": "上場",
       "industry": "機械",
       "filer_type": "内国法人・組合",
@@ -22444,9 +22424,9 @@
     {
       "ticker": "6420.T",
       "code": "6420",
-      "name": "ガリレイホールディングス株式会社",
+      "name": "キューデンホールディングス株式会社",
       "market": "上場",
-      "industry": "機械",
+      "industry": "電気・ガス業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -22626,7 +22606,7 @@
       "code": "6460",
       "name": "セガサミー",
       "market": "上場",
-      "industry": "機械",
+      "industry": "化学",
       "filer_type": "内国法人・組合",
       "themes": [
         "ゲーム・エンタメ"
@@ -27191,16 +27171,6 @@
       "ticker": "7254.T",
       "code": "7254",
       "name": "株式会社ユニバンス",
-      "market": "上場",
-      "industry": "輸送用機器",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "7255.T",
-      "code": "7255",
-      "name": "株式会社 桜井製作所",
       "market": "上場",
       "industry": "輸送用機器",
       "filer_type": "内国法人・組合",
@@ -33453,7 +33423,7 @@
     {
       "ticker": "8595.T",
       "code": "8595",
-      "name": "ジャフコ グループ株式会社",
+      "name": "株式会社JAFCO",
       "market": "上場",
       "industry": "証券、商品先物取引業",
       "filer_type": "内国法人・組合",
@@ -35369,16 +35339,6 @@
       "curated": false
     },
     {
-      "ticker": "9223.T",
-      "code": "9223",
-      "name": "株式会社ASNOVA",
-      "market": "上場",
-      "industry": "サービス業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "9225.T",
       "code": "9225",
       "name": "ブリッジコンサルティンググループ株式会社",
@@ -36848,9 +36808,9 @@
       "ticker": "9508.T",
       "code": "9508",
       "name": "九州電力",
-      "market": "上場",
-      "industry": "電気・ガス業",
-      "filer_type": "内国法人・組合",
+      "market": "",
+      "industry": "",
+      "filer_type": "",
       "themes": [
         "再生可能エネルギー",
         "原子力発電",
