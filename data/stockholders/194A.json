@@ -1,0 +1,218 @@
+{
+  "secCode": "194A",
+  "issuerName": "株式会社ＷＯＬＶＥＳ　ＨＡＮＤ",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "北井　正志",
+      "shares": 3280300,
+      "ratio": 43.36,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "J-STAR No.3 SS,LP\n（常任代理人　SMBC日興証券株式会社）",
+      "shares": 1175898,
+      "ratio": 15.54,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "J-STAR No.3 JF,LP\n（常任代理人　SMBC日興証券株式会社）",
+      "shares": 609189,
+      "ratio": 8.05,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "J-STAR No.3 JC,LP\n（常任代理人　SMBC日興証券株式会社)",
+      "shares": 503751,
+      "ratio": 6.66,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "J-STAR No.3 GF,LP\n（常任代理人SMBC日興証券株式会社）",
+      "shares": 501366,
+      "ratio": 6.63,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 380800,
+      "ratio": 5.03,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山下　瞬",
+      "shares": 76000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "J-STAR有限責任事業組合2016",
+      "shares": 61796,
+      "ratio": 0.82,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+      "shares": 61700,
+      "ratio": 0.82,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "第一生命保険株式会社\n（常任代理人株式会社日本カストディ銀行）",
+      "shares": 60900,
+      "ratio": 0.81,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 44.36,
+      "securities": 37.7,
+      "trust": 5.84,
+      "other": 0.82
+    },
+    "individual_total": 44.36,
+    "top10_total": 88.72
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第8期(2025/07/01－2026/06/30)",
+      "docID": "S100Z4XU",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "北井　正志",
+          "shares": 3280300,
+          "ratio": 43.36,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "J-STAR No.3 SS,LP\n（常任代理人　SMBC日興証券株式会社）",
+          "shares": 1175898,
+          "ratio": 15.54,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "J-STAR No.3 JF,LP\n（常任代理人　SMBC日興証券株式会社）",
+          "shares": 609189,
+          "ratio": 8.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "J-STAR No.3 JC,LP\n（常任代理人　SMBC日興証券株式会社)",
+          "shares": 503751,
+          "ratio": 6.66,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "J-STAR No.3 GF,LP\n（常任代理人SMBC日興証券株式会社）",
+          "shares": 501366,
+          "ratio": 6.63,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 380800,
+          "ratio": 5.03,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山下　瞬",
+          "shares": 76000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "J-STAR有限責任事業組合2016",
+          "shares": 61796,
+          "ratio": 0.82,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "モルガン・スタンレーＭＵＦＧ証券株式会社",
+          "shares": 61700,
+          "ratio": 0.82,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "第一生命保険株式会社\n（常任代理人株式会社日本カストディ銀行）",
+          "shares": 60900,
+          "ratio": 0.81,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 44.36,
+          "securities": 37.7,
+          "trust": 5.84,
+          "other": 0.82
+        },
+        "individual_total": 44.36,
+        "top10_total": 88.72
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "secCode": "9361",
+  "issuerName": "伏木海陸運送株式会社",
+  "updated_at": "2026/10/03 15:44 JST",
+  "latestDate": "2026-09-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社橘海運",
+      "shares": 207000,
+      "ratio": 7.98,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "明治安田生命保険相互会社",
+      "shares": 191000,
+      "ratio": 7.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社北陸銀行",
+      "shares": 128000,
+      "ratio": 4.94,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "橘　慶一郎",
+      "shares": 106000,
+      "ratio": 4.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "三井住友信託銀行株式会社",
+      "shares": 93000,
+      "ratio": 3.59,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "夏野　公秀",
+      "shares": 77000,
+      "ratio": 2.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "住友生命保険相互会社",
+      "shares": 70000,
+      "ratio": 2.7,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社",
+      "shares": 64000,
+      "ratio": 2.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "橘　洋子",
+      "shares": 63000,
+      "ratio": 2.46,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "第一生命保険株式会社",
+      "shares": 62000,
+      "ratio": 2.39,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 7.98,
+      "financial": 23.45,
+      "individual": 9.53
+    },
+    "individual_total": 9.53,
+    "top10_total": 40.96
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第109期(2025/07/01－2026/06/30)",
+      "docID": "S100Z59R",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社橘海運",
+          "shares": 207000,
+          "ratio": 7.98,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "明治安田生命保険相互会社",
+          "shares": 191000,
+          "ratio": 7.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社北陸銀行",
+          "shares": 128000,
+          "ratio": 4.94,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "橘　慶一郎",
+          "shares": 106000,
+          "ratio": 4.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "三井住友信託銀行株式会社",
+          "shares": 93000,
+          "ratio": 3.59,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "夏野　公秀",
+          "shares": 77000,
+          "ratio": 2.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "住友生命保険相互会社",
+          "shares": 70000,
+          "ratio": 2.7,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社",
+          "shares": 64000,
+          "ratio": 2.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "橘　洋子",
+          "shares": 63000,
+          "ratio": 2.46,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "第一生命保険株式会社",
+          "shares": 62000,
+          "ratio": 2.39,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 7.98,
+          "financial": 23.45,
+          "individual": 9.53
+        },
+        "individual_total": 9.53,
+        "top10_total": 40.96
+      }
+    }
+  ]
+}

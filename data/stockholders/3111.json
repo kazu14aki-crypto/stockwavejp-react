@@ -1,0 +1,326 @@
+{
+  "secCode": "3111",
+  "issuerName": "オーミケンシ株式会社",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-10-01",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "東洋商事株式会社",
+      "shares": 2572000,
+      "ratio": 29.92,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "龍寶　裕子",
+      "shares": 654000,
+      "ratio": 7.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "丸山　三千夫",
+      "shares": 336000,
+      "ratio": 3.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社三菱ＵＦＪ銀行",
+      "shares": 294000,
+      "ratio": 3.42,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "竹甚板硝子株式会社",
+      "shares": 200000,
+      "ratio": 2.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "島津　孝",
+      "shares": 150000,
+      "ratio": 1.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 94000,
+      "ratio": 1.1,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "村澤　勝",
+      "shares": 79000,
+      "ratio": 0.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社共有口",
+      "shares": 68000,
+      "ratio": 0.79,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "丸山　光子",
+      "shares": 66000,
+      "ratio": 0.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 32.24,
+      "individual": 14.93,
+      "financial": 3.42,
+      "securities": 1.89
+    },
+    "individual_total": 14.93,
+    "top10_total": 52.48
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-01",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第161期(2025/04/01－2026/03/31)",
+      "docID": "S100Z5KX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東洋商事株式会社",
+          "shares": 2572000,
+          "ratio": 29.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "龍寶　裕子",
+          "shares": 654000,
+          "ratio": 7.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "丸山　三千夫",
+          "shares": 336000,
+          "ratio": 3.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 294000,
+          "ratio": 3.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "竹甚板硝子株式会社",
+          "shares": 200000,
+          "ratio": 2.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "島津　孝",
+          "shares": 150000,
+          "ratio": 1.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 94000,
+          "ratio": 1.1,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "村澤　勝",
+          "shares": 79000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 68000,
+          "ratio": 0.79,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "丸山　光子",
+          "shares": 66000,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.24,
+          "individual": 14.93,
+          "financial": 3.42,
+          "securities": 1.89
+        },
+        "individual_total": 14.93,
+        "top10_total": 52.48
+      }
+    },
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第161期(2025/04/01－2026/03/31)",
+      "docID": "S100Z4BV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "東洋商事株式会社",
+          "shares": 2572000,
+          "ratio": 29.92,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "龍寶　裕子",
+          "shares": 654000,
+          "ratio": 7.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "丸山　三千夫",
+          "shares": 336000,
+          "ratio": 3.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社三菱ＵＦＪ銀行",
+          "shares": 294000,
+          "ratio": 3.42,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "竹甚板硝子株式会社",
+          "shares": 200000,
+          "ratio": 2.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "島津　孝",
+          "shares": 150000,
+          "ratio": 1.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 94000,
+          "ratio": 1.1,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "村澤　勝",
+          "shares": 79000,
+          "ratio": 0.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社共有口",
+          "shares": 68000,
+          "ratio": 0.79,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "丸山　光子",
+          "shares": 66000,
+          "ratio": 0.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 32.24,
+          "individual": 14.93,
+          "financial": 3.42,
+          "securities": 1.89
+        },
+        "individual_total": 14.93,
+        "top10_total": 52.48
+      }
+    }
+  ]
+}

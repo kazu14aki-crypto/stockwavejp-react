@@ -1,0 +1,224 @@
+{
+  "secCode": "6594",
+  "issuerName": "ニデック株式会社",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-30",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "永守　重信",
+      "shares": 98948000,
+      "ratio": 8.61,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "㈱京都銀行（常任代理人　㈱日本カストディ銀行）",
+      "shares": 49596000,
+      "ratio": 4.32,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　㈱みずほ銀行）",
+      "shares": 45191000,
+      "ratio": 3.93,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "エスエヌ興産合同会社",
+      "shares": 40491000,
+      "ratio": 3.52,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）（常任代理人　 ㈱三菱UFJ銀行）",
+      "shares": 30592000,
+      "ratio": 2.66,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "㈱三菱UFJ銀行",
+      "shares": 29703000,
+      "ratio": 2.58,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "MSIP CLIENT SECURITIES (常任代理人 モルガン・スタンレーMUFG証券㈱)",
+      "shares": 29602000,
+      "ratio": 2.57,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行㈱）",
+      "shares": 26318000,
+      "ratio": 2.29,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "GOLDMAN SACHS INTERNATIONAL（常任代理人　ゴールドマン・サックス証券㈱）",
+      "shares": 22428000,
+      "ratio": 1.95,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "GOVERNMENT OF NORWAY (常任代理人 シティバンク、エヌ・エイ東京支店)",
+      "shares": 20076000,
+      "ratio": 1.74,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 8.61,
+      "trust": 6.61,
+      "foreign": 8.54,
+      "corporate": 3.52,
+      "financial": 2.58,
+      "securities": 2.57,
+      "other": 1.74
+    },
+    "individual_total": 8.61,
+    "top10_total": 34.17
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-30",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第53期(2025/04/01－2026/03/31)",
+      "docID": "S100Z5CA",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "永守　重信",
+          "shares": 98948000,
+          "ratio": 8.61,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "㈱京都銀行（常任代理人　㈱日本カストディ銀行）",
+          "shares": 49596000,
+          "ratio": 4.32,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505001（常任代理人　㈱みずほ銀行）",
+          "shares": 45191000,
+          "ratio": 3.93,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "エスエヌ興産合同会社",
+          "shares": 40491000,
+          "ratio": 3.52,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG（FE-AC）（常任代理人　 ㈱三菱UFJ銀行）",
+          "shares": 30592000,
+          "ratio": 2.66,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "㈱三菱UFJ銀行",
+          "shares": 29703000,
+          "ratio": 2.58,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "MSIP CLIENT SECURITIES (常任代理人 モルガン・スタンレーMUFG証券㈱)",
+          "shares": 29602000,
+          "ratio": 2.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本生命保険相互会社（常任代理人　日本マスタートラスト信託銀行㈱）",
+          "shares": 26318000,
+          "ratio": 2.29,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "GOLDMAN SACHS INTERNATIONAL（常任代理人　ゴールドマン・サックス証券㈱）",
+          "shares": 22428000,
+          "ratio": 1.95,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "GOVERNMENT OF NORWAY (常任代理人 シティバンク、エヌ・エイ東京支店)",
+          "shares": 20076000,
+          "ratio": 1.74,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 8.61,
+          "trust": 6.61,
+          "foreign": 8.54,
+          "corporate": 3.52,
+          "financial": 2.58,
+          "securities": 2.57,
+          "other": 1.74
+        },
+        "individual_total": 8.61,
+        "top10_total": 34.17
+      }
+    }
+  ]
+}

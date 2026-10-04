@@ -1,0 +1,216 @@
+{
+  "secCode": "9162",
+  "issuerName": "株式会社ブリーチ",
+  "updated_at": "2026/10/03 15:46 JST",
+  "latestDate": "2026-09-29",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社大平事務所",
+      "shares": 13645200,
+      "ratio": 53.02,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大平　啓介",
+      "shares": 4734100,
+      "ratio": 18.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "宮田　一成",
+      "shares": 670000,
+      "ratio": 2.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "倉田　将志",
+      "shares": 440200,
+      "ratio": 1.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "上田八木短資株式会社",
+      "shares": 400000,
+      "ratio": 1.55,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社SBI証券",
+      "shares": 364557,
+      "ratio": 1.42,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "日本証券金融株式会社",
+      "shares": 248600,
+      "ratio": 0.97,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "楽天証券株式会社",
+      "shares": 246400,
+      "ratio": 0.96,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "宮田　知子",
+      "shares": 231000,
+      "ratio": 0.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "合同会社センス",
+      "shares": 227400,
+      "ratio": 0.88,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 55.45,
+      "individual": 23.6,
+      "securities": 3.35
+    },
+    "individual_total": 23.6,
+    "top10_total": 82.4
+  },
+  "history": [
+    {
+      "submitDate": "2026-09-29",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第17期(2025/07/01－2026/06/30)",
+      "docID": "S100Z50D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社大平事務所",
+          "shares": 13645200,
+          "ratio": 53.02,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大平　啓介",
+          "shares": 4734100,
+          "ratio": 18.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "宮田　一成",
+          "shares": 670000,
+          "ratio": 2.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "倉田　将志",
+          "shares": 440200,
+          "ratio": 1.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "上田八木短資株式会社",
+          "shares": 400000,
+          "ratio": 1.55,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社SBI証券",
+          "shares": 364557,
+          "ratio": 1.42,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "日本証券金融株式会社",
+          "shares": 248600,
+          "ratio": 0.97,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "楽天証券株式会社",
+          "shares": 246400,
+          "ratio": 0.96,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "宮田　知子",
+          "shares": 231000,
+          "ratio": 0.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "合同会社センス",
+          "shares": 227400,
+          "ratio": 0.88,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 55.45,
+          "individual": 23.6,
+          "securities": 3.35
+        },
+        "individual_total": 23.6,
+        "top10_total": 82.4
+      }
+    }
+  ]
+}
