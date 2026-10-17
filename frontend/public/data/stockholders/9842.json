@@ -1,0 +1,220 @@
+{
+  "secCode": "9842",
+  "issuerName": "アークランズ株式会社",
+  "updated_at": "2026/10/17 14:58 JST",
+  "latestDate": "2026-10-13",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 5660000,
+      "ratio": 9.0,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "有限会社武蔵",
+      "shares": 3863000,
+      "ratio": 6.14,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2451000,
+      "ratio": 3.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "アークランズ取引先持株会",
+      "shares": 2196000,
+      "ratio": 3.49,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "坂本　勝司",
+      "shares": 1508000,
+      "ratio": 2.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "アークランズ従業員持株会",
+      "shares": 1393000,
+      "ratio": 2.21,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n（常任代理人　株式会社みずほ銀行　決済営業部）",
+      "shares": 1285000,
+      "ratio": 2.04,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "坂本　晴彦",
+      "shares": 1251000,
+      "ratio": 1.99,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "坂本　洋司",
+      "shares": 1030000,
+      "ratio": 1.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行株式会社（投信口）",
+      "shares": 944000,
+      "ratio": 1.5,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "trust": 14.4,
+      "corporate": 6.14,
+      "employee": 5.7,
+      "individual": 6.03,
+      "financial": 2.04
+    },
+    "individual_total": 6.03,
+    "top10_total": 34.31
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-13",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第57期(2025/03/01－2026/02/28)",
+      "docID": "S100Z7KT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 5660000,
+          "ratio": 9.0,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "有限会社武蔵",
+          "shares": 3863000,
+          "ratio": 6.14,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2451000,
+          "ratio": 3.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "アークランズ取引先持株会",
+          "shares": 2196000,
+          "ratio": 3.49,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "坂本　勝司",
+          "shares": 1508000,
+          "ratio": 2.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "アークランズ従業員持株会",
+          "shares": 1393000,
+          "ratio": 2.21,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ステート　ストリート　バンク　アンド　トラスト　カンパニー　５０５２２３\n（常任代理人　株式会社みずほ銀行　決済営業部）",
+          "shares": 1285000,
+          "ratio": 2.04,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "坂本　晴彦",
+          "shares": 1251000,
+          "ratio": 1.99,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "坂本　洋司",
+          "shares": 1030000,
+          "ratio": 1.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野村信託銀行株式会社（投信口）",
+          "shares": 944000,
+          "ratio": 1.5,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "trust": 14.4,
+          "corporate": 6.14,
+          "employee": 5.7,
+          "individual": 6.03,
+          "financial": 2.04
+        },
+        "individual_total": 6.03,
+        "top10_total": 34.31
+      }
+    }
+  ]
+}
