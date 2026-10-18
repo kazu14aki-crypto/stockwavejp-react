@@ -1,7 +1,70 @@
 {
-  "updated_at": "2026/10/13",
-  "count": 1958,
+  "updated_at": "2026/10/17",
+  "count": 1963,
   "items": [
+    {
+      "secCode": "8282",
+      "issuerName": "株式会社ケーズホールディングス",
+      "latestDate": "2026-10-16",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 5.2
+    },
+    {
+      "secCode": "4777",
+      "issuerName": "株式会社ガーラ",
+      "latestDate": "2026-10-16",
+      "holderCount": 10,
+      "topHolder": "Megazone Cloud Corporation\n（常任代理人リーディング証券株式会社）",
+      "topHolderCategory": "securities",
+      "individualTotal": 17.59
+    },
+    {
+      "secCode": "3854",
+      "issuerName": "株式会社アイル",
+      "latestDate": "2026-10-16",
+      "holderCount": 10,
+      "topHolder": "㈲GTホールディング",
+      "topHolderCategory": "individual",
+      "individualTotal": 46.39
+    },
+    {
+      "secCode": "3557",
+      "issuerName": "ユナイテッド＆コレクティブ株式会社",
+      "latestDate": "2026-10-15",
+      "holderCount": 10,
+      "topHolder": "坂井　英也",
+      "topHolderCategory": "individual",
+      "individualTotal": 18.91
+    },
+    {
+      "secCode": "211A",
+      "issuerName": "株式会社カドス・コーポレーション",
+      "latestDate": "2026-10-14",
+      "holderCount": 10,
+      "topHolder": "株式会社ネクストライト",
+      "topHolderCategory": "corporate",
+      "individualTotal": 12.52
+    },
+    {
+      "secCode": "9842",
+      "issuerName": "アークランズ株式会社",
+      "latestDate": "2026-10-13",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 6.03
+    },
+    {
+      "secCode": "7826",
+      "issuerName": "株式会社フルヤ金属",
+      "latestDate": "2026-10-13",
+      "holderCount": 10,
+      "topHolder": "田中貴金属工業株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 10.38
+    },
     {
       "secCode": "2910",
       "issuerName": "株式会社ロック・フィールド",
@@ -748,15 +811,6 @@
       "topHolder": "株式会社ＷＷＧ",
       "topHolderCategory": "corporate",
       "individualTotal": 21.08
-    },
-    {
-      "secCode": "7826",
-      "issuerName": "株式会社フルヤ金属",
-      "latestDate": "2026-09-28",
-      "holderCount": 10,
-      "topHolder": "田中貴金属工業株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 10.38
     },
     {
       "secCode": "7135",
@@ -3097,15 +3151,6 @@
       "topHolder": "須田　忠雄",
       "topHolderCategory": "individual",
       "individualTotal": 25.72
-    },
-    {
-      "secCode": "8282",
-      "issuerName": "株式会社ケーズホールディングス",
-      "latestDate": "2026-07-27",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 5.2
     },
     {
       "secCode": "5032",
