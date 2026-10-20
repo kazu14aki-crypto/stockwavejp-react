@@ -1,7 +1,16 @@
 {
-  "updated_at": "2026/10/17",
-  "count": 1963,
+  "updated_at": "2026/10/20",
+  "count": 1965,
   "items": [
+    {
+      "secCode": "3939",
+      "issuerName": "株式会社カナミックネットワーク",
+      "latestDate": "2026-10-19",
+      "holderCount": 10,
+      "topHolder": "株式会社ＳＨＯ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 21.65
+    },
     {
       "secCode": "8282",
       "issuerName": "株式会社ケーズホールディングス",
@@ -17668,6 +17677,15 @@
       "topHolder": "管理信託（A001）受託者　株式会社ＳＭＢＣ　\n信託銀行",
       "topHolderCategory": "financial",
       "individualTotal": 2.9
+    },
+    {
+      "secCode": "3776",
+      "issuerName": "株式会社ブロードバンドタワー",
+      "latestDate": "2026-03-19",
+      "holderCount": 10,
+      "topHolder": "株式会社インターネット総合研究所",
+      "topHolderCategory": "corporate",
+      "individualTotal": 5.03
     }
   ]
 }
