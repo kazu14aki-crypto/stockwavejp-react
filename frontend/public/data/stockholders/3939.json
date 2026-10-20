@@ -1,0 +1,220 @@
+{
+  "secCode": "3939",
+  "issuerName": "株式会社カナミックネットワーク",
+  "updated_at": "2026/10/20 00:11 JST",
+  "latestDate": "2026-10-19",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＳＨＯ",
+      "shares": 13680000,
+      "ratio": 28.82,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "山本　拓真",
+      "shares": 6689600,
+      "ratio": 14.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3781700,
+      "ratio": 7.96,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 2291000,
+      "ratio": 4.82,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ＣＡＣＥＩＳ　ＢＡＮＫ／ＱＵＩＮＴＥＴ　ＬＵＸＥＭＢＯＵＲＧ　ＳＵＢ　ＡＣ　／　ＵＣＩＴＳ　ＣＵＳＴＯＭＥＲＳ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 1868000,
+      "ratio": 3.93,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "山本　洋子",
+      "shares": 1405600,
+      "ratio": 2.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山本　稔",
+      "shares": 905600,
+      "ratio": 1.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山本　景士",
+      "shares": 727600,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 585636,
+      "ratio": 1.23,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "鈴木　正己",
+      "shares": 557700,
+      "ratio": 1.17,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.82,
+      "individual": 21.65,
+      "trust": 12.78,
+      "financial": 3.93,
+      "securities": 1.23
+    },
+    "individual_total": 21.65,
+    "top10_total": 68.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-19",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第25期(2024/10/01－2025/09/30)",
+      "docID": "S100Z8WO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＳＨＯ",
+          "shares": 13680000,
+          "ratio": 28.82,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "山本　拓真",
+          "shares": 6689600,
+          "ratio": 14.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3781700,
+          "ratio": 7.96,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 2291000,
+          "ratio": 4.82,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ＣＡＣＥＩＳ　ＢＡＮＫ／ＱＵＩＮＴＥＴ　ＬＵＸＥＭＢＯＵＲＧ　ＳＵＢ　ＡＣ　／　ＵＣＩＴＳ　ＣＵＳＴＯＭＥＲＳ　ＡＣＣＯＵＮＴ\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 1868000,
+          "ratio": 3.93,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "山本　洋子",
+          "shares": 1405600,
+          "ratio": 2.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山本　稔",
+          "shares": 905600,
+          "ratio": 1.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山本　景士",
+          "shares": 727600,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 585636,
+          "ratio": 1.23,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "鈴木　正己",
+          "shares": 557700,
+          "ratio": 1.17,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.82,
+          "individual": 21.65,
+          "trust": 12.78,
+          "financial": 3.93,
+          "securities": 1.23
+        },
+        "individual_total": 21.65,
+        "top10_total": 68.41
+      }
+    }
+  ]
+}

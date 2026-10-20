@@ -1,0 +1,218 @@
+{
+  "secCode": "3776",
+  "issuerName": "株式会社ブロードバンドタワー",
+  "updated_at": "2026/10/20 00:11 JST",
+  "latestDate": "2026-03-19",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社インターネット総合研究所",
+      "shares": 10015700,
+      "ratio": 16.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "INTERACTIVE　BROKERS　LLC （常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+      "shares": 3086600,
+      "ratio": 5.02,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "後和　信英",
+      "shares": 1556800,
+      "ratio": 2.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社SBI証券",
+      "shares": 1469489,
+      "ratio": 2.39,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "LINEヤフー株式会社",
+      "shares": 1304500,
+      "ratio": 2.12,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "衣川　晃弘",
+      "shares": 945300,
+      "ratio": 1.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "セントラル短資株式会社",
+      "shares": 925000,
+      "ratio": 1.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "JPモルガン証券株式会社",
+      "shares": 672900,
+      "ratio": 1.09,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "鈴木　智博",
+      "shares": 600000,
+      "ratio": 0.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "GOLDMAN,SACHS　＆　CO.REG （常任代理人　ゴールドマン・サックス証券株式会社）",
+      "shares": 546300,
+      "ratio": 0.88,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 19.91,
+      "securities": 8.5,
+      "individual": 5.03,
+      "foreign": 0.88
+    },
+    "individual_total": 5.03,
+    "top10_total": 34.32
+  },
+  "history": [
+    {
+      "submitDate": "2026-03-19",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/01/01－2025/12/31)",
+      "docID": "S100WZGB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社インターネット総合研究所",
+          "shares": 10015700,
+          "ratio": 16.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE　BROKERS　LLC （常任代理人　インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 3086600,
+          "ratio": 5.02,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "後和　信英",
+          "shares": 1556800,
+          "ratio": 2.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社SBI証券",
+          "shares": 1469489,
+          "ratio": 2.39,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "LINEヤフー株式会社",
+          "shares": 1304500,
+          "ratio": 2.12,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "衣川　晃弘",
+          "shares": 945300,
+          "ratio": 1.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "セントラル短資株式会社",
+          "shares": 925000,
+          "ratio": 1.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "JPモルガン証券株式会社",
+          "shares": 672900,
+          "ratio": 1.09,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "鈴木　智博",
+          "shares": 600000,
+          "ratio": 0.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "GOLDMAN,SACHS　＆　CO.REG （常任代理人　ゴールドマン・サックス証券株式会社）",
+          "shares": 546300,
+          "ratio": 0.88,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 19.91,
+          "securities": 8.5,
+          "individual": 5.03,
+          "foreign": 0.88
+        },
+        "individual_total": 5.03,
+        "top10_total": 34.32
+      }
+    }
+  ]
+}
