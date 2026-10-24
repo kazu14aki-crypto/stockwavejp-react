@@ -1,0 +1,218 @@
+{
+  "secCode": "5572",
+  "issuerName": "株式会社Ｒｉｄｇｅ－ｉ",
+  "updated_at": "2026/10/24 15:23 JST",
+  "latestDate": "2026-10-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "SBIホールディングス株式会社",
+      "shares": 974000,
+      "ratio": 22.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社柳原ホールディングス",
+      "shares": 648300,
+      "ratio": 15.01,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "柳原　尚史",
+      "shares": 455400,
+      "ratio": 10.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社バルカー",
+      "shares": 416666,
+      "ratio": 9.65,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "五味　大輔",
+      "shares": 205000,
+      "ratio": 4.74,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "荏原環境プラント株式会社",
+      "shares": 83333,
+      "ratio": 1.93,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "石田　健二",
+      "shares": 73700,
+      "ratio": 1.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本証券金融株式会社",
+      "shares": 66200,
+      "ratio": 1.53,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW（常任代理人　野村證券株式会社）",
+      "shares": 63500,
+      "ratio": 1.47,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "JPモルガン証券株式会社",
+      "shares": 50400,
+      "ratio": 1.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 49.15,
+      "individual": 16.98,
+      "securities": 2.69,
+      "foreign": 1.47
+    },
+    "individual_total": 16.98,
+    "top10_total": 70.29
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第11期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9MR",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "SBIホールディングス株式会社",
+          "shares": 974000,
+          "ratio": 22.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社柳原ホールディングス",
+          "shares": 648300,
+          "ratio": 15.01,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "柳原　尚史",
+          "shares": 455400,
+          "ratio": 10.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社バルカー",
+          "shares": 416666,
+          "ratio": 9.65,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "五味　大輔",
+          "shares": 205000,
+          "ratio": 4.74,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "荏原環境プラント株式会社",
+          "shares": 83333,
+          "ratio": 1.93,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "石田　健二",
+          "shares": 73700,
+          "ratio": 1.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本証券金融株式会社",
+          "shares": 66200,
+          "ratio": 1.53,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "NOMURA INTERNATIONAL PLC A/C JAPAN FLOW（常任代理人　野村證券株式会社）",
+          "shares": 63500,
+          "ratio": 1.47,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 50400,
+          "ratio": 1.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 49.15,
+          "individual": 16.98,
+          "securities": 2.69,
+          "foreign": 1.47
+        },
+        "individual_total": 16.98,
+        "top10_total": 70.29
+      }
+    }
+  ]
+}

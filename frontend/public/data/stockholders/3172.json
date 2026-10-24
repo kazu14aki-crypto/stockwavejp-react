@@ -1,0 +1,218 @@
+{
+  "secCode": "3172",
+  "issuerName": "ティーライフ株式会社",
+  "updated_at": "2026/10/24 15:23 JST",
+  "latestDate": "2026-10-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｎ＆Ｋ",
+      "shares": 1431700,
+      "ratio": 33.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "植田　佳代子",
+      "shares": 125000,
+      "ratio": 2.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "植田　元気",
+      "shares": 70000,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "植田　翔子",
+      "shares": 70000,
+      "ratio": 1.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "ティーライフ従業員持株会",
+      "shares": 64730,
+      "ratio": 1.51,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "若杉　精三郎",
+      "shares": 60000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "浅井　伸祐",
+      "shares": 52000,
+      "ratio": 1.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野村證券株式会社",
+      "shares": 47500,
+      "ratio": 1.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 36000,
+      "ratio": 0.84,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤井　悌一",
+      "shares": 31000,
+      "ratio": 0.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 34.61,
+      "individual": 9.51,
+      "employee": 1.51,
+      "financial": 0.84
+    },
+    "individual_total": 9.51,
+    "top10_total": 46.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第43期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9MO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｎ＆Ｋ",
+          "shares": 1431700,
+          "ratio": 33.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "植田　佳代子",
+          "shares": 125000,
+          "ratio": 2.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "植田　元気",
+          "shares": 70000,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "植田　翔子",
+          "shares": 70000,
+          "ratio": 1.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "ティーライフ従業員持株会",
+          "shares": 64730,
+          "ratio": 1.51,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "若杉　精三郎",
+          "shares": 60000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "浅井　伸祐",
+          "shares": 52000,
+          "ratio": 1.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野村證券株式会社",
+          "shares": 47500,
+          "ratio": 1.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 36000,
+          "ratio": 0.84,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤井　悌一",
+          "shares": 31000,
+          "ratio": 0.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 34.61,
+          "individual": 9.51,
+          "employee": 1.51,
+          "financial": 0.84
+        },
+        "individual_total": 9.51,
+        "top10_total": 46.47
+      }
+    }
+  ]
+}

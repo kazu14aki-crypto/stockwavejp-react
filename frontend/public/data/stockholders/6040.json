@@ -1,0 +1,220 @@
+{
+  "secCode": "6040",
+  "issuerName": "日本スキー場開発株式会社",
+  "updated_at": "2026/10/24 15:24 JST",
+  "latestDate": "2026-10-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "日本駐車場開発株式会社",
+      "shares": 31492200,
+      "ratio": 68.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "OKASAN INTERNATIONAL (ASIA) LIMITED(常任代理人　\n岡三証券株式会社）",
+      "shares": 1200000,
+      "ratio": 2.61,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "鈴木　周平",
+      "shares": 828210,
+      "ratio": 1.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行",
+      "shares": 409700,
+      "ratio": 0.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "HOTEL　LOTTE　CO.,LTD.（常任代理人　LOTTE　HOTEL　TOKYO　OFFICE）",
+      "shares": 399600,
+      "ratio": 0.87,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐々木　嶺一",
+      "shares": 304500,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "高梨　光",
+      "shares": 240072,
+      "ratio": 0.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "日本マスタートラスト信託銀行株式会社",
+      "shares": 239000,
+      "ratio": 0.52,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本ケーブル株式会社",
+      "shares": 192000,
+      "ratio": 0.42,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNP　PARIBAS　NEW　YORK　BRANCH-PRIME BROKERAGE　CLEARANCE　ACCOUNT",
+      "shares": 120800,
+      "ratio": 0.26,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 69.66,
+      "securities": 2.61,
+      "individual": 2.98,
+      "trust": 1.41,
+      "foreign": 0.26
+    },
+    "individual_total": 2.98,
+    "top10_total": 76.92
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9I2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "日本駐車場開発株式会社",
+          "shares": 31492200,
+          "ratio": 68.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "OKASAN INTERNATIONAL (ASIA) LIMITED(常任代理人　\n岡三証券株式会社）",
+          "shares": 1200000,
+          "ratio": 2.61,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "鈴木　周平",
+          "shares": 828210,
+          "ratio": 1.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行",
+          "shares": 409700,
+          "ratio": 0.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "HOTEL　LOTTE　CO.,LTD.（常任代理人　LOTTE　HOTEL　TOKYO　OFFICE）",
+          "shares": 399600,
+          "ratio": 0.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐々木　嶺一",
+          "shares": 304500,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "高梨　光",
+          "shares": 240072,
+          "ratio": 0.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "日本マスタートラスト信託銀行株式会社",
+          "shares": 239000,
+          "ratio": 0.52,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本ケーブル株式会社",
+          "shares": 192000,
+          "ratio": 0.42,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNP　PARIBAS　NEW　YORK　BRANCH-PRIME BROKERAGE　CLEARANCE　ACCOUNT",
+          "shares": 120800,
+          "ratio": 0.26,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 69.66,
+          "securities": 2.61,
+          "individual": 2.98,
+          "trust": 1.41,
+          "foreign": 0.26
+        },
+        "individual_total": 2.98,
+        "top10_total": 76.92
+      }
+    }
+  ]
+}
