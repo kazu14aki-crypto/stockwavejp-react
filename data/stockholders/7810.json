@@ -1,0 +1,214 @@
+{
+  "secCode": "7810",
+  "issuerName": "株式会社クロスフォー",
+  "updated_at": "2026/10/24 15:24 JST",
+  "latestDate": "2026-10-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社Ｓ．Ｈホールディングス",
+      "shares": 7609000,
+      "ratio": 43.37,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "土橋 秀位",
+      "shares": 506000,
+      "ratio": 2.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "内藤 彰彦",
+      "shares": 253000,
+      "ratio": 1.45,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "土橋 祥子",
+      "shares": 186000,
+      "ratio": 1.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "山口 毅",
+      "shares": 175000,
+      "ratio": 1.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "奥野 辰也",
+      "shares": 150000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "土橋 元気",
+      "shares": 128000,
+      "ratio": 0.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "土橋 翼",
+      "shares": 128000,
+      "ratio": 0.73,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "望月 昭次",
+      "shares": 98000,
+      "ratio": 0.56,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "渡邉 薫",
+      "shares": 92000,
+      "ratio": 0.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 43.37,
+      "individual": 9.78
+    },
+    "individual_total": 9.78,
+    "top10_total": 53.15
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第39期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9I0",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社Ｓ．Ｈホールディングス",
+          "shares": 7609000,
+          "ratio": 43.37,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "土橋 秀位",
+          "shares": 506000,
+          "ratio": 2.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "内藤 彰彦",
+          "shares": 253000,
+          "ratio": 1.45,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "土橋 祥子",
+          "shares": 186000,
+          "ratio": 1.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "山口 毅",
+          "shares": 175000,
+          "ratio": 1.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "奥野 辰也",
+          "shares": 150000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "土橋 元気",
+          "shares": 128000,
+          "ratio": 0.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "土橋 翼",
+          "shares": 128000,
+          "ratio": 0.73,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "望月 昭次",
+          "shares": 98000,
+          "ratio": 0.56,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "渡邉 薫",
+          "shares": 92000,
+          "ratio": 0.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 43.37,
+          "individual": 9.78
+        },
+        "individual_total": 9.78,
+        "top10_total": 53.15
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "7058",
+  "issuerName": "共栄セキュリティーサービス株式会社",
+  "updated_at": "2026/10/24 15:23 JST",
+  "latestDate": "2026-10-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社あっとプラニング",
+      "shares": 646000,
+      "ratio": 44.71,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ケイ・エス・エス",
+      "shares": 121000,
+      "ratio": 8.41,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "マックスコーポレーション株式会社",
+      "shares": 110000,
+      "ratio": 7.6,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "光通信ＫＫ投資事業有限責任組合無限責任組合員光通信株式会社",
+      "shares": 79000,
+      "ratio": 5.51,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "共栄セキュリティーサービス社員持株会",
+      "shares": 49000,
+      "ratio": 3.42,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "セコム株式会社",
+      "shares": 45000,
+      "ratio": 3.11,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "合同会社Ｋ－ｍａｃ",
+      "shares": 34000,
+      "ratio": 2.35,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "森　樹雄",
+      "shares": 32000,
+      "ratio": 2.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "室屋　誠",
+      "shares": 18000,
+      "ratio": 1.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 16000,
+      "ratio": 1.16,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 71.69,
+      "employee": 3.42,
+      "individual": 3.47,
+      "securities": 1.16
+    },
+    "individual_total": 3.47,
+    "top10_total": 79.74
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第42期(2025/04/01－2026/07/31)",
+      "docID": "S100Z9Q4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社あっとプラニング",
+          "shares": 646000,
+          "ratio": 44.71,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ケイ・エス・エス",
+          "shares": 121000,
+          "ratio": 8.41,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "マックスコーポレーション株式会社",
+          "shares": 110000,
+          "ratio": 7.6,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "光通信ＫＫ投資事業有限責任組合無限責任組合員光通信株式会社",
+          "shares": 79000,
+          "ratio": 5.51,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "共栄セキュリティーサービス社員持株会",
+          "shares": 49000,
+          "ratio": 3.42,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "セコム株式会社",
+          "shares": 45000,
+          "ratio": 3.11,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "合同会社Ｋ－ｍａｃ",
+          "shares": 34000,
+          "ratio": 2.35,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "森　樹雄",
+          "shares": 32000,
+          "ratio": 2.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "室屋　誠",
+          "shares": 18000,
+          "ratio": 1.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 16000,
+          "ratio": 1.16,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 71.69,
+          "employee": 3.42,
+          "individual": 3.47,
+          "securities": 1.16
+        },
+        "individual_total": 3.47,
+        "top10_total": 79.74
+      }
+    }
+  ]
+}

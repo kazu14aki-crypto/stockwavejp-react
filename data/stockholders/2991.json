@@ -1,0 +1,220 @@
+{
+  "secCode": "2991",
+  "issuerName": "株式会社ランドネット",
+  "updated_at": "2026/10/24 15:23 JST",
+  "latestDate": "2026-10-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ブレインネット",
+      "shares": 9032000,
+      "ratio": 37.68,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "榮　　　章　博",
+      "shares": 7984000,
+      "ratio": 33.31,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "中　村　　　剛",
+      "shares": 697200,
+      "ratio": 2.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ファ－ストヴィレッジ株式会社",
+      "shares": 640000,
+      "ratio": 2.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 523100,
+      "ratio": 2.18,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "有限会社ブランド・クラブ",
+      "shares": 451900,
+      "ratio": 1.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "芥 　　好　夫",
+      "shares": 420800,
+      "ratio": 1.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ランドネット従業員持株会",
+      "shares": 343032,
+      "ratio": 1.43,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 303338,
+      "ratio": 1.27,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "門　田 　　洋",
+      "shares": 268100,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 42.24,
+      "individual": 39.1,
+      "trust": 2.18,
+      "employee": 1.43,
+      "securities": 1.27
+    },
+    "individual_total": 39.1,
+    "top10_total": 86.22
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第27期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9OL",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ブレインネット",
+          "shares": 9032000,
+          "ratio": 37.68,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "榮　　　章　博",
+          "shares": 7984000,
+          "ratio": 33.31,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "中　村　　　剛",
+          "shares": 697200,
+          "ratio": 2.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ファ－ストヴィレッジ株式会社",
+          "shares": 640000,
+          "ratio": 2.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 523100,
+          "ratio": 2.18,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "有限会社ブランド・クラブ",
+          "shares": 451900,
+          "ratio": 1.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "芥 　　好　夫",
+          "shares": 420800,
+          "ratio": 1.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ランドネット従業員持株会",
+          "shares": 343032,
+          "ratio": 1.43,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 303338,
+          "ratio": 1.27,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "門　田 　　洋",
+          "shares": 268100,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 42.24,
+          "individual": 39.1,
+          "trust": 2.18,
+          "employee": 1.43,
+          "securities": 1.27
+        },
+        "individual_total": 39.1,
+        "top10_total": 86.22
+      }
+    }
+  ]
+}

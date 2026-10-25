@@ -1,0 +1,220 @@
+{
+  "secCode": "6535",
+  "issuerName": "株式会社アイモバイル",
+  "updated_at": "2026/10/24 15:24 JST",
+  "latestDate": "2026-10-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ティーネット",
+      "shares": 14480000,
+      "ratio": 26.29,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社あさひ",
+      "shares": 13200000,
+      "ratio": 23.96,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2370000,
+      "ratio": 4.3,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野口　哲也",
+      "shares": 1725000,
+      "ratio": 3.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "田中　俊彦",
+      "shares": 1054000,
+      "ratio": 1.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 791000,
+      "ratio": 1.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "大和証券株式会社",
+      "shares": 525000,
+      "ratio": 0.95,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "山下　良久",
+      "shares": 493000,
+      "ratio": 0.9,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BOFAS INC SEGREGATION ACCOUNT（常任代理人　ＢＯＦＡ証券株式会社）",
+      "shares": 334000,
+      "ratio": 0.61,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 510686 （常任代理人　株式会社みずほ銀行）",
+      "shares": 297000,
+      "ratio": 0.54,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 50.25,
+      "trust": 5.74,
+      "individual": 5.94,
+      "securities": 0.95,
+      "foreign": 1.15
+    },
+    "individual_total": 5.94,
+    "top10_total": 64.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第19期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9LG",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ティーネット",
+          "shares": 14480000,
+          "ratio": 26.29,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社あさひ",
+          "shares": 13200000,
+          "ratio": 23.96,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2370000,
+          "ratio": 4.3,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野口　哲也",
+          "shares": 1725000,
+          "ratio": 3.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "田中　俊彦",
+          "shares": 1054000,
+          "ratio": 1.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 791000,
+          "ratio": 1.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "大和証券株式会社",
+          "shares": 525000,
+          "ratio": 0.95,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "山下　良久",
+          "shares": 493000,
+          "ratio": 0.9,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BOFAS INC SEGREGATION ACCOUNT（常任代理人　ＢＯＦＡ証券株式会社）",
+          "shares": 334000,
+          "ratio": 0.61,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 510686 （常任代理人　株式会社みずほ銀行）",
+          "shares": 297000,
+          "ratio": 0.54,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 50.25,
+          "trust": 5.74,
+          "individual": 5.94,
+          "securities": 0.95,
+          "foreign": 1.15
+        },
+        "individual_total": 5.94,
+        "top10_total": 64.03
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "6225",
+  "issuerName": "株式会社エコム",
+  "updated_at": "2026/10/24 15:23 JST",
+  "latestDate": "2026-10-23",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "髙梨　智志",
+      "shares": 418000,
+      "ratio": 22.78,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "髙梨　今日子",
+      "shares": 367163,
+      "ratio": 20.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "エコム社員持株会",
+      "shares": 203000,
+      "ratio": 11.06,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "ノリタケ株式会社",
+      "shares": 102000,
+      "ratio": 5.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "東京中小企業投資育成株式会社",
+      "shares": 100000,
+      "ratio": 5.45,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "しんきん－やらまいか投資事業有限責任組合",
+      "shares": 92000,
+      "ratio": 5.01,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社ライトハンドオフィス",
+      "shares": 75000,
+      "ratio": 4.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "関西電力株式会社",
+      "shares": 61000,
+      "ratio": 3.32,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "牧野　史朗",
+      "shares": 21100,
+      "ratio": 1.15,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "髙梨　千宙",
+      "shares": 19837,
+      "ratio": 1.08,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 45.02,
+      "employee": 11.06,
+      "corporate": 18.42,
+      "other": 5.01
+    },
+    "individual_total": 45.02,
+    "top10_total": 79.51
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-23",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第41期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9OQ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "髙梨　智志",
+          "shares": 418000,
+          "ratio": 22.78,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "髙梨　今日子",
+          "shares": 367163,
+          "ratio": 20.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "エコム社員持株会",
+          "shares": 203000,
+          "ratio": 11.06,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "ノリタケ株式会社",
+          "shares": 102000,
+          "ratio": 5.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "東京中小企業投資育成株式会社",
+          "shares": 100000,
+          "ratio": 5.45,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "しんきん－やらまいか投資事業有限責任組合",
+          "shares": 92000,
+          "ratio": 5.01,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社ライトハンドオフィス",
+          "shares": 75000,
+          "ratio": 4.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "関西電力株式会社",
+          "shares": 61000,
+          "ratio": 3.32,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "牧野　史朗",
+          "shares": 21100,
+          "ratio": 1.15,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "髙梨　千宙",
+          "shares": 19837,
+          "ratio": 1.08,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 45.02,
+          "employee": 11.06,
+          "corporate": 18.42,
+          "other": 5.01
+        },
+        "individual_total": 45.02,
+        "top10_total": 79.51
+      }
+    }
+  ]
+}

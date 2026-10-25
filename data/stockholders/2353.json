@@ -1,0 +1,218 @@
+{
+  "secCode": "2353",
+  "issuerName": "日本駐車場開発株式会社",
+  "updated_at": "2026/10/24 15:24 JST",
+  "latestDate": "2026-10-22",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社巽商店",
+      "shares": 105800000,
+      "ratio": 33.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "shares": 21720400,
+      "ratio": 6.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "shares": 13605700,
+      "ratio": 4.37,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON TREATY ACCOUNT 15.315 PCT(常任代理人　香港上海銀行東京支店)",
+      "shares": 6000000,
+      "ratio": 1.93,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "岡田商事株式会社",
+      "shares": 5400000,
+      "ratio": 1.73,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "NORTHERN TRUST CO.(AVFC) RE UKAI AIF CLIENTS NON LENDING 10PCT TREATYACCOUNT(常任代理人　香港上海銀行東京支店)",
+      "shares": 5200000,
+      "ratio": 1.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "岡田　建二",
+      "shares": 4979000,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "川村　憲司",
+      "shares": 4671558,
+      "ratio": 1.5,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "巽　一久",
+      "shares": 3385674,
+      "ratio": 1.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人　株式会社みずほ銀行決済営業部)",
+      "shares": 3297100,
+      "ratio": 1.06,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 35.68,
+      "trust": 11.34,
+      "foreign": 4.66,
+      "individual": 4.19
+    },
+    "individual_total": 4.19,
+    "top10_total": 55.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-22",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9DY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社巽商店",
+          "shares": 105800000,
+          "ratio": 33.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+          "shares": 21720400,
+          "ratio": 6.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行(信託口)",
+          "shares": 13605700,
+          "ratio": 4.37,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "NORTHERN TRUST CO.(AVFC) RE IEDU UCITS CLIENTS NON TREATY ACCOUNT 15.315 PCT(常任代理人　香港上海銀行東京支店)",
+          "shares": 6000000,
+          "ratio": 1.93,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡田商事株式会社",
+          "shares": 5400000,
+          "ratio": 1.73,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "NORTHERN TRUST CO.(AVFC) RE UKAI AIF CLIENTS NON LENDING 10PCT TREATYACCOUNT(常任代理人　香港上海銀行東京支店)",
+          "shares": 5200000,
+          "ratio": 1.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "岡田　建二",
+          "shares": 4979000,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "川村　憲司",
+          "shares": 4671558,
+          "ratio": 1.5,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "巽　一久",
+          "shares": 3385674,
+          "ratio": 1.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "THE BANK OF NEW YORK MELLON 140044(常任代理人　株式会社みずほ銀行決済営業部)",
+          "shares": 3297100,
+          "ratio": 1.06,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 35.68,
+          "trust": 11.34,
+          "foreign": 4.66,
+          "individual": 4.19
+        },
+        "individual_total": 4.19,
+        "top10_total": 55.87
+      }
+    }
+  ]
+}
