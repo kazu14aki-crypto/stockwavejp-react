@@ -1,0 +1,220 @@
+{
+  "secCode": "6037",
+  "issuerName": "楽待株式会社",
+  "updated_at": "2026/10/27 00:19 JST",
+  "latestDate": "2026-10-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "坂口　直大",
+      "shares": 13370600,
+      "ratio": 70.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "SIX SIS LTD.\n（常任代理人　株式会社三菱UFJ銀行）",
+      "shares": 410600,
+      "ratio": 2.17,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "TAKUMI CAPITAL MANAGEMENT MASTER FUND LP\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 352500,
+      "ratio": 1.86,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "CACEIS BANK/QUINTET LUXEMBOURG\nSUB AC/UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 195000,
+      "ratio": 1.03,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "青柳　進矢",
+      "shares": 160000,
+      "ratio": 0.85,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "JPMSLLC CL JPY\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 159101,
+      "ratio": 0.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 150900,
+      "ratio": 0.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 110887,
+      "ratio": 0.59,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "坂口 幸亜",
+      "shares": 100000,
+      "ratio": 0.53,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "神田 信",
+      "shares": 90100,
+      "ratio": 0.48,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 72.56,
+      "financial": 4.03,
+      "foreign": 1.03,
+      "corporate": 0.84,
+      "securities": 1.39
+    },
+    "individual_total": 72.56,
+    "top10_total": 79.85
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第21期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9TJ",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "坂口　直大",
+          "shares": 13370600,
+          "ratio": 70.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "SIX SIS LTD.\n（常任代理人　株式会社三菱UFJ銀行）",
+          "shares": 410600,
+          "ratio": 2.17,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "TAKUMI CAPITAL MANAGEMENT MASTER FUND LP\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 352500,
+          "ratio": 1.86,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "CACEIS BANK/QUINTET LUXEMBOURG\nSUB AC/UCITS CUSTOMERS ACCOUNT\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 195000,
+          "ratio": 1.03,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "青柳　進矢",
+          "shares": 160000,
+          "ratio": 0.85,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "JPMSLLC CL JPY\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 159101,
+          "ratio": 0.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 150900,
+          "ratio": 0.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 110887,
+          "ratio": 0.59,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "坂口 幸亜",
+          "shares": 100000,
+          "ratio": 0.53,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "神田 信",
+          "shares": 90100,
+          "ratio": 0.48,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 72.56,
+          "financial": 4.03,
+          "foreign": 1.03,
+          "corporate": 0.84,
+          "securities": 1.39
+        },
+        "individual_total": 72.56,
+        "top10_total": 79.85
+      }
+    }
+  ]
+}
