@@ -1,7 +1,97 @@
 {
-  "updated_at": "2026/10/24",
-  "count": 1984,
+  "updated_at": "2026/10/27",
+  "count": 1993,
   "items": [
+    {
+      "secCode": "5131",
+      "issuerName": "リンカーズ株式会社",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "前田　佳宏",
+      "topHolderCategory": "individual",
+      "individualTotal": 28.4
+    },
+    {
+      "secCode": "7692",
+      "issuerName": "株式会社アースインフィニティ",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "濵田　幸一",
+      "topHolderCategory": "individual",
+      "individualTotal": 54.29
+    },
+    {
+      "secCode": "6091",
+      "issuerName": "株式会社ウエスコホールディングス",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "公益財団法人ウエスコ学術振興財団",
+      "topHolderCategory": "foundation",
+      "individualTotal": 5.77
+    },
+    {
+      "secCode": "3418",
+      "issuerName": "株式会社バルニバービ",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "株式会社ＨＵＭＯ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 10.85
+    },
+    {
+      "secCode": "6037",
+      "issuerName": "楽待株式会社",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "坂口　直大",
+      "topHolderCategory": "individual",
+      "individualTotal": 72.56
+    },
+    {
+      "secCode": "4014",
+      "issuerName": "株式会社カラダノート",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "佐藤　竜也",
+      "topHolderCategory": "individual",
+      "individualTotal": 42.67
+    },
+    {
+      "secCode": "8927",
+      "issuerName": "株式会社明豊エンタープライズ",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "矢吹　満",
+      "topHolderCategory": "individual",
+      "individualTotal": 45.73
+    },
+    {
+      "secCode": "7682",
+      "issuerName": "株式会社浜木綿",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "有限会社AMcosmos",
+      "topHolderCategory": "corporate",
+      "individualTotal": 8.39
+    },
+    {
+      "secCode": "9235",
+      "issuerName": "売れるネット広告社グループ株式会社",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "加藤公一レオ",
+      "topHolderCategory": "individual",
+      "individualTotal": 32.35
+    },
+    {
+      "secCode": "8999",
+      "issuerName": "グランディハウス株式会社",
+      "latestDate": "2026-10-26",
+      "holderCount": 10,
+      "topHolder": "新日本物産株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 15.81
+    },
     {
       "secCode": "6225",
       "issuerName": "株式会社エコム",
@@ -12889,15 +12979,6 @@
       "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
       "topHolderCategory": "trust",
       "individualTotal": 0
-    },
-    {
-      "secCode": "8999",
-      "issuerName": "グランディハウス株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "新日本物産株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 15.81
     },
     {
       "secCode": "5989",

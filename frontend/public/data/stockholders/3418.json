@@ -1,0 +1,218 @@
+{
+  "secCode": "3418",
+  "issuerName": "株式会社バルニバービ",
+  "updated_at": "2026/10/27 00:19 JST",
+  "latestDate": "2026-10-26",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＨＵＭＯ",
+      "shares": 2886000,
+      "ratio": 26.69,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐藤　裕久",
+      "shares": 798900,
+      "ratio": 7.39,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "麒麟麦酒株式会社",
+      "shares": 188000,
+      "ratio": 1.74,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "石田　敏和",
+      "shares": 120000,
+      "ratio": 1.11,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "中島　邦子",
+      "shares": 106400,
+      "ratio": 0.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "CITIBANK (SWITZERLAND)AG\n\n \n\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 75000,
+      "ratio": 0.69,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "バルニバービ従業員持株会",
+      "shares": 67900,
+      "ratio": 0.63,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "田中　亮平",
+      "shares": 65000,
+      "ratio": 0.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "佐藤　隆子",
+      "shares": 48000,
+      "ratio": 0.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "安藤　文豪",
+      "shares": 35200,
+      "ratio": 0.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 28.43,
+      "individual": 10.85,
+      "foreign": 0.69,
+      "employee": 0.63
+    },
+    "individual_total": 10.85,
+    "top10_total": 40.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-26",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第35期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9PF",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＨＵＭＯ",
+          "shares": 2886000,
+          "ratio": 26.69,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐藤　裕久",
+          "shares": 798900,
+          "ratio": 7.39,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "麒麟麦酒株式会社",
+          "shares": 188000,
+          "ratio": 1.74,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "石田　敏和",
+          "shares": 120000,
+          "ratio": 1.11,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "中島　邦子",
+          "shares": 106400,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "CITIBANK (SWITZERLAND)AG\n\n \n\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 75000,
+          "ratio": 0.69,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "バルニバービ従業員持株会",
+          "shares": 67900,
+          "ratio": 0.63,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "田中　亮平",
+          "shares": 65000,
+          "ratio": 0.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "佐藤　隆子",
+          "shares": 48000,
+          "ratio": 0.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "安藤　文豪",
+          "shares": 35200,
+          "ratio": 0.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 28.43,
+          "individual": 10.85,
+          "foreign": 0.69,
+          "employee": 0.63
+        },
+        "individual_total": 10.85,
+        "top10_total": 40.6
+      }
+    }
+  ]
+}
