@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T15:30:14+00:00",
+  "updated_at": "2026-10-28T16:13:24+00:00",
   "source": "TDnet XBRL",
   "definitions": {
     "net_cash": "現金及び預金−有利子負債（リース負債・仕入債務を除く）",
@@ -10956,26 +10956,26 @@
       "source_url": "https://www2.jpx.co.jp/disc/53840/081220260730504017.zip"
     },
     "4063.T": {
-      "net_cash": 1417893000000,
-      "net_cash_ratio": 12.58,
-      "operating_cf": null,
-      "free_cf": null,
-      "cash_and_deposits": 1654261000000,
-      "interest_bearing_debt": 236368000000,
-      "revenue": 662424000000,
+      "net_cash": 1353658000000,
+      "net_cash_ratio": 12.01,
+      "operating_cf": 410757000000,
+      "free_cf": 241636000000,
+      "cash_and_deposits": 1751095000000,
+      "interest_bearing_debt": 397437000000,
+      "revenue": 1420684000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 173798000000,
-      "ordinary_income": 192129000000,
-      "net_income_parent": 130829000000,
-      "net_income": 137104000000,
-      "eps": 70.39,
-      "eps_diluted": 70.24,
-      "prior_revenue": 628549000000,
-      "prior_eps": 66.48,
+      "operating_income": 385918000000,
+      "ordinary_income": 415108000000,
+      "net_income_parent": 286939000000,
+      "net_income": 300937000000,
+      "eps": 155.71,
+      "eps_diluted": 155.45,
+      "prior_revenue": 1284522000000,
+      "prior_eps": 136.61,
       "total_shares_issued": 1984995865,
-      "treasury_stock_shares": 125301104,
-      "shares_outstanding": 1859694761,
-      "average_shares": 1858682481,
+      "treasury_stock_shares": 169263147,
+      "shares_outstanding": 1815732718,
+      "average_shares": 1842756911,
       "forecast_revenue": 2700000000000,
       "forecast_operating_income": 700000000000,
       "forecast_ordinary_income": 770000000000,
@@ -10992,44 +10992,44 @@
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-24 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-24 15:30:00",
-      "guidance_filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip",
+      "guidance_disclosed_at": "2026-10-27 15:30:00",
+      "guidance_filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 662424000000,
+          "value": 1420684000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -11039,12 +11039,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 173798000000,
+          "value": 385918000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -11054,12 +11054,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 192129000000,
+          "value": 415108000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -11069,12 +11069,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 130829000000,
+          "value": 286939000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -11084,21 +11084,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
         "net_income": {
-          "value": 137104000000,
+          "value": 300937000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -11108,12 +11108,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 70.39,
+          "value": 155.71,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -11123,21 +11123,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
         "eps_diluted": {
-          "value": 70.24,
+          "value": 155.45,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedNetIncomePerShare",
@@ -11147,16 +11147,16 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
@@ -11169,7 +11169,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -11185,7 +11185,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 125301104,
+          "value": 169263147,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -11193,7 +11193,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -11209,7 +11209,7 @@
           ]
         },
         "average_shares": {
-          "value": 1858682481,
+          "value": 1842756911,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -11219,7 +11219,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -11233,7 +11233,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 628549000000,
+          "value": 1284522000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -11243,12 +11243,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 66.48,
+          "value": 136.61,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -11258,7 +11258,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -11406,12 +11406,12 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}SecondQuarterMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
@@ -11422,10 +11422,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-24 15:30:00",
-      "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
+      "disclosed_at": "2026-10-27 15:30:00",
+      "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/40630/081220260724598954.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261026556436.zip"
     },
     "4109.T": {
       "net_cash": 9259000000,
@@ -21468,80 +21468,80 @@
       "source_url": "https://www2.jpx.co.jp/disc/39930/081220260813518953.zip"
     },
     "3778.T": {
-      "net_cash": 7961219000,
-      "net_cash_ratio": 0.27,
+      "net_cash": 7637547000,
+      "net_cash_ratio": 0.26,
       "operating_cf": null,
       "free_cf": null,
-      "cash_and_deposits": 17271165000,
-      "interest_bearing_debt": 9309946000,
-      "revenue": 11134597000,
+      "cash_and_deposits": 19424963000,
+      "interest_bearing_debt": 11787416000,
+      "revenue": 22827458000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 1230678000,
-      "ordinary_income": 1258064000,
-      "net_income_parent": 855000000,
-      "net_income": 857572000,
-      "eps": 21.38,
+      "operating_income": 2963025000,
+      "ordinary_income": 3013964000,
+      "net_income_parent": 1903000000,
+      "net_income": 1913122000,
+      "eps": 47.55,
       "eps_diluted": null,
-      "prior_revenue": 7492152000,
-      "prior_eps": -8.11,
+      "prior_revenue": 15631162000,
+      "prior_eps": -15.66,
       "total_shares_issued": 41890700,
-      "treasury_stock_shares": 1865152,
-      "shares_outstanding": 40025548,
-      "average_shares": 40025235,
-      "forecast_revenue": 22500000000,
-      "forecast_operating_income": 2200000000,
-      "forecast_ordinary_income": 2200000000,
-      "forecast_net_income_parent": 1400000000,
-      "forecast_eps": 34.97,
-      "forecast_dps": 0,
+      "treasury_stock_shares": 1840867,
+      "shares_outstanding": 40049833,
+      "average_shares": 40036057,
+      "forecast_revenue": 46600000000,
+      "forecast_operating_income": 4100000000,
+      "forecast_ordinary_income": 3900000000,
+      "forecast_net_income_parent": 2550000000,
+      "forecast_eps": 63.68,
+      "forecast_dps": 5.5,
       "guidance": {
-        "revenue": 22500000000,
-        "operating_income": 2200000000,
-        "ordinary_income": 2200000000,
-        "net_income_parent": 1400000000,
-        "eps": 34.97,
-        "dps": 0
+        "revenue": 46600000000,
+        "operating_income": 4100000000,
+        "ordinary_income": 3900000000,
+        "net_income_parent": 2550000000,
+        "eps": 63.68,
+        "dps": 5.5
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-28 12:30:00",
-          "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+          "disclosed_at": "2026-10-28 12:30:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-28 12:30:00",
-      "guidance_filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip",
+      "guidance_disclosed_at": "2026-10-28 12:30:00",
+      "guidance_filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 11134597000,
+          "value": 22827458000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -21551,12 +21551,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 1230678000,
+          "value": 2963025000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -21566,12 +21566,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 1258064000,
+          "value": 3013964000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -21581,12 +21581,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 855000000,
+          "value": 1903000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -21596,7 +21596,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -21610,7 +21610,7 @@
           ]
         },
         "net_income": {
-          "value": 857572000,
+          "value": 1913122000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -21620,12 +21620,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 21.38,
+          "value": 47.55,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -21635,7 +21635,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -21657,7 +21657,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -21673,7 +21673,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 1865152,
+          "value": 1840867,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -21681,7 +21681,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -21697,7 +21697,7 @@
           ]
         },
         "average_shares": {
-          "value": 40025235,
+          "value": 40036057,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -21707,7 +21707,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -21721,7 +21721,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 7492152000,
+          "value": 15631162000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -21731,12 +21731,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": -8.11,
+          "value": -15.66,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -21746,7 +21746,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -21760,7 +21760,7 @@
           ]
         },
         "forecast_revenue": {
-          "value": 22500000000,
+          "value": 46600000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "NetSales",
@@ -21770,7 +21770,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -21784,7 +21784,7 @@
           ]
         },
         "forecast_operating_income": {
-          "value": 2200000000,
+          "value": 4100000000,
           "canonical_key": "forecast_operating_income",
           "mapper": "forecast_mapper",
           "concept": "OperatingIncome",
@@ -21794,7 +21794,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -21808,7 +21808,7 @@
           ]
         },
         "forecast_ordinary_income": {
-          "value": 2200000000,
+          "value": 3900000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "OrdinaryIncome",
@@ -21818,7 +21818,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -21832,7 +21832,7 @@
           ]
         },
         "forecast_net_income_parent": {
-          "value": 1400000000,
+          "value": 2550000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -21842,7 +21842,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -21856,7 +21856,7 @@
           ]
         },
         "forecast_eps": {
-          "value": 34.97,
+          "value": 63.68,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "NetIncomePerShare",
@@ -21866,7 +21866,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -21880,7 +21880,7 @@
           ]
         },
         "forecast_dps": {
-          "value": 0,
+          "value": 5.5,
           "canonical_key": "forecast_dps",
           "mapper": "forecast_mapper",
           "concept": "DividendPerShare",
@@ -21895,7 +21895,7 @@
           "dimensions": [
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}SecondQuarterMember"
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
@@ -21910,86 +21910,86 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-28 12:30:00",
-      "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕（連結）",
+      "disclosed_at": "2026-10-28 12:30:00",
+      "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/37780/081220260728500696.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261027556964.zip"
     },
     "4684.T": {
       "net_cash": null,
       "net_cash_ratio": null,
-      "operating_cf": 14850000000,
-      "free_cf": 14678000000,
-      "cash_and_deposits": 194287000000,
+      "operating_cf": 38009000000,
+      "free_cf": 37242000000,
+      "cash_and_deposits": 206420000000,
       "interest_bearing_debt": null,
-      "revenue": 36698000000,
+      "revenue": 75023000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 24860000000,
-      "ordinary_income": 32049000000,
-      "net_income_parent": 22697000000,
-      "net_income": 22697000000,
-      "eps": 53.01,
+      "operating_income": 51038000000,
+      "ordinary_income": 62826000000,
+      "net_income_parent": 44383000000,
+      "net_income": 44383000000,
+      "eps": 103,
       "eps_diluted": null,
-      "prior_revenue": 32431000000,
-      "prior_eps": 44.36,
+      "prior_revenue": 65784000000,
+      "prior_eps": 84.8,
       "total_shares_issued": 492000000,
-      "treasury_stock_shares": 61062510,
-      "shares_outstanding": 430937490,
-      "average_shares": 428131879,
-      "forecast_revenue": 148700000000,
-      "forecast_operating_income": 98000000000,
-      "forecast_ordinary_income": 114500000000,
-      "forecast_net_income_parent": 82000000000,
-      "forecast_eps": 189.23,
-      "forecast_dps": 47,
+      "treasury_stock_shares": 63419551,
+      "shares_outstanding": 428580449,
+      "average_shares": 430923661,
+      "forecast_revenue": 151200000000,
+      "forecast_operating_income": 100500000000,
+      "forecast_ordinary_income": 120000000000,
+      "forecast_net_income_parent": 85000000000,
+      "forecast_eps": 198.59,
+      "forecast_dps": 53,
       "guidance": {
-        "revenue": 148700000000,
-        "operating_income": 98000000000,
-        "ordinary_income": 114500000000,
-        "net_income_parent": 82000000000,
-        "eps": 189.23,
-        "dps": 47
+        "revenue": 151200000000,
+        "operating_income": 100500000000,
+        "ordinary_income": 120000000000,
+        "net_income_parent": 85000000000,
+        "eps": 198.59,
+        "dps": 53
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-22 15:30:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-22 15:30:00",
-      "guidance_filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip",
+      "guidance_disclosed_at": "2026-10-27 15:30:00",
+      "guidance_filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 36698000000,
+          "value": 75023000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -21999,12 +21999,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 24860000000,
+          "value": 51038000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -22014,12 +22014,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 32049000000,
+          "value": 62826000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -22029,12 +22029,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 22697000000,
+          "value": 44383000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -22044,21 +22044,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
         "net_income": {
-          "value": 22697000000,
+          "value": 44383000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -22068,12 +22068,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 53.01,
+          "value": 103,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -22083,16 +22083,16 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
@@ -22105,23 +22105,23 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             }
           ]
         },
         "treasury_stock_shares": {
-          "value": 61062510,
+          "value": 63419551,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -22129,23 +22129,23 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             }
           ]
         },
         "average_shares": {
-          "value": 428131879,
+          "value": 430923661,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -22155,7 +22155,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -22169,7 +22169,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 32431000000,
+          "value": 65784000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -22179,12 +22179,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 44.36,
+          "value": 84.8,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -22194,7 +22194,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -22208,7 +22208,7 @@
           ]
         },
         "forecast_revenue": {
-          "value": 148700000000,
+          "value": 151200000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "NetSales",
@@ -22232,7 +22232,7 @@
           ]
         },
         "forecast_operating_income": {
-          "value": 98000000000,
+          "value": 100500000000,
           "canonical_key": "forecast_operating_income",
           "mapper": "forecast_mapper",
           "concept": "OperatingIncome",
@@ -22256,7 +22256,7 @@
           ]
         },
         "forecast_ordinary_income": {
-          "value": 114500000000,
+          "value": 120000000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "OrdinaryIncome",
@@ -22280,7 +22280,7 @@
           ]
         },
         "forecast_net_income_parent": {
-          "value": 82000000000,
+          "value": 85000000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -22304,7 +22304,7 @@
           ]
         },
         "forecast_eps": {
-          "value": 189.23,
+          "value": 198.59,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "NetIncomePerShare",
@@ -22328,7 +22328,7 @@
           ]
         },
         "forecast_dps": {
-          "value": 47,
+          "value": 53,
           "canonical_key": "forecast_dps",
           "mapper": "forecast_mapper",
           "concept": "DividendPerShare",
@@ -22346,22 +22346,22 @@
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             },
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
             },
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}SecondQuarterMember"
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         }
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-22 15:30:00",
-      "filing_title": "2027年３月期 第１四半期決算短信〔日本基準〕（連結）",
+      "disclosed_at": "2026-10-27 15:30:00",
+      "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔日本基準〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/46840/081220260721596752.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261026555792.zip"
     },
     "3626.T": {
       "net_cash": 73759000000,
@@ -79914,78 +79914,78 @@
     "6988.T": {
       "net_cash": null,
       "net_cash_ratio": null,
-      "operating_cf": 23190000000,
-      "free_cf": -4932000000,
-      "cash_and_deposits": 299056000000,
+      "operating_cf": 108847000000,
+      "free_cf": 52345000000,
+      "cash_and_deposits": 332359000000,
       "interest_bearing_debt": null,
-      "revenue": 271672000000,
+      "revenue": 558363000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 49210000000,
+      "operating_income": 105841000000,
       "ordinary_income": null,
-      "net_income_parent": 33872000000,
-      "net_income": 33887000000,
-      "eps": 50.75,
-      "eps_diluted": 50.73,
-      "prior_revenue": 246192000000,
-      "prior_eps": 45.68,
+      "net_income_parent": 76502000000,
+      "net_income": 76533000000,
+      "eps": 115.32,
+      "eps_diluted": 115.27,
+      "prior_revenue": 513569000000,
+      "prior_eps": 101.32,
       "total_shares_issued": 678659700,
-      "treasury_stock_shares": 14437950,
-      "shares_outstanding": 664221750,
-      "average_shares": 667442483,
-      "forecast_revenue": 564000000000,
-      "forecast_operating_income": 108000000000,
-      "forecast_ordinary_income": 108000000000,
-      "forecast_net_income_parent": 76000000000,
-      "forecast_eps": 113.87,
-      "forecast_dps": 32,
+      "treasury_stock_shares": 20472050,
+      "shares_outstanding": 658187650,
+      "average_shares": 663371100,
+      "forecast_revenue": 1110000000000,
+      "forecast_operating_income": 200000000000,
+      "forecast_ordinary_income": 200000000000,
+      "forecast_net_income_parent": 142000000000,
+      "forecast_eps": 216.29,
+      "forecast_dps": 36,
       "guidance": {
-        "revenue": 564000000000,
-        "operating_income": 108000000000,
-        "ordinary_income": 108000000000,
-        "net_income_parent": 76000000000,
-        "eps": 113.87,
-        "dps": 32
+        "revenue": 1110000000000,
+        "operating_income": 200000000000,
+        "ordinary_income": 200000000000,
+        "net_income_parent": 142000000000,
+        "eps": 216.29,
+        "dps": 36
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-28 16:00:00",
-          "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+          "disclosed_at": "2026-10-27 16:00:00",
+          "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-28 16:00:00",
-      "guidance_filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip",
+      "guidance_disclosed_at": "2026-10-27 16:00:00",
+      "guidance_filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 271672000000,
+          "value": 558363000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "RevenueIFRS",
@@ -79995,12 +79995,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 49210000000,
+          "value": 105841000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncomeIFRS",
@@ -80010,7 +80010,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80024,7 +80024,7 @@
           ]
         },
         "net_income_parent": {
-          "value": 33872000000,
+          "value": 76502000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParentIFRS",
@@ -80034,7 +80034,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80048,7 +80048,7 @@
           ]
         },
         "net_income": {
-          "value": 33887000000,
+          "value": 76533000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitIFRS",
@@ -80058,7 +80058,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80072,7 +80072,7 @@
           ]
         },
         "eps": {
-          "value": 50.75,
+          "value": 115.32,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "BasicEarningsPerShareIFRS",
@@ -80082,7 +80082,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80096,7 +80096,7 @@
           ]
         },
         "eps_diluted": {
-          "value": 50.73,
+          "value": 115.27,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedEarningsPerShareIFRS",
@@ -80106,7 +80106,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80128,23 +80128,23 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             }
           ]
         },
         "treasury_stock_shares": {
-          "value": 14437950,
+          "value": 20472050,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -80152,23 +80152,23 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             }
           ]
         },
         "average_shares": {
-          "value": 667442483,
+          "value": 663371100,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -80178,7 +80178,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -80192,7 +80192,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 246192000000,
+          "value": 513569000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "RevenueIFRS",
@@ -80202,12 +80202,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 45.68,
+          "value": 101.32,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "BasicEarningsPerShareIFRS",
@@ -80217,7 +80217,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -80231,7 +80231,7 @@
           ]
         },
         "forecast_revenue": {
-          "value": 564000000000,
+          "value": 1110000000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "SalesIFRS",
@@ -80241,7 +80241,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -80255,7 +80255,7 @@
           ]
         },
         "forecast_operating_income": {
-          "value": 108000000000,
+          "value": 200000000000,
           "canonical_key": "forecast_operating_income",
           "mapper": "forecast_mapper",
           "concept": "OperatingIncomeIFRS",
@@ -80265,7 +80265,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -80279,7 +80279,7 @@
           ]
         },
         "forecast_ordinary_income": {
-          "value": 108000000000,
+          "value": 200000000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "ProfitBeforeTaxIFRS",
@@ -80289,7 +80289,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -80303,7 +80303,7 @@
           ]
         },
         "forecast_net_income_parent": {
-          "value": 76000000000,
+          "value": 142000000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "ProfitIFRS",
@@ -80313,7 +80313,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -80327,7 +80327,7 @@
           ]
         },
         "forecast_eps": {
-          "value": 113.87,
+          "value": 216.29,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "BasicEarningsPerShareIFRS",
@@ -80337,7 +80337,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-09-30"
+            "end_date": "2027-03-31"
           },
           "dimensions": [
             {
@@ -80351,7 +80351,7 @@
           ]
         },
         "forecast_dps": {
-          "value": 32,
+          "value": 36,
           "canonical_key": "forecast_dps",
           "mapper": "forecast_mapper",
           "concept": "DividendPerShare",
@@ -80365,26 +80365,26 @@
           },
           "dimensions": [
             {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
+            },
+            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}SecondQuarterMember"
             }
           ]
         }
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-28 16:00:00",
-      "filing_title": "2027年３月期 第１四半期決算短信〔IFRS〕（連結）",
+      "disclosed_at": "2026-10-27 16:00:00",
+      "filing_title": "2027年３月期 第２四半期（中間期）決算短信〔IFRS〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/69880/081220260727599980.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261026556326.zip"
     },
     "4631.T": {
       "net_cash": -179945000000,
@@ -91069,24 +91069,24 @@
     "4519.T": {
       "net_cash": null,
       "net_cash_ratio": null,
-      "operating_cf": 249102000000,
-      "free_cf": 227874000000,
-      "cash_and_deposits": 390439000000,
+      "operating_cf": 306325000000,
+      "free_cf": 249641000000,
+      "cash_and_deposits": 382305000000,
       "interest_bearing_debt": null,
-      "revenue": 663331000000,
+      "revenue": 1068074000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 319623000000,
+      "operating_income": 522570000000,
       "ordinary_income": null,
-      "net_income_parent": 231749000000,
-      "net_income": 231749000000,
-      "eps": 140.82,
-      "eps_diluted": 140.82,
-      "prior_revenue": 578463000000,
-      "prior_eps": 118.13,
+      "net_income_parent": 375302000000,
+      "net_income": 375302000000,
+      "eps": 228.07,
+      "eps_diluted": 228.07,
+      "prior_revenue": 911640000000,
+      "prior_eps": 185.7,
       "total_shares_issued": 1679057667,
-      "treasury_stock_shares": 33754703,
-      "shares_outstanding": 1645302964,
-      "average_shares": 1645672680,
+      "treasury_stock_shares": 33755014,
+      "shares_outstanding": 1645302653,
+      "average_shares": 1645548060,
       "forecast_revenue": null,
       "forecast_operating_income": null,
       "forecast_ordinary_income": null,
@@ -91103,19 +91103,19 @@
       },
       "guidance_field_sources": {
         "dps": {
-          "disclosed_at": "2026-07-24 16:00:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/45190/081220260723598715.zip"
+          "disclosed_at": "2026-10-27 17:00:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔ＩＦＲＳ〕（連結）",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261026556449.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-24 16:00:00",
-      "guidance_filing_title": "2026年12月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/45190/081220260723598715.zip",
+      "guidance_disclosed_at": "2026-10-27 17:00:00",
+      "guidance_filing_title": "2026年12月期第３四半期決算短信〔ＩＦＲＳ〕（連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261026556449.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 663331000000,
+          "value": 1068074000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "RevenueIFRS",
@@ -91125,12 +91125,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 319623000000,
+          "value": 522570000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncomeIFRS",
@@ -91140,7 +91140,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91154,7 +91154,7 @@
           ]
         },
         "net_income_parent": {
-          "value": 231749000000,
+          "value": 375302000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParentIFRS",
@@ -91164,7 +91164,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91178,7 +91178,7 @@
           ]
         },
         "net_income": {
-          "value": 231749000000,
+          "value": 375302000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitIFRS",
@@ -91188,7 +91188,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91202,7 +91202,7 @@
           ]
         },
         "eps": {
-          "value": 140.82,
+          "value": 228.07,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "BasicEarningsPerShareIFRS",
@@ -91212,7 +91212,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91226,7 +91226,7 @@
           ]
         },
         "eps_diluted": {
-          "value": 140.82,
+          "value": 228.07,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedEarningsPerShareIFRS",
@@ -91236,7 +91236,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91258,7 +91258,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -91274,7 +91274,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 33754703,
+          "value": 33755014,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -91282,7 +91282,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -91298,7 +91298,7 @@
           ]
         },
         "average_shares": {
-          "value": 1645672680,
+          "value": 1645548060,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -91308,7 +91308,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -91322,7 +91322,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 578463000000,
+          "value": 911640000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "RevenueIFRS",
@@ -91332,12 +91332,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 118.13,
+          "value": 185.7,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "BasicEarningsPerShareIFRS",
@@ -91347,7 +91347,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -91391,10 +91391,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-24 16:00:00",
-      "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔ＩＦＲＳ〕（連結）",
+      "disclosed_at": "2026-10-27 17:00:00",
+      "filing_title": "2026年12月期第３四半期決算短信〔ＩＦＲＳ〕（連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/45190/081220260723598715.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261026556449.zip"
     },
     "4507.T": {
       "net_cash": null,
@@ -107493,75 +107493,80 @@
       "source_url": "https://www2.jpx.co.jp/disc/32310/081220260730503171.zip"
     },
     "3003.T": {
-      "net_cash": -1359849000000,
-      "net_cash_ratio": -203.69,
-      "operating_cf": 155752000000,
-      "free_cf": 18614000000,
-      "cash_and_deposits": 156197000000,
-      "interest_bearing_debt": 1516046000000,
-      "revenue": 416596000000,
+      "net_cash": -1484353000000,
+      "net_cash_ratio": -222.34,
+      "operating_cf": null,
+      "free_cf": null,
+      "cash_and_deposits": 143037000000,
+      "interest_bearing_debt": 1627390000000,
+      "revenue": 574725000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 80313000000,
-      "ordinary_income": 70861000000,
-      "net_income_parent": 49978000000,
-      "net_income": 50586000000,
-      "eps": 65.82,
-      "eps_diluted": 65.82,
-      "prior_revenue": 300081000000,
-      "prior_eps": 59.06,
+      "operating_income": 120503000000,
+      "ordinary_income": 101098000000,
+      "net_income_parent": 69470000000,
+      "net_income": 70949000000,
+      "eps": 91.48,
+      "eps_diluted": 91.48,
+      "prior_revenue": 424218000000,
+      "prior_eps": 79.79,
       "total_shares_issued": 767907735,
-      "treasury_stock_shares": 8458250,
-      "shares_outstanding": 759449485,
-      "average_shares": 759293840,
-      "forecast_revenue": null,
-      "forecast_operating_income": 210000000000,
-      "forecast_ordinary_income": 185000000000,
-      "forecast_net_income_parent": 121000000000,
-      "forecast_eps": 159.34,
-      "forecast_dps": 33.5,
+      "treasury_stock_shares": 8458380,
+      "shares_outstanding": 759449355,
+      "average_shares": 759346284,
+      "forecast_revenue": 900000000000,
+      "forecast_operating_income": 217000000000,
+      "forecast_ordinary_income": 190000000000,
+      "forecast_net_income_parent": 126000000000,
+      "forecast_eps": 165.92,
+      "forecast_dps": 36.5,
       "guidance": {
-        "revenue": null,
-        "operating_income": 210000000000,
-        "ordinary_income": 185000000000,
-        "net_income_parent": 121000000000,
-        "eps": 159.34,
-        "dps": 33.5
+        "revenue": 900000000000,
+        "operating_income": 217000000000,
+        "ordinary_income": 190000000000,
+        "net_income_parent": 126000000000,
+        "eps": 165.92,
+        "dps": 36.5
       },
       "guidance_field_sources": {
+        "revenue": {
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
+        },
         "operating_income": {
-          "disclosed_at": "2026-07-28 11:30:00",
-          "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-28 11:30:00",
-          "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-28 11:30:00",
-          "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-28 11:30:00",
-          "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-28 11:30:00",
-          "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+          "disclosed_at": "2026-10-28 11:30:00",
+          "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-28 11:30:00",
-      "guidance_filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip",
+      "guidance_disclosed_at": "2026-10-28 11:30:00",
+      "guidance_filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 416596000000,
+          "value": 574725000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "OperatingRevenue1",
@@ -107571,12 +107576,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 80313000000,
+          "value": 120503000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -107586,12 +107591,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 70861000000,
+          "value": 101098000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -107601,12 +107606,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 49978000000,
+          "value": 69470000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -107616,21 +107621,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
         "net_income": {
-          "value": 50586000000,
+          "value": 70949000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -107640,12 +107645,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 65.82,
+          "value": 91.48,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -107655,21 +107660,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
         "eps_diluted": {
-          "value": 65.82,
+          "value": 91.48,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedNetIncomePerShare",
@@ -107679,16 +107684,16 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             }
           ]
         },
@@ -107701,7 +107706,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -107717,7 +107722,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 8458250,
+          "value": 8458380,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -107725,7 +107730,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -107741,7 +107746,7 @@
           ]
         },
         "average_shares": {
-          "value": 759293840,
+          "value": 759346284,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -107751,21 +107756,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
             }
           ]
         },
         "prior_revenue": {
-          "value": 300081000000,
+          "value": 424218000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "OperatingRevenue1",
@@ -107775,12 +107780,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 59.06,
+          "value": 79.79,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -107790,7 +107795,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -107803,8 +107808,32 @@
             }
           ]
         },
+        "forecast_revenue": {
+          "value": 900000000000,
+          "canonical_key": "forecast_revenue",
+          "mapper": "forecast_mapper",
+          "concept": "NetSales",
+          "namespace": "http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12",
+          "unit": "JPY",
+          "decimals": -6,
+          "period": {
+            "instant": null,
+            "start_date": "2026-01-01",
+            "end_date": "2026-12-31"
+          },
+          "dimensions": [
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
+            }
+          ]
+        },
         "forecast_operating_income": {
-          "value": 210000000000,
+          "value": 217000000000,
           "canonical_key": "forecast_operating_income",
           "mapper": "forecast_mapper",
           "concept": "OperatingIncome",
@@ -107818,17 +107847,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_ordinary_income": {
-          "value": 185000000000,
+          "value": 190000000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "OrdinaryIncome",
@@ -107842,17 +107871,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_net_income_parent": {
-          "value": 121000000000,
+          "value": 126000000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -107866,17 +107895,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_eps": {
-          "value": 159.34,
+          "value": 165.92,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "NetIncomePerShare",
@@ -107890,17 +107919,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_dps": {
-          "value": 33.5,
+          "value": 36.5,
           "canonical_key": "forecast_dps",
           "mapper": "forecast_mapper",
           "concept": "DividendPerShare",
@@ -107914,26 +107943,26 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             },
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
             }
           ]
         }
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-28 11:30:00",
-      "filing_title": "2026年12月期第２四半期（中間期）決算短信〔日本基準〕(連結)",
+      "disclosed_at": "2026-10-28 11:30:00",
+      "filing_title": "2026年12月期第３四半期決算短信〔日本基準〕(連結)",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/30030/081220260727500129.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261027557085.zip"
     },
     "1878.T": {
       "net_cash": 35437000000,
@@ -123077,26 +123106,26 @@
       "source_url": "https://www2.jpx.co.jp/disc/22820/081220260806513332.zip"
     },
     "2212.T": {
-      "net_cash": 139328000000,
-      "net_cash_ratio": 33.75,
-      "operating_cf": 62411000000,
-      "free_cf": 34670000000,
-      "cash_and_deposits": 174627000000,
-      "interest_bearing_debt": 35299000000,
-      "revenue": 676636000000,
+      "net_cash": 136341000000,
+      "net_cash_ratio": 33.03,
+      "operating_cf": null,
+      "free_cf": null,
+      "cash_and_deposits": 169248000000,
+      "interest_bearing_debt": 32907000000,
+      "revenue": 1011499000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 35850000000,
-      "ordinary_income": 37875000000,
-      "net_income_parent": 24197000000,
-      "net_income": 25154000000,
-      "eps": 122.77,
+      "operating_income": 47218000000,
+      "ordinary_income": 49888000000,
+      "net_income_parent": 31872000000,
+      "net_income": 33291000000,
+      "eps": 161.76,
       "eps_diluted": null,
-      "prior_revenue": 650633000000,
-      "prior_eps": 116.11,
+      "prior_revenue": 968100000000,
+      "prior_eps": 150.26,
       "total_shares_issued": 220282860,
-      "treasury_stock_shares": 23378061,
-      "shares_outstanding": 196904799,
-      "average_shares": 197090513,
+      "treasury_stock_shares": 23378296,
+      "shares_outstanding": 196904564,
+      "average_shares": 197034754,
       "forecast_revenue": 1338000000000,
       "forecast_operating_income": 64000000000,
       "forecast_ordinary_income": 67000000000,
@@ -123113,44 +123142,44 @@
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-31 15:30:00",
-          "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-31 15:30:00",
-      "guidance_filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip",
+      "guidance_disclosed_at": "2026-10-27 15:30:00",
+      "guidance_filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 676636000000,
+          "value": 1011499000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -123160,12 +123189,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 35850000000,
+          "value": 47218000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -123175,12 +123204,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 37875000000,
+          "value": 49888000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -123190,12 +123219,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 24197000000,
+          "value": 31872000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -123205,7 +123234,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -123219,7 +123248,7 @@
           ]
         },
         "net_income": {
-          "value": 25154000000,
+          "value": 33291000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -123229,12 +123258,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 122.77,
+          "value": 161.76,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -123244,7 +123273,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -123266,7 +123295,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -123282,7 +123311,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 23378061,
+          "value": 23378296,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -123290,7 +123319,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -123306,7 +123335,7 @@
           ]
         },
         "average_shares": {
-          "value": 197090513,
+          "value": 197034754,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -123316,7 +123345,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -123330,7 +123359,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 650633000000,
+          "value": 968100000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -123340,12 +123369,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 116.11,
+          "value": 150.26,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -123355,7 +123384,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -123519,10 +123548,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-31 15:30:00",
-      "filing_title": "2026年12月期 第2四半期（中間期）決算短信〔日本基準〕(連結)",
+      "disclosed_at": "2026-10-27 15:30:00",
+      "filing_title": "2026年12月期 第3四半期決算短信〔日本基準〕(連結)",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/22120/081220260713592300.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261013549220.zip"
     },
     "4028.T": {
       "net_cash": -14338000000,
@@ -142057,24 +142086,24 @@
     "9697.T": {
       "net_cash": null,
       "net_cash_ratio": null,
-      "operating_cf": 27148000000,
-      "free_cf": 23409000000,
-      "cash_and_deposits": 161208000000,
+      "operating_cf": 36769000000,
+      "free_cf": 31311000000,
+      "cash_and_deposits": 151634000000,
       "interest_bearing_debt": null,
-      "revenue": 70410000000,
+      "revenue": 120887000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 41054000000,
-      "ordinary_income": 41452000000,
-      "net_income_parent": 29159000000,
-      "net_income": 29178000000,
-      "eps": 69.71,
-      "eps_diluted": 69.69,
-      "prior_revenue": 45502000000,
-      "prior_eps": 41.21,
+      "operating_income": 60769000000,
+      "ordinary_income": 61212000000,
+      "net_income_parent": 43083000000,
+      "net_income": 43107000000,
+      "eps": 102.99,
+      "eps_diluted": 102.95,
+      "prior_revenue": 81152000000,
+      "prior_eps": 65.78,
       "total_shares_issued": 533011246,
-      "treasury_stock_shares": 114690695,
-      "shares_outstanding": 418320551,
-      "average_shares": 418316649,
+      "treasury_stock_shares": 114669642,
+      "shares_outstanding": 418341604,
+      "average_shares": 418325870,
       "forecast_revenue": 210000000000,
       "forecast_operating_income": 83000000000,
       "forecast_ordinary_income": 83000000000,
@@ -142091,44 +142120,44 @@
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-28 15:40:00",
-          "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+          "disclosed_at": "2026-10-27 15:40:00",
+          "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-28 15:40:00",
-      "guidance_filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip",
+      "guidance_disclosed_at": "2026-10-27 15:40:00",
+      "guidance_filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 70410000000,
+          "value": 120887000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -142138,12 +142167,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "operating_income": {
-          "value": 41054000000,
+          "value": 60769000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -142153,12 +142182,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "ordinary_income": {
-          "value": 41452000000,
+          "value": 61212000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -142168,12 +142197,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "net_income_parent": {
-          "value": 29159000000,
+          "value": 43083000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -142183,7 +142212,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -142197,7 +142226,7 @@
           ]
         },
         "net_income": {
-          "value": 29178000000,
+          "value": 43107000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -142207,12 +142236,12 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": []
         },
         "eps": {
-          "value": 69.71,
+          "value": 102.99,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -142222,7 +142251,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -142236,7 +142265,7 @@
           ]
         },
         "eps_diluted": {
-          "value": 69.69,
+          "value": 102.95,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedNetIncomePerShare",
@@ -142246,7 +142275,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -142268,7 +142297,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -142284,7 +142313,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 114690695,
+          "value": 114669642,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -142292,7 +142321,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -142308,7 +142337,7 @@
           ]
         },
         "average_shares": {
-          "value": 418316649,
+          "value": 418325870,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -142318,7 +142347,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -142332,7 +142361,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 45502000000,
+          "value": 81152000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSales",
@@ -142342,12 +142371,12 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": []
         },
         "prior_eps": {
-          "value": 41.21,
+          "value": 65.78,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -142357,7 +142386,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -142506,7 +142535,7 @@
           "dimensions": [
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}AnnualDividendPaymentScheduleAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}SecondQuarterMember"
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}YearEndMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
@@ -142521,10 +142550,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-28 15:40:00",
-      "filing_title": "2027年3月期　第1四半期決算短信〔日本基準〕(連結)",
+      "disclosed_at": "2026-10-27 15:40:00",
+      "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕(連結)",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/96970/081220260728500563.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261027556520.zip"
     },
     "9766.T": {
       "net_cash": null,
@@ -145411,74 +145440,74 @@
       "free_cf": null,
       "cash_and_deposits": null,
       "interest_bearing_debt": null,
-      "revenue": 2274542000000,
+      "revenue": 3433357000000,
       "revenue_type": "売上高・売上収益",
-      "operating_income": 230595000000,
+      "operating_income": 327684000000,
       "ordinary_income": null,
-      "net_income_parent": 171184000000,
+      "net_income_parent": 246409000000,
       "net_income": null,
-      "eps": 197.51,
-      "eps_diluted": 197.36,
-      "prior_revenue": 2198567000000,
-      "prior_eps": 169.16,
+      "eps": 287.24,
+      "eps_diluted": 287.01,
+      "prior_revenue": 3302891000000,
+      "prior_eps": 240.99,
       "total_shares_issued": 1333763464,
-      "treasury_stock_shares": 484424702,
-      "shares_outstanding": 849338762,
-      "average_shares": 866697720,
-      "forecast_revenue": 4800000000000,
-      "forecast_operating_income": 465000000000,
-      "forecast_ordinary_income": 492000000000,
-      "forecast_net_income_parent": 340000000000,
-      "forecast_eps": 398.84,
+      "treasury_stock_shares": 500439561,
+      "shares_outstanding": 833323903,
+      "average_shares": 857843741,
+      "forecast_revenue": 4766000000000,
+      "forecast_operating_income": 456000000000,
+      "forecast_ordinary_income": 483000000000,
+      "forecast_net_income_parent": 333000000000,
+      "forecast_eps": 390.78,
       "forecast_dps": 80,
       "guidance": {
-        "revenue": 4800000000000,
-        "operating_income": 465000000000,
-        "ordinary_income": 492000000000,
-        "net_income_parent": 340000000000,
-        "eps": 398.84,
+        "revenue": 4766000000000,
+        "operating_income": 456000000000,
+        "ordinary_income": 483000000000,
+        "net_income_parent": 333000000000,
+        "eps": 390.78,
         "dps": 80
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         },
         "operating_income": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         },
         "eps": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         },
         "dps": {
-          "disclosed_at": "2026-07-27 15:30:00",
-          "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-          "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+          "disclosed_at": "2026-10-27 15:30:00",
+          "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+          "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
         }
       },
       "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-07-27 15:30:00",
-      "guidance_filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip",
+      "guidance_disclosed_at": "2026-10-27 15:30:00",
+      "guidance_filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 2274542000000,
+          "value": 3433357000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSalesUS",
@@ -145488,7 +145517,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -145502,7 +145531,7 @@
           ]
         },
         "operating_income": {
-          "value": 230595000000,
+          "value": 327684000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncomeUS",
@@ -145512,7 +145541,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -145526,7 +145555,7 @@
           ]
         },
         "net_income_parent": {
-          "value": 171184000000,
+          "value": 246409000000,
           "canonical_key": "net_income_parent",
           "mapper": "summary_mapper",
           "concept": "NetIncomeUS",
@@ -145536,7 +145565,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -145550,7 +145579,7 @@
           ]
         },
         "eps": {
-          "value": 197.51,
+          "value": 287.24,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShareUS",
@@ -145560,7 +145589,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -145574,7 +145603,7 @@
           ]
         },
         "eps_diluted": {
-          "value": 197.36,
+          "value": 287.01,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedNetIncomePerShareUS",
@@ -145584,7 +145613,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -145606,7 +145635,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -145622,7 +145651,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 484424702,
+          "value": 500439561,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -145630,7 +145659,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -145646,7 +145675,7 @@
           ]
         },
         "average_shares": {
-          "value": 866697720,
+          "value": 857843741,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -145656,21 +145685,21 @@
           "period": {
             "instant": null,
             "start_date": "2026-01-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
             }
           ]
         },
         "prior_revenue": {
-          "value": 2198567000000,
+          "value": 3302891000000,
           "canonical_key": "revenue",
           "mapper": "summary_mapper",
           "concept": "NetSalesUS",
@@ -145680,21 +145709,21 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
             }
           ]
         },
         "prior_eps": {
-          "value": 169.16,
+          "value": 240.99,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShareUS",
@@ -145704,21 +145733,21 @@
           "period": {
             "instant": null,
             "start_date": "2025-01-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultMember"
             }
           ]
         },
         "forecast_revenue": {
-          "value": 4800000000000,
+          "value": 4766000000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "NetSalesUS",
@@ -145732,17 +145761,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_operating_income": {
-          "value": 465000000000,
+          "value": 456000000000,
           "canonical_key": "forecast_operating_income",
           "mapper": "forecast_mapper",
           "concept": "OperatingIncomeUS",
@@ -145756,17 +145785,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_ordinary_income": {
-          "value": 492000000000,
+          "value": 483000000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "IncomeBeforeIncomeTaxesUS",
@@ -145780,17 +145809,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_net_income_parent": {
-          "value": 340000000000,
+          "value": 333000000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "NetIncomeUS",
@@ -145804,17 +145833,17 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_eps": {
-          "value": 398.84,
+          "value": 390.78,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "NetIncomePerShareUS",
@@ -145828,12 +145857,12 @@
           },
           "dimensions": [
             {
-              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
-              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
-            },
-            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
@@ -145868,10 +145897,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-27 15:30:00",
-      "filing_title": "2026年12月期 第2四半期(中間期)決算短信〔米国基準〕(連結)",
+      "disclosed_at": "2026-10-27 15:30:00",
+      "filing_title": "2026年12月期 第3四半期決算短信〔米国基準〕(連結)",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/77510/081220260727599879.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261027556569.zip"
     },
     "6861.T": {
       "net_cash": null,
@@ -159300,22 +159329,22 @@
       "net_cash_ratio": null,
       "operating_cf": null,
       "free_cf": null,
-      "cash_and_deposits": 87772000000,
+      "cash_and_deposits": 107096000000,
       "interest_bearing_debt": null,
-      "revenue": 15885000000,
+      "revenue": 30858000000,
       "revenue_type": "証券業の純営業収益",
-      "operating_income": 8763000000,
-      "ordinary_income": 8856000000,
+      "operating_income": 16484000000,
+      "ordinary_income": 16528000000,
       "net_income_parent": null,
-      "net_income": 5609000000,
-      "eps": 21.77,
-      "eps_diluted": 21.71,
-      "prior_revenue": 10713000000,
-      "prior_eps": 11.16,
+      "net_income": 10435000000,
+      "eps": 40.5,
+      "eps_diluted": 40.39,
+      "prior_revenue": 22323000000,
+      "prior_eps": 25.38,
       "total_shares_issued": 259264702,
-      "treasury_stock_shares": 1642009,
-      "shares_outstanding": 257622693,
-      "average_shares": 257622693,
+      "treasury_stock_shares": 1546509,
+      "shares_outstanding": 257718193,
+      "average_shares": 257663776,
       "forecast_revenue": null,
       "forecast_operating_income": null,
       "forecast_ordinary_income": null,
@@ -159332,13 +159361,13 @@
       },
       "guidance_field_sources": {},
       "guidance_status": "not_disclosed_in_xbrl",
-      "guidance_disclosed_at": "2026-07-31 15:30:00",
-      "guidance_filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕(非連結)（公認会計士等による期中レビューの完了）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/86280/081220260731505495.zip",
+      "guidance_disclosed_at": "2026-10-28 11:30:00",
+      "guidance_filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（非連結）",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/081220261027556908.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
-          "value": 15885000000,
+          "value": 30858000000,
           "canonical_key": "net_operating_revenue_se",
           "mapper": "summary_mapper",
           "concept": "NetOperatingRevenuesSE",
@@ -159348,7 +159377,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159362,7 +159391,7 @@
           ]
         },
         "operating_income": {
-          "value": 8763000000,
+          "value": 16484000000,
           "canonical_key": "operating_income",
           "mapper": "summary_mapper",
           "concept": "OperatingIncome",
@@ -159372,7 +159401,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159382,7 +159411,7 @@
           ]
         },
         "ordinary_income": {
-          "value": 8856000000,
+          "value": 16528000000,
           "canonical_key": "ordinary_income",
           "mapper": "summary_mapper",
           "concept": "OrdinaryIncome",
@@ -159392,7 +159421,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159402,7 +159431,7 @@
           ]
         },
         "net_income": {
-          "value": 5609000000,
+          "value": 10435000000,
           "canonical_key": "net_income",
           "mapper": "summary_mapper",
           "concept": "ProfitLoss",
@@ -159412,7 +159441,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159422,7 +159451,7 @@
           ]
         },
         "eps": {
-          "value": 21.77,
+          "value": 40.5,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -159432,7 +159461,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159446,7 +159475,7 @@
           ]
         },
         "eps_diluted": {
-          "value": 21.71,
+          "value": 40.39,
           "canonical_key": "eps_diluted",
           "mapper": "summary_mapper",
           "concept": "DilutedNetIncomePerShare",
@@ -159456,7 +159485,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159478,7 +159507,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -159494,7 +159523,7 @@
           ]
         },
         "treasury_stock_shares": {
-          "value": 1642009,
+          "value": 1546509,
           "canonical_key": "treasury_stock_shares",
           "mapper": "summary_mapper",
           "concept": "NumberOfTreasuryStockAtTheEndOfFiscalYear",
@@ -159502,7 +159531,7 @@
           "unit": "Shares",
           "decimals": 0,
           "period": {
-            "instant": "2026-06-30",
+            "instant": "2026-09-30",
             "start_date": null,
             "end_date": null
           },
@@ -159518,7 +159547,7 @@
           ]
         },
         "average_shares": {
-          "value": 257622693,
+          "value": 257663776,
           "canonical_key": "average_shares",
           "mapper": "summary_mapper",
           "concept": "AverageNumberOfShares",
@@ -159528,7 +159557,7 @@
           "period": {
             "instant": null,
             "start_date": "2026-04-01",
-            "end_date": "2026-06-30"
+            "end_date": "2026-09-30"
           },
           "dimensions": [
             {
@@ -159542,7 +159571,7 @@
           ]
         },
         "prior_revenue": {
-          "value": 10713000000,
+          "value": 22323000000,
           "canonical_key": "net_operating_revenue_se",
           "mapper": "summary_mapper",
           "concept": "NetOperatingRevenuesSE",
@@ -159552,7 +159581,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -159566,7 +159595,7 @@
           ]
         },
         "prior_eps": {
-          "value": 11.16,
+          "value": 25.38,
           "canonical_key": "eps",
           "mapper": "summary_mapper",
           "concept": "NetIncomePerShare",
@@ -159576,7 +159605,7 @@
           "period": {
             "instant": null,
             "start_date": "2025-04-01",
-            "end_date": "2025-06-30"
+            "end_date": "2025-09-30"
           },
           "dimensions": [
             {
@@ -159592,10 +159621,10 @@
       },
       "period_type": "当期累計",
       "fcf_definition": "営業CF−有形固定資産取得支出",
-      "disclosed_at": "2026-07-31 15:30:00",
-      "filing_title": "2027年3月期 第1四半期決算短信〔日本基準〕(非連結)（公認会計士等による期中レビューの完了）",
+      "disclosed_at": "2026-10-28 11:30:00",
+      "filing_title": "2027年3月期第2四半期（中間期）決算短信〔日本基準〕（非連結）",
       "source": "TDnet XBRL",
-      "source_url": "https://www2.jpx.co.jp/disc/86280/081220260731505495.zip"
+      "source_url": "https://www.release.tdnet.info/inbs/081220261027556908.zip"
     },
     "8336.T": {
       "net_cash": null,
@@ -162502,51 +162531,51 @@
       "treasury_stock_shares": 3943099,
       "shares_outstanding": 374117080,
       "average_shares": 374117080,
-      "forecast_revenue": 120700000000,
+      "forecast_revenue": 131200000000,
       "forecast_operating_income": null,
-      "forecast_ordinary_income": 20800000000,
-      "forecast_net_income_parent": 13400000000,
-      "forecast_eps": 35.81,
-      "forecast_dps": 8,
+      "forecast_ordinary_income": 24900000000,
+      "forecast_net_income_parent": 17600000000,
+      "forecast_eps": 47.04,
+      "forecast_dps": 9.5,
       "guidance": {
-        "revenue": 120700000000,
+        "revenue": 131200000000,
         "operating_income": null,
-        "ordinary_income": 20800000000,
-        "net_income_parent": 13400000000,
-        "eps": 35.81,
-        "dps": 8
+        "ordinary_income": 24900000000,
+        "net_income_parent": 17600000000,
+        "eps": 47.04,
+        "dps": 9.5
       },
       "guidance_field_sources": {
         "revenue": {
-          "disclosed_at": "2026-08-05 14:00:00",
-          "filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip"
+          "disclosed_at": "2026-10-28 14:00:00",
+          "filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip"
         },
         "ordinary_income": {
-          "disclosed_at": "2026-08-05 14:00:00",
-          "filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip"
+          "disclosed_at": "2026-10-28 14:00:00",
+          "filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip"
         },
         "net_income_parent": {
-          "disclosed_at": "2026-08-05 14:00:00",
-          "filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip"
+          "disclosed_at": "2026-10-28 14:00:00",
+          "filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip"
         },
         "eps": {
-          "disclosed_at": "2026-08-05 14:00:00",
-          "filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip"
+          "disclosed_at": "2026-10-28 14:00:00",
+          "filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip"
         },
         "dps": {
-          "disclosed_at": "2026-08-05 14:00:00",
-          "filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-          "source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip"
+          "disclosed_at": "2026-10-28 14:00:00",
+          "filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+          "source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip"
         }
       },
-      "guidance_status": "company_forecast",
-      "guidance_disclosed_at": "2026-08-05 14:00:00",
-      "guidance_filing_title": "2027年３月期　第１四半期決算短信〔日本基準〕（連結）",
-      "guidance_source_url": "https://www2.jpx.co.jp/disc/85240/081220260803507419.zip",
+      "guidance_status": "revised_company_forecast",
+      "guidance_disclosed_at": "2026-10-28 14:00:00",
+      "guidance_filing_title": "業績予想の修正及び配当予想の修正（増配）に関するお知らせ",
+      "guidance_source_url": "https://www.release.tdnet.info/inbs/091220261027557098.zip",
       "consolidation": "consolidated",
       "metric_details": {
         "revenue": {
@@ -162788,7 +162817,7 @@
           ]
         },
         "forecast_revenue": {
-          "value": 120700000000,
+          "value": 131200000000,
           "canonical_key": "forecast_revenue",
           "mapper": "forecast_mapper",
           "concept": "OrdinaryRevenuesBK",
@@ -162806,13 +162835,17 @@
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             },
             {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
+            },
+            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_ordinary_income": {
-          "value": 20800000000,
+          "value": 24900000000,
           "canonical_key": "forecast_ordinary_income",
           "mapper": "forecast_mapper",
           "concept": "OrdinaryIncome",
@@ -162830,13 +162863,17 @@
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             },
             {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
+            },
+            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_net_income_parent": {
-          "value": 13400000000,
+          "value": 17600000000,
           "canonical_key": "forecast_net_income_parent",
           "mapper": "forecast_mapper",
           "concept": "ProfitAttributableToOwnersOfParent",
@@ -162854,13 +162891,17 @@
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             },
             {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
+            },
+            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_eps": {
-          "value": 35.81,
+          "value": 47.04,
           "canonical_key": "forecast_eps",
           "mapper": "forecast_mapper",
           "concept": "NetIncomePerShare",
@@ -162878,13 +162919,17 @@
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedMember"
             },
             {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
+            },
+            {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ForecastMember"
             }
           ]
         },
         "forecast_dps": {
-          "value": 8,
+          "value": 9.5,
           "canonical_key": "forecast_dps",
           "mapper": "forecast_mapper",
           "concept": "DividendPerShare",
@@ -162904,6 +162949,10 @@
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ConsolidatedNonconsolidatedAxis",
               "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}NonConsolidatedMember"
+            },
+            {
+              "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}PreviousCurrentAxis",
+              "member": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}CurrentMember"
             },
             {
               "axis": "{http://www.xbrl.tdnet.info/taxonomy/jp/tse/tdnet/ed/t/2014-01-12}ResultForecastAxis",
