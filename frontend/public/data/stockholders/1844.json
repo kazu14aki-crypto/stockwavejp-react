@@ -1,0 +1,218 @@
+{
+  "secCode": "1844",
+  "issuerName": "株式会社大盛工業",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "WINBASE TECHNOLOGIES LIMITED\nDIRECTOR VIRTUE CORPORATE SERVICES LTD\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 1041500,
+      "ratio": 5.56,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "高野　廣克",
+      "shares": 626300,
+      "ratio": 3.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社プラス",
+      "shares": 525702,
+      "ratio": 2.81,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "田中　龍平",
+      "shares": 475000,
+      "ratio": 2.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社広栄企画",
+      "shares": 228358,
+      "ratio": 1.22,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大盛工業役員持株会\n理事長　福井　龍一",
+      "shares": 199177,
+      "ratio": 1.06,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "佐々木　桂一",
+      "shares": 183500,
+      "ratio": 0.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "本間　英夫",
+      "shares": 124700,
+      "ratio": 0.67,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "竹田　健作",
+      "shares": 120000,
+      "ratio": 0.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大盛工業従業員持株会\n理事長　星　泰二",
+      "shares": 116373,
+      "ratio": 0.62,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "financial": 5.56,
+      "individual": 8.18,
+      "corporate": 4.03,
+      "employee": 1.68
+    },
+    "individual_total": 8.18,
+    "top10_total": 19.45
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第60期(2025/08/01－2026/07/31)",
+      "docID": "S100Z2GT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "WINBASE TECHNOLOGIES LIMITED\nDIRECTOR VIRTUE CORPORATE SERVICES LTD\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 1041500,
+          "ratio": 5.56,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "高野　廣克",
+          "shares": 626300,
+          "ratio": 3.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社プラス",
+          "shares": 525702,
+          "ratio": 2.81,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "田中　龍平",
+          "shares": 475000,
+          "ratio": 2.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社広栄企画",
+          "shares": 228358,
+          "ratio": 1.22,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大盛工業役員持株会\n理事長　福井　龍一",
+          "shares": 199177,
+          "ratio": 1.06,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "佐々木　桂一",
+          "shares": 183500,
+          "ratio": 0.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "本間　英夫",
+          "shares": 124700,
+          "ratio": 0.67,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "竹田　健作",
+          "shares": 120000,
+          "ratio": 0.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大盛工業従業員持株会\n理事長　星　泰二",
+          "shares": 116373,
+          "ratio": 0.62,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "financial": 5.56,
+          "individual": 8.18,
+          "corporate": 4.03,
+          "employee": 1.68
+        },
+        "individual_total": 8.18,
+        "top10_total": 19.45
+      }
+    }
+  ]
+}

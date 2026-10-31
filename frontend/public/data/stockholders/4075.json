@@ -1,0 +1,214 @@
+{
+  "secCode": "4075",
+  "issuerName": "ブレインズテクノロジー株式会社",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "齋藤　佐和子",
+      "shares": 2677000,
+      "ratio": 45.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中澤　宣貴",
+      "shares": 700000,
+      "ratio": 11.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "河田　哲",
+      "shares": 250000,
+      "ratio": 4.26,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "今野　勝之",
+      "shares": 230000,
+      "ratio": 3.92,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "DAIWA CM SINGAPORE LTD\n（常任代理人 大和証券株式会社）",
+      "shares": 82600,
+      "ratio": 1.41,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "林　琢磨",
+      "shares": 70000,
+      "ratio": 1.19,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "楽天証券株式会社",
+      "shares": 65700,
+      "ratio": 1.12,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "五十嵐　大輔",
+      "shares": 65600,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "榎並　利晃",
+      "shares": 56300,
+      "ratio": 0.96,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "田中　幸一",
+      "shares": 37000,
+      "ratio": 0.63,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 69.75,
+      "securities": 2.53
+    },
+    "individual_total": 69.75,
+    "top10_total": 72.28
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/08/01－2026/07/31)",
+      "docID": "S100ZA4Q",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "齋藤　佐和子",
+          "shares": 2677000,
+          "ratio": 45.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中澤　宣貴",
+          "shares": 700000,
+          "ratio": 11.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "河田　哲",
+          "shares": 250000,
+          "ratio": 4.26,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "今野　勝之",
+          "shares": 230000,
+          "ratio": 3.92,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "DAIWA CM SINGAPORE LTD\n（常任代理人 大和証券株式会社）",
+          "shares": 82600,
+          "ratio": 1.41,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "林　琢磨",
+          "shares": 70000,
+          "ratio": 1.19,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "楽天証券株式会社",
+          "shares": 65700,
+          "ratio": 1.12,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "五十嵐　大輔",
+          "shares": 65600,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "榎並　利晃",
+          "shares": 56300,
+          "ratio": 0.96,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "田中　幸一",
+          "shares": 37000,
+          "ratio": 0.63,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 69.75,
+          "securities": 2.53
+        },
+        "individual_total": 69.75,
+        "top10_total": 72.28
+      }
+    }
+  ]
+}

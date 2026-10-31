@@ -1,0 +1,218 @@
+{
+  "secCode": "7110",
+  "issuerName": "株式会社クラシコム",
+  "updated_at": "2026/10/31 16:50 JST",
+  "latestDate": "2026-10-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "青木　耕平",
+      "shares": 4047000,
+      "ratio": 54.91,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "佐藤　友子",
+      "shares": 885000,
+      "ratio": 12.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 570900,
+      "ratio": 7.75,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "GOLDMAN,SACHS & CO.REG （常任代理人 ゴールドマン・サックス証券株式会社）",
+      "shares": 344000,
+      "ratio": 4.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "GOLDMAN SACHS INTERNATIONAL （常任代理人 ゴールドマン・サックス証券株式会社）",
+      "shares": 239600,
+      "ratio": 3.25,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "NORTHERN TRUST CO.(AVFC)RE NON TREATY CLIENTS ACCOUNT （常任代理人 香港上海銀行東京支店 カストディ業務部）",
+      "shares": 163000,
+      "ratio": 2.21,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社SBI証券",
+      "shares": 77159,
+      "ratio": 1.05,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "深井　大",
+      "shares": 70000,
+      "ratio": 0.95,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE-AC） （常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 49200,
+      "ratio": 0.67,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "MSIP CLIENT SECURITIES （常任代理人 モルガン・スタンレーMUFG証券株式会社）",
+      "shares": 45700,
+      "ratio": 0.62,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 67.87,
+      "trust": 7.75,
+      "foreign": 10.8,
+      "securities": 1.67
+    },
+    "individual_total": 67.87,
+    "top10_total": 88.09
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第20期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9TW",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "青木　耕平",
+          "shares": 4047000,
+          "ratio": 54.91,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "佐藤　友子",
+          "shares": 885000,
+          "ratio": 12.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 570900,
+          "ratio": 7.75,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "GOLDMAN,SACHS & CO.REG （常任代理人 ゴールドマン・サックス証券株式会社）",
+          "shares": 344000,
+          "ratio": 4.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "GOLDMAN SACHS INTERNATIONAL （常任代理人 ゴールドマン・サックス証券株式会社）",
+          "shares": 239600,
+          "ratio": 3.25,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "NORTHERN TRUST CO.(AVFC)RE NON TREATY CLIENTS ACCOUNT （常任代理人 香港上海銀行東京支店 カストディ業務部）",
+          "shares": 163000,
+          "ratio": 2.21,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社SBI証券",
+          "shares": 77159,
+          "ratio": 1.05,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "深井　大",
+          "shares": 70000,
+          "ratio": 0.95,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "BNY GCM CLIENT ACCOUNT JPRD AC ISG （FE-AC） （常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 49200,
+          "ratio": 0.67,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "MSIP CLIENT SECURITIES （常任代理人 モルガン・スタンレーMUFG証券株式会社）",
+          "shares": 45700,
+          "ratio": 0.62,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 67.87,
+          "trust": 7.75,
+          "foreign": 10.8,
+          "securities": 1.67
+        },
+        "individual_total": 67.87,
+        "top10_total": 88.09
+      }
+    }
+  ]
+}

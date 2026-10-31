@@ -1,0 +1,220 @@
+{
+  "secCode": "3193",
+  "issuerName": "株式会社エターナルホスピタリティグループ",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "大倉　忠司",
+      "shares": 2608385,
+      "ratio": 22.44,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社大倉忠",
+      "shares": 1150000,
+      "ratio": 9.89,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 685000,
+      "ratio": 5.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "サントリー株式会社",
+      "shares": 260000,
+      "ratio": 2.24,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社関西みらい銀行",
+      "shares": 180000,
+      "ratio": 1.55,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 159700,
+      "ratio": 1.37,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505019（常任代理人　\n株式会社みずほ銀行決済営業部）",
+      "shares": 148800,
+      "ratio": 1.28,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "中西　卓己",
+      "shares": 148600,
+      "ratio": 1.28,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "CACEIS BANK, LUXEMBOURG BRANCH / UCITS - FULL TAX\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+      "shares": 144900,
+      "ratio": 1.25,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 142800,
+      "ratio": 1.23,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 23.72,
+      "corporate": 12.13,
+      "trust": 7.12,
+      "financial": 1.55,
+      "foreign": 3.9
+    },
+    "individual_total": 23.72,
+    "top10_total": 48.42
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第40期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9DH",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "大倉　忠司",
+          "shares": 2608385,
+          "ratio": 22.44,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社大倉忠",
+          "shares": 1150000,
+          "ratio": 9.89,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 685000,
+          "ratio": 5.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "サントリー株式会社",
+          "shares": 260000,
+          "ratio": 2.24,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社関西みらい銀行",
+          "shares": 180000,
+          "ratio": 1.55,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 159700,
+          "ratio": 1.37,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505019（常任代理人　\n株式会社みずほ銀行決済営業部）",
+          "shares": 148800,
+          "ratio": 1.28,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "中西　卓己",
+          "shares": 148600,
+          "ratio": 1.28,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "CACEIS BANK, LUXEMBOURG BRANCH / UCITS - FULL TAX\n（常任代理人　シティバンク、エヌ・エイ東京支店）",
+          "shares": 144900,
+          "ratio": 1.25,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 142800,
+          "ratio": 1.23,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 23.72,
+          "corporate": 12.13,
+          "trust": 7.12,
+          "financial": 1.55,
+          "foreign": 3.9
+        },
+        "individual_total": 23.72,
+        "top10_total": 48.42
+      }
+    }
+  ]
+}

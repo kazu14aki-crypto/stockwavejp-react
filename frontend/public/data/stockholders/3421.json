@@ -1,0 +1,220 @@
+{
+  "secCode": "3421",
+  "issuerName": "株式会社稲葉製作所",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社イナバホールディングス",
+      "shares": 4433000,
+      "ratio": 27.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行　株式会社（信託口）",
+      "shares": 791000,
+      "ratio": 4.99,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "稲葉　明",
+      "shares": 565000,
+      "ratio": 3.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 4,
+      "name": "稲葉　茂",
+      "shares": 509000,
+      "ratio": 3.21,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 5,
+      "name": "稲葉製作所取引先持株会",
+      "shares": 491000,
+      "ratio": 3.1,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "秋本　千恵子",
+      "shares": 475000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "稲葉　進",
+      "shares": 448000,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 8,
+      "name": "稲葉　常雄",
+      "shares": 376000,
+      "ratio": 2.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": true
+    },
+    {
+      "rank": 9,
+      "name": "株式会社りそな銀行",
+      "shares": 361000,
+      "ratio": 2.28,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "瀬間　京子",
+      "shares": 243000,
+      "ratio": 1.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 27.99,
+      "trust": 4.99,
+      "individual": 16.51,
+      "employee": 3.1,
+      "financial": 2.28
+    },
+    "individual_total": 16.51,
+    "top10_total": 54.87
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第79期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9XX",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社イナバホールディングス",
+          "shares": 4433000,
+          "ratio": 27.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行　株式会社（信託口）",
+          "shares": 791000,
+          "ratio": 4.99,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "稲葉　明",
+          "shares": 565000,
+          "ratio": 3.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 4,
+          "name": "稲葉　茂",
+          "shares": 509000,
+          "ratio": 3.21,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 5,
+          "name": "稲葉製作所取引先持株会",
+          "shares": 491000,
+          "ratio": 3.1,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "秋本　千恵子",
+          "shares": 475000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "稲葉　進",
+          "shares": 448000,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 8,
+          "name": "稲葉　常雄",
+          "shares": 376000,
+          "ratio": 2.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": true
+        },
+        {
+          "rank": 9,
+          "name": "株式会社りそな銀行",
+          "shares": 361000,
+          "ratio": 2.28,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "瀬間　京子",
+          "shares": 243000,
+          "ratio": 1.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 27.99,
+          "trust": 4.99,
+          "individual": 16.51,
+          "employee": 3.1,
+          "financial": 2.28
+        },
+        "individual_total": 16.51,
+        "top10_total": 54.87
+      }
+    }
+  ]
+}
