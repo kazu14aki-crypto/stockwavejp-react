@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T07:37:43+09:00",
+  "updated_at": "2026-11-02T08:40:30+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
   "count": 3757,
@@ -9993,7 +9993,7 @@
     {
       "ticker": "3850.T",
       "code": "3850",
-      "name": "株式会社エヌ・ティ・ティ・データ・イントラマート",
+      "name": "株式会社イントラマート",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -22332,6 +22332,16 @@
       "curated": false
     },
     {
+      "ticker": "6410.T",
+      "code": "6410",
+      "name": "NOK Group株式会社",
+      "market": "上場",
+      "industry": "輸送用機器",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
       "ticker": "6412.T",
       "code": "6412",
       "name": "株式会社平和ホールディングス",
@@ -22701,9 +22711,9 @@
     {
       "ticker": "6480.T",
       "code": "6480",
-      "name": "日本トムソン株式会社",
+      "name": "株式会社ルクレ",
       "market": "上場",
-      "industry": "機械",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -22745,16 +22755,6 @@
       "ticker": "6485.T",
       "code": "6485",
       "name": "前澤給装工業株式会社",
-      "market": "上場",
-      "industry": "機械",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "6486.T",
-      "code": "6486",
-      "name": "イーグル工業株式会社",
       "market": "上場",
       "industry": "機械",
       "filer_type": "内国法人・組合",
@@ -22989,6 +22989,16 @@
       "name": "三相電機株式会社",
       "market": "上場",
       "industry": "電気機器",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
+      "ticker": "6520.T",
+      "code": "6520",
+      "name": "トグルホールディングス株式会社",
+      "market": "上場",
+      "industry": "不動産業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -26704,16 +26714,6 @@
         "銀行・金融"
       ],
       "curated": true
-    },
-    {
-      "ticker": "7183.T",
-      "code": "7183",
-      "name": "あんしん保証株式会社",
-      "market": "上場",
-      "industry": "その他金融業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
     },
     {
       "ticker": "7184.T",
