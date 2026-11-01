@@ -1,0 +1,216 @@
+{
+  "secCode": "218A",
+  "issuerName": "株式会社Ｌｉｂｅｒａｗａｒｅ",
+  "updated_at": "2026/10/31 16:50 JST",
+  "latestDate": "2026-10-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "閔　弘圭",
+      "shares": 3446000,
+      "ratio": 17.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "東日本旅客鉄道株式会社",
+      "shares": 2216900,
+      "ratio": 11.15,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "和田　哲也",
+      "shares": 800000,
+      "ratio": 4.02,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "野平　幸佑",
+      "shares": 640000,
+      "ratio": 3.22,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本ヒューム株式会社",
+      "shares": 310200,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日水コン",
+      "shares": 310200,
+      "ratio": 1.56,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "ＵＳ　ＢＡＮＫ　ＮＡＴＩＯＮＡＬ　ＡＳＳＯＣＩＡＴＩＯＮ　ＪＰ　ＡＣＣＴＳ　ＴＳ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 272000,
+      "ratio": 1.36,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹＭ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＴＳ　Ｍ　ＩＬＭ　ＦＥ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 231100,
+      "ratio": 1.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+      "shares": 230606,
+      "ratio": 1.16,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "池田　慶祐",
+      "shares": 214000,
+      "ratio": 1.07,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 25.65,
+      "corporate": 14.27,
+      "financial": 3.68
+    },
+    "individual_total": 25.65,
+    "top10_total": 43.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第10期(2025/08/01－2026/07/31)",
+      "docID": "S100ZAH4",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "閔　弘圭",
+          "shares": 3446000,
+          "ratio": 17.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "東日本旅客鉄道株式会社",
+          "shares": 2216900,
+          "ratio": 11.15,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "和田　哲也",
+          "shares": 800000,
+          "ratio": 4.02,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "野平　幸佑",
+          "shares": 640000,
+          "ratio": 3.22,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本ヒューム株式会社",
+          "shares": 310200,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日水コン",
+          "shares": 310200,
+          "ratio": 1.56,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "ＵＳ　ＢＡＮＫ　ＮＡＴＩＯＮＡＬ　ＡＳＳＯＣＩＡＴＩＯＮ　ＪＰ　ＡＣＣＴＳ　ＴＳ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 272000,
+          "ratio": 1.36,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹＭ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＴＳ　Ｍ　ＩＬＭ　ＦＥ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 231100,
+          "ratio": 1.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ＢＮＹＭ　ＳＡ／ＮＶ　ＦＯＲ　ＢＮＹＭ　ＦＯＲ　ＢＮＹ　ＧＣＭ　ＣＬＩＥＮＴ　ＡＣＣＯＵＮＴＳ　Ｍ　ＬＳＣＢ　ＲＤ\n（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 230606,
+          "ratio": 1.16,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "池田　慶祐",
+          "shares": 214000,
+          "ratio": 1.07,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 25.65,
+          "corporate": 14.27,
+          "financial": 3.68
+        },
+        "individual_total": 25.65,
+        "top10_total": 43.6
+      }
+    }
+  ]
+}

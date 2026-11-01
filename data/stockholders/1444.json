@@ -1,0 +1,214 @@
+{
+  "secCode": "1444",
+  "issuerName": "株式会社ニッソウ",
+  "updated_at": "2026/10/31 16:50 JST",
+  "latestDate": "2026-10-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "前田　浩",
+      "shares": 556600,
+      "ratio": 51.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "前田　供子",
+      "shares": 58000,
+      "ratio": 5.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "顧　曄",
+      "shares": 7700,
+      "ratio": 0.71,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "遠藤　裕三",
+      "shares": 6500,
+      "ratio": 0.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "チェスナットヒルズ合同会社",
+      "shares": 5200,
+      "ratio": 0.48,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "松本　大樹",
+      "shares": 4300,
+      "ratio": 0.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "張　亜南",
+      "shares": 4000,
+      "ratio": 0.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "野澤　清晴",
+      "shares": 3800,
+      "ratio": 0.35,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "花井　栄治",
+      "shares": 3600,
+      "ratio": 0.33,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "細谷　光弘",
+      "shares": 3300,
+      "ratio": 0.3,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 59.55,
+      "corporate": 0.48
+    },
+    "individual_total": 59.55,
+    "top10_total": 60.03
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第38期(2025/08/01－2026/07/31)",
+      "docID": "S100ZA5W",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "前田　浩",
+          "shares": 556600,
+          "ratio": 51.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "前田　供子",
+          "shares": 58000,
+          "ratio": 5.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "顧　曄",
+          "shares": 7700,
+          "ratio": 0.71,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "遠藤　裕三",
+          "shares": 6500,
+          "ratio": 0.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "チェスナットヒルズ合同会社",
+          "shares": 5200,
+          "ratio": 0.48,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "松本　大樹",
+          "shares": 4300,
+          "ratio": 0.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "張　亜南",
+          "shares": 4000,
+          "ratio": 0.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "野澤　清晴",
+          "shares": 3800,
+          "ratio": 0.35,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "花井　栄治",
+          "shares": 3600,
+          "ratio": 0.33,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "細谷　光弘",
+          "shares": 3300,
+          "ratio": 0.3,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 59.55,
+          "corporate": 0.48
+        },
+        "individual_total": 59.55,
+        "top10_total": 60.03
+      }
+    }
+  ]
+}

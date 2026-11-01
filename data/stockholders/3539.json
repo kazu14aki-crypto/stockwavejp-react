@@ -1,0 +1,218 @@
+{
+  "secCode": "3539",
+  "issuerName": "株式会社ＪＭホールディングス",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "境　　正博",
+      "shares": 10250000,
+      "ratio": 20.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "境　　和弘",
+      "shares": 4950000,
+      "ratio": 9.72,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "境　　弘治",
+      "shares": 4422000,
+      "ratio": 8.68,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "shares": 2642000,
+      "ratio": 5.19,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "㈱ジョイフル本田",
+      "shares": 1600000,
+      "ratio": 3.14,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "ＪＭホールディングス従業員持株会",
+      "shares": 1565000,
+      "ratio": 3.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "藤原　ひろみ",
+      "shares": 1519000,
+      "ratio": 2.98,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "境　　和美",
+      "shares": 1438000,
+      "ratio": 2.82,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "藤原　克朗",
+      "shares": 772000,
+      "ratio": 1.52,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505044 （常任代理人　㈱みずほ銀行決済営業部）",
+      "shares": 626000,
+      "ratio": 1.23,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 48.98,
+      "trust": 5.19,
+      "employee": 3.07,
+      "foreign": 1.23
+    },
+    "individual_total": 48.98,
+    "top10_total": 58.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第48期(2025/08/01－2026/07/31)",
+      "docID": "S100Z9E6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "境　　正博",
+          "shares": 10250000,
+          "ratio": 20.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "境　　和弘",
+          "shares": 4950000,
+          "ratio": 9.72,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "境　　弘治",
+          "shares": 4422000,
+          "ratio": 8.68,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行㈱（信託口）",
+          "shares": 2642000,
+          "ratio": 5.19,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "㈱ジョイフル本田",
+          "shares": 1600000,
+          "ratio": 3.14,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "ＪＭホールディングス従業員持株会",
+          "shares": 1565000,
+          "ratio": 3.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "藤原　ひろみ",
+          "shares": 1519000,
+          "ratio": 2.98,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "境　　和美",
+          "shares": 1438000,
+          "ratio": 2.82,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "藤原　克朗",
+          "shares": 772000,
+          "ratio": 1.52,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "STATE STREET BANK AND TRUST COMPANY 505044 （常任代理人　㈱みずほ銀行決済営業部）",
+          "shares": 626000,
+          "ratio": 1.23,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 48.98,
+          "trust": 5.19,
+          "employee": 3.07,
+          "foreign": 1.23
+        },
+        "individual_total": 48.98,
+        "top10_total": 58.47
+      }
+    }
+  ]
+}

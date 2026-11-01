@@ -1,0 +1,218 @@
+{
+  "secCode": "3816",
+  "issuerName": "株式会社大和コンピューター",
+  "updated_at": "2026/10/31 16:51 JST",
+  "latestDate": "2026-10-27",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈲ジェネシス",
+      "shares": 957361,
+      "ratio": 24.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "中村　憲司",
+      "shares": 699970,
+      "ratio": 18.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＳＣＳＫ㈱",
+      "shares": 306613,
+      "ratio": 7.91,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "大和コンピューター社員持株会",
+      "shares": 300004,
+      "ratio": 7.74,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "光通信ＫＫ投資事業有限責任組合",
+      "shares": 172900,
+      "ratio": 4.46,
+      "category": "other",
+      "category_label": "その他",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "京都中央信用金庫",
+      "shares": 95832,
+      "ratio": 2.47,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "テイネン㈱",
+      "shares": 76665,
+      "ratio": 1.97,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "林　正",
+      "shares": 75057,
+      "ratio": 1.93,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "中村　雅昭",
+      "shares": 68903,
+      "ratio": 1.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "中村　眞理子",
+      "shares": 68403,
+      "ratio": 1.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 50.19,
+      "other": 12.37,
+      "employee": 7.74,
+      "financial": 2.47
+    },
+    "individual_total": 50.19,
+    "top10_total": 72.77
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-27",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/08/01－2026/07/31)",
+      "docID": "S100ZA4D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈲ジェネシス",
+          "shares": 957361,
+          "ratio": 24.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "中村　憲司",
+          "shares": 699970,
+          "ratio": 18.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＳＣＳＫ㈱",
+          "shares": 306613,
+          "ratio": 7.91,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "大和コンピューター社員持株会",
+          "shares": 300004,
+          "ratio": 7.74,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "光通信ＫＫ投資事業有限責任組合",
+          "shares": 172900,
+          "ratio": 4.46,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "京都中央信用金庫",
+          "shares": 95832,
+          "ratio": 2.47,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "テイネン㈱",
+          "shares": 76665,
+          "ratio": 1.97,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "林　正",
+          "shares": 75057,
+          "ratio": 1.93,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "中村　雅昭",
+          "shares": 68903,
+          "ratio": 1.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "中村　眞理子",
+          "shares": 68403,
+          "ratio": 1.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 50.19,
+          "other": 12.37,
+          "employee": 7.74,
+          "financial": 2.47
+        },
+        "individual_total": 50.19,
+        "top10_total": 72.77
+      }
+    }
+  ]
+}

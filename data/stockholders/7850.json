@@ -1,0 +1,216 @@
+{
+  "secCode": "7850",
+  "issuerName": "総合商研株式会社",
+  "updated_at": "2026/10/31 16:50 JST",
+  "latestDate": "2026-10-28",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "合同会社実力養成会",
+      "shares": 808000,
+      "ratio": 26.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "総合商研従業員持株会",
+      "shares": 266000,
+      "ratio": 8.89,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "大丸株式会社",
+      "shares": 140000,
+      "ratio": 4.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社小森コーポレーション",
+      "shares": 140000,
+      "ratio": 4.67,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "総合商研取引先持株会",
+      "shares": 122000,
+      "ratio": 4.07,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "小松印刷グループ株式会社",
+      "shares": 100000,
+      "ratio": 3.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社光文堂",
+      "shares": 100000,
+      "ratio": 3.33,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "志田　秋子",
+      "shares": 84000,
+      "ratio": 2.83,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "片岡　廣幸",
+      "shares": 84000,
+      "ratio": 2.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "大日精化工業株式会社",
+      "shares": 63000,
+      "ratio": 2.1,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 45.04,
+      "employee": 12.96,
+      "individual": 5.63
+    },
+    "individual_total": 5.63,
+    "top10_total": 63.63
+  },
+  "history": [
+    {
+      "submitDate": "2026-10-28",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第55期(2025/08/01－2026/07/31)",
+      "docID": "S100ZAAO",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "合同会社実力養成会",
+          "shares": 808000,
+          "ratio": 26.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "総合商研従業員持株会",
+          "shares": 266000,
+          "ratio": 8.89,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "大丸株式会社",
+          "shares": 140000,
+          "ratio": 4.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社小森コーポレーション",
+          "shares": 140000,
+          "ratio": 4.67,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "総合商研取引先持株会",
+          "shares": 122000,
+          "ratio": 4.07,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "小松印刷グループ株式会社",
+          "shares": 100000,
+          "ratio": 3.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社光文堂",
+          "shares": 100000,
+          "ratio": 3.33,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "志田　秋子",
+          "shares": 84000,
+          "ratio": 2.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "片岡　廣幸",
+          "shares": 84000,
+          "ratio": 2.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "大日精化工業株式会社",
+          "shares": 63000,
+          "ratio": 2.1,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 45.04,
+          "employee": 12.96,
+          "individual": 5.63
+        },
+        "individual_total": 5.63,
+        "top10_total": 63.63
+      }
+    }
+  ]
+}
