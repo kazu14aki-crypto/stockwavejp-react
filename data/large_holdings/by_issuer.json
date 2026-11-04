@@ -1,4 +1,3593 @@
 {
+ "8715": {
+  "secCode": "8715",
+  "issuerName": "アニコム ホールディングス株式会社",
+  "holders": [
+   {
+    "filerKey": "光通信",
+    "latestRatio": 5.09,
+    "latestDate": "2026-09-29",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-14",
+      "ratio": 4.9,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-29",
+      "ratio": 5.09,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "小森 伸昭",
+    "latestRatio": 2.25,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-10-16",
+      "ratio": 2.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 2.25,
+      "type": "変更"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 2.25,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "8591": {
+  "secCode": "8591",
+  "issuerName": "株式会社バロックジャパンリミテッド",
+  "holders": [
+   {
+    "filerKey": "オリックス",
+    "latestRatio": 0.0,
+    "latestDate": "2026-11-02",
+    "reportCount": 6,
+    "trend": [
+     {
+      "date": "2026-06-23",
+      "ratio": 14.15,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 13.11,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-08",
+      "ratio": 11.96,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 10.93,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-07",
+      "ratio": 9.9,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 0.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "8306": {
+  "secCode": "8306",
+  "issuerName": "日本郵船株式会社",
+  "holders": [
+   {
+    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
+    "latestRatio": 1.12,
+    "latestDate": "2026-11-02",
+    "reportCount": 75,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 1.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 1.21,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 1.99,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 5.14,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 1.02,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 1.15,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-20",
+      "ratio": 1.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.06,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.21,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.99,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 5.14,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.02,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.15,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-28",
+      "ratio": 1.25,
+      "type": "変更"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 2.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 2.59,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 31.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 2.99,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 1.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 1.04,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 91.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 1.49,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-08",
+      "ratio": 2.94,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-18",
+      "ratio": 1.75,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-18",
+      "ratio": 1.47,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-01",
+      "ratio": 1.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-01",
+      "ratio": 1.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-01",
+      "ratio": 96.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-01",
+      "ratio": 1.17,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-01",
+      "ratio": 1.63,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-15",
+      "ratio": 0.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-15",
+      "ratio": 2.68,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-15",
+      "ratio": 83.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-15",
+      "ratio": 2.35,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 1.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 2.31,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 2.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 1.31,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 99.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 1.29,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 1.08,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-21",
+      "ratio": 1.62,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-21",
+      "ratio": 1.71,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-21",
+      "ratio": 1.01,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-03",
+      "ratio": 1.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-03",
+      "ratio": 1.33,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-18",
+      "ratio": 1.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-18",
+      "ratio": 1.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-18",
+      "ratio": 1.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-18",
+      "ratio": 1.03,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-31",
+      "ratio": 1.38,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-31",
+      "ratio": 3.3,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-07",
+      "ratio": 85.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-07",
+      "ratio": 3.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-07",
+      "ratio": 1.02,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 85.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 1.39,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 93.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 1.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 97.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-05",
+      "ratio": 1.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-05",
+      "ratio": 30.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-05",
+      "ratio": 1.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-05",
+      "ratio": 1.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 3.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 1.17,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 1.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 62.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 1.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 4.01,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 89.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 0.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 1.03,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 1.51,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 1.12,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1736": {
+  "secCode": "1736",
+  "issuerName": "株式会社オーテック",
+  "holders": [
+   {
+    "filerKey": "アズビル",
+    "latestRatio": 18.35,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 18.35,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "光通信",
+    "latestRatio": 7.0,
+    "latestDate": "2026-11-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-15",
+      "ratio": 7.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 7.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "3069": {
+  "secCode": "3069",
+  "issuerName": "株式会社ＬＡホールディングス",
+  "holders": [
+   {
+    "filerKey": "地域経済活性化支援機構",
+    "latestRatio": 34.69,
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 34.69,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "サマーバンク合同会社",
+    "latestRatio": 8.69,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-10-15",
+      "ratio": 8.77,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 8.69,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 8.69,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "脇田 栄一",
+    "latestRatio": 1.99,
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 1.99,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6038": {
+  "secCode": "6038",
+  "issuerName": "株式会社イード",
+  "holders": [
+   {
+    "filerKey": "ティーガイア",
+    "latestRatio": 0.0,
+    "latestDate": "2026-11-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 4.94,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 0.0,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "8252": {
+  "secCode": "8252",
+  "issuerName": "（株）丸井グループ",
+  "holders": [
+   {
+    "filerKey": "みずほ証券",
+    "latestRatio": 92.0,
+    "latestDate": "2026-09-25",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-08-07",
+      "ratio": 40.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-25",
+      "ratio": 92.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 3.16,
+    "latestDate": "2026-11-02",
+    "reportCount": 8,
+    "trend": [
+     {
+      "date": "2026-09-07",
+      "ratio": 9.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-16",
+      "ratio": 2.37,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-17",
+      "ratio": 2.37,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-18",
+      "ratio": 2.42,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-06",
+      "ratio": 3.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-27",
+      "ratio": 3.16,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 3.18,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 3.16,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7272": {
+  "secCode": "7272",
+  "issuerName": "ヤマハ発動機株式会社",
+  "holders": [
+   {
+    "filerKey": "三井住友信託銀行",
+    "latestRatio": 20.0,
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 20.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ヤマハ発動機",
+    "latestRatio": 5.45,
+    "latestDate": "2026-07-29",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-29",
+      "ratio": 5.45,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "シルチェスター・インターナショナル・インベスターズ・エルエルピー",
+    "latestRatio": 5.36,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-08-31",
+      "ratio": 7.59,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-13",
+      "ratio": 6.5,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 5.36,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ブラックロック・ジャパン",
+    "latestRatio": 1.99,
+    "latestDate": "2026-09-04",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-04",
+      "ratio": 1.99,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1921": {
+  "secCode": "1921",
+  "issuerName": "株式会社巴コーポレーション",
+  "holders": [
+   {
+    "filerKey": "Ｂｅ Ｂｒａｖｅ",
+    "latestRatio": 9.37,
+    "latestDate": "2026-07-08",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-08",
+      "ratio": 8.37,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-08",
+      "ratio": 9.37,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野澤 幸弘",
+    "latestRatio": 6.0,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-10-20",
+      "ratio": 6.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-26",
+      "ratio": 6.0,
+      "type": "変更"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 6.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6574": {
+  "secCode": "6574",
+  "issuerName": "アクセルマーク株式会社",
+  "holders": [
+   {
+    "filerKey": "コンヴァノ",
+    "latestRatio": 68.9,
+    "latestDate": "2026-07-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-07-02",
+      "ratio": 68.9,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 68.9,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＮＴ",
+    "latestRatio": 61.49,
+    "latestDate": "2026-09-10",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-10",
+      "ratio": 61.49,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ディメンショナル",
+    "latestRatio": 0.0,
+    "latestDate": "2026-11-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-08-20",
+      "ratio": 7.32,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 0.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1716": {
+  "secCode": "1716",
+  "issuerName": "第一カッター興業株式会社",
+  "holders": [
+   {
+    "filerKey": "渡邉 剛",
+    "latestRatio": 4.29,
+    "latestDate": "2026-11-02",
+    "reportCount": 6,
+    "trend": [
+     {
+      "date": "2026-10-15",
+      "ratio": 6.4,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-15",
+      "ratio": 0.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-26",
+      "ratio": 6.83,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-26",
+      "ratio": 0.0,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-26",
+      "ratio": 4.29,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 4.29,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "7901": {
+  "secCode": "7901",
+  "issuerName": "株式会社マツモト",
+  "holders": [
+   {
+    "filerKey": "イノー・アソシエイツ",
+    "latestRatio": 9.83,
+    "latestDate": "2026-04-20",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 9.83,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "中村 規",
+    "latestRatio": 8.74,
+    "latestDate": "2026-04-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 8.74,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "松本 敬三郎",
+    "latestRatio": 4.92,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-20",
+      "ratio": 7.54,
+      "type": "新規"
+     },
+     {
+      "date": "2026-04-22",
+      "ratio": 7.54,
+      "type": "変更"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 4.92,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5252": {
+  "secCode": "5252",
+  "issuerName": "日本ナレッジ株式会社",
+  "holders": [
+   {
+    "filerKey": "ビジネスブレイン太田昭和",
+    "latestRatio": 20.37,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 20.37,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "光通信",
+    "latestRatio": 7.6,
+    "latestDate": "2026-11-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-10-20",
+      "ratio": 7.6,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 7.6,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6675": {
+  "secCode": "6675",
+  "issuerName": "サクサ株式会社",
+  "holders": [
+   {
+    "filerKey": "アセット・バリュー・インベスターズ・リミテッド",
+    "latestRatio": 6.19,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 6.19,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "3843": {
+  "secCode": "3843",
+  "issuerName": "フリービット株式会社",
+  "holders": [
+   {
+    "filerKey": "石田 宏樹",
+    "latestRatio": 15.53,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 15.02,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 15.57,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 15.53,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "光通信",
+    "latestRatio": 6.16,
+    "latestDate": "2026-08-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-05",
+      "ratio": 6.16,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4819": {
+  "secCode": "4819",
+  "issuerName": "株式会社デジタルガレージ",
+  "holders": [
+   {
+    "filerKey": "デジタルガレージ",
+    "latestRatio": 20.64,
+    "latestDate": "2026-11-02",
+    "reportCount": 10,
+    "trend": [
+     {
+      "date": "2026-05-13",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-20",
+      "ratio": 20.64,
+      "type": "変更"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-23",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-17",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-31",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-14",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-30",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-16",
+      "ratio": 20.64,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 20.64,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "Ｏｌｄ Ｐｅａｋ Ｇｒｏｕｐ Ｌｔｄ．",
+    "latestRatio": 8.33,
+    "latestDate": "2026-10-01",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-07-14",
+      "ratio": 5.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-07",
+      "ratio": 6.17,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-01",
+      "ratio": 7.31,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-01",
+      "ratio": 8.33,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7874": {
+  "secCode": "7874",
+  "issuerName": "株式会社ハマキョウレックス",
+  "holders": [
+   {
+    "filerKey": "ティーエムアセット",
+    "latestRatio": 51.03,
+    "latestDate": "2026-10-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 51.97,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-02",
+      "ratio": 51.03,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "岡村 康男",
+    "latestRatio": 45.92,
+    "latestDate": "2026-07-24",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-24",
+      "ratio": 45.92,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "森田 和彦",
+    "latestRatio": 14.13,
+    "latestDate": "2026-07-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-28",
+      "ratio": 14.13,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "アドバンス",
+    "latestRatio": 12.25,
+    "latestDate": "2026-07-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-22",
+      "ratio": 12.25,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＦＭＲ ＬＬＣ",
+    "latestRatio": 9.52,
+    "latestDate": "2026-06-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 9.52,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "合同会社ＡＳＹＣ",
+    "latestRatio": 9.42,
+    "latestDate": "2026-07-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-28",
+      "ratio": 9.42,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
+    "latestRatio": 8.7,
+    "latestDate": "2026-06-22",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-22",
+      "ratio": 8.53,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 8.7,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＮＨパートナーズ",
+    "latestRatio": 6.24,
+    "latestDate": "2026-07-23",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-23",
+      "ratio": 6.24,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "大谷 貴志",
+    "latestRatio": 6.12,
+    "latestDate": "2026-07-23",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-23",
+      "ratio": 6.12,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "グロース・キャピタル",
+    "latestRatio": 5.41,
+    "latestDate": "2026-11-02",
+    "reportCount": 18,
+    "trend": [
+     {
+      "date": "2026-06-12",
+      "ratio": 20.52,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 19.8,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-09",
+      "ratio": 18.91,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-14",
+      "ratio": 18.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-17",
+      "ratio": 17.35,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-23",
+      "ratio": 15.99,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-27",
+      "ratio": 15.04,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-30",
+      "ratio": 13.7,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-13",
+      "ratio": 11.9,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-31",
+      "ratio": 10.77,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-02",
+      "ratio": 15.99,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-02",
+      "ratio": 15.04,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-02",
+      "ratio": 13.7,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-02",
+      "ratio": 11.9,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-15",
+      "ratio": 9.55,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-29",
+      "ratio": 8.54,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-07",
+      "ratio": 6.15,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 5.41,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "大須賀 正孝",
+    "latestRatio": 3.05,
+    "latestDate": "2026-05-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 3.05,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＳＢＩアセットマネジメント",
+    "latestRatio": 2.91,
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 2.91,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "3660": {
+  "secCode": "3660",
+  "issuerName": "株式会社アイスタイル",
+  "holders": [
+   {
+    "filerKey": "アマゾン・ドット・コム・インク",
+    "latestRatio": 9.29,
+    "latestDate": "2026-08-20",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-20",
+      "ratio": 9.29,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "アセットマネジメントＯｎｅ",
+    "latestRatio": 6.17,
+    "latestDate": "2026-09-07",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 4.99,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 5.11,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-07",
+      "ratio": 6.17,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友ＤＳアセットマネジメント",
+    "latestRatio": 4.23,
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 4.23,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "吉松 徹郎",
+    "latestRatio": 2.61,
+    "latestDate": "2026-11-02",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-07-02",
+      "ratio": 7.13,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-04",
+      "ratio": 6.96,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-04",
+      "ratio": 2.61,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 2.61,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友銀行",
+    "latestRatio": 0.0,
+    "latestDate": "2026-08-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-21",
+      "ratio": 0.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "9625": {
+  "secCode": "9625",
+  "issuerName": "株式会社セレス",
+  "holders": [
+   {
+    "filerKey": "光通信",
+    "latestRatio": 7.77,
+    "latestDate": "2026-11-02",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-08-12",
+      "ratio": 7.77,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 7.77,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "都木 聡",
+    "latestRatio": 5.97,
+    "latestDate": "2026-08-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-05",
+      "ratio": 5.97,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "Ｉｎｖｅｓｃｏ Ｃａｐｉｔａｌ Ｍａｎａｇｅｍｅｎｔ ＬＬＣ",
+    "latestRatio": 1.41,
+    "latestDate": "2026-08-07",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 5.86,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-08",
+      "ratio": 5.86,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-07",
+      "ratio": 1.41,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7938": {
+  "secCode": "7938",
+  "issuerName": "（株）リーガルコーポレーション",
+  "holders": [
+   {
+    "filerKey": "ニッピ",
+    "latestRatio": 12.39,
+    "latestDate": "2026-11-02",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-16",
+      "ratio": 13.69,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-05",
+      "ratio": 12.68,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 12.39,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "みずほ銀行",
+    "latestRatio": 1.06,
+    "latestDate": "2026-08-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-07",
+      "ratio": 1.06,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1417": {
+  "secCode": "1417",
+  "issuerName": "（株）ミライト・ワン",
+  "holders": [
+   {
+    "filerKey": "Ｏａｓｉｓ Ｍａｎａｇｅｍｅｎｔ Ｃｏｍｐａｎｙ Ｌｔｄ．",
+    "latestRatio": 5.04,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 5.04,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "みずほ銀行",
+    "latestRatio": 1.42,
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 1.42,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4078": {
+  "secCode": "4078",
+  "issuerName": "堺化学工業株式会社",
+  "holders": [
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 9.0,
+    "latestDate": "2026-06-19",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 9.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＳＨ Ｉｎｖｅｓｔｍｅｎｔ， Ｉｎｃ",
+    "latestRatio": 5.46,
+    "latestDate": "2026-11-02",
+    "reportCount": 15,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 13.66,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-15",
+      "ratio": 12.46,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-17",
+      "ratio": 13.66,
+      "type": "変更"
+     },
+     {
+      "date": "2026-07-17",
+      "ratio": 12.46,
+      "type": "変更"
+     },
+     {
+      "date": "2026-07-17",
+      "ratio": 11.09,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-29",
+      "ratio": 9.84,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-13",
+      "ratio": 8.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-14",
+      "ratio": 13.66,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-14",
+      "ratio": 9.84,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-14",
+      "ratio": 11.09,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-14",
+      "ratio": 12.46,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-17",
+      "ratio": 6.69,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 7.1,
+      "type": "変更"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 5.93,
+      "type": "新規"
+     },
+     {
+      "date": "2026-11-02",
+      "ratio": 5.46,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ゼナーアセットマネジメントエルエルピー",
+    "latestRatio": 4.97,
+    "latestDate": "2026-06-11",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-21",
+      "ratio": 9.29,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-10",
+      "ratio": 7.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-11",
+      "ratio": 4.97,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友ＤＳアセットマネジメント",
+    "latestRatio": 3.88,
+    "latestDate": "2026-08-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-06",
+      "ratio": 3.88,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友トラスト・アセットマネジメント",
+    "latestRatio": 2.97,
+    "latestDate": "2026-06-04",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-04",
+      "ratio": 2.97,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "2418": {
+  "secCode": "2418",
+  "issuerName": "プリモグローバルホールディングス株式会社",
+  "holders": [
+   {
+    "filerKey": "ツカダ・グローバルホールディング",
+    "latestRatio": 8.35,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 8.35,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5869": {
+  "secCode": "5869",
+  "issuerName": "株式会社早稲田学習研究会",
+  "holders": [
+   {
+    "filerKey": "吉原 俊夫",
+    "latestRatio": 7.39,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 7.39,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "441A": {
+  "secCode": "441A",
+  "issuerName": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳホールディングス株式会社",
+  "holders": [
+   {
+    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
+    "latestRatio": 96.0,
+    "latestDate": "2026-08-31",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-31",
+      "ratio": 96.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＳＢＩ証券",
+    "latestRatio": 77.0,
+    "latestDate": "2026-06-22",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 5.57,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-12",
+      "ratio": 0.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 8.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 77.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "宇野康秀",
+    "latestRatio": 50.0,
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-07-03",
+      "ratio": 50.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 50.0,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 27.0,
+    "latestDate": "2026-08-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-06",
+      "ratio": 27.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "大西 洋平",
+    "latestRatio": 15.26,
+    "latestDate": "2026-07-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-21",
+      "ratio": 15.26,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "黒澤 仁",
+    "latestRatio": 11.5,
+    "latestDate": "2026-11-02",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-11-02",
+      "ratio": 11.5,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ユーハ味覚糖",
+    "latestRatio": 8.21,
+    "latestDate": "2026-10-23",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-17",
+      "ratio": 8.21,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-23",
+      "ratio": 8.21,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＴＢＳホールディングス",
+    "latestRatio": 8.03,
+    "latestDate": "2026-07-03",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-03",
+      "ratio": 8.03,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村ホールディングス",
+    "latestRatio": 7.0,
+    "latestDate": "2026-07-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 7.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "大和アセットマネジメント",
+    "latestRatio": 6.81,
+    "latestDate": "2026-10-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-04",
+      "ratio": 8.15,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-06",
+      "ratio": 6.81,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＦＭＲ ＬＬＣ",
+    "latestRatio": 6.32,
+    "latestDate": "2026-06-09",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-09",
+      "ratio": 6.32,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友トラスト・アセットマネジメント",
+    "latestRatio": 6.24,
+    "latestDate": "2026-09-24",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-18",
+      "ratio": 7.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 6.24,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "エリオット・インベストメント・マネージメント・エルピー（Ｅｌｌｉｏｔｔ Ｉｎｖｅｓｔｍｅｎｔ Ｍａｎａｇｅｍｅｎｔ Ｌ．Ｐ．）",
+    "latestRatio": 6.05,
+    "latestDate": "2026-05-20",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-28",
+      "ratio": 5.04,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-20",
+      "ratio": 6.05,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ゴーディアン・キャピタル・シンガポール・プライベート・リミテッド",
+    "latestRatio": 6.02,
+    "latestDate": "2026-05-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 6.02,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "森下 和広",
+    "latestRatio": 5.94,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 5.94,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
+    "latestRatio": 4.64,
+    "latestDate": "2026-06-09",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-09",
+      "ratio": 4.64,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ベイリー・ギフォード・アンド・カンパニー",
+    "latestRatio": 4.03,
+    "latestDate": "2026-10-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-21",
+      "ratio": 4.03,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "アセットマネジメントＯｎｅ",
+    "latestRatio": 3.47,
+    "latestDate": "2026-09-28",
+    "reportCount": 5,
+    "trend": [
+     {
+      "date": "2026-04-17",
+      "ratio": 2.75,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-12",
+      "ratio": 7.12,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-17",
+      "ratio": 2.71,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-17",
+      "ratio": 2.75,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-28",
+      "ratio": 3.47,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ジャフコ グループ",
+    "latestRatio": 0.0,
+    "latestDate": "2026-09-18",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-18",
+      "ratio": 0.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "9882": {
+  "secCode": "9882",
+  "issuerName": "株式会社イエローハット",
+  "holders": [
+   {
+    "filerKey": "ストラテジックキャピタル",
+    "latestRatio": 12.22,
+    "latestDate": "2026-10-30",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-08-07",
+      "ratio": 12.74,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-02",
+      "ratio": 11.73,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 12.22,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "4240": {
+  "secCode": "4240",
+  "issuerName": "クラスターテクノロジー株式会社",
+  "holders": [
+   {
+    "filerKey": "セイコーエプソン",
+    "latestRatio": 14.9,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 14.9,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4676": {
+  "secCode": "4676",
+  "issuerName": "株式会社フジ・メディア・ホールディングス",
+  "holders": [
+   {
+    "filerKey": "東宝",
+    "latestRatio": 8.62,
+    "latestDate": "2026-09-17",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-17",
+      "ratio": 8.62,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＳＢＩホールディングス",
+    "latestRatio": 2.37,
+    "latestDate": "2026-04-17",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-17",
+      "ratio": 2.37,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "大和証券",
+    "latestRatio": 1.47,
+    "latestDate": "2026-10-30",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-24",
+      "ratio": 2.43,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 1.47,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "エスグラントコーポレーション",
+    "latestRatio": 1.31,
+    "latestDate": "2026-04-15",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-15",
+      "ratio": 1.31,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6951": {
+  "secCode": "6951",
+  "issuerName": "日本電子株式会社",
+  "holders": [
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 42.0,
+    "latestDate": "2026-07-24",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-24",
+      "ratio": 42.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "オービス・インベストメント・マネジメント・リミテッド",
+    "latestRatio": 8.85,
+    "latestDate": "2026-07-07",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 5.38,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 7.47,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-07",
+      "ratio": 8.85,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "グランサム、マヨ、ヴァン オッテルロー アンド カンパニー エルエルシー",
+    "latestRatio": 5.05,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 5.05,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4417": {
+  "secCode": "4417",
+  "issuerName": "グローバルセキュリティエキスパート株式会社",
+  "holders": [
+   {
+    "filerKey": "Ｏｌｄ Ｐｅａｋ Ｇｒｏｕｐ Ｌｔｄ．",
+    "latestRatio": 4.78,
+    "latestDate": "2026-10-30",
+    "reportCount": 6,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 5.14,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-03",
+      "ratio": 6.16,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-28",
+      "ratio": 7.21,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-30",
+      "ratio": 7.18,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-22",
+      "ratio": 6.03,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 4.78,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "8022": {
+  "secCode": "8022",
+  "issuerName": "美津濃株式会社",
+  "holders": [
+   {
+    "filerKey": "三井住友信託銀行",
+    "latestRatio": 77.0,
+    "latestDate": "2026-09-24",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-24",
+      "ratio": 77.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井住友ＤＳアセットマネジメント",
+    "latestRatio": 6.87,
+    "latestDate": "2026-08-24",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 5.8,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-24",
+      "ratio": 6.87,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "グランサム、マヨ、ヴァン オッテルロー アンド カンパニー エルエルシー",
+    "latestRatio": 5.05,
+    "latestDate": "2026-10-30",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-19",
+      "ratio": 5.01,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-25",
+      "ratio": 6.08,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 5.05,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 1.31,
+    "latestDate": "2026-05-22",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 1.31,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7050": {
+  "secCode": "7050",
+  "issuerName": "株式会社フロンティアインターナショナル",
+  "holders": [
+   {
+    "filerKey": "フロンティアインターナショナル",
+    "latestRatio": 50.19,
+    "latestDate": "2026-10-30",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-10-29",
+      "ratio": 48.67,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 50.19,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "3329": {
+  "secCode": "3329",
+  "issuerName": "東和フードサービス株式会社",
+  "holders": [
+   {
+    "filerKey": "誠香インベストメント",
+    "latestRatio": 14.05,
+    "latestDate": "2026-10-30",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-05-01",
+      "ratio": 14.05,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-07",
+      "ratio": 14.05,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 14.05,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7217": {
+  "secCode": "7217",
+  "issuerName": "株式会社テイン",
+  "holders": [
+   {
+    "filerKey": "市野 諮",
+    "latestRatio": 14.03,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 14.03,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "3076": {
+  "secCode": "3076",
+  "issuerName": "あいホールディングス株式会社",
+  "holders": [
+   {
+    "filerKey": "あいホールディングス",
+    "latestRatio": 20.69,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 20.69,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "光通信",
+    "latestRatio": 5.27,
+    "latestDate": "2026-09-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-28",
+      "ratio": 5.27,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
+    "latestRatio": 1.16,
+    "latestDate": "2026-10-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-05",
+      "ratio": 1.16,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5290": {
+  "secCode": "5290",
+  "issuerName": "株式会社ベルテクスコーポレーション",
+  "holders": [
+   {
+    "filerKey": "ヴァレックス・パートナーズ",
+    "latestRatio": 10.87,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 10.87,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5821": {
+  "secCode": "5821",
+  "issuerName": "平河ヒューテック株式会社",
+  "holders": [
+   {
+    "filerKey": "ＡＸＩＵＭ ＣＡＰＩＴＡＬ ＰＴＥ．ＬＴＤ．",
+    "latestRatio": 11.75,
+    "latestDate": "2026-10-30",
+    "reportCount": 7,
+    "trend": [
+     {
+      "date": "2026-05-22",
+      "ratio": 8.16,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 7.68,
+      "type": "変更"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 8.16,
+      "type": "変更"
+     },
+     {
+      "date": "2026-06-05",
+      "ratio": 8.65,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-28",
+      "ratio": 9.01,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-27",
+      "ratio": 10.36,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 11.75,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7292": {
+  "secCode": "7292",
+  "issuerName": "株式会社村上開明堂",
+  "holders": [
+   {
+    "filerKey": "ＮＩＰＰＯＮ ＡＣＴＩＶＥ ＶＡＬＵＥ ＦＵＮＤ ＰＬＣ",
+    "latestRatio": 6.37,
+    "latestDate": "2026-10-30",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-30",
+      "ratio": 6.37,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6822": {
+  "secCode": "6822",
+  "issuerName": "大井電気株式会社",
+  "holders": [
+   {
+    "filerKey": "有限会社キャピタル・マネジメント",
+    "latestRatio": 7.38,
+    "latestDate": "2026-10-30",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-10-27",
+      "ratio": 6.33,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 7.38,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三菱電機",
+    "latestRatio": 4.99,
+    "latestDate": "2026-08-25",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-25",
+      "ratio": 4.99,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6676": {
+  "secCode": "6676",
+  "issuerName": "株式会社バッファロー",
+  "holders": [
+   {
+    "filerKey": "牧 寛之",
+    "latestRatio": 12.83,
+    "latestDate": "2026-10-30",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-05-13",
+      "ratio": 18.19,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-15",
+      "ratio": 18.19,
+      "type": "変更"
+     },
+     {
+      "date": "2026-05-27",
+      "ratio": 13.19,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-30",
+      "ratio": 12.83,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4406": {
+  "secCode": "4406",
+  "issuerName": "新日本理化株式会社",
+  "holders": [
+   {
+    "filerKey": "ワイエムシィ",
+    "latestRatio": 10.35,
+    "latestDate": "2026-10-29",
+    "reportCount": 5,
+    "trend": [
+     {
+      "date": "2026-04-23",
+      "ratio": 14.7,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-11",
+      "ratio": 13.55,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-30",
+      "ratio": 12.44,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-08",
+      "ratio": 11.38,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 10.35,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1786": {
+  "secCode": "1786",
+  "issuerName": "オリエンタル白石株式会社",
+  "holders": [
+   {
+    "filerKey": "伊藤忠商事",
+    "latestRatio": 22.43,
+    "latestDate": "2026-10-29",
+    "reportCount": 11,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 18.15,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-21",
+      "ratio": 19.21,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-12",
+      "ratio": 20.27,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-26",
+      "ratio": 21.41,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-16",
+      "ratio": 22.43,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 17.98,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 18.15,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 19.21,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 20.27,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 21.41,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 22.43,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 1.28,
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 0.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 1.28,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6523": {
+  "secCode": "6523",
+  "issuerName": "ＰＨＣホールディングス株式会社",
+  "holders": [
+   {
+    "filerKey": "三菱ケミカル",
+    "latestRatio": 6.27,
+    "latestDate": "2026-10-29",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-10-07",
+      "ratio": 8.35,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-16",
+      "ratio": 7.34,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 6.27,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "三井物産",
+    "latestRatio": 5.45,
+    "latestDate": "2026-10-29",
+    "reportCount": 7,
+    "trend": [
+     {
+      "date": "2026-07-23",
+      "ratio": 12.05,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 11.03,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-07",
+      "ratio": 9.99,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-29",
+      "ratio": 8.89,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-07",
+      "ratio": 7.53,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 6.47,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 5.45,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "パナソニックホールディングス",
+    "latestRatio": 4.55,
+    "latestDate": "2026-05-20",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-20",
+      "ratio": 4.55,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5905": {
+  "secCode": "5905",
+  "issuerName": "日本製罐株式会社",
+  "holders": [
+   {
+    "filerKey": "みみっく",
+    "latestRatio": 12.92,
+    "latestDate": "2026-10-29",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-07-28",
+      "ratio": 10.59,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-08",
+      "ratio": 11.66,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 12.92,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4222": {
+  "secCode": "4222",
+  "issuerName": "児玉化学工業株式会社",
+  "holders": [
+   {
+    "filerKey": "エンデバー・ユナイテッド",
+    "latestRatio": 22.45,
+    "latestDate": "2026-10-29",
+    "reportCount": 22,
+    "trend": [
+     {
+      "date": "2026-07-01",
+      "ratio": 51.74,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-14",
+      "ratio": 50.73,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-24",
+      "ratio": 49.57,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-31",
+      "ratio": 48.53,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-07",
+      "ratio": 47.41,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-18",
+      "ratio": 46.36,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 42.7,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-21",
+      "ratio": 40.76,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-25",
+      "ratio": 38.67,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-27",
+      "ratio": 37.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-31",
+      "ratio": 36.07,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-04",
+      "ratio": 34.46,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-09",
+      "ratio": 32.96,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-14",
+      "ratio": 31.57,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-17",
+      "ratio": 30.44,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 29.14,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-29",
+      "ratio": 28.13,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-06",
+      "ratio": 26.98,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-13",
+      "ratio": 25.94,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-20",
+      "ratio": 24.8,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-26",
+      "ratio": 23.52,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 22.45,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6958": {
+  "secCode": "6958",
+  "issuerName": "日本シイエムケイ株式会社",
+  "holders": [
+   {
+    "filerKey": "ｆｕｎｄｎｏｔｅ",
+    "latestRatio": 15.18,
+    "latestDate": "2026-10-29",
+    "reportCount": 9,
+    "trend": [
+     {
+      "date": "2026-05-11",
+      "ratio": 16.04,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-19",
+      "ratio": 14.92,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 16.02,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-26",
+      "ratio": 14.56,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-29",
+      "ratio": 13.03,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-05",
+      "ratio": 14.18,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-04",
+      "ratio": 12.13,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-22",
+      "ratio": 13.76,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-29",
+      "ratio": 15.18,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 7.0,
+    "latestDate": "2026-07-23",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 3.0,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-23",
+      "ratio": 7.0,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "8630": {
+  "secCode": "8630",
+  "issuerName": "株式会社ティアフォー",
+  "holders": [
+   {
+    "filerKey": "ＳＯＭＰＯホールディングス",
+    "latestRatio": 17.49,
+    "latestDate": "2026-10-28",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-07-29",
+      "ratio": 17.49,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-30",
+      "ratio": 13.49,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-23",
+      "ratio": 9.96,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 17.49,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "5279": {
+  "secCode": "5279",
+  "issuerName": "日本興業株式会社",
+  "holders": [
+   {
+    "filerKey": "酒本 徹",
+    "latestRatio": 9.35,
+    "latestDate": "2026-10-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-28",
+      "ratio": 9.35,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6882": {
+  "secCode": "6882",
+  "issuerName": "株式会社三社電機製作所",
+  "holders": [
+   {
+    "filerKey": "合同会社みやしろ",
+    "latestRatio": 4.54,
+    "latestDate": "2026-10-28",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 5.07,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-11",
+      "ratio": 5.07,
+      "type": "変更"
+     },
+     {
+      "date": "2026-09-15",
+      "ratio": 4.54,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 4.54,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "4990": {
+  "secCode": "4990",
+  "issuerName": "昭和化学工業株式会社",
+  "holders": [
+   {
+    "filerKey": "シグマ",
+    "latestRatio": 16.18,
+    "latestDate": "2026-10-28",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-07-10",
+      "ratio": 16.18,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-29",
+      "ratio": 16.18,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 16.18,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "9073": {
+  "secCode": "9073",
+  "issuerName": "京極運輸商事株式会社",
+  "holders": [
+   {
+    "filerKey": "グリーンエイト",
+    "latestRatio": 5.83,
+    "latestDate": "2026-10-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-28",
+      "ratio": 5.83,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7284": {
+  "secCode": "7284",
+  "issuerName": "盟和産業株式会社",
+  "holders": [
+   {
+    "filerKey": "成成",
+    "latestRatio": 3.86,
+    "latestDate": "2026-10-28",
+    "reportCount": 7,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 5.43,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-16",
+      "ratio": 5.48,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-11",
+      "ratio": 6.85,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-01",
+      "ratio": 6.85,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 5.48,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 6.85,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 3.86,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "7199": {
+  "secCode": "7199",
+  "issuerName": "プレミアグループ株式会社",
+  "holders": [
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 39.0,
+    "latestDate": "2026-09-25",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 1.5,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-22",
+      "ratio": 1.24,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-23",
+      "ratio": 1.18,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-25",
+      "ratio": 39.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ダルトン インベストメンツ インク",
+    "latestRatio": 5.05,
+    "latestDate": "2026-10-28",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-28",
+      "ratio": 5.05,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "6470": {
+  "secCode": "6470",
+  "issuerName": "大豊工業",
+  "holders": [
+   {
+    "filerKey": "ｆｕｎｄｎｏｔｅ",
+    "latestRatio": 14.95,
+    "latestDate": "2026-10-28",
+    "reportCount": 6,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 9.79,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-09",
+      "ratio": 10.8,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-22",
+      "ratio": 11.81,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-13",
+      "ratio": 12.83,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-30",
+      "ratio": 13.93,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 14.95,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "1802": {
+  "secCode": "1802",
+  "issuerName": "株式会社大林組",
+  "holders": [
+   {
+    "filerKey": "野村アセットマネジメント",
+    "latestRatio": 3.0,
+    "latestDate": "2026-07-06",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 3.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ブラックロック・ジャパン",
+    "latestRatio": 2.02,
+    "latestDate": "2026-10-28",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 1.98,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-09",
+      "ratio": 1.95,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 2.02,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "5721": {
+  "secCode": "5721",
+  "issuerName": "エスクリプトエナジー",
+  "holders": [
+   {
+    "filerKey": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
+    "latestRatio": 31.82,
+    "latestDate": "2026-10-28",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-10-16",
+      "ratio": 32.48,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 31.82,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "エスクリプトエナジー",
+    "latestRatio": 6.33,
+    "latestDate": "2026-10-22",
+    "reportCount": 8,
+    "trend": [
+     {
+      "date": "2026-06-09",
+      "ratio": 8.56,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-01",
+      "ratio": 8.81,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-02",
+      "ratio": 11.45,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 8.81,
+      "type": "変更"
+     },
+     {
+      "date": "2026-07-15",
+      "ratio": 11.58,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-02",
+      "ratio": 7.51,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-04",
+      "ratio": 7.51,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-22",
+      "ratio": 6.33,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "フィリップ証券",
+    "latestRatio": 0.0,
+    "latestDate": "2026-07-06",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-07-06",
+      "ratio": 7.1,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-06",
+      "ratio": 0.0,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "3185": {
+  "secCode": "3185",
+  "issuerName": "夢展望株式会社",
+  "holders": [
+   {
+    "filerKey": "ＲＩＺＡＰグループ",
+    "latestRatio": 45.36,
+    "latestDate": "2026-09-18",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-18",
+      "ratio": 45.36,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
+    "latestRatio": 10.55,
+    "latestDate": "2026-10-28",
+    "reportCount": 8,
+    "trend": [
+     {
+      "date": "2026-09-15",
+      "ratio": 5.44,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-30",
+      "ratio": 4.3,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-01",
+      "ratio": 14.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-07",
+      "ratio": 13.08,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-09",
+      "ratio": 13.08,
+      "type": "変更"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 12.06,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-22",
+      "ratio": 10.8,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-28",
+      "ratio": 10.55,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
  "4849": {
   "secCode": "4849",
   "issuerName": "カルナバイオサイエンス株式会社",
@@ -552,68 +4141,6 @@
    }
   ]
  },
- "8252": {
-  "secCode": "8252",
-  "issuerName": "（株）丸井グループ",
-  "holders": [
-   {
-    "filerKey": "みずほ証券",
-    "latestRatio": 92.0,
-    "latestDate": "2026-09-25",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-08-07",
-      "ratio": 40.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-25",
-      "ratio": 92.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 3.16,
-    "latestDate": "2026-10-27",
-    "reportCount": 6,
-    "trend": [
-     {
-      "date": "2026-09-07",
-      "ratio": 9.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-16",
-      "ratio": 2.37,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-17",
-      "ratio": 2.37,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-18",
-      "ratio": 2.42,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-06",
-      "ratio": 3.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-27",
-      "ratio": 3.16,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "9082": {
   "secCode": "9082",
   "issuerName": "大和自動車交通株式会社",
@@ -837,50 +4364,6 @@
    }
   ]
  },
- "5821": {
-  "secCode": "5821",
-  "issuerName": "平河ヒューテック株式会社",
-  "holders": [
-   {
-    "filerKey": "ＡＸＩＵＭ ＣＡＰＩＴＡＬ ＰＴＥ．ＬＴＤ．",
-    "latestRatio": 10.36,
-    "latestDate": "2026-10-27",
-    "reportCount": 6,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 8.16,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 7.68,
-      "type": "変更"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 8.16,
-      "type": "変更"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 8.65,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-28",
-      "ratio": 9.01,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-27",
-      "ratio": 10.36,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "3417": {
   "secCode": "3417",
   "issuerName": "大木ヘルスケアホールディングス株式会社",
@@ -904,38 +4387,6 @@
      {
       "date": "2026-10-27",
       "ratio": 11.05,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "6822": {
-  "secCode": "6822",
-  "issuerName": "大井電気株式会社",
-  "holders": [
-   {
-    "filerKey": "有限会社キャピタル・マネジメント",
-    "latestRatio": 6.33,
-    "latestDate": "2026-10-27",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-27",
-      "ratio": 6.33,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三菱電機",
-    "latestRatio": 4.99,
-    "latestDate": "2026-08-25",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-25",
-      "ratio": 4.99,
       "type": "新規"
      }
     ]
@@ -1456,45 +4907,6 @@
    }
   ]
  },
- "1716": {
-  "secCode": "1716",
-  "issuerName": "第一カッター興業株式会社",
-  "holders": [
-   {
-    "filerKey": "渡邉 剛",
-    "latestRatio": 4.29,
-    "latestDate": "2026-10-26",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-10-15",
-      "ratio": 6.4,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-15",
-      "ratio": 0.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-26",
-      "ratio": 6.83,
-      "type": "変更"
-     },
-     {
-      "date": "2026-10-26",
-      "ratio": 0.0,
-      "type": "変更"
-     },
-     {
-      "date": "2026-10-26",
-      "ratio": 4.29,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "9788": {
   "secCode": "9788",
   "issuerName": "株式会社レゾナック・ホールディングス",
@@ -1707,48 +5119,6 @@
    }
   ]
  },
- "1921": {
-  "secCode": "1921",
-  "issuerName": "株式会社巴コーポレーション",
-  "holders": [
-   {
-    "filerKey": "Ｂｅ Ｂｒａｖｅ",
-    "latestRatio": 9.37,
-    "latestDate": "2026-07-08",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-08",
-      "ratio": 8.37,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-08",
-      "ratio": 9.37,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野澤 幸弘",
-    "latestRatio": 6.0,
-    "latestDate": "2026-10-26",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-10-20",
-      "ratio": 6.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-26",
-      "ratio": 6.0,
-      "type": "変更"
-     }
-    ]
-   }
-  ]
- },
  "6378": {
   "secCode": "6378",
   "issuerName": "木村化工機株式会社",
@@ -1946,125 +5316,6 @@
       "date": "2026-10-26",
       "ratio": 0.0,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "4222": {
-  "secCode": "4222",
-  "issuerName": "児玉化学工業株式会社",
-  "holders": [
-   {
-    "filerKey": "エンデバー・ユナイテッド",
-    "latestRatio": 23.52,
-    "latestDate": "2026-10-26",
-    "reportCount": 21,
-    "trend": [
-     {
-      "date": "2026-07-01",
-      "ratio": 51.74,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-14",
-      "ratio": 50.73,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-24",
-      "ratio": 49.57,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-31",
-      "ratio": 48.53,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-07",
-      "ratio": 47.41,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-18",
-      "ratio": 46.36,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-20",
-      "ratio": 42.7,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-21",
-      "ratio": 40.76,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-25",
-      "ratio": 38.67,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-27",
-      "ratio": 37.25,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-31",
-      "ratio": 36.07,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-04",
-      "ratio": 34.46,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-09",
-      "ratio": 32.96,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-14",
-      "ratio": 31.57,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-17",
-      "ratio": 30.44,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 29.14,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-29",
-      "ratio": 28.13,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-06",
-      "ratio": 26.98,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-13",
-      "ratio": 25.94,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-20",
-      "ratio": 24.8,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-26",
-      "ratio": 23.52,
-      "type": "新規"
      }
     ]
    }
@@ -2541,35 +5792,6 @@
      {
       "date": "2026-10-09",
       "ratio": 6.94,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "8630": {
-  "secCode": "8630",
-  "issuerName": "ａｋｉｐｐａ株式会社",
-  "holders": [
-   {
-    "filerKey": "ＳＯＭＰＯホールディングス",
-    "latestRatio": 9.96,
-    "latestDate": "2026-10-23",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-07-29",
-      "ratio": 17.49,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-30",
-      "ratio": 13.49,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-23",
-      "ratio": 9.96,
       "type": "新規"
      }
     ]
@@ -3533,293 +6755,6 @@
      },
      {
       "date": "2026-08-07",
-      "ratio": 0.0,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "441A": {
-  "secCode": "441A",
-  "issuerName": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳホールディングス株式会社",
-  "holders": [
-   {
-    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
-    "latestRatio": 96.0,
-    "latestDate": "2026-08-31",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-31",
-      "ratio": 96.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＳＢＩ証券",
-    "latestRatio": 77.0,
-    "latestDate": "2026-06-22",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-04-21",
-      "ratio": 5.57,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-12",
-      "ratio": 0.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 8.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 77.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "宇野康秀",
-    "latestRatio": 50.0,
-    "latestDate": "2026-07-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-03",
-      "ratio": 50.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 50.0,
-      "type": "変更"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 27.0,
-    "latestDate": "2026-08-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-06",
-      "ratio": 27.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "大西 洋平",
-    "latestRatio": 15.26,
-    "latestDate": "2026-07-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-21",
-      "ratio": 15.26,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ユーハ味覚糖",
-    "latestRatio": 8.21,
-    "latestDate": "2026-10-23",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-09-17",
-      "ratio": 8.21,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-23",
-      "ratio": 8.21,
-      "type": "変更"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＴＢＳホールディングス",
-    "latestRatio": 8.03,
-    "latestDate": "2026-07-03",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-03",
-      "ratio": 8.03,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村ホールディングス",
-    "latestRatio": 7.0,
-    "latestDate": "2026-07-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 7.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "大和アセットマネジメント",
-    "latestRatio": 6.81,
-    "latestDate": "2026-10-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-09-04",
-      "ratio": 8.15,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-06",
-      "ratio": 6.81,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＦＭＲ ＬＬＣ",
-    "latestRatio": 6.32,
-    "latestDate": "2026-06-09",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-09",
-      "ratio": 6.32,
-      "type": "変更"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友トラスト・アセットマネジメント",
-    "latestRatio": 6.24,
-    "latestDate": "2026-09-24",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-18",
-      "ratio": 7.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 6.24,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "エリオット・インベストメント・マネージメント・エルピー（Ｅｌｌｉｏｔｔ Ｉｎｖｅｓｔｍｅｎｔ Ｍａｎａｇｅｍｅｎｔ Ｌ．Ｐ．）",
-    "latestRatio": 6.05,
-    "latestDate": "2026-05-20",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-28",
-      "ratio": 5.04,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-20",
-      "ratio": 6.05,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ゴーディアン・キャピタル・シンガポール・プライベート・リミテッド",
-    "latestRatio": 6.02,
-    "latestDate": "2026-05-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 6.02,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
-    "latestRatio": 4.64,
-    "latestDate": "2026-06-09",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-09",
-      "ratio": 4.64,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ベイリー・ギフォード・アンド・カンパニー",
-    "latestRatio": 4.03,
-    "latestDate": "2026-10-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-21",
-      "ratio": 4.03,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "アセットマネジメントＯｎｅ",
-    "latestRatio": 3.47,
-    "latestDate": "2026-09-28",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-04-17",
-      "ratio": 2.75,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-12",
-      "ratio": 7.12,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-17",
-      "ratio": 2.71,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-17",
-      "ratio": 2.75,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-28",
-      "ratio": 3.47,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ジャフコ グループ",
-    "latestRatio": 0.0,
-    "latestDate": "2026-09-18",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-18",
       "ratio": 0.0,
       "type": "新規"
      }
@@ -5469,45 +8404,6 @@
    }
   ]
  },
- "4417": {
-  "secCode": "4417",
-  "issuerName": "グローバルセキュリティエキスパート株式会社",
-  "holders": [
-   {
-    "filerKey": "Ｏｌｄ Ｐｅａｋ Ｇｒｏｕｐ Ｌｔｄ．",
-    "latestRatio": 6.03,
-    "latestDate": "2026-10-22",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 5.14,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-03",
-      "ratio": 6.16,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-28",
-      "ratio": 7.21,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-30",
-      "ratio": 7.18,
-      "type": "変更"
-     },
-     {
-      "date": "2026-10-22",
-      "ratio": 6.03,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "8056": {
   "secCode": "8056",
   "issuerName": "ＢＩＰＲＯＧＹ株式会社",
@@ -6859,140 +9755,6 @@
    }
   ]
  },
- "3185": {
-  "secCode": "3185",
-  "issuerName": "夢展望株式会社",
-  "holders": [
-   {
-    "filerKey": "ＲＩＺＡＰグループ",
-    "latestRatio": 45.36,
-    "latestDate": "2026-09-18",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-18",
-      "ratio": 45.36,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
-    "latestRatio": 10.8,
-    "latestDate": "2026-10-22",
-    "reportCount": 7,
-    "trend": [
-     {
-      "date": "2026-09-15",
-      "ratio": 5.44,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-30",
-      "ratio": 4.3,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-01",
-      "ratio": 14.25,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-07",
-      "ratio": 13.08,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-09",
-      "ratio": 13.08,
-      "type": "変更"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 12.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-22",
-      "ratio": 10.8,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "6958": {
-  "secCode": "6958",
-  "issuerName": "日本シイエムケイ株式会社",
-  "holders": [
-   {
-    "filerKey": "ｆｕｎｄｎｏｔｅ",
-    "latestRatio": 13.76,
-    "latestDate": "2026-10-22",
-    "reportCount": 8,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 16.04,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-19",
-      "ratio": 14.92,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 16.02,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-26",
-      "ratio": 14.56,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 13.03,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-05",
-      "ratio": 14.18,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-04",
-      "ratio": 12.13,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-22",
-      "ratio": 13.76,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 7.0,
-    "latestDate": "2026-07-23",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 3.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-23",
-      "ratio": 7.0,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "3863": {
   "secCode": "3863",
   "issuerName": "日本製紙株式会社",
@@ -7120,91 +9882,6 @@
       "date": "2026-10-22",
       "ratio": 6.99,
       "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "5721": {
-  "secCode": "5721",
-  "issuerName": "エスクリプトエナジー",
-  "holders": [
-   {
-    "filerKey": "Ｌｏｎｇ Ｃｏｒｒｉｄｏｒ Ａｓｓｅｔ Ｍａｎａｇｅｍｅｎｔ Ｌｉｍｉｔｅｄ",
-    "latestRatio": 32.48,
-    "latestDate": "2026-10-16",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-16",
-      "ratio": 32.48,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "エスクリプトエナジー",
-    "latestRatio": 6.33,
-    "latestDate": "2026-10-22",
-    "reportCount": 8,
-    "trend": [
-     {
-      "date": "2026-06-09",
-      "ratio": 8.56,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-01",
-      "ratio": 8.81,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-02",
-      "ratio": 11.45,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 8.81,
-      "type": "変更"
-     },
-     {
-      "date": "2026-07-15",
-      "ratio": 11.58,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-02",
-      "ratio": 7.51,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-04",
-      "ratio": 7.51,
-      "type": "変更"
-     },
-     {
-      "date": "2026-10-22",
-      "ratio": 6.33,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "フィリップ証券",
-    "latestRatio": 0.0,
-    "latestDate": "2026-07-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 7.1,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 0.0,
-      "type": "変更"
      }
     ]
    }
@@ -9782,25 +12459,6 @@
    }
   ]
  },
- "5252": {
-  "secCode": "5252",
-  "issuerName": "日本ナレッジ株式会社",
-  "holders": [
-   {
-    "filerKey": "光通信",
-    "latestRatio": 7.6,
-    "latestDate": "2026-10-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-20",
-      "ratio": 7.6,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "6360": {
   "secCode": "6360",
   "issuerName": "株式会社東京自働機械製作所",
@@ -9958,360 +12616,6 @@
      {
       "date": "2026-10-19",
       "ratio": 11.43,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "8306": {
-  "secCode": "8306",
-  "issuerName": "いちごオフィスリート投資法人",
-  "holders": [
-   {
-    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
-    "latestRatio": 62.0,
-    "latestDate": "2026-10-19",
-    "reportCount": 68,
-    "trend": [
-     {
-      "date": "2026-04-20",
-      "ratio": 1.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 1.21,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 1.99,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 5.14,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 1.02,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 1.15,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-20",
-      "ratio": 1.25,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.06,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.21,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.99,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 5.14,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.02,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.15,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-28",
-      "ratio": 1.25,
-      "type": "変更"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 2.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 2.59,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 31.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 2.99,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 1.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 1.04,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 91.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 1.49,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-08",
-      "ratio": 2.94,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-18",
-      "ratio": 1.75,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-18",
-      "ratio": 1.47,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 1.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 1.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 96.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 1.17,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-01",
-      "ratio": 1.63,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 0.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 2.68,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 83.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-15",
-      "ratio": 2.35,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 1.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 2.31,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 2.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 1.31,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 99.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 1.29,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 1.08,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-21",
-      "ratio": 1.62,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-21",
-      "ratio": 1.71,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-21",
-      "ratio": 1.01,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-03",
-      "ratio": 1.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-03",
-      "ratio": 1.33,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-18",
-      "ratio": 1.06,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-18",
-      "ratio": 1.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-18",
-      "ratio": 1.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-18",
-      "ratio": 1.03,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-31",
-      "ratio": 1.38,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-31",
-      "ratio": 3.3,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-07",
-      "ratio": 85.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-07",
-      "ratio": 3.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-07",
-      "ratio": 1.02,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 85.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 1.39,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 93.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 1.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 97.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-05",
-      "ratio": 1.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-05",
-      "ratio": 30.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-05",
-      "ratio": 1.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-05",
-      "ratio": 1.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 3.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 1.17,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 1.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 62.0,
       "type": "新規"
      }
     ]
@@ -10697,6 +13001,30 @@
    }
   ]
  },
+ "3816": {
+  "secCode": "3816",
+  "issuerName": "株式会社大和コンピューター",
+  "holders": [
+   {
+    "filerKey": "中村 憲司",
+    "latestRatio": 13.92,
+    "latestDate": "2026-10-19",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-24",
+      "ratio": 13.92,
+      "type": "新規"
+     },
+     {
+      "date": "2026-10-19",
+      "ratio": 13.92,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
  "6226": {
   "secCode": "6226",
   "issuerName": "守谷輸送機工業株式会社",
@@ -10710,81 +13038,6 @@
      {
       "date": "2026-10-19",
       "ratio": 13.15,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "6523": {
-  "secCode": "6523",
-  "issuerName": "ＰＨＣホールディングス株式会社",
-  "holders": [
-   {
-    "filerKey": "三菱ケミカル",
-    "latestRatio": 7.34,
-    "latestDate": "2026-10-16",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-10-07",
-      "ratio": 8.35,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-16",
-      "ratio": 7.34,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井物産",
-    "latestRatio": 6.47,
-    "latestDate": "2026-10-19",
-    "reportCount": 6,
-    "trend": [
-     {
-      "date": "2026-07-23",
-      "ratio": 12.05,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-20",
-      "ratio": 11.03,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-07",
-      "ratio": 9.99,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-29",
-      "ratio": 8.89,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-07",
-      "ratio": 7.53,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-19",
-      "ratio": 6.47,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "パナソニックホールディングス",
-    "latestRatio": 4.55,
-    "latestDate": "2026-05-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-20",
-      "ratio": 4.55,
       "type": "新規"
      }
     ]
@@ -11124,43 +13377,6 @@
      {
       "date": "2026-10-16",
       "ratio": 38.63,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "8715": {
-  "secCode": "8715",
-  "issuerName": "アニコム ホールディングス株式会社",
-  "holders": [
-   {
-    "filerKey": "光通信",
-    "latestRatio": 5.09,
-    "latestDate": "2026-09-29",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-14",
-      "ratio": 4.9,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-29",
-      "ratio": 5.09,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "小森 伸昭",
-    "latestRatio": 2.25,
-    "latestDate": "2026-10-16",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-16",
-      "ratio": 2.25,
       "type": "新規"
      }
     ]
@@ -11518,93 +13734,6 @@
    }
   ]
  },
- "4819": {
-  "secCode": "4819",
-  "issuerName": "株式会社デジタルガレージ",
-  "holders": [
-   {
-    "filerKey": "デジタルガレージ",
-    "latestRatio": 20.64,
-    "latestDate": "2026-10-16",
-    "reportCount": 9,
-    "trend": [
-     {
-      "date": "2026-05-13",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-20",
-      "ratio": 20.64,
-      "type": "変更"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-23",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-17",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-31",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-14",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-30",
-      "ratio": 20.64,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-16",
-      "ratio": 20.64,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "Ｏｌｄ Ｐｅａｋ Ｇｒｏｕｐ Ｌｔｄ．",
-    "latestRatio": 8.33,
-    "latestDate": "2026-10-01",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-07-14",
-      "ratio": 5.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-07",
-      "ratio": 6.17,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-01",
-      "ratio": 7.31,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-01",
-      "ratio": 8.33,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "7058": {
   "secCode": "7058",
   "issuerName": "共栄セキュリティーサービス株式会社",
@@ -11641,51 +13770,6 @@
      {
       "date": "2026-10-16",
       "ratio": 7.14,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "3069": {
-  "secCode": "3069",
-  "issuerName": "株式会社ＬＡホールディングス",
-  "holders": [
-   {
-    "filerKey": "地域経済活性化支援機構",
-    "latestRatio": 34.69,
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 34.69,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "サマーバンク合同会社",
-    "latestRatio": 8.77,
-    "latestDate": "2026-10-15",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-15",
-      "ratio": 8.77,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "脇田 栄一",
-    "latestRatio": 1.99,
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 1.99,
       "type": "新規"
      }
     ]
@@ -13060,69 +15144,6 @@
    }
   ]
  },
- "7272": {
-  "secCode": "7272",
-  "issuerName": "ヤマハ発動機株式会社",
-  "holders": [
-   {
-    "filerKey": "三井住友信託銀行",
-    "latestRatio": 20.0,
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 20.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "シルチェスター・インターナショナル・インベスターズ・エルエルピー",
-    "latestRatio": 6.5,
-    "latestDate": "2026-10-13",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-08-31",
-      "ratio": 7.59,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-13",
-      "ratio": 6.5,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ヤマハ発動機",
-    "latestRatio": 5.45,
-    "latestDate": "2026-07-29",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-29",
-      "ratio": 5.45,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ブラックロック・ジャパン",
-    "latestRatio": 1.99,
-    "latestDate": "2026-09-04",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-04",
-      "ratio": 1.99,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "3161": {
   "secCode": "3161",
   "issuerName": "アゼアス株式会社",
@@ -13216,6 +15237,79 @@
      {
       "date": "2026-06-10",
       "ratio": 1.07,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
+ "4446": {
+  "secCode": "4446",
+  "issuerName": "Ｌｉｎｋ－Ｕグループ株式会社",
+  "holders": [
+   {
+    "filerKey": "ブラックロック・ジャパン",
+    "latestRatio": 87.0,
+    "latestDate": "2026-07-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-07-21",
+      "ratio": 87.0,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "山田 剛史",
+    "latestRatio": 20.68,
+    "latestDate": "2026-07-01",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-06-19",
+      "ratio": 29.29,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-24",
+      "ratio": 29.29,
+      "type": "変更"
+     },
+     {
+      "date": "2026-07-01",
+      "ratio": 20.68,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "アポロ・キャピタル",
+    "latestRatio": 8.61,
+    "latestDate": "2026-08-07",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-07-01",
+      "ratio": 8.61,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-07",
+      "ratio": 8.61,
+      "type": "変更"
+     }
+    ]
+   },
+   {
+    "filerKey": "クランチロール",
+    "latestRatio": 7.03,
+    "latestDate": "2026-10-09",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-09",
+      "ratio": 7.03,
       "type": "新規"
      }
     ]
@@ -13835,40 +15929,6 @@
       "date": "2026-06-05",
       "ratio": 5.5,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "4406": {
-  "secCode": "4406",
-  "issuerName": "新日本理化株式会社",
-  "holders": [
-   {
-    "filerKey": "ワイエムシィ",
-    "latestRatio": 11.38,
-    "latestDate": "2026-10-08",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-04-23",
-      "ratio": 14.7,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-11",
-      "ratio": 13.55,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-30",
-      "ratio": 12.44,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-08",
-      "ratio": 11.38,
-      "type": "新規"
      }
     ]
    }
@@ -14525,45 +16585,6 @@
       "date": "2026-10-07",
       "ratio": 97.0,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "8591": {
-  "secCode": "8591",
-  "issuerName": "株式会社バロックジャパンリミテッド",
-  "holders": [
-   {
-    "filerKey": "オリックス",
-    "latestRatio": 9.9,
-    "latestDate": "2026-10-07",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-06-23",
-      "ratio": 14.15,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-20",
-      "ratio": 13.11,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-08",
-      "ratio": 11.96,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-24",
-      "ratio": 10.93,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-07",
-      "ratio": 9.9,
-      "type": "新規"
      }
     ]
    }
@@ -15482,8 +17503,21 @@
  },
  "3539": {
   "secCode": "3539",
-  "issuerName": "株式会社スーパーバリュー",
+  "issuerName": "株式会社ＪＭホールディングス",
   "holders": [
+   {
+    "filerKey": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
+    "latestRatio": 2.4,
+    "latestDate": "2026-10-07",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-10-07",
+      "ratio": 2.4,
+      "type": "新規"
+     }
+    ]
+   },
    {
     "filerKey": "ＪＭホールディングス",
     "latestRatio": 0.0,
@@ -16514,258 +18548,6 @@
      {
       "date": "2026-10-07",
       "ratio": 19.9,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "7874": {
-  "secCode": "7874",
-  "issuerName": "株式会社ハマキョウレックス",
-  "holders": [
-   {
-    "filerKey": "ティーエムアセット",
-    "latestRatio": 51.03,
-    "latestDate": "2026-10-02",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-11",
-      "ratio": 51.97,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-02",
-      "ratio": 51.03,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "岡村 康男",
-    "latestRatio": 45.92,
-    "latestDate": "2026-07-24",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-24",
-      "ratio": 45.92,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "森田 和彦",
-    "latestRatio": 14.13,
-    "latestDate": "2026-07-28",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-28",
-      "ratio": 14.13,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "アドバンス",
-    "latestRatio": 12.25,
-    "latestDate": "2026-07-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-22",
-      "ratio": 12.25,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＦＭＲ ＬＬＣ",
-    "latestRatio": 9.52,
-    "latestDate": "2026-06-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 9.52,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "合同会社ＡＳＹＣ",
-    "latestRatio": 9.42,
-    "latestDate": "2026-07-28",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-28",
-      "ratio": 9.42,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "Ｆｉｄｅｌｉｔｙ Ｍａｎａｇｅｍｅｎｔ ＆ Ｒｅｓｅａｒｃｈ Ｃｏｍｐａｎｙ ＬＬＣ",
-    "latestRatio": 8.7,
-    "latestDate": "2026-06-22",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-22",
-      "ratio": 8.53,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 8.7,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＮＨパートナーズ",
-    "latestRatio": 6.24,
-    "latestDate": "2026-07-23",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-23",
-      "ratio": 6.24,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "グロース・キャピタル",
-    "latestRatio": 6.15,
-    "latestDate": "2026-10-07",
-    "reportCount": 17,
-    "trend": [
-     {
-      "date": "2026-06-12",
-      "ratio": 20.52,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-29",
-      "ratio": 19.8,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-09",
-      "ratio": 18.91,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-14",
-      "ratio": 18.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-17",
-      "ratio": 17.35,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-23",
-      "ratio": 15.99,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-27",
-      "ratio": 15.04,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-30",
-      "ratio": 13.7,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-13",
-      "ratio": 11.9,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-31",
-      "ratio": 10.77,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-02",
-      "ratio": 15.99,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-02",
-      "ratio": 15.04,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-02",
-      "ratio": 13.7,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-02",
-      "ratio": 11.9,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-15",
-      "ratio": 9.55,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-29",
-      "ratio": 8.54,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-07",
-      "ratio": 6.15,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "大谷 貴志",
-    "latestRatio": 6.12,
-    "latestDate": "2026-07-23",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-23",
-      "ratio": 6.12,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "大須賀 正孝",
-    "latestRatio": 3.05,
-    "latestDate": "2026-05-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 3.05,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＳＢＩアセットマネジメント",
-    "latestRatio": 2.91,
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 2.91,
       "type": "新規"
      }
     ]
@@ -18194,38 +19976,6 @@
    }
   ]
  },
- "3076": {
-  "secCode": "3076",
-  "issuerName": "あいホールディングス株式会社",
-  "holders": [
-   {
-    "filerKey": "光通信",
-    "latestRatio": 5.27,
-    "latestDate": "2026-09-28",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-28",
-      "ratio": 5.27,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三菱ＵＦＪフィナンシャル・グループ",
-    "latestRatio": 1.16,
-    "latestDate": "2026-10-05",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-10-05",
-      "ratio": 1.16,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "554A": {
   "secCode": "554A",
   "issuerName": "株式会社バトンズ",
@@ -18999,43 +20749,6 @@
    }
   ]
  },
- "7938": {
-  "secCode": "7938",
-  "issuerName": "（株）リーガルコーポレーション",
-  "holders": [
-   {
-    "filerKey": "ニッピ",
-    "latestRatio": 12.68,
-    "latestDate": "2026-10-05",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-16",
-      "ratio": 13.69,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-05",
-      "ratio": 12.68,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "みずほ銀行",
-    "latestRatio": 1.06,
-    "latestDate": "2026-08-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-07",
-      "ratio": 1.06,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "3104": {
   "secCode": "3104",
   "issuerName": "富士紡ホールディングス株式会社",
@@ -19541,30 +21254,6 @@
    }
   ]
  },
- "9882": {
-  "secCode": "9882",
-  "issuerName": "株式会社イエローハット",
-  "holders": [
-   {
-    "filerKey": "ストラテジックキャピタル",
-    "latestRatio": 11.73,
-    "latestDate": "2026-10-02",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-08-07",
-      "ratio": 12.74,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-02",
-      "ratio": 11.73,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "8025": {
   "secCode": "8025",
   "issuerName": "株式会社ツカモトコーポレーション",
@@ -19993,40 +21682,6 @@
    }
   ]
  },
- "7284": {
-  "secCode": "7284",
-  "issuerName": "盟和産業株式会社",
-  "holders": [
-   {
-    "filerKey": "成成",
-    "latestRatio": 6.85,
-    "latestDate": "2026-10-01",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 5.43,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-16",
-      "ratio": 5.48,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-11",
-      "ratio": 6.85,
-      "type": "新規"
-     },
-     {
-      "date": "2026-10-01",
-      "ratio": 6.85,
-      "type": "変更"
-     }
-    ]
-   }
-  ]
- },
  "4004": {
   "secCode": "4004",
   "issuerName": "クラサスケミカル株式会社",
@@ -20282,45 +21937,6 @@
       "date": "2026-09-30",
       "ratio": 4.93,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "6470": {
-  "secCode": "6470",
-  "issuerName": "大豊工業",
-  "holders": [
-   {
-    "filerKey": "ｆｕｎｄｎｏｔｅ",
-    "latestRatio": 13.93,
-    "latestDate": "2026-09-30",
-    "reportCount": 5,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 9.79,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-09",
-      "ratio": 10.8,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-22",
-      "ratio": 11.81,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-13",
-      "ratio": 12.83,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-30",
-      "ratio": 13.93,
-      "type": "新規"
      }
     ]
    }
@@ -21556,19 +23172,6 @@
     ]
    },
    {
-    "filerKey": "光通信",
-    "latestRatio": 6.16,
-    "latestDate": "2026-08-05",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-05",
-      "ratio": 6.16,
-      "type": "新規"
-     }
-    ]
-   },
-   {
     "filerKey": "ＦＩＬ Ｉｎｖｅｓｔｍｅｎｔ Ｍａｎａｇｅｍｅｎｔ （Ｈｏｎｇ Ｋｏｎｇ） Ｌｉｍｉｔｅｄ",
     "latestRatio": 5.62,
     "latestDate": "2026-06-12",
@@ -21925,40 +23528,6 @@
       "date": "2026-09-25",
       "ratio": 19.6,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "7199": {
-  "secCode": "7199",
-  "issuerName": "プレミアグループ株式会社",
-  "holders": [
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 39.0,
-    "latestDate": "2026-09-25",
-    "reportCount": 4,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 1.5,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-22",
-      "ratio": 1.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-23",
-      "ratio": 1.18,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-25",
-      "ratio": 39.0,
-      "type": "新規"
      }
     ]
    }
@@ -22411,74 +23980,6 @@
    }
   ]
  },
- "8022": {
-  "secCode": "8022",
-  "issuerName": "美津濃株式会社",
-  "holders": [
-   {
-    "filerKey": "三井住友信託銀行",
-    "latestRatio": 77.0,
-    "latestDate": "2026-09-24",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-24",
-      "ratio": 77.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友ＤＳアセットマネジメント",
-    "latestRatio": 6.87,
-    "latestDate": "2026-08-24",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 5.8,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-24",
-      "ratio": 6.87,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "グランサム、マヨ、ヴァン オッテルロー アンド カンパニー エルエルシー",
-    "latestRatio": 6.08,
-    "latestDate": "2026-06-25",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-19",
-      "ratio": 5.01,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-25",
-      "ratio": 6.08,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 1.31,
-    "latestDate": "2026-05-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-22",
-      "ratio": 1.31,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "2980": {
   "secCode": "2980",
   "issuerName": "ＳＲＥホールディングス株式会社",
@@ -22752,6 +24253,61 @@
    }
   ]
  },
+ "2978": {
+  "secCode": "2978",
+  "issuerName": "株式会社ツクルバ",
+  "holders": [
+   {
+    "filerKey": "村上浩輝",
+    "latestRatio": 18.27,
+    "latestDate": "2026-05-08",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-08",
+      "ratio": 18.27,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "ＰＫＳＨＡ Ｔｅｃｈｎｏｌｏｇｙ",
+    "latestRatio": 10.35,
+    "latestDate": "2026-04-22",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-04-22",
+      "ratio": 7.62,
+      "type": "変更"
+     },
+     {
+      "date": "2026-04-22",
+      "ratio": 10.35,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "中村真広",
+    "latestRatio": 2.98,
+    "latestDate": "2026-09-24",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-09-18",
+      "ratio": 2.98,
+      "type": "新規"
+     },
+     {
+      "date": "2026-09-24",
+      "ratio": 2.98,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
  "1860": {
   "secCode": "1860",
   "issuerName": "戸田建設株式会社",
@@ -22784,64 +24340,6 @@
       "date": "2026-05-13",
       "ratio": 13.5,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "4676": {
-  "secCode": "4676",
-  "issuerName": "株式会社フジ・メディア・ホールディングス",
-  "holders": [
-   {
-    "filerKey": "東宝",
-    "latestRatio": 8.62,
-    "latestDate": "2026-09-17",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-17",
-      "ratio": 8.62,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "大和証券",
-    "latestRatio": 2.43,
-    "latestDate": "2026-09-24",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-24",
-      "ratio": 2.43,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＳＢＩホールディングス",
-    "latestRatio": 2.37,
-    "latestDate": "2026-04-17",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-17",
-      "ratio": 2.37,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "エスグラントコーポレーション",
-    "latestRatio": 1.31,
-    "latestDate": "2026-04-15",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-15",
-      "ratio": 1.31,
-      "type": "新規"
      }
     ]
    }
@@ -24055,57 +25553,19 @@
    }
   ]
  },
- "1786": {
-  "secCode": "1786",
-  "issuerName": "オリエンタル白石株式会社",
+ "9240": {
+  "secCode": "9240",
+  "issuerName": "株式会社デリバリーコンサルティング",
   "holders": [
    {
-    "filerKey": "伊藤忠商事",
-    "latestRatio": 22.43,
+    "filerKey": "ＭＦアセット",
+    "latestRatio": 7.6,
     "latestDate": "2026-09-16",
-    "reportCount": 5,
+    "reportCount": 1,
     "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 18.15,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-21",
-      "ratio": 19.21,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-12",
-      "ratio": 20.27,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-26",
-      "ratio": 21.41,
-      "type": "新規"
-     },
      {
       "date": "2026-09-16",
-      "ratio": 22.43,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 1.28,
-    "latestDate": "2026-07-06",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 0.0,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-06",
-      "ratio": 1.28,
+      "ratio": 7.6,
       "type": "新規"
      }
     ]
@@ -24231,6 +25691,38 @@
    }
   ]
  },
+ "3662": {
+  "secCode": "3662",
+  "issuerName": "株式会社エイチームホールディングス",
+  "holders": [
+   {
+    "filerKey": "ＡＰＩＰ， Ｉｎｃ．",
+    "latestRatio": 22.08,
+    "latestDate": "2026-09-16",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-09-16",
+      "ratio": 22.08,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "林 高生",
+    "latestRatio": 3.75,
+    "latestDate": "2026-06-09",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-06-09",
+      "ratio": 3.75,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
  "548A": {
   "secCode": "548A",
   "issuerName": "株式会社システムエグゼ",
@@ -24303,25 +25795,6 @@
       "date": "2026-09-15",
       "ratio": 8.68,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "1736": {
-  "secCode": "1736",
-  "issuerName": "株式会社オーテック",
-  "holders": [
-   {
-    "filerKey": "光通信",
-    "latestRatio": 7.0,
-    "latestDate": "2026-09-15",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-15",
-      "ratio": 7.0,
-      "type": "新規"
      }
     ]
    }
@@ -24497,35 +25970,6 @@
      {
       "date": "2026-09-15",
       "ratio": 6.19,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "6882": {
-  "secCode": "6882",
-  "issuerName": "株式会社三社電機製作所",
-  "holders": [
-   {
-    "filerKey": "合同会社みやしろ",
-    "latestRatio": 4.54,
-    "latestDate": "2026-09-15",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 5.07,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-11",
-      "ratio": 5.07,
-      "type": "変更"
-     },
-     {
-      "date": "2026-09-15",
-      "ratio": 4.54,
       "type": "新規"
      }
     ]
@@ -25722,56 +27166,6 @@
    }
   ]
  },
- "6574": {
-  "secCode": "6574",
-  "issuerName": "アクセルマーク株式会社",
-  "holders": [
-   {
-    "filerKey": "コンヴァノ",
-    "latestRatio": 68.9,
-    "latestDate": "2026-07-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-02",
-      "ratio": 68.9,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 68.9,
-      "type": "変更"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＮＴ",
-    "latestRatio": 61.49,
-    "latestDate": "2026-09-10",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-09-10",
-      "ratio": 61.49,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ディメンショナル",
-    "latestRatio": 7.32,
-    "latestDate": "2026-08-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-20",
-      "ratio": 7.32,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "6218": {
   "secCode": "6218",
   "issuerName": "エンシュウ株式会社",
@@ -25895,43 +27289,6 @@
      {
       "date": "2026-09-09",
       "ratio": 1.72,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "1802": {
-  "secCode": "1802",
-  "issuerName": "株式会社大林組",
-  "holders": [
-   {
-    "filerKey": "野村アセットマネジメント",
-    "latestRatio": 3.0,
-    "latestDate": "2026-07-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 3.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ブラックロック・ジャパン",
-    "latestRatio": 1.95,
-    "latestDate": "2026-09-09",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-06",
-      "ratio": 1.98,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-09",
-      "ratio": 1.95,
       "type": "新規"
      }
     ]
@@ -26109,30 +27466,6 @@
      {
       "date": "2026-09-08",
       "ratio": 42.36,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "5905": {
-  "secCode": "5905",
-  "issuerName": "日本製罐株式会社",
-  "holders": [
-   {
-    "filerKey": "みみっく",
-    "latestRatio": 11.66,
-    "latestDate": "2026-09-08",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-28",
-      "ratio": 10.59,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-08",
-      "ratio": 11.66,
       "type": "新規"
      }
     ]
@@ -26691,97 +28024,6 @@
      {
       "date": "2026-09-07",
       "ratio": 5.07,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "3660": {
-  "secCode": "3660",
-  "issuerName": "株式会社アイスタイル",
-  "holders": [
-   {
-    "filerKey": "アマゾン・ドット・コム・インク",
-    "latestRatio": 9.29,
-    "latestDate": "2026-08-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-20",
-      "ratio": 9.29,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "アセットマネジメントＯｎｅ",
-    "latestRatio": 6.17,
-    "latestDate": "2026-09-07",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 4.99,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 5.11,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-07",
-      "ratio": 6.17,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友ＤＳアセットマネジメント",
-    "latestRatio": 4.23,
-    "latestDate": "2026-07-07",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 4.23,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "吉松 徹郎",
-    "latestRatio": 2.61,
-    "latestDate": "2026-09-04",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-07-02",
-      "ratio": 7.13,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-04",
-      "ratio": 6.96,
-      "type": "新規"
-     },
-     {
-      "date": "2026-09-04",
-      "ratio": 2.61,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友銀行",
-    "latestRatio": 0.0,
-    "latestDate": "2026-08-21",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-21",
-      "ratio": 0.0,
       "type": "新規"
      }
     ]
@@ -29209,6 +30451,40 @@
    }
   ]
  },
+ "4599": {
+  "secCode": "4599",
+  "issuerName": "株式会社ステムリム",
+  "holders": [
+   {
+    "filerKey": "冨田 憲介",
+    "latestRatio": 4.84,
+    "latestDate": "2026-08-27",
+    "reportCount": 4,
+    "trend": [
+     {
+      "date": "2026-07-07",
+      "ratio": 8.02,
+      "type": "新規"
+     },
+     {
+      "date": "2026-07-21",
+      "ratio": 7.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-20",
+      "ratio": 6.05,
+      "type": "新規"
+     },
+     {
+      "date": "2026-08-27",
+      "ratio": 4.84,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
  "5621": {
   "secCode": "5621",
   "issuerName": "株式会社ヒューマンテクノロジーズ",
@@ -29286,18 +30562,8 @@
     "filerKey": "ＰＫＳＨＡ Ｔｅｃｈｎｏｌｏｇｙ",
     "latestRatio": 31.98,
     "latestDate": "2026-08-26",
-    "reportCount": 3,
+    "reportCount": 1,
     "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 7.62,
-      "type": "変更"
-     },
-     {
-      "date": "2026-04-22",
-      "ratio": 10.35,
-      "type": "新規"
-     },
      {
       "date": "2026-08-26",
       "ratio": 31.98,
@@ -30897,152 +32163,6 @@
    }
   ]
  },
- "4078": {
-  "secCode": "4078",
-  "issuerName": "堺化学工業株式会社",
-  "holders": [
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 9.0,
-    "latestDate": "2026-06-19",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-19",
-      "ratio": 9.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ＳＨ Ｉｎｖｅｓｔｍｅｎｔ， Ｉｎｃ",
-    "latestRatio": 5.93,
-    "latestDate": "2026-08-20",
-    "reportCount": 14,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 13.66,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-15",
-      "ratio": 12.46,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-17",
-      "ratio": 13.66,
-      "type": "変更"
-     },
-     {
-      "date": "2026-07-17",
-      "ratio": 12.46,
-      "type": "変更"
-     },
-     {
-      "date": "2026-07-17",
-      "ratio": 11.09,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-29",
-      "ratio": 9.84,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-13",
-      "ratio": 8.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-14",
-      "ratio": 13.66,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-14",
-      "ratio": 9.84,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-14",
-      "ratio": 11.09,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-14",
-      "ratio": 12.46,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-17",
-      "ratio": 6.69,
-      "type": "新規"
-     },
-     {
-      "date": "2026-08-20",
-      "ratio": 7.1,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-20",
-      "ratio": 5.93,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "ゼナーアセットマネジメントエルエルピー",
-    "latestRatio": 4.97,
-    "latestDate": "2026-06-11",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-21",
-      "ratio": 9.29,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-10",
-      "ratio": 7.24,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-11",
-      "ratio": 4.97,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友ＤＳアセットマネジメント",
-    "latestRatio": 3.88,
-    "latestDate": "2026-08-06",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-06",
-      "ratio": 3.88,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "三井住友トラスト・アセットマネジメント",
-    "latestRatio": 2.97,
-    "latestDate": "2026-06-04",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-06-04",
-      "ratio": 2.97,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "8050": {
   "secCode": "8050",
   "issuerName": "セイコーグループ株式会社",
@@ -32127,61 +33247,6 @@
      {
       "date": "2026-05-22",
       "ratio": 1.74,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
- "9625": {
-  "secCode": "9625",
-  "issuerName": "株式会社セレス",
-  "holders": [
-   {
-    "filerKey": "光通信",
-    "latestRatio": 7.77,
-    "latestDate": "2026-08-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-12",
-      "ratio": 7.77,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "都木 聡",
-    "latestRatio": 5.97,
-    "latestDate": "2026-08-05",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-08-05",
-      "ratio": 5.97,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "Ｉｎｖｅｓｃｏ Ｃａｐｉｔａｌ Ｍａｎａｇｅｍｅｎｔ ＬＬＣ",
-    "latestRatio": 1.41,
-    "latestDate": "2026-08-07",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-07-07",
-      "ratio": 5.86,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-08",
-      "ratio": 5.86,
-      "type": "変更"
-     },
-     {
-      "date": "2026-08-07",
-      "ratio": 1.41,
       "type": "新規"
      }
     ]
@@ -33734,6 +34799,25 @@
    }
   ]
  },
+ "604A": {
+  "secCode": "604A",
+  "issuerName": "株式会社ビーエイブル",
+  "holders": [
+   {
+    "filerKey": "佐藤 順英",
+    "latestRatio": 17.69,
+    "latestDate": "2026-08-05",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-05",
+      "ratio": 17.69,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
  "157A": {
   "secCode": "157A",
   "issuerName": "グリーンモンスター株式会社",
@@ -33948,6 +35032,38 @@
       "date": "2026-08-04",
       "ratio": 22.81,
       "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "218A": {
+  "secCode": "218A",
+  "issuerName": "株式会社Ｌｉｂｅｒａｗａｒｅ",
+  "holders": [
+   {
+    "filerKey": "閔 弘圭",
+    "latestRatio": 17.55,
+    "latestDate": "2026-08-04",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-08-04",
+      "ratio": 17.55,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "野村證券",
+    "latestRatio": 2.0,
+    "latestDate": "2026-04-21",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-04-21",
+      "ratio": 2.0,
+      "type": "新規"
      }
     ]
    }
@@ -34755,30 +35871,6 @@
    }
   ]
  },
- "4990": {
-  "secCode": "4990",
-  "issuerName": "昭和化学工業株式会社",
-  "holders": [
-   {
-    "filerKey": "シグマ",
-    "latestRatio": 16.18,
-    "latestDate": "2026-07-29",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-07-10",
-      "ratio": 16.18,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-29",
-      "ratio": 16.18,
-      "type": "変更"
-     }
-    ]
-   }
-  ]
- },
  "4584": {
   "secCode": "4584",
   "issuerName": "キッズウェル・バイオ株式会社",
@@ -35110,48 +36202,6 @@
       "date": "2026-07-27",
       "ratio": 2.5,
       "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "6951": {
-  "secCode": "6951",
-  "issuerName": "日本電子株式会社",
-  "holders": [
-   {
-    "filerKey": "野村證券",
-    "latestRatio": 42.0,
-    "latestDate": "2026-07-24",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-07-24",
-      "ratio": 42.0,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "オービス・インベストメント・マネジメント・リミテッド",
-    "latestRatio": 8.85,
-    "latestDate": "2026-07-07",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 5.38,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-05",
-      "ratio": 7.47,
-      "type": "新規"
-     },
-     {
-      "date": "2026-07-07",
-      "ratio": 8.85,
-      "type": "新規"
      }
     ]
    }
@@ -36266,33 +37316,10 @@
    }
   ]
  },
- "5582": {
-  "secCode": "5582",
-  "issuerName": "（株）グリッド",
+ "350A": {
+  "secCode": "350A",
+  "issuerName": "デジタルグリッド株式会社",
   "holders": [
-   {
-    "filerKey": "りそなアセットマネジメント",
-    "latestRatio": 8.05,
-    "latestDate": "2026-06-22",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-04-27",
-      "ratio": 10.26,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-26",
-      "ratio": 9.25,
-      "type": "新規"
-     },
-     {
-      "date": "2026-06-22",
-      "ratio": 8.05,
-      "type": "新規"
-     }
-    ]
-   },
    {
     "filerKey": "豊田 祐介",
     "latestRatio": 8.04,
@@ -36315,19 +37342,6 @@
      {
       "date": "2026-07-22",
       "ratio": 4.59,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "アセットマネジメントＯｎｅ",
-    "latestRatio": 2.61,
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 2.61,
       "type": "新規"
      }
     ]
@@ -40251,6 +41265,48 @@
    }
   ]
  },
+ "5582": {
+  "secCode": "5582",
+  "issuerName": "（株）グリッド",
+  "holders": [
+   {
+    "filerKey": "りそなアセットマネジメント",
+    "latestRatio": 8.05,
+    "latestDate": "2026-06-22",
+    "reportCount": 3,
+    "trend": [
+     {
+      "date": "2026-04-27",
+      "ratio": 10.26,
+      "type": "新規"
+     },
+     {
+      "date": "2026-05-26",
+      "ratio": 9.25,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-22",
+      "ratio": 8.05,
+      "type": "新規"
+     }
+    ]
+   },
+   {
+    "filerKey": "アセットマネジメントＯｎｅ",
+    "latestRatio": 2.61,
+    "latestDate": "2026-05-12",
+    "reportCount": 1,
+    "trend": [
+     {
+      "date": "2026-05-12",
+      "ratio": 2.61,
+      "type": "新規"
+     }
+    ]
+   }
+  ]
+ },
  "5016": {
   "secCode": "5016",
   "issuerName": "ＪＸ金属株式会社",
@@ -40797,6 +41853,30 @@
      {
       "date": "2026-06-03",
       "ratio": 8.15,
+      "type": "変更"
+     }
+    ]
+   }
+  ]
+ },
+ "9556": {
+  "secCode": "9556",
+  "issuerName": "ＩＮＴＬＯＯＰ株式会社",
+  "holders": [
+   {
+    "filerKey": "林 博文",
+    "latestRatio": 49.39,
+    "latestDate": "2026-06-18",
+    "reportCount": 2,
+    "trend": [
+     {
+      "date": "2026-06-17",
+      "ratio": 49.39,
+      "type": "新規"
+     },
+     {
+      "date": "2026-06-18",
+      "ratio": 49.39,
       "type": "変更"
      }
     ]
@@ -43769,35 +44849,6 @@
    }
   ]
  },
- "6676": {
-  "secCode": "6676",
-  "issuerName": "株式会社バッファロー",
-  "holders": [
-   {
-    "filerKey": "牧 寛之",
-    "latestRatio": 13.19,
-    "latestDate": "2026-05-27",
-    "reportCount": 3,
-    "trend": [
-     {
-      "date": "2026-05-13",
-      "ratio": 18.19,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-15",
-      "ratio": 18.19,
-      "type": "変更"
-     },
-     {
-      "date": "2026-05-27",
-      "ratio": 13.19,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "8803": {
   "secCode": "8803",
   "issuerName": "平和不動産リート投資法人",
@@ -45340,25 +46391,6 @@
    }
   ]
  },
- "1417": {
-  "secCode": "1417",
-  "issuerName": "（株）ミライト・ワン",
-  "holders": [
-   {
-    "filerKey": "みずほ銀行",
-    "latestRatio": 1.42,
-    "latestDate": "2026-05-12",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-05-12",
-      "ratio": 1.42,
-      "type": "新規"
-     }
-    ]
-   }
-  ]
- },
  "3031": {
   "secCode": "3031",
   "issuerName": "株式会社ラクーンホールディングス",
@@ -45744,30 +46776,6 @@
      {
       "date": "2026-05-07",
       "ratio": 26.66,
-      "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "3329": {
-  "secCode": "3329",
-  "issuerName": "東和フードサービス株式会社",
-  "holders": [
-   {
-    "filerKey": "誠香インベストメント",
-    "latestRatio": 14.05,
-    "latestDate": "2026-05-07",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-05-01",
-      "ratio": 14.05,
-      "type": "新規"
-     },
-     {
-      "date": "2026-05-07",
-      "ratio": 14.05,
       "type": "変更"
      }
     ]
@@ -46227,56 +47235,6 @@
      {
       "date": "2026-04-21",
       "ratio": 44.07,
-      "type": "変更"
-     }
-    ]
-   }
-  ]
- },
- "7901": {
-  "secCode": "7901",
-  "issuerName": "株式会社マツモト",
-  "holders": [
-   {
-    "filerKey": "イノー・アソシエイツ",
-    "latestRatio": 9.83,
-    "latestDate": "2026-04-20",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-20",
-      "ratio": 9.83,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "中村 規",
-    "latestRatio": 8.74,
-    "latestDate": "2026-04-22",
-    "reportCount": 1,
-    "trend": [
-     {
-      "date": "2026-04-22",
-      "ratio": 8.74,
-      "type": "新規"
-     }
-    ]
-   },
-   {
-    "filerKey": "松本 敬三郎",
-    "latestRatio": 7.54,
-    "latestDate": "2026-04-22",
-    "reportCount": 2,
-    "trend": [
-     {
-      "date": "2026-04-20",
-      "ratio": 7.54,
-      "type": "新規"
-     },
-     {
-      "date": "2026-04-22",
-      "ratio": 7.54,
       "type": "変更"
      }
     ]
