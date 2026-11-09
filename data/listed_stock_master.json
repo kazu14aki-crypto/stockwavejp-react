@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T08:40:30+09:00",
+  "updated_at": "2026-11-09T08:46:37+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
   "count": 3757,
@@ -10337,7 +10337,7 @@
     {
       "ticker": "3918.T",
       "code": "3918",
-      "name": "PCIホールディングス株式会社",
+      "name": "PCIソリューションズ株式会社",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -13593,7 +13593,7 @@
     {
       "ticker": "4444.T",
       "code": "4444",
-      "name": "株式会社インフォネット",
+      "name": "株式会社インフォネットグループ",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -23209,6 +23209,16 @@
       "curated": false
     },
     {
+      "ticker": "6550.T",
+      "code": "6550",
+      "name": "株式会社LTV-X",
+      "market": "上場",
+      "industry": "情報・通信業",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
       "ticker": "6551.T",
       "code": "6551",
       "name": "株式会社ツナググループ・ホールディングス",
@@ -23271,9 +23281,9 @@
     {
       "ticker": "6560.T",
       "code": "6560",
-      "name": "株式会社エル・ティー・エス",
+      "name": "Allganize Holdings株式会社",
       "market": "上場",
-      "industry": "サービス業",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -23431,7 +23441,7 @@
     {
       "ticker": "6580.T",
       "code": "6580",
-      "name": "株式会社ライトアップ",
+      "name": "株式会社estie",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -37447,16 +37457,6 @@
       "ticker": "9687.T",
       "code": "9687",
       "name": "株式会社KSK",
-      "market": "上場",
-      "industry": "情報・通信業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "9691.T",
-      "code": "9691",
-      "name": "株式会社両毛システムズ",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
