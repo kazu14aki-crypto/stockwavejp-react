@@ -1,7 +1,16 @@
 {
-  "updated_at": "2026/11/07",
+  "updated_at": "2026/11/10",
   "count": 2020,
   "items": [
+    {
+      "secCode": "5984",
+      "issuerName": "兼房株式会社",
+      "latestDate": "2026-11-09",
+      "holderCount": 10,
+      "topHolder": "大口興産株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 35.74
+    },
     {
       "secCode": "3979",
       "issuerName": "株式会社うるる",
@@ -17029,15 +17038,6 @@
       "topHolder": "日茂株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 35.9
-    },
-    {
-      "secCode": "5984",
-      "issuerName": "兼房株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "大口興産株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 35.74
     },
     {
       "secCode": "1960",
