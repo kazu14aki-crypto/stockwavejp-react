@@ -1,0 +1,218 @@
+{
+  "secCode": "7513",
+  "issuerName": "株式会社コジマ",
+  "updated_at": "2026/11/14 17:40 JST",
+  "latestDate": "2026-11-13",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ビックカメラ",
+      "shares": 39000000,
+      "ratio": 50.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 3059000,
+      "ratio": 3.97,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "小島　章利",
+      "shares": 2339000,
+      "ratio": 3.03,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "寺﨑　佳子",
+      "shares": 2314000,
+      "ratio": 3.0,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社ケーケーワイ",
+      "shares": 1540000,
+      "ratio": 1.99,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "佐藤　由姫子",
+      "shares": 983000,
+      "ratio": 1.27,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "小島　將人",
+      "shares": 930000,
+      "ratio": 1.2,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "小島　久幸",
+      "shares": 864000,
+      "ratio": 1.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行\n（信託口）",
+      "shares": 699000,
+      "ratio": 0.9,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "コジマ従業員持株会",
+      "shares": 694000,
+      "ratio": 0.9,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 52.61,
+      "trust": 4.87,
+      "individual": 9.62,
+      "employee": 0.9
+    },
+    "individual_total": 9.62,
+    "top10_total": 68.0
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-13",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第64期(2025/09/01－2026/08/31)",
+      "docID": "S100ZH4D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ビックカメラ",
+          "shares": 39000000,
+          "ratio": 50.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 3059000,
+          "ratio": 3.97,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "小島　章利",
+          "shares": 2339000,
+          "ratio": 3.03,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "寺﨑　佳子",
+          "shares": 2314000,
+          "ratio": 3.0,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社ケーケーワイ",
+          "shares": 1540000,
+          "ratio": 1.99,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "佐藤　由姫子",
+          "shares": 983000,
+          "ratio": 1.27,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "小島　將人",
+          "shares": 930000,
+          "ratio": 1.2,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "小島　久幸",
+          "shares": 864000,
+          "ratio": 1.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行\n（信託口）",
+          "shares": 699000,
+          "ratio": 0.9,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "コジマ従業員持株会",
+          "shares": 694000,
+          "ratio": 0.9,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 52.61,
+          "trust": 4.87,
+          "individual": 9.62,
+          "employee": 0.9
+        },
+        "individual_total": 9.62,
+        "top10_total": 68.0
+      }
+    }
+  ]
+}
