@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T08:46:37+09:00",
+  "updated_at": "2026-11-16T08:59:41+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
   "count": 3757,
@@ -6721,7 +6721,7 @@
     {
       "ticker": "3182.T",
       "code": "3182",
-      "name": "オイシックス・ラ・大地株式会社",
+      "name": "オイシックス株式会社",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -18376,16 +18376,6 @@
       "curated": false
     },
     {
-      "ticker": "5581.T",
-      "code": "5581",
-      "name": "株式会社カイテクノロジー",
-      "market": "上場",
-      "industry": "情報・通信業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "5582.T",
       "code": "5582",
       "name": "株式会社グリッド",
@@ -21469,6 +21459,16 @@
       "curated": false
     },
     {
+      "ticker": "6270.T",
+      "code": "6270",
+      "name": "akippa株式会社",
+      "market": "上場",
+      "industry": "情報・通信業",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
       "ticker": "6272.T",
       "code": "6272",
       "name": "レオン自動機株式会社",
@@ -23067,6 +23067,16 @@
       "curated": true
     },
     {
+      "ticker": "6530.T",
+      "code": "6530",
+      "name": "MabGenesis株式会社",
+      "market": "上場",
+      "industry": "医薬品",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
       "ticker": "6532.T",
       "code": "6532",
       "name": "株式会社ベイカレント",
@@ -23526,6 +23536,16 @@
       "name": "エブレン株式会社",
       "market": "上場",
       "industry": "電気機器",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
+      "ticker": "6600.T",
+      "code": "6600",
+      "name": "株式会社RECEPTIONIST",
+      "market": "上場",
+      "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
       "themes": [],
       "curated": false
@@ -26235,16 +26255,6 @@
       "ticker": "7081.T",
       "code": "7081",
       "name": "コーユーレンティア株式会社",
-      "market": "上場",
-      "industry": "サービス業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "7082.T",
-      "code": "7082",
-      "name": "株式会社ジモティー",
       "market": "上場",
       "industry": "サービス業",
       "filer_type": "内国法人・組合",
@@ -29345,16 +29355,6 @@
       "ticker": "7707.T",
       "code": "7707",
       "name": "プレシジョン・システム・サイエンス株式会社",
-      "market": "上場",
-      "industry": "精密機器",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "7709.T",
-      "code": "7709",
-      "name": "クボテック株式会社",
       "market": "上場",
       "industry": "精密機器",
       "filer_type": "内国法人・組合",
