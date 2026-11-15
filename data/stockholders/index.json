@@ -1,7 +1,205 @@
 {
-  "updated_at": "2026/11/10",
-  "count": 2020,
+  "updated_at": "2026/11/14",
+  "count": 2027,
   "items": [
+    {
+      "secCode": "6925",
+      "issuerName": "ウシオ電機株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 2.96
+    },
+    {
+      "secCode": "7062",
+      "issuerName": "株式会社フレアス",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "株式会社優美",
+      "topHolderCategory": "corporate",
+      "individualTotal": 29.78
+    },
+    {
+      "secCode": "6306",
+      "issuerName": "日工株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "8316",
+      "issuerName": "株式会社三井住友フィナンシャルグループ",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "topHolderCategory": "trust",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "7513",
+      "issuerName": "株式会社コジマ",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "株式会社ビックカメラ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 9.62
+    },
+    {
+      "secCode": "3719",
+      "issuerName": "ＡＩストーム株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "GX PARTNERS CO., LIMITED（常任代理人 三田証券株式会社）",
+      "topHolderCategory": "securities",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "6237",
+      "issuerName": "株式会社イワキ",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "CHARON　FINANCE　GMBH\n（常任代理人　株式会社三菱UFJ銀行）",
+      "topHolderCategory": "financial",
+      "individualTotal": 21.06
+    },
+    {
+      "secCode": "4100",
+      "issuerName": "戸田工業株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "TDK株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 8.55
+    },
+    {
+      "secCode": "6069",
+      "issuerName": "トレンダーズ株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "㈱アイスタイル",
+      "topHolderCategory": "individual",
+      "individualTotal": 37.83
+    },
+    {
+      "secCode": "1914",
+      "issuerName": "日本基礎技術株式会社",
+      "latestDate": "2026-11-13",
+      "holderCount": 10,
+      "topHolder": "日本基礎技術取引先持株会",
+      "topHolderCategory": "employee",
+      "individualTotal": 2.12
+    },
+    {
+      "secCode": "6458",
+      "issuerName": "新晃工業株式会社",
+      "latestDate": "2026-11-12",
+      "holderCount": 10,
+      "topHolder": "株式会社明晃",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "7791",
+      "issuerName": "ドリームベッド株式会社",
+      "latestDate": "2026-11-12",
+      "holderCount": 10,
+      "topHolder": "ドリームベッド従業員持株会",
+      "topHolderCategory": "employee",
+      "individualTotal": 24.23
+    },
+    {
+      "secCode": "9941",
+      "issuerName": "太洋物産株式会社",
+      "latestDate": "2026-11-11",
+      "holderCount": 10,
+      "topHolder": "ORCHID PLUS PTE.LTD.　　　　　　　　　　　　\n（常任代理人　福和　明子）",
+      "topHolderCategory": "corporate",
+      "individualTotal": 16.42
+    },
+    {
+      "secCode": "4599",
+      "issuerName": "株式会社ステムリム",
+      "latestDate": "2026-11-11",
+      "holderCount": 10,
+      "topHolder": "玉井　克人",
+      "topHolderCategory": "individual",
+      "individualTotal": 44.4
+    },
+    {
+      "secCode": "6707",
+      "issuerName": "サンケン電気株式会社",
+      "latestDate": "2026-11-11",
+      "holderCount": 10,
+      "topHolder": "ゴールドマン・サックス・インターナショナル（常任代理人　ゴールドマン・サックス証券株式会社）",
+      "topHolderCategory": "securities",
+      "individualTotal": 0
+    },
+    {
+      "secCode": "7091",
+      "issuerName": "株式会社リビングプラットフォーム",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "株式会社HCA",
+      "topHolderCategory": "corporate",
+      "individualTotal": 22.31
+    },
+    {
+      "secCode": "4385",
+      "issuerName": "株式会社メルカリ",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "山田 進太郎",
+      "topHolderCategory": "individual",
+      "individualTotal": 24.84
+    },
+    {
+      "secCode": "9414",
+      "issuerName": "日本ＢＳ放送株式会社",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "株式会社ビックカメラ",
+      "topHolderCategory": "corporate",
+      "individualTotal": 2.87
+    },
+    {
+      "secCode": "9699",
+      "issuerName": "ニシオホールディングス株式会社",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "サンコー機販㈱",
+      "topHolderCategory": "individual",
+      "individualTotal": 20.8
+    },
+    {
+      "secCode": "3035",
+      "issuerName": "ケイティケイ株式会社",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "青雲堂株式会社",
+      "topHolderCategory": "corporate",
+      "individualTotal": 16.18
+    },
+    {
+      "secCode": "9051",
+      "issuerName": "センコン物流株式会社",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "ロジスティード㈱",
+      "topHolderCategory": "individual",
+      "individualTotal": 38.61
+    },
+    {
+      "secCode": "6989",
+      "issuerName": "北陸電気工業株式会社",
+      "latestDate": "2026-11-10",
+      "holderCount": 10,
+      "topHolder": "株式会社フェローテック",
+      "topHolderCategory": "corporate",
+      "individualTotal": 0
+    },
     {
       "secCode": "5984",
       "issuerName": "兼房株式会社",
@@ -217,15 +415,6 @@
       "topHolder": "株式会社イナバホールディングス",
       "topHolderCategory": "corporate",
       "individualTotal": 16.51
-    },
-    {
-      "secCode": "4599",
-      "issuerName": "株式会社ステムリム",
-      "latestDate": "2026-10-27",
-      "holderCount": 10,
-      "topHolder": "玉井　克人",
-      "topHolderCategory": "individual",
-      "individualTotal": 44.4
     },
     {
       "secCode": "3816",
@@ -2242,15 +2431,6 @@
       "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
       "topHolderCategory": "trust",
       "individualTotal": 0
-    },
-    {
-      "secCode": "4385",
-      "issuerName": "株式会社メルカリ",
-      "latestDate": "2026-09-17",
-      "holderCount": 10,
-      "topHolder": "山田 進太郎",
-      "topHolderCategory": "individual",
-      "individualTotal": 24.84
     },
     {
       "secCode": "7832",
@@ -4764,15 +4944,6 @@
       "individualTotal": 29.98
     },
     {
-      "secCode": "6069",
-      "issuerName": "トレンダーズ株式会社",
-      "latestDate": "2026-06-30",
-      "holderCount": 10,
-      "topHolder": "㈱アイスタイル",
-      "topHolderCategory": "individual",
-      "individualTotal": 37.83
-    },
-    {
       "secCode": "6706",
       "issuerName": "電気興業株式会社",
       "latestDate": "2026-06-30",
@@ -5536,15 +5707,6 @@
       "topHolder": "スマートキャピタル株式会社",
       "topHolderCategory": "corporate",
       "individualTotal": 2.95
-    },
-    {
-      "secCode": "7062",
-      "issuerName": "株式会社フレアス",
-      "latestDate": "2026-06-26",
-      "holderCount": 10,
-      "topHolder": "株式会社優美",
-      "topHolderCategory": "corporate",
-      "individualTotal": 29.78
     },
     {
       "secCode": "5287",
@@ -6663,15 +6825,6 @@
       "individualTotal": 6.21
     },
     {
-      "secCode": "6925",
-      "issuerName": "ウシオ電機株式会社",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 2.96
-    },
-    {
       "secCode": "8742",
       "issuerName": "株式会社小林洋行",
       "latestDate": "2026-06-25",
@@ -6895,15 +7048,6 @@
       "topHolder": "株式会社富士教育創研",
       "topHolderCategory": "corporate",
       "individualTotal": 16.5
-    },
-    {
-      "secCode": "7091",
-      "issuerName": "株式会社リビングプラットフォーム",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "株式会社HCA",
-      "topHolderCategory": "corporate",
-      "individualTotal": 22.31
     },
     {
       "secCode": "6257",
@@ -8490,15 +8634,6 @@
       "individualTotal": 19.4
     },
     {
-      "secCode": "9051",
-      "issuerName": "センコン物流株式会社",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "ロジスティード㈱",
-      "topHolderCategory": "individual",
-      "individualTotal": 38.61
-    },
-    {
       "secCode": "6647",
       "issuerName": "森尾電機株式会社",
       "latestDate": "2026-06-25",
@@ -9289,15 +9424,6 @@
       "topHolder": "有限会社オリベ興産",
       "topHolderCategory": "corporate",
       "individualTotal": 18.15
-    },
-    {
-      "secCode": "6989",
-      "issuerName": "北陸電気工業株式会社",
-      "latestDate": "2026-06-25",
-      "holderCount": 10,
-      "topHolder": "株式会社フェローテック",
-      "topHolderCategory": "corporate",
-      "individualTotal": 0
     },
     {
       "secCode": "9761",
@@ -11100,15 +11226,6 @@
       "individualTotal": 13.82
     },
     {
-      "secCode": "6306",
-      "issuerName": "日工株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "日本マスタートラスト信託銀行株式会社（信託口）",
-      "topHolderCategory": "trust",
-      "individualTotal": 0
-    },
-    {
       "secCode": "9310",
       "issuerName": "日本トランスシティ株式会社",
       "latestDate": "2026-06-24",
@@ -12252,15 +12369,6 @@
       "individualTotal": 75.69
     },
     {
-      "secCode": "6707",
-      "issuerName": "サンケン電気株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "ゴールドマン・サックス・インターナショナル（常任代理人　ゴールドマン・サックス証券株式会社）",
-      "topHolderCategory": "securities",
-      "individualTotal": 0
-    },
-    {
       "secCode": "3773",
       "issuerName": "株式会社アドバンスト・メディア",
       "latestDate": "2026-06-24",
@@ -12477,15 +12585,6 @@
       "individualTotal": 0
     },
     {
-      "secCode": "6237",
-      "issuerName": "株式会社イワキ",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "CHARON　FINANCE　GMBH\n（常任代理人　株式会社三菱UFJ銀行）",
-      "topHolderCategory": "financial",
-      "individualTotal": 21.06
-    },
-    {
       "secCode": "6772",
       "issuerName": "東京コスモス電機株式会社",
       "latestDate": "2026-06-24",
@@ -12529,15 +12628,6 @@
       "topHolder": "日本マスタートラスト信託銀行株式会社(信託口)",
       "topHolderCategory": "trust",
       "individualTotal": 3.03
-    },
-    {
-      "secCode": "4100",
-      "issuerName": "戸田工業株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "TDK株式会社",
-      "topHolderCategory": "corporate",
-      "individualTotal": 8.55
     },
     {
       "secCode": "5480",
@@ -13042,15 +13132,6 @@
       "topHolder": "有限会社おおとり",
       "topHolderCategory": "corporate",
       "individualTotal": 4.0
-    },
-    {
-      "secCode": "7791",
-      "issuerName": "ドリームベッド株式会社",
-      "latestDate": "2026-06-24",
-      "holderCount": 10,
-      "topHolder": "ドリームベッド従業員持株会",
-      "topHolderCategory": "employee",
-      "individualTotal": 24.23
     },
     {
       "secCode": "9407",
@@ -17778,15 +17859,6 @@
       "individualTotal": 17.05
     },
     {
-      "secCode": "6458",
-      "issuerName": "新晃工業株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "株式会社明晃",
-      "topHolderCategory": "corporate",
-      "individualTotal": 0
-    },
-    {
       "secCode": "1942",
       "issuerName": "株式会社関電工",
       "latestDate": "2026-06-22",
@@ -18073,15 +18145,6 @@
       "topHolder": "日本マスタートラスト信託銀行株式会社(信託口)",
       "topHolderCategory": "trust",
       "individualTotal": 0
-    },
-    {
-      "secCode": "1914",
-      "issuerName": "日本基礎技術株式会社",
-      "latestDate": "2026-06-22",
-      "holderCount": 10,
-      "topHolder": "日本基礎技術取引先持株会",
-      "topHolderCategory": "employee",
-      "individualTotal": 2.12
     },
     {
       "secCode": "6238",
