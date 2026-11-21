@@ -1,0 +1,220 @@
+{
+  "secCode": "4933",
+  "issuerName": "株式会社Ｉ－ｎｅ",
+  "updated_at": "2026/11/21 18:42 JST",
+  "latestDate": "2026-11-20",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社ＣＯＨ",
+      "shares": 7430000,
+      "ratio": 41.78,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大西 洋平",
+      "shares": 1844500,
+      "ratio": 10.37,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "ＴＨＥ ＢＡＮＫ ＯＦ ＮＥＷ ＹＯＲＫ １３３６５２（常任代理人：株式会社みずほ銀行決済営業部）",
+      "shares": 681818,
+      "ratio": 3.83,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 612400,
+      "ratio": 3.44,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 515300,
+      "ratio": 2.89,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本証券金融株式会社",
+      "shares": 422000,
+      "ratio": 2.37,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "杉元 将二",
+      "shares": 210480,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "伊藤 翔哉",
+      "shares": 210000,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "今井 新",
+      "shares": 210000,
+      "ratio": 1.18,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "藤岡 礼記",
+      "shares": 207080,
+      "ratio": 1.16,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.78,
+      "individual": 15.07,
+      "financial": 3.83,
+      "trust": 6.33,
+      "securities": 2.37
+    },
+    "individual_total": 15.07,
+    "top10_total": 69.38
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-20",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第19期(2025/01/01－2025/12/31)",
+      "docID": "S100ZJ2D",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社ＣＯＨ",
+          "shares": 7430000,
+          "ratio": 41.78,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大西 洋平",
+          "shares": 1844500,
+          "ratio": 10.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "ＴＨＥ ＢＡＮＫ ＯＦ ＮＥＷ ＹＯＲＫ １３３６５２（常任代理人：株式会社みずほ銀行決済営業部）",
+          "shares": 681818,
+          "ratio": 3.83,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 612400,
+          "ratio": 3.44,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 515300,
+          "ratio": 2.89,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本証券金融株式会社",
+          "shares": 422000,
+          "ratio": 2.37,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "杉元 将二",
+          "shares": 210480,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "伊藤 翔哉",
+          "shares": 210000,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "今井 新",
+          "shares": 210000,
+          "ratio": 1.18,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "藤岡 礼記",
+          "shares": 207080,
+          "ratio": 1.16,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.78,
+          "individual": 15.07,
+          "financial": 3.83,
+          "trust": 6.33,
+          "securities": 2.37
+        },
+        "individual_total": 15.07,
+        "top10_total": 69.38
+      }
+    }
+  ]
+}

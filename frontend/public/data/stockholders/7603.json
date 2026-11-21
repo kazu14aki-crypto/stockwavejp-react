@@ -1,0 +1,218 @@
+{
+  "secCode": "7603",
+  "issuerName": "ジーイエット株式会社",
+  "updated_at": "2026/11/21 18:43 JST",
+  "latestDate": "2026-11-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "G Future Fund １号投資事業有限責任組合 （無限責任組合員トラストアップ株式会社）",
+      "shares": 9389000,
+      "ratio": 36.7,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社ＳＢＩ証券",
+      "shares": 901000,
+      "ratio": 3.5,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "楽天証券株式会社共有口",
+      "shares": 723000,
+      "ratio": 2.8,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "長　澤　祥　平",
+      "shares": 400000,
+      "ratio": 1.6,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "マックハウス共栄会",
+      "shares": 347000,
+      "ratio": 1.4,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "BNP GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)（常任代理人株式会社三菱ＵＦＪ銀行）",
+      "shares": 252000,
+      "ratio": 1.0,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "美濃屋株式会社",
+      "shares": 200000,
+      "ratio": 0.8,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "J.P.Morgan Securities plc Director Andrew J.Cox（常任代理人ＪＰモルガン証券株式会社）",
+      "shares": 167000,
+      "ratio": 0.7,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本証券金融株式会社",
+      "shares": 152000,
+      "ratio": 0.6,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人シティバンク、エヌ、エイ東京支店）",
+      "shares": 133000,
+      "ratio": 0.5,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "foreign": 38.2,
+      "securities": 7.6,
+      "individual": 3.0,
+      "corporate": 0.8
+    },
+    "individual_total": 3.0,
+    "top10_total": 49.6
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-18",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第36期(2025/03/01－2026/02/28)",
+      "docID": "S100ZINY",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "G Future Fund １号投資事業有限責任組合 （無限責任組合員トラストアップ株式会社）",
+          "shares": 9389000,
+          "ratio": 36.7,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社ＳＢＩ証券",
+          "shares": 901000,
+          "ratio": 3.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "楽天証券株式会社共有口",
+          "shares": 723000,
+          "ratio": 2.8,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "長　澤　祥　平",
+          "shares": 400000,
+          "ratio": 1.6,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "マックハウス共栄会",
+          "shares": 347000,
+          "ratio": 1.4,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BNP GCM CLIENT ACCOUNT JPRD AC ISG (FE-AC)（常任代理人株式会社三菱ＵＦＪ銀行）",
+          "shares": 252000,
+          "ratio": 1.0,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "美濃屋株式会社",
+          "shares": 200000,
+          "ratio": 0.8,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "J.P.Morgan Securities plc Director Andrew J.Cox（常任代理人ＪＰモルガン証券株式会社）",
+          "shares": 167000,
+          "ratio": 0.7,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本証券金融株式会社",
+          "shares": 152000,
+          "ratio": 0.6,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT（常任代理人シティバンク、エヌ、エイ東京支店）",
+          "shares": 133000,
+          "ratio": 0.5,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "foreign": 38.2,
+          "securities": 7.6,
+          "individual": 3.0,
+          "corporate": 0.8
+        },
+        "individual_total": 3.0,
+        "top10_total": 49.6
+      }
+    }
+  ]
+}
