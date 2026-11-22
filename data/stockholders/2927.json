@@ -1,0 +1,218 @@
+{
+  "secCode": "2927",
+  "issuerName": "株式会社ＡＦＣ－ＨＤアムスライフサイエンス",
+  "updated_at": "2026/11/21 18:42 JST",
+  "latestDate": "2026-11-20",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "浅　山　忠　彦",
+      "shares": 2087570,
+      "ratio": 14.34,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "淺　山　雄　彦",
+      "shares": 1181930,
+      "ratio": 8.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "アムスライフサイエンス取引先持株会",
+      "shares": 435500,
+      "ratio": 2.99,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "合同会社センス",
+      "shares": 428400,
+      "ratio": 2.94,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "浅　山　麻衣子",
+      "shares": 310000,
+      "ratio": 2.13,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "浅　山　麻里奈",
+      "shares": 300000,
+      "ratio": 2.06,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "藤　田　圭　亮",
+      "shares": 129167,
+      "ratio": 0.89,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社静岡銀行(常任代理人日本マスタートラスト信託銀行株式会社)",
+      "shares": 124900,
+      "ratio": 0.86,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "藤　田　尚　徳",
+      "shares": 110812,
+      "ratio": 0.76,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "福　地　千　佳",
+      "shares": 93720,
+      "ratio": 0.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 28.94,
+      "employee": 2.99,
+      "corporate": 2.94,
+      "trust": 0.86
+    },
+    "individual_total": 28.94,
+    "top10_total": 35.73
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-20",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第46期(2025/09/01－2026/08/31)",
+      "docID": "S100ZDE3",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "浅　山　忠　彦",
+          "shares": 2087570,
+          "ratio": 14.34,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "淺　山　雄　彦",
+          "shares": 1181930,
+          "ratio": 8.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "アムスライフサイエンス取引先持株会",
+          "shares": 435500,
+          "ratio": 2.99,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "合同会社センス",
+          "shares": 428400,
+          "ratio": 2.94,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "浅　山　麻衣子",
+          "shares": 310000,
+          "ratio": 2.13,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "浅　山　麻里奈",
+          "shares": 300000,
+          "ratio": 2.06,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "藤　田　圭　亮",
+          "shares": 129167,
+          "ratio": 0.89,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社静岡銀行(常任代理人日本マスタートラスト信託銀行株式会社)",
+          "shares": 124900,
+          "ratio": 0.86,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "藤　田　尚　徳",
+          "shares": 110812,
+          "ratio": 0.76,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "福　地　千　佳",
+          "shares": 93720,
+          "ratio": 0.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 28.94,
+          "employee": 2.99,
+          "corporate": 2.94,
+          "trust": 0.86
+        },
+        "individual_total": 28.94,
+        "top10_total": 35.73
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "7447",
+  "issuerName": "ナガイレーベン株式会社",
+  "updated_at": "2026/11/21 18:43 JST",
+  "latestDate": "2026-11-18",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "澤登　一郎",
+      "shares": 5844000,
+      "ratio": 19.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+      "shares": 2314000,
+      "ratio": 7.87,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "NORTHERN TRUST CO.（AVFC）RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+      "shares": 1876000,
+      "ratio": 6.38,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "JP MORGAN CHASE BANK 380055\n（常任代理人　株式会社みずほ銀行決済営業部）",
+      "shares": 1734000,
+      "ratio": 5.9,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "有限会社登龍",
+      "shares": 1455000,
+      "ratio": 4.95,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "澤登　辰郎",
+      "shares": 1050000,
+      "ratio": 3.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 912000,
+      "ratio": 3.1,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "RBC IST 15 PCT NON LENDING ACCOUNT－CLIENT ACCOUNT\n （常任代理人　シティバンク，エヌ・エイ東京支店）",
+      "shares": 850000,
+      "ratio": 2.89,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "澤登　春江",
+      "shares": 623000,
+      "ratio": 2.12,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "水口　洋子",
+      "shares": 592000,
+      "ratio": 2.01,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 27.58,
+      "trust": 10.97,
+      "foreign": 15.17,
+      "corporate": 4.95
+    },
+    "individual_total": 27.58,
+    "top10_total": 58.67
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-18",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第77期(2025/09/01－2026/08/31)",
+      "docID": "S100ZIG2",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "澤登　一郎",
+          "shares": 5844000,
+          "ratio": 19.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（信託口）",
+          "shares": 2314000,
+          "ratio": 7.87,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "NORTHERN TRUST CO.（AVFC）RE FIDELITY FUNDS\n（常任代理人　香港上海銀行東京支店）",
+          "shares": 1876000,
+          "ratio": 6.38,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "JP MORGAN CHASE BANK 380055\n（常任代理人　株式会社みずほ銀行決済営業部）",
+          "shares": 1734000,
+          "ratio": 5.9,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "有限会社登龍",
+          "shares": 1455000,
+          "ratio": 4.95,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "澤登　辰郎",
+          "shares": 1050000,
+          "ratio": 3.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 912000,
+          "ratio": 3.1,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "RBC IST 15 PCT NON LENDING ACCOUNT－CLIENT ACCOUNT\n （常任代理人　シティバンク，エヌ・エイ東京支店）",
+          "shares": 850000,
+          "ratio": 2.89,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "澤登　春江",
+          "shares": 623000,
+          "ratio": 2.12,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "水口　洋子",
+          "shares": 592000,
+          "ratio": 2.01,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 27.58,
+          "trust": 10.97,
+          "foreign": 15.17,
+          "corporate": 4.95
+        },
+        "individual_total": 27.58,
+        "top10_total": 58.67
+      }
+    }
+  ]
+}

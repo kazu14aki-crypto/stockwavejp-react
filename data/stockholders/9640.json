@@ -1,0 +1,216 @@
+{
+  "secCode": "9640",
+  "issuerName": "株式会社セゾンテクノロジー",
+  "updated_at": "2026/11/21 18:43 JST",
+  "latestDate": "2026-11-17",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "株式会社クレディセゾン",
+      "shares": 7588000,
+      "ratio": 46.84,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "株式会社メルコグループ",
+      "shares": 3240000,
+      "ratio": 20.0,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "インタートラスト　トラステイーズ　ケイマン　リミテツド　アズ　トラステイ　オブ　ザ　ユビキタス　マスター　シリーズ　トラスト　メルコ　グループ　マスター　フアンド\n（常任代理人　立花証券株式会社）",
+      "shares": 1167000,
+      "ratio": 7.21,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "イーシーエム　マスターフアンド　エスピーブイ　ワン\n（常任代理人　立花証券株式会社）",
+      "shares": 857000,
+      "ratio": 5.29,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社インテリジェントウェイブ",
+      "shares": 500000,
+      "ratio": 3.09,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "大日本印刷株式会社",
+      "shares": 307000,
+      "ratio": 1.9,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "セゾンテクノロジー社員持株会",
+      "shares": 228000,
+      "ratio": 1.41,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "協和青果株式会社",
+      "shares": 171000,
+      "ratio": 1.06,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社バッファロー",
+      "shares": 81000,
+      "ratio": 0.5,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "富士通株式会社",
+      "shares": 80000,
+      "ratio": 0.49,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 73.88,
+      "securities": 12.5,
+      "employee": 1.41
+    },
+    "individual_total": 0,
+    "top10_total": 87.79
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-17",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第57期(2025/04/01－2026/03/31)",
+      "docID": "S100ZI49",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "株式会社クレディセゾン",
+          "shares": 7588000,
+          "ratio": 46.84,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "株式会社メルコグループ",
+          "shares": 3240000,
+          "ratio": 20.0,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "インタートラスト　トラステイーズ　ケイマン　リミテツド　アズ　トラステイ　オブ　ザ　ユビキタス　マスター　シリーズ　トラスト　メルコ　グループ　マスター　フアンド\n（常任代理人　立花証券株式会社）",
+          "shares": 1167000,
+          "ratio": 7.21,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "イーシーエム　マスターフアンド　エスピーブイ　ワン\n（常任代理人　立花証券株式会社）",
+          "shares": 857000,
+          "ratio": 5.29,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社インテリジェントウェイブ",
+          "shares": 500000,
+          "ratio": 3.09,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "大日本印刷株式会社",
+          "shares": 307000,
+          "ratio": 1.9,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "セゾンテクノロジー社員持株会",
+          "shares": 228000,
+          "ratio": 1.41,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "協和青果株式会社",
+          "shares": 171000,
+          "ratio": 1.06,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社バッファロー",
+          "shares": 81000,
+          "ratio": 0.5,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "富士通株式会社",
+          "shares": 80000,
+          "ratio": 0.49,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 73.88,
+          "securities": 12.5,
+          "employee": 1.41
+        },
+        "individual_total": 0,
+        "top10_total": 87.79
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "secCode": "3607",
+  "issuerName": "株式会社クラウディアホールディングス",
+  "updated_at": "2026/11/21 18:42 JST",
+  "latestDate": "2026-11-20",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "有限会社クラエンタープライズ",
+      "shares": 3512000,
+      "ratio": 38.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "クラウディア従業員持株会",
+      "shares": 310000,
+      "ratio": 3.43,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "倉　正治",
+      "shares": 280000,
+      "ratio": 3.09,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "株式会社丸文",
+      "shares": 269000,
+      "ratio": 2.97,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "クラウディア取引先持株会",
+      "shares": 176000,
+      "ratio": 1.95,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "上野　克美",
+      "shares": 72000,
+      "ratio": 0.8,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "山田　清志",
+      "shares": 59000,
+      "ratio": 0.66,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "今泉　理抄",
+      "shares": 58000,
+      "ratio": 0.64,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "日本生命保険相互会社",
+      "shares": 54000,
+      "ratio": 0.6,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "野﨑　浩司",
+      "shares": 52000,
+      "ratio": 0.57,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 41.73,
+      "employee": 5.38,
+      "individual": 5.76,
+      "financial": 0.6
+    },
+    "individual_total": 5.76,
+    "top10_total": 53.47
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-20",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第50期(2025/09/01－2026/08/31)",
+      "docID": "S100ZIVB",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "有限会社クラエンタープライズ",
+          "shares": 3512000,
+          "ratio": 38.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "クラウディア従業員持株会",
+          "shares": 310000,
+          "ratio": 3.43,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "倉　正治",
+          "shares": 280000,
+          "ratio": 3.09,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "株式会社丸文",
+          "shares": 269000,
+          "ratio": 2.97,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "クラウディア取引先持株会",
+          "shares": 176000,
+          "ratio": 1.95,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "上野　克美",
+          "shares": 72000,
+          "ratio": 0.8,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "山田　清志",
+          "shares": 59000,
+          "ratio": 0.66,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "今泉　理抄",
+          "shares": 58000,
+          "ratio": 0.64,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "日本生命保険相互会社",
+          "shares": 54000,
+          "ratio": 0.6,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "野﨑　浩司",
+          "shares": 52000,
+          "ratio": 0.57,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 41.73,
+          "employee": 5.38,
+          "individual": 5.76,
+          "financial": 0.6
+        },
+        "individual_total": 5.76,
+        "top10_total": 53.47
+      }
+    }
+  ]
+}

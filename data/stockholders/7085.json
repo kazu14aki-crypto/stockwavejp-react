@@ -1,0 +1,218 @@
+{
+  "secCode": "7085",
+  "issuerName": "株式会社カーブスホールディングス",
+  "updated_at": "2026/11/21 18:42 JST",
+  "latestDate": "2026-11-20",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "ヨウザン株式会社",
+      "shares": 29768000,
+      "ratio": 32.76,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行株式会社（その他信託口）",
+      "shares": 5371000,
+      "ratio": 5.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "株式会社ティーワイエヌ",
+      "shares": 5109900,
+      "ratio": 5.62,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "日本マスタートラスト信託銀行株式会社（投資信託口）",
+      "shares": 4468400,
+      "ratio": 4.91,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+      "shares": 3632707,
+      "ratio": 3.99,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "株式会社日本カストディ銀行（投資信託口）",
+      "shares": 3028700,
+      "ratio": 3.33,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "坂本　眞樹",
+      "shares": 2081247,
+      "ratio": 2.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "増本　陽子",
+      "shares": 2081247,
+      "ratio": 2.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+      "shares": 1764650,
+      "ratio": 1.94,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "BNP　PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS （常任代理人　香港上海銀行東京支店）",
+      "shares": 1000000,
+      "ratio": 1.1,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 38.38,
+      "trust": 16.09,
+      "foreign": 5.09,
+      "individual": 4.58
+    },
+    "individual_total": 4.58,
+    "top10_total": 64.14
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-20",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第18期(2025/09/01－2026/08/31)",
+      "docID": "S100ZIYT",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "ヨウザン株式会社",
+          "shares": 29768000,
+          "ratio": 32.76,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "日本マスタートラスト信託銀行株式会社（その他信託口）",
+          "shares": 5371000,
+          "ratio": 5.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "株式会社ティーワイエヌ",
+          "shares": 5109900,
+          "ratio": 5.62,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "日本マスタートラスト信託銀行株式会社（投資信託口）",
+          "shares": 4468400,
+          "ratio": 4.91,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "NORTHERN TRUST CO.(AVFC) RE FIDELITY FUNDS（常任代理人　香港上海銀行東京支店）",
+          "shares": 3632707,
+          "ratio": 3.99,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "株式会社日本カストディ銀行（投資信託口）",
+          "shares": 3028700,
+          "ratio": 3.33,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "坂本　眞樹",
+          "shares": 2081247,
+          "ratio": 2.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "増本　陽子",
+          "shares": 2081247,
+          "ratio": 2.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社日本カストディ銀行（信託Ｅ口）",
+          "shares": 1764650,
+          "ratio": 1.94,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "BNP　PARIBAS LUXEMBOURG/2S/JASDEC/FIM/LUXEMBOURG FUNDS/UCITS ASSETS （常任代理人　香港上海銀行東京支店）",
+          "shares": 1000000,
+          "ratio": 1.1,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 38.38,
+          "trust": 16.09,
+          "foreign": 5.09,
+          "individual": 4.58
+        },
+        "individual_total": 4.58,
+        "top10_total": 64.14
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "secCode": "3719",
   "issuerName": "ＡＩストーム株式会社",
-  "updated_at": "2026/11/17 03:38 JST",
-  "latestDate": "2026-11-13",
+  "updated_at": "2026/11/21 18:43 JST",
+  "latestDate": "2026-11-18",
   "latest": [
     {
       "rank": 1,
@@ -106,6 +106,224 @@
     "top10_total": 58.87
   },
   "history": [
+    {
+      "submitDate": "2026-11-18",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第60期(2023/01/01－2023/12/31)",
+      "docID": "S100ZIOI",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "GX PARTNERS CO., LIMITED（常任代理人 三田証券株式会社）",
+          "shares": 5872000,
+          "ratio": 24.18,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "INTERACTIVE BROKERS LLC（常任代理人 インタラクティブ・ブローカーズ証券株式会社）",
+          "shares": 2019000,
+          "ratio": 8.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "MONEX BOOM SECURITIES (H.K.) LIMITED （常任代理人　マネックス証券株式会社）",
+          "shares": 1595000,
+          "ratio": 6.57,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "B&Dエナジー投資事業有限責任組合\n無限責任組合員　モダンパス合同組合\n代表社員　勝山　博文",
+          "shares": 1190000,
+          "ratio": 4.9,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡三にいがた証券株式会社",
+          "shares": 950000,
+          "ratio": 3.91,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "楽天証券株式会社",
+          "shares": 738000,
+          "ratio": 3.04,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "VALUE CONSULTANT LIMITED（常任代理人　三田証券株式会社）",
+          "shares": 607000,
+          "ratio": 2.5,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "BANK JULIUS BAER AND CO.LTD. SINGAPORE　CLIENTS（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 455000,
+          "ratio": 1.88,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "株式会社ゼット",
+          "shares": 454000,
+          "ratio": 1.87,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "JPモルガン証券株式会社",
+          "shares": 414000,
+          "ratio": 1.71,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 50.22,
+          "other": 4.9,
+          "financial": 1.88,
+          "corporate": 1.87
+        },
+        "individual_total": 0,
+        "top10_total": 58.87
+      }
+    },
+    {
+      "submitDate": "2026-11-17",
+      "docType": "130",
+      "docTypeName": "訂正有価証券報告書－第62期(2025/01/01－2025/12/31)",
+      "docID": "S100ZIG6",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "GX PARTNERS CO., LIMITED（常任代理人 三田証券株式会社）",
+          "shares": 5872000,
+          "ratio": 21.47,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "スペース投資事業組合\n業務執行組合員　三宅　祐介",
+          "shares": 1618000,
+          "ratio": 5.92,
+          "category": "other",
+          "category_label": "その他",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "楽天証券株式会社共有口\n代表取締役　楠　雄治",
+          "shares": 779000,
+          "ratio": 2.85,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "BOOM SECURITIES (H.K.) LIMITED-CLIENTS' ACCOUNT（常任代理人　マネックス証券株式会社）",
+          "shares": 776000,
+          "ratio": 2.84,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "岡三にいがた証券株式会社",
+          "shares": 632000,
+          "ratio": 2.31,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "BANK JULIUS BAER AND CO.LTD. SINGAPORE　CLIENTS（常任代理人　株式会社三菱ＵＦＪ銀行）",
+          "shares": 531000,
+          "ratio": 1.94,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "戸谷　松一",
+          "shares": 500000,
+          "ratio": 1.83,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社ゼット\n代表取締役　細川　憲明",
+          "shares": 454000,
+          "ratio": 1.66,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "蒲田　有利",
+          "shares": 376000,
+          "ratio": 1.37,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "株式会社DMM.com証券\n代表取締役　谷川　龍二",
+          "shares": 339000,
+          "ratio": 1.24,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "securities": 27.87,
+          "other": 5.92,
+          "foreign": 2.84,
+          "financial": 1.94,
+          "individual": 3.2,
+          "corporate": 1.66
+        },
+        "individual_total": 3.2,
+        "top10_total": 43.43
+      }
+    },
     {
       "submitDate": "2026-11-13",
       "docType": "130",

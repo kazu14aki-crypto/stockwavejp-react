@@ -1,0 +1,222 @@
+{
+  "secCode": "4176",
+  "issuerName": "株式会社ココナラ",
+  "updated_at": "2026/11/21 18:42 JST",
+  "latestDate": "2026-11-19",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "note株式会社",
+      "shares": 2190000,
+      "ratio": 9.77,
+      "category": "corporate",
+      "category_label": "事業法人",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "BBH（LUX） FOR FIDELITY FUNDS \nPACIFIC FUND - PACIFIC POOL\n（常任代理人 株式会社三菱UFJ銀行）",
+      "shares": 1153500,
+      "ratio": 5.14,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "新明　智",
+      "shares": 1054000,
+      "ratio": 4.7,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "鈴木　歩",
+      "shares": 533763,
+      "ratio": 2.38,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "株式会社日本カストディ銀行（信託口）",
+      "shares": 505400,
+      "ratio": 2.25,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+      "shares": 497800,
+      "ratio": 2.22,
+      "category": "trust",
+      "category_label": "信託口（国内機関・年金/投信）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "林口　悟",
+      "shares": 470000,
+      "ratio": 2.1,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "株式会社SBI証券",
+      "shares": 447356,
+      "ratio": 2.0,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "楽天証券株式会社",
+      "shares": 443600,
+      "ratio": 1.98,
+      "category": "securities",
+      "category_label": "証券会社",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT\n（常任代理人 シティバンク、エヌ・エイ東京支店）",
+      "shares": 418900,
+      "ratio": 1.87,
+      "category": "foreign",
+      "category_label": "外国機関投資家",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "corporate": 9.77,
+      "financial": 5.14,
+      "individual": 9.18,
+      "trust": 4.47,
+      "securities": 3.98,
+      "foreign": 1.87
+    },
+    "individual_total": 9.18,
+    "top10_total": 34.41
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-19",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第15期(2025/09/01－2026/08/31)",
+      "docID": "S100ZIZM",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "note株式会社",
+          "shares": 2190000,
+          "ratio": 9.77,
+          "category": "corporate",
+          "category_label": "事業法人",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "BBH（LUX） FOR FIDELITY FUNDS \nPACIFIC FUND - PACIFIC POOL\n（常任代理人 株式会社三菱UFJ銀行）",
+          "shares": 1153500,
+          "ratio": 5.14,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "新明　智",
+          "shares": 1054000,
+          "ratio": 4.7,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "鈴木　歩",
+          "shares": 533763,
+          "ratio": 2.38,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "株式会社日本カストディ銀行（信託口）",
+          "shares": 505400,
+          "ratio": 2.25,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "日本生命保険相互会社\n（常任代理人　日本マスタートラスト信託銀行株式会社）",
+          "shares": 497800,
+          "ratio": 2.22,
+          "category": "trust",
+          "category_label": "信託口（国内機関・年金/投信）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "林口　悟",
+          "shares": 470000,
+          "ratio": 2.1,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "株式会社SBI証券",
+          "shares": 447356,
+          "ratio": 2.0,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "楽天証券株式会社",
+          "shares": 443600,
+          "ratio": 1.98,
+          "category": "securities",
+          "category_label": "証券会社",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "UBS AG LONDON A/C IPB SEGREGATED CLIENT ACCOUNT\n（常任代理人 シティバンク、エヌ・エイ東京支店）",
+          "shares": 418900,
+          "ratio": 1.87,
+          "category": "foreign",
+          "category_label": "外国機関投資家",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "corporate": 9.77,
+          "financial": 5.14,
+          "individual": 9.18,
+          "trust": 4.47,
+          "securities": 3.98,
+          "foreign": 1.87
+        },
+        "individual_total": 9.18,
+        "top10_total": 34.41
+      }
+    }
+  ]
+}
