@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-16T08:59:41+09:00",
+  "updated_at": "2026-11-23T09:56:42+09:00",
   "source": "金融庁 EDINETコードリスト",
   "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/codelist/Edinetcode.zip",
-  "count": 3757,
+  "count": 3754,
   "stocks": [
     {
       "ticker": "1300.T",
@@ -3716,6 +3716,16 @@
       "curated": false
     },
     {
+      "ticker": "2490.T",
+      "code": "2490",
+      "name": "株式会社ヒューマンアジャスト",
+      "market": "上場",
+      "industry": "サービス業",
+      "filer_type": "内国法人・組合",
+      "themes": [],
+      "curated": false
+    },
+    {
       "ticker": "2491.T",
       "code": "2491",
       "name": "バリューコマース株式会社",
@@ -7084,16 +7094,6 @@
       "ticker": "3252.T",
       "code": "3252",
       "name": "地主株式会社",
-      "market": "上場",
-      "industry": "不動産業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "3260.T",
-      "code": "3260",
-      "name": "株式会社エスポア",
       "market": "上場",
       "industry": "不動産業",
       "filer_type": "内国法人・組合",
@@ -12686,16 +12686,6 @@
       "ticker": "4310.T",
       "code": "4310",
       "name": "ユーソナー株式会社",
-      "market": "上場",
-      "industry": "情報・通信業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "4316.T",
-      "code": "4316",
-      "name": "株式会社ビーマップ",
       "market": "上場",
       "industry": "情報・通信業",
       "filer_type": "内国法人・組合",
@@ -28334,16 +28324,6 @@
       "curated": false
     },
     {
-      "ticker": "7490.T",
-      "code": "7490",
-      "name": "日新商事株式会社",
-      "market": "上場",
-      "industry": "卸売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
       "ticker": "7494.T",
       "code": "7494",
       "name": "株式会社コナカ",
@@ -31968,16 +31948,6 @@
       "ticker": "8139.T",
       "code": "8139",
       "name": "株式会社ナガホリ",
-      "market": "上場",
-      "industry": "卸売業",
-      "filer_type": "内国法人・組合",
-      "themes": [],
-      "curated": false
-    },
-    {
-      "ticker": "8141.T",
-      "code": "8141",
-      "name": "新光商事株式会社",
       "market": "上場",
       "industry": "卸売業",
       "filer_type": "内国法人・組合",
