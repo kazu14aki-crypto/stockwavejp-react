@@ -7,7 +7,22 @@ function PeriodArchive({ type, title, description }) {
   useEffect(()=>{fetch(`/data/${type}_reports/index.json?t=${Date.now()}`).then(r=>r.ok?r.json():[]).then(setItems).catch(()=>setItems([]))},[type])
   const [detail,setDetail]=useState(null)
   useEffect(()=>{if(!selected){setDetail(null);return}fetch(`/data/${type}_reports/${selected.file||selected.id+'.json'}?t=${Date.now()}`).then(r=>r.ok?r.json():null).then(setDetail).catch(()=>setDetail(null))},[selected,type])
-  if(detail) return <div style={{padding:'20px 24px 80px',maxWidth:'960px',margin:'0 auto'}}><button onClick={()=>{setSelected(null);setDetail(null)}} style={{marginBottom:'16px',background:'none',border:'none',color:'var(--accent)',cursor:'pointer',fontFamily:'var(--font)'}}>← 一覧へ戻る</button><h1 style={{fontSize:'20px',color:'var(--text)'}}>{detail.title}</h1>{detail.metrics&&<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(180px,1fr))',gap:'10px',margin:'16px 0'}}>{detail.metrics.map(m=><div key={m.label} style={{padding:'14px',background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'9px'}}><div style={{fontSize:'10px',color:'var(--text3)'}}>{m.label}</div><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)',marginTop:'5px'}}>{m.value}</div></div>)}</div>}{detail.sections?.map(s=><section key={s.heading} style={{marginTop:'24px'}}><h2 style={{fontSize:'16px',color:'var(--text)'}}>{s.heading}</h2>{s.body?.map((p,i)=><p key={i} style={{fontSize:'13px',lineHeight:1.9,color:'var(--text2)'}}>{p}</p>)}</section>)}</div>
+  if(detail) return <div style={{padding:'20px 24px 80px',maxWidth:'960px',margin:'0 auto'}}><button onClick={()=>{setSelected(null);setDetail(null)}} style={{marginBottom:'16px',background:'none',border:'none',color:'var(--accent)',cursor:'pointer',fontFamily:'var(--font)'}}>← 一覧へ戻る</button><h1 style={{fontSize:'20px',color:'var(--text)'}}>{detail.title}</h1>{detail.metrics&&<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(180px,1fr))',gap:'10px',margin:'16px 0'}}>{detail.metrics.map(m=><div key={m.label} style={{padding:'14px',background:'var(--bg2)',border:'1px solid var(--border)',borderRadius:'9px'}}><div style={{fontSize:'10px',color:'var(--text3)'}}>{m.label}</div><div style={{fontSize:'13px',fontWeight:700,color:'var(--text)',marginTop:'5px'}}>{m.value}</div></div>)}</div>}{detail.sections?.map(s=><section key={s.heading} style={{marginTop:'24px'}}><h2 style={{fontSize:'16px',color:'var(--text)'}}>{s.heading}</h2>{s.body?.map((p,i)=><p key={i} style={{fontSize:'13px',lineHeight:1.9,color:'var(--text2)'}}>{p}</p>)}</section>)}
+    {detail.sources?.length > 0 && (
+      <section style={{marginTop:'24px'}}>
+        <h2 style={{fontSize:'16px',color:'var(--text)'}}>出典</h2>
+        <ul style={{paddingInlineStart:'20px',fontSize:'13px',lineHeight:1.9}}>
+          {detail.sources.map(source => (
+            <li key={source.url}>
+              <a href={source.url} target="_blank" rel="noopener noreferrer" style={{color:'var(--accent)'}}>
+                {source.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </div>
   return <div style={{padding:'20px 24px 80px',maxWidth:'960px',margin:'0 auto'}}>
     <h1 style={{fontSize:'20px',fontWeight:700,color:'var(--text)',marginBottom:'6px'}}>{title}</h1>
     <p style={{fontSize:'12px',color:'var(--text3)',lineHeight:1.7,marginBottom:'18px'}}>{description}</p>
