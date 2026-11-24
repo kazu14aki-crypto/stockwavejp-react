@@ -1,0 +1,216 @@
+{
+  "secCode": "2735",
+  "issuerName": "株式会社ワッツ",
+  "updated_at": "2026/11/24 05:12 JST",
+  "latestDate": "2026-11-24",
+  "latest": [
+    {
+      "rank": 1,
+      "name": "㈱カシオペア",
+      "shares": 2029200,
+      "ratio": 15.29,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 2,
+      "name": "大阪中小企業投資育成㈱",
+      "shares": 648000,
+      "ratio": 4.88,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 3,
+      "name": "平岡　滿子",
+      "shares": 602650,
+      "ratio": 4.54,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 4,
+      "name": "㈲アカリ",
+      "shares": 562000,
+      "ratio": 4.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 5,
+      "name": "平岡　史生",
+      "shares": 497906,
+      "ratio": 3.75,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 6,
+      "name": "衣笠　敦夫",
+      "shares": 372569,
+      "ratio": 2.81,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 7,
+      "name": "平岡　紀子",
+      "shares": 367850,
+      "ratio": 2.77,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    },
+    {
+      "rank": 8,
+      "name": "㈱三井住友銀行",
+      "shares": 320000,
+      "ratio": 2.41,
+      "category": "financial",
+      "category_label": "銀行・保険",
+      "is_founder_family": false
+    },
+    {
+      "rank": 9,
+      "name": "ワッツ従業員持株会",
+      "shares": 312911,
+      "ratio": 2.36,
+      "category": "employee",
+      "category_label": "従業員持株会",
+      "is_founder_family": false
+    },
+    {
+      "rank": 10,
+      "name": "福光　宏",
+      "shares": 296080,
+      "ratio": 2.23,
+      "category": "individual",
+      "category_label": "個人（創業者一族の可能性）",
+      "is_founder_family": false
+    }
+  ],
+  "latestSummary": {
+    "by_category": {
+      "individual": 40.5,
+      "financial": 2.41,
+      "employee": 2.36
+    },
+    "individual_total": 40.5,
+    "top10_total": 45.27
+  },
+  "history": [
+    {
+      "submitDate": "2026-11-24",
+      "docType": "120",
+      "docTypeName": "有価証券報告書－第32期(2025/09/01－2026/08/31)",
+      "docID": "S100ZJEV",
+      "shareholders": [
+        {
+          "rank": 1,
+          "name": "㈱カシオペア",
+          "shares": 2029200,
+          "ratio": 15.29,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 2,
+          "name": "大阪中小企業投資育成㈱",
+          "shares": 648000,
+          "ratio": 4.88,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 3,
+          "name": "平岡　滿子",
+          "shares": 602650,
+          "ratio": 4.54,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 4,
+          "name": "㈲アカリ",
+          "shares": 562000,
+          "ratio": 4.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 5,
+          "name": "平岡　史生",
+          "shares": 497906,
+          "ratio": 3.75,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 6,
+          "name": "衣笠　敦夫",
+          "shares": 372569,
+          "ratio": 2.81,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 7,
+          "name": "平岡　紀子",
+          "shares": 367850,
+          "ratio": 2.77,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        },
+        {
+          "rank": 8,
+          "name": "㈱三井住友銀行",
+          "shares": 320000,
+          "ratio": 2.41,
+          "category": "financial",
+          "category_label": "銀行・保険",
+          "is_founder_family": false
+        },
+        {
+          "rank": 9,
+          "name": "ワッツ従業員持株会",
+          "shares": 312911,
+          "ratio": 2.36,
+          "category": "employee",
+          "category_label": "従業員持株会",
+          "is_founder_family": false
+        },
+        {
+          "rank": 10,
+          "name": "福光　宏",
+          "shares": 296080,
+          "ratio": 2.23,
+          "category": "individual",
+          "category_label": "個人（創業者一族の可能性）",
+          "is_founder_family": false
+        }
+      ],
+      "summary": {
+        "by_category": {
+          "individual": 40.5,
+          "financial": 2.41,
+          "employee": 2.36
+        },
+        "individual_total": 40.5,
+        "top10_total": 45.27
+      }
+    }
+  ]
+}
